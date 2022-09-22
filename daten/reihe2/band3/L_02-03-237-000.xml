@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_02-03-237-000">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Leibniz an Claude Nicaise 1700 V Ende–VII Mitte</title>
+				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+				<respStmt>
+					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
+					<resp> <note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note> </resp>
+				</respStmt>
+				<respStmt>
+					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
+					<resp> <note type="remarkResponsibility">Inhaltliche Konzeption</note> </resp>
+				</respStmt>
+				<respStmt>
+					<persName> <forename>Martina</forename> <surname>Gödel</surname> </persName>
+					<resp> <note type="remarkResponsibility">Datenmodell und Konvertierung Reihe II</note> </resp>
+				</respStmt>
+				<respStmt>
+					<persName> <forename/> <surname>tba</surname> </persName>
+					<resp> <note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Hannover</note> </resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Akademie der Wissenschaften</publisher>
+				<date type="creation">2021</date>
+				<availability>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"> <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p> </licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<title type="chapter" level="a" n="237">Leibniz an Claude Nicaise 1700 V Ende–VII Mitte</title>
+						<title type="section" level="a" n=""/>
+						<date calendar="#gregorian" notBefore="1700-05-25" resp="#ed" cert="medium">1700 V Ende–VII Mitte</date>
+						<date calendar="#gregorian" notAfter="1700-07-15" resp="#ed" cert="medium"/>
+						<idno type="PDF"> <idno type="url">https://www.uni-muenster.de/Leibniz/DatenII3/II3_B.pdf</idno> <idno type="page">#page=639</idno> </idno>
+						<idno type="korrespondenzdatenbank"> <idno type="url">https://leibniz.uni-goettingen.de/letters/view/13702</idno> </idno>
+					</analytic>
+					<monogr>
+						<title type="main" level="s" n="2">Reihe II: Philosophischer Briefwechsel</title>
+						<title type="volume" n="3" level="m">Band 3: 1695–1700</title>
+						<imprint>
+							<publisher>Akademie Verlag</publisher>
+							<pubPlace>Berlin</pubPlace>
+							<date type="publication">2013</date>
+						</imprint>
+						<biblScope unit="page" from="639" to="640"/>
+					</monogr>
+					<series> <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title> </series>
+				</biblStruct>
+				<listWit>
+					<witness n="L" corresp="#L_02-03-237-000_facs-haupttextzeuge-1"> <msDesc>
+						<msIdentifier>
+							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+							<idno type="Signatur">LBr 685, Bl. 161–162</idno>
+						</msIdentifier>
+						<msContents corresp="L_witness-content-types.xml#auszug">
+							<summary> <p/> </summary>
+						</msContents>
+						<physDesc>
+							<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+						</physDesc>
+						<history>
+							<origin corresp="L_witness-origin-types.xml#origin-L"/>
+						</history>
+						</msDesc> </witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fr"/>
+			</langUsage>
+			<calendarDesc>
+				<calendar xml:id="gregorian">
+					<p>Gregorianischer Kalenderstil</p>
+				</calendar>
+				<calendar xml:id="julian">
+					<p>Julianischer Kalenderstil</p>
+				</calendar>
+			</calendarDesc>
+			<textClass>
+				<catRef scheme="L_subjects" target="L_subjects.xml#allgemeiner-briefwechsel"/>
+				<catRef scheme="L_terms" target="L_terms.xml#"/>
+			</textClass>
+			<abstract>
+				<listPerson>
+					<person sameAs="L_persons.xml#XXX"/>
+				</listPerson>
+				<listPlace>
+					<place sameAs="L_places.xml#"/>
+				</listPlace>
+			</abstract>
+			<correspDesc source="#" key="L_02-03-237-000">
+				<correspAction type="sent">
+					<persName ref="https://d-nb.info/gnd/118571249" evidence="internal">leibniz_gottfried-wilhelm</persName>
+					<date notAfter="1700-05-25" notBefore="1700-07-15"/>
+					<placeName ref="http://www.geonames.org/??">??</placeName>
+					<!--					hier kein Ort im Stück angegeben-->
+				</correspAction>
+				<correspAction type="received">
+					<persName ref="http://d-nb.info/gnd/116993529" evidence="internal">nicaise_claude</persName>
+				</correspAction>
+			</correspDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2021-11" who="#stork" status="sample_1"/>
+		</revisionDesc>
+	</teiHeader>
+	<!--<facsimile source="XXX" xml:id="L_02-03-237-000_facs-haupttextzeuge-1">
+		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&tx_dlf%5Bid%5D=7190&tx_dlf%5Bpage%5D=321"/>
+		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&tx_dlf%5Bid%5D=7190&tx_dlf%5Bpage%5D=322"/>
+		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&tx_dlf%5Bid%5D=7190&tx_dlf%5Bpage%5D=323"/>
+		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&tx_dlf%5Bid%5D=7190&tx_dlf%5Bpage%5D=324"/>
+	</facsimile>-->
+	<text xml:id="L_02-03-237-000_text">
+		<body xml:id="Document">
+			<p/>
+		</body>
+	</text>
+</TEI>

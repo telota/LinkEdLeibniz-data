@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-047-000">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title type="main">Anstreichungen und Anmerkungen in Ignace Gaston Pardies, Discours du mouvement local</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
+      
+      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <sourceDesc>
+        <biblStruct><analytic><author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+        </author><title type="chapter" level="a" n="47">Anstreichungen und Anmerkungen in Ignace Gaston Pardies, Discours du mouvement local</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1672-03" resp="#ed" cert="medium">[Frühjahr 1672 – Mai 1673]</date><date calendar="#gregorian" notAfter="1673-05" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=455</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="407" to="416"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title></series></biblStruct>
+        <listWit><witness n="LiH" corresp="#L_08-02-047-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">GWLB, Leibn. Marg. 28</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#lektuere"><summary><p>Anstreichungen und Anmerkungen in <hi rendition="#k">I.G. Pardies</hi>,<ref corresp="#bib_00204"/> <hi rendition="#i">Discours du mouvement local</hi>, Paris 1670: <hi rendition="#k">Hannover</hi>, GWLB,
+Leibn. Marg. 28.</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-LiH"/></history></msDesc></witness></listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <!-- PsMs -->
+        <glyph xml:id="pPsMs">
+          <glyphName>pPsMs</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pPsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMs">
+          <glyphName>PsMs</glyphName>
+          <desc>Bedeutung (+−) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\PsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <!-- MsPs -->
+        <glyph xml:id="pMsPs">
+          <glyphName>pMsPs</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pMsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPs">
+          <glyphName>MsPs</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\MsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <!-- PsPsMs -->
+        <glyph xml:id="pPsPsMs">
+          <glyphName>pPsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsPsMs">
+          <glyphName>PsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <!-- PsMsPs -->
+        <glyph xml:id="pPsMsPs">
+          <glyphName>pPsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsMsPss</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMsPs">
+          <glyphName>PsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsMsPs</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsMs -->
+        <glyph xml:id="pMsPsMs">
+          <glyphName>pMsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsMs">
+          <glyphName>MsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <!-- MsMsPs -->
+        <glyph xml:id="pMsMsPs">
+          <glyphName>pMsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsMsPss</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsMsPs">
+          <glyphName>MsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsMsPs</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsPs -->
+        <glyph xml:id="pMsPsPs">
+          <glyphName>pMsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsPs">
+          <glyphName>MsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <!-- pmD -->
+        <glyph xml:id="ppmD">
+          <glyphName>ppmD</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <glyph xml:id="pmD">
+          <glyphName>pmD</glyphName>
+          <desc>Bedeutung (−(++))- nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <!-- pmE -->
+        <glyph xml:id="ppmE">
+          <glyphName>ppmE</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\ppmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <glyph xml:id="pmE">
+          <glyphName>pmE</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <!-- pmG -->
+        <glyph xml:id="ppmG">
+          <glyphName>ppmG</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <glyph xml:id="pmG">
+          <glyphName>pmG</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <!-- pmH -->
+        <glyph xml:id="ppmH">
+          <glyphName>ppmH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <glyph xml:id="pmH">
+          <glyphName>pmH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- leibvdashv -->
+        <glyph xml:id="pleibvdash">
+          <glyphName>pleibvdash</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pleibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <glyph xml:id="leibvdash">
+          <glyphName>leibvdash</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\leibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <!-- groesser -->
+        <glyph xml:id="ggroesser">
+          <glyphName>ggroesser</glyphName>
+          <desc>Bedeutung (größer als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ggroesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <glyph xml:id="groesser">
+          <glyphName>groesser</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\groesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <!-- kleiner -->
+        <glyph xml:id="kkleiner">
+          <glyphName>kkleiner</glyphName>
+          <desc>Bedeutung (kleiner als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kkleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <glyph xml:id="kleiner">
+          <glyphName>kleiner</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <!-- pmHH -->
+        <glyph xml:id="ppmHH">
+          <glyphName>ppmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <glyph xml:id="pmHH">
+          <glyphName>pmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <!-- pmDD -->
+        <glyph xml:id="ppmDD">
+          <glyphName>ppmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <glyph xml:id="pmDD">
+          <glyphName>pmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmDD</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <!-- pmGG -->
+        <glyph xml:id="ppmGG">
+          <glyphName>ppmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="pmGG">
+          <glyphName>pmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="dsig">
+          <glyphName>dsig</glyphName>
+          <desc/>
+          <mapping type="TeX">\dsig</mapping>
+          <graphic url="../../glyphs/dsig.svg"/>
+        </glyph>
+        <glyph xml:id="Pfund">
+          <glyphName>Pfund</glyphName>
+          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.7</value>
+          </charProp>
+          <mapping type="TeX">\Pfund</mapping>
+          <graphic url="../../glyphs/Pfund.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+        <glyph xml:id="fullmoon">
+          <glyphName>fullmoon</glyphName>
+          <desc>FULL MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F315</mapping>
+          <mapping type="unicode">🌕</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
+          <mapping type="TeX">\fullmoon</mapping>
+        </glyph>
+        <glyph xml:id="leftmoon">
+          <glyphName>leftmoon</glyphName>
+          <desc>LAST QUARTER MOON</desc>
+          <mapping type="PUA">U+263E</mapping>
+          <mapping type="unicode">☾</mapping>
+          <mapping type="TeX">\leftmoon</mapping>
+        </glyph>
+        <glyph xml:id="rightmoon">
+          <glyphName>rightmoon</glyphName>
+          <desc>FIRST QUARTER MOON</desc>
+          <desc type="PUA">U+263D</desc>
+          <mapping type="unicode">☽</mapping>
+          <mapping type="TeX">\rightmoon</mapping>
+        </glyph>
+        <glyph xml:id="newmoon">
+          <glyphName>newmoon</glyphName>
+          <desc>NEW MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F311</mapping>
+          <mapping type="unicode">🌑</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
+          <mapping type="TeX">\newmoon</mapping>
+        </glyph>
+        <glyph xml:id="astrosun">
+          <glyphName>astrosun</glyphName>
+          <desc>Sonne (astronomisch)</desc>
+          <mapping type="PUA">U+2609</mapping>
+          <mapping type="unicode">☉</mapping>
+          <mapping type="TeX">\astrosun</mapping>
+          <graphic url="../"/>
+        </glyph>
+        <glyph xml:id="venus">
+          <glyphName>venus</glyphName>
+          <desc>FEMALE SIGN (venus)</desc>
+          <mapping type="PUA">U+2640</mapping>
+          <mapping type="unicode">♀</mapping>
+          <mapping type="TeX">\venus</mapping>
+          <graphic url="../"/>
+        </glyph>
+      </charDecl>
+    </encodingDesc>
+    <profileDesc><langUsage>
+      <language ident="fr"/>
+      <language ident="la"/>
+    </langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass>
+      <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+      <catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
+      <catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
+    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-09" who="#stork" status="enrich_1"/></revisionDesc>
+  </teiHeader>
+  <!--<facsimile source="digilib.bbaw.de" xml:id="L_08-02-047-000_facs-haupttextzeuge"><graphic url="XXX"/></facsimile>--><text xml:id="L_08-02-047-000_text">
+    <body xml:id="Document"><div type="chapter" xml:id="Ch47" n="47"><pb type="VIII_2" n="407"/><head>47.
+ANSTREICHUNGEN UND ANMERKUNGEN IN IGNACE GASTON PARDIES, DISCOURS DU MOUVEMENT LOCAL</head>
+<head>[Frühjahr 1672 – Mai 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Anstreichungen und Anmerkungen in <hi rendition="#k">I.G. Pardies</hi>,<ref corresp="#bib_00204"/> <hi rendition="#i">Discours du mouvement local</hi>, Paris 1670: <hi rendition="#k">Hannover</hi>, GWLB,
+Leibn. Marg. 28.</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch47.p3"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Leibniz verkehrte mit Pardies in Paris (siehe hierzu etwa <hi rendition="#i">LSB</hi> II, 1 N. 133, S. 442; III, 1 N. 9, S. 42) und beschäftigte sich mit dessen mathematischen Werken eingehend während seines Pariser Aufenthaltes,
+wie dies u.a. die Stücke <hi rendition="#i">LSB</hi> VII, 3 N. 6, N. 26 und N. 38<hi rendition="#sub">12</hi> belegen.
+Die vorliegenden Marginalien dürften aber spätestens zu dem Zeitpunkt verfasst worden sein, als Leibniz Pardies’ <hi rendition="#i">Statique</hi> exzerpiert hat,
+d.h. spätestens im Mai 1673 (siehe die Datierungsgründe in N. 7;
+in N. 44
+sind ferner Leibniz’ Marginalien in seinem Handexemplar von <hi rendition="#i">La statique</hi> ediert).
+Denn wie Leibniz selbst zu Beginn von N. 7 referiert,
+stellt Pardies seine <hi rendition="#i">Statique</hi> als Fortsetzung des <hi rendition="#i">Discours du mouvement local</hi> dar
+(siehe <ref corresp="#bib_00296"/><hi rendition="#k">I.G. Pardies</hi>, <hi rendition="#i">La statique</hi>, Paris 1673, Préface).
+Es erweist sich demgemäß als plausibel, die vorliegenden Marginalien auf den Zeitraum vom Frühjahr 1672 bis zum Mai 1673 zu datieren.</hi></p></div><div type="text"><p xml:id="Ch47.p4" rendition="#noindent">[Preface p. 1] PREFACE. / <hi rendition="#i">IE ne pretends pas faire ici l’eloge des Mechaniques</hi> <seg type="apparat-ellipsis"/><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am oberen Rand rechts</hi>: p. 13 negligit magnitudines corporum.</note></p><p xml:id="Ch47.p5">[p. 29] Cequi est manifeste par les mesmes raisons que j’ai apportées pour prouver que le mouvement dure toûjours. Mais il faut remarquer que lorsqu’vn corps a receu successivement plusieurs determinations differentes; il reste affecté de la derniere<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: la derniere, <hi rendition="#i">notiert daneben am Rand</hi>: Error. Componuntur omnes in unum conatum <hi rendition="#i">und streicht schließlich die ganze Randbemerkung.</hi></note>, sans que les precedentes fassent aucune impression sur lui.</p><p xml:id="Ch47.p6">[p. 32] <seg type="apparat-ellipsis"/> ainsi le corps demeure affecté de la derniere determination: or cette derniere determination le portoit vers <hi rendition="#i">g</hi>, c’est à dire qu’il faut prendre l’inclination qu’a la ligne courbe au point <hi rendition="#i">f</hi>: et cette inclination se mesure par la tangente, comme sçavent les Geometres; ainsi c’est suivant cette tangente que le corps a<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Unter dem Text, gestrichen</hi>: paralogismus</note>
+ [p. 33] esté determiné pour la derniere fois; et par consequent c’est suivant cette ligne qu’il continuë de se mouvoir.</p><p xml:id="Ch47.p7">[p. 35] <seg type="apparat-ellipsis"/> tous ces corps continuëront de se mouvoir en cercle, la boule à l’entour du clou où elle est suspenduë: la rouë à l’entour de son essieu où elle est attachée: et la liqueur à l’entour du centre du vaisseau où elle est renfermée. De mesme si
+deux corps estant attachez ensemble, sont également agitez vers des endroits differens; il faut necessairement que ces corps opposez se meuvent circulairement à l’entour du point qui est au milieu d’eux, et c’est<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: si deux <seg type="apparat-ellipsis"/> d’eux, et c’est</note> [p. 36] ainsi qu’vn fuseau ou vne pirouëtte continuënt de se mouvoir circulairement; parceque les parties opposées estant attachées et vnies entre elles, et de plus estant meuës par les doits, en deux sens differens, l’vne d’vn costé l’autre de l’autre; il faut que ce fuseau se meuve à l’entour de soy mesme. Que si de plus ces parties opposées sont poussées inégalement, en sorte que l’vne soit portée vn peu plus vîte vers vn costé: alors ce corps outre son mouvement circulaire à l’entour de soy-mesme, <pb type="VIII_2" n="408"/>aura vn autre mouvement qui le portera tout entier sur quelques lignes differentes suivant la diversité et la combinaison de ces determinations. Et c’est ainsi qu’vne pirouëtte décrit<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: vîte vers vn costé <seg type="apparat-ellipsis"/> qu’vne pirouëtte décrit <hi rendition="#i">und notiert</hi>: ₰  Videtur eligi centrum propius parti victae quia si supponatur immobilis seu fixa ipsa erit centrum. Et tanto est propior immobili, quanto victa magis.</note> par son essieu sur la table di[p. 36]verses figures entrelassées tandis qu’elle se meut avec vne vîtesse incroyable à l’entour de son propre centre.</p><p xml:id="Ch47.p8" rendition="#noindent">[p. 39] [<hi rendition="#i">Gedruckte Marginalie</hi>:] XVII. Dans la rencontre de deux corps il se fait vne percussion, qui est mutuelle et également receuë dans l’vn et dans l’autre corps.<lb/>[<hi rendition="#i">Haupttext</hi>:] Or quoique bien souvent il n’y ait qu’vn corps qui<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: ₰</note> se meuve et qui frappe, tandis que l’autre demeure immobile et reçoit le coup; neanmoins la percussion est</p><figure rendition="#own-line_centered" xml:id="Ch47.p9">
+        <graphic rendition="#c" url="../images/pardies1670-d1.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="199.4652pt" xml:id="Ch47.p9.g1"/>
+        
+        <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+      </figure><p xml:id="Ch47.p10" rendition="#noindent">toûjours mutuelle et elle est également receuë dans l’vn et dans l’autre corps: De sorte qu’autant que<note type="Afootnote" place="margin" resp="#L"> <hi rendition="#i">Unter dem Text</hi>: Il n’y a point de choc ny percussion sans resistance.</note> [p. 40] le corps <hi rendition="#i">a</hi> frappe le corps <hi rendition="#i">B</hi>, autant est-il frappé luy-mesme. Ce que nous concevrons aisément si nous supposons que ces deux corps sont tout-à-fait semblables en masse, en figure, en<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: Ce que nous <seg type="apparat-ellipsis"/> en masse, en figure, en <hi rendition="#i">und notiert</hi>:
+₰</note> dureté, et si de plus nous imaginons qu’ils aient du sentiment, et qu’ils soient capables de ressentir de la douleur quand ils sont frappez: <seg type="apparat-ellipsis"/></p><pb type="VIII_2" n="409"/><p xml:id="Ch47.p11">[p. 41] Ainsi nous pouvons mettre pour vne maxime generale [p. 42] que <hi rendition="#i">lorsque deux corps se frappent, la percussion est mutuelle et égale de part et d’autre.</hi><note type="Afootnote" place="margin" resp="#L"> <hi rendition="#i">Neben dem kursiv gesetzten Text</hi>: ₰</note></p><p xml:id="Ch47.p12">[p. 42] Puis donc que la percussion que reçoit le corps <hi rendition="#i">B</hi> est d’vn degré, c’est à dire qu’elle est capable de porter le corps <hi rendition="#i">B</hi> avec vn degré de vîtesse
+vers <hi rendition="#i">b</hi>; il faut aussi que la percussion que reçoit en mesme temps le corps <hi rendition="#i">a</hi> soit aussi d’vn degré; c’est à dire,<note type="Afootnote" place="margin" resp="#L"> <hi rendition="#i">Leibniz markiert am Rand</hi>: vers <hi rendition="#i">b</hi>; <seg type="apparat-ellipsis"/> c’est à dire <hi rendition="#i">und notiert</hi>:
+error</note> qu’[p. 43]elle puisse porter le corps <hi rendition="#i">a</hi> avec vn degré de vîtesse vers les parties opposées, c’est à sçavoir vers <hi rendition="#i">A</hi>.</p><figure rendition="#own-line_centered" xml:id="Ch47.p13">
+        <graphic rendition="#c" url="../images/pardies1670-d2.svg" style="trim:  0mm -3mm 0mm -5mm; clip: true" width="199.4652pt" xml:id="Ch47.p13.g1"/>
+        
+        <head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]</head>
+      </figure><p xml:id="Ch47.p14">[p. 43] Ainsi dans cette percussion le corps <hi rendition="#i">a</hi> donne son mouvement et sa vîtesse au corps <hi rendition="#i">B</hi>, et demeure cependant luy-mesme immobile.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand auf eingeklebtem Zettel</hi>: Alia longe hujus rei ratio quaerenda, a natura pleni seu medii.</note></p><p xml:id="Ch47.p15">[p. 46] D’où l’on void encore que la percussion sera d’autant plus grande que cette approche mutuelle se sera plus viste. De sorte que <hi rendition="#i">les percussions sont toûjours comme les vîtesses respectives</hi>, pourveu que tout le reste soit pareil. Ainsi les deux corps s’approchant chacun<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand auf eingeklebtem Zettel</hi>: La veritable raison en est, parce qu’on peut dire, que
+l’un est aussi bien meu vers l’autre, que l’autre vers luy.</note> avec vn degré de vîtesse absoluë, et faisant chacun vn pied de sa part dans vne minute; <seg type="apparat-ellipsis"/></p><pb type="VIII_2" n="410"/><p xml:id="Ch47.p16">[p. 48] Estant donc certain que la percussion qui se fait en cette rencontre est de deux degrez; [<hi rendition="#i">Auf dieser Höhe gedruckte Marginalie</hi>:] XXI. <hi rendition="#i">Deux corps se mouvant l’vn vers l’autre rebroussent en faisant vn</hi> <hi rendition="#i">échange</hi> <note type="Afootnote" place="margin" resp="#L"> <hi rendition="#i">Leibniz unterstreicht</hi>: échange <hi rendition="#i">und schreibt unter der gedruckten Marginalie</hi>: ₰</note> <hi rendition="#i">de leur vitesse</hi>. <seg type="apparat-ellipsis"/></p><p xml:id="Ch47.p17">[p. 49] <seg type="apparat-ellipsis"/> d’vne de deux degrez vers <hi rendition="#i">A</hi> qu’il reçoit dans la percussion, et d’vne autre d’vn degré vers <hi rendition="#i">b</hi>, qu’il avoit auparavant <note type="Afootnote" place="margin" resp="#L"> <hi rendition="#i">Leibniz unterstreicht</hi>: vers <hi rendition="#i">b</hi>, qu’il avoit auparavant <hi rendition="#i">und notiert am Rand</hi>: ₰</note>; ainsi il luy reste seulement vn degré libre d’impression et de vîtesse qui le porte vers <hi rendition="#i">A</hi>. Et demesme <hi rendition="#i">B</hi> sera porté vers <hi rendition="#i">b</hi> avec vn degré aussi de vîtesse; de façon que tous deux rebroussent sur la mesme ligne avec la mesme vîtesse qu’ils sont venus <note type="Afootnote" place="margin" resp="#L"> <hi rendition="#i">Leibniz unterstreicht</hi>: sont venus <hi rendition="#i">und notiert am Rand</hi>: ₰</note>. Que si nous supposons que l’vn s’avance plus vîte que l’autre; <seg type="apparat-ellipsis"/></p><p xml:id="Ch47.p18">[p. 50] Que si les deux corps se meu[p. 51]vent
+vers les mesmes endroits sur vne ligne droite, en sorte que le plus lent allant devant soit enfin attrappé par le plus vîte qui le suit<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: attrappé par le plus vîte qui le suit</note>; alors tous les deux continueront de se mouvoir sur la mesme ligne vers les mesmes endroits; mais ils feront vn échange de leurs vîtesses<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: mais ils feront vn échange de leurs vîtesses.</note>. Soit le corps <hi rendition="#i">A</hi> meu avec deux degrez de vîtesse <hi rendition="#i">b</hi>, faisant dans vne minute deux pieds jusques en <hi rendition="#i">a</hi>.</p><figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch47.p19">
+        <graphic url="../images/pardies1670-d3.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="199.4652pt" xml:id="Ch47.p19.g1"/>
+        
+        <head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]</head>
+      </figure><p xml:id="Ch47.p20">[p. 53] Que si le corps qui est frappé est tout-à-fait inébranlable; il faut voir quelle force aura la percussion, et ce que deviendra le corps qui frappe. [<hi rendition="#i">In dieser Höhe gedruckte Marginalie</hi>:] XXIII. <hi rendition="#i">Vn corps dur venant à frapper sur vn autre corps inébranlable, se refléchit avec</hi> <hi rendition="#i">tout son mouvement.</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: tout son mouvement <hi rendition="#i">und schreibt unter der gedruckten Marginalie</hi>: Il faut chercher d’autres raisons.</note></p><p xml:id="Ch47.p21">[p. 54] Mais si nous supposons qu’en mesme temps qu’<hi rendition="#i">A</hi> vient frapper la lame en <hi rendition="#i">a</hi>; en mesme temps aussi <hi rendition="#i">B</hi> la vient frapper en <hi rendition="#i">b</hi>; cette lame demeurera immobile, puisqu’elle est frappée également des deux costez opposez; et chaque corps rebroussera avec son degré de vîtesse avec lequel il estoit venu. Car, comme j’ay dit, ces deux corps se frappent nonobstant cette lame, comme s’il n’y avoit rien entre-deux<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: ces deux <seg type="apparat-ellipsis"/> rien entre-deux</note>; or s’il n’y avoit rien entre-deux, ils rebrousseroient avec leur mesme degré [p. 55] de vîtesse, comme il a esté prouvé au §. 21. ainsi quoique cette lame se trouve là; ils ne laisseront pas de rebrousser.</p><p xml:id="Ch47.p22">[p. 56] Et voilà comment on demonstre qu’vn corps dur venant à frapper vn autre corps dur inflexible et inébranlable, se refléchit avec tout son mouvement: ce que je ne pense pas que personne ait encore demonstré.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: avec tout <seg type="apparat-ellipsis"/> encore demonstré <hi rendition="#i">und notiert am Rand</hi>: personne ait encore demonstré.</note></p><p xml:id="Ch47.p23">[p. 66] <seg type="apparat-ellipsis"/> parce-qu’alors la percussion seroit plus droite: et en effet si l’on veut en faire le calcul (ce qui est fort aisé à faire sur celuy mesme qu’a fait cét Auteur<index indexName="Namensregister"><term><hi rendition="#g"/>,</term></index>) on trouvera que l’obliquité de ces mouvemens est toûjours toute telle qu’il faut pour faire la diversité que nous voions dans les percussions d’vn corps qui tombe.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: droite: et en effet <seg type="apparat-ellipsis"/> d’vn corps qui tombe.</note></p><p xml:id="Ch47.p24">L’AUTRE remarque est sur ce que j’ay veû dans quelques-vnes de nos citadelles, où ceux qui les ont basties, ont preferé l’agréemt des yeux à la force des<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: ont preferé l’agréemt des yeux à la force des</note> murailles, lorsqu’au lieu de les faire tout-vnies, ils les ont diversifiées de beaucoup d’ornemens de pierres qui avancent au dessus des autres: <seg type="apparat-ellipsis"/></p><p xml:id="Ch47.p25">[p. 67] Je dis que si toute cette varieté est agreable à la veuë; elle est aussi tres-desavantageuse pour la défense. Car ces enfonceures et ces saillies de pierres donnent aux <pb type="VIII_2" n="411"/>batteries obliques du canon le mesme avantage et la mesme force qu’ont les batteries droites. De-sorte que le boulet, qui<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: Car ces enfonceures <seg type="apparat-ellipsis"/> le boulet, qui <hi rendition="#i">und unterstreicht</hi>: Car ces enfonceures <seg type="apparat-ellipsis"/> et la mesme</note> venant de biais ne feroit qu’effleurer le mur s’il l’avoit trouvé tout plat; <seg type="apparat-ellipsis"/></p><p xml:id="Ch47.p26">[p. 70] IL faut remarquer qu’il n’est pas vrai qu’il y ait toûjours autant de mouvement absolu aprés la percussion, qu’il y en a[p. 71]voit<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: qu’il n’est pas vrai <seg type="apparat-ellipsis"/> qu’il y en avoit</note> devant. Mais il est fort aisé à demonstrer que le mouvement respectif est toûjours le mesme<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: que le mouvement respectif est toûjours le mesme</note>; en-sorte que les corps s’éloignent mutuellement l’vn de l’autre aprés la percussion, aussi vîte qu’ils s’en approchoint devant.</p><p xml:id="Ch47.p27">[p. 71] Et mesme aprés que j’aurai expliqué les mouvemens qui se font dans le plein; je croy qu’il me seroit facile, de prouver qu’ayant égard generalement à tous les corps qui <pb type="VIII_2" n="412"/>sont dans tout l’vnivers, il y a presentement autant<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: il y a presentement autant</note> de mouvement respectif, ni plus ni moins, qu’il y en avoit au commencement de la creation du monde<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: de mouvement respectif, <seg type="apparat-ellipsis"/> creation du monde.</note>.</p><p xml:id="Ch47.p28">[p. 72] Il est encore à remarquer que le point du milieu<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: le point du milieu <hi rendition="#i">und notiert hierzu</hi>: Hugenii<index indexName="Namensregister"><term><hi rendition="#g">Huygens</hi>, Christiaan (1629-1695)</term></index> centrum gravitatis</note> d’entre les deux corps se meut toûjours vniformement sur vne ligne droite, tirant sans aucune interruption vers les mesmes endroits.</p><p xml:id="Ch47.p29">[p. 72] On s’estonnera sans doute que dans toutes les regles precedentes je n’aye point fait mention de l’égalité ou de l’inégalité des corps qui se frappent. [p. 73] Et il semble d’abord qu’afin que ce que je viens de dire soit veritable it faut que je suppose que le corps sont parfaitement égaux: <seg type="apparat-ellipsis"/> [<hi rendition="#i">Daneben gedruckte Marginalie:</hi> p. 72] XXXI. <hi rendition="#i">Tout ces regles sont veritables, soit que les corps soient</hi> [p. 73] <hi rendition="#i">égeaux; soit qu’ils ne le soient pas.</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: <hi rendition="#i">égaux; soit qu’ils ne le soient pas.</hi></note></p><p xml:id="Ch47.p30">[p. 74] Et si l’on y prend garde la force de la raison que j’ai apportée au §. 16. est toûjours la mesme<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand und zwischen den Zeilen</hi>: Error.</note> quoique les corps soient de differentes grandeurs. Car le corps frappé estant tout-à-fait indifferent à demeurer en repos ou à prendre le mouvement, et tout l’effect de la percussion venant de l’impenetrabilité des corps:
+<note type="Afootnote" place="margin" resp="#L"> <hi rendition="#i">Am Rand auf überstehender Papierlasche</hi>: Sans le mouuement dans un liquide il n’y auroit point de difference entre la <note type="Afootnote-sub" n="[a]">la <hi rendition="#i">(1)</hi> force <hi rendition="#i">(2)</hi> vitesse <hi rendition="#i">L</hi></note> vitesse absolue et respective, et par consequent ces regles precedentes ne reussiront pas.</note>
+
+
+si nous supposons que le corps frappé soit plus grand, pourveu que toutes ses parties soient bien vnies ensemble, il faudra qu’il se meuve de la mesme vîtesse que se meut le corps qui frappe, <seg type="apparat-ellipsis"/></p><p xml:id="Ch47.p31">[p. 76] Si cette substance est parfaitement fluide, c’est-à-dire si toutes ses parties, aussi bien les petites que les grandes, sont flexibles et liquides: <seg type="apparat-ellipsis"/> [<hi rendition="#i">Daneben gedruckte <pb type="VIII_2" n="413"/>Marginalie</hi>:] XXXII. <hi rendition="#i">Vn corps se meut dans le plein, aussi librement que dans le vuide.</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand die gesamte gedruckte Marginalie.</hi></note></p><p xml:id="Ch47.p32">[p. 77] <seg type="apparat-ellipsis"/> mais ces parties de la liqueur estant poussées, en poussent d’autres; et ainsi jusqu’à l’extremité<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: jusqu’à l’extremité, <hi rendition="#i">und notiert am Rand</hi>: Hoc nihil est. Exiguum circulum faciunt tantum.</note>, d’où il se fait vne reflexion par laquelle les parties qui se trouvent aprés le corps dur, sont poussées avec la mesme force pour suivre ce mesme corps.</p><p xml:id="Ch47.p33">[p. 78] <seg type="apparat-ellipsis"/> il n’est pas possible que les parties qui devancent le corps se meuvent sans que les parties qui suivent le mesme corps ne se meuvent aussi avec la mesme force. Ainsi autant que le corps dur est retardé<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: est retardé <hi rendition="#i">und notiert am Rand</hi>: Pourquoy dans l’hypothese de l’auteur ils ne doivent point retarder, puisque la grandeur ny fait rien.</note> par les parties qui le precedent, autant est-il repoussé par celles qui le suivent, et par consequent si le mouvement a vne fois commencé, il doit continuer comme si c’estoit dans le vuide.</p><p xml:id="Ch47.p34">[p. 79] <seg type="apparat-ellipsis"/> la communication de l’impression ne se peut faire parfaitement, et ainsi les parties posterieures de la liqueur ne seront pas tant poussées que les anterieures, et par consequent ne pousseront pas tant le corps dur, que celles de devant le retardent<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: le retardent.</note>. Et c’est pour cette raison que tous nos mouvements cessent <seg type="apparat-ellipsis"/></p><p xml:id="Ch47.p35">[p. 82 f.] [<hi rendition="#i">gedruckte Marginalie</hi>:] XXXV. <hi rendition="#i">Lorsque les corps sont inégaux, les percussions se font dans le plein autrement que dans le vuide</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand die gedruckte Marginalie und notiert darunter</hi>: Je doute fort que le plein en repos differe du vuide.</note>. [<hi rendition="#i">Haupttext</hi>:] Mais si le corps frappant est plus grand, il faut necessairement qu’il ne reçoive pas tant d’effet de la percussion que l’autre, parcequ’il est emporté avec plus de violence par la liqueur qui l’environne; car nous voions qu’vne poutre emportée par le [p. 83] courant d’vne riviere a bien plus d’effet quand elle vient à heurter contre vn pont ou contre vn moulin, que n’auroit pas vn bâton emporté aussi par la mesme riviere; quoique d’ailleurs la poutre</p><p xml:id="Ch47.p36" rendition="#noindent">n’allast pas plus vîte que le bâton: et cela parce que la poutre venant à heurter est encore poussée par la grande quantité d’eau qui l’environne, au-lieu que le bâton l’est fort peu à cause du peu de place qu’il occupe et du peu d’eau dont il est emporté. Ainsi donc si le petit corps est en repos et que le grand vienne à le<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: Si la poutre n’avoit qu’une petite base de la grandeur d’un baston, qui la soûtiendroit dans l’eau le même arriveroit. Ce n’est donc pas la grandeur de l’eau qui le pousse mais sa propre.</note> frapper; <seg type="apparat-ellipsis"/></p><p xml:id="Ch47.p37">[p. 84] Au-contraire si le grand est en repos, le plus petit aprés avoir frappé l’autre et luy avoir communiqué vne partie de son mouvement, se refléchira en perdant vne partie de sa vîtesse. Et de tout ceci il paroist qu’Aristote n’est pas si blasmable<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: qu’Aristote n’est pas si blasmable</note> que quelques-<pb type="VIII_2" n="414"/>vns pretendent, lorsque pour expliquer les causes de la continuation des mouvemens que nous voions, il a emploié le <hi rendition="#i">medium</hi>, c’est-à-dire la substance liquide dans laquelle nos corps se meuvent.</p><p xml:id="Ch47.p38">[p. 85] <seg type="apparat-ellipsis"/> de la facilité qu’ils ont de se condenser ou de se rarefier, et de beaucoup d’autres choses qui ne peuvent nous estre connuës non plus qu’vne infinité d’autres empeschemens dont les combinaisons peuvent diversifier infiniment tous les effets des percussions. Seulement je puis dire qu’en faisant vne certaine hypothese, qui paroist assez naturelle, on peut faire voir par les regles precedentes, que les percussions des corps inégaux se feront de la maniere que veut Monsieur Hugens<index indexName="Namensregister"><term><hi rendition="#g">Huygens</hi>, Christiaan (1629-1695)</term></index> dans le dernier <hi rendition="#i"><app type="Cfootnote"><lem type="main">Journal des Sçavans.</lem><note type="lemma-abbrev">Journal des Sçavans</note><note type="editorial"><bibl corresp="#bib_01118"><hi rendition="#k">C. Huygens</hi>, „Extrait d’une lettre à l’auteur du Journal”, <hi rendition="#i">JS</hi>, 18. März 1669, S. 22-24 (<bibl corresp="#bib_00113"><hi rendition="#i">HO</hi> VI, S. 383-386).</bibl></bibl></note></app></hi> Mais je ne veux pas m’ar<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: puis dire qu’en <seg type="apparat-ellipsis"/> je ne veux pas</note>[p. 86]rester là davantage, peut-estre trouverai-je en quelque autre<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: pourquoy non icy.</note> rencontre occasion d’en parler plus amplement.</p><p xml:id="Ch47.p39">[p. 87] Je ne veux pas marquer les mesures de ces refractions, parce que cela a esté fait par d’autres, et que leurs demonstrations se peuvent fort bien accommoder avec les choses que j’ai ici avancées. Je ne parle pas non plus ici de la refraction de la lumiere<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: la lumiere</note>, parce que je croi qu’elle se fait tout autrement, c’est-à-dire par des causes et des moiens <pb type="VIII_2" n="415"/>tout differens<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: c’est-à-dire par des causes et des moiens tout differens</note>, comme je pourrois faire voir si je faisois quelques [p. 88] autres discours du mouvement.</p><p xml:id="Ch47.p40">[p. 88] Il faudroit encore parler du mouvement des liqueurs, tant de leur chute que de leur faillie, comme aussi de leurs ondulations et de choses semblables: mais tout cela merite autant de discours particuliers. Et comme je croy avoir trouvé quelque chose de nouveau sur ces matieres, je ne feray point<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: comme je croy <seg type="apparat-ellipsis"/> je ne feray point</note> difficulté, de donner au public mes pensées à examiner, si je voi que ce premier dis[p. 89]cours n’ait pas esté jugé tout-à-fait indigne d’estre leû par les personnes qui se plaisent à de semblables matieres.</p><p xml:id="Ch47.p41">[p. 98] <hi rendition="#i">Ie vous dis dernierement lorsque nous estions ensemble, non pas à la verité que la lumiere se mouvoit en vn instant, comme vous m’écrivez; mais (ce que vous croyez estre la mesme chose) que du corps lumineux elle parvenoit en vn instant jusqu’à nos yeux: et mesme j’ajoûtai que je pensois sçavoir cela si certainement,</hi> <hi rendition="#i">que si on me pouvoit convaincre de fausseté là-dessus, j’estois tout prest d’avouer que je ne sçavois rien du tout en Philosophie. Et vous au contraire, vous assuriez que la</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: <hi rendition="#i">si on me pouvoit</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">vous assuriez que la</hi></note> <hi rendition="#i">lumiere ne se mouvoit pas en vn instant; et vous disiez avoir trouvé vn moyen d’en faire l’experience, par lequel il seroit aisé devoir</hi> [p. 99] <hi rendition="#i">qui de nous deux se trompoit en cela.</hi></p><p xml:id="Ch47.p42">[p. 99] <hi rendition="#i">Si quelqu’vn portant de nuit vn flambeau à la main, et le faisant mouvoir, jette la veuë sur vn miroir éloigné de luy d’vn quart de lieuë, il pourra tres-aisément remarquer, s’il sentira le mouvement qui se fait en sa main, auparavant que de le voir par le moyen du miroir.</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: Si quelqu’vn <seg type="apparat-ellipsis"/> le moyen du miroir.</note> <hi rendition="#i">Et vous vous assuriez tellement sur cette experience, que vous estiez prest de croire que toute vostre Philosophie estoit fausse,</hi> <seg type="apparat-ellipsis"/></p><p xml:id="Ch47.p43">[p. 118] Ainsi la lumiere qui est maintenant parvenuë à nous, estant sortie de C, où estoit la Lune demi-heure auparavant, nous doit faire voir la Lune en E<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz ersetzt</hi> E <hi rendition="#i">durch</hi> C.</note>, en quelque part du monde qu’elle se puisse maintenant trouver, quand elle seroit demeurée immobile, ou qu’elle auroit esté transportée: <seg type="apparat-ellipsis"/></p><p xml:id="Ch47.p44">[p. 146] M. Descartes se sert tres-mal du principe qui a esté expliqué
+<app type="Cfootnote"><lem type="main">au §. 13.</lem><note type="editorial"><hi rendition="#k">I. G. Pardies</hi>,<bibl corresp="#bib_00204"> <hi rendition="#i">Discours du mouvement local</hi>, Paris, 1670, S. 33.</bibl></note></app>
+<hi rendition="#i">Que tout corps qui se meut autour d’vn centre, fait effort pour s’en éloigner.</hi> On peut faire voir qu’il s’est trompé en<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz markiert am Rand</hi>: <hi rendition="#i">Que tout corps</hi> <seg type="apparat-ellipsis"/> s’est trompé en</note> [p. 147] voulant expliquer par là la pesanteur des corps. Aussi ne pretend-on pas donner à ce principe toute l’étenduë que luy donne M. Descartes.</p><p xml:id="Ch47.p45">[p. 147] L’auteur de ce discours est pleinement persuadé, que quand bien il n’y auroit <pb type="VIII_2" n="416"/>point de saintes Ecritures, l’hypothe[p. 148]se qui met la terre immobile, est preferable à toute autre.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht und markiert am Rand</hi>: qui met la terre immobile, est preferable à toute autre.</note> On a seulement voulu faire voir que cét argument n’est pas convainquant: il y en a d’autres qui sont meilleurs, sur tout celuy qui a esté fait valoir en de fort belles occasions; pris du mouvement tonique<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: tonique</note> de l’aiman.</p></div></div></body>
+  </text>
+</TEI>

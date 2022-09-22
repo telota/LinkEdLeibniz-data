@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-045-000">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">De barometri variatione</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
+          Text</title>
+        <respStmt>
+          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
+          <resp>
+            <note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
+          </resp>
+        </respStmt>
+        <respStmt>
+          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
+            Wissenschaften</orgName>
+          <resp>
+            <note type="remarkResponsibility">Inhaltliche Konzeption</note>
+          </resp>
+        </respStmt>
+        <respStmt>
+          <persName>
+            <forename>Martina</forename>
+            <surname>Gödel</surname>
+          </persName>
+          <resp>
+            <note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
+          </resp>
+        </respStmt>
+        <respStmt>
+          <persName>
+            <forename>Sebastian W.</forename>
+            <surname>Stork</surname>
+          </persName>
+          <resp>
+            <note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
+          </resp>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+            </author>
+            <title type="chapter" level="a" n="45">De barometri variatione</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1672-07-25" resp="#ed" cert="medium">[25. Juli
+              – 12. Dezember 1672]</date>
+            <date calendar="#gregorian" notAfter="1672-12-12" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+              <idno type="page">#page=424</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="1" level="m">Band 1: 1668 – 1676</title>
+            <imprint>
+              <publisher>Akademie Verlag GmbH</publisher>
+              <pubPlace>Berlin</pubPlace>
+              <date type="publication">2009</date>
+            </imprint>
+            <biblScope unit="page" from="379" to="385"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-01-045-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 3 Bl. 105–106</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                <summary>
+                  <p>Konzept: LH XXXVII 3 Bl. 105–106. 1 Bogen 2<hi rendition="#sup">o</hi>. 4 S.
+                    zweispaltig. Linke Spalte beschrieben, Bl. 106 v<hi rendition="#sup">o</hi> auch
+                    3/4 der rechten Spalte beschrieben.</p>
+                  <p>Cc 2, Nr. 479</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+      </charDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#pneumatik"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-11-16" who="#stork" status="enrich_1"/>
+    </revisionDesc>
+  </teiHeader>
+  <!--<facsimile source="digilib.bbaw.de" xml:id="L_08-01-045-000_facs-haupttextzeuge">
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=315"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=316"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=317"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=318"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=319"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=320"/>
+    </facsimile>-->
+  <text xml:id="L_08-01-045-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch45" n="45">
+        <pb type="VIII_1" n="379"/>
+        <head>45. DE BAROMETRI VARIATIONE</head>
+        <head>[25. Juli – 12. Dezember 1672]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur">XXX</idno>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Konzept: LH XXXVII 3 Bl. 105–106. 1 Bogen 2<hi rendition="#sup">o</hi>. 4
+                        S. zweispaltig. Linke Spalte beschrieben, Bl. 106 v<hi rendition="#sup">o</hi> auch 3/4 der rechten Spalte beschrieben.</p>
+                      <p>Cc 2, Nr. 479</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch45.p4">
+            <hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Die Datierung erfolgt
+              aufgrund des Wasserzeichens, das sich u. a. auf dem Textträger der Exzerpte aus Otto
+              von Guerickes <ref corresp="#bib_00055"/><hi rendition="#i">Experimenta nova</hi>
+              findet. Auch inhaltlich knüpft Leibniz an seine Guericke-Lektüre an. Das betrifft
+              insbesondere seine Überlegungen zum Einfluss des Windes auf den Luftdruck. Wir gehen
+              daher von einem Entstehungszeitraum des Stückes aus, der sich mit dem der
+              Guericke-Exzerpte deckt.</hi>
+          </p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch45.p5"><pb type="L"/><fw type="folNum">[105 r<hi rendition="#sup">o</hi>]</fw>
+            <app type="Bfootnote"><lem type="main"> Ex quo primum Vacui quod vocant Experimentum a
+                  Torricellio<app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">Torricellio</note><note type="editorial"><hi rendition="#k">E. Torricelli,</hi>
+                    <bibl corresp="#bib_00107"><hi rendition="#i">Brief an Ricci vom 11. Juni
+                        1644</hi></bibl>. <bibl corresp="#bib_00032"> Florenz 1663, S. 20f. (<hi rendition="#i">TO</hi> III, S. 186–188).</bibl></note></app> detectum per
+                orbem increbuit observatum est duobus potissimis modis Hydrargyri altitudinem
+                variare</lem><rdg wit="#L" n="1" cause="addition"> Constat inter omnes, inde a
+                detecto per Torricellium<index indexName="Namensregister"><term><hi rendition="#g">Torricelli</hi> (Torricellius), Evangelista 1608–1647</term></index> primo
+                  Vacui<index indexName="Sachverzeichnis"><term>vacuum</term><index><term>Torricellianum</term></index></index> quod
+                vocant, experimento, ex quo observatum est, non <note type="editorial">|</note> <add>pro</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> altitudine locorum
+                tantum, sed et <note type="editorial">|</note> <add>pro aeris</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> tempestate
+                  Hydrargyri<index indexName="Sachverzeichnis"><term>hydrargyrus</term></index>
+                elevationem variare, quaesitam esse </rdg><rdg wit="#L" n="2"> Primus Torrice<index indexName="Namensregister"><term><hi rendition="#g">Torricelli</hi>
+                    (Torricellius), Evangelista 1608–1647</term></index>
+              </rdg><rdg wit="#L" n="3"> Primus Galilaeus<index indexName="Namensregister"><term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo
+                  1564–1642</term></index> rem a Mechanicis tantum observatam, at in philosophorum
+                scholis tunc ignotam in literas retulit, liquores scilicet </rdg><rdg wit="#L" n="4" cause="deletion"> Ex <seg type="apparat-ellipsis"/> increbuit <note type="editorial">|</note> <del>a Pascalio, Canuto, aliisque</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> observatum <seg type="apparat-ellipsis"/> variare <hi rendition="#i">L</hi></rdg></app>, tum ob
+            variam locorum altitudinem aut depressionem, (manifestum enim erat <app type="Bfootnote"><lem type="main">minorem esse aeris columnam</lem><note type="lemma-abbrev">erat</note><rdg wit="#L" n="1" cause="addition"> minus aeris <note type="editorial">|</note> <add>pondus</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> sustineri </rdg><rdg wit="#L" n="2"> minorem esse aeris columnam <hi rendition="#i">L</hi></rdg></app>,
+            quae ex montis vertice, quam quae ex vallis profunditate assurgens, a Mercurio<index indexName="Sachverzeichnis"><term>mercurius</term></index> sustineretur) tum vero <app type="Bfootnote" from="#diff105r1" to="#diff105r3"><lem type="main">ob<anchor xml:id="diff105r1"/></lem><rdg wit="#L" n="1"> differentem ipsius </rdg><rdg wit="#L" n="2"> aeris <seg type="apparat-ellipsis"/> differentem <hi rendition="#i">L</hi></rdg></app> aeris <pb type="VIII_1" n="380"/>ponderositatem, prout ille
+            oneraretur vaporibus, aut sustineretur ventis, aut alias temporum mutationes subiret,
+              differentem.<app type="Bfootnote" from="#diff105r1" to="#diff105r2"><lem type="main"><anchor xml:id="diff105r3"/></lem><note type="lemma-abbrev">differentem.</note><rdg wit="#L" n="1"> Sed frustra quanquam in eam rem summo
+                studio sit inquisitum, regula tamen in publico comparuit hactenus nulla. Et quanquam
+                variis artibus qua ad conjiciendas </rdg><rdg wit="#L" n="2" cause="addition"> Inde
+                  <seg type="apparat-ellipsis"/> Barometro, <note type="editorial">|</note> <add>(sic <seg type="apparat-ellipsis"/> coepit;)</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> in <seg type="apparat-ellipsis"/> posset, <note type="editorial">|</note> <add>futurus</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> Aeris status. <hi rendition="#i">L</hi></rdg></app></p>
+          <p xml:id="Ch45.p6">Inde in magnam omnes spem erecti sunt inveniendae regulae, per quam ex
+            Barometro, (sic enim ab eo tempore appellari Tubus ille Torricellianus coepit;) in
+            aliquot saltem dies praedici posset, futurus Aeris status. <app type="Bfootnote"><lem type="main"><anchor xml:id="diff105r2"/>Sed quanquam Barometrum illud Torricelliano
+                experimento nixum, ad eam nunc perfectionem et ut sic dicam, sensibilitatem adductum
+                sit, ut si ex summo domus in imum descendas, appareat ascensus Mercurii, quanquam
+                etiam a multis annis exacta instituta sint experimenta diariaque etiam condita,
+                quibus quotidianus aeris et Tubi Torricelliani status conferrentur, nihil tamen
+                hactenus in publico apparuit,</lem><note type="lemma-abbrev">status.</note><rdg wit="#L" n="1"> Sed hactenus nihil tale in publico apparuit, et <app><rdg wit="#L" n="a">quae </rdg><rdg wit="#L" n="b">quanquam </rdg></app></rdg><rdg wit="#L" n="2"> Sed quanquam <app><rdg wit="#L" n="a">refertae sint artes </rdg><rdg wit="#L" n="b" cause="addition">Barometrum <seg type="apparat-ellipsis"/> perfectionem
+                      <note type="editorial">|</note> <add>et ut sic dicam, sensibilitatem</add>
+                    <note type="editorial"><hi rendition="#i">erg.</hi> |</note> adductum <seg type="apparat-ellipsis"/> descendas, <app><rdg wit="#L" n="aa">sentiri possit
+                        </rdg><rdg wit="#L" n="bb">appareat <seg type="apparat-ellipsis"/> apparuit,
+                          <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app> quod
+            satisfaceret tantae inquisitioni.</p>
+          <p xml:id="Ch45.p7">Quae res mihi <app type="Bfootnote"><lem type="main">suspicionem
+                fecit</lem><note type="lemma-abbrev">mihi</note><rdg wit="#L" n="1"> persuadere
+                coepit </rdg><rdg wit="#L" n="2"> suspicionem fecit <hi rendition="#i">L</hi></rdg></app>, Barometrum<index indexName="Sachverzeichnis"><term>barometrum</term></index> quale hactenus adhibuimus non sufficere indicio
+            tempestatum, <app type="Bfootnote"><lem type="main">quid enim quod modo inesset, ex eo
+                non eruerent viri</lem><note type="lemma-abbrev">tempestatum,</note><rdg wit="#L" n="1"> quid enim ex eo non eruissent vi </rdg><rdg wit="#L" n="2"> nam si quid tale
+                </rdg><rdg wit="#L" n="3" cause="addition"> quid enim <note type="editorial">|</note> <add>quod modo inesset,</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> ex eo non eruerent viri
+                  <hi rendition="#i">L</hi></rdg></app> tanti, qui in ejus mutationibus ad regulam
+            revocandis laboravere.</p>
+          <p xml:id="Ch45.p8">Haec vero suspicio mea, argumento postea ex ipsa rei natura ducto
+            valde confirmata est; quod hoc loco exponere, <pb type="L"/><fw type="folNum">[105 v<hi rendition="#sup">o</hi>]</fw> et ad aliquam mali emendationem viam mihi aperire
+            operae fortasse pretium fuerit.</p>
+          <p xml:id="Ch45.p9">Constat in omni liquore, duplicem considerari posse Gravitatem<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>individualis</term></index></index>,
+            individualem, ut sic dicam et specificam; cum enim gravitas<index indexName="Sachverzeichnis"><term>gravitas</term></index> sit quantitas <app type="Bfootnote"><lem type="main">conatus innati corporum,</lem><note type="lemma-abbrev">quantitas</note><rdg wit="#L" n="1"> absoluta, a machinis
+                  conatus<index indexName="Sachverzeichnis"><term>conatus</term></index>
+              </rdg><rdg wit="#L" n="2"> conatus innati corporum, <hi rendition="#i">L</hi></rdg></app> ad centrum terrae, et vero omnis quantitas aestimetur
+            comparatione, et corporum comparari possint vel individua vel species, ideo duplex
+            gravitas <pb type="VIII_1" n="381"/>individualis<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>individualis</term></index></index> et
+              specifica<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>specifica</term></index></index> considerata
+            est, <app type="Bfootnote"><lem type="main">individualis aestimatur simpliciter dati
+                corporis pondere</lem><note type="lemma-abbrev">est,</note><rdg wit="#L" n="1"> illa
+                scilicet simpliciter pondus </rdg><rdg wit="#L" n="2" cause="addition"> individualis
+                aestimatur simpliciter <note type="editorial">|</note> <add>dati</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> corporis pondere <hi rendition="#i">L</hi></rdg></app> absolute considerato; at specifica pondere
+            corporis in data mole seu spatio; quo scilicet diversae species discerni possunt. Nam si
+            quis dicat simpliciter corpus aliquod sibi fuisse ponderis tot librarum, nemo speciem
+            ejus definient, at si pyxidem sibi fuisse dicat plenam, non ponderis tantum sed et
+            magnitudinis datae, potest <app type="Bfootnote"><lem type="main">aliquando ad
+                speciem</lem><note type="lemma-abbrev">potest</note><rdg wit="#L" n="1"> non raro
+                species </rdg><rdg wit="#L" n="2"> aliquando ad speciem <hi rendition="#i">L</hi></rdg></app> corporis ratiocinando perveniri.</p>
+          <p xml:id="Ch45.p10">Hanc distinctionem ab omnibus cognitam, ad aerem non satis applicatam
+            miror, ne ab iis quidem qui in hoc negotio <app type="Bfootnote"><lem type="main">maxime
+                laboravere.</lem><note type="lemma-abbrev">negotio</note><rdg wit="#L" n="1"> enuntiando </rdg><rdg wit="#L" n="2"> maxime laboravere. <hi rendition="#i">L</hi></rdg></app>
+            <app type="Bfootnote"><lem type="main">Baroscopium</lem><note type="lemma-abbrev">laboravere.</note><rdg wit="#L" n="1"> Barometrum<index indexName="Sachverzeichnis"><term>barometrum</term></index>
+              </rdg><rdg wit="#L" n="2"> Baroscopium <hi rendition="#i">L</hi></rdg></app> enim
+            Torricellianum vere ac proprie non nisi individualem<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>individualis</term></index></index> aeris <app type="Bfootnote"><lem type="main">gravitatem<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>aeris</term></index></index>,
+                definire</lem><rdg wit="#L" cause="deletion">gravitatem, <note type="editorial">|</note> <del>id est quantum ponderaret totus aeris cylinder Mercurio<index indexName="Sachverzeichnis"><term>mercurius</term></index> obnitens,</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> definire <hi rendition="#i">L</hi></rdg></app> potuit, specificam non nisi per accidens,
+            quatenus aliquando complicatas habet cum individuali rationes. Unde factum arbitror, ut
+              Baroscopium<index indexName="Sachverzeichnis"><term>baroscopium</term><index><term>Torricellianum</term></index></index>
+            <app type="Bfootnote"><lem type="main">nonnunquam praeclare cum aere consenserit,
+                nonnunquam</lem><note type="lemma-abbrev">Baroscopium</note><rdg wit="#L" n="1"> aliquando praeclare cum aere consenserit, aliquando </rdg><rdg wit="#L" n="2"> nonnunquam <seg type="apparat-ellipsis"/> nonnunquam <hi rendition="#i">L</hi></rdg></app> plane fefellerit fidem, <app type="Bfootnote"><lem type="main">quoniam</lem><note type="lemma-abbrev">fidem,</note><rdg wit="#L" n="1"> quando
+                </rdg><rdg wit="#L" n="2"> quoniam <hi rendition="#i">L</hi></rdg></app> tempestates
+            proprie ac per se specificae non vero nisi per consequentias varie obliquatas
+            individuali aeris gravitati<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>aeris</term></index></index> connectuntur.</p>
+          <p xml:id="Ch45.p11">Utrumque ostendendum est (1) Baroscopium Torricellianum<index indexName="Sachverzeichnis"><term>baroscopium</term><index><term>Torricellianum</term></index></index>, et
+            quaecunque sunt ejus transformationes individualem proprie ac per se, specificam non
+            nisi per accidens contingenterque monstrare (2) Tempestates <app type="Bfootnote"><lem type="main">cum gravitate aeris specifica proprie ac per se, eam</lem><note type="lemma-abbrev">Tempestates</note><rdg wit="#L" n="1"> aeris cum </rdg><rdg wit="#L" n="2"> cum <seg type="apparat-ellipsis"/> eam <hi rendition="#i">L</hi></rdg></app> individuali non nisi per accidens contingenterque connecti.</p>
+          <p xml:id="Ch45.p12">I<hi rendition="#sup">mum</hi> ergo Baroscopium Torricellianum<index indexName="Sachverzeichnis"><term>baroscopium</term><index><term>Torricellianum</term></index></index> non nisi
+              individualem<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>individualis</term></index></index> aeris
+              gravitatem<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>aeris</term></index></index>
+            <app type="Bfootnote"><lem type="main">proprie</lem><rdg wit="#L">
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> ostendere,
+            demonstratu facile est. <app type="Bfootnote"><lem type="main">Ostendit enim totius
+                Cylindri</lem><note type="lemma-abbrev">est.</note><rdg wit="#L" n="1"> Monstrat
+                enim cylin </rdg><rdg wit="#L" n="2"> Ostendit enim totius Cylindri <hi rendition="#i">L</hi></rdg></app> aerei Mercurium<index indexName="Sachverzeichnis"><term>mercurius</term></index> sustinentis pondus; at vero
+            hinc specifica<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>specifica</term></index></index> aeris
+              gravitas<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>aeris</term></index></index> non definitur,
+            quia ea ponderatio non determinat pondus data mole seu spatio <app type="Bfootnote"><lem type="main">a materia imple<pb type="VIII_1" n="382"/>to;</lem><note type="lemma-abbrev">spatio</note><rdg wit="#L" n="1"> quod implet </rdg><rdg wit="#L" n="2"> a materia impleto; <hi rendition="#i">L</hi></rdg></app> sed pondus
+            simpliciter massae<index indexName="Sachverzeichnis"><term>massa</term></index> cujusdam
+              <app type="Bfootnote"><lem type="main"><hi rendition="#g">incertae
+                altitudinis</hi></lem><rdg wit="#L" cause="addition"><add><hi rendition="#g">incertae altitudinis</hi>
+                </add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> dato cuidam
+            loco imminentis. Nam si ponatur aer duplo quam est rarior, seu specifice levior, et
+            tamen duplo quoque quam est, altior; <app type="Bfootnote"><lem type="main">idem
+                nihilominus manebit Cylindri Aerei pondus, idemque qui nunc, apparebit Tubi
+                Torricelliani status.</lem><note type="lemma-abbrev">idem</note><rdg wit="#L" n="1"> qui nunc apparebit cylindri Mercurialis status </rdg><rdg wit="#L" n="2"> nihilominus <seg type="apparat-ellipsis"/> status. <hi rendition="#i">L</hi></rdg></app>
+            <app type="Bfootnote"><lem type="main">Unde <pb type="L"/><fw type="folNum">[106 r<hi rendition="#sup">o</hi>]</fw> frustra fuere docti quidam Viri qui certas de
+                Aereae massae altitudine demonstrationes</lem><note type="lemma-abbrev">Unde</note><rdg wit="#L" n="1"> apparet doctorum quorundam Virorum demonstrationes
+                de Atmosphaerae<index indexName="Sachverzeichnis"><term>atmosphaera</term></index>
+                aereae altitudine ex Baroscopio<index indexName="Sachverzeichnis"><term>baroscopium</term><index><term>Torricellianum</term></index></index>
+              </rdg><rdg wit="#L" n="2"> frustra <seg type="apparat-ellipsis"/> de <app><rdg wit="#L" n="a">Aeris </rdg><rdg wit="#L" n="b">Aereae massae altitudine
+                    demonstrationes <hi rendition="#i">L</hi></rdg></app></rdg></app> condere conati
+            sunt, supposita scilicet aeris homogeneitate, qua tamen nihil incertius, imo nihil a
+            verisimilitudine alienius, cum aerem in celsiore loco dilatare sese in quantam per
+            minorem incumbentis pressionem, potest <app type="Bfootnote"><lem type="main">raritatem
+                et fortasse in altitudinem quandam indicibilem expandi, institutis in aere nostro
+                experimentis judicari possit.</lem><note type="lemma-abbrev">raritatem</note><rdg wit="#L" n="1"> non sit ex expe </rdg><rdg wit="#L" n="2"> et <seg type="apparat-ellipsis"/> possit. <hi rendition="#i">L</hi></rdg></app></p>
+          <p xml:id="Ch45.p13">Non est tamen negandum Gravitatem<index indexName="Sachverzeichnis"><term>gravitas</term></index>
+            <app type="Bfootnote"><lem type="main">individualem alicujus massae</lem><note type="lemma-abbrev">Gravitatem</note><rdg wit="#L" n="1"> totius massae<index indexName="Sachverzeichnis"><term>massa</term></index>
+              </rdg><rdg wit="#L" n="2"> individualem alicujus massae <hi rendition="#i">L</hi></rdg></app> Elaterium<index indexName="Sachverzeichnis"><term>elaterium</term></index> habentis, qualis est aerea, plurimum influere in
+            specificam, pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> enim
+            molis incumbentis superioris, auget inferioris compressionem seu densitatem, ac proinde
+            gravitatem specificam<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>specifica</term></index></index>. At vero
+            connexio ista utriusque gravitatis<index indexName="Sachverzeichnis"><term>gravitas</term></index>, neque ita perpetua, neque ita universalis, neque ita
+            secura est ut contenti esse cum ratione possimus instrumento uno ad mensurandam
+            utramque. Idque in aere speciatim multis indiciis<app type="Bfootnote"><lem type="main"/><rdg wit="#L" cause="deletion">indiciis <note type="editorial">|</note> <del>mihi</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> videtur <hi rendition="#i">L</hi></rdg></app> videtur comprobari. Quae <app type="Bfootnote"><lem type="main">mox commodius</lem><note type="lemma-abbrev">Quae</note><rdg wit="#L" n="1"> postea </rdg><rdg wit="#L" n="2"> mox commodius <hi rendition="#i">L</hi></rdg></app> exponam, ubi disquirendum erit, plusne ad aeris tempestatem
+            indicandam gravitas<index indexName="Sachverzeichnis"><term>gravitas</term></index><app type="Bfootnote"><lem type="main"/><rdg wit="#L" cause="deletion">gravitas <note type="editorial">|</note> <del>ejus</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> massae <hi rendition="#i">L</hi></rdg></app> massae<index indexName="Sachverzeichnis"><term>massa</term></index> an speciei conferat, ne idem bis dicere necesse sit.</p>
+          <p xml:id="Ch45.p14">II<hi rendition="#sup">da</hi> ergo pars est tractationis hujus,
+            quaerere <hi rendition="#g">an tempestates aeris magis cum</hi>
+            <hi rendition="#g">gravitate</hi><index indexName="Sachverzeichnis"><term>gravitas</term></index>
+            <hi rendition="#g">ejus specifica quam cum individuali, seu cum pondere totius</hi>
+            <hi rendition="#g">massae</hi><index indexName="Sachverzeichnis"><term>massa</term></index>
+            <hi rendition="#g">connectantur.</hi> Duo sunt quae potissimum per aeris
+              gravitatem<index indexName="Sachverzeichnis"><term>gravitas</term></index> praenosci
+            posse sperantur, pluviae (sub quibus grandines quoque, et pluvias hyemales seu nives
+            comprehendo), <pb type="VIII_1" n="383"/>et venti. Pluviae quia aerem onerant
+            exonerantve; venti, quia sustinent. <app type="Bfootnote"><lem type="main">Et a
+                vaporibus quidem pluvialibus manifestum est specificam aeris gravitatem</lem><note type="lemma-abbrev">sustinent.</note><rdg wit="#L" n="1"> Ac de pluviis quidem
+                manifestum est, specificam aeris gravitatem<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>aeris</term></index></index>
+              </rdg><rdg wit="#L" n="2"> Et <seg type="apparat-ellipsis"/> gravitatem <hi rendition="#i">L</hi></rdg></app> semper immutari. Nam aer vaporibus oneratus
+            differt a puro ut aqua sale<index indexName="Sachverzeichnis"><term>sal</term></index>
+            aliquo dissoluto impraegnata a dulci: quare ut aquam ita et aerem hac impraegnatione
+            incrassari, ac proinde in eadem mole seu expansione graviorem fieri necesse est. At vero
+            Cylindri aerei pondus non <app type="Bfootnote"><lem type="main">semper
+                augetur,</lem><note type="lemma-abbrev">non</note><rdg wit="#L" n="1"> habet
+                necessariam cum aer </rdg><rdg wit="#L" n="2"> semper augetur, <hi rendition="#i">L</hi></rdg></app> ob aerem vaporibus magis oneratum: potest enim fieri <app type="Bfootnote"><lem type="main">et saepe, credo, fit,</lem><note type="lemma-abbrev">et</note><rdg wit="#L" cause="addition">
+                <add>saepe, credo, fit,</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> ut aere in
+            imo cylindri id est prope nos onerato et ad pluviam disposito, aer in summo sit tanto
+            liberior, et exoneratior, <app type="Bfootnote"><lem type="main">et rarior, et motibus
+                quibusdam sustentatus</lem><rdg wit="#L" cause="addition"><add>et rarior, et motibus
+                  quibusdam sustentatus</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>, ac proinde
+            cylindri totius pondus non ideo <app type="Bfootnote"><lem type="main">nec
+                congruenter</lem><rdg wit="#L" cause="addition"><add>nec congruenter</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> sit auctum.
+            At vero non a summi sed nostri aeris statu capiendae sunt de futuro aeris nostri statu,
+            conjecturae. Adde quod massa<index indexName="Sachverzeichnis"><term>massa</term></index> aeris dato loco incumbentis, sit sector <pb type="L"/><fw type="folNum">[106 v<hi rendition="#sup">o</hi>]</fw> sphaerae potius quam cylinder.
+            Unde illa amplissima in summo spatia multarum mutationum capacia sunt, quibus nihil <app type="Bfootnote"><lem type="main">aut parum</lem><rdg wit="#L" cause="addition"><add>aut parum</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> aeris
+            nostri status, attamen cylindri aerei pondus, Mercuriique<index indexName="Sachverzeichnis"><term>mercurius</term></index> in Torricelliano Tubo<index indexName="Sachverzeichnis"><term>Tubus</term><index><term>Torricellianus</term></index></index>
+            <app type="Bfootnote"><lem type="main">suspensi</lem><note type="lemma-abbrev">Tubo</note><rdg wit="#L" n="1"> ascensi, </rdg><rdg wit="#L" n="2"> suspensi <hi rendition="#i">L</hi></rdg></app> altitudo plurimum immutetur.</p>
+          <p xml:id="Ch45.p15"><hi rendition="#g">Venti,</hi> seu aeris motus magni, aeque
+            gravitatem specificam<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>specifica</term></index></index>, ac
+              individualem<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>individualis</term></index></index> mutant. Nam
+            cum ventus aerem loco incumbentem fert, minor est gravitas cylindri; sed et ideo quoque
+            minor est aeris densitas, cum enim minus <app type="Bfootnote"><lem type="main">prematur, aperit</lem><note type="lemma-abbrev">prematur,</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>aer</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> aperit <hi rendition="#i">L</hi></rdg></app> expanditque sese quantum potest, ac proinde fit
+            rarior, ergo et speciei levioris. Hanc apparet omnem mutationem in cylindro, seu
+            gravitate <app type="Bfootnote"><lem type="main">individuali<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>individualis</term></index></index>, derivari
+                quoque in</lem><note type="lemma-abbrev">individuali</note><rdg wit="#L" n="1"> conferre quoque ad </rdg><rdg wit="#L" n="2"> derivari quoque in <hi rendition="#i">L</hi></rdg></app> raritatis densitatisque differentias seu <app type="Bfootnote"><lem type="main">Gravitatem individualem</lem><note type="lemma-abbrev">seu</note><rdg wit="#L" n="1"> differentiam </rdg><rdg wit="#L" n="2"> Gravitatem individualem <hi rendition="#i">L</hi></rdg></app>; non contra: ac
+            proinde quicquid individualis habet utile, id in specifica largius inesse.</p>
+          <p xml:id="Ch45.p16">Sed et discrimen aliquod observandum est: nimirum variatio in
+            cylindro parum <app type="Bfootnote"><lem type="main">efficit</lem><note type="lemma-abbrev">parum</note><rdg wit="#L" n="1"> sentiri pot </rdg><rdg wit="#L" n="2"> efficit <hi rendition="#i">L</hi></rdg></app> ad specificae variationem nisi
+            fiat in loco nobis vicino. Pone enim <pb type="VIII_1" n="384"/>summum
+              Atmosphaerae<index indexName="Sachverzeichnis"><term>atmosphaera</term></index>
+            motibus quibusdam agitati, at imum vaporibus onerari, sane plus ad nos haec oneratio,
+            quam allevatio illa pertinebit: at motus massae nobis vicinae, <app type="Bfootnote"><lem type="main">seu venti</lem><rdg wit="#L" cause="addition"><add>seu venti</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> sine dubio
+            non pondus tantum, sed et densitatem mutant.</p>
+          <p xml:id="Ch45.p17">At hoc loco removenda est difficultas quadam quae nasci posset,
+            scilicet Gravitatem specificam<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>specifica</term></index></index>
+            <app type="Bfootnote"><lem type="main">calore</lem><note type="lemma-abbrev">specificam</note><rdg wit="#L" n="1"> densitate </rdg><rdg wit="#L" n="2"> calore
+                  <hi rendition="#i">L</hi></rdg></app> quoque et frigore<index indexName="Sachverzeichnis"><term>frigus</term></index>, variari, non
+              individualem<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>individualis</term></index></index>:
+              calorem<index indexName="Sachverzeichnis"><term>calor</term></index> autem et
+              frigus<index indexName="Sachverzeichnis"><term>frigus</term></index> nihil ad pluviam
+            ventosque, et caeteras<app type="Bfootnote"><lem type="main"/><rdg wit="#L" cause="deletion">caeteras <note type="editorial">|</note> <del>temporis</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> mutatione, <hi rendition="#i">L</hi></rdg></app> mutatione, similes pertinere. Hic respondendum
+            est, primum non adeo esse exploratum, quod ajunt, frigus<index indexName="Sachverzeichnis"><term>frigus</term></index> in densitate, calorem<index indexName="Sachverzeichnis"><term>calor</term></index> in raritate aeris consistere;
+            nam calor<index indexName="Sachverzeichnis"><term>calor</term></index> frigusque<index indexName="Sachverzeichnis"><term>frigus</term></index> etiam vitra penetrant, etiam
+            in loco aere evacuato efficaciam exercent <app type="Bfootnote"><lem type="main">quod
+                certis experimentis constat</lem><rdg wit="#L" cause="addition"><add>quod certis
+                  experimentis constat</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>: deinde
+            fateor calore<index indexName="Sachverzeichnis"><term>calor</term></index> expandi
+            aerem, at frigore<index indexName="Sachverzeichnis"><term>frigus</term></index> aerem
+            densari, <app type="Bfootnote"><lem type="main">nondum</lem><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>usque</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> certum <hi rendition="#i">L</hi></rdg></app> certum est, nam et aquam non minus frigore<index indexName="Sachverzeichnis"><term>frigus</term></index> quam calore<index indexName="Sachverzeichnis"><term>calor</term></index> ebullire experientias habemus.
+              <app type="Bfootnote"><lem type="main">Sed</lem><note type="lemma-abbrev">habemus.</note><rdg wit="#L" n="1"> Deinde </rdg><rdg wit="#L" n="2" cause="addition"> Etsi <note type="editorial">|</note> <add>vero</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> negari non possit aerem
+                reddi per calorem<index indexName="Sachverzeichnis"><term>calor</term></index>
+                specifice leviorem </rdg><rdg wit="#L" n="3"> Sed <hi rendition="#i">L</hi></rdg></app> non est cur huc confugiamus, nam illud potius verisimile est ad
+            aeris judicia plurimum etiam caloris<index indexName="Sachverzeichnis"><term>calor</term></index> frigorisque<index indexName="Sachverzeichnis"><term>frigus</term></index> rationes pertinere: quare Gravitas specifica<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>specifica</term></index></index> in se una
+            collectas habet differentias caeteras pene omnes, Thermometri<index indexName="Sachverzeichnis"><term>thermometrum</term></index>, Hygrometri<index indexName="Sachverzeichnis"><term>hygrometrum</term></index> et Barometri<index indexName="Sachverzeichnis"><term>barometrum</term></index> communis, quatenus maxime
+            vim habent ad aeris mutationes. Et vero observandum est an non aliquid a caloris<index indexName="Sachverzeichnis"><term>calor</term></index> excessu et Barometra<index indexName="Sachverzeichnis"><term>barometrum</term></index> communia sentiant. Sed ut
+            disquisitionem istam sane difficilem finiam, <app type="Bfootnote"><lem type="main">relinquamus</lem><note type="lemma-abbrev">finiam,</note><rdg wit="#L" n="1"> ponamus Barometrum<index indexName="Sachverzeichnis"><term>barometrum</term></index> Torricelli<index indexName="Namensregister"><term><hi rendition="#g">Torricelli</hi> (Torricellius), Evangelista
+                    1608–1647</term></index>
+                <app><rdg wit="#L" n="a">plus ad </rdg><rdg wit="#L" n="b">magis esse
+                </rdg></app></rdg><rdg wit="#L" n="2"> relinquamus <hi rendition="#i">L</hi></rdg></app> in medio utra gravitas specifica<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>specifica</term></index></index> an
+              individualis<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>individualis</term></index></index> majoris sit
+            ad nostrum <app type="Bfootnote"><lem type="main">institutum momenti</lem><note type="lemma-abbrev">nostrum</note><rdg wit="#L" n="1"> instrumenti </rdg><rdg wit="#L" n="2"> institutum momenti <hi rendition="#i">L</hi></rdg></app> imo si
+            placet individuali, ac proinde Barometro<index indexName="Sachverzeichnis"><term>barometrum</term></index> communi palmam concedamus: attamen <app type="Bfootnote"><lem type="main">ut</lem><note type="lemma-abbrev">attamen</note><rdg wit="#L" n="1"> non nihil negligenda nobis, </rdg><rdg wit="#L" n="2"> ut <hi rendition="#i">L</hi></rdg></app> in posterum certius de tota re statuere
+            possimus, quod prohibet etiam de altera institui observationes, cum enim diversae sunt
+            causae utriusque diversae utriusque mensurandi rationes, quid prohibet effectus quoque
+            diversos, conclusionesque differentes expectare, plurimum ex collatione mutua lucis <app type="Bfootnote" from="#alla106v1" to="#alla106v2"><lem type="main"><anchor xml:id="alla106v1"/>allaturas.</lem><rdg wit="#L"><note type="editorial">|</note> Quod si appareret </rdg><rdg wit="#L" n="1"> nihil differe </rdg><rdg wit="#L" n="2"> Gravitatem specificam <app><rdg wit="#L" n="a">illa </rdg><rdg wit="#L" n="b">individuali perpetuo <app><rdg wit="#L" n="aa">ςυμπαϑίζειν
+                        </rdg><rdg wit="#L" n="bb" cause="deletion"><del>conspirare, jam
+                          concludendum erit fortasse, ipsum Mercurium<index indexName="Sachverzeichnis"><term>mercurius</term></index> etiam in Tubo
+                            Torricelliano<index indexName="Sachverzeichnis"><term>Tubus</term><index><term>Torricellianus</term></index></index>
+                          non tam a pondere totius cylindri aerei quam a densitate seu gradu
+                            Elaterii<index indexName="Sachverzeichnis"><term>elater</term></index>
+                          compressioni ulteriori renitentis, pendere.</del>
+                        <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> Denique <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app></p>
+          <pb type="VIII_1" n="385"/>
+          <p xml:id="Ch45.p18">Denique<anchor xml:id="alla106v2"/> illud saltem manifestum est,
+            pondus cylindri minus esse posse, in loco scilicet altiore, eodem licet aeris in eo loco
+            densitate existente, ut si tempus sit pluviosum, quae alibi, in loco depressione, ubi
+            majus scilicet cylindri pondus, et Mercurii<index indexName="Sachverzeichnis"><term>mercurius</term></index> altitudo: at gravitatem<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>specifica</term></index></index> aeris<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>aeris</term></index></index> specificam, in
+            diversae altitudinis locis, eodem tempestatis statu eandem in summa fore. Quare in tali
+            casu plus gravitati specificae<index indexName="Sachverzeichnis"><term>gravitas</term><index><term>specifica</term></index></index> fidendum esse.
+            Quodsi alii sunt casus, ubi plus <app type="Bfootnote"><lem type="main">tribuendum sit
+                individuali</lem><note type="lemma-abbrev">plus</note><rdg wit="#L" n="1"> fidendum
+                erit </rdg><rdg wit="#L" n="2"> tribuendum sit individuali <hi rendition="#i">L</hi></rdg></app> hoc saltem ad summum <app type="Bfootnote"><lem type="main">inde
+                colligetur</lem><rdg wit="#L" cause="addition"><add>inde colligetur</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>; utriusque
+            collatione ad perficiendas Meteorologicas praedictiones opus esse.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-024-000">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title type="main">De distractione 1</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
+      
+      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <sourceDesc>
+        <biblStruct><analytic><author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+        </author><title type="chapter" level="a" n="24">De distractione 1</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date><date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=237</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="189" to="190"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title></series></biblStruct>
+        <listWit><witness n="L" corresp="#L_08-02-024-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 5 Bl. 210-211</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
+1 Bog. 2<hi rendition="#sup">o</hi>.
+1 S. auf Bl. 211 v<hi rendition="#sup">o</hi>.
+Bl. 211 r<hi rendition="#sup">o</hi> leer.
+Bl. 210 überliefert N. 23.</p><p>Cc 2, Nr. 968 C</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <!-- PsMs -->
+        <glyph xml:id="pPsMs">
+          <glyphName>pPsMs</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pPsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMs">
+          <glyphName>PsMs</glyphName>
+          <desc>Bedeutung (+−) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\PsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <!-- MsPs -->
+        <glyph xml:id="pMsPs">
+          <glyphName>pMsPs</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pMsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPs">
+          <glyphName>MsPs</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\MsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <!-- PsPsMs -->
+        <glyph xml:id="pPsPsMs">
+          <glyphName>pPsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsPsMs">
+          <glyphName>PsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <!-- PsMsPs -->
+        <glyph xml:id="pPsMsPs">
+          <glyphName>pPsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsMsPss</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMsPs">
+          <glyphName>PsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsMsPs</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsMs -->
+        <glyph xml:id="pMsPsMs">
+          <glyphName>pMsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsMs">
+          <glyphName>MsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <!-- MsMsPs -->
+        <glyph xml:id="pMsMsPs">
+          <glyphName>pMsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsMsPss</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsMsPs">
+          <glyphName>MsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsMsPs</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsPs -->
+        <glyph xml:id="pMsPsPs">
+          <glyphName>pMsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsPs">
+          <glyphName>MsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <!-- pmD -->
+        <glyph xml:id="ppmD">
+          <glyphName>ppmD</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <glyph xml:id="pmD">
+          <glyphName>pmD</glyphName>
+          <desc>Bedeutung (−(++))- nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <!-- pmE -->
+        <glyph xml:id="ppmE">
+          <glyphName>ppmE</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\ppmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <glyph xml:id="pmE">
+          <glyphName>pmE</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <!-- pmG -->
+        <glyph xml:id="ppmG">
+          <glyphName>ppmG</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <glyph xml:id="pmG">
+          <glyphName>pmG</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <!-- pmH -->
+        <glyph xml:id="ppmH">
+          <glyphName>ppmH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <glyph xml:id="pmH">
+          <glyphName>pmH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- leibvdashv -->
+        <glyph xml:id="pleibvdash">
+          <glyphName>pleibvdash</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pleibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <glyph xml:id="leibvdash">
+          <glyphName>leibvdash</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\leibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <!-- groesser -->
+        <glyph xml:id="ggroesser">
+          <glyphName>ggroesser</glyphName>
+          <desc>Bedeutung (größer als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ggroesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <glyph xml:id="groesser">
+          <glyphName>groesser</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\groesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <!-- kleiner -->
+        <glyph xml:id="kkleiner">
+          <glyphName>kkleiner</glyphName>
+          <desc>Bedeutung (kleiner als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kkleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <glyph xml:id="kleiner">
+          <glyphName>kleiner</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <!-- pmHH -->
+        <glyph xml:id="ppmHH">
+          <glyphName>ppmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <glyph xml:id="pmHH">
+          <glyphName>pmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <!-- pmDD -->
+        <glyph xml:id="ppmDD">
+          <glyphName>ppmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <glyph xml:id="pmDD">
+          <glyphName>pmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmDD</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <!-- pmGG -->
+        <glyph xml:id="ppmGG">
+          <glyphName>ppmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="pmGG">
+          <glyphName>pmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="dsig">
+          <glyphName>dsig</glyphName>
+          <desc/>
+          <mapping type="TeX">\dsig</mapping>
+          <graphic url="../../glyphs/dsig.svg"/>
+        </glyph>
+        <glyph xml:id="Pfund">
+          <glyphName>Pfund</glyphName>
+          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.7</value>
+          </charProp>
+          <mapping type="TeX">\Pfund</mapping>
+          <graphic url="../../glyphs/Pfund.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+        <glyph xml:id="fullmoon">
+          <glyphName>fullmoon</glyphName>
+          <desc>FULL MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F315</mapping>
+          <mapping type="unicode">🌕</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
+          <mapping type="TeX">\fullmoon</mapping>
+        </glyph>
+        <glyph xml:id="leftmoon">
+          <glyphName>leftmoon</glyphName>
+          <desc>LAST QUARTER MOON</desc>
+          <mapping type="PUA">U+263E</mapping>
+          <mapping type="unicode">☾</mapping>
+          <mapping type="TeX">\leftmoon</mapping>
+        </glyph>
+        <glyph xml:id="rightmoon">
+          <glyphName>rightmoon</glyphName>
+          <desc>FIRST QUARTER MOON</desc>
+          <desc type="PUA">U+263D</desc>
+          <mapping type="unicode">☽</mapping>
+          <mapping type="TeX">\rightmoon</mapping>
+        </glyph>
+        <glyph xml:id="newmoon">
+          <glyphName>newmoon</glyphName>
+          <desc>NEW MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F311</mapping>
+          <mapping type="unicode">🌑</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
+          <mapping type="TeX">\newmoon</mapping>
+        </glyph>
+        <glyph xml:id="astrosun">
+          <glyphName>astrosun</glyphName>
+          <desc>Sonne (astronomisch)</desc>
+          <mapping type="PUA">U+2609</mapping>
+          <mapping type="unicode">☉</mapping>
+          <mapping type="TeX">\astrosun</mapping>
+          <graphic url="../"/>
+        </glyph>
+        <glyph xml:id="venus">
+          <glyphName>venus</glyphName>
+          <desc>FEMALE SIGN (venus)</desc>
+          <mapping type="PUA">U+2640</mapping>
+          <mapping type="unicode">♀</mapping>
+          <mapping type="TeX">\venus</mapping>
+          <graphic url="../"/>
+        </glyph>
+      </charDecl>
+    </encodingDesc>
+    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/><catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
+    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-07" who="#stork" status="enrich_1"/></revisionDesc>
+  </teiHeader>
+  <!--<facsimile source="digilib.bbaw.de" xml:id="L_08-02-024-000_facs-haupttextzeuge">
+    		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=645"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=646"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=647"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=648"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=649"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=650"/>
+  </facsimile>--><text xml:id="L_08-02-024-000_text">
+    <body xml:id="Document"><div type="chapter" xml:id="Ch24" n="24"><pb type="VIII_2" n="189"/><head>24.
+DE DISTRACTIONE 1</head>
+<head>[September 1672 – März 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
+1 Bog. 2<hi rendition="#sup">o</hi>.
+1 S. auf Bl. 211 v<hi rendition="#sup">o</hi>.
+Bl. 211 r<hi rendition="#sup">o</hi> leer.
+Bl. 210 überliefert N. 23.</p><p>Cc 2, Nr. 968 C</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch24.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>:
+Das vorliegende Stück N. 24 ist vorerst mit der Frage nach der Zugfestigkeit unelastischer Körper befasst.
+Hiermit knüpft N. 24 an die Thematik an,
+die Leibniz, im Anschluss an Galileis<index indexName="Namensregister"><term><hi rendition="#g #smaller">Galilei</hi> <hi rendition="#smaller">(Galilaeus, Galileus), Galileo 1564-1642</hi></term></index>
+Ausführungen im zweiten Dialog der <hi rendition="#i">Discorsi e dimostrazioni matematiche</hi>,
+in den Stücken N. 19-23 behandelt,
+nämlich die Bruchfestigkeit von Balken
+(siehe für Einzelheiten die Datierungsgründe sowie den Forschungsapparat der letztgenannten Stücke).
+Ferner ist N. 24 auf demselben Träger wie N. 23 überliefert.
+Aus diesen Gründen wird die Datierung der Stücke N. 19-23 auch für N. 24 übernommen.</hi></p></div><div type="text"><figure rendition="#inline-margin-right" xml:id="Ch24.fig1_1">
+        <graphic url="../images/lh03705_211v-d1.svg" width="147.4308pt" xml:id="Ch24.g1"/>
+        
+        <head xml:id="Ch24.fig1_2">[<hi rendition="#i">Fig. 1</hi>]</head>
+      </figure><p xml:id="Ch24.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[211 v<hi rendition="#sup">o</hi>]</fw> <hi rendition="#g">De distractione.</hi>
+Sunto duae vis[,] altera applicata in <formula xml:id="Ch24.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> conans<index indexName="Sachverzeichnis"><term>vis conans</term></index> versus <formula xml:id="Ch24.p5.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>b</m:mi></m:math></formula>, altera applicata in <formula xml:id="Ch24.p5.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conans versus <formula xml:id="Ch24.p5.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>d</m:mi></m:math></formula>. Et vis <formula xml:id="Ch24.p5.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> alligata est tabulae<index indexName="Sachverzeichnis"><term>tabula</term></index> <formula xml:id="Ch24.p5.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula>, vis <formula xml:id="Ch24.p5.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> tabulae <formula xml:id="Ch24.p5.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula>.
+Tabulae autem <formula xml:id="Ch24.p5.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> et <formula xml:id="Ch24.p5.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> non aliter junctae sunt, quam <app type="Bfootnote"><lem type="main">filo,<index indexName="Sachverzeichnis"><term>filum</term></index> ita</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    16  -->filo,</note><rdg wit="#L" n="1"> quo </rdg><rdg wit="#L" n="2"> ita <hi rendition="#i">L</hi></rdg></app> ut inter distrahendum attrahatur filum, et attracto filo<index indexName="Sachverzeichnis"><term>filum</term></index> elevetur pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> <formula xml:id="Ch24.p5.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.<!--  \hack{\newline\hspace*{7.5mm}} 
+     \hackfor{\par}--></p><p xml:id="Ch24.p6">Ponamus primum vires <formula xml:id="Ch24.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">et</add></lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  18  --></note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> <formula xml:id="Ch24.p6.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> esse aequales.
+Tabula<index indexName="Sachverzeichnis"><term>tabula</term></index> <formula xml:id="Ch24.p6.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> habet conatum<index indexName="Sachverzeichnis"><term>conatus</term></index> <formula xml:id="Ch24.p6.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>.
+Sed hunc perducere non potest ad motum, nisi moveatur quoque in <formula xml:id="Ch24.p6.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> tabula <formula xml:id="Ch24.p6.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> vel elevetur pondus <formula xml:id="Ch24.p6.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.
+Quodsi pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> quoque <formula xml:id="Ch24.p6.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> conatui <formula xml:id="Ch24.p6.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> sit aequale, et renitentia quoque seu contrarius conatus <formula xml:id="Ch24.p6.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> aequalis sit cuilibet ipsorum: quid eventurum putamus?<!--  \hack{\end{window}} --></p><p xml:id="Ch24.p7">Manifestum est <formula xml:id="Ch24.p7.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> habere conatum <formula xml:id="Ch24.p7.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> et <app type="Bfootnote"><lem type="main"><formula xml:id="Ch24.p7.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conatum <formula xml:id="Ch24.p7.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mpadded other="+5pt"><m:mi>d</m:mi></m:mpadded></m:mrow><m:mspace/><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:math></formula> et <formula xml:id="Ch24.p7.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula></lem><note type="lemma-abbrev"><formula xml:id="Ch24.p7.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conatum <formula xml:id="Ch24.p7.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula></note><rdg wit="#L" cause="addition"><note type="editorial">|</note> <add><formula xml:id="Ch24.p7.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula> </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> et <formula xml:id="Ch24.p7.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> <hi rendition="#i">L</hi></rdg></app> conatum <formula xml:id="Ch24.p7.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mpadded other="+5pt"><m:mi>d</m:mi></m:mpadded></m:mrow><m:mspace/><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula> conditionaliter, si <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">pondus</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> <formula xml:id="Ch24.p7.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> sit fortius conatu <app type="Bfootnote"><lem type="main"><formula xml:id="Ch24.p7.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mpadded other="+5pt"><m:mi>b</m:mi></m:mpadded></m:mrow><m:mspace/><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:math></formula> et <formula xml:id="Ch24.p7.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conatum <formula xml:id="Ch24.p7.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula></lem><note type="lemma-abbrev"><formula xml:id="Ch24.p7.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mpadded other="+5pt"><m:mi>b</m:mi></m:mpadded></m:mrow><m:mspace/><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> et <formula xml:id="Ch24.p7.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> </rdg><rdg wit="#L" n="2"> conatum elevationis = conatui <formula xml:id="Ch24.p7.m17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="3"> et <formula xml:id="Ch24.p7.m18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conatum <formula xml:id="Ch24.p7.m19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app> conditionaliter si pondus <formula xml:id="Ch24.p7.m20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> sit fortius conatu <formula xml:id="Ch24.p7.m21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula>.
+Et pondus <formula xml:id="Ch24.p7.m22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> conatum elevationis<index indexName="Sachverzeichnis"><term>conatus elevationis</term></index> ut <formula xml:id="Ch24.p7.m23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>, si <formula xml:id="Ch24.p7.m24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> sit fortior <formula xml:id="Ch24.p7.m25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.
+Et idem pondus <formula xml:id="Ch24.p7.m26"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> conatum elevationis ut <formula xml:id="Ch24.p7.m27"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula>, si <formula xml:id="Ch24.p7.m28"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> sit <anchor xml:id="distractione1"/>fortior <formula xml:id="Ch24.p7.m29"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.
+<app type="Bfootnote" from="#distractione1" to="#distractione2"><lem type="main"><anchor xml:id="distractione2"/>Ergo</lem><note type="lemma-abbrev">fortior <formula xml:id="Ch24.p7.m30"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.</note><rdg wit="#L" n="1"> Porro etiam <formula xml:id="Ch24.p7.m31"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> habet conatum <formula xml:id="Ch24.p7.m32"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> si aut <formula xml:id="Ch24.p7.m33"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> aut <formula xml:id="Ch24.p7.m34"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> in <formula xml:id="Ch24.p7.m35"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> </rdg><rdg wit="#L" n="2"> Ergo <hi rendition="#i">L</hi></rdg></app> cum nec <formula xml:id="Ch24.p7.m36"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> nec <formula xml:id="Ch24.p7.m37"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> sit fortior <formula xml:id="Ch24.p7.m38"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>, nec <formula xml:id="Ch24.p7.m39"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> vicissim fortior illis nullus erit conatus elevationis<index indexName="Sachverzeichnis"><term>conatus elevationis</term></index> in <formula xml:id="Ch24.p7.m40"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> nec <formula xml:id="Ch24.p7.m41"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> in <formula xml:id="Ch24.p7.m42"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> nec <formula xml:id="Ch24.p7.m43"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> in <formula xml:id="Ch24.p7.m44"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula>.</p><p xml:id="Ch24.p8">Hinc jam sequitur etiam conatum <formula xml:id="Ch24.p8.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> in <formula xml:id="Ch24.p8.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> et <formula xml:id="Ch24.p8.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> in <formula xml:id="Ch24.p8.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> destrui.
+Nam <app type="Bfootnote"><lem type="main">neuter ad exitum</lem><note type="lemma-abbrev">neuter</note><rdg wit="#L" n="1"> procedit, in </rdg><rdg wit="#L" n="2"> ad exitum <hi rendition="#i">L</hi></rdg></app> perduci potest, nisi aut oppositum accipiat conatum ipsius aut elevetur pondus <formula xml:id="Ch24.p8.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.<index indexName="Sachverzeichnis"><term>pondus</term></index>
+Id est nisi aut pondus <formula xml:id="Ch24.p8.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> aut conatus <formula xml:id="Ch24.p8.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> vel <formula xml:id="Ch24.p8.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> sit fortior.
+Sed cum sint aequales nihil horum eligi potest, ergo nec conatus <formula xml:id="Ch24.p8.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> et <formula xml:id="Ch24.p8.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> exitum reperiunt, et proinde manet <anchor xml:id="distractione3"/>quies.</p><pb type="VIII_2" n="190"/><p xml:id="Ch24.p9"><app type="Bfootnote" from="#distractione3" to="#distractione4"><lem type="main">Hinc intelligi <anchor xml:id="distractione4"/></lem><note type="lemma-abbrev">quies.</note><rdg wit="#L" n="1" cause="addition"> Jam <note type="editorial">|</note> <add>conatus</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <formula xml:id="Ch24.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> et <formula xml:id="Ch24.p9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> inaequales sunto major <formula xml:id="Ch24.p9.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> minor <formula xml:id="Ch24.p9.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> seu <formula xml:id="Ch24.p9.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow><m:mo>+</m:mo><m:mi>F</m:mi></m:mrow></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="2"> Hinc <app><rdg wit="#L" n="a"> in genere </rdg><rdg wit="#L" n="b"> intelligi <hi rendition="#i">L</hi></rdg></app></rdg></app> <app type="Bfootnote"><lem type="main">potest distrahentibus</lem><rdg wit="#L" cause="deletion">potest <note type="editorial">|</note> <del>in</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> distrahentibus <hi rendition="#i">L</hi></rdg></app> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">aequalibus</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> non nisi dimidium virium applicatarum agere in vinculum connectens.
+Quod patet etiam, si Tibi <app type="Bfootnote"><lem type="main">imagineris, alterum</lem><note type="lemma-abbrev">imagineris,</note><rdg wit="#L" n="1"> quod </rdg><rdg wit="#L" n="2"> alterum <hi rendition="#i">L</hi></rdg></app> distrahendum non trahere sed reniti tantum, omnis enim renisus, retractio est.</p><p xml:id="Ch24.p10">Jam conatus <formula xml:id="Ch24.p10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> et <formula xml:id="Ch24.p10.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> inaequales sunto major <formula xml:id="Ch24.p10.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> minor <formula xml:id="Ch24.p10.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> seu <formula xml:id="Ch24.p10.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow><m:mo>+</m:mo><m:mi>F</m:mi></m:mrow></m:mrow></m:math></formula>.
+Pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> <formula xml:id="Ch24.p10.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> potest intelligi aequale aut alterutri aut neutri.
+Si alterutri, aequale est aut majori, aut minori.
+Si <app type="Bfootnote"><lem type="main">majori, non sequetur</lem><note type="lemma-abbrev">majori,</note><rdg wit="#L" n="1"> necessario </rdg><rdg wit="#L" n="2"> non sequetur <hi rendition="#i">L</hi></rdg></app> distractio,<index indexName="Sachverzeichnis"><term>distractio</term></index> sed abreptio trahentis oppositi una cum distrahendo.
+Sed differentia virium<index indexName="Sachverzeichnis"><term>differentia virium</term></index> inter <app type="Bfootnote"><lem type="main">distrahens majus</lem><note type="lemma-abbrev">distrahens</note><rdg wit="#L" n="1"> ab </rdg><rdg wit="#L" n="2"> majus <hi rendition="#i">L</hi></rdg></app> et minus.
+Si minori aequale est, itidem fiet abreptio non distractio, si minore minus est fiet distractio.<index indexName="Sachverzeichnis"><term>distractio</term></index>
+Si majus non fiet.</p><p xml:id="Ch24.p11">Quaestio elegans, quando motus centralis, praevaleat libero seu absoluto.
+Esto molendinum<index indexName="Sachverzeichnis"><term>molendinum</term></index> navi<index indexName="Sachverzeichnis"><term>navis</term></index> impositum, <app type="Bfootnote"><lem type="main">quod circumactione</lem><note type="lemma-abbrev">quod</note><rdg wit="#L" n="1"> circumacta </rdg><rdg wit="#L" n="2"> circumactione <hi rendition="#i">L</hi></rdg></app> sua remos<index indexName="Sachverzeichnis"><term>remus</term></index> agat.
+Ventus<index indexName="Sachverzeichnis"><term>ventus</term></index> incidens in molendinum, quaeritur circumacturusne potius sit, an propulsurus, cum non sit locus fixus, circa quem fiat motus.
+Et puto demonstrari posse, si valde onerata sit navis, facilius a vento circumactum iri quam propulsum.
+Nam si ventus propellat circumactione<index indexName="Sachverzeichnis"><term>circumactio</term></index> molendini motus potentiae est celer, ponderis tardus.
+At si propellat navem uterque motus est aeque celer, hinc fieri potest, ut quam navem<index indexName="Sachverzeichnis"><term>navis</term></index> ventus recta propellere non possit, seu quae ei renitatur, propulsurus sit circumagendo.
+Et ut minor sit impulsus rectus,<index indexName="Sachverzeichnis"><term>impulsus</term></index> potest molendinum<index indexName="Sachverzeichnis"><term>molendinum</term></index> ubi centro vicinius, esse interruptum, ita decedet vi rectae plurimum, curvae parum.
+Sed et opponi <app type="Bfootnote"><lem type="main">possunt aquae in plagam</lem><note type="lemma-abbrev">possunt</note><rdg wit="#L" n="1"> vento loco </rdg><rdg wit="#L" n="2"> aquae in plagam <hi rendition="#i">L</hi></rdg></app> quo ventus pellit coreacei quasi quidam sacci qui motu contra ventum<index indexName="Sachverzeichnis"><term>ventus</term></index> contrahuntur.
+En quasi ancoras in ipsa aqua fixas.</p></div></div></body>
+  </text>
+</TEI>

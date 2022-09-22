@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-031-003">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Dissertation géométrique du frottement</title>
+				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+				<respStmt>
+					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
+					<resp>
+						<note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
+					</resp>
+				</respStmt>
+				<respStmt>
+					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
+					<resp>
+						<note type="remarkResponsibility">Inhaltliche Konzeption</note>
+					</resp>
+				</respStmt>
+				<respStmt>
+					<persName>
+						<forename>Martina</forename>
+						<surname>Gödel</surname>
+					</persName>
+					<resp>
+						<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
+					</resp>
+				</respStmt>
+				<respStmt>
+					<persName>
+						<forename>Sebastian W.</forename>
+						<surname>Stork</surname>
+					</persName>
+					<resp>
+						<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
+					</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+				<date type="creation">2021</date>
+				<availability>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
+						<title type="chapter" level="a" n="31"/>
+						<title type="section" level="a" n="313">Dissertation géométrique du frottement</title>
+						<date calendar="#gregorian" notBefore="1675-04" resp="#ed" cert="medium">[April 1675]</date>
+						<date calendar="#gregorian" notAfter="1675-04" resp="#ed" cert="medium"/>
+						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=313</idno></idno>
+					</analytic>
+					<monogr>
+						<title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+						<title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+						<imprint>
+							<publisher>Walter de Gruyter GmbH</publisher>
+							<pubPlace>Berlin, Boston</pubPlace>
+							<date type="publication">2016</date>
+						</imprint>
+						<biblScope unit="page" from="265" to="266"/>
+					</monogr>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+					</series>
+					<relatedItem type="superordinated-chapter"><ptr target="#L_08-02-031-000"/></relatedItem>
+				</biblStruct>
+				<listWit>
+					<witness n="L" corresp="#L_08-02-031-003_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">LH XXXVII 5 Bl. 12</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+								<summary>
+									<p>Konzept: LH XXXVII 5 Bl. 12. 1 Bl. 4<hi rendition="#sup">o</hi>. 25 Z. in der unteren Hälfte von Bl. 12 v<hi rendition="#sup">o</hi>, unmittelbar nach dem Stück N. 31<hi rendition="#sub">2</hi>.</p>
+									<p>Cc 2, Nr. 946</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<tagsDecl>
+				<rendition scheme="css" xml:id="i">font-style:italic</rendition>
+				<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+				<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+				<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+				<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+				<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+				<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+				<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+				<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+				<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+			</tagsDecl>
+			<charDecl>
+				<!-- Sonderzeichen OHNE Unicodeentsprechung -->
+				<!--rightpropto-->
+				<glyph xml:id="rightpropto">
+					<glyphName>rightpropto</glyphName>
+					<desc>...</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\rightpropto</mapping>
+					<graphic url="../../glyphs/rightpropto.svg"/>
+				</glyph>
+				<!-- PsMs -->
+				<glyph xml:id="pPsMs">
+					<glyphName>pPsMs</glyphName>
+					<desc>Bedeutung (+−) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-0.5</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\pPsMs</mapping>
+					<graphic url="../../glyphs/PsMs.svg"/>
+				</glyph>
+				<glyph xml:id="PsMs">
+					<glyphName>PsMs</glyphName>
+					<desc>Bedeutung (+−) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\PsMs</mapping>
+					<graphic url="../../glyphs/PsMs.svg"/>
+				</glyph>
+				<!-- MsPs -->
+				<glyph xml:id="pMsPs">
+					<glyphName>pMsPs</glyphName>
+					<desc>Bedeutung (−+) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-0.5</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\pMsPs</mapping>
+					<graphic url="../../glyphs/MsPs.svg"/>
+				</glyph>
+				<glyph xml:id="MsPs">
+					<glyphName>MsPs</glyphName>
+					<desc>Bedeutung (−+) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\MsPs</mapping>
+					<graphic url="../../glyphs/MsPs.svg"/>
+				</glyph>
+				<!-- PsPsMs -->
+				<glyph xml:id="pPsPsMs">
+					<glyphName>pPsPsMs</glyphName>
+					<desc>Bedeutung (+(+−)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\pPsPsMs</mapping>
+					<graphic url="../../glyphs/PsPsMs.svg"/>
+				</glyph>
+				<glyph xml:id="PsPsMs">
+					<glyphName>PsPsMs</glyphName>
+					<desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\PsPsMs</mapping>
+					<graphic url="../../glyphs/PsPsMs.svg"/>
+				</glyph>
+				<!-- PsMsPs -->
+				<glyph xml:id="pPsMsPs">
+					<glyphName>pPsMsPs</glyphName>
+					<desc>Bedeutung (+(−+)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\pPsMsPss</mapping>
+					<graphic url="../../glyphs/PsMsPs.svg"/>
+				</glyph>
+				<glyph xml:id="PsMsPs">
+					<glyphName>PsMsPs</glyphName>
+					<desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\PsMsPs</mapping>
+					<graphic url="../../glyphs/PsMsPs.svg"/>
+				</glyph>
+				<!-- MsPsMs -->
+				<glyph xml:id="pMsPsMs">
+					<glyphName>pMsPsMs</glyphName>
+					<desc>Bedeutung (−(+−)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\pMsPsMs</mapping>
+					<graphic url="../../glyphs/MsPsMs.svg"/>
+				</glyph>
+				<glyph xml:id="MsPsMs">
+					<glyphName>MsPsMs</glyphName>
+					<desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\MsPsMs</mapping>
+					<graphic url="../../glyphs/MsPsMs.svg"/>
+				</glyph>
+				<!-- MsMsPs -->
+				<glyph xml:id="pMsMsPs">
+					<glyphName>pMsMsPs</glyphName>
+					<desc>Bedeutung (−(−+)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\pMsMsPss</mapping>
+					<graphic url="../../glyphs/MsMsPs.svg"/>
+				</glyph>
+				<glyph xml:id="MsMsPs">
+					<glyphName>MsMsPs</glyphName>
+					<desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\MsMsPs</mapping>
+					<graphic url="../../glyphs/MsMsPs.svg"/>
+				</glyph>
+				<!-- MsPsPs -->
+				<glyph xml:id="pMsPsPs">
+					<glyphName>pMsPsPs</glyphName>
+					<desc>Bedeutung (−(++)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\pMsPsPs</mapping>
+					<graphic url="../../glyphs/MsPsPs.svg"/>
+				</glyph>
+				<glyph xml:id="MsPsPs">
+					<glyphName>MsPsPs</glyphName>
+					<desc>Bedeutung (−(++)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\MsPsPs</mapping>
+					<graphic url="../../glyphs/MsPsPs.svg"/>
+				</glyph>
+				<!-- pmD -->
+				<glyph xml:id="ppmD">
+					<glyphName>ppmD</glyphName>
+					<desc>Bedeutung (−(++)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\ppmD</mapping>
+					<graphic url="../../glyphs/pmD.svg"/>
+				</glyph>
+				<glyph xml:id="pmD">
+					<glyphName>pmD</glyphName>
+					<desc>Bedeutung (−(++))- nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\pmD</mapping>
+					<graphic url="../../glyphs/pmD.svg"/>
+				</glyph>
+				<!-- pmE -->
+				<glyph xml:id="ppmE">
+					<glyphName>ppmE</glyphName>
+					<desc>Bedeutung (+(+−)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\ppmE</mapping>
+					<graphic url="../../glyphs/pmE.svg"/>
+				</glyph>
+				<glyph xml:id="pmE">
+					<glyphName>pmE</glyphName>
+					<desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>1.2</value>
+					</charProp>
+					<mapping type="TeX">\pmE</mapping>
+					<graphic url="../../glyphs/pmE.svg"/>
+				</glyph>
+				<!-- pmG -->
+				<glyph xml:id="ppmG">
+					<glyphName>ppmG</glyphName>
+					<desc>Bedeutung (+(+−)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\ppmG</mapping>
+					<graphic url="../../glyphs/pmG.svg"/>
+				</glyph>
+				<glyph xml:id="pmG">
+					<glyphName>pmG</glyphName>
+					<desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\pmG</mapping>
+					<graphic url="../../glyphs/pmG.svg"/>
+				</glyph>
+				<!-- pmH -->
+				<glyph xml:id="ppmH">
+					<glyphName>ppmH</glyphName>
+					<desc>Bedeutung (+(−+)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\ppmH</mapping>
+					<graphic url="../../glyphs/pmH.svg"/>
+				</glyph>
+				<glyph xml:id="pmH">
+					<glyphName>pmH</glyphName>
+					<desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\pmH</mapping>
+					<graphic url="../../glyphs/pmH.svg"/>
+				</glyph>
+				<!-- leibdashv -->
+				<glyph xml:id="pleibdashv">
+					<glyphName>pleibdashv</glyphName>
+					<desc>Bedeutung (+−) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="PUA"/>
+					<mapping type="TeX">\pleibdashv</mapping>
+					<graphic url="../../glyphs/pm.svg"/>
+				</glyph>
+				<glyph xml:id="leibdashv">
+					<glyphName>leibdashv</glyphName>
+					<desc>Bedeutung (+−) - nicht-gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="PUA"/>
+					<mapping type="TeX">\leibdashv</mapping>
+					<graphic url="../../glyphs/pm.svg"/>
+				</glyph>
+				<!-- leibvdashv -->
+				<glyph xml:id="pleibvdash">
+					<glyphName>pleibvdash</glyphName>
+					<desc>Bedeutung (−+) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\pleibvdash</mapping>
+					<graphic url="../../glyphs/mp.svg"/>
+				</glyph>
+				<glyph xml:id="leibvdash">
+					<glyphName>leibvdash</glyphName>
+					<desc>Bedeutung (−+) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\leibvdash</mapping>
+					<graphic url="../../glyphs/mp.svg"/>
+				</glyph>
+				<!-- groesser -->
+				<glyph xml:id="ggroesser">
+					<glyphName>ggroesser</glyphName>
+					<desc>Bedeutung (größer als) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\ggroesser</mapping>
+					<graphic url="../../glyphs/groesser.svg"/>
+				</glyph>
+				<glyph xml:id="groesser">
+					<glyphName>groesser</glyphName>
+					<desc>Bedeutung (größer als) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\groesser</mapping>
+					<graphic url="../../glyphs/groesser.svg"/>
+				</glyph>
+				<!-- kleiner -->
+				<glyph xml:id="kkleiner">
+					<glyphName>kkleiner</glyphName>
+					<desc>Bedeutung (kleiner als) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\kkleiner</mapping>
+					<graphic url="../../glyphs/kleiner.svg"/>
+				</glyph>
+				<glyph xml:id="kleiner">
+					<glyphName>kleiner</glyphName>
+					<desc>Bedeutung (größer als) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\kleiner</mapping>
+					<graphic url="../../glyphs/kleiner.svg"/>
+				</glyph>
+				<!-- pmHH -->
+				<glyph xml:id="ppmHH">
+					<glyphName>ppmHH</glyphName>
+					<desc>Bedeutung (+(−+)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\ppmHH</mapping>
+					<graphic url="../../glyphs/pmHH.svg"/>
+				</glyph>
+				<glyph xml:id="pmHH">
+					<glyphName>pmHH</glyphName>
+					<desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\pmHH</mapping>
+					<graphic url="../../glyphs/pmHH.svg"/>
+				</glyph>
+				<!-- pmDD -->
+				<glyph xml:id="ppmDD">
+					<glyphName>ppmDD</glyphName>
+					<desc>Bedeutung (+(−+)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\ppmGG</mapping>
+					<graphic url="../../glyphs/pmDD.svg"/>
+				</glyph>
+				<glyph xml:id="pmDD">
+					<glyphName>pmDD</glyphName>
+					<desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\pmDD</mapping>
+					<graphic url="../../glyphs/pmDD.svg"/>
+				</glyph>
+				<!-- pmGG -->
+				<glyph xml:id="ppmGG">
+					<glyphName>ppmGG</glyphName>
+					<desc>Bedeutung (+(−+)) - gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>-1</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\ppmGG</mapping>
+					<graphic url="../../glyphs/pmGG.svg"/>
+				</glyph>
+				<glyph xml:id="pmGG">
+					<glyphName>pmGG</glyphName>
+					<desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.6</value>
+					</charProp>
+					<mapping type="TeX">\pmGG</mapping>
+					<graphic url="../../glyphs/pmGG.svg"/>
+				</glyph>
+				<glyph xml:id="dsig">
+					<glyphName>dsig</glyphName>
+					<desc/>
+					<mapping type="TeX">\dsig</mapping>
+					<graphic url="../../glyphs/dsig.svg"/>
+				</glyph>
+				<glyph xml:id="Pfund">
+					<glyphName>Pfund</glyphName>
+					<desc>stilisiertes lb-Zeichen (Pfund)</desc>
+					<charProp>
+						<localName>baselineshift-in-ex</localName>
+						<value>0</value>
+					</charProp>
+					<charProp>
+						<localName>width-in-em</localName>
+						<value>0.7</value>
+					</charProp>
+					<mapping type="TeX">\Pfund</mapping>
+					<graphic url="../../glyphs/Pfund.svg"/>
+				</glyph>
+				<!-- Sonderzeichen MIT Unicodeentsprechung -->
+				<glyph xml:id="fullmoon">
+					<glyphName>fullmoon</glyphName>
+					<desc>FULL MOON SYMBOL</desc>
+					<mapping type="PUA">U+1F315</mapping>
+					<mapping type="unicode">🌕</mapping>
+					<!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
+					<mapping type="TeX">\fullmoon</mapping>
+				</glyph>
+				<glyph xml:id="leftmoon">
+					<glyphName>leftmoon</glyphName>
+					<desc>LAST QUARTER MOON</desc>
+					<mapping type="PUA">U+263E</mapping>
+					<mapping type="unicode">☾</mapping>
+					<mapping type="TeX">\leftmoon</mapping>
+				</glyph>
+				<glyph xml:id="rightmoon">
+					<glyphName>rightmoon</glyphName>
+					<desc>FIRST QUARTER MOON</desc>
+					<desc type="PUA">U+263D</desc>
+					<mapping type="unicode">☽</mapping>
+					<mapping type="TeX">\rightmoon</mapping>
+				</glyph>
+				<glyph xml:id="newmoon">
+					<glyphName>newmoon</glyphName>
+					<desc>NEW MOON SYMBOL</desc>
+					<mapping type="PUA">U+1F311</mapping>
+					<mapping type="unicode">🌑</mapping>
+					<!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
+					<mapping type="TeX">\newmoon</mapping>
+				</glyph>
+				<glyph xml:id="astrosun">
+					<glyphName>astrosun</glyphName>
+					<desc>Sonne (astronomisch)</desc>
+					<mapping type="PUA">U+2609</mapping>
+					<mapping type="unicode">☉</mapping>
+					<mapping type="TeX">\astrosun</mapping>
+					<graphic url="../"/>
+				</glyph>
+				<glyph xml:id="venus">
+					<glyphName>venus</glyphName>
+					<desc>FEMALE SIGN (venus)</desc>
+					<mapping type="PUA">U+2640</mapping>
+					<mapping type="unicode">♀</mapping>
+					<mapping type="TeX">\venus</mapping>
+					<graphic url="../"/>
+				</glyph>
+			</charDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="fr"/>
+				<language ident="la"/>
+			</langUsage>
+			<calendarDesc>
+				<calendar xml:id="gregorian">
+					<p>Gregorianischer Kalenderstil</p>
+				</calendar>
+				<calendar xml:id="julian">
+					<p>Julianischer Kalenderstil</p>
+				</calendar>
+			</calendarDesc>
+			<textClass>
+				<catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+				<catRef scheme="L_subjects" target="L_subjects.xml#reibung"/>
+				<catRef scheme="L_terms" target="L_terms.xml#"/>
+			</textClass>
+			<abstract>
+				<listPerson>
+					<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+					<person sameAs="L_persons.xml#"/>
+				</listPerson>
+				<listPlace>
+					<place sameAs="L_places.xml#"/>
+				</listPlace>
+			</abstract>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2021" who="#telota" status="base"/>
+			<change when="2021-09-23" who="#stork" status="enrich_1"/>
+		</revisionDesc>
+	</teiHeader>
+	<!--<facsimile source="digilib.bbaw.de" xml:id="L_08-02-031-003_facs-haupttextzeuge">
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=34"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=35"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=36"/>
+	</facsimile>-->
+	<text xml:id="L_08-02-031-003_text">
+		<body xml:id="Document">
+			<div type="section" xml:id="Ch31.S3" n="313">
+				<head>31<hi rendition="#sub">3</hi>.
+DISSERTATION GÉOMÉTRIQUE DU FROTTEMENT</head>
+				<div type="ueberlieferung">
+					<pb type="VIII_2" n="265"/>
+					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Konzept: LH XXXVII 5 Bl. 12. 1 Bl. 4<hi rendition="#sup">o</hi>. 25 Z. in der unteren Hälfte von Bl. 12 v<hi rendition="#sup">o</hi>, unmittelbar nach dem Stück N. 31<hi rendition="#sub">2</hi>.</p><p>Cc 2, Nr. 946</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p>
+				</div>
+				<div type="text">
+					<pb type="L"/>
+					<fw type="folNum">[12 v<hi rendition="#sup">o</hi>]</fw>
+					<head xml:id="Ch31.S3.p5" rendition="#c">De <hi rendition="#g">Detrimento Motus</hi> 
+contemplatio Geometrica:<lb/>quod mirabili naturae ingenio repraesentat <hi rendition="#g">Logarithmos.</hi></head>
+					<p xml:id="Ch31.S3.p6" rendition="#c">Dissertation Geometrique, DU FROTTEMENT<lb/><app type="Bfootnote"><lem type="main">ave<pb type="VIII_2" n="266"/>c la</lem><note type="lemma-abbrev">avec</note><rdg wit="#L" n="1"> un </rdg><rdg wit="#L" n="2"> la <hi rendition="#i">L</hi></rdg></app> decouuerte d’une proprieté admirable de la nature<lb/>sçavoir:<anchor xml:id="_037_05_012v_z1"/><app type="Bfootnote" from="#_037_05_012v_z1" to="#_037_05_012v_z2"><lem type="main"/><note type="lemma-abbrev">sçavoir:</note><rdg wit="#L" n="1"> que la perte de la force par le frottement represente les logarithmes </rdg><rdg wit="#L" n="2"> que les forces residues <app><rdg wit="#L" n="a">sont </rdg><rdg wit="#L" n="b">estant comme les nombres, les espaces parcourus <app><rdg wit="#L" n="aa">dans un medium </rdg><rdg wit="#L" n="bb" cause="addition">avec une vistesse egale <note type="editorial">|</note> <add>excepté qu’elle a esté diminuée</add>
+												<note type="editorial"><hi rendition="#i">erg.</hi> |</note> dans un medium <note type="editorial">|</note> <add>homogene</add>
+												<note type="editorial"><hi rendition="#i">erg.</hi> |</note> qui resiste au mouuement; seront comme les logarithmes. </rdg></app></rdg></app></rdg><rdg wit="#L" n="3" cause="addition"> que <seg type="apparat-ellipsis"/> parcourus <note type="editorial">|</note> <add>uniformement</add>
+								<note type="editorial"><hi rendition="#i">erg.</hi> |</note> est <seg type="apparat-ellipsis"/> logarithmes. <hi rendition="#i">L</hi></rdg></app>
+que le rapport de la perte de la force aux espaces parcourus uniformement<lb/>est celuy des nombres aux
+<anchor xml:id="_037_05_012v_z3"/><app type="Bfootnote" from="#_037_05_012v_z3" to="#_037_05_012v_z4"><lem type="main"/><note type="lemma-abbrev">logarithmes.</note><rdg wit="#L" n="1"> Si nous posons un corps meu <app><rdg wit="#L" n="a">uniformement dans </rdg><rdg wit="#L" n="b">dans un Medium hom </rdg><rdg wit="#L" n="c">et dont la vistesse n’est <app><rdg wit="#L" n="aa">diminuée </rdg><rdg wit="#L" n="bb">alterée que par le Medium homogene <app><rdg wit="#L" n="aaa">dans lequel </rdg><rdg wit="#L" n="bbb">qui resiste à son mouuement </rdg></app></rdg></app></rdg></app></rdg><rdg wit="#L" n="2"> Si nous posons un corps meu </rdg><rdg wit="#L" n="3" cause="addition"> Car <seg type="apparat-ellipsis"/> homogene <note type="editorial">|</note> <add><formula xml:id="Ch31.S3.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula>
+								</add>
+								<note type="editorial"><hi rendition="#i">erg.</hi> |</note> , <seg type="apparat-ellipsis"/> et que <app><rdg wit="#L" n="a">la vistesse n’est </rdg><rdg wit="#L" n="b">sa premiere <seg type="apparat-ellipsis"/> resistance: <hi rendition="#i">L</hi></rdg></app></rdg></app>logarithmes.<anchor xml:id="_037_05_012v_z2"/></p>
+					<p xml:id="Ch31.S3.p7" rendition="#noindent">Car si nous posons qu’un corps <formula xml:id="Ch31.S3.p7.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo>○</m:mo></m:math></formula> soit meu dans un medium homogene <formula xml:id="Ch31.S3.p7.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula> qui resiste à son mouuement;
+et que sa premiere vistesse ne soit alterée que par cette resistance<anchor xml:id="_037_05_012v_z4"/>:
+alors les forces residues (: par exemple celle, qui reste au <app type="Bfootnote"><lem type="main">corps <formula xml:id="Ch31.S3.p7.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo>○</m:mo></m:math></formula> quand il est arrivé à l’endroit <formula xml:id="Ch31.S3.p7.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>, ou <formula xml:id="Ch31.S3.p7.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula> :<?tex-source \phantom{(}?>) decroissant comme les nombres, (<?tex-source \phantom{)}?>: au dessous de l’unité</lem><note type="lemma-abbrev">corps <formula xml:id="Ch31.S3.p7.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo>○</m:mo></m:math></formula></note><rdg wit="#L" n="1" cause="addition"> en <formula xml:id="Ch31.S3.p7.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>
+								<note type="editorial">|</note> <add>au dessous de l’u</add>
+								<note type="editorial"><hi rendition="#i">erg.</hi> |</note> </rdg><rdg wit="#L" n="2"> quand <seg type="apparat-ellipsis"/> ou <formula xml:id="Ch31.S3.p7.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula> :<?tex-source \phantom{(}?>) <app><rdg wit="#L" n="a">seront </rdg><rdg wit="#L" n="b">estant </rdg><rdg wit="#L" n="c">decroissant <seg type="apparat-ellipsis"/> nombres, <app><rdg wit="#L" n="aa">(par exemple comme 1 à 2) <app><rdg wit="#L" n="aaa">leur </rdg><rdg wit="#L" n="bbb">les espaces </rdg></app></rdg><rdg wit="#L" n="bb">(<?tex-source \phantom{)}?>: au <seg type="apparat-ellipsis"/> l’unité <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app> comme 1. <formula xml:id="Ch31.S3.p7.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mstyle></m:math></formula>
+ou de la progression decroissante au lieu qu’elle croist dans les tables des logarithmes :) les espaces <formula xml:id="Ch31.S3.p7.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:math></formula>, <formula xml:id="Ch31.S3.p7.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula> croistront comme les logarithmes.</p>
+					<pb type="VIII_2" n="266"/>
+					<p xml:id="Ch31.S3.p8">Non est opus Tabulas continuari progressione Geometrica decrescente, possumus enim uti jam calculatis altius incipiendo, v.g. non ab 1. sed ab 100, et inde decrescendo versus 1. Ex Tabulis Logarithmorum eligamus numeros, quia circiter integris et brevibus numeris exhiberi possunt, et experimentis, pilae in plano polito provolutae, vel cylindri in tabula betulina propulsi, vel naviculae in aqua progredientis, videatur an circiter consentiant experimento.</p>
+					<figure rendition="#own-line_centered" xml:id="Ch31.S3.p9">
+						<graphic rendition="#c" url="../images/lh03705_012v_2-d1.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="43.362pt" xml:id="Ch31.S3.p9.g1"/>
+						<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+					</figure>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

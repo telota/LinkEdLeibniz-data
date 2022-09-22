@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-091-000">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">De horologiis pendulis, non tam aequalibus
+          quam creduntur</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
+          Text</title>
+        <respStmt>
+          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
+          <resp><note type="remarkResponsibility">Digitale Konzeption und
+            Projektbegleitung</note></resp>
+        </respStmt>
+        <respStmt>
+          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
+            Wissenschaften</orgName>
+          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+        </respStmt>
+        <respStmt>
+          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
+          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
+            VIII</note></resp>
+        </respStmt>
+        <respStmt>
+          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
+          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
+            Berlin</note></resp>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+            </author>
+            <title type="chapter" level="a" n="91">De horologiis pendulis, non tam aequalibus
+              quam creduntur</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1673-04" resp="#ed" cert="medium">[April – Mai 1673]</date>
+            <date calendar="#gregorian" notAfter="1673-05" resp="#ed" cert="medium"/>
+            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=777</idno></idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="729" to="730"/>
+          </monogr>
+          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title></series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-091-000_facs-haupttextzeuge"><msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVIII Bl. 170-171</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                <summary><p>Konzept: LH XXXVIII Bl. 170-171. 1 Bog. 4<hi rendition="#sup">o</hi>,
+                    beschnitten. 2 S. auf Bl. 170. Bl. 171 r<hi rendition="#sup">o</hi> überliefert
+                    N. 90. Bl. 171 v<hi rendition="#sup">o</hi> ist leer.</p><p>Cc 2, Nr.
+                  00</p></summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <!-- PsMs -->
+        <glyph xml:id="pPsMs">
+          <glyphName>pPsMs</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pPsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMs">
+          <glyphName>PsMs</glyphName>
+          <desc>Bedeutung (+−) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\PsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <!-- MsPs -->
+        <glyph xml:id="pMsPs">
+          <glyphName>pMsPs</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pMsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPs">
+          <glyphName>MsPs</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\MsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <!-- PsPsMs -->
+        <glyph xml:id="pPsPsMs">
+          <glyphName>pPsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsPsMs">
+          <glyphName>PsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <!-- PsMsPs -->
+        <glyph xml:id="pPsMsPs">
+          <glyphName>pPsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsMsPss</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMsPs">
+          <glyphName>PsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsMsPs</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsMs -->
+        <glyph xml:id="pMsPsMs">
+          <glyphName>pMsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsMs">
+          <glyphName>MsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <!-- MsMsPs -->
+        <glyph xml:id="pMsMsPs">
+          <glyphName>pMsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsMsPss</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsMsPs">
+          <glyphName>MsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsMsPs</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsPs -->
+        <glyph xml:id="pMsPsPs">
+          <glyphName>pMsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsPs">
+          <glyphName>MsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <!-- pmD -->
+        <glyph xml:id="ppmD">
+          <glyphName>ppmD</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <glyph xml:id="pmD">
+          <glyphName>pmD</glyphName>
+          <desc>Bedeutung (−(++))- nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <!-- pmE -->
+        <glyph xml:id="ppmE">
+          <glyphName>ppmE</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\ppmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <glyph xml:id="pmE">
+          <glyphName>pmE</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <!-- pmG -->
+        <glyph xml:id="ppmG">
+          <glyphName>ppmG</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <glyph xml:id="pmG">
+          <glyphName>pmG</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <!-- pmH -->
+        <glyph xml:id="ppmH">
+          <glyphName>ppmH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <glyph xml:id="pmH">
+          <glyphName>pmH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- leibvdashv -->
+        <glyph xml:id="pleibvdash">
+          <glyphName>pleibvdash</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pleibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <glyph xml:id="leibvdash">
+          <glyphName>leibvdash</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\leibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <!-- groesser -->
+        <glyph xml:id="ggroesser">
+          <glyphName>ggroesser</glyphName>
+          <desc>Bedeutung (größer als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ggroesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <glyph xml:id="groesser">
+          <glyphName>groesser</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\groesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <!-- kleiner -->
+        <glyph xml:id="kkleiner">
+          <glyphName>kkleiner</glyphName>
+          <desc>Bedeutung (kleiner als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kkleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <glyph xml:id="kleiner">
+          <glyphName>kleiner</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <!-- pmHH -->
+        <glyph xml:id="ppmHH">
+          <glyphName>ppmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <glyph xml:id="pmHH">
+          <glyphName>pmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <!-- pmDD -->
+        <glyph xml:id="ppmDD">
+          <glyphName>ppmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <glyph xml:id="pmDD">
+          <glyphName>pmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmDD</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <!-- pmGG -->
+        <glyph xml:id="ppmGG">
+          <glyphName>ppmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="pmGG">
+          <glyphName>pmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="dsig">
+          <glyphName>dsig</glyphName>
+          <desc/>
+          <mapping type="TeX">\dsig</mapping>
+          <graphic url="../../glyphs/dsig.svg"/>
+        </glyph>
+        <glyph xml:id="Pfund">
+          <glyphName>Pfund</glyphName>
+          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.7</value>
+          </charProp>
+          <mapping type="TeX">\Pfund</mapping>
+          <graphic url="../../glyphs/Pfund.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+        <glyph xml:id="fullmoon">
+          <glyphName>fullmoon</glyphName>
+          <desc>FULL MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F315</mapping>
+          <mapping type="unicode">🌕</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
+          <mapping type="TeX">\fullmoon</mapping>
+        </glyph>
+        <glyph xml:id="leftmoon">
+          <glyphName>leftmoon</glyphName>
+          <desc>LAST QUARTER MOON</desc>
+          <mapping type="PUA">U+263E</mapping>
+          <mapping type="unicode">☾</mapping>
+          <mapping type="TeX">\leftmoon</mapping>
+        </glyph>
+        <glyph xml:id="rightmoon">
+          <glyphName>rightmoon</glyphName>
+          <desc>FIRST QUARTER MOON</desc>
+          <desc type="PUA">U+263D</desc>
+          <mapping type="unicode">☽</mapping>
+          <mapping type="TeX">\rightmoon</mapping>
+        </glyph>
+        <glyph xml:id="newmoon">
+          <glyphName>newmoon</glyphName>
+          <desc>NEW MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F311</mapping>
+          <mapping type="unicode">🌑</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
+          <mapping type="TeX">\newmoon</mapping>
+        </glyph>
+        <glyph xml:id="astrosun">
+          <glyphName>astrosun</glyphName>
+          <desc>Sonne (astronomisch)</desc>
+          <mapping type="PUA">U+2609</mapping>
+          <mapping type="unicode">☉</mapping>
+          <mapping type="TeX">\astrosun</mapping>
+          <graphic url="../"/>
+        </glyph>
+        <glyph xml:id="venus">
+          <glyphName>venus</glyphName>
+          <desc>FEMALE SIGN (venus)</desc>
+          <mapping type="PUA">U+2640</mapping>
+          <mapping type="unicode">♀</mapping>
+          <mapping type="TeX">\venus</mapping>
+          <graphic url="../"/>
+        </glyph>
+      </charDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#technik"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-09" who="#siebert" status="enrich_1"/>
+    </revisionDesc>
+  </teiHeader>
+  <!--<facsimile source="digilib.bbaw.de" xml:id="L_08-02-091-000_facs-haupttextzeuge">
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&pn=524"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&pn=525"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&pn=526"/>
+  </facsimile>-->
+  <text xml:id="L_08-02-091-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch91" n="91">
+        <pb type="VIII_2" n="729"/>
+        <head>91. DE HOROLOGIIS PENDULIS, NON TAM AEQUALIBUS QUAM CREDUNTUR</head>
+        <head>[April – Mai 1673]</head>
+        <div type="ueberlieferung">
+          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
+              <witness><msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary><p>Konzept: LH XXXVIII Bl. 170-171. 1 Bog. 4<hi rendition="#sup">o</hi>, beschnitten. 2 S. auf Bl. 170. Bl. 171 r<hi rendition="#sup">o</hi>
+                        überliefert N. 90. Bl. 171 v<hi rendition="#sup">o</hi> ist leer.</p><p>Cc
+                        2, Nr. 00</p></summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc></witness>
+            </listWit></p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch91.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Das
+              vorliegende Stück N. 91 nimmt auf Christiaan Huygens’ <ref corresp="#bib_00123"/><hi rendition="#i">Horologium oscillatorium</hi> bezug. Ein druckfrisches Exemplar
+              dieser Abhandlung bekam Leibniz wahrscheinlich Anfang April 1673 geschenkt, als er
+              Huygens in Paris besuchte. Seine Randbemerkungen darin sowie mannigfaltige Hinweise in
+              mathematischen Aufzeichnungen zeigen, dass er sich noch in den Monaten April und Mai
+              1673 mit dem <ref corresp="#bib_00123"/><hi rendition="#i">Horologium
+                oscillatorium</hi> auseinandergesetzt hat. (Siehe hierüber <ref corresp="#bib_00262"/><hi rendition="#i">LSB</hi> VII, 4 N. 2, S. 27.) Auch N. 91 dürfte in diesem
+              Zeitraum entstanden sein, wie dies insbesondere aus dem Incipit hervorgeht.</hi></p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch91.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[170 r<hi rendition="#sup">o</hi>]</fw></p>
+          <p xml:id="Ch91.p6" rendition="#c">De Horologiis pendulis, non tam aequalibus quam
+            creduntur</p>
+          <p xml:id="Ch91.p7" rendition="#noindent">Cum nuper Horologia pendula diligentius
+            considerassem et a cl. <app type="Cfootnote">
+              <lem type="main">Hugenio<index indexName="Namensregister">
+                  <term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens, Huguens),
+                    Christiaan 1629-1695</term>
+                </index></lem>
+              <note type="lemma-abbrev">Hugenio</note>
+              <note type="editorial"><bibl corresp="#bib_00123"><hi rendition="#k">C. Huygens</hi>,
+                    <hi rendition="#i">Horologium oscillatorium</hi>, Amsterdam 1673, S. 6 (<hi rendition="#i">HO</hi> XVIII, S. 95).</bibl></note>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">fol. 6.</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> asseri animadvertissem, tantam esse eorum aequalitatem, ut <hi rendition="#i">vel
+              recte tempus metiantur, vel omnino non metiantur</hi>; ita, ut jactatio navis proinde
+            non noceat, modo <app type="Bfootnote">
+              <lem type="main">motus non interruptus</lem>
+              <note type="lemma-abbrev">motus</note>
+              <rdg wit="#L" cause="addition"><note type="editorial">|</note> <add>non</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> interruptus <hi rendition="#i">L</hi></rdg>
+            </app> servetur; hoc quia mihi permirum videbatur, quaesivi an alicubi demonstrasset.
+            Cumque nuspiam ab eo id probari viderem, magnus enim pulcherrimarum <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">sane</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> demonstrationum apparatus tantum oscillationum spontanearum a sola descendentis
+            gravitate ortarum <app type="Bfootnote">
+              <lem type="main">isochronismum ostendit;</lem>
+              <note type="lemma-abbrev">isochronismum</note>
+              <rdg wit="#L" n="1"> probat </rdg>
+              <rdg wit="#L" n="2"> ostendit; <hi rendition="#i">L</hi></rdg>
+            </app> in rem hanc <app type="Bfootnote">
+              <lem type="main">inquisivi curatius,</lem>
+              <note type="lemma-abbrev">inquisivi</note>
+              <rdg wit="#L" n="1"> diligentius </rdg>
+              <rdg wit="#L" n="2"> curatius, <hi rendition="#i">L</hi></rdg>
+            </app> tandemque aliud <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">plane</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> dicendum deprehendi.</p>
+          <p xml:id="Ch91.p8">Ponamus Pendulum ex aliquo puncto ut <hi rendition="#i">A</hi> libere
+            solo suo pondere demissum oscillationes aliquot <app type="Bfootnote">
+              <lem type="main">peragere, ut <formula xml:id="Ch91.p8.m1">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>D</m:mi>
+                      </m:mrow>
+                      <m:mo>,</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </formula>
+                <formula xml:id="Ch91.p8.m2">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>E</m:mi>
+                      </m:mrow>
+                      <m:mo>,</m:mo>
+                    </m:mrow>
+                  </m:math>
+                </formula> easque concedamus (ob cycloides eas) esse isochronas,</lem>
+              <note type="lemma-abbrev">peragere,</note>
+              <rdg wit="#L" n="1"> eas </rdg>
+              <rdg wit="#L" n="2"> ut <hi rendition="#i">AD</hi>, <hi rendition="#i">BE</hi>, easque <app>
+                  <rdg wit="#L" n="a">esse isochronas </rdg>
+                  <rdg wit="#L" n="b" cause="addition">concedamus (ob cycloides <note type="editorial">|</note> <add>eas</add>
+                    <note type="editorial"><hi rendition="#i">erg.</hi> |</note> ) esse isochronas,
+                      <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> nulla resistentiae aeris erga penetrationem, aut fili contra flexionem, aut axis
+            contra gyrationem in polis, habita ratione, modo vi solius gravitatis moveatur.</p>
+          <pb type="VIII_2" n="730"/>
+          <figure rendition="#own-line_centered" xml:id="Ch91.fig1_1">
+            <graphic url="../images/lh038_170v.svg" style="trim:  -3mm 3mm -13mm 0mm; clip: true" width="164.7756pt" xml:id="Ch91.g1"/>
+            <head xml:id="Ch91.fig1_2" style="; text-align:center">[<hi rendition="#i">Fig.
+              1</hi>]</head>
+          </figure>
+          <p xml:id="Ch91.p9" rendition="#noindent">Nunc vero ponamus pendulum ex puncto <hi rendition="#i">A</hi> initio libere demissum vi solius quidem gravitatis <app type="Bfootnote">
+              <lem type="main">moveri coepisse,</lem>
+              <note type="lemma-abbrev">moveri</note>
+              <rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>facile</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> coepisse, <hi rendition="#i">L</hi></rdg>
+            </app> sed durantibus oscillationibus cum ex <hi rendition="#i">B</hi> nisu <app type="Bfootnote">
+              <lem type="main">gravitatis descendere inciperet,</lem>
+              <note type="lemma-abbrev">gravitatis</note>
+              <rdg wit="#L" n="1"> descendens pervenisset in <hi rendition="#i">C</hi>
+              </rdg>
+              <rdg wit="#L" n="2"> descendere inciperet, <hi rendition="#i">L</hi></rdg>
+            </app> ibi accipere ictum a rota horologii, ac proinde majori celeritate descensum
+            continuare quam alias fecisset eoque motu non excurrere tantum usque ad <hi rendition="#i">E</hi>, sed altius adhuc usque ad <hi rendition="#i">G</hi>.</p>
+          <p xml:id="Ch91.p10">Porro si impetus a rota impressus non sit nimius (quod utique caveri
+            potest ac debet) tunc utique <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">assumi
+                poterit</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> alia oscillatio <hi rendition="#i">FG</hi> talis, ut pendulum ex puncto <hi rendition="#i">F</hi> (recte ad hoc assumto) demissum, libere nisu gravitatis eandem
+            collegisset celeritatem, ubi venisset in <hi rendition="#i">B</hi>, quam nunc ibi <app type="Bfootnote">
+              <lem type="main">acquisivit <pb type="L"/><fw type="folNum">[170 v<hi rendition="#sup">o</hi>]</fw> impetu rotae impresso.</lem>
+              <note type="lemma-abbrev">acquisivit</note>
+              <rdg wit="#L" n="1"> partim <pb type="L"/><fw type="folNum">[170 v<hi rendition="#sup">o</hi>]</fw> descensu a <formula xml:id="Ch91.p10.m1">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mi>B</m:mi>
+                  </m:math>
+                </formula> ad <formula xml:id="Ch91.p10.m2">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mi>C</m:mi>
+                  </m:math>
+                </formula>, partim </rdg>
+              <rdg wit="#L" n="2"> impetu rotae impresso. <hi rendition="#i">L</hi></rdg>
+            </app> Et proinde vi hujus oscillationis pendulum etiam necessario pervenisset usque
+              <app type="Bfootnote">
+              <lem type="main">ad <hi rendition="#i">G</hi>, eadem enim vis</lem>
+              <note type="lemma-abbrev">ad <hi rendition="#i">G</hi>,</note>
+              <rdg wit="#L" n="1"> cum eadem </rdg>
+              <rdg wit="#L" n="2"> eadem enim <hi rendition="#i">L</hi></rdg>
+            </app> quam pendulum habet <app type="Bfootnote">
+              <lem type="main">in <hi rendition="#i">B</hi> eodemque tendens undecunque orta ipsum
+                eodem</lem>
+              <note type="lemma-abbrev">in <hi rendition="#i">B</hi></note>
+              <rdg wit="#L" n="1"> undecunque orta <app>
+                  <rdg wit="#L" n="a">ipsum eodem </rdg>
+                  <rdg wit="#L" n="b">eodemque tendens, </rdg>
+                </app></rdg>
+              <rdg wit="#L" n="2"> eodemque <seg type="apparat-ellipsis"/> eodem <hi rendition="#i">L</hi></rdg>
+            </app> elevabit, nempe in <hi rendition="#i">G</hi>. Haec oscillatio <hi rendition="#i">FG</hi> utique erit aequidiuturna oscillationi spontaneae <hi rendition="#i">BE</hi>
+            vel <hi rendition="#i">AD</hi>. Sed <app type="Bfootnote">
+              <lem type="main">eadem <hi rendition="#i">FG</hi> diuturnior</lem>
+              <note type="lemma-abbrev">eadem</note>
+              <rdg wit="#L" n="1"> longior </rdg>
+              <rdg wit="#L" n="2"> <hi rendition="#i">FG</hi> diuturnior <hi rendition="#i">L</hi></rdg>
+            </app> esset parte sui <hi rendition="#i">BG</hi>, quae cum sit aequidiuturna
+            oscillationi praesenti <hi rendition="#i">BG</hi> quae ab impetu rotae <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">gravitati
+                  accedente</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> orta est, sequitur oscillationem <hi rendition="#i">FG</hi>, adeoque et
+            oscillationem <hi rendition="#i">AD</hi> vel <hi rendition="#i">BE</hi> diuturniorem
+            esse oscillatione <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><hi rendition="#i">BG</hi></add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> orta ab impetu rotae gravitati accedente, ac proinde oscillationes ab
+            inaequalibus impressionibus rotarum horologii, aut jactationum navis, aliisque hujusmodi
+            causis reddi inaequales. Quod demonstrandum sumseramus. Itaque quo <app type="Bfootnote">
+              <lem type="main">major in pendulis obtineatur aequalitas,</lem>
+              <note type="lemma-abbrev">major</note>
+              <rdg wit="#L" n="1"> pendulis <app>
+                  <rdg wit="#L" n="a">detur </rdg>
+                  <rdg wit="#L" n="b">inaequalitatis </rdg>
+                </app></rdg>
+              <rdg wit="#L" n="2"> in pendulis obtineatur aequalitas, <hi rendition="#i">L</hi></rdg>
+            </app> adhibendum erit praeterea artificium meum, <app type="Bfootnote">
+              <lem type="main">quo efficitur,</lem>
+              <note type="lemma-abbrev">quo</note>
+              <rdg wit="#L" n="1"> alternis </rdg>
+              <rdg wit="#L" n="2"> efficitur, <hi rendition="#i">L</hi></rdg>
+            </app> ut impetus pendulo vel elastro, eorumve libramento impressus sit semper idem.
+            Machina Horologii pondus aliquod vel Elastrum exiguum, tantisper <app type="Bfootnote">
+              <lem type="main">dum libramentum</lem>
+              <note type="lemma-abbrev">dum</note>
+              <rdg wit="#L" n="1"> pendulum </rdg>
+              <rdg wit="#L" n="2"> libramentum <hi rendition="#i">L</hi></rdg>
+            </app> vibratur restituente, ut <app type="Bfootnote">
+              <lem type="main">postea ad rediens libramentum, novo ictu priorem aequante
+                percutiendum sit paratum.</lem>
+              <note type="lemma-abbrev">postea</note>
+              <rdg wit="#L" n="1"> rediens libramentum paratum </rdg>
+              <rdg wit="#L" n="2"> ad rediens <seg type="apparat-ellipsis"/> paratum. <hi rendition="#i">L</hi></rdg>
+            </app> Ex his ratio redditur ejus quod ipse fatetur Hugenius,<index indexName="Namensregister">
+              <term><hi rendition="#g">Huygens</hi>, Christiaan (1629-1695)</term>
+            </index> quo minore vi pendula motum continuare possunt, eo esse exactiora; quod non
+            esset, si vis impressa non turbaret.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

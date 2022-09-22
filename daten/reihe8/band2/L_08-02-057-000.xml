@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-057-000">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title type="main">Aus und zu einem Manuskript Claude Perraults</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
+      
+      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <sourceDesc>
+        <biblStruct><analytic><author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+        </author><title type="chapter" level="a" n="57">Aus und zu einem Manuskript Claude Perraults</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1676-05" resp="#ed" cert="medium">[Mai–Juli 1676]</date><date calendar="#gregorian" notAfter="1676-07" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=578</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="530" to="541"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title></series></biblStruct>
+        <listWit><witness n="L" corresp="#L_08-02-057-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LBr 719a Bl. 3-4</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#auszuege-kommentare"><summary><p>Auszüge mit Bemerkungen aus einem nicht weiter bekannten Manuskript von Claude Perrault<index indexName="Namensregister"><term><hi rendition="#g">Perrault</hi> (Perraltus), Claude 1613-1688</term></index>, das diesem als Vorlage für die Abhandlung <hi rendition="#i">De la pesanteur des corps, de leur ressort et de leur dureté</hi> in dem 1680 erschienenen ersten Band seiner <ref corresp="#bib_01016"/><hi rendition="#i">Essais de physique, ou recueil de plusieurs traitez touchant les choses naturelles</hi> (S. 1-128) gedient haben dürfte:
+LBr 719a Bl. 3-4. 1 Bog. 2<hi rendition="#sup">o</hi>. 4 S. Wasserzeichen.</p><p>Cc 2, Nr. 00</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <!-- PsMs -->
+        <glyph xml:id="pPsMs">
+          <glyphName>pPsMs</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pPsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMs">
+          <glyphName>PsMs</glyphName>
+          <desc>Bedeutung (+−) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\PsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <!-- MsPs -->
+        <glyph xml:id="pMsPs">
+          <glyphName>pMsPs</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pMsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPs">
+          <glyphName>MsPs</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\MsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <!-- PsPsMs -->
+        <glyph xml:id="pPsPsMs">
+          <glyphName>pPsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsPsMs">
+          <glyphName>PsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <!-- PsMsPs -->
+        <glyph xml:id="pPsMsPs">
+          <glyphName>pPsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsMsPss</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMsPs">
+          <glyphName>PsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsMsPs</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsMs -->
+        <glyph xml:id="pMsPsMs">
+          <glyphName>pMsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsMs">
+          <glyphName>MsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <!-- MsMsPs -->
+        <glyph xml:id="pMsMsPs">
+          <glyphName>pMsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsMsPss</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsMsPs">
+          <glyphName>MsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsMsPs</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsPs -->
+        <glyph xml:id="pMsPsPs">
+          <glyphName>pMsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsPs">
+          <glyphName>MsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <!-- pmD -->
+        <glyph xml:id="ppmD">
+          <glyphName>ppmD</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <glyph xml:id="pmD">
+          <glyphName>pmD</glyphName>
+          <desc>Bedeutung (−(++))- nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <!-- pmE -->
+        <glyph xml:id="ppmE">
+          <glyphName>ppmE</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\ppmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <glyph xml:id="pmE">
+          <glyphName>pmE</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <!-- pmG -->
+        <glyph xml:id="ppmG">
+          <glyphName>ppmG</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <glyph xml:id="pmG">
+          <glyphName>pmG</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <!-- pmH -->
+        <glyph xml:id="ppmH">
+          <glyphName>ppmH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <glyph xml:id="pmH">
+          <glyphName>pmH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- leibvdashv -->
+        <glyph xml:id="pleibvdash">
+          <glyphName>pleibvdash</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pleibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <glyph xml:id="leibvdash">
+          <glyphName>leibvdash</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\leibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <!-- groesser -->
+        <glyph xml:id="ggroesser">
+          <glyphName>ggroesser</glyphName>
+          <desc>Bedeutung (größer als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ggroesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <glyph xml:id="groesser">
+          <glyphName>groesser</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\groesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <!-- kleiner -->
+        <glyph xml:id="kkleiner">
+          <glyphName>kkleiner</glyphName>
+          <desc>Bedeutung (kleiner als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kkleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <glyph xml:id="kleiner">
+          <glyphName>kleiner</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <!-- pmHH -->
+        <glyph xml:id="ppmHH">
+          <glyphName>ppmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <glyph xml:id="pmHH">
+          <glyphName>pmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <!-- pmDD -->
+        <glyph xml:id="ppmDD">
+          <glyphName>ppmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <glyph xml:id="pmDD">
+          <glyphName>pmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmDD</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <!-- pmGG -->
+        <glyph xml:id="ppmGG">
+          <glyphName>ppmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="pmGG">
+          <glyphName>pmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="dsig">
+          <glyphName>dsig</glyphName>
+          <desc/>
+          <mapping type="TeX">\dsig</mapping>
+          <graphic url="../../glyphs/dsig.svg"/>
+        </glyph>
+        <glyph xml:id="Pfund">
+          <glyphName>Pfund</glyphName>
+          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.7</value>
+          </charProp>
+          <mapping type="TeX">\Pfund</mapping>
+          <graphic url="../../glyphs/Pfund.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+        <glyph xml:id="fullmoon">
+          <glyphName>fullmoon</glyphName>
+          <desc>FULL MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F315</mapping>
+          <mapping type="unicode">🌕</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
+          <mapping type="TeX">\fullmoon</mapping>
+        </glyph>
+        <glyph xml:id="leftmoon">
+          <glyphName>leftmoon</glyphName>
+          <desc>LAST QUARTER MOON</desc>
+          <mapping type="PUA">U+263E</mapping>
+          <mapping type="unicode">☾</mapping>
+          <mapping type="TeX">\leftmoon</mapping>
+        </glyph>
+        <glyph xml:id="rightmoon">
+          <glyphName>rightmoon</glyphName>
+          <desc>FIRST QUARTER MOON</desc>
+          <desc type="PUA">U+263D</desc>
+          <mapping type="unicode">☽</mapping>
+          <mapping type="TeX">\rightmoon</mapping>
+        </glyph>
+        <glyph xml:id="newmoon">
+          <glyphName>newmoon</glyphName>
+          <desc>NEW MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F311</mapping>
+          <mapping type="unicode">🌑</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
+          <mapping type="TeX">\newmoon</mapping>
+        </glyph>
+        <glyph xml:id="astrosun">
+          <glyphName>astrosun</glyphName>
+          <desc>Sonne (astronomisch)</desc>
+          <mapping type="PUA">U+2609</mapping>
+          <mapping type="unicode">☉</mapping>
+          <mapping type="TeX">\astrosun</mapping>
+          <graphic url="../"/>
+        </glyph>
+        <glyph xml:id="venus">
+          <glyphName>venus</glyphName>
+          <desc>FEMALE SIGN (venus)</desc>
+          <mapping type="PUA">U+2640</mapping>
+          <mapping type="unicode">♀</mapping>
+          <mapping type="TeX">\venus</mapping>
+          <graphic url="../"/>
+        </glyph>
+      </charDecl>
+    </encodingDesc>
+    <profileDesc><langUsage><language ident="fr"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#physik"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
+    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-09" who="#stork" status="enrich_1"/></revisionDesc>
+  </teiHeader>
+  <!--<facsimile source="digilib.bbaw.de" xml:id="L_08-02-057-000_facs-haupttextzeuge"><graphic url="XXX"/></facsimile>--><text xml:id="L_08-02-057-000_text">
+    <body xml:id="Document"><div type="chapter" xml:id="Ch57" n="57"><pb type="VIII_2" n="531"/><head>57.
+AUS UND ZU EINEM MANUSKRIPT CLAUDE PERRAULTS</head>
+<head>[Mai–Juli 1676]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi>
+<listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Auszüge mit Bemerkungen aus einem nicht weiter bekannten Manuskript von Claude Perrault<index indexName="Namensregister"><term><hi rendition="#g">Perrault</hi> (Perraltus), Claude 1613-1688</term></index>, das diesem als Vorlage für die Abhandlung <hi rendition="#i">De la pesanteur des corps, de leur ressort et de leur dureté</hi> in dem 1680 erschienenen ersten Band seiner <ref corresp="#bib_01016"/><hi rendition="#i">Essais de physique, ou recueil de plusieurs traitez touchant les choses naturelles</hi> (S. 1-128) gedient haben dürfte:
+LBr 719a Bl. 3-4. 1 Bog. 2<hi rendition="#sup">o</hi>. 4 S. Wasserzeichen.</p><p>Cc 2, Nr. 00</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents">
+          <p><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Aus dem einzig erhaltenen Brief an Claude Perrault geht hervor, dass Leibniz von ihm das Manuskript von <hi rendition="#i">De la pesanteur des corps</hi> erhalten und sorgfältig gelesen hat (<ref corresp="#bib_01017"/><hi rendition="#i">LSB</hi> II, 1 N. 128, S. 410). Das Konzept seines Schreibens ist (ebd.) anhand des Wasserzeichens auf den Zeitraum Mai bis Juli 1676 datiert worden; die Auszüge haben dasselbe Wasserzeichen, so dass die Datierung hier übernommen wird.
+Bereits in dem eigenhändig auf April 1675 datierten Stück N. 32 erwähnt Leibniz
+Ausführungen Perraults zum Hebelprinzip,
+die sich auch in seinen Auszügen aus <hi rendition="#i">De l<pb type="VIII_2" n="532"/>a pesanteur des corps</hi> finden (s. unten, S. <ref corresp="#LBr719a_3-4_01"/>). Leibniz könnte also schon früher im Besitz des Manuskripts gewesen sein, zumal er von Perrault bereits im Oktober 1674 Aufzeichnungen (vermutlich zur Konstruktion von Kegelschnitten) erhalten hat, wie er es in einer eigenhändig datierten Handschrift (Cc 2, Nr. 787), die in <hi rendition="#i">LSB</hi> VII erscheinen wird, vermerkt.</hi></p>
+        </div><div type="text"><p xml:id="Ch57.p1" rendition="#noindent"><pb type="L"/><fw type="folNum">[3 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch57.p2" rendition="#c">Discours des <app type="Bfootnote"><lem type="main">causes de la pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index></lem><note type="lemma-abbrev">causes</note><rdg wit="#L" n="1"> du ressort<index indexName="Sachverzeichnis"><term>ressort</term></index> et de la dureté<index indexName="Sachverzeichnis"><term>dureté</term></index> des corps </rdg><rdg wit="#L" n="2"> de la pesanteur <hi rendition="#i">L</hi></rdg></app>
+des <app type="Bfootnote"><lem type="main">corps et du ressort,<index indexName="Sachverzeichnis"><term>ressort</term></index></lem><note type="lemma-abbrev">corps</note><rdg wit="#L" n="1"> du ressort </rdg><rdg wit="#L" n="2"> et du ressort, <hi rendition="#i">L</hi></rdg></app>
+et de leur dureté.</p><p xml:id="Ch57.p3" rendition="#noindent">Les nouveaux philosophes semblent tellement avoir employé et consumé toute la force de leur esprit à vaincre leur premiere prevention qu’il ne leur en reste plus pour se defaire de la seconde. L’air composé de deux substances, dont l’une est plus subtile que l’autre comme le mortier<index indexName="Sachverzeichnis"><term>mortier</term></index>
+composé de chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> trempée et de
+<app type="Bfootnote"><lem type="main">sable. Car on</lem><note type="lemma-abbrev">sable.</note><rdg wit="#L" n="1"> Car si </rdg><rdg wit="#L" n="2"> Car <app><rdg wit="#L" n="a"> lors qu’on </rdg><rdg wit="#L" n="b"> on <hi rendition="#i">L</hi></rdg></app></rdg></app>
+enfoncerait un panier<index indexName="Sachverzeichnis"><term>panier</term></index>
+dans du mortier<index indexName="Sachverzeichnis"><term>mortier</term></index> nous verrions que la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> detrempée passeroit dans le panier<index indexName="Sachverzeichnis"><term>panier</term></index>, pure et separée du sable qui demeureroit dehors. Le même arrive dans l’experience<index indexName="Sachverzeichnis"><term>experience</term></index> qu’on appelle du vuide,<index indexName="Sachverzeichnis"><term>vide</term></index>
+où le mercure <index indexName="Sachverzeichnis"><term>mercure</term></index>
+descendant, la partie subtile seule passe à travers, et reste en haut. Les gouttes<index indexName="Sachverzeichnis"><term>goutte</term></index>
+d’eau<index indexName="Sachverzeichnis"><term>eau</term></index> sont spheriques dans le vuide<index indexName="Sachverzeichnis"><term>vide</term></index>
+comme hors du vuide.<index indexName="Sachverzeichnis"><term>vide</term></index>
+Apparement la cause de la rondeur des gouttes<index indexName="Sachverzeichnis"><term>goutte</term></index>
+n’est point autre que celle de la rondeur de la terre<index indexName="Sachverzeichnis"><term>terre</term></index>, sçavoir la pression<index indexName="Sachverzeichnis"><term>pression</term></index>
+de toutes parts.</p><p xml:id="Ch57.p4">Si l’on suspend plusieurs corps, chacun à un fil de longueur pareille les fils etant en haut par un noeud, il arrivera que tous les corps estant poussez par une egale pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index> vers la ligne qui va du noeud au centre de la terre<index indexName="Sachverzeichnis"><term>terre</term></index>, s’y amasseront en rond, si ces corps sont de telle figure qu’ils puissent glisser aisement les uns contre les autres; ainsi qu’ils pourront faire estant parfaitement ronds et polis. Mais s’ils sont rabouteux ils prendront d’autres
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[situations]</corr></lem><rdg wit="#L"><orig>situation</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>, donc tous les corps deviendroient spheriques, si la figure des <index indexName="Sachverzeichnis"><term>corpuscule</term></index>
+corpuscules dont ils sont composés ne les en empecheroit. Cela se peut connoistre à la veue et, lors que les corps sont
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[rendus]</corr></lem><rdg wit="#L"><orig>rendu</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+soudainement fluides par la fusion; comme quand on fait fondre à la chandelle<index indexName="Sachverzeichnis"><term>chandelle</term></index> un morceau de cire<index indexName="Sachverzeichnis"><term>cire</term></index> blanche noirci en dehors par la fumée<index indexName="Sachverzeichnis"><term>fumée</term></index> de la chandelle<index indexName="Sachverzeichnis"><term>chandelle</term></index>; il se formera une goutte<index indexName="Sachverzeichnis"><term>goutte</term></index>
+ronde par le mélange de la partie noire qui estoit en la surface, avec la blanche qui estoit au dedans, et l’on verra que ces differentes parties se remuent en rond.</p><p xml:id="Ch57.p5">Il faut encor supposer l’ether<index indexName="Sachverzeichnis"><term>ether</term></index>
+plus simple que cette partie de l’air. Cette mixtion du corps subtil de l’air avec le corps etheré est representée par le meslange de l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> et de la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> pour continuer la comparaison prise du <index indexName="Sachverzeichnis"><term>mortier</term></index><app type="Bfootnote"><lem type="main">mortier.
+<anchor xml:id="LBr719a_1a"/><app type="Cfootnote" from="#LBr719a_1a" to="#LBr719a_1b"><lem type="main"/><note type="lemma-abbrev">L’eau <seg type="apparat-ellipsis"/> haut</note><note type="editorial">Vgl. C. <hi rendition="#k">Perrault</hi>, <bibl corresp="#bib_01016"><hi rendition="#i">Essais de physique, ou recueil de plusieurs traitez touchant les choses naturelles</hi>, Paris 1680, Bd. I, S. 20.</bibl></note></app>L’eau</lem><note type="lemma-abbrev">mortier.</note><rdg wit="#L" n="1"> Il y’auroit autant de difficulté d’en </rdg><rdg wit="#L" n="2"> L’eau<index indexName="Sachverzeichnis"><term>eau</term></index> <hi rendition="#i">L</hi></rdg></app><index indexName="Sachverzeichnis"><term>eau</term></index> a aussi bien la force d’enfoncer un coffre par en bas, que par en haut.<anchor xml:id="LBr719a_1b"/></p><p xml:id="Ch57.p6">Fermeté<anchor xml:id="LBr719a_2a"/><app type="Cfootnote" from="#LBr719a_2a" to="#LBr719a_2b"><lem type="main"/><note type="lemma-abbrev">Fermeté <seg type="apparat-ellipsis"/> figure</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 22.</bibl></note></app>
+de la difficulté de lever la masse<index indexName="Sachverzeichnis"><term>masse</term></index> de l’air.</p><figure rendition="#inline-margin-left" xml:id="Ch57.fig1_1">
+        <graphic url="../images/LBr719a_3-4_d1.svg" style="trim:  0mm -3mm -5mm 0mm; clip: true" width="65.043pt" xml:id="Ch57.g1"/>
+        
+        <head xml:id="Ch57.fig1_2" rendition="#c"><app type="Cfootnote"><lem type="main">[<hi rendition="#i">Fig. 1</hi>]</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt-->[<hi rendition="#i">Fig. 1</hi>]</note><note type="editorial">Ähnliche Abbildung a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 23.</bibl></note></app><lb/></head>
+      </figure><p xml:id="Ch57.p7" rendition="#noindent">Mais les parties de l’air estant aussi encor grossieres; il faut les elever assez pour donner entrée à l’air, il
+<app type="Bfootnote"><lem type="main">faut que</lem><note type="lemma-abbrev">faut</note><rdg wit="#L" n="1"> qu’elles </rdg><rdg wit="#L" n="2"> que <hi rendition="#i">L</hi></rdg></app>
+les deux corps
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><formula xml:id="Ch57.p7.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> <formula xml:id="Ch57.p7.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula></add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+soient autant separés qu’il faut pour donner entrée à l’air i. s. s.
+Sans cel<pb type="VIII_2" n="537"/>a la rupture ne s’ensuivra pas mais le corps aura ressort<index indexName="Sachverzeichnis"><term>ressort</term></index> c’est à dire il retournera dans la première figure.<anchor xml:id="LBr719a_2b"/><lb/>Experience<index indexName="Sachverzeichnis"><term>experience</term></index><anchor xml:id="LBr719a_3a"/><app type="Cfootnote" from="#LBr719a_3a" to="#LBr719a_3b"><lem type="main"/><note type="lemma-abbrev">Experience <seg type="apparat-ellipsis"/> deux</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 25f.</bibl></note></app>
+qui le confirme pour separer deux corps polis en du Mercure,<index indexName="Sachverzeichnis"><term>mercure</term></index>
+il suffit que ces corps soient moins polis que dans l’air, à cause que le Mercure<index indexName="Sachverzeichnis"><term>mercure</term></index>
+est plus grossier que l’air. La partie grossiere de l’air même a ressort<index indexName="Sachverzeichnis"><term>ressort</term></index>, à cause de la partie subtile de l’air, qui par sa pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index> tache de se mettre entre deux.<anchor xml:id="LBr719a_3b"/></p><p xml:id="Ch57.p8"><hi rendition="#g">Corps mols,</hi> <anchor xml:id="LBr719a_4a"/><app type="Cfootnote" from="#LBr719a_4a" to="#LBr719a_4b"><lem type="main"/><note type="lemma-abbrev"><hi rendition="#g">Corps</hi>
+<seg type="apparat-ellipsis"/> corroyées.</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 33-35.</bibl></note></app>joints par peu de faces plattes.
+Il y a peut estre cent fois plus de surfaces plattes dans un grain de poudre<index indexName="Sachverzeichnis"><term>poudre</term></index> de diamant, que dans une grosse pière de taille.</p><pb type="VIII_2" n="533"/><p xml:id="Ch57.p9">Dans les corps <hi rendition="#g">visceux</hi> et <hi rendition="#g">friables</hi> il y
+<app type="Bfootnote"><lem type="main">a compositions</lem><note type="lemma-abbrev">a</note><rdg wit="#L" n="1"> un melange </rdg><rdg wit="#L" n="2"> compositions <hi rendition="#i">L</hi></rdg></app>
+des corpuscules<index indexName="Sachverzeichnis"><term>corpuscule</term></index>
+dont les faces sont appliquées immediatement, et d’autres en elles ne le sont qu’en tres peu d’endroits. Dans le visqueux ils sont parfaitement meslez, et ainsi ils sont par tous ductiles, dans l’estant <hi rendition="#g">coherent</hi> par les parties dont les faces sont appliquees, et ductiles par les parties qui ont peu de faces; dans les friables les deux différentes parties n’estant pas bien meslées, se rompent aisement. Les chauses friables deviennent visceuses, estant paistries et corroyées.<anchor xml:id="LBr719a_4b"/></p><p xml:id="Ch57.p10">La<anchor xml:id="LBr719a_5a"/><app type="Cfootnote" from="#LBr719a_5a" to="#LBr719a_5b"><lem type="main"/><note type="lemma-abbrev">La forge <seg type="apparat-ellipsis"/> davantage</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 35-37.</bibl></note></app>
+forge<index indexName="Sachverzeichnis"><term>forge</term></index> et l’ecrouissement endurcissent
+<app type="Bfootnote"><lem type="main">les metaux,</lem><note type="lemma-abbrev">les</note><rdg wit="#L" n="1"> corps </rdg><rdg wit="#L" n="2"> metaux, <hi rendition="#i">L</hi></rdg></app>
+comme le feu<index indexName="Sachverzeichnis"><term>feu</term></index>, le cuivre,<index indexName="Sachverzeichnis"><term>cuivre</term></index> l’argent<index indexName="Sachverzeichnis"><term>argent</term></index>, l’or parce qu’une forte compression<index indexName="Sachverzeichnis"><term>compression</term></index> fait appliquer les unes aux autres en plus grand nombre: et dans ceux que la
+<app type="Bfootnote"><lem type="main">fonte rend</lem><note type="lemma-abbrev">fonte</note><rdg wit="#L" n="1"> endurcit, comme le </rdg><rdg wit="#L" n="2"> rend <hi rendition="#i">L</hi></rdg></app>
+plus fermes, comme le plomb<index indexName="Sachverzeichnis"><term>plomb</term></index>, l’etain<index indexName="Sachverzeichnis"><term>etain</term></index> etc. parce que la fluidité de la fonte donne la liberté aux parties de s’appliquer. Les corps qui s’ammollissent et perdent leur ressort<index indexName="Sachverzeichnis"><term>ressort</term></index> de <index indexName="Sachverzeichnis"><term>dureté</term></index>dureté par le froissement<index indexName="Sachverzeichnis"><term>froissement</term></index> et le corroyement<index indexName="Sachverzeichnis"><term>corroyement</term></index> comme le cuir<index indexName="Sachverzeichnis"><term>cuir</term></index>, la cire<index indexName="Sachverzeichnis"><term>cire</term></index>, la terre<index indexName="Sachverzeichnis"><term>terre</term></index> grosse, l’etain<index indexName="Sachverzeichnis"><term>etain</term></index>, le <index indexName="Sachverzeichnis"><term>plomb</term></index>plomb, ont une grande
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[partie]</corr></lem><rdg wit="#L"><orig>parties</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+des parties fluides remfermées dans des intervalles spongieux, qui lors qu’on les corroye
+<app type="Bfootnote"><lem type="main">se meslent</lem><note type="lemma-abbrev">se</note><rdg wit="#L" n="1"> separent </rdg><rdg wit="#L" n="2"> meslent <hi rendition="#i">L</hi></rdg></app>
+par tout à cause du corroyement<index indexName="Sachverzeichnis"><term>corroyement</term></index> qui separe les parties dont les faces estant appliquées les unes aux autres avant qu’on les eust froissée par le corroyement<index indexName="Sachverzeichnis"><term>corroyement</term></index> faisoient quelque connexion au lieu qu’à present ces parties qui ont peu de faces interposées empechent les autres de se bien joindre.
+Mais les corps destitués de ces parties fluides, sont endurcis par le froissement,<index indexName="Sachverzeichnis"><term>froissement</term></index>
+qui ne fait que les joindre davantage[:]<anchor xml:id="LBr719a_5b"/>
+<anchor xml:id="LBr719a_6a"/>le bois sec
+<app type="Cfootnote" from="#LBr719a_6a" to="#LBr719a_6b"><lem type="main"/><note type="lemma-abbrev">le bois <seg type="apparat-ellipsis"/> encor</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 37-39.</bibl></note></app><app type="Bfootnote"><lem type="main">plus dur</lem><note type="lemma-abbrev">plus</note><rdg wit="#L" n="1"> humide </rdg><rdg wit="#L" n="2"> dur <hi rendition="#i">L</hi></rdg></app>
+à cause de l’evaporation<index indexName="Sachverzeichnis"><term>evaporation</term></index> de l’humide. Le fer<index indexName="Sachverzeichnis"><term>fer</term></index> chaud ne fait point de
+<pb type="L"/><fw type="folNum">[3 v<hi rendition="#sup">o</hi>]</fw>
+ressort<index indexName="Sachverzeichnis"><term>ressort</term></index> à cause des parties fluides et glissantes que le feu<index indexName="Sachverzeichnis"><term>feu</term></index> a introduit. Refroidi à loisir il a peu de ressort<index indexName="Sachverzeichnis"><term>ressort</term></index> car quelque chose de la mollesse qu’il avoit estant chaud luy demeure, lorsqu’en refroidissant les parties les plus liquides s’envolant des semblables prennent tousjours leur places, quoyque un peu moins liquides.</p><p xml:id="Ch57.p11">Le fer<index indexName="Sachverzeichnis"><term>fer</term></index> s’endurcit estant battu à froid les corps liquides et glissans estant chassez à coups de marteau<index indexName="Sachverzeichnis"><term>eau</term></index>.<index indexName="Sachverzeichnis"><term>marteau</term></index></p><p xml:id="Ch57.p12">Le fer<index indexName="Sachverzeichnis"><term>fer</term></index> s’endurcit par la trempe<index indexName="Sachverzeichnis"><term>trempe</term></index>; fer<index indexName="Sachverzeichnis"><term>fer</term></index> chaud gonflé; la partie subtile d’air recommence son effect aussitost que le feu<index indexName="Sachverzeichnis"><term>feu</term></index> cesse d’agir, mais elle le produit plus parfaitement sur le fer<index indexName="Sachverzeichnis"><term>fer</term></index> rougi, à cause de la facilité que le feu<index indexName="Sachverzeichnis"><term>feu</term></index> donne aux parties du fer<index indexName="Sachverzeichnis"><term>fer</term></index>, de s’appliquer.</p><p xml:id="Ch57.p13">Le fer<index indexName="Sachverzeichnis"><term>fer</term></index> gonfle par la trempe<index indexName="Sachverzeichnis"><term>trempe</term></index>: experience<index indexName="Sachverzeichnis"><term>experience</term></index>[,] une partie d’un fil de fer<index indexName="Sachverzeichnis"><term>fer</term></index> trempée, n’entre plus dans le trou de la filiere<index indexName="Sachverzeichnis"><term>filiere</term></index>, où l’autre entre encor.<anchor xml:id="LBr719a_6b"/></p><p xml:id="Ch57.p14">Les<anchor xml:id="LBr719a_7a"/>
+<app type="Cfootnote" from="#LBr719a_7a" to="#LBr719a_7b"><lem type="main"/><note type="lemma-abbrev">Les ouvriers <seg type="apparat-ellipsis"/> refroidies</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 40.</bibl></note></app>ouvriers qui veuillent que l’acier<index indexName="Sachverzeichnis"><term>acier</term></index> rougi ne s’endurcisse pas en
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[se]</corr></lem><rdg wit="#L"><orig>ce</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+refroidissant, font ce qu’ils appellent recuire[,] le laissent dans les charbons tout une nuit, jusqu’à ce qu’ils soient éteints et même les cendres refroidies.<anchor xml:id="LBr719a_7b"/></p><p xml:id="Ch57.p15">Corps<anchor xml:id="LBr719a_8a"/>
+<app type="Cfootnote" from="#LBr719a_8a" to="#LBr719a_8b"><lem type="main"/><note type="lemma-abbrev">Corps <seg type="apparat-ellipsis"/> place</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 41.</bibl></note></app>souffrent generalement evaporation<index indexName="Sachverzeichnis"><term>evaporation</term></index> d’une partie la plus subtile et la plus
+<app type="Bfootnote"><lem type="main">soluble comme</lem><note type="lemma-abbrev">soluble</note><rdg wit="#L" n="1"> dans l’air est composé </rdg><rdg wit="#L" n="2"> comme <hi rendition="#i">L</hi></rdg></app> celle dont l’air grossier et
+<app type="Bfootnote"><lem type="main">composé. Le</lem><note type="lemma-abbrev">composé.</note><rdg wit="#L" n="1"> Les </rdg><rdg wit="#L" n="2"> Le <hi rendition="#i">L</hi></rdg></app> flux continuel de ces parties, rend les corps liquides, et les empeche de s’appliquer par
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[leurs]</corr></lem><rdg wit="#L"><orig>leur</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> surfaces plattes.
+Les liqueurs<index indexName="Sachverzeichnis"><term>liqueur</term></index>
+<app type="Bfootnote"><lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[s’]</add></lem><note type="lemma-abbrev">s’</note><note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></app>enflent en glaçant comme l’acier<index indexName="Sachverzeichnis"><term>acier</term></index> dans la trempe<index indexName="Sachverzeichnis"><term>trempe</term></index>, car au premier instant que le corps liquide est reserré au
+<app type="Bfootnote"><lem type="main">dehors, les parties</lem><note type="lemma-abbrev">dehors,</note><rdg wit="#L" n="1"> ce qui est au dedans. </rdg><rdg wit="#L" n="2"> les parties <hi rendition="#i">L</hi></rdg></app> subtiles qui sont au dedans et qui tachent de sortir sont reflechies sur elles mêmes, ce qui leur donne un nouveau mouvement qui pousse les parties grossieres de l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> qui ne sont pas encor appliquées les unes aux autres, et <pb type="VIII_2" n="534"/>change leur situation; ainsi qu’il arrive dans la rarefaction<index indexName="Sachverzeichnis"><term>rarefaction</term></index> qui leur fait occuper plus de place.<anchor xml:id="LBr719a_8b"/></p><p xml:id="Ch57.p16">Par<anchor xml:id="LBr719a_9a"/>
+<app type="Cfootnote" from="#LBr719a_9a" to="#LBr719a_9b"><lem type="main"/><note type="lemma-abbrev">Par la <seg type="apparat-ellipsis"/> l’eau</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 57.</bibl></note></app>la même raison le soleil<index indexName="Sachverzeichnis"><term>soleil</term></index> endurcit la terre<index indexName="Sachverzeichnis"><term>terre</term></index>. Car la terre<index indexName="Sachverzeichnis"><term>terre</term></index> abbreuuée d’eau<index indexName="Sachverzeichnis"><term>eau</term></index> unit les parties, lesquelles sont encor plus fortement unies lors que l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> qui empechoit une plus parfaite union (comme elle avoit fait une mediocre) evapore. Par la même raison le feu<index indexName="Sachverzeichnis"><term>feu</term></index> endurcit la bricque ou terre<index indexName="Sachverzeichnis"><term>terre</term></index> cuite, parce que les parties du feu<index indexName="Sachverzeichnis"><term>feu</term></index> y
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[entrent]</corr></lem><rdg wit="#L"><orig>entre</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+<app type="Bfootnote"><lem type="main">et [se]</lem><note type="lemma-abbrev">et</note><rdg wit="#L" n="1"> unissent les parties </rdg><rdg wit="#L" n="2"> ce <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+rendant fluides les parties leur donnent moyen de s’unir, et d’appliquer
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[leurs]</corr></lem><rdg wit="#L"><orig>leur</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+surfaces: et cette union des briques est si forte et les pores si prochaines que l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> n’y passe plus estant trop grossiere, ainsi elle ne les detrempe<index indexName="Sachverzeichnis"><term>trempe</term></index> plus.
+À cause que la dissolution par le feu<index indexName="Sachverzeichnis"><term>feu</term></index>, est plus parfaite que celle qui se fait par l’eau<index indexName="Sachverzeichnis"><term>eau</term></index>.<anchor xml:id="LBr719a_9b"/></p><p xml:id="Ch57.p17">Les<anchor xml:id="LBr719a_10a"/>
+<app type="Cfootnote" from="#LBr719a_10a" to="#LBr719a_10b"><lem type="main"/><note type="lemma-abbrev">Les cailloux <seg type="apparat-ellipsis"/> pores</note><note type="editorial">Vgl. a.a.O., Bd. I, S. 59-62.</note></app>cailloux<index indexName="Sachverzeichnis"><term>caillou</term></index> marbres<index indexName="Sachverzeichnis"><term>marbre</term></index> pierres precieuses endurcissent par une manière differente. À cause des parties subtiles qui viennent par l’evaporation<index indexName="Sachverzeichnis"><term>evaporation</term></index> des entrailles de la terre<index indexName="Sachverzeichnis"><term>terre</term></index>, et rencontrent des porosités<index indexName="Sachverzeichnis"><term>porosité</term></index> bien disposées aux quelles elles peuuent bien unir
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[leurs]</corr></lem><rdg wit="#L"><orig>leur</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+faces.
+Ces porosités<index indexName="Sachverzeichnis"><term>porosité</term></index> auparavant faisoient que cette terre<index indexName="Sachverzeichnis"><term>terre</term></index> estoit molle, et par le remplissement elle a esté endurcie; la maniere dont l’estain<index indexName="Sachverzeichnis"><term>etain</term></index> et le cuiure<index indexName="Sachverzeichnis"><term>cuivre</term></index> fondus ensemble s’endurcissent faisant une composition beaucoup plus dure, explique encore cet endurcissement<index indexName="Sachverzeichnis"><term>endurcissement</term></index>; causé par <pb type="VIII_2" n="535"/>l’introduction d’une nouvelle substance comme l’endurcissement<index indexName="Sachverzeichnis"><term>endurcissement</term></index> d’une matiere de cuiure<index indexName="Sachverzeichnis"><term>cuivre</term></index> et étain<index indexName="Sachverzeichnis"><term>etain</term></index> fondus <app type="Bfootnote"><lem type="main">ensembles. Aristote<index indexName="Namensregister"><term><hi rendition="#g">Aristoteles</hi>, 384-322 v. Chr.</term></index></lem><rdg wit="#L">ensembles. <note type="editorial">|</note> + <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> Aristote <hi rendition="#i">L</hi></rdg></app>
+(+ <hi rendition="#i"><app type="Cfootnote"><lem type="main">De generatione</lem><note type="editorial"><bibl corresp="#bib_01052"><hi rendition="#k">Aristoteles</hi>, <hi rendition="#i">De generatione animalium</hi> II 10, 448b3, zitiert hierfür Empedokles.</bibl></note></app></hi>
+où il rend raison de la sterilité des
+<app type="Bfootnote"><lem type="main">mules <?tex-source \phantom{(}?>+) dit</lem><note type="lemma-abbrev">mules</note><rdg wit="#L" n="1"> pretendant que leur </rdg><rdg wit="#L" n="2"> <?tex-source \phantom{(}?>+) dit <hi rendition="#i">L</hi></rdg></app> que l’etain<index indexName="Sachverzeichnis"><term>etain</term></index> penetre les pores du cuiure<index indexName="Sachverzeichnis"><term>cuivre</term></index> et les remplit. Effectivement l’etain<index indexName="Sachverzeichnis"><term>etain</term></index> s’allie aisement avec tous les metaux, (+ une goutte<index indexName="Sachverzeichnis"><term>goutte</term></index> d’étain<index indexName="Sachverzeichnis"><term>etain</term></index>
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[fondue]</corr></lem><rdg wit="#L"><orig>fondu</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+avec l’argent<index indexName="Sachverzeichnis"><term>argent</term></index> +).
+Trois boules 1. d’estain<index indexName="Sachverzeichnis"><term>etain</term></index>, l’autre de cuiure<index indexName="Sachverzeichnis"><term>cuivre</term></index>, troisieme d’estaint<index indexName="Sachverzeichnis"><term>etain</term></index> avec du cuiure<index indexName="Sachverzeichnis"><term>cuivre</term></index>; ces trois boules estant de même volume et pesées on a trouué que la boule de metail composé pesoit presque autant que les deux autres ensemble (+ boule composée pèse plus d’un quart plus que celle de cuiure<index indexName="Sachverzeichnis"><term>cuivre</term></index> seule +) odeur du cuiure<index indexName="Sachverzeichnis"><term>cuivre</term></index> et de l’estaint<index indexName="Sachverzeichnis"><term>etain</term></index> sans comparaison plus forte que celle des autres metaux à cause d’une matiere sulphurée qui remplit les pores.<anchor xml:id="LBr719a_10b"/></p><p xml:id="Ch57.p18">La <index indexName="Sachverzeichnis"><term>coagulation</term></index>coagulation<anchor xml:id="LBr719a_11a"/>
+<app type="Cfootnote" from="#LBr719a_11a" to="#LBr719a_11b"><lem type="main"/><note type="lemma-abbrev">La coagulation <seg type="apparat-ellipsis"/> mobiles</note><note type="editorial">Vgl. C. <hi rendition="#k">Perrault</hi>, <bibl corresp="#bib_01016"><hi rendition="#i">Essais de physique</hi>, Paris 1680, Bd. I, S. 62-64.</bibl></note></app>et l’endurcissement<index indexName="Sachverzeichnis"><term>endurcissement</term></index> de la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> du plastre<index indexName="Sachverzeichnis"><term>plastre</term></index>. Chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> forte par la violence du feu<index indexName="Sachverzeichnis"><term>feu</term></index>, a perdu les sels<index indexName="Sachverzeichnis"><term>sel</term></index> volatils et sulphurés qui la rendoient dure; et n’ayant gueres retenu que les fixes que le feu<index indexName="Sachverzeichnis"><term>feu</term></index> n’emporte point mais que l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> peut remuer; il arrive que lors que l’on éteint la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> l’eau <index indexName="Sachverzeichnis"><term>eau</term></index>excite un tel mouuement dans les differens sels<index indexName="Sachverzeichnis"><term>sel</term></index>, qui sont restés dans la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> et que le feu<index indexName="Sachverzeichnis"><term>feu</term></index> a détachez, qu’il s’en produit une chaleur<index indexName="Sachverzeichnis"><term>chaleur</term></index>, la quelle agissant sur les petites cailloux<index indexName="Sachverzeichnis"><term>caillou</term></index> dont le sable est composé on fait sortir d’autres sels<index indexName="Sachverzeichnis"><term>sel</term></index> volatils de la même maniere que ceux que le feu<index indexName="Sachverzeichnis"><term>feu</term></index> avoit
+<app type="Bfootnote"><lem type="main">chassez hors</lem><note type="lemma-abbrev">chassez</note><rdg wit="#L" n="1"> de </rdg><rdg wit="#L" n="2"> hors <hi rendition="#i">L</hi></rdg></app> la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index>; et ces sels<index indexName="Sachverzeichnis"><term>sel</term></index> entrans dans la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> et reprenant la place de ceux qu’elle avoit perdus, luy rendent la <index indexName="Sachverzeichnis"><term>dureté</term></index>dureté
+<pb type="L"/><fw type="folNum">[4 r<hi rendition="#sup">o</hi>]</fw>
+par une introduction de parties subtiles et formées avec des faces tres plattes,
+et ainsi la <index indexName="Sachverzeichnis"><term>dureté</term></index>dureté est produite dans le mortier<index indexName="Sachverzeichnis"><term>mortier</term></index> de la
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[manière]</corr></lem><rdg wit="#L"><orig>matiere</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+que dans les <index indexName="Sachverzeichnis"><term>marbre</term></index>marbres:
+et l’eau l’aide, en rendant les parties de la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> plus mobiles.<anchor xml:id="LBr719a_11b"/></p><p xml:id="Ch57.p19">Le <index indexName="Sachverzeichnis"><term>plastre</term></index>plastre<anchor xml:id="LBr719a_12a"/>
+<app type="Cfootnote" from="#LBr719a_12a" to="#LBr719a_12b"><lem type="main"/><note type="lemma-abbrev">Le plastre <seg type="apparat-ellipsis"/> chaux</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 64.</bibl></note></app>se fait d’une terre<index indexName="Sachverzeichnis"><term>terre</term></index> qui n’est qu’à
+demi cuite et a des parties qui ont rapport à la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index> sçavoir celles qui sont parfaitement
+cuites et d’autres qui ont rapport au sable sçavoir celles qui sont demeurées crues,
+ainsi le plastre<index indexName="Sachverzeichnis"><term>plastre</term></index> estant reduit en poudre<index indexName="Sachverzeichnis"><term>poudre</term></index>
+et detrempe les parties calcinées s’échauffant font sortir les sels<index indexName="Sachverzeichnis"><term>sel</term></index>
+volatils dont les parties crues sont encor remplies, et causent une coagulation<index indexName="Sachverzeichnis"><term>coagulation</term></index>
+qui n’est differente de celle du mortier<index indexName="Sachverzeichnis"><term>mortier</term></index> qu’en ce qu’elle est beaucoup plus promte, peutestre parce
+<app type="Bfootnote"><lem type="main">que les sels<index indexName="Sachverzeichnis"><term>sel</term></index> volatils qui sont restés</lem><note type="lemma-abbrev">que</note><rdg wit="#L" n="1"> celles qui sont resté </rdg><rdg wit="#L" n="2"> les sels
+<seg type="apparat-ellipsis"/> restés <hi rendition="#i">L</hi></rdg></app>
+dans le plastre<index indexName="Sachverzeichnis"><term>plastre</term></index> sont de même espece,
+au lieu que ceux du mortier<index indexName="Sachverzeichnis"><term>mortier</term></index>, viennent du sable different de la chaux<index indexName="Sachverzeichnis"><term>chaux</term></index>.<anchor xml:id="LBr719a_12b"/></p><p xml:id="Ch57.p20">Le <index indexName="Sachverzeichnis"><term>ciment</term></index>ciment<anchor xml:id="LBr719a_13a"/>
+<app type="Cfootnote" from="#LBr719a_13a" to="#LBr719a_13b"><lem type="main"/><note type="lemma-abbrev">Le ciment <seg type="apparat-ellipsis"/> chaux</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 64f.</bibl></note></app>et la poudre<index indexName="Sachverzeichnis"><term>poudre de pozzolane</term></index> de pozzolane
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">(eau<index indexName="Sachverzeichnis"><term>eau puteoly</term></index> puteoly),</add></lem><note type="lemma-abbrev">(eau puteoly)</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+qui comme le plastre<index indexName="Sachverzeichnis"><term>plastre</term></index> sont à demy <pb type="VIII_2" n="536"/>calcinez l’un par le feu<index indexName="Sachverzeichnis"><term>feu</term></index> du fourneau<index indexName="Sachverzeichnis"><term>fourneau</term></index>, l’autre par
+les feux<index indexName="Sachverzeichnis"><term>feu</term></index> sousterrains font une liaison et un corps plus dur,
+estant meslez avec la <index indexName="Sachverzeichnis"><term>chaux</term></index>chaux,
+que ne fait le sabe parce que les sels<index indexName="Sachverzeichnis"><term>sel</term></index> sulphurez y sont plus degagez,
+et plus prests à se mesler avec les parties terrestres de la <index indexName="Sachverzeichnis"><term>chaux</term></index>chaux.<anchor xml:id="LBr719a_13b"/></p><p xml:id="Ch57.p21">Lorsqu’on<anchor xml:id="LBr719a_14a"/>
+<app type="Cfootnote" from="#LBr719a_14a" to="#LBr719a_14b"><lem type="main"/><note type="lemma-abbrev">Lorsqu’on <seg type="apparat-ellipsis"/> pointe</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 66-68.</bibl></note></app>échauffe un endroit du verre<index indexName="Sachverzeichnis"><term>verre</term></index>, et qu’en suitte on le mouille, il se fend à cet endroit
+par les parties fluides agitées d’une part par le feu<index indexName="Sachverzeichnis"><term>feu</term></index>, et retenues de l’autre par l’eau<index indexName="Sachverzeichnis"><term>eau</term></index>, en sorte
+que ces parties agitées agissent plus puissamment à l’endroit mouillé qu’aux autres par les quels
+une partie des corpuscules<index indexName="Sachverzeichnis"><term>corpuscule</term></index>
+fluides agités s’exhale en liberté et ne fait point un effort par sa sortie
+qui soit capable de casser le verre.<index indexName="Sachverzeichnis"><term>verre</term></index>
+Mais lors que le verre<index indexName="Sachverzeichnis"><term>verre</term></index> fondu est jetté soudainement dans l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> pour former
+la larme<index indexName="Sachverzeichnis"><term>larme</term></index>, il ne se casse pas, parce que l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> agit de toutes parts, le mouuement que le feu<index indexName="Sachverzeichnis"><term>feu</term></index> avoit
+excité dans les parties fluides cesse soudainement, parcequ’elles sont toutes renfermées au dedans et que leur
+mouuement venoit de ce qu’elles avoient la liberté de sortir. L’eau<index indexName="Sachverzeichnis"><term>eau</term></index> agissant d’abord sur la surface l’endurcit
+parcequ’elle repousse, en dedans les parties fluides par l’exclusion des quelles les particules<index indexName="Sachverzeichnis"><term>particule</term></index> à faces plattes n’ont plus
+rien qui les empeche de s’approcher et de se joindre. Et c’est ce qui fait que dans toutes les larmes<index indexName="Sachverzeichnis"><term>larme</term></index> de verre<index indexName="Sachverzeichnis"><term>verre</term></index>
+qui font l’effect dont il s’agit, il y a dans leur milieu un espace qui paroist vuide,<index indexName="Sachverzeichnis"><term>vide</term></index>
+dans lequel apparemment sont contenues les particules<index indexName="Sachverzeichnis"><term>particule</term></index>
+fluides que l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> a chasées du dedans, et qui n’attendent que quelque agitation
+exterieure pour faire ces admirables effects: que lors que l’on casse la larme<index indexName="Sachverzeichnis"><term>larme</term></index> apres qu’elle est refroidie
+elle se resout en poudre<index indexName="Sachverzeichnis"><term>poudre</term></index>; car ces parties fluides en grande quantité venans à estre soudainement agitées
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[séparent]</corr></lem><rdg wit="#L"><orig>separ</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+les autres parties jointes par des surfaces plattes.
+On en voit un exemple car l’effervescence<index indexName="Sachverzeichnis"><term>effervescence</term></index>
+<app type="Bfootnote"><lem type="main">de l’esprit de vitriol</lem><note type="lemma-abbrev">de l’</note><rdg wit="#L" n="1"> huile<index indexName="Sachverzeichnis"><term>huile de vitriol</term></index> de vitriol </rdg><rdg wit="#L" n="2"> esprit de vitriol <hi rendition="#i">L</hi></rdg></app>
+avec l’huile de Tartre<index indexName="Sachverzeichnis"><term>huile de Tartre</term></index> est plus
+<app type="Bfootnote"><lem type="main">forte, à proportion que</lem><note type="lemma-abbrev">forte,</note><rdg wit="#L" n="1"> à mesure qu’ </rdg><rdg wit="#L" n="2"> à proportion que <hi rendition="#i">L</hi></rdg></app>
+l’esprit tombe dans l’huile<index indexName="Sachverzeichnis"><term>huile</term></index> avec plus de force.
+Les larmes<index indexName="Sachverzeichnis"><term>larme</term></index> chauffées ne resolvent plus en
+poudre<index indexName="Sachverzeichnis"><term>poudre</term></index> quand on en rompt la pointe.<anchor xml:id="LBr719a_14b"/></p><p xml:id="Ch57.p22">Les differentes manieres d’introduire des particules<index indexName="Sachverzeichnis"><term>particule</term></index> fluides ou des
+particules<index indexName="Sachverzeichnis"><term>particule</term></index> formées avec des faces plattes produisent les <index indexName="Sachverzeichnis"><term>coagulation</term></index>coagulations, les congelations, les petrifications, les dissolutions, les fusions, et toutes les autres manieres differentes par les quelles les corps sont differemment amollis ou endurcis.</p><p xml:id="Ch57.p23">Cause<anchor xml:id="LBr719a_15a"/>
+<app type="Cfootnote" from="#LBr719a_15a" to="#LBr719a_15b"><lem type="main"/><note type="lemma-abbrev">Cause <seg type="apparat-ellipsis"/> centre</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 80-89.</bibl></note></app>de la pesanteur.<index indexName="Sachverzeichnis"><term>pesanteur</term></index> Corps etheré a mouuement à l’entour de l’axe<index indexName="Sachverzeichnis"><term>axe du monde</term></index> du monde, tous les corps horsmis de
+cet ether<index indexName="Sachverzeichnis"><term>ether</term></index>
+ont une repugnance<index indexName="Sachverzeichnis"><term>repugnance</term></index> naturelle à la rapidite; comme un vaisseau<index indexName="Sachverzeichnis"><term>vaisseau</term></index> ne va pas aussi
+viste que le vent<index indexName="Sachverzeichnis"><term>vent</term></index> qui le pousse: le mouuement de l’ether<index indexName="Sachverzeichnis"><term>ether</term></index> à l’entour de l’axe<index indexName="Sachverzeichnis"><term>axe du monde</term></index> est plus
+rapide vers les poles;
+(+ on pourroit l’expliquer, en disant qu’il y a même quantité de mouuement
+dans chaque <index indexName="Sachverzeichnis"><term>tourbillance</term></index>tourbillance +)
+chaque corps posé entre ces tourbillons<index indexName="Sachverzeichnis"><term>tourbillon</term></index>
+est assez large pour estre frappé par plusieurs paralleles et concentriques. <formula xml:id="Ch57.p23.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula>, <formula xml:id="Ch57.p23.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula> concentrices. <formula xml:id="Ch57.p23.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> parallele, à l’equateur <formula xml:id="Ch57.p23.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> le tourbillon<index indexName="Sachverzeichnis"><term>tourbillon</term></index> <formula xml:id="Ch57.p23.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> va moins viste que le tourbillon<index indexName="Sachverzeichnis"><term>tourbillon</term></index> <formula xml:id="Ch57.p23.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> (+ pourroit on s’imaginer la raison, que la raison pour
+<app type="Bfootnote"><lem type="main">quoy le mouvement vers le pole</lem><note type="lemma-abbrev">quoy</note><rdg wit="#L" n="1"> la matiere sort du pole </rdg><rdg wit="#L" n="2"> le <seg type="apparat-ellipsis"/> pole  <hi rendition="#i">L</hi></rdg></app> est plus viste,
+parce qu’il y a moins de matiere meue, et par consequent elle est cupable de plus de
+vistesse. <app type="Bfootnote"><lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[<?tex-source \phantom{(}?>+)]</add></lem><note type="lemma-abbrev"><?tex-source \phantom{(}?>+)</note><note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></app></p><figure rendition="#own-line_centered" style="; width:216.8pt" xml:id="Ch57.p24">
+        
+        <graphic url="../images/LBr719a_3-4_d2.svg" width="91.65pt" xml:id="Ch57.p24.g1"/>
+      </figure><figure rendition="#own-line_centered" style="; width:216.8pt" xml:id="Ch57.p25">
+        <graphic url="../images/LBr719a_3-4_d3.svg" width="91.65pt" xml:id="Ch57.p25.g1"/>
+      </figure><p xml:id="Ch57.p26"> <app type="Cfootnote"><lem type="main">[<hi rendition="#i">Fig. 2</hi>]</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt-->[<hi rendition="#i">Fig. 2</hi>]</note><note type="editorial">Ähnliche Abbildung a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 84, 104.</bibl></note></app>
+                                   
+<app type="Cfootnote"><lem type="main">[<hi rendition="#i">Fig. 3</hi>]</lem><note type="editorial">Ähnliche Abbildung a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 83, 103.</bibl></note></app></p><p xml:id="Ch57.p27">Mouuement du corps etheré rendu probable par le mouuement journalier de la <index indexName="Sachverzeichnis"><term>terre</term></index>terre;
+car il est croyable que l’ether<index indexName="Sachverzeichnis"><term>ether</term></index> <app type="Bfootnote"><lem type="main">l’emporte avec luy,</lem><note type="lemma-abbrev">l’emporte avec</note><rdg wit="#L" n="1"> elle </rdg><rdg wit="#L" n="2"> luy <hi rendition="#i">L</hi></rdg></app>
+(+ avec moins de vitesse que la sienne +).
+La matiere etherée a ce mouuement
+<app type="Bfootnote"><lem type="main">naturellement, il</lem><note type="lemma-abbrev">naturellement,</note><rdg wit="#L" n="1"> que </rdg><rdg wit="#L" n="2"> il <hi rendition="#i">L</hi></rdg></app>
+n’accorde pas que tout ce qui est meu en rond tache de s’éloigner du centre de ce mouuement.
+Et il dit qu’une boule de cire<index indexName="Sachverzeichnis"><term>cire</term></index> equilibrante à protect<index indexName="Sachverzeichnis"><term>eau</term></index>l’eau 
+ne s’eloigne pas du centre l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> estant agitée en rond
+<app type="Cfootnote"><lem type="main">[cela</lem><note type="editorial">Eckige Klammer von Leibniz.</note></app>
+ne fait rien à l’affaire, parce que’elle n’est pas meue que par une composition de mouuement qui ne la quitte pas,
+mais une boule de cire<index indexName="Sachverzeichnis"><term>cire</term></index> jettée avec une fronde<index indexName="Sachverzeichnis"><term>fronde</term></index>
+dans l’eau s’eloigneroit neanmoins du
+<app type="Cfootnote"><lem type="main">centre.]</lem><note type="editorial">Eckige Klammer von Leibniz.</note></app>
+La pierre cesseroit d’estre remuée sortant de la <index indexName="Sachverzeichnis"><term>fronde</term></index>fronde,
+si elle n’avoit point de pesanteur,<index indexName="Sachverzeichnis"><term>pesanteur</term></index> à cause que les corps recoiuuent moins d’impression s’ils ont moins de pesanteur,<index indexName="Sachverzeichnis"><term>pesanteur</term></index> et qu’elles n’en receuuroient point,
+si elle estoient sans pesanteur,<index indexName="Sachverzeichnis"><term>pesanteur</term></index>
+<app type="Bfootnote"><lem type="main">si au lieu de la boule de cire<index indexName="Sachverzeichnis"><term>cire</term></index></lem><note type="lemma-abbrev">si</note><rdg wit="#L" n="1"> l’on fait tourn </rdg><rdg wit="#L" n="2"> au lieu <seg type="apparat-ellipsis"/> cire<index indexName="Sachverzeichnis"><term>cire</term></index> <hi rendition="#i">L</hi></rdg></app> on se sert de quelque poudre<index indexName="Sachverzeichnis"><term>poudre</term></index> plus pesante que l’eau<index indexName="Sachverzeichnis"><term>eau</term></index>, et que l’on tourne sur un pivot, avec vitesse, et que le fonds soit plat
+on verra que la pierre s’eloignera du centre<anchor xml:id="LBr719a_15b"/>
+<app type="Cfootnote"><lem type="main">[+</lem><note type="editorial">Eckige Klammer von Leibniz.</note></app> les corps plus solides recoiuuent moins de vistesse,
+<app type="Bfootnote"><lem type="main">mais <pb type="VIII_2" n="538"/>l’ayant,</lem><note type="lemma-abbrev">mais</note><rdg wit="#L" n="1"> ils </rdg><rdg wit="#L" n="2"> l’ayant, <hi rendition="#i">L</hi></rdg></app>
+ils font plus d’effect ou ont plus de force, qu’un corps moins solide qui a autant de vistesse <app type="Cfootnote"><lem type="main">+] [+</lem><note type="editorial">Eckige Klammern von Leibniz.</note></app> la raison que la boule de cire<index indexName="Sachverzeichnis"><term>cire</term></index> ne le fait pas est manifeste,
+parcequ’il n’y a point de raison qui la fasse faire plus tost que l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> qui l’environne <app type="Cfootnote"><lem type="main">+] [</lem><note type="editorial">Eckige Klammern von Leibniz.                </note></app>il faut mieux dire que l’ether<index indexName="Sachverzeichnis"><term>ether</term></index> a ce mouuement, sans dire qu’il luy est naturel
+<pb type="L"/><fw type="folNum">[4 v<hi rendition="#sup">o</hi>]</fw>
+pour prouuer que les corps repugnent au mouuement.<app type="Bfootnote"><lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[ ] ]</add></lem><note type="lemma-abbrev">]</note><note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></app></p><index indexName="Sachverzeichnis"><term>experience</term></index><p xml:id="Ch57.p28">Experience<anchor xml:id="LBr719a_3-4_01"/><anchor xml:id="LBr719a_16a"/><app type="Cfootnote" from="#LBr719a_16a" to="#LBr719a_16b"><lem type="main"/><note type="lemma-abbrev">Experience <seg type="apparat-ellipsis"/> vaisseau</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 93-100.</bibl></note></app>
+des balances,<index indexName="Sachverzeichnis"><term>balance</term></index>
+on sçait qu’elles ont un trait plus fort, à proportion qu’elles sont plus chargées,
+c’est à dire que les <index indexName="Sachverzeichnis"><term>balance</term></index>balances qui estant
+chargées également par exemple d’une livre de chaque costé, et que l’on fait tresboucher avec dix grains ne
+pourront tresboucher avec dix grains, ne pourront tresboucher avec 50 grains estant chargées de 20 liures.
+Car l’équilibre estant dans les deux cas la pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index> ne doit point estre considerée.
+<app type="Cfootnote"><lem type="main">Aristote<index indexName="Namensregister"><term><hi rendition="#g">Aristoteles</hi>, 384-322 v. Chr.</term></index></lem><note type="lemma-abbrev">Aristote</note><note type="editorial"><bibl corresp="#bib_01002"><hi rendition="#i">Mech.</hi> 10, 852a23-28.</bibl></note></app>
+croit que cela arrive à cause que le mouuement des bassins<index indexName="Sachverzeichnis"><term>bassin</term></index> de la balance<index indexName="Sachverzeichnis"><term>balance</term></index>
+lorsque l’un monte l’autre descend, est oblique, et que
+ce mouuement est forcé et contraire à celuy que la pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index> donne au corps qui est naturellement droit
+car par exemple pour faire tresboucher le corps <formula xml:id="Ch57.p28.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>, il faut le faire aller vers <formula xml:id="Ch57.p28.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>, et luy faire faire le mouuement
+l’oblique, <formula xml:id="Ch57.p28.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>, qui est contraire à son mouuement naturel qui est le mouuement droit <formula xml:id="Ch57.p28.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula>.
+Mais sans en examiner le
+fondement, on n’a qu’à faire une autre balance<index indexName="Sachverzeichnis"><term>balance</term></index>
+où les bassins<index indexName="Sachverzeichnis"><term>bassin</term></index> montent tousjours en droite ligne comme cellecy:</p><figure rendition="#own-line_centered" xml:id="Ch57.p29">
+        <graphic rendition="#c" url="../images/LBr719a_3-4_d4.svg" width="195.129pt" xml:id="Ch57.p29.g1"/>
+        
+        <head rendition="#c"><app type="Cfootnote"><lem type="main">[<hi rendition="#i">Fig. 4</hi>]</lem><note type="editorial">Ähnliche Abbildung in C. <hi rendition="#k">Perrault</hi>, <bibl corresp="#bib_01016"><hi rendition="#i">Essais de physique</hi>, Paris 1680, Bd. I, S. 95.</bibl></note></app></head>
+      </figure><pb type="VIII_2" n="539"/><figure rendition="#own-line_centered" xml:id="Ch57.p30">
+        <graphic rendition="#c" url="../images/LBr719a_3-4_d5.svg" width="117.0774pt" xml:id="Ch57.p30.g1"/>
+        
+        <head rendition="#c"><app type="Cfootnote"><lem type="main">[<hi rendition="#i">Fig. 5</hi>]</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt-->[<hi rendition="#i">Fig. 5</hi>]</note><note type="editorial">Ähnliche Abbildung a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 96.</bibl></note></app></head>
+      </figure><p xml:id="Ch57.p31">Quelques uns attribuent la force du trait au frottement<index indexName="Sachverzeichnis"><term>frottement</term></index> du piuot de la balance,<index indexName="Sachverzeichnis"><term>balance</term></index>
+qui resiste au mouuement à proportion que’elle est plus chargée. Pour refuter cecy j’ay fait une nouuelle maniere de
+<app type="Bfootnote"><lem type="main">balance,<index indexName="Sachverzeichnis"><term>balance</term></index>
+prise</lem><note type="lemma-abbrev">balance,<index indexName="Sachverzeichnis"><term>balance</term></index></note><rdg wit="#L" n="1"> inserée dans </rdg><rdg wit="#L" n="2"> prise <hi rendition="#i">L</hi></rdg></app>
+de la construction de la machine<index indexName="Sachverzeichnis"><term>machine</term></index> à elever les fardeaux que j’ay proposée dans mes notes
+<app type="Cfootnote"><lem type="main">sur Vitruve,<index indexName="Namensregister"><term><hi rendition="#g">Vitruvius</hi> Pollio, Marcus ca. 70-10 v. Chr.</term></index></lem><note type="lemma-abbrev">sur Vitruve</note><note type="editorial"><bibl corresp="#bib_01014"><hi rendition="#k">Vitruvius</hi>, <hi rendition="#i">Les dix livres d’Architecture</hi>, hrsg. von <hi rendition="#k">C. Perrault</hi>, Paris 1673, S. 280f. und S. 324f.</bibl></note></app>
+où j’ay appliqué le rouleau<index indexName="Sachverzeichnis"><term>rouleau</term></index> à une machine<index indexName="Sachverzeichnis"><term>machine</term></index> montante à
+<app type="Bfootnote"><lem type="main">plomb<index indexName="Sachverzeichnis"><term>plomb</term></index>, qui n’avoit</lem><note type="lemma-abbrev">plomb,</note><rdg wit="#L" n="1"> au lieu </rdg><rdg wit="#L" n="2"> qui n’avoit <hi rendition="#i">L</hi></rdg></app> esté employé qu’à celles qui roulent sur des plans orizontaux ou peu inclinez.</p><figure rendition="#own-line_centered" xml:id="Ch57.p32">
+        <graphic rendition="#c" url="../images/LBr719a_3-4_d6.svg" width="190.7928pt" xml:id="Ch57.p32.g1"/>
+        
+        <head rendition="#c"><app type="Cfootnote"><lem type="main">[<hi rendition="#i">Fig. 6</hi>]</lem><note type="editorial">Ähnliche Abbildung in C. <hi rendition="#k">Perrault</hi>, <bibl corresp="#bib_01016"><hi rendition="#i">Essais de physique</hi>, Paris 1680, Bd. I, S. 99.</bibl></note></app></head>
+      </figure><p xml:id="Ch57.p33">Cette balance<index indexName="Sachverzeichnis"><term>balance</term></index>
+a un rouleau,<index indexName="Sachverzeichnis"><term>rouleau</term></index>
+par exemple qui enfile une poulie<index indexName="Sachverzeichnis"><term>poulie</term></index> <formula xml:id="Ch57.p33.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>, de trois pouces de diametre.
+Ces deux bouts de rouleau<index indexName="Sachverzeichnis"><term>rouleau</term></index>
+sont soutenus par des rubans<index indexName="Sachverzeichnis"><term>ruban</term></index> <formula xml:id="Ch57.p33.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula>, <formula xml:id="Ch57.p33.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>. Il y a deux autres rubans<index indexName="Sachverzeichnis"><term>ruban</term></index> qui
+suspendent les bassins<index indexName="Sachverzeichnis"><term>bassin</term></index> l’un <formula xml:id="Ch57.p33.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula> attaché à la poulie<index indexName="Sachverzeichnis"><term>poulie</term></index> l’autre <formula xml:id="Ch57.p33.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>F</m:mi></m:math></formula> attaché au rouleau<index indexName="Sachverzeichnis"><term>rouleau</term></index>
+lors que le bassin<index indexName="Sachverzeichnis"><term>bassin</term></index> <formula xml:id="Ch57.p33.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>G</m:mi></m:math></formula> descend, et fait tourner la partie <formula xml:id="Ch57.p33.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>, et le rouleau<index indexName="Sachverzeichnis"><term>rouleau</term></index>
+<formula xml:id="Ch57.p33.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>, qui fait monter le bassin<index indexName="Sachverzeichnis"><term>bassin</term></index> <formula xml:id="Ch57.p33.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>H</m:mi></m:math></formula>, parceque les rubans<index indexName="Sachverzeichnis"><term>ruban</term></index> qui les soutiennent estant entortillés d’un sens contraire l’un à l’autre. Il faut que l’un descende quand l’autre monte, il arrive aussi par
+la même raison que lors que le bassin<index indexName="Sachverzeichnis"><term>bassin</term></index> <formula xml:id="Ch57.p33.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>G</m:mi></m:math></formula> descend, il fait monter et la poulie<index indexName="Sachverzeichnis"><term>poulie</term></index> et le rouleau<index indexName="Sachverzeichnis"><term>rouleau</term></index>
+par le moyen des rubans<index indexName="Sachverzeichnis"><term>ruban</term></index> <formula xml:id="Ch57.p33.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula> et <formula xml:id="Ch57.p33.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>
+qui sont entortillés d’un autre sens et cette elevation du rouleau<index indexName="Sachverzeichnis"><term>rouleau</term></index>
+et de la poulie<index indexName="Sachverzeichnis"><term>poulie</term></index> fait que la montée du bassin<index indexName="Sachverzeichnis"><term>bassin</term></index> <formula xml:id="Ch57.p33.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>H</m:mi></m:math></formula> est égale à la
+descente du bassin<index indexName="Sachverzeichnis"><term>bassin</term></index> <formula xml:id="Ch57.p33.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>G</m:mi></m:math></formula> quoyque l’entortillement<index indexName="Sachverzeichnis"><term>entortillement</term></index> des rubans<index indexName="Sachverzeichnis"><term>ruban</term></index> ne soit pas égal, le ruban<index indexName="Sachverzeichnis"><term>ruban</term></index> <formula xml:id="Ch57.p33.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula> estant
+entortillé sur une grande poulie<index indexName="Sachverzeichnis"><term>poulie</term></index> et le ruban<index indexName="Sachverzeichnis"><term>ruban</term></index> <formula xml:id="Ch57.p33.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>F</m:mi></m:math></formula> sur une petite. La raison de cette egalité
+vient de ce que la grande poulie<index indexName="Sachverzeichnis"><term>poulie</term></index> ne laisse pas plus descendre de rubans<index indexName="Sachverzeichnis"><term>ruban</term></index> en tournant, que le
+rouleau<index indexName="Sachverzeichnis"><term>rouleau</term></index>
+n’en fait monter, à cause qu’en même temps qu’elle tourne pour laisser descendre le bassin<index indexName="Sachverzeichnis"><term>bassin</term></index> <formula xml:id="Ch57.p33.m17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>G</m:mi></m:math></formula> l’entortillement<index indexName="Sachverzeichnis"><term>entortillement</term></index> contraire des rubans<index indexName="Sachverzeichnis"><term>ruban</term></index> <formula xml:id="Ch57.p33.m18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula> et <formula xml:id="Ch57.p33.m19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula> fait monter toute la machine<index indexName="Sachverzeichnis"><term>machine</term></index>
+et deminue la descente du bassin<index indexName="Sachverzeichnis"><term>bassin</term></index> <formula xml:id="Ch57.p33.m20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>G</m:mi></m:math></formula> et cette même elevation augmente la montée du bassin<index indexName="Sachverzeichnis"><term>bassin</term></index> <formula xml:id="Ch57.p33.m21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>H</m:mi></m:math></formula> et supplée ce qui manque au rouleau<index indexName="Sachverzeichnis"><term>rouleau</term></index>
+qui luy sert de poulie<index indexName="Sachverzeichnis"><term>poulie</term></index> et qui est plus petit de deux tiers de la grande poulie<index indexName="Sachverzeichnis"><term>poulie</term></index>. Le poids
+<formula xml:id="Ch57.p33.m22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>I</m:mi></m:math></formula> qui est égal à la pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index> du rouleau<index indexName="Sachverzeichnis"><term>rouleau</term></index>
+et de la grande poulie<index indexName="Sachverzeichnis"><term>poulie</term></index> est adjouté au bassin<index indexName="Sachverzeichnis"><term>bassin</term></index> <formula xml:id="Ch57.p33.m23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>G</m:mi></m:math></formula> à fin de
+mettre la balance<index indexName="Sachverzeichnis"><term>balance</term></index>
+en equilibre. Or il est evident que le <pb type="VIII_2" n="540"/>mouuement de cette balance<index indexName="Sachverzeichnis"><term>balance</term></index>
+n’a aucun frottement<index indexName="Sachverzeichnis"><term>frottement</term></index>, puis,
+qu’il ne s’agit que de faire plier en rond les quatre rubans<index indexName="Sachverzeichnis"><term>ruban</term></index> ce qui n’est que comme rien. Mais le plus
+important est que cet empechement n’est jamais different, quelque poids qu’on puisse mettre dans la balance,<index indexName="Sachverzeichnis"><term>balance</term></index>
+le pliement des rubans<index indexName="Sachverzeichnis"><term>ruban</term></index> n’estant pas plus difficil dans un grand que dans un petit
+<app type="Bfootnote"><lem type="main">poids.<anchor xml:id="LBr719a_3-4_02"/><!--  \hack{\newline\indentAutre experience\protect\index{Sachverzeichnis}{experience}} --></lem><note type="lemma-abbrev">poids</note><rdg wit="#L" n="1"> ; la seconde </rdg><rdg wit="#L" n="2"> . Autre experience<index indexName="Sachverzeichnis"><term>experience</term></index>  <hi rendition="#i">L</hi></rdg></app><!--  \hackfor{\parAutre experience\protect\index{Sachverzeichnis}{experience}} --></p><p xml:id="Ch57.p34">Autre experience<index indexName="Sachverzeichnis"><term>experience</term></index>
+pour prouuer la repugnance des corps au mouuement, sçavoir que lors qu’on fait tourner un
+vaisseau<index indexName="Sachverzeichnis"><term>vaisseau</term></index> horizontalement sur son centre l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> ne tourne point et il y a apparence, que cela ne se fait point par autre raison que par la repugnance que l’<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[eau<index indexName="Sachverzeichnis"><term>eau</term></index>]</corr></lem><rdg wit="#L"><orig>au</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> a au mouuement par ce qu’on ne voit point qu’il y ait
+autre cause qui l’empeche de suiure le mouuement du vaisseau<index indexName="Sachverzeichnis"><term>vaisseau</term></index>.<anchor xml:id="LBr719a_16b"/></p><p xml:id="Ch57.p35">La 3eme<anchor xml:id="LBr719a_17a"/><app type="Cfootnote" from="#LBr719a_17a" to="#LBr719a_17b"><lem type="main"/><note type="lemma-abbrev">La 3eme <seg type="apparat-ellipsis"/> terrestres</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 100.</bibl></note></app>
+experience<index indexName="Sachverzeichnis"><term>experience</term></index> est celle de deux bateaux
+dont le plus chargé enfonce d’avantage et donne plus de prise au courant, et neantmoins il avance moins.</p><p xml:id="Ch57.p36">Supposons maintenant que les corps ont repugnance<index indexName="Sachverzeichnis"><term>repugnance</term></index> au mouuement, il faut supposer aussi que
+le mouuement de la matiere etherée est plus rapide vers les cotes parceque le mouuement circulaire est moins
+simple et par consequent plus facile que le droit, donc <pb type="VIII_2" n="541"/>il faut plus de force pour
+<app type="Bfootnote"><lem type="main">faire [courir]</lem><note type="lemma-abbrev">faire</note><rdg wit="#L" n="1"> tourner </rdg><rdg wit="#L" n="2"> court <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> <app type="Bfootnote"><lem type="main">et dans un petit</lem><note type="lemma-abbrev">et dans un</note><rdg wit="#L" n="1"> grand </rdg><rdg wit="#L" n="2"> petit <hi rendition="#i">L</hi></rdg></app> cercle,
+<app type="Bfootnote"><lem type="main">que dans un grand cercle</lem><note type="lemma-abbrev">que dans un</note><rdg wit="#L" n="1"> petit cer </rdg><rdg wit="#L" n="2"> grand cercle <hi rendition="#i">L</hi></rdg></app> qui approche de la droite. On pourroit objecter que le mouuement aussi
+est moins viste, mais il suffit de sçauoir que les corps repugnent au mouuement circulaire. Autre objection qu’il faudroit que la matiere allat plus viste
+<app type="Bfootnote"><lem type="main">vers proche</lem><note type="lemma-abbrev">vers</note><rdg wit="#L" n="1"> les </rdg><rdg wit="#L" n="2"> proche <hi rendition="#i">L</hi></rdg></app>
+du centre aussi bien que proche
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[des]</corr></lem><rdg wit="#L"><orig>du</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> poles.
+Cette objection, dit il seroit bien pressante,
+si l’on estoit asseuré quelle est la pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index> proche du centre et même qu’il y a des corps pesans terrestres.<anchor xml:id="LBr719a_17b"/></p><index indexName="Sachverzeichnis"><term>experience</term></index><p xml:id="Ch57.p37">Experience<anchor xml:id="LBr719a_18a"/><app type="Cfootnote" from="#LBr719a_18a" to="#LBr719a_18b"><lem type="main"/><note type="lemma-abbrev">Experience <seg type="apparat-ellipsis"/> s’amassent</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 109f.</bibl></note></app>
+du <index indexName="Sachverzeichnis"><term>gouvernail</term></index>gouuernail: car la situation du gouuernail le fait trouuer plus de resistance<index indexName="Sachverzeichnis"><term>resistance</term></index> dans l’eau<index indexName="Sachverzeichnis"><term>eau</term></index>, qui l’empeche
+de suiure la vistesse du vent<index indexName="Sachverzeichnis"><term>vent</term></index>, donc il ira du costé qui l’empeche moins.
+2<hi rendition="#sup">de</hi> experience,<index indexName="Sachverzeichnis"><term>experience</term></index> l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> qu’on fait tourner dans un
+vase<index indexName="Sachverzeichnis"><term>vase</term></index> rond et poli plat, par le fonds en sorte que le fonds du vase<index indexName="Sachverzeichnis"><term>vase</term></index> demeurant immobile l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> ne laisse pas de tourner car
+si on y jette de la sciure<index indexName="Sachverzeichnis"><term>sciure</term></index> de bois<index indexName="Sachverzeichnis"><term>bois</term></index>, on remarquera que la plus legere et qui nage ou sur la surface de l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> ou entre
+deux eaux<index indexName="Sachverzeichnis"><term>eau</term></index> estant emportée sans resistance<index indexName="Sachverzeichnis"><term>resistance</term></index> par le cours de l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> suit de telle sorte la direction que chaque particule<index indexName="Sachverzeichnis"><term>particule</term></index>
+<app type="Bfootnote"><lem type="main">de sciure<index indexName="Sachverzeichnis"><term>sciure</term></index></lem><note type="lemma-abbrev">particule de</note><rdg wit="#L" n="1"> deux eaux<index indexName="Sachverzeichnis"><term>eau</term></index> estant empo </rdg><rdg wit="#L" n="2"> sciure <hi rendition="#i">L</hi></rdg></app>
+decrit tousjours un même cercle, et qu’au contraire s’il y a quelques
+<app type="Bfootnote"><lem type="main">parties qui</lem><note type="lemma-abbrev">parties</note><rdg wit="#L" n="1"> de </rdg><rdg wit="#L" n="2"> qui <hi rendition="#i">L</hi></rdg></app>
+tombent sur le fonds qui demeure immobile, et s’y attachent en sorte qu’elles resistent en quelque maniere au mouuement de <index indexName="Sachverzeichnis"><term>eau</term></index>l’eau, elles ne suivent point la direction circulaire, mais tournent en ligne spirale jusqu’à ce
+qu’elles se rendent au milieu, où elles s’amassent.<anchor xml:id="LBr719a_18b"/></p><p xml:id="Ch57.p38">Ces deux<anchor xml:id="LBr719a_19a"/><app type="Cfootnote" from="#LBr719a_19a" to="#LBr719a_19b"><lem type="main"/><note type="lemma-abbrev">Ces deux <seg type="apparat-ellipsis"/> vistesse</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 110f.</bibl></note></app>
+experiences<index indexName="Sachverzeichnis"><term>experience</term></index> prouuent comme un corps pesant va vers le centre de son plan;
+troiseme experience<index indexName="Sachverzeichnis"><term>experience</term></index> de mettre une eau<index indexName="Sachverzeichnis"><term>eau</term></index> courante dans un canal:
+la boule de cire<index indexName="Sachverzeichnis"><term>cire</term></index> d’egale
+pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index> à celle de <index indexName="Sachverzeichnis"><term>eau</term></index>l’eau.
+Quand elle nage avec l’eau<index indexName="Sachverzeichnis"><term>eau</term></index>
+<app type="Bfootnote"><lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[elle]</add></lem><note type="lemma-abbrev">elle</note><note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></app>
+<app type="Bfootnote"><lem type="main">ne va pas au fonds,</lem><note type="lemma-abbrev">ne</note><rdg wit="#L" n="1"> s’enfonce pas </rdg><rdg wit="#L" n="2"> va pas au fonds, <hi rendition="#i">L</hi></rdg></app>
+mais quand on la retient par un filet ou autrement, et l’empeche de couler elle ira au fonds, à cause que la surface d’en haut coule auec plus de vistesse
+<anchor xml:id="LBr719a_19b"/>
+(<?tex-source \phantom{)}?>+ si on pouuait faire en sorte que l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> aille plus viste en bas faisant la courir dans un canal de verre<index indexName="Sachverzeichnis"><term>verre</term></index> transparent plus apre en haut qu’en bas, la boule arrestée monteroit en ce cas; et ce qui est plus pesant que l’eau<index indexName="Sachverzeichnis"><term>eau</term></index> car la boule pese bien autant seroit poussé en haut, si la difference de la pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index> est petite; ou si la pesanteur<index indexName="Sachverzeichnis"><term>pesanteur</term></index> fait moins que la difference des mouuemens dans
+<app type="Bfootnote"><lem type="main">l’eau<index indexName="Sachverzeichnis"><term>eau</term></index><?tex-source \phantom{(}?> +)
+si le corps<anchor xml:id="LBr719a_20a"/><app type="Cfootnote" from="#LBr719a_20a" to="#LBr719a_20b"><lem type="main"/><note type="lemma-abbrev">si le corps <seg type="apparat-ellipsis"/> paroist pas</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 118f.</bibl></note></app></lem><note type="lemma-abbrev">l’eau<?tex-source \phantom{(}?> +)</note><rdg wit="#L" n="1"> les corps pesans vont aussi vers le centre de la terre<index indexName="Sachverzeichnis"><term>terre</term></index> en ligne (+<?tex-source \phantom{)}?> NB </rdg><rdg wit="#L" n="2"> si le corps  <hi rendition="#i">L</hi></rdg></app>
+pesans
+<app type="Bfootnote"><lem type="main">descend d’un mouuvement composé</lem><note type="lemma-abbrev">descend</note><rdg wit="#L" n="1"> dans une ligne composée </rdg><rdg wit="#L" n="2"> d’un mouuvement composé <hi rendition="#i">L</hi></rdg></app>
+de 3, <?tex-source \phantom{(}?>1) du general de la matiere etherienne le même que la terre<index indexName="Sachverzeichnis"><term>terre</term></index><?tex-source \phantom{(}?>2) d’un cercle à un concentrique,<?tex-source \phantom{(}?>3) d’un parallele à un autre, ligne comme spirale, mais elle ne paroist droite, à cause que le mouuement etherien ne paroist pas.<anchor xml:id="LBr719a_20b"/>
+(+ Je crois qu’elle seroit encor courbe, et par la composition des deux autres. +)
+Les banderoles<anchor xml:id="LBr719a_21a"/><app type="Cfootnote" from="#LBr719a_21a" to="#LBr719a_21b"><lem type="main"/><note type="lemma-abbrev">Les banderoles <seg type="apparat-ellipsis"/> les autres</note><note type="editorial">Vgl. a.a.O.<bibl corresp="#bib_01016">, Bd. I, S. 120.</bibl></note></app>
+des vaisseaux<index indexName="Sachverzeichnis"><term>vaisseau</term></index> qui sont poussez par le vent<index indexName="Sachverzeichnis"><term>vent</term></index> ont
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[leurs]</corr></lem><rdg wit="#L"><orig>leur</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+pointes tournées vers la proue, et
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[celles]</corr></lem><rdg wit="#L"><orig>celle</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+de ceux qui sont emportés par les courans l’ont vers
+la poupe, estant traisnées par le vaisseau<index indexName="Sachverzeichnis"><term>vaisseau</term></index>, et
+<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[non]</corr></lem><rdg wit="#L"><orig>n’ont</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+pas emportées par le vent<index indexName="Sachverzeichnis"><term>vent</term></index> comme les autres.<anchor xml:id="LBr719a_21b"/></p></div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,1622 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-062-000">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Athanor seu fornax philosophorum</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
+          Text</title>
+        <respStmt>
+          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
+          <resp><note type="remarkResponsibility">Digitale Konzeption und
+            Projektbegleitung</note></resp>
+        </respStmt>
+        <respStmt>
+          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
+            Wissenschaften</orgName>
+          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+        </respStmt>
+        <respStmt>
+          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
+          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
+            VIII</note></resp>
+        </respStmt>
+        <respStmt>
+          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
+          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
+            Berlin</note></resp>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+            </author>
+            <title type="chapter" level="a" n="62">Athanor seu fornax philosophorum</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1673-02" resp="#ed" cert="medium">[Februar
+              – Herbst 1673]</date>
+            <date calendar="#gregorian" notAfter="1676-11" resp="#ed" cert="medium"/>
+            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=666</idno></idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="618" to="625"/>
+          </monogr>
+          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title></series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-062-000_facs-haupttextzeuge"><msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 3 Bl. 84-85</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                <summary><p>Konzept: LH XXXVII 3 Bl. 84-85. 1 Bog. 2<hi rendition="#sup">o</hi>. 3
+                    S. einspaltig. Bl. 85 v<hi rendition="#sup">o</hi> leer. Rand beschädigt mit
+                    geringem Textverlust auf Bl. 84 v<hi rendition="#sup">o</hi>. Je ein
+                    verschiedenes Wasserzeichen auf jedem Blatt.</p><p>Cc 2, Nr. 00</p></summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <!-- PsMs -->
+        <glyph xml:id="pPsMs">
+          <glyphName>pPsMs</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pPsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMs">
+          <glyphName>PsMs</glyphName>
+          <desc>Bedeutung (+−) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\PsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <!-- MsPs -->
+        <glyph xml:id="pMsPs">
+          <glyphName>pMsPs</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pMsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPs">
+          <glyphName>MsPs</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\MsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <!-- PsPsMs -->
+        <glyph xml:id="pPsPsMs">
+          <glyphName>pPsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsPsMs">
+          <glyphName>PsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <!-- PsMsPs -->
+        <glyph xml:id="pPsMsPs">
+          <glyphName>pPsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsMsPss</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMsPs">
+          <glyphName>PsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsMsPs</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsMs -->
+        <glyph xml:id="pMsPsMs">
+          <glyphName>pMsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsMs">
+          <glyphName>MsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <!-- MsMsPs -->
+        <glyph xml:id="pMsMsPs">
+          <glyphName>pMsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsMsPss</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsMsPs">
+          <glyphName>MsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsMsPs</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsPs -->
+        <glyph xml:id="pMsPsPs">
+          <glyphName>pMsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsPs">
+          <glyphName>MsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <!-- pmD -->
+        <glyph xml:id="ppmD">
+          <glyphName>ppmD</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <glyph xml:id="pmD">
+          <glyphName>pmD</glyphName>
+          <desc>Bedeutung (−(++))- nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <!-- pmE -->
+        <glyph xml:id="ppmE">
+          <glyphName>ppmE</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\ppmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <glyph xml:id="pmE">
+          <glyphName>pmE</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <!-- pmG -->
+        <glyph xml:id="ppmG">
+          <glyphName>ppmG</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <glyph xml:id="pmG">
+          <glyphName>pmG</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <!-- pmH -->
+        <glyph xml:id="ppmH">
+          <glyphName>ppmH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <glyph xml:id="pmH">
+          <glyphName>pmH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- leibvdashv -->
+        <glyph xml:id="pleibvdash">
+          <glyphName>pleibvdash</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pleibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <glyph xml:id="leibvdash">
+          <glyphName>leibvdash</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\leibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <!-- groesser -->
+        <glyph xml:id="ggroesser">
+          <glyphName>ggroesser</glyphName>
+          <desc>Bedeutung (größer als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ggroesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <glyph xml:id="groesser">
+          <glyphName>groesser</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\groesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <!-- kleiner -->
+        <glyph xml:id="kkleiner">
+          <glyphName>kkleiner</glyphName>
+          <desc>Bedeutung (kleiner als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kkleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <glyph xml:id="kleiner">
+          <glyphName>kleiner</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <!-- pmHH -->
+        <glyph xml:id="ppmHH">
+          <glyphName>ppmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <glyph xml:id="pmHH">
+          <glyphName>pmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <!-- pmDD -->
+        <glyph xml:id="ppmDD">
+          <glyphName>ppmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <glyph xml:id="pmDD">
+          <glyphName>pmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmDD</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <!-- pmGG -->
+        <glyph xml:id="ppmGG">
+          <glyphName>ppmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="pmGG">
+          <glyphName>pmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="dsig">
+          <glyphName>dsig</glyphName>
+          <desc/>
+          <mapping type="TeX">\dsig</mapping>
+          <graphic url="../../glyphs/dsig.svg"/>
+        </glyph>
+        <glyph xml:id="Pfund">
+          <glyphName>Pfund</glyphName>
+          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.7</value>
+          </charProp>
+          <mapping type="TeX">\Pfund</mapping>
+          <graphic url="../../glyphs/Pfund.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+        <glyph xml:id="fullmoon">
+          <glyphName>fullmoon</glyphName>
+          <desc>FULL MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F315</mapping>
+          <mapping type="unicode">🌕</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
+          <mapping type="TeX">\fullmoon</mapping>
+        </glyph>
+        <glyph xml:id="leftmoon">
+          <glyphName>leftmoon</glyphName>
+          <desc>LAST QUARTER MOON</desc>
+          <mapping type="PUA">U+263E</mapping>
+          <mapping type="unicode">☾</mapping>
+          <mapping type="TeX">\leftmoon</mapping>
+        </glyph>
+        <glyph xml:id="rightmoon">
+          <glyphName>rightmoon</glyphName>
+          <desc>FIRST QUARTER MOON</desc>
+          <desc type="PUA">U+263D</desc>
+          <mapping type="unicode">☽</mapping>
+          <mapping type="TeX">\rightmoon</mapping>
+        </glyph>
+        <glyph xml:id="newmoon">
+          <glyphName>newmoon</glyphName>
+          <desc>NEW MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F311</mapping>
+          <mapping type="unicode">🌑</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
+          <mapping type="TeX">\newmoon</mapping>
+        </glyph>
+        <glyph xml:id="astrosun">
+          <glyphName>astrosun</glyphName>
+          <desc>Sonne (astronomisch)</desc>
+          <mapping type="PUA">U+2609</mapping>
+          <mapping type="unicode">☉</mapping>
+          <mapping type="TeX">\astrosun</mapping>
+          <graphic url="../"/>
+        </glyph>
+        <glyph xml:id="venus">
+          <glyphName>venus</glyphName>
+          <desc>FEMALE SIGN (venus)</desc>
+          <mapping type="PUA">U+2640</mapping>
+          <mapping type="unicode">♀</mapping>
+          <mapping type="TeX">\venus</mapping>
+          <graphic url="../"/>
+        </glyph>
+      </charDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#chemie"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-09" who="#stork" status="enrich_1"/>
+    </revisionDesc>
+  </teiHeader>
+  <!--<facsimile source="digilib.bbaw.de" xml:id="L_08-02-062-000_facs-haupttextzeuge">
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=252"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=253"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=254"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=255"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=256"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&pn=257"/>
+  </facsimile>-->
+  <text xml:id="L_08-02-062-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch62" n="62">
+        <pb type="VIII_2" n="618"/>
+        <head>62. ATHANOR SEU FORNAX PHILOSOPHORUM</head>
+        <head>[Februar – Herbst 1673]</head>
+        <div type="ueberlieferung">
+          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
+              <witness><msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary><p>Konzept: LH XXXVII 3 Bl. 84-85. 1 Bog. 2<hi rendition="#sup">o</hi>.
+                        3 S. einspaltig. Bl. 85 v<hi rendition="#sup">o</hi> leer. Rand beschädigt
+                        mit geringem Textverlust auf Bl. 84 v<hi rendition="#sup">o</hi>. Je ein
+                        verschiedenes Wasserzeichen auf jedem Blatt.</p><p>Cc 2, Nr.
+                      00</p></summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc></witness>
+            </listWit></p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch62.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Die
+              Wasserzeichen im Textträger des vorliegenden Stücks sind für den Zeitraum von Frühjahr
+              1672 (<ref corresp="#bib_00257"/><hi rendition="#i">LSB</hi> VI, 3 N. 2) bis Herbst
+              1673 (<ref corresp="#bib_00265"/><hi rendition="#i">LSB</hi> VIII, 1 N. 21) belegt. Im
+              Text wird aber ein <hi rendition="#i">Regimen ignis</hi> bzw. ein <hi rendition="#i">Ignis moderator</hi> erwähnt, den Cornelius Drebbel erfunden habe. Diese Erfindung
+              ist nur handschriftlich durch zwei deutsche Berichte aus dem späten 17. Jahrhundert
+              belegt. Von ihr könnte Leibniz während seines Aufenthalts in London womöglich durch
+              Nachfahren Drebbels erfahren haben, weshalb das vorliegende Stück nicht vor Februar
+              1673 entstanden sein dürfte.</hi></p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch62.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[84 r<hi rendition="#sup">o</hi>]</fw></p>
+          <p xml:id="Ch62.p6" rendition="#c">Athanor seu Fornax<index indexName="Sachverzeichnis">
+              <term>fornax</term>
+            </index> Philosophorum,<lb/>in praescriptum caloris<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> gradum se sua sponte restituens.</p>
+          <p xml:id="Ch62.p7" rendition="#noindent">Diu <app type="Bfootnote">
+              <lem type="main">multumque Philosophi</lem>
+              <rdg wit="#L" cause="deletion">multumque <note type="editorial">|</note> <del>ab omnia
+                  memoria</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> Philosophi <hi rendition="#i">L</hi></rdg>
+            </app> Chemici fornacis<index indexName="Sachverzeichnis">
+              <term>fornax</term>
+            </index> tale genus quaesivere, quod praescriptas semel ab Artifice Leges servaret,
+            jussumque caloris<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> gradum constanter teneret, aut si quo casu metas excessisset, in viam a seipso
+            revocaretur.</p>
+          <p xml:id="Ch62.p8">Hoc <app type="Bfootnote">
+              <lem type="main">inter Philosophorum</lem>
+              <rdg wit="#L" cause="deletion">inter <note type="editorial">|</note> <del>caetera</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> Philosophorum <hi rendition="#i">L</hi></rdg>
+            </app> Veterum arcana fuisse narrant: sed certior fama est Cornelium<index indexName="Namensregister">
+              <term><hi rendition="#g">Drebbel</hi> (Drebelius), Cornelis 1572-1633</term>
+            </index>
+            <app type="Cfootnote">
+              <lem type="main">Drebelium Alcmariensem Batavum<index indexName="Namensregister">
+                  <term><hi rendition="#g">Drebbel</hi> (Drebelius), Cornelis 1572-1633</term>
+                </index> inter caetera praeclara inventa hunc quoque Ignis moderatorem</lem>
+              <note type="lemma-abbrev">Drebelium <seg type="apparat-ellipsis"/> moderatorem</note>
+              <note type="editorial"><hi rendition="#k">C. Drebbel</hi>, <bibl corresp="#bib_01154"><hi rendition="#i">Beschreibung Seiners Circulir Ofens com</hi>[<hi rendition="#i">m</hi>]<hi rendition="#i">unic</hi>[<hi rendition="#i">ata</hi>]
+                    <hi rendition="#i">a D. Reger.</hi> Ms. hrsg. in <hi rendition="#k">V.
+                    Keller</hi>, „Re-entangling the Thermometer: Cornelis Drebbel’s Description of
+                  his Self-regulating Oven, the Regiment of Fire, and the Early History of
+                  Temperature”, <hi rendition="#i">Nuncius</hi> 28 (2013), S. 266-270.</bibl></note>
+            </app> assecutum fuisse:</p>
+          <p xml:id="Ch62.p9" rendition="#c"><app type="Cfootnote">
+              <lem type="main">Qui regere et certas sciret dare jussus <anchor xml:id="habenas"/>habenas.</lem>
+              <note type="lemma-abbrev">Qui <seg type="apparat-ellipsis"/> habenas</note>
+              <note type="editorial">Nach <bibl corresp="#bib_00246"><hi rendition="#k">Vergil</hi>,
+                    <hi rendition="#i">Aeneis</hi> I, 62f.</bibl></note>
+            </app><app type="Bfootnote" from="#habenas" to="#constat">
+              <lem type="main"/>
+              <note type="lemma-abbrev">habenas.</note>
+              <rdg wit="#L" n="1"> Nullum dubium est <app>
+                  <rdg wit="#L" n="a">maximi usus </rdg>
+                  <rdg wit="#L" n="b">maximae utilitatis </rdg>
+                </app></rdg>
+              <rdg wit="#L" n="2"> Nec dubium est maximae utilitatis fore, si quando penitus
+                detegeretur, et in usum revocaretur </rdg>
+              <rdg wit="#L" n="3" cause="addition"> Utilitates hujus Fornacis <note type="editorial">|</note> <add>insignes</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> maximas fore constat.
+                  <hi rendition="#i">L</hi></rdg>
+            </app></p>
+          <pb type="VIII_2" n="619"/>
+          <p xml:id="Ch62.p10">Utilitates hujus Fornacis insignes maximas fore constat.<anchor xml:id="constat"/> Hactenus <app type="Bfootnote">
+              <lem type="main">enim certi caloris gradus nec <hi rendition="#g">definiri</hi>
+                potuere a Chemicis,</lem>
+              <note type="lemma-abbrev">enim</note>
+              <rdg wit="#L" n="1"> definitum ignis gradum nemo Chemicorum aut sibi potuit
+                praestituere </rdg>
+              <rdg wit="#L" n="2"> certus </rdg>
+              <rdg wit="#L" n="3"> certi <seg type="apparat-ellipsis"/> Chemicis, <hi rendition="#i">L</hi></rdg>
+            </app> nec <hi rendition="#g">servari.</hi></p>
+          <p xml:id="Ch62.p11">Non <hi rendition="#g">definiri,</hi> etsi enim alii quatuor, alii
+            octo gradus numerent, et intermedios alii <app type="Bfootnote">
+              <lem type="main">rursus accuratius</lem>
+              <note type="lemma-abbrev">rursus</note>
+              <rdg wit="#L" n="1"> accurate </rdg>
+              <rdg wit="#L" n="2"> accuratius <hi rendition="#i">L</hi></rdg>
+            </app> subdistinguant. Nemo tamen Chemicorum unquam dicere potuit: ego tanto
+              caloris<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> gradu, tantum <app type="Bfootnote">
+              <lem type="main">peregi, ex tali tantoque corpore tantum talis spiritus tanto tempore
+                tali modo <formula xml:id="Ch62.p11.m1">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟨</m:mo>
+                  </m:math>
+                </formula>ob<formula xml:id="Ch62.p11.m2">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟩</m:mo>
+                  </m:math>
+                </formula>tinui.</lem>
+              <note type="lemma-abbrev">peregi</note>
+              <rdg wit="#L" n="1"> . Nunc enim descrescit, nunc crescit calor<index indexName="Sachverzeichnis">
+                  <term>calor</term>
+                </index>. </rdg>
+              <rdg wit="#L" n="2"> , ex <app>
+                  <rdg wit="#L" n="a">tanto </rdg>
+                  <rdg wit="#L" n="b" cause="addition">tali <seg type="apparat-ellipsis"/>
+                      tempore <note type="editorial">|</note> <add>tali modo</add>
+                    <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <formula xml:id="Ch62.p11.m3">
+                      <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                        <m:mo stretchy="false">⟨</m:mo>
+                      </m:math>
+                    </formula>ob<formula xml:id="Ch62.p11.m4">
+                      <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                        <m:mo stretchy="false">⟩</m:mo>
+                      </m:math>
+                    </formula>tinui. <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> Nam datus semel caloris<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> gradus crescit ob ipsam durationem, non <app type="Bfootnote">
+              <lem type="main">sine acceleratione</lem>
+              <note type="lemma-abbrev">sine</note>
+              <rdg wit="#L" n="1"> aliquo accelerationis genere </rdg>
+              <rdg wit="#L" n="2"> acceleratione quadam. <hi rendition="#i">L</hi></rdg>
+            </app> quadam. Quare etsi eandem Registri aperturam relinquas, etsi tantundem alimenti
+            subministres igni, calor<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> tamen idem non erit, <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">sed major</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> quemadmodum enim in motu gravium impetus prior novo in quolibet momento accedente
+            continue augetur, ita calor<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> quoque prior cum nondum penitus evaporaverit, cum novo succedente <app type="Bfootnote">
+              <lem type="main">in unam summam</lem>
+              <note type="lemma-abbrev">in</note>
+              <rdg wit="#L" n="1"> unum conjung </rdg>
+              <rdg wit="#L" n="2"> unam summam <hi rendition="#i">L</hi></rdg>
+            </app> conjungendus est. <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">Contra, si nihil
+                  addas non idem manebit, sed continue decrescet calor<index indexName="Sachverzeichnis">
+                    <term>calor</term>
+                  </index>, ob evaporationem.</add></lem>
+              <note type="lemma-abbrev">Contra, <seg type="apparat-ellipsis"/> evaporationem.</note>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app><!--  \hackfor{\par} --></p>
+          <p xml:id="Ch62.p12"><app type="Bfootnote">
+              <lem type="main"><!--  \hack{\newline\indent} -->Haec faciunt</lem>
+              <note type="lemma-abbrev">evaporationem.</note>
+              <rdg wit="#L" n="1"> Hoc facit </rdg>
+              <rdg wit="#L" n="2"> Haec faciunt <hi rendition="#i">L</hi></rdg>
+            </app> ut hactenus impossibile fuerit, etiam scientissimo candidissimoque Chemico
+            experimentum aliquod suum ita tradere, ut alius eum possit imitari, imo ut, semper ipse
+              <app type="Bfootnote">
+              <lem type="main">se. Quia:</lem>
+              <note type="lemma-abbrev">se.</note>
+              <rdg wit="#L" n="1"> Quare </rdg>
+              <rdg wit="#L" n="2"> Quia: <hi rendition="#i">L</hi></rdg>
+            </app> licet materiam vasaque accuratissime annotet, restabit tamen aliis omnibus
+            efficacius <hi rendition="#g">Regimen ignis,</hi> quod nec alios docere, nec sibi ipsi
+            satis retinere potest. Unde tot <app type="Bfootnote">
+              <lem type="main">praeclara experimenta</lem>
+              <rdg wit="#L" cause="deletion">praeclara <note type="editorial">|</note> <del>veraque</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> experimenta <hi rendition="#i">L</hi></rdg>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">intercidere, et veraces</lem>
+              <note type="lemma-abbrev">intercidere,</note>
+              <rdg wit="#L" n="1"> tot </rdg>
+              <rdg wit="#L" n="2"> et <app>
+                  <rdg wit="#L" n="a">viri </rdg>
+                  <rdg wit="#L" n="b">veraces <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> etiam scriptores in imposturae suspicionem adducti sunt, aliis eorum formulas
+            sive processus frustra tentantibus, donec nonnumquam aliquis sive felicior sive
+            diligentior aliis repertus est, qui eorum famam vindicavit, quemadmodum Basilii<index indexName="Namensregister">
+              <term><hi rendition="#g">Thoelde</hi>, Johann (1565-1614)</term>
+            </index> Kerckringius,<index indexName="Namensregister">
+              <term><hi rendition="#g">Kerckring</hi>, Theodor (1640-1693)</term>
+            </index> Helmontii<index indexName="Namensregister">
+              <term><hi rendition="#g">Helmont</hi>, Jan Baptista van (1579-1644)</term>
+            </index> Boylius.<index indexName="Namensregister">
+              <term><hi rendition="#g">Boyle</hi>, Robert 1672-1691</term>
+            </index></p>
+          <p xml:id="Ch62.p13">Sed multo minus <hi rendition="#g">servari</hi> hactenus a quoquam
+            certum quoddam <hi rendition="#g">Ignis Regimen</hi> potuit, quis <app type="Bfootnote">
+              <lem type="main">enim illa</lem>
+              <note type="lemma-abbrev">enim</note>
+              <rdg wit="#L" n="1"> illos </rdg>
+              <rdg wit="#L" n="2"> illa <hi rendition="#i">L</hi></rdg>
+            </app> calorum<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> incrementa <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">aut
+                decrementa,</add></lem>
+              <note type="lemma-abbrev">aut decrementa</note>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> illas caloris<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> primi secundi tertiique agglomerationes aut evaporationes ad calculos revocet?
+            Neque enim<app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">, ut
+                dixi,</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> sufficit, tantundem materiae aperturaeque igni dare, ita enim infallibiliter non
+              <app type="Bfootnote">
+              <lem type="main">idem calor</lem>
+              <note type="lemma-abbrev">idem</note>
+              <rdg wit="#L" n="1"> ignis </rdg>
+              <rdg wit="#L" n="2"> calor <hi rendition="#i">L</hi></rdg>
+            </app> servabitur, sed continue <anchor xml:id="augebitur"/>augebitur.<app type="Bfootnote" from="#augebitur" to="#maximam">
+              <lem type="main"/>
+              <note type="lemma-abbrev">augebitur.</note>
+              <rdg wit="#L" n="1"> Omnia </rdg>
+              <rdg wit="#L" n="2"> Maximam <hi rendition="#i">L</hi></rdg>
+            </app></p>
+          <pb type="VIII_2" n="620"/>
+          <p xml:id="Ch62.p14">Maximam<anchor xml:id="maximam"/> autem Artis partem in Regimine
+            Ignis sitam esse, summi artifices ubique ingeminant. Et constat pro diverso ignis gradu
+            ex eodem corpore innumerabilia rerum genera, volatilitate <pb type="L"/><fw type="folNum">[84 v<hi rendition="#sup">o</hi>]</fw> et fixitate, humiditate et
+            siccitate, benignitate et corrosivitate, differentia; oleosa aut incombustibilia; <app type="Bfootnote">
+              <lem type="main">phlegmatica aut efficacia,</lem>
+              <note type="lemma-abbrev">phlegmatica aut</note>
+              <rdg wit="#L" n="1"> virtute praedita </rdg>
+              <rdg wit="#L" n="2"> efficacia, <hi rendition="#i">L</hi></rdg>
+            </app> denique salia, sulphura, spiritus<index indexName="Sachverzeichnis">
+              <term>spiritus</term>
+            </index> produci posse. Et errant qui tot <app type="Bfootnote">
+              <lem type="main">diversas naturas inesse corporibus</lem>
+              <note type="lemma-abbrev">diversas</note>
+              <rdg wit="#L" n="1"> partes </rdg>
+              <rdg wit="#L" n="2"> naturas <app>
+                  <rdg wit="#L" n="a">rebus </rdg>
+                  <rdg wit="#L" n="b">inesse corporibus <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> putant, quot rerum genera <app type="Bfootnote">
+              <lem type="main">eliciunt</lem>
+              <note type="lemma-abbrev">genera</note>
+              <rdg wit="#L" n="1"> una e </rdg>
+              <rdg wit="#L" n="2"> eliciunt. <hi rendition="#i">L</hi></rdg>
+            </app>. Quaedam enim corpora recte tractata possunt <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">pene</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> tota redigi in sal volatile, quae alia tractandi ratione quiddam partim fixum
+            partim oleosum seu medium <anchor xml:id="dabunt"/>dabunt.<app type="Bfootnote" from="#dabunt" to="#difficultas">
+              <lem type="main"/>
+              <note type="lemma-abbrev">dabunt.</note>
+              <rdg wit="#L" n="1"> Sed regimine ignis redacto </rdg>
+              <rdg wit="#L" n="2"> Facit <seg type="apparat-ellipsis"/> difficultas, <hi rendition="#i">L</hi></rdg>
+            </app></p>
+          <p xml:id="Ch62.p15">Facit haec regendi ignis difficultas,<anchor xml:id="difficultas"/>
+            <app type="Bfootnote">
+              <lem type="main">ut Ars Chemica</lem>
+              <note type="lemma-abbrev">ut</note>
+              <rdg wit="#L" n="1"> Chymia </rdg>
+              <rdg wit="#L" n="2"> Ars Chemica <hi rendition="#i">L</hi></rdg>
+            </app> hactenus inter eas<app type="Bfootnote">
+              <lem type="main">
+                <hi rendition="#g">artes</hi> fuerit,</lem>
+              <note type="lemma-abbrev"><hi rendition="#g">artes</hi></note>
+              <rdg wit="#L" n="1"> fuerint </rdg>
+              <rdg wit="#L" n="2"> fuerit, <hi rendition="#i">L</hi></rdg>
+            </app> quarum effectus etiam omnibus exploratis non sunt in potestate, <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">quas dicere possis
+                    <hi rendition="#g">conjecturales</hi></add>
+              </lem>
+              <note type="lemma-abbrev">quas <seg type="apparat-ellipsis"/>
+                <hi rendition="#g">conjecturales</hi>
+              </note>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app>ut est Medica, et agricultoria, et <app type="Bfootnote">
+              <lem type="main">nautica; Exempli causa, Opali artificiales</lem>
+              <note type="lemma-abbrev">nautica;</note>
+              <rdg wit="#L" n="1"> unde Opalum <app>
+                  <rdg wit="#L" n="a">artificialem </rdg>
+                  <rdg wit="#L" n="b">artificiales </rdg>
+                </app></rdg>
+              <rdg wit="#L" n="2"> Exe </rdg>
+              <rdg wit="#L" n="3"> Exempli causa, <app>
+                  <rdg wit="#L" n="a">Opalus </rdg>
+                  <rdg wit="#L" n="b">Opali artificiales <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> saepe casu in officinis vitrariis producti sunt. <app type="Bfootnote">
+              <lem type="main">At regula certa faciendi cum velis, hactenus explorata non est.</lem>
+              <note type="lemma-abbrev">At</note>
+              <rdg wit="#L" n="1"> qui </rdg>
+              <rdg wit="#L" n="2"> in </rdg>
+              <rdg wit="#L" n="3"> regulam certam faciendi invenerit </rdg>
+              <rdg wit="#L" n="4"> regula <seg type="apparat-ellipsis"/> est. <hi rendition="#i">L</hi></rdg>
+            </app> Etsi ut obiter dicam notus mihi sit amicus, <app type="Bfootnote">
+              <lem type="main">qui in eam</lem>
+              <note type="lemma-abbrev">qui</note>
+              <rdg wit="#L" n="1"> possit </rdg>
+              <rdg wit="#L" n="2"> in eam <hi rendition="#i">L</hi></rdg>
+            </app> post multa tentamenta tandem inciderit, quae calorum<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> rationibus lumen non exiguum effundere potest, cum opalus intra se contineat
+            pene omnes. Similiter <app type="Cfootnote">
+              <lem type="main">Lacrymas vitri</lem>
+              <note type="editorial">Siehe hierzu <bibl corresp="#bib_00154"><hi rendition="#i">BH</hi> I, S. 17f</bibl>. <bibl corresp="#bib_00061"><hi rendition="#k">R.
+                    Hooke</hi>, <hi rendition="#i">Micrographia</hi>, London 1665, S.
+                33-44.</bibl></note>
+            </app> producere ex data gutta nemo hactenus artificum promittere potuit: vix enim
+            paucae ex multis salvae evadunt.</p>
+          <p xml:id="Ch62.p16"><app type="Bfootnote">
+              <lem type="main">Sed cum</lem>
+              <note type="lemma-abbrev">Sed</note>
+              <rdg wit="#L" n="1"> si </rdg>
+              <rdg wit="#L" n="2"> cum <hi rendition="#i">L</hi></rdg>
+            </app> datus ignis gradus prae<formula xml:id="Ch62.p16.m1">
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mo stretchy="false">⟨</m:mo>
+              </m:math>
+            </formula>scribi<formula xml:id="Ch62.p16.m2">
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mo stretchy="false">⟩</m:mo>
+              </m:math>
+            </formula>
+            <app type="Bfootnote">
+              <lem type="main">poterit, Chemia erit in earum artium numero,</lem>
+              <note type="lemma-abbrev">poterit,</note>
+              <rdg wit="#L" n="1"> chymia </rdg>
+              <rdg wit="#L" n="2"> Chemia in earum artium numero erunt </rdg>
+              <rdg wit="#L" n="3"> Chemia <seg type="apparat-ellipsis"/> numero, <hi rendition="#i">L</hi></rdg>
+            </app> quae sunt in artificis diligentis potestate, qualis est Architecturaria, et
+            Pictoria et Scrinitria, et Tornatoria.</p>
+          <p xml:id="Ch62.p17">Hoc fiet ergo <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">aliquatenus (donec
+                  aliquis felicior rem ad majorem perfectionem deducat<pb type="VIII_2" n="621"/>)</add></lem>
+              <note type="lemma-abbrev">aliquatenus <seg type="apparat-ellipsis"/> deducat)</note>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> subtili <app type="Bfootnote">
+              <lem type="main">quadam applicatione Th<formula xml:id="Ch62.p17.m1">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟨</m:mo>
+                  </m:math>
+                </formula>ermom<formula xml:id="Ch62.p17.m2">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟩</m:mo>
+                  </m:math>
+                </formula>etri</lem>
+              <note type="lemma-abbrev">quadam</note>
+              <rdg wit="#L" n="1"> Thermo </rdg>
+              <rdg wit="#L" n="2"> applicatione Th<formula xml:id="Ch62.p17.m3">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟨</m:mo>
+                  </m:math>
+                </formula>ermom<formula xml:id="Ch62.p17.m4">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟩</m:mo>
+                  </m:math>
+                </formula>etri <hi rendition="#i">L</hi></rdg>
+            </app> ad Fornacem:<index indexName="Sachverzeichnis">
+              <term>fornax</term>
+            </index>
+            <app type="Bfootnote">
+              <lem type="main">Sed Thermometri</lem>
+              <note type="lemma-abbrev">Sed</note>
+              <rdg wit="#L" n="1"> Thermometris </rdg>
+              <rdg wit="#L" n="2"> Thermometri <hi rendition="#i">L</hi></rdg>
+            </app> a caeteris <formula xml:id="Ch62.p17.m5">
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mo stretchy="false">⟨</m:mo>
+              </m:math>
+            </formula>diversi<formula xml:id="Ch62.p17.m6">
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mo stretchy="false">⟩</m:mo>
+              </m:math>
+            </formula>, caetera enim designant tantum, hoc non solum <formula xml:id="Ch62.p17.m7">
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mo stretchy="false">⟨</m:mo>
+              </m:math>
+            </formula>designa<formula xml:id="Ch62.p17.m8">
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mo stretchy="false">⟩</m:mo>
+              </m:math>
+            </formula>re sed et <hi rendition="#g">facere</hi> debet gradum caloris<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index>
+            <app type="Bfootnote">
+              <lem type="main">datum[,] in usum deducendi</lem>
+              <note type="lemma-abbrev">datum[,]</note>
+              <rdg wit="#L" n="1"> <formula xml:id="Ch62.p17.m9">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟨</m:mo>
+                  </m:math>
+                </formula>in<formula xml:id="Ch62.p17.m10">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟩</m:mo>
+                  </m:math>
+                </formula> praestandi </rdg>
+              <rdg wit="#L" n="2"> in usum deducendi <hi rendition="#i">L</hi></rdg>
+            </app> hanc rationem <formula xml:id="Ch62.p17.m11">
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mo stretchy="false">⟨</m:mo>
+              </m:math>
+            </formula>comm<formula xml:id="Ch62.p17.m12">
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mo stretchy="false">⟩</m:mo>
+              </m:math>
+            </formula>odissimam mihi videor reperisse.</p>
+          <p xml:id="Ch62.p18"><app type="Bfootnote">
+              <lem type="main"><formula xml:id="Ch62.p18.m1">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟨</m:mo>
+                  </m:math>
+                </formula>Es<formula xml:id="Ch62.p18.m2">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟩</m:mo>
+                  </m:math>
+                </formula>to Ampulla <hi rendition="#i">A</hi> fornaci, eo in <formula xml:id="Ch62.p18.m3">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟨</m:mo>
+                  </m:math>
+                </formula>loc<formula xml:id="Ch62.p18.m4">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟩</m:mo>
+                  </m:math>
+                </formula>o, ubi materia distillanda, digerendave etc. poni debet, implantata;
+                ex</lem>
+              <note type="lemma-abbrev"><formula xml:id="Ch62.p18.m5">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟨</m:mo>
+                  </m:math>
+                </formula>Es<formula xml:id="Ch62.p18.m6">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟩</m:mo>
+                  </m:math>
+                </formula>to</note>
+              <rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>Vas sive</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> Ampulla <hi rendition="#i">A</hi>
+              </rdg>
+              <rdg wit="#L" n="1"> ex </rdg>
+              <rdg wit="#L" n="2"> fornaci, <seg type="apparat-ellipsis"/> implantata; ex <hi rendition="#i">L</hi></rdg>
+            </app> materia igni <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">vel saltem
+                    calori<index indexName="Sachverzeichnis">
+                    <term>calor</term>
+                  </index></add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">resistente, facta.</lem>
+              <note type="lemma-abbrev">resistente,</note>
+              <rdg wit="#L" n="1"> ut ferro, cupro, terra etc. facta </rdg>
+              <rdg wit="#L" n="2"> facta. <hi rendition="#i">L</hi></rdg>
+            </app> Ex <app type="Bfootnote">
+              <lem type="main">hac Ampulla descendat</lem>
+              <note type="lemma-abbrev">hac</note>
+              <rdg wit="#L" n="1"> descendat </rdg>
+              <rdg wit="#L" n="2"> Ampulla descendat <hi rendition="#i">L</hi></rdg>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">canna vitrea</lem>
+              <note type="lemma-abbrev">canna</note>
+              <rdg wit="#L" n="1"> tenuis vitrea </rdg>
+              <rdg wit="#L" n="2"> vitrea <hi rendition="#i">L</hi></rdg>
+            </app>
+            <hi rendition="#i">BC</hi> longa <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">inclinataque</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> quantum satis est, et intrans in vas <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><hi rendition="#i">DE</hi></add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app></p>
+          <figure rendition="#own-line_centered" xml:id="Ch62.p19">
+            <graphic rendition="#c" url="../images/lh03703_84v1.svg" width="294.8616pt" xml:id="Ch62.p19.g1"/>
+
+            <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<app type="Cfootnote">
+                <lem type="main"/>
+                <note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt-->[<hi rendition="#i">Fig. 1</hi>]</note>
+                <note type="editorial">Ein erster, gestrichener und hier nicht wiedergegebener
+                  Entwurf dieses Diagramms ist tlw. als Blindzeichnung ausgeführt.</note>
+              </app></head>
+          </figure>
+          <pb type="VIII_2" n="622"/>
+          <p xml:id="Ch62.p20" rendition="#noindent">liquore quodam (<?tex-source \phantom{)}?>ut
+            aqua, <app type="Bfootnote">
+              <lem type="main">vel argento vivo quod ideo commodius est, quia non aeque
+                evaporat<?tex-source \phantom{(}?>) plenum usque ad <hi rendition="#i">F.</hi></lem>
+              <note type="lemma-abbrev">vel</note>
+              <rdg wit="#L" n="1"> argentivo </rdg>
+              <rdg wit="#L" n="2" cause="addition"> argento vivo <note type="editorial">|</note> <add>quod <seg type="apparat-ellipsis"/> evaporat</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <?tex-source \phantom{(}?>) <app>
+                  <rdg wit="#L" n="a">plenum </rdg>
+                  <rdg wit="#L" n="b">refertum <hi rendition="#i">DE</hi>
+                  </rdg>
+                  <rdg wit="#L" n="c">plenum usque ad <hi rendition="#i">F.</hi>
+                    <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> ita ut hujus liquoris pars in cannae partem, quanta satis <app type="Bfootnote">
+              <lem type="main">est, <hi rendition="#i">CG</hi> vi aequilibrii ascendat,</lem>
+              <note type="lemma-abbrev">est,</note>
+              <rdg wit="#L" n="1"> ascendat </rdg>
+              <rdg wit="#L" n="2"> <hi rendition="#i">CG</hi>
+                <seg type="apparat-ellipsis"/> ascendat, <hi rendition="#i">L</hi></rdg>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">quousque aeris jam inclusi raritas permittit.</lem>
+              <note type="lemma-abbrev">quousque</note>
+              <rdg wit="#L" n="1"> per aerem jam inclusum potest </rdg>
+              <rdg wit="#L" n="2"> aeris <seg type="apparat-ellipsis"/> permittit. <hi rendition="#i">L</hi></rdg>
+            </app></p>
+          <p xml:id="Ch62.p21"><app type="Bfootnote">
+              <lem type="main">In superficie liquoris in vase <hi rendition="#i">DE</hi> natet</lem>
+              <note type="lemma-abbrev">In</note>
+              <rdg wit="#L" n="1"> liquore vasis <hi rendition="#i">DE</hi> natet </rdg>
+              <rdg wit="#L" n="2"> <hi rendition="#i">DF</hi> liquore vasis, </rdg>
+              <rdg wit="#L" n="3"> superficie <seg type="apparat-ellipsis"/> natet <hi rendition="#i">L</hi></rdg>
+            </app> corpus <app type="Bfootnote">
+              <lem type="main">quoddam <hi rendition="#i">H</hi> eo</lem>
+              <note type="lemma-abbrev">quoddam</note>
+              <rdg wit="#L" n="1"> eo </rdg>
+              <rdg wit="#L" n="2"> <hi rendition="#i">H</hi> eo <hi rendition="#i">L</hi></rdg>
+            </app> liquore <app type="Bfootnote">
+              <lem type="main">levius ex</lem>
+              <rdg wit="#L">levius <note type="editorial">|</note> (v.g. </rdg>
+              <rdg wit="#L" n="1"> lignum </rdg>
+              <rdg wit="#L" n="2" cause="deletion"> <del>suber in aqua, plumbum in Hydrargyro)</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> ex <hi rendition="#i">L</hi></rdg>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">quo ascendat</lem>
+              <note type="lemma-abbrev">quo</note>
+              <rdg wit="#L" n="1"> prodeat </rdg>
+              <rdg wit="#L" n="2"> ascendat <hi rendition="#i">L</hi></rdg>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">baculus <hi rendition="#i">HI</hi> annexus laminae ferreae <hi rendition="#i">LM</hi></lem>
+              <note type="lemma-abbrev">baculus <hi rendition="#i">HI</hi></note>
+              <rdg wit="#L" n="1"> attingens laminam </rdg>
+              <rdg wit="#L" n="2"> annexus <seg type="apparat-ellipsis"/>
+                <hi rendition="#i">LM</hi>
+                <hi rendition="#i">L</hi></rdg>
+            </app> mobili circa centrum <hi rendition="#i">N</hi> et <app type="Bfootnote">
+              <lem type="main">imminenti Registro</lem>
+              <note type="lemma-abbrev">imminenti</note>
+              <rdg wit="#L" n="1"> foramin </rdg>
+              <rdg wit="#L" n="2"> Registro <hi rendition="#i">L</hi></rdg>
+            </app> seu aperturae <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">sive
+                  Respiraculo</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> fornacis<index indexName="Sachverzeichnis">
+              <term>fornax</term>
+            </index>
+            <hi rendition="#i">P</hi>.</p>
+          <p xml:id="Ch62.p22">Hic qui nunc est status ponatur esse debitus, seu desideratus, is
+            ergo semper manebit (quamdiu ignis sufficiens in fornace<index indexName="Sachverzeichnis">
+              <term>fornax</term>
+            </index> supererit.) Aer <app type="Bfootnote">
+              <lem type="main">enim in Ampulla <hi rendition="#i">A</hi> ulterius,</lem>
+              <note type="lemma-abbrev">enim in</note>
+              <rdg wit="#L" n="1"> fornace </rdg>
+              <rdg wit="#L" n="2"> Ampulla <hi rendition="#i">A</hi>
+                <app>
+                  <rdg wit="#L" n="a">ultra </rdg>
+                  <rdg wit="#L" n="b">ulterius, <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> calore<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index>
+            <app type="Bfootnote">
+              <lem type="main">rarefactus, in liquorem (aquam aut mercurium) in canna <hi rendition="#i">BC</hi> deprimet</lem>
+              <note type="lemma-abbrev">rarefactus,</note>
+              <rdg wit="#L" n="1" cause="addition"> partem mercurii <note type="editorial">|</note> <add><hi rendition="#i">GC</hi>
+                </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> <app>
+                  <rdg wit="#L" n="a">ex canna </rdg>
+                  <rdg wit="#L" n="b">ex canna <hi rendition="#i">BC</hi> deprimet </rdg>
+                </app></rdg>
+              <rdg wit="#L" n="2"> in liquorem (aquam aut mercurium) <app>
+                  <rdg wit="#L" n="a"><hi rendition="#i">GC</hi>
+                  </rdg>
+                  <rdg wit="#L" n="b">in canna <hi rendition="#i">BC</hi> deprimet <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> ex <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">altitudine</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app>
+            <hi rendition="#i">GC</hi>
+            <app type="Bfootnote">
+              <lem type="main">in <hi rendition="#i">RC</hi>. Ergo residuum liquoris, (differentia
+                inter <hi rendition="#i">GC</hi> et <hi rendition="#i">RC</hi>) deprimetur in</lem>
+              <note type="lemma-abbrev">in <hi rendition="#i">RC</hi>.</note>
+              <rdg wit="#L" n="1"> Is ergo ascendet in </rdg>
+              <rdg wit="#L" n="2"> Ergo <seg type="apparat-ellipsis"/> deprimetur in <hi rendition="#i">L</hi></rdg>
+            </app> vas<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am
+                Rand:</hi> Nota: <note type="Afootnote-sub" n="[a]">Nota: <hi rendition="#i">(1)</hi> potest <hi rendition="#i">(2)</hi> posse <hi rendition="#i">L</hi>
+                     </note> posse abesse <note type="Afootnote-sub" n="[b]">abesse <hi rendition="#i">(1)</hi> vas <hi rendition="#i">(2)</hi> Ampulla <hi rendition="#i">L ändert Herausgeber</hi>      </note> [Ampullam] <hi rendition="#i">A</hi> et
+              totum aerem esse in canna. Potest canna in spiras intorta esse, eaeque spirae possunt
+              esse in vase quodam cupreo grandi aqua pleno. Quo facto poterunt vitreae esse,
+              poterunt a destructione conservari,<note type="Afootnote-sub" n="[c]">conservari, <hi rendition="#i">(1)</hi> retinebunt <hi rendition="#i">(2)</hi> habebunt <hi rendition="#i">L</hi>      </note> habebunt eundem semper caloris<index indexName="Sachverzeichnis">
+                <term>calor</term>
+              </index> gradum ubique. Metuendum ne inter vibrationes in <note type="Afootnote-sub" n="[d]">in <note type="editorial"><hi rendition="#i">erg. L</hi></note></note> medio
+              quoddam aequilibrium eligatur. Sed et hae ultro citroque reciprocationes reddent
+                calorem<index indexName="Sachverzeichnis">
+                <term>calor</term>
+              </index> inaequalem, nec nisi dimidium ejus, toto tempore, gradus dati. Ergo
+              efficiendum ut magis semper decrescat quam crescat calor<index indexName="Sachverzeichnis">
+                <term>calor</term>
+              </index>. Si <hi rendition="#i">HI</hi> baculus sit propior centro laminae laminaque
+              longior, ita aequilibrium subdividet incrementa in duas partes inaequales, ex quibus
+              praedominabitur pars renitens mutationi, seu minima erit mutatio. Ita minima mutatio
+              maximam resistentiam experietur. Et tempore reciprocationis calor<index indexName="Sachverzeichnis">
+                <term>calor</term>
+              </index> erit partim magnus partim nullus, aut parvus. Manebit ergo prior, si justa
+              proportio assignetur.</note> liquore refertum, ac propterea liquor ascendet in vase ex
+              <hi rendition="#i">F</hi> in <hi rendition="#i">S</hi>. Ergo et corpus <hi rendition="#i">H</hi> natans in <pb type="VIII_2" n="623"/>liquore. Ergo et baculus
+              <hi rendition="#i">HI</hi> elevabit brachium laminae <hi rendition="#i">LN</hi> eodem
+            ergo tempore deprimet brachium laminae oppositum <hi rendition="#i">NM</hi>
+            <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">id est
+                  operculum</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> ac proinde magis quam ante occludet Registrum seu foramen <hi rendition="#i">NP</hi>. Quo facto calor<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index>
+            <app type="Bfootnote">
+              <lem type="main">minuetur. <pb type="L"/><fw type="folNum">[85 r<hi rendition="#sup">o</hi>]</fw> Cum ergo possit augeri calor, quin <formula xml:id="Ch62.p22.m1">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟨</m:mo>
+                  </m:math>
+                </formula>tan<formula xml:id="Ch62.p22.m2">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟩</m:mo>
+                  </m:math>
+                </formula>tundem minuatur, manebit in statu priore.</lem>
+              <note type="lemma-abbrev">minuetur</note>
+              <rdg wit="#L" n="1"> , ac proinde <pb type="L"/><fw type="folNum">[85 r<hi rendition="#sup">o</hi>]</fw>
+                <formula xml:id="Ch62.p22.m3">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟨</m:mo>
+                  </m:math>
+                </formula>rar<formula xml:id="Ch62.p22.m4">
+                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mo stretchy="false">⟩</m:mo>
+                  </m:math>
+                </formula>efactio quoque. </rdg>
+              <rdg wit="#L" n="2"> . Cum <seg type="apparat-ellipsis"/> priore. <hi rendition="#i">L</hi></rdg>
+            </app></p>
+          <p xml:id="Ch62.p23">Contra si ponamus calorem<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> diminui, aere condensato, liquor ascendet ultra <hi rendition="#i">G</hi> in
+              <hi rendition="#i">T</hi> in canna, ac proinde <app type="Bfootnote">
+              <lem type="main">descendet in vase ex <hi rendition="#i">F</hi></lem>
+              <note type="lemma-abbrev">descendet</note>
+              <rdg wit="#L" n="1"> ex vase </rdg>
+              <rdg wit="#L" n="2"> in vase ex <hi rendition="#i">F</hi>
+                <hi rendition="#i">L</hi></rdg>
+            </app> in <hi rendition="#i">U</hi>. Ergo et corpus innatans <hi rendition="#i">H</hi>
+            ergo et baculus <app type="Bfootnote">
+              <lem type="main"><hi rendition="#i">HI</hi> depresso ergo laminae brachio <hi rendition="#i">LN</hi> elevabitur oppositum seu operculum</lem>
+              <note type="lemma-abbrev"><hi rendition="#i">HI</hi></note>
+              <rdg wit="#L" n="1"> attolletur ergo lamina </rdg>
+              <rdg wit="#L" n="2" cause="deletion"> depresso <seg type="apparat-ellipsis"/>
+                  oppositum <note type="editorial">|</note> <del>seu operculum</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> seu operculum <hi rendition="#i">L</hi></rdg>
+            </app>
+            <hi rendition="#i">NM</hi> ergo plus aeris admittetur; augebitur ergo calor<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index>. Ergo quantum diminuetur Calor, tantum eo ispo augebitur <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">(donec scilicet ignis
+                  ita debilis devenerit, ut ne maxima quidem apertura data gradum caloris
+                  desideratum dare queat.)</add></lem>
+              <note type="lemma-abbrev">(donec <seg type="apparat-ellipsis"/> queat.)</note>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> seu <app type="Bfootnote">
+              <lem type="main">quod eodem redit,</lem>
+              <note type="lemma-abbrev">quod</note>
+              <rdg wit="#L" n="1"> idem est </rdg>
+              <rdg wit="#L" n="2"> eodem redit, <hi rendition="#i">L</hi></rdg>
+            </app> manebit semper <app type="Bfootnote">
+              <lem type="main">idem. Haec summatim Athanoris nostri Ratio est: sed in praxi circa
+                proportiones partium inter se recte contemperandas multiplici consideratione opus
+                est quam alias cum obstaculis remediisque fusius exponam.</lem>
+              <note type="lemma-abbrev">idem.</note>
+              <rdg wit="#L" n="1"> Seu potius continua vibratione nunc amittet nunc recuperabit
+                statum priorem. </rdg>
+              <rdg wit="#L" n="2"> Haec <app>
+                  <rdg wit="#L" n="a">in summa </rdg>
+                  <rdg wit="#L" n="b">summatim <seg type="apparat-ellipsis"/> Ratio est: <app>
+                      <rdg wit="#L" n="aa">sed in quo exacte </rdg>
+                      <rdg wit="#L" n="bb">sed in <seg type="apparat-ellipsis"/> contemperandas <app>
+                          <rdg wit="#L" n="aaa">multa consi </rdg>
+                          <rdg wit="#L" n="bbb">multiplici <seg type="apparat-ellipsis"/> cum <app>
+                              <rdg wit="#L" n="aaaa">impedi </rdg>
+                              <rdg wit="#L" n="bbbb">obstaculis <seg type="apparat-ellipsis"/>
+                                exponam. <hi rendition="#i">L</hi></rdg>
+                            </app></rdg>
+                        </app></rdg>
+                    </app></rdg>
+                </app></rdg>
+            </app></p>
+          <p xml:id="Ch62.p24">Praxis ergo Machinae haec est, ubi primum eum calorem<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> nactus es, quem desideras, quemque conservari cupis, tum <app type="Bfootnote">
+              <lem type="main">alimento igni praebito,</lem>
+              <note type="lemma-abbrev">alimento</note>
+              <rdg wit="#L" n="1"> ignis tum ape </rdg>
+              <rdg wit="#L" n="2"> igni praebito, <hi rendition="#i">L</hi></rdg>
+            </app> tum apertura constituta, baculum <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><hi rendition="#i">HI</hi></add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> ei aperturae, quam tunc <app type="Bfootnote">
+              <lem type="main">habes, seu laminae ei in statu positae alliga.</lem>
+              <note type="lemma-abbrev">habes,</note>
+              <rdg wit="#L" n="1"> alliga. </rdg>
+              <rdg wit="#L" n="2"> seu <seg type="apparat-ellipsis"/> alliga. <hi rendition="#i">L</hi></rdg>
+            </app> Quia enim baculus pluribus uncis sibi suppositis constare potest, et laminae
+            brachium operculo <hi rendition="#i">NM</hi> oppositum <hi rendition="#i">LN</hi>
+            annulos habet, potes quem velis uncum baculi in quem vis annulum laminae immittere. Et
+            quanto major apertura est tanto quoque inferior baculi uncus annulo <app type="Bfootnote">
+              <lem type="main">laminae inseretur.</lem>
+              <note type="lemma-abbrev">laminae</note>
+              <rdg wit="#L" n="1"> innectetur </rdg>
+              <rdg wit="#L" n="2"> inseretur. <hi rendition="#i">L</hi></rdg>
+            </app></p>
+          <pb type="VIII_2" n="624"/>
+          <p xml:id="Ch62.p25">Notandum quoque est plurima hic contemperari posse. Nam quanto
+            amplius est vas <hi rendition="#i">DF</hi> tanto minus ascendit in eo liquor ex canna
+            depressus, quippe se per totam vasis amplitudinem diffundens. Ergo eo <app type="Bfootnote">
+              <lem type="main">casu debet</lem>
+              <note type="lemma-abbrev">casu</note>
+              <rdg wit="#L" n="1"> quo </rdg>
+              <rdg wit="#L" n="2"> debet <hi rendition="#i">L</hi></rdg>
+            </app> baculus <hi rendition="#i">HI</hi>
+            <app type="Bfootnote">
+              <lem type="main">innecti annulo</lem>
+              <note type="lemma-abbrev">innecti</note>
+              <rdg wit="#L" n="1"> parti </rdg>
+              <rdg wit="#L" n="2"> annulo <hi rendition="#i">L</hi></rdg>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">laminae centro</lem>
+              <note type="lemma-abbrev">laminae</note>
+              <rdg wit="#L" n="1"> ad centrum </rdg>
+              <rdg wit="#L" n="2"> centro <hi rendition="#i">L</hi></rdg>
+            </app>
+            <hi rendition="#i">N</hi> propiori, ita enim exigua elevatione vel depressione, plurimum
+            operculi aperiet vel claudet. <app type="Bfootnote">
+              <lem type="main">Contra si</lem>
+              <note type="lemma-abbrev">Contra</note>
+              <rdg wit="#L" n="1"> quanto </rdg>
+              <rdg wit="#L" n="2"> si <hi rendition="#i">L</hi></rdg>
+            </app> vas est angustius, baculus innectetur parti laminae magis a centro <hi rendition="#i">N</hi> remotae seu <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">propiori</add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> vere, <hi rendition="#i">L</hi>. Crassities quoque vasis <hi rendition="#i">A</hi>
+            <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">et altitudo vasis <hi rendition="#i">DF</hi></add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> et <app type="Bfootnote">
+              <lem type="main">longitudo crassities inclinatioque</lem>
+              <note type="lemma-abbrev">longitudo</note>
+              <rdg wit="#L" n="1"> crassitiesque </rdg>
+              <rdg wit="#L" n="2"> crassities inclinatioque <hi rendition="#i">L</hi></rdg>
+            </app> cannae <hi rendition="#i">BC</hi>, et magnitudo Registri <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><hi rendition="#i">P</hi></add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> atque operculi <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><hi rendition="#i">M</hi></add></lem>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> distantiaque operculi <hi rendition="#i">M</hi> a centro <hi rendition="#i">N</hi> (quae <app type="Bfootnote">
+              <lem type="main">omnia effectum variant</lem>
+              <note type="lemma-abbrev">omnia</note>
+              <rdg wit="#L" n="1"> variant </rdg>
+              <rdg wit="#L" n="2"> effectum variant <hi rendition="#i">L</hi></rdg>
+            </app>) justa <app type="Bfootnote">
+              <lem type="main">proportione (per ipsam experientiam determinanda,)</lem>
+              <note type="lemma-abbrev">proportione (<?tex-source \phantom{)}?></note>
+              <rdg wit="#L" n="1"> ipsa experientia determinanda </rdg>
+              <rdg wit="#L" n="2"> per ipsam experientiam determinanda,<?tex-source \phantom{(}?>)
+                  <hi rendition="#i">L</hi></rdg>
+            </app> caeteris accommodari debent. Quanto enim major est inclinatio cannae <hi rendition="#i">BC</hi>
+            <app type="Bfootnote">
+              <lem type="main">tanto minor est altitudo [Liquoris] in infimum</lem>
+              <note type="lemma-abbrev">tanto</note>
+              <rdg wit="#L" n="1"> minore opus est altitudine mercurii, <app>
+                  <rdg wit="#L" n="a">etiam infimi </rdg>
+                  <rdg wit="#L" n="b">infimi; mercurius </rdg>
+                </app></rdg>
+              <rdg wit="#L" n="2"> minor est altitudo <note type="editorial">|</note> Liquor <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note> in infimum <hi rendition="#i">L</hi></rdg>
+            </app> locum <hi rendition="#i">U</hi> subsidentis. <app type="Bfootnote">
+              <lem type="main">Nam liquor in vase <hi rendition="#i">DE</hi> utcunque maxime
+                subsidens nunquam</lem>
+              <note type="lemma-abbrev">Nam</note>
+              <rdg wit="#L" n="1"> Mercurius numqu </rdg>
+              <rdg wit="#L" n="2"> liquor <seg type="apparat-ellipsis"/> nunquam <hi rendition="#i">L</hi></rdg>
+            </app> infra horizontem liquoris in canna utcunque maxime ascendentis descendere debet.
+            Nota quoque esse debet<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand:</hi> NB. NB posset et tale artificium adhiberi ut occlusio semel facta
+              maneat, etsi redescendat liquor in vase, cum corpore et baculo et ita augeri possit,
+              non vero minuatur nisi quando descendit infra gradum datum. Haec observatio magni
+              momenti est, <note type="Afootnote-sub" n="[a]">est, <hi rendition="#i">(1)</hi> ne a
+                  <hi rendition="#i">(2)</hi> quae ne <hi rendition="#i">L</hi></note> quae ne
+              Drebelio quidem in mentem venit.</note>
+            <app type="Bfootnote">
+              <lem type="main">capacitas Ampullae</lem>
+              <note type="lemma-abbrev">capacitas</note>
+              <rdg wit="#L" n="1"> vasis </rdg>
+              <rdg wit="#L" n="2"> Ampullae <hi rendition="#i">L</hi></rdg>
+            </app>
+            <hi rendition="#i">A</hi> et vasis <hi rendition="#i">DE</hi>
+            <app type="Bfootnote">
+              <lem type="main">in comparatione ad</lem>
+              <note type="lemma-abbrev">in</note>
+              <rdg wit="#L" n="1"> ordine </rdg>
+              <rdg wit="#L" n="2"> comparatione ad <hi rendition="#i">L</hi></rdg>
+            </app> capacitatem cannae; ut quantitas aeris aut liquoris intrantis in cannam aut ex ea
+            exeuntis in calculum venire possit. Sed et ad summam exactitudinem opus est ut aer in
+            canna <hi rendition="#i">TG</hi> aut <hi rendition="#i">TR</hi> eundem caloris<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> gradum percipiat, quem aer in Ampulla <hi rendition="#i">A.</hi> alioqui
+            rarefactio aeris in canna non determinabit exacte calorem<index indexName="Sachverzeichnis">
+              <term>calor</term>
+            </index> aeris in ampulla; denique ea proportio danda est, ut quando exempli causa <app type="Bfootnote">
+              <lem type="main">duplicatur vel triplicatur calor[,]<index indexName="Sachverzeichnis">
+                  <term>calor</term>
+                </index> ascensio</lem>
+              <rdg wit="#L">duplicatur <note type="editorial">|</note> </rdg>
+              <rdg wit="#L" n="1"> (triplicatur) </rdg>
+              <rdg wit="#L" n="2" cause="addition"> <add>vel triplicatur calor</add>
+                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> ascensio <hi rendition="#i">L</hi></rdg>
+            </app> quoque corporis <hi rendition="#i">H</hi> seu baculi <hi rendition="#i">HI</hi>,
+            ac proinde <pb type="VIII_2" n="625"/>angulus <hi rendition="#i">MNP</hi> aperturae
+            operculi, atque ita sector aeris admissi <app type="Bfootnote">
+              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">angulo
+                  comprehensus,</add></lem>
+              <note type="lemma-abbrev">angulo comprehensus</note>
+              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+            </app> duplicetur aut triplicetur.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand:</hi> Etiam ignis Lampadum mirarum mutationum capax, ab ipsa
+              anni tempestate ab aeris statu, qui crassior lampades facit copiosius urere, ut in
+              homine lampadem vitalem hyeme. Ut ergo hic quoque in ordinem redigatur res iterum regi
+              potest tum aeris admissi, tum olei tum vero fortasse rectius, ellychnii
+              inclinatione.</note></p>
+          <p xml:id="Ch62.p26">Et poterunt subdivisiones fieri tanto accuratiores quanto foramen
+              <app type="Bfootnote">
+              <lem type="main"><hi rendition="#i">NP</hi> et</lem>
+              <note type="lemma-abbrev"><hi rendition="#i">NP</hi></note>
+              <rdg wit="#L" n="1"> aut </rdg>
+              <rdg wit="#L" n="2"> et <hi rendition="#i">L</hi></rdg>
+            </app> operculum <hi rendition="#i">NM</hi> sunt longiora.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

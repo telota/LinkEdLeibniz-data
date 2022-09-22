@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-002-005">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+      	<title type="main">De longitudinibus inveniendis 4</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
+          Text</title>
+        <respStmt>
+          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
+          <resp><note type="remarkResponsibility">Digitale Konzeption und
+            Projektbegleitung</note></resp>
+        </respStmt>
+        <respStmt>
+          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
+            Wissenschaften</orgName>
+          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+        </respStmt>
+        <respStmt>
+          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
+          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
+            VIII</note></resp>
+        </respStmt>
+        <respStmt>
+          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
+          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
+            Berlin</note></resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+            </author>
+            <title type="chapter" level="a" n="2"/>
+            <title type="section" level="a" n="25">2. De longitudinibus inveniendis 4</title>
+            <date calendar="#gregorian" notBefore="1668-11" resp="#L" cert="high"/>
+            <date calendar="#gregorian" notAfter="1669-02" resp="#L" cert="high"/>
+            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=94</idno></idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="1" level="m">Band 1: 1668 – 1676</title>
+            <imprint>
+              <publisher>Akademie Verlag GmbH</publisher>
+              <pubPlace>Berlin</pubPlace>
+              <date type="publication">2009</date>
+            </imprint>
+            <biblScope unit="page" from="49" to="54"/>
+          </monogr>
+          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title></series>
+        	<relatedItem type="superordinated-chapter">
+        		<ptr target="#L_08-01-002-000"/>
+        	</relatedItem>
+        </biblStruct>
+        <listWit>
+        	<witness n="L" corresp="#L_08-01-002-005_facs-haupttextzeuge"><msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 15, 6 Bl. 51–52</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                <summary><p>Konzept: LH XXXV 15, 6 Bl. 51–52. 1 Bog. 2<hi rendition="#sup">o</hi>. 4
+                    S., zweispaltig. Linke Spalte fortlaufender Text. Bl. 51 v<hi rendition="#sup">o</hi> rechte Spalte Ergänzungen.</p><p>KK 1, Nr. 193 E</p></summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+      </charDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#nautica"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#nautik"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-11-18" who="#stork" status="enrich_1"/>
+    </revisionDesc>
+  </teiHeader>
+	<!--<facsimile source="digilib.bbaw.de" xml:id="L_08-01-002-005_facs-haupttextzeuge">
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&pn=4362"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&pn=4363"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&pn=4364"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&pn=4365"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&pn=4366"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&pn=4367"/>
+    </facsimile>-->
+	<text xml:id="L_08-01-002-005_text">
+    <body xml:id="Document">
+      <div type="section" xml:id="Ch2.S5" n="25">
+        <head>2<hi rendition="#sub">5</hi><pb type="VIII_1" n="49"/>. DE LONGITUDINIBUS INVENIENDIS
+          4</head>
+        <div type="ueberlieferung">
+          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
+              <witness><msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur">XXX</idno>
+                  </msIdentifier>
+                  <msContents>
+                    <summary><p>Konzept: LH XXXV 15, 6 Bl. 51–52. 1 Bog. 2<hi rendition="#sup">o</hi>. 4 S., zweispaltig. Linke Spalte fortlaufender Text. Bl. 51 v<hi rendition="#sup">o</hi> rechte Spalte Ergänzungen.</p><p>KK 1, Nr. 193
+                        E</p></summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc></witness>
+            </listWit></p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch2.S5.p4" rendition="#c"><pb type="L"/><fw type="folNum">[51 r<hi rendition="#sup">o</hi>]</fw> Longitud. 4.</p>
+          <p xml:id="Ch2.S5.p5">Si nulla ratione effici possit, ut res rei insistens ad sustentaculi
+            gyrationem circa axem non gyretur. Ultimum est in magnete<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> refugium; et, si P. Grandamici <index indexName="Namensregister">
+              <term><hi rendition="#g">Grandami</hi> (Grandamicus), Jacques SJ 1588–1672</term>
+            </index> inventum<app type="Cfootnote">
+              <lem type="main"/>
+              <note type="lemma-abbrev">inventum</note>
+              <note type="editorial">Vgl. <bibl corresp="#bib_00264">N.
+                    2<!--  \hack{\raisebox{-0.5ex}{\tiny{4}}} 
+     \hackfor{\textsubscript{4}}--><hi rendition="#sub">4</hi>, S. <ref corresp="L_section_24.xml#inventum"/>.</bibl></note>
+            </app> verum est, quod et Nicolaus Zucchius<index indexName="Namensregister">
+              <term><hi rendition="#g">Zucchi</hi> (Zucchius), Niccolò SJ 1586–1670</term>
+            </index>, et Athanasius Kircherus<index indexName="Namensregister">
+              <term><hi rendition="#g">Kircher</hi> (Kircherus), Athanasius SJ 1602–1680</term>
+            </index>, et Gasp. Schottus<index indexName="Namensregister">
+              <term><hi rendition="#g">Schott</hi> (Schottus), Caspar SJ 1608–1666</term>
+            </index> examinarunt et approbarunt aeque certum, et si subtilius; et in usu majorem
+            attentionem requirens. Grandamicus<index indexName="Namensregister">
+              <term><hi rendition="#g">Grandami</hi> (Grandamicus), Jacques SJ 1588–1672</term>
+            </index> igitur invenit: si Terrella polo<index indexName="Sachverzeichnis">
+              <term>polus</term>
+            </index> alterutro suberi imponatur, et ita in aqua fluctuet, certum meridianum<index indexName="Sachverzeichnis">
+              <term>meridianus</term>
+            </index> sine variatione compositurum ad meridianum<index indexName="Sachverzeichnis">
+              <term>meridianus</term>
+            </index>
+            <app type="Bfootnote">
+              <lem type="main">loci</lem>
+              <note type="lemma-abbrev">meridianum</note>
+              <rdg wit="#L" n="1"> mundi, et i </rdg>
+              <rdg wit="#L" n="2"> loci <hi rendition="#i">L</hi></rdg>
+            </app>. Eo posito omnis quae in tabula designatoria fiet a linea recta flexio calculo
+              Loxodromiae<index indexName="Sachverzeichnis">
+              <term>loxodromia</term>
+            </index> perfecte corrigi potest, quia cum variis Magnetis<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> declinationibus nihil amplius negotii est, nam si ex subere <app type="Bfootnote">
+              <lem type="main">circulari</lem>
+              <rdg wit="#L" cause="addition"><add>circulari</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
+            </app> emineant acumina sursum, ea poterunt circummovere Tabulam designatoriam, et in
+            eundem cum <app type="Bfootnote">
+              <lem type="main">terrella</lem>
+              <note type="lemma-abbrev">cum</note>
+              <rdg wit="#L" n="1"> magnete<index indexName="Sachverzeichnis">
+                  <term>magnes</term>
+                </index>
+              </rdg>
+              <rdg wit="#L" n="2"> terrella <hi rendition="#i">L</hi></rdg>
+            </app> disponere. Illa difficultas restat, quod Terrella in aqua <app type="Bfootnote">
+              <lem type="main">in navi</lem>
+              <note type="lemma-abbrev">aqua</note>
+              <rdg wit="#L" n="1"> ad praxin </rdg>
+              <rdg wit="#L" n="2"> in navi <hi rendition="#i">L</hi></rdg>
+            </app> librari commode constanterque non est, quia aqua ad quemlibet navis<index indexName="Sachverzeichnis">
+              <term>navis</term>
+            </index> motum turbata situm terrellae et tabulae perpetuo turbabit. Puto tamen aliam
+            librandi rationem non adeo difficilem fore, et fortasse simpliciter rem effici posse, si
+              magnes<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index>
+            <app type="Bfootnote">
+              <lem type="main">vel levissimo suberi insistat, suber intra crassitiem suam
+                stylum</lem>
+              <note type="lemma-abbrev">magnes</note>
+              <rdg wit="#L" n="1"> tenuissimae laminae insistat, ea stylum </rdg>
+              <rdg wit="#L" n="2"> vel <seg type="apparat-ellipsis"/> stylum <hi rendition="#i">L</hi></rdg>
+            </app> orthogonalem recipiat, ita tamen ut circa eum libere gyrari possit, et tamen <app type="Bfootnote">
+              <lem type="main">a stylo non</lem>
+              <note type="lemma-abbrev">tamen</note>
+              <rdg wit="#L" n="1"> a subere non </rdg>
+              <rdg wit="#L" n="2"> a stylo non <hi rendition="#i">L</hi></rdg>
+            </app> perforetur, sed illa styli quasi vagina intus ferro munita sit contra
+            perforationem. Si tamen hoc ad gyrationem et librationem non sufficiat, accedat haec
+            industria: Magnes<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> polo<index indexName="Sachverzeichnis">
+              <term>polus</term>
+            </index> superiore suspendatur aliquo filo (quod consultissime mutatione praxium
+            Kircherianarum fiet ex tenuissimis Aloes foliorum filamentis) et <pb type="VIII_1" n="50"/>tamen insistat suberi, ita nimirum ut neque filum remittat, sed prorsus
+            extendatur, et tamen <app type="Bfootnote">
+              <lem type="main">magnes<index indexName="Sachverzeichnis">
+                  <term>magnes</term>
+                </index>
+              </lem>
+              <rdg wit="#L" cause="addition"><add>magnes<index indexName="Sachverzeichnis">
+                    <term>magnes</term>
+                  </index>
+                </add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
+            </app>suberi sit immediatus, et ita erit in medio insistentiae et pensionis, nec vel
+            subere vel filo ablato vel posito magis descendet, vel ascendet. Hic status admirandae
+            sane considerationis et nescio an hactenus satis observatus librationibus est
+            aptissimus. Suberi autem insistat Terrella in ferrea aliqua suberis quasi patinula, ut
+            tanto melius contorqueatur quam si simpliciter plano insistat, et ut sit in eo firma.
+            Quomodocunque autem fiat libratio ex subere promineant qui tabulam circummoveant aculei.
+            Et, ut tanto fortius tabula moveatur, sint plures Magnetes<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> perpendiculariter <pb type="L"/><fw type="folNum">[51 v<hi rendition="#sup">o</hi>]</fw> unius suber majoris diametri quam alterum, et ita se juvabunt, et ex
+            loco cui insistit stylus suberis superioris poterit suspendi filum terrellae inferioris.
+            Ne autem omnia concutiantur sint omnia disposita, ut quantumcunque jactata nave<index indexName="Sachverzeichnis">
+              <term>navis</term>
+            </index> disponant se perpendiculariter ad horizontem sed ne noceant sibi invicem si
+            similes obvertantur <app type="Bfootnote">
+              <lem type="main">poli<index indexName="Sachverzeichnis">
+                  <term>polus</term>
+                </index></lem>
+              <rdg wit="#L" cause="addition"><add>poli<index indexName="Sachverzeichnis">
+                    <term>polus</term>
+                  </index>
+                </add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
+            </app> cavendum est. Ergo unus erit positus in polo<index indexName="Sachverzeichnis">
+              <term>polus</term>
+            </index> Austrino, <app type="Bfootnote">
+              <lem type="main">proximus</lem>
+              <note type="lemma-abbrev">Austrino,</note>
+              <rdg wit="#L" n="1"> alius </rdg>
+              <rdg wit="#L" n="2"> proximus <hi rendition="#i">L</hi></rdg>
+            </app> in Boreali. Sed ita unum punctum magnetis<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> erit orientale, quod in alio est occidentale observante Schotto<index indexName="Namensregister">
+              <term><hi rendition="#g">Schott</hi> (Schottus), Caspar SJ 1608–1666</term>
+            </index>, sed quid tum? nobis hoc loco solius lineae meridianae, non orientis et
+            occidentis cura est deinde potest esse tanta polorum<index indexName="Sachverzeichnis">
+              <term>polus</term>
+            </index> distantia, ut nihil intersit, quomodocunque locentur. Caeterum notabile est
+            quod P. Kircher<index indexName="Namensregister">
+              <term><hi rendition="#g">Kircher</hi> (Kircherus), Athanasius SJ 1602–1680</term>
+            </index> observavit, si Magnes<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> ponatur ita axe orthogonali et circumagatur circa axem versorium intra sphaeram
+            licet ejus positum, nihil conmotum iri <ref corresp="#bib_00067"/><hi rendition="#i">Art. Magn.</hi> lib. 1. p. 2. prop. 13. fin. experimento 2. consectar. 2.<app type="Cfootnote">
+              <lem type="main"/>
+              <note type="lemma-abbrev">consectar. 2.</note>
+              <note type="editorial"><hi rendition="#k">A. Kircher,</hi>
+                <bibl corresp="#bib_00067"><hi rendition="#i">Magnes</hi>, Rom 1654,
+                S. 69.</bibl></note>
+            </app> Contra nostram rationem <app type="Bfootnote">
+              <lem type="main">procurandae quietis in insistente rotato</lem>
+              <note type="lemma-abbrev">rationem</note>
+              <rdg wit="#L" n="1"> meditatam de quiete insistentis </rdg>
+              <rdg wit="#L" n="2"> procurandae <note type="editorial">|</note> de <hi rendition="#i">streicht   Hrsg.</hi>  quietis in insistente <app>
+                  <rdg wit="#L" n="a">moto </rdg>
+                  <rdg wit="#L" n="b">rotato <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> licet sustentate, hoc unum maxime obstat, quod aucto pondere insistentis, ut
+            rotanti magis obsistat, perit tanto magis libertas, tanto magis enim infigit se ei et
+            insensibiles velut lacunas imprimit. Non tamen despero plane, quin res procurari possit.
+            Sed si Grandamici<index indexName="Namensregister">
+              <term><hi rendition="#g">Grandami</hi> (Grandamicus), Jacques SJ 1588–1672</term>
+            </index> inventum exactum est, eo carere possumus, et demto eo, etsi difficiliore, tamen
+            non incertiore <app type="Bfootnote">
+              <lem type="main">aut minus universali</lem>
+              <rdg wit="#L" cause="addition"><add>aut minus universali</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
+            </app> ratione omnia peragere possumus. In eo est circa filum difficultas quod avertente
+            se Ma<pb type="VIII_1" n="51"/>gnete<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> implicatur et contorquetur, <app type="Bfootnote">
+              <lem type="main">v.g.</lem>
+              <note type="lemma-abbrev">contorquetur,</note>
+              <rdg wit="#L" n="1"> cum tamen nunquam fieri possit ut nimis in latus </rdg>
+              <rdg wit="#L" n="2"> v.g. <hi rendition="#i">L</hi></rdg>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">nave se torquente in circulum</lem>
+              <note type="lemma-abbrev">v.g.</note>
+              <rdg wit="#L" n="1"> magnete<index indexName="Sachverzeichnis">
+                  <term>magnes</term>
+                </index> se torquente in circulum </rdg>
+              <rdg wit="#L" n="2"> nave se torquente in circulum <hi rendition="#i">L</hi></rdg>
+            </app>. Et deinde remisso in contrarium filo, erit laxum et non amplius sustinens, forte
+            commodius adhibebitur filum ferreum, <app type="Bfootnote">
+              <lem type="main">vel adhaereat magneti<index indexName="Sachverzeichnis">
+                  <term>magnes</term>
+                </index>, aut alii filo quo casu etsi obsistit detractioni non tamen forte obsistet
+                gyrationi</lem>
+              <rdg wit="#L" cause="addition"><add>vel adhaereat magneti<index indexName="Sachverzeichnis">
+                    <term>magnes</term>
+                  </index>, <seg type="apparat-ellipsis"/> gyrationi</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
+            </app>, quod superius se contorquere possit.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">In der rechten Spalte</hi>: NB. Videndum haec esset
+              optima libratio rerum. Item fortasse effici potest arte aliqua ut quod ascendit
+              attractum ab magnete<index indexName="Sachverzeichnis">
+                <term>magnes</term>
+              </index> ubi satis ascendit non ultra ascendere possit. Finge continere aciculas, quas
+                magnes<index indexName="Sachverzeichnis">
+                <term>magnes</term>
+              </index> datus hinc repellit, illinc attrahit, et inter ascendendum machina quadam
+              converti ut jam oppositam partem obvertant, et ita difficilius attrahantur. Item fiat
+              machina quaedam in aere perpetuo manens vi Elastica<index indexName="Sachverzeichnis">
+                <term>vis</term>
+                <index>
+                  <term>elastica</term>
+                </index>
+              </index> circularis sese in locum priorem motu perpetuo Navem<index indexName="Sachverzeichnis">
+                <term>navis</term>
+              </index> tamen sequens quia superior pars adhaeret magneti<index indexName="Sachverzeichnis">
+                <term>magnes</term>
+              </index> divulsioni quidem non tamen gyrationi resistenti. Et haec ait forte
+              perfectissima ad retinendum semper situm priorem, seu ad habendum indicem qui semper
+              praecise monstret locum portus soluti. Et ita careri potest Loxodromiis<index indexName="Sachverzeichnis">
+                <term>loxodromia</term>
+              </index>.</note> Sed quomodo cum debeat alicui inniti. Innitatur igitur, sed non nisi
+            fere in puncto. Aut potius sic ut innitatur wie in einer schrauben. Sed ac hoc amplius
+            videndum. Res enim dubia est, et ideo omnibus modis quaerenda tuta quaedam et stabilis
+              magnetis<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> libratio.</p>
+          <p xml:id="Ch2.S5.p6">Versorium non debet longioris esse radii, quam est Sphaera
+            activitatis <app type="Bfootnote">
+              <lem type="main">magnetis.</lem>
+              <rdg wit="#L" n="1"> Nota </rdg>
+              <rdg wit="#L" n="2"> Kircher <hi rendition="#i">L</hi></rdg>
+            </app> Kircher Lib. II. part. 1. progymn. 3. de versoriis pragm. 1.<app type="Cfootnote">
+              <lem type="main"/>
+              <note type="lemma-abbrev">pragm. 1.</note>
+              <note type="editorial"><hi rendition="#k">A. Kircher</hi>, <bibl corresp="#bib_00067">a.a.O., S. 132f.</bibl></note>
+            </app> ubi et observat majoris magnetis<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> majorem esse sphaeram activitatis quam minoris fortioris, sed ut majorem, ita
+            debiliorem, rem quidem distantiorem, sed non graviorem attrahit. Fortasse posset
+            Terrella librari in hydrargyro, quippe quod stabilius aqua, <pb type="VIII_1" n="52"/>et
+            tamen gyrationem magnetis<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> in subere non impediens, sed dubito, quia nimis crassum est. Fortasse tamen
+            libratio fieri potest hoc solo modo ut <app type="Bfootnote">
+              <lem type="main">pileolus</lem>
+              <note type="lemma-abbrev">ut</note>
+              <rdg wit="#L" n="1"> vi </rdg>
+              <rdg wit="#L" n="2"> pileolus <hi rendition="#i">L</hi></rdg>
+            </app> supra centrum suberis conicus <app type="Bfootnote">
+              <lem type="main">chalybius</lem>
+              <note type="lemma-abbrev">conicus</note>
+              <rdg wit="#L" n="1"> aeneus </rdg>
+              <rdg wit="#L" n="2"> chalybius <hi rendition="#i">L</hi></rdg>
+            </app> supra rursus <app type="Bfootnote">
+              <lem type="main">in magnetem</lem>
+              <note type="lemma-abbrev">rursus</note>
+              <rdg wit="#L" n="1"> laxatus in patellam et </rdg>
+              <rdg wit="#L" n="2"> in magnetem <hi rendition="#i">L</hi></rdg>
+            </app>
+            <pb type="L"/><fw type="folNum">[52 r<hi rendition="#sup">o</hi>]</fw> fixum <app type="Bfootnote">
+              <lem type="main">firmatumque</lem>
+              <rdg wit="#L" n="1"> sustineat </rdg>
+              <rdg wit="#L" n="2"> sustineret <hi rendition="#i">L</hi></rdg>
+            </app> sustineret, forte hac sola ratione effici potest ut gyretur. Forte tandem et
+            libratio in aqua sufficit, si omnia sint libera et horizonti parallela, ita ut mota
+            quomodocunque navi<index indexName="Sachverzeichnis">
+              <term>navis</term>
+            </index> aequaliter perpetuo moveatur aqua, id est non moveatur; quo  pertinere  potest 
+            et  industria  illa  superior  de  <app type="Bfootnote">
+              <lem type="main">rigida pendulatione</lem>
+              <note type="lemma-abbrev">de</note>
+              <rdg wit="#L" n="1"> re pendu </rdg>
+              <rdg wit="#L" n="2"> rigida pendulatione <hi rendition="#i">L</hi></rdg>
+            </app>.  Quid ve-</p>
+          <p xml:id="Ch2.S5.p7" rendition="#noindent">ro si vas ita sit plenum aqua ut non possit
+            esse plenius? <app type="Bfootnote">
+              <lem type="main">Nec tamen et possit quicquam effluere, tunc</lem>
+              <note type="lemma-abbrev">plenius?</note>
+              <rdg wit="#L" n="1"> Nulla tunc </rdg>
+              <rdg wit="#L" n="2"> Nec tamen et possit <app>
+                  <rdg wit="#L" n="a">emergere: Tunc </rdg>
+                  <rdg wit="#L" n="b">quicquam effluere, tunc <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> non fluctuabit. Ergo ita in eo libretur subere magnes<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index>, ut paulum intra aquam descendat, superiori ex polo<index indexName="Sachverzeichnis">
+              <term>polus</term>
+            </index> exeat obelus tenuissimus sursum, papyrum circumvolans, is obelus transeat per
+            foramen vitreum ita exacte, ut nullus aer transpirare aut exhalare aqua possit, <app type="Bfootnote">
+              <lem type="main">aut</lem>
+              <note type="lemma-abbrev">possit,</note>
+              <rdg wit="#L" n="1"> et </rdg>
+              <rdg wit="#L" n="2"> aut <hi rendition="#i">L</hi></rdg>
+            </app> ne metuendi causa sit, ne forte aqua exhalet, aut non sit vas plenum, Vas hoc
+            aqua plenum in alio vase aqua pleno submergatur, per quam aeneus obelus transeat. Aeneus
+            inquam obelus, quia ferreus rubigine exeditur, at magneti in aqua librato hoc nihil
+            nocebit. Si vero vas librationis aqua sit exacte plenum, quomodocumque moveatur, nisi
+            exacte circa proprium axem aqua in eo non fluctuabit, neque enim potest pars ejus aliquo
+            cedere. Imo etsi moveatur circa proprium axem aqua tamen cum ea similiter quasi
+            conglaciata esset, movebitur, sed an tam exacte effici plenitudo possit, experimento
+            tentandum est. <app type="Bfootnote">
+              <lem type="main">Quis</lem>
+              <note type="lemma-abbrev">est.</note>
+              <rdg wit="#L" n="1"> Ut </rdg>
+              <rdg wit="#L" n="2"> Quis <hi rendition="#i">L</hi></rdg>
+            </app> et tot modis librandi melior praxis dabit, interim aliquis, volente deo deesse
+            non poterit, ne tanti inventi fructus nobis pereat!</p>
+          <p xml:id="Ch2.S5.p8">Ferrum candens juxta situm meridiani<index indexName="Sachverzeichnis">
+              <term>meridianus</term>
+            </index> cusum se versus polos<index indexName="Sachverzeichnis">
+              <term>polus</term>
+            </index> supponit<app type="Bfootnote">
+              <lem type="main"> inquit</lem>
+              <note type="lemma-abbrev">supponit</note>
+              <rdg wit="#L" n="1"> , si hoc verum esset, sublata esset de </rdg>
+              <rdg wit="#L" n="2"> inquit <hi rendition="#i">L</hi></rdg>
+            </app> Kircherus, lib. 1. part. 2. paradox. analysi 8.<app type="Cfootnote">
+              <lem type="main"/>
+              <note type="lemma-abbrev">analysi 8.</note>
+              <note type="editorial"><hi rendition="#k">A. Kircher,</hi>
+                <bibl corresp="#bib_00067">a.a.O., S. 104f.</bibl></note>
+            </app> Quod si verum esset exacte labore delibranda terrella sublevaremur. Idem paulo
+            ante analysi 2.<app type="Cfootnote">
+              <lem type="main"/>
+              <note type="lemma-abbrev">analysi 2.</note>
+              <note type="editorial"><hi rendition="#k">A. Kircher,</hi>
+                <bibl corresp="#bib_00067">a.a.O., S. 103.</bibl></note>
+            </app> Constat ferramenta <pb type="VIII_1" n="53"/>illa longiora quibus fenestrae
+            saepiuntur, in longum aut etiam juxta lineam meridianam extensa magneticam qualitatem
+            etiam sine attactu magnetis<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index>
+            <app type="Bfootnote">
+              <lem type="main">contrahere</lem>
+              <note type="lemma-abbrev">magnetis</note>
+              <rdg wit="#L" n="1"> recipere </rdg>
+              <rdg wit="#L" n="2"> contrahere <hi rendition="#i">L</hi></rdg>
+            </app>, ita ut exemta talia ferramenta, et magnetice librata perfecte se ad polos<index indexName="Sachverzeichnis">
+              <term>polus</term>
+            </index> disponant, et quidem pars illa clathrorum ferreorum quae terrae obvertitur,
+            semper et infallibiliter septentrionem petet, opposita austrum. Quod non solum de
+            ferramentis dictis quamcunque plagam coeli respexerint, verificatur, sed et de omnibus
+            instrumentis ferreis quibus ignem tractamus, verum esse, non mihi tantum, sed et
+              Cabaeo<index indexName="Namensregister">
+              <term><hi rendition="#g">Cabeo,</hi> Niccolò SJ 1586–1650</term>
+            </index> aliisque innotuit. Haec enim librata semper inferiore parte sua in Boream,
+            manubrio vero sive superiore parte <pb type="L"/><fw type="folNum">[52 v<hi rendition="#sup">o</hi>]</fw> in Austris certo et infallibiliter nisi vibrata
+            fuerint, se disponent, quod de lateribus quibusdam ferrugineis certo quoque <app type="Bfootnote">
+              <lem type="main">fieri mihi</lem>
+              <note type="lemma-abbrev">quoque</note>
+              <rdg wit="#L" n="1"> mihi </rdg>
+              <rdg wit="#L" n="2"> fieri mihi <hi rendition="#i">L</hi></rdg>
+            </app> constat. Et Ferrum quod longo tempore perpendicularem situm habuit inferiore
+            parte boream superiore austrum petit, et pars inferior versorii partem australem, altera
+            borealem trahit. Haec Kircherus<index indexName="Namensregister">
+              <term><hi rendition="#g">Kircher</hi> (Kircherus), Athanasius SJ 1602–1680</term>
+            </index> ubi experimento dignum, an etiam habeant declinationem<index indexName="Sachverzeichnis">
+              <term>declinatio</term>
+            </index>. Item experimentandum <app type="Bfootnote">
+              <lem type="main">si</lem>
+              <note type="lemma-abbrev">experimentandum</note>
+              <rdg wit="#L" n="1"> an </rdg>
+              <rdg wit="#L" n="2"> si <hi rendition="#i">L</hi></rdg>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">terrellae meridianus</lem>
+              <note type="lemma-abbrev">si</note>
+              <rdg wit="#L" n="1"> ex </rdg>
+              <rdg wit="#L" n="2"> terrellae meridianus <hi rendition="#i">L</hi></rdg>
+            </app> juxta Grandamicum<index indexName="Namensregister">
+              <term><hi rendition="#g">Grandami</hi> (Grandamicus), Jacques SJ 1588–1672</term>
+            </index> inveniatur, et caetera abundantur retento solo orbe meridiani<index indexName="Sachverzeichnis">
+              <term>meridianus</term>
+            </index>, vel etiam solo ejus diametro in acus<index indexName="Sachverzeichnis">
+              <term>acus</term>
+            </index> formam ruditer redacto, eadem maneat versus polos<index indexName="Sachverzeichnis">
+              <term>polus</term>
+            </index> perfecta <app type="Bfootnote">
+              <lem type="main">directio</lem>
+              <note type="lemma-abbrev">perfecta</note>
+              <rdg wit="#L" n="1"> inclinatio<index indexName="Sachverzeichnis">
+                  <term>inclinatio</term>
+                </index>
+              </rdg>
+              <rdg wit="#L" n="2"> directio <hi rendition="#i">L</hi></rdg>
+            </app> ego puto omnino nullam fore, sed tamen res experimento digna si inclinaret,
+            sublata esset omnis de <app type="Bfootnote">
+              <lem type="main">terrellae</lem>
+              <rdg wit="#L" cause="addition"><add>terrellae</add>
+                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
+            </app> libratione difficultas. Sed ut dixi non puto ob Analysin 12.<app type="Cfootnote">
+              <lem type="main"/>
+              <note type="lemma-abbrev">Analysin 12.</note>
+              <note type="editorial"><hi rendition="#k">A. Kircher,</hi>
+                <bibl corresp="#bib_00067">a.a.O., S. 105.</bibl></note>
+            </app> Kircheri<index indexName="Namensregister">
+              <term><hi rendition="#g">Kircher</hi> (Kircherus), Athanasius SJ 1602–1680</term>
+            </index> d. l. quod partes polares in toto sint fortiores aequinoctialibus, sed non
+            separatae. Sed haec forte de attractione intellexit, non de verticitate. Libratio in
+            aqua non est constans, quia aqua tandem suber penetrante globus subsidit. Idem
+              Kircherus<index indexName="Namensregister">
+              <term><hi rendition="#g">Kircher</hi> (Kircherus), Athanasius SJ 1602–1680</term>
+            </index> haec habet: Ferrum oblongum <hi rendition="#i">AB</hi> hactenus non magneticum
+            si applicetur versorio librato in puncto <hi rendition="#i">A</hi>
+            <app type="Bfootnote">
+              <lem type="main">ex loco superiore rapiet</lem>
+              <note type="lemma-abbrev"><hi rendition="#i">A</hi></note>
+              <rdg wit="#L" n="1"> rapietur borea sic ut <hi rendition="#i">A</hi> si </rdg>
+              <rdg wit="#L" n="2"> ex loco superiore <app>
+                  <rdg wit="#L" n="a">trahet </rdg>
+                  <rdg wit="#L" n="b">rapiet <hi rendition="#i">L</hi></rdg>
+                </app></rdg>
+            </app> partem Boream acus.<index indexName="Sachverzeichnis">
+              <term>acus</term>
+            </index> Si vero applicetur eodem puncto a sursum verso trahet partem australem lib.1
+            parte 2. prop. 1. Experimento 1.<app type="Cfootnote">
+              <lem type="main"/>
+              <note type="lemma-abbrev">Experimento 1.</note>
+              <note type="editorial"><hi rendition="#k">A. Kircher</hi>, <bibl corresp="#bib_00067">a.a.O., S. 26f.</bibl></note>
+            </app> ubi et rursus de verticitate instrumentorum igniariorum confirmat, aitque nihil
+            esse eo genere tritius.</p>
+          <pb type="VIII_1" n="54"/>
+          <p xml:id="Ch2.S5.p9">Cum non solum ferrum ad magnetem<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index>, sed et magnes<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> ad ferrum rapiatur, satius est aenea fila esse, quibus tabula designatoria
+            sustinetur. Libratio et fortasse fieri posset more Kircheriano<index indexName="Namensregister">
+              <term><hi rendition="#g">Kircher</hi> (Kircherus), Athanasius SJ 1602–1680</term>
+            </index> in liquore homogeneo, ita plane liber penderet. Suber, si adhibetur lamina
+            obducendum est, ne aquam imbibat et tandem subsidat. Posset forte constantius libratio
+            in oleo fieri, quod ob tenacitatem non ita facile ut aqua agitaretur, sed dubito, an
+              <app type="Bfootnote">
+              <lem type="main"/>
+              <rdg wit="#L" cause="deletion">an <note type="editorial">|</note> <del>non</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> libera <hi rendition="#i">L</hi></rdg>
+            </app>libera satis hoc modo gyratio terrellae futura sit. Globis pendulis ita fortasse
+            fieri possunt Horologia<index indexName="Sachverzeichnis">
+              <term>horologium</term>
+            </index>, ut ipsa <app type="Bfootnote">
+              <lem type="main">numerent vibrationes</lem>
+              <note type="lemma-abbrev">ipsa</note>
+              <rdg wit="#L" n="1"> ictus </rdg>
+              <rdg wit="#L" n="2"> numerent vibrationes <hi rendition="#i">L</hi></rdg>
+            </app>, quod non venit in mentem Kirchero<index indexName="Namensregister">
+              <term><hi rendition="#g">Kircher</hi> (Kircherus), Athanasius SJ 1602–1680</term>
+            </index>, et hac forsan arte suos Hugenius<index indexName="Namensregister">
+              <term><hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens, Huguens), Christiaan
+                1629–1695</term>
+            </index> construxit.</p>
+          <p xml:id="Ch2.S5.p10">Fortasse etiam in navi sine difficultate et metu jactationis <app type="Bfootnote">
+              <lem type="main">poterit librari</lem>
+              <note type="lemma-abbrev">jactationis</note>
+              <rdg wit="#L" n="1"> retineri </rdg>
+              <rdg wit="#L" n="2"> poterit librari <hi rendition="#i">L</hi></rdg>
+            </app> terrella. Fiat cylinder, parum amplior subere terrellae. In eo libretur terrella.
+            Cylinder sit aqua plenus ad summum[,] terrella igitur libretur in media aqua. Ne suber
+            aquam imbibat obducatur vitro tenui. Magnes<index indexName="Sachverzeichnis">
+              <term>magnes</term>
+            </index> in aquam non amittit sed servat vires. Sed superius in hemisphaerium cylinder
+            fastigietur, <app type="Bfootnote">
+              <lem type="main">per foramen</lem>
+              <note type="lemma-abbrev">fastigietur,</note>
+              <rdg wit="#L" n="1"> cujus summum foramen <app>
+                  <rdg wit="#L" n="a">introrsus sit </rdg>
+                  <rdg wit="#L" n="b">extra sit ut infundat per foramen </rdg>
+                </app></rdg>
+              <rdg wit="#L" n="2"> foramini </rdg>
+              <rdg wit="#L" n="3"> per foramen <hi rendition="#i">L</hi></rdg>
+            </app> rotundum egrediens e terrella filum tabulam impactoriam sustinens ita perfecte
+            accommodetur, ut vix quicquam <app type="Bfootnote">
+              <lem type="main"/>
+              <rdg wit="#L" cause="deletion">quicquam <note type="editorial">|</note> <del>in</del>
+                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> medium <hi rendition="#i">L</hi></rdg>
+            </app> medium exire aut intrare possit, sit tamen libera filo gyratio. Ea ratione non
+            apparet quomodo cylinder jactata quantumcunque nave concutere aquam quam continet
+            possit. Quia aqua in angusto non potest se circumrotare<app type="Bfootnote">
+              <lem type="main">, multo minus in pleno, et</lem>
+              <note type="lemma-abbrev">circumrotare</note>
+              <rdg wit="#L" n="1"> . Et q </rdg>
+              <rdg wit="#L" n="2"> , multo minus in pleno, et <hi rendition="#i">L</hi></rdg>
+            </app> cujus aer accedere nullus potest. Porro hic cylinder collocetur in media aqua, ne
+            expiret aqua aere aut calore, et fiat <app type="Bfootnote">
+              <lem type="main">patens. Tota</lem>
+              <note type="lemma-abbrev">patens.</note>
+              <rdg wit="#L" n="1"> Suus </rdg>
+              <rdg wit="#L" n="2"> Tota <hi rendition="#i">L</hi></rdg>
+            </app> Machina filo alligetur, sed ita ut rigidum uno tantum modo firmatum sit pensile
+            sine vibratione.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-015-000">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title type="main">De motu gravium naturali</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
+      
+      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <sourceDesc>
+        <biblStruct><analytic><author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+        </author><title type="chapter" level="a" n="15">De motu gravium naturali</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date><date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=195</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="147" to="154"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title></series></biblStruct>
+        <listWit><witness n="L" corresp="#L_08-02-015-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 5 Bl. 128-129</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#konzept-entwurf"><summary><p>Konzept: LH XXXVI<pb type="VIII_2" n="150"/>I 5 Bl. 128-129. 1 Bog. 2<hi rendition="#sup">o</hi>. 4 S. zumeist einspaltig. Ein Wasserzeichen auf Bl. 129.</p><p>Cc 2, Nr. 969</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <!-- PsMs -->
+        <glyph xml:id="pPsMs">
+          <glyphName>pPsMs</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pPsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMs">
+          <glyphName>PsMs</glyphName>
+          <desc>Bedeutung (+−) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\PsMs</mapping>
+          <graphic url="../../glyphs/PsMs.svg"/>
+        </glyph>
+        <!-- MsPs -->
+        <glyph xml:id="pMsPs">
+          <glyphName>pMsPs</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-0.5</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pMsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPs">
+          <glyphName>MsPs</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\MsPs</mapping>
+          <graphic url="../../glyphs/MsPs.svg"/>
+        </glyph>
+        <!-- PsPsMs -->
+        <glyph xml:id="pPsPsMs">
+          <glyphName>pPsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="PsPsMs">
+          <glyphName>PsPsMs</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsPsMs</mapping>
+          <graphic url="../../glyphs/PsPsMs.svg"/>
+        </glyph>
+        <!-- PsMsPs -->
+        <glyph xml:id="pPsMsPs">
+          <glyphName>pPsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pPsMsPss</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="PsMsPs">
+          <glyphName>PsMsPs</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\PsMsPs</mapping>
+          <graphic url="../../glyphs/PsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsMs -->
+        <glyph xml:id="pMsPsMs">
+          <glyphName>pMsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsMs">
+          <glyphName>MsPsMs</glyphName>
+          <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsMs</mapping>
+          <graphic url="../../glyphs/MsPsMs.svg"/>
+        </glyph>
+        <!-- MsMsPs -->
+        <glyph xml:id="pMsMsPs">
+          <glyphName>pMsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsMsPss</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsMsPs">
+          <glyphName>MsMsPs</glyphName>
+          <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsMsPs</mapping>
+          <graphic url="../../glyphs/MsMsPs.svg"/>
+        </glyph>
+        <!-- MsPsPs -->
+        <glyph xml:id="pMsPsPs">
+          <glyphName>pMsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pMsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <glyph xml:id="MsPsPs">
+          <glyphName>MsPsPs</glyphName>
+          <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\MsPsPs</mapping>
+          <graphic url="../../glyphs/MsPsPs.svg"/>
+        </glyph>
+        <!-- pmD -->
+        <glyph xml:id="ppmD">
+          <glyphName>ppmD</glyphName>
+          <desc>Bedeutung (−(++)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <glyph xml:id="pmD">
+          <glyphName>pmD</glyphName>
+          <desc>Bedeutung (−(++))- nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmD</mapping>
+          <graphic url="../../glyphs/pmD.svg"/>
+        </glyph>
+        <!-- pmE -->
+        <glyph xml:id="ppmE">
+          <glyphName>ppmE</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\ppmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <glyph xml:id="pmE">
+          <glyphName>pmE</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>1.2</value>
+          </charProp>
+          <mapping type="TeX">\pmE</mapping>
+          <graphic url="../../glyphs/pmE.svg"/>
+        </glyph>
+        <!-- pmG -->
+        <glyph xml:id="ppmG">
+          <glyphName>ppmG</glyphName>
+          <desc>Bedeutung (+(+−)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <glyph xml:id="pmG">
+          <glyphName>pmG</glyphName>
+          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmG</mapping>
+          <graphic url="../../glyphs/pmG.svg"/>
+        </glyph>
+        <!-- pmH -->
+        <glyph xml:id="ppmH">
+          <glyphName>ppmH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <glyph xml:id="pmH">
+          <glyphName>pmH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmH</mapping>
+          <graphic url="../../glyphs/pmH.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- leibvdashv -->
+        <glyph xml:id="pleibvdash">
+          <glyphName>pleibvdash</glyphName>
+          <desc>Bedeutung (−+) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pleibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <glyph xml:id="leibvdash">
+          <glyphName>leibvdash</glyphName>
+          <desc>Bedeutung (−+) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\leibvdash</mapping>
+          <graphic url="../../glyphs/mp.svg"/>
+        </glyph>
+        <!-- groesser -->
+        <glyph xml:id="ggroesser">
+          <glyphName>ggroesser</glyphName>
+          <desc>Bedeutung (größer als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ggroesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <glyph xml:id="groesser">
+          <glyphName>groesser</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\groesser</mapping>
+          <graphic url="../../glyphs/groesser.svg"/>
+        </glyph>
+        <!-- kleiner -->
+        <glyph xml:id="kkleiner">
+          <glyphName>kkleiner</glyphName>
+          <desc>Bedeutung (kleiner als) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kkleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <glyph xml:id="kleiner">
+          <glyphName>kleiner</glyphName>
+          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\kleiner</mapping>
+          <graphic url="../../glyphs/kleiner.svg"/>
+        </glyph>
+        <!-- pmHH -->
+        <glyph xml:id="ppmHH">
+          <glyphName>ppmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <glyph xml:id="pmHH">
+          <glyphName>pmHH</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmHH</mapping>
+          <graphic url="../../glyphs/pmHH.svg"/>
+        </glyph>
+        <!-- pmDD -->
+        <glyph xml:id="ppmDD">
+          <glyphName>ppmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <glyph xml:id="pmDD">
+          <glyphName>pmDD</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmDD</mapping>
+          <graphic url="../../glyphs/pmDD.svg"/>
+        </glyph>
+        <!-- pmGG -->
+        <glyph xml:id="ppmGG">
+          <glyphName>ppmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\ppmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="pmGG">
+          <glyphName>pmGG</glyphName>
+          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\pmGG</mapping>
+          <graphic url="../../glyphs/pmGG.svg"/>
+        </glyph>
+        <glyph xml:id="dsig">
+          <glyphName>dsig</glyphName>
+          <desc/>
+          <mapping type="TeX">\dsig</mapping>
+          <graphic url="../../glyphs/dsig.svg"/>
+        </glyph>
+        <glyph xml:id="Pfund">
+          <glyphName>Pfund</glyphName>
+          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.7</value>
+          </charProp>
+          <mapping type="TeX">\Pfund</mapping>
+          <graphic url="../../glyphs/Pfund.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+        <glyph xml:id="fullmoon">
+          <glyphName>fullmoon</glyphName>
+          <desc>FULL MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F315</mapping>
+          <mapping type="unicode">🌕</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
+          <mapping type="TeX">\fullmoon</mapping>
+        </glyph>
+        <glyph xml:id="leftmoon">
+          <glyphName>leftmoon</glyphName>
+          <desc>LAST QUARTER MOON</desc>
+          <mapping type="PUA">U+263E</mapping>
+          <mapping type="unicode">☾</mapping>
+          <mapping type="TeX">\leftmoon</mapping>
+        </glyph>
+        <glyph xml:id="rightmoon">
+          <glyphName>rightmoon</glyphName>
+          <desc>FIRST QUARTER MOON</desc>
+          <desc type="PUA">U+263D</desc>
+          <mapping type="unicode">☽</mapping>
+          <mapping type="TeX">\rightmoon</mapping>
+        </glyph>
+        <glyph xml:id="newmoon">
+          <glyphName>newmoon</glyphName>
+          <desc>NEW MOON SYMBOL</desc>
+          <mapping type="PUA">U+1F311</mapping>
+          <mapping type="unicode">🌑</mapping>
+          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
+          <mapping type="TeX">\newmoon</mapping>
+        </glyph>
+        <glyph xml:id="astrosun">
+          <glyphName>astrosun</glyphName>
+          <desc>Sonne (astronomisch)</desc>
+          <mapping type="PUA">U+2609</mapping>
+          <mapping type="unicode">☉</mapping>
+          <mapping type="TeX">\astrosun</mapping>
+          <graphic url="../"/>
+        </glyph>
+        <glyph xml:id="venus">
+          <glyphName>venus</glyphName>
+          <desc>FEMALE SIGN (venus)</desc>
+          <mapping type="PUA">U+2640</mapping>
+          <mapping type="unicode">♀</mapping>
+          <mapping type="TeX">\venus</mapping>
+          <graphic url="../"/>
+        </glyph>
+      </charDecl>
+    </encodingDesc>
+    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/><catRef scheme="L_subjects" target="L_subjects.xml#bewegung"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
+    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-06" who="#stork" status="enrich_1"/></revisionDesc>
+  </teiHeader>
+  <!--<facsimile source="digilib.bbaw.de" xml:id="L_08-02-015-000_facs-haupttextzeuge">
+    		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=388"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=389"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=390"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=391"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=392"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&pn=393"/>
+  </facsimile>--><text xml:id="L_08-02-015-000_text">
+    <body xml:id="Document"><div type="chapter" xml:id="Ch15" n="15"><pb type="VIII_2" n="147"/><head>15.
+DE MOTU GRAVIUM NATURALI</head>
+<head>[September 1672 – März 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi>
+<listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Konzept: LH XXXVI<pb type="VIII_2" n="150"/>I 5 Bl. 128-129. 1 Bog. 2<hi rendition="#sup">o</hi>. 4 S. zumeist einspaltig. Ein Wasserzeichen auf Bl. 129.</p><p>Cc 2, Nr. 969</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents">
+          <p><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Das vorliegende Stück N. 15 weist das gleiche Wasserzeichen auf
+wie die Stücke N. 19-21 und N. 23-26. Daher lässt sich auch N. 15 auf September 1672 bis März 1673 datieren.</hi></p>
+        </div><div type="text"><p xml:id="Ch15.p1" rendition="#noindent"><pb type="L"/><fw type="folNum">[128 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch15.p2" rendition="#c">De Motu gravium<index indexName="Sachverzeichnis"><term>grave</term></index> <anchor xml:id="LH037_05_128r_title-01"/>naturali<app type="Bfootnote" from="#LH037_05_128r_title-01" to="#LH037_05_128r_title-02"><lem type="main"/><note type="lemma-abbrev">naturali</note><rdg wit="#L" n="1"> Suppona </rdg><rdg wit="#L" n="2"> Certum est </rdg><rdg wit="#L" n="3"> Supponamus <hi rendition="#i">L</hi></rdg></app></p><p xml:id="Ch15.p3" rendition="#noindent">Supponamus<anchor xml:id="LH037_05_128r_title-02"/> grave<index indexName="Sachverzeichnis"><term>grave</term></index>
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">in</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+<app type="Bfootnote"><lem type="main">quolibet puncto lineae tendentiae</lem><note type="lemma-abbrev">quolibet</note><rdg wit="#L" n="1"> momento inter </rdg><rdg wit="#L" n="2"> puncto lineae tendentiae <hi rendition="#i">L</hi> </rdg></app>
+descendendum impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> accipere <app type="Bfootnote"><lem type="main">novum.<!--  \hack{ \\ \indentHos} --></lem><note type="lemma-abbrev">novum</note><rdg wit="#L" n="1"> Eadem enim </rdg><rdg wit="#L" n="2"> Cum enim caus </rdg><rdg wit="#L" n="3"> Hos <hi rendition="#i">L</hi> </rdg></app><!--  \hackfor{\parHos} --></p><p xml:id="Ch15.p4">Hos impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> novos supponamus esse inter se aequales. Etsi enim alibi demonstraverim <app type="Bfootnote"><lem type="main">eos esse minores in</lem><note type="lemma-abbrev">eos</note><rdg wit="#L" n="1"> tanto esse minores quanto </rdg><rdg wit="#L" n="2"> esse minores in <hi rendition="#i">L</hi> </rdg></app> <app type="Bfootnote"><lem type="main">grave profundius seu quod jam</lem><note type="lemma-abbrev">grave</note><rdg wit="#L" n="1"> propius accedit magis </rdg><rdg wit="#L" n="2"> profundius seu quod jam <hi rendition="#i">L</hi> </rdg></app> descendit, quam in altius, quia tamen ea differentia nisi in magnis spatiis non fit sensibilis, ideo impraesentiarum, supponamus esse aequales.</p><figure rendition="#inline-margin-right" xml:id="Ch15.fig1_1">
+        <graphic url="../images/lh03705_128r-d.svg" width="164.7756pt" xml:id="Ch15.g1"/>
+        
+        <head xml:id="Ch15.fig1_2" rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+      </figure><p xml:id="Ch15.p5">Porro impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> singuli, quovis momento accepti, comparari possunt puncto.<!--  \hack{\\
+\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch15.p6">Ergo summa impetuum<index indexName="Sachverzeichnis"><term>impetus</term></index>, in quovis momento possessorum, seu impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> integer in quovis post primum, descensus momento exhiberi potest linea.<!--  \hack{\\
+\indent} 
+     \hackfor{\par}--></p><p xml:id="Ch15.p7">Esto enim linea<index indexName="Sachverzeichnis"><term>linea tendentiae</term></index> <app type="Bfootnote"><lem type="main">tendentiae a gravi descendente percurrenda</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  20f.    -->tendentiae</note><rdg wit="#L" n="1"> percursa </rdg><rdg wit="#L" n="2"> a gravi descendente percurrenda <hi rendition="#i">L</hi></rdg></app> <app type="Bfootnote"><lem type="main"><formula xml:id="Ch15.p7.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> quae dividi intelligatur, in puncta quotlibet</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  21f.    --><formula xml:id="Ch15.p7.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> quae dividi intelligatur in puncta quotlibet </rdg><rdg wit="#L" n="2"> quae et gra </rdg><rdg wit="#L" n="3"> quae <seg type="apparat-ellipsis"/> quotlibet <hi rendition="#i">L</hi></rdg></app> aequidistantia <hi rendition="#i">a. c. d. e. f. g. h. b</hi>. Ponatur grave labendo pervenisse in <hi rendition="#i">c</hi> manifestum est, impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">totum</add></lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    24--></note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> quem habet in <hi rendition="#i">c</hi> esse summam tot<!--  \hack{\end{window}} --></p><pb type="VIII_2" n="148"/><p xml:id="Ch15.p8" rendition="#noindent">impetuum<index indexName="Sachverzeichnis"><term>impetus</term></index> aequalium ipsi inter descendendum quaesitorum, quot sunt puncta in <hi rendition="#i">ac</hi> et proinde cum impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> singuli exhiberi possint punctis, et summae punctorum lineis, summam impetuum<index indexName="Sachverzeichnis"><term>impetus</term></index>, seu impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> integrum in <hi rendition="#i">c</hi> possessum, exhiberi posse linea <formula xml:id="Ch15.p8.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>i</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:mrow></m:math></formula> et impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> in <hi rendition="#i">d</hi> linea <formula xml:id="Ch15.p8.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>d</m:mi><m:mo>⁢</m:mo><m:mi>k</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:mrow></m:math></formula>, et similiter erit: <formula xml:id="Ch15.p8.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>e</m:mi><m:mo>⁢</m:mo><m:mi>l</m:mi></m:mrow></m:mrow></m:math></formula>, et <formula xml:id="Ch15.p8.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>f</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>f</m:mi><m:mo>⁢</m:mo><m:mi>m</m:mi></m:mrow></m:mrow></m:math></formula>, et <formula xml:id="Ch15.p8.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>g</m:mi><m:mo>⁢</m:mo><m:mi>n</m:mi></m:mrow></m:mrow></m:math></formula>, et <formula xml:id="Ch15.p8.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>h</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>h</m:mi><m:mo>⁢</m:mo><m:mi>o</m:mi></m:mrow></m:mrow></m:math></formula>, et <app type="Bfootnote"><lem type="main"><formula xml:id="Ch15.p8.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>p</m:mi></m:mrow></m:mrow></m:math></formula> vel potius</lem><note type="lemma-abbrev"><formula xml:id="Ch15.p8.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>p</m:mi></m:mrow></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> et impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> </rdg><rdg wit="#L" n="2"> vel potius <hi rendition="#i">L</hi> </rdg></app> cum linea descensus, cum impetibus<index indexName="Sachverzeichnis"><term>impetus</term></index> frustra comparetur, (heterogenea enim sunt) erit ut <formula xml:id="Ch15.p8.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula> ad <formula xml:id="Ch15.p8.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> ita <hi rendition="#i">ci</hi> ad <hi rendition="#i">dk</hi> etc. Idque erit verum in omnibus punctis intermediis in <app type="Bfootnote"><lem type="main">linea tendentiae</lem><note type="lemma-abbrev">linea</note><rdg wit="#L" n="1"> descensus </rdg><rdg wit="#L" n="2"> tendentiae <hi rendition="#i">L</hi> </rdg></app> assumtis, nam et lineae impetuum<index indexName="Sachverzeichnis"><term>impetus</term></index> omnes terminantur in recta <hi rendition="#i">ap</hi> seu complent triangulum <hi rendition="#i">abp.</hi> Omnes autem lineae in triangulo, basi parallelae, sunt ut altitudines.</p><p xml:id="Ch15.p9">Si linea descensus non sit perpendicularis, seu linea tendentiae<index indexName="Sachverzeichnis"><term>linea tendentiae</term></index> <hi rendition="#i">ab</hi> sed obliqua, ut <hi rendition="#i">ap</hi> quaestio est an in linea descensus an in linea tendentiae<index indexName="Sachverzeichnis"><term>linea tendentiae</term></index> accipienda sint incrementa, si in <app type="Bfootnote"><lem type="main">linea descensus majorem</lem><note type="lemma-abbrev">linea</note><rdg wit="#L" n="1"> tendentiae ma </rdg><rdg wit="#L" n="2"> descensus majorem <hi rendition="#i">L</hi> </rdg></app> in fine impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> acquisivere, quae oblique descendunt, quod est absurdum. Quia inde statim sequetur motus perennis<index indexName="Sachverzeichnis"><term>motus perennis</term></index>, ac proinde natura nihil lucraretur. Quo posito sequitur theorema<index indexName="Sachverzeichnis"><term>theorema</term></index>: Vires lapsu gravium<index indexName="Sachverzeichnis"><term>grave</term></index> in fine acquisitas esse easdem, sive oblique, sive recta <app type="Bfootnote"><lem type="main">descendant.
+<pb type="L"/><fw type="folNum">[128 v<hi rendition="#sup">o</hi>]</fw>
+Porro hoc supposito</lem><note type="lemma-abbrev">descendant</note><rdg wit="#L" n="1"> , imo etiam eodem tempore descendere <pb type="L"/><fw type="folNum">[128 v<hi rendition="#sup">o</hi>]</fw> </rdg><rdg wit="#L" n="2"> . Porro hoc supposito <hi rendition="#i">L</hi></rdg></app>
+impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> crescere aequaliter, in quolibet puncto lineae tendentiae<index indexName="Sachverzeichnis"><term>linea tendentiae</term></index>, hinc sequitur: tempora ad spatia percurrenda necessaria, continue decrescere, et quidem<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: Ut conatus <index indexName="Sachverzeichnis"><term>conatus</term></index> crescunt in punctis, ita momenta decrescere in punctis.</note> <app type="Bfootnote"><lem type="main">momentum seu</lem><note type="lemma-abbrev">momentum</note><rdg wit="#L" n="1"> quo percurritur </rdg><rdg wit="#L" n="2"> seu <hi rendition="#i">L</hi> </rdg></app> tempus minus quolibet dato necessarium ad percurrendum punctum <hi rendition="#i">a</hi> seu spatium minus quolibet dato, <app type="Bfootnote"><lem type="main">esse ad momentum</lem><note type="lemma-abbrev">esse</note><rdg wit="#L" n="1"> ut <hi rendition="#i">aa</hi>, <hi rendition="#i">a</hi>, vel <hi rendition="#i">pb</hi> ad </rdg><rdg wit="#L" n="2"> ad momentum <hi rendition="#i">L</hi> </rdg></app> quo percurrendum est punctum <app type="Bfootnote"><lem type="main"><hi rendition="#i">c</hi> ut est <hi rendition="#i">bb</hi>, <hi rendition="#i">pp</hi> ad <hi rendition="#i">hh</hi>, <hi rendition="#i">oo</hi></lem><note type="lemma-abbrev"><hi rendition="#i">c</hi> ut est</note><rdg wit="#L" n="1"> <hi rendition="#i">aa</hi>, <hi rendition="#i">a</hi>, ad <hi rendition="#i">cc</hi>, <hi rendition="#i">c</hi>, seu </rdg><rdg wit="#L" n="2"> <hi rendition="#i">bb</hi>, <hi rendition="#i">pp</hi> ad <hi rendition="#i">hh</hi>, <hi rendition="#i">oo</hi> <hi rendition="#i">L</hi></rdg></app>
+ut est <hi rendition="#i">pb</hi> ad <hi rendition="#i">oh</hi>.
+Porro cum tempus quo percurritur spatium<index indexName="Sachverzeichnis"><term>spatium percursum</term></index> minus quolibet dato
+<app type="Bfootnote"><lem type="main">seu instans</lem><note type="lemma-abbrev">seu</note><rdg wit="#L" n="1"> momentum </rdg><rdg wit="#L" n="2" cause="addition"> <add>instans</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+exhibendum sit linea
+<app type="Bfootnote"><lem type="main">(<?tex-source \phantom{)}?>nam conatus</lem><note type="lemma-abbrev">(nam<?tex-source \phantom{)}?></note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>si</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> conatus <hi rendition="#i">L</hi></rdg></app>
+exhibentur
+<app type="Bfootnote"><lem type="main">linea, et instantia</lem><note type="lemma-abbrev">linea, et</note><rdg wit="#L" n="1"> tempora </rdg><rdg wit="#L" n="2"> instantia <hi rendition="#i">L</hi></rdg></app>
+assumtis
+<app type="Bfootnote"><lem type="main">aequalibus punctis</lem><note type="lemma-abbrev">aequalibus</note><rdg wit="#L" n="1"> spatiis </rdg><rdg wit="#L" n="2"> punctis <hi rendition="#i">L</hi></rdg></app>
+habent, contrariam rationem conatuum<?tex-source \phantom{(}?>),
+erit tempus quo percurritur linea <hi rendition="#i">ab</hi>
+<app type="Bfootnote"><lem type="main">repraesentandum triangulo <hi rendition="#i">bb</hi>, <hi rendition="#i">pp</hi>, <hi rendition="#i">aa</hi></lem><note type="lemma-abbrev">repraesentandum</note><rdg wit="#L" n="1"> linea </rdg><rdg wit="#L" n="2"> triangulo <app><rdg wit="#L" n="a"><hi rendition="#i">aa</hi>, <hi rendition="#i">a</hi>, <hi rendition="#i">p</hi>. </rdg><rdg wit="#L" n="b"><hi rendition="#i">bb</hi>, <hi rendition="#i">pp</hi>, <hi rendition="#i">aa</hi> <hi rendition="#i">L</hi></rdg></app></rdg></app>
+seu <hi rendition="#i">bpa</hi> et tempus quo percurritur linea <hi rendition="#i">cb</hi> triangulo <hi rendition="#i">hoa</hi>.
+<app type="Bfootnote"><lem type="main">Jam Trianguli</lem><note type="lemma-abbrev">Jam</note><rdg wit="#L" n="1"> tempora </rdg><rdg wit="#L" n="2"> Trianguli <hi rendition="#i">L</hi></rdg></app>
+sunt ut quadrata altitudinum,
+<app type="Bfootnote"><lem type="main">ergo duae lineae tendentiae,</lem><note type="lemma-abbrev">ergo</note><rdg wit="#L" n="1"> spatio </rdg><rdg wit="#L" n="2"> duae lineae tendentiae, <hi rendition="#i">L</hi></rdg></app> eundem
+<pb type="VIII_2" n="149"/>habentes terminum
+<app type="Bfootnote"><lem type="main">communem percurruntur temporibus quae sunt inter se, ut earum linearum quadrata.</lem><note type="lemma-abbrev">communem</note><rdg wit="#L" n="1"> sunt inter se, ut qua </rdg><rdg wit="#L" n="2"> percurruntur <seg type="apparat-ellipsis"/> quadrata. <hi rendition="#i">L</hi></rdg></app>
+Si ergo linea <hi rendition="#i">ab</hi> divisa intelligatur
+<app type="Bfootnote"><lem type="main">in 7.</lem><note type="lemma-abbrev">in</note><rdg wit="#L" n="1"> 8. </rdg><rdg wit="#L" n="2"> 7. <hi rendition="#i">L</hi></rdg></app>
+partes, <hi rendition="#i">ac</hi>. <hi rendition="#i">cd</hi>. <hi rendition="#i">de</hi>. <hi rendition="#i">ef</hi>. <hi rendition="#i">fg</hi>. <hi rendition="#i">gh</hi>.
+et <hi rendition="#i">hb</hi>. percursa intelligatur tempore ut 1.
+seu minuto secundo 1. linea <hi rendition="#i">bg</hi>. percursa erit minutis secundis 4.
+<app type="Bfootnote"><lem type="main">et <hi rendition="#i">bf</hi> 2dis</lem><note type="lemma-abbrev">et <hi rendition="#i">bf</hi></note><rdg wit="#L" n="1"> minutis </rdg><rdg wit="#L" n="2"> 2dis <hi rendition="#i">L</hi></rdg></app>
+9. et <hi rendition="#i">be</hi>. secundis 16. et <hi rendition="#i">bd</hi> sec. 25. et <hi rendition="#i">bc</hi> secundis 36. et <hi rendition="#i">ba</hi> sec. 49.
+Ergo linea <hi rendition="#i">ac</hi>. percurretur secundis
+<app type="Bfootnote"><lem type="main"><formula xml:id="Ch15.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mn>49</m:mn><m:mo>-</m:mo><m:mn>36</m:mn></m:mrow><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula>
+Est enim differentia inter <hi rendition="#i">ba</hi> 49. et <hi rendition="#i">bc</hi> 36.
+Et linea <hi rendition="#i">cd</hi> sec. <formula xml:id="Ch15.p9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mn>36</m:mn><m:mo>-</m:mo><m:mn>25</m:mn></m:mrow><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula></lem><note type="lemma-abbrev"><formula xml:id="Ch15.p9.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mn>49</m:mn><m:mo>-</m:mo><m:mn>36</m:mn></m:mrow><m:mo>=</m:mo><m:mn>13</m:mn></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> et linea <hi rendition="#i">cd</hi>. sec. <formula xml:id="Ch15.p9.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded other="+1.7pt"><m:mn>36</m:mn></m:mpadded><m:mo>-</m:mo></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="2"> Est enim <seg type="apparat-ellipsis"/> <formula xml:id="Ch15.p9.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mn>36</m:mn><m:mo>-</m:mo><m:mn>25</m:mn></m:mrow><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app>
+et linea <hi rendition="#i">de</hi> 9. et <hi rendition="#i">ef</hi> 7. et <hi rendition="#i">fg</hi> 5. et <hi rendition="#i">gh</hi> 3. et <hi rendition="#i">hb</hi>. 1.</p><p xml:id="Ch15.p10">Porro <app type="Bfootnote"><lem type="main">ut instantia decrescunt, in datis aequalibus spatii punctis; ita spatii puncta crescunt</lem><note type="lemma-abbrev">ut</note><rdg wit="#L" n="1"> tempora </rdg><rdg wit="#L" n="2" cause="deletion"> instantia <note type="editorial">|</note> <del>aequaliter</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> decrescunt, <app><rdg wit="#L" n="a">ita spatia decursa decrescunt </rdg><rdg wit="#L" n="b">in <app><rdg wit="#L" n="aa">dato spatio </rdg><rdg wit="#L" n="bb">datis <seg type="apparat-ellipsis"/> ita <app><rdg wit="#L" n="aaa">spatia percurs </rdg><rdg wit="#L" n="bbb">spatii puncta crescunt <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app></rdg></app>
+in datis aequalibus temporis instantibus.
+Ergo punctum decurrendum instanti <hi rendition="#i">c</hi> ad punctum decurrendum instanti <hi rendition="#i">d</hi> est ut <hi rendition="#i">ci</hi> ad <hi rendition="#i">dk</hi>, et ita porro;
+<app type="Bfootnote"><lem type="main">ergo linea tendentiae percursa</lem><note type="lemma-abbrev">ergo</note><rdg wit="#L" n="1"> spatium </rdg><rdg wit="#L" n="2"> linea tendentiae percursa <hi rendition="#i">L</hi> </rdg></app>
+tempore <hi rendition="#i">ac</hi>
+<app type="Bfootnote"><lem type="main">ad percursam</lem><note type="lemma-abbrev"><formula xml:id="Ch15.p10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula>
+ad</note><rdg wit="#L" n="1"> spatium percursum </rdg><rdg wit="#L" n="2"> percursam <hi rendition="#i">L</hi> </rdg></app>
+tempore <hi rendition="#i">ad</hi> est ut triangulum <hi rendition="#i">aci</hi> ad triangulum <hi rendition="#i">adk</hi> et
+<app type="Bfootnote"><lem type="main">proinde lineae temporibus inde a primo lapsus momento assumtis percursae sunt inter se ut</lem><note type="lemma-abbrev">proinde</note><rdg wit="#L" n="1"> spatia </rdg><rdg wit="#L" n="2"> ab eodem moti </rdg><rdg wit="#L" n="3"> lineae tendentiae <app><rdg wit="#L" n="a">ab in </rdg><rdg wit="#L" n="b">inde ab initio <app><rdg wit="#L" n="aa"> motus </rdg><rdg wit="#L" n="bb"> decensus assumtae sunt inter se ut line </rdg></app></rdg></app></rdg><rdg wit="#L" n="4"> lineae <seg type="apparat-ellipsis"/> inter se ut <hi rendition="#i">L</hi></rdg></app>
+quadrata temporum et lineae aequalibus temporibus percursae, sunt inter se ut numeri impares deinceps ab unitates seu differentiae quadratorum.</p><p xml:id="Ch15.p11" rendition="#noindent">[<hi rendition="#i">Nachfolgend klein gedruckter Text gestrichen:</hi>]</p><p xml:id="Ch15.p12"><hi rendition="#smaller">Ex his intelligitur nihil referre in prima nostra assumtione, an dicamus grave<index indexName="Sachverzeichnis"><term><hi rendition="#smaller">grave</hi></term></index> in quolibet lineae tendentiae<index indexName="Sachverzeichnis"><term><hi rendition="#smaller">linea tendentiae</hi></term></index> puncto, an in quolibet temporis descensus momento, novum accipere impetum<index indexName="Sachverzeichnis"><term><hi rendition="#smaller">impetus</hi></term></index>. Sed quaeritur an non impetus novi, in tempore potius quam loco sint computandi; computemus in tempore, videamusque quid inde <app type="Bfootnote"><lem type="main">sequatur.<!--  \hack{\newline\indentIn eadem quae supra est, figura $ab$ putetur esse tempus.} --></lem><rdg wit="#L" n="1"> Esto tempus descensus <formula xml:id="Ch15.p12.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>. </rdg><rdg wit="#L" n="2" cause="deletion"> In eadem <seg type="apparat-ellipsis"/> tempus. <note type="editorial">|</note> <del>Porro hoc supposito</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> <hi rendition="#i">L</hi></rdg></app><!--  \hackfor{\parIn eadem quae supra est, figura $ab$ putetur esse tempus.} --></hi></p><p xml:id="Ch15.p13"><hi rendition="#smaller">In eadem quae supra est, figura <formula xml:id="Ch15.p13.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> putetur esse tempus.</hi></p><figure rendition="#own-line_centered" xml:id="Ch15.p14">
+        <graphic rendition="#c" url="../images/lh03705_128v-d1.svg" style="trim:  0mm 5mm 0mm 10mm; clip: true" width="325.215pt" xml:id="Ch15.p14.g1"/>
+        
+        <head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]</head>
+      </figure><figure rendition="#own-line_centered" xml:id="Ch15.p15">
+        <graphic rendition="#c" url="../images/lh03705_128v-d2.svg" width="173.448pt" xml:id="Ch15.p15.g1"/>
+        
+        <head rendition="#c">[<hi rendition="#i">Fig. 3, gestrichen</hi>]</head>
+      </figure><p xml:id="Ch15.p16" rendition="#noindent">Si lineas assumas diversas, ex summo <hi rendition="#i">a</hi> vel <hi rendition="#i">bb.</hi>
+<app type="Bfootnote"><lem type="main">ut lineam <hi rendition="#i">ac</hi></lem><note type="lemma-abbrev">ut lineam</note><rdg wit="#L" n="1"> <hi rendition="#i">bb</hi> </rdg><rdg wit="#L" n="2"> <hi rendition="#i">ac</hi> <hi rendition="#i">L</hi></rdg></app>
+(<hi rendition="#i">bb</hi>, <hi rendition="#i">hh</hi>) ad lineam <hi rendition="#i">ae</hi> (<hi rendition="#i">bb</hi>, <hi rendition="#i">ff</hi>)
+erunt tempora percursionis ut trapezium <hi rendition="#i">bpho</hi>
+<app type="Bfootnote"><lem type="main">ad trapezium <hi rendition="#i">bpfm.</hi> <formula xml:id="Ch15.p16.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow></m:math></formula> minor, <hi rendition="#i"><formula xml:id="Ch15.p16.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo mathvariant="italic">⁢</m:mo><m:mi>H</m:mi><m:mo mathvariant="italic">⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula></hi> major, vel cum linea <formula xml:id="Ch15.p16.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>f</m:mi></m:mrow></m:math></formula> major possit</lem><note type="lemma-abbrev">ad trapezium <hi rendition="#i">bpfm.</hi></note><rdg wit="#L" n="1"> investigemus universaliter horum Trapeziorum rationem </rdg><rdg wit="#L" n="2"> linea <hi rendition="#i">BP</hi> arbitraria est, <hi rendition="#i">BH</hi> et <hi rendition="#i">BF</hi> datae quaelibet, Trapezium t </rdg><rdg wit="#L" n="3"> <formula xml:id="Ch15.p16.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow></m:math></formula> minor, <app><rdg wit="#L" n="a"><hi rendition="#i">BF</hi> major </rdg><rdg wit="#L" n="b"><hi rendition="#i">BHF</hi> major, <app><rdg wit="#L" n="aa">Trapezium <hi rendition="#i">bpho</hi> est </rdg><rdg wit="#L" n="bb"><hi rendition="#i">HO</hi> est ita ad <hi rendition="#i">ab</hi> </rdg><rdg wit="#L" n="cc" cause="addition">vel cum linea <formula xml:id="Ch15.p16.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>f</m:mi></m:mrow></m:math></formula> <note type="editorial">|</note> <add>major</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> possit <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
+assumi pro tota linea descensus
+(si ponas, grave<index indexName="Sachverzeichnis"><term>grave</term></index> in <hi rendition="#i">f</hi> quiescere)
+ut Trapezium <hi rendition="#i">bhqr</hi> ad Triangulum <hi rendition="#i">bqf.</hi>
+<app type="Bfootnote"><lem type="main">Jam <hi rendition="#i">BQ</hi></lem><note type="lemma-abbrev">Jam</note><rdg wit="#L" n="1"> <hi rendition="#i">bq</hi> </rdg><rdg wit="#L" n="2"> <hi rendition="#i">BQ</hi> <hi rendition="#i">L</hi></rdg></app>
+arbitraria est, <hi rendition="#i">BH</hi> et <hi rendition="#i">BF</hi>
+<app type="Bfootnote"><lem type="main">datae. <formula xml:id="Ch15.p16.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>H</m:mi><m:mo>⁢</m:mo><m:mi>R</m:mi></m:mrow></m:math></formula></lem><note type="lemma-abbrev">datae.</note><rdg wit="#L" n="1"> <formula xml:id="Ch15.p16.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>H</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="2"> <formula xml:id="Ch15.p16.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>H</m:mi><m:mo>⁢</m:mo><m:mi>R</m:mi></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote"><lem type="main">est ad <hi rendition="#i">BQ</hi> ut <hi rendition="#i">FB</hi> ad <formula xml:id="Ch15.p16.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula> <formula xml:id="Ch15.p16.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mi>H</m:mi><m:mo>⁢</m:mo><m:mi>R</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula> seu</lem><note type="lemma-abbrev">est ad</note><rdg wit="#L" n="1"> <hi rendition="#i">bq</hi> </rdg><rdg wit="#L" n="2"> <hi rendition="#i">BQ</hi> ut <hi rendition="#i">FB</hi> ad <app><rdg wit="#L" n="a"><hi rendition="#i">HB.</hi> </rdg><rdg wit="#L" n="b"><hi rendition="#i">FH.</hi> <app><rdg wit="#L" n="aa">seu <hi rendition="#i">HR.</hi> </rdg><rdg wit="#L" n="bb"><formula xml:id="Ch15.p16.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mi>H</m:mi><m:mo>⁢</m:mo><m:mi>R</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula> seu <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
+<formula xml:id="Ch15.p16.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>H</m:mi><m:mo>⁢</m:mo><m:mi>R</m:mi></m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula>
+Ergo <formula xml:id="Ch15.p16.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>H</m:mi><m:mo>⁢</m:mo><m:mi>R</m:mi></m:mrow><m:mo>=</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula></p><p xml:id="Ch15.p17" rendition="#noindent">Triangulum <hi rendition="#i">bqf</hi> est <formula xml:id="Ch15.p17.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mi>Q</m:mi><m:mo>,</m:mo><m:mo>⌢</m:mo><m:mi>B</m:mi><m:mi>F</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mstyle></m:math></formula>.
+Jam Trapezium <hi rendition="#i">bhrq</hi> componitur ex Rectangulo <hi rendition="#i">bhrs</hi>, et Triangulo <hi rendition="#i">rqs.</hi>
+Rectangulum est <formula xml:id="Ch15.p17.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mi>B</m:mi><m:mo>-</m:mo><m:mi>F</m:mi><m:mi>H</m:mi><m:mo>,</m:mo><m:mo>⌢</m:mo><m:mi>H</m:mi><m:mi>R</m:mi></m:mrow></m:math></formula> seu
+<formula xml:id="Ch15.p17.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo>-</m:mo><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>, seu
+<formula xml:id="Ch15.p17.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow><m:mo>-</m:mo><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>H</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula> seu <formula xml:id="Ch15.p17.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mi>H</m:mi><m:mo>,</m:mo><m:mo>,</m:mo><m:mo>⌢</m:mo><m:mi>B</m:mi><m:mi>Q</m:mi><m:mo>,</m:mo><m:mo>-</m:mo><m:mi>F</m:mi><m:mi>H</m:mi><m:mo>⌢</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>.
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">Triangulum <hi rendition="#i">rqs</hi> est:</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+<formula xml:id="Ch15.p17.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mi>B</m:mi><m:mo>-</m:mo><m:mi>F</m:mi><m:mi>H</m:mi><m:mo>.</m:mo><m:mo>⌢</m:mo><m:mi>B</m:mi><m:mi>Q</m:mi><m:mo>-</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo rspace="4.2pt">,</m:mo><m:mo rspace="4.2pt">+</m:mo><m:mi mathvariant="normal">…</m:mi></m:mrow></m:math></formula>
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">Trapezium</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+<formula xml:id="Ch15.p17.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mi>B</m:mi><m:mo>⌢</m:mo><m:mi>B</m:mi><m:mi>Q</m:mi><m:mo>,</m:mo><m:mo>⌢</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mi>H</m:mi><m:mo>,</m:mo><m:mo>⌢</m:mo><m:mi>B</m:mi><m:mi>Q</m:mi></m:mrow><m:mn>3</m:mn></m:mfrac></m:mstyle><m:mn>,,2</m:mn><m:mo>+</m:mo><m:mi>F</m:mi><m:msup><m:mi>H</m:mi><m:mn>2</m:mn></m:msup><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo>.</m:mo></m:mrow></m:math></formula>
+Et hujus ratio ad Triangulum <hi rendition="#i">bqf</hi> est
+(sublato ubique <hi rendition="#i">BQ</hi>)
+quae <formula xml:id="Ch15.p17.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mo>-</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mn>3</m:mn></m:mfrac></m:mstyle></m:mrow><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>H</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula> ad <formula xml:id="Ch15.p17.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mstyle></m:math></formula>
+seu ut <formula xml:id="Ch15.p17.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>H</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>B</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle></m:mrow><m:mo>-</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula> ad <formula xml:id="Ch15.p17.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle></m:math></formula>
+seu Ratio est: <formula xml:id="Ch15.p17.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>H</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>F</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>B</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle></m:mrow><m:mo>-</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula>
+Ergo si Triangulum est 1. Trapezium est
+<formula xml:id="Ch15.p17.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>H</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>F</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>B</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle></m:mrow><m:mo>-</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>H</m:mi></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula>
+<pb type="L"/><fw type="folNum">[129 r<hi rendition="#sup">o</hi>]</fw></p><pb type="VIII_2" n="151"/><p xml:id="Ch15.p18">Impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> acquisitos in fine esse eosdem,
+<app type="Bfootnote"><lem type="main">sive in perpendiculari,</lem><note type="lemma-abbrev">sive</note><rdg wit="#L" n="1"> recta </rdg><rdg wit="#L" n="2"> in perpendiculari <hi rendition="#i">L</hi></rdg></app>
+sive in inclinata descendat grave,<index indexName="Sachverzeichnis"><term>grave</term></index>
+facile ex his demonstratum est,
+<app type="Bfootnote"><lem type="main">nam ut</lem><note type="lemma-abbrev">nam</note><rdg wit="#L" n="1"> et </rdg><rdg wit="#L" n="2"> ut <hi rendition="#i">L</hi></rdg></app>
+major linea decurritur, et
+<app type="Bfootnote"><lem type="main">impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> primus, et proinde singuli acquisiti sunt</lem><note type="lemma-abbrev">impetus</note><rdg wit="#L" n="1"> singuli sun </rdg><rdg wit="#L" n="2"> primus <seg type="apparat-ellipsis"/> sunt <hi rendition="#i">L</hi></rdg></app>
+minores in ea ratione qua linea est major,
+cum <app type="Bfootnote"><lem type="main">ergo impetus obliquus ultimus sit ad obliquum primum ut linea descensus est ad</lem><note type="lemma-abbrev">ergo</note><rdg wit="#L" n="1"> quanti </rdg><rdg wit="#L" n="2"> impetus <app><rdg wit="#L" n="a">et multiplicentur </rdg><rdg wit="#L" n="b">ultimus <app><rdg wit="#L" n="aa">sit </rdg><rdg wit="#L" n="bb">exprimi possit linea </rdg><rdg wit="#L" n="cc">sit ad primum ut linea descensus ad </rdg><rdg wit="#L" n="cc">obliquus <seg type="apparat-ellipsis"/> est ad <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
+primum suum punctum,
+et quanto linea inclinata major est linea tendentiae,<index indexName="Sachverzeichnis"><term>linea tendentiae</term></index>
+<app type="Bfootnote"><lem type="main">tanto impetus</lem><note type="lemma-abbrev">tanto</note><rdg wit="#L" n="1"> linea </rdg><rdg wit="#L" n="2"> impetus <hi rendition="#i">L</hi></rdg></app>
+sit minor, summa impetuum<index indexName="Sachverzeichnis"><term>impetus</term></index> erit aequalis.
+Impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> autem inclinatum esse ad perpendicularem,
+ut perpendicularis ad inclinatam ad eandem basin demissam
+<app type="Cfootnote"><lem type="main">alibi</lem><note type="editorial">Stelle nicht nachgewiesen.</note></app>
+demonstratum est.
+<app type="Bfootnote"><lem type="main">Unde demonstratur</lem><note type="lemma-abbrev">Unde</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>invertendo facile</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> demonstratur <hi rendition="#i">L</hi></rdg></app>
+tempora
+<app type="Bfootnote"><lem type="main">descensus perpendicularis ad descensum inclinatum, esse ut perpendicularis</lem><note type="lemma-abbrev">descensus</note><rdg wit="#L" n="1"> quoque esse ut linea </rdg><rdg wit="#L" n="2"> perpendicularis ad <seg type="apparat-ellipsis"/> ut perpendicularis <hi rendition="#i">L</hi></rdg></app>
+est ad inclinatam.
+Nam si aequale esset, essent impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> seu vires acquisitae in ratione spatiorum,
+ergo <app type="Bfootnote"><lem type="main">cum vires sint</lem><note type="lemma-abbrev">cum</note><rdg wit="#L" n="1"> impetus </rdg><rdg wit="#L" n="2"> vires sint <hi rendition="#i">L</hi></rdg></app>
+aequales, erunt tempora in ratione spatiorum.</p><pb type="VIII_2" n="152"/><figure rendition="#own-line_centered" xml:id="Ch15.p19">
+        <graphic rendition="#c" url="../images/lh03705_129r-d.svg" width="190.7928pt" xml:id="Ch15.p19.g1"/>
+        
+        <head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]</head>
+      </figure><p xml:id="Ch15.p20" rendition="#noindent">[<hi rendition="#i">Nachfolgend klein gedruckter Text gestrichen:</hi>]</p><p xml:id="Ch15.p21" rendition="#noindent"><hi rendition="#smaller">Hinc porro sequitur,
+<app type="Bfootnote"><lem type="main">si grave</lem><note type="lemma-abbrev">si</note><rdg wit="#L" n="1"> vi </rdg><rdg wit="#L" n="2"> tem </rdg><rdg wit="#L" n="3"> duo sint plana e </rdg><rdg wit="#L" n="4"> corpus </rdg><rdg wit="#L" n="5"> grave <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">labi</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+intelligatur ex eodem puncto libere nunc in plano inclinato,<index indexName="Sachverzeichnis"><term><hi rendition="#smaller">planum inclinatum</hi></term></index>
+lineas aequalibus temporibus percursas fore inaequales, et maximam quidem fore perpendicularem.
+Sed ut determinetur eorum ratio sic
+<app type="Bfootnote"><lem type="main">procedemus. Sunto</lem><note type="lemma-abbrev">procedemus</note><rdg wit="#L" n="1"> , esto </rdg><rdg wit="#L" n="2"> . Sunto <hi rendition="#i">L</hi></rdg></app>
+lineae descensus diversarum inclinationum, eodem tempore percursae
+<app type="Bfootnote"><lem type="main"><hi rendition="#i">ab.</hi> <hi rendition="#i">ac.</hi> <hi rendition="#i">ad.</hi> lineae <hi rendition="#i">ad</hi> et <hi rendition="#i">ac</hi> absolvuntur eodem tempore. Impetus in prima</lem><note type="lemma-abbrev"><hi rendition="#i">ab.</hi> <hi rendition="#i">ac.</hi> <hi rendition="#i">ad.</hi></note><rdg wit="#L" n="1"> Impetus in linea </rdg><rdg wit="#L" n="2"> Ergo si duae descensiones comparentur inter se, impetus sunt ut lineae reciproces, at tres impetus inter se terminis fixis comparari non possunt. Comparatis ergo duobus insistamus: </rdg><rdg wit="#L" n="3"> lineae <seg type="apparat-ellipsis"/> in prima <hi rendition="#i">L</hi></rdg></app>
+est ut <formula xml:id="Ch15.p21.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula>, in secunda ut <formula xml:id="Ch15.p21.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>f</m:mi></m:mrow></m:math></formula>, in tertia
+<app type="Bfootnote"><lem type="main">ut <formula xml:id="Ch15.p21.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>. Nam</lem><note type="lemma-abbrev">ut <formula xml:id="Ch15.p21.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>.</note><rdg wit="#L" n="1"> Cum enim </rdg><rdg wit="#L" n="2"> Nam <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote"><lem type="main">impetus<index indexName="Sachverzeichnis"><term><hi rendition="#smaller">impetus</hi></term></index> quaesitus</lem><note type="lemma-abbrev">impetus</note><rdg wit="#L" n="1"> initiales sin </rdg><rdg wit="#L" n="2"> quaesitus <hi rendition="#i">L</hi></rdg></app>
+post percursam <hi rendition="#i">ad</hi>
+<app type="Bfootnote"><lem type="main">vel <hi rendition="#i">ac</hi> est aequalis</lem><note type="lemma-abbrev">vel <formula xml:id="Ch15.p21.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> fit ae </rdg><rdg wit="#L" n="2"> est aequalis <hi rendition="#i">L</hi></rdg></app>
+impetui quaesito post percursam <hi rendition="#i">ae</hi> vel <hi rendition="#i">af</hi>.</hi></p><p xml:id="Ch15.p22"><hi rendition="#smaller">Idem ergo est
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">impetus<index indexName="Sachverzeichnis"><term><hi rendition="#smaller">impetus</hi></term></index></add></lem><note type="lemma-abbrev">impetus</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+ac tria aequalibus temporibus percurrissent
+<app type="Bfootnote"><lem type="main">unum lineam</lem><note type="lemma-abbrev">unum</note><rdg wit="#L" n="1"> spatium </rdg><rdg wit="#L" n="2"> lineam <hi rendition="#i">L</hi></rdg></app>
+<hi rendition="#i">ae.</hi> alterum <hi rendition="#i">af.</hi> tertium <hi rendition="#i">ab.</hi>
+quo casu impetus<index indexName="Sachverzeichnis"><term><hi rendition="#smaller">impetus</hi></term></index> erunt ut lineae.
+Iam cum impetus<index indexName="Sachverzeichnis"><term><hi rendition="#smaller">impetus</hi></term></index>
+<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">quaesiti</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+sint ut lineae
+<app type="Bfootnote"><lem type="main"><hi rendition="#i">ae.</hi> <hi rendition="#i">af.</hi> <hi rendition="#i">ab</hi>, et impetus primi sint ut lineae</lem><note type="lemma-abbrev"><hi rendition="#i">ae.</hi> <hi rendition="#i">af.</hi> <hi rendition="#i">ab</hi>,</note><rdg wit="#L" n="1"> erunt lineae </rdg><rdg wit="#L" n="2"> et lineae diversarum inclinationum, eodem tempore percursae eodemque impetu percursae, sint ut lineae </rdg><rdg wit="#L" n="3"> et lineae diverso tempore </rdg><rdg wit="#L" n="4" cause="deletion"> et impetus primi sint ut lineae <note type="editorial">|</note> <del>lineae diversarum inclinationum eadem celeritate eodem tempore, eodemque impetu percur</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> <hi rendition="#i">L</hi></rdg></app>
+[<hi rendition="#i">der Satz bricht ab.</hi>]</hi></p><pb type="VIII_2" n="153"/><p xml:id="Ch15.p23">Hactenus ratiocinati sumus, supposito mobile in quolibet spatii puncto, impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> accipere novum, priori aequalem, idque sive descensio sit in plano perpendiculari, sive in inclinato<index indexName="Sachverzeichnis"><term>planum inclinatum</term></index>, semper
+<pb type="L"/><fw type="folNum">[129 v<hi rendition="#sup">o</hi>]</fw>
+enim res eodem redit.</p><p xml:id="Ch15.p24">Et necesse est descendentia per rectum inclinatumve in fine impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> acquirere eundem.</p><p xml:id="Ch15.p25">At sequuntur aliae conclusiones differentes a Galilaeanis, nimirum <app type="Cfootnote"><lem type="main">Galilaeus,<index indexName="Namensregister"><term><hi rendition="#g">Galilei</hi>, (Galilaeus, Galileus), Galileo 1564-1642</term></index> assumens in quolibet momento impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> accipi novum, ostendit spatia a principio lationis assumta, aequalibus temporibus percursa fore ut quadrata temporum.</lem><note type="lemma-abbrev">Galilaeus <seg type="apparat-ellipsis"/> temporum</note><note type="editorial"><bibl corresp="#bib_00050">G. <hi rendition="#k">Galilei</hi>, <hi rendition="#i">Discorsi</hi>, Leiden 1638 S. 171f. (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 209f.).</bibl></bibl></note></app>
+Sint enim tempora <hi rendition="#i">ac</hi>, <hi rendition="#i">ad</hi>, erunt spatia percursa<index indexName="Sachverzeichnis"><term>spatium percursum</term></index> ut Triangula <hi rendition="#i">aic</hi>, <hi rendition="#i">akd</hi>.</p><p xml:id="Ch15.p26">En ergo dubitationem insignem, quae certa demonstratione removenda
+est.<note type="Afootnote" place="margin" resp="#L">Fabri,<index indexName="Namensregister"><term><hi rendition="#g">Fabri</hi>, Honoré 1607-1688)</term></index>
+ut in <hi rendition="#g">methodo scientiarum</hi><note type="Afootnote-sub" n="[a]"> <hi rendition="#g">scientiarum</hi> <note type="editorial"><hi rendition="#i">erg. L</hi></note>
+</note> ait,
+credidit impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> crescere,
+ut numeros naturales ab unitate deinceps.</note>
+Demonstrandum ergo spatium sumi non posse pro mensura, <app type="Bfootnote"><lem type="main">et ineluctabilis</lem><note type="lemma-abbrev">et</note><rdg wit="#L" n="1"> verissima de </rdg><rdg wit="#L" n="2"> ineluctabilis <hi rendition="#i">L</hi></rdg></app> ratio est, quia, si spatium sumitur pro mensura, alius orietur <app type="Bfootnote"><lem type="main">calculus, in eodem loco, tempore, motu mobile,</lem><note type="lemma-abbrev">calculus,</note><rdg wit="#L" n="1"> si idem gra </rdg><rdg wit="#L" n="2"> in eodem <app><rdg wit="#L" n="a">numero </rdg><rdg wit="#L" n="b">loco, <app><rdg wit="#L" n="aa">motu </rdg><rdg wit="#L" n="bb">tempore, motu mobile, <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app> prout progredi aut quiescere supponitur[;] quod est absurdum.<note type="Afootnote" place="margin" resp="#L">Puto demonstrari rationibus, et argumentis firmari posse, corpus lapsum attollere posse tot corpora similia, quot altitudo ejus capit in altitudinem paulo minorem, qui est ipsius labentis. Idque elegantissimae observationis arbitror. An forte id falsum et ea huius rei aestimatio quae penduli. Ideo pendulum<index indexName="Sachverzeichnis"><term>pendulum</term></index> examinandum in diversis liquoribus.</note> Item quod celerius movetur plus lucrabitur proportionaliter, quam quod tardius movetur, quia plus loci percurrit, ita autem locus mensura erit. Eorum tempore pro mensura supposito, demonstrari puto potest, eundem impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> acquirere gravia<index indexName="Sachverzeichnis"><term>grave</term></index> in plano inclinato<index indexName="Sachverzeichnis"><term>planum inclinatum</term></index> aut perpendiculari descendentia; descendunt enim in temporibus quae sunt ut <app type="Bfootnote"><lem type="main">spatia, ergo</lem><note type="lemma-abbrev">spatia,</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del><add>reciproce</add></del> <note type="editorial"><hi rendition="#i">erg. u. gestr.</hi> |</note> ergo <hi rendition="#i">L</hi></rdg></app> si in tempora ducantur, idem est, quasi ducantur in spatia, nam impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> minor in quadam ratione, ducitur in tempus majus eadem ratione. Ergo producta aequalia.</p><pb type="VIII_2" n="154"/><p xml:id="Ch15.p27">Impetus acquisitus per motum est ad impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> primum, ut linea ad punctum. Hinc sequitur impetu<index indexName="Sachverzeichnis"><term>impetus</term></index> primo non posse moveri nisi corpus minus grave<index indexName="Sachverzeichnis"><term>grave</term></index>, at impetu<index indexName="Sachverzeichnis"><term>impetus</term></index> acquisito corpus indefinitum seu quantumcunque sed per spatium tanto minus.</p><p xml:id="Ch15.p28">Idem corpus ad finem descensus perveniens, si nihil externum obstet, in tantam altitudinem reassurget, quanta est ex qua descendit, idque non in pendulo<index indexName="Sachverzeichnis"><term>pendulum</term></index> tantum, sed et si grave<index indexName="Sachverzeichnis"><term>grave</term></index> intelligatur pervenire ad centrum terrae, ibique non impeditum excurrere in alteram partem. Idque verum est, etiam si impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> descensus denuo impressus continue decrescens intelligatur. Nisi dicas naturam ubi semel vicit reddit impetum<index indexName="Sachverzeichnis"><term>impetus</term></index> magis fortem, loco jam in summo occupato. Sed hoc parum effecerit.</p></div></div></body>
+  </text>
+</TEI>
