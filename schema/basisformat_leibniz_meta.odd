@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">ODD für Leibniz-Edition - Prototyp VIII,2</title>
+				<title type="main">Diese ODD-Costumization basiert mittels ODD-Chaining auf der ODD des DTA Basisfomats <idno type="URLWeb">http://www.deutschestextarchiv.de/basisformat_all.odd</idno>.</title>
+				<editor>
+					<persName><surname>Gödel</surname><forename>Martina</forename></persName>
+				</editor>
+				<respStmt>
+					<persName><surname>Siebert</surname><forename>Harald</forename></persName>
+					<resp/>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher xml:id="LeibnizPublisher">
+					<orgName type="project" xml:lang="de">Leibniz-Edition - Arbeitsstelle Berlin</orgName>
+					<orgName type="institution" xml:lang="en">Berlin-Brandenburgische Akademie der Wissenschaften</orgName>
+					<email>siebert@bbaw.de</email>
+					<address><addrLine>Jägerstr. 22/23, 10117 Berlin</addrLine></address>
+				</publisher>
+				<pubPlace>Berlin</pubPlace>
+				<date type="publication">2020-02-23</date>
+				<availability>
+					<licence target="tba">
+						<p>internal file</p>
+					</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<p>tba</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>This ODD was created according to the 
+<ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html">XML/TEI P5
+guidelines for the TEI schema personalization and customization</ref> and the <ref target="http://www.deutschestextarchiv.de/doku/basisformat/">DTA Basisfomat</ref>.</p>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<divGen type="toc"/>
+		</front>
+		<body>
+			<p>TEI Customization für Band VIII,2 der Leibniz-Edition - Arbeitsstelle-Berlin</p>
+			<schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="file:///F:/textloop/Projekte/TELOTA/TELOTA_GitLab/led-metadaten-erfassung (gitLab intern)/Daten/common/src/basisformat_all.xml">
+				<!-- required modules -->
+				<moduleRef key="core" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<moduleRef key="header"/>
+				<moduleRef key="tei" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<moduleRef key="textstructure" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<!-- optional modules -->
+				<moduleRef key="figures"/>
+				<moduleRef key="linking" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<moduleRef key="msdescription" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<moduleRef key="namesdates" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<moduleRef key="textcrit" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<moduleRef key="gaiji" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<!--Facsimile ermöglichen-->
+				<moduleRef key="transcr" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<!--BODY-->
+				<!-- Formeln in MathML-->
+				<!--siehe auch elementSpec figures-->
+				<moduleRef url="https://www.tei-c.org/release/xml/tei/custom/schema/relaxng/mathml2-main.rng"/>
+				<elementSpec module="figures" ident="formula" mode="change">
+					<content>
+						<rng:ref name="mathml.math"/>
+					</content>
+				</elementSpec>
+				<!--module header-->
+				<!-- -->
+				<!-- -->
+				<elementRef key="calendarDesc" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<elementRef key="calendar" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<elementRef key="catRef" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<elementRef key="correspDesc" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<elementRef key="correspAction" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<elementRef key="revisionDesc" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<elementRef key="change" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+				<elementSpec ident="language" module="header" mode="change">
+					<!--https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry-->
+					<attList>
+						<attDef ident="ident" mode="replace" usage="req">
+							<valList type="closed" mode="add">
+								<valItem ident="de">
+									<desc>Deutsch</desc>
+								</valItem>
+								<valItem ident="fr">
+									<desc>Französisch</desc>
+								</valItem>
+								<valItem ident="gr">
+									<desc>Griechisch</desc>
+								</valItem>
+								<valItem ident="itl">
+									<desc>Italienisch</desc>
+								</valItem>
+								<valItem ident="la">
+									<desc>Latein</desc>
+								</valItem>
+								<valItem ident="nl">
+									<desc>Niederländisch</desc>
+								</valItem>
+								<valItem ident="undefined">
+									<desc>Nicht weiter zu definieren</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+				</elementSpec>
+				<elementSpec ident="catRef" module="header" mode="change">
+					<attList>
+						<attDef ident="scheme" mode="replace" usage="req">
+							<valList type="closed" mode="add">
+								<valItem ident="L_subjects">
+									<desc>Themen/Sachzuordnung</desc>
+								</valItem>
+								<valItem ident="L_terms">
+									<desc>Sachen (Leibniz Begriffe)</desc>
+								</valItem>
+							</valList>
+						</attDef>
+						<attDef ident="target" mode="replace" usage="req">
+							<valList type="closed" mode="add">
+								<valItem ident="L_subjects.xml#akademie">
+									<desc>Akademie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#akustik">
+									<desc>Akustik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#algebra">
+									<desc>Algebra</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#allgemein">
+									<desc>Allgemeines</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#allgemeiner-briefwechsel">
+									<desc>Allgemeiner Briefwechsel</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#allgemeine-verwaltung-des-staates">
+									<desc>allgemeine-verwaltung-des-staates</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#anatomie">
+									<desc>Anatomie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#architektur">
+									<desc>Architektur</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#archivwesen">
+									<desc>Archivwesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#astronomie">
+									<desc>Astronomie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#autobiographisches">
+									<desc>Autobiographisches</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#bewegung">
+									<desc>Bewegung</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#bibel">
+									<desc>Bibel</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#bibliothek-literatur-sozietaet-bildung">
+									<desc>Bibliothek, Literatur, Sozietaet, Bildung</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#bibliothekswesen">
+									<desc>Bibliothekswesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#biographisches">
+									<desc>Biographisches</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#botanik">
+									<desc>Botanik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#brandenburg-preussen">
+									<desc>Brandenburg-Preussen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#brueckenbau">
+									<desc>Brueckenbau</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#buchdruck">
+									<desc>Buchdruck</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#chemie">
+									<desc>Chemie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#china">
+									<desc>China</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#deutsches-reich-frankreich-tuerkei-1684-1688">
+									<desc>Deutsches-Reich-Frankreich-Tuerkei-1684-1688</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#diskontierung-zins-zinseszins">
+									<desc>Diskontierung, Zins, Zinseszins</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#elastizitaet">
+									<desc>Elastizität</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#englische-sukzession">
+									<desc>Englische Sukzession</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#ethik">
+									<desc>Ethik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#europa-und-china">
+									<desc>Europa und China</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#experimente">
+									<desc>Experimente</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#farben">
+									<desc>Farben</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#festigkeit">
+									<desc>Festigkeit</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#festigkeit">
+									<desc>Festigkeit</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#finanzwesen">
+									<desc>Finanzwesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#frankfurt-und-mainz-1667-1672-zweite-haelfte">
+									<desc>Frankfurt und Mainz 1667-1672 zweite Hälfte</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#gedichte">
+									<desc>Gedichte</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#geldwirtschaft">
+									<desc>Geldwirtschaft</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#geographie">
+									<desc>Geographie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#geologie">
+									<desc>Geologie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#geometrie">
+									<desc>Geometrie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#gesundheitspolitik">
+									<desc>Gesundheitspolitik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#haus-braunschweig-lueneburg">
+									<desc>Haus Braunschweig-Lüneburg</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#infinitesimalmathematik-1670-1673">
+									<desc>Infinitesimalmathematik 1670-1673</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#juristische-praxis-1677-1685">
+									<desc>juristische-praxis-1677-1685</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#kirchengeschichte">
+									<desc>Kirchengeschichte</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#kosmologie">
+									<desc>Kosmologie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#kraft">
+									<desc>Kraft</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#kriegswesen">
+									<desc>Kriegswesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#kunst">
+									<desc>Kunst</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#leipzig-und-altorf-1663-1667">
+									<desc>Leipzig und Altorf 1663-1667</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#lebensregeln-und-gedichte">
+									<desc>Lebensregeln und Gedichte</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#literatur">
+									<desc>Literatur</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#luftdruck">
+									<desc>Luftdruck</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#magnetismus">
+									<desc>Magnetismus</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#mathematik">
+									<desc>Mathematik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#mechanik">
+									<desc>Mechanik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#medizin">
+									<desc>Medizin</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#messung">
+									<desc>Messung</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#metallurgie">
+									<desc>Metallurgie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#metaphysik">
+									<desc>Metaphysik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#meteorologie">
+									<desc>Meteorologie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#methodologie">
+									<desc>Methodologie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#militaerpolitik">
+									<desc>Militärpolitik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#militaerwesen">
+									<desc>Militärwesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#muenzwesen">
+									<desc>Münzwesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#miscellanea">
+									<desc>Miscellanea</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#naturphilosophie">
+									<desc>Naturphilosophie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#naturwissenschaft">
+									<desc>Naturwissenschaft</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#nautica">
+									<desc>Nautica</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#nautik">
+									<desc>Nautik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#nivellierinstrument">
+									<desc>Nivellierinstrument</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#observata-philosophica">
+									<desc>Observata philosophica</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#optik">
+									<desc>Optik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#perspektive">
+									<desc>Perspektive</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#perpetuum-mobile">
+									<desc>Perpetuum mobile</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#pharmazie">
+									<desc>Pharmazie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#philosophia-naturalis">
+									<desc>Philosophia-naturalis</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#philosophie">
+									<desc>Philosophie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#physik">
+									<desc>Physik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#pneumatik">
+									<desc>Pneumatik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#politik">
+									<desc>Politik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#preussische-krone">
+									<desc>Preussische Krone</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#prozesse">
+									<desc>Prozesse</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#rechtswesen">
+									<desc>Rechtswesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#rechts-und-staatswesen">
+									<desc>Rechts und Staatswesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#reflexion">
+									<desc>Reflexion</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#refraktion">
+									<desc>Refraktion</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#reibung">
+									<desc>Reibung</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#reich-und-europa">
+									<desc>Reich und Europa</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#renten-pensionen-lebenserwartung">
+									<desc>Renten, Pensionen, Lebenserwartung</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#renten-pensionen-lebenserwartung">
+									<desc>Renten, Pensionen, Lebenserwartung</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#schiffbau">
+									<desc>Schiffbau</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#sozietaeten-lebensregeln-1678-1680">
+									<desc>sozietaeten-lebensregeln-1678-1680</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#spanische-erbfolge">
+									<desc>Spanische Erbfolge</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#spezielle_probleme">
+									<desc>Spezielle Probleme</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#staatsverwaltung">
+									<desc>Staatsverwaltung</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#staatsverwaltung-1678-1687">
+									<desc>Staatsverwaltung 1678-1687</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#staatswesen">
+									<desc>Staatswesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#statistik-zins-renten">
+									<desc>Statistik, Zins, Renten</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#stoss">
+									<desc>Stoß</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#studien">
+									<desc>Studien</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#technik">
+									<desc>Technik</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#thermometer">
+									<desc>Thermometer</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#theologie">
+									<desc>Theologie</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#uhren">
+									<desc>Uhren</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#vakuum">
+									<desc>Vakuum</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#wissenschaftsgeschichte">
+									<desc>Wissenschaftsgeschichte</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#versicherungswesen">
+									<desc>Versicherungswesen</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#wirtschaft">
+									<desc>Wirtschaft</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#wolfenbuettel">
+									<desc>Wolfenbuettel</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#zahnrad">
+									<desc>Zahnrad</desc>
+								</valItem>
+								<valItem ident="L_subjects.xml#zur-theologie-und-ethik">
+									<desc>Zur Theologie und Ethik</desc>
+								</valItem>
+								<!--Platzhalter-->
+								<valItem ident="L_subjects.xml#undef">
+									<desc>to-be-defined</desc>
+								</valItem>
+								<valItem ident="L_terms.xml#">
+									<desc>to-be-defined</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+				</elementSpec>
+				<!--Module core-->
+				<!-- -->
+				<!-- -->
+				<elementSpec ident="date" module="header" mode="change">
+					<attList>
+						<attDef ident="calendar" mode="replace" usage="opt">
+							<valList type="closed" mode="add">
+								<valItem ident="#gregorian">
+									<desc>Gregorianischer Kalenderstil</desc>
+								</valItem>
+								<valItem ident="#julian">
+									<desc>Julianischer Kalenderstil</desc>
+								</valItem>
+							</valList>
+						</attDef>
+						<attDef ident="resp" mode="replace" usage="opt">
+							<valList type="closed" mode="add">
+								<valItem ident="#L">
+									<desc>Leibniz eigenhändig</desc>
+								</valItem>
+								<valItem ident="#K">
+									<desc>Korrespondent</desc>
+								</valItem>
+								<valItem ident="#ed">
+									<desc>Editor Leibniz</desc>
+								</valItem>
+								<valItem ident="#undef">
+									<desc>undefined</desc>
+								</valItem>
+							</valList>
+						</attDef>
+						<attDef ident="cert" mode="replace" usage="opt">
+							<valList type="closed" mode="add">
+								<valItem ident="high">
+									<desc></desc>
+								</valItem>
+								<valItem ident="medium">
+									<desc></desc>
+								</valItem>
+								<valItem ident="low">
+									<desc></desc>
+								</valItem>
+								<valItem ident="undef">
+									<desc>undefined</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+				</elementSpec>
+				<!--Module msDescription-->
+				<!-- -->
+				<!-- -->
+				<elementSpec ident="msContents" module="msDescription" mode="change">
+					<attList>
+						<attDef ident="corresp" mode="replace" usage="opt">
+							<valList type="closed" mode="add">
+								<valItem ident="L_witness-content-types.xml#abfertigung">
+									<desc>Abfertigung</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#abfertigung_verworfen">
+									<desc>Abfertigung verworfen</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#abschrift">
+									<desc>Abschrift</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#aufzeichnung">
+									<desc>Aufzeichnung</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#auszug">
+									<desc>Auszug</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#auszuege-kommentare">
+									<desc>Auszüge und Kommentare (Exzerpte mit Anmerkungen)</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#briefe">
+									<desc>Briefe von und an Leibniz</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#konzept">
+									<desc>Konzept</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#konzept-entwurf">
+									<desc>Konzept/Entwurf</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#notiz">
+									<desc>Notiz</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#gedanke">
+									<desc>Gedanke</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#gespraech">
+									<desc>Gespräch</desc>
+								</valItem>	
+								<valItem ident="L_witness-content-types.xml#lektuere">
+									<desc>Lektüre</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#reinschrift">
+									<desc>Reinschrift</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#reinschrift_plus">
+									<desc>Reinschrift mit Ergänzungen und Verbesserungen</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#reinschrift_verbessert">
+									<desc>Reinschrift verbessert</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#zeichnungen">
+									<desc>Zeichnungen</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#rechnungen">
+									<desc>Rechnungen</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#rechnungen-zeichnungen">
+									<desc>Rechnungen und Zeichnungen</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#veroeffentlichung_selbstaendig">
+									<desc>Veroeffentlichung selbständig</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#veroeffentlichung_unselbstaendig">
+									<desc>Veroeffentlichung unselbständig</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#veroeffentlichung_posthum">
+									<desc>Veröffentlichung posthum</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#undefined">
+									<desc>nicht weiter spezifiziert</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+				</elementSpec>
+				<elementSpec ident="objectDesc" module="msDescription" mode="change">
+					<attList>
+						<attDef ident="form" mode="replace" usage="req">
+							<valList type="closed" mode="add">
+								<valItem ident="Handschrift">
+									<desc>Handschrift</desc>
+								</valItem>
+								<valItem ident="Druck">
+									<desc>Druck</desc>
+								</valItem>
+								<valItem ident="Druck-mit-handschriftlichen-Anmerkungen">
+									<desc>Druck mit handschriftlichen Anmerkungen/Marginalien</desc>
+								</valItem>
+								<valItem ident="transkription">
+									<desc>Transkription</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+				</elementSpec>
+				<elementSpec ident="origin" module="msDescription" mode="change">
+					<attList>
+						<attDef ident="corresp" mode="replace" usage="opt">
+							<valList type="closed" mode="add">
+								<valItem ident="L_witness-origin-types.xml#origin-L">
+									<desc>Leibniz, eigenhändig</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-l">
+									<desc>Leibniz, Abschrift von Schreiberhand</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-LiH">
+									<desc>Leibniz' eigenhändige Bemerkungen in einem Handexemplar</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-Lil">
+									<desc>Leibniz' Korrekturen zu einer Abschrift von Schreiberhand</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-LiA">
+									<desc>Leibniz' Bemerkungen und Korrekturen in der Abschrift eines fremden Textes</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-A">
+									<desc>Abschrift eines fremden Textes</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-K">
+									<desc>Korrespondent oder Mitarbeiter von Leibniz, eigh.</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-k">
+									<desc>Korrespondent oder Mitarbeiter von Leibniz, von Schreiberhand</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-Kik">
+									<desc>Korrespondent oder Mitarbeiter von Leibniz, eigh.  in einem Text eines Korrespondenten oder Mitarbeiters</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-E">
+									<desc>Erstdruck</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-En">
+									<desc>Weitere Drucke</desc>
+								</valItem>
+							</valList>
+						</attDef>
+					</attList>
+				</elementSpec>
+				<!--Attributproblem basisformat all-->
+				<elementRef key="idno" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
+			</schemaSpec>
+		</body>
+	</text>
+</TEI>
