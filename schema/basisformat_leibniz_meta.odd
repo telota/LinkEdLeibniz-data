@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -8,6 +6,7 @@
 				<title type="main">Diese ODD-Costumization basiert mittels ODD-Chaining auf der ODD des DTA Basisfomats <idno type="URLWeb">http://www.deutschestextarchiv.de/basisformat_all.odd</idno>.</title>
 				<editor>
 					<persName><surname>Gödel</surname><forename>Martina</forename></persName>
+					<persName><surname>Lecroq</surname><forename>Axelle</forename></persName>
 				</editor>
 				<respStmt>
 					<persName><surname>Siebert</surname><forename>Harald</forename></persName>
@@ -45,7 +44,7 @@ guidelines for the TEI schema personalization and customization</ref> and the <r
 		</front>
 		<body>
 			<p>TEI Customization für Band VIII,2 der Leibniz-Edition - Arbeitsstelle-Berlin</p>
-			<schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="file:///F:/textloop/Projekte/TELOTA/TELOTA_GitLab/led-metadaten-erfassung (gitLab intern)/Daten/common/src/basisformat_all.xml">
+			<schemaSpec ident="basisformat" docLang="en" prefix="tei_" start="TEI" xml:lang="en" source="file:///C:/Users/alecroq/Documents/gitlab/led-metadaten-erfassung/Daten/common/basisformat_all.xml">
 				<!-- required modules -->
 				<moduleRef key="core" source="https://www.tei-c.org/release/xml/tei/odd/p5subset.xml"/>
 				<moduleRef key="header"/>
@@ -500,15 +499,9 @@ guidelines for the TEI schema personalization and customization</ref> and the <r
 						</attDef>
 						<attDef ident="cert" mode="replace" usage="opt">
 							<valList type="closed" mode="add">
-								<valItem ident="high">
-									<desc></desc>
-								</valItem>
-								<valItem ident="medium">
-									<desc></desc>
-								</valItem>
-								<valItem ident="low">
-									<desc></desc>
-								</valItem>
+								<valItem ident="high"/>
+								<valItem ident="medium"/>
+								<valItem ident="low"/>
 								<valItem ident="undef">
 									<desc>undefined</desc>
 								</valItem>
@@ -558,9 +551,15 @@ guidelines for the TEI schema personalization and customization</ref> and the <r
 								</valItem>
 								<valItem ident="L_witness-content-types.xml#gespraech">
 									<desc>Gespräch</desc>
-								</valItem>	
-								<valItem ident="L_witness-content-types.xml#lektuere">
-									<desc>Lektüre</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#marginalien">
+									<desc>Marginalien</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#rechnung">
+									<desc>Rechnung</desc>
+								</valItem>
+								<valItem ident="L_witness-content-types.xml#rechnung-zeichnungen">
+									<desc>Rechnung Zeichnungen</desc>
 								</valItem>
 								<valItem ident="L_witness-content-types.xml#reinschrift">
 									<desc>Reinschrift</desc>
@@ -616,6 +615,13 @@ guidelines for the TEI schema personalization and customization</ref> and the <r
 						</attDef>
 					</attList>
 				</elementSpec>
+				<elementSpec ident="history" mode="change">
+					<content>
+						<sequence>
+							<elementRef key="origin" minOccurs="0" maxOccurs="2"/>
+						</sequence>
+					</content>
+				</elementSpec>
 				<elementSpec ident="origin" module="msDescription" mode="change">
 					<attList>
 						<attDef ident="corresp" mode="replace" usage="opt">
@@ -634,6 +640,18 @@ guidelines for the TEI schema personalization and customization</ref> and the <r
 								</valItem>
 								<valItem ident="L_witness-origin-types.xml#origin-LiA">
 									<desc>Leibniz' Bemerkungen und Korrekturen in der Abschrift eines fremden Textes</desc>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-LiF">
+									<desc/>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-Lik">
+									<desc/>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-LiK">
+									<desc/>
+								</valItem>
+								<valItem ident="L_witness-origin-types.xml#origin-F">
+									<desc/>
 								</valItem>
 								<valItem ident="L_witness-origin-types.xml#origin-A">
 									<desc>Abschrift eines fremden Textes</desc>
