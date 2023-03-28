@@ -6,7 +6,7 @@
 einzelnen Stücken der Leibniz-Edition, angeordnet in Reihen und Bänden
 * schema: Zugehöriges relaxNG-Schema
 
-## Kontakt
+## Kontakt 
 
 Harald Siebert (siebert@bbaw.de), Berlin-Brandenburgische Akademie der
 Wissenschaften
