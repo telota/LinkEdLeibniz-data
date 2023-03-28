@@ -1,6 +1,6 @@
 # Digitale Metadaten der Leibniz-Edition (Auswahl)
 
-## Inhalte
+## Inhalte 
 
 * daten: TEI-Dateien mit ausführlichen Metadatenheadern zu den
 einzelnen Stücken der Leibniz-Edition, angeordnet in Reihen und Bänden
@@ -10,4 +10,4 @@ einzelnen Stücken der Leibniz-Edition, angeordnet in Reihen und Bänden
 
 Harald Siebert (siebert@bbaw.de), Berlin-Brandenburgische Akademie der
 Wissenschaften
-Technische Zusammenarbeit mit TELOTA (telota@bbaw.de)
+Technische Zusammenarbeit mit TELOTA (telota@bbaw.de).
