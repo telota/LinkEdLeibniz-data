@@ -9,4 +9,5 @@ einzelnen Stücken der Leibniz-Edition, angeordnet in Reihen und Bänden
 ## Kontakt
 
 Harald Siebert (siebert@bbaw.de), Berlin-Brandenburgische Akademie der
-Wissenschaften - TELOTA (telota@bbaw.de)
+Wissenschaften
+Technische Zusammenarbeit mit TELOTA (telota@bbaw.de)
