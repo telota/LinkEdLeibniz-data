@@ -1,352 +1,516 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-034-000">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">Quomodo Concursus Corporum Concipi Possint</title>
-<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-034-000">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Quomodo Concursus Corporum Concipi Possint</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
 Text</title>
-<respStmt>
-<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
-</resp>
-</respStmt>
-<respStmt>
-<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Martina</forename>
-<surname>Gödel</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Sebastian W.</forename>
-<surname>Stork</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
-</resp>
-</respStmt>
-</titleStmt>
-
-<publicationStmt>
-<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
-<date type="creation">2022</date>
-<availability>
-<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
-<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
-</licence>
-</availability>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-<analytic>
-<author>
-<persName ref="http://d-nb.info/gnd/118571249">
-<surname>Leibniz</surname>
-<forename>Gottfried Wilhelm</forename>
-</persName>
-</author>
-<title type="chapter" level="a" n="34">Quomodo Concursus Corporum Concipi
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2022</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <author>
+              <persName ref="http://d-nb.info/gnd/118571249">
+                <surname>Leibniz</surname>
+                <forename>Gottfried Wilhelm</forename>
+              </persName>
+            </author>
+            <title type="chapter" level="a" n="34">Quomodo Concursus Corporum Concipi
 possint</title>
-<title type="section" level="a" n=""/>
-<date calendar="#gregorian" notBefore="1671" resp="#ed" cert="low">[1671 (?) – September
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1671" resp="#ed" cert="low">[1671 (?) – September
 1677 (?)]</date>
-<date calendar="#gregorian" notAfter="1677" resp="#ed" cert="low"/>
-<idno type="PDF">
-<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
-<idno type="page">#page=402</idno>
-</idno>
-</analytic>
-<monogr>
-<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+            <date calendar="#gregorian" notAfter="1677" resp="#ed" cert="low"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=402</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
 Naturwissenschaftliche, medizinische und technische Schriften</title>
-<title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
-<imprint>
-<publisher>Walter de Gruyter GmbH</publisher>
-<pubPlace>Berlin, Boston</pubPlace>
-<date type="publication">2021</date>
-</imprint>
-<biblScope unit="page" from="369" to="405"/>
-</monogr>
-<series>
-<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+            <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2021</date>
+            </imprint>
+            <biblScope unit="page" from="369" to="405"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
 Briefe</title>
-</series>
-</biblStruct>
-<listWit>
-<witness n="L" corresp="#L_08-03-034-000_facs-haupttextzeuge">
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-<idno type="Signatur">LH XXXV 10, 7 Bl. 45</idno>
-</msIdentifier>
-<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-<summary>
-<p>Konzept: LH XXXV 10, 7 Bl. 45. Ein Zettel (ca. 3 x 5,5 cm.); unterer Rand
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-03-034-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 10, 7 Bl. 45</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                <summary>
+                  <p>Konzept: LH XXXV 10, 7 Bl. 45. Ein Zettel (ca. 3 x 5,5 cm.); unterer Rand
 ausgefranst. Zwei Seiten.</p>
-</summary>
-</msContents>
-<physDesc>
-<objectDesc form="Handschrift"/>
-</physDesc>
-<history>
-<origin corresp="L_witness-origin-types.xml#origin-L"/>
-</history>
-</msDesc>
-</witness>
-</listWit>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<tagsDecl>
-<rendition scheme="css" xml:id="i">font-style:italic</rendition>
-<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-</tagsDecl>
-<charDecl>
-<!-- Sonderzeichen OHNE Unicodeentsprechung -->
-<!--rightpropto-->
-<glyph xml:id="rightpropto">
-<glyphName>rightpropto</glyphName>
-<desc>...</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="TeX">\rightpropto</mapping>
-<graphic url="../../glyphs/rightpropto.svg"/>
-</glyph>
-<glyph xml:id="Pfund">
-<glyphName>Pfund</glyphName>
-<desc>stilisiertes lb-Zeichen (Pfund)</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.7</value>
-</charProp>
-<mapping type="TeX">\Pfund</mapping>
-<graphic url="../../glyphs/Pfund.svg"/>
-</glyph>
-<!-- leibdashv -->
-<glyph xml:id="pleibdashv">
-<glyphName>pleibdashv</glyphName>
-<desc>Bedeutung (+−) - gesenkt</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>-1</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="PUA"/>
-<mapping type="TeX">\pleibdashv</mapping>
-<graphic url="../../glyphs/pm.svg"/>
-</glyph>
-<glyph xml:id="leibdashv">
-<glyphName>leibdashv</glyphName>
-<desc>Bedeutung (+−) - nicht-gesenkt</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="PUA"/>
-<mapping type="TeX">\leibdashv</mapping>
-<graphic url="../../glyphs/pm.svg"/>
-</glyph>
-<!-- Sonderzeichen MIT Unicodeentsprechung -->
-</charDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="la"/>
-</langUsage>
-<calendarDesc>
-<calendar xml:id="gregorian">
-<p>Gregorianischer Kalenderstil</p>
-</calendar>
-<calendar xml:id="julian">
-<p>Julianischer Kalenderstil</p>
-</calendar>
-</calendarDesc>
-<textClass>
-<catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
-<catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
-<catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
-<catRef scheme="L_terms" target="L_terms.xml#"/>
-</textClass>
-<abstract>
-<listPerson>
-<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-<person sameAs="L_persons.xml#"/>
-</listPerson>
-<listPlace>
-<place sameAs="L_places.xml#"/>
-</listPlace>
-</abstract>
-</profileDesc>
-<revisionDesc>
-<change when="2021" who="#telota" status="base"/>
-<change when="2023-02-14" who="#stork" status="enrich_1"/>
-</revisionDesc>
-</teiHeader>
-<facsimile source="digilib.bbaw.de" xml:id="L_08-03-034-000_facs-haupttextzeuge">
-<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1635"/>
-<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1637"/>
-</facsimile>
-<text xml:id="L_08-03-034-000_text">
-<body xml:id="Document">
-<div type="chapter" xml:id="Ch34" n="34">
-<head>34 QUOMODO CONCURSUS CORPORUM CONCIPI POSSINT</head>
-<head>[1671 (?) – September 1677 (?)]</head>
-<div type="ueberlieferung">
-<p>
-<hi rendition="#b #smaller">Überlieferung:</hi>
-<listWit>
-<witness>
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-<idno type="Signatur">LH XXXV 10, 7 Bl. 45</idno>
-</msIdentifier>
-<msContents>
-<summary>
-  <p>Konzept: LH XXXV 10, 7 Bl. 45. Ein Zettel (ca. 3 x 5,5 cm.); unterer Rand
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+      </tagsDecl>
+      <charDecl>
+        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+        <!--rightpropto-->
+        <glyph xml:id="rightpropto">
+          <glyphName>rightpropto</glyphName>
+          <desc>...</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="TeX">\rightpropto</mapping>
+          <graphic url="../../glyphs/rightpropto.svg"/>
+        </glyph>
+        <glyph xml:id="Pfund">
+          <glyphName>Pfund</glyphName>
+          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.7</value>
+          </charProp>
+          <mapping type="TeX">\Pfund</mapping>
+          <graphic url="../../glyphs/Pfund.svg"/>
+        </glyph>
+        <!-- leibdashv -->
+        <glyph xml:id="pleibdashv">
+          <glyphName>pleibdashv</glyphName>
+          <desc>Bedeutung (+−) - gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>-1</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\pleibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <glyph xml:id="leibdashv">
+          <glyphName>leibdashv</glyphName>
+          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+          <charProp>
+            <localName>baselineshift-in-ex</localName>
+            <value>0</value>
+          </charProp>
+          <charProp>
+            <localName>width-in-em</localName>
+            <value>0.6</value>
+          </charProp>
+          <mapping type="PUA"/>
+          <mapping type="TeX">\leibdashv</mapping>
+          <graphic url="../../glyphs/pm.svg"/>
+        </glyph>
+        <!-- Sonderzeichen MIT Unicodeentsprechung -->
+      </charDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2023-02-14" who="#stork" status="enrich_1"/>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-034-000_facs-haupttextzeuge">
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1635"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1637"/>
+  </facsimile>
+  <text xml:id="L_08-03-034-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch34" n="34">
+        <head>34 QUOMODO CONCURSUS CORPORUM CONCIPI POSSINT</head>
+        <head>[1671 (?) – September 1677 (?)]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur">LH XXXV 10, 7 Bl. 45</idno>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Konzept: LH XXXV 10, 7 Bl. 45. Ein Zettel (ca. 3 x 5,5 cm.); unterer Rand
     ausgefranst. Zwei Seiten.</p>
-</summary>
-</msContents>
-<physDesc>
-<objectDesc form="Handschrift"/>
-</physDesc>
-<history>
-<origin/>
-</history>
-</msDesc>
-</witness>
-</listWit>
-</p>
-</div>
-<div type="contents">
-<p xml:id="Ch34.p1">
-<anchor xml:id="RK60060"/>
-<anchor xml:id="_60060"/>
-<!--  \hackfor{\par} -->
-</p>
-<p xml:id="Ch34.p4">
-<hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Das Verhalten zweier
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch34.p1">
+            <anchor xml:id="RK60060"/>
+            <anchor xml:id="_60060"/>
+            <!--  \hackfor{\par} -->
+          </p>
+          <p xml:id="Ch34.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi> Das Verhalten zweier
 sich bewegender Körper nach ihrem Zusammenstoß wird in vorliegendem Stück so
 beschrieben, wie es den grundlegenden Stoßregeln entspricht, die Leibniz im ersten auf
 1671 (2. H.) datierten Entwurf seiner <hi rendition="#i">Summa Hypotheseos physicae
-novae</hi> (<hi rendition="#i">LSB</hi> VI, 2 N. 48<hi rendition="#sub">1</hi><ref corresp="#bib_01276"/>) aufstellt: Gemäß dem dort formulierten dritten Fall (<hi rendition="#i">LSB</hi> VI, 2 N. 48<hi rendition="#sub">1</hi>, S. 338.27 f.)
-bewegen sich die hier (Randbemerkung zu S. <ref corresp="#_35_10_07_045_1a"/>)
+novae</hi> (              <hi rendition="#i">LSB</hi> VI, 2 N. 48<hi rendition="#sub">1</hi>
+              <ref corresp="#bib_01276"/>
+) aufstellt: Gemäß dem dort formulierten dritten Fall (<hi rendition="#i">LSB</hi> VI, 2 N. 48<hi rendition="#sub">1</hi>, S. 338.27 f.)
+bewegen sich die hier (Randbemerkung zu S. <ref corresp="#_35_10_07_045_1a"/>
+)
 beschriebenen Körper <hi rendition="#i">A</hi> und <hi rendition="#i">B</hi> in
 Richtung des ursprünglich schnelleren Körpers mit der Differenz ihrer
 Ausgangsgeschwindigkeiten; laut dem zweiten in der <hi rendition="#i">Summa</hi>
 angeführten Fall (<hi rendition="#i">LSB</hi> VI, 2 N. 48<hi rendition="#sub">1</hi>,
 S. 338.17 f.) kommen zwei Körper, die mit gleicher Geschwindigkeit zusammenstoßen, zur
-Ruhe, ganz wie in vorliegendem Stück zu lesen (S. <ref corresp="#LH_35_10_07_045_Ruhe-1"/>). Als Terminus post quem für N. <ref corresp="#RK60060"/> wird damit 1671 gewählt, das Jahr, in welchem die <hi rendition="#i">Hypothesis physica nova</hi> (<hi rendition="#i">LSB</hi> VI, 2 N.
-40<ref corresp="#bib_00256"/>) ihren Abschluss findet, von der die <hi rendition="#i">Summa</hi> ihren Ausgang nimmt. Auf die Zeit vor Paris geht auch die
+Ruhe, ganz wie in vorliegendem Stück zu lesen (S. <ref corresp="#LH_35_10_07_045_Ruhe-1"/>
+). Als Terminus post quem für N. <ref corresp="#RK60060"/>
+ wird damit 1671 gewählt, das Jahr, in welchem die <hi rendition="#i">Hypothesis physica nova</hi> (        <hi rendition="#i">LSB</hi> VI, 2 N.
+40<ref corresp="#bib_00256"/>
+) ihren Abschluss findet, von der die <hi rendition="#i">Summa</hi> ihren Ausgang nimmt. Auf die Zeit vor Paris geht auch die
 hier angesprochene rein mathematische Betrachtungsweise (<hi rendition="#i">leges
 pure</hi> oder <hi rendition="#i">mere mathematicae</hi>) zurück (<hi rendition="#i">Theoria motus abstracti</hi>, Winter 1670/71: <hi rendition="#i">LSB</hi> VI, 2
-N. 41<ref corresp="#bib_00259"/>), die Leibniz einer physikalischen Betrachtung der
-Stoßbewegung gegenüberstellt (<hi rendition="#i">leges systematicae</hi>, <hi rendition="#i">Systema</hi>), in der konkrete Bedingungen wie die der Elastizität zu
+N. 41<ref corresp="#bib_00259"/>
+), die Leibniz einer physikalischen Betrachtung der
+Stoßbewegung gegenüberstellt (<hi rendition="#i">leges systematicae</hi>,    <hi rendition="#i">Systema</hi>), in der konkrete Bedingungen wie die der Elastizität zu
 berücksichtigen sind („Theoria motus concreti” bzw. <hi rendition="#i">Hypothesis
-physica nova</hi>, 1670/71: <hi rendition="#i">LSB</hi> VI, 2 N. 40<ref corresp="#bib_00256"/>). Beide Betrachtungsweisen lassen sich auch noch in seinen
+physica nova</hi>, 1670/71: <hi rendition="#i">LSB</hi> VI, 2 N. 40<ref corresp="#bib_00256"/>
+). Beide Betrachtungsweisen lassen sich auch noch in seinen
 Auszügen <hi rendition="#i">Zu Descartes’ Principia philosophiae</hi> ausmachen, die
 Leibniz gegen Ende seiner Pariser Zeit anfertigt (<hi rendition="#i">LSB</hi> VI, 3
-N. 15<ref corresp="#bib_01302"/>, hier S. 215.31–216.2, S. 216.13–17, S.
+N. 15<ref corresp="#bib_01302"/>
+, hier S. 215.31–216.2, S. 216.13–17, S.
 216.26  f.), doch verlieren sie im Laufe der Pariser Jahre offenbar an
 Gegensätzlichkeit, während die Phänomene selbst mehr und mehr Leibnizens Inter-esse
-finden, woran die Auseinandersetzung mit Mariottes<index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme,
-Seigneur de Chazeuil ca. 1620–1684</hi></term></index>
-<hi rendition="#i">Traité de la percussion</hi><ref corresp="#bib_00311"/> (<hi rendition="#i">LSB</hi> VIII, 2 N. 50<ref corresp="#bib_01292"/>) ganz entscheidend
+finden, woran die Auseinandersetzung mit Mariottes<index indexName="Personen">
+<term>
+  <hi rendition="#g #smaller">Mariotte</hi>
+  <hi rendition="#smaller">, Edme,
+Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index>
+<hi rendition="#i">Traité de la percussion</hi>
+<ref corresp="#bib_00311"/>
+ (<hi rendition="#i">LSB</hi> VIII, 2 N. 50<ref corresp="#bib_01292"/>
+) ganz entscheidend
 Anteil gehabt haben dürfte. Nach der Pariser Zeit stellt sich für Leibniz die konkret
 physikalische Natur nicht mehr als Gegensatz zu einer mathematischen Beschreibung der
 Phänomene dar, sondern vielmehr soll Erfahrung dafür die Voraussetzung liefern. Dieser
-Ansatz dürfte ihn nicht nur zu einer erneuten Auseinandersetzung mit Mariotte<index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca.
-1620–1684</hi></term></index> sowie auch mit den Stoßgesetzen von Huygens<index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi>
+Ansatz dürfte ihn nicht nur zu einer erneuten Auseinandersetzung mit Mariotte<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca.
+1620–1684</hi>
+</term>
+</index> sowie auch mit den Stoßgesetzen von Huygens<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Huygens</hi>
 <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan
-1629–1695</hi></term></index> geführt haben, die im Frühjahr 1677 erfolgt, und
-sich in Stücken (N. <ref corresp="L_chapter_35.xml#RK60070"/>, N. <ref corresp="L_chapter_36.xml#RK60127"/>, N. <ref corresp="L_chapter_39.xml#RK57266-1"/>) niederschlägt,die davor und danach entstanden sind und gleichsam eine Brücke
+1629–1695</hi>
+</term>
+</index> geführt haben, die im Frühjahr 1677 erfolgt, und
+sich in Stücken (N. <ref corresp="L_chapter_35.xml#RK60070"/>
+, N. <ref corresp="L_chapter_36.xml#RK60127"/>
+, N. <ref corresp="L_chapter_39.xml#RK57266-1"/>
+) niederschlägt,die davor und danach entstanden sind und gleichsam eine Brücke
 zwischen der Pariser Zeit und der Entstehungszeit des <hi rendition="#i">De corporum
-concursu</hi> (N. <ref corresp="L_chapter_58.xml#dcc_00"/>) schlagen. Geradezu
+concursu</hi> (N. <ref corresp="L_chapter_58.xml#dcc_00"/>
+) schlagen. Geradezu
 programmatisch kommt dieser Ansatz, mit dem die Gegensätzlichkeit sich auflöst, in
-einem wahrscheinlich für Jean Bertet<index indexName="Personen"><term><hi rendition="#g #smaller">Bertet</hi>
-<hi rendition="#smaller">(Berthet), Jean 1622–1692</hi></term></index> bestimmten
-<ref corresp="#bib_02047"/>Brief von September 1677, der nicht abgegangen ist und
+einem wahrscheinlich für Jean Bertet<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Bertet</hi>
+<hi rendition="#smaller">(Berthet), Jean 1622–1692</hi>
+</term>
+</index> bestimmten
+<ref corresp="#bib_02047"/>
+Brief von September 1677, der nicht abgegangen ist und
 sich nur als Fragment erhalten hat, zum Ausdruck (<hi rendition="#i">LSB</hi> II,
-1 [2. Aufl.], 1 N. 158a, siehe hierzu auch die Datierungsgründe in N. <ref corresp="L_chapter_56.xml#RK52278"/>). Darin macht Leibniz rückblickend seine
-Heimreise <pb type="L"/>nach Deutschland zum Ausgangspunkt neuerlicher Überlegungen zu
+1 [2. Aufl.], 1 N. 158a, siehe hierzu auch die Datierungsgründe in N. <ref corresp="L_chapter_56.xml#RK52278"/>
+). Darin macht Leibniz rückblickend seine
+Heimreise <pb type="L"/>
+nach Deutschland zum Ausgangspunkt neuerlicher Überlegungen zu
 den Gesetzen der Bewegung und nimmt sich vor, diese gleichsam als erster so
 vollständig wie korrekt zu formulieren und empirisch zu beweisen; er müsse hierfür
 aber noch grundlegende Erfahrungen bzw. Experimente (<hi rendition="#i">experiences
 fondamentales</hi>) anstellen, könne dabei aber auch auf schon gemachte oder leicht
-auszuführende Versuche zurückgreifen (<ref corresp="#bib_02047"/><hi rendition="#i">LSB</hi> II, 1 [2. Aufl.], 1 N. 158a, hier S. 572.12–16. 22 f.). Eine Auflistung
+auszuführende Versuche zurückgreifen (<ref corresp="#bib_02047"/>
+<hi rendition="#i">LSB</hi> II, 1 [2. Aufl.], 1 N. 158a, hier S. 572.12–16. 22 f.). Eine Auflistung
 solcher <hi rendition="#i">Expériences à faire sur le mouvement</hi> hat sich in
-N. <ref corresp="L_chapter_56.xml#RK52278"/> erhalten, das sich ähnlich datieren
+N. <ref corresp="L_chapter_56.xml#RK52278"/>
+ erhalten, das sich ähnlich datieren
 lässt wie das Brieffragment. Die rein mathematische Betrachtungsweise ist damit nicht
-verges-sen, wie das Akustik-Stück N. <ref corresp="L_chapter_4.xml#_60273"/> zeigen
+verges-sen, wie das Akustik-Stück N. <ref corresp="L_chapter_4.xml#_60273"/>
+ zeigen
 kann, wo Leibniz jedoch zugleich Abstand davon nimmt (siehe die Datierungsgründe
 dort). Es ist aber wenig wahrscheinlich, dass sie weiterhin, wie in vorliegendem
 Stück, sich als Gegensatz oder getrennt zu einer physikalischen Betrachtung der
 Stoßphänomene darstellt. In Stücken der Jahre 1677 und später verfolgt Leibniz den im
 September 1677 formulierten Vorsatz, der hier als Terminus ante quem für die Datierung
-von N. <ref corresp="#_60060"/> gewählt wird.</hi>
+von N. <ref corresp="#_60060"/>
+ gewählt wird.</hi>
 </p>
 </div>
 <div type="text">
-<p rendition="#noindent" xml:id="Ch34.p5"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1635"><pb type="L"/><fw type="folNum">[45 r<hi rendition="#sup">o</hi>]</fw></ref> <anchor xml:id="BE_N34-AFn"/><anchor xml:id="_35_10_07_045_1a"/><note type="Afootnote" place="margin" resp="#L" target="#_35_10_07_045_1a" targetEnd="35_10_07_045_1b"><hi rendition="#i">An den Rändern, tlw. quer zur
-Schreibrichtung</hi>: Ex legibus mere mathematicis<index indexName="Sachen"><term>leges merae mathematicae</term></index>, si corpus <hi rendition="#i">A</hi> celeritate 3 et corpus <hi rendition="#i">B</hi> celeritate 2 concurrant,
+<p rendition="#noindent" xml:id="Ch34.p5">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1635">
+<pb type="L"/>
+<fw type="folNum">[45 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+<anchor xml:id="BE_N34-AFn"/>
+<anchor xml:id="_35_10_07_045_1a"/>
+<note type="Afootnote" place="margin" resp="#L" target="#_35_10_07_045_1a" targetEnd="35_10_07_045_1b">
+<hi rendition="#i">An den Rändern, tlw. quer zur
+Schreibrichtung</hi>: Ex legibus mere mathematicis<index indexName="Sachen">
+<term>leges merae mathematicae</term>
+</index>, si corpus <hi rendition="#i">A</hi> celeritate 3 et corpus <hi rendition="#i">B</hi> celeritate 2 concurrant,
 pergent ambo versu[s]<note type="Afootnote-sub" n="[a]">versu <hi rendition="#i">L</hi>
-<note type="editorial"><hi rendition="#i">ändert Hrsg.</hi></note> </note> 3<note type="Afootnote-sub" n="[b]">„3” bezeichnet die Bewegungsrichtung des schnelleren
-Körpers.</note> celeritate 1. Video concursum<index indexName="Sachen"><term>concursus</term></index> aequalium fingendum aequalem[,] alioqui nullus
-esset ic-tus<index indexName="Sachen"><term>ictus</term></index><note type="Afootnote-sub" n="[c]">ictus | in <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi></note> | in <hi rendition="#i">L</hi></note> in
-⟨concurrentibus.⟩<lb/></note>In omni ictu<index indexName="Sachen"><term>ictus</term></index> aequales sunt corporum concurrentium<index indexName="Sachen"><term>corpora concurrentia</term></index> vires,<index indexName="Sachen"><term>vis</term></index> et omne corpus non nisi propria sua <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[vi]<index indexName="Sachen"><term>vis</term></index></corr></lem><rdg wit="#L"><orig>via </orig>
-<note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> ab
-alio resilit. Et omnis corporis <hi rendition="#i">A</hi> a corpore <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><hi rendition="#i">B</hi></add></lem><note type="editorial"><hi rendition="#i">erg.
-L</hi></note></app> impulsus<index indexName="Sachen"><term>impulsus</term></index> nihil aliud est quam vis<index indexName="Sachen"><term>vis corporis</term></index> corporis <hi rendition="#i">A</hi> ab alio <app type="Bfootnote"><lem type="main"><hi rendition="#i">B</hi></lem><rdg wit="#L" cause="addition"><add><hi rendition="#i">B</hi>
-</add><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-resilientis. <anchor xml:id="_35_10_07_045_1b"/><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1637"><pb type="L"/><fw type="folNum">[45 v<hi rendition="#sup">o</hi>]</fw></ref> Possibile est fortasse concipi eundem in corporibus servari
-conatum<index indexName="Sachen"><term>conatus</term></index> secundum leges <app type="Bfootnote"><lem type="main">compositionum motus<index indexName="Sachen"><term>compositio motus</term></index> pure</lem><note type="lemma-abbrev">compositionum</note><rdg wit="#L" n="1"> pure </rdg><rdg wit="#L" n="2"> motus
-pure <hi rendition="#i">L</hi></rdg></app> mathematicas,<index indexName="Sachen"><term>leges compositionum motus pure mathematicae</term></index> sed quia nulla
-sunt corpora perfecte solida<index indexName="Sachen"><term>corpus perfecte
-solidum</term></index> ideo fit, ut hoc non obstante leges systematicae<index indexName="Sachen"><term>leges systematicae</term></index> in mundo serventur[,] ut si
-concipiamus constare ex meris solidis globis<index indexName="Sachen"><term>globus
-solidus</term></index> aequalibus, et fluido intercurrente<index indexName="Sachen"><term>fluidum intercurrens</term></index> a quo vis <app type="Bfootnote"><lem type="main">Elastica<index indexName="Sachen"><term>vis elastica</term></index>,
-oriuntur</lem><note type="lemma-abbrev">Elastica,</note><rdg wit="#L" n="1"> oritur
-haec ipsa </rdg><rdg wit="#L" n="2"> oriuntur <hi rendition="#i">L</hi></rdg></app>
-hae leges motus<index indexName="Sachen"><term>leges motus</term></index> quas
-Systema<index indexName="Sachen"><term>Systema</term></index> requirit ita ut duo
-corpora <anchor xml:id="LH_35_10_07_045_Ruhe-1"/><formula xml:id="Ch34.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo>=</m:mo></m:math></formula> aequali celeritate concurrentia<index indexName="Sachen"><term>corpora duo aequali celeritate concurrentia</term></index>
-quiescere ponantur.<anchor xml:id="LH_35_10_07_045_Ruhe-2"/></p>
+<note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi>
+</note>
+</note> 3<note type="Afootnote-sub" n="[b]">„3” bezeichnet die Bewegungsrichtung des schnelleren
+Körpers.</note> celeritate 1. Video concursum<index indexName="Sachen">
+<term>concursus</term>
+</index> aequalium fingendum aequalem[,] alioqui nullus
+esset ic-tus<index indexName="Sachen">
+<term>ictus</term>
+</index>
+<note type="Afootnote-sub" n="[c]">ictus | in <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi>
+</note> | in <hi rendition="#i">L</hi>
+</note> in
+⟨concurrentibus.⟩<lb/>
+</note>In omni ictu<index indexName="Sachen">
+<term>ictus</term>
+</index> aequales sunt corporum concurrentium<index indexName="Sachen">
+<term>corpora concurrentia</term>
+</index> vires,<index indexName="Sachen">
+<term>vis</term>
+</index> et omne corpus non nisi propria sua <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[vi]<index indexName="Sachen">
+<term>vis</term>
+</index>
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>via </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> ab
+alio resilit. Et omnis corporis <hi rendition="#i">A</hi> a corpore <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">
+<hi rendition="#i">B</hi>
+</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg.
+L</hi>
+</note>
+</app> impulsus<index indexName="Sachen">
+<term>impulsus</term>
+</index> nihil aliud est quam vis<index indexName="Sachen">
+<term>vis corporis</term>
+</index> corporis <hi rendition="#i">A</hi> ab alio <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">B</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">B</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+resilientis. <anchor xml:id="_35_10_07_045_1b"/>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1637">
+<pb type="L"/>
+<fw type="folNum">[45 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref> Possibile est fortasse concipi eundem in corporibus servari
+conatum<index indexName="Sachen">
+<term>conatus</term>
+</index> secundum leges <app type="Bfootnote">
+<lem type="main">compositionum motus<index indexName="Sachen">
+<term>compositio motus</term>
+</index> pure</lem>
+<note type="lemma-abbrev">compositionum</note>
+<rdg wit="#L" n="1"> pure </rdg>
+<rdg wit="#L" n="2"> motus
+pure <hi rendition="#i">L</hi>
+</rdg>
+</app> mathematicas,<index indexName="Sachen">
+<term>leges compositionum motus pure mathematicae</term>
+</index> sed quia nulla
+sunt corpora perfecte solida<index indexName="Sachen">
+<term>corpus perfecte
+solidum</term>
+</index> ideo fit, ut hoc non obstante leges systematicae<index indexName="Sachen">
+<term>leges systematicae</term>
+</index> in mundo serventur[,] ut si
+concipiamus constare ex meris solidis globis<index indexName="Sachen">
+<term>globus
+solidus</term>
+</index> aequalibus, et fluido intercurrente<index indexName="Sachen">
+<term>fluidum intercurrens</term>
+</index> a quo vis <app type="Bfootnote">
+<lem type="main">Elastica<index indexName="Sachen">
+<term>vis elastica</term>
+</index>,
+oriuntur</lem>
+<note type="lemma-abbrev">Elastica,</note>
+<rdg wit="#L" n="1"> oritur
+haec ipsa </rdg>
+<rdg wit="#L" n="2"> oriuntur <hi rendition="#i">L</hi>
+</rdg>
+</app>
+hae leges motus<index indexName="Sachen">
+<term>leges motus</term>
+</index> quas
+Systema<index indexName="Sachen">
+<term>Systema</term>
+</index> requirit ita ut duo
+corpora <anchor xml:id="LH_35_10_07_045_Ruhe-1"/>
+<formula xml:id="Ch34.p5.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo>=</m:mo>
+</m:math>
+</formula> aequali celeritate concurrentia<index indexName="Sachen">
+<term>corpora duo aequali celeritate concurrentia</term>
+</index>
+quiescere ponantur.<anchor xml:id="LH_35_10_07_045_Ruhe-2"/>
+</p>
 </div>
 </div>
 </body>

@@ -1,23 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-061-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-061-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Bücherliste</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Bücherliste</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="61">Bücherliste</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[Herbst 1672 – Anfang 1673]</date><date calendar="#gregorian" notAfter="1673-01" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=665</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="617" to="617"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-061-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 12, 1 Bl. 328-329</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#notiz"><summary><p>Notiz: XXXV 12, 1 Bl. 328-329.
+            </author>
+            <title type="chapter" level="a" n="61">Bücherliste</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[Herbst 1672 – Anfang 1673]</date>
+            <date calendar="#gregorian" notAfter="1673-01" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=665</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="617" to="617"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-061-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 12, 1 Bl. 328-329</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#notiz">
+                <summary>
+                  <p>Notiz: XXXV 12, 1 Bl. 328-329.
 1 Bog. 2<hi rendition="#sup">o</hi>.
 6 Z. auf Bl. 328 r<hi rendition="#sup">o</hi>.
 Der Bog. überliefert zudem die erste Hälfte von <hi rendition="#i">LSB</hi> VII, 3 N. 8.
-Wasserzeichen auf Bl. 328.</p><p>Cc 2, Nr. 529</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+Wasserzeichen auf Bl. 328.</p>
+                  <p>Cc 2, Nr. 529</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -643,8 +743,36 @@ Wasserzeichen auf Bl. 328.</p><p>Cc 2, Nr. 529</p></summary></msContents><physDe
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#chemie"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-09" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#chemie"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-09" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-061-000_facs-haupttextzeuge">
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4101"/>
@@ -653,24 +781,153 @@ Wasserzeichen auf Bl. 328.</p><p>Cc 2, Nr. 529</p></summary></msContents><physDe
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4104"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4105"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4106"/>
-  </facsimile><text xml:id="L_08-02-061-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch61" n="61"><pb type="VIII_2" n="617"/><head>61.
+  </facsimile>
+  <text xml:id="L_08-02-061-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch61" n="61">
+        <pb type="VIII_2" n="617"/>
+        <head>61.
 BÜCHERLISTE</head>
-<head>[Herbst 1672 – Anfang 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Notiz: XXXV 12, 1 Bl. 328-329.
+        <head>[Herbst 1672 – Anfang 1673]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Notiz: XXXV 12, 1 Bl. 328-329.
 1 Bog. 2<hi rendition="#sup">o</hi>.
 6 Z. auf Bl. 328 r<hi rendition="#sup">o</hi>.
 Der Bog. überliefert zudem die erste Hälfte von <hi rendition="#i">LSB</hi> VII, 3 N. 8.
-Wasserzeichen auf Bl. 328.</p><p>Cc 2, Nr. 529</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch61.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Wasserzeichen auf Bl. 328.</p>
+                      <p>Cc 2, Nr. 529</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch61.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi>
 Die Datierung von <hi rendition="#i">LSB</hi> VII, 3 N. 8 wird auch für das vorliegende, auf demselben Bogen überlieferte Stück N. 61 übernommen.
-Das Wasserzeichen im Textträger ist für die Zeitspanne vom Sommer 1672 bis zum Frühling 1673 belegt.</hi></p></div><div type="text"><p xml:id="Ch61.p5" rendition="#noindent #hangindent"><pb type="L"/><fw type="folNum">[328 r<hi rendition="#sup">o</hi>]</fw>
-<app type="Cfootnote"><lem type="main">Libavius<index indexName="Namensregister"><term><hi rendition="#g">Libavius</hi>, Andreas 1550-1616</term></index>
-<hi rendition="#i">Alchem.</hi> lib. 1. c. 14. p. 27.</lem><note type="lemma-abbrev">Libavius <seg type="apparat-ellipsis"/> p. 27</note><note type="editorial"><bibl corresp="#bib_01126"><hi rendition="#k">A. Libavius</hi>, <hi rendition="#i">Alchemia</hi>, Frankfurt a.M. 1597, S. 26-28.</bibl></note></app>
+Das Wasserzeichen im Textträger ist für die Zeitspanne vom Sommer 1672 bis zum Frühling 1673 belegt.</hi>
+          </p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch61.p5" rendition="#noindent #hangindent">
+            <pb type="L"/>
+            <fw type="folNum">[328 r<hi rendition="#sup">o</hi>]
+            </fw>
+            <app type="Cfootnote">
+              <lem type="main">Libavius<index indexName="Namensregister">
+                <term>
+                  <hi rendition="#g">Libavius</hi>, Andreas 1550-1616</term>
+              </index>
+              <hi rendition="#i">Alchem.</hi> lib. 1. c. 14. p. 27.</lem>
+            <note type="lemma-abbrev">Libavius <seg type="apparat-ellipsis"/>
+ p. 27</note>
+            <note type="editorial">
+              <bibl corresp="#bib_01126">
+                <hi rendition="#k">A. Libavius</hi>,                <hi rendition="#i">Alchemia</hi>, Frankfurt a.M. 1597, S. 26-28.</bibl>
+            </note>
+          </app>
 repraesentat
-<app type="Cfootnote"><lem type="main">ex And. Fachsio<index indexName="Namensregister"><term><hi rendition="#g">Fachs</hi>, Modestin ??-1575</term></index></lem><note type="lemma-abbrev">ex And. Fachsio</note><note type="editorial"><bibl corresp="#bib_00045"><hi rendition="#k">M. Fachs</hi>, <hi rendition="#i">Probierbüchlein</hi>, Leipzig 1595, S. 6. Die Bezeichnung des Autors als <hi rendition="#i">And. Fachsius</hi> ist erklärbar durch Verwechslung mit Andreas Libavius.</bibl></note></app>
-ea quae calorem<index indexName="Sachverzeichnis"><term>calor</term></index> reddunt irregularem.</p><p xml:id="Ch61.p6" rendition="#noindent">Florimond <app type="Cfootnote"><lem type="main">Rapine.<index indexName="Namensregister"><term><hi rendition="#g">Rapine</hi>, Florimond 1579-1646</term></index> 1614. 1651.</lem><note type="lemma-abbrev">Rapine. 1614. 1651</note><note type="editorial"><bibl corresp="#bib_00085"><hi rendition="#k">F. Rapine</hi>, <hi rendition="#i">Recueil de tout ce qui s’est fait en l’assemblée générale des estats tenus à Paris en l’an 1614</hi>, Paris 1651.</bibl></note></app></p><p xml:id="Ch61.p7" rendition="#noindent">Vincent <app type="Cfootnote"><lem type="main">Cabot.<index indexName="Namensregister"><term><hi rendition="#g">Cabot</hi>, Vincent 1560-1620</term></index>
-26 lib. Pierre du Bosc.<index indexName="Namensregister"><term><hi rendition="#g">Bosc</hi>, Pierre du 1623-1692</term></index> 1630.</lem><note type="lemma-abbrev">Cabot <seg type="apparat-ellipsis"/> 1630</note><note type="editorial"><bibl corresp="#bib_00018"><hi rendition="#k">V. Cabot</hi>, <hi rendition="#i">Les Politiques</hi>, par Pierre Bosc marchand libraire,
-Toulouse 1630. Der Text ist eigentlich in 28 Bücher unterteilt.</bibl></note></app></p><p xml:id="Ch61.p8" rendition="#noindent"><app type="Cfootnote"><lem type="main"><hi rendition="#i">De inventione Remediorum</hi><index indexName="Sachverzeichnis"><term>remedium</term></index></lem><note type="lemma-abbrev"><hi rendition="#i">De inventione Remediorum</hi></note><note type="editorial"><bibl corresp="#bib_00090"><hi rendition="#k">S. Santorio</hi>, <hi rendition="#i">De remediorum inventione</hi>, Genf 1631.</bibl></note></app>
-et <app type="Cfootnote"><lem type="main"><hi rendition="#i">methodus</hi><index indexName="Sachverzeichnis"><term>methodus</term></index> etc.</lem><note type="lemma-abbrev"><hi rendition="#i">methodus</hi> etc.</note><note type="editorial"><bibl corresp="#bib_00089"><hi rendition="#k">S. Santorio</hi>, <hi rendition="#i">Methodus vitandorum errorum omnium qui in arte medica contingunt</hi>, Venedig 1603. Neuausgabe: Venedig 1630.<bibl corresp="#bib_01127"/></bibl></note></app>
-Logica Medica<index indexName="Sachverzeichnis"><term>logica medica</term></index>.</p></div></div></body>
-  </text>
+          <app type="Cfootnote">
+            <lem type="main">ex And. Fachsio<index indexName="Namensregister">
+              <term>
+                <hi rendition="#g">Fachs</hi>, Modestin ??-1575</term>
+            </index>
+          </lem>
+          <note type="lemma-abbrev">ex And. Fachsio</note>
+          <note type="editorial">
+            <bibl corresp="#bib_00045">
+              <hi rendition="#k">M. Fachs</hi>,              <hi rendition="#i">Probierbüchlein</hi>, Leipzig 1595, S. 6. Die Bezeichnung des Autors als <hi rendition="#i">And. Fachsius</hi> ist erklärbar durch Verwechslung mit Andreas Libavius.</bibl>
+          </note>
+        </app>
+ea quae calorem<index indexName="Sachverzeichnis">
+        <term>calor</term>
+      </index> reddunt irregularem.</p>
+    <p xml:id="Ch61.p6" rendition="#noindent">Florimond <app type="Cfootnote">
+      <lem type="main">Rapine.<index indexName="Namensregister">
+        <term>
+          <hi rendition="#g">Rapine</hi>, Florimond 1579-1646</term>
+      </index> 1614. 1651.</lem>
+    <note type="lemma-abbrev">Rapine. 1614. 1651</note>
+    <note type="editorial">
+      <bibl corresp="#bib_00085">
+        <hi rendition="#k">F. Rapine</hi>,        <hi rendition="#i">Recueil de tout ce qui s’est fait en l’assemblée générale des estats tenus à Paris en l’an 1614</hi>, Paris 1651.</bibl>
+    </note>
+  </app>
+</p>
+<p xml:id="Ch61.p7" rendition="#noindent">Vincent <app type="Cfootnote">
+  <lem type="main">Cabot.<index indexName="Namensregister">
+    <term>
+      <hi rendition="#g">Cabot</hi>, Vincent 1560-1620</term>
+  </index>
+26 lib. Pierre du Bosc.<index indexName="Namensregister">
+  <term>
+    <hi rendition="#g">Bosc</hi>, Pierre du 1623-1692</term>
+</index> 1630.</lem>
+<note type="lemma-abbrev">Cabot <seg type="apparat-ellipsis"/>
+ 1630</note>
+<note type="editorial">
+<bibl corresp="#bib_00018">
+  <hi rendition="#k">V. Cabot</hi>,  <hi rendition="#i">Les Politiques</hi>, par Pierre Bosc marchand libraire,
+Toulouse 1630. Der Text ist eigentlich in 28 Bücher unterteilt.</bibl>
+</note>
+</app>
+</p>
+<p xml:id="Ch61.p8" rendition="#noindent">
+<app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i">De inventione Remediorum</hi>
+<index indexName="Sachverzeichnis">
+  <term>remedium</term>
+</index>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">De inventione Remediorum</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_00090">
+  <hi rendition="#k">S. Santorio</hi>,  <hi rendition="#i">De remediorum inventione</hi>, Genf 1631.</bibl>
+</note>
+</app>
+et <app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i">methodus</hi>
+<index indexName="Sachverzeichnis">
+<term>methodus</term>
+</index> etc.</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">methodus</hi> etc.</note>
+<note type="editorial">
+<bibl corresp="#bib_00089">
+<hi rendition="#k">S. Santorio</hi>,<hi rendition="#i">Methodus vitandorum errorum omnium qui in arte medica contingunt</hi>, Venedig 1603. Neuausgabe: Venedig 1630.<bibl corresp="#bib_01127"/>
+</bibl>
+</note>
+</app>
+Logica Medica<index indexName="Sachverzeichnis">
+<term>logica medica</term>
+</index>.
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

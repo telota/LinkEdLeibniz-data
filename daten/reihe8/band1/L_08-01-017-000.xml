@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-017-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-017-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Zu Bonaventura Cavalieri, Lo specchio ustorio</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note> </resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Inhaltliche Konzeption</note> </resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Martina</forename> <surname>Gödel</surname> </persName>
-					<resp> <note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note> </resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Sebastian W.</forename> <surname>Stork</surname> </persName>
-					<resp> <note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note> </resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"> <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p> </licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="17">Zu Bonaventura Cavalieri, Lo specchio ustorio</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1671" resp="#ed" cert="low">[1671 (?)]</date>
 						<date calendar="#gregorian" notAfter="1671" resp="#ed" cert="low"/>
-						<idno type="PDF"> <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno> <idno type="page">#page=192</idno> </idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+							<idno type="page">#page=192</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,24 +86,31 @@
 						</imprint>
 						<biblScope unit="page" from="147" to="149"/>
 					</monogr>
-					<series> <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title> </series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
 				</biblStruct>
 				<listWit>
-					<witness n="LiH" corresp="#L_08-01-017-000_facs-haupttextzeuge"> <msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">Leibn. Marg. 163</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#lektuere">
-							<summary> <p>Marginalien, An- und Unterstreichungen in <hi rendition="#k">B. Cavalieri</hi>, <ref corresp="#bib_00021"/><hi rendition="#i">Lo specchio ustorio</hi>, Bologna 1650: Leibn. Marg. 163.</p> </summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Druck-mit-handschriftlichen-Anmerkungen" corresp="L_objectDesc.xml#druck-mit-handschriftlichen-anmerkungen"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-LiH"/>
-						</history>
-						</msDesc> </witness>
+					<witness n="LiH" corresp="#L_08-01-017-000_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">Leibn. Marg. 163</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#lektuere">
+								<summary>
+									<p>Marginalien, An- und Unterstreichungen in <hi rendition="#k">B. Cavalieri</hi>,										<ref corresp="#bib_00021"/>
+										<hi rendition="#i">Lo specchio ustorio</hi>, Bologna 1650: Leibn. Marg. 163.</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Druck-mit-handschriftlichen-Anmerkungen" corresp="L_objectDesc.xml#druck-mit-handschriftlichen-anmerkungen"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-LiH"/>
+							</history>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -166,8 +211,8 @@
 		</revisionDesc>
 	</teiHeader>
 	<facsimile source="digilib.bbaw.de" xml:id="L_08-01-017-000_facs-haupttextzeuge">
-    <graphic url="XXX"/>
-    </facsimile>
+		<graphic url="XXX"/>
+	</facsimile>
 	<text xml:id="L_08-01-017-000_text">
 		<body xml:id="Document">
 			<div type="chapter" xml:id="Ch17" n="17">
@@ -175,111 +220,197 @@
 				<head>17. ZU BONAVENTURA CAVALIERI, LO SPECCHIO USTORIO</head>
 				<head>[1671 (?)]</head>
 				<div type="ueberlieferung">
-					<p> <hi rendition="#b #smaller">Überlieferung:</hi> <listWit>
-						<witness> <msDesc>
-							<msIdentifier>
-								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-								<idno type="Signatur">XXX</idno>
-							</msIdentifier>
-							<msContents>
-								<summary> <p>Marginalien, An- und Unterstreichungen in <hi rendition="#k">B. Cavalieri</hi>, <ref corresp="#bib_00021"/><hi rendition="#i">Lo specchio ustorio</hi>, Bologna 1650: Leibn. Marg. 163.</p> </summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Druck-mit-handschriftlichen-Anmerkungen" corresp="L_objectDesc.xml#druck-mit-handschriftlichen-anmerkungen"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc> </witness>
-						</listWit> </p>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+										<idno type="Signatur">XXX</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>Marginalien, An- und Unterstreichungen in <hi rendition="#k">B. Cavalieri</hi>,												<ref corresp="#bib_00021"/>
+												<hi rendition="#i">Lo specchio ustorio</hi>, Bologna 1650: Leibn. Marg. 163.</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Druck-mit-handschriftlichen-Anmerkungen" corresp="L_objectDesc.xml#druck-mit-handschriftlichen-anmerkungen"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="contents">
-					<p xml:id="Ch17.p3"> <hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Der Titel <ref corresp="#bib_00021"/><hi rendition="#i">Lo specchio ustorio</hi> kommt in dem bislang publizierten Schrifttum Leibniz’ nur ein einziges Mal vor. Es handelt sich dabei um N. 16, wo sich Leibniz einen Hinweis auf Cavalieri<index indexName="Namensregister">
-						<term><hi rendition="#g #smaller">Cavalieri</hi> <hi rendition="#smaller">(Cavalierius), Bonaventura 1598–1647</hi></term>
-						</index> notiert. Nimmt man das Stück N. 15 hinzu, in dem sich Leibniz ebenfalls Auszüge anfertigt, die sich auf Brennspiegel beziehen. Diese Übereinstimmung gibt eine gewisse Wahrscheinlichkeit dafür, dass die Marginalien um 1671 entstanden sind.</hi> </p>
-				</div>
-				<div type="text">
-					<p xml:id="Ch17.p4_1" rendition="#c">[p. 22] Della terza<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht:</hi> terza. <hi rendition="#i">Darüber:</hi> secunda potius Catoptrica proprietas</note> proprietà della Parabola.</p>
-					<p xml:id="Ch17.p4_2" rendition="#c">Cap. XI.</p>
-					<p xml:id="Ch17.p5">Sia la Parabola BAC nell’8. fig. il cui asse OA indiffinitamente prolongato verso A, come in X, e sia foco<index indexName="Sachverzeichnis">
-						<term>fuoco</term>
-						</index> di detta Parabola il punto M, e da che parte si voglia fuori di essa<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht:</hi> fuori di essa</note> incontrino la superficie parabolica per essempio le rette linee TI, FK ne i punti I, K, le quali siano sempre per dritto al foco<index indexName="Sachverzeichnis">
-						<term>fuoco</term>
-						</index> M; hà dunque la Parabola quest’altra mirabile proprietà, che dalli detti punti d’incidenza si partono le riflesse<index indexName="Sachverzeichnis">
-						<term>riflesso</term>
-						</index> dalla Parabola per di fuori sempre parallele all’asse, cioè all’AO, le quali riflesse<index indexName="Sachverzeichnis">
-						<term>riflesso</term>
-						</index> siano le IV, KY prolongate come si voglia in V, Y. Ne meno questa proprietà hò veduta in altri, se ben facilmente si dimostra, come hora s’intenderà.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Darunter:</hi> è coincidente in effetto, con la prima, e vero è un corollario della prima</note></p>
-					<p xml:id="Ch17.p6">[p. 47] <seg type="apparat-ellipsis"/> <hi rendition="#i">e che entrando nei diafani più rari, da quella si discostano, facendosi maggiore, ò minor’angolo di refrattione<index indexName="Sachverzeichnis">
-						<term><hi rendition="#i">angolo</hi></term>
-						<index>
-							<term><hi rendition="#i">di rifrazione</hi></term>
-						</index>
-						</index>, quanto è maggiore ò minore l’angolo <pb type="VIII_1" n="148"/>dell’incidenza<index indexName="Sachverzeichnis">
-						<term><hi rendition="#i">angolo</hi></term>
-						<index>
-							<term><hi rendition="#i">di incidenza</hi></term>
-						</index>
-						</index>, ma con che regola si vadano diminuendo gli angoli della Refrattione<index indexName="Sachverzeichnis">
-						<term><hi rendition="#i">angolo</hi></term>
-						<index>
-							<term><hi rendition="#i">di rifrazione</hi></term>
-						</index>
-						</index><index indexName="Sachverzeichnis">
-						<term><hi rendition="#i">angolo</hi></term>
-						<index>
-							<term><hi rendition="#i">di rifrazione</hi></term>
-						</index>
-						</index> in vn diafano, ouero accrescendo in relatione de gli angoli dell’incidenza<index indexName="Sachverzeichnis">
-						<term><hi rendition="#i">angolo</hi></term>
-						<index>
-							<term><hi rendition="#i">di incidenza</hi></term>
-						</index>
-						</index><index indexName="Sachverzeichnis">
-						<term><hi rendition="#i">angolo</hi></term>
-						<index>
-							<term><hi rendition="#i">di incidenza</hi></term>
-						</index>
-						</index><index indexName="Sachverzeichnis">
-						<term><hi rendition="#i">angolo</hi></term>
-						<index>
-							<term><hi rendition="#i">di incidenza</hi></term>
-						</index>
-						</index>, ciò sin’hora non siè con modo sicuro, e dimostratiuamente, per quanto io sappia<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht:</hi> per quanto io sappia</note>, potuto prouare; tengono alcuni, che la Parabola cristallina vnisca le parallele in vn punto: Il Keplero<index indexName="Namensregister">
-						<term><hi rendition="#g #i">Kepler</hi> <hi rendition="#i">(Keplerus), Johannes 1571–1630</hi></term>
-						</index> nell’Astronomia <app type="Cfootnote">
-						<lem type="main">Ottica</lem>
-						<note type="lemma-abbrev">Keplero</note>
-						<note type="editorial"><hi rendition="#k">J. Kepler</hi>, <bibl corresp="#bib_00066"><hi rendition="#i">Astronomiae pars optica</hi>, Frankfurt 1604, S. 95f. (<hi rendition="#i">KGW</hi> II, S. 92f.).</bibl></note>
-						</app> stima, che sia vn’Iperbola<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht:</hi> sia vn’Iperbola</note>, come la Mecanica gli dimostra, se ben dice vederla vn poco più acuta della Iperbola nella cima, com’egli accenna al Cap. 4. trattando della misura delle Refrattioni</hi><index indexName="Sachverzeichnis">
-						<term>rifrazione</term>
-						</index>,<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Unten am Rand:</hi> Questo si hà adesso; e l’inventore della vera regola delle refrattioni è stato il Snellio<index indexName="Namensregister">
-						<term><hi rendition="#g">Snell van Royen</hi> (Snellius), Willebrord 1580–1625</term>
-						</index>, seguito del Cartesio<index indexName="Namensregister">
-						<term><hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René 1596–1650</term>
-						</index>, Fermatio<index indexName="Namensregister">
-						<term><hi rendition="#g">Fermat</hi> (Fermatius), Pierre de 1601–1665</term>
-						</index> e Vgenio.<index indexName="Namensregister">
-						<term><hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens, Huguens), Christiaan 1629–1695</term>
-						</index></note> <seg type="apparat-ellipsis"/>.</p>
-					<p xml:id="Ch17.p7">[p. 53] <seg type="apparat-ellipsis"/> esperienza di questo hò fatta io, che con vno Specchio<index indexName="Sachverzeichnis">
-						<term>specchio</term>
-						</index> sferico di piombo<index indexName="Sachverzeichnis">
-						<term>piombo</term>
-						</index> ancor mal polito hò acceso il fuoco nella materia arida al fuoco di carboni<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreich</hi>t: al <seg type="apparat-ellipsis"/> carboni. <hi rendition="#i">Daneben rechts am Rand</hi>: add. p. seq.</note>; <seg type="apparat-ellipsis"/>.</p>
-					<p xml:id="Ch17.p8">Se adunque prenderemo di questa superficie quella parte, che è intorno alla cima, questa abbrucierà tra’l corpo focoso, e lo Specchio<index indexName="Sachverzeichnis">
-						<term>specchio</term>
-						</index>; ma se vogliamo, che l’incendio sia di dietro dello Specchio<index indexName="Sachverzeichnis">
-						<term>specchio</term>
-						</index><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht:</hi> l’incendio <seg type="apparat-ellipsis"/> Specchio<index indexName="Sachverzeichnis">
-						<term>specchio</term>
-						</index>.</note>, bisognerà pigliare vna parte di quella, discosta dalla cima, tanto che lasci fuori di se il foco di tal superficie verso la cima, come per essempio; <seg type="apparat-ellipsis"/>.</p>
-					<p xml:id="Ch17.p9">[p. 63] <seg type="apparat-ellipsis"/> per hauer dunque questa operatione in altre distanze ancora, è necessario portar più oltre quella forza, che hanno i raggi solari innanzi, ò doppo, vicino al concorso, cioè ò fare i raggi diuergenti<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz korrigiert:</hi> diuergenti <hi rendition="#i">zu</hi> conuergenti</note> pur paralleli, e ciò innanzi, ouero i raggi diuergenti pur paralleli, e ciò doppo il concorso; <seg type="apparat-ellipsis"/>.</p>
-					<p xml:id="Ch17.p10">[p. 75] <seg type="apparat-ellipsis"/> si attribuisca dunque principalmente al generoso spirito di questo Signore<index indexName="Namensregister">
-						<term><hi rendition="#g">Marsili,</hi> Cesare</term>
-						</index> l’hauer’io palesato ciò, che pensai di tener nascosto (hauendo pur’anco, secondo il suo pensiero<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz unterstreicht</hi>: secondo il suo pensiero. <hi rendition="#i">Am Rand angestrichen</hi>: palesato <seg type="apparat-ellipsis"/> delle.</note>, posto il libretto delle figure in vltimo, conforme, che anch’egli stampando, mi disse di voler fare) e gradiscano l’affeto mio, <seg type="apparat-ellipsis"/>.</p>
-				</div>
-			</div>
-		</body>
-	</text>
+					<p xml:id="Ch17.p3">
+						<hi rendition="#smaller">
+							<hi rendition="#b">Datierungsgründe</hi>: Der Titel <ref corresp="#bib_00021"/>
+						<hi rendition="#i">Lo specchio ustorio</hi> kommt in dem bislang publizierten Schrifttum Leibniz’ nur ein einziges Mal vor. Es handelt sich dabei um N. 16, wo sich Leibniz einen Hinweis auf Cavalieri<index indexName="Namensregister">
+						<term>
+							<hi rendition="#g #smaller">Cavalieri</hi>
+							<hi rendition="#smaller">(Cavalierius), Bonaventura 1598–1647</hi>
+						</term>
+					</index> notiert. Nimmt man das Stück N. 15 hinzu, in dem sich Leibniz ebenfalls Auszüge anfertigt, die sich auf Brennspiegel beziehen. Diese Übereinstimmung gibt eine gewisse Wahrscheinlichkeit dafür, dass die Marginalien um 1671 entstanden sind.</hi>
+			</p>
+		</div>
+		<div type="text">
+			<p xml:id="Ch17.p4_1" rendition="#c">[p. 22] Della terza<note type="Afootnote" place="margin" resp="#L">
+				<hi rendition="#i">Leibniz unterstreicht:</hi> terza. <hi rendition="#i">Darüber:</hi> secunda potius Catoptrica proprietas</note> proprietà della Parabola.</p>
+		<p xml:id="Ch17.p4_2" rendition="#c">Cap. XI.</p>
+		<p xml:id="Ch17.p5">Sia la Parabola BAC nell’8. fig. il cui asse OA indiffinitamente prolongato verso A, come in X, e sia foco<index indexName="Sachverzeichnis">
+			<term>fuoco</term>
+		</index> di detta Parabola il punto M, e da che parte si voglia fuori di essa<note type="Afootnote" place="margin" resp="#L">
+		<hi rendition="#i">Leibniz unterstreicht:</hi> fuori di essa</note> incontrino la superficie parabolica per essempio le rette linee TI, FK ne i punti I, K, le quali siano sempre per dritto al foco<index indexName="Sachverzeichnis">
+	<term>fuoco</term>
+</index> M; hà dunque la Parabola quest’altra mirabile proprietà, che dalli detti punti d’incidenza si partono le riflesse<index indexName="Sachverzeichnis">
+<term>riflesso</term>
+</index> dalla Parabola per di fuori sempre parallele all’asse, cioè all’AO, le quali riflesse<index indexName="Sachverzeichnis">
+<term>riflesso</term>
+</index> siano le IV, KY prolongate come si voglia in V, Y. Ne meno questa proprietà hò veduta in altri, se ben facilmente si dimostra, come hora s’intenderà.<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Darunter:</hi> è coincidente in effetto, con la prima, e vero è un corollario della prima</note>
+</p>
+<p xml:id="Ch17.p6">[p. 47] <seg type="apparat-ellipsis"/>
+<hi rendition="#i">e che entrando nei diafani più rari, da quella si discostano, facendosi maggiore, ò minor’angolo di refrattione<index indexName="Sachverzeichnis">
+<term>
+<hi rendition="#i">angolo</hi>
+</term>
+<index>
+<term>
+<hi rendition="#i">di rifrazione</hi>
+</term>
+</index>
+</index>, quanto è maggiore ò minore l’angolo <pb type="VIII_1" n="148"/>
+dell’incidenza<index indexName="Sachverzeichnis">
+<term>
+<hi rendition="#i">angolo</hi>
+</term>
+<index>
+<term>
+<hi rendition="#i">di incidenza</hi>
+</term>
+</index>
+</index>, ma con che regola si vadano diminuendo gli angoli della Refrattione<index indexName="Sachverzeichnis">
+<term>
+<hi rendition="#i">angolo</hi>
+</term>
+<index>
+<term>
+<hi rendition="#i">di rifrazione</hi>
+</term>
+</index>
+</index>
+<index indexName="Sachverzeichnis">
+<term>
+<hi rendition="#i">angolo</hi>
+</term>
+<index>
+<term>
+<hi rendition="#i">di rifrazione</hi>
+</term>
+</index>
+</index> in vn diafano, ouero accrescendo in relatione de gli angoli dell’incidenza<index indexName="Sachverzeichnis">
+<term>
+<hi rendition="#i">angolo</hi>
+</term>
+<index>
+<term>
+<hi rendition="#i">di incidenza</hi>
+</term>
+</index>
+</index>
+<index indexName="Sachverzeichnis">
+<term>
+<hi rendition="#i">angolo</hi>
+</term>
+<index>
+<term>
+<hi rendition="#i">di incidenza</hi>
+</term>
+</index>
+</index>
+<index indexName="Sachverzeichnis">
+<term>
+<hi rendition="#i">angolo</hi>
+</term>
+<index>
+<term>
+<hi rendition="#i">di incidenza</hi>
+</term>
+</index>
+</index>, ciò sin’hora non siè con modo sicuro, e dimostratiuamente, per quanto io sappia<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Leibniz unterstreicht:</hi> per quanto io sappia</note>, potuto prouare; tengono alcuni, che la Parabola cristallina vnisca le parallele in vn punto: Il Keplero<index indexName="Namensregister">
+<term>
+<hi rendition="#g #i">Kepler</hi>
+<hi rendition="#i">(Keplerus), Johannes 1571–1630</hi>
+</term>
+</index> nell’Astronomia <app type="Cfootnote">
+<lem type="main">Ottica</lem>
+<note type="lemma-abbrev">Keplero</note>
+<note type="editorial">
+<hi rendition="#k">J. Kepler</hi>,<bibl corresp="#bib_00066">
+<hi rendition="#i">Astronomiae pars optica</hi>, Frankfurt 1604, S. 95f. (<hi rendition="#i">KGW</hi> II, S. 92f.).</bibl>
+</note>
+</app> stima, che sia vn’Iperbola<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Leibniz unterstreicht:</hi> sia vn’Iperbola</note>, come la Mecanica gli dimostra, se ben dice vederla vn poco più acuta della Iperbola nella cima, com’egli accenna al Cap. 4. trattando della misura delle Refrattioni</hi>
+<index indexName="Sachverzeichnis">
+<term>rifrazione</term>
+</index>,<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Unten am Rand:</hi> Questo si hà adesso; e l’inventore della vera regola delle refrattioni è stato il Snellio<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Snell van Royen</hi> (Snellius), Willebrord 1580–1625</term>
+</index>, seguito del Cartesio<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René 1596–1650</term>
+</index>, Fermatio<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Fermat</hi> (Fermatius), Pierre de 1601–1665</term>
+</index> e Vgenio.<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens, Huguens), Christiaan 1629–1695</term>
+</index>
+</note>
+<seg type="apparat-ellipsis"/>
+.</p>
+<p xml:id="Ch17.p7">[p. 53] <seg type="apparat-ellipsis"/>
+ esperienza di questo hò fatta io, che con vno Specchio<index indexName="Sachverzeichnis">
+<term>specchio</term>
+</index> sferico di piombo<index indexName="Sachverzeichnis">
+<term>piombo</term>
+</index> ancor mal polito hò acceso il fuoco nella materia arida al fuoco di carboni<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Leibniz unterstreich</hi>t: al <seg type="apparat-ellipsis"/>
+ carboni. <hi rendition="#i">Daneben rechts am Rand</hi>: add. p. seq.</note>;<seg type="apparat-ellipsis"/>
+.</p>
+<p xml:id="Ch17.p8">Se adunque prenderemo di questa superficie quella parte, che è intorno alla cima, questa abbrucierà tra’l corpo focoso, e lo Specchio<index indexName="Sachverzeichnis">
+<term>specchio</term>
+</index>; ma se vogliamo, che l’incendio sia di dietro dello Specchio<index indexName="Sachverzeichnis">
+<term>specchio</term>
+</index>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Leibniz unterstreicht:</hi> l’incendio <seg type="apparat-ellipsis"/>
+ Specchio<index indexName="Sachverzeichnis">
+<term>specchio</term>
+</index>.
+</note>, bisognerà pigliare vna parte di quella, discosta dalla cima, tanto che lasci fuori di se il foco di tal superficie verso la cima, come per essempio; <seg type="apparat-ellipsis"/>
+.</p>
+<p xml:id="Ch17.p9">[p. 63] <seg type="apparat-ellipsis"/>
+ per hauer dunque questa operatione in altre distanze ancora, è necessario portar più oltre quella forza, che hanno i raggi solari innanzi, ò doppo, vicino al concorso, cioè ò fare i raggi diuergenti<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Leibniz korrigiert:</hi> diuergenti <hi rendition="#i">zu</hi> conuergenti</note> pur paralleli, e ciò innanzi, ouero i raggi diuergenti pur paralleli, e ciò doppo il concorso; <seg type="apparat-ellipsis"/>
+.</p>
+<p xml:id="Ch17.p10">[p. 75] <seg type="apparat-ellipsis"/>
+ si attribuisca dunque principalmente al generoso spirito di questo Signore<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Marsili,</hi> Cesare</term>
+</index> l’hauer’io palesato ciò, che pensai di tener nascosto (hauendo pur’anco, secondo il suo pensiero<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Leibniz unterstreicht</hi>: secondo il suo pensiero. <hi rendition="#i">Am Rand angestrichen</hi>: palesato <seg type="apparat-ellipsis"/>
+ delle.</note>, posto il libretto delle figure in vltimo, conforme, che anch’egli stampando, mi disse di voler fare) e gradiscano l’affeto mio, <seg type="apparat-ellipsis"/>
+.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

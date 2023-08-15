@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-002-001">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-002-001">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -6,32 +7,57 @@
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke,
 					Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und
-							Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-						Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-							VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-							Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC
-						4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC
+						4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
@@ -48,7 +74,10 @@
 							1</title>
 						<date calendar="#gregorian" notBefore="1668-11" resp="#L" cert="high"/>
 						<date calendar="#gregorian" notAfter="1669-02" resp="#L" cert="high"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=68</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+							<idno type="page">#page=68</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII:
@@ -61,29 +90,35 @@
 						</imprint>
 						<biblScope unit="page" from="23" to="29"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche
-							Schriften und Briefe</title></series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche
+							Schriften und Briefe</title>
+					</series>
 					<relatedItem type="superordinated-chapter">
 						<ptr target="#L_08-01-002-000"/>
 					</relatedItem>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-01-002-001_facs-haupttextzeuge"><msDesc>
+					<witness n="L" corresp="#L_08-01-002-001_facs-haupttextzeuge">
+						<msDesc>
 							<msIdentifier>
 								<repository>Gottfried Wilhelm Leibniz Bibliothek
 									Hannover</repository>
 								<idno type="Signatur">LH XXXV 15, 6 Bl. 46, 74</idno>
 							</msIdentifier>
 							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-								<summary><p>Konzept: LH XXXV 15, 6 Bl. 46, 74. 1 Bog. 2<hi rendition="#sup">o</hi>. 3 1/4 S. zweispaltig. In der
+								<summary>
+									<p>Konzept: LH XXXV 15, 6 Bl. 46, 74. 1 Bog. 2<hi rendition="#sup">o</hi>. 3 1/4 S. zweispaltig. In der
 										linken Spalte von Bl. 46 v<hi rendition="#sup">o</hi> ein
 										Text, der als Nachtrag zur Reihe IV gedruckt wird. Dieser
 										Text wird in den rechten Spalten von Bl. 74 r<hi rendition="#sup">o</hi> und 74 v<hi rendition="#sup">o</hi> fortgesetzt. Das vorliegende Stück endet mit der
 										8. Zeile von Bl. 74 v<hi rendition="#sup">o</hi>, linke
 										Spalte. Am oberen und unteren Ende der Mittelfalz sowie an
 										den unteren Rändern der Seiten Papierabbrüche, die zu
-										geringfügigen Textverlusten führen.</p><p>KK 1, Nr. 193
-										A</p></summary>
+										geringfügigen Textverlusten führen.</p>
+									<p>KK 1, Nr. 193
+										A</p>
+								</summary>
 							</msContents>
 							<physDesc>
 								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -91,7 +126,8 @@
 							<history>
 								<origin corresp="L_witness-origin-types.xml#origin-L"/>
 							</history>
-						</msDesc></witness>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -203,18 +239,24 @@
 	<text xml:id="L_08-01-002-001_text">
 		<body xml:id="Document">
 			<div type="section" xml:id="Ch2.S1" n="21">
-				<head>2<hi rendition="#sub">1</hi><pb type="VIII_1" n="23"/>. DE LONGITUDINIBUS
+				<head>2<hi rendition="#sub">1</hi>
+					<pb type="VIII_1" n="23"/>
+. DE LONGITUDINIBUS
 					INVENIENDIS 1</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-							<witness><msDesc>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
 									<msIdentifier>
 										<repository>Gottfried Wilhelm Leibniz Bibliothek
 											Hannover</repository>
 										<idno type="Signatur">XXX</idno>
 									</msIdentifier>
 									<msContents>
-										<summary><p>Konzept: LH XXXV 15, 6 Bl. 46, 74. 1 Bog. 2<hi rendition="#sup">o</hi>. 3 1/4 S. zweispaltig. In
+										<summary>
+											<p>Konzept: LH XXXV 15, 6 Bl. 46, 74. 1 Bog. 2<hi rendition="#sup">o</hi>. 3 1/4 S. zweispaltig. In
 												der linken Spalte von Bl. 46 v<hi rendition="#sup">o</hi> ein Text, der als Nachtrag zur Reihe IV
 												gedruckt wird. Dieser Text wird in den rechten
 												Spalten von Bl. 74 r<hi rendition="#sup">o</hi> und
@@ -223,8 +265,10 @@
 												v<hi rendition="#sup">o</hi>, linke Spalte. Am
 												oberen und unteren Ende der Mittelfalz sowie an den
 												unteren Rändern der Seiten Papierabbrüche, die zu
-												geringfügigen Textverlusten führen.</p><p>KK 1, Nr.
-												193 A</p></summary>
+												geringfügigen Textverlusten führen.</p>
+											<p>KK 1, Nr.
+												193 A</p>
+										</summary>
 									</msContents>
 									<physDesc>
 										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -232,274 +276,356 @@
 									<history>
 										<origin/>
 									</history>
-								</msDesc></witness>
-						</listWit></p>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="contents">
-					<p xml:id="Ch2.S1.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Von Leibniz auf Blatt LH XXXV 15, 6 Bl. 46
-								r<hi rendition="#sup">o</hi> datiert.</hi></p>
+					<p xml:id="Ch2.S1.p4">
+						<hi rendition="#smaller">
+							<hi rendition="#b">Datierungsgründe</hi>: Von Leibniz auf Blatt LH XXXV 15, 6 Bl. 46
+								r<hi rendition="#sup">o</hi> datiert.</hi>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch2.S1.p5" rendition="#c"><pb type="L"/><pb type="VIII_1" n="24"/><fw type="folNum">[46 r<hi rendition="#sup">o</hi>]</fw>
+					<p xml:id="Ch2.S1.p5" rendition="#c">
+						<pb type="L"/>
+						<pb type="VIII_1" n="24"/>
+						<fw type="folNum">[46 r<hi rendition="#sup">o</hi>]
+						</fw>
 						<app type="Bfootnote">
 							<lem type="main">Intra finem anni 1668 et initium 1669. Longit. 1</lem>
-							<rdg wit="#L" cause="addition"><add>Intra finem anni 1668 et initium
+							<rdg wit="#L" cause="addition">
+								<add>Intra finem anni 1668 et initium
 									1669. Longit. 1</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app></p>
-					<p xml:id="Ch2.S1.p6"><hi rendition="#g">De longitudinibus</hi><index indexName="Sachverzeichnis">
+								<note type="editorial">
+									<hi rendition="#i">erg. L</hi>
+								</note>
+							</rdg>
+						</app>
+					</p>
+					<p xml:id="Ch2.S1.p6">
+						<hi rendition="#g">De longitudinibus</hi>
+						<index indexName="Sachverzeichnis">
 							<term>longitudo</term>
 						</index>
 						<hi rendition="#g">inveniendis</hi> diu multumque laboratum est, tandemque
 						anno 1665. Hugenii<index indexName="Namensregister">
-							<term><hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens,
+						<term>
+							<hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens,
 								Huguens), Christiaan 1629–1695</term>
-						</index> inventum per globulos pendulos celebrari coepit.<app type="Cfootnote">
-							<lem type="main"/>
-							<note type="lemma-abbrev">coepit.</note>
-							<note type="editorial"><hi rendition="#k">Chr. Huygens</hi>, <bibl corresp="#bib_00212"><hi rendition="#i">Kort onderwijs</hi>, Den
+					</index> inventum per globulos pendulos celebrari coepit.<app type="Cfootnote">
+					<lem type="main"/>
+					<note type="lemma-abbrev">coepit.</note>
+					<note type="editorial">
+						<hi rendition="#k">Chr. Huygens</hi>,						<bibl corresp="#bib_00212">
+							<hi rendition="#i">Kort onderwijs</hi>, Den
 									Haag 1665 (<hi rendition="#i">HO</hi> XVII,
-								S. 199–237).</bibl></note>
-						</app> Ejus tota vis in eo consistit. Esto Horologium<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index>, quod exacte monstret quanto tempore domo absimus. Ut ita sciamus
+								S. 199–237).</bibl>
+					</note>
+				</app> Ejus tota vis in eo consistit. Esto Horologium<index indexName="Sachverzeichnis">
+				<term>horologium</term>
+			</index>, quod exacte monstret quanto tempore domo absimus. Ut ita sciamus
 						exacte quae nunc hora sit domi. Deinde observetur quae nunc hora sit hic,
 						ubi nunc sumus. Et ita sciemus praecise quantum quoad longitudinem<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> domo absimus. Duo igitur requiruntur (1) ut Horologium<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> sit exactum, tale per globos pendulos<index indexName="Sachverzeichnis">
-							<term>pendulum</term>
-						</index> optime habetur, qui exactissime confecti nec in momento deficiunt,
+			<term>longitudo</term>
+		</index> domo absimus. Duo igitur requiruntur (1) ut Horologium<index indexName="Sachverzeichnis">
+		<term>horologium</term>
+	</index> sit exactum, tale per globos pendulos<index indexName="Sachverzeichnis">
+	<term>pendulum</term>
+</index> optime habetur, qui exactissime confecti nec in momento deficiunt,
 						(2) ut nunc observetur quae hic sit hora. Hoc vero per solem<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> vel stellas<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index> fieri potest. Egregium hoc praeclarumque inventum est, si est quale
+<term>sol</term>
+</index> vel stellas<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> fieri potest. Egregium hoc praeclarumque inventum est, si est quale
 						describitur. Sed ex eo tempore nihil de eo inauditum. Interim absolutum
 						perfectumque non est, pendet enim ex alieno, nempe observatione Horae per
 							solem<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> vel stellas<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index>. Iam vero saepe contingit navem<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> multos dies obnubilato coelo nec solem<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> nec stellas<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index> videre. Et ita nec horam exacte observare posse. Eo igitur casu qui
+<term>sol</term>
+</index> vel stellas<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index>. Iam vero saepe contingit navem<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> multos dies obnubilato coelo nec solem<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> nec stellas<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> videre. Et ita nec horam exacte observare posse. Eo igitur casu qui
 						saepissimus est, haeremus rursum incerti. Ego cum comperissem haberi
 						Instrumenta quaedam gestatilia quae deambulantis passus numerant, commode ab
 						iis adhibenda, qui vallum civitatis <app type="Bfootnote">
-							<lem type="main">obambulant, quibus adjunctus</lem>
-							<note type="lemma-abbrev">civitatis</note>
-							<rdg wit="#L" n="1"> adjuncto </rdg>
-							<rdg wit="#L" n="2"> obambulant, quibus adjunctus <hi rendition="#i">L</hi></rdg>
-						</app> comes suspiciosus quietam numerationem non permittit: ideo venit in
+<lem type="main">obambulant, quibus adjunctus</lem>
+<note type="lemma-abbrev">civitatis</note>
+<rdg wit="#L" n="1"> adjuncto </rdg>
+<rdg wit="#L" n="2"> obambulant, quibus adjunctus <hi rendition="#i">L</hi>
+</rdg>
+</app> comes suspiciosus quietam numerationem non permittit: ideo venit in
 						mentem, an non haberi machina posset, quae totum navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> cursum, omnes declinationes<index indexName="Sachverzeichnis">
-							<term>declinatio</term>
-						</index>, et quod amplius est etiam cursus celeritatem<index indexName="Sachverzeichnis">
-							<term>celeritas</term>
-						</index> nobis repraesentaret. Hoc si haberemus perfecta esset prorsus
+<term>navis</term>
+</index> cursum, omnes declinationes<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index>, et quod amplius est etiam cursus celeritatem<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index> nobis repraesentaret. Hoc si haberemus perfecta esset prorsus
 						navigationis pars <app type="Bfootnote">
-							<!--is-correction-app-with-lemma-->
-							<lem type="main"><corr resp="#ed">[λιμενερευτιϰή]</corr></lem>
-							<rdg wit="#L"><orig>λιμινερευτιϰὴ</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app>. Hoc ita concepi: deberet ea machina in subjecta charta vel alia
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[λιμενερευτιϰή]</corr>
+</lem>
+<rdg wit="#L">
+<orig>λιμινερευτιϰὴ</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>. Hoc ita concepi: deberet ea machina in subjecta charta vel alia
 						materia tot puncta facere, quot minuta prima <app type="Bfootnote">
-							<lem type="main">(vel satis, si horam) seu</lem>
-							<rdg wit="#L" cause="addition"><add>(vel satis, si horam) seu <formula xml:id="Ch2.S1.p6.m1">
-										<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-											<m:mfrac>
-												<m:mn>1</m:mn>
-												<m:mn>60</m:mn>
-											</m:mfrac>
-										</m:math>
-									</formula> horae</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>
-						<formula xml:id="Ch2.S1.p6.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mn>1</m:mn>
-										<m:mn>60</m:mn>
-									</m:mfrac>
-								</m:mstyle>
-							</m:math>
-						</formula> horae progressa est navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>. Minuta tantum proportionaliter (nach dem verjüngten masstab) inter
+<lem type="main">(vel satis, si horam) seu</lem>
+<rdg wit="#L" cause="addition">
+<add>(vel satis, si horam) seu <formula xml:id="Ch2.S1.p6.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>60</m:mn>
+</m:mfrac>
+</m:math>
+</formula> horae</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<formula xml:id="Ch2.S1.p6.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>60</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula> horae progressa est navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>. Minuta tantum proportionaliter (nach dem verjüngten masstab) inter
 						se distent, quantum navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> a loco priori. Eosdem etiam angulos retineant. Ea ratione exhiberi
+<term>navis</term>
+</index> a loco priori. Eosdem etiam angulos retineant. Ea ratione exhiberi
 						perfecte et celeritas<index indexName="Sachverzeichnis">
-							<term>celeritas</term>
-						</index> et vestigium cursus poterit. <app type="Bfootnote">
-							<lem type="main"> Situs</lem>
-							<note type="lemma-abbrev">poterit.</note>
-							<rdg wit="#L" n="1"> Figura </rdg>
-							<rdg wit="#L" n="2"> Situs <hi rendition="#i">L</hi></rdg>
-						</app> enim punctorum vestigium, <app type="Bfootnote">
-							<lem type="main">distantia</lem>
-							<note type="lemma-abbrev">vestigium,</note>
-							<rdg wit="#L" n="1"> distantia </rdg>
-							<rdg wit="#L" n="2"> multitudo seu distantia </rdg>
-							<rdg wit="#L" n="3"> distantia <hi rendition="#i">L</hi></rdg>
-						</app> celeritatem<index indexName="Sachverzeichnis">
-							<term>celeritas</term>
-						</index>
-						<pb type="VIII_1" n="25"/>cursus dabit. Hoc solo instrumento perpetuo
+<term>celeritas</term>
+</index> et vestigium cursus poterit. <app type="Bfootnote">
+<lem type="main"> Situs</lem>
+<note type="lemma-abbrev">poterit.</note>
+<rdg wit="#L" n="1"> Figura </rdg>
+<rdg wit="#L" n="2"> Situs <hi rendition="#i">L</hi>
+</rdg>
+</app> enim punctorum vestigium, <app type="Bfootnote">
+<lem type="main">distantia</lem>
+<note type="lemma-abbrev">vestigium,</note>
+<rdg wit="#L" n="1"> distantia </rdg>
+<rdg wit="#L" n="2"> multitudo seu distantia </rdg>
+<rdg wit="#L" n="3"> distantia <hi rendition="#i">L</hi>
+</rdg>
+</app> celeritatem<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index>
+<pb type="VIII_1" n="25"/>
+cursus dabit. Hoc solo instrumento perpetuo
 						haberetur et longitudo<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> et latitudo<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index>, et <app type="Bfootnote">
-							<lem type="main">praeter Magnetis declinationes nihil amplius dubitari
+<term>longitudo</term>
+</index> et latitudo<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>, et <app type="Bfootnote">
+<lem type="main">praeter Magnetis declinationes nihil amplius dubitari
 								posset</lem>
-							<note type="lemma-abbrev">et</note>
-							<rdg wit="#L" n="1"> corrigerentur Magnetis<index indexName="Sachverzeichnis">
-									<term>magnes</term>
-								</index> quoque declinationes<index indexName="Sachverzeichnis">
-									<term>declinatio</term>
-								</index> nec quicquam </rdg>
-							<rdg wit="#L" n="2"> praeter <seg type="apparat-ellipsis"/> posset <hi rendition="#i">L</hi></rdg>
-						</app>. Eadem ratione perfici posset, geographia, et locorum <app type="Bfootnote">
-							<!--is-correction-app-with-lemma-->
-							<lem type="main"><corr resp="#ed">[distantiae]</corr></lem>
-							<rdg wit="#L"><orig>distantias</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> situsque perfecte determinari. Idem artificium posset deinde in terra
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" n="1"> corrigerentur Magnetis<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> quoque declinationes<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index> nec quicquam </rdg>
+<rdg wit="#L" n="2"> praeter <seg type="apparat-ellipsis"/>
+ posset <hi rendition="#i">L</hi>
+</rdg>
+</app>. Eadem ratione perfici posset, geographia, et locorum <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[distantiae]</corr>
+</lem>
+<rdg wit="#L">
+<orig>distantias</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> situsque perfecte determinari. Idem artificium posset deinde in terra
 						exhiberi, et ea ratione perfecte delineari via quam ivimus cum omnibus
 						anfractibus per horae minuta <app type="Bfootnote">
-							<lem type="main">vel horam</lem>
-							<rdg wit="#L" cause="addition"><add>vel horam</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> durantibus. Eadem arte possent delineari figurae sylvarum, templorum,
+<lem type="main">vel horam</lem>
+<rdg wit="#L" cause="addition">
+<add>vel horam</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> durantibus. Eadem arte possent delineari figurae sylvarum, templorum,
 						cryptarum, hoc esset, vere pantometrum plus quam Kircherianum.<app type="Cfootnote">
-							<lem type="main"/>
-							<note type="lemma-abbrev">Kircherianum.</note>
-							<note type="editorial"><hi rendition="#k">A. Kircher,</hi>
-								<bibl corresp="#bib_00067"><hi rendition="#i">Magnes</hi>, Rom 1654,
-									S. 174–176. Vgl. auch <hi rendition="#k">C. Schott</hi></bibl>,
-									<bibl corresp="#bib_00121"><hi rendition="#i">Pantometrum
-										Kircherianum</hi>, Würzburg 1660.</bibl></note>
-						</app></p>
-					<p xml:id="Ch2.S1.p7">Hujus rei modum tandem ali<formula xml:id="Ch2.S1.p7.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟨</m:mo>
-							</m:math>
-						</formula>–<formula xml:id="Ch2.S1.p7.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟩</m:mo>
-							</m:math>
-						</formula>
-						<formula xml:id="Ch2.S1.p7.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟨</m:mo>
-							</m:math>
-						</formula>faci<formula xml:id="Ch2.S1.p7.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟩</m:mo>
-							</m:math>
-						</formula>le videor reperisse multis praetentatis cogitata. Enim initio an
+<lem type="main"/>
+<note type="lemma-abbrev">Kircherianum.</note>
+<note type="editorial">
+<hi rendition="#k">A. Kircher,</hi>
+<bibl corresp="#bib_00067">
+<hi rendition="#i">Magnes</hi>, Rom 1654,
+									S. 174–176. Vgl. auch <hi rendition="#k">C. Schott</hi>
+</bibl>,
+<bibl corresp="#bib_00121">
+<hi rendition="#i">Pantometrum
+										Kircherianum</hi>, Würzburg 1660.</bibl>
+</note>
+</app>
+</p>
+<p xml:id="Ch2.S1.p7">Hujus rei modum tandem ali<formula xml:id="Ch2.S1.p7.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>–<formula xml:id="Ch2.S1.p7.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+<formula xml:id="Ch2.S1.p7.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>faci<formula xml:id="Ch2.S1.p7.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>le videor reperisse multis praetentatis cogitata. Enim initio an
 						non posset aliquid in ipsa navi<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> contrarie motum navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> tum impetum tum flexum significare. Sed comperi tandem, cum omnia
+<term>navis</term>
+</index> contrarie motum navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> tum impetum tum flexum significare. Sed comperi tandem, cum omnia
 						quae in navi<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> sint habeant idem cum nave<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> centrum gravitatis<index indexName="Sachverzeichnis">
-							<term>gravitas</term>
-						</index>, frustraneum hoc esse nec contrarium aliquem nisum sentiri posse.
+<term>navis</term>
+</index> sint habeant idem cum nave<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> centrum gravitatis<index indexName="Sachverzeichnis">
+<term>gravitas</term>
+</index>, frustraneum hoc esse nec contrarium aliquem nisum sentiri posse.
 						Circumspiciendum igitur erat de machina in navi<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> ad aliquid firmum stabileque extrinsecum alliganda. Et quidem primo
+<term>navis</term>
+</index> ad aliquid firmum stabileque extrinsecum alliganda. Et quidem primo
 						coelum solque<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> in mentem venit, et succurrit repertum ingeniosum Cornelii
+<term>sol</term>
+</index> in mentem venit, et succurrit repertum ingeniosum Cornelii
 							Drebelii<index indexName="Namensregister">
-							<term><hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
+<term>
+<hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
 								1572–1633</term>
-						</index>, qui <app type="Bfootnote">
-							<lem type="main">organon sponte sonans effecerat, solo haud dubie
+</index>, qui <app type="Bfootnote">
+<lem type="main">organon sponte sonans effecerat, solo haud dubie
 								liquore</lem>
-							<note type="lemma-abbrev">qui</note>
-							<!--Special case of Bfootnote, please check (and maybe correct).-->
-							<rdg wit="#L">
-								<hi rendition="#i">(1)</hi>  liquore quodam <hi rendition="#i">(2)</hi>  organon <seg type="apparat-ellipsis"/> liquore <hi rendition="#i">L</hi></rdg>
-							<rdg wit="#L">           22 <hi rendition="#i">(1)</hi>  est tum <hi rendition="#i">(2)</hi>  Id <hi rendition="#i">L</hi></rdg>
-						</app> aliquo, qui solis<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> ortu excitatus salutabat quasi orientem Lucem, elegantibus motu suo
+<note type="lemma-abbrev">qui</note>
+<!--Special case of Bfootnote, please check (and maybe correct).-->
+<rdg wit="#L">
+<hi rendition="#i">(1)</hi>  liquore quodam <hi rendition="#i">(2)</hi>  organon <seg type="apparat-ellipsis"/>
+ liquore <hi rendition="#i">L</hi>
+</rdg>
+<rdg wit="#L">           22 <hi rendition="#i">(1)</hi>  est tum <hi rendition="#i">(2)</hi>  Id <hi rendition="#i">L</hi>
+</rdg>
+</app> aliquo, qui solis<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> ortu excitatus salutabat quasi orientem Lucem, elegantibus motu suo
 						in organo modis musicis, qua ratione solis<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> ortus etiam die Nubiloso, quanquam<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Interlinear über</hi>
+<term>sol</term>
+</index> ortus etiam die Nubiloso, quanquam<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Interlinear über</hi>
 							quanquam tum: Imo secus</note> tum sonus debilior erat, haberi
 							poterat.<app type="Cfootnote">
-							<lem type="main"/>
-							<note type="lemma-abbrev">poterat.</note>
-							<note type="editorial">Vermutl. <hi rendition="#k">C. Drebbel,</hi>
-								<bibl corresp="#bib_00041"><hi rendition="#i">Ein kurzer Tractat von
+<lem type="main"/>
+<note type="lemma-abbrev">poterat.</note>
+<note type="editorial">Vermutl. <hi rendition="#k">C. Drebbel,</hi>
+<bibl corresp="#bib_00041">
+<hi rendition="#i">Ein kurzer Tractat von
 										der Natur der Elementen</hi>, Hamburg 1619, [S. 17f.].
 									          22     poem.: <hi rendition="#k">H.
-									Grotius</hi></bibl>, <bibl corresp="#bib_00054"><hi rendition="#i">In organum motus perpetui</hi>, Leiden 1645,
-									S. 270.</bibl></note>
-						</app> Id instrumentum Jacobo Regi<index indexName="Namensregister">
-							<term><hi rendition="#g">England: Jakob I.</hi> (Rex Jacobus, R. Jac.),
+									Grotius</hi>
+</bibl>,<bibl corresp="#bib_00054">
+<hi rendition="#i">In organum motus perpetui</hi>, Leiden 1645,
+									S. 270.</bibl>
+</note>
+</app> Id instrumentum Jacobo Regi<index indexName="Namensregister">
+<term>
+<hi rendition="#g">England: Jakob I.</hi> (Rex Jacobus, R. Jac.),
 								König von England 1603–1625</term>
-						</index> a Drebelio<index indexName="Namensregister">
-							<term><hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
+</index> a Drebelio<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
 								1572–1633</term>
-						</index> donatum<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Interlinear über</hi> a Drebelio<index indexName="Namensregister">
-								<term><hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
+</index> donatum<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Interlinear über</hi> a Drebelio<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
 									1572–1633</term>
-							</index> donatum: <app type="Bfootnote">
-								<lem type="main">Id</lem>
-								<note type="lemma-abbrev">evanescere.</note>
-								<rdg wit="#L" n="1"> est tum </rdg>
-								<rdg wit="#L" n="2"> Id <hi rendition="#i">L</hi></rdg>
-							</app> carmen H. Grotii<index indexName="Namensregister">
-								<term><hi rendition="#g">Grotius,</hi> Hugo 1583–1654</term>
-							</index> in poem.</note> Digbaeus<index indexName="Namensregister">
-							<term><hi rendition="#g">Digby</hi> (Digbaeus), Kenelm 1603–1665</term>
-						</index> memorat. Eo instrumento posset ortus solis<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> et horarum <app type="Bfootnote">
-							<!--is-correction-app-with-lemma-->
-							<lem type="main"><corr resp="#ed">[numeri]</corr></lem>
-							<rdg wit="#L"><orig>numeros</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> etiam sine sole<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> die quolibet sciri, et esset perfectum Hugenii<index indexName="Namensregister">
-							<term><hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens,
+</index> donatum: <app type="Bfootnote">
+<lem type="main">Id</lem>
+<note type="lemma-abbrev">evanescere.</note>
+<rdg wit="#L" n="1"> est tum </rdg>
+<rdg wit="#L" n="2"> Id <hi rendition="#i">L</hi>
+</rdg>
+</app> carmen H. Grotii<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Grotius,</hi> Hugo 1583–1654</term>
+</index> in poem.</note> Digbaeus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Digby</hi> (Digbaeus), Kenelm 1603–1665</term>
+</index> memorat. Eo instrumento posset ortus solis<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> et horarum <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[numeri]</corr>
+</lem>
+<rdg wit="#L">
+<orig>numeros</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> etiam sine sole<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> die quolibet sciri, et esset perfectum Hugenii<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens,
 								Huguens), Christiaan 1629–1695</term>
-						</index> inventum. Sed cum igno<pb type="VIII_1" n="26"/>ta sit
+</index> inventum. Sed cum igno<pb type="VIII_1" n="26"/>
+ta sit
 							Drebelii<index indexName="Namensregister">
-							<term><hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
+<term>
+<hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
 								1572–1633</term>
-						</index> ars flectenda alio vela fuere. Duo jam restabant, quibus alligari
+</index> ars flectenda alio vela fuere. Duo jam restabant, quibus alligari
 						machina in nave<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> posset: aer et aqua. Et aqua<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Interlinear über</hi> aqua nimis: Imo
+<term>navis</term>
+</index> posset: aer et aqua. Et aqua<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Interlinear über</hi> aqua nimis: Imo
 							contra</note> nimis crassa et perpetuo instabilis, nec facile recludenda
 						in cancellos, <app type="Bfootnote">
-							<lem type="main">mature</lem>
-							<note type="lemma-abbrev">cancellos,</note>
-							<rdg wit="#L" n="1"> facile </rdg>
-							<rdg wit="#L" n="2"> mature <hi rendition="#i">L</hi></rdg>
-						</app> displicuit, solus tentamento <app type="Bfootnote">
-							<lem type="main">aer supererat</lem>
-							<note type="lemma-abbrev">aer</note>
-							<rdg wit="#L" n="1"> restabat </rdg>
-							<rdg wit="#L" n="2"> supererat <hi rendition="#i">L</hi>
-							</rdg>
-						</app>. Hunc continue venti instabilem fluctuantemque reddunt, qua ratione
+<lem type="main">mature</lem>
+<note type="lemma-abbrev">cancellos,</note>
+<rdg wit="#L" n="1"> facile </rdg>
+<rdg wit="#L" n="2"> mature <hi rendition="#i">L</hi>
+</rdg>
+</app> displicuit, solus tentamento <app type="Bfootnote">
+<lem type="main">aer supererat</lem>
+<note type="lemma-abbrev">aer</note>
+<rdg wit="#L" n="1"> restabat </rdg>
+<rdg wit="#L" n="2"> supererat <hi rendition="#i">L</hi>
+</rdg>
+</app>. Hunc continue venti instabilem fluctuantemque reddunt, qua ratione
 						scopo nostro ineptus futurus videbatur. Sed mihi altius omnia agitanti
 						remedium aliquod sese obtulit: inclaudatur globo machina. Sit utrinque
 						foramen exiguum. Idque ita ut ingressus aeri difficilis, egressus ab alia
@@ -513,321 +639,372 @@
 						vento  occurrat.  Et  si  nondum  fidis  possunt  multiplicari  toties
 						mutari foramina, ut non possit tandem non aeris extrinsecus impetus
 						evanescere.</p>
-					<p xml:id="Ch2.S1.p8"><pb type="L"/><fw type="folNum">[46 v<hi rendition="#sup">o</hi>]</fw> Hac ratione jam progrediente nave<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> non potest non aer ingredi et egredi, isque tanto fortius, quanto
+<p xml:id="Ch2.S1.p8">
+<pb type="L"/>
+<fw type="folNum">[46 v<hi rendition="#sup">o</hi>]
+</fw> Hac ratione jam progrediente nave<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> non potest non aer ingredi et egredi, isque tanto fortius, quanto
 						celerior navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> motus. Is ergo aeris ingressus mediam inter foramina rotam aliquam
+<term>navis</term>
+</index> motus. Is ergo aeris ingressus mediam inter foramina rotam aliquam
 						subtilem circumaget. <app type="Bfootnote">
-							<lem type="main">Quae</lem>
-							<note type="lemma-abbrev">circumaget.</note>
-							<rdg wit="#L" n="1"> Quae </rdg>
-							<rdg wit="#L" n="2"> Cum </rdg>
-							<rdg wit="#L" n="3"> Quae <hi rendition="#i">L</hi></rdg>
-						</app> nave<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> stante stabit, movente movebitur, et tanto quidem fortius, quanto
+<lem type="main">Quae</lem>
+<note type="lemma-abbrev">circumaget.</note>
+<rdg wit="#L" n="1"> Quae </rdg>
+<rdg wit="#L" n="2"> Cum </rdg>
+<rdg wit="#L" n="3"> Quae <hi rendition="#i">L</hi>
+</rdg>
+</app> nave<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> stante stabit, movente movebitur, et tanto quidem fortius, quanto
 						fortior motus. Ex hoc jam facilis est applicatio ut intus certo modo in
 						aliquo objecto puncta singulis minutis, tanto magis distantia, quanto motus
 						celerior, designentur. Hoc ita puto fieri posse. Id quod supra movetur vento
 						sit globus ex materia levi, <app type="Bfootnote">
-							<lem type="main">sed dura et durabili v.g. subtilitas</lem>
-							<rdg wit="#L" cause="addition"><add>sed <seg type="apparat-ellipsis"/>
+<lem type="main">sed dura et durabili v.g. subtilitas</lem>
+<rdg wit="#L" cause="addition">
+<add>sed <seg type="apparat-ellipsis"/>
 									subtilitas</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> circulis quasi parallelis aequatoris<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> circumdatus <app type="Bfootnote">
-							<lem type="main">polo<index indexName="Sachverzeichnis">
-									<term>polus</term>
-								</index> foraminibus obverso</lem>
-							<rdg wit="#L" cause="addition"><add>polo<index indexName="Sachverzeichnis">
-										<term>polus</term>
-									</index> foraminibus obverso</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ut <app type="Bfootnote">
-							<lem type="main">omnes partes versus</lem>
-							<note type="lemma-abbrev">ut</note>
-							<rdg wit="#L" n="1"> in </rdg>
-							<rdg wit="#L" n="2"> omnes partes versus <hi rendition="#i">L</hi></rdg>
-						</app> ab aere apprehendi possit. Huic globo rotulae ita applicentur, ut
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> circulis quasi parallelis aequatoris<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> circumdatus <app type="Bfootnote">
+<lem type="main">polo<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index> foraminibus obverso</lem>
+<rdg wit="#L" cause="addition">
+<add>polo<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index> foraminibus obverso</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ut <app type="Bfootnote">
+<lem type="main">omnes partes versus</lem>
+<note type="lemma-abbrev">ut</note>
+<rdg wit="#L" n="1"> in </rdg>
+<rdg wit="#L" n="2"> omnes partes versus <hi rendition="#i">L</hi>
+</rdg>
+</app> ab aere apprehendi possit. Huic globo rotulae ita applicentur, ut
 						tandem inferius per eam in partem navi<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> oppositam moveatur tabula aliqua <app type="Bfootnote">
-							<lem type="main">solida seu rigida</lem>
-							<note type="lemma-abbrev">aliqua</note>
-							<rdg wit="#L" n="1"> asseribus vel forma </rdg>
-							<rdg wit="#L" n="2"> solida seu rigida <hi rendition="#i">L</hi></rdg>
-						</app> tardiore, tamen quam navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> motu (alioqui <pb type="VIII_1" n="27"/>nimis multae semper tabulae
+<term>navis</term>
+</index> oppositam moveatur tabula aliqua <app type="Bfootnote">
+<lem type="main">solida seu rigida</lem>
+<note type="lemma-abbrev">aliqua</note>
+<rdg wit="#L" n="1"> asseribus vel forma </rdg>
+<rdg wit="#L" n="2"> solida seu rigida <hi rendition="#i">L</hi>
+</rdg>
+</app> tardiore, tamen quam navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> motu (alioqui <pb type="VIII_1" n="27"/>
+nimis multae semper tabulae
 						essent adhibendae exacte quidem res fieret sed non sine confusione). Quod
 						ita fiet, si tantum v.g. quater qualibet hora contingat machinae tabulam et
 						promoveat aliquantulum. Quod facile aliqua applicatione fieri potest, ita
 						non quidem tabula machina tamen perpetuo movebitur. <app type="Bfootnote">
-							<lem type="main">Hoc</lem>
-							<note type="lemma-abbrev">movebitur.</note>
-							<rdg wit="#L" n="1"> Sit </rdg>
-							<rdg wit="#L" n="2"> Hoc <hi rendition="#i">L</hi></rdg>
-						</app> praeter alios modos ita fieri potest. Si <app type="Bfootnote">
-							<lem type="main">Tabula peculiari</lem>
-							<note type="lemma-abbrev">Si</note>
-							<rdg wit="#L" n="1"> infima rota<index indexName="Sachverzeichnis">
-									<term>rota</term>
-								</index>
-							</rdg>
-							<rdg wit="#L" n="2"> Tabula peculiari <hi rendition="#i">L</hi></rdg>
-						</app> aliqua machina circumacta tantum 4 qualibet hora sese promovendam
+<lem type="main">Hoc</lem>
+<note type="lemma-abbrev">movebitur.</note>
+<rdg wit="#L" n="1"> Sit </rdg>
+<rdg wit="#L" n="2"> Hoc <hi rendition="#i">L</hi>
+</rdg>
+</app> praeter alios modos ita fieri potest. Si <app type="Bfootnote">
+<lem type="main">Tabula peculiari</lem>
+<note type="lemma-abbrev">Si</note>
+<rdg wit="#L" n="1"> infima rota<index indexName="Sachverzeichnis">
+<term>rota</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> Tabula peculiari <hi rendition="#i">L</hi>
+</rdg>
+</app> aliqua machina circumacta tantum 4 qualibet hora sese promovendam
 						offerat. Porro eadem machina quae tabulam circumagit fiat, ut qualibet hora
 						instrumento aliquo <app type="Bfootnote">
-							<lem type="main">constanti et cum tabula non moto punctum in tabula
+<lem type="main">constanti et cum tabula non moto punctum in tabula
 								designetur</lem>
-							<note type="lemma-abbrev">aliquo</note>
-							<rdg wit="#L" n="1"> punctum in tabula </rdg>
-							<rdg wit="#L" n="2"> constanti <seg type="apparat-ellipsis"/> designetur
-									<hi rendition="#i">L</hi></rdg>
-						</app>. Ea ratione hora qualibet quantum navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> confecerit, proportionaliter haberi potest, distantia enim
+<note type="lemma-abbrev">aliquo</note>
+<rdg wit="#L" n="1"> punctum in tabula </rdg>
+<rdg wit="#L" n="2"> constanti <seg type="apparat-ellipsis"/>
+ designetur
+<hi rendition="#i">L</hi>
+</rdg>
+</app>. Ea ratione hora qualibet quantum navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> confecerit, proportionaliter haberi potest, distantia enim
 						punctorum dabit navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> celeritatem<index indexName="Sachverzeichnis">
-							<term>celeritas</term>
-						</index>. Si velis exactius habere, ut quolibet minuto puncta signentur.
+<term>navis</term>
+</index> celeritatem<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index>. Si velis exactius habere, ut quolibet minuto puncta signentur.
 						Eadem arte facile efficies, idque utile erit, si instrumentum istud non in
 						mari sed aliis mensurationibus adhibeatur. Sed in mari opus esset nimis
 						multis tabulis, et res nimium confunderetur, puto horas sufficere. Posset
 						haec tabula esse <app type="Bfootnote">
-							<lem type="main">globus, sed puto tamen omnia in plano accuratius
+<lem type="main">globus, sed puto tamen omnia in plano accuratius
 								haberi</lem>
-							<note type="lemma-abbrev">globus,</note>
-							<rdg wit="#L" n="1"> et intus machina in globo quae </rdg>
-							<rdg wit="#L" n="2"> sed <seg type="apparat-ellipsis"/> haberi <hi rendition="#i">L</hi></rdg>
-						</app>. Ea ratione autem pro una septimana una tabula sufficiet in qua per
+<note type="lemma-abbrev">globus,</note>
+<rdg wit="#L" n="1"> et intus machina in globo quae </rdg>
+<rdg wit="#L" n="2"> sed <seg type="apparat-ellipsis"/>
+ haberi <hi rendition="#i">L</hi>
+</rdg>
+</app>. Ea ratione autem pro una septimana una tabula sufficiet in qua per
 						consequens erunt puncta <formula xml:id="Ch2.S1.p8.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mtable rowspacing="10pt">
-									<m:mtr>
-										<m:mtd columnalign="right">
-											<m:mn>24</m:mn>
-										</m:mtd>
-									</m:mtr>
-									<m:mtr>
-										<m:mtd columnalign="right">
-											<m:mn>7</m:mn>
-										</m:mtd>
-									</m:mtr>
-									<m:mtr>
-										<m:mtd columnalign="right">
-											<m:mover accent="true">
-												<m:mn>168</m:mn>
-												<m:mo>¯</m:mo>
-											</m:mover>
-										</m:mtd>
-									</m:mtr>
-								</m:mtable>
-							</m:math>
-						</formula>.</p>
-					<p xml:id="Ch2.S1.p9" rendition="#noindent">Machina quoque ita dirigi potest ut
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mn>24</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mn>7</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mover accent="true">
+<m:mn>168</m:mn>
+<m:mo>¯</m:mo>
+</m:mover>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula>.
+</p>
+<p xml:id="Ch2.S1.p9" rendition="#noindent">Machina quoque ita dirigi potest ut
 						una tabula completa decidat, et nova succedat. Et decidentes tabulae ordine
 						sibi invicem superimponantur.</p>
-					<p xml:id="Ch2.S1.p10">Jam unum restat, qua arte et flexus navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> designari possit. Hic magnes<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-						</index>, divinum munus, subsidio venit. Globus <app type="Bfootnote">
-							<lem type="main">superior</lem>
-							<note type="lemma-abbrev">Globus</note>
-							<rdg wit="#L" n="1"> ita </rdg>
-							<rdg wit="#L" n="2"> superior <hi rendition="#i">L</hi></rdg>
-						</app>, quem aer movet liber praeterea sic sit, ut nave<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> versa v.g. versus meridiem aut quomodocunque ipse non simul
+<p xml:id="Ch2.S1.p10">Jam unum restat, qua arte et flexus navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> designari possit. Hic magnes<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index>, divinum munus, subsidio venit. Globus <app type="Bfootnote">
+<lem type="main">superior</lem>
+<note type="lemma-abbrev">Globus</note>
+<rdg wit="#L" n="1"> ita </rdg>
+<rdg wit="#L" n="2"> superior <hi rendition="#i">L</hi>
+</rdg>
+</app>, quem aer movet liber praeterea sic sit, ut nave<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> versa v.g. versus meridiem aut quomodocunque ipse non simul
 						vertatur, sed retineat priorem situm. Ut liber sit facile effici potest. Ut
 						situm priorem retineat, non nisi ope magnetis<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-						</index>. Esto igitur globo applicato autem <pb type="L"/><fw type="folNum">[74 r<hi rendition="#sup">o</hi>]</fw>
-						<formula xml:id="Ch2.S1.p10.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟨</m:mo>
-							</m:math>
-						</formula>–<formula xml:id="Ch2.S1.p10.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟩</m:mo>
-							</m:math>
-						</formula> a fortissima, quae efficiat, <formula xml:id="Ch2.S1.p10.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟨</m:mo>
-							</m:math>
-						</formula>et ut<formula xml:id="Ch2.S1.p10.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟩</m:mo>
-							</m:math>
-						</formula>
-						<formula xml:id="Ch2.S1.p10.m5">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟨</m:mo>
-							</m:math>
-						</formula>r<formula xml:id="Ch2.S1.p10.m6">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟩</m:mo>
-							</m:math>
-						</formula>etineat versus septentrionem, <formula xml:id="Ch2.S1.p10.m7">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟨</m:mo>
-							</m:math>
-						</formula>n<formula xml:id="Ch2.S1.p10.m8">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟩</m:mo>
-							</m:math>
-						</formula>avem <index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> ratione et globus et caetera omnia retineant eundem situm, et ipsa
+<term>magnes</term>
+</index>. Esto igitur globo applicato autem <pb type="L"/>
+<fw type="folNum">[74 r<hi rendition="#sup">o</hi>]
+</fw>
+<formula xml:id="Ch2.S1.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>–<formula xml:id="Ch2.S1.p10.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula> a fortissima, quae efficiat, <formula xml:id="Ch2.S1.p10.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>et ut<formula xml:id="Ch2.S1.p10.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+<formula xml:id="Ch2.S1.p10.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>r<formula xml:id="Ch2.S1.p10.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>etineat versus septentrionem, <formula xml:id="Ch2.S1.p10.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>n<formula xml:id="Ch2.S1.p10.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>avem <index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> ratione et globus et caetera omnia retineant eundem situm, et ipsa
 						quoque ab iis pendens tabula. Quod ut fiat possunt et caetera omnia ubique
 						aciculis similiter frictis adimpleri, aut potius si non superius globus,
 						saltem inferius tabula. Quam superius globus sequetur perpetuo in
-							septentrionem<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Interlinear über</hi> perpetuo in septentrionem: (Imo
+							septentrionem<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Interlinear über</hi> perpetuo in septentrionem: (Imo
 							etsi superius globus non sequatur.)</note> dirigatur magnete<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-						</index>
-						<pb type="VIII_1" n="28"/>vel acicula, et per consequens toti machinae erit
+<term>magnes</term>
+</index>
+<pb type="VIII_1" n="28"/>
+vel acicula, et per consequens toti machinae erit
 						idem situs. Hoc jam praestito tota res confecta est. Nam nave<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> flexa flectetur simul id quod punctum imprimit, machina non
+<term>navis</term>
+</index> flexa flectetur simul id quod punctum imprimit, machina non
 						flectitur, et per consequens in oppositam flexionis partem flectetur tabula,
 						et punctum impressum similiter declinabit, et per consequens in tabula totus
 							navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> motus, sed inverse spectandus exhibebitur nam quae plaga in
+<term>navis</term>
+</index> motus, sed inverse spectandus exhibebitur nam quae plaga in
 							navi<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> est oriens in tabula erit occidens, quae septentrio ea meridies. In
+<term>navis</term>
+</index> est oriens in tabula erit occidens, quae septentrio ea meridies. In
 						tabula praeterea designentur gradus tum longitudinis <index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> tum latitudinis<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index>, ut appareat quae sit declinatio<index indexName="Sachverzeichnis">
-							<term>declinatio</term>
-						</index>. Sit praeterea aliquis qui diligenter qualibet septimana tabulae
+<term>longitudo</term>
+</index> tum latitudinis<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>, ut appareat quae sit declinatio<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index>. Sit praeterea aliquis qui diligenter qualibet septimana tabulae
 						ascribat horas, et redigat multas tabulas in unam agglutinando, et deinde ex
 						iis extractum delineationis nach dem verjüngtem maßstab faciat. <app type="Bfootnote">
-							<lem type="main">Tabulae</lem>
-							<note type="lemma-abbrev">faciat.</note>
-							<rdg wit="#L" n="1"> Ea </rdg>
-							<rdg wit="#L" n="2"> Tabulae <hi rendition="#i">L</hi></rdg>
-						</app> vero in margine ascribi potest, quae tunc litora, quam
+<lem type="main">Tabulae</lem>
+<note type="lemma-abbrev">faciat.</note>
+<rdg wit="#L" n="1"> Ea </rdg>
+<rdg wit="#L" n="2"> Tabulae <hi rendition="#i">L</hi>
+</rdg>
+</app> vero in margine ascribi potest, quae tunc litora, quam
 						promontoriorum, currentium faciem longitudinem<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> diei, elevationem poli<index indexName="Sachverzeichnis">
-							<term>elevatio</term>
-							<index>
-								<term>poli</term>
-							</index>
-						</index> observaverint <app type="Bfootnote">
-							<lem type="main">per cameras obscuras semper perpetuo situs mutatio
+<term>longitudo</term>
+</index> diei, elevationem poli<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index> observaverint <app type="Bfootnote">
+<lem type="main">per cameras obscuras semper perpetuo situs mutatio
 								designetur.</lem>
-							<note type="lemma-abbrev">observaverint</note>
-							<rdg wit="#L" n="1"> per cam. obscur. statim designet </rdg>
-							<rdg wit="#L" n="2" cause="addition"> <add>per <seg type="apparat-ellipsis"/> designetur.</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> Ea ratione ad summam perfectionem veniet tandem Hydrographia<index indexName="Sachverzeichnis">
-							<term>hydrographia</term>
-						</index>, et si idem in terra fiat, geographia perfecte loca designabuntur.
+<note type="lemma-abbrev">observaverint</note>
+<rdg wit="#L" n="1"> per cam. obscur. statim designet </rdg>
+<rdg wit="#L" n="2" cause="addition">
+<add>per <seg type="apparat-ellipsis"/>
+ designetur.</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> Ea ratione ad summam perfectionem veniet tandem Hydrographia<index indexName="Sachverzeichnis">
+<term>hydrographia</term>
+</index>, et si idem in terra fiat, geographia perfecte loca designabuntur.
 						Nec erit quicquam quod nos amplius miretur, praeter unam magnetis<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-						</index> declinationem<index indexName="Sachverzeichnis">
-							<term>declinatio</term>
-						</index>. Sed tamen et huic rei multorum observationes facile medebuntur.
+<term>magnes</term>
+</index> declinationem<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index>. Sed tamen et huic rei multorum observationes facile medebuntur.
 						Quaelibet ita navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index></p>
-					<p xml:id="Ch2.S1.p11" rendition="#noindent">perfectam non solum formae, sed et
+<term>navis</term>
+</index>
+</p>
+<p xml:id="Ch2.S1.p11" rendition="#noindent">perfectam non solum formae, sed et
 							celeritatis<index indexName="Sachverzeichnis">
-							<term>celeritas</term>
-						</index> sui cursus delineationem exhibere poterit. Idem poterit facere
+<term>celeritas</term>
+</index> sui cursus delineationem exhibere poterit. Idem poterit facere
 						currus in terra. Imo et homo simplex simile instrumentum portans, et <app type="Bfootnote">
-							<lem type="main">delineaturus cryptas</lem>
-							<note type="lemma-abbrev">et</note>
-							<rdg wit="#L" n="1"> mensuraturus </rdg>
-							<rdg wit="#L" n="2"> delineaturus cryptas <hi rendition="#i">L</hi></rdg>
-						</app>, aliaque loca non facile accessa. Tibi DEUS grates ago, <app type="Bfootnote">
-							<lem type="main">tuam</lem>
-							<note type="lemma-abbrev">ago,</note>
-							<rdg wit="#L" n="1"> quod </rdg>
-							<rdg wit="#L" n="2"> tuam <hi rendition="#i">L</hi></rdg>
-						</app> erga me misericordiam providentiamque agnosco, qui rem generi humano
+<lem type="main">delineaturus cryptas</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" n="1"> mensuraturus </rdg>
+<rdg wit="#L" n="2"> delineaturus cryptas <hi rendition="#i">L</hi>
+</rdg>
+</app>, aliaque loca non facile accessa. Tibi DEUS grates ago, <app type="Bfootnote">
+<lem type="main">tuam</lem>
+<note type="lemma-abbrev">ago,</note>
+<rdg wit="#L" n="1"> quod </rdg>
+<rdg wit="#L" n="2"> tuam <hi rendition="#i">L</hi>
+</rdg>
+</app> erga me misericordiam providentiamque agnosco, qui rem generi humano
 						tam utilem mihi potissimum in mentem venire voluisti.</p>
-					<p xml:id="Ch2.S1.p12">NB. Utinam inveniretur alioquando magnes<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-						</index> aliquis perpetuo se vertens ad solem<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index>, uti magnes<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-						</index> ad polum<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index>. Qua ratione possent longitudines<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> sola supputatione inveniri, inveniretur enim quantitas diei, qua
+<p xml:id="Ch2.S1.p12">NB. Utinam inveniretur alioquando magnes<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> aliquis perpetuo se vertens ad solem<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index>, uti magnes<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> ad polum<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index>. Qua ratione possent longitudines<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> sola supputatione inveniri, inveniretur enim quantitas diei, qua
 						determinata nullo amplius horologio<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index>
-						<pb type="VIII_1" n="29"/>opus esset. <app type="Bfootnote">
-							<lem type="main">Hoc fortasse unus praestare potuisset Drebelius<index indexName="Namensregister">
-									<term><hi rendition="#g">Drebbel</hi> (Drebelius, Drebel),
+<term>horologium</term>
+</index>
+<pb type="VIII_1" n="29"/>
+opus esset. <app type="Bfootnote">
+<lem type="main">Hoc fortasse unus praestare potuisset Drebelius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Drebbel</hi> (Drebelius, Drebel),
 										Cornelius 1572–1633</term>
-								</index>. Sed etsi</lem>
-							<note type="lemma-abbrev">esset.</note>
-							<rdg wit="#L" n="1"> Sed interim etsi </rdg>
-							<rdg wit="#L" n="2"> Hoc <seg type="apparat-ellipsis"/> etsi <hi rendition="#i">L</hi></rdg>
-						</app> hoc haberetur, instrumenti tamen proxime delineati utilitates nondum
+</index>. Sed etsi</lem>
+<note type="lemma-abbrev">esset.</note>
+<rdg wit="#L" n="1"> Sed interim etsi </rdg>
+<rdg wit="#L" n="2"> Hoc <seg type="apparat-ellipsis"/>
+ etsi <hi rendition="#i">L</hi>
+</rdg>
+</app> hoc haberetur, instrumenti tamen proxime delineati utilitates nondum
 						exhauriret, quippe quod non tantum aliquando consulenti locum monstrat, sed
 						perfecte totum navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> cursum exhibet. Chymistae ferunt tincturam ejusmodi magnetem<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-						</index> esse et ad solem<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> perpetuo converti. Sane Drebelium<index indexName="Namensregister">
-							<term><hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
+<term>navis</term>
+</index> cursum exhibet. Chymistae ferunt tincturam ejusmodi magnetem<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> esse et ad solem<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> perpetuo converti. Sane Drebelium<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Drebbel</hi> (Drebelius, Drebel), Cornelius
 								1572–1633</term>
-						</index> in arcana chymica penetrasse ne⟨ga⟩ri non potest.</p>
-					<p xml:id="Ch2.S1.p13"><formula xml:id="Ch2.S1.p13.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟨</m:mo>
-							</m:math>
-						</formula>Con<formula xml:id="Ch2.S1.p13.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟩</m:mo>
-							</m:math>
-						</formula>jicies aerem cum sit instabilis mutationem etsi initio non sit
+</index> in arcana chymica penetrasse ne⟨ga⟩ri non potest.</p>
+<p xml:id="Ch2.S1.p13">
+<formula xml:id="Ch2.S1.p13.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>Con<formula xml:id="Ch2.S1.p13.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>jicies aerem cum sit instabilis mutationem etsi initio non sit
 						sensibilis progressu temporis fore. Sed minime, quia quaelibet
 						insen⟨sibilis⟩ declinatio<index indexName="Sachverzeichnis">
-							<term>declinatio</term>
-						</index> non alteri⟨us⟩ cau⟨sae est⟩, sed est quaelibet per se ab altera <pb type="L"/><fw type="folNum">[74 v<hi rendition="#sup">o</hi>]</fw> inde
+<term>declinatio</term>
+</index> non alteri⟨us⟩ cau⟨sae est⟩, sed est quaelibet per se ab altera <pb type="L"/>
+<fw type="folNum">[74 v<hi rendition="#sup">o</hi>]
+</fw> inde
 						pendens, nec ab ea vel crescens vel diminuta, idque ideo quia eadem causa
 						continuo applicatur. Nam etsi nunc insensibiliter <app type="Bfootnote">
-							<lem type="main">celerius ob ventorum extra motum moveatur globus. Non
+<lem type="main">celerius ob ventorum extra motum moveatur globus. Non
 								tamen in sequenti momento bis celerius movebitur</lem>
-							<note type="lemma-abbrev">insensibiliter</note>
-							<rdg wit="#L" n="1"> tardius moveatur, ta </rdg>
-							<rdg wit="#L" n="2"> id mox movet non bis ta </rdg>
-							<rdg wit="#L" n="3"> celerius <seg type="apparat-ellipsis"/> bis <app>
-									<rdg wit="#L" n="a">tardius </rdg>
-									<rdg wit="#L" n="b">celerius movebitur <hi rendition="#i">L</hi></rdg>
-								</app></rdg>
-						</app>
-						<app type="Bfootnote">
-							<lem type="main">ita ut multis insensibilibus incrementis, fiat unum
+<note type="lemma-abbrev">insensibiliter</note>
+<rdg wit="#L" n="1"> tardius moveatur, ta </rdg>
+<rdg wit="#L" n="2"> id mox movet non bis ta </rdg>
+<rdg wit="#L" n="3"> celerius <seg type="apparat-ellipsis"/>
+ bis <app>
+<rdg wit="#L" n="a">tardius </rdg>
+<rdg wit="#L" n="b">celerius movebitur <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">ita ut multis insensibilibus incrementis, fiat unum
 								sensibile</lem>
-							<rdg wit="#L" cause="addition"><add>ita <seg type="apparat-ellipsis"/>
+<rdg wit="#L" cause="addition">
+<add>ita <seg type="apparat-ellipsis"/>
 									sensibile</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>, sed rursus semel, et ita semper manet insensibilis celeritatis<index indexName="Sachverzeichnis">
-							<term>celeritas</term>
-						</index> excessus.</p>
-				</div>
-			</div>
-		</body>
-	</text>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>, sed rursus semel, et ita semper manet insensibilis celeritatis<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index> excessus.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

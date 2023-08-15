@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-065-001">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-065-001">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">De Motu Impresso Et Ex Gravitate Orto Non Componendis</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2022</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="65"/>
 						<title type="section" level="a" n="1">De Motu Impresso Et Ex Gravitate Orto Non Componendis</title>
 						<date calendar="#gregorian" notBefore="1686" resp="#ed" cert="low"/>
 						<date calendar="#gregorian" notAfter="1687-10" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=717</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+							<idno type="page">#page=717</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,240 +86,306 @@
 						</imprint>
 						<biblScope unit="page" from="683" to="684"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
-					<relatedItem type="superordinated-chapter"><ptr target="#L_08-03-065-000"/></relatedItem></biblStruct>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
+					<relatedItem type="superordinated-chapter">
+						<ptr target="#L_08-03-065-000"/>
+					</relatedItem>
+				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-03-065-001_facs-haupttextzeuge"><msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXV 9, 16 Bl. 16</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#aufzeichnung">
-							<summary><p>Aufzeichnung: LH XXXV 9, 16 Bl. 16. Als Schreibblatt wiederverwendeter Teil eines Briefumschlags (ca. 15 x 6 cm.); alle Ränder bis auf den oberen unregelmäßig beschnitten. Zwei Seiten; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi></ref> überliefert den Text, <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003">Bl. 16 r<hi rendition="#sup">o</hi></ref> das Diagramm. Rest eines Briefsiegels auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi></ref>.</p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc></witness>
-				</listWit>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<tagsDecl>
-				<rendition scheme="css" xml:id="i">font-style:italic</rendition>
-				<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-				<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-				<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-				<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-				<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-				<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-				<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-			</tagsDecl>
-			<charDecl>
-				<!-- Sonderzeichen OHNE Unicodeentsprechung -->
-				<!--rightpropto-->
-				<glyph xml:id="rightpropto">
-					<glyphName>rightpropto</glyphName>
-					<desc>...</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX">\rightpropto</mapping>
-					<graphic url="../../glyphs/rightpropto.svg"/>
-				</glyph>
-				<glyph xml:id="Pfund">
-					<glyphName>Pfund</glyphName>
-					<desc>stilisiertes lb-Zeichen (Pfund)</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.7</value>
-					</charProp>
-					<mapping type="TeX">\Pfund</mapping>
-					<graphic url="../../glyphs/Pfund.svg"/>
-				</glyph>
-				<!-- leibdashv -->
-				<glyph xml:id="pleibdashv">
-					<glyphName>pleibdashv</glyphName>
-					<desc>Bedeutung (+−) - gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>-1</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\pleibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<glyph xml:id="leibdashv">
-					<glyphName>leibdashv</glyphName>
-					<desc>Bedeutung (+−) - nicht-gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\leibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<!-- Sonderzeichen MIT Unicodeentsprechung -->
-			</charDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="la"/>
-			</langUsage>
-			<calendarDesc>
-				<calendar xml:id="gregorian">
-					<p>Gregorianischer Kalenderstil</p>
-				</calendar>
-				<calendar xml:id="julian">
-					<p>Julianischer Kalenderstil</p>
-				</calendar>
-			</calendarDesc>
-			<textClass>
-				<catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
-				<catRef scheme="L_subjects" target="L_subjects.xml#kraft"/>
-				<catRef scheme="L_terms" target="L_terms.xml#"/>
-			</textClass>
-			<abstract>
-				<listPerson>
-					<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-					<person sameAs="L_persons.xml#"/>
-				</listPerson>
-				<listPlace>
-					<place sameAs="L_places.xml#"/>
-				</listPlace>
-			</abstract>
-		</profileDesc>
-		<revisionDesc>
-			<change when="2021" who="#telota" status="base"/>
-			<change when="2023-02-21" who="#stork" status="enrich_1"/>
-		</revisionDesc>
-	</teiHeader>
-	<facsimile source="digilib.bbaw.de" xml:id="L_08-03-065-001_facs-haupttextzeuge">
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003"/>
-	</facsimile>
-	<text xml:id="L_08-03-065-001_text">
-		<body xml:id="Document">
-			<div type="section" xml:id="Ch65.S1" n="651">
-				<head>65<hi rendition="#sub">1</hi> DE MOTU IMPRESSO ET EX GRAVITATE ORTO NON COMPONENDIS</head>
-				<head>[1686 (?) – Oktober 1687]</head>
-				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-						<witness><msDesc>
+					<witness n="L" corresp="#L_08-03-065-001_facs-haupttextzeuge">
+						<msDesc>
 							<msIdentifier>
 								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
 								<idno type="Signatur">LH XXXV 9, 16 Bl. 16</idno>
 							</msIdentifier>
-							<msContents>
-								<summary><p>Aufzeichnung: LH XXXV 9, 16 Bl. 16. Als Schreibblatt wiederverwendeter Teil eines Briefumschlags (ca. 15 x 6 cm.); alle Ränder bis auf den oberen unregelmäßig beschnitten. Zwei Seiten; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi></ref> überliefert den Text, <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003">Bl. 16 r<hi rendition="#sup">o</hi></ref> das Diagramm. Rest eines Briefsiegels auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi></ref>.</p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						</listWit></p>
-				</div>
-				
-				<div type="text">
-					<p rendition="#noindent" xml:id="Ch65.S1.p4"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005"><pb type="L"/><fw type="folNum">[16 v<hi rendition="#sup">o</hi>]</fw></ref> <app type="Bfootnote">
-						<lem type="main">Videndum nihilne</lem>
-						<note type="lemma-abbrev">Videndum</note>
-						<rdg wit="#L" n="1"> nihilque </rdg>
-						<rdg wit="#L" n="2"> nihilne <hi rendition="#i">L</hi></rdg>
-						</app> differentiae vel erroris <app type="Cfootnote">
-						<lem type="main">in Galilaeanis</lem>
-						<note type="editorial"><index indexName="Personen">
-							<term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564–1642</term>
-							</index><hi rendition="#k">G. Galilei</hi>, <bibl corresp="#bib_00050"><hi rendition="#i">Discorsi</hi>, Giornata Quarta, Leiden 1638, S. 236–288 (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 268–313).</bibl></bibl></note>
-						</app> prodeat, supponendo <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">n[on]</corr></lem>
-						<rdg wit="#L"><orig>nam </orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> motus impressi<index indexName="Sachen">
-						<term>motus impressus</term>
-						</index> et ex gravitate orti<index indexName="Sachen">
-						<term>motus ex gravitate ortus</term>
-						</index> compositionem,<index indexName="Sachen">
-						<term>compositio motus</term>
-						</index> sed potius unum contra alterum. Nam si componas sequitur si qua ratione vis<index indexName="Sachen">
-						<term>vis</term>
-						</index> a gravitate<index indexName="Sachen">
-						<term>gravitas</term>
-						</index> impressa<index indexName="Sachen">
-						<term>vis a gravitate impressa</term>
-						</index> tolleretur, continuaturum adhuc (post ascensum<index indexName="Sachen">
-						<term>ascensus</term>
-						</index>) motum sursum. Res parallelogrammo<index indexName="Sachen">
-						<term>parallelogrammum</term>
-						</index> et triangulo repraesentabilis; cum tamen debeat tota vis assurgendi<index indexName="Sachen">
-						<term>vis assurgendi</term>
-						</index> a deprimente aethere<index indexName="Sachen">
-						<term>aether</term>
-						</index> consumi, quia ab illo etiam inter descendendum <app type="Bfootnote">
-						<lem type="main">data. Semper</lem>
-						<note type="lemma-abbrev">data.</note>
-						<rdg wit="#L" n="1"> Vis </rdg>
-						<rdg wit="#L" n="2"> Semper <hi rendition="#i">L</hi></rdg>
-						</app> in obliquo ictu<index indexName="Sachen">
-						<term>ictus obliquus</term>
-						</index> sumendae duae directiones[,]<index indexName="Sachen">
-						<term>directiones duae in ictu obliquo</term>
-						</index> perpendicularis<index indexName="Sachen">
-						<term>directio perpendicularis</term>
-						</index> et parallela,<index indexName="Sachen">
-						<term>directio parallela</term>
-						</index> et in sola perpendiculari<index indexName="Sachen">
-						<term>directio perpendicularis</term>
-						</index> resistentia[,]<index indexName="Sachen">
-						<term>resistentia</term>
-						</index> seu idem fit ac si ictu esset.</p>
-					<p xml:id="Ch65.S1.p5">Non videtur compositio Mot⟨us⟩<index indexName="Sachen">
-						<term>compositio motus</term>
-						</index> sola sufficere. Exemplo concursus duorum globorum<index indexName="Sachen">
-						<term>globus</term>
-						</index> obliqui,<index indexName="Sachen">
-						<term>concursus obliquus</term>
-						</index> concurrentium in unum<index indexName="Sachen">
-						<term>concursus obliquus duorum globorum in unum</term>
-						</index> <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">ipsi[s]</corr></lem>
-						<rdg wit="#L"><orig>ipsi </orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> aequalem.</p>
-					<p rendition="#noindent" xml:id="Ch65.S1.p6"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003"><pb type="L"/><fw type="folNum">[16 r<hi rendition="#sup">o</hi>]</fw></ref><app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note>
-						<note type="editorial">Leibniz hat den Buchstaben <hi rendition="#i">G</hi> an zwei verschiedene Punkte vergeben; die Bezeichnung des zweiten Punktes ändert Hrsg.</note>
-						</app></p>
-					<figure rendition="#own-line_centered" xml:id="Ch65.S1.p7"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_016_d_016r.svg" width="156.1032pt" xml:id="Ch65.S1.p7.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head></figure>
-				</div>
-			</div>
-		</body>
-	</text>
+							<msContents corresp="L_witness-content-types.xml#aufzeichnung">
+								<summary>
+									<p>Aufzeichnung: LH XXXV 9, 16 Bl. 16. Als Schreibblatt wiederverwendeter Teil eines Briefumschlags (ca. 15 x 6 cm.); alle Ränder bis auf den oberen unregelmäßig beschnitten. Zwei Seiten; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi>
+									</ref> überliefert den Text, <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003">Bl. 16 r<hi rendition="#sup">o</hi>
+								</ref> das Diagramm. Rest eines Briefsiegels auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi>
+							</ref>.
+						</p>
+					</summary>
+				</msContents>
+				<physDesc>
+					<objectDesc form="Handschrift"/>
+				</physDesc>
+				<history>
+					<origin corresp="L_witness-origin-types.xml#origin-L"/>
+				</history>
+			</msDesc>
+		</witness>
+	</listWit>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+	<rendition scheme="css" xml:id="i">font-style:italic</rendition>
+	<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+	<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+	<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+	<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+	<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+	<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+	<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+	<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+	<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+</tagsDecl>
+<charDecl>
+	<!-- Sonderzeichen OHNE Unicodeentsprechung -->
+	<!--rightpropto-->
+	<glyph xml:id="rightpropto">
+		<glyphName>rightpropto</glyphName>
+		<desc>...</desc>
+		<charProp>
+			<localName>baselineshift-in-ex</localName>
+			<value>0</value>
+		</charProp>
+		<charProp>
+			<localName>width-in-em</localName>
+			<value>0.6</value>
+		</charProp>
+		<mapping type="TeX">\rightpropto</mapping>
+		<graphic url="../../glyphs/rightpropto.svg"/>
+	</glyph>
+	<glyph xml:id="Pfund">
+		<glyphName>Pfund</glyphName>
+		<desc>stilisiertes lb-Zeichen (Pfund)</desc>
+		<charProp>
+			<localName>baselineshift-in-ex</localName>
+			<value>0</value>
+		</charProp>
+		<charProp>
+			<localName>width-in-em</localName>
+			<value>0.7</value>
+		</charProp>
+		<mapping type="TeX">\Pfund</mapping>
+		<graphic url="../../glyphs/Pfund.svg"/>
+	</glyph>
+	<!-- leibdashv -->
+	<glyph xml:id="pleibdashv">
+		<glyphName>pleibdashv</glyphName>
+		<desc>Bedeutung (+−) - gesenkt</desc>
+		<charProp>
+			<localName>baselineshift-in-ex</localName>
+			<value>-1</value>
+		</charProp>
+		<charProp>
+			<localName>width-in-em</localName>
+			<value>0.6</value>
+		</charProp>
+		<mapping type="PUA"/>
+		<mapping type="TeX">\pleibdashv</mapping>
+		<graphic url="../../glyphs/pm.svg"/>
+	</glyph>
+	<glyph xml:id="leibdashv">
+		<glyphName>leibdashv</glyphName>
+		<desc>Bedeutung (+−) - nicht-gesenkt</desc>
+		<charProp>
+			<localName>baselineshift-in-ex</localName>
+			<value>0</value>
+		</charProp>
+		<charProp>
+			<localName>width-in-em</localName>
+			<value>0.6</value>
+		</charProp>
+		<mapping type="PUA"/>
+		<mapping type="TeX">\leibdashv</mapping>
+		<graphic url="../../glyphs/pm.svg"/>
+	</glyph>
+	<!-- Sonderzeichen MIT Unicodeentsprechung -->
+</charDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+	<language ident="la"/>
+</langUsage>
+<calendarDesc>
+	<calendar xml:id="gregorian">
+		<p>Gregorianischer Kalenderstil</p>
+	</calendar>
+	<calendar xml:id="julian">
+		<p>Julianischer Kalenderstil</p>
+	</calendar>
+</calendarDesc>
+<textClass>
+	<catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
+	<catRef scheme="L_subjects" target="L_subjects.xml#kraft"/>
+	<catRef scheme="L_terms" target="L_terms.xml#"/>
+</textClass>
+<abstract>
+	<listPerson>
+		<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+		<person sameAs="L_persons.xml#"/>
+	</listPerson>
+	<listPlace>
+		<place sameAs="L_places.xml#"/>
+	</listPlace>
+</abstract>
+</profileDesc>
+<revisionDesc>
+<change when="2021" who="#telota" status="base"/>
+<change when="2023-02-21" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-065-001_facs-haupttextzeuge">
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005"/>
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003"/>
+</facsimile>
+<text xml:id="L_08-03-065-001_text">
+<body xml:id="Document">
+<div type="section" xml:id="Ch65.S1" n="651">
+	<head>65<hi rendition="#sub">1</hi> DE MOTU IMPRESSO ET EX GRAVITATE ORTO NON COMPONENDIS</head>
+	<head>[1686 (?) – Oktober 1687]</head>
+	<div type="ueberlieferung">
+		<p>
+			<hi rendition="#b #smaller">Überlieferung:</hi>
+			<listWit>
+				<witness>
+					<msDesc>
+						<msIdentifier>
+							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+							<idno type="Signatur">LH XXXV 9, 16 Bl. 16</idno>
+						</msIdentifier>
+						<msContents>
+							<summary>
+								<p>Aufzeichnung: LH XXXV 9, 16 Bl. 16. Als Schreibblatt wiederverwendeter Teil eines Briefumschlags (ca. 15 x 6 cm.); alle Ränder bis auf den oberen unregelmäßig beschnitten. Zwei Seiten; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi>
+								</ref> überliefert den Text, <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003">Bl. 16 r<hi rendition="#sup">o</hi>
+							</ref> das Diagramm. Rest eines Briefsiegels auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">Bl. 16 v<hi rendition="#sup">o</hi>
+						</ref>.
+					</p>
+				</summary>
+			</msContents>
+			<physDesc>
+				<objectDesc form="Handschrift"/>
+			</physDesc>
+			<history>
+				<origin/>
+			</history>
+		</msDesc>
+	</witness>
+</listWit>
+</p>
+</div>
+
+<div type="text">
+<p rendition="#noindent" xml:id="Ch65.S1.p4">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1005">
+	<pb type="L"/>
+	<fw type="folNum">[16 v<hi rendition="#sup">o</hi>]
+	</fw>
+</ref>
+<app type="Bfootnote">
+	<lem type="main">Videndum nihilne</lem>
+	<note type="lemma-abbrev">Videndum</note>
+	<rdg wit="#L" n="1"> nihilque </rdg>
+	<rdg wit="#L" n="2"> nihilne <hi rendition="#i">L</hi>
+	</rdg>
+</app> differentiae vel erroris <app type="Cfootnote">
+<lem type="main">in Galilaeanis</lem>
+<note type="editorial">
+	<index indexName="Personen">
+		<term>
+			<hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564–1642</term>
+	</index>
+	<hi rendition="#k">G. Galilei</hi>,	<bibl corresp="#bib_00050">
+		<hi rendition="#i">Discorsi</hi>, Giornata Quarta, Leiden 1638, S. 236–288 (<bibl corresp="#bib_00048">
+		<hi rendition="#i">GO</hi> VIII, S. 268–313).</bibl>
+</bibl>
+</note>
+</app> prodeat, supponendo <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">n[on]</corr>
+</lem>
+<rdg wit="#L">
+<orig>nam </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> motus impressi<index indexName="Sachen">
+<term>motus impressus</term>
+</index> et ex gravitate orti<index indexName="Sachen">
+<term>motus ex gravitate ortus</term>
+</index> compositionem,<index indexName="Sachen">
+<term>compositio motus</term>
+</index> sed potius unum contra alterum. Nam si componas sequitur si qua ratione vis<index indexName="Sachen">
+<term>vis</term>
+</index> a gravitate<index indexName="Sachen">
+<term>gravitas</term>
+</index> impressa<index indexName="Sachen">
+<term>vis a gravitate impressa</term>
+</index> tolleretur, continuaturum adhuc (post ascensum<index indexName="Sachen">
+<term>ascensus</term>
+</index>) motum sursum. Res parallelogrammo<index indexName="Sachen">
+<term>parallelogrammum</term>
+</index> et triangulo repraesentabilis; cum tamen debeat tota vis assurgendi<index indexName="Sachen">
+<term>vis assurgendi</term>
+</index> a deprimente aethere<index indexName="Sachen">
+<term>aether</term>
+</index> consumi, quia ab illo etiam inter descendendum <app type="Bfootnote">
+<lem type="main">data. Semper</lem>
+<note type="lemma-abbrev">data.</note>
+<rdg wit="#L" n="1"> Vis </rdg>
+<rdg wit="#L" n="2"> Semper <hi rendition="#i">L</hi>
+</rdg>
+</app> in obliquo ictu<index indexName="Sachen">
+<term>ictus obliquus</term>
+</index> sumendae duae directiones[,]<index indexName="Sachen">
+<term>directiones duae in ictu obliquo</term>
+</index> perpendicularis<index indexName="Sachen">
+<term>directio perpendicularis</term>
+</index> et parallela,<index indexName="Sachen">
+<term>directio parallela</term>
+</index> et in sola perpendiculari<index indexName="Sachen">
+<term>directio perpendicularis</term>
+</index> resistentia[,]<index indexName="Sachen">
+<term>resistentia</term>
+</index> seu idem fit ac si ictu esset.</p>
+<p xml:id="Ch65.S1.p5">Non videtur compositio Mot⟨us⟩<index indexName="Sachen">
+<term>compositio motus</term>
+</index> sola sufficere. Exemplo concursus duorum globorum<index indexName="Sachen">
+<term>globus</term>
+</index> obliqui,<index indexName="Sachen">
+<term>concursus obliquus</term>
+</index> concurrentium in unum<index indexName="Sachen">
+<term>concursus obliquus duorum globorum in unum</term>
+</index>
+<app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">ipsi[s]</corr>
+</lem>
+<rdg wit="#L">
+<orig>ipsi </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> aequalem.</p>
+<p rendition="#noindent" xml:id="Ch65.S1.p6">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1003">
+<pb type="L"/>
+<fw type="folNum">[16 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]
+</note>
+<note type="editorial">Leibniz hat den Buchstaben <hi rendition="#i">G</hi> an zwei verschiedene Punkte vergeben; die Bezeichnung des zweiten Punktes ändert Hrsg.</note>
+</app>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch65.S1.p7">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_016_d_016r.svg" width="156.1032pt" xml:id="Ch65.S1.p7.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]
+</head>
+</figure>
+</div>
+</div>
+</body>
+</text>
 </TEI>

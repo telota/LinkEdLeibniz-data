@@ -1,38 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-028-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-028-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Règle pour calculer la force d’une machine</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-					</resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Martina</forename>
-						<surname>Gödel</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
-					</resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Sebastian W.</forename>
-						<surname>Stork</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
@@ -57,7 +71,10 @@
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1674-07" resp="#ed" cert="medium">[zweite Hälfte 1674 – Anfang 1675]</date>
 						<date calendar="#gregorian" notAfter="1675-01" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=257</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+							<idno type="page">#page=257</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII:
@@ -74,13 +91,27 @@
 						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
               Briefe</title>
 					</series>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-028-001"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-028-002"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-028-003"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-028-004"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-028-005"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-028-006"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-028-007"/></relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-028-001"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-028-002"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-028-003"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-028-004"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-028-005"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-028-006"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-028-007"/>
+					</relatedItem>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
@@ -739,7 +770,7 @@
 			<change when="2021-09-23" who="#stork" status="enrich_1"/>
 		</revisionDesc>
 	</teiHeader>
-	
+
 	<text xml:id="L_08-02-028-000_text">
 		<body xml:id="Document">
 			<div type="chapter" xml:id="Ch28" n="28">
@@ -748,47 +779,67 @@ RÈGLE POUR CALCULER LA FORCE D’UNE MACHINE</head>
 				<pb type="VIII_2" n="209"/>
 				<head>[zweite Hälfte 1674 – Anfang 1675]</head>
 				<div type="contents">
-					<p xml:id="Ch28.p1" rendition="#noindent"><hi rendition="#smaller">Die folgenden sieben Unterstücke bilden inhaltlich eine Einheit.
+					<p xml:id="Ch28.p1" rendition="#noindent">
+						<hi rendition="#smaller">Die folgenden sieben Unterstücke bilden inhaltlich eine Einheit.
 Leibniz sucht dort nach einer mathematischen Beschreibung der Kräfte in einem rotierenden Rad.
 Ausgangspunkt der Untersuchung ist die diagrammatische Darstellung eines Rades mit angedeuteter Drehung (siehe [<hi rendition="#i">Fig. 1</hi>] in N. 28<hi rendition="#sub">1</hi>),
 auf die im Gesamtstück N. 28 mehrfach Bezug genommen wird.
-Die relative Chronologie der einzelnen Unterstücke ergibt sich aus folgenden Überlegungen:</hi></p>
-					<p xml:id="Ch28.p2"><hi rendition="#smaller">Beide frühesten Texte (N. 28<hi rendition="#sub">1</hi> und N. 28<hi rendition="#sub">2</hi>) sind auf demselben Träger (LH XXXV 10, 9 Bl. 3 v<hi rendition="#sup">o</hi>) überliefert:
+Die relative Chronologie der einzelnen Unterstücke ergibt sich aus folgenden Überlegungen:</hi>
+					</p>
+					<p xml:id="Ch28.p2">
+						<hi rendition="#smaller">Beide frühesten Texte (N. 28<hi rendition="#sub">1</hi> und N. 28<hi rendition="#sub">2</hi>) sind auf demselben Träger (LH XXXV 10, 9 Bl. 3 v<hi rendition="#sup">o</hi>) überliefert:
 N. 28<hi rendition="#sub">1</hi> findet sich in der oberen Blatthälfte und ist von Schreiberhand; N. 28<hi rendition="#sub">2</hi> ist von Leibniz’ Hand.
-Die Anordnung beider Texte auf dem Blatt sowie die Kennzeichnung von N. 28<hi rendition="#sub">2</hi> als <hi rendition="#i">mieux conceu</hi> sind eindeutige Hinweise auf deren Entstehungsabfolge.</hi></p>
-					<p xml:id="Ch28.p3"><hi rendition="#smaller">Bei den Texten N. 28<hi rendition="#sub">3</hi> und N. 28<hi rendition="#sub">4</hi> kann man aufgrund des identischen Schreibduktus eine zeitgleiche Entstehung annehmen.
+Die Anordnung beider Texte auf dem Blatt sowie die Kennzeichnung von N. 28<hi rendition="#sub">2</hi> als <hi rendition="#i">mieux conceu</hi> sind eindeutige Hinweise auf deren Entstehungsabfolge.</hi>
+					</p>
+					<p xml:id="Ch28.p3">
+						<hi rendition="#smaller">Bei den Texten N. 28<hi rendition="#sub">3</hi> und N. 28<hi rendition="#sub">4</hi> kann man aufgrund des identischen Schreibduktus eine zeitgleiche Entstehung annehmen.
 Diese Annahme wird durch die (fragmentarischen) Wasserzeichen unterstützt, die in beiden Textträgern (LH XXXV 10, 9 Bl. 1 und Bl. 2) anzutreffen sind.
 N. 28<hi rendition="#sub">3</hi> gibt das Ende von N. 28<hi rendition="#sub">1</hi> wieder, um einen Ausdruck für am Rad befestigte Gewichte ergänzt.
 N. 28<hi rendition="#sub">4</hi> ist eine Wiedergabe von N. 28<hi rendition="#sub">2</hi> (ohne den letzten Absatz).
 Ein Schreibfehler am Anfang von N. 28<hi rendition="#sub">4</hi> zeigt, dass Leibniz zuerst N. 28<hi rendition="#sub">1</hi> zu kopieren begann,
 dann aber N. 28<hi rendition="#sub">2</hi> abschrieb.
-Beide Reinschriften dürften demnach zu einem Zeitpunkt entstanden sein, als sowohl N. 28<hi rendition="#sub">1</hi> wie auch N. 28<hi rendition="#sub">2</hi> bereits vorlagen.</hi></p>
-					<p xml:id="Ch28.p4"><hi rendition="#smaller">Der Text N. 28<hi rendition="#sub">5</hi>, der auf demselben Träger (LH XXXV 10, 9 Bl. 3 r<hi rendition="#sup">o</hi>)
+Beide Reinschriften dürften demnach zu einem Zeitpunkt entstanden sein, als sowohl N. 28<hi rendition="#sub">1</hi> wie auch N. 28<hi rendition="#sub">2</hi> bereits vorlagen.</hi>
+					</p>
+					<p xml:id="Ch28.p4">
+						<hi rendition="#smaller">Der Text N. 28<hi rendition="#sub">5</hi>, der auf demselben Träger (LH XXXV 10, 9 Bl. 3 r<hi rendition="#sup">o</hi>)
 überliefert ist wie N. 28<hi rendition="#sub">1</hi> und N. 28<hi rendition="#sub">2</hi>,
 beruht auf einer erweiterten Fassung der Zeichnung [<hi rendition="#i">Fig. 1</hi>] aus N. 28<hi rendition="#sub">1</hi>.
 Demnach ist zu vermuten, dass N. 28<hi rendition="#sub">5</hi> nach N. 28<hi rendition="#sub">1</hi> und N. 28<hi rendition="#sub">2</hi> entstanden ist.
 Da in N. 28<hi rendition="#sub">5</hi> zudem eine gedankliche Weiterentwicklung gegenüber N. 28<hi rendition="#sub">3</hi> und N. 28<hi rendition="#sub">4</hi> erfolgt,
-dürfte N. 28<hi rendition="#sub">5</hi> später verfasst worden sein.</hi></p>
-					<p xml:id="Ch28.p5"><hi rendition="#smaller">Der Text N. 28<hi rendition="#sub">6</hi> (LH XXXV 10, 9 Bl. 4)
+dürfte N. 28<hi rendition="#sub">5</hi> später verfasst worden sein.</hi>
+					</p>
+					<p xml:id="Ch28.p5">
+						<hi rendition="#smaller">Der Text N. 28<hi rendition="#sub">6</hi> (LH XXXV 10, 9 Bl. 4)
 knüpft ebenfalls an die Zeichnung [<hi rendition="#i">Fig.1</hi>] in N. 28<hi rendition="#sub">1</hi> an und kennzeichnet sie als <hi rendition="#i">figura</hi>
-							<formula xml:id="Ch28.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi mathvariant="normal">ℵ</m:mi></m:math></formula>.
+							<formula xml:id="Ch28.p5.m1">
+								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+									<m:mi mathvariant="normal">ℵ</m:mi>
+								</m:math>
+							</formula>.
 Die gleiche Kennzeichnung findet sich auch in N. 28<hi rendition="#sub">1</hi>, fehlt dagegen in allen Texten dazwischen,
-weshalb sie wahrscheinlich erst während der Entstehung von N. 28<hi rendition="#sub">6</hi> und nach der Anfertigung von N. 28<hi rendition="#sub">5</hi> eingefügt wurde.</hi></p>
-					<p xml:id="Ch28.p6"><hi rendition="#smaller">Im Text N. 28<hi rendition="#sub">7</hi> (LH XXXVIII Bl. 25)
+weshalb sie wahrscheinlich erst während der Entstehung von N. 28<hi rendition="#sub">6</hi> und nach der Anfertigung von N. 28<hi rendition="#sub">5</hi> eingefügt wurde.</hi>
+					</p>
+					<p xml:id="Ch28.p6">
+						<hi rendition="#smaller">Im Text N. 28<hi rendition="#sub">7</hi> (LH XXXVIII Bl. 25)
 werden Ergebnisse aus den Überlegungen dargestellt,
 die in den übrigen sechs Unterstücken ihren Niederschlag gefunden haben.
 Somit liegt es nahe, bei N. 28<hi rendition="#sub">7</hi> eine gemeinsame Entstehungszeit anzunehmen wie bei den Texten N. 28<hi rendition="#sub">1</hi> bis N. 28<hi rendition="#sub">6</hi>.
-Dabei dürfte N. 28<hi rendition="#sub">7</hi> aber als letzter Text in der Reihe entstanden sein.</hi></p>
-					<p xml:id="Ch28.p7"><hi rendition="#smaller">Die absolute Datierung des Gesamtstücks N. 28 beruht auf folgenden Betrachtungen:
+Dabei dürfte N. 28<hi rendition="#sub">7</hi> aber als letzter Text in der Reihe entstanden sein.</hi>
+					</p>
+					<p xml:id="Ch28.p7">
+						<hi rendition="#smaller">Die absolute Datierung des Gesamtstücks N. 28 beruht auf folgenden Betrachtungen:
 (1) In N. 28<hi rendition="#sub">5</hi> und N. 28<hi rendition="#sub">6</hi> kommen in algebraischen Ausdrücken kombinierte Vorzeichen vor,
 die Leibniz nur in der zweiten Hälfte 1674 und am Anfang 1675 verwendet hat (siehe <hi rendition="#i">LSB</hi> VII, 5, S. XXXII f.).
 Insbesondere kommen in N. 28<hi rendition="#sub">5</hi> komplexe kombinierte Vorzeichen vor,
 die Leibniz spätestens Ende Dezember 1674 aufgegeben hat (siehe die Datierungsgründe in N. 50).
 Die in N. 28<hi rendition="#sub">6</hi> vorkommenden einfachen Formen der kombinierten Vorzeichen wurden hingegen auch in den ersten Monaten 1675 verwendet.
 (2) Die in den Textträgern von N. 28 anzutreffenden Wasserzeichen lassen eine gemeinsame Entstehung der Texte vermuten.
-Somit dürfte N. 28 insgesamt in einem Zeitraum verfasst worden sein, welcher die zweite Hälfte 1674 und den Anfang 1675 einschließt.</hi></p>
-					<p xml:id="Ch28.p8"><hi rendition="#smaller">Für den Text N. 28<hi rendition="#sub">1</hi> ist eine – bislang unbekannte – Vorlage von Leibniz’ Hand anzunehmen,
-die auch zu einem früheren Zeitpunkt entstanden sein könnte.</hi></p>
+Somit dürfte N. 28 insgesamt in einem Zeitraum verfasst worden sein, welcher die zweite Hälfte 1674 und den Anfang 1675 einschließt.</hi>
+					</p>
+					<p xml:id="Ch28.p8">
+						<hi rendition="#smaller">Für den Text N. 28<hi rendition="#sub">1</hi> ist eine – bislang unbekannte – Vorlage von Leibniz’ Hand anzunehmen,
+die auch zu einem früheren Zeitpunkt entstanden sein könnte.</hi>
+					</p>
 				</div>
 			</div>
 		</body>

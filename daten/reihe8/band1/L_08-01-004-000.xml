@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-004-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-004-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Cogitationes diversae circa navigationem</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note> </resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Inhaltliche Konzeption</note> </resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Martina</forename> <surname>Gödel</surname> </persName>
-					<resp> <note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note> </resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Sebastian W.</forename> <surname>Stork</surname> </persName>
-					<resp> <note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note> </resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"> <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p> </licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="4">Cogitationes diversae circa navigationem</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1672-01" resp="#ed" cert="medium">[Anfang 1672]</date>
 						<date calendar="#gregorian" notAfter="1672-02" resp="#ed" cert="medium"/>
-						<idno type="PDF"> <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno> <idno type="page">#page=105</idno> </idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+							<idno type="page">#page=105</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,24 +86,31 @@
 						</imprint>
 						<biblScope unit="page" from="60" to="61"/>
 					</monogr>
-					<series> <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title> </series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-01-004-000_facs-haupttextzeuge"> <msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXV 15, 6 Bl. 57</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-							<summary> <p>Konzept: LH XXXV 15, 6 Bl. 57. Rechteckig beschnittenes Blatt, 10 x 20 cm. 1 1/4 S. Vorderseite ganz, Rückseite zu 1/4 gegenläufig beschrieben.</p> <p>KK 1, Nr. 193 J</p> </summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc> </witness>
+					<witness n="L" corresp="#L_08-01-004-000_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">LH XXXV 15, 6 Bl. 57</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+								<summary>
+									<p>Konzept: LH XXXV 15, 6 Bl. 57. Rechteckig beschnittenes Blatt, 10 x 20 cm. 1 1/4 S. Vorderseite ganz, Rückseite zu 1/4 gegenläufig beschrieben.</p>
+									<p>KK 1, Nr. 193 J</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -166,8 +211,9 @@
 		</revisionDesc>
 	</teiHeader>
 	<facsimile source="digilib.bbaw.de" xml:id="L_08-01-004-000_facs-haupttextzeuge">
-<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1737&amp;tx_dlf%5Bpage%5D=115"/>
-<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1737&amp;tx_dlf%5Bpage%5D=116"/></facsimile>
+		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1737&amp;tx_dlf%5Bpage%5D=115"/>
+		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1737&amp;tx_dlf%5Bpage%5D=116"/>
+	</facsimile>
 	<text xml:id="L_08-01-004-000_text">
 		<body xml:id="Document">
 			<div type="chapter" xml:id="Ch4" n="4">
@@ -175,128 +221,167 @@
 				<head>4. COGITATIONES DIVERSAE CIRCA NAVIGATIONEM</head>
 				<head>[Anfang 1672]</head>
 				<div type="ueberlieferung">
-					<p> <hi rendition="#b #smaller">Überlieferung:</hi> <listWit>
-						<witness> <msDesc>
-							<msIdentifier>
-								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-								<idno type="Signatur">XXX</idno>
-							</msIdentifier>
-							<msContents>
-								<summary> <p>Konzept: LH XXXV 15, 6 Bl. 57. Rechteckig beschnittenes Blatt, 10 x 20 cm. 1 1/4 S. Vorderseite ganz, Rückseite zu 1/4 gegenläufig beschrieben.</p> <p>KK 1, Nr. 193 J</p> </summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc> </witness>
-						</listWit> </p>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+										<idno type="Signatur">XXX</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>Konzept: LH XXXV 15, 6 Bl. 57. Rechteckig beschnittenes Blatt, 10 x 20 cm. 1 1/4 S. Vorderseite ganz, Rückseite zu 1/4 gegenläufig beschrieben.</p>
+											<p>KK 1, Nr. 193 J</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="contents">
-					<p xml:id="Ch4.p4"> <hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Am Ende des Textes bezieht sich Leibniz auf eine Stelle des 4. Bandes der <ref corresp="#bib_00044"/><hi rendition="#i">Physik</hi> von Fabri. Wie aus <hi rendition="#i">LSB</hi> I, 2 N. 436 hervorgeht, hat Leibniz die komplette Ausgabe der <ref corresp="#bib_00044"/><hi rendition="#i">Physik</hi> am 4. Januar 1672 erhalten. Da es sich bei dem Textzeugen um Papier aus der Zeit vor Leibniz’ Parisaufenthalt handelt, gehen wir von einer Entstehungszeit des Stückes Anfang 1672 aus.</hi> </p>
-				</div>
-				<div type="text">
-					<p xml:id="Ch4.p5"><pb type="L"/><fw type="folNum">[57 r<hi rendition="#sup">o</hi>]</fw> An non effici potest ope Tuborum, ut liceat semper videre ubi sit <app type="Bfootnote">
-						<lem type="main">sol<index indexName="Sachverzeichnis">
-							<term>sol</term>
-							</index>, etiam</lem>
-						<note type="lemma-abbrev">sol,</note>
-						<rdg wit="#L" n="1"> vel luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-							</index> aut dua stella<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							</index> etiam </rdg>
-						<rdg wit="#L" n="2"> etiam <hi rendition="#i">L</hi></rdg>
-						</app> die pluviosissimo, et semper ejus umbram habere sic posse, et ita perpetua horologia<index indexName="Sachverzeichnis">
-						<term>horologium</term>
-						</index> solis<index indexName="Sachverzeichnis">
-						<term>sol</term>
-						</index>. Item <app type="Bfootnote">
-						<lem type="main">an liceat interdiu</lem>
-						<note type="lemma-abbrev">Item</note>
-						<rdg wit="#L" n="1"> noctu </rdg>
-						<rdg wit="#L" n="2"> an liceat interdiu <hi rendition="#i">L</hi></rdg>
-						</app> videre stellas<index indexName="Sachverzeichnis">
-						<term>stella</term>
-						</index> item an liceat hoc applicare ad longitudines<index indexName="Sachverzeichnis">
-						<term>longitudo</term>
-						</index> ita ut sol<index indexName="Sachverzeichnis">
-						<term>sol</term>
-						</index> ea ratione semper aliquid secum rotet. Hugenii<index indexName="Namensregister">
-						<term><hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens, Huguens), Christiaan 1629–1695</term>
-						</index> invento deesse <formula xml:id="Ch4.p5.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mo stretchy="false">⟨</m:mo>
-						</m:math>
-						</formula>dei<formula xml:id="Ch4.p5.m2">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mo stretchy="false">⟩</m:mo>
-						</m:math>
-						</formula> quod non retinet se in perpendiculo, jactata nave<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index>. An non hoc efficere licebit ope tensionis se restituentis, quippe quae tam fortis ut <app type="Bfootnote">
-						<lem type="main">jactationi</lem>
-						<note type="lemma-abbrev">ut</note>
-						<rdg wit="#L" n="1"> navem<index indexName="Sachverzeichnis">
-							<term>navis</term>
-							</index> </rdg>
-						<rdg wit="#L" n="2"> jactationi <hi rendition="#i">L</hi></rdg>
-						</app> resistat, et NB utcunque jactetur nihilominus aget semper eodem modo in suum globulum<index indexName="Sachverzeichnis">
-						<term>globulus</term>
-						</index>. Fateor tamen nondum ne mihi satisfacere, et etsi detur globus qui se ipse in aere circumvertat, tamen <app type="Bfootnote">
-						<lem type="main">nullo</lem>
-						<note type="lemma-abbrev">tamen</note>
-						<rdg wit="#L" n="1"> non si </rdg>
-						<rdg wit="#L" n="2"> nullo <hi rendition="#i">L</hi></rdg>
-						</app> modo alligatus ad navem<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> quomodo eam sequetur. Et etsi superius teneatur a magnete<index indexName="Sachverzeichnis">
-						<term>magnes</term>
-						</index>, tamen magnete<index indexName="Sachverzeichnis">
-						<term>magnes</term>
-						</index> jactato jactabitur. Gyrus facit rem recta semper tendere sursum, sane gravitas<index indexName="Sachverzeichnis">
-						<term>gravitas</term>
-						</index> deorsum, sed quomodo resistet impressae jactationi. Illud optimum remedium videtur si res natet in aqua modo Kircheriano qua plenum vas sigillatum,<app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">sigillatum,</note>
-						<note type="editorial"><hi rendition="#k">A. Kircher,</hi> <bibl corresp="#bib_00067"><hi rendition="#i">Magnes</hi>, Rom 1654, S. 310.</bibl></note>
-						</app> ita repletum ut nulla concussione turbetur aqua, quia nullus in ea locus vacuus ad sensum, et in ea sit horologium<index indexName="Sachverzeichnis">
-						<term>horologium</term>
-						</index>, sed ita nil effecerit tensio<index indexName="Sachverzeichnis">
-						<term>tensio</term>
-						</index>. Optime et hoc forte erit, si res pendeat a magnete<index indexName="Sachverzeichnis">
-						<term>magnes</term>
-						</index> ita tamen</p>
-					<pb type="VIII_1" n="61"/>
-					<p xml:id="Ch4.p6">ut eum non tangat, ita enim etsi cum eo moveatur tamen non recipiet ab eo impressiones crassas. Sed quod hoc efficiemus. Res sane bene natabit in lampadi-</p>
-					<p xml:id="Ch4.p7" rendition="#noindent">bus quae non effunduntur sed nescio an non contingat error turbans succussionibus aliquot minuta, et porro, quod deinde grandem parit confusionem. Si numerabiles essent vibrationes tensionum<index indexName="Sachverzeichnis">
-						<term>tensio</term>
-						</index> quia et ipsae aequidiuturnae, res forte esset effectu facilior. Nam hoc demonstravit Honoratus Fabri<index indexName="Namensregister">
-						<term><hi rendition="#g">Fabri</hi> (Hon. Fab.), Honoré 1607–1688</term>
-						</index><app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">demonstravit</note>
-						<note type="editorial"><hi rendition="#k">H. Fabri,</hi> <bibl corresp="#bib_00044"><hi rendition="#i">Physica</hi>, Bd. 4, Lyon 1671, S. 44.</bibl></note>
-						</app>. Sed vereor ne hae vibrationes sint nimis subtiles quam ut sint numerabiles, et vidibiles. An ita res instituenda, ut tensione<index indexName="Sachverzeichnis">
-						<term>tensio</term>
-						</index> horologiolorum applicata ad horologium pendulum<index indexName="Sachverzeichnis">
-						<term>horologium</term>
-						<index>
-							<term>pendulum</term>
-						</index>
-						</index>, statim resistat tendens si minimum a motu perpendiculari abeat. <pb type="L"/><fw type="folNum">[57 v<hi rendition="#sup">o</hi>]</fw> Ad<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am oberen Rand von Bl. 57 v<hi rendition="#sup">o</hi></hi>: NB. Hic modus forte optimus \Denarius NB.</note> nostram delineationem longitudinum<index indexName="Sachverzeichnis">
-						<term>longitudo</term>
-						</index> opus, quod et efficitur ut aliquid nach proportion im verjungten masstab soviel zurückgehe, als das schiff<index indexName="Sachverzeichnis">
-						<term>Schiff</term>
-						</index> vor sich, und denn etwas, das stets ad certum locum weise, a quo cognita distantia nostra a data re, et modis flexionis situs <app type="Bfootnote">
-						<lem type="main">portus a quo abiimus vel ad quem tendimus, et omnino locus noster cognoscitur</lem>
-						<note type="lemma-abbrev">situs</note>
-						<rdg wit="#L" n="1"> rei cogno </rdg>
-						<rdg wit="#L" n="2"> portus <seg type="apparat-ellipsis"/> cognoscitur <hi rendition="#i">L</hi></rdg>
-						</app>.</p>
-				</div>
-			</div>
-		</body>
-	</text>
+					<p xml:id="Ch4.p4">
+						<hi rendition="#smaller">
+							<hi rendition="#b">Datierungsgründe</hi>: Am Ende des Textes bezieht sich Leibniz auf eine Stelle des 4. Bandes der <ref corresp="#bib_00044"/>
+						<hi rendition="#i">Physik</hi> von Fabri. Wie aus <hi rendition="#i">LSB</hi> I, 2 N. 436 hervorgeht, hat Leibniz die komplette Ausgabe der <ref corresp="#bib_00044"/>
+					<hi rendition="#i">Physik</hi> am 4. Januar 1672 erhalten. Da es sich bei dem Textzeugen um Papier aus der Zeit vor Leibniz’ Parisaufenthalt handelt, gehen wir von einer Entstehungszeit des Stückes Anfang 1672 aus.</hi>
+			</p>
+		</div>
+		<div type="text">
+			<p xml:id="Ch4.p5">
+				<pb type="L"/>
+				<fw type="folNum">[57 r<hi rendition="#sup">o</hi>]
+				</fw> An non effici potest ope Tuborum, ut liceat semper videre ubi sit <app type="Bfootnote">
+				<lem type="main">sol<index indexName="Sachverzeichnis">
+					<term>sol</term>
+				</index>, etiam</lem>
+			<note type="lemma-abbrev">sol,</note>
+			<rdg wit="#L" n="1"> vel luna<index indexName="Sachverzeichnis">
+				<term>luna</term>
+			</index> aut dua stella<index indexName="Sachverzeichnis">
+			<term>stella</term>
+		</index> etiam </rdg>
+	<rdg wit="#L" n="2"> etiam <hi rendition="#i">L</hi>
+	</rdg>
+</app> die pluviosissimo, et semper ejus umbram habere sic posse, et ita perpetua horologia<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> solis<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index>. Item <app type="Bfootnote">
+<lem type="main">an liceat interdiu</lem>
+<note type="lemma-abbrev">Item</note>
+<rdg wit="#L" n="1"> noctu </rdg>
+<rdg wit="#L" n="2"> an liceat interdiu <hi rendition="#i">L</hi>
+</rdg>
+</app> videre stellas<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> item an liceat hoc applicare ad longitudines<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> ita ut sol<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> ea ratione semper aliquid secum rotet. Hugenii<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens, Huguens), Christiaan 1629–1695</term>
+</index> invento deesse <formula xml:id="Ch4.p5.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>dei<formula xml:id="Ch4.p5.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula> quod non retinet se in perpendiculo, jactata nave<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>. An non hoc efficere licebit ope tensionis se restituentis, quippe quae tam fortis ut <app type="Bfootnote">
+<lem type="main">jactationi</lem>
+<note type="lemma-abbrev">ut</note>
+<rdg wit="#L" n="1"> navem<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> jactationi <hi rendition="#i">L</hi>
+</rdg>
+</app> resistat, et NB utcunque jactetur nihilominus aget semper eodem modo in suum globulum<index indexName="Sachverzeichnis">
+<term>globulus</term>
+</index>. Fateor tamen nondum ne mihi satisfacere, et etsi detur globus qui se ipse in aere circumvertat, tamen <app type="Bfootnote">
+<lem type="main">nullo</lem>
+<note type="lemma-abbrev">tamen</note>
+<rdg wit="#L" n="1"> non si </rdg>
+<rdg wit="#L" n="2"> nullo <hi rendition="#i">L</hi>
+</rdg>
+</app> modo alligatus ad navem<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> quomodo eam sequetur. Et etsi superius teneatur a magnete<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index>, tamen magnete<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> jactato jactabitur. Gyrus facit rem recta semper tendere sursum, sane gravitas<index indexName="Sachverzeichnis">
+<term>gravitas</term>
+</index> deorsum, sed quomodo resistet impressae jactationi. Illud optimum remedium videtur si res natet in aqua modo Kircheriano qua plenum vas sigillatum,<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">sigillatum,</note>
+<note type="editorial">
+<hi rendition="#k">A. Kircher,</hi>
+<bibl corresp="#bib_00067">
+<hi rendition="#i">Magnes</hi>, Rom 1654, S. 310.</bibl>
+</note>
+</app> ita repletum ut nulla concussione turbetur aqua, quia nullus in ea locus vacuus ad sensum, et in ea sit horologium<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index>, sed ita nil effecerit tensio<index indexName="Sachverzeichnis">
+<term>tensio</term>
+</index>. Optime et hoc forte erit, si res pendeat a magnete<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> ita tamen</p>
+<pb type="VIII_1" n="61"/>
+<p xml:id="Ch4.p6">ut eum non tangat, ita enim etsi cum eo moveatur tamen non recipiet ab eo impressiones crassas. Sed quod hoc efficiemus. Res sane bene natabit in lampadi-</p>
+<p xml:id="Ch4.p7" rendition="#noindent">bus quae non effunduntur sed nescio an non contingat error turbans succussionibus aliquot minuta, et porro, quod deinde grandem parit confusionem. Si numerabiles essent vibrationes tensionum<index indexName="Sachverzeichnis">
+<term>tensio</term>
+</index> quia et ipsae aequidiuturnae, res forte esset effectu facilior. Nam hoc demonstravit Honoratus Fabri<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Fabri</hi> (Hon. Fab.), Honoré 1607–1688</term>
+</index>
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">demonstravit</note>
+<note type="editorial">
+<hi rendition="#k">H. Fabri,</hi>
+<bibl corresp="#bib_00044">
+<hi rendition="#i">Physica</hi>, Bd. 4, Lyon 1671, S. 44.</bibl>
+</note>
+</app>. Sed vereor ne hae vibrationes sint nimis subtiles quam ut sint numerabiles, et vidibiles. An ita res instituenda, ut tensione<index indexName="Sachverzeichnis">
+<term>tensio</term>
+</index> horologiolorum applicata ad horologium pendulum<index indexName="Sachverzeichnis">
+<term>horologium</term>
+<index>
+<term>pendulum</term>
+</index>
+</index>, statim resistat tendens si minimum a motu perpendiculari abeat. <pb type="L"/>
+<fw type="folNum">[57 v<hi rendition="#sup">o</hi>]
+</fw> Ad<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am oberen Rand von Bl. 57 v<hi rendition="#sup">o</hi>
+</hi>: NB. Hic modus forte optimus \Denarius NB.</note> nostram delineationem longitudinum<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> opus, quod et efficitur ut aliquid nach proportion im verjungten masstab soviel zurückgehe, als das schiff<index indexName="Sachverzeichnis">
+<term>Schiff</term>
+</index> vor sich, und denn etwas, das stets ad certum locum weise, a quo cognita distantia nostra a data re, et modis flexionis situs <app type="Bfootnote">
+<lem type="main">portus a quo abiimus vel ad quem tendimus, et omnino locus noster cognoscitur</lem>
+<note type="lemma-abbrev">situs</note>
+<rdg wit="#L" n="1"> rei cogno </rdg>
+<rdg wit="#L" n="2"> portus <seg type="apparat-ellipsis"/>
+ cognoscitur <hi rendition="#i">L</hi>
+</rdg>
+</app>.
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

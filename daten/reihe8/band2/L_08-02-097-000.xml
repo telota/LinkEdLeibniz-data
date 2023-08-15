@@ -1,38 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-097-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-097-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Sur les eaux courantes</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-					</resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Martina</forename>
-						<surname>Gödel</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
-					</resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Sebastian W.</forename>
-						<surname>Stork</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
@@ -57,7 +71,10 @@
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1675-11" resp="#ed" cert="medium">[Ende November – Ende Dezember 1675]</date>
 						<date calendar="#gregorian" notAfter="1675-12" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=800</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+							<idno type="page">#page=800</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII:
@@ -74,10 +91,18 @@
 						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
               Briefe</title>
 					</series>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-097-001"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-097-002"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-097-003"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-02-097-004"/></relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-097-001"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-097-002"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-097-003"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-02-097-004"/>
+					</relatedItem>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
@@ -734,7 +759,7 @@
 			<change when="2021" who="#telota" status="base"/>
 			<change when="2021-09-23" who="#stork" status="enrich_1"/>
 		</revisionDesc>
-	</teiHeader>	
+	</teiHeader>
 	<text xml:id="L_08-02-097-000_text">
 		<body xml:id="Document">
 			<div type="chapter" xml:id="Ch97" n="97">
@@ -743,17 +768,29 @@
 SUR LES EAUX COURANTES</head>
 				<head>[Ende November – Ende Dezember 1675]</head>
 				<div type="contents">
-					<p xml:id="Ch97.p1" rendition="#noindent"><hi rendition="#smaller">Die folgenden vier Stücke,
+					<p xml:id="Ch97.p1" rendition="#noindent">
+						<hi rendition="#smaller">Die folgenden vier Stücke,
 die vom mechanischen Verhalten strömender Gewässer handeln,
 sind vermutlich alle nach Gesprächen mit Artus de Roannez
-<index indexName="Namensregister"><term><hi rendition="#g #smaller">Roanez</hi><hi rendition="#smaller">, Artus Gouffier de 1627-1696</hi></term></index>in Paris entstanden.
+							<index indexName="Namensregister">
+								<term>
+									<hi rendition="#g #smaller">Roanez</hi>
+									<hi rendition="#smaller">, Artus Gouffier de 1627-1696</hi>
+								</term>
+							</index>in Paris entstanden.
 In N. 97<hi rendition="#sub">1</hi> vermerkt Leibniz selbst als Gesprächsdatum den 25. November 1675.
 Auch in N. 97<hi rendition="#sub">2</hi> und N. 97<hi rendition="#sub">4</hi> wird auf Roannez ausdrücklich hingewiesen.
 N. 97<hi rendition="#sub">4</hi> bildete zudem ursprünglich ein einziges Blatt zusammen mit dem von Leibniz auf den 31. Dezember 1675 datierten Stück N. 65, in dem ebenfalls über ein Gespräch mit Roannez
-<index indexName="Namensregister"><term><hi rendition="#g #smaller">Roanez</hi><hi rendition="#smaller">, Artus Gouffier de 1627-1696</hi></term></index>berichtet wird.
+							<index indexName="Namensregister">
+								<term>
+									<hi rendition="#g #smaller">Roanez</hi>
+									<hi rendition="#smaller">, Artus Gouffier de 1627-1696</hi>
+								</term>
+							</index>berichtet wird.
 Aufgrund der einheitlichen Thematik ist für sämtliche vier Stücke ein gemeinsamer Entstehungszeitraum von Ende November bis Ende Dezember 1675 anzunehmen.
 Die in den Textträgern von N. 97<hi rendition="#sub">1</hi>, N. 97<hi rendition="#sub">2</hi> und N. 97<hi rendition="#sub">4</hi> vorliegenden Wasserzeichen unterstützen diese Annahme.
-Der Textträger von N. 97<hi rendition="#sub">3</hi> weist hingegen kein Wasserzeichen auf.</hi></p>
+Der Textträger von N. 97<hi rendition="#sub">3</hi> weist hingegen kein Wasserzeichen auf.</hi>
+					</p>
 				</div>
 			</div>
 		</body>

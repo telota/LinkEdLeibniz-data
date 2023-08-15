@@ -1,38 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-069-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-069-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">De medicina perficienda</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-					</resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Martina</forename>
-						<surname>Gödel</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
-					</resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Sebastian W.</forename>
-						<surname>Stork</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
@@ -47,7 +61,12 @@
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="69">De medicina perficienda</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1671-07" resp="#ed" cert="medium">[Mitte 1671 – Anfang 1672]</date>
@@ -100,7 +119,9 @@
 							</msIdentifier>
 							<msContents corresp="L_witness-content-types.xml#aufzeichnung">
 								<summary>
-									<p><ref corresp="#bib_01131"/><hi rendition="#k">G.W. Leibniz</hi>, „Directiones ad rem medicam pertinentes”, hrsg. von <hi rendition="#k">F. Hartmann</hi> und <hi rendition="#k">M. Krüger</hi>, <hi rendition="#i">Studia Leibnitiana</hi> VIII, 1 (1976), S. 40-68: S. 66-68.</p>
+									<p>
+										<ref corresp="#bib_01131"/>
+										<hi rendition="#k">G.W. Leibniz</hi>, „Directiones ad rem medicam pertinentes”, hrsg. von <hi rendition="#k">F. Hartmann</hi> und <hi rendition="#k">M. Krüger</hi>,										<hi rendition="#i">Studia Leibnitiana</hi> VIII, 1 (1976), S. 40-68: S. 66-68.</p>
 								</summary>
 							</msContents>
 							<physDesc>
@@ -770,8 +791,9 @@
 	</teiHeader>
 	<facsimile source="digilib.bbaw.de" xml:id="L_08-02-069-000_facs-haupttextzeuge">
 		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,01/&amp;pn=40"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,01/&amp;pn=41"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,01/&amp;pn=42"/> </facsimile>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,01/&amp;pn=41"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,01/&amp;pn=42"/>
+	</facsimile>
 	<text xml:id="L_08-02-069-000_text">
 		<body xml:id="Document">
 			<div type="chapter" xml:id="Ch69" n="69">
@@ -779,17 +801,206 @@
 				<head>69. DE MEDICINA PERFICIENDA</head>
 				<head>[Mitte 1671 – Anfang 1672]</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung: LH III 1, 3 Bl. 9. 1 Bl. 2<hi rendition="#sup">o</hi>, oben und unten beschnitten (21 x 19 cm). 2 S. Textfolge: Bl. 9 v<hi rendition="#sup">o</hi>, 9 r<hi rendition="#sup">o</hi>. Ein Wasserzeichen.</p><p>KK1, Nr. 976</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness><witness><msDesc><msIdentifier><collection>Leibniz-Bibliographie</collection><idno type="Laufende-Nummer"/></msIdentifier><msContents><summary><p><ref corresp="#bib_01131"/><hi rendition="#k">G.W. Leibniz</hi>, „Directiones ad rem medicam pertinentes”, hrsg. von <hi rendition="#k">F. Hartmann</hi> und <hi rendition="#k">M. Krüger</hi>, <hi rendition="#i">Studia Leibnitiana</hi> VIII, 1 (1976), S. 40-68: S. 66-68.</p></summary></msContents><physDesc><objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/></physDesc><history><origin/></history></msDesc></witness></listWit></p>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+										<idno type="Signatur"/>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>Aufzeichnung: LH III 1, 3 Bl. 9. 1 Bl. 2<hi rendition="#sup">o</hi>, oben und unten beschnitten (21 x 19 cm). 2 S. Textfolge: Bl. 9 v<hi rendition="#sup">o</hi>, 9 r<hi rendition="#sup">o</hi>. Ein Wasserzeichen.</p>
+											<p>KK1, Nr. 976</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<collection>Leibniz-Bibliographie</collection>
+										<idno type="Laufende-Nummer"/>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>
+												<ref corresp="#bib_01131"/>
+												<hi rendition="#k">G.W. Leibniz</hi>, „Directiones ad rem medicam pertinentes”, hrsg. von <hi rendition="#k">F. Hartmann</hi> und <hi rendition="#k">M. Krüger</hi>,												<hi rendition="#i">Studia Leibnitiana</hi> VIII, 1 (1976), S. 40-68: S. 66-68.</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="contents">
-					<p xml:id="Ch69.p5"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Das gleiche Wasserzeichen wie im Textträger des vorliegenden Stücks ist in sämtlichen Bogen vorhanden, die N. 70 überliefern. Die thematische Verwandtschaft beider Stücke legt ebenfalls nahe, die Datierung von N. 70 auch für N. 69 zu übernehmen. Dass „medizinische Richtlinien” (<hi rendition="#i">directiones medicae</hi>) im vorliegenden Stück als Desiderat dargestellt werden (siehe unten, S. <ref corresp="#_003_01_03_009_z1"/>), könnte man auch als Hinweis darauf deuten, dass N. 69 im Vorfeld von N. 70 verfasst wurde.</hi></p>
+					<p xml:id="Ch69.p5">
+						<hi rendition="#smaller">
+							<hi rendition="#b">Datierungsgründe:</hi> Das gleiche Wasserzeichen wie im Textträger des vorliegenden Stücks ist in sämtlichen Bogen vorhanden, die N. 70 überliefern. Die thematische Verwandtschaft beider Stücke legt ebenfalls nahe, die Datierung von N. 70 auch für N. 69 zu übernehmen. Dass „medizinische Richtlinien” (<hi rendition="#i">directiones medicae</hi>) im vorliegenden Stück als Desiderat dargestellt werden (siehe unten, S. <ref corresp="#_003_01_03_009_z1"/>
+), könnte man auch als Hinweis darauf deuten, dass N. 69 im Vorfeld von N. 70 verfasst wurde.</hi>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch69.p6" rendition="#noindent"><pb type="L"/><fw type="folNum">[9 v<hi rendition="#sup">o</hi>]</fw> Mirifice mihi placet Henrici<index indexName="Namensregister"><term><hi rendition="#g">Stubbe</hi>, Henry 1632-1676</term></index> <app type="Cfootnote"><lem type="main">Stubbii institutum.</lem><note type="lemma-abbrev">Stubbii institutum</note><note type="editorial"><bibl corresp="#bib_00105"><hi rendition="#k">H. Stubbe</hi>, <hi rendition="#i">The plus ultra reduced to a non plus</hi>, London 1670.</bibl></note></app> Est velut <app type="Cfootnote"><lem type="main">Billichius<index indexName="Namensregister"><term><hi rendition="#g">Billich</hi>, Anton Günther 1598-1640</term></index></lem><note type="lemma-abbrev">Billichius</note><note type="editorial">Vermutlich <bibl corresp="#bib_00011"><hi rendition="#k">A.G. Billich</hi>, <hi rendition="#i">Thessalus in chymicis redivivus</hi>, Frankfurt a.M. 1643.</bibl></note></app> quidam, et <app type="Cfootnote"><lem type="main">Claramontius<index indexName="Namensregister"><term><hi rendition="#g">Chiaramonti</hi>, Scipione 1565-1652</term></index></lem><note type="lemma-abbrev">Claramontius</note><note type="editorial">Etwa <bibl corresp="#bib_00026"><hi rendition="#k">S. Chiaramonti</hi>, <hi rendition="#i">In Aristotelem De iride</hi>, Venedig 1668</bibl>; <bibl corresp="#bib_01146"><hi rendition="#k">Ders.</hi>, <hi rendition="#i">Philosophia naturalis</hi>, Venedig 1652</bibl>; <bibl corresp="#bib_01147"><hi rendition="#k">Ders.</hi>, <hi rendition="#i">De atra bile quoad mores attinet</hi>, Paris 1641.</bibl></note></app> et <app type="Cfootnote"><lem type="main">Lindanus<index indexName="Namensregister"><term><hi rendition="#g">Linden</hi>, Jan Antonides van der 1609-1664</term></index></lem><note type="lemma-abbrev">Lindanus</note><note type="editorial">J.A. van der Linden hat zwei für die humoralpathologische Medizin wichtige Schriften herausgegeben: <bibl corresp="#bib_00060"><hi rendition="#k">Hippocrates</hi>, <hi rendition="#i">Opera Omnia</hi>, Leiden 1660, und <bibl corresp="#bib_00022"><hi rendition="#k">Celsus</hi>, <hi rendition="#i">De medicina</hi>, Leiden 1657.</bibl></bibl></note></app> et <app type="Cfootnote"><lem type="main">Conringius<index indexName="Namensregister"><term><hi rendition="#g">Conring</hi>, Hermann 1606-1681</term></index></lem><note type="lemma-abbrev">Conringius</note><note type="editorial"><bibl corresp="#bib_00029"><hi rendition="#k">H. Conring</hi>, <hi rendition="#i">De hermetica</hi>, Helmstedt 1669.</bibl></note></app> qui nostri temporis jactatores ad veteres revocant. Si contumeliosa demas caetera praeclara sunt. Ego ita <app type="Bfootnote"><lem type="main">sentio: inquirendum</lem><note type="lemma-abbrev">sentio:</note><rdg wit="#L" n="1"> quaerendum </rdg><rdg wit="#L" n="2"> inquirendum <hi rendition="#i">L</hi></rdg></app> esse, quasi nihil ante nos inventum esset; concludendum, <app type="Bfootnote"><lem type="main">definiendum, quasi omnia veteribus</lem><note type="lemma-abbrev">definiendum,</note><rdg wit="#L" n="1"> jactandum </rdg><rdg wit="#L" n="2"> quasi omnia veteribus <hi rendition="#i">L</hi></rdg></app> constitissent, quamdiu non effecimus, ut usum ipso medico fructum inventorum ostendimus. Sed hoc non fiet etsi mille inventis novis productis, antequam Respublica manum admoliatur, et ordinem quendam methodum, applicandi rationem et communitionem experimentorum constituat. Quid prodest detegi aliquid quod vix ad millesimum quemque pervenit et forte ante fructum rursus obliteratur. Quam multa praeclara tum in libris ante nos, tum in memoria schedisque medicorum nostri temporis, imo et vulgi sermonibus sunt, quae si collecta in unum, digesta in ordinem, et vera ratiocinandi atque inducendi <pb type="VIII_2" n="647"/>arte adhibita essent in <app type="Bfootnote"><lem type="main">usum essemus</lem><note type="lemma-abbrev">usum</note><rdg wit="#L" n="1"> possemus de </rdg><rdg wit="#L" n="2"> essemus <hi rendition="#i">L</hi></rdg></app> paulo propius perfectioni medicinae, certae, vitam multorum proferremus. Neque enim dubitandum est multos homines facile negotio servari posse quales ego omnes esse arbitror, qui febri, qui peste, qui hydrope, qui calculo, qui phthisi, qui vitio aliquo humorum moriuntur. Nam in quibus ruptum est aliquid, aut quibus viscera vivendi tractu velut detrita <app type="Bfootnote"><lem type="main">sunt, eorum ratio</lem><note type="lemma-abbrev">sunt,</note><rdg wit="#L" n="1"> in quibus </rdg><rdg wit="#L" n="2"> eorum ratio <hi rendition="#i">L</hi></rdg></app> alia est. Denique putem brevi temporis spatio per medicinam effici posse, ut homines fere non nisi morte naturali, aut saltem infortuniis inevitabilibus (qualia sunt vulnera letalia, lapsus, rupturae viscerum aliaque id genus) moriantur. Quod si fiat, non ideo peius res humanae habebunt dum multae sint incultae terrae, habitabiles tamen, ut non debeamus de hominum multitudine
-						conqueri. Quid prohibet aliquando hominibus omnibus a juventute certas vivendi regulas praescriptas esse, quas profecto tam religiose servarent, <pb type="L"/><fw type="folNum">[9 r<hi rendition="#sup">o</hi>]</fw> quam cibi tempore, et preces matutinas atque ante coenam. Possunt accedere Ecclesiae praecepta, possunt infantes a parentibus institui certa proscripta forma. Possunt ipsae scholae publicae emendari, ut parentes distracti ea cura liberentur. Ego caetera omnia nullius pretii habeo, si comparentur medicinae tum corporum tum animorum, id est curae sanitatis et justitiae seu pietatis. Caetera inventa mechanica quibus astronomia, geogra<formula xml:id="Ch69.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>ϕ</m:mi></m:math></formula>ia, res nautica, statica, Belopoeetica, agricultura, metallica, botanica excoluntur, quatenus his non inserviunt parvi facio. Moralia et medicinam haec sunt quae unice aestimari debent. Quare Microscopia longe magis quam Telescopia aestimo, et si quis morbi cujuscunque certam exploratamque curationem invenerit, eum ego majoris faciendum arbitror, quam si quadraturam circuli invenisset. Alia res est motus perennis, nam qui hunc invenit is quantum ad usum mechanicum totidem nova flumina novosque homines vel animalia saltem produxisse in effectu dicendus est, quia ita parci laboribus, et homines alio vertere curas possunt. Nauticae finis <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">verus</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> est mea sententia detegere et colere novas terras, et earum homines ad cultum vitae veramque sapientiam traducere. Finis Astronomiae mea sententia est ut caeterarum curiosarum scientiarum omnium admiratio harmoniae rerum, seu DEI. Sed Astronomiae finis peculiaris est, investigare, an non possint aliquae rationes inveniri circa originemque finem connexionemque mundi. Artis militaris finis est tum defendere sese, tum vero posse cogere populos barbaros ad leges meliores, ubi omnis crudelitas abesse debet. Caeterae artes diriguntur ad voluptatem et commoda vitae.</p>
-					<p xml:id="Ch69.p7">Admonendi omnes medici ut quisque suam sententiam dicat de modo perficiendae medicinae, inprimis universitates et collegia, tum qui volent, particulares: inserant exemplis observata sua; quanto magis illustrabunt praemia constituentur meliora afferentibus. <anchor xml:id="_003_01_03_009_z1"/><pb type="VIII_2" n="648"/>Logica quasi Medica scribenda, ut habeamus Logicas juridicas <app type="Bfootnote"><lem type="main">interrogatoria ut</lem><note type="lemma-abbrev">interrogatoria</note><rdg wit="#L" n="1"> seu dire </rdg><rdg wit="#L" n="2"> ut <hi rendition="#i">L</hi></rdg></app> juridica, directiones medicas.<anchor xml:id="_003_01_03_009_z2"/> Adhibendi libri nonnulli qui de talibus jam scripsere, ut Claudinus<index indexName="Namensregister"><term><hi rendition="#g">Claudini</hi>, Giulio Cesare ca. 1550-1618</term></index> <hi rendition="#i">de ingressu ad</hi> <app type="Cfootnote"><lem type="main"><hi rendition="#i">infirmos</hi></lem><note type="editorial"><bibl corresp="#bib_00027"><hi rendition="#k">G.C. Claudini</hi>, <hi rendition="#i">De ingressu ad infirmos</hi>, Bologna 1612.</bibl></note></app>. Colligendum ex omnibus medicis, quicquid huc pertinet, utilissimus ad eam rem <app type="Cfootnote"><lem type="main">Sachsius<index indexName="Namensregister"><term><hi rendition="#g">Sachs von Löwenheim</hi>, Philipp Jacob 1627-1672</term></index></lem><note type="lemma-abbrev">Sachsius</note><note type="editorial">P.J. Sachs von Löwenheim gründete als Stadtarzt in Breslau 1670 die <bibl corresp="#bib_00001"><hi rendition="#i">Miscellanea curiosa medico-physica Academiae naturae curiosorum sive Ephemeridum medico-physicarum Germanicarum curiosarum.</hi></bibl></note></app> et similes. Stenonis<index indexName="Namensregister"><term><hi rendition="#g">Stensen</hi>, Niels 1638-1686</term></index> de modo perficiendae <app type="Cfootnote"><lem type="main">Anatomiae.</lem><note type="lemma-abbrev">Anatomiae</note><note type="editorial"><bibl corresp="#bib_00101"><hi rendition="#k">N. Stensen</hi>, <hi rendition="#i">Observationes anatomicae</hi>, Leiden 1662.</bibl></note></app> Item petendum ab omnibus ut scribant de diaeta et morborum praecautionibus non tantum tractatibus, sed proponant sibi distinguantque summas hominum varietates quae sint v.g. 10. et cuilibet praescribant breve consilium quomodo optime vivere possit. NB.</p>
-				</div>
-			</div>
-		</body>
-	</text>
+					<p xml:id="Ch69.p6" rendition="#noindent">
+						<pb type="L"/>
+						<fw type="folNum">[9 v<hi rendition="#sup">o</hi>]
+						</fw> Mirifice mihi placet Henrici<index indexName="Namensregister">
+						<term>
+							<hi rendition="#g">Stubbe</hi>, Henry 1632-1676</term>
+					</index>
+					<app type="Cfootnote">
+						<lem type="main">Stubbii institutum.</lem>
+						<note type="lemma-abbrev">Stubbii institutum</note>
+						<note type="editorial">
+							<bibl corresp="#bib_00105">
+								<hi rendition="#k">H. Stubbe</hi>,								<hi rendition="#i">The plus ultra reduced to a non plus</hi>, London 1670.</bibl>
+						</note>
+					</app> Est velut <app type="Cfootnote">
+					<lem type="main">Billichius<index indexName="Namensregister">
+						<term>
+							<hi rendition="#g">Billich</hi>, Anton Günther 1598-1640</term>
+					</index>
+				</lem>
+				<note type="lemma-abbrev">Billichius</note>
+				<note type="editorial">Vermutlich <bibl corresp="#bib_00011">
+					<hi rendition="#k">A.G. Billich</hi>,					<hi rendition="#i">Thessalus in chymicis redivivus</hi>, Frankfurt a.M. 1643.</bibl>
+			</note>
+		</app> quidam, et <app type="Cfootnote">
+		<lem type="main">Claramontius<index indexName="Namensregister">
+			<term>
+				<hi rendition="#g">Chiaramonti</hi>, Scipione 1565-1652</term>
+		</index>
+	</lem>
+	<note type="lemma-abbrev">Claramontius</note>
+	<note type="editorial">Etwa <bibl corresp="#bib_00026">
+		<hi rendition="#k">S. Chiaramonti</hi>,		<hi rendition="#i">In Aristotelem De iride</hi>, Venedig 1668</bibl>;	<bibl corresp="#bib_01146">
+		<hi rendition="#k">Ders.</hi>,		<hi rendition="#i">Philosophia naturalis</hi>, Venedig 1652</bibl>;	<bibl corresp="#bib_01147">
+		<hi rendition="#k">Ders.</hi>,		<hi rendition="#i">De atra bile quoad mores attinet</hi>, Paris 1641.</bibl>
+</note>
+</app> et <app type="Cfootnote">
+<lem type="main">Lindanus<index indexName="Namensregister">
+<term>
+	<hi rendition="#g">Linden</hi>, Jan Antonides van der 1609-1664</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Lindanus</note>
+<note type="editorial">J.A. van der Linden hat zwei für die humoralpathologische Medizin wichtige Schriften herausgegeben: <bibl corresp="#bib_00060">
+<hi rendition="#k">Hippocrates</hi>,<hi rendition="#i">Opera Omnia</hi>, Leiden 1660, und <bibl corresp="#bib_00022">
+<hi rendition="#k">Celsus</hi>,<hi rendition="#i">De medicina</hi>, Leiden 1657.</bibl>
+</bibl>
+</note>
+</app> et <app type="Cfootnote">
+<lem type="main">Conringius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Conring</hi>, Hermann 1606-1681</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Conringius</note>
+<note type="editorial">
+<bibl corresp="#bib_00029">
+<hi rendition="#k">H. Conring</hi>,<hi rendition="#i">De hermetica</hi>, Helmstedt 1669.</bibl>
+</note>
+</app> qui nostri temporis jactatores ad veteres revocant. Si contumeliosa demas caetera praeclara sunt. Ego ita <app type="Bfootnote">
+<lem type="main">sentio: inquirendum</lem>
+<note type="lemma-abbrev">sentio:</note>
+<rdg wit="#L" n="1"> quaerendum </rdg>
+<rdg wit="#L" n="2"> inquirendum <hi rendition="#i">L</hi>
+</rdg>
+</app> esse, quasi nihil ante nos inventum esset; concludendum, <app type="Bfootnote">
+<lem type="main">definiendum, quasi omnia veteribus</lem>
+<note type="lemma-abbrev">definiendum,</note>
+<rdg wit="#L" n="1"> jactandum </rdg>
+<rdg wit="#L" n="2"> quasi omnia veteribus <hi rendition="#i">L</hi>
+</rdg>
+</app> constitissent, quamdiu non effecimus, ut usum ipso medico fructum inventorum ostendimus. Sed hoc non fiet etsi mille inventis novis productis, antequam Respublica manum admoliatur, et ordinem quendam methodum, applicandi rationem et communitionem experimentorum constituat. Quid prodest detegi aliquid quod vix ad millesimum quemque pervenit et forte ante fructum rursus obliteratur. Quam multa praeclara tum in libris ante nos, tum in memoria schedisque medicorum nostri temporis, imo et vulgi sermonibus sunt, quae si collecta in unum, digesta in ordinem, et vera ratiocinandi atque inducendi <pb type="VIII_2" n="647"/>
+arte adhibita essent in <app type="Bfootnote">
+<lem type="main">usum essemus</lem>
+<note type="lemma-abbrev">usum</note>
+<rdg wit="#L" n="1"> possemus de </rdg>
+<rdg wit="#L" n="2"> essemus <hi rendition="#i">L</hi>
+</rdg>
+</app> paulo propius perfectioni medicinae, certae, vitam multorum proferremus. Neque enim dubitandum est multos homines facile negotio servari posse quales ego omnes esse arbitror, qui febri, qui peste, qui hydrope, qui calculo, qui phthisi, qui vitio aliquo humorum moriuntur. Nam in quibus ruptum est aliquid, aut quibus viscera vivendi tractu velut detrita <app type="Bfootnote">
+<lem type="main">sunt, eorum ratio</lem>
+<note type="lemma-abbrev">sunt,</note>
+<rdg wit="#L" n="1"> in quibus </rdg>
+<rdg wit="#L" n="2"> eorum ratio <hi rendition="#i">L</hi>
+</rdg>
+</app> alia est. Denique putem brevi temporis spatio per medicinam effici posse, ut homines fere non nisi morte naturali, aut saltem infortuniis inevitabilibus (qualia sunt vulnera letalia, lapsus, rupturae viscerum aliaque id genus) moriantur. Quod si fiat, non ideo peius res humanae habebunt dum multae sint incultae terrae, habitabiles tamen, ut non debeamus de hominum multitudine
+						conqueri. Quid prohibet aliquando hominibus omnibus a juventute certas vivendi regulas praescriptas esse, quas profecto tam religiose servarent, <pb type="L"/>
+<fw type="folNum">[9 r<hi rendition="#sup">o</hi>]
+</fw> quam cibi tempore, et preces matutinas atque ante coenam. Possunt accedere Ecclesiae praecepta, possunt infantes a parentibus institui certa proscripta forma. Possunt ipsae scholae publicae emendari, ut parentes distracti ea cura liberentur. Ego caetera omnia nullius pretii habeo, si comparentur medicinae tum corporum tum animorum, id est curae sanitatis et justitiae seu pietatis. Caetera inventa mechanica quibus astronomia, geogra<formula xml:id="Ch69.p6.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>ϕ</m:mi>
+</m:math>
+</formula>ia, res nautica, statica, Belopoeetica, agricultura, metallica, botanica excoluntur, quatenus his non inserviunt parvi facio. Moralia et medicinam haec sunt quae unice aestimari debent. Quare Microscopia longe magis quam Telescopia aestimo, et si quis morbi cujuscunque certam exploratamque curationem invenerit, eum ego majoris faciendum arbitror, quam si quadraturam circuli invenisset. Alia res est motus perennis, nam qui hunc invenit is quantum ad usum mechanicum totidem nova flumina novosque homines vel animalia saltem produxisse in effectu dicendus est, quia ita parci laboribus, et homines alio vertere curas possunt. Nauticae finis <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">verus</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> est mea sententia detegere et colere novas terras, et earum homines ad cultum vitae veramque sapientiam traducere. Finis Astronomiae mea sententia est ut caeterarum curiosarum scientiarum omnium admiratio harmoniae rerum, seu DEI. Sed Astronomiae finis peculiaris est, investigare, an non possint aliquae rationes inveniri circa originemque finem connexionemque mundi. Artis militaris finis est tum defendere sese, tum vero posse cogere populos barbaros ad leges meliores, ubi omnis crudelitas abesse debet. Caeterae artes diriguntur ad voluptatem et commoda vitae.</p>
+<p xml:id="Ch69.p7">Admonendi omnes medici ut quisque suam sententiam dicat de modo perficiendae medicinae, inprimis universitates et collegia, tum qui volent, particulares: inserant exemplis observata sua; quanto magis illustrabunt praemia constituentur meliora afferentibus. <anchor xml:id="_003_01_03_009_z1"/>
+<pb type="VIII_2" n="648"/>
+Logica quasi Medica scribenda, ut habeamus Logicas juridicas <app type="Bfootnote">
+<lem type="main">interrogatoria ut</lem>
+<note type="lemma-abbrev">interrogatoria</note>
+<rdg wit="#L" n="1"> seu dire </rdg>
+<rdg wit="#L" n="2"> ut <hi rendition="#i">L</hi>
+</rdg>
+</app> juridica, directiones medicas.<anchor xml:id="_003_01_03_009_z2"/>
+ Adhibendi libri nonnulli qui de talibus jam scripsere, ut Claudinus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Claudini</hi>, Giulio Cesare ca. 1550-1618</term>
+</index>
+<hi rendition="#i">de ingressu ad</hi>
+<app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i">infirmos</hi>
+</lem>
+<note type="editorial">
+<bibl corresp="#bib_00027">
+<hi rendition="#k">G.C. Claudini</hi>,<hi rendition="#i">De ingressu ad infirmos</hi>, Bologna 1612.</bibl>
+</note>
+</app>. Colligendum ex omnibus medicis, quicquid huc pertinet, utilissimus ad eam rem <app type="Cfootnote">
+<lem type="main">Sachsius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Sachs von Löwenheim</hi>, Philipp Jacob 1627-1672</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Sachsius</note>
+<note type="editorial">P.J. Sachs von Löwenheim gründete als Stadtarzt in Breslau 1670 die <bibl corresp="#bib_00001">
+<hi rendition="#i">Miscellanea curiosa medico-physica Academiae naturae curiosorum sive Ephemeridum medico-physicarum Germanicarum curiosarum.</hi>
+</bibl>
+</note>
+</app> et similes. Stenonis<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Stensen</hi>, Niels 1638-1686</term>
+</index> de modo perficiendae <app type="Cfootnote">
+<lem type="main">Anatomiae.</lem>
+<note type="lemma-abbrev">Anatomiae</note>
+<note type="editorial">
+<bibl corresp="#bib_00101">
+<hi rendition="#k">N. Stensen</hi>,<hi rendition="#i">Observationes anatomicae</hi>, Leiden 1662.</bibl>
+</note>
+</app> Item petendum ab omnibus ut scribant de diaeta et morborum praecautionibus non tantum tractatibus, sed proponant sibi distinguantque summas hominum varietates quae sint v.g. 10. et cuilibet praescribant breve consilium quomodo optime vivere possit. NB.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

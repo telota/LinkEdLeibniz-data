@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-014-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-014-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -6,38 +7,47 @@
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke,
 					Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Digitale Konzeption und
-							Projektbegleitung</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-						Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-					</resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Martina</forename>
-						<surname>Gödel</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-							VIII</note>
-					</resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Sebastian W.</forename>
-						<surname>Stork</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-							Berlin</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
@@ -62,7 +72,10 @@
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date>
 						<date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=193</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+							<idno type="page">#page=193</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII:
@@ -773,17 +786,22 @@
 				<head>14. DE ACCELERATIONE</head>
 				<head>[September 1672 – März 1673]</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
 						<listWit>
-							<witness><msDesc>
+							<witness>
+								<msDesc>
 									<msIdentifier>
 										<repository>Gottfried Wilhelm Leibniz Bibliothek
 											Hannover</repository>
 										<idno type="Signatur"/>
 									</msIdentifier>
 									<msContents>
-										<summary><p>Aufzeichnung: LH XXXVII 5 Bl. 130. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 130 r<hi rendition="#sup">o</hi>. Bl. 130 v<hi rendition="#sup">o</hi> leer.</p><p>Cc 2, Nr.
-												976</p></summary>
+										<summary>
+											<p>Aufzeichnung: LH XXXVII 5 Bl. 130. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 130 r<hi rendition="#sup">o</hi>. Bl. 130 v<hi rendition="#sup">o</hi> leer.</p>
+											<p>Cc 2, Nr.
+												976</p>
+										</summary>
 									</msContents>
 									<physDesc>
 										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -791,761 +809,848 @@
 									<history>
 										<origin/>
 									</history>
-								</msDesc></witness>
-						</listWit></p>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="contents">
-					<p><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Die
+					<p>
+						<hi rendition="#smaller">
+							<hi rendition="#b">Datierungsgründe:</hi> Die
 							inhaltliche Verwandtschaft mit dem Stück N. 15 lässt einen gemeinsamen
 							Entstehungszeitraum vermuten, der hier für die Datierung übernommen
-							wird.</hi></p>
+							wird.</hi>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch14.p1" rendition="#noindent"><pb type="L"/><fw type="folNum">[130 r<hi rendition="#sup">o</hi>]</fw></p>
+					<p xml:id="Ch14.p1" rendition="#noindent">
+						<pb type="L"/>
+						<fw type="folNum">[130 r<hi rendition="#sup">o</hi>]
+						</fw>
+					</p>
 					<figure rendition="#inline-margin-right" xml:id="Ch14.fig1_1">
 						<graphic url="./images/LH037,05_130r-d.svg" width="169.1118pt" xml:id="Ch14.g1"/>
-						<head xml:id="Ch14.fig1_2" rendition="#c">[<hi rendition="#i">Fig.
-							1</hi>]</head>
+						<head xml:id="Ch14.fig1_2" rendition="#c">[							<hi rendition="#i">Fig.
+							1</hi>]
+						</head>
 					</figure>
-					<p xml:id="Ch14.p2" rendition="#noindent"><formula xml:id="Ch14.p2.m1">
+					<p xml:id="Ch14.p2" rendition="#noindent">
+						<formula xml:id="Ch14.p2.m1">
 							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 								<m:mi>a</m:mi>
 							</m:math>
 						</formula> = tempus <app type="Bfootnote">
-							<lem type="main">quo initium spatii</lem>
-							<note type="lemma-abbrev">quo</note>
-							<rdg wit="#L" n="1"> primum spatium </rdg>
-							<rdg wit="#L" n="2"> initium spatii <hi rendition="#i">L</hi></rdg>
-						</app>
-						percurritur.<!--  \hack{\newline} 
+						<lem type="main">quo initium spatii</lem>
+						<note type="lemma-abbrev">quo</note>
+						<rdg wit="#L" n="1"> primum spatium </rdg>
+						<rdg wit="#L" n="2"> initium spatii <hi rendition="#i">L</hi>
+						</rdg>
+					</app>
+						percurritur.					<!--  \hack{\newline} 
      \hackfor{\par\noindent}--></p>
-					<p xml:id="Ch14.p3" rendition="#noindent"><formula xml:id="Ch14.p3.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+				<p xml:id="Ch14.p3" rendition="#noindent">
+					<formula xml:id="Ch14.p3.m1">
+						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+							<m:mrow>
+								<m:mi>b</m:mi>
+								<m:mo>.</m:mo>
+							</m:mrow>
+						</m:math>
+					</formula> initium
+						spatii.					<!--  \hack{\newline} 
+     \hackfor{\par\noindent}--></p>
+				<p xml:id="Ch14.p4" rendition="#noindent">
+					<formula xml:id="Ch14.p4.m1">
+						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+							<m:mrow>
+								<m:mi>γ</m:mi>
+								<m:mo>.</m:mo>
+							</m:mrow>
+						</m:math>
+					</formula> ratio spatii ad initium
+						spatii.					<!--  \hack{\newline} 
+     \hackfor{\par\noindent}--></p>
+				<p xml:id="Ch14.p5" rendition="#noindent">
+					<formula xml:id="Ch14.p5.m1">
+						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+							<m:mrow>
 								<m:mrow>
 									<m:mi>b</m:mi>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> initium
-						spatii.<!--  \hack{\newline} 
-     \hackfor{\par\noindent}--></p>
-					<p xml:id="Ch14.p4" rendition="#noindent"><formula xml:id="Ch14.p4.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
+									<m:mo>⁢</m:mo>
 									<m:mi>γ</m:mi>
-									<m:mo>.</m:mo>
 								</m:mrow>
-							</m:math>
-						</formula> ratio spatii ad initium
-						spatii.<!--  \hack{\newline} 
+								<m:mo>.</m:mo>
+							</m:mrow>
+						</m:math>
+					</formula>
+						spatium.					<!--  \hack{\newline} 
      \hackfor{\par\noindent}--></p>
-					<p xml:id="Ch14.p5" rendition="#noindent"><formula xml:id="Ch14.p5.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>b</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>γ</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula>
-						spatium.<!--  \hack{\newline} 
-     \hackfor{\par\noindent}--></p>
-					<p xml:id="Ch14.p6" rendition="#noindent"><formula xml:id="Ch14.p6.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mi>a</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mi>b</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mi>γ</m:mi>
-											</m:mrow>
-											<m:mn>2</m:mn>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> tempus quo spatium <app type="Bfootnote">
-							<lem type="main">percurritur. <!--  \hack{\newlineInitium} --></lem>
-							<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  11f.  -->percurritur.</note>
-							<rdg wit="#L" n="1"> <formula xml:id="Ch14.p6.m2">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mi>θ</m:mi>
-									</m:math>
-								</formula> ratio </rdg>
-							<rdg wit="#L" n="2"> Initium <hi rendition="#i">L</hi></rdg>
-						</app><!--  \hackfor{\parInitium} --></p>
-					<p xml:id="Ch14.p7">Initium temporis idem est cum tempore quo initium spatii
-							<app type="Bfootnote">
-							<lem type="main">percurritur <formula xml:id="Ch14.p7.m1">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+				<p xml:id="Ch14.p6" rendition="#noindent">
+					<formula xml:id="Ch14.p6.m1">
+						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+							<m:mrow>
+								<m:mstyle displaystyle="true">
+									<m:mfrac>
 										<m:mrow>
 											<m:mi>a</m:mi>
-											<m:mo>.</m:mo>
+											<m:mo>⁢</m:mo>
+											<m:mi>b</m:mi>
+											<m:mo>⁢</m:mo>
+											<m:mi>γ</m:mi>
 										</m:mrow>
-									</m:math>
-								</formula> Ratio</lem>
-							<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    13  -->percurritur
-									<formula xml:id="Ch14.p7.m2">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mrow>
-											<m:mi>a</m:mi>
-											<m:mo>.</m:mo>
-										</m:mrow>
-									</m:math>
-								</formula></note>
-							<rdg wit="#L" n="1"> <formula xml:id="Ch14.p7.m3">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mi>θ</m:mi>
-									</m:math>
-								</formula>
-							</rdg>
-							<rdg wit="#L" n="2"> Ratio <hi rendition="#i">L</hi></rdg>
-						</app> temporis totius ad initium temporis <formula xml:id="Ch14.p7.m4">
+										<m:mn>2</m:mn>
+									</m:mfrac>
+								</m:mstyle>
+								<m:mo>.</m:mo>
+							</m:mrow>
+						</m:math>
+					</formula> tempus quo spatium <app type="Bfootnote">
+					<lem type="main">percurritur. 						<!--  \hack{\newlineInitium} --></lem>
+					<note type="lemma-abbrev">						<!--automatische Nummerierung unterdrückt-->						<!--Unterdrückt:  11f.  -->percurritur.</note>
+					<rdg wit="#L" n="1">
+						<formula xml:id="Ch14.p6.m2">
 							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi/>
-									<m:mo>=</m:mo>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mi>b</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mi>γ</m:mi>
-											</m:mrow>
-											<m:mn>2</m:mn>
-										</m:mfrac>
-									</m:mstyle>
-								</m:mrow>
+								<m:mi>θ</m:mi>
 							</m:math>
-						</formula>.<!--  \hack{\newline} 
+						</formula> ratio </rdg>
+					<rdg wit="#L" n="2"> Initium <hi rendition="#i">L</hi>
+					</rdg>
+				</app>				<!--  \hackfor{\parInitium} --></p>
+			<p xml:id="Ch14.p7">Initium temporis idem est cum tempore quo initium spatii
+				<app type="Bfootnote">
+					<lem type="main">percurritur <formula xml:id="Ch14.p7.m1">
+						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+							<m:mrow>
+								<m:mi>a</m:mi>
+								<m:mo>.</m:mo>
+							</m:mrow>
+						</m:math>
+					</formula> Ratio</lem>
+				<note type="lemma-abbrev">					<!--automatische Nummerierung unterdrückt-->					<!--Unterdrückt:    13  -->percurritur
+					<formula xml:id="Ch14.p7.m2">
+						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+							<m:mrow>
+								<m:mi>a</m:mi>
+								<m:mo>.</m:mo>
+							</m:mrow>
+						</m:math>
+					</formula>
+				</note>
+				<rdg wit="#L" n="1">
+					<formula xml:id="Ch14.p7.m3">
+						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+							<m:mi>θ</m:mi>
+						</m:math>
+					</formula>
+				</rdg>
+				<rdg wit="#L" n="2"> Ratio <hi rendition="#i">L</hi>
+				</rdg>
+			</app> temporis totius ad initium temporis <formula xml:id="Ch14.p7.m4">
+			<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+				<m:mrow>
+					<m:mi/>
+					<m:mo>=</m:mo>
+					<m:mstyle displaystyle="true">
+						<m:mfrac>
+							<m:mrow>
+								<m:mi>b</m:mi>
+								<m:mo>⁢</m:mo>
+								<m:mi>γ</m:mi>
+							</m:mrow>
+							<m:mn>2</m:mn>
+						</m:mfrac>
+					</m:mstyle>
+				</m:mrow>
+			</m:math>
+		</formula>.		<!--  \hack{\newline} 
      \hackfor{\par}--></p>
-					<p xml:id="Ch14.p8" rendition="#noindent">Si grave<index indexName="Sachverzeichnis">
-							<term>grave</term>
-						</index>
-						<app type="Bfootnote">
-							<lem type="main">descendat in tempore</lem>
-							<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  15  -->descendat
+	<p xml:id="Ch14.p8" rendition="#noindent">Si grave<index indexName="Sachverzeichnis">
+		<term>grave</term>
+	</index>
+	<app type="Bfootnote">
+		<lem type="main">descendat in tempore</lem>
+		<note type="lemma-abbrev">			<!--automatische Nummerierung unterdrückt-->			<!--Unterdrückt:  15  -->descendat
 								in</note>
-							<rdg wit="#L" n="1"> linea </rdg>
-							<rdg wit="#L" n="2"> tempore <hi rendition="#i">L</hi></rdg>
-						</app>
-						<formula xml:id="Ch14.p8.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>a</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> secto in quotcunque partes aequales, ita ut, quolibet momento
+		<rdg wit="#L" n="1"> linea </rdg>
+		<rdg wit="#L" n="2"> tempore <hi rendition="#i">L</hi>
+		</rdg>
+	</app>
+	<formula xml:id="Ch14.p8.m1">
+		<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+			<m:mrow>
+				<m:mi>a</m:mi>
+				<m:mo>⁢</m:mo>
+				<m:mi>b</m:mi>
+			</m:mrow>
+		</m:math>
+	</formula> secto in quotcunque partes aequales, ita ut, quolibet momento
 						tantum impetus<index indexName="Sachverzeichnis">
-							<term>impetus</term>
-						</index>
-						<app type="Bfootnote">
-							<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">novi</add></lem>
-							<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app> acquirere intelligatur, <app type="Bfootnote">
-							<lem type="main">quantum primo motus momento</lem>
-							<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    17f.  -->quantum</note>
-							<rdg wit="#L" n="1"> initio </rdg>
-							<rdg wit="#L" n="2"> primo motus momento <hi rendition="#i">L</hi></rdg>
-						</app> habebat, <app type="Bfootnote">
-							<lem type="main">erunt </lem>
-							<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    18f.  -->erunt</note>
-							<rdg wit="#L" n="1"> quolibet momento </rdg>
-							<rdg wit="#L" n="2"> in quolibet <app>
-									<rdg wit="#L" n="a"> lineae </rdg>
-									<rdg wit="#L" n="b"> temporis <formula xml:id="Ch14.p8.m2">
-											<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-												<m:mrow>
-												<m:mi>a</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mi>b</m:mi>
-												</m:mrow>
-											</m:math>
-										</formula>
-										<app>
-											<rdg wit="#L" n="aa"> puncto </rdg>
-											<rdg wit="#L" n="bb"> momento <hi rendition="#i">L</hi></rdg>
-										</app></rdg>
-								</app></rdg>
-						</app> in quolibet<!--  \hack{\end{window}} --></p>
-					<p xml:id="Ch14.p9" rendition="#noindent">temporis <formula xml:id="Ch14.p9.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>a</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> momento<anchor xml:id="_37_05_130r_xy2"/> ut <formula xml:id="Ch14.p9.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>c</m:mi>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula>
-						<formula xml:id="Ch14.p9.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>d</m:mi>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula>
-						<formula xml:id="Ch14.p9.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>e</m:mi>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula>
-						<formula xml:id="Ch14.p9.m5">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>b</m:mi>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> impetus,<index indexName="Sachverzeichnis">
-							<term>impetus</term>
-						</index> ut altitudines, seu impetus <app type="Bfootnote">
-							<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">vel
+	<term>impetus</term>
+</index>
+<app type="Bfootnote">
+	<lem type="main">		<!--is-addition-app-with-lemma-->
+		<add resp="#L">novi</add>
+	</lem>
+	<note type="editorial">
+		<hi rendition="#i">erg. L</hi>
+	</note>
+</app> acquirere intelligatur, <app type="Bfootnote">
+<lem type="main">quantum primo motus momento</lem>
+<note type="lemma-abbrev">	<!--automatische Nummerierung unterdrückt-->	<!--Unterdrückt:    17f.  -->quantum</note>
+<rdg wit="#L" n="1"> initio </rdg>
+<rdg wit="#L" n="2"> primo motus momento <hi rendition="#i">L</hi>
+</rdg>
+</app> habebat, <app type="Bfootnote">
+<lem type="main">erunt </lem>
+<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    18f.  -->erunt</note>
+<rdg wit="#L" n="1"> quolibet momento </rdg>
+<rdg wit="#L" n="2"> in quolibet <app>
+<rdg wit="#L" n="a"> lineae </rdg>
+<rdg wit="#L" n="b"> temporis <formula xml:id="Ch14.p8.m2">
+	<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+		<m:mrow>
+			<m:mi>a</m:mi>
+			<m:mo>⁢</m:mo>
+			<m:mi>b</m:mi>
+		</m:mrow>
+	</m:math>
+</formula>
+<app>
+	<rdg wit="#L" n="aa"> puncto </rdg>
+	<rdg wit="#L" n="bb"> momento <hi rendition="#i">L</hi>
+	</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app> in quolibet<!--  \hack{\end{window}} --></p>
+<p xml:id="Ch14.p9" rendition="#noindent">temporis <formula xml:id="Ch14.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> momento<anchor xml:id="_37_05_130r_xy2"/>
+ ut <formula xml:id="Ch14.p9.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p9.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p9.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>e</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p9.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> impetus,<index indexName="Sachverzeichnis">
+<term>impetus</term>
+</index> ut altitudines, seu impetus <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">vel
 										percussio,<index indexName="Sachverzeichnis">
-										<term>percussio</term>
-									</index></add></lem>
-							<note type="lemma-abbrev">vel percussio</note>
-							<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app> in puncto <formula xml:id="Ch14.p9.m6">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>c</m:mi>
-							</m:math>
-						</formula> ad impetum vel percussionem in puncto <formula xml:id="Ch14.p9.m7">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>d</m:mi>
-							</m:math>
-						</formula> erit ut <formula xml:id="Ch14.p9.m8">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> ad <formula xml:id="Ch14.p9.m9">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>D</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> Ergo impetus poterunt <app type="Bfootnote">
-							<lem type="main">exprimi rectis</lem>
-							<note type="lemma-abbrev">exprimi</note>
-							<rdg wit="#L" n="1"> lineis </rdg>
-							<rdg wit="#L" n="2"> rectis <hi rendition="#i">L</hi></rdg>
-						</app> parallelis ad altitudines proportionalibus <formula xml:id="Ch14.p9.m10">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>c</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>f</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>. <formula xml:id="Ch14.p9.m11">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>d</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>g</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>. <formula xml:id="Ch14.p9.m12">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>e</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>g</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>. <formula xml:id="Ch14.p9.m13">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>b</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>e</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>. aliisque intermediis, omnium <app type="Bfootnote">
-							<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">impetuum</add></lem>
-							<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app> aggregatum durante descensu ex <formula xml:id="Ch14.p9.m14">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-						</formula> in <formula xml:id="Ch14.p9.m15">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>C</m:mi>
-							</m:math>
-						</formula> comparari poterit Triangulo <formula xml:id="Ch14.p9.m16">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>F</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> et ex <formula xml:id="Ch14.p9.m17">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-						</formula> in <formula xml:id="Ch14.p9.m18">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>B</m:mi>
-							</m:math>
-						</formula> Triangulo <formula xml:id="Ch14.p9.m19">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>B</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>β</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> Cum autem velocitates sunt aggregata <pb type="VIII_2" n="146"/>impetuum ut motus conatuum, (: est enim <index indexName="Sachverzeichnis">
-							<term>velocitas</term>
-						</index>velocitas, <index indexName="Sachverzeichnis">
-							<term>quantitas motus</term>
-						</index>quantitas <app type="Bfootnote">
-							<lem type="main">motus, ut impetus<index indexName="Sachverzeichnis">
-									<term>impetus</term>
-								</index> quantitas conatus<index indexName="Sachverzeichnis">
-									<term>quantitas conatus</term>
-								</index></lem>
-							<note type="lemma-abbrev">motus, ut</note>
-							<rdg wit="#L" n="1"> aestimatio conatus </rdg>
-							<rdg wit="#L" n="2"> quantitas conatus <hi rendition="#i">L</hi></rdg>
-						</app> :) erunt velocitates, et per consequens spatia decursa temporibus,
+<term>percussio</term>
+</index>
+</add>
+</lem>
+<note type="lemma-abbrev">vel percussio</note>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> in puncto <formula xml:id="Ch14.p9.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> ad impetum vel percussionem in puncto <formula xml:id="Ch14.p9.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>d</m:mi>
+</m:math>
+</formula> erit ut <formula xml:id="Ch14.p9.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula> ad <formula xml:id="Ch14.p9.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Ergo impetus poterunt <app type="Bfootnote">
+<lem type="main">exprimi rectis</lem>
+<note type="lemma-abbrev">exprimi</note>
+<rdg wit="#L" n="1"> lineis </rdg>
+<rdg wit="#L" n="2"> rectis <hi rendition="#i">L</hi>
+</rdg>
+</app> parallelis ad altitudines proportionalibus <formula xml:id="Ch14.p9.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math>
+</formula>.<formula xml:id="Ch14.p9.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>g</m:mi>
+</m:mrow>
+</m:math>
+</formula>.<formula xml:id="Ch14.p9.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>e</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>g</m:mi>
+</m:mrow>
+</m:math>
+</formula>.<formula xml:id="Ch14.p9.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:math>
+</formula>. aliisque intermediis, omnium <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">impetuum</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> aggregatum durante descensu ex <formula xml:id="Ch14.p9.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> in <formula xml:id="Ch14.p9.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> comparari poterit Triangulo <formula xml:id="Ch14.p9.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula> et ex <formula xml:id="Ch14.p9.m17">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> in <formula xml:id="Ch14.p9.m18">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> Triangulo <formula xml:id="Ch14.p9.m19">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Cum autem velocitates sunt aggregata <pb type="VIII_2" n="146"/>
+impetuum ut motus conatuum, (: est enim <index indexName="Sachverzeichnis">
+<term>velocitas</term>
+</index>velocitas, <index indexName="Sachverzeichnis">
+<term>quantitas motus</term>
+</index>quantitas <app type="Bfootnote">
+<lem type="main">motus, ut impetus<index indexName="Sachverzeichnis">
+<term>impetus</term>
+</index> quantitas conatus<index indexName="Sachverzeichnis">
+<term>quantitas conatus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">motus, ut</note>
+<rdg wit="#L" n="1"> aestimatio conatus </rdg>
+<rdg wit="#L" n="2"> quantitas conatus <hi rendition="#i">L</hi>
+</rdg>
+</app> :) erunt velocitates, et per consequens spatia decursa temporibus,
 						inde ab initio motus assumtis, ut <formula xml:id="Ch14.p9.m20">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> vel <formula xml:id="Ch14.p9.m21">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>D</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> ut temporum <app type="Bfootnote">
-							<lem type="main">quadrata. Et spatia</lem>
-							<note type="lemma-abbrev">quadrata.</note>
-							<rdg wit="#L" n="1"> Et tempo </rdg>
-							<rdg wit="#L" n="2"> Unde si spatia </rdg>
-							<rdg wit="#L" n="3"> Et spatia <hi rendition="#i">L</hi></rdg>
-						</app> temporibus aequalibus decursa, crescent ut numeri <app type="Bfootnote">
-							<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">impares</add></lem>
-							<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app> deinceps ab unitate. Ergo si tempore <formula xml:id="Ch14.p9.m22">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> percurratur pes unus tempore <formula xml:id="Ch14.p9.m23">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>C</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>D</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> percurrentur 3. tempore <formula xml:id="Ch14.p9.m24">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>D</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>E</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> 5. tempore <formula xml:id="Ch14.p9.m25">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>E</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>B</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> 7. etc. Et si tempore <formula xml:id="Ch14.p9.m26">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> percurretur pes unus, tempore <formula xml:id="Ch14.p9.m27">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>D</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>
-						<app type="Bfootnote">
-							<lem type="main">percurrentur 4. tempore</lem>
-							<note type="lemma-abbrev">percurrentur 4.</note>
-							<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>et</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi>
-								|</note> tempore <hi rendition="#i">L</hi></rdg>
-						</app>
-						<formula xml:id="Ch14.p9.m28">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>E</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> 9. tempore <formula xml:id="Ch14.p9.m29">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>B</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula> 16.</p>
-					<p xml:id="Ch14.p10"><app type="Bfootnote">
-							<lem type="main">Hactenus tempore metiti sumus accelerationem,<index indexName="Sachverzeichnis">
-									<term>acceleratio</term>
-								</index></lem>
-							<note type="lemma-abbrev">Hactenus</note>
-							<rdg wit="#L" n="1"> rem a tem </rdg>
-							<rdg wit="#L" n="2"> tempore <seg type="apparat-ellipsis"/>
-								accelerationem, <hi rendition="#i">L</hi></rdg>
-						</app> nunc videamus, an et spatio eam metiri liceat, ut veteribus, et
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula> vel <formula xml:id="Ch14.p9.m21">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> ut temporum <app type="Bfootnote">
+<lem type="main">quadrata. Et spatia</lem>
+<note type="lemma-abbrev">quadrata.</note>
+<rdg wit="#L" n="1"> Et tempo </rdg>
+<rdg wit="#L" n="2"> Unde si spatia </rdg>
+<rdg wit="#L" n="3"> Et spatia <hi rendition="#i">L</hi>
+</rdg>
+</app> temporibus aequalibus decursa, crescent ut numeri <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">impares</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> deinceps ab unitate. Ergo si tempore <formula xml:id="Ch14.p9.m22">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula> percurratur pes unus tempore <formula xml:id="Ch14.p9.m23">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> percurrentur 3. tempore <formula xml:id="Ch14.p9.m24">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> 5. tempore <formula xml:id="Ch14.p9.m25">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>E</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> 7. etc. Et si tempore <formula xml:id="Ch14.p9.m26">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula> percurretur pes unus, tempore <formula xml:id="Ch14.p9.m27">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">percurrentur 4. tempore</lem>
+<note type="lemma-abbrev">percurrentur 4.</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>et</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi>
+								|
+</note> tempore <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch14.p9.m28">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> 9. tempore <formula xml:id="Ch14.p9.m29">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> 16.</p>
+<p xml:id="Ch14.p10">
+<app type="Bfootnote">
+<lem type="main">Hactenus tempore metiti sumus accelerationem,<index indexName="Sachverzeichnis">
+<term>acceleratio</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Hactenus</note>
+<rdg wit="#L" n="1"> rem a tem </rdg>
+<rdg wit="#L" n="2"> tempore <seg type="apparat-ellipsis"/>
+								accelerationem, <hi rendition="#i">L</hi>
+</rdg>
+</app> nunc videamus, an et spatio eam metiri liceat, ut veteribus, et
 						nostro tempore philosophis quibusdam placuit. Esto spatium percurrendum
-							<formula xml:id="Ch14.p10.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>α</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>β</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>, in <app type="Bfootnote">
-							<lem type="main">quo motus gravis<index indexName="Sachverzeichnis">
-									<term>grave</term>
-								</index></lem>
-							<note type="lemma-abbrev">quo</note>
-							<rdg wit="#L" n="1"> grave </rdg>
-							<rdg wit="#L" n="2"> motus gravis <hi rendition="#i">L</hi></rdg>
-						</app> descendentis, ita acceleretur si fieri potest, ut in quolibet novo
+<formula xml:id="Ch14.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>α</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+</m:math>
+</formula>, in <app type="Bfootnote">
+<lem type="main">quo motus gravis<index indexName="Sachverzeichnis">
+<term>grave</term>
+</index>
+</lem>
+<note type="lemma-abbrev">quo</note>
+<rdg wit="#L" n="1"> grave </rdg>
+<rdg wit="#L" n="2"> motus gravis <hi rendition="#i">L</hi>
+</rdg>
+</app> descendentis, ita acceleretur si fieri potest, ut in quolibet novo
 						spatii puncto <app type="Bfootnote">
-							<lem type="main"><formula xml:id="Ch14.p10.m2">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mrow>
-											<m:mi>κ</m:mi>
-											<m:mo>.</m:mo>
-										</m:mrow>
-									</m:math>
-								</formula>
-								<formula xml:id="Ch14.p10.m3">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mrow>
-											<m:mi>δ</m:mi>
-											<m:mo>.</m:mo>
-										</m:mrow>
-									</m:math>
-								</formula>
-								<formula xml:id="Ch14.p10.m4">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mrow>
-											<m:mi>ϵ</m:mi>
-											<m:mo>.</m:mo>
-										</m:mrow>
-									</m:math>
-								</formula>
-								<formula xml:id="Ch14.p10.m5">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mi>β</m:mi>
-									</m:math>
-								</formula> impetum</lem>
-							<note type="lemma-abbrev"><formula xml:id="Ch14.p10.m6">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mrow>
-											<m:mi>κ</m:mi>
-											<m:mo>.</m:mo>
-										</m:mrow>
-									</m:math>
-								</formula>
-								<formula xml:id="Ch14.p10.m7">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mrow>
-											<m:mi>δ</m:mi>
-											<m:mo>.</m:mo>
-										</m:mrow>
-									</m:math>
-								</formula>
-								<formula xml:id="Ch14.p10.m8">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mrow>
-											<m:mi>ϵ</m:mi>
-											<m:mo>.</m:mo>
-										</m:mrow>
-									</m:math>
-								</formula>
-								<formula xml:id="Ch14.p10.m9">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mi>β</m:mi>
-									</m:math>
-								</formula></note>
-							<rdg wit="#L" n="1"> momentum </rdg>
-							<rdg wit="#L" n="2"> impetum <hi rendition="#i">L</hi></rdg>
-						</app> acquirat primo parem. Quare ut <app type="Bfootnote">
-							<lem type="main">ante recta</lem>
-							<note type="lemma-abbrev">ante</note>
-							<rdg wit="#L" n="1"> linea </rdg>
-							<rdg wit="#L" n="2"> recta <hi rendition="#i">L</hi></rdg>
-						</app>
-						<formula xml:id="Ch14.p10.m10">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>
-						<app type="Bfootnote">
-							<lem type="main">tempora, rectis</lem>
-							<note type="lemma-abbrev">tempora,</note>
-							<rdg wit="#L" n="1"> lineis </rdg>
-							<rdg wit="#L" n="2"> rectis <hi rendition="#i">L</hi></rdg>
-						</app>
-						<formula xml:id="Ch14.p10.m11">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>C</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>F</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula>
-						<formula xml:id="Ch14.p10.m12">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>D</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>G</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula>
-						<formula xml:id="Ch14.p10.m13">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>E</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>H</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-						</formula>
-						<formula xml:id="Ch14.p10.m14">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>B</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>β</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> etc. eorumque aggregatis spatia metiti sumus; ita contra cum
+<lem type="main">
+<formula xml:id="Ch14.p10.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>κ</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p10.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>δ</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p10.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>ϵ</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p10.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>β</m:mi>
+</m:math>
+</formula> impetum</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch14.p10.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>κ</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p10.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>δ</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p10.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>ϵ</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p10.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>β</m:mi>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> momentum </rdg>
+<rdg wit="#L" n="2"> impetum <hi rendition="#i">L</hi>
+</rdg>
+</app> acquirat primo parem. Quare ut <app type="Bfootnote">
+<lem type="main">ante recta</lem>
+<note type="lemma-abbrev">ante</note>
+<rdg wit="#L" n="1"> linea </rdg>
+<rdg wit="#L" n="2"> recta <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch14.p10.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">tempora, rectis</lem>
+<note type="lemma-abbrev">tempora,</note>
+<rdg wit="#L" n="1"> lineis </rdg>
+<rdg wit="#L" n="2"> rectis <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch14.p10.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p10.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p10.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>E</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>H</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.p10.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+</m:math>
+</formula> etc. eorumque aggregatis spatia metiti sumus; ita contra cum
 						recta <formula xml:id="Ch14.p10.m15">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>α</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>β</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> nunc <app type="Bfootnote">
-							<lem type="main">spatium complectamur,</lem>
-							<note type="lemma-abbrev">spatium</note>
-							<rdg wit="#L" n="1"> metiamur, </rdg>
-							<rdg wit="#L" n="2"> complectamur, <hi rendition="#i">L</hi></rdg>
-						</app> rectis <formula xml:id="Ch14.p10.m16">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>α</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>. <formula xml:id="Ch14.p10.m17">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>C</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>κ</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> etc. et parallelis <app type="Bfootnote">
-							<lem type="main">tempora exprimemus.</lem>
-							<note type="lemma-abbrev">tempora</note>
-							<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del><add>seu impetus</add></del>
-								<note type="editorial"><hi rendition="#i">erg. u. gestr.</hi>
-									|</note> exprimemus <hi rendition="#i">L</hi></rdg>
-						</app> Cumque crescente impetu<index indexName="Sachverzeichnis">
-							<term>impetus</term>
-						</index> ut ante spatia creverunt, ita <app type="Bfootnote">
-							<lem type="main">nunc tempora decrescant, tempora</lem>
-							<note type="lemma-abbrev">nunc tempora</note>
-							<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del><add>vel impetus</add></del>
-								<note type="editorial"><hi rendition="#i">erg. u. gestr.</hi>
-									|</note> decrescant, </rdg>
-							<rdg wit="#L" n="1"> erit </rdg>
-							<rdg wit="#L" n="2"> hab </rdg>
-							<rdg wit="#L" n="3"> tempora <hi rendition="#i">L</hi></rdg>
-						</app> continebuntur Triangulo inverso <formula xml:id="Ch14.p10.m18">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>α</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>β</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>. Et tempora <app type="Bfootnote">
-							<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">quibus
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>α</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+</m:math>
+</formula> nunc <app type="Bfootnote">
+<lem type="main">spatium complectamur,</lem>
+<note type="lemma-abbrev">spatium</note>
+<rdg wit="#L" n="1"> metiamur, </rdg>
+<rdg wit="#L" n="2"> complectamur, <hi rendition="#i">L</hi>
+</rdg>
+</app> rectis <formula xml:id="Ch14.p10.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>α</m:mi>
+</m:mrow>
+</m:math>
+</formula>.<formula xml:id="Ch14.p10.m17">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>κ</m:mi>
+</m:mrow>
+</m:math>
+</formula> etc. et parallelis <app type="Bfootnote">
+<lem type="main">tempora exprimemus.</lem>
+<note type="lemma-abbrev">tempora</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>
+<add>seu impetus</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u. gestr.</hi>
+									|
+</note> exprimemus <hi rendition="#i">L</hi>
+</rdg>
+</app> Cumque crescente impetu<index indexName="Sachverzeichnis">
+<term>impetus</term>
+</index> ut ante spatia creverunt, ita <app type="Bfootnote">
+<lem type="main">nunc tempora decrescant, tempora</lem>
+<note type="lemma-abbrev">nunc tempora</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>
+<add>vel impetus</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u. gestr.</hi>
+									|
+</note> decrescant, </rdg>
+<rdg wit="#L" n="1"> erit </rdg>
+<rdg wit="#L" n="2"> hab </rdg>
+<rdg wit="#L" n="3"> tempora <hi rendition="#i">L</hi>
+</rdg>
+</app> continebuntur Triangulo inverso <formula xml:id="Ch14.p10.m18">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>α</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+</m:math>
+</formula>. Et tempora <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">quibus
 									aequalia spatia percurruntur</add>
-							</lem>
-							<note type="lemma-abbrev">quibus <seg type="apparat-ellipsis"/>
+</lem>
+<note type="lemma-abbrev">quibus <seg type="apparat-ellipsis"/>
 								percurruntur</note>
-							<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app> nempe trapezia <formula xml:id="Ch14.p10.m19">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mtext>𝐴𝑓</m:mtext>
-									<m:mo>⁢</m:mo>
-									<m:mi>κ</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>α</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula>. <formula xml:id="Ch14.p10.m20">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mtext>𝑓𝑔</m:mtext>
-									<m:mo>⁢</m:mo>
-									<m:mi>δ</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>κ</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> etc. erunt ut numeri impares retrogradi versus unitatem. Et si
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> nempe trapezia <formula xml:id="Ch14.p10.m19">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext>𝐴𝑓</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>κ</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>α</m:mi>
+</m:mrow>
+</m:math>
+</formula>.<formula xml:id="Ch14.p10.m20">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext>𝑓𝑔</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>δ</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>κ</m:mi>
+</m:mrow>
+</m:math>
+</formula> etc. erunt ut numeri impares retrogradi versus unitatem. Et si
 						spatium <formula xml:id="Ch14.p10.m21">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>α</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>κ</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> decurretur tempore ut 7. spatium <formula xml:id="Ch14.p10.m22">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>κ</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>δ</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> decurretur tempore ut 5. spatium <formula xml:id="Ch14.p10.m23">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>δ</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>ϵ</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> tempore ut 3. spatium <formula xml:id="Ch14.p10.m24">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>ϵ</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>β</m:mi>
-								</m:mrow>
-							</m:math>
-						</formula> tempore ut 1.</p>
-					<p xml:id="Ch14.p11">Ex his apparet nullam esse rationem, <app type="Bfootnote">
-							<lem type="main">cur altera Hypothesium</lem>
-							<note type="lemma-abbrev">cur</note>
-							<rdg wit="#L" n="1"> alia Hypothesis </rdg>
-							<rdg wit="#L" n="2"> altera Hypothesium <hi rendition="#i">L</hi></rdg>
-						</app> alteri praeferri debeat, cum altera alterius inversa sit, modo
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>α</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>κ</m:mi>
+</m:mrow>
+</m:math>
+</formula> decurretur tempore ut 7. spatium <formula xml:id="Ch14.p10.m22">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>κ</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>δ</m:mi>
+</m:mrow>
+</m:math>
+</formula> decurretur tempore ut 5. spatium <formula xml:id="Ch14.p10.m23">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>δ</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>ϵ</m:mi>
+</m:mrow>
+</m:math>
+</formula> tempore ut 3. spatium <formula xml:id="Ch14.p10.m24">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>ϵ</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+</m:math>
+</formula> tempore ut 1.</p>
+<p xml:id="Ch14.p11">Ex his apparet nullam esse rationem, <app type="Bfootnote">
+<lem type="main">cur altera Hypothesium</lem>
+<note type="lemma-abbrev">cur</note>
+<rdg wit="#L" n="1"> alia Hypothesis </rdg>
+<rdg wit="#L" n="2"> altera Hypothesium <hi rendition="#i">L</hi>
+</rdg>
+</app> alteri praeferri debeat, cum altera alterius inversa sit, modo
 						tempora spatiis <app type="Bfootnote">
-							<lem type="main">substituantur: ergo</lem>
-							<note type="lemma-abbrev">substituantur:</note>
-							<rdg wit="#L" n="1"> illud tam </rdg>
-							<rdg wit="#L" n="2"> ergo <hi rendition="#i">L</hi></rdg>
-						</app> necesse est, aut neutram esse veram, aut coincidere utramque.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Im
-								Anschluss:</hi> Falsum.</note></p>
-				</div>
-			</div>
-		</body>
-	</text>
+<lem type="main">substituantur: ergo</lem>
+<note type="lemma-abbrev">substituantur:</note>
+<rdg wit="#L" n="1"> illud tam </rdg>
+<rdg wit="#L" n="2"> ergo <hi rendition="#i">L</hi>
+</rdg>
+</app> necesse est, aut neutram esse veram, aut coincidere utramque.<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Im
+								Anschluss:</hi> Falsum.</note>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

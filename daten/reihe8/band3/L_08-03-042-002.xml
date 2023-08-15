@@ -1,474 +1,517 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-042-002">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">Schedula De Decem Casibus Hugenianis</title>
-<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke,
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-042-002">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Schedula De Decem Casibus Hugenianis</title>
+                <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke,
 Metadaten und Text</title>
-<respStmt>
-<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Digitale Konzeption und
-Projektbegleitung</note>
-</resp>
-</respStmt>
-<respStmt>
-<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Martina</forename>
-<surname>Gödel</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-VIII</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Sebastian W.</forename>
-<surname>Stork</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-Berlin</note>
-</resp>
-</respStmt>
-</titleStmt>
-<publicationStmt>
-<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
-<date type="creation">2022</date>
-<availability>
-<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
-<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
-</licence>
-</availability>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-<analytic>
-<author>
-<persName ref="http://d-nb.info/gnd/118571249">
-<surname>Leibniz</surname>
-<forename>Gottfried Wilhelm</forename>
-</persName>
-</author>
-<title type="chapter" level="a" n="42"/>
-<title type="section" level="a" n="2">Schedula De Decem Casibus
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sebastian W. Stork</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+                <date type="creation">2022</date>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+                        <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118571249">
+                                <surname>Leibniz</surname>
+                                <forename>Gottfried Wilhelm</forename>
+                            </persName>
+                        </author>
+                        <title type="chapter" level="a" n="42"/>
+                        <title type="section" level="a" n="2">Schedula De Decem Casibus
 hugenianis</title>
-<date calendar="#gregorian" notBefore="1677-03" resp="#ed" cert="medium">[März – Mai 1677]</date>
-<date calendar="#gregorian" notAfter="1677-05" resp="#ed" cert="medium"/>
-<idno type="PDF">
-<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
-<idno type="page">#page=440</idno>
-</idno>
-</analytic>
-<monogr>
-<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+                        <date calendar="#gregorian" notBefore="1677-03" resp="#ed" cert="medium">[März – Mai 1677]</date>
+                        <date calendar="#gregorian" notAfter="1677-05" resp="#ed" cert="medium"/>
+                        <idno type="PDF">
+                            <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+                            <idno type="page">#page=440</idno>
+                        </idno>
+                    </analytic>
+                    <monogr>
+                        <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
 Naturwissenschaftliche, medizinische und technische Schriften</title>
-<title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
-<imprint>
-<publisher>Walter de Gruyter GmbH</publisher>
-<pubPlace>Berlin, Boston</pubPlace>
-<date type="publication">2021</date>
-</imprint>
-<biblScope unit="page" from="407" to="408"/>
-</monogr>
-<series>
-<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften
+                        <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+                        <imprint>
+                            <publisher>Walter de Gruyter GmbH</publisher>
+                            <pubPlace>Berlin, Boston</pubPlace>
+                            <date type="publication">2021</date>
+                        </imprint>
+                        <biblScope unit="page" from="407" to="408"/>
+                    </monogr>
+                    <series>
+                        <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften
 und Briefe</title>
-</series>
-<relatedItem type="superordinated-chapter">
-<ptr target="#L_08-03-042-000"/>
-</relatedItem>
-</biblStruct>
-<listWit>
-<witness n="L" corresp="#L_08-03-042-002_facs-haupttextzeuge">
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek
+                    </series>
+                    <relatedItem type="superordinated-chapter">
+                        <ptr target="#L_08-03-042-000"/>
+                    </relatedItem>
+                </biblStruct>
+                <listWit>
+                    <witness n="L" corresp="#L_08-03-042-002_facs-haupttextzeuge">
+                        <msDesc>
+                            <msIdentifier>
+                                <repository>Gottfried Wilhelm Leibniz Bibliothek
 Hannover</repository>
-<idno type="Signatur">LH XXXVII 5 Bl. 143</idno>
-</msIdentifier>
-<msContents corresp="L_witness-content-types.xml#reinschrift">
-<summary>
-<p>Reinschrift: LH XXXVII 5 Bl. 143. Ein Zettel
+                                <idno type="Signatur">LH XXXVII 5 Bl. 143</idno>
+                            </msIdentifier>
+                            <msContents corresp="L_witness-content-types.xml#reinschrift">
+                                <summary>
+                                    <p>Reinschrift: LH XXXVII 5 Bl. 143. Ein Zettel
 (ca. 8,5 x 4,5 cm); Papiererhaltungsmaßnahmen. Eine Seite
-auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=433">Bl. 143 r<hi rendition="#sup">o</hi></ref>;
+auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=433">Bl. 143 r<hi rendition="#sup">o</hi>
+                                    </ref>;
 Rückseite leer.</p>
-</summary>
-</msContents>
-<physDesc>
-<objectDesc form="Handschrift"/>
-</physDesc>
-<history>
-<origin corresp="L_witness-origin-types.xml#origin-L"/>
-</history>
-</msDesc>
-</witness>
-</listWit>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<tagsDecl>
-<rendition scheme="css" xml:id="i">font-style:italic</rendition>
-<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-<rendition scheme="css" xml:id="sup">vertical-align:super;
+                            </summary>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc form="Handschrift"/>
+                        </physDesc>
+                        <history>
+                            <origin corresp="L_witness-origin-types.xml#origin-L"/>
+                        </history>
+                    </msDesc>
+                </witness>
+            </listWit>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <tagsDecl>
+            <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+            <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+            <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+            <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+            <rendition scheme="css" xml:id="sup">vertical-align:super;
 font-size:.7em</rendition>
-<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-</tagsDecl>
-<charDecl>
-<!-- Sonderzeichen OHNE Unicodeentsprechung -->
-<!--rightpropto-->
-<glyph xml:id="rightpropto">
-<glyphName>rightpropto</glyphName>
-<desc>...</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="TeX">\rightpropto</mapping>
-<graphic url="../../glyphs/rightpropto.svg"/>
-</glyph>
-<glyph xml:id="Pfund">
-<glyphName>Pfund</glyphName>
-<desc>stilisiertes lb-Zeichen (Pfund)</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.7</value>
-</charProp>
-<mapping type="TeX">\Pfund</mapping>
-<graphic url="../../glyphs/Pfund.svg"/>
-</glyph>
-<!-- leibdashv -->
-<glyph xml:id="pleibdashv">
-<glyphName>pleibdashv</glyphName>
-<desc>Bedeutung (+−) - gesenkt</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>-1</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="PUA"/>
-<mapping type="TeX">\pleibdashv</mapping>
-<graphic url="../../glyphs/pm.svg"/>
-</glyph>
-<glyph xml:id="leibdashv">
-<glyphName>leibdashv</glyphName>
-<desc>Bedeutung (+−) - nicht-gesenkt</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="PUA"/>
-<mapping type="TeX">\leibdashv</mapping>
-<graphic url="../../glyphs/pm.svg"/>
-</glyph>
-<!-- Sonderzeichen MIT Unicodeentsprechung -->
-</charDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="la"/>
-</langUsage>
-<calendarDesc>
-<calendar xml:id="gregorian">
-<p>Gregorianischer Kalenderstil</p>
-</calendar>
-<calendar xml:id="julian">
-<p>Julianischer Kalenderstil</p>
-</calendar>
-</calendarDesc>
-<textClass>
-<catRef scheme="L_terms" target="L_subjects.xml#stoss"/>
-<catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
-<catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
-<catRef scheme="L_terms" target="L_terms.xml#"/>
-</textClass>
-<abstract>
-<listPerson>
-<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-<person sameAs="L_persons.xml#"/>
-</listPerson>
-<listPlace>
-<place sameAs="L_places.xml#"/>
-</listPlace>
-</abstract>
-</profileDesc>
-<revisionDesc>
-<change when="2021" who="#telota" status="base"/>
-<change when="2023-02-14" who="#stork" status="enrich_1"/>
-</revisionDesc>
+            <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+            <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+            <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+            <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+            <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+        </tagsDecl>
+        <charDecl>
+            <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+            <!--rightpropto-->
+            <glyph xml:id="rightpropto">
+                <glyphName>rightpropto</glyphName>
+                <desc>...</desc>
+                <charProp>
+                    <localName>baselineshift-in-ex</localName>
+                    <value>0</value>
+                </charProp>
+                <charProp>
+                    <localName>width-in-em</localName>
+                    <value>0.6</value>
+                </charProp>
+                <mapping type="TeX">\rightpropto</mapping>
+                <graphic url="../../glyphs/rightpropto.svg"/>
+            </glyph>
+            <glyph xml:id="Pfund">
+                <glyphName>Pfund</glyphName>
+                <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+                <charProp>
+                    <localName>baselineshift-in-ex</localName>
+                    <value>0</value>
+                </charProp>
+                <charProp>
+                    <localName>width-in-em</localName>
+                    <value>0.7</value>
+                </charProp>
+                <mapping type="TeX">\Pfund</mapping>
+                <graphic url="../../glyphs/Pfund.svg"/>
+            </glyph>
+            <!-- leibdashv -->
+            <glyph xml:id="pleibdashv">
+                <glyphName>pleibdashv</glyphName>
+                <desc>Bedeutung (+−) - gesenkt</desc>
+                <charProp>
+                    <localName>baselineshift-in-ex</localName>
+                    <value>-1</value>
+                </charProp>
+                <charProp>
+                    <localName>width-in-em</localName>
+                    <value>0.6</value>
+                </charProp>
+                <mapping type="PUA"/>
+                <mapping type="TeX">\pleibdashv</mapping>
+                <graphic url="../../glyphs/pm.svg"/>
+            </glyph>
+            <glyph xml:id="leibdashv">
+                <glyphName>leibdashv</glyphName>
+                <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+                <charProp>
+                    <localName>baselineshift-in-ex</localName>
+                    <value>0</value>
+                </charProp>
+                <charProp>
+                    <localName>width-in-em</localName>
+                    <value>0.6</value>
+                </charProp>
+                <mapping type="PUA"/>
+                <mapping type="TeX">\leibdashv</mapping>
+                <graphic url="../../glyphs/pm.svg"/>
+            </glyph>
+            <!-- Sonderzeichen MIT Unicodeentsprechung -->
+        </charDecl>
+    </encodingDesc>
+    <profileDesc>
+        <langUsage>
+            <language ident="la"/>
+        </langUsage>
+        <calendarDesc>
+            <calendar xml:id="gregorian">
+                <p>Gregorianischer Kalenderstil</p>
+            </calendar>
+            <calendar xml:id="julian">
+                <p>Julianischer Kalenderstil</p>
+            </calendar>
+        </calendarDesc>
+        <textClass>
+            <catRef scheme="L_terms" target="L_subjects.xml#stoss"/>
+            <catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
+            <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+            <catRef scheme="L_terms" target="L_terms.xml#"/>
+        </textClass>
+        <abstract>
+            <listPerson>
+                <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+                <person sameAs="L_persons.xml#"/>
+            </listPerson>
+            <listPlace>
+                <place sameAs="L_places.xml#"/>
+            </listPlace>
+        </abstract>
+    </profileDesc>
+    <revisionDesc>
+        <change when="2021" who="#telota" status="base"/>
+        <change when="2023-02-14" who="#stork" status="enrich_1"/>
+    </revisionDesc>
 </teiHeader>
 <facsimile source="digilib.bbaw.de" xml:id="L_08-03-042-002_facs-haupttextzeuge">
-<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=433"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=433"/>
 </facsimile>
 <text xml:id="L_08-03-042-002_text">
-<body xml:id="Document">
-<div type="section" xml:id="Ch42.S2" n="422">
-<head>42<hi rendition="#sub">2</hi> SCHEDULA DE DECEM CASIBUS HUGENIANIS</head>
-<div type="ueberlieferung">
-<p>
-<hi rendition="#b #smaller">Überlieferung:</hi>
-<listWit>
-<witness>
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek
+    <body xml:id="Document">
+        <div type="section" xml:id="Ch42.S2" n="422">
+            <head>42<hi rendition="#sub">2</hi> SCHEDULA DE DECEM CASIBUS HUGENIANIS</head>
+            <div type="ueberlieferung">
+                <p>
+                    <hi rendition="#b #smaller">Überlieferung:</hi>
+                    <listWit>
+                        <witness>
+                            <msDesc>
+                                <msIdentifier>
+                                    <repository>Gottfried Wilhelm Leibniz Bibliothek
 Hannover</repository>
-<idno type="Signatur">LH XXXVII 5 Bl. 143</idno>
-</msIdentifier>
-<msContents>
-<summary>
-<p>Reinschrift: LH XXXVII 5 Bl. 143. Ein Zettel
+                                    <idno type="Signatur">LH XXXVII 5 Bl. 143</idno>
+                                </msIdentifier>
+                                <msContents>
+                                    <summary>
+                                        <p>Reinschrift: LH XXXVII 5 Bl. 143. Ein Zettel
 (ca. 8,5 x 4,5 cm); Papiererhaltungsmaßnahmen. Eine
-Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=433">Bl. 143 r<hi rendition="#sup">o</hi></ref>;
+Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=433">Bl. 143 r<hi rendition="#sup">o</hi>
+                                        </ref>;
 Rückseite leer.</p>
-</summary>
-</msContents>
-<physDesc>
-<objectDesc form="Handschrift"/>
-</physDesc>
-<history>
-<origin/>
-</history>
-</msDesc>
-</witness>
-</listWit>
-</p>
-</div>
+                                </summary>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc form="Handschrift"/>
+                            </physDesc>
+                            <history>
+                                <origin/>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </p>
+        </div>
 
-<div type="text">
-<anchor xml:id="_37_05_143_1a"/>
-<p rendition="#noindent" xml:id="Ch42.S2.p4"><app type="Bfootnote" from="#_37_05_143_1a" to="#_37_05_143_1b">
-<lem type="main"/>
-<note type="lemma-abbrev"><ref><pb type="L"/><fw type="folNum">[143 r<hi rendition="#sup">o</hi>]</fw></ref></note>
-<rdg wit="#L" n="1"> Si eadem servetur </rdg>
-<rdg wit="#L" n="2"> Ut eadem servaretur <hi rendition="#i">L</hi></rdg>
-</app><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=433"><pb type="L"/><fw type="folNum">[143 r<hi rendition="#sup">o</hi>]</fw></ref> <anchor xml:id="_37_05_143_4a"/><app type="Cfootnote" from="#_37_05_143_4a" to="#_37_05_143_4b">
-<lem type="main"/>
-<note type="lemma-abbrev">Ut <seg type="apparat-ellipsis"/> in <hi rendition="#i">AC</hi></note>
-<note type="editorial">Vorlage für diese Passage ist N. <ref corresp="L_section_421.xml#_57267_2"/>, S. <ref corresp="L_section_421.xml#_37_05_144-145_25a"/>.</note>
-</app>Ut eadem servaretur quantitas motus<anchor xml:id="_37_05_143_1b"/><index indexName="Sachen">
-<term>quantitas motus</term>
-</index> deberet esse <hi rendition="#i">AE</hi> in <formula xml:id="Ch42.S2.p4.m1">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mrow>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>C</m:mi>
-</m:mrow>
-<m:mo>+</m:mo>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-</m:math>
+        <div type="text">
+            <anchor xml:id="_37_05_143_1a"/>
+            <p rendition="#noindent" xml:id="Ch42.S2.p4">
+                <app type="Bfootnote" from="#_37_05_143_1a" to="#_37_05_143_1b">
+                    <lem type="main"/>
+                    <note type="lemma-abbrev">
+                        <ref>
+                            <pb type="L"/>
+                            <fw type="folNum">[143 r<hi rendition="#sup">o</hi>]
+                            </fw>
+                        </ref>
+                    </note>
+                    <rdg wit="#L" n="1"> Si eadem servetur </rdg>
+                    <rdg wit="#L" n="2"> Ut eadem servaretur <hi rendition="#i">L</hi>
+                    </rdg>
+                </app>
+                <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=433">
+                    <pb type="L"/>
+                    <fw type="folNum">[143 r<hi rendition="#sup">o</hi>]
+                    </fw>
+                </ref>
+                <anchor xml:id="_37_05_143_4a"/>
+                <app type="Cfootnote" from="#_37_05_143_4a" to="#_37_05_143_4b">
+                    <lem type="main"/>
+                    <note type="lemma-abbrev">Ut <seg type="apparat-ellipsis"/>
+ in <hi rendition="#i">AC</hi>
+                </note>
+                <note type="editorial">Vorlage für diese Passage ist N. <ref corresp="L_section_421.xml#_57267_2"/>
+, S. <ref corresp="L_section_421.xml#_37_05_144-145_25a"/>
+.</note>
+        </app>Ut eadem servaretur quantitas motus<anchor xml:id="_37_05_143_1b"/>
+    <index indexName="Sachen">
+        <term>quantitas motus</term>
+    </index> deberet esse <hi rendition="#i">AE</hi> in <formula xml:id="Ch42.S2.p4.m1">
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mrow>
+            <m:mrow>
+                <m:mi>B</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>C</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+                <m:mi>B</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>E</m:mi>
+            </m:mrow>
+        </m:mrow>
+    </m:math>
 </formula> in <hi rendition="#i">AC</hi> aequ. <hi rendition="#i">AD</hi> in
 <formula xml:id="Ch42.S2.p4.m2">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mrow>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>C</m:mi>
-</m:mrow>
-<m:mo>+</m:mo>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>D</m:mi>
-</m:mrow>
-</m:mrow>
-</m:math>
-</formula> in <hi rendition="#i">AC</hi>. <anchor xml:id="_37_05_143_4b"/><anchor xml:id="_37_05_143_5a"/><app type="Cfootnote" from="#_37_05_143_5a" to="#_37_05_143_5b">
-<lem type="main"/>
-<note type="lemma-abbrev">Seu <seg type="apparat-ellipsis"/> <formula xml:id="Ch42.S2.p4.m3">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mpadded width="+5pt">
-<m:mtext>corp.</m:mtext>
-</m:mpadded>
-<m:mo>⁢</m:mo>
-<m:mi>B</m:mi>
-</m:mrow>
-<m:mrow>
-<m:mpadded width="+5pt">
-<m:mtext>corp.</m:mtext>
-</m:mpadded>
-<m:mo>⁢</m:mo>
-<m:mi>A</m:mi>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
-</formula></note>
-<note type="editorial">a.a.O., S. <ref corresp="L_section_421.xml#_37_05_144-145_26a"/>.</note>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mrow>
+            <m:mrow>
+                <m:mi>B</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>C</m:mi>
+            </m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+                <m:mi>B</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>D</m:mi>
+            </m:mrow>
+        </m:mrow>
+    </m:math>
+</formula> in <hi rendition="#i">AC</hi>.<anchor xml:id="_37_05_143_4b"/>
+<anchor xml:id="_37_05_143_5a"/>
+<app type="Cfootnote" from="#_37_05_143_5a" to="#_37_05_143_5b">
+    <lem type="main"/>
+    <note type="lemma-abbrev">Seu <seg type="apparat-ellipsis"/>
+    <formula xml:id="Ch42.S2.p4.m3">
+        <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+            <m:mstyle displaystyle="true">
+                <m:mfrac>
+                    <m:mrow>
+                        <m:mpadded width="+5pt">
+                            <m:mtext>corp.</m:mtext>
+                        </m:mpadded>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mrow>
+                        <m:mpadded width="+5pt">
+                            <m:mtext>corp.</m:mtext>
+                        </m:mpadded>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>A</m:mi>
+                    </m:mrow>
+                </m:mfrac>
+            </m:mstyle>
+        </m:math>
+    </formula>
+</note>
+<note type="editorial">a.a.O., S. <ref corresp="L_section_421.xml#_37_05_144-145_26a"/>
+.</note>
 </app>Seu <formula xml:id="Ch42.S2.p4.m4">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
-<m:munder accentunder="true">
-<m:mrow>
-<m:mo>+</m:mo>
-<m:mrow>
-<m:mi>A</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>D</m:mi>
-</m:mrow>
-</m:mrow>
-<m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>A</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-</m:munder>
-<m:mo>⌢</m:mo>
-<m:mrow>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>C</m:mi>
-</m:mrow>
-<m:mo>⊓</m:mo>
-<m:munder accentunder="true">
-<m:mrow>
-<m:mo>+</m:mo>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-<m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>D</m:mi>
-</m:mrow>
-</m:mrow>
-</m:munder>
-</m:mrow>
-<m:mo>⌢</m:mo>
-<m:mrow>
-<m:mi>A</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>C</m:mi>
-</m:mrow>
+    <m:munder accentunder="true">
+        <m:mrow>
+            <m:mo>+</m:mo>
+            <m:mrow>
+                <m:mi>A</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>D</m:mi>
+            </m:mrow>
+        </m:mrow>
+        <m:mrow>
+            <m:mo>-</m:mo>
+            <m:mrow>
+                <m:mi>A</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>E</m:mi>
+            </m:mrow>
+        </m:mrow>
+    </m:munder>
+    <m:mo>⌢</m:mo>
+    <m:mrow>
+        <m:mrow>
+            <m:mi>B</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>C</m:mi>
+        </m:mrow>
+        <m:mo>⊓</m:mo>
+        <m:munder accentunder="true">
+            <m:mrow>
+                <m:mo>+</m:mo>
+                <m:mrow>
+                    <m:mi>B</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>E</m:mi>
+                </m:mrow>
+            </m:mrow>
+            <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mrow>
+                    <m:mi>B</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>D</m:mi>
+                </m:mrow>
+            </m:mrow>
+        </m:munder>
+    </m:mrow>
+    <m:mo>⌢</m:mo>
+    <m:mrow>
+        <m:mi>A</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>C</m:mi>
+    </m:mrow>
 </m:mrow>
 </m:math>
 </formula>. Sive</p>
-<p xml:id="Ch42.S2.p5"> <formula xml:id="Ch42.S2.p5.m1">
+<p xml:id="Ch42.S2.p5">
+<formula xml:id="Ch42.S2.p5.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mi>A</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>C</m:mi>
-</m:mrow>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>C</m:mi>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-<m:mo>⊓</m:mo>
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>A</m:mi>
-</m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>A</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-<m:mrow>
-<m:mrow>
-<m:mi>E</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>B</m:mi>
-</m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>D</m:mi>
-</m:mrow>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-<m:mo>⊓</m:mo>
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mpadded width="+5pt">
-<m:mtext>corp.</m:mtext>
-</m:mpadded>
-<m:mo>⁢</m:mo>
-<m:mi>B</m:mi>
-</m:mrow>
-<m:mrow>
-<m:mpadded width="+5pt">
-<m:mtext>corp.</m:mtext>
-</m:mpadded>
-<m:mo>⁢</m:mo>
-<m:mi>A</m:mi>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
+    <m:mstyle displaystyle="true">
+        <m:mfrac>
+            <m:mrow>
+                <m:mi>A</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>C</m:mi>
+            </m:mrow>
+            <m:mrow>
+                <m:mi>B</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>C</m:mi>
+            </m:mrow>
+        </m:mfrac>
+    </m:mstyle>
+    <m:mo>⊓</m:mo>
+    <m:mstyle displaystyle="true">
+        <m:mfrac>
+            <m:mrow>
+                <m:mrow>
+                    <m:mi>D</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>A</m:mi>
+                </m:mrow>
+                <m:mo>-</m:mo>
+                <m:mrow>
+                    <m:mi>A</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>E</m:mi>
+                </m:mrow>
+            </m:mrow>
+            <m:mrow>
+                <m:mrow>
+                    <m:mi>E</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>B</m:mi>
+                </m:mrow>
+                <m:mo>-</m:mo>
+                <m:mrow>
+                    <m:mi>B</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>D</m:mi>
+                </m:mrow>
+            </m:mrow>
+        </m:mfrac>
+    </m:mstyle>
+    <m:mo>⊓</m:mo>
+    <m:mstyle displaystyle="true">
+        <m:mfrac>
+            <m:mrow>
+                <m:mpadded width="+5pt">
+                    <m:mtext>corp.</m:mtext>
+                </m:mpadded>
+                <m:mo>⁢</m:mo>
+                <m:mi>B</m:mi>
+            </m:mrow>
+            <m:mrow>
+                <m:mpadded width="+5pt">
+                    <m:mtext>corp.</m:mtext>
+                </m:mpadded>
+                <m:mo>⁢</m:mo>
+                <m:mi>A</m:mi>
+            </m:mrow>
+        </m:mfrac>
+    </m:mstyle>
 </m:mrow>
 </m:math>
-</formula>.<anchor xml:id="_37_05_143_5b"/></p>
+</formula>.<anchor xml:id="_37_05_143_5b"/>
+</p>
 <table>
 <row>
-<cell><anchor xml:id="_37_05_143_6a"/><app type="Cfootnote" from="#_37_05_143_6a" to="#_37_05_143_6b">
-<lem type="main"/>
-<note type="lemma-abbrev">1<hi rendition="#sup">mo</hi>
-<seg type="apparat-ellipsis"/> falsum</note>
-<note type="editorial">a.a.O., S. <ref corresp="L_section_421.xml#_37_05_144-145_27a"/>.
+<cell>
+<anchor xml:id="_37_05_143_6a"/>
+<app type="Cfootnote" from="#_37_05_143_6a" to="#_37_05_143_6b">
+    <lem type="main"/>
+    <note type="lemma-abbrev">1<hi rendition="#sup">mo</hi>
+        <seg type="apparat-ellipsis"/>
+ falsum</note>
+    <note type="editorial">a.a.O., S. <ref corresp="L_section_421.xml#_37_05_144-145_27a"/>
+.
 Leibnizens Bewertung von Huygens’ Ergebnissen als falsch
 oder ungewiss geht, hier wie in der Vorlage, auf seine
 fehlerhafte Handhabung der Vorzeichen in der Vektoraddition
@@ -476,74 +519,74 @@ zurück.</note>
 </app> 1<hi rendition="#sup">mo</hi> casu</cell>
 <cell>
 <app type="Bfootnote">
-<!--is-correction-app-with-lemma-->
-<lem type="main">
-<corr resp="#ed">
-<formula xml:id="Ch42.S2.p6.m1">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mo stretchy="false">[</m:mo>
-<m:mrow>
-<m:mi>A</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>C</m:mi>
-</m:mrow>
-<m:mo stretchy="false">]</m:mo>
-</m:mrow>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>C</m:mi>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
-</formula>
-</corr>
-</lem>
-<rdg wit="#L">
-<orig>
-<hi rendition="#i">AB</hi>
-</orig>
-<note type="editorial">
-<hi rendition="#i">L ändert Hrsg.</hi>
-</note>
-</rdg>
+    <!--is-correction-app-with-lemma-->
+    <lem type="main">
+        <corr resp="#ed">
+            <formula xml:id="Ch42.S2.p6.m1">
+                <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                    <m:mstyle displaystyle="true">
+                        <m:mfrac>
+                            <m:mrow>
+                                <m:mo stretchy="false">[</m:mo>
+                                <m:mrow>
+                                    <m:mi>A</m:mi>
+                                    <m:mo>⁢</m:mo>
+                                    <m:mi>C</m:mi>
+                                </m:mrow>
+                                <m:mo stretchy="false">]</m:mo>
+                            </m:mrow>
+                            <m:mrow>
+                                <m:mi>B</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>C</m:mi>
+                            </m:mrow>
+                        </m:mfrac>
+                    </m:mstyle>
+                </m:math>
+            </formula>
+        </corr>
+    </lem>
+    <rdg wit="#L">
+        <orig>
+            <hi rendition="#i">AB</hi>
+        </orig>
+        <note type="editorial">
+            <hi rendition="#i">L ändert Hrsg.</hi>
+        </note>
+    </rdg>
 </app>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m2">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m3">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-<m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>E</m:mi>
+                    </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>E</m:mi>
+                    </m:mrow>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
 <cell>falsum</cell>
@@ -554,326 +597,338 @@ casu</cell>
 <cell>…</cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m4">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m5">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mo>+</m:mo>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-<m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mo>+</m:mo>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>E</m:mi>
+                    </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>E</m:mi>
+                    </m:mrow>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
 <cell>falsum</cell>
 </row>
 <row>
-<cell style="; text-align:center">3<hi rendition="#sup">tio</hi></cell>
+<cell style="; text-align:center">3<hi rendition="#sup">tio</hi>
+</cell>
 <cell>…</cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m6">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m7">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>A</m:mi>
-</m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>A</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>A</m:mi>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>E</m:mi>
+                    </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                    <m:mi>D</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>E</m:mi>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
-<cell><anchor xml:id="_37_05_143_3a"/><app type="Cfootnote" from="#_37_05_143_3a" to="#_37_05_143_3b">
-<lem type="main"/>
-<note type="lemma-abbrev">\Denarius</note>
-<note type="editorial">In N. <ref corresp="L_section_421.xml#_57267_2"/> lautet die
+<cell>
+<anchor xml:id="_37_05_143_3a"/>
+<app type="Cfootnote" from="#_37_05_143_3a" to="#_37_05_143_3b">
+    <lem type="main"/>
+    <note type="lemma-abbrev">\Denarius</note>
+    <note type="editorial">In N. <ref corresp="L_section_421.xml#_57267_2"/>
+ lautet die
 Bewertung dieser drei Fälle: „dubium”.</note>
 </app>\Denarius</cell>
 </row>
 <row>
-<cell style="; text-align:center">4<hi rendition="#sup">to</hi></cell>
+<cell style="; text-align:center">4<hi rendition="#sup">to</hi>
+</cell>
 <cell>…</cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m8">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m9">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>A</m:mi>
-</m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>A</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-<m:mrow>
-<m:mrow>
-<m:mi>E</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>B</m:mi>
-</m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>D</m:mi>
-</m:mrow>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>A</m:mi>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>E</m:mi>
+                    </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                    <m:mrow>
+                        <m:mi>E</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>D</m:mi>
+                    </m:mrow>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
 <cell>\Denarius</cell>
 </row>
 <row>
-<cell style="; text-align:center">5<hi rendition="#sup">to</hi></cell>
+<cell style="; text-align:center">5<hi rendition="#sup">to</hi>
+</cell>
 <cell>…</cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m10">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m11">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-<m:mrow>
-<m:mrow>
-<m:mi>E</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>B</m:mi>
-</m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>D</m:mi>
-</m:mrow>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mi>D</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>E</m:mi>
+                </m:mrow>
+                <m:mrow>
+                    <m:mrow>
+                        <m:mi>E</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>D</m:mi>
+                    </m:mrow>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
-<cell>\Denarius<anchor xml:id="_37_05_143_3b"/></cell>
+<cell>\Denarius<anchor xml:id="_37_05_143_3b"/>
+</cell>
 </row>
 <row>
 <cell style="; text-align:center">6<?tex-source \phantom{(}?>)</cell>
 <cell>…</cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m12">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m13">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mpadded width="+22.5pt">
-<m:mi>A</m:mi>
-</m:mpadded>
-</m:mrow>
-<m:mrow>
-<m:mrow>
-<m:mi>E</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>D</m:mi>
-</m:mrow>
-<m:mo>⊓</m:mo>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>A</m:mi>
-</m:mrow>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mi>D</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mpadded width="+22.5pt">
+                        <m:mi>A</m:mi>
+                    </m:mpadded>
+                </m:mrow>
+                <m:mrow>
+                    <m:mrow>
+                        <m:mi>E</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>D</m:mi>
+                    </m:mrow>
+                    <m:mo>⊓</m:mo>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>A</m:mi>
+                    </m:mrow>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
 <cell>falsum</cell>
 </row>
 <row>
-<cell style="; text-align:center">7<hi rendition="#sup">mo</hi></cell>
+<cell style="; text-align:center">7<hi rendition="#sup">mo</hi>
+</cell>
 <cell>…</cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m14">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <anchor xml:id="_37_05_143_2a"/>
 <app type="Bfootnote" from="#_37_05_143_2a" to="#_37_05_143_2b">
-<lem type="main"/>
-<note type="lemma-abbrev">
-<formula xml:id="Ch42.S2.p6.m15">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>A</m:mi>
-</m:mrow>
-<m:mrow>
-<m:mrow>
-<m:mi>E</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>B</m:mi>
-</m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>D</m:mi>
-</m:mrow>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
-</formula>
-</note>
-<rdg wit="#L" n="1"> \Denarius </rdg>
-<rdg wit="#L" n="2"> falsum </rdg>
-<rdg wit="#L" n="3"> falsum <hi rendition="#i">L</hi> </rdg>
+    <lem type="main"/>
+    <note type="lemma-abbrev">
+        <formula xml:id="Ch42.S2.p6.m15">
+            <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mstyle displaystyle="true">
+                    <m:mfrac>
+                        <m:mrow>
+                            <m:mi>D</m:mi>
+                            <m:mo>⁢</m:mo>
+                            <m:mi>A</m:mi>
+                        </m:mrow>
+                        <m:mrow>
+                            <m:mrow>
+                                <m:mi>E</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>B</m:mi>
+                            </m:mrow>
+                            <m:mo>-</m:mo>
+                            <m:mrow>
+                                <m:mi>B</m:mi>
+                                <m:mo>⁢</m:mo>
+                                <m:mi>D</m:mi>
+                            </m:mrow>
+                        </m:mrow>
+                    </m:mfrac>
+                </m:mstyle>
+            </m:math>
+        </formula>
+    </note>
+    <rdg wit="#L" n="1"> \Denarius </rdg>
+    <rdg wit="#L" n="2"> falsum </rdg>
+    <rdg wit="#L" n="3"> falsum <hi rendition="#i">L</hi>
+    </rdg>
 </app>
 <formula xml:id="Ch42.S2.p6.m16">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>A</m:mi>
-</m:mrow>
-<m:mrow>
-<m:mrow>
-<m:mi>E</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>B</m:mi>
-</m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>B</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>D</m:mi>
-</m:mrow>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mi>D</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>A</m:mi>
+                </m:mrow>
+                <m:mrow>
+                    <m:mrow>
+                        <m:mi>E</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>B</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>D</m:mi>
+                    </m:mrow>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
-<cell>falsum <anchor xml:id="_37_05_143_2b"/></cell>
+<cell>falsum <anchor xml:id="_37_05_143_2b"/>
+</cell>
 </row>
 <row>
-<cell><pb type="L"/> 8<?tex-source \phantom{(}?>)</cell>
+<cell>
+<pb type="L"/>
+ 8<?tex-source \phantom{(}?>)</cell>
 <cell>…</cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m17">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m18">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mpadded width="+30pt">
-<m:mi>E</m:mi>
-</m:mpadded>
-</m:mrow>
-</m:mrow>
-<m:mrow>
-<m:mo>-</m:mo>
-<m:mi>B</m:mi>
-<m:mi>D</m:mi>
-<m:mo>⊓</m:mo>
-<m:mo>-</m:mo>
-<m:mi>D</m:mi>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mpadded width="+30pt">
+                            <m:mi>E</m:mi>
+                        </m:mpadded>
+                    </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mi>B</m:mi>
+                    <m:mi>D</m:mi>
+                    <m:mo>⊓</m:mo>
+                    <m:mo>-</m:mo>
+                    <m:mi>D</m:mi>
+                    <m:mi>E</m:mi>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
 <cell>fals.</cell>
@@ -883,39 +938,39 @@ Bewertung dieser drei Fälle: „dubium”.</note>
 <cell>…</cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m19">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m20">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mpadded width="+22.5pt">
-<m:mi>E</m:mi>
-</m:mpadded>
-</m:mrow>
-<m:mrow>
-<m:mrow>
-<m:mi>E</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>B</m:mi>
-</m:mrow>
-<m:mo>⊓</m:mo>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mi>D</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mpadded width="+22.5pt">
+                        <m:mi>E</m:mi>
+                    </m:mpadded>
+                </m:mrow>
+                <m:mrow>
+                    <m:mrow>
+                        <m:mi>E</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>B</m:mi>
+                    </m:mrow>
+                    <m:mo>⊓</m:mo>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>E</m:mi>
+                    </m:mrow>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
 <cell>falsum.</cell>
@@ -925,41 +980,42 @@ Bewertung dieser drei Fälle: „dubium”.</note>
 <cell>…</cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m21">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mo>⊓</m:mo>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mo>⊓</m:mo>
+    </m:math>
 </formula>
 </cell>
 <cell>
 <formula xml:id="Ch42.S2.p6.m22">
-<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-<m:mstyle displaystyle="true">
-<m:mfrac>
-<m:mrow>
-<m:mrow>
-<m:mi>D</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>A</m:mi>
-</m:mrow>
-<m:mo>-</m:mo>
-<m:mrow>
-<m:mi>A</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>E</m:mi>
-</m:mrow>
-</m:mrow>
-<m:mrow>
-<m:mi>E</m:mi>
-<m:mo>⁢</m:mo>
-<m:mi>B</m:mi>
-</m:mrow>
-</m:mfrac>
-</m:mstyle>
-</m:math>
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mstyle displaystyle="true">
+            <m:mfrac>
+                <m:mrow>
+                    <m:mrow>
+                        <m:mi>D</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>A</m:mi>
+                    </m:mrow>
+                    <m:mo>-</m:mo>
+                    <m:mrow>
+                        <m:mi>A</m:mi>
+                        <m:mo>⁢</m:mo>
+                        <m:mi>E</m:mi>
+                    </m:mrow>
+                </m:mrow>
+                <m:mrow>
+                    <m:mi>E</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>B</m:mi>
+                </m:mrow>
+            </m:mfrac>
+        </m:mstyle>
+    </m:math>
 </formula>
 </cell>
 <cell>falsum.<?tex-source \phantom{}?>
-<anchor xml:id="_37_05_143_6b"/><!--  \hackfor{\end{tabular}} --></cell>
+<anchor xml:id="_37_05_143_6b"/>
+<!--  \hackfor{\end{tabular}} --></cell>
 </row>
 </table>
 </div>

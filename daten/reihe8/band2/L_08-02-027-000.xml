@@ -1,19 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-027-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-027-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De vi corporum per motum naturalem continuatum acquisita ratiocinatio</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De vi corporum per motum naturalem continuatum acquisita ratiocinatio</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="27">De vi corporum per motum naturalem continuatum acquisita ratiocinatio</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1674-01" resp="#ed" cert="medium">[Anfang 1674 – Anfang 1675]</date><date calendar="#gregorian" notAfter="1675-01" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=253</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="205" to="208"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-027-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 5 Bl. 120</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#konzept-entwurf"><summary><p>Konzept: LH XXXVII 5 Bl. 120. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 1/2 S. Wasserzeichen. Papier durch Erhaltungsmaßnahmen gesichert.</p><p>Cc 2, Nr. 00</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+            </author>
+            <title type="chapter" level="a" n="27">De vi corporum per motum naturalem continuatum acquisita ratiocinatio</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1674-01" resp="#ed" cert="medium">[Anfang 1674 – Anfang 1675]</date>
+            <date calendar="#gregorian" notAfter="1675-01" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=253</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="205" to="208"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-027-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 5 Bl. 120</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                <summary>
+                  <p>Konzept: LH XXXVII 5 Bl. 120. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 1/2 S. Wasserzeichen. Papier durch Erhaltungsmaßnahmen gesichert.</p>
+                  <p>Cc 2, Nr. 00</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -639,125 +739,707 @@
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/><catRef scheme="L_subjects" target="L_subjects.xml#kraft"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-07" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#kraft"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-07" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-027-000_facs-haupttextzeuge">
-      <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=363"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=363"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=364"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=365"/>
-  </facsimile><text xml:id="L_08-02-027-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch27" n="27"><pb type="VIII_2" n="205"/><head>27.
+  </facsimile>
+  <text xml:id="L_08-02-027-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch27" n="27">
+        <pb type="VIII_2" n="205"/>
+        <head>27.
 DE VI CORPORUM PER MOTUM NATURALEM CONTINUATUM ACQUISITA RATIOCINATIO</head>
-<head>[Anfang 1674 – Anfang 1675]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Konzept: LH XXXVII 5 Bl. 120. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 <formula xml:id="Ch27.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:math></formula> S. Wasserzeichen. Papier durch Erhaltungsmaßnahmen gesichert.</p><p>Cc 2, Nr. 00</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch27.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>:
-Das Wasserzeichen im Textträger des vorliegenden Stücks ist für den Zeitraum vom Anfang 1674 bis zum Anfang 1675 belegt.</hi></p></div><div type="text"><p xml:id="Ch27.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[120 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch27.p6" rendition="#c">De vi<index indexName="Sachverzeichnis"><term>vis</term></index> corporum per motum naturalem<index indexName="Sachverzeichnis"><term>motus naturalis</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">continuatum</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> acquisita<lb/>Ratiocinatio</p><p xml:id="Ch27.p7" rendition="#noindent">Ponatur <app type="Bfootnote"><lem type="main">globus <hi rendition="#i">A</hi></lem><note type="lemma-abbrev">Ponatur</note><rdg wit="#L" n="1"> corpus a </rdg><rdg wit="#L" n="2"> globus <hi rendition="#i">A</hi> <hi rendition="#i">L</hi></rdg></app> labi ex altitudine tanta <hi rendition="#i">ab</hi> quanta sufficiat ad acquirendum impetum<index indexName="Sachverzeichnis"><term>impetus</term></index>, per quem <app type="Bfootnote"><lem type="main"><hi rendition="#i">A</hi></lem><note type="lemma-abbrev">quem</note><rdg wit="#L" n="1"> corpus labens </rdg><rdg wit="#L" n="2"> <hi rendition="#i">a</hi> </rdg><rdg wit="#L" n="3"> <hi rendition="#i">A</hi> <hi rendition="#i">L</hi></rdg></app> superet <app type="Bfootnote"><lem type="main">sphaeram <hi rendition="#i">B</hi> sibi aequalem et aequiponderantem</lem><note type="lemma-abbrev">superet</note><rdg wit="#L" n="1"> corpus sibi aequale et aequiponderans <hi rendition="#i">B</hi> idque </rdg><rdg wit="#L" n="2"> sphaeram <hi rendition="#i">B</hi> <app><rdg wit="#L" n="a"> similem sibi </rdg><rdg wit="#L" n="b"> sibi aequalem et aequiponderantem <hi rendition="#i">L</hi></rdg></app></rdg></app> <app type="Bfootnote"><lem type="main">tanto virium<index indexName="Sachverzeichnis"><term>vis</term></index> excessu ut eam elevare possit</lem><rdg wit="#L">tanto virium<index indexName="Sachverzeichnis"><term>vis</term></index> excessu </rdg><rdg wit="#L" n="1"> eamque </rdg><rdg wit="#L" n="2" cause="addition"> <add>ut eam elevare possit</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> elevet per tantam altitudinem quanta est ipsius sphaerae seu ex <hi rendition="#i">d</hi> <app type="Bfootnote"><lem type="main">in <hi rendition="#i">c</hi>. Quod fiet si sphaera labens ex <hi rendition="#i">a</hi> in <hi rendition="#i">b</hi>, impingat in eminentiam <hi rendition="#i">eF</hi> prodeuntem ex chorda <hi rendition="#i">cgh</hi> circa trochleam <hi rendition="#i">g</hi> replicata sphaeramque <hi rendition="#i">B</hi> sustinente. Sed ponamus debere</lem><note type="lemma-abbrev">in <hi rendition="#i">c</hi>.</note><rdg wit="#L" n="1"> Porro numerus sphaerarum </rdg><rdg wit="#L" n="2"> Sed ad restituenda omnia in statum priorem, <app><rdg wit="#L" n="a"> opus esset </rdg><rdg wit="#L" n="b"> deberet </rdg></app></rdg><rdg wit="#L" n="3"> Quod fiet <seg type="apparat-ellipsis"/> ponamus debere <hi rendition="#i">L</hi></rdg></app> elevare integram columnam <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">talium</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> sphaerarum, in recta linea <hi rendition="#i">ab</hi> collocabilium.</p><p xml:id="Ch27.p8">Harum sphaerarum numerum appellemus <app type="Bfootnote"><lem type="main"><formula xml:id="Ch27.p8.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula></lem><note type="lemma-abbrev">appellemus</note><rdg wit="#L" n="1"> <hi rendition="#i">a</hi> </rdg><rdg wit="#L" n="2"> <formula xml:id="Ch27.p8.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>υ</m:mi></m:math></formula> </rdg><rdg wit="#L" n="3"> <formula xml:id="Ch27.p8.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>ξ</m:mi></m:math></formula> </rdg><rdg wit="#L" n="4"> <formula xml:id="Ch27.p8.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> <hi rendition="#i">L</hi></rdg></app>.</p><p xml:id="Ch27.p9">Ergo <hi rendition="#i">A</hi> labens ex altitudine <hi rendition="#i">ab</hi> elevabit 1.</p><pb type="VIII_2" n="206"/><p xml:id="Ch27.p10">Duplicetur altitudo <hi rendition="#i">ab</hi> erit duplicata altitudo l<app type="Bfootnote"><lem type="main">apsus<index indexName="Sachverzeichnis"><term>lapsus</term></index> <hi rendition="#i">ae</hi></lem><note type="lemma-abbrev">lapsus</note><rdg wit="#L" n="1"> <formula xml:id="Ch27.p10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> </rdg><rdg wit="#L" n="2"> <hi rendition="#i">ae</hi> <hi rendition="#i">L</hi></rdg></app><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Über</hi> lapsus <formula xml:id="Ch27.p10.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow></m:math></formula>: cum debeat <formula xml:id="Ch27.p10.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula></note> duplicabitur quoque numerus sphaerarum <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">elevandarum</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>. At vero <app type="Bfootnote"><lem type="main">quadruplicabuntur vires seu numerus</lem><note type="lemma-abbrev">vero</note><rdg wit="#L" n="1"> quadruplicabitur numerus virium </rdg><rdg wit="#L" n="2"> quadruplicabuntur vires seu numerus <hi rendition="#i">L</hi></rdg></app> sphaerarum elevabilium. Et multiplicata altitudine semper magis multiplicabuntur vires<index indexName="Sachverzeichnis"><term>vis</term></index> quam onus, si quidem vera sunt quae hactenus ab omnibus fere recipiuntur quod scilicet <app type="Bfootnote"><lem type="main">gravium impetus crescant</lem><note type="lemma-abbrev">scilicet</note><rdg wit="#L" n="1"> gravia crescant </rdg><rdg wit="#L" n="2"> gravium impetus crescant <hi rendition="#i">L</hi></rdg></app> in duplicata altitudinum ratione. Ergo denique superabitur onus a viribus<index indexName="Sachverzeichnis"><term>vis</term></index>, ac proinde assumta altitudine sufficienti, <app type="Bfootnote"><lem type="main">sequetur plena machinae restitutio</lem><note type="lemma-abbrev">sufficienti,</note><rdg wit="#L" n="1"> sequi omnimodam plenam machinae restitutionem<index indexName="Sachverzeichnis"><term>machinae restitutio</term></index> </rdg><rdg wit="#L" n="2"> sequetur plena machinae restitutio <hi rendition="#i">L</hi></rdg></app>, quae altitudo an in praxi haberi possit nihil refert ad institutum, sufficit demonstrari posse, aut restitutionem perfectam<index indexName="Sachverzeichnis"><term>restitutio perfecta</term></index> ex natura motus sequi, aut ejus proportiones<index indexName="Sachverzeichnis"><term>proportio</term></index> receptas exactas non esse. Quod credere malim. Calculus hic erit:</p><table>
-          
-            <row>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>
+        <head>[Anfang 1674 – Anfang 1675]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Konzept: LH XXXVII 5 Bl. 120. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 <formula xml:id="Ch27.p2.m1">
+                        <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mo>/</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:math>
+                      </formula> S. Wasserzeichen. Papier durch Erhaltungsmaßnahmen gesichert.</p>
+                    <p>Cc 2, Nr. 00</p>
+                  </summary>
+                </msContents>
+                <physDesc>
+                  <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                </physDesc>
+                <history>
+                  <origin/>
+                </history>
+              </msDesc>
+            </witness>
+          </listWit>
+        </p>
+      </div>
+      <div type="contents">
+        <p xml:id="Ch27.p4">
+          <hi rendition="#smaller">
+            <hi rendition="#b">Datierungsgründe</hi>:
+Das Wasserzeichen im Textträger des vorliegenden Stücks ist für den Zeitraum vom Anfang 1674 bis zum Anfang 1675 belegt.</hi>
+        </p>
+      </div>
+      <div type="text">
+        <p xml:id="Ch27.p5" rendition="#noindent">
+          <pb type="L"/>
+          <fw type="folNum">[120 r<hi rendition="#sup">o</hi>]
+          </fw>
+        </p>
+        <p xml:id="Ch27.p6" rendition="#c">De vi<index indexName="Sachverzeichnis">
+          <term>vis</term>
+        </index> corporum per motum naturalem<index indexName="Sachverzeichnis">
+        <term>motus naturalis</term>
+      </index>
+      <app type="Bfootnote">
+        <lem type="main">          <!--is-addition-app-with-lemma-->
+          <add resp="#L">continuatum</add>
+        </lem>
+        <note type="editorial">
+          <hi rendition="#i">erg. L</hi>
+        </note>
+      </app> acquisita<lb/>
+Ratiocinatio</p>
+    <p xml:id="Ch27.p7" rendition="#noindent">Ponatur <app type="Bfootnote">
+      <lem type="main">globus <hi rendition="#i">A</hi>
+      </lem>
+      <note type="lemma-abbrev">Ponatur</note>
+      <rdg wit="#L" n="1"> corpus a </rdg>
+      <rdg wit="#L" n="2"> globus <hi rendition="#i">A</hi>
+        <hi rendition="#i">L</hi>
+      </rdg>
+    </app> labi ex altitudine tanta <hi rendition="#i">ab</hi> quanta sufficiat ad acquirendum impetum<index indexName="Sachverzeichnis">
+    <term>impetus</term>
+  </index>, per quem <app type="Bfootnote">
+  <lem type="main">
+    <hi rendition="#i">A</hi>
+  </lem>
+  <note type="lemma-abbrev">quem</note>
+  <rdg wit="#L" n="1"> corpus labens </rdg>
+  <rdg wit="#L" n="2">
+    <hi rendition="#i">a</hi>
+  </rdg>
+  <rdg wit="#L" n="3">
+    <hi rendition="#i">A</hi>
+    <hi rendition="#i">L</hi>
+  </rdg>
+</app> superet <app type="Bfootnote">
+<lem type="main">sphaeram <hi rendition="#i">B</hi> sibi aequalem et aequiponderantem</lem>
+<note type="lemma-abbrev">superet</note>
+<rdg wit="#L" n="1"> corpus sibi aequale et aequiponderans <hi rendition="#i">B</hi> idque </rdg>
+<rdg wit="#L" n="2"> sphaeram <hi rendition="#i">B</hi>
+  <app>
+    <rdg wit="#L" n="a"> similem sibi </rdg>
+    <rdg wit="#L" n="b"> sibi aequalem et aequiponderantem <hi rendition="#i">L</hi>
+    </rdg>
+  </app>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">tanto virium<index indexName="Sachverzeichnis">
+  <term>vis</term>
+</index> excessu ut eam elevare possit</lem>
+<rdg wit="#L">tanto virium<index indexName="Sachverzeichnis">
+<term>vis</term>
+</index> excessu </rdg>
+<rdg wit="#L" n="1"> eamque </rdg>
+<rdg wit="#L" n="2" cause="addition">
+<add>ut eam elevare possit</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> elevet per tantam altitudinem quanta est ipsius sphaerae seu ex <hi rendition="#i">d</hi>
+<app type="Bfootnote">
+<lem type="main">in <hi rendition="#i">c</hi>. Quod fiet si sphaera labens ex <hi rendition="#i">a</hi> in <hi rendition="#i">b</hi>, impingat in eminentiam <hi rendition="#i">eF</hi> prodeuntem ex chorda <hi rendition="#i">cgh</hi> circa trochleam <hi rendition="#i">g</hi> replicata sphaeramque <hi rendition="#i">B</hi> sustinente. Sed ponamus debere</lem>
+<note type="lemma-abbrev">in <hi rendition="#i">c</hi>.
+</note>
+<rdg wit="#L" n="1"> Porro numerus sphaerarum </rdg>
+<rdg wit="#L" n="2"> Sed ad restituenda omnia in statum priorem, <app>
+<rdg wit="#L" n="a"> opus esset </rdg>
+<rdg wit="#L" n="b"> deberet </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="3"> Quod fiet <seg type="apparat-ellipsis"/>
+ ponamus debere <hi rendition="#i">L</hi>
+</rdg>
+</app> elevare integram columnam <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">talium</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> sphaerarum, in recta linea <hi rendition="#i">ab</hi> collocabilium.</p>
+<p xml:id="Ch27.p8">Harum sphaerarum numerum appellemus <app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch27.p8.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">appellemus</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">a</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch27.p8.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>υ</m:mi>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="3">
+<formula xml:id="Ch27.p8.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>ξ</m:mi>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="4">
+<formula xml:id="Ch27.p8.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>.
+</p>
+<p xml:id="Ch27.p9">Ergo <hi rendition="#i">A</hi> labens ex altitudine <hi rendition="#i">ab</hi> elevabit 1.</p>
+<pb type="VIII_2" n="206"/>
+<p xml:id="Ch27.p10">Duplicetur altitudo <hi rendition="#i">ab</hi> erit duplicata altitudo l<app type="Bfootnote">
+<lem type="main">apsus<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index>
+<hi rendition="#i">ae</hi>
+</lem>
+<note type="lemma-abbrev">lapsus</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch27.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">ae</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Über</hi> lapsus <formula xml:id="Ch27.p10.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:math>
+</formula>: cum debeat <formula xml:id="Ch27.p10.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula>
+</note> duplicabitur quoque numerus sphaerarum <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">elevandarum</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>. At vero <app type="Bfootnote">
+<lem type="main">quadruplicabuntur vires seu numerus</lem>
+<note type="lemma-abbrev">vero</note>
+<rdg wit="#L" n="1"> quadruplicabitur numerus virium </rdg>
+<rdg wit="#L" n="2"> quadruplicabuntur vires seu numerus <hi rendition="#i">L</hi>
+</rdg>
+</app> sphaerarum elevabilium. Et multiplicata altitudine semper magis multiplicabuntur vires<index indexName="Sachverzeichnis">
+<term>vis</term>
+</index> quam onus, si quidem vera sunt quae hactenus ab omnibus fere recipiuntur quod scilicet <app type="Bfootnote">
+<lem type="main">gravium impetus crescant</lem>
+<note type="lemma-abbrev">scilicet</note>
+<rdg wit="#L" n="1"> gravia crescant </rdg>
+<rdg wit="#L" n="2"> gravium impetus crescant <hi rendition="#i">L</hi>
+</rdg>
+</app> in duplicata altitudinum ratione. Ergo denique superabitur onus a viribus<index indexName="Sachverzeichnis">
+<term>vis</term>
+</index>, ac proinde assumta altitudine sufficienti, <app type="Bfootnote">
+<lem type="main">sequetur plena machinae restitutio</lem>
+<note type="lemma-abbrev">sufficienti,</note>
+<rdg wit="#L" n="1"> sequi omnimodam plenam machinae restitutionem<index indexName="Sachverzeichnis">
+<term>machinae restitutio</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> sequetur plena machinae restitutio <hi rendition="#i">L</hi>
+</rdg>
+</app>, quae altitudo an in praxi haberi possit nihil refert ad institutum, sufficit demonstrari posse, aut restitutionem perfectam<index indexName="Sachverzeichnis">
+<term>restitutio perfecta</term>
+</index> ex natura motus sequi, aut ejus proportiones<index indexName="Sachverzeichnis">
+<term>proportio</term>
+</index> receptas exactas non esse. Quod credere malim. Calculus hic erit:</p>
+<table>
+
+<row>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>
 labens 
 ex</cell>
-              <cell style="; text-align:center">elevabit in altitudinem sui</cell>
-              <cell style="; text-align:center">cum debeat elevare</cell>
-              <cell/>
-              <cell/>
-              <cell/>
-            </row>
-            <row>
-              <cell style="; text-align:center">altitudine</cell>
-              <cell style="; text-align:center">sphaeras</cell>
-              <cell style="; text-align:center">sphaeras</cell>
-              <cell style="; text-align:center">id est e.g.</cell>
-              <cell/>
-              <cell/>
-            </row>
-            <row>
-              <cell style="; text-align:center">1</cell>
-              <cell style="; text-align:center">1</cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 1</cell>
-              <cell style="; text-align:center">10</cell>
-              <cell>9</cell>
-              <cell>8</cell>
-            </row>
-            <row>
-              <cell style="; text-align:center">2</cell>
-              <cell style="; text-align:center">4</cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 2</cell>
-              <cell style="; text-align:center">20</cell>
-              <cell>18</cell>
-              <cell>16</cell>
-            </row>
-            <row>
-              <cell style="; text-align:center">3</cell>
-              <cell style="; text-align:center">9</cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 3</cell>
-              <cell style="; text-align:center">30</cell>
-              <cell>27</cell>
-              <cell>24</cell>
-            </row>
-            <row>
-              <cell style="; text-align:center">4</cell>
-              <cell style="; text-align:center">16</cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 4</cell>
-              <cell style="; text-align:center">40</cell>
-              <cell>36</cell>
-              <cell>32</cell>
-            </row>
-            <row>
-              <cell style="; text-align:center">5</cell>
-              <cell style="; text-align:center">25</cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 5</cell>
-              <cell style="; text-align:center">50</cell>
-              <cell>45</cell>
-              <cell>40</cell>
-            </row>
-            <row>
-              <cell style="; text-align:center">6</cell>
-              <cell style="; text-align:center">36</cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 6</cell>
-              <cell style="; text-align:center">60</cell>
-              <cell>54</cell>
-              <cell>48</cell>
-            </row>
-            <row>
-              <cell style="; text-align:center">7</cell>
-              <cell style="; text-align:center">49</cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 7</cell>
-              <cell style="; text-align:center">70</cell>
-              <cell>63</cell>
-              <cell>65</cell>
-            </row>
-            <row>
-              <cell style="; text-align:center">8</cell>
-              <cell style="; text-align:center"><hi rendition="#u">64</hi></cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 8</cell>
-              <cell style="; text-align:center">80</cell>
-              <cell>72</cell>
-              <cell><hi rendition="#uu">64</hi></cell>
-            </row>
-            <row>
-              <cell style="; text-align:center">9</cell>
-              <cell style="; text-align:center"><hi rendition="#u">81</hi></cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 9</cell>
-              <cell style="; text-align:center">90</cell>
-              <cell><hi rendition="#uu">81</hi></cell>
-              <cell>72</cell>
-            </row>
-            <row>
-              <cell style="; text-align:center">10</cell>
-              <cell style="; text-align:center"><hi rendition="#u">100</hi></cell>
-              <cell style="; text-align:center"><formula xml:id="Ch27.p11.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula> 10</cell>
-              <cell style="; text-align:center"><hi rendition="#uu">100</hi></cell>
-              <cell>90</cell>
-              <cell>80</cell>
-            </row>
-          
-        </table><p xml:id="Ch27.p12">Si ergo numerus <app type="Bfootnote"><!--is-correction-app-with-future-lemma--><lem type="main"><corr resp="#ed">[<formula xml:id="Ch27.p12.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula>]</corr></lem><rdg wit="#L"><orig>a</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> ponatur esse 10. decuplicanda est altitudo prima. Si <app type="Bfootnote"><lem type="main">9.</lem><note type="lemma-abbrev">Si</note><rdg wit="#L" n="1"> novem </rdg><rdg wit="#L" n="2"> 9. <hi rendition="#i">L</hi></rdg></app>, noncuplicanda. Et generaliter posito incremento<index indexName="Sachverzeichnis"><term>incrementum</term></index> impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> in duplicata ratione spatiorum <app type="Bfootnote"><lem type="main">si multiplicetur</lem><note type="lemma-abbrev">si</note><rdg wit="#L" n="1"> multiplicanda est </rdg><rdg wit="#L" n="2"> multiplicetur <hi rendition="#i">L</hi></rdg></app> altitudo 1. per numerum sphaerarum <app type="Bfootnote"><!--is-correction-app-with-future-lemma--><lem type="main"><corr resp="#ed">[<formula xml:id="Ch27.p12.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>α</m:mi></m:math></formula>]</corr></lem><rdg wit="#L"><orig>a</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>. Sequetur restitutio perfecta<index indexName="Sachverzeichnis"><term>restitutio perfecta</term></index>; <app type="Bfootnote"><lem type="main">ex hypothesi recepta</lem><note type="lemma-abbrev">perfecta;</note><rdg wit="#L" n="1"> ex vulgari hypothesi </rdg><rdg wit="#L" n="2"> ex hypothesi recepta <hi rendition="#i">L</hi></rdg></app> incrementi<index indexName="Sachverzeichnis"><term>incrementum</term></index>. Instituenda hic experimenta<index indexName="Sachverzeichnis"><term>experimentum</term></index>: (1) ex qua altitudine labens corpus datum possit elevare aliud datum sibi aequale, inaequale, aequiponderans, <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">aut non aequiponderans</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>, simile dissimile, possit elevare in <hi rendition="#g">altitudinem quantam</hi>.</p><pb type="VIII_2" n="207"/><figure rendition="#own-line_centered" xml:id="Ch27.p13">
-        <graphic rendition="#c" url="./images/lh03705_120r-d1.svg" style="trim:  0mm -5mm 0mm 0mm; clip: true" width="195.129pt" xml:id="Ch27.p13.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 1, tlw. Blindzeichnung</hi>]</head>
-      </figure><p xml:id="Ch27.p14" rendition="#noindent">Certum est enim corpus labens ex quantulacunque altitudine elevare posse aequiponderans quiescens, sed <app type="Bfootnote"><lem type="main"/><rdg wit="#L" cause="deletion">sed <note type="editorial">|</note> <del>et</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> in <hi rendition="#i">L</hi></rdg></app>in altitudinem exiguam.<lb/>(2) Experiendum quanta altitudine opus sit, ut corpus parvum labens levet corpus magnum sensibiliter in altitudinem quantulamcumque.
-<lb/>(3) Quamdiu duret impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> post concursum seu quamdiu corpus unum alteri ob lapsum praeponderet, quod alioqui non praeponderaret.
-<lb/>(4) Quanta sit resistentia aeris<index indexName="Sachverzeichnis"><term>resistentia aeris</term></index> et an aeris resistentia<index indexName="Sachverzeichnis"><term>resistentia aeris</term></index> crescat cum descensu.
-<lb/>(5) An non incrementum<index indexName="Sachverzeichnis"><term>incrementum</term></index> gravium sit continue decrescens, quod mihi probare posse videor ac sphaera labens elevabit integram columnam sphaerarum sibi aequalium per totam lapsus<index indexName="Sachverzeichnis"><term>lapsus</term></index> altitudinem dispositarum, atque ita ipsa labens subintrabit in locum ultimae, summa <pb type="VIII_2" n="208"/>autem labi incipiet sequeturque machinae restitutio<index indexName="Sachverzeichnis"><term>restitutio machinae</term></index> in statum priori per omnia similem, aut necesse est doctrinam receptam de incremento<index indexName="Sachverzeichnis"><term>incrementum</term></index> motus gravium<index indexName="Sachverzeichnis"><term>motus gravium</term></index> non satis firmo fundamento niti progressionemque ejus esse non uniformem, sed ut mihi <app type="Bfootnote"><lem type="main">probabile videtur decrescentem</lem><note type="lemma-abbrev">mihi</note><rdg wit="#L" n="1"> videtur decrescentem </rdg><rdg wit="#L" n="2"> probabile videtur decrescentem <hi rendition="#i">L</hi></rdg></app>. <pb type="L"/><fw type="folNum">[120 v<hi rendition="#sup">o</hi>]</fw><lb/>(6) An <app type="Bfootnote"><lem type="main">corpus majus</lem><note type="lemma-abbrev">An</note><rdg wit="#L" n="1"> ex quanto </rdg><rdg wit="#L" n="2"> majore </rdg><rdg wit="#L" n="3"> corpus m </rdg><rdg wit="#L" n="4"> corpus majus <hi rendition="#i">L</hi></rdg></app> ex minore, majore, an eadem altitudine lapsum elevet corpus sibi aequiponderans et aequale in altitudinem corporis sui, quam corpus minus elevat aliud <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">sibi aequiponderans</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> minus. Meretur hoc inprimis observari ducet enim nos in intimas impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> hujus proportiones<index indexName="Sachverzeichnis"><term>proportio</term></index>.</p><p xml:id="Ch27.p15">Sunto duo corpora <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">homogenea</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> aequiponderantia et aequalia gravia et magna. Sunto duo alia levia et parva. Quaestio est an utrobique eadem altitudine lapsus<index indexName="Sachverzeichnis"><term>lapsus</term></index> opus sit, ut labens elevet quiescens in altitudinem corporis sui, aut in altitudinem datam; an <app type="Bfootnote"><lem type="main">potius</lem><note type="lemma-abbrev">an</note><rdg wit="#L" n="1"> non </rdg><rdg wit="#L" n="2"> potius <hi rendition="#i">L</hi></rdg></app> majore opus sit, <app type="Bfootnote"><lem type="main">aut an</lem><note type="lemma-abbrev">sit,</note><rdg wit="#L" n="1"> an vero </rdg><rdg wit="#L" n="2"> aut an <hi rendition="#i">L</hi></rdg></app> minore, et qua proportione<index indexName="Sachverzeichnis"><term>proportio</term></index>.</p><p xml:id="Ch27.p16">(7) An resistentia corporum<index indexName="Sachverzeichnis"><term>resistentia corporum</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">lapsum excipientium</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> crescat ut vis<index indexName="Sachverzeichnis"><term>vis</term></index> labentium. Pone corpus <formula xml:id="Ch27.p16.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> <app type="Bfootnote"><lem type="main">impingens</lem><note type="lemma-abbrev"><formula xml:id="Ch27.p16.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula></note><rdg wit="#L" n="1"> labens </rdg><rdg wit="#L" n="2"> impingens <hi rendition="#i">L</hi></rdg></app> in <formula xml:id="Ch27.p16.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>b</m:mi></m:math></formula> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">aequiponderans aut praeponderans</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> id superare per <app type="Bfootnote"><lem type="main">aliquod</lem><note type="lemma-abbrev">per</note><rdg wit="#L" n="1"> datum </rdg><rdg wit="#L" n="2"> aliquod <hi rendition="#i">L</hi></rdg></app> temporis spatium, donec impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> evanescat, et <formula xml:id="Ch27.p16.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>b</m:mi></m:math></formula> restituat se in aequiponderationem, aut praeponderationem, quaeritur an durante isto temporis spatio impetus<index indexName="Sachverzeichnis"><term>impetus</term></index> impingentis decresceat seu evanescere incipiat uniformiter, an difformiter et qua proportione. Et an ipsum corpus resistens magis resistat momento<index indexName="Sachverzeichnis"><term>momentum</term></index> aliquo sequente quam antecedente.</p><p xml:id="Ch27.p17">Sed hic examinandum esset quid aeris resistentia<index indexName="Sachverzeichnis"><term>resistentia aeris</term></index> conferat an ipsa quoque cum impetu<index indexName="Sachverzeichnis"><term>impetus</term></index> lapsus<index indexName="Sachverzeichnis"><term>lapsus</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">labentis</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> crescat.</p><p xml:id="Ch27.p18">Ante omnia autem experiendum est quanta altitudine lapsus<index indexName="Sachverzeichnis"><term>lapsus</term></index> opus habeat corpus, ad elevandum aliud aequiponderans in altitudinem corporis. Et quae sit ratio altitudinis lapsus<index indexName="Sachverzeichnis"><term>lapsus</term></index>. Si corpora aequiponderantia sunt magna, aut non magna quidem, gravia tamen magis; ad altitudinem lapsu minorum.</p><p xml:id="Ch27.p19">Quibus aliisque quae nunc enumerare prolixum foret constitutis doctrina motuslapsus<index indexName="Sachverzeichnis"><term>doctrina motus gravium</term></index> gravium<index indexName="Sachverzeichnis"><term>motus gravium</term></index> in majore luce constituetur.</p></div></div></body>
-  </text>
+<cell style="; text-align:center">elevabit in altitudinem sui</cell>
+<cell style="; text-align:center">cum debeat elevare</cell>
+<cell/>
+<cell/>
+<cell/>
+</row>
+<row>
+<cell style="; text-align:center">altitudine</cell>
+<cell style="; text-align:center">sphaeras</cell>
+<cell style="; text-align:center">sphaeras</cell>
+<cell style="; text-align:center">id est e.g.</cell>
+<cell/>
+<cell/>
+</row>
+<row>
+<cell style="; text-align:center">1</cell>
+<cell style="; text-align:center">1</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 1</cell>
+<cell style="; text-align:center">10</cell>
+<cell>9</cell>
+<cell>8</cell>
+</row>
+<row>
+<cell style="; text-align:center">2</cell>
+<cell style="; text-align:center">4</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 2</cell>
+<cell style="; text-align:center">20</cell>
+<cell>18</cell>
+<cell>16</cell>
+</row>
+<row>
+<cell style="; text-align:center">3</cell>
+<cell style="; text-align:center">9</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 3</cell>
+<cell style="; text-align:center">30</cell>
+<cell>27</cell>
+<cell>24</cell>
+</row>
+<row>
+<cell style="; text-align:center">4</cell>
+<cell style="; text-align:center">16</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 4</cell>
+<cell style="; text-align:center">40</cell>
+<cell>36</cell>
+<cell>32</cell>
+</row>
+<row>
+<cell style="; text-align:center">5</cell>
+<cell style="; text-align:center">25</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 5</cell>
+<cell style="; text-align:center">50</cell>
+<cell>45</cell>
+<cell>40</cell>
+</row>
+<row>
+<cell style="; text-align:center">6</cell>
+<cell style="; text-align:center">36</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 6</cell>
+<cell style="; text-align:center">60</cell>
+<cell>54</cell>
+<cell>48</cell>
+</row>
+<row>
+<cell style="; text-align:center">7</cell>
+<cell style="; text-align:center">49</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 7</cell>
+<cell style="; text-align:center">70</cell>
+<cell>63</cell>
+<cell>65</cell>
+</row>
+<row>
+<cell style="; text-align:center">8</cell>
+<cell style="; text-align:center">
+<hi rendition="#u">64</hi>
+</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 8</cell>
+<cell style="; text-align:center">80</cell>
+<cell>72</cell>
+<cell>
+<hi rendition="#uu">64</hi>
+</cell>
+</row>
+<row>
+<cell style="; text-align:center">9</cell>
+<cell style="; text-align:center">
+<hi rendition="#u">81</hi>
+</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 9</cell>
+<cell style="; text-align:center">90</cell>
+<cell>
+<hi rendition="#uu">81</hi>
+</cell>
+<cell>72</cell>
+</row>
+<row>
+<cell style="; text-align:center">10</cell>
+<cell style="; text-align:center">
+<hi rendition="#u">100</hi>
+</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch27.p11.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula> 10</cell>
+<cell style="; text-align:center">
+<hi rendition="#uu">100</hi>
+</cell>
+<cell>90</cell>
+<cell>80</cell>
+</row>
+
+</table>
+<p xml:id="Ch27.p12">Si ergo numerus <app type="Bfootnote"><!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[<formula xml:id="Ch27.p12.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>a</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> ponatur esse 10. decuplicanda est altitudo prima. Si <app type="Bfootnote">
+<lem type="main">9.</lem>
+<note type="lemma-abbrev">Si</note>
+<rdg wit="#L" n="1"> novem </rdg>
+<rdg wit="#L" n="2"> 9. <hi rendition="#i">L</hi>
+</rdg>
+</app>, noncuplicanda. Et generaliter posito incremento<index indexName="Sachverzeichnis">
+<term>incrementum</term>
+</index> impetus<index indexName="Sachverzeichnis">
+<term>impetus</term>
+</index> in duplicata ratione spatiorum <app type="Bfootnote">
+<lem type="main">si multiplicetur</lem>
+<note type="lemma-abbrev">si</note>
+<rdg wit="#L" n="1"> multiplicanda est </rdg>
+<rdg wit="#L" n="2"> multiplicetur <hi rendition="#i">L</hi>
+</rdg>
+</app> altitudo 1. per numerum sphaerarum <app type="Bfootnote"><!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[<formula xml:id="Ch27.p12.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>α</m:mi>
+</m:math>
+</formula>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>a</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>. Sequetur restitutio perfecta<index indexName="Sachverzeichnis">
+<term>restitutio perfecta</term>
+</index>;<app type="Bfootnote">
+<lem type="main">ex hypothesi recepta</lem>
+<note type="lemma-abbrev">perfecta;</note>
+<rdg wit="#L" n="1"> ex vulgari hypothesi </rdg>
+<rdg wit="#L" n="2"> ex hypothesi recepta <hi rendition="#i">L</hi>
+</rdg>
+</app> incrementi<index indexName="Sachverzeichnis">
+<term>incrementum</term>
+</index>. Instituenda hic experimenta<index indexName="Sachverzeichnis">
+<term>experimentum</term>
+</index>: (1) ex qua altitudine labens corpus datum possit elevare aliud datum sibi aequale, inaequale, aequiponderans, <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">aut non aequiponderans</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>, simile dissimile, possit elevare in <hi rendition="#g">altitudinem quantam</hi>.
+</p>
+<pb type="VIII_2" n="207"/>
+<figure rendition="#own-line_centered" xml:id="Ch27.p13">
+<graphic rendition="#c" url="./images/lh03705_120r-d1.svg" style="trim:  0mm -5mm 0mm 0mm; clip: true" width="195.129pt" xml:id="Ch27.p13.g1"/>
+
+<head rendition="#c">[<hi rendition="#i">Fig. 1, tlw. Blindzeichnung</hi>]
+</head>
+</figure>
+<p xml:id="Ch27.p14" rendition="#noindent">Certum est enim corpus labens ex quantulacunque altitudine elevare posse aequiponderans quiescens, sed <app type="Bfootnote">
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">sed <note type="editorial">|</note>
+<del>et</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> in <hi rendition="#i">L</hi>
+</rdg>
+</app>in altitudinem exiguam.<lb/>
+(2) Experiendum quanta altitudine opus sit, ut corpus parvum labens levet corpus magnum sensibiliter in altitudinem quantulamcumque.
+<lb/>
+(3) Quamdiu duret impetus<index indexName="Sachverzeichnis">
+<term>impetus</term>
+</index> post concursum seu quamdiu corpus unum alteri ob lapsum praeponderet, quod alioqui non praeponderaret.
+<lb/>
+(4) Quanta sit resistentia aeris<index indexName="Sachverzeichnis">
+<term>resistentia aeris</term>
+</index> et an aeris resistentia<index indexName="Sachverzeichnis">
+<term>resistentia aeris</term>
+</index> crescat cum descensu.
+<lb/>
+(5) An non incrementum<index indexName="Sachverzeichnis">
+<term>incrementum</term>
+</index> gravium sit continue decrescens, quod mihi probare posse videor ac sphaera labens elevabit integram columnam sphaerarum sibi aequalium per totam lapsus<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> altitudinem dispositarum, atque ita ipsa labens subintrabit in locum ultimae, summa <pb type="VIII_2" n="208"/>
+autem labi incipiet sequeturque machinae restitutio<index indexName="Sachverzeichnis">
+<term>restitutio machinae</term>
+</index> in statum priori per omnia similem, aut necesse est doctrinam receptam de incremento<index indexName="Sachverzeichnis">
+<term>incrementum</term>
+</index> motus gravium<index indexName="Sachverzeichnis">
+<term>motus gravium</term>
+</index> non satis firmo fundamento niti progressionemque ejus esse non uniformem, sed ut mihi <app type="Bfootnote">
+<lem type="main">probabile videtur decrescentem</lem>
+<note type="lemma-abbrev">mihi</note>
+<rdg wit="#L" n="1"> videtur decrescentem </rdg>
+<rdg wit="#L" n="2"> probabile videtur decrescentem <hi rendition="#i">L</hi>
+</rdg>
+</app>.<pb type="L"/>
+<fw type="folNum">[120 v<hi rendition="#sup">o</hi>]
+</fw>
+<lb/>
+(6) An <app type="Bfootnote">
+<lem type="main">corpus majus</lem>
+<note type="lemma-abbrev">An</note>
+<rdg wit="#L" n="1"> ex quanto </rdg>
+<rdg wit="#L" n="2"> majore </rdg>
+<rdg wit="#L" n="3"> corpus m </rdg>
+<rdg wit="#L" n="4"> corpus majus <hi rendition="#i">L</hi>
+</rdg>
+</app> ex minore, majore, an eadem altitudine lapsum elevet corpus sibi aequiponderans et aequale in altitudinem corporis sui, quam corpus minus elevat aliud <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">sibi aequiponderans</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> minus. Meretur hoc inprimis observari ducet enim nos in intimas impetus<index indexName="Sachverzeichnis">
+<term>impetus</term>
+</index> hujus proportiones<index indexName="Sachverzeichnis">
+<term>proportio</term>
+</index>.
+</p>
+<p xml:id="Ch27.p15">Sunto duo corpora <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">homogenea</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> aequiponderantia et aequalia gravia et magna. Sunto duo alia levia et parva. Quaestio est an utrobique eadem altitudine lapsus<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> opus sit, ut labens elevet quiescens in altitudinem corporis sui, aut in altitudinem datam; an <app type="Bfootnote">
+<lem type="main">potius</lem>
+<note type="lemma-abbrev">an</note>
+<rdg wit="#L" n="1"> non </rdg>
+<rdg wit="#L" n="2"> potius <hi rendition="#i">L</hi>
+</rdg>
+</app> majore opus sit, <app type="Bfootnote">
+<lem type="main">aut an</lem>
+<note type="lemma-abbrev">sit,</note>
+<rdg wit="#L" n="1"> an vero </rdg>
+<rdg wit="#L" n="2"> aut an <hi rendition="#i">L</hi>
+</rdg>
+</app> minore, et qua proportione<index indexName="Sachverzeichnis">
+<term>proportio</term>
+</index>.
+</p>
+<p xml:id="Ch27.p16">(7) An resistentia corporum<index indexName="Sachverzeichnis">
+<term>resistentia corporum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">lapsum excipientium</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> crescat ut vis<index indexName="Sachverzeichnis">
+<term>vis</term>
+</index> labentium. Pone corpus <formula xml:id="Ch27.p16.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">impingens</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch27.p16.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> labens </rdg>
+<rdg wit="#L" n="2"> impingens <hi rendition="#i">L</hi>
+</rdg>
+</app> in <formula xml:id="Ch27.p16.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>b</m:mi>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">aequiponderans aut praeponderans</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> id superare per <app type="Bfootnote">
+<lem type="main">aliquod</lem>
+<note type="lemma-abbrev">per</note>
+<rdg wit="#L" n="1"> datum </rdg>
+<rdg wit="#L" n="2"> aliquod <hi rendition="#i">L</hi>
+</rdg>
+</app> temporis spatium, donec impetus<index indexName="Sachverzeichnis">
+<term>impetus</term>
+</index> evanescat, et <formula xml:id="Ch27.p16.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>b</m:mi>
+</m:math>
+</formula> restituat se in aequiponderationem, aut praeponderationem, quaeritur an durante isto temporis spatio impetus<index indexName="Sachverzeichnis">
+<term>impetus</term>
+</index> impingentis decresceat seu evanescere incipiat uniformiter, an difformiter et qua proportione. Et an ipsum corpus resistens magis resistat momento<index indexName="Sachverzeichnis">
+<term>momentum</term>
+</index> aliquo sequente quam antecedente.</p>
+<p xml:id="Ch27.p17">Sed hic examinandum esset quid aeris resistentia<index indexName="Sachverzeichnis">
+<term>resistentia aeris</term>
+</index> conferat an ipsa quoque cum impetu<index indexName="Sachverzeichnis">
+<term>impetus</term>
+</index> lapsus<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">labentis</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> crescat.</p>
+<p xml:id="Ch27.p18">Ante omnia autem experiendum est quanta altitudine lapsus<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> opus habeat corpus, ad elevandum aliud aequiponderans in altitudinem corporis. Et quae sit ratio altitudinis lapsus<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index>. Si corpora aequiponderantia sunt magna, aut non magna quidem, gravia tamen magis; ad altitudinem lapsu minorum.</p>
+<p xml:id="Ch27.p19">Quibus aliisque quae nunc enumerare prolixum foret constitutis doctrina motuslapsus<index indexName="Sachverzeichnis">
+<term>doctrina motus gravium</term>
+</index> gravium<index indexName="Sachverzeichnis">
+<term>motus gravium</term>
+</index> in majore luce constituetur.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

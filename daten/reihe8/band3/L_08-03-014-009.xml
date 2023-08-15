@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-014-009">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-014-009">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Invenire Conoeides Solidum Aequalis Ubique Resistentiae</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2022</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="14"/>
 						<title type="section" level="a" n="9">Invenire Conoeides Solidum Aequalis Ubique Resistentiae</title>
 						<date calendar="#gregorian" notBefore="1683-03" resp="#ed" cert="medium"/>
 						<date calendar="#gregorian" notAfter="1684-06" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=291</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+							<idno type="page">#page=291</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,528 +86,648 @@
 						</imprint>
 						<biblScope unit="page" from="257" to="258"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
-					<relatedItem type="superordinated-chapter"><ptr target="#L_08-03-014-000"/></relatedItem>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
+					<relatedItem type="superordinated-chapter">
+						<ptr target="#L_08-03-014-000"/>
+					</relatedItem>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-03-014-009_facs-haupttextzeuge"><msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXV 9, 14 Bl. 3</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#aufzeichnung">
-							<summary><p>Aufzeichnung: LH XXXV 9, 14 Bl. 3. Ein halbes Blatt 4<hi rendition="#sup">o</hi>, am unteren Rand unregelmäßig beschnitten; Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=887">Wasserzeichens</ref>: Papier aus dem Harz. Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886">Bl. 3 r<hi rendition="#sup">o</hi></ref>; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=888">Bl. 3 v<hi rendition="#sup">o</hi></ref> überliefert das Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">3</hi></hi>. Das Diagramm [<hi rendition="#i">Fig. 1</hi>] ist sowohl Bestandteil von N. <ref corresp="#N.14.9"/> wie auch von N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">3</hi></hi>.</p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc></witness>
-				</listWit>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<tagsDecl>
-				<rendition scheme="css" xml:id="i">font-style:italic</rendition>
-				<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-				<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-				<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-				<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-				<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-				<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-				<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-			</tagsDecl>
-			<charDecl>
-				<!-- Sonderzeichen OHNE Unicodeentsprechung -->
-				<!--rightpropto-->
-				<glyph xml:id="rightpropto">
-					<glyphName>rightpropto</glyphName>
-					<desc>...</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX">\rightpropto</mapping>
-					<graphic url="../../glyphs/rightpropto.svg"/>
-				</glyph>
-				<glyph xml:id="Pfund">
-					<glyphName>Pfund</glyphName>
-					<desc>stilisiertes lb-Zeichen (Pfund)</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.7</value>
-					</charProp>
-					<mapping type="TeX">\Pfund</mapping>
-					<graphic url="../../glyphs/Pfund.svg"/>
-				</glyph>
-				<!-- leibdashv -->
-				<glyph xml:id="pleibdashv">
-					<glyphName>pleibdashv</glyphName>
-					<desc>Bedeutung (+−) - gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>-1</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\pleibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<glyph xml:id="leibdashv">
-					<glyphName>leibdashv</glyphName>
-					<desc>Bedeutung (+−) - nicht-gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\leibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<!-- Sonderzeichen MIT Unicodeentsprechung -->
-			</charDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="la"/>
-			</langUsage>
-			<calendarDesc>
-				<calendar xml:id="gregorian">
-					<p>Gregorianischer Kalenderstil</p>
-				</calendar>
-				<calendar xml:id="julian">
-					<p>Julianischer Kalenderstil</p>
-				</calendar>
-			</calendarDesc>
-			<textClass>
-				<catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
-				<catRef scheme="L_terms" target="L_terms.xml#"/>
-			</textClass>
-			<abstract>
-				<listPerson>
-					<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-					<person sameAs="L_persons.xml#"/>
-				</listPerson>
-				<listPlace>
-					<place sameAs="L_places.xml#"/>
-				</listPlace>
-			</abstract>
-		</profileDesc>
-		<revisionDesc>
-			<change when="2021" who="#telota" status="base"/>
-			<change when="2023-02-10" who="#stork" status="enrich_1"/>
-		</revisionDesc>
-	</teiHeader>
-	<facsimile source="digilib.bbaw.de" xml:id="L_08-03-014-009_facs-haupttextzeuge">
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886"/>
-	</facsimile>
-	<text xml:id="L_08-03-014-009_text">
-		<body xml:id="Document">
-			<div type="section" xml:id="Ch14.S9" n="149">
-				<head>14<hi rendition="#sub">9</hi> INVENIRE CONOEIDES SOLIDUM AEQUALIS UBIQUE RESISTENTIAE</head>
-				<head>[März / April 1683 – erste Hälfte 1684]</head>
-				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-						<witness><msDesc>
+					<witness n="L" corresp="#L_08-03-014-009_facs-haupttextzeuge">
+						<msDesc>
 							<msIdentifier>
 								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
 								<idno type="Signatur">LH XXXV 9, 14 Bl. 3</idno>
 							</msIdentifier>
-							<msContents>
-								<summary><p>Aufzeichnung: LH XXXV 9, 14 Bl. 3. Ein halbes Blatt 4<hi rendition="#sup">o</hi>, am unteren Rand unregelmäßig beschnitten; Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=887">Wasserzeichens</ref>: Papier aus dem Harz. Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886">Bl. 3 r<hi rendition="#sup">o</hi></ref>; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=888">Bl. 3 v<hi rendition="#sup">o</hi></ref> überliefert das Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">3</hi></hi>. Das Diagramm [<hi rendition="#i">Fig. 1</hi>] ist sowohl Bestandteil von N. <ref corresp="#N.14.9"/> wie auch von N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">3</hi></hi>.</p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						</listWit></p>
-				</div>
-				
-				<div type="text">
-					<p rendition="#noindent" xml:id="Ch14.S9.p4"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886"><pb type="L"/><fw type="folNum">[3 r<hi rendition="#sup">o</hi>]</fw></ref></p>
-					<p rendition="#c" xml:id="Ch14.S9.p5">Invenire Conoeides Solidum,<index indexName="Sachen">
-						<term>solidum conoeides</term>
-						</index> aequalis ubique resistentiae<index indexName="Sachen">
-						<term>solidum ubique aequiresistens</term>
-						</index><index indexName="Sachen">
-						<term>resistentia ubique aequalis</term>
-						</index></p>
-					<p rendition="#noindent" xml:id="Ch14.S9.p6">Sit Trilineum orthogonium planum <hi rendition="#i">ABCEA</hi><index indexName="Sachen">
-						<term>trilineum orthogonium</term>
-						</index><index indexName="Sachen">
-						<term>trilineum planum</term>
-						</index> quod rotatum circa proprium axem <hi rendition="#i">AB</hi> generet solidum conoeides <hi rendition="#i">AECDFA</hi>.<index indexName="Sachen">
-						<term>solidum conoeides</term>
-						</index> Hoc quaeritur tale, <app type="Bfootnote">
-						<lem type="main">ut momentum<index indexName="Sachen">
-							<term>momentum solidi conoeidis</term>
-							</index> portionis <hi rendition="#i">AEFA</hi></lem>
-						<note type="lemma-abbrev">ut</note>
-						<rdg wit="#L" n="1"> vires frangentes<index indexName="Sachen">
-							<term>vis frangens</term>
-							</index> </rdg>
-						<rdg wit="#L" n="2"> momentum <app>
-							<rdg wit="#L" n="a">ipsius <hi rendition="#i">A</hi> </rdg>
-							<rdg wit="#L" n="b">portionis <hi rendition="#i">AEFA</hi> <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> sit ad resistentiam suae basis <hi rendition="#i">EHF</hi>,<index indexName="Sachen">
-						<term>resistentia basis</term>
-						</index> ut momentum totius <hi rendition="#i">ACDA</hi><index indexName="Sachen">
-						<term>momentum totius</term>
-						</index> ad resistentiam suae basis <hi rendition="#i">CGD</hi>. Sunt autem resistentiae basium,<index indexName="Sachen">
-						<term>resistentia basis</term>
-						</index> ut cubi diametrorum <hi rendition="#i">EF</hi>, <hi rendition="#i">CD</hi>.<index indexName="Sachen">
-						<term>cubus diametri</term>
-						</index> Debet <app type="Bfootnote">
-						<lem type="main">ergo linea</lem>
-						<note type="lemma-abbrev">ergo</note>
-						<rdg wit="#L" n="1"> figura </rdg>
-						<rdg wit="#L" n="2"> linea <hi rendition="#i">L</hi></rdg>
-						</app> <hi rendition="#i">AEC</hi> esse talis, ut <app type="Bfootnote">
-						<lem type="main">momenta solidorum <hi rendition="#i">AEFA</hi>, <hi rendition="#i">ACDA</hi>,<index indexName="Sachen">
-							<term>momentum solidi conoeidis</term>
-							</index> sint ut cubi <hi rendition="#i">EF</hi>, <hi rendition="#i">CD</hi>, diametrorum basium.<index indexName="Sachen">
-							<term>cubus diametri</term>
-							</index> <hi rendition="#i">CD</hi> sit <hi rendition="#i">y</hi>, <hi rendition="#i">AB</hi> sit <hi rendition="#i">x</hi>.</lem>
-						<note type="lemma-abbrev">momenta</note>
-						<rdg wit="#L" n="1"> frustroru </rdg>
-						<rdg wit="#L" n="2"> sint ut cubi diametrorum basium </rdg>
-						<rdg wit="#L" n="3"> <hi rendition="#i">AEF</hi> </rdg>
-						<rdg wit="#L" n="4"> solidorum <hi rendition="#i">AEFA</hi>, <seg type="apparat-ellipsis"/> diametrorum basium. <app>
-							<rdg wit="#L" n="a"><hi rendition="#i">EF</hi> sit <hi rendition="#i">y</hi> </rdg>
-							<rdg wit="#L" n="b"><hi rendition="#i">CD</hi> sit <hi rendition="#i">y</hi>, <hi rendition="#i">AB</hi> sit <hi rendition="#i">x</hi>. <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> Et sit proprietas<index indexName="Sachen">
-						<term>proprietas curvae</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">curvae<index indexName="Sachen">
-							<term>curva</term>
-							</index> <hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:msup>
-										<m:mi>x</m:mi>
-										<m:mi>e</m:mi>
-									</m:msup>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula></lem>
-						<note type="lemma-abbrev">curvae</note>
-						<rdg wit="#L" n="1"> <hi rendition="#i">x</hi> </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:msup>
-										<m:mi>x</m:mi>
-										<m:mi>b</m:mi>
-									</m:msup>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> </rdg>
-						<rdg wit="#L" n="3"> <hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:msup>
-										<m:mi>x</m:mi>
-										<m:mi>e</m:mi>
-									</m:msup>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> <hi rendition="#i">L</hi></rdg>
-						</app> Et <app type="Bfootnote">
-						<lem type="main">Elementa conoidis<index indexName="Sachen">
-							<term>elementum conoeidis</term>
-							</index></lem>
-						<note type="lemma-abbrev">Elementa</note>
-						<rdg wit="#L" n="1"> cononoidis </rdg>
-						<rdg wit="#L" n="2"> conoidis <hi rendition="#i">L</hi></rdg>
-						</app> cum sint proportionalia ipsis <hi rendition="#i">yy</hi>, erunt ut <formula xml:id="Ch14.S9.p6.m4">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:msup>
-									<m:mi>x</m:mi>
-									<m:mrow>
-										<m:mn>2</m:mn>
-										<m:mo>⁢</m:mo>
-										<m:mi>e</m:mi>
-									</m:mrow>
-								</m:msup>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> Quorum momenta<anchor xml:id="LH_35_09_14_003r_summasummarum_rglj-1"/><index indexName="Sachen">
-						<term>momentum solidi conoeidis</term>
-						</index> ex <hi rendition="#i">CD</hi> sunt summae <app type="Bfootnote">
-						<lem type="main">summarum per <app type="Cfootnote">
-							<lem type="main">alibi demonstrata,<anchor xml:id="LH_35_09_14_003r_summasummarum_rglj-2"/></lem>
-							<note type="lemma-abbrev">alibi demonstrata</note>
-							<note type="editorial">Siehe N. <ref corresp="L_section_148.xml#N.14.8"/>, S. <ref corresp="L_section_148.xml#LH_35_09_14_001r_summasummarum_ouir-1"/>.</note>
-							</app> sunt autem</lem>
-						<note type="lemma-abbrev">summarum</note>
-						<rdg wit="#L" n="1"> sunt au </rdg>
-						<rdg wit="#L" n="2"> per alibi demonstrata, sunt autem <hi rendition="#i">L</hi></rdg>
-						</app> summae <formula xml:id="Ch14.S9.p6.m5">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mpadded width="-1.7pt">
-										<m:msup>
-											<m:mi>x</m:mi>
-											<m:mfrac>
-												<m:mrow>
-													<m:mrow>
-														<m:mn>2</m:mn>
-														<m:mo>⁢</m:mo>
-														<m:mi>e</m:mi>
-													</m:mrow>
-													<m:mo>+</m:mo>
-													<m:mn>1</m:mn>
-												</m:mrow>
-												<m:mo>⋅</m:mo>
-											</m:mfrac>
-										</m:msup>
-									</m:mpadded>
-									<m:mo rspace="4.2pt">:</m:mo>
-									<m:mover accent="true">
-										<m:mrow>
-											<m:mrow>
-												<m:mn>2</m:mn>
-												<m:mo>⁢</m:mo>
-												<m:mi>e</m:mi>
-											</m:mrow>
-											<m:mo>+</m:mo>
-											<m:mn>1</m:mn>
-										</m:mrow>
-										<m:mo>¯</m:mo>
-									</m:mover>
-								</m:mrow>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> Et summae summarum erunt:<index indexName="Sachen">
-						<term>summa summae</term>
-						</index> <formula xml:id="Ch14.S9.p6.m6">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mpadded width="-1.7pt">
-										<m:msup>
-											<m:mi>x</m:mi>
-											<m:mfrac>
-												<m:mrow>
-													<m:mrow>
-														<m:mn>2</m:mn>
-														<m:mo>⁢</m:mo>
-														<m:mi>e</m:mi>
-													</m:mrow>
-													<m:mo>+</m:mo>
-													<m:mn>2</m:mn>
-												</m:mrow>
-												<m:mo>⋅</m:mo>
-											</m:mfrac>
-										</m:msup>
-									</m:mpadded>
-									<m:mo rspace="4.2pt">:</m:mo>
-									<m:mrow>
-										<m:mover accent="true">
-											<m:mrow>
-												<m:mrow>
-													<m:mn>2</m:mn>
-													<m:mo>⁢</m:mo>
-													<m:mi>e</m:mi>
-												</m:mrow>
-												<m:mo>+</m:mo>
-												<m:mn>1</m:mn>
-											</m:mrow>
-											<m:mo>¯</m:mo>
-										</m:mover>
-										<m:mo>⋅</m:mo>
-										<m:mover accent="true">
-											<m:mrow>
-												<m:mrow>
-													<m:mn>2</m:mn>
-													<m:mo>⁢</m:mo>
-													<m:mi>e</m:mi>
-												</m:mrow>
-												<m:mo>+</m:mo>
-												<m:mn>2</m:mn>
-											</m:mrow>
-											<m:mo>¯</m:mo>
-										</m:mover>
-									</m:mrow>
-								</m:mrow>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> Quae ut sint proportionales cubis ab <hi rendition="#i">y</hi>, debent coincidere <formula xml:id="Ch14.S9.p6.m7">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:msup>
-									<m:mi>y</m:mi>
-									<m:mn>3</m:mn>
-								</m:msup>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> seu <formula xml:id="Ch14.S9.p6.m8">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:msup>
-									<m:mi>x</m:mi>
-									<m:mrow>
-										<m:mn>3</m:mn>
-										<m:mo>⁢</m:mo>
-										<m:mi>e</m:mi>
-									</m:mrow>
-								</m:msup>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> et <formula xml:id="Ch14.S9.p6.m9">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:msup>
-									<m:mi>x</m:mi>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>2</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>e</m:mi>
-										</m:mrow>
-										<m:mo>+</m:mo>
-										<m:mn>2</m:mn>
-									</m:mrow>
-								</m:msup>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> Ergo aequantur <formula xml:id="Ch14.S9.p6.m10">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mn>3</m:mn>
-								<m:mo>⁢</m:mo>
-								<m:mi>e</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> <app type="Bfootnote">
-						<lem type="main">et <formula xml:id="Ch14.S9.p6.m11">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>2</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>e</m:mi>
-										</m:mrow>
-										<m:mo>+</m:mo>
-										<m:mn>2</m:mn>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> sive erit <hi rendition="#i">e</hi> aequ. 2,</lem>
-						<note type="lemma-abbrev">et</note>
-						<rdg wit="#L"><formula xml:id="Ch14.S9.p6.m12">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>2</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>e</m:mi>
-										</m:mrow>
-										<m:mo>+</m:mo>
-										<m:mn>2</m:mn>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> </rdg>
-						<rdg wit="#L" n="1"> sive <hi rendition="#i">e</hi> et 2 </rdg>
-						<rdg wit="#L" n="2"> sive erit <hi rendition="#i">e</hi> aequ. 2, <hi rendition="#i">L</hi></rdg>
-						</app> et fiet <hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m13">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:msup>
-									<m:mi>x</m:mi>
-									<m:mn>2</m:mn>
-								</m:msup>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> Ergo Conoeides parabolicum concavum<index indexName="Sachen">
-						<term>conoeides parabolicum concavum</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">seu Tuba parabolica<index indexName="Sachen">
-							<term>tuba parabolica</term>
-							</index></lem>
-						<note type="lemma-abbrev">seu</note>
-						<rdg wit="#L" cause="addition"><add>Tuba parabolica</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ubique aequaliter resistit.<index indexName="Sachen">
-						<term>solidum ubique aequiresistens</term>
-						</index> Quae cum sit quinta pars cylindri circumscripti,<index indexName="Sachen">
-						<term>cylinder circumscriptus</term>
-						</index> hinc <app type="Bfootnote">
-						<lem type="main">modum</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> habemus quo trabs<index indexName="Sachen">
-						<term>trabs ubique aequiresistens</term>
-						</index> ad quintam ponderis<index indexName="Sachen">
-						<term>pondus trabis</term>
-						</index> partem reduci potest, <app type="Bfootnote">
-						<lem type="main">salva firmitate.<index indexName="Sachen">
-							<term>firmitas trabis</term>
-							</index></lem>
-						<note type="lemma-abbrev">salva</note>
-						<rdg wit="#L" n="1"> resistentia </rdg>
-						<rdg wit="#L" n="2"> firmitate <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Cfootnote">
-						<lem type="main">Quod Theorema pulcherrimum<index indexName="Sachen">
-							<term>theorema pulcherrimum</term>
-							</index> a Galileo<index indexName="Personen">
-							<term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564–1642</term>
-							</index> non fuit observatum.</lem>
-						<note type="lemma-abbrev">Quod <seg type="apparat-ellipsis"/> observatum</note>
-						<note type="editorial">Galilei hatte sich mit dem Längsschnitt eines prismatischen Balkens befasst, der an jedem Punkt seiner Länge den gleichen Bruchwiderstand aufweist. Siehe G. <hi rendition="#k">Galilei</hi>, <hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 137–141<bibl corresp="#bib_00050"> (<hi rendition="#i">GO</hi> VIII, S. 177–181).<bibl corresp="#bib_00048"/></bibl></note>
-						</app></p>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S9.p7"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_14_003r_d1.svg" width="156.1032pt" xml:id="Ch14.S9.p7.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_09_14_003r_Fig.1"/></head></figure>
-					<p rendition="#noindent" xml:id="Ch14.S9.p8"><app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note>
-						<note type="editorial">Hierzu ist in <hi rendition="#i">L</hi> ein gestrichener, hier nicht wiedergegebener Entwurf überliefert. Das Diagramm gehört zugleich zum Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">3</hi></hi>; vgl. [<hi rendition="#i">Fig. 8a</hi>] auf S. <ref corresp="L_section_146.xml#LH_35_09_14_003r_bis_Fig.8a"/>.</note>
-						</app>[<hi rendition="#i">Unterhalb eines Trennungsstrichs:</hi>]</p>
-					<p rendition="#noindent" xml:id="Ch14.S9.p9">Solidum quaerere, quod extremis apprehensum, flectenti ubique aequaliter resistit.<index indexName="Sachen">
-						<term>solidum flectenti ubique aequiresistens</term>
-						</index></p>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S9.p10_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_14_003r_d2.svg" width="216.8pt" xml:id="Ch14.S9.p10.g1"/><head>[<hi rendition="#i">Fig. 2a</hi>]<anchor xml:id="LH_35_09_14_003r_Fig.2"/></head> </figure>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S9.p10_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_14_003r_d3.svg" width="216.8pt" xml:id="Ch14.S9.p11.g1"/><head>[<hi rendition="#i">Fig. 2b</hi>]<anchor xml:id="LH_35_09_14_003r_Fig.3"/></head></figure>
-				</div>
-			</div>
-		</body>
-	</text>
+							<msContents corresp="L_witness-content-types.xml#aufzeichnung">
+								<summary>
+									<p>Aufzeichnung: LH XXXV 9, 14 Bl. 3. Ein halbes Blatt 4<hi rendition="#sup">o</hi>, am unteren Rand unregelmäßig beschnitten; Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=887">Wasserzeichens</ref>: Papier aus dem Harz. Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886">Bl. 3 r<hi rendition="#sup">o</hi>
+									</ref>;									<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=888">Bl. 3 v<hi rendition="#sup">o</hi>
+									</ref> überliefert das Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>
+,								<hi rendition="#i">L<hi rendition="#sup">3</hi>
+								</hi>. Das Diagramm [<hi rendition="#i">Fig. 1</hi>] ist sowohl Bestandteil von N. <ref corresp="#N.14.9"/>
+ wie auch von N. <ref corresp="L_section_146.xml#N.14.6"/>
+,						<hi rendition="#i">L<hi rendition="#sup">3</hi>
+						</hi>.
+					</p>
+				</summary>
+			</msContents>
+			<physDesc>
+				<objectDesc form="Handschrift"/>
+			</physDesc>
+			<history>
+				<origin corresp="L_witness-origin-types.xml#origin-L"/>
+			</history>
+		</msDesc>
+	</witness>
+</listWit>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+<rendition scheme="css" xml:id="i">font-style:italic</rendition>
+<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+</tagsDecl>
+<charDecl>
+<!-- Sonderzeichen OHNE Unicodeentsprechung -->
+<!--rightpropto-->
+<glyph xml:id="rightpropto">
+	<glyphName>rightpropto</glyphName>
+	<desc>...</desc>
+	<charProp>
+		<localName>baselineshift-in-ex</localName>
+		<value>0</value>
+	</charProp>
+	<charProp>
+		<localName>width-in-em</localName>
+		<value>0.6</value>
+	</charProp>
+	<mapping type="TeX">\rightpropto</mapping>
+	<graphic url="../../glyphs/rightpropto.svg"/>
+</glyph>
+<glyph xml:id="Pfund">
+	<glyphName>Pfund</glyphName>
+	<desc>stilisiertes lb-Zeichen (Pfund)</desc>
+	<charProp>
+		<localName>baselineshift-in-ex</localName>
+		<value>0</value>
+	</charProp>
+	<charProp>
+		<localName>width-in-em</localName>
+		<value>0.7</value>
+	</charProp>
+	<mapping type="TeX">\Pfund</mapping>
+	<graphic url="../../glyphs/Pfund.svg"/>
+</glyph>
+<!-- leibdashv -->
+<glyph xml:id="pleibdashv">
+	<glyphName>pleibdashv</glyphName>
+	<desc>Bedeutung (+−) - gesenkt</desc>
+	<charProp>
+		<localName>baselineshift-in-ex</localName>
+		<value>-1</value>
+	</charProp>
+	<charProp>
+		<localName>width-in-em</localName>
+		<value>0.6</value>
+	</charProp>
+	<mapping type="PUA"/>
+	<mapping type="TeX">\pleibdashv</mapping>
+	<graphic url="../../glyphs/pm.svg"/>
+</glyph>
+<glyph xml:id="leibdashv">
+	<glyphName>leibdashv</glyphName>
+	<desc>Bedeutung (+−) - nicht-gesenkt</desc>
+	<charProp>
+		<localName>baselineshift-in-ex</localName>
+		<value>0</value>
+	</charProp>
+	<charProp>
+		<localName>width-in-em</localName>
+		<value>0.6</value>
+	</charProp>
+	<mapping type="PUA"/>
+	<mapping type="TeX">\leibdashv</mapping>
+	<graphic url="../../glyphs/pm.svg"/>
+</glyph>
+<!-- Sonderzeichen MIT Unicodeentsprechung -->
+</charDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="la"/>
+</langUsage>
+<calendarDesc>
+<calendar xml:id="gregorian">
+	<p>Gregorianischer Kalenderstil</p>
+</calendar>
+<calendar xml:id="julian">
+	<p>Julianischer Kalenderstil</p>
+</calendar>
+</calendarDesc>
+<textClass>
+<catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
+<catRef scheme="L_terms" target="L_terms.xml#"/>
+</textClass>
+<abstract>
+<listPerson>
+	<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+	<person sameAs="L_persons.xml#"/>
+</listPerson>
+<listPlace>
+	<place sameAs="L_places.xml#"/>
+</listPlace>
+</abstract>
+</profileDesc>
+<revisionDesc>
+<change when="2021" who="#telota" status="base"/>
+<change when="2023-02-10" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-014-009_facs-haupttextzeuge">
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886"/>
+</facsimile>
+<text xml:id="L_08-03-014-009_text">
+<body xml:id="Document">
+<div type="section" xml:id="Ch14.S9" n="149">
+<head>14<hi rendition="#sub">9</hi> INVENIRE CONOEIDES SOLIDUM AEQUALIS UBIQUE RESISTENTIAE</head>
+<head>[März / April 1683 – erste Hälfte 1684]</head>
+<div type="ueberlieferung">
+	<p>
+		<hi rendition="#b #smaller">Überlieferung:</hi>
+		<listWit>
+			<witness>
+				<msDesc>
+					<msIdentifier>
+						<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+						<idno type="Signatur">LH XXXV 9, 14 Bl. 3</idno>
+					</msIdentifier>
+					<msContents>
+						<summary>
+							<p>Aufzeichnung: LH XXXV 9, 14 Bl. 3. Ein halbes Blatt 4<hi rendition="#sup">o</hi>, am unteren Rand unregelmäßig beschnitten; Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=887">Wasserzeichens</ref>: Papier aus dem Harz. Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886">Bl. 3 r<hi rendition="#sup">o</hi>
+							</ref>;							<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=888">Bl. 3 v<hi rendition="#sup">o</hi>
+							</ref> überliefert das Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>
+,						<hi rendition="#i">L<hi rendition="#sup">3</hi>
+						</hi>. Das Diagramm [<hi rendition="#i">Fig. 1</hi>] ist sowohl Bestandteil von N. <ref corresp="#N.14.9"/>
+ wie auch von N. <ref corresp="L_section_146.xml#N.14.6"/>
+,				<hi rendition="#i">L<hi rendition="#sup">3</hi>
+				</hi>.
+			</p>
+		</summary>
+	</msContents>
+	<physDesc>
+		<objectDesc form="Handschrift"/>
+	</physDesc>
+	<history>
+		<origin/>
+	</history>
+</msDesc>
+</witness>
+</listWit>
+</p>
+</div>
+
+<div type="text">
+<p rendition="#noindent" xml:id="Ch14.S9.p4">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=886">
+<pb type="L"/>
+<fw type="folNum">[3 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</p>
+<p rendition="#c" xml:id="Ch14.S9.p5">Invenire Conoeides Solidum,<index indexName="Sachen">
+<term>solidum conoeides</term>
+</index> aequalis ubique resistentiae<index indexName="Sachen">
+<term>solidum ubique aequiresistens</term>
+</index>
+<index indexName="Sachen">
+<term>resistentia ubique aequalis</term>
+</index>
+</p>
+<p rendition="#noindent" xml:id="Ch14.S9.p6">Sit Trilineum orthogonium planum <hi rendition="#i">ABCEA</hi>
+<index indexName="Sachen">
+<term>trilineum orthogonium</term>
+</index>
+<index indexName="Sachen">
+<term>trilineum planum</term>
+</index> quod rotatum circa proprium axem <hi rendition="#i">AB</hi> generet solidum conoeides <hi rendition="#i">AECDFA</hi>.<index indexName="Sachen">
+<term>solidum conoeides</term>
+</index> Hoc quaeritur tale, <app type="Bfootnote">
+<lem type="main">ut momentum<index indexName="Sachen">
+<term>momentum solidi conoeidis</term>
+</index> portionis <hi rendition="#i">AEFA</hi>
+</lem>
+<note type="lemma-abbrev">ut</note>
+<rdg wit="#L" n="1"> vires frangentes<index indexName="Sachen">
+<term>vis frangens</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> momentum <app>
+<rdg wit="#L" n="a">ipsius <hi rendition="#i">A</hi>
+</rdg>
+<rdg wit="#L" n="b">portionis <hi rendition="#i">AEFA</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> sit ad resistentiam suae basis <hi rendition="#i">EHF</hi>,<index indexName="Sachen">
+<term>resistentia basis</term>
+</index> ut momentum totius <hi rendition="#i">ACDA</hi>
+<index indexName="Sachen">
+<term>momentum totius</term>
+</index> ad resistentiam suae basis <hi rendition="#i">CGD</hi>. Sunt autem resistentiae basium,<index indexName="Sachen">
+<term>resistentia basis</term>
+</index> ut cubi diametrorum <hi rendition="#i">EF</hi>,<hi rendition="#i">CD</hi>.<index indexName="Sachen">
+<term>cubus diametri</term>
+</index> Debet <app type="Bfootnote">
+<lem type="main">ergo linea</lem>
+<note type="lemma-abbrev">ergo</note>
+<rdg wit="#L" n="1"> figura </rdg>
+<rdg wit="#L" n="2"> linea <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">AEC</hi> esse talis, ut <app type="Bfootnote">
+<lem type="main">momenta solidorum <hi rendition="#i">AEFA</hi>,<hi rendition="#i">ACDA</hi>,<index indexName="Sachen">
+<term>momentum solidi conoeidis</term>
+</index> sint ut cubi <hi rendition="#i">EF</hi>,<hi rendition="#i">CD</hi>, diametrorum basium.<index indexName="Sachen">
+<term>cubus diametri</term>
+</index>
+<hi rendition="#i">CD</hi> sit <hi rendition="#i">y</hi>,<hi rendition="#i">AB</hi> sit <hi rendition="#i">x</hi>.
+</lem>
+<note type="lemma-abbrev">momenta</note>
+<rdg wit="#L" n="1"> frustroru </rdg>
+<rdg wit="#L" n="2"> sint ut cubi diametrorum basium </rdg>
+<rdg wit="#L" n="3">
+<hi rendition="#i">AEF</hi>
+</rdg>
+<rdg wit="#L" n="4"> solidorum <hi rendition="#i">AEFA</hi>,<seg type="apparat-ellipsis"/>
+ diametrorum basium. <app>
+<rdg wit="#L" n="a">
+<hi rendition="#i">EF</hi> sit <hi rendition="#i">y</hi>
+</rdg>
+<rdg wit="#L" n="b">
+<hi rendition="#i">CD</hi> sit <hi rendition="#i">y</hi>,<hi rendition="#i">AB</hi> sit <hi rendition="#i">x</hi>.<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> Et sit proprietas<index indexName="Sachen">
+<term>proprietas curvae</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">curvae<index indexName="Sachen">
+<term>curva</term>
+</index>
+<hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mi>e</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">curvae</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">x</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mi>b</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="3">
+<hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mi>e</m:mi>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> Et <app type="Bfootnote">
+<lem type="main">Elementa conoidis<index indexName="Sachen">
+<term>elementum conoeidis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Elementa</note>
+<rdg wit="#L" n="1"> cononoidis </rdg>
+<rdg wit="#L" n="2"> conoidis <hi rendition="#i">L</hi>
+</rdg>
+</app> cum sint proportionalia ipsis <hi rendition="#i">yy</hi>, erunt ut <formula xml:id="Ch14.S9.p6.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Quorum momenta<anchor xml:id="LH_35_09_14_003r_summasummarum_rglj-1"/>
+<index indexName="Sachen">
+<term>momentum solidi conoeidis</term>
+</index> ex <hi rendition="#i">CD</hi> sunt summae <app type="Bfootnote">
+<lem type="main">summarum per <app type="Cfootnote">
+<lem type="main">alibi demonstrata,<anchor xml:id="LH_35_09_14_003r_summasummarum_rglj-2"/>
+</lem>
+<note type="lemma-abbrev">alibi demonstrata</note>
+<note type="editorial">Siehe N. <ref corresp="L_section_148.xml#N.14.8"/>
+, S. <ref corresp="L_section_148.xml#LH_35_09_14_001r_summasummarum_ouir-1"/>
+.</note>
+</app> sunt autem</lem>
+<note type="lemma-abbrev">summarum</note>
+<rdg wit="#L" n="1"> sunt au </rdg>
+<rdg wit="#L" n="2"> per alibi demonstrata, sunt autem <hi rendition="#i">L</hi>
+</rdg>
+</app> summae <formula xml:id="Ch14.S9.p6.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="-1.7pt">
+<m:msup>
+<m:mi>x</m:mi>
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mo>⋅</m:mo>
+</m:mfrac>
+</m:msup>
+</m:mpadded>
+<m:mo rspace="4.2pt">:</m:mo>
+<m:mover accent="true">
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mo>¯</m:mo>
+</m:mover>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Et summae summarum erunt:<index indexName="Sachen">
+<term>summa summae</term>
+</index>
+<formula xml:id="Ch14.S9.p6.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="-1.7pt">
+<m:msup>
+<m:mi>x</m:mi>
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mn>2</m:mn>
+</m:mrow>
+<m:mo>⋅</m:mo>
+</m:mfrac>
+</m:msup>
+</m:mpadded>
+<m:mo rspace="4.2pt">:</m:mo>
+<m:mrow>
+<m:mover accent="true">
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mo>¯</m:mo>
+</m:mover>
+<m:mo>⋅</m:mo>
+<m:mover accent="true">
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mn>2</m:mn>
+</m:mrow>
+<m:mo>¯</m:mo>
+</m:mover>
+</m:mrow>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Quae ut sint proportionales cubis ab <hi rendition="#i">y</hi>, debent coincidere <formula xml:id="Ch14.S9.p6.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msup>
+<m:mi>y</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> seu <formula xml:id="Ch14.S9.p6.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mrow>
+<m:mn>3</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:msup>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> et <formula xml:id="Ch14.S9.p6.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mn>2</m:mn>
+</m:mrow>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Ergo aequantur <formula xml:id="Ch14.S9.p6.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>3</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">et <formula xml:id="Ch14.S9.p6.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mn>2</m:mn>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> sive erit <hi rendition="#i">e</hi> aequ. 2,</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L">
+<formula xml:id="Ch14.S9.p6.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mn>2</m:mn>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="1"> sive <hi rendition="#i">e</hi> et 2 </rdg>
+<rdg wit="#L" n="2"> sive erit <hi rendition="#i">e</hi> aequ. 2, <hi rendition="#i">L</hi>
+</rdg>
+</app> et fiet <hi rendition="#i">y</hi> aequ. <formula xml:id="Ch14.S9.p6.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Ergo Conoeides parabolicum concavum<index indexName="Sachen">
+<term>conoeides parabolicum concavum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">seu Tuba parabolica<index indexName="Sachen">
+<term>tuba parabolica</term>
+</index>
+</lem>
+<note type="lemma-abbrev">seu</note>
+<rdg wit="#L" cause="addition">
+<add>Tuba parabolica</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ubique aequaliter resistit.<index indexName="Sachen">
+<term>solidum ubique aequiresistens</term>
+</index> Quae cum sit quinta pars cylindri circumscripti,<index indexName="Sachen">
+<term>cylinder circumscriptus</term>
+</index> hinc <app type="Bfootnote">
+<lem type="main">modum</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> habemus quo trabs<index indexName="Sachen">
+<term>trabs ubique aequiresistens</term>
+</index> ad quintam ponderis<index indexName="Sachen">
+<term>pondus trabis</term>
+</index> partem reduci potest, <app type="Bfootnote">
+<lem type="main">salva firmitate.<index indexName="Sachen">
+<term>firmitas trabis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">salva</note>
+<rdg wit="#L" n="1"> resistentia </rdg>
+<rdg wit="#L" n="2"> firmitate <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Cfootnote">
+<lem type="main">Quod Theorema pulcherrimum<index indexName="Sachen">
+<term>theorema pulcherrimum</term>
+</index> a Galileo<index indexName="Personen">
+<term>
+<hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564–1642</term>
+</index> non fuit observatum.</lem>
+<note type="lemma-abbrev">Quod <seg type="apparat-ellipsis"/>
+ observatum</note>
+<note type="editorial">Galilei hatte sich mit dem Längsschnitt eines prismatischen Balkens befasst, der an jedem Punkt seiner Länge den gleichen Bruchwiderstand aufweist. Siehe G. <hi rendition="#k">Galilei</hi>,<hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 137–141<bibl corresp="#bib_00050"> (<hi rendition="#i">GO</hi> VIII, S. 177–181).<bibl corresp="#bib_00048"/>
+</bibl>
+</note>
+</app>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch14.S9.p7">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_14_003r_d1.svg" width="156.1032pt" xml:id="Ch14.S9.p7.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_09_14_003r_Fig.1"/>
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch14.S9.p8">
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]
+</note>
+<note type="editorial">Hierzu ist in <hi rendition="#i">L</hi> ein gestrichener, hier nicht wiedergegebener Entwurf überliefert. Das Diagramm gehört zugleich zum Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>
+,<hi rendition="#i">L<hi rendition="#sup">3</hi>
+</hi>; vgl. [<hi rendition="#i">Fig. 8a</hi>] auf S. <ref corresp="L_section_146.xml#LH_35_09_14_003r_bis_Fig.8a"/>
+.</note>
+</app>[<hi rendition="#i">Unterhalb eines Trennungsstrichs:</hi>]
+</p>
+<p rendition="#noindent" xml:id="Ch14.S9.p9">Solidum quaerere, quod extremis apprehensum, flectenti ubique aequaliter resistit.<index indexName="Sachen">
+<term>solidum flectenti ubique aequiresistens</term>
+</index>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch14.S9.p10_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_14_003r_d2.svg" width="216.8pt" xml:id="Ch14.S9.p10.g1"/>
+<head>[<hi rendition="#i">Fig. 2a</hi>]<anchor xml:id="LH_35_09_14_003r_Fig.2"/>
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch14.S9.p10_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_14_003r_d3.svg" width="216.8pt" xml:id="Ch14.S9.p11.g1"/>
+<head>[<hi rendition="#i">Fig. 2b</hi>]<anchor xml:id="LH_35_09_14_003r_Fig.3"/>
+</head>
+</figure>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,22 +1,122 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-074-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-074-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Aus und zu einem Manuskript von Acar über medizinische Geheimnisse</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Aus und zu einem Manuskript von Acar über medizinische Geheimnisse</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="74">Aus und zu einem Manuskript von Acar über medizinische Geheimnisse</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1675-01" resp="#ed" cert="medium">[1675 – erste Hälfte 1676]</date><date calendar="#gregorian" notAfter="1676-06" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=722</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="674" to="678"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-074-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH III 4, 8a Bl. 1</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#auszuege-kommentare"><summary><p>Auszüge mit Bemerkungen aus einem nicht weiter identifizierten Manuskript von Acar:
+            </author>
+            <title type="chapter" level="a" n="74">Aus und zu einem Manuskript von Acar über medizinische Geheimnisse</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1675-01" resp="#ed" cert="medium">[1675 – erste Hälfte 1676]</date>
+            <date calendar="#gregorian" notAfter="1676-06" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=722</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="674" to="678"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-074-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH III 4, 8a Bl. 1</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#auszuege-kommentare">
+                <summary>
+                  <p>Auszüge mit Bemerkungen aus einem nicht weiter identifizierten Manuskript von Acar:
 LH III 4, 8a Bl. 1.
 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 1 r<hi rendition="#sup">o</hi>.
-Bl. 1 v<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen.</p><p>Cc 2, Nr. 1563</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+Bl. 1 v<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen.</p>
+                  <p>Cc 2, Nr. 1563</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -642,88 +742,665 @@ Bl. 1 v<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen.</p><p>Cc 2, Nr. 15
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="fr"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#medizin"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-16" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#medizin"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-16" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-074-000_facs-haupttextzeuge">
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,04/&amp;pn=572"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,04/&amp;pn=573"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,04/&amp;pn=574"/>
-  </facsimile><text xml:id="L_08-02-074-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch74" n="74"><pb type="VIII_2" n="674"/><head>74.
+  </facsimile>
+  <text xml:id="L_08-02-074-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch74" n="74">
+        <pb type="VIII_2" n="674"/>
+        <head>74.
 AUS UND ZU EINEM MANUSKRIPT VON ACAR ÜBER MEDIZINISCHE GEHEIMNISSE</head>
-<head>[1675 – erste Hälfte 1676]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Auszüge mit Bemerkungen aus einem nicht weiter identifizierten Manuskript von Acar:
+        <head>[1675 – erste Hälfte 1676]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Auszüge mit Bemerkungen aus einem nicht weiter identifizierten Manuskript von Acar:
 LH III 4, 8a Bl. 1.
 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 1 r<hi rendition="#sup">o</hi>.
-Bl. 1 v<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen.</p><p>Cc 2, Nr. 1563</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch74.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Bl. 1 v<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen.</p>
+                      <p>Cc 2, Nr. 1563</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch74.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi>
 Das Wasserzeichen im Textträger des vorliegenden Stücks N. 74 ist für einen Zeitraum belegt, welcher das Jahr 1675 und die erste Hälfte des Jahres 1676 umfasst.
 Da weitere Anhaltspunkte für eine genauere chronologische Einordnung fehlen,
-wird dieser gesamte Zeitraum als Datierung von N. 74 vorgeschlagen.</hi></p></div><div type="text"><p xml:id="Ch74.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[1 r<hi rendition="#sup">o</hi>]</fw>
-<app type="Cfootnote"><lem type="main">Secrets Medicinaux considerables, et pour la plus part éprouuez
-<app type="Bfootnote"><lem type="main">tirez d’un liure</lem><note type="lemma-abbrev">tirez</note><rdg wit="#L" n="1"> d’un MS </rdg><rdg wit="#L" n="2"> d’un liure <hi rendition="#i">L</hi></rdg></app>
-in 8<hi rendition="#sup">o</hi> écrit de la main de feu Mons. Acar,<index indexName="Namensregister"><term><hi rendition="#g">Acar</hi> bzw. Acart, ???? ??-??</term></index>
-homme tres exact, et qui faisoit des experiences.</lem><note type="lemma-abbrev">Secrets <seg type="apparat-ellipsis"/> experiences</note><note type="editorial">Ein <hi rendition="#i">Mons. Acar</hi> (bzw. <hi rendition="#i">Acart</hi>) wird in der Literatur der Zeit als Naturforscher im Umfeld der sog. „Académie Bourdelot” dargestellt;
-siehe etwa <bibl corresp="#bib_01149"><hi rendition="#k">P. M. Bourdelot</hi>, <hi rendition="#i">Conversations académiques</hi>, Paris 1672, S. 59 und S. 71.
-Leibniz hat offenbar Gelegenheit gehabt, ein kleinformatiges Manuskript von ihm zu exzerpieren.</bibl></note></app></p><p xml:id="Ch74.p6"><hi rendition="#g">Recette infallible pour les hemorroides.</hi><index indexName="Sachverzeichnis"><term>hémorroĩdes</term></index>
-Faut porter sur soy deux ou trois petites noisettes, ou fruits, qui se trouuent dans la teste du chardon<index indexName="Sachverzeichnis"><term>chardon</term></index> sauuage ou bâtard, qui croist dans les champs. Il y a des petits vers dans les dites petites noisettes, les quels tant qu’ils vivent garantissent du mal: ils vivent prés d’un an, c’est pourquoy les faut changer quand ils meurent
-<app type="Cfootnote"><lem type="main">[+</lem><note type="editorial">Eckige Klammer von Leibniz.</note></app> cela ne paroist vraysemblable. Mais il faut que Mons. Acar<index indexName="Namensregister"><term><hi rendition="#g">Acar</hi> bzw. Acart, ???? ??-??</term></index>
-l’ait ou essayé, ou appris d’une personne dont la relation ne luy estoit pas suspecte. Sans cela il ne l’auroit pas mis, avec le titre d’infallible, parmy une trentaine de receptes choisies <app type="Cfootnote"><lem type="main">+].</lem><note type="lemma-abbrev">+]</note><note type="editorial">Eckige Klammer von Leibniz.</note></app></p><p xml:id="Ch74.p7"><hi rendition="#g">Pour le mal caduc.</hi><index indexName="Sachverzeichnis"><term>mal caduc</term></index>
-Mons. Garillon<index indexName="Namensregister"><term><hi rendition="#g">Garillon</hi>, ????, ??-??</term></index>
-le fils Chevalier de Malthe, qui demeure chez lonpere (+ ou tonpere +) procureur, vers S. Côme dans la rue de la harpe, a une pierre, la quelle si tost qu’elle touche celuy qui est tombé du mal, revient aussi tost.</p><p xml:id="Ch74.p8"><hi rendition="#g">Pour la dysenterie.<index indexName="Sachverzeichnis"><term>dysenterie</term></index></hi>
-Faut prendre trois pintes de gros vin<index indexName="Sachverzeichnis"><term>vin</term></index> rouge, le faire bouillir à petit feu, dans un pot de terre neuf, et y mettre dedans plein les deux mains de chardon<index indexName="Sachverzeichnis"><term>chardon</term></index> volant coupé par petits morceaux. Le nettoyer sans le laver, et le laisser au feu tant que le dit vin<index indexName="Sachverzeichnis"><term>vin</term></index> ne devienne qu’à un demy septier, puis faire mettre le malade aupres du feu, et le frotter du dit vin<index indexName="Sachverzeichnis"><term>vin</term></index>, le plus chaud qu’il pourra souffrir, dépuis le col tout du long de l’épine du dos, jusqu’au fondement, et aprez le faire coucher dans le lict sur le dos, ayant mis des linges bien chauds, le long de l’épine, puis mettre le dit vin<index indexName="Sachverzeichnis"><term>vin</term></index> dépuis le <pb type="VIII_2" n="675"/>nombril jusqu’au fondement, et y mettre des linges chauds.</p><p xml:id="Ch74.p9"><hi rendition="#g">Pour la blessure d’une saignée.</hi><index indexName="Sachverzeichnis"><term>saignée</term></index>
-Faut mettre sur la playe une mie de pain mollet tout chaud trempé dans du vin<index indexName="Sachverzeichnis"><term>vin</term></index> blanc.</p><p xml:id="Ch74.p10"><hi rendition="#g">Pour le cours de ventre.</hi>
-Faut mettre dans deux cuillerées d’huyle d’olive, et deux cuillerées d’eau rose;<index indexName="Sachverzeichnis"><term>eau de rose</term></index>
+wird dieser gesamte Zeitraum als Datierung von N. 74 vorgeschlagen.</hi>
+          </p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch74.p5" rendition="#noindent">
+            <pb type="L"/>
+            <fw type="folNum">[1 r<hi rendition="#sup">o</hi>]
+            </fw>
+            <app type="Cfootnote">
+              <lem type="main">Secrets Medicinaux considerables, et pour la plus part éprouuez
+                <app type="Bfootnote">
+                  <lem type="main">tirez d’un liure</lem>
+                  <note type="lemma-abbrev">tirez</note>
+                  <rdg wit="#L" n="1"> d’un MS </rdg>
+                  <rdg wit="#L" n="2"> d’un liure <hi rendition="#i">L</hi>
+                  </rdg>
+                </app>
+in 8<hi rendition="#sup">o</hi> écrit de la main de feu Mons. Acar,<index indexName="Namensregister">
+                <term>
+                  <hi rendition="#g">Acar</hi> bzw. Acart, ???? ??-??</term>
+              </index>
+homme tres exact, et qui faisoit des experiences.</lem>
+            <note type="lemma-abbrev">Secrets <seg type="apparat-ellipsis"/>
+ experiences</note>
+            <note type="editorial">Ein <hi rendition="#i">Mons. Acar</hi> (bzw. <hi rendition="#i">Acart</hi>) wird in der Literatur der Zeit als Naturforscher im Umfeld der sog. „Académie Bourdelot” dargestellt;
+siehe etwa <bibl corresp="#bib_01149">
+              <hi rendition="#k">P. M. Bourdelot</hi>,              <hi rendition="#i">Conversations académiques</hi>, Paris 1672, S. 59 und S. 71.
+Leibniz hat offenbar Gelegenheit gehabt, ein kleinformatiges Manuskript von ihm zu exzerpieren.</bibl>
+          </note>
+        </app>
+      </p>
+      <p xml:id="Ch74.p6">
+        <hi rendition="#g">Recette infallible pour les hemorroides.</hi>
+        <index indexName="Sachverzeichnis">
+          <term>hémorroĩdes</term>
+        </index>
+Faut porter sur soy deux ou trois petites noisettes, ou fruits, qui se trouuent dans la teste du chardon<index indexName="Sachverzeichnis">
+        <term>chardon</term>
+      </index> sauuage ou bâtard, qui croist dans les champs. Il y a des petits vers dans les dites petites noisettes, les quels tant qu’ils vivent garantissent du mal: ils vivent prés d’un an, c’est pourquoy les faut changer quand ils meurent
+      <app type="Cfootnote">
+        <lem type="main">[+</lem>
+        <note type="editorial">Eckige Klammer von Leibniz.</note>
+      </app> cela ne paroist vraysemblable. Mais il faut que Mons. Acar<index indexName="Namensregister">
+      <term>
+        <hi rendition="#g">Acar</hi> bzw. Acart, ???? ??-??</term>
+    </index>
+l’ait ou essayé, ou appris d’une personne dont la relation ne luy estoit pas suspecte. Sans cela il ne l’auroit pas mis, avec le titre d’infallible, parmy une trentaine de receptes choisies <app type="Cfootnote">
+    <lem type="main">+].</lem>
+    <note type="lemma-abbrev">+]</note>
+    <note type="editorial">Eckige Klammer von Leibniz.</note>
+  </app>
+</p>
+<p xml:id="Ch74.p7">
+  <hi rendition="#g">Pour le mal caduc.</hi>
+  <index indexName="Sachverzeichnis">
+    <term>mal caduc</term>
+  </index>
+Mons. Garillon<index indexName="Namensregister">
+  <term>
+    <hi rendition="#g">Garillon</hi>, ????, ??-??
+  </term>
+</index>
+le fils Chevalier de Malthe, qui demeure chez lonpere (+ ou tonpere +) procureur, vers S. Côme dans la rue de la harpe, a une pierre, la quelle si tost qu’elle touche celuy qui est tombé du mal, revient aussi tost.</p>
+<p xml:id="Ch74.p8">
+<hi rendition="#g">Pour la dysenterie.<index indexName="Sachverzeichnis">
+  <term>dysenterie</term>
+</index>
+</hi>
+Faut prendre trois pintes de gros vin<index indexName="Sachverzeichnis">
+<term>vin</term>
+</index> rouge, le faire bouillir à petit feu, dans un pot de terre neuf, et y mettre dedans plein les deux mains de chardon<index indexName="Sachverzeichnis">
+<term>chardon</term>
+</index> volant coupé par petits morceaux. Le nettoyer sans le laver, et le laisser au feu tant que le dit vin<index indexName="Sachverzeichnis">
+<term>vin</term>
+</index> ne devienne qu’à un demy septier, puis faire mettre le malade aupres du feu, et le frotter du dit vin<index indexName="Sachverzeichnis">
+<term>vin</term>
+</index>, le plus chaud qu’il pourra souffrir, dépuis le col tout du long de l’épine du dos, jusqu’au fondement, et aprez le faire coucher dans le lict sur le dos, ayant mis des linges bien chauds, le long de l’épine, puis mettre le dit vin<index indexName="Sachverzeichnis">
+<term>vin</term>
+</index> dépuis le <pb type="VIII_2" n="675"/>
+nombril jusqu’au fondement, et y mettre des linges chauds.</p>
+<p xml:id="Ch74.p9">
+<hi rendition="#g">Pour la blessure d’une saignée.</hi>
+<index indexName="Sachverzeichnis">
+<term>saignée</term>
+</index>
+Faut mettre sur la playe une mie de pain mollet tout chaud trempé dans du vin<index indexName="Sachverzeichnis">
+<term>vin</term>
+</index> blanc.</p>
+<p xml:id="Ch74.p10">
+<hi rendition="#g">Pour le cours de ventre.</hi>
+Faut mettre dans deux cuillerées d’huyle d’olive, et deux cuillerées d’eau rose;<index indexName="Sachverzeichnis">
+<term>eau de rose</term>
+</index>
 une cuillerée de sucre, et battre tout ensemble, et le prendre à jeun, et reiterer deux ou trois fois; jusqu’à ce qu’on en soit soulagé.
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">De</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-Mademoiselle de la Haye<index indexName="Namensregister"><term><hi rendition="#g">Mademoiselle de La Haye 1580-1651</hi>
-illegitime Tochter Louis III de Guise, Kardinal in Reims ??</term></index>.</p><p xml:id="Ch74.p11"><hi rendition="#g">Pour le mal de costé</hi><index indexName="Sachverzeichnis"><term>mal de côté</term></index> <hi rendition="#g">ou pleuresie.</hi><index indexName="Sachverzeichnis"><term>pleurésie</term></index>
-Faut fricasser de l’avoine<index indexName="Sachverzeichnis"><term>avoine</term></index> avec une cuillerée de vinaigre, puis la mettre dans un sachet, et l’appliquer sur le costé, le plus chaud que l’on puisse. De Mademoiselle de Luzancourt.<index indexName="Namensregister"><term><hi rendition="#g">Mademoiselle de Luzancourt</hi>, ???? ??-??</term></index></p><p xml:id="Ch74.p12"><hi rendition="#g">Pour la goutte.</hi><index indexName="Sachverzeichnis"><term>goutte</term></index>
-Faut mettre pour 1 sol de couperose<index indexName="Sachverzeichnis"><term>couperose</term></index> verte dans une pinte d’urine; bouillir à la moitié; en mouiller un linge du quel on s’enveloppera deux nuits. De Mademoiselle de Luzancourt.<index indexName="Namensregister"><term><hi rendition="#g">Mademoiselle de Luzancourt</hi>, ???? ??-??</term></index></p><p xml:id="Ch74.p13"><hi rendition="#g">Pour la douleur des yeux.</hi><index indexName="Sachverzeichnis"><term>douleur des yeux</term></index>
-Faut piller des feuilles de tref (+ puto trefle<index indexName="Sachverzeichnis"><term>trèfle</term></index> +), marquée <graphic xml:id="Ch74.p13.g1" url="./images/lh0030408a_001r-draw1c.svg" width="43.362pt"/> qui vient dans les champs, et en mettre le jus dans les yeux pendant 7 ou 8 jours.</p><p xml:id="Ch74.p14"><hi rendition="#g">Pour la bruslure.</hi><index indexName="Sachverzeichnis"><term>brûlure</term></index>
-L’ail<index indexName="Sachverzeichnis"><term>ail</term></index> distillé y est excellent.</p><p xml:id="Ch74.p15"><hi rendition="#g">Pour l’asthme</hi><index indexName="Sachverzeichnis"><term>asthme</term></index> <hi rendition="#g">ou étouffement.</hi><index indexName="Sachverzeichnis"><term>étouffement</term></index>
-Faut mettre une dragme de souffre<index indexName="Sachverzeichnis"><term>soufre</term></index> crud pulverisé, et l’avaller dans un verre de vin<index indexName="Sachverzeichnis"><term>vin</term></index>. Le blanc est le meilleur. La tinture de souffre<index indexName="Sachverzeichnis"><term>tinture de soufre</term></index> est excellente.</p><p xml:id="Ch74.p16"><hi rendition="#g">Recepte admirable pour l’asthme.</hi>
-Prenez de l’orge<index indexName="Sachverzeichnis"><term>orge</term></index> mondée et la faites bouillir, comme si l’on la vouloit manger, cela fait, il la faut bien laver et piller dans un mortier, puis il faut la passer par un linge avec du laict du cheuure<index indexName="Sachverzeichnis"><term>lait de chèvre</term></index>, si l’on en peut avoir; si non, faut se contenter du laict de vache<index indexName="Sachverzeichnis"><term>lait de vache</term></index>, le quel fait vous laisserez bouillir avec l’orge<index indexName="Sachverzeichnis"><term>orge</term></index> passée, jusqu’à ce qu’il devienne épais, comme une bouillie, apres quoy
-<app type="Bfootnote"><lem type="main">vous la succrerez</lem><note type="lemma-abbrev">vous la</note><rdg wit="#L" n="1"> succrez </rdg><rdg wit="#L" n="2"> succrerez <hi rendition="#i">L</hi></rdg></app>
-bien, avec du sucre candy<index indexName="Sachverzeichnis"><term>sucre candi</term></index>; et vous la mangerez le matin et le soir, mais il ne faut pas boir aprés. Ce secret est admirable aussi pour toutes sortes d’apostumes<index indexName="Sachverzeichnis"><term>apostume</term></index>, et on s’en est tousjours servi avec grand succés.</p><pb type="VIII_2" n="676"/><p xml:id="Ch74.p17"><hi rendition="#g">Autre:</hi> un verre d’urine<index indexName="Sachverzeichnis"><term>urine</term></index> de soy, ou de quelqu’un qui soit bien sain est souuerain pour plusiers incommoditez principalement pour <hi rendition="#g">l’asthme.</hi><index indexName="Sachverzeichnis"><term>asthme</term></index></p><p xml:id="Ch74.p18">Le souffre<index indexName="Sachverzeichnis"><term>soufre</term></index> est excellent pour le <hi rendition="#g">poulmon</hi><index indexName="Sachverzeichnis"><term>poumon</term></index>.</p><p xml:id="Ch74.p19">Demy<anchor xml:id="acar3"/> douzaine de brignolles<index indexName="Sachverzeichnis"><term>prune de Brignoles</term></index> mangez le matin à jeun, sont fort bonnes.</p><p xml:id="Ch74.p20">Une vingtaine de roses de muscat<index indexName="Sachverzeichnis"><term>muscat</term></index>, mangez à jeun, purgent <anchor xml:id="acar4"/>doucement.<note type="Afootnote" place="margin" resp="#L" target="#acar3" targetEnd="acar4"><hi rendition="#i">Neben dem Text:</hi> [Je <note type="Afootnote-sub" n="[a]">[Je: Eckige Klammer von Leibniz.</note>
- croy que c’est aussi pour l’Asthme.<index indexName="Sachverzeichnis"><term>asthme</term></index>] <note type="Afootnote-sub" n="[b]">l’Asthme.]: Eckige Klammer von Leibniz.</note></note></p><p xml:id="Ch74.p21">Autre remede tres bon pour <hi rendition="#g">l’asthme.</hi><index indexName="Sachverzeichnis"><term>asthme</term></index>
-Prenez palmonaria,<index indexName="Sachverzeichnis"><term>pulmonaria</term></index><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Über</hi> palmonaria: puto: pulmonaria<index indexName="Sachverzeichnis"><term>pulmonaria</term></index></note>
-hysope<index indexName="Sachverzeichnis"><term>hysope</term></index>, ana, une poignée, d’anis<index indexName="Sachverzeichnis"><term>anis</term></index> et de fenouil<index indexName="Sachverzeichnis"><term>fenouil</term></index> ana, une cuillerée; un bon baston de reglisse<index indexName="Sachverzeichnis"><term>réglisse</term></index>, une cuillerée de petits raisins<index indexName="Sachverzeichnis"><term>raisin</term></index>: et neuf figues<index indexName="Sachverzeichnis"><term>figue</term></index>, mettez le tout dans un pot de terre de deux pintes, et le remplissez avec de l’eau fraîche; et le laissez tout auprés du feu, jusqu’à ce qu’il soit bien échauffé. Mais il ne faut pas le faire bouillir. Laissez le apres refroidir, et beuuez de cela un bon coup le matin, le soir, et toute la journée, quand vous voudrez, et autant que vous voudrez. Avec ce remede on a guery un homme, qui tomboit quelques fois comme mort, ne pouuant plus respirer.</p><p xml:id="Ch74.p22"><hi rendition="#g">Pour se maintenir en santé.</hi>
-Prenez deux dragmes de rubarbe<index indexName="Sachverzeichnis"><term>rhubarbe</term></index> de jardin, qui vient dans ce pays icy, raclez la dans du jus de pruneaux,<index indexName="Sachverzeichnis"><term>pruneau</term></index>
-ou dans un bouillon, et le prenez à jeun le matin, elle est aussi fort bonne à manger à toute heure de la journée; on en fait aussi de la conserve.</p><p xml:id="Ch74.p23"><hi rendition="#g">Excellante tisane</hi><index indexName="Sachverzeichnis"><term>tisane</term></index> <hi rendition="#g">pour l’asthme.</hi><index indexName="Sachverzeichnis"><term>asthme</term></index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">De</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+Mademoiselle de la Haye<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Mademoiselle de La Haye 1580-1651</hi>
+illegitime Tochter Louis III de Guise, Kardinal in Reims ??</term>
+</index>.
+</p>
+<p xml:id="Ch74.p11">
+<hi rendition="#g">Pour le mal de costé</hi>
+<index indexName="Sachverzeichnis">
+<term>mal de côté</term>
+</index>
+<hi rendition="#g">ou pleuresie.</hi>
+<index indexName="Sachverzeichnis">
+<term>pleurésie</term>
+</index>
+Faut fricasser de l’avoine<index indexName="Sachverzeichnis">
+<term>avoine</term>
+</index> avec une cuillerée de vinaigre, puis la mettre dans un sachet, et l’appliquer sur le costé, le plus chaud que l’on puisse. De Mademoiselle de Luzancourt.<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Mademoiselle de Luzancourt</hi>, ???? ??-??
+</term>
+</index>
+</p>
+<p xml:id="Ch74.p12">
+<hi rendition="#g">Pour la goutte.</hi>
+<index indexName="Sachverzeichnis">
+<term>goutte</term>
+</index>
+Faut mettre pour 1 sol de couperose<index indexName="Sachverzeichnis">
+<term>couperose</term>
+</index> verte dans une pinte d’urine; bouillir à la moitié; en mouiller un linge du quel on s’enveloppera deux nuits. De Mademoiselle de Luzancourt.<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Mademoiselle de Luzancourt</hi>, ???? ??-??
+</term>
+</index>
+</p>
+<p xml:id="Ch74.p13">
+<hi rendition="#g">Pour la douleur des yeux.</hi>
+<index indexName="Sachverzeichnis">
+<term>douleur des yeux</term>
+</index>
+Faut piller des feuilles de tref (+ puto trefle<index indexName="Sachverzeichnis">
+<term>trèfle</term>
+</index> +), marquée <graphic xml:id="Ch74.p13.g1" url="./images/lh0030408a_001r-draw1c.svg" width="43.362pt"/>
+ qui vient dans les champs, et en mettre le jus dans les yeux pendant 7 ou 8 jours.</p>
+<p xml:id="Ch74.p14">
+<hi rendition="#g">Pour la bruslure.</hi>
+<index indexName="Sachverzeichnis">
+<term>brûlure</term>
+</index>
+L’ail<index indexName="Sachverzeichnis">
+<term>ail</term>
+</index> distillé y est excellent.</p>
+<p xml:id="Ch74.p15">
+<hi rendition="#g">Pour l’asthme</hi>
+<index indexName="Sachverzeichnis">
+<term>asthme</term>
+</index>
+<hi rendition="#g">ou étouffement.</hi>
+<index indexName="Sachverzeichnis">
+<term>étouffement</term>
+</index>
+Faut mettre une dragme de souffre<index indexName="Sachverzeichnis">
+<term>soufre</term>
+</index> crud pulverisé, et l’avaller dans un verre de vin<index indexName="Sachverzeichnis">
+<term>vin</term>
+</index>. Le blanc est le meilleur. La tinture de souffre<index indexName="Sachverzeichnis">
+<term>tinture de soufre</term>
+</index> est excellente.</p>
+<p xml:id="Ch74.p16">
+<hi rendition="#g">Recepte admirable pour l’asthme.</hi>
+Prenez de l’orge<index indexName="Sachverzeichnis">
+<term>orge</term>
+</index> mondée et la faites bouillir, comme si l’on la vouloit manger, cela fait, il la faut bien laver et piller dans un mortier, puis il faut la passer par un linge avec du laict du cheuure<index indexName="Sachverzeichnis">
+<term>lait de chèvre</term>
+</index>, si l’on en peut avoir; si non, faut se contenter du laict de vache<index indexName="Sachverzeichnis">
+<term>lait de vache</term>
+</index>, le quel fait vous laisserez bouillir avec l’orge<index indexName="Sachverzeichnis">
+<term>orge</term>
+</index> passée, jusqu’à ce qu’il devienne épais, comme une bouillie, apres quoy
+<app type="Bfootnote">
+<lem type="main">vous la succrerez</lem>
+<note type="lemma-abbrev">vous la</note>
+<rdg wit="#L" n="1"> succrez </rdg>
+<rdg wit="#L" n="2"> succrerez <hi rendition="#i">L</hi>
+</rdg>
+</app>
+bien, avec du sucre candy<index indexName="Sachverzeichnis">
+<term>sucre candi</term>
+</index>; et vous la mangerez le matin et le soir, mais il ne faut pas boir aprés. Ce secret est admirable aussi pour toutes sortes d’apostumes<index indexName="Sachverzeichnis">
+<term>apostume</term>
+</index>, et on s’en est tousjours servi avec grand succés.</p>
+<pb type="VIII_2" n="676"/>
+<p xml:id="Ch74.p17">
+<hi rendition="#g">Autre:</hi> un verre d’urine<index indexName="Sachverzeichnis">
+<term>urine</term>
+</index> de soy, ou de quelqu’un qui soit bien sain est souuerain pour plusiers incommoditez principalement pour <hi rendition="#g">l’asthme.</hi>
+<index indexName="Sachverzeichnis">
+<term>asthme</term>
+</index>
+</p>
+<p xml:id="Ch74.p18">Le souffre<index indexName="Sachverzeichnis">
+<term>soufre</term>
+</index> est excellent pour le <hi rendition="#g">poulmon</hi>
+<index indexName="Sachverzeichnis">
+<term>poumon</term>
+</index>.
+</p>
+<p xml:id="Ch74.p19">Demy<anchor xml:id="acar3"/>
+ douzaine de brignolles<index indexName="Sachverzeichnis">
+<term>prune de Brignoles</term>
+</index> mangez le matin à jeun, sont fort bonnes.</p>
+<p xml:id="Ch74.p20">Une vingtaine de roses de muscat<index indexName="Sachverzeichnis">
+<term>muscat</term>
+</index>, mangez à jeun, purgent <anchor xml:id="acar4"/>
+doucement.<note type="Afootnote" place="margin" resp="#L" target="#acar3" targetEnd="acar4">
+<hi rendition="#i">Neben dem Text:</hi> [Je <note type="Afootnote-sub" n="[a]">[Je: Eckige Klammer von Leibniz.</note>
+ croy que c’est aussi pour l’Asthme.<index indexName="Sachverzeichnis">
+<term>asthme</term>
+</index>]<note type="Afootnote-sub" n="[b]">l’Asthme.]: Eckige Klammer von Leibniz.</note>
+</note>
+</p>
+<p xml:id="Ch74.p21">Autre remede tres bon pour <hi rendition="#g">l’asthme.</hi>
+<index indexName="Sachverzeichnis">
+<term>asthme</term>
+</index>
+Prenez palmonaria,<index indexName="Sachverzeichnis">
+<term>pulmonaria</term>
+</index>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Über</hi> palmonaria: puto: pulmonaria<index indexName="Sachverzeichnis">
+<term>pulmonaria</term>
+</index>
+</note>
+hysope<index indexName="Sachverzeichnis">
+<term>hysope</term>
+</index>, ana, une poignée, d’anis<index indexName="Sachverzeichnis">
+<term>anis</term>
+</index> et de fenouil<index indexName="Sachverzeichnis">
+<term>fenouil</term>
+</index> ana, une cuillerée; un bon baston de reglisse<index indexName="Sachverzeichnis">
+<term>réglisse</term>
+</index>, une cuillerée de petits raisins<index indexName="Sachverzeichnis">
+<term>raisin</term>
+</index>: et neuf figues<index indexName="Sachverzeichnis">
+<term>figue</term>
+</index>, mettez le tout dans un pot de terre de deux pintes, et le remplissez avec de l’eau fraîche; et le laissez tout auprés du feu, jusqu’à ce qu’il soit bien échauffé. Mais il ne faut pas le faire bouillir. Laissez le apres refroidir, et beuuez de cela un bon coup le matin, le soir, et toute la journée, quand vous voudrez, et autant que vous voudrez. Avec ce remede on a guery un homme, qui tomboit quelques fois comme mort, ne pouuant plus respirer.</p>
+<p xml:id="Ch74.p22">
+<hi rendition="#g">Pour se maintenir en santé.</hi>
+Prenez deux dragmes de rubarbe<index indexName="Sachverzeichnis">
+<term>rhubarbe</term>
+</index> de jardin, qui vient dans ce pays icy, raclez la dans du jus de pruneaux,<index indexName="Sachverzeichnis">
+<term>pruneau</term>
+</index>
+ou dans un bouillon, et le prenez à jeun le matin, elle est aussi fort bonne à manger à toute heure de la journée; on en fait aussi de la conserve.</p>
+<p xml:id="Ch74.p23">
+<hi rendition="#g">Excellante tisane</hi>
+<index indexName="Sachverzeichnis">
+<term>tisane</term>
+</index>
+<hi rendition="#g">pour l’asthme.</hi>
+<index indexName="Sachverzeichnis">
+<term>asthme</term>
+</index>
 Faut prendre un cacquemart de terre
-<app type="Cfootnote"><lem type="main">[+ topf +]</lem><note type="editorial">Eckige Klammern von Leibniz.</note></app>
-y mettre une pinte d’eau de fontaine et y faire bouillir une poignée de son<index indexName="Sachverzeichnis"><term>son</term></index> bien sec, pour y mettre une cuillerée de bon miel<index indexName="Sachverzeichnis"><term>miel</term></index> commun, qu’il faut bien ecumer en bouillant, et y mettre aussi un bâton de reglisse<index indexName="Sachverzeichnis"><term>réglisse</term></index> concassé; puis passer la dite tisane,<index indexName="Sachverzeichnis"><term>tisane</term></index> et en faire la
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[boisson].</corr></lem><rdg wit="#L"><orig>boissons</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app></p><p xml:id="Ch74.p24">Les gratteculs<index indexName="Sachverzeichnis"><term>gratte-cul</term></index> sont fort bons, que l’on peut manger à toute heure, les portant dans sa poche. Ces trois choses sont de Mademoiselle Bafor<index indexName="Namensregister"><term><hi rendition="#g">Mademoiselle Bafort oder Vafor</hi>, ???? ??-??</term></index>
-(+ potius Bafor, quam Vafor +)</p><p xml:id="Ch74.p25"><hi rendition="#g">Recepte excellente contre la fieuure continue</hi><index indexName="Sachverzeichnis"><term>fièvre continue</term></index> <hi rendition="#g">et la peste.</hi><index indexName="Sachverzeichnis"><term>peste</term></index>
-Prenez une poignée de sel,<index indexName="Sachverzeichnis"><term>sel</term></index> un morceau de levain<index indexName="Sachverzeichnis"><term>levain</term></index> capable de couurir le front, deux cuillerées du plus fort vinaigre<index indexName="Sachverzeichnis"><term>vinaigre</term></index>, et pour 3 sols de clous de girofle<index indexName="Sachverzeichnis"><term>girofle</term></index>. Et mettre le tout dans</p><p xml:id="Ch74.p26" rendition="#noindent">un plat sur un réchaud, qu’il faut un peu chauffer, et pétrir (knäten) ensemble; puis mettre la dite pâte entre deux linges, et l’appliquer sur le front, d’une
-temple, à l’autre,<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Über</hi> temple: tempora schlaff</note>
+<app type="Cfootnote">
+<lem type="main">[+ topf +]</lem>
+<note type="editorial">Eckige Klammern von Leibniz.</note>
+</app>
+y mettre une pinte d’eau de fontaine et y faire bouillir une poignée de son<index indexName="Sachverzeichnis">
+<term>son</term>
+</index> bien sec, pour y mettre une cuillerée de bon miel<index indexName="Sachverzeichnis">
+<term>miel</term>
+</index> commun, qu’il faut bien ecumer en bouillant, et y mettre aussi un bâton de reglisse<index indexName="Sachverzeichnis">
+<term>réglisse</term>
+</index> concassé; puis passer la dite tisane,<index indexName="Sachverzeichnis">
+<term>tisane</term>
+</index> et en faire la
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[boisson].</corr>
+</lem>
+<rdg wit="#L">
+<orig>boissons</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch74.p24">Les gratteculs<index indexName="Sachverzeichnis">
+<term>gratte-cul</term>
+</index> sont fort bons, que l’on peut manger à toute heure, les portant dans sa poche. Ces trois choses sont de Mademoiselle Bafor<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Mademoiselle Bafort oder Vafor</hi>, ???? ??-??
+</term>
+</index>
+(+ potius Bafor, quam Vafor +)</p>
+<p xml:id="Ch74.p25">
+<hi rendition="#g">Recepte excellente contre la fieuure continue</hi>
+<index indexName="Sachverzeichnis">
+<term>fièvre continue</term>
+</index>
+<hi rendition="#g">et la peste.</hi>
+<index indexName="Sachverzeichnis">
+<term>peste</term>
+</index>
+Prenez une poignée de sel,<index indexName="Sachverzeichnis">
+<term>sel</term>
+</index> un morceau de levain<index indexName="Sachverzeichnis">
+<term>levain</term>
+</index> capable de couurir le front, deux cuillerées du plus fort vinaigre<index indexName="Sachverzeichnis">
+<term>vinaigre</term>
+</index>, et pour 3 sols de clous de girofle<index indexName="Sachverzeichnis">
+<term>girofle</term>
+</index>. Et mettre le tout dans</p>
+<p xml:id="Ch74.p26" rendition="#noindent">un plat sur un réchaud, qu’il faut un peu chauffer, et pétrir (knäten) ensemble; puis mettre la dite pâte entre deux linges, et l’appliquer sur le front, d’une
+temple, à l’autre,<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Über</hi> temple: tempora schlaff</note>
 qu’il faut renouueller
-<app type="Bfootnote"><lem type="main">quand il sera</lem><rdg wit="#L" cause="deletion">quand il <note type="editorial">|</note> <del>sera</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> sera <hi rendition="#i">L</hi></rdg></app>
-sec, du matin à midy, ou du matin au soir. Les clous de girofle<index indexName="Sachverzeichnis"><term>girofle</term></index> peuuent reservir à diverses fois. Et continuer 2 ou 3 jours. Ce remede fait <pb type="VIII_2" n="677"/><hi rendition="#g">dormir</hi> 10, 12, ou 14 heures.</p><p xml:id="Ch74.p27"><hi rendition="#g">Pour garder le laict</hi><index indexName="Sachverzeichnis"><term>lait</term></index> <hi rendition="#g">5 ou 6 jours, fort bon.</hi>
-Faut, estant nouuellement tiré le faire bouillir un bouillon dans une terrine. Puis le mettre en lieu frais, et ne plus faire rechauffer. Il sera fort bon.</p><p xml:id="Ch74.p28">Le crème de Normandie, qui se garde fort long temps, se tire au premier bouillon que l’on envoye dans des pots de grez, bien bouchez, à Paris.<index indexName="Ortsregister"><term>Paris</term></index></p><p xml:id="Ch74.p29"><hi rendition="#g">Pour la Gravelle.</hi><index indexName="Sachverzeichnis"><term>gravelle</term></index>
-Faut faire bien seicher une <app type="Bfootnote"><lem type="main">poignée de tin</lem><note type="lemma-abbrev">poignée de</note><rdg wit="#L" n="1"> thin </rdg><rdg wit="#L" n="2"> tin <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">quand il sera</lem>
+<rdg wit="#L" cause="deletion">quand il <note type="editorial">|</note>
+<del>sera</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> sera <hi rendition="#i">L</hi>
+</rdg>
+</app>
+sec, du matin à midy, ou du matin au soir. Les clous de girofle<index indexName="Sachverzeichnis">
+<term>girofle</term>
+</index> peuuent reservir à diverses fois. Et continuer 2 ou 3 jours. Ce remede fait <pb type="VIII_2" n="677"/>
+<hi rendition="#g">dormir</hi> 10, 12, ou 14 heures.</p>
+<p xml:id="Ch74.p27">
+<hi rendition="#g">Pour garder le laict</hi>
+<index indexName="Sachverzeichnis">
+<term>lait</term>
+</index>
+<hi rendition="#g">5 ou 6 jours, fort bon.</hi>
+Faut, estant nouuellement tiré le faire bouillir un bouillon dans une terrine. Puis le mettre en lieu frais, et ne plus faire rechauffer. Il sera fort bon.</p>
+<p xml:id="Ch74.p28">Le crème de Normandie, qui se garde fort long temps, se tire au premier bouillon que l’on envoye dans des pots de grez, bien bouchez, à Paris.<index indexName="Ortsregister">
+<term>Paris</term>
+</index>
+</p>
+<p xml:id="Ch74.p29">
+<hi rendition="#g">Pour la Gravelle.</hi>
+<index indexName="Sachverzeichnis">
+<term>gravelle</term>
+</index>
+Faut faire bien seicher une <app type="Bfootnote">
+<lem type="main">poignée de tin</lem>
+<note type="lemma-abbrev">poignée de</note>
+<rdg wit="#L" n="1"> thin </rdg>
+<rdg wit="#L" n="2"> tin <hi rendition="#i">L</hi>
+</rdg>
+</app>
 (+ credo, thymus +)
-et une poignée de sauge franche qui soit rouge, les mettre en poudre, tremper dans du vin<index indexName="Sachverzeichnis"><term>vin</term></index> blanc, puis le passer, et en prendre un ou 2 verres le matin.</p><p xml:id="Ch74.p30"><hi rendition="#g">Remarque sur l’urine.</hi><index indexName="Sachverzeichnis"><term>urine</term></index>
+et une poignée de sauge franche qui soit rouge, les mettre en poudre, tremper dans du vin<index indexName="Sachverzeichnis">
+<term>vin</term>
+</index> blanc, puis le passer, et en prendre un ou 2 verres le matin.</p>
+<p xml:id="Ch74.p30">
+<hi rendition="#g">Remarque sur l’urine.</hi>
+<index indexName="Sachverzeichnis">
+<term>urine</term>
+</index>
 Estant reposée un jour, la rouge au fonds est bonne, la
-<app type="Bfootnote"><lem type="main">grise marque</lem><note type="lemma-abbrev">grise</note><rdg wit="#L" n="1"> au </rdg><rdg wit="#L" n="2"> marque <hi rendition="#i">L</hi></rdg></app>
-la gravelle<index indexName="Sachverzeichnis"><term>gravelle</term></index>, et la blanche marque la pierre<index indexName="Sachverzeichnis"><term>pierre (calcul rénal¿)</term></index>.</p><p xml:id="Ch74.p31"><hi rendition="#g">Pour faire vuider la pierre.</hi><index indexName="Sachverzeichnis"><term>pierre (calcul rénal)</term></index>
-Faut prendre à jeun un verre ou demy verre, selon qu’on est robuste ou delicat, d’eau de racine de percil<index indexName="Sachverzeichnis"><term>persil</term></index> distillée les carottes<index indexName="Sachverzeichnis"><term>carotte</term></index> fort bouillis, et passés. Est une tisane<index indexName="Sachverzeichnis"><term>tisane</term></index> fort bonne à boire à toute heure, pour la Pierre<index indexName="Sachverzeichnis"><term>pierre (calcul rénal¿)</term></index>.</p><p xml:id="Ch74.p32"><hi rendition="#g">Pour la fieure tierce et la quarte.</hi><index indexName="Sachverzeichnis"><term>fièvre tierce</term></index><index indexName="Sachverzeichnis"><term>fièvre quarte</term></index>
-Prenez des amouraches<index indexName="Sachverzeichnis"><term>amourache</term></index> (qui est comme des petites marguerites<index indexName="Sachverzeichnis"><term>marguerite</term></index>) une poignée, qu’il faut piller avec de la suif<index indexName="Sachverzeichnis"><term>suif</term></index> de cheminée, une poignée de sel<index indexName="Sachverzeichnis"><term>sel</term></index>, le blanc d’un oeuf<index indexName="Sachverzeichnis"><term>blanc d’oeuf</term></index> frais, puis mettre le tout ensemble, et le mettre entre deux linges, pour en faire un bracelet, qu’il faut appliquer au poignet. <hi rendition="#g">Autrement</hi> prenez une poignée de sel<index indexName="Sachverzeichnis"><term>sel</term></index>, de la suif<index indexName="Sachverzeichnis"><term>suif</term></index> de cheminée, un oignon<index indexName="Sachverzeichnis"><term>oignon</term></index> blanc, un blanc d’oeuf<index indexName="Sachverzeichnis"><term>blanc d’oeuf</term></index>, et faites comme dessus. La rue<index indexName="Sachverzeichnis"><term>rue??</term></index> garantit des <hi rendition="#g">punaises</hi><index indexName="Sachverzeichnis"><term>punaise</term></index> mise par boucquets autour du lit.</p><p xml:id="Ch74.p33"><hi rendition="#g">Purgation pour l’asme.</hi><index indexName="Sachverzeichnis"><term>acmé</term></index>
+<app type="Bfootnote">
+<lem type="main">grise marque</lem>
+<note type="lemma-abbrev">grise</note>
+<rdg wit="#L" n="1"> au </rdg>
+<rdg wit="#L" n="2"> marque <hi rendition="#i">L</hi>
+</rdg>
+</app>
+la gravelle<index indexName="Sachverzeichnis">
+<term>gravelle</term>
+</index>, et la blanche marque la pierre<index indexName="Sachverzeichnis">
+<term>pierre (calcul rénal¿)</term>
+</index>.
+</p>
+<p xml:id="Ch74.p31">
+<hi rendition="#g">Pour faire vuider la pierre.</hi>
+<index indexName="Sachverzeichnis">
+<term>pierre (calcul rénal)</term>
+</index>
+Faut prendre à jeun un verre ou demy verre, selon qu’on est robuste ou delicat, d’eau de racine de percil<index indexName="Sachverzeichnis">
+<term>persil</term>
+</index> distillée les carottes<index indexName="Sachverzeichnis">
+<term>carotte</term>
+</index> fort bouillis, et passés. Est une tisane<index indexName="Sachverzeichnis">
+<term>tisane</term>
+</index> fort bonne à boire à toute heure, pour la Pierre<index indexName="Sachverzeichnis">
+<term>pierre (calcul rénal¿)</term>
+</index>.
+</p>
+<p xml:id="Ch74.p32">
+<hi rendition="#g">Pour la fieure tierce et la quarte.</hi>
+<index indexName="Sachverzeichnis">
+<term>fièvre tierce</term>
+</index>
+<index indexName="Sachverzeichnis">
+<term>fièvre quarte</term>
+</index>
+Prenez des amouraches<index indexName="Sachverzeichnis">
+<term>amourache</term>
+</index> (qui est comme des petites marguerites<index indexName="Sachverzeichnis">
+<term>marguerite</term>
+</index>) une poignée, qu’il faut piller avec de la suif<index indexName="Sachverzeichnis">
+<term>suif</term>
+</index> de cheminée, une poignée de sel<index indexName="Sachverzeichnis">
+<term>sel</term>
+</index>, le blanc d’un oeuf<index indexName="Sachverzeichnis">
+<term>blanc d’oeuf</term>
+</index> frais, puis mettre le tout ensemble, et le mettre entre deux linges, pour en faire un bracelet, qu’il faut appliquer au poignet. <hi rendition="#g">Autrement</hi> prenez une poignée de sel<index indexName="Sachverzeichnis">
+<term>sel</term>
+</index>, de la suif<index indexName="Sachverzeichnis">
+<term>suif</term>
+</index> de cheminée, un oignon<index indexName="Sachverzeichnis">
+<term>oignon</term>
+</index> blanc, un blanc d’oeuf<index indexName="Sachverzeichnis">
+<term>blanc d’oeuf</term>
+</index>, et faites comme dessus. La rue<index indexName="Sachverzeichnis">
+<term>rue??</term>
+</index> garantit des <hi rendition="#g">punaises</hi>
+<index indexName="Sachverzeichnis">
+<term>punaise</term>
+</index> mise par boucquets autour du lit.</p>
+<p xml:id="Ch74.p33">
+<hi rendition="#g">Purgation pour l’asme.</hi>
+<index indexName="Sachverzeichnis">
+<term>acmé</term>
+</index>
 Faut mettre une chopine d’eau sur le feu, et la tirer
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[au]</corr></lem><rdg wit="#L"><orig>eau</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-premier bouillon, et y mettre aussi tost, le poids de deux écus de sel<index indexName="Sachverzeichnis"><term>sel</term></index> de policreste<index indexName="Sachverzeichnis"><term>polycreste</term></index>, et le bien battre, en le versant d’un vaisseau en un autre, puis y mettre infuser du soir au matin un écus de sené<index indexName="Sachverzeichnis"><term>sené</term></index>. Il faut prendre la dite chopine à jeun à matin, en deux fois à deux ou trois heures l’une de l’autre.</p><p xml:id="Ch74.p34">Du frere Ange,<index indexName="Namensregister"><term><hi rendition="#g">Frère Ange</hi> capucin, duc de Joyeuse 1599-1608 ??</term></index> Capucin.</p><pb type="VIII_2" n="678"/><p xml:id="Ch74.p35"><hi rendition="#g">Pour rafraichir le sang.</hi>
-Dans quelque tisane<index indexName="Sachverzeichnis"><term>tisane</term></index> que ce soit d’orge<index indexName="Sachverzeichnis"><term>orge</term></index> de reglisse<index indexName="Sachverzeichnis"><term>réglisse</term></index> ou autre, faut la tirant du feu toute bouillante y mettre deux poignées de cerfeuil<index indexName="Sachverzeichnis"><term>cerfeuil</term></index>, une poignée de pimpirnelle<index indexName="Sachverzeichnis"><term>pimprenelle</term></index>, et de chicorée<index indexName="Sachverzeichnis"><term>chicorée</term></index> sauuage la rend
-<app type="Bfootnote"><lem type="main">encore meilleure.</lem><note type="lemma-abbrev">encore</note><rdg wit="#L" n="1"> plus </rdg><rdg wit="#L" n="2"> meilleure. <hi rendition="#i">L</hi></rdg></app>
-Du frere Ange,<index indexName="Namensregister"><term><hi rendition="#g">Frère Ange</hi>, capucin, duc de Joyeuse 1599-1608 ??</term></index> Capucin.</p><p xml:id="Ch74.p36"><hi rendition="#g">Pour la</hi> <hi rendition="#g">fieure quarte.</hi><index indexName="Sachverzeichnis"><term>fièvre quarte</term></index>
-Prenez des raves<index indexName="Sachverzeichnis"><term>rave</term></index>, et les tranchez, et du sel.<index indexName="Sachverzeichnis"><term>sel</term></index>
-Faites le bouillir dans un pot neuf, et les mettez dessous les pieds, et si une fois ne fait son effect, faut recontinuer.</p><p xml:id="Ch74.p37"><hi rendition="#g">Pour la fieuure tierce.</hi><index indexName="Sachverzeichnis"><term>fièvre tierce</term></index>
-Prenez de l’encens<index indexName="Sachverzeichnis"><term>encens</term></index> male, du pain bis<index indexName="Sachverzeichnis"><term>pain bis</term></index>, de chacun une once et demy once de sel<index indexName="Sachverzeichnis"><term>sel</term></index>. Brisez le tout ensemble, et prenez du plus fort vinaigre<index indexName="Sachverzeichnis"><term>vinaigre</term></index>, pour enrouser, et mettez la dite composition sur les poignets devant le frisson.</p><p xml:id="Ch74.p38"><hi rendition="#g">Pour guerir du mal d’asthme.</hi><index indexName="Sachverzeichnis"><term>asthme</term></index>
-Faut faire tremper de la graine de geneuure<index indexName="Sachverzeichnis"><term>genièvre</term></index> dans du vin<index indexName="Sachverzeichnis"><term>vin</term></index> blanc, et en prendre un verre le matin.</p><p xml:id="Ch74.p39"><hi rendition="#g">Pour faire perdre la fieuure quarte.</hi><index indexName="Sachverzeichnis"><term>fièvre quarte</term></index> Faut <app type="Bfootnote"><lem type="main">prendre dans le frison, pour un</lem><note type="lemma-abbrev">prendre</note><rdg wit="#L" n="1"> pour un </rdg><rdg wit="#L" n="2"> dans le frison, pour un <hi rendition="#i">L</hi></rdg></app>
-sol d’eau rose,<index indexName="Sachverzeichnis"><term>eau de rose</term></index> et pour un sol d’eau de vie.<index indexName="Sachverzeichnis"><term>eau-de-vie</term></index></p><p xml:id="Ch74.p40"><hi rendition="#g">Autrement</hi> faut piller une poignée de rue<index indexName="Sachverzeichnis"><term>rue</term></index>, et du sel<index indexName="Sachverzeichnis"><term>sel</term></index>, qu’il faut mettre entre deux linges, et l’appliquer sur les poignets.</p><p xml:id="Ch74.p41"><hi rendition="#g">Pour guerir la colique.</hi><index indexName="Sachverzeichnis"><term>colique</term></index>
-Faut couper deux ou 3 oignons<index indexName="Sachverzeichnis"><term>oignons</term></index> par ruelles, les faire fricasser dans la poesle sans rien, sur le feu, puis les mettre bien chauds sur le ventre.</p><p xml:id="Ch74.p42"><hi rendition="#g">Purgation</hi><index indexName="Sachverzeichnis"><term>purgation</term></index> <hi rendition="#g">fort naturelle éprouuée plusieurs fois,</hi>
-de d’Aman,<index indexName="Namensregister"><term><hi rendition="#g">Aman</hi>, ???? ??-??</term></index> italien.
-Faut prendre une once de sené<index indexName="Sachverzeichnis"><term>sené</term></index> mis en poudre et passé par le tamis, demy once de tartre de vin<index indexName="Sachverzeichnis"><term>tartre de vin</term></index> blanc, mis en poudre, et passé par le tamis comme dessus; deux dragmes de canelle<index indexName="Sachverzeichnis"><term>cannelle</term></index> aussi mise en poudre et passée. Puis mesler les trois dites poudres toutes ensemble, et estant bien meslées les faut diviser en 3, 4, ou 5 parties, selon que l’on veut faire la purgation forte. Puis en mettre une partie dans le potage, ou la boisson avant que de se coucher; et le lendemain on ira facilement à la selle, on continuera 1, 2,
-<app type="Bfootnote"><lem type="main">ou 3 soirs,</lem><note type="lemma-abbrev">ou 3</note><rdg wit="#L" n="1"> jours </rdg><rdg wit="#L" n="2"> soirs, <hi rendition="#i">L</hi></rdg></app>
-selon que l’on en aura besoin.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Unter dem Text:</hi> Tantum</note></p></div></div></body>
-  </text>
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[au]</corr>
+</lem>
+<rdg wit="#L">
+<orig>eau</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+premier bouillon, et y mettre aussi tost, le poids de deux écus de sel<index indexName="Sachverzeichnis">
+<term>sel</term>
+</index> de policreste<index indexName="Sachverzeichnis">
+<term>polycreste</term>
+</index>, et le bien battre, en le versant d’un vaisseau en un autre, puis y mettre infuser du soir au matin un écus de sené<index indexName="Sachverzeichnis">
+<term>sené</term>
+</index>. Il faut prendre la dite chopine à jeun à matin, en deux fois à deux ou trois heures l’une de l’autre.</p>
+<p xml:id="Ch74.p34">Du frere Ange,<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Frère Ange</hi> capucin, duc de Joyeuse 1599-1608 ??</term>
+</index> Capucin.</p>
+<pb type="VIII_2" n="678"/>
+<p xml:id="Ch74.p35">
+<hi rendition="#g">Pour rafraichir le sang.</hi>
+Dans quelque tisane<index indexName="Sachverzeichnis">
+<term>tisane</term>
+</index> que ce soit d’orge<index indexName="Sachverzeichnis">
+<term>orge</term>
+</index> de reglisse<index indexName="Sachverzeichnis">
+<term>réglisse</term>
+</index> ou autre, faut la tirant du feu toute bouillante y mettre deux poignées de cerfeuil<index indexName="Sachverzeichnis">
+<term>cerfeuil</term>
+</index>, une poignée de pimpirnelle<index indexName="Sachverzeichnis">
+<term>pimprenelle</term>
+</index>, et de chicorée<index indexName="Sachverzeichnis">
+<term>chicorée</term>
+</index> sauuage la rend
+<app type="Bfootnote">
+<lem type="main">encore meilleure.</lem>
+<note type="lemma-abbrev">encore</note>
+<rdg wit="#L" n="1"> plus </rdg>
+<rdg wit="#L" n="2"> meilleure. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+Du frere Ange,<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Frère Ange</hi>, capucin, duc de Joyeuse 1599-1608 ??</term>
+</index> Capucin.</p>
+<p xml:id="Ch74.p36">
+<hi rendition="#g">Pour la</hi>
+<hi rendition="#g">fieure quarte.</hi>
+<index indexName="Sachverzeichnis">
+<term>fièvre quarte</term>
+</index>
+Prenez des raves<index indexName="Sachverzeichnis">
+<term>rave</term>
+</index>, et les tranchez, et du sel.<index indexName="Sachverzeichnis">
+<term>sel</term>
+</index>
+Faites le bouillir dans un pot neuf, et les mettez dessous les pieds, et si une fois ne fait son effect, faut recontinuer.</p>
+<p xml:id="Ch74.p37">
+<hi rendition="#g">Pour la fieuure tierce.</hi>
+<index indexName="Sachverzeichnis">
+<term>fièvre tierce</term>
+</index>
+Prenez de l’encens<index indexName="Sachverzeichnis">
+<term>encens</term>
+</index> male, du pain bis<index indexName="Sachverzeichnis">
+<term>pain bis</term>
+</index>, de chacun une once et demy once de sel<index indexName="Sachverzeichnis">
+<term>sel</term>
+</index>. Brisez le tout ensemble, et prenez du plus fort vinaigre<index indexName="Sachverzeichnis">
+<term>vinaigre</term>
+</index>, pour enrouser, et mettez la dite composition sur les poignets devant le frisson.</p>
+<p xml:id="Ch74.p38">
+<hi rendition="#g">Pour guerir du mal d’asthme.</hi>
+<index indexName="Sachverzeichnis">
+<term>asthme</term>
+</index>
+Faut faire tremper de la graine de geneuure<index indexName="Sachverzeichnis">
+<term>genièvre</term>
+</index> dans du vin<index indexName="Sachverzeichnis">
+<term>vin</term>
+</index> blanc, et en prendre un verre le matin.</p>
+<p xml:id="Ch74.p39">
+<hi rendition="#g">Pour faire perdre la fieuure quarte.</hi>
+<index indexName="Sachverzeichnis">
+<term>fièvre quarte</term>
+</index> Faut <app type="Bfootnote">
+<lem type="main">prendre dans le frison, pour un</lem>
+<note type="lemma-abbrev">prendre</note>
+<rdg wit="#L" n="1"> pour un </rdg>
+<rdg wit="#L" n="2"> dans le frison, pour un <hi rendition="#i">L</hi>
+</rdg>
+</app>
+sol d’eau rose,<index indexName="Sachverzeichnis">
+<term>eau de rose</term>
+</index> et pour un sol d’eau de vie.<index indexName="Sachverzeichnis">
+<term>eau-de-vie</term>
+</index>
+</p>
+<p xml:id="Ch74.p40">
+<hi rendition="#g">Autrement</hi> faut piller une poignée de rue<index indexName="Sachverzeichnis">
+<term>rue</term>
+</index>, et du sel<index indexName="Sachverzeichnis">
+<term>sel</term>
+</index>, qu’il faut mettre entre deux linges, et l’appliquer sur les poignets.</p>
+<p xml:id="Ch74.p41">
+<hi rendition="#g">Pour guerir la colique.</hi>
+<index indexName="Sachverzeichnis">
+<term>colique</term>
+</index>
+Faut couper deux ou 3 oignons<index indexName="Sachverzeichnis">
+<term>oignons</term>
+</index> par ruelles, les faire fricasser dans la poesle sans rien, sur le feu, puis les mettre bien chauds sur le ventre.</p>
+<p xml:id="Ch74.p42">
+<hi rendition="#g">Purgation</hi>
+<index indexName="Sachverzeichnis">
+<term>purgation</term>
+</index>
+<hi rendition="#g">fort naturelle éprouuée plusieurs fois,</hi>
+de d’Aman,<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Aman</hi>, ???? ??-??
+</term>
+</index> italien.
+Faut prendre une once de sené<index indexName="Sachverzeichnis">
+<term>sené</term>
+</index> mis en poudre et passé par le tamis, demy once de tartre de vin<index indexName="Sachverzeichnis">
+<term>tartre de vin</term>
+</index> blanc, mis en poudre, et passé par le tamis comme dessus; deux dragmes de canelle<index indexName="Sachverzeichnis">
+<term>cannelle</term>
+</index> aussi mise en poudre et passée. Puis mesler les trois dites poudres toutes ensemble, et estant bien meslées les faut diviser en 3, 4, ou 5 parties, selon que l’on veut faire la purgation forte. Puis en mettre une partie dans le potage, ou la boisson avant que de se coucher; et le lendemain on ira facilement à la selle, on continuera 1, 2,
+<app type="Bfootnote">
+<lem type="main">ou 3 soirs,</lem>
+<note type="lemma-abbrev">ou 3</note>
+<rdg wit="#L" n="1"> jours </rdg>
+<rdg wit="#L" n="2"> soirs, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+selon que l’on en aura besoin.<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Unter dem Text:</hi> Tantum</note>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

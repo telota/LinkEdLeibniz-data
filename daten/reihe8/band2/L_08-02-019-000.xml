@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-019-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-019-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">De quibusdam circa resistentiam quae a galilaeo dicuntur</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="19">De quibusdam circa resistentiam quae a galilaeo dicuntur</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date>
 						<date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=215</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+							<idno type="page">#page=215</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,24 +86,31 @@
 						</imprint>
 						<biblScope unit="page" from="167" to="172"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-02-019-000_facs-haupttextzeuge"><msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXVII 5 Bl. 201, 204</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-							<summary><p>Konzept: LH XXXVII 5 Bl. 201, 204. 1 Bog. 2<hi rendition="#sup">o</hi>. 2 S. auf Bl. 201. Bl. 204 r<hi rendition="#sup">o</hi> ist leer. Bl. 204 v<hi rendition="#sup">o</hi> überliefert N. 20. Der Bog. umschließt zudem Bl. 202-203 (N. 21). Ein Wasserzeichen auf Bl. 201.</p><p>Cc 2, Nr. 971 A</p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc></witness>
+					<witness n="L" corresp="#L_08-02-019-000_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">LH XXXVII 5 Bl. 201, 204</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+								<summary>
+									<p>Konzept: LH XXXVII 5 Bl. 201, 204. 1 Bog. 2<hi rendition="#sup">o</hi>. 2 S. auf Bl. 201. Bl. 204 r<hi rendition="#sup">o</hi> ist leer. Bl. 204 v<hi rendition="#sup">o</hi> überliefert N. 20. Der Bog. umschließt zudem Bl. 202-203 (N. 21). Ein Wasserzeichen auf Bl. 201.</p>
+									<p>Cc 2, Nr. 971 A</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -725,9 +770,10 @@
 		</revisionDesc>
 	</teiHeader>
 	<facsimile source="digilib.bbaw.de" xml:id="L_08-02-019-000_facs-haupttextzeuge">
-				<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=618"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=618"/>
 		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=619"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=620"/> </facsimile>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=620"/>
+	</facsimile>
 	<text xml:id="L_08-02-019-000_text">
 		<body xml:id="Document">
 			<div type="chapter" xml:id="Ch19" n="19">
@@ -735,849 +781,1034 @@
 				<head>19. DE QUIBUSDAM CIRCA RESISTENTIAM QUAE A GALILAEO DICUNTUR</head>
 				<head>[September 1672 – März 1673]</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-						<witness><msDesc>
-							<msIdentifier>
-								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-								<idno type="Signatur"/>
-							</msIdentifier>
-							<msContents>
-								<summary><p>Konzept: LH XXXVII 5 Bl. 201, 204. 1 Bog. 2<hi rendition="#sup">o</hi>. 2 S. auf Bl. 201. Bl. 204 r<hi rendition="#sup">o</hi> ist leer. Bl. 204 v<hi rendition="#sup">o</hi> überliefert N. 20. Der Bog. umschließt zudem Bl. 202-203 (N. 21). Ein Wasserzeichen auf Bl. 201.</p><p>Cc 2, Nr. 971 A</p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						</listWit></p>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+										<idno type="Signatur"/>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>Konzept: LH XXXVII 5 Bl. 201, 204. 1 Bog. 2<hi rendition="#sup">o</hi>. 2 S. auf Bl. 201. Bl. 204 r<hi rendition="#sup">o</hi> ist leer. Bl. 204 v<hi rendition="#sup">o</hi> überliefert N. 20. Der Bog. umschließt zudem Bl. 202-203 (N. 21). Ein Wasserzeichen auf Bl. 201.</p>
+											<p>Cc 2, Nr. 971 A</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="contents">
-					<p xml:id="Ch19.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Leibniz setzt sich im vorliegenden Stück mit Galileis Überlegungen über die Bruchfestigkeit von Balken aus dem zweiten Dialog der <hi rendition="#i">Discorsi e dimostrazioni matematiche</hi> auseinander, die er in der ersten Ausgabe von Galileis Werken gelesen hat (<ref corresp="#bib_01084"/>G. <hi rendition="#k">Galilei</hi>, <hi rendition="#i">Opere</hi>, Bd. II, Bologna 1656), wie u.a. ein Verweis im Text belegt (siehe unten, S. <ref corresp="#_37.05_201r_a1"/>). Am Rande von Bl. 201 r<hi rendition="#sup">o</hi> hat Leibniz selbst später vermerkt, er sei noch „ein Anfänger”(<hi rendition="#i">novus</hi>) gewesen, als er das vorliegende Stück verfasst habe. Seine frühe Rezeption der <hi rendition="#i">Discorsi</hi> ist ebenfalls in <ref corresp="#bib_00260"/><hi rendition="#i">LSB</hi> VI, 3 N. 11<hi rendition="#sub">1</hi> und N. 11<hi rendition="#sub">2</hi> dokumentiert, wobei N. 11<hi rendition="#sub">1</hi> insbesondere auf Galileis Ansichten über die Bruchfestigkeit Bezug nimmt. Dieses Stück, das auf den Herbst 1672 bis zum Winter 1672-1673 datiert worden ist (siehe die Begründung in <hi rendition="#i">LSB</hi> VI, 3, S. 163), ist auf einem Bogen (LH XXXVII 5, Bl. 205-206) überliefert, welcher das gleiche Wasserzeichen aufweist wie Bl. 201. Die Verwandtschaft der Textträger sowie der starke inhaltliche Zusammenhang legen nahe, die Datierung von <ref corresp="#bib_00260"/><hi rendition="#i">LSB</hi> VI, 3 N. 11 auch für das vorliegende Stück N. 19 zu übernehmen.</hi></p>
-				</div>
-				<div type="text">
-					<p xml:id="Ch19.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[201 r<hi rendition="#sup">o</hi>]</fw></p>
-					<p xml:id="Ch19.p6" rendition="#c">De<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am oberen Blattrand</hi>: Cum ista scriberem eram in his novus.</note> <app type="Bfootnote">
-						<lem type="main">quibusdam circa Resistentiam,<index indexName="Sachverzeichnis">
-							<term>resistentia</term>
-							</index></lem>
-						<note type="lemma-abbrev">De</note>
-						<rdg wit="#L" n="1"> iis </rdg>
-						<rdg wit="#L" n="2"> quibusdam circa Resistentiam <hi rendition="#i">L</hi></rdg>
-						</app> quae <app type="Cfootnote">
-						<lem type="main">a Galilaeo<index indexName="Namensregister">
-							<term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
-							</index></lem>
-						<note type="lemma-abbrev">a Galilaeo</note>
-						<note type="editorial"><bibl corresp="#bib_00050">G. <hi rendition="#k">Galilei</hi>, <hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 132ff. (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 172ff.).</bibl></bibl></note>
-						</app> aut non aut sine demonstratione,<lb/>aut secus <app type="Bfootnote">
-						<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">quam res postulet</add></lem>
-						<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app>, dicuntur.</p>
-					<p xml:id="Ch19.p7" rendition="#noindent">Non demonstrat rupturam<index indexName="Sachverzeichnis">
-						<term>ruptura</term>
-						</index> incipere in uno <app type="Bfootnote">
-						<lem type="main">puncto; neque</lem>
-						<note type="lemma-abbrev">puncto;</note>
-						<rdg wit="#L" n="1"> non </rdg>
-						<rdg wit="#L" n="2"> neque <hi rendition="#i">L</hi></rdg>
-						</app> dicit neque demonstrat distantias punctorum sectionis <app type="Bfootnote">
-						<lem type="main">rupturae<index indexName="Sachverzeichnis">
-							<term>ruptura</term>
-							</index> esse</lem>
-						<note type="lemma-abbrev">rupturae</note>
-						<rdg wit="#L" n="1"> ad </rdg>
-						<rdg wit="#L" n="2"> esse <hi rendition="#i">L</hi></rdg>
-						</app> in ratione <app type="Bfootnote">
-						<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">resistentiae<index indexName="Sachverzeichnis">
-							<term>resistentia</term>
-							</index></add></lem>
-						<note type="lemma-abbrev">resistentiae</note>
-						<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app> distantiarum a puncto</p>
-					<pb type="VIII_2" n="168"/>
-					<p xml:id="Ch19.p8" rendition="#noindent">divulsionis:<index indexName="Sachverzeichnis">
-						<term>divulsio</term>
-						</index> nec <app type="Bfootnote">
-						<lem type="main">tetigit rectas</lem>
-						<note type="lemma-abbrev">tetigit</note>
-						<rdg wit="#L" n="1"> lineas <app>
-							<rdg wit="#L" n="a">resistent </rdg>
-							<rdg wit="#L" n="b">sectionum </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> rectas <hi rendition="#i">L</hi></rdg>
-						</app> a centro divulsionis<index indexName="Sachverzeichnis">
-						<term>centrum divulsionis</term>
-						</index> eductas esse[,] quod ad resistentias[,] inter se, ut quadrata. Unde sequitur, triangulum habere resistentiam<index indexName="Sachverzeichnis">
-						<term>resistentia</term>
-						</index> parabolae.<index indexName="Sachverzeichnis">
-						<term>parabola</term>
-						</index> Nec methodum<index indexName="Sachverzeichnis">
-						<term>methodus</term>
-						</index> attigit generalem, dato uno experimento<index indexName="Sachverzeichnis">
-						<term>experimentum</term>
-						</index> caetera omnia <app type="Bfootnote">
-						<lem type="main">in eadem materia</lem>
-						<note type="lemma-abbrev">omnia</note>
-						<rdg wit="#L" n="1"> in calculandi perf </rdg>
-						<rdg wit="#L" n="2"> in eadem materia <hi rendition="#i">L</hi></rdg>
-						</app> determinandi sine calculo, per simplicem stateram.<index indexName="Sachverzeichnis">
-						<term>statera</term>
-						</index></p>
-					<p xml:id="Ch19.p9">Quae vero <app type="Cfootnote">
-						<lem type="main">de ruptura<index indexName="Sachverzeichnis">
-							<term>ruptura</term>
-							</index> <app type="Bfootnote">
-							<lem type="main">baculi<index indexName="Sachverzeichnis">
-								<term>baculus</term>
-								</index></lem>
-							<note type="lemma-abbrev">ruptura</note>
-							<rdg wit="#L" n="1"> trabis </rdg>
-							<rdg wit="#L" n="2"> baculi <hi rendition="#i">L</hi></rdg>
-							</app> super genu vel trabis<index indexName="Sachverzeichnis">
-							<term>trabs</term>
-							</index> super fulcro<index indexName="Sachverzeichnis">
-							<term>fulcrum</term>
-							</index> dicit,</lem>
-						<note type="lemma-abbrev">de ruptura <seg type="apparat-ellipsis"/> dicit</note>
-						<note type="editorial"><bibl corresp="#bib_00050">a.a.O., S. 133f. (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 173f.).</bibl></bibl></note>
-						</app> iis ne assentiri quidem possum.</p>
-					<p xml:id="Ch19.p10"><app type="Cfootnote">
-						<lem type="main">Putat enim si datis quibusdam viribus<index indexName="Sachverzeichnis">
-							<term>vis</term>
-							</index> opus sit ad frangendum, fulcro in medio posito, fieri posse ut nec centuplum sufficiat, fulcro<index indexName="Sachverzeichnis">
-							<term>fulcrum</term>
-							</index> in alio quodam puncto posito, imo ut infinituplo opus sit, quod probare conatur <anchor xml:id="_37.05_201r_b1"/><app type="Bfootnote" from="#_37.05_201r_b1" to="#_37.05_201r_b2">
-							<lem type="main"/>
-							<rdg wit="#L" cause="addition">prop. <note type="editorial">|</note> <add>p.</add> <note type="editorial"><hi rendition="#i">erg. Hrsg.</hi> |</note> 102. </rdg>
-							<rdg wit="#L" n="1"> argumento paralogistico </rdg>
-							<rdg wit="#L" n="2"> paralogismo <hi rendition="#i">L</hi></rdg>
-							</app><anchor xml:id="_37.05_201r_a1"/><app type="Cfootnote">
-							<lem type="main">prop. [p.] 102.</lem>
-							<note type="lemma-abbrev">prop. [p.] 102</note>
-							<note type="editorial">Die Angabe bezieht sich auf <bibl corresp="#bib_01084">G. <hi rendition="#k">Galilei</hi>, <hi rendition="#i">Discorsi</hi>, Bologna 1656 (<hi rendition="#i">Opere</hi>, Bd. II), S. 102 (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 176). Dass Leibniz zu Beginn seines Pariser Aufenthaltes diese Ausgabe der <hi rendition="#i">Discorsi</hi> gelesen hat, entnimmt man <hi rendition="#i">LSB</hi> VI, 3 N. 11<hi rendition="#sub">1</hi>, S. 163f. und N. 11<hi rendition="#sub">2</hi>, S. 167f.<bibl corresp="#bib_00260"/></bibl></bibl></note>
-							</app></lem>
-						<note type="lemma-abbrev">Putat <seg type="apparat-ellipsis"/> 102</note>
-						<note type="editorial"><bibl corresp="#bib_00050">a.a.O., S. 134-136 (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 174-176).</bibl></bibl></note>
-						</app> paralogismo<anchor xml:id="_37.05_201r_a2"/><anchor xml:id="_37.05_201r_b2"/> quem miror excidere potuisse tanto viro.<anchor xml:id="_037_05_201"/></p>
-					<p xml:id="Ch19.p11">Ponatur resistentia trabis<index indexName="Sachverzeichnis">
-						<term>resistentia trabis</term>
-						</index> fultae in <formula xml:id="Ch19.p11.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>C</m:mi>
-						</m:math>
-						</formula> seu pondera<index indexName="Sachverzeichnis">
-						<term>pondus</term>
-						</index> ad eam rumpendam sufficientia <formula xml:id="Ch19.p11.m2">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>+</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> esse quantacunque fulcro <formula xml:id="Ch19.p11.m3">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>C</m:mi>
-						</m:math>
-						</formula> moto versus <formula xml:id="Ch19.p11.m4">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>A</m:mi>
-						</m:math>
-						</formula> ut <app type="Bfootnote">
-						<lem type="main">in <formula xml:id="Ch19.p11.m5">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>C</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula></lem>
-						<note type="lemma-abbrev">in</note>
-						<rdg wit="#L" n="1"> <formula xml:id="Ch19.p11.m6">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>F</m:mi>
-							</m:math>
-							</formula> </rdg>
-						<rdg wit="#L" n="2"> <formula xml:id="Ch19.p11.m7">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>C</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> <hi rendition="#i">L</hi></rdg>
-						</app>[,] minuetur <app type="Bfootnote">
-						<lem type="main">potentia<index indexName="Sachverzeichnis">
-							<term>potentia</term>
-							</index> <formula xml:id="Ch19.p11.m8">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-							</formula> continue</lem>
-						<rdg wit="#L" cause="deletion">potentia <formula xml:id="Ch19.p11.m9">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-							</formula> <note type="editorial">|</note> <del>vel <formula xml:id="Ch19.p11.m10">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>E</m:mi>
-							</m:math>
-							</formula> </del><note type="editorial"><hi rendition="#i">gestr.</hi> |</note> continue <hi rendition="#i">L</hi></rdg>
-						</app> et quidem in infinitum.<index indexName="Sachverzeichnis">
-						<term>infinitum</term>
-						</index> Necesse <app type="Bfootnote">
-						<lem type="main">ergo est</lem>
-						<note type="lemma-abbrev">ergo</note>
-						<rdg wit="#L" n="1"> esset </rdg>
-						<rdg wit="#L" n="2"> est <hi rendition="#i">L</hi></rdg>
-						</app> potentiam <formula xml:id="Ch19.p11.m11">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>B</m:mi>
-						</m:math>
-						</formula> augeri <app type="Bfootnote">
-						<lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[in]</add></lem>
-						<note type="lemma-abbrev">in</note>
-						<note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note>
-						</app> infinitum, ut diminuta altera <formula xml:id="Ch19.p11.m12">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>A</m:mi>
-						</m:math>
-						</formula> in infinitum, nihilominus summa resistentiae trabis aequivaleat, at non augetur in infinitum potentia <formula xml:id="Ch19.p11.m13">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>B</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>B</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> remoto licet fulcro <formula xml:id="Ch19.p11.m14">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>C</m:mi>
-						</m:math>
-						</formula> <app type="Bfootnote">
-						<lem type="main">tota</lem>
-						<note type="lemma-abbrev"><formula xml:id="Ch19.p11.m15">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>C</m:mi>
-							</m:math>
-							</formula></note>
-						<rdg wit="#L" n="1"> usque </rdg>
-						<rdg wit="#L" n="2"> tota <hi rendition="#i">L</hi></rdg>
-						</app> trabis longitudine. Ergo potentia<index indexName="Sachverzeichnis">
-						<term>potentia</term>
-						</index> <formula xml:id="Ch19.p11.m16">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>A</m:mi>
-								<m:mo>+</m:mo>
-								<m:mi>B</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> altera in infinitum minuta, sed altera non in infinitum aucta, non ut ante resistentiae Trabis aequivalebunt, sed resistentia trabis<index indexName="Sachverzeichnis">
-						<term>resistentia trabis</term>
-						</index> erit aucta. Ecce argumentum, quo audito <app type="Cfootnote">
-						<lem type="main">collocutor</lem>
-						<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    18-S.167.2  -->collocutor […] infinito</note>
-						<note type="editorial"><bibl corresp="#bib_00050">G. <hi rendition="#k">Galilei</hi>, <hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 135 (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 175).</bibl></bibl></note>
-						</app> exclamat, <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">[se]</corr></lem>
-						<rdg wit="#L"><orig>sed</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> admirari vim Geometriae tam inexpectata eruentis, se</p>
-					<figure rendition="#own-line_centered" xml:id="Ch19.p12"> <graphic rendition="#c" url="./images/lh03705_201r-d1.svg" style="trim:  0mm -2mm 0mm 0mm; clip: true" width="190.7928pt" xml:id="Ch19.p12.g1"/> <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head> </figure>
-					<pb type="VIII_2" n="169"/>
-					<p xml:id="Ch19.p13" rendition="#noindent">enim crediturum <app type="Bfootnote">
-						<lem type="main">fuisse, resistentiam</lem>
-						<note type="lemma-abbrev">fuisse,</note>
-						<rdg wit="#L" n="1"> potentiam </rdg>
-						<rdg wit="#L" n="2"> resistentiam <hi rendition="#i">L</hi></rdg>
-						</app> manere eandem, at fuisse deceptum, non parum, sed integro infinito. <app type="Bfootnote">
-						<lem type="main">Sed ego</lem>
-						<note type="lemma-abbrev">Sed</note>
-						<rdg wit="#L" n="1"> ut </rdg>
-						<rdg wit="#L" n="2"> mihi </rdg>
-						<rdg wit="#L" n="3"> ego <hi rendition="#i">L</hi></rdg>
-						</app> repetere cogor, nescire me quomodo talia exciderint tanto viro. Primum enim si potentia <formula xml:id="Ch19.p13.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>B</m:mi>
-						</m:math>
-						</formula> in infinitum augenda est, potentia <formula xml:id="Ch19.p13.m2">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>A</m:mi>
-						</m:math>
-						</formula> in infinitum minuta seu fulcro <formula xml:id="Ch19.p13.m3">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>C</m:mi>
-						</m:math>
-						</formula> ipsi supposito, quo casu <app type="Bfootnote">
-						<lem type="main">potentia <formula xml:id="Ch19.p13.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-							</formula></lem>
-						<note type="lemma-abbrev">potentia</note>
-						<rdg wit="#L" n="1"> <formula xml:id="Ch19.p13.m5">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>B</m:mi>
-							</m:math>
-							</formula> </rdg>
-						<rdg wit="#L" n="2"> <formula xml:id="Ch19.p13.m6">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-							</formula> <hi rendition="#i">L</hi></rdg>
-						</app> evanescit, sequetur fulcro<index indexName="Sachverzeichnis">
-						<term>fulcrum</term>
-						</index> posito in <formula xml:id="Ch19.p13.m7">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>A</m:mi>
-						</m:math>
-						</formula> potentia <formula xml:id="Ch19.p13.m8">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>A</m:mi>
-						</m:math>
-						</formula> remota, potentiam <formula xml:id="Ch19.p13.m9">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>B</m:mi>
-						</m:math>
-						</formula> ad trabem<index indexName="Sachverzeichnis">
-						<term>trabs</term>
-						</index> in <formula xml:id="Ch19.p13.m10">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>A</m:mi>
-						</m:math>
-						</formula> rumpendam esse <app type="Bfootnote">
-						<lem type="main">debere infinitam,</lem>
-						<rdg wit="#ed">debere <note type="editorial">|</note> in <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> infinitam,</rdg>
-						</app> quod est absurdum. Sed et facile retextu sophisma <app type="Bfootnote">
-						<lem type="main">est: Cum</lem>
-						<note type="lemma-abbrev">est:</note>
-						<rdg wit="#L" n="1"> Dicit </rdg>
-						<rdg wit="#L" n="2"> Fateor </rdg>
-						<rdg wit="#L" n="3"> Cum <hi rendition="#i">L</hi></rdg>
-						</app> duae sint potentiae <app type="Bfootnote">
-						<lem type="main"><formula xml:id="Ch19.p13.m11">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>+</m:mo>
-										<m:mi>B</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> concedo</lem>
-						<note type="lemma-abbrev"><formula xml:id="Ch19.p13.m12">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>+</m:mo>
-										<m:mi>B</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula></note>
-						<rdg wit="#L" n="1"> fateor, ut quantum minuitur </rdg>
-						<rdg wit="#L" n="2"> concedo <hi rendition="#i">L</hi></rdg>
-						</app> Galilaeo,<index indexName="Namensregister">
-						<term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
-						</index> si <app type="Bfootnote">
-						<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">mutato fulcro</add></lem>
-						<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app> una in <app type="Bfootnote">
-						<lem type="main">infinitum minuatur,</lem>
-						<note type="lemma-abbrev">infinitum</note>
-						<rdg wit="#L" n="1"> augeatur </rdg>
-						<rdg wit="#L" n="2"> minuatur <hi rendition="#i">L</hi></rdg>
-						</app> alteram in infinitum <app type="Bfootnote">
-						<lem type="main">esse augendam.</lem>
-						<note type="lemma-abbrev">esse</note>
-						<rdg wit="#L" n="1"> minuendam </rdg>
-						<rdg wit="#L" n="2"> augendam <hi rendition="#i">L</hi></rdg>
-						</app><index indexName="Sachverzeichnis">
-						<term>infinitum</term>
-						</index><index indexName="Sachverzeichnis">
-						<term>fulcrum</term>
-						</index><index indexName="Sachverzeichnis">
-						<term>potentia</term>
-						</index> Sed cur? Nonne, ut summa <app type="Bfootnote">
-						<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">potentiarum</add></lem>
-						<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app> maneat eadem, quia scilicet resistentia manet eadem. En ergo <app type="Bfootnote">
-						<lem type="main">resistentiam<index indexName="Sachverzeichnis">
-							<term>resistentia trabis</term>
-							</index> trabis</lem>
-						<note type="lemma-abbrev">resistentiam</note>
-						<rdg wit="#L" n="1"> fulcrorum </rdg>
-						<rdg wit="#L" n="2"> trabis <hi rendition="#i">L</hi></rdg>
-						</app> fulcro utcunque mutato eandem manere[,] suppositum ab ipso Galilaeo<index indexName="Namensregister">
-						<term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
-						</index> velut fundamentum demonstrationis, qua contrarium probare nititur. Jam probationem consideremus: Si mutato <app type="Bfootnote">
-						<lem type="main">fulcro potentia <formula xml:id="Ch19.p13.m13">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-							</formula> in infinitum</lem>
-						<note type="lemma-abbrev">fulcro</note>
-						<rdg wit="#L" n="1"> in in </rdg>
-						<rdg wit="#L" n="2"> potentia <formula xml:id="Ch19.p13.m14">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-							</formula> in infinitum <hi rendition="#i">L</hi></rdg>
-						</app> minuatur, potentia <formula xml:id="Ch19.p13.m15">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>B</m:mi>
-						</m:math>
-						</formula> in infinitum augenda est. At verum est prius. <app type="Cfootnote">
-						<lem type="main">Probat: <app type="Bfootnote">
-							<lem type="main">nam fulcro <formula xml:id="Ch19.p13.m16">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mi>C</m:mi>
-								</m:math>
-								</formula> ad dimidiam</lem>
-							<note type="lemma-abbrev">nam</note>
-							<rdg wit="#L" n="1"> cum </rdg>
-							<rdg wit="#L" n="2" cause="addition"> fulcro <note type="editorial">|</note> <add><formula xml:id="Ch19.p13.m17">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mi>C</m:mi>
-								</m:math>
-								</formula> </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> ad dimidiam <hi rendition="#i">L</hi></rdg>
-							</app> <formula xml:id="Ch19.p13.m18">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> perveniente <formula xml:id="Ch19.p13.m19">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-							</formula> dimidiatur, ad <app type="Bfootnote">
-							<lem type="main">quartam, assumitur</lem>
-							<note type="lemma-abbrev">quartam,</note>
-							<rdg wit="#L" n="1"> <formula xml:id="Ch19.p13.m20">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mi>A</m:mi>
-								</m:math>
-								</formula> dim </rdg>
-							<rdg wit="#L" n="2"> assumitur <hi rendition="#i">L</hi></rdg>
-							</app> quinta de <formula xml:id="Ch19.p13.m21">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-							</formula> et sic in infinitum, ut fulcro perveniente <app type="Bfootnote">
-							<lem type="main">in <formula xml:id="Ch19.p13.m22">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mi>A</m:mi>
-								</m:math>
-								</formula> potentia</lem>
-							<note type="lemma-abbrev">in <formula xml:id="Ch19.p13.m23">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mi>A</m:mi>
-								</m:math>
-								</formula></note>
-							<rdg wit="#L" n="1"> summa hi </rdg>
-							<rdg wit="#L" n="2"> potentia <hi rendition="#i">L</hi></rdg>
-							</app> fiat pars infinitesima<index indexName="Sachverzeichnis">
-							<term>pars infinitesima</term>
-							</index> de <formula xml:id="Ch19.p13.m24">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>A</m:mi>
-							</m:math>
-							</formula> seu evanescat.<index indexName="Sachverzeichnis">
-							<term>pars infinitesima</term>
-							</index> Ergo <formula xml:id="Ch19.p13.m25">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>B</m:mi>
-							</m:math>
-							</formula> in infinitum augenda est, seu fiet infinita.</lem>
-						<note type="lemma-abbrev">Probat: <seg type="apparat-ellipsis"/> infinita</note>
-						<note type="editorial"><bibl corresp="#bib_00050">a.a.O., S. 134f. (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 174f.). Zu Beginn von N. 21 wird diese Stelle zum Teil ins Lateinische übersetzt und Satz für Satz kommentiert.</bibl></bibl></note>
-						</app> Respondetur minui aliquid in infinitum dupliciter intelligi potest, vel ipsum dividi et subdividi in infinitum, vel aliquod infinitum ei subtrahi. Hoc loco nullum infinitum <app type="Bfootnote">
-						<lem type="main">subtrahitur a potentia</lem>
-						<note type="lemma-abbrev">subtrahitur</note>
-						<rdg wit="#L" n="1"> ab </rdg>
-						<rdg wit="#L" n="2"> a potentia <hi rendition="#i">L</hi></rdg>
-						</app> <formula xml:id="Ch19.p13.m26">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>A</m:mi>
-						</m:math>
-						</formula> sed potentia <formula xml:id="Ch19.p13.m27">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>A</m:mi>
-						</m:math>
-						</formula> subdividitur tantum in infinitum.<index indexName="Sachverzeichnis">
-						<term>infinitum</term>
-						</index><index indexName="Sachverzeichnis">
-						<term>potetntia</term>
-						</index><index indexName="Sachverzeichnis">
-						<term>resistentia</term>
-						</index> Jam si duae sint quantitates, et una in infinitum dividatur, non est necesse alteram in infinitum multiplicari, ut summa maneat eadem, imo contra hoc modo summa non manebit <app type="Bfootnote">
-						<lem type="main">eadem. Esto</lem>
-						<note type="lemma-abbrev">eadem.</note>
-						<rdg wit="#L" n="1"> Sunt </rdg>
-						<rdg wit="#L" n="2"> Sunto </rdg>
-						<rdg wit="#L" n="3"> Esto <hi rendition="#i">L</hi></rdg>
-						</app> enim <app type="Bfootnote">
-						<lem type="main"><formula xml:id="Ch19.p13.m28">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>a</m:mi>
-									<m:mo>+</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula>. Patet</lem>
-						<note type="lemma-abbrev"><formula xml:id="Ch19.p13.m29">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>a</m:mi>
-									<m:mo>+</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula>.</note>
-						<rdg wit="#L" n="1"> Ergo </rdg>
-						<rdg wit="#L" n="2"> Patet <hi rendition="#i">L</hi></rdg>
-						</app> <formula xml:id="Ch19.p13.m30">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mi>a</m:mi>
-										<m:mn>2</m:mn>
-									</m:mfrac>
-								</m:mstyle>
-								<m:mo>+</m:mo>
-								<m:mrow>
-									<m:mn>2</m:mn>
-									<m:mo>⁢</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-							</m:mrow>
-						</m:math>
-						</formula> non esse ei aequale. <formula xml:id="Ch19.p13.m31">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>a</m:mi>
-									<m:mo>+</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-								<m:mo>=</m:mo>
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mi>a</m:mi>
-											<m:mn>2</m:mn>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>+</m:mo>
-									<m:mrow>
-										<m:mn>2</m:mn>
-										<m:mo>⁢</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-								</m:mrow>
-							</m:mrow>
-						</m:math>
-						</formula>. Ergo <formula xml:id="Ch19.p13.m32">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mrow>
-										<m:mn>2</m:mn>
-										<m:mo>⁢</m:mo>
-										<m:mi>a</m:mi>
-									</m:mrow>
-									<m:mo>+</m:mo>
-									<m:mrow>
-										<m:mn>2</m:mn>
-										<m:mo>⁢</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-								</m:mrow>
-								<m:mo>=</m:mo>
-								<m:mrow>
-									<m:mi>a</m:mi>
-									<m:mo>+</m:mo>
-									<m:mrow>
-										<m:mn>4</m:mn>
-										<m:mo>⁢</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-								</m:mrow>
-							</m:mrow>
-						</m:math>
-						</formula>. Ergo <formula xml:id="Ch19.p13.m33">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mn>2</m:mn>
-									<m:mo>⁢</m:mo>
-									<m:mi>a</m:mi>
-								</m:mrow>
-								<m:mo>=</m:mo>
-								<m:mrow>
-									<m:mi>a</m:mi>
-									<m:mo>+</m:mo>
-									<m:mrow>
-										<m:mn>2</m:mn>
-										<m:mo>⁢</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-								</m:mrow>
-							</m:mrow>
-						</m:math>
-						</formula>. Ergo <formula xml:id="Ch19.p13.m34">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>a</m:mi>
-								<m:mo>=</m:mo>
-								<m:mrow>
-									<m:mn>2</m:mn>
-									<m:mo>⁢</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-							</m:mrow>
-						</m:math>
-						</formula>. Ergo si duae sint quan-</p>
-					<pb type="VIII_2" n="170"/>
-					<p xml:id="Ch19.p14" rendition="#noindent">titates, et una dimidiata, alteraque duplicata, summa aequivalet summae priori, necesse est dimidiam duplicatae fuisse <app type="Bfootnote">
-						<lem type="main">duplam. <pb type="L"/><fw type="folNum">[201 v<hi rendition="#sup">o</hi>]</fw> Et ecce</lem>
-						<note type="lemma-abbrev">duplam.</note>
-						<rdg wit="#L" n="1"> Et in genere, quoties hoc contingit ea debet ratio imminutionis unius et augmenti alterius, quae est ratio imminuendae. Et ecce ad augendam per hanc demonstrationem generalem: <formula xml:id="Ch19.p14.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>a</m:mi>
-										<m:mo>+</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-									<m:mo>=</m:mo>
-									<m:mrow>
-										<m:mstyle displaystyle="true">
-											<m:mfrac>
-												<m:mi>a</m:mi>
-												<m:mrow>
-													<m:mn>1</m:mn>
-													<m:mo>⁢</m:mo>
-													<m:mi>r</m:mi>
-												</m:mrow>
-											</m:mfrac>
-										</m:mstyle>
-										<m:mo>+</m:mo>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>b</m:mi>
-										</m:mrow>
-									</m:mrow>
-								</m:mrow>
-							</m:math>
-							</formula>. Ergo <formula xml:id="Ch19.p14.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>a</m:mi>
-										</m:mrow>
-										<m:mo>+</m:mo>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>b</m:mi>
-										</m:mrow>
-									</m:mrow>
-									<m:mo>=</m:mo>
-									<m:mrow>
-										<m:mi>a</m:mi>
-										<m:mo>+</m:mo>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>q</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>b</m:mi>
-										</m:mrow>
-									</m:mrow>
-								</m:mrow>
-							</m:math>
-							</formula>. Ergo <formula xml:id="Ch19.p14.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>a</m:mi>
-										</m:mrow>
-										<m:mo>-</m:mo>
-										<m:mi>a</m:mi>
-									</m:mrow>
-									<m:mo>=</m:mo>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>q</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>b</m:mi>
-										</m:mrow>
-										<m:mo>-</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-								</m:mrow>
-							</m:math>
-							</formula> seu differentia inter augendum et auctum debet esse aequalis differentiae minuendi in se ipsum seu quadratum rationis multiplicati <pb type="L"/><fw type="folNum">[201 v<hi rendition="#sup">o</hi>]</fw> <app>
-							<rdg wit="#L" n="a">seu <app>
-								<rdg wit="#L" n="aa">si </rdg>
-								<rdg wit="#L" n="bb">generaliter si post multiplicationem unius, et <app>
-									<rdg wit="#L" n="aaa">ad </rdg>
-									<rdg wit="#L" n="bbb">divisionem alterius servatur nihilominus aequalitas summarum </rdg>
-									</app></rdg>
-								</app></rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> <formula xml:id="Ch19.p14.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>a</m:mi>
-										</m:mrow>
-										<m:mo>-</m:mo>
-										<m:mi>a</m:mi>
-									</m:mrow>
-									<m:mo>=</m:mo>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>q</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>b</m:mi>
-										</m:mrow>
-										<m:mo>-</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-								</m:mrow>
-							</m:math>
-							</formula>. seu <formula xml:id="Ch19.p14.m5">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mn>1</m:mn>
-									<m:mi>r</m:mi>
-									<m:mo>-</m:mo>
-									<m:mn>1</m:mn>
-									<m:mo>,</m:mo>
-									<m:mo>⌢</m:mo>
-									<m:mi>a</m:mi>
-									<m:mo>=</m:mo>
-									<m:mn>1</m:mn>
-									<m:mi>r</m:mi>
-									<m:mi>q</m:mi>
-									<m:mo>-</m:mo>
-									<m:mn>1</m:mn>
-									<m:mo>,</m:mo>
-									<m:mo>⌢</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula>. Ergo <formula xml:id="Ch19.p14.m6">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mn>1</m:mn>
-									<m:mi>r</m:mi>
-									<m:mo>-</m:mo>
-									<m:mn>1</m:mn>
-									<m:mo>=</m:mo>
-									<m:mn>1</m:mn>
-									<m:mi>r</m:mi>
-									<m:mi>q</m:mi>
-									<m:mo>-</m:mo>
-									<m:mn>1</m:mn>
-									<m:mo>,</m:mo>
-									<m:mo>⌢</m:mo>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mi>b</m:mi>
-											<m:mi>a</m:mi>
-										</m:mfrac>
-									</m:mstyle>
-								</m:mrow>
-							</m:math>
-							</formula>. Ergo: <formula xml:id="Ch19.p14.m7">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mrow>
-													<m:mn>1</m:mn>
-													<m:mo>⁢</m:mo>
-													<m:mi>r</m:mi>
-												</m:mrow>
-												<m:mo>-</m:mo>
-												<m:mn>1</m:mn>
-											</m:mrow>
-											<m:mrow>
-												<m:mn>1</m:mn>
-												<m:mi>r</m:mi>
-												<m:mi>q</m:mi>
-												<m:mo>-</m:mo>
-												<m:mn>1</m:mn>
-												<m:mo>.</m:mo>
-											</m:mrow>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>=</m:mo>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mi>b</m:mi>
-											<m:mi>a</m:mi>
-										</m:mfrac>
-									</m:mstyle>
-								</m:mrow>
-							</m:math>
-							</formula>. </rdg>
-						<rdg wit="#L" n="3"> Et ecce <hi rendition="#i">L</hi></rdg>
-						</app> per demonstrationem generalem:</p>
-					<p xml:id="Ch19.p14image-replacement"><formula xml:id="Ch19.p14image-replacementf" facs="./figurereplacements/215-1.svg" style="width:450pt;">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
-						<?tex-source {\noindent%
+					<p xml:id="Ch19.p4">
+						<hi rendition="#smaller">
+							<hi rendition="#b">Datierungsgründe</hi>: Leibniz setzt sich im vorliegenden Stück mit Galileis Überlegungen über die Bruchfestigkeit von Balken aus dem zweiten Dialog der <hi rendition="#i">Discorsi e dimostrazioni matematiche</hi> auseinander, die er in der ersten Ausgabe von Galileis Werken gelesen hat (<ref corresp="#bib_01084"/>
+G. <hi rendition="#k">Galilei</hi>,						<hi rendition="#i">Opere</hi>, Bd. II, Bologna 1656), wie u.a. ein Verweis im Text belegt (siehe unten, S. <ref corresp="#_37.05_201r_a1"/>
+). Am Rande von Bl. 201 r<hi rendition="#sup">o</hi> hat Leibniz selbst später vermerkt, er sei noch „ein Anfänger”(<hi rendition="#i">novus</hi>) gewesen, als er das vorliegende Stück verfasst habe. Seine frühe Rezeption der <hi rendition="#i">Discorsi</hi> ist ebenfalls in <ref corresp="#bib_00260"/>
+				<hi rendition="#i">LSB</hi> VI, 3 N. 11<hi rendition="#sub">1</hi> und N. 11<hi rendition="#sub">2</hi> dokumentiert, wobei N. 11<hi rendition="#sub">1</hi> insbesondere auf Galileis Ansichten über die Bruchfestigkeit Bezug nimmt. Dieses Stück, das auf den Herbst 1672 bis zum Winter 1672-1673 datiert worden ist (siehe die Begründung in <hi rendition="#i">LSB</hi> VI, 3, S. 163), ist auf einem Bogen (LH XXXVII 5, Bl. 205-206) überliefert, welcher das gleiche Wasserzeichen aufweist wie Bl. 201. Die Verwandtschaft der Textträger sowie der starke inhaltliche Zusammenhang legen nahe, die Datierung von <ref corresp="#bib_00260"/>
+			<hi rendition="#i">LSB</hi> VI, 3 N. 11 auch für das vorliegende Stück N. 19 zu übernehmen.</hi>
+	</p>
+</div>
+<div type="text">
+	<p xml:id="Ch19.p5" rendition="#noindent">
+		<pb type="L"/>
+		<fw type="folNum">[201 r<hi rendition="#sup">o</hi>]
+		</fw>
+	</p>
+	<p xml:id="Ch19.p6" rendition="#c">De<note type="Afootnote" place="margin" resp="#L">
+		<hi rendition="#i">Am oberen Blattrand</hi>: Cum ista scriberem eram in his novus.</note>
+	<app type="Bfootnote">
+		<lem type="main">quibusdam circa Resistentiam,<index indexName="Sachverzeichnis">
+			<term>resistentia</term>
+		</index>
+	</lem>
+	<note type="lemma-abbrev">De</note>
+	<rdg wit="#L" n="1"> iis </rdg>
+	<rdg wit="#L" n="2"> quibusdam circa Resistentiam <hi rendition="#i">L</hi>
+	</rdg>
+</app> quae <app type="Cfootnote">
+<lem type="main">a Galilaeo<index indexName="Namensregister">
+	<term>
+		<hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
+</index>
+</lem>
+<note type="lemma-abbrev">a Galilaeo</note>
+<note type="editorial">
+<bibl corresp="#bib_00050">G. <hi rendition="#k">Galilei</hi>,	<hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 132ff. (<bibl corresp="#bib_00048">
+	<hi rendition="#i">GO</hi> VIII, S. 172ff.).</bibl>
+</bibl>
+</note>
+</app> aut non aut sine demonstratione,<lb/>
+aut secus <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">quam res postulet</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>, dicuntur.</p>
+<p xml:id="Ch19.p7" rendition="#noindent">Non demonstrat rupturam<index indexName="Sachverzeichnis">
+<term>ruptura</term>
+</index> incipere in uno <app type="Bfootnote">
+<lem type="main">puncto; neque</lem>
+<note type="lemma-abbrev">puncto;</note>
+<rdg wit="#L" n="1"> non </rdg>
+<rdg wit="#L" n="2"> neque <hi rendition="#i">L</hi>
+</rdg>
+</app> dicit neque demonstrat distantias punctorum sectionis <app type="Bfootnote">
+<lem type="main">rupturae<index indexName="Sachverzeichnis">
+<term>ruptura</term>
+</index> esse</lem>
+<note type="lemma-abbrev">rupturae</note>
+<rdg wit="#L" n="1"> ad </rdg>
+<rdg wit="#L" n="2"> esse <hi rendition="#i">L</hi>
+</rdg>
+</app> in ratione <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">resistentiae<index indexName="Sachverzeichnis">
+<term>resistentia</term>
+</index>
+</add>
+</lem>
+<note type="lemma-abbrev">resistentiae</note>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> distantiarum a puncto</p>
+<pb type="VIII_2" n="168"/>
+<p xml:id="Ch19.p8" rendition="#noindent">divulsionis:<index indexName="Sachverzeichnis">
+<term>divulsio</term>
+</index> nec <app type="Bfootnote">
+<lem type="main">tetigit rectas</lem>
+<note type="lemma-abbrev">tetigit</note>
+<rdg wit="#L" n="1"> lineas <app>
+<rdg wit="#L" n="a">resistent </rdg>
+<rdg wit="#L" n="b">sectionum </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> rectas <hi rendition="#i">L</hi>
+</rdg>
+</app> a centro divulsionis<index indexName="Sachverzeichnis">
+<term>centrum divulsionis</term>
+</index> eductas esse[,] quod ad resistentias[,] inter se, ut quadrata. Unde sequitur, triangulum habere resistentiam<index indexName="Sachverzeichnis">
+<term>resistentia</term>
+</index> parabolae.<index indexName="Sachverzeichnis">
+<term>parabola</term>
+</index> Nec methodum<index indexName="Sachverzeichnis">
+<term>methodus</term>
+</index> attigit generalem, dato uno experimento<index indexName="Sachverzeichnis">
+<term>experimentum</term>
+</index> caetera omnia <app type="Bfootnote">
+<lem type="main">in eadem materia</lem>
+<note type="lemma-abbrev">omnia</note>
+<rdg wit="#L" n="1"> in calculandi perf </rdg>
+<rdg wit="#L" n="2"> in eadem materia <hi rendition="#i">L</hi>
+</rdg>
+</app> determinandi sine calculo, per simplicem stateram.<index indexName="Sachverzeichnis">
+<term>statera</term>
+</index>
+</p>
+<p xml:id="Ch19.p9">Quae vero <app type="Cfootnote">
+<lem type="main">de ruptura<index indexName="Sachverzeichnis">
+<term>ruptura</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">baculi<index indexName="Sachverzeichnis">
+<term>baculus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">ruptura</note>
+<rdg wit="#L" n="1"> trabis </rdg>
+<rdg wit="#L" n="2"> baculi <hi rendition="#i">L</hi>
+</rdg>
+</app> super genu vel trabis<index indexName="Sachverzeichnis">
+<term>trabs</term>
+</index> super fulcro<index indexName="Sachverzeichnis">
+<term>fulcrum</term>
+</index> dicit,</lem>
+<note type="lemma-abbrev">de ruptura <seg type="apparat-ellipsis"/>
+ dicit</note>
+<note type="editorial">
+<bibl corresp="#bib_00050">a.a.O., S. 133f. (<bibl corresp="#bib_00048">
+<hi rendition="#i">GO</hi> VIII, S. 173f.).</bibl>
+</bibl>
+</note>
+</app> iis ne assentiri quidem possum.</p>
+<p xml:id="Ch19.p10">
+<app type="Cfootnote">
+<lem type="main">Putat enim si datis quibusdam viribus<index indexName="Sachverzeichnis">
+<term>vis</term>
+</index> opus sit ad frangendum, fulcro in medio posito, fieri posse ut nec centuplum sufficiat, fulcro<index indexName="Sachverzeichnis">
+<term>fulcrum</term>
+</index> in alio quodam puncto posito, imo ut infinituplo opus sit, quod probare conatur <anchor xml:id="_37.05_201r_b1"/>
+<app type="Bfootnote" from="#_37.05_201r_b1" to="#_37.05_201r_b2">
+<lem type="main"/>
+<rdg wit="#L" cause="addition">prop. <note type="editorial">|</note>
+<add>p.</add>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi> |
+</note> 102. </rdg>
+<rdg wit="#L" n="1"> argumento paralogistico </rdg>
+<rdg wit="#L" n="2"> paralogismo <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<anchor xml:id="_37.05_201r_a1"/>
+<app type="Cfootnote">
+<lem type="main">prop. [p.] 102.</lem>
+<note type="lemma-abbrev">prop. [p.] 102</note>
+<note type="editorial">Die Angabe bezieht sich auf <bibl corresp="#bib_01084">G. <hi rendition="#k">Galilei</hi>,<hi rendition="#i">Discorsi</hi>, Bologna 1656 (<hi rendition="#i">Opere</hi>, Bd. II), S. 102 (<bibl corresp="#bib_00048">
+<hi rendition="#i">GO</hi> VIII, S. 176). Dass Leibniz zu Beginn seines Pariser Aufenthaltes diese Ausgabe der <hi rendition="#i">Discorsi</hi> gelesen hat, entnimmt man <hi rendition="#i">LSB</hi> VI, 3 N. 11<hi rendition="#sub">1</hi>, S. 163f. und N. 11<hi rendition="#sub">2</hi>, S. 167f.<bibl corresp="#bib_00260"/>
+</bibl>
+</bibl>
+</note>
+</app>
+</lem>
+<note type="lemma-abbrev">Putat <seg type="apparat-ellipsis"/>
+ 102</note>
+<note type="editorial">
+<bibl corresp="#bib_00050">a.a.O., S. 134-136 (<bibl corresp="#bib_00048">
+<hi rendition="#i">GO</hi> VIII, S. 174-176).</bibl>
+</bibl>
+</note>
+</app> paralogismo<anchor xml:id="_37.05_201r_a2"/>
+<anchor xml:id="_37.05_201r_b2"/>
+ quem miror excidere potuisse tanto viro.<anchor xml:id="_037_05_201"/>
+</p>
+<p xml:id="Ch19.p11">Ponatur resistentia trabis<index indexName="Sachverzeichnis">
+<term>resistentia trabis</term>
+</index> fultae in <formula xml:id="Ch19.p11.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> seu pondera<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> ad eam rumpendam sufficientia <formula xml:id="Ch19.p11.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>+</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> esse quantacunque fulcro <formula xml:id="Ch19.p11.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> moto versus <formula xml:id="Ch19.p11.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> ut <app type="Bfootnote">
+<lem type="main">in <formula xml:id="Ch19.p11.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch19.p11.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>F</m:mi>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch19.p11.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>[,] minuetur <app type="Bfootnote">
+<lem type="main">potentia<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index>
+<formula xml:id="Ch19.p11.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> continue</lem>
+<rdg wit="#L" cause="deletion">potentia <formula xml:id="Ch19.p11.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>
+<note type="editorial">|</note>
+<del>vel <formula xml:id="Ch19.p11.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>
+</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> continue <hi rendition="#i">L</hi>
+</rdg>
+</app> et quidem in infinitum.<index indexName="Sachverzeichnis">
+<term>infinitum</term>
+</index> Necesse <app type="Bfootnote">
+<lem type="main">ergo est</lem>
+<note type="lemma-abbrev">ergo</note>
+<rdg wit="#L" n="1"> esset </rdg>
+<rdg wit="#L" n="2"> est <hi rendition="#i">L</hi>
+</rdg>
+</app> potentiam <formula xml:id="Ch19.p11.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> augeri <app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[in]</add>
+</lem>
+<note type="lemma-abbrev">in</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app> infinitum, ut diminuta altera <formula xml:id="Ch19.p11.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> in infinitum, nihilominus summa resistentiae trabis aequivaleat, at non augetur in infinitum potentia <formula xml:id="Ch19.p11.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula> remoto licet fulcro <formula xml:id="Ch19.p11.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">tota</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch19.p11.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> usque </rdg>
+<rdg wit="#L" n="2"> tota <hi rendition="#i">L</hi>
+</rdg>
+</app> trabis longitudine. Ergo potentia<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index>
+<formula xml:id="Ch19.p11.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>+</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula> altera in infinitum minuta, sed altera non in infinitum aucta, non ut ante resistentiae Trabis aequivalebunt, sed resistentia trabis<index indexName="Sachverzeichnis">
+<term>resistentia trabis</term>
+</index> erit aucta. Ecce argumentum, quo audito <app type="Cfootnote">
+<lem type="main">collocutor</lem>
+<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    18-S.167.2  -->collocutor […] infinito</note>
+<note type="editorial">
+<bibl corresp="#bib_00050">G. <hi rendition="#k">Galilei</hi>,<hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 135 (<bibl corresp="#bib_00048">
+<hi rendition="#i">GO</hi> VIII, S. 175).</bibl>
+</bibl>
+</note>
+</app> exclamat, <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[se]</corr>
+</lem>
+<rdg wit="#L">
+<orig>sed</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> admirari vim Geometriae tam inexpectata eruentis, se</p>
+<figure rendition="#own-line_centered" xml:id="Ch19.p12">
+<graphic rendition="#c" url="./images/lh03705_201r-d1.svg" style="trim:  0mm -2mm 0mm 0mm; clip: true" width="190.7928pt" xml:id="Ch19.p12.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]
+</head>
+</figure>
+<pb type="VIII_2" n="169"/>
+<p xml:id="Ch19.p13" rendition="#noindent">enim crediturum <app type="Bfootnote">
+<lem type="main">fuisse, resistentiam</lem>
+<note type="lemma-abbrev">fuisse,</note>
+<rdg wit="#L" n="1"> potentiam </rdg>
+<rdg wit="#L" n="2"> resistentiam <hi rendition="#i">L</hi>
+</rdg>
+</app> manere eandem, at fuisse deceptum, non parum, sed integro infinito. <app type="Bfootnote">
+<lem type="main">Sed ego</lem>
+<note type="lemma-abbrev">Sed</note>
+<rdg wit="#L" n="1"> ut </rdg>
+<rdg wit="#L" n="2"> mihi </rdg>
+<rdg wit="#L" n="3"> ego <hi rendition="#i">L</hi>
+</rdg>
+</app> repetere cogor, nescire me quomodo talia exciderint tanto viro. Primum enim si potentia <formula xml:id="Ch19.p13.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> in infinitum augenda est, potentia <formula xml:id="Ch19.p13.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> in infinitum minuta seu fulcro <formula xml:id="Ch19.p13.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> ipsi supposito, quo casu <app type="Bfootnote">
+<lem type="main">potentia <formula xml:id="Ch19.p13.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">potentia</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch19.p13.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch19.p13.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> evanescit, sequetur fulcro<index indexName="Sachverzeichnis">
+<term>fulcrum</term>
+</index> posito in <formula xml:id="Ch19.p13.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> potentia <formula xml:id="Ch19.p13.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> remota, potentiam <formula xml:id="Ch19.p13.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> ad trabem<index indexName="Sachverzeichnis">
+<term>trabs</term>
+</index> in <formula xml:id="Ch19.p13.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> rumpendam esse <app type="Bfootnote">
+<lem type="main">debere infinitam,</lem>
+<rdg wit="#ed">debere <note type="editorial">|</note> in <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> infinitam,</rdg>
+</app> quod est absurdum. Sed et facile retextu sophisma <app type="Bfootnote">
+<lem type="main">est: Cum</lem>
+<note type="lemma-abbrev">est:</note>
+<rdg wit="#L" n="1"> Dicit </rdg>
+<rdg wit="#L" n="2"> Fateor </rdg>
+<rdg wit="#L" n="3"> Cum <hi rendition="#i">L</hi>
+</rdg>
+</app> duae sint potentiae <app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch19.p13.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>+</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> concedo</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch19.p13.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>+</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> fateor, ut quantum minuitur </rdg>
+<rdg wit="#L" n="2"> concedo <hi rendition="#i">L</hi>
+</rdg>
+</app> Galilaeo,<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
+</index> si <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">mutato fulcro</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> una in <app type="Bfootnote">
+<lem type="main">infinitum minuatur,</lem>
+<note type="lemma-abbrev">infinitum</note>
+<rdg wit="#L" n="1"> augeatur </rdg>
+<rdg wit="#L" n="2"> minuatur <hi rendition="#i">L</hi>
+</rdg>
+</app> alteram in infinitum <app type="Bfootnote">
+<lem type="main">esse augendam.</lem>
+<note type="lemma-abbrev">esse</note>
+<rdg wit="#L" n="1"> minuendam </rdg>
+<rdg wit="#L" n="2"> augendam <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<index indexName="Sachverzeichnis">
+<term>infinitum</term>
+</index>
+<index indexName="Sachverzeichnis">
+<term>fulcrum</term>
+</index>
+<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index> Sed cur? Nonne, ut summa <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">potentiarum</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> maneat eadem, quia scilicet resistentia manet eadem. En ergo <app type="Bfootnote">
+<lem type="main">resistentiam<index indexName="Sachverzeichnis">
+<term>resistentia trabis</term>
+</index> trabis</lem>
+<note type="lemma-abbrev">resistentiam</note>
+<rdg wit="#L" n="1"> fulcrorum </rdg>
+<rdg wit="#L" n="2"> trabis <hi rendition="#i">L</hi>
+</rdg>
+</app> fulcro utcunque mutato eandem manere[,] suppositum ab ipso Galilaeo<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
+</index> velut fundamentum demonstrationis, qua contrarium probare nititur. Jam probationem consideremus: Si mutato <app type="Bfootnote">
+<lem type="main">fulcro potentia <formula xml:id="Ch19.p13.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> in infinitum</lem>
+<note type="lemma-abbrev">fulcro</note>
+<rdg wit="#L" n="1"> in in </rdg>
+<rdg wit="#L" n="2"> potentia <formula xml:id="Ch19.p13.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> in infinitum <hi rendition="#i">L</hi>
+</rdg>
+</app> minuatur, potentia <formula xml:id="Ch19.p13.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> in infinitum augenda est. At verum est prius. <app type="Cfootnote">
+<lem type="main">Probat: <app type="Bfootnote">
+<lem type="main">nam fulcro <formula xml:id="Ch19.p13.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> ad dimidiam</lem>
+<note type="lemma-abbrev">nam</note>
+<rdg wit="#L" n="1"> cum </rdg>
+<rdg wit="#L" n="2" cause="addition"> fulcro <note type="editorial">|</note>
+<add>
+<formula xml:id="Ch19.p13.m17">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> ad dimidiam <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch19.p13.m18">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula> perveniente <formula xml:id="Ch19.p13.m19">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> dimidiatur, ad <app type="Bfootnote">
+<lem type="main">quartam, assumitur</lem>
+<note type="lemma-abbrev">quartam,</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch19.p13.m20">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> dim </rdg>
+<rdg wit="#L" n="2"> assumitur <hi rendition="#i">L</hi>
+</rdg>
+</app> quinta de <formula xml:id="Ch19.p13.m21">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> et sic in infinitum, ut fulcro perveniente <app type="Bfootnote">
+<lem type="main">in <formula xml:id="Ch19.p13.m22">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> potentia</lem>
+<note type="lemma-abbrev">in <formula xml:id="Ch19.p13.m23">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> summa hi </rdg>
+<rdg wit="#L" n="2"> potentia <hi rendition="#i">L</hi>
+</rdg>
+</app> fiat pars infinitesima<index indexName="Sachverzeichnis">
+<term>pars infinitesima</term>
+</index> de <formula xml:id="Ch19.p13.m24">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> seu evanescat.<index indexName="Sachverzeichnis">
+<term>pars infinitesima</term>
+</index> Ergo <formula xml:id="Ch19.p13.m25">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> in infinitum augenda est, seu fiet infinita.</lem>
+<note type="lemma-abbrev">Probat: <seg type="apparat-ellipsis"/>
+ infinita</note>
+<note type="editorial">
+<bibl corresp="#bib_00050">a.a.O., S. 134f. (<bibl corresp="#bib_00048">
+<hi rendition="#i">GO</hi> VIII, S. 174f.). Zu Beginn von N. 21 wird diese Stelle zum Teil ins Lateinische übersetzt und Satz für Satz kommentiert.</bibl>
+</bibl>
+</note>
+</app> Respondetur minui aliquid in infinitum dupliciter intelligi potest, vel ipsum dividi et subdividi in infinitum, vel aliquod infinitum ei subtrahi. Hoc loco nullum infinitum <app type="Bfootnote">
+<lem type="main">subtrahitur a potentia</lem>
+<note type="lemma-abbrev">subtrahitur</note>
+<rdg wit="#L" n="1"> ab </rdg>
+<rdg wit="#L" n="2"> a potentia <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch19.p13.m26">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> sed potentia <formula xml:id="Ch19.p13.m27">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> subdividitur tantum in infinitum.<index indexName="Sachverzeichnis">
+<term>infinitum</term>
+</index>
+<index indexName="Sachverzeichnis">
+<term>potetntia</term>
+</index>
+<index indexName="Sachverzeichnis">
+<term>resistentia</term>
+</index> Jam si duae sint quantitates, et una in infinitum dividatur, non est necesse alteram in infinitum multiplicari, ut summa maneat eadem, imo contra hoc modo summa non manebit <app type="Bfootnote">
+<lem type="main">eadem. Esto</lem>
+<note type="lemma-abbrev">eadem.</note>
+<rdg wit="#L" n="1"> Sunt </rdg>
+<rdg wit="#L" n="2"> Sunto </rdg>
+<rdg wit="#L" n="3"> Esto <hi rendition="#i">L</hi>
+</rdg>
+</app> enim <app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch19.p13.m28">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>. Patet</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch19.p13.m29">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+</note>
+<rdg wit="#L" n="1"> Ergo </rdg>
+<rdg wit="#L" n="2"> Patet <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch19.p13.m30">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> non esse ei aequale. <formula xml:id="Ch19.p13.m31">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Ergo <formula xml:id="Ch19.p13.m32">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn>4</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Ergo <formula xml:id="Ch19.p13.m33">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Ergo <formula xml:id="Ch19.p13.m34">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Ergo si duae sint quan-</p>
+<pb type="VIII_2" n="170"/>
+<p xml:id="Ch19.p14" rendition="#noindent">titates, et una dimidiata, alteraque duplicata, summa aequivalet summae priori, necesse est dimidiam duplicatae fuisse <app type="Bfootnote">
+<lem type="main">duplam. <pb type="L"/>
+<fw type="folNum">[201 v<hi rendition="#sup">o</hi>]
+</fw> Et ecce</lem>
+<note type="lemma-abbrev">duplam.</note>
+<rdg wit="#L" n="1"> Et in genere, quoties hoc contingit ea debet ratio imminutionis unius et augmenti alterius, quae est ratio imminuendae. Et ecce ad augendam per hanc demonstrationem generalem: <formula xml:id="Ch19.p14.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Ergo <formula xml:id="Ch19.p14.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>q</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Ergo <formula xml:id="Ch19.p14.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>q</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> seu differentia inter augendum et auctum debet esse aequalis differentiae minuendi in se ipsum seu quadratum rationis multiplicati <pb type="L"/>
+<fw type="folNum">[201 v<hi rendition="#sup">o</hi>]
+</fw>
+<app>
+<rdg wit="#L" n="a">seu <app>
+<rdg wit="#L" n="aa">si </rdg>
+<rdg wit="#L" n="bb">generaliter si post multiplicationem unius, et <app>
+<rdg wit="#L" n="aaa">ad </rdg>
+<rdg wit="#L" n="bbb">divisionem alterius servatur nihilominus aequalitas summarum </rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch19.p14.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>q</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. seu <formula xml:id="Ch19.p14.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mi>r</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+<m:mo>,</m:mo>
+<m:mo>⌢</m:mo>
+<m:mi>a</m:mi>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+<m:mi>r</m:mi>
+<m:mi>q</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+<m:mo>,</m:mo>
+<m:mo>⌢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>. Ergo <formula xml:id="Ch19.p14.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mi>r</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+<m:mo>=</m:mo>
+<m:mn>1</m:mn>
+<m:mi>r</m:mi>
+<m:mi>q</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+<m:mo>,</m:mo>
+<m:mo>⌢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>b</m:mi>
+<m:mi>a</m:mi>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>. Ergo: <formula xml:id="Ch19.p14.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mi>r</m:mi>
+<m:mi>q</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>=</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>b</m:mi>
+<m:mi>a</m:mi>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>. 
+</rdg>
+<rdg wit="#L" n="3"> Et ecce <hi rendition="#i">L</hi>
+</rdg>
+</app> per demonstrationem generalem:</p>
+<p xml:id="Ch19.p14image-replacement">
+<formula xml:id="Ch19.p14image-replacementf" facs="./figurereplacements/215-1.svg" style="width:450pt;">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+<?tex-source {\noindent%
 %
 %
 %
@@ -1677,305 +1908,370 @@ ${\displaystyle \left(\frac{1}{2}\right) \frac{1r - 1}{1rq - 1r} = \frac{b}{a}}$
 % \newpage% PR: Rein provisorisch !!!
 }
 ?>
-						</formula></p>
-					<p xml:id="Ch19.p15"><app type="Bfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><formula xml:id="Ch19.p15.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mn>1</m:mn>
-									<m:mi>r</m:mi>
-									<m:mo>-</m:mo>
-									<m:mn>1</m:mn>
-									<m:mo>,</m:mo>
-									<m:mo>⌢</m:mo>
-									<m:mi>a</m:mi>
-									<m:mo>=</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula></note>
-						<rdg wit="#L" n="1"> <formula xml:id="Ch19.p15.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mn>1</m:mn>
-									<m:mo>⁢</m:mo>
-									<m:mi>r</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>q</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> </rdg>
-						<rdg wit="#L" n="2"> <formula xml:id="Ch19.p15.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mn>1</m:mn>
-										<m:mo>⁢</m:mo>
-										<m:mi>r</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-									<m:mo>⌢</m:mo>
-									<m:mrow>
-										<m:mn>1</m:mn>
-										<m:mo>⁢</m:mo>
-										<m:mi>r</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-								</m:mrow>
-							</m:math>
-							</formula> </rdg>
-						<rdg wit="#L" n="3"> <formula xml:id="Ch19.p15.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mrow>
-											<m:mi>b</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><formula xml:id="Ch19.p15.m5">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mn>1</m:mn>
-									<m:mi>r</m:mi>
-									<m:mo>-</m:mo>
-									<m:mn>1</m:mn>
-									<m:mo>,</m:mo>
-									<m:mo>⌢</m:mo>
-									<m:mi>a</m:mi>
-									<m:mo>=</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula></note>
-						<rdg wit="#L" n="1"> <formula xml:id="Ch19.p15.m6">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mrow>
-											<m:mi>b</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mrow>
-											<m:mrow>
-												<m:mn>1</m:mn>
-												<m:mo>⁢</m:mo>
-												<m:mi>r</m:mi>
-											</m:mrow>
-											<m:mo>-</m:mo>
-											<m:mn>1</m:mn>
-										</m:mrow>
-									</m:mrow>
-									<m:mo>,</m:mo>
-									<m:mo>+</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> </rdg>
-						<rdg wit="#L" n="2"> <formula xml:id="Ch19.p15.m7">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mn>1</m:mn>
-											<m:mo>⁢</m:mo>
-											<m:mi>r</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>b</m:mi>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mrow>
-											<m:mrow>
-												<m:mi mathvariant="normal">⌞</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mn>1</m:mn>
-												<m:mo>⁢</m:mo>
-												<m:mi>r</m:mi>
-											</m:mrow>
-											<m:mo>-</m:mo>
-											<m:mn>1</m:mn>
-										</m:mrow>
-									</m:mrow>
-									<m:mo>.</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> <hi rendition="#i">L</hi></rdg>
-						</app> <note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: <formula xml:id="Ch19.p15.m8">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>a</m:mi>
-						</m:math>
-						</formula> minuenda, <formula xml:id="Ch19.p15.m9">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi>b</m:mi>
-						</m:math>
-						</formula> augenda[,] <formula xml:id="Ch19.p15.m10">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mn>1</m:mn>
-								<m:mo>⁢</m:mo>
-								<m:mi>r</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> ratio augmenti vel diminutionis.</note> Regula ergo haec est, <app type="Bfootnote">
-						<lem type="main">si duabus quantitatibus altera aucta</lem>
-						<note type="lemma-abbrev">si</note>
-						<rdg wit="#L" n="1"> non duab </rdg>
-						<rdg wit="#L" n="2"> duabus quantitatibus altera <app>
-							<rdg wit="#L" n="a">non </rdg>
-							<rdg wit="#L" n="b">aucta <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> altera minuta, in ratione eadem; summa productorum aequalis est summae quantitatum; necesse est rationem augendae ad minuendam esse, ut ratio augmenti <app type="Bfootnote">
-						<lem type="main">diminutionisve minuta unitate</lem>
-						<note type="lemma-abbrev">diminutionisve</note>
-						<rdg wit="#L" n="1"> aucta unit </rdg>
-						<rdg wit="#L" n="2"> minuta unitate <hi rendition="#i">L</hi></rdg>
-						</app> ad quadratum suum etiam minutum unitate.</p>
-					<pb type="VIII_2" n="171"/>
-					<p xml:id="Ch19.p16">Eodem <app type="Bfootnote">
-						<lem type="main">modo inveniemus</lem>
-						<note type="lemma-abbrev">modo</note>
-						<rdg wit="#L" n="1"> calculabitur </rdg>
-						<rdg wit="#L" n="2"> inveniemus <hi rendition="#i">L</hi></rdg>
-						</app> regulam, ut differentiae quantitatum sint aequales differentiae productorum, item, ut summae vel differentiae non quidem sint aequales habeant tamen rationem datam.</p>
-					<p xml:id="Ch19.p17">Ex his apparet, minime necesse esse, ad id ut summa <app type="Bfootnote">
-						<lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">productorum</add></lem>
-						<note type="editorial"><hi rendition="#i">erg. L</hi></note>
-						</app> maneat eadem duas quantitates in eadem ratione ut unam augeri, ita alteram minui neque enim id contingere, nisi quando ea est ratio quantitatum, quae rationis unitate multatae ad quadratum suum unitate minutum. <app type="Bfootnote">
-						<lem type="main">Ac</lem>
-						<note type="lemma-abbrev">minutum.</note>
-						<rdg wit="#L" n="1"> Quare non est </rdg>
-						<rdg wit="#L" n="2"> Ac <hi rendition="#i">L</hi></rdg>
-						</app> proinde duas quantitates propositas <app type="Bfootnote">
-						<lem type="main">hoc</lem>
-						<note type="lemma-abbrev">propositas</note>
-						<rdg wit="#L" n="1"> id </rdg>
-						<rdg wit="#L" n="2"> hoc <hi rendition="#i">L</hi></rdg>
-						</app> praestituras, tantum in ratione augmenti diminutionisve certa, nullas capaces esse, ut hoc praestent in ratione assumta <anchor xml:id="quibusdam1"/>quacunqe.</p>
-					<p xml:id="Ch19.p18"><app type="Bfootnote" from="#quibusdam1" to="#quibusdam2">
-						<lem type="main">Caeterum<anchor xml:id="quibusdam2"/></lem>
-						<note type="lemma-abbrev">quacunque.</note>
-						<rdg wit="#L" n="1"> Quam ex </rdg>
-						<rdg wit="#L" n="2"> Caeterum <hi rendition="#i">L</hi></rdg>
-						</app> Galilaeus<index indexName="Namensregister">
-						<term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
-						</index> his suis quasi serio demonstratis nixus, etiam <app type="Cfootnote">
-						<lem type="main">conatur rationem mutatarum pro mutato fulcri loco differentiarum assignare,</lem>
-						<note type="lemma-abbrev">conatur <seg type="apparat-ellipsis"/> assignare</note>
-						<note type="editorial"><bibl corresp="#bib_00050">a.a.O., S. 135f. (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 176).</bibl></bibl></note>
-						</app> sed demonstratione tam obscura, ut nullo modo sensum intellectus capacem eruere potuerim, praeterquam quod necesse est propositionem esse <app type="Bfootnote">
-						<lem type="main">falsam. Porro</lem>
-						<note type="lemma-abbrev">falsam.</note>
-						<rdg wit="#L" n="1"> Hinc corruit et problema </rdg>
-						<rdg wit="#L" n="2"> Porro <hi rendition="#i">L</hi></rdg>
-						</app> cum hactenus ratiocinatus sit de <app type="Bfootnote">
-						<lem type="main">trabe<index indexName="Sachverzeichnis">
-							<term>trabs</term>
-							</index> in medio alibive uno in loco fulta, et ponderibus<index indexName="Sachverzeichnis">
-							<term>pondus</term>
-							</index> utrinque appensis rumpenda, de improviso </lem>
-						<note type="lemma-abbrev">trabe</note>
-						<rdg wit="#L" n="1"> rumpenda </rdg>
-						<rdg wit="#L" n="2"> in medio <seg type="apparat-ellipsis"/> rumpenda <app>
-							<rdg wit="#L" n="a">subito for </rdg>
-							<rdg wit="#L" n="b">transit </rdg>
-							<rdg wit="#L" n="c">de improviso transit <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app><app type="Cfootnote">
-						<lem type="main">transit ad casum trabis in extremis fultae, ponderisque nunc in medio nunc alibi appensi</lem>
-						<note type="lemma-abbrev">transit <seg type="apparat-ellipsis"/> appensi</note>
-						<note type="editorial"><bibl corresp="#bib_00050">a.a.O., S. 136 (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 176). Siehe hierzu N. 20.</bibl></bibl></note>
-						</app><app type="Bfootnote">
-						<lem type="main">. Sed consequentiam non [probat]. Hoc enim accurate</lem>
-						<note type="lemma-abbrev">appensi.</note>
-						<rdg wit="#L" n="1"> Et vero recte, etsi consequentiam non probet. </rdg>
-						<rdg wit="#L" n="2"> Sed consequentiam non <note type="editorial">|</note> probet <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note>. <app>
-							<rdg wit="#L" n="a">Cum enim pondus aequiponderet resistentiis, idem est duobus ponderibus quaerere, resistentia in medio assumta, aut de duabus resistentiis pondere existente utrinque. Sed hoc accuratius </rdg>
-							<rdg wit="#L" n="b">Hoc enim accurate <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> demonstrandum erat. Cum tamen id falsum esse videatur, nam trabe<index indexName="Sachverzeichnis">
-						<term>trabs</term>
-						</index> frangenda ex centro, <app type="Bfootnote">
-						<lem type="main">in loco</lem>
-						<note type="lemma-abbrev">in</note>
-						<rdg wit="#L" n="1"> puncto </rdg>
-						<rdg wit="#L" n="2"> loco <hi rendition="#i">L</hi></rdg>
-						</app> appensionis, <app type="Bfootnote">
-						<lem type="main">praeter duas resistentias</lem>
-						<note type="lemma-abbrev">praeter</note>
-						<rdg wit="#L" n="1"> resistentiam </rdg>
-						<rdg wit="#L" n="2"> duas resistentias <hi rendition="#i">L</hi></rdg>
-						</app> in extremis calculanda est resistentia in medio,<index indexName="Sachverzeichnis">
-						<term>resistentia centralis</term>
-						</index> quae crescit cum <app type="Bfootnote">
-						<lem type="main">vecte<index indexName="Sachverzeichnis">
-							<term>vectis</term>
-							</index> potentiae</lem>
-						<note type="lemma-abbrev">vecte</note>
-						<rdg wit="#L" n="1"> ponderis </rdg>
-						<rdg wit="#L" n="2"> potentiae <hi rendition="#i">L</hi></rdg>
-						</app>, est <app type="Bfootnote">
-						<lem type="main">enim celeritas<index indexName="Sachverzeichnis">
-							<term>celeritas</term>
-							</index></lem>
-						<note type="lemma-abbrev">enim</note>
-						<rdg wit="#L" n="1"> ea </rdg>
-						<rdg wit="#L" n="2"> celeritas <hi rendition="#i">L</hi></rdg>
-						</app> motus utriusque potentiae, ex divulsionis<index indexName="Sachverzeichnis">
-						<term>divulsio</term>
-						</index> in loco suspensionis eadem. Hinc omne cylindricum habet hoc ut sit ubique aequaliter resistens, si utrinque fultum intelligatur. Imo demonstrabo: in Trabibus utrinque fultis nullum esse calculum ineundum resistentiarum in extremis. Nam si pondus<index indexName="Sachverzeichnis">
-						<term>pondus</term>
-						</index> praevalet simplici cohaesioni<index indexName="Sachverzeichnis">
-						<term>cohaesio</term>
-						</index> in ea <pb type="VIII_2" n="172"/>recta perrumpet, <app type="Bfootnote">
-						<lem type="main">sin non praevalet, multo minus</lem>
-						<note type="lemma-abbrev">sin</note>
-						<rdg wit="#L" n="1"> minus </rdg>
-						<rdg wit="#L" n="2"> non praevalet, multo minus <hi rendition="#i">L</hi></rdg>
-						</app> praevalebit majori resistentiae<index indexName="Sachverzeichnis">
-						<term>resistentia</term>
-						</index> ex fulcro, nunquam ergo trabs<index indexName="Sachverzeichnis">
-						<term>trabs</term>
-						</index> utrinque fulta rumpetur in extremis nunquam motu ex centro, semper <app type="Bfootnote">
-						<lem type="main">libero.</lem>
-						<note type="lemma-abbrev">libero</note>
-						<rdg wit="#L" n="1"> , at secus est si ubi utrinque affixa est, affixionis vel </rdg>
-						<rdg wit="#L" n="2"> imo contra, si praeponderati </rdg>
-						<rdg wit="#L" n="3"> nisi a </rdg>
-						<rdg wit="#L" n="4"> . <hi rendition="#i">L</hi></rdg>
-						</app></p>
-				</div>
-			</div>
-		</body>
-	</text>
+</formula>
+</p>
+<p xml:id="Ch19.p15">
+<app type="Bfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch19.p15.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mi>r</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+<m:mo>,</m:mo>
+<m:mo>⌢</m:mo>
+<m:mi>a</m:mi>
+<m:mo>=</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch19.p15.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>q</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch19.p15.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="3">
+<formula xml:id="Ch19.p15.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch19.p15.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mi>r</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+<m:mo>,</m:mo>
+<m:mo>⌢</m:mo>
+<m:mi>a</m:mi>
+<m:mo>=</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch19.p15.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+</m:mrow>
+<m:mo>,</m:mo>
+<m:mo>+</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch19.p15.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mi mathvariant="normal">⌞</m:mi>
+<m:mo>⁢</m:mo>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am Rand</hi>:<formula xml:id="Ch19.p15.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula> minuenda, <formula xml:id="Ch19.p15.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>b</m:mi>
+</m:math>
+</formula> augenda[,] <formula xml:id="Ch19.p15.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>r</m:mi>
+</m:mrow>
+</m:math>
+</formula> ratio augmenti vel diminutionis.</note> Regula ergo haec est, <app type="Bfootnote">
+<lem type="main">si duabus quantitatibus altera aucta</lem>
+<note type="lemma-abbrev">si</note>
+<rdg wit="#L" n="1"> non duab </rdg>
+<rdg wit="#L" n="2"> duabus quantitatibus altera <app>
+<rdg wit="#L" n="a">non </rdg>
+<rdg wit="#L" n="b">aucta <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> altera minuta, in ratione eadem; summa productorum aequalis est summae quantitatum; necesse est rationem augendae ad minuendam esse, ut ratio augmenti <app type="Bfootnote">
+<lem type="main">diminutionisve minuta unitate</lem>
+<note type="lemma-abbrev">diminutionisve</note>
+<rdg wit="#L" n="1"> aucta unit </rdg>
+<rdg wit="#L" n="2"> minuta unitate <hi rendition="#i">L</hi>
+</rdg>
+</app> ad quadratum suum etiam minutum unitate.</p>
+<pb type="VIII_2" n="171"/>
+<p xml:id="Ch19.p16">Eodem <app type="Bfootnote">
+<lem type="main">modo inveniemus</lem>
+<note type="lemma-abbrev">modo</note>
+<rdg wit="#L" n="1"> calculabitur </rdg>
+<rdg wit="#L" n="2"> inveniemus <hi rendition="#i">L</hi>
+</rdg>
+</app> regulam, ut differentiae quantitatum sint aequales differentiae productorum, item, ut summae vel differentiae non quidem sint aequales habeant tamen rationem datam.</p>
+<p xml:id="Ch19.p17">Ex his apparet, minime necesse esse, ad id ut summa <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">productorum</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> maneat eadem duas quantitates in eadem ratione ut unam augeri, ita alteram minui neque enim id contingere, nisi quando ea est ratio quantitatum, quae rationis unitate multatae ad quadratum suum unitate minutum. <app type="Bfootnote">
+<lem type="main">Ac</lem>
+<note type="lemma-abbrev">minutum.</note>
+<rdg wit="#L" n="1"> Quare non est </rdg>
+<rdg wit="#L" n="2"> Ac <hi rendition="#i">L</hi>
+</rdg>
+</app> proinde duas quantitates propositas <app type="Bfootnote">
+<lem type="main">hoc</lem>
+<note type="lemma-abbrev">propositas</note>
+<rdg wit="#L" n="1"> id </rdg>
+<rdg wit="#L" n="2"> hoc <hi rendition="#i">L</hi>
+</rdg>
+</app> praestituras, tantum in ratione augmenti diminutionisve certa, nullas capaces esse, ut hoc praestent in ratione assumta <anchor xml:id="quibusdam1"/>
+quacunqe.</p>
+<p xml:id="Ch19.p18">
+<app type="Bfootnote" from="#quibusdam1" to="#quibusdam2">
+<lem type="main">Caeterum<anchor xml:id="quibusdam2"/>
+</lem>
+<note type="lemma-abbrev">quacunque.</note>
+<rdg wit="#L" n="1"> Quam ex </rdg>
+<rdg wit="#L" n="2"> Caeterum <hi rendition="#i">L</hi>
+</rdg>
+</app> Galilaeus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
+</index> his suis quasi serio demonstratis nixus, etiam <app type="Cfootnote">
+<lem type="main">conatur rationem mutatarum pro mutato fulcri loco differentiarum assignare,</lem>
+<note type="lemma-abbrev">conatur <seg type="apparat-ellipsis"/>
+ assignare</note>
+<note type="editorial">
+<bibl corresp="#bib_00050">a.a.O., S. 135f. (<bibl corresp="#bib_00048">
+<hi rendition="#i">GO</hi> VIII, S. 176).</bibl>
+</bibl>
+</note>
+</app> sed demonstratione tam obscura, ut nullo modo sensum intellectus capacem eruere potuerim, praeterquam quod necesse est propositionem esse <app type="Bfootnote">
+<lem type="main">falsam. Porro</lem>
+<note type="lemma-abbrev">falsam.</note>
+<rdg wit="#L" n="1"> Hinc corruit et problema </rdg>
+<rdg wit="#L" n="2"> Porro <hi rendition="#i">L</hi>
+</rdg>
+</app> cum hactenus ratiocinatus sit de <app type="Bfootnote">
+<lem type="main">trabe<index indexName="Sachverzeichnis">
+<term>trabs</term>
+</index> in medio alibive uno in loco fulta, et ponderibus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> utrinque appensis rumpenda, de improviso </lem>
+<note type="lemma-abbrev">trabe</note>
+<rdg wit="#L" n="1"> rumpenda </rdg>
+<rdg wit="#L" n="2"> in medio <seg type="apparat-ellipsis"/>
+ rumpenda <app>
+<rdg wit="#L" n="a">subito for </rdg>
+<rdg wit="#L" n="b">transit </rdg>
+<rdg wit="#L" n="c">de improviso transit <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+<app type="Cfootnote">
+<lem type="main">transit ad casum trabis in extremis fultae, ponderisque nunc in medio nunc alibi appensi</lem>
+<note type="lemma-abbrev">transit <seg type="apparat-ellipsis"/>
+ appensi</note>
+<note type="editorial">
+<bibl corresp="#bib_00050">a.a.O., S. 136 (<bibl corresp="#bib_00048">
+<hi rendition="#i">GO</hi> VIII, S. 176). Siehe hierzu N. 20.</bibl>
+</bibl>
+</note>
+</app>
+<app type="Bfootnote">
+<lem type="main">. Sed consequentiam non [probat]. Hoc enim accurate</lem>
+<note type="lemma-abbrev">appensi.</note>
+<rdg wit="#L" n="1"> Et vero recte, etsi consequentiam non probet. </rdg>
+<rdg wit="#L" n="2"> Sed consequentiam non <note type="editorial">|</note> probet <note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi> |
+</note>.<app>
+<rdg wit="#L" n="a">Cum enim pondus aequiponderet resistentiis, idem est duobus ponderibus quaerere, resistentia in medio assumta, aut de duabus resistentiis pondere existente utrinque. Sed hoc accuratius </rdg>
+<rdg wit="#L" n="b">Hoc enim accurate <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> demonstrandum erat. Cum tamen id falsum esse videatur, nam trabe<index indexName="Sachverzeichnis">
+<term>trabs</term>
+</index> frangenda ex centro, <app type="Bfootnote">
+<lem type="main">in loco</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" n="1"> puncto </rdg>
+<rdg wit="#L" n="2"> loco <hi rendition="#i">L</hi>
+</rdg>
+</app> appensionis, <app type="Bfootnote">
+<lem type="main">praeter duas resistentias</lem>
+<note type="lemma-abbrev">praeter</note>
+<rdg wit="#L" n="1"> resistentiam </rdg>
+<rdg wit="#L" n="2"> duas resistentias <hi rendition="#i">L</hi>
+</rdg>
+</app> in extremis calculanda est resistentia in medio,<index indexName="Sachverzeichnis">
+<term>resistentia centralis</term>
+</index> quae crescit cum <app type="Bfootnote">
+<lem type="main">vecte<index indexName="Sachverzeichnis">
+<term>vectis</term>
+</index> potentiae</lem>
+<note type="lemma-abbrev">vecte</note>
+<rdg wit="#L" n="1"> ponderis </rdg>
+<rdg wit="#L" n="2"> potentiae <hi rendition="#i">L</hi>
+</rdg>
+</app>, est <app type="Bfootnote">
+<lem type="main">enim celeritas<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index>
+</lem>
+<note type="lemma-abbrev">enim</note>
+<rdg wit="#L" n="1"> ea </rdg>
+<rdg wit="#L" n="2"> celeritas <hi rendition="#i">L</hi>
+</rdg>
+</app> motus utriusque potentiae, ex divulsionis<index indexName="Sachverzeichnis">
+<term>divulsio</term>
+</index> in loco suspensionis eadem. Hinc omne cylindricum habet hoc ut sit ubique aequaliter resistens, si utrinque fultum intelligatur. Imo demonstrabo: in Trabibus utrinque fultis nullum esse calculum ineundum resistentiarum in extremis. Nam si pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> praevalet simplici cohaesioni<index indexName="Sachverzeichnis">
+<term>cohaesio</term>
+</index> in ea <pb type="VIII_2" n="172"/>
+recta perrumpet, <app type="Bfootnote">
+<lem type="main">sin non praevalet, multo minus</lem>
+<note type="lemma-abbrev">sin</note>
+<rdg wit="#L" n="1"> minus </rdg>
+<rdg wit="#L" n="2"> non praevalet, multo minus <hi rendition="#i">L</hi>
+</rdg>
+</app> praevalebit majori resistentiae<index indexName="Sachverzeichnis">
+<term>resistentia</term>
+</index> ex fulcro, nunquam ergo trabs<index indexName="Sachverzeichnis">
+<term>trabs</term>
+</index> utrinque fulta rumpetur in extremis nunquam motu ex centro, semper <app type="Bfootnote">
+<lem type="main">libero.</lem>
+<note type="lemma-abbrev">libero</note>
+<rdg wit="#L" n="1"> , at secus est si ubi utrinque affixa est, affixionis vel </rdg>
+<rdg wit="#L" n="2"> imo contra, si praeponderati </rdg>
+<rdg wit="#L" n="3"> nisi a </rdg>
+<rdg wit="#L" n="4"> .<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

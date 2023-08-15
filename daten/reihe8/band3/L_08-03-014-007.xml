@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-014-007">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-014-007">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Demonstratio Quod Extensiones Elasticorum Sint Viribus Tendentibus Proportionales</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2022</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="14"/>
 						<title type="section" level="a" n="7">Demonstratio Quod Extensiones Elasticorum Sint Viribus Tendentibus Proportionales</title>
 						<date calendar="#gregorian" notBefore="1683-03" resp="#ed" cert="medium"/>
 						<date calendar="#gregorian" notAfter="1684-06" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=275</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+							<idno type="page">#page=275</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,1462 +86,2189 @@
 						</imprint>
 						<biblScope unit="page" from="241" to="249"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
-					<relatedItem type="superordinated-chapter"><ptr target="#L_08-03-014-000"/></relatedItem>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
+					<relatedItem type="superordinated-chapter">
+						<ptr target="#L_08-03-014-000"/>
+					</relatedItem>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-03-014-007_facs-haupttextzeuge"><msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXV 9, 16 Bl. 2–3</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-							<summary><p>Konzept: LH XXXV 9, 16 Bl. 2–3. Ein Bogen 2<hi rendition="#sup">o</hi>; ein Wasserzeichen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=965">Bl. 3</ref> mit Gegenmarke auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=962">Bl. 2</ref>: Papier aus dem Harz. Zwei stark bearbeitete Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963">Bl. 2 v<hi rendition="#sup">o</hi></ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=964">Bl. 3 r<hi rendition="#sup">o</hi></ref>; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=966">Bl. 3 v<hi rendition="#sup">o</hi></ref> ist leer; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=961">Bl. 2 r<hi rendition="#sup">o</hi></ref> und die ersten zwölf Zeilen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963">Bl. 2 v<hi rendition="#sup">o</hi></ref> überliefern das Konzept N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>, das von N. <ref corresp="#N.14.7"/> ursprünglich fortgesetzt wurde. Die Nummerierung der Diagramme [<hi rendition="#i">Fig. 1</hi>] bis [<hi rendition="#i">Fig. 6a</hi>] in N. <ref corresp="#N.14.7"/> zählte ursprünglich drei in N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi> überlieferte Diagramme mit (siehe zu N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>, S. <ref corresp="L_section_146.xml#dnr_AE_1684_319-325_Ueberlieferung_csjhfj-1"/>). Am Kopf von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=961">Bl. 2 r<hi rendition="#sup">o</hi></ref> Vermerk von Leibnizens Hand: <hi rendition="#i">Demonstratio quod extensiones Elasticorum sint viribus tendentibus proportionales</hi> [/] <hi rendition="#i">Verte</hi></p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc></witness>
-				</listWit>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<tagsDecl>
-				<rendition scheme="css" xml:id="i">font-style:italic</rendition>
-				<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-				<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-				<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-				<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-				<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-				<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-				<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-			</tagsDecl>
-			<charDecl>
-				<!-- Sonderzeichen OHNE Unicodeentsprechung -->
-				<!--rightpropto-->
-				<glyph xml:id="rightpropto">
-					<glyphName>rightpropto</glyphName>
-					<desc>...</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX">\rightpropto</mapping>
-					<graphic url="../../glyphs/rightpropto.svg"/>
-				</glyph>
-				<glyph xml:id="Pfund">
-					<glyphName>Pfund</glyphName>
-					<desc>stilisiertes lb-Zeichen (Pfund)</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.7</value>
-					</charProp>
-					<mapping type="TeX">\Pfund</mapping>
-					<graphic url="../../glyphs/Pfund.svg"/>
-				</glyph>
-				<!-- leibdashv -->
-				<glyph xml:id="pleibdashv">
-					<glyphName>pleibdashv</glyphName>
-					<desc>Bedeutung (+−) - gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>-1</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\pleibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<glyph xml:id="leibdashv">
-					<glyphName>leibdashv</glyphName>
-					<desc>Bedeutung (+−) - nicht-gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\leibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<!-- Sonderzeichen MIT Unicodeentsprechung -->
-			</charDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="la"/>
-			</langUsage>
-			<calendarDesc>
-				<calendar xml:id="gregorian">
-					<p>Gregorianischer Kalenderstil</p>
-				</calendar>
-				<calendar xml:id="julian">
-					<p>Julianischer Kalenderstil</p>
-				</calendar>
-			</calendarDesc>
-			<textClass>
-				<catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
-				<catRef scheme="L_terms" target="L_terms.xml#"/>
-			</textClass>
-			<abstract>
-				<listPerson>
-					<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-					<person sameAs="L_persons.xml#"/>
-				</listPerson>
-				<listPlace>
-					<place sameAs="L_places.xml#"/>
-				</listPlace>
-			</abstract>
-		</profileDesc>
-		<revisionDesc>
-			<change when="2021" who="#telota" status="base"/>
-			<change when="2023-02-09" who="#stork" status="enrich_1"/>
-		</revisionDesc>
-	</teiHeader>
-	<facsimile source="digilib.bbaw.de" xml:id="L_08-03-014-007_facs-haupttextzeuge">
-		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1820&amp;tx_dlf%5Bpage%5D=3"/>
-		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1820&amp;tx_dlf%5Bpage%5D=4"/>
-		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1820&amp;tx_dlf%5Bpage%5D=5"/>
-		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1820&amp;tx_dlf%5Bpage%5D=6"/>
-	</facsimile>
-	<text xml:id="L_08-03-014-007_text">
-		<body xml:id="Document">
-			<div type="section" xml:id="Ch14.S7" n="147">
-				<head>14<hi rendition="#sub">7</hi> DEMONSTRATIO QUOD EXTENSIONES ELASTICORUM SINT VIRIBUS TENDENTIBUS PROPORTIONALES</head>
-				<head>[März / April 1683 – erste Hälfte 1684]</head>
-				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-						<witness><msDesc>
+					<witness n="L" corresp="#L_08-03-014-007_facs-haupttextzeuge">
+						<msDesc>
 							<msIdentifier>
 								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
 								<idno type="Signatur">LH XXXV 9, 16 Bl. 2–3</idno>
 							</msIdentifier>
-							<msContents>
-								<summary><p>Konzept: LH XXXV 9, 16 Bl. 2–3. Ein Bogen 2<hi rendition="#sup">o</hi>; ein Wasserzeichen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=965">Bl. 3</ref> mit Gegenmarke auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=962">Bl. 2</ref>: Papier aus dem Harz. Zwei stark bearbeitete Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963">Bl. 2 v<hi rendition="#sup">o</hi></ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=964">Bl. 3 r<hi rendition="#sup">o</hi></ref>; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=966">Bl. 3 v<hi rendition="#sup">o</hi></ref> ist leer; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=961">Bl. 2 r<hi rendition="#sup">o</hi></ref> und die ersten zwölf Zeilen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963">Bl. 2 v<hi rendition="#sup">o</hi></ref> überliefern das Konzept N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>, das von N. <ref corresp="#N.14.7"/> ursprünglich fortgesetzt wurde. Die Nummerierung der Diagramme [<hi rendition="#i">Fig. 1</hi>] bis [<hi rendition="#i">Fig. 6a</hi>] in N. <ref corresp="#N.14.7"/> zählte ursprünglich drei in N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi> überlieferte Diagramme mit (siehe zu N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>, S. <ref corresp="L_section_146.xml#dnr_AE_1684_319-325_Ueberlieferung_csjhfj-1"/>). Am Kopf von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=961">Bl. 2 r<hi rendition="#sup">o</hi></ref> Vermerk von Leibnizens Hand: <hi rendition="#i">Demonstratio quod extensiones Elasticorum sint viribus tendentibus proportionales</hi> [/] <hi rendition="#i">Verte</hi></p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						</listWit></p>
-				</div>
-				
-				<div type="text">
-					<p rendition="#noindent" xml:id="Ch14.S7.p4"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963"><pb type="L"/><fw type="folNum">[2 v<hi rendition="#sup">o</hi>]</fw></ref><app type="Cfootnote" from="#LH_35_09_16_002v_Ueberschrift-1" to="#LH_35_09_16_002v_Ueberschrift-2">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><hi rendition="#g">Demonstratio</hi> <seg type="apparat-ellipsis"/> <hi rendition="#g">commeantis</hi> </note>
-						<note type="editorial">Die Überschrift wurde als neuer Anfang von N. <ref corresp="#N.14.7"/> am Rand von <ref>Bl. 2 v<hi rendition="#sup">o</hi></ref> ergänzt, nachdem das Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi> auf <ref>Bl. 2 r<hi rendition="#sup">o</hi></ref> und in der ersten Zeilen von <ref>Bl. 2 v<hi rendition="#sup">o</hi></ref> gestrichen worden war.</note>
-						</app> <hi rendition="#g">Demonstratio</hi><anchor xml:id="LH_35_09_16_002v_Ueberschrift-1"/><index indexName="Sachen">
-						<term>demonstratio</term>
-						</index> <hi rendition="#g">nova, quod chordarum,</hi><index indexName="Sachen">
-						<term>chorda elastica</term>
-						</index> <hi rendition="#g">aliorumque corporum</hi> <app type="Bfootnote">
-						<lem type="main"><hi rendition="#g">solidorum</hi><index indexName="Sachen">
-							<term>corpus solidum</term>
-							</index></lem>
-						<note type="lemma-abbrev"><hi rendition="#g">solidorum</hi></note>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> <hi rendition="#g">Elasticorum</hi><index indexName="Sachen">
-						<term>corpus elasticum</term>
-						</index> <hi rendition="#g">extensiones</hi><index indexName="Sachen">
-						<term>extensio elastici</term>
-						</index> <hi rendition="#g">sint viribus tendentibus</hi><index indexName="Sachen">
-						<term>vis tendens</term>
-						</index> <hi rendition="#g">proportionales,</hi><index indexName="Sachen">
-						<term>extensio proportionalis</term>
-						</index> <hi rendition="#g">ex hypothesi fluidi</hi> <index indexName="Sachen">
-						<term>hypothesis fluidi elastici</term>
-						</index><index indexName="Sachen">
-						<term>fluidum elasticum</term>
-						</index><app type="Bfootnote">
-						<lem type="main"><hi rendition="#g">Elastici in eorum poris existentis,</hi></lem>
-						<note type="lemma-abbrev"><hi rendition="#g">Elastici</hi></note>
-						<rdg wit="#L" n="1"> <hi rendition="#g">permeantis</hi> </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#g">in eorum poris existentis,</hi> <hi rendition="#i">L</hi></rdg>
-						</app><index indexName="Sachen">
-						<term>porus</term>
-						</index> <hi rendition="#g">non tamen satis libere per eos commeantis</hi><anchor xml:id="LH_35_09_16_002v_Ueberschrift-2"/></p>
-					<p rendition="#noindent" xml:id="Ch14.S7.p5">Sit in<anchor xml:id="LH_35_09_16_002_Beweis-1"/><index indexName="Sachen">
-						<term>figura</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">fig. 1</lem>
-						<note type="lemma-abbrev">fig.</note>
-						<rdg wit="#L" n="1"> 4 </rdg>
-						<rdg wit="#L" n="2"> 1 <hi rendition="#i">L</hi></rdg>
-						</app><app type="Cfootnote">
-						<note type="lemma-abbrev">fig. 1</note>
-						<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 1</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.1"/>.</note>
-						</app> chorda <hi rendition="#i">AB</hi> nullo modo tensa,<index indexName="Sachen">
-						<term>chorda tensa</term>
-						</index> sed in statu naturali constituta,<index indexName="Sachen">
-						<term>status naturalis</term>
-						</index> quae appenso pondere<index indexName="Sachen">
-						<term>pondus appensum</term>
-						</index> <app type="Bfootnote">
-						<lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[<hi rendition="#i">E</hi>]</add></lem>
-						<note type="lemma-abbrev"><hi rendition="#i">E</hi></note>
-						<note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note>
-						</app> extendatur a <hi rendition="#i">B</hi> usque ad <hi rendition="#i">C</hi>, appenso autem pondere<index indexName="Sachen">
-						<term>pondus appensum</term>
-						</index> <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">[<hi rendition="#i">F</hi>]</corr></lem>
-						<rdg wit="#L"><orig><hi rendition="#i">D</hi></orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> extendatur a <hi rendition="#i">B</hi> usque <app type="Bfootnote">
-						<lem type="main">ad <hi rendition="#i">D</hi>, <hi rendition="#g">ajo pondera tendentia fore</hi><index indexName="Sachen">
-							<term>pondus tendens</term>
-							</index></lem>
-						<note type="lemma-abbrev">ad</note>
-						<rdg wit="#L"><hi rendition="#i">D</hi>, </rdg>
-						<rdg wit="#L" n="1"> <hi rendition="#g">erunt</hi> </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#g">ajo pondera tendentia fore</hi> <hi rendition="#i">L</hi></rdg>
-						</app> <hi rendition="#g">extensionibus proportionalia,</hi><index indexName="Sachen">
-						<term>extensio chordae</term>
-						</index> seu <hi rendition="#i">E</hi> ad <hi rendition="#i">F</hi> ut <hi rendition="#i">BC</hi> ad <hi rendition="#i">BD</hi>. <app type="Cfootnote">
-						<lem type="main">Quae <app type="Bfootnote">
-							<lem type="main">quidem propositio<index indexName="Sachen">
-								<term>propositio</term>
-								</index></lem>
-							<note type="lemma-abbrev">quidem</note>
-							<rdg wit="#L" n="1"> Hypothesis </rdg>
-							<rdg wit="#L" n="2"> propositio <hi rendition="#i">L</hi></rdg>
-							</app> demonstrari potest adhibito aere<index indexName="Sachen">
-							<term>aer ordinarius</term>
-							</index> vel alio fluido Elastico<index indexName="Sachen">
-							<term>fluidum elasticum</term>
-							</index></lem>
-						<note type="lemma-abbrev">Quae <seg type="apparat-ellipsis"/> Elastico</note>
-						<note type="editorial">Siehe hierzu die Aufzeichnung LH XXXVII 3 Bl. 125–127 (sie soll in <hi rendition="#i">LSB</hi> VIII veröffentlicht werden).</note>
-						</app> <app type="Bfootnote">
-						<lem type="main">quod tanquam homogeneum<index indexName="Sachen">
-							<term>fluidum homogeneum</term>
-							</index> concipitur,</lem>
-						<note type="lemma-abbrev">quod</note>
-						<rdg wit="#L" cause="addition"><add>tanquam homogeneum concipitur</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> si quidem chordarum<index indexName="Sachen">
-						<term>elastrum chordae</term>
-						</index> vel aliorum corporum crassiorum<index indexName="Sachen">
-						<term>elastrum corporis</term>
-						</index> Elastrum ab eo <app type="Bfootnote">
-						<lem type="main">oriri ponatur.</lem>
-						<note type="lemma-abbrev">oriri</note>
-						<rdg wit="#L" n="1"> concipiatur. </rdg>
-						<rdg wit="#L" n="2"> ponatur. <hi rendition="#i">L</hi></rdg>
-						</app> Sit enim Tubus<anchor xml:id="LH_35_09_16_002v_asseruimus-1"/><index indexName="Sachen">
-						<term>tubus</term>
-						</index> <hi rendition="#i">AB</hi> apertus in <hi rendition="#i">A</hi> clausus in <hi rendition="#i">B</hi>,<hi rendition="#g"> </hi><app type="Bfootnote">
-						<lem type="main"><hi rendition="#g">figura</hi> <hi rendition="#g">2,</hi><index indexName="Sachen">
-							<term>figura</term>
-							</index></lem>
-						<note type="lemma-abbrev"><hi rendition="#g">figura</hi></note>
-						<rdg wit="#L" n="1"> <hi rendition="#g">5,</hi> </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#g">2,</hi> <hi rendition="#i">L</hi></rdg>
-						</app><app type="Cfootnote">
-						<note type="lemma-abbrev"><hi rendition="#g">figura 2</hi> </note>
-						<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 2</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.2"/>.</note>
-						</app><hi rendition="#g"> </hi>pars <hi rendition="#i">BC</hi> plena aere<index indexName="Sachen">
-						<term>aer ordinarius</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">ordinario. Embolus<index indexName="Sachen">
-							<term>embolus</term>
-							</index></lem>
-						<note type="lemma-abbrev">ordinario</note>
-						<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>seu in statu naturali</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> . Embolus <hi rendition="#i">L</hi></rdg>
-						</app> <hi rendition="#i">LM</hi> extrahendo promoveatur</p>
-					<p rendition="#noindent" xml:id="Ch14.S7.p6">a <hi rendition="#i">C</hi> usque ad <hi rendition="#i">E</hi>. Dico vim necessariam extractioni priori<index indexName="Sachen">
-						<term>vis necessaria extractioni</term>
-						</index><index indexName="Sachen">
-						<term>extractio</term>
-						</index> fore ad vim necessariam extractioni posteriori<index indexName="Sachen">
-						<term>vis necessaria extractioni</term>
-						</index><index indexName="Sachen">
-						<term>extractio</term>
-						</index> ut <hi rendition="#i">CD</hi> <anchor xml:id="KZeitz89"/><app type="Bfootnote" from="#KZeitz89" to="#KZeitz90">
-						<lem type="main"/>
-						<note type="lemma-abbrev">ad</note>
-						<rdg wit="#L"><hi rendition="#i">CE</hi>. </rdg>
-						<rdg wit="#L" n="1"> Nam aer externus qui Elastro aut pondere suo, aut potius utroque Embolum introrsum in tubum pellere conatur, impeditur vi Elastica aeris inclusi.<index indexName="Sachen">
-							<term>elastrum aeris</term>
-							</index><index indexName="Sachen">
-							<term>pondus aeris</term>
-							</index> Constat autem (etiam experimentis)<index indexName="Sachen">
-							<term>experimentum</term>
-							</index> <app>
-							<rdg wit="#L" n="a">vim Elasticam aeris<index indexName="Sachen">
-								<term>vis aeris</term>
-								</index> </rdg>
-							<rdg wit="#L" n="b">eam </rdg>
-							<rdg wit="#L" n="c">vim elasticam<index indexName="Sachen">
-								<term>vis elastica</term>
-								</index> </rdg>
-							<rdg wit="#L" n="d">vim aeris inclusi diminui proportione aucti spatii quod ipsi conceditur ultra spatium ordinarium; quicquid autem decedit de vi Elastica aeris inclusi dandum est potentiae extrahenti,<index indexName="Sachen">
-								<term>potentia extrahens</term>
-								</index> quae scilicet inter extrahendum sustinere debet embolum contra vim aeris externi. Scio quidem quae de pondere et Elastro aeris a Torricellio,<index indexName="Personen">
-								<term><hi rendition="#g">Torricelli</hi> (Torricellius), Evangelista 1608–1647</term>
-								</index> Pascalio,<index indexName="Personen">
-								<term><hi rendition="#g">Pascal</hi> (Pascalius), Blaise 1623–1662</term>
-								</index> Gerickio<index indexName="Personen">
-								<term><hi rendition="#g">Guericke</hi> (Gerickius, Gerick.), Otto von 1602–1686</term>
-								</index> et Boylio<index indexName="Personen">
-								<term><hi rendition="#g">Boyle</hi> (Boylius, Boyl), Robert 1627–1691</term>
-								</index> asserta sunt quibusdam nondum adhuc probari, sed a me tamen habentur pro demonstratis, et brevitatis causa nunc supponuntur <note type="editorial">|</note> praesertim cum revera eodem res redeat sive </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="1"> dicas </rdg>
-						<rdg wit="#L" n="2"> Elastrum statuas quo se aer dilatare conetur,<index indexName="Sachen">
-							<term>dilatatio aeris</term>
-							</index> sive funiculum quod se conetur contrahere,<index indexName="Sachen">
-							<term>funiculum</term>
-							</index> cum revera neutrum conatum per se, sed potius ab Aetheris motu habeat;<index indexName="Sachen">
-							<term>motus aetheris</term>
-							</index> nec referat an dicas aeris inclusi funiculum suspensum sustinere Mercurium,<index indexName="Sachen">
-							<term>mercurius</term>
-							</index> dum aeris externi <app>
-							<rdg wit="#L" n="a">cylinder<index indexName="Sachen">
-								<term>cylinder aeris</term>
-								</index> </rdg>
-							<rdg wit="#L" n="b" cause="addition"><add>pondus sustinetur ab aeris externi superioris funicolo; an potius dicas aeris externi pondus sustinere Mercurium</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> . </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2" cause="addition"> Nam aer <seg type="apparat-ellipsis"/> occupat spatium <note type="editorial">|</note> <add>proportione</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> majus externo, <seg type="apparat-ellipsis"/> sint effectis <app>
-							<rdg wit="#L" n="a">uniformis </rdg>
-							<rdg wit="#L" n="b">homogeneis proportionales, <app>
-								<rdg wit="#L" n="aa">causaque </rdg>
-								<rdg wit="#L" n="bb" cause="deletion">effectusque sit difformitas <note type="editorial">|</note> <del><add>seu differentia consistentiae inter aerem internum et externum</add></del> <note type="editorial"><hi rendition="#i">erg. u. gestr.</hi> |</note> ab aucto <seg type="apparat-ellipsis"/> proportionales. Motum <app>
-									<rdg wit="#L" n="aaa">autem </rdg>
-									<rdg wit="#L" n="bbb">enim aetheris <seg type="apparat-ellipsis"/> sumtis constat. <hi rendition="#i">L</hi></rdg>
-									</app></rdg>
-								</app></rdg>
-							</app></rdg>
-						</app>ad <hi rendition="#i">CE</hi>. <note type="Afootnote" place="margin" resp="#L" target="#KZeitz89" targetEnd="KZeitz90"><note type="lemma-abbrev"> <hi rendition="#i">Am Rand:</hi></note>Demonstrandum hoc accuratius. <hi rendition="#i">Nachträglich hinzugefügt:</hi> Aer ordinarius<index indexName="Sachen">
-						<term>aer ordinarius</term>
-						</index> in vacuo<index indexName="Sachen">
-						<term>vacuum</term>
-						</index> positus sustinebit <formula xml:id="Ch14.S7.p6.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mi mathvariant="normal">☿</m:mi>
-						</m:math>
-						</formula> = <hi rendition="#i">a</hi><index indexName="Sachen">
-						<term>mercurius</term>
-						</index> talis scilicet aer qualis est in <hi rendition="#i">BC</hi>, ut Aer<index indexName="Sachen">
-						<term>aer dilatatus</term>
-						</index> dilatatus in <hi rendition="#i">BD</hi> sustinet <formula xml:id="Ch14.S7.p6.m2">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mn>1</m:mn>
-											<m:mn>2</m:mn>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>⁢</m:mo>
-									<m:mi>a</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> in <hi rendition="#i">BE</hi> <formula xml:id="Ch14.S7.p6.m3">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mn>1</m:mn>
-										<m:mn>3</m:mn>
-									</m:mfrac>
-								</m:mstyle>
-								<m:mo>⁢</m:mo>
-								<m:mi>a</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> <formula xml:id="Ch14.S7.p6.m4">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi mathvariant="normal">☿</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mtext><!--<hi rendition="#sup">-->ii<!--</hi>--></m:mtext>
-							</m:mrow>
-						</m:math>
-						</formula> etc. Ergo ad trahendum <hi rendition="#i">M</hi> in <hi rendition="#i">D</hi> opus est pondere <formula xml:id="Ch14.S7.p6.m5">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mn>1</m:mn>
-											<m:mn>2</m:mn>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>⁢</m:mo>
-									<m:mi>a</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula><index indexName="Sachen">
-						<term>pondus extrahens</term>
-						</index> ad trahendum in <hi rendition="#i">E</hi> opus est pondere <formula xml:id="Ch14.S7.p6.m6">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mn>2</m:mn>
-											<m:mn>3</m:mn>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>⁢</m:mo>
-									<m:mi>a</m:mi>
-								</m:mrow>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> Et generaliter si <hi rendition="#i">EB</hi> : <hi rendition="#i">EC</hi> sit <hi rendition="#i">x</hi>, erit vis aeris inclusi elastica residua: 4 : <hi rendition="#i">x</hi>.<index indexName="Sachen">
-						<term>vis elastica</term>
-						</index><index indexName="Sachen">
-						<term>aer inclusus</term>
-						</index><index indexName="Sachen">
-						<term>vis aeris</term>
-						</index><index indexName="Sachen">
-						<term>vis residua</term>
-						</index> Pondus autem quo ad <hi rendition="#i">E</hi> usque extrahendus embolus,<index indexName="Sachen">
-						<term>embolus</term>
-						</index><index indexName="Sachen">
-						<term>pondus extrahens</term>
-						</index> erit <formula xml:id="Ch14.S7.p6.m7">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mi>x</m:mi>
-												<m:mo>-</m:mo>
-												<m:mn>1</m:mn>
-											</m:mrow>
-											<m:mi>x</m:mi>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>⁢</m:mo>
-									<m:mi>a</m:mi>
-								</m:mrow>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> Itaque in talibus Elasticis<index indexName="Sachen">
-						<term>elasticum</term>
-						</index> non sunt extensiones,<index indexName="Sachen">
-						<term>extensio non proportionalis</term>
-						</index> ut vires tendentes.<index indexName="Sachen">
-						<term>vis tendens</term>
-						</index></note>Nam aer esternus<anchor xml:id="LH_35_09_16_002_erstzng-1"/><index indexName="Sachen">
-						<term>aer externus</term>
-						</index> et tubo inclusus sunt in aequilibrio,<index indexName="Sachen">
-						<term>aequilibrium</term>
-						</index> seque continent in statu uniformitatis,<index indexName="Sachen">
-						<term>status uniformitatis</term>
-						</index><index indexName="Sachen">
-						<term>uniformitas</term>
-						</index> vis autem Elastica<index indexName="Sachen">
-						<term>vis elastica</term>
-						</index> nascitur ex difformitate,<index indexName="Sachen">
-						<term>difformitas</term>
-						</index> dum verbi gratia aer internus<index indexName="Sachen">
-						<term>aer internus</term>
-						</index> occupat spatium<index indexName="Sachen">
-						<term>spatium aeris</term>
-						</index> proportione majus externo,<index indexName="Sachen">
-						<term>aer externus</term>
-						</index> cumque causae sint effectis homogeneis proportionales,<index indexName="Sachen">
-						<term>causa proportionalis</term>
-						</index><index indexName="Sachen">
-						<term>effectus homogeneus</term>
-						</index> effectusque sit difformitas<index indexName="Sachen">
-						<term>difformitas effectus</term>
-						</index> ab aucto spatio aeris inclusi,<index indexName="Sachen">
-						<term>aer inclusus</term>
-						</index> utique vires<index indexName="Sachen">
-						<term>vis extrahens</term>
-						</index> spatium augentes<index indexName="Sachen">
-						<term>spatium aeris</term>
-						</index> seu embolum<index indexName="Sachen">
-						<term>embolus</term>
-						</index> extrahentes,<index indexName="Sachen">
-						<term>vis extrahens</term>
-						</index> erunt extractionibus<index indexName="Sachen">
-						<term>extractio</term>
-						</index> proportionales. <anchor xml:id="LH_35_09_16_002v_asseruimus-2"/><anchor xml:id="KZeitz91"/><app type="Cfootnote" from="#KZeitz91" to="#KZeitz92">
-						<lem type="main"/>
-						<note type="lemma-abbrev">Motum <seg type="apparat-ellipsis"/> est</note>
-						<note type="editorial">Siehe etwa <bibl corresp="#bib_00256">G. W. <hi rendition="#k">Leibniz</hi>, <hi rendition="#i">Hypothesis physica nova</hi>, Mainz 1671, § 27 (<hi rendition="#i">LSB</hi> VI, 2 N. 40, S. 234f.).</bibl></note>
-						</app>Motum enim aetheris<index indexName="Sachen">
-						<term>motus aetheris</term>
-						</index><index indexName="Sachen">
-						<term>aether</term>
-						</index> difformitate<index indexName="Sachen">
-						<term>difformitas</term>
-						</index> illa turbari; atque inde vim elasticam<index indexName="Sachen">
-						<term>vis elastica</term>
-						</index></p>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p7_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d1.svg" width="216.8pt" xml:id="Ch14.S7.p7.g1"/><head>[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_09_16_002v_Fig.1"/></head> </figure>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p7_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d2.svg" width="216.8pt" xml:id="Ch14.S7.p8.g1"/><head>[<hi rendition="#i">Fig. 2</hi>]<anchor xml:id="LH_35_09_16_002v_Fig.2"/></head></figure>
-					<p rendition="#noindent" xml:id="Ch14.S7.p10"><app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note>
-						<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 4</hi>.</note>
-						</app><app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 2</hi>]</note>
-						<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 5</hi>.</note>
-						</app>seu conatum uniformitatis<index indexName="Sachen">
-						<term>conatus uniformitatis</term>
-						</index> oriri alias dictum est. <anchor xml:id="KZeitz92"/><app type="Cfootnote">
-						<lem type="main">Idem experimentis hydrargyro in aere sumtis constat.<anchor xml:id="LH_35_09_16_002_erstzng-2"/><anchor xml:id="LH_35_09_16_002_Beweis-2"/></lem>
-						<note type="lemma-abbrev">Idem <seg type="apparat-ellipsis"/> constat</note>
-						<note type="editorial">Wie die Variante <hi rendition="#i">(1)</hi> zum Textabschnitt <hi rendition="#i">Nam aer</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">sumtis constat</hi> (<ref corresp="#LH_35_09_16_002_erstzng-1"/>) zeigt, meint Leibniz insbesondere die Experimente von E. Torricelli, B. Pascal, O. von Guericke und R. Boyle. Siehe <hi rendition="#i">LSB</hi> VIII, 1 N. 39, S. 306.<bibl corresp="#bib_01069"> In der Variante <hi rendition="#i">(1)</hi> erwähnt Leibniz zudem die alternative, auf der „Funiculus-Hypothese” beruhende Erklärung, die auf F. <hi rendition="#k">Linus</hi>, <hi rendition="#i">Tractatus de corporum inseparabilitate</hi>, London 1661,<bibl corresp="#bib_00072"> zurückgeht.<index indexName="Sachen">
-							<term>funiculum</term>
-							</index><index indexName="Personen">
-							<term><hi rendition="#g">Line</hi> (Linus), Francis 1595–1675</term>
-							</index> Siehe <hi rendition="#i">LSB</hi> VIII, 1 N. 40, S. 326.9–18.<bibl corresp="#bib_01265"/></bibl></bibl></note>
-						</app><anchor xml:id="KZeitz90"/></p>
-					<p xml:id="Ch14.S7.p11">Sed forte dubitabit aliquis quomodo chordarum aliorumque corporum <anchor xml:id="LH_35_09_16_002v_Festigkeitsmodell_redg-1"/><app type="Bfootnote">
-						<lem type="main">solidorum</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> tensio<index indexName="Sachen">
-						<term>tensio chordae</term>
-						</index><index indexName="Sachen">
-						<term>tensio corporis solidi</term>
-						</index><index indexName="Sachen">
-						<term>corpus solidum</term>
-						</index> derivari possit ab Elastro alicuius corporis fluidi,<index indexName="Sachen">
-						<term>elastrum corporis fluidi</term>
-						</index><index indexName="Sachen">
-						<term>corpus fluidum</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">nam <hi rendition="#g">primo</hi> </lem>
-						<note type="lemma-abbrev">nam</note>
-						<rdg wit="#L" n="1"> praeterquam quod </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#g">primo</hi> <hi rendition="#i">L</hi></rdg>
-						</app><app type="Cfootnote">
-						<lem type="main">Horologia <app type="Bfootnote">
-							<lem type="main">portatilia<index indexName="Sachen">
-								<term>horologium portatile</term>
-								</index> laminis chalybeis<index indexName="Sachen">
-								<term>lamina chalybea</term>
-								</index></lem>
-							<note type="lemma-abbrev">portatilia</note>
-							<rdg wit="#L" n="1"> Elastris </rdg>
-							<rdg wit="#L" n="2"> laminis chalybeis <hi rendition="#i">L</hi></rdg>
-							</app> instructa non minus procedunt in aere dilatato<index indexName="Sachen">
-							<term>aer dilatatus</term>
-							</index> sive in vacuo Magdeburgico,<index indexName="Sachen">
-							<term>vacuum Magdeburgicum</term>
-							</index> quam in aere communi;<index indexName="Sachen">
-							<term>aer communis</term>
-							</index></lem>
-						<note type="lemma-abbrev">Horologia <seg type="apparat-ellipsis"/> communi</note>
-						<note type="editorial">Vgl. O. v. <hi rendition="#k">Guericke</hi>, <hi rendition="#i">Experimenta nova</hi>, l. III, cap. 15, Amsterdam 1672, S. 91f.<bibl corresp="#bib_00055"> Zu diesem Versuch <hi rendition="#i">De sono in vacuo</hi> hat Leibniz einen Auszug verfasst: <hi rendition="#i">LSB</hi> VIII, 1 N. 36, S. 256f.<bibl corresp="#bib_01197"/></bibl></note>
-						</app><hi rendition="#g"> </hi><app type="Bfootnote">
-						<lem type="main"><hi rendition="#g">secundo</hi></lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app><hi rendition="#g"> </hi>non videtur probabile tubos<index indexName="Sachen">
-						<term>tubus</term>
-						</index> atque embolos<index indexName="Sachen">
-						<term>embolus</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">exacte tubis respondentes,</lem>
-						<note type="lemma-abbrev">exacte</note>
-						<rdg wit="#L" cause="addition"><add>tubis respondentes,</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ubique in chordis<index indexName="Sachen">
-						<term>chorda elastica</term>
-						</index> aut laminis Elasticis<index indexName="Sachen">
-						<term>lamina elastica</term>
-						</index> fingere. Sed sciendum <anchor xml:id="KZeitz83"/><app type="Bfootnote" from="#KZeitz83" to="#KZeitz84">
-						<lem type="main"/>
-						<note type="lemma-abbrev">est</note>
-						<rdg wit="#L" n="1"> ex vacuo Magdeburgico ita di </rdg>
-						<rdg wit="#L" n="2"> quoad <hi rendition="#g">primum,</hi> <seg type="apparat-ellipsis"/> vacuum dicunt <app>
-							<rdg wit="#L" n="a">superesse </rdg>
-							<rdg wit="#L" n="b">exhauriri solummodo aerem crassiorem, superesse <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app>est quoad <hi rendition="#g">primum,</hi> ex Recipiente quem vacuum dicunt<index indexName="Sachen">
-						<term>recipiens vacuum</term>
-						</index> exhauriri solummodo aerem</p>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p12"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d3.svg" width="351.2322pt" xml:id="Ch14.S7.p12.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]<anchor xml:id="LH_35_09_16_002v_Fig.3"/></head></figure>
-					<p rendition="#noindent" xml:id="Ch14.S7.p13"><app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 3</hi>]</note>
-						<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 6</hi>.</note>
-						</app>crassiorem,<index indexName="Sachen">
-						<term>aer crassior</term>
-						</index> superesse vero alium <anchor xml:id="KZeitz84"/><app type="Bfootnote">
-						<lem type="main">subtiliorem,<index indexName="Sachen">
-							<term>aer subtilior</term>
-							</index> qui</lem>
-						<note type="lemma-abbrev">subtiliorem,</note>
-						<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del><add>etiam Elasticum</add></del> <note type="editorial"><hi rendition="#i">erg. u. gestr.</hi> |</note> qui <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main">per intervalla corporum majora transire potest,<index indexName="Sachen">
-							<term>intervalla corporum</term>
-							</index> licet excludatur</lem>
-						<note type="lemma-abbrev">per</note>
-						<rdg wit="#L" n="1"> poros </rdg>
-						<rdg wit="#L" n="2"> intervalla corporum <app>
-							<rdg wit="#L" n="a">transire potest, majores </rdg>
-							<rdg wit="#L" n="b">majora transire potest, <app>
-								<rdg wit="#L" n="aa">excludatur tamen </rdg>
-								<rdg wit="#L" n="bb">licet excludatur <hi rendition="#i">L</hi></rdg>
-								</app></rdg>
-							</app></rdg>
-						</app> a <app type="Bfootnote">
-						<lem type="main">minoribus; unde ille</lem>
-						<note type="lemma-abbrev">minoribus;</note>
-						<rdg wit="#L" n="1"> et proinde </rdg>
-						<rdg wit="#L" n="2"> unde ille <hi rendition="#i">L</hi></rdg>
-						</app> in partibus insensibilibus<index indexName="Sachen">
-						<term>pars insensibilis</term>
-						</index> chordarum et laminarum idem praestat<index indexName="Sachen">
-						<term>chorda elastica</term>
-						</index><index indexName="Sachen">
-						<term>lamina elastica</term>
-						</index> quod aer communis<index indexName="Sachen">
-						<term>aer communis</term>
-						</index> in corporibus <app type="Bfootnote">
-						<lem type="main">crassis.<index indexName="Sachen">
-							<term>corpus crassum</term>
-							</index> Hoc</lem>
-						<note type="lemma-abbrev">crassis.</note>
-						<rdg wit="#L" n="1"> Haec </rdg>
-						<rdg wit="#L" n="2"> Hoc <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main">admisso dicemus ad <hi rendition="#g">secundam</hi> objectionem<index indexName="Sachen">
-							<term>objectio</term>
-							</index>[:] etsi nulli sint tubi atque emboli illis exacte respondentes,<index indexName="Sachen">
-							<term>tubus</term>
-							</index><index indexName="Sachen">
-							<term>embolus</term>
-							</index> esse tamen aliquid illis vicarium, quo natura<index indexName="Sachen">
-							<term>natura</term>
-							</index> idem quod tubis accurato embolo clausis praestat,<index indexName="Sachen">
-							<term>tubus</term>
-							</index><index indexName="Sachen">
-							<term>embolus</term>
-							</index> simplicissimo sane artificio<index indexName="Sachen">
-							<term>artificium naturae</term>
-							</index> quod quia magni momenti est ad intellligendam corporum structuram,<index indexName="Sachen">
-							<term>structura corporis</term>
-							</index> distinctius aperiemus. Ponatur filamentum<index indexName="Sachen">
-							<term>filamentum</term>
-							</index></lem>
-						<note type="lemma-abbrev">admisso</note>
-						<rdg wit="#L" n="1"> aperiamus aliquid magni momenti ad intelligendam corporum structuram interiorem.<index indexName="Sachen">
-							<term>structura corporis</term>
-							</index> Nimirum </rdg>
-						<rdg wit="#L" n="2" cause="addition"> dicemus ad <seg type="apparat-ellipsis"/> atque emboli <note type="editorial">|</note> <add>illis</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> exacte respondentes, <seg type="apparat-ellipsis"/> sane artificio <note type="editorial">|</note> <add>quod quia <seg type="apparat-ellipsis"/> distinctius aperiemus</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> . <app>
-							<rdg wit="#L" n="a">Ponamus filum<index indexName="Sachen">
-								<term>filum</term>
-								</index> </rdg>
-							<rdg wit="#L" n="b">Ponatur filamentum <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> aliquod <hi rendition="#i">AB</hi> in<index indexName="Sachen">
-						<term>figura</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">fig<app type="Cfootnote">
-							<lem type="main">. 3</lem>
-							<note type="lemma-abbrev">fig. 3</note>
-							<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 3</hi>].</note>
-							</app> constare</lem>
-						<note type="lemma-abbrev">fig.</note>
-						<rdg wit="#L" n="1"> 6 </rdg>
-						<rdg wit="#L" n="2"> 3 <app>
-							<rdg wit="#L" n="a">componi </rdg>
-							<rdg wit="#L" n="b">constare <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> ex partibus irregularibus sibi in longum appositis quibuscunque, sive contiguis, sive etiam aliquando tantum vicinis;<index indexName="Sachen">
-						<term>pars contigua</term>
-						</index><index indexName="Sachen">
-						<term>pars vicina</term>
-						</index> et <app type="Bfootnote">
-						<lem type="main">intelligamus</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> per intervalla<index indexName="Sachen">
-						<term>intervallum</term>
-						</index> horum ruderum<index indexName="Sachen">
-						<term>rudera</term>
-						</index> sive <app type="Bfootnote">
-						<lem type="main">fragminum<index indexName="Sachen">
-							<term>fragmen</term>
-							</index> aliquod fluidum elasticum<index indexName="Sachen">
-							<term>fluidum elasticum</term>
-							</index></lem>
-						<note type="lemma-abbrev">fragminum</note>
-						<rdg wit="#L" n="1"> aerem illum subtilem<index indexName="Sachen">
-							<term>aer subtilis</term>
-							</index> </rdg>
-						<rdg wit="#L" n="2"> aliquod <app>
-							<rdg wit="#L" n="a">in </rdg>
-							<rdg wit="#L" n="b">fluidum elasticum <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> diffundi. Quoniam <app type="Bfootnote">
-						<lem type="main">ergo</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> corpora sunt valde irregularia,<index indexName="Sachen">
-						<term>corpus irregulare</term>
-						</index> et nihilominus valde sibi admota, hinc serratili <app type="Bfootnote">
-						<lem type="main">sinuosave</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> forma,<index indexName="Sachen">
-						<term>forma serratilis</term>
-						</index><index indexName="Sachen">
-						<term>forma sinuosa</term>
-						</index> modo sibi <app type="Bfootnote">
-						<lem type="main">accedent, aut sese plane attingent, modo a se</lem>
-						<note type="lemma-abbrev">accedent,</note>
-						<rdg wit="#L" n="1">  modo a se </rdg>
-						<rdg wit="#L" n="2"> aut sese <seg type="apparat-ellipsis"/> a se <hi rendition="#i">L</hi></rdg>
-						</app> invicem recedent, atque ita intra hos sinus<index indexName="Sachen">
-						<term>sinus</term>
-						</index> multiplices plurimum fluidi<index indexName="Sachen">
-						<term>fluidum elasticum</term>
-						</index> comprehendent. Si <app type="Bfootnote">
-						<lem type="main">jam ponantur</lem>
-						<note type="lemma-abbrev">jam</note>
-						<rdg wit="#L" n="1"> ponatur </rdg>
-						<rdg wit="#L" n="2"> ponantur <hi rendition="#i">L</hi></rdg>
-						</app> fluidi<index indexName="Sachen">
-						<term>fluidum elasticum</term>
-						</index> hujus partes, comparatione nostri aeris<index indexName="Sachen">
-						<term>aer communis</term>
-						</index> subtiles, at comparatione angustiarum<index indexName="Sachen">
-						<term>angustia</term>
-						</index> quas rudera<index indexName="Sachen">
-						<term>rudera</term>
-						</index> (<?tex-source \phantom{)}?>ut <hi rendition="#i">C</hi> et <hi rendition="#i">D</hi><?tex-source \phantom{(}?>) inter se relinquunt satis adhuc crassae, vel saltem ad divisionem tam subtilem parum aptae (<?tex-source \phantom{)}?>quemadmodum videmus certe <app type="Bfootnote">
-						<lem type="main">aerem communem<index indexName="Sachen">
-							<term>aer communis</term>
-							</index> licet</lem>
-						<note type="lemma-abbrev">aerem</note>
-						<rdg wit="#L" n="1"> ipsu </rdg>
-						<rdg wit="#L" n="2"> licet </rdg>
-						<rdg wit="#L" n="3"> communem licet <hi rendition="#i">L</hi></rdg>
-						</app> aqua<index indexName="Sachen">
-						<term>aqua</term>
-						</index> subtilior videatur, tamen quia se non libenter</p>
-					<p rendition="#noindent" xml:id="Ch14.S7.p14">distrahi patitur, aliquando per corpora non penetrare, quae aqua<index indexName="Sachen">
-						<term>aqua</term>
-						</index> facile pervadit<?tex-source \phantom{(}?>) hinc etsi angustiae<index indexName="Sachen">
-						<term>angustia</term>
-						</index> <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=964"><pb type="L"/><fw type="folNum">[3 r<hi rendition="#sup">o</hi>]</fw></ref> illae sint apertae, tamen respectu fluidi<index indexName="Sachen">
-						<term>fluidum elasticum</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">elastici</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main">inclusi ac circumfusi, cui exitum<index indexName="Sachen">
-							<term>exitus fluidi</term>
-							</index> et</lem>
-						<note type="lemma-abbrev">inclusi</note>
-						<rdg wit="#L" n="1"> cui exitum et </rdg>
-						<rdg wit="#L" n="2"> at </rdg>
-						<rdg wit="#L" n="3" cause="deletion"> ac circumfusi <note type="editorial">|</note> <del><add>de quo agitur</add></del> <note type="editorial"><hi rendition="#i">erg. u. gestr.</hi> |</note> , cui exitum et <hi rendition="#i">L</hi></rdg>
-						</app> introitum<index indexName="Sachen">
-						<term>introitus fluidi</term>
-						</index> negant, poterunt pro clausis haberi. Et ideo <app type="Bfootnote">
-						<lem type="main">si filamentum<index indexName="Sachen">
-							<term>filamentum</term>
-							</index> ab uno</lem>
-						<note type="lemma-abbrev">si</note>
-						<rdg wit="#L" n="1"> quis </rdg>
-						<rdg wit="#L" n="2"> filamentum ab uno <hi rendition="#i">L</hi></rdg>
-						</app> appehendatur in <hi rendition="#i">A</hi>, et trahatur versus <hi rendition="#i">A</hi>, <app type="Bfootnote">
-						<lem type="main">et simul</lem>
-						<note type="lemma-abbrev">et</note>
-						<rdg wit="#L" cause="addition"><add>simul</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ab altero appehendatur in <hi rendition="#i">B</hi> et trahatur versus <hi rendition="#i">B</hi>, tunc fragmenta<index indexName="Sachen">
-						<term>fragmentum</term>
-						</index> ex quibus componitur, cohaerebunt vicinum vicino, instar duarum tabularum <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">[marmorearum]<index indexName="Sachen">
-							<term>tabula marmorea</term>
-							</index></corr></lem>
-						<rdg wit="#L"><orig>marmoream</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> politissimarum,<index indexName="Sachen">
-						<term>tabula polita</term>
-						</index> non obstante irregularitate superficierum<index indexName="Sachen">
-						<term>irregularitas superficiei</term>
-						</index> quibus sibi admoventur. Exempli <app type="Bfootnote">
-						<lem type="main">gratia fragmenta<index indexName="Sachen">
-							<term>fragmentum</term>
-							</index> <hi rendition="#i">C</hi> et <hi rendition="#i">D</hi></lem>
-						<note type="lemma-abbrev">gratia</note>
-						<rdg wit="#L" n="1"> fragmenta <hi rendition="#i">C</hi> et </rdg>
-						<rdg wit="#L" n="2"> fragmenta <hi rendition="#i">C</hi> et <hi rendition="#i">D</hi> <hi rendition="#i">L</hi></rdg>
-						</app> admoventur sibi superficiebus <hi rendition="#i">1.2</hi> et <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">3.4.5</hi>, quae licet</lem>
-						<note type="lemma-abbrev"><hi rendition="#i">3.4.5</hi>,</note>
-						<rdg wit="#L" n="1"> ubi licet </rdg>
-						<rdg wit="#L" n="2"> quae licet <hi rendition="#i">L</hi></rdg>
-						</app> inter se non congruant, tamen modo fluidum <app type="Bfootnote">
-						<lem type="main">elasticum<index indexName="Sachen">
-							<term>fluidum elasticum</term>
-							</index> internum et externum</lem>
-						<note type="lemma-abbrev">elasticum</note>
-						<rdg wit="#L" n="1"> de quo </rdg>
-						<rdg wit="#L" n="2"> intus ⟨ab⟩ </rdg>
-						<rdg wit="#L" n="3"> internum et externum <hi rendition="#i">L</hi></rdg>
-						</app> per angustias<index indexName="Sachen">
-						<term>angustia</term>
-						</index> inter <hi rendition="#i">1</hi> et <hi rendition="#i">3</hi> vel <hi rendition="#i">2</hi> et <hi rendition="#i">5</hi> penetrare non possit, perinde erit ac si superficies exacte congruerent. Similiter si<index indexName="Sachen">
-						<term>promontorium</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">promontorium <hi rendition="#i">6</hi> in</lem>
-						<note type="lemma-abbrev">promontorium</note>
-						<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>ipsius</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> <hi rendition="#i">6</hi> in <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main">sinum<index indexName="Sachen">
-							<term>sinus</term>
-							</index> <hi rendition="#i">7</hi> ita</lem>
-						<note type="lemma-abbrev">sinum</note>
-						<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>ipsius</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> <hi rendition="#i">7</hi> ita <hi rendition="#i">L</hi></rdg>
-						</app> procurrat ut <app type="Bfootnote">
-						<lem type="main">parum intervalli<index indexName="Sachen">
-							<term>intervallum</term>
-							</index></lem>
-						<note type="lemma-abbrev">parum</note>
-						<rdg wit="#L" n="1"> spatii </rdg>
-						<rdg wit="#L" n="2"> intervalli <hi rendition="#i">L</hi></rdg>
-						</app> relinquat, utique fluidum<index indexName="Sachen">
-						<term>fluidum elasticum</term>
-						</index> per <hi rendition="#i">8</hi> irrumpens, facile excludetur spatio <hi rendition="#i">6.7.9</hi>[;] <app type="Bfootnote">
-						<lem type="main">et promontorium <hi rendition="#i">10</hi> sinum <hi rendition="#i">11</hi> licet sibi exacte non respondentem,<index indexName="Sachen">
-							<term>promontorium</term>
-							</index><index indexName="Sachen">
-							<term>sinus</term>
-							</index> non minus claudet, ob eandem rationem ac embolus<index indexName="Sachen">
-							<term>embolus</term>
-							</index> tubum<index indexName="Sachen">
-							<term>tubus</term>
-							</index> solet,</lem>
-						<note type="lemma-abbrev">et</note>
-						<rdg wit="#L" n="1"> sinus </rdg>
-						<rdg wit="#L" n="2"> promontorium <hi rendition="#i">10</hi> sinum <hi rendition="#i">11</hi> <app>
-							<rdg wit="#L" n="a">eodem modo non minus claudet, ac embolus tubum solet, licet sibi </rdg>
-							<rdg wit="#L" n="b">licet </rdg>
-							<rdg wit="#L" n="c">licet sibi <seg type="apparat-ellipsis"/> tubum solet, <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> et ita difficulter sese ex eo extrahi patietur. Causa autem generationis<index indexName="Sachen">
-						<term>causa generationis</term>
-						</index> talium filamentorum<index indexName="Sachen">
-						<term>filamentum</term>
-						</index> ex <app type="Bfootnote">
-						<lem type="main">hujusmodi</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ruderibus<index indexName="Sachen">
-						<term>rudera</term>
-						</index> sive fragminibus<index indexName="Sachen">
-						<term>fragmen</term>
-						</index> constantium multiplex<index indexName="Sachen">
-						<term>causa multiplex</term>
-						</index> esse <app type="Bfootnote">
-						<lem type="main">potest, hanc</lem>
-						<note type="lemma-abbrev">potest,</note>
-						<rdg wit="#L" n="1"> illam </rdg>
-						<rdg wit="#L" n="2"> hanc <hi rendition="#i">L</hi></rdg>
-						</app> tamen valde frequentem <anchor xml:id="KZeitz93"/><app type="Bfootnote" from="#KZeitz93" to="#KZeitz94">
-						<lem type="main"/>
-						<note type="lemma-abbrev">arbitror,</note>
-						<rdg wit="#L" n="1"> <note type="editorial">|</note> ut <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> materia ob calorem motumque fluida paulatim congeletur, atque ita in <app>
-							<rdg wit="#L" n="a">⟨rivum⟩ </rdg>
-							<rdg wit="#L" n="b">lineam d </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> ut linea aliqua <app>
-							<rdg wit="#L" n="a">fluida </rdg>
-							<rdg wit="#L" n="b">duc </rdg>
-							<rdg wit="#L" n="c">ducta ex <seg type="apparat-ellipsis"/> congeletur, et <app>
-								<rdg wit="#L" n="aa">in </rdg>
-								<rdg wit="#L" n="bb">ita in <seg type="apparat-ellipsis"/> quae tamen <app>
-									<rdg wit="#L" n="aaa">nihilominus </rdg>
-									<rdg wit="#L" n="bbb">non obstante irregularitate arcte <app>
-										<rdg wit="#L" n="aaaa">sese </rdg>
-										<rdg wit="#L" n="bbbb">satis sese contingent <app>
-											<rdg wit="#L" n="aaaaa">. His ita intellectis perinde erit, </rdg>
-											<rdg wit="#L" n="bbbbb">. Cum </rdg>
-											<rdg wit="#L" n="ccccc">cum paulo <seg type="apparat-ellipsis"/> in <hi rendition="#i">10.11.</hi> <hi rendition="#i">L</hi></rdg>
-											</app></rdg>
-										</app></rdg>
-									</app></rdg>
-								</app></rdg>
-							</app></rdg>
-						</app>arbitror, ut linea aliqua ducta ex materia adhuc ob motum caloremque fluida,<index indexName="Sachen">
-						<term>materia fluida</term>
-						</index><index indexName="Sachen">
-						<term>calor materiae</term>
-						</index><index indexName="Sachen">
-						<term>motus materiae</term>
-						</index> mox congeletur,<index indexName="Sachen">
-						<term>materia congelata</term>
-						</index> et ita in multa fragmina<index indexName="Sachen">
-						<term>fragmen</term>
-						</index> dissiliat, quae tamen non obstante irregularitate<index indexName="Sachen">
-						<term>irregularitas superficiei</term>
-						</index> arcte satis sese contingent[,] cum paulo ante cohaerserint, et a congelatione<index indexName="Sachen">
-						<term>congelatio</term>
-						</index> tantum rimas<index indexName="Sachen">
-						<term>rima</term>
-						</index> acceperint,<app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 4</hi>]</note>
-						<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 7</hi>.</note>
-						</app></p>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p15"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d4.svg" width="173.448pt" xml:id="Ch14.S7.p15.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]<anchor xml:id="LH_35_09_16_003r_Fig.4"/></head></figure>
-					<p rendition="#noindent" xml:id="Ch14.S7.p16">ut in <hi rendition="#i">10.11.</hi> Fila<anchor xml:id="KZeitz94"/><index indexName="Sachen">
-						<term>filum</term>
-						</index> autem quae nobis visibilia<index indexName="Sachen">
-						<term>filum visibile</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">sunt ex</lem>
-						<note type="lemma-abbrev">sunt</note>
-						<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>forte</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> ex <hi rendition="#i">L</hi></rdg>
-						</app> multis millibus filamentorum<index indexName="Sachen">
-						<term>filamentum</term>
-						</index> qualia depinximus constare credibile est, ut videmus certe fila araneae<index indexName="Sachen">
-						<term>filum araneae</term>
-						</index><index indexName="Sachen">
-						<term>aranea</term>
-						</index> aut bombycis<index indexName="Sachen">
-						<term>filum bombycis</term>
-						</index><index indexName="Sachen">
-						<term>bombyx</term>
-						</index> semper adhuc in alia dividi posse, et folia talci<index indexName="Sachen">
-						<term>folium talci</term>
-						</index><index indexName="Sachen">
-						<term>talcum</term>
-						</index> in alia folia posse resolvi donec visum<index indexName="Sachen">
-						<term>visus</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">fugiant. Unde non est mirum tantam esse corporum quorundam tenacitatem.<index indexName="Sachen">
-							<term>tenacitas</term>
-							</index> Nam insertionibus illis continuis<index indexName="Sachen">
-							<term>insertio continua</term>
-							</index> prominentiae<index indexName="Sachen">
-							<term>prominentia</term>
-							</index> corporis unius in sinum<index indexName="Sachen">
-							<term>sinus</term>
-							</index> alterius, cujus prominentia<index indexName="Sachen">
-							<term>prominentia</term>
-							</index> rursus in sinum<index indexName="Sachen">
-							<term>sinus</term>
-							</index> tertii intrat, atque ita porro; idem praestatur quod in<index indexName="Sachen">
-							<term>figura</term>
-							</index> <app type="Cfootnote">
-							<lem type="main">fig. 4</lem>
-							<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 4</hi>] auf S. <ref corresp="#LH_35_09_16_003r_Fig.4"/>.</note>
-							</app> si emboli<index indexName="Sachen">
-							<term>embolus</term>
-							</index> in tubos<index indexName="Sachen">
-							<term>tubus</term>
-							</index> inserantur, et embolis<index indexName="Sachen">
-							<term>embolus</term>
-							</index> novi rursus tubi<index indexName="Sachen">
-							<term>tubus</term>
-							</index> adhaereant. Item contactu<index indexName="Sachen">
-							<term>contactus partium</term>
-							</index> viciniaque<index indexName="Sachen">
-							<term>vicinia partium</term>
-							</index> partium in<index indexName="Sachen">
-							<term>figura</term>
-							</index> <app type="Cfootnote">
-							<lem type="main">fig. 3</lem>
-							<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 3</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.3"/>.</note>
-							</app> idem praestatur quod</lem>
-						<note type="lemma-abbrev">fugiant.</note>
-						<rdg wit="#L" n="1"> Haec ergo fragmina idem praestabunt, quod plures tubi posito </rdg>
-						<rdg wit="#L" n="2"> Unde non <seg type="apparat-ellipsis"/> quorundam tenacitatem. <app>
-							<rdg wit="#L" n="a">Quoni </rdg>
-							<rdg wit="#L" n="b">Idem enim </rdg>
-							<rdg wit="#L" n="c">Nam insertionibus illis <app>
-								<rdg wit="#L" n="aa">sinu </rdg>
-								<rdg wit="#L" n="bb">prominentiarum in sinus praestatur, quod </rdg>
-								<rdg wit="#L" n="cc">continuis prominentiae <seg type="apparat-ellipsis"/> quod in fig. <app>
-									<rdg wit="#L" n="aaa">7 </rdg>
-									<rdg wit="#L" n="bbb">4 <app>
-										<rdg wit="#L" n="aaaa">tubis </rdg>
-										<rdg wit="#L" n="bbbb">embolis in tubos insertis, in <app>
-											<rdg wit="#L" n="aaaaa">qui </rdg>
-											<rdg wit="#L" n="bbbbb">quibus emb </rdg>
-											</app></rdg>
-										<rdg wit="#L" n="cccc">si emboli <seg type="apparat-ellipsis"/> tubi adhaereant <app>
-											<rdg wit="#L" n="aaaaa">, vel in fig. 8 </rdg>
-											<rdg wit="#L" n="bbbbb">. Item contactu <hi rendition="#i">(aaaaa-a)</hi> et vicinia <hi rendition="#i">(bbbbb-b)</hi> viciniaque <hi rendition="#i">(aaaaa-aa)</hi> horum corporum <hi rendition="#i">(bbbbb-bb)</hi> co <hi rendition="#i">(ccccc-cc)</hi> fragmentor <hi rendition="#i">(ddddd-dd)</hi> partium in fig. <hi rendition="#i">(aaaaa-aaa)</hi> 6 <hi rendition="#i">(bbbbb-bbb)</hi> 3 idem praestatur, <hi rendition="#i">(aaaaa-aaaa)</hi> quod <hi rendition="#i">(bbbbb-bbbb)</hi> quod <hi rendition="#i">L</hi></rdg>
-											</app></rdg>
-										</app></rdg>
-									</app></rdg>
-								</app></rdg>
-							</app></rdg>
-						</app> pluribus tabulis politis<index indexName="Sachen">
-						<term>tabula polita</term>
-						</index> sibi immistis ut in<index indexName="Sachen">
-						<term>figura</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">fig. 5.</lem>
-						<note type="lemma-abbrev">fig.</note>
-						<rdg wit="#L" n="1"> 8. </rdg>
-						<rdg wit="#L" n="2"> 5. <hi rendition="#i">L</hi></rdg>
-						</app><app type="Cfootnote">
-						<note type="lemma-abbrev">fig. 5</note>
-						<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 5</hi>].</note>
-						</app> Et sciendum <anchor xml:id="LH_35_09_16_003r_tabulae-1"/><app type="Cfootnote" from="#LH_35_09_16_003r_tabulae-1" to="#LH_35_09_16_003r_tabulae-2">
-						<lem type="main"/>
-						<note type="lemma-abbrev">sciendum <seg type="apparat-ellipsis"/> divelli</note>
-						<note type="editorial">Siehe N. <ref corresp="L_section_142.xml#N.14.2"/>, S. <ref corresp="L_section_142.xml#LH_37_03_069r_duaetabulae-1"/>, und N. <ref corresp="L_section_145.xml#N.14.5"/>.</note>
-						</app><app type="Bfootnote">
-						<lem type="main">est tabulas</lem>
-						<note type="lemma-abbrev">est</note>
-						<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>duas</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> tabulas <hi rendition="#i">L</hi></rdg>
-						</app> marmoreas<index indexName="Sachen">
-						<term>tabula marmorea</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">politas,<index indexName="Sachen">
-							<term>tabula polita</term>
-							</index> licet eas tanquam perfecte</lem>
-						<note type="lemma-abbrev">politas,</note>
-						<rdg wit="#L" n="1"> quas velut perfecte </rdg>
-						<rdg wit="#L" n="2"> licet eas tanquam perfecte <hi rendition="#i">L</hi></rdg>
-						</app> rigidas<index indexName="Sachen">
-						<term>tabula perfecte rigida</term>
-						</index> concipiamus, non tamen primo separationis momento<index indexName="Sachen">
-						<term>momentum separationis</term>
-						</index> a se invicem <app type="Bfootnote">
-						<lem type="main">divelli. Nam in<anchor xml:id="LH_35_09_16_003r_tabulae-2"/><index indexName="Sachen">
-							<term>figura</term>
-							</index> <app type="Cfootnote">
-							<lem type="main">fig. 6</lem>
-							<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 6a</hi>] auf S. <ref corresp="#LH_35_09_16_003r_Fig.6"/>.</note>
-							</app> sint</lem>
-						<note type="lemma-abbrev">divelli.</note>
-						<rdg wit="#L" n="1"> Sit enim in fig. 9 </rdg>
-						<rdg wit="#L" n="2"> Nam in fig. <app>
-							<rdg wit="#L" n="a">9 </rdg>
-							<rdg wit="#L" n="b">6 sint <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> tres tabulae marmoreae<index indexName="Sachen">
-						<term>tabula marmorea</term>
-						</index> politae<index indexName="Sachen">
-						<term>tabula polita</term>
-						</index> sibi <app type="Bfootnote">
-						<lem type="main">applicatae,<index indexName="Sachen">
-							<term>tabulae sibi applicatae</term>
-							</index> <hi rendition="#i">1.2.3</hi>, quarum</lem>
-						<note type="lemma-abbrev">applicatae,</note>
-						<rdg wit="#L" n="1"> qua </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#i">1.2.3</hi>, quarum <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main">suprema <hi rendition="#i">1</hi> sit</lem>
-						<note type="lemma-abbrev">suprema</note>
-						<rdg wit="#L" n="1"> si </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#i">1</hi> sit <hi rendition="#i">L</hi></rdg>
-						</app> fixa in loco superiore, media <hi rendition="#i">2</hi> ei subsit, et huic tertia <hi rendition="#i">3</hi>, cui appensum pondus.<index indexName="Sachen">
-						<term>pondus appensum</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">Hoc pondus<index indexName="Sachen">
-							<term>pondus appensum</term>
-							</index> tabulas primo tam parum a se invicem removebit,</lem>
-						<note type="lemma-abbrev">Hoc</note>
-						<rdg wit="#L" cause="addition"><note type="editorial">|</note> <add>pondus</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> tabulas </rdg>
-						<rdg wit="#L" n="1"> ⟨undiq⟩ </rdg>
-						<rdg wit="#L" n="2"> non </rdg>
-						<rdg wit="#L" n="3"> potest </rdg>
-						<rdg wit="#L" n="4"> primo tam <seg type="apparat-ellipsis"/> se invicem <app>
-							<rdg wit="#L" n="a">removere </rdg>
-							<rdg wit="#L" n="b">removebit, <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> ut aeri circumfuso<index indexName="Sachen">
-						<term>aer circumfusus</term>
-						</index> nondum pateat <app type="Bfootnote">
-						<lem type="main">introitus<index indexName="Sachen">
-							<term>introitus aeris</term>
-							</index>[,] itaque</lem>
-						<note type="lemma-abbrev">introitus</note>
-						<rdg wit="#L" n="1"> et </rdg>
-						<rdg wit="#L" n="2"> itaque <hi rendition="#i">L</hi></rdg>
-						</app> non ante sequetur divulsio<index indexName="Sachen">
-						<term>divulsio</term>
-						</index> quam ubi intercapedo<index indexName="Sachen">
-						<term>intercapedo</term>
-						</index> sufficiens erit aeri transmittendo. Idem ergo dicendum est<app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 5</hi>]</note>
-						<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 8</hi>.</note>
-						</app></p>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p17"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d5.svg" width="182.1204pt" xml:id="Ch14.S7.p17.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]<anchor xml:id="LH_35_09_16_003r_Fig.5"/></head></figure>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p18_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d6a.svg" width="216.8pt" xml:id="Ch14.S7.p18.g1"/><head>[<hi rendition="#i">Fig. 6a</hi>]</head></figure>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p18_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d6b.svg" width="216.8pt" xml:id="Ch14.S7.p19.g1"/><head>[<hi rendition="#i">Fig. 6b, gestr.</hi>]<anchor xml:id="LH_35_09_16_003r_Fig.6"/></head> </figure>
-					<p rendition="#noindent" xml:id="Ch14.S7.p21"><app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 6a</hi>]</note>
-						<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 9</hi>.</note>
-						</app>in<index indexName="Sachen">
-						<term>figura</term>
-						</index> <anchor xml:id="KZeitz85"/><app type="Bfootnote" from="#KZeitz85" to="#KZeitz86">
-						<lem type="main"/>
-						<note type="lemma-abbrev">fig.</note>
-						<rdg wit="#L" n="1"> 6, </rdg>
-						<rdg wit="#L" n="2"> 3, <hi rendition="#i">L</hi></rdg>
-						</app>fig. 3, et proinde filamenta<anchor xml:id="KZeitz86"/><index indexName="Sachen">
-						<term>filamentum</term>
-						</index> tamdiu extendentur donec <app type="Bfootnote">
-						<lem type="main">tandem separatio partium<index indexName="Sachen">
-							<term>separatio partium</term>
-							</index> ex quibus constant sufficiens fiat</lem>
-						<note type="lemma-abbrev">tandem</note>
-						<rdg wit="#L" n="1"> superet </rdg>
-						<rdg wit="#L" n="2"> separatio partium <seg type="apparat-ellipsis"/> sufficiens fiat <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main">ad fluidum illud</lem>
-						<note type="lemma-abbrev">ad</note>
-						<rdg wit="#L" n="1"> aerem </rdg>
-						<rdg wit="#L" n="2"> fluidum illlud <hi rendition="#i">L</hi></rdg>
-						</app> elasticum,<index indexName="Sachen">
-						<term>fluidum elasticum</term>
-						</index> quod aere communi<index indexName="Sachen">
-						<term>aer communis</term>
-						</index> subtilius <app type="Bfootnote">
-						<lem type="main">esse[,] crassitiem tamen suam habere duximus</lem>
-						<note type="lemma-abbrev">esse</note>
-						<rdg wit="#L" cause="addition"><add>crassitiem <seg type="apparat-ellipsis"/> habere duximus</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>[,] transmittendum; itaque eaedem leges<index indexName="Sachen">
-						<term>lex</term>
-						</index> quae in aere communi,<index indexName="Sachen">
-						<term>aer communis</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">hic</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> locum habebunt.</p>
-					<p xml:id="Ch14.S7.p22">Etsi autem Tubus<index indexName="Sachen">
-						<term>tubus</term>
-						</index> unus in <app type="Bfootnote">
-						<lem type="main">fig. 4</lem>
-						<note type="lemma-abbrev">fig.</note>
-						<rdg wit="#L" n="1"> 7 </rdg>
-						<rdg wit="#L" n="2"> 4 <hi rendition="#i">L</hi></rdg>
-						</app><app type="Cfootnote">
-						<note type="lemma-abbrev">fig. 4</note>
-						<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 4</hi>] auf S. <ref corresp="#LH_35_09_16_003r_Fig.4"/>.</note>
-						</app> alio <app type="Bfootnote">
-						<lem type="main">sit amplior,</lem>
-						<note type="lemma-abbrev">sit</note>
-						<rdg wit="#L" n="1"> latior </rdg>
-						<rdg wit="#L" n="2"> amplior, <hi rendition="#i">L</hi></rdg>
-						</app> vel in<index indexName="Sachen">
-						<term>figura</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">fig. 3</lem>
-						<note type="lemma-abbrev">fig.</note>
-						<rdg wit="#L" n="1"> 6 </rdg>
-						<rdg wit="#L" n="2"> 3 <hi rendition="#i">L</hi></rdg>
-						</app><app type="Cfootnote">
-						<note type="lemma-abbrev">fig. 3</note>
-						<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 3</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.3"/>.</note>
-						</app> unum planum contactus<index indexName="Sachen">
-						<term>planum contactus</term>
-						</index> ut <hi rendition="#i">1.2</hi> alio ut <hi rendition="#i">12.13</hi> <app type="Bfootnote">
-						<lem type="main">majus, tamen cum <hi rendition="#i">A</hi> et <hi rendition="#i">B</hi> in diversa trahuntur, simul omnes partes distrahentur,</lem>
-						<note type="lemma-abbrev">majus,</note>
-						<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>(<?tex-source \phantom{)}?>neque enim sinuositas<index indexName="Sachen">
-							<term>sinuositas</term>
-							</index> sua consideranda est, sed planum ad lineam distrationis <hi rendition="#i">AB</hi> perpendiculare<?tex-source \phantom{(}?>)</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> tamen </rdg>
-						<rdg wit="#L" n="1"> distrahendo </rdg>
-						<rdg wit="#L" n="2"> cum <hi rendition="#i">A</hi> et <hi rendition="#i">B</hi> in diversa <app>
-							<rdg wit="#L" n="a">dis </rdg>
-							<rdg wit="#L" n="b" cause="deletion">trahuntur, simul omnes partes <note type="editorial">|</note> <del>vel tubi</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> distrahentur, <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> omnesve emboli<index indexName="Sachen">
-						<term>embolus</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">extrahentur uniformi quaedam difformitate,<index indexName="Sachen">
-							<term>difformitas uniformis</term>
-							</index> nam ubique ita moderanda est extractio illa simultanea<index indexName="Sachen">
-							<term>extractio simultanea</term>
-							</index> ut spatia aeris inclusi<index indexName="Sachen">
-							<term>aer inclusus</term>
-							</index> proportionaliter augeantur, seu ut uno in duplum spatium<index indexName="Sachen">
-							<term>spatium aeris</term>
-							</index> dilatato, etiam alter fiat duplo rarior[;] et proinde ruptura<index indexName="Sachen">
-							<term>ruptura</term>
-							</index> continget caeteris paribus in loco maxime sinuoso,<index indexName="Sachen">
-							<term>locus maxime sinuosus</term>
-							</index> ubi maxima est distractio,<index indexName="Sachen">
-							<term>distractio maxima</term>
-							</index> ibi enim</lem>
-						<note type="lemma-abbrev">extrahentur</note>
-						<rdg wit="#L" n="1"> magis tamen illi quorum tubi sunt angustiores </rdg>
-						<rdg wit="#L" n="2"> uniformi quaedam difformitate, <note type="editorial">|</note> </rdg>
-						<rdg wit="#L" n="1"> extractione angustiam compensantem </rdg>
-						<rdg wit="#L" n="2"> nam ubique <seg type="apparat-ellipsis"/> simultanea ut <app>
-							<rdg wit="#L" n="a">si unus aer unius </rdg>
-							<rdg wit="#L" n="b" cause="addition"><add>spatia aeris <seg type="apparat-ellipsis"/> duplo rarior</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> et proinde ruptura continget </rdg>
-							<rdg wit="#L" n="a">in tubo vel breviore vel angustiore, aut </rdg>
-							<rdg wit="#L" n="b">in contactu illo, ubi </rdg>
-							<rdg wit="#L" n="c">caeteris paribus <seg type="apparat-ellipsis"/> ibi enim <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> primum sufficiens<index indexName="Sachen">
-						<term>aditus sufficiens</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">fluido externo<index indexName="Sachen">
-							<term>fluidum externum</term>
-							</index> aditus datur.</lem>
-						<note type="lemma-abbrev">fluido</note>
-						<rdg wit="#L" n="1"> via datur </rdg>
-						<rdg wit="#L" n="2"> externo aditus datur. <hi rendition="#i">L</hi></rdg>
-						</app> Licet autem plures tubi conjuncti<index indexName="Sachen">
-						<term>tubus conjunctus</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">intelligantur, ut in fig. 4,</lem>
-						<note type="lemma-abbrev">intelligantur,</note>
-						<rdg wit="#L" n="1"> ut in </rdg>
-						<rdg wit="#L" n="2"> ut in fig. <app>
-							<rdg wit="#L" n="a">7, </rdg>
-							<rdg wit="#L" n="b">4, <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> iique capacitate<index indexName="Sachen">
-						<term>capacitas tubi</term>
-						</index> inaequales, tamen in singulis verum</p>
-					<anchor xml:id="KZeitz95"/>
-					<p rendition="#noindent" xml:id="Ch14.S7.p23"><app type="Bfootnote" from="#KZeitz95" to="#KZeitz96">
-						<lem type="main"/>
-						<note type="lemma-abbrev">erit,</note>
-						<rdg wit="#L" n="1" cause="addition"> <note type="editorial">|</note> <add>embolorum</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> extractiones, seu totius filamenti <app>
-							<rdg wit="#L" n="a">ex iis compositi </rdg>
-							<rdg wit="#L" n="b">ex his tubis vel partibus sinuosis compositi </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> per <app>
-							<rdg wit="#L" n="a">ostens </rdg>
-							<rdg wit="#L" n="b">ostensa ad fig. <app>
-								<rdg wit="#L" n="aa">⟨5⟩ </rdg>
-								<rdg wit="#L" n="bb">2 <app>
-									<rdg wit="#L" n="aaa">extensiones </rdg>
-									<rdg wit="#L" n="bbb">(<?tex-source \phantom{)}?>ac proinde et in toto <app>
-										<rdg wit="#L" n="aaaa">ex iis </rdg>
-										<rdg wit="#L" n="bbbb">filamento ex iis composito<?tex-source \phantom{(}?>), <app>
-											<rdg wit="#L" n="aaaaa">extensiones, seu </rdg>
-											<rdg wit="#L" n="bbbbb">quod asserimus, <seg type="apparat-ellipsis"/> vel distractiones <hi rendition="#i">(aaaaa-a)</hi> partium vicinarum <hi rendition="#i">(bbbbb-b)</hi> vicinitatum, <hi rendition="#i">L</hi></rdg>
-											</app></rdg>
-										</app></rdg>
-									</app></rdg>
-								</app></rdg>
-							</app></rdg>
-						</app>erit, per ostensa ad<index indexName="Sachen">
-						<term>figura</term>
-						</index> <app type="Cfootnote">
-						<lem type="main">fig. 2</lem>
-						<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 2</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.2"/>.</note>
-						</app> (<?tex-source \phantom{)}?>ac proinde et in toto filamento<index indexName="Sachen">
-						<term>filamentum</term>
-						</index> ex iis composito<?tex-source \phantom{(}?>), <app type="Cfootnote">
-						<lem type="main">quod asseruimus,</lem>
-						<note type="lemma-abbrev">quod asseruimus</note>
-						<note type="editorial">Vgl. S. <ref corresp="#LH_35_09_16_002v_asseruimus-1"/>.</note>
-						</app> nempe extractiones embolorum<index indexName="Sachen">
-						<term>extractio emboli</term>
-						</index> seu prominentiarum<index indexName="Sachen">
-						<term>prominentia</term>
-						</index> ex tubis<index indexName="Sachen">
-						<term>tubus</term>
-						</index> vel sinubus,<index indexName="Sachen">
-						<term>sinus</term>
-						</index> vel distractiones<index indexName="Sachen">
-						<term>distractio</term>
-						</index> vicinitatum,<index indexName="Sachen">
-						<term>vicinitas</term>
-						</index> adeoque totius filamenti extensiones,<index indexName="Sachen">
-						<term>extensio filamenti</term>
-						</index><anchor xml:id="KZeitz96"/> fore <app type="Bfootnote">
-						<lem type="main">viribus extendentibus<index indexName="Sachen">
-							<term>vis tendens</term>
-							</index> proportionales,<index indexName="Sachen">
-							<term>extensio proportionalis</term>
-							</index></lem>
-						<note type="lemma-abbrev">viribus</note>
-						<rdg wit="#L" n="1"> proportionales </rdg>
-						<rdg wit="#L" n="2"> extendentibus proportionales, <hi rendition="#i">L</hi></rdg>
-						</app> quia si proportionalibus proportionalia addantur, tota proportionalia sunt.</p>
-					<p xml:id="Ch14.S7.p24">Quod ut appareat distinctus, sint in<index indexName="Sachen">
-						<term>figura</term>
-						</index> <app type="Cfootnote">
-						<lem type="main">fig. 7</lem>
-						<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 7d</hi>] auf S. <ref corresp="#LH_35_09_16_003r_Fig.7"/>.</note>
-						</app> tria corpuscula<index indexName="Sachen">
-						<term>corpusculum distractum</term>
-						</index> hoc ordine<index indexName="Sachen">
-						<term>ordo</term>
-						</index> sibi apposita: <hi rendition="#i">ab</hi><app type="Bfootnote">
-						<lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[<hi rendition="#i">m</hi>],</add></lem>
-						<note type="lemma-abbrev"><hi rendition="#i">m</hi></note>
-						<note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note>
-						</app> <hi rendition="#i">cd</hi><app type="Bfootnote">
-						<lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[<hi rendition="#i">n</hi>],</add></lem>
-						<note type="lemma-abbrev"><hi rendition="#i">n</hi></note>
-						<note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note>
-						</app> <hi rendition="#i">efg</hi> et prope sibi admota in situ primo, at in situ<index indexName="Sachen">
-						<term>situs</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">secundo per appensum pondus <hi rendition="#i">K</hi><index indexName="Sachen">
-							<term>pondus appensum</term>
-							</index> distracta,<index indexName="Sachen">
-							<term>corpusculum distractum</term>
-							</index> ita quidem,</lem>
-						<note type="lemma-abbrev">secundo</note>
-						<rdg wit="#L" n="1"> ita </rdg>
-						<rdg wit="#L" n="2"> per appensum pondus <hi rendition="#i">K</hi> <app>
-							<rdg wit="#L" n="a">ita </rdg>
-							<rdg wit="#L" n="b">distracta, ita quidem, <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> ut aer comprehensus<index indexName="Sachen">
-						<term>aer comprehensus</term>
-						</index> antea in spatio <hi rendition="#i"><hi rendition="#smaller">1</hi>b<hi rendition="#smaller">1</hi>c<hi rendition="#smaller">1</hi>m</hi> nunc occupet spatium duplum <hi rendition="#i"><hi rendition="#smaller">2</hi>b<hi rendition="#smaller">2</hi>c<hi rendition="#smaller">2</hi>m</hi>, itaque similiter spatium<index indexName="Sachen">
-						<term>spatium aeris</term>
-						</index> <hi rendition="#i"><hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>h<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi> debet esse duplum spatii <hi rendition="#i"><hi rendition="#smaller">1</hi>d<hi rendition="#smaller">1</hi>e<hi rendition="#smaller">1</hi>h<hi rendition="#smaller">1</hi>g<hi rendition="#smaller">1</hi>n</hi>, <app type="Bfootnote">
-						<lem type="main">seu rectangulum<index indexName="Sachen">
-							<term>rectangulum</term>
-							</index></lem>
-						<note type="lemma-abbrev">seu</note>
-						<rdg wit="#L" n="1"> parallelogrammum<index indexName="Sachen">
-							<term>parallelogrammum</term>
-							</index> </rdg>
-						<rdg wit="#L" n="2"> rectangulum <hi rendition="#i">L</hi></rdg>
-						</app> quod <app type="Bfootnote">
-						<lem type="main">accessit[,] nempe <hi rendition="#i"><hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi></lem>
-						<note type="lemma-abbrev">accessit</note>
-						<rdg wit="#L" n="1"> spatio ut <hi rendition="#i"><hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e</hi> </rdg>
-						<rdg wit="#L" n="2"> nempe <hi rendition="#i"><hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi> <hi rendition="#i">L</hi></rdg>
-						</app>[,] ipsi <hi rendition="#i"><hi rendition="#smaller">1</hi>d<hi rendition="#smaller">1</hi>e<hi rendition="#smaller">1</hi>h<hi rendition="#smaller">1</hi>g<hi rendition="#smaller">1</hi>n</hi> aequale. Hinc si in tertio situ<index indexName="Sachen">
-						<term>situs</term>
-						</index> pondus appendatur <hi rendition="#i">L</hi>, duplum ponderis <hi rendition="#i">K</hi>,<index indexName="Sachen">
-						<term>pondus appensum</term>
-						</index> adhuc semel tantundem spatii<index indexName="Sachen">
-						<term>spatium aeris</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">accedet, aerisque dilatatio<index indexName="Sachen">
-							<term>dilatatio aeris</term>
-							</index> duplicabitur,</lem>
-						<note type="lemma-abbrev">accedet,</note>
-						<rdg wit="#L" n="1"> nempe quantum spatium aeris </rdg>
-						<rdg wit="#L" n="2"> aerisque dilatatio duplicabitur, <hi rendition="#i">L</hi></rdg>
-						</app> eritque spatium <hi rendition="#i"><hi rendition="#smaller">3</hi>b<hi rendition="#smaller">3</hi>c<hi rendition="#smaller">3</hi>m</hi> triplum ipsius <hi rendition="#i"><hi rendition="#smaller">1</hi>b<hi rendition="#smaller">1</hi>c<hi rendition="#smaller">1</hi>m</hi>, et <hi rendition="#i"><hi rendition="#smaller">3</hi>d<hi rendition="#smaller">3</hi>e<hi rendition="#smaller">3</hi>h<hi rendition="#smaller">3</hi>g<hi rendition="#smaller">3</hi>n</hi> triplum ipsius <hi rendition="#i"><hi rendition="#smaller">1</hi>d<hi rendition="#smaller">1</hi>e<hi rendition="#smaller">1</hi>h<hi rendition="#smaller">1</hi>g<hi rendition="#smaller">1</hi>n</hi>, et ut in secundo situ <app type="Bfootnote">
-						<lem type="main">ad spatium<index indexName="Sachen">
-							<term>spatium aeris</term>
-							</index> <hi rendition="#i"><hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>h<hi rendition="#smaller">2</hi>g</hi> accessit aequale ipsi</lem>
-						<note type="lemma-abbrev">ad</note>
-						<rdg wit="#L" n="1"> <hi rendition="#i"><hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>f<hi rendition="#smaller">2</hi>h<hi rendition="#smaller">2</hi>g</hi> </rdg>
-						<rdg wit="#L" n="2"> spatium <hi rendition="#i"><hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>h<hi rendition="#smaller">2</hi>g</hi> <app>
-							<rdg wit="#L" n="a">aequale ipsi </rdg>
-							<rdg wit="#L" n="b">accessit aequale ipsi <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> rectangulum<index indexName="Sachen">
-						<term>rectangulum</term>
-						</index> <hi rendition="#i"><hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi>, ita in situ<index indexName="Sachen">
-						<term>situs</term>
-						</index> tertio rursus accedit tale rectangulum, nam rectangulum<index indexName="Sachen">
-						<term>rectangulum</term>
-						</index> <hi rendition="#i"><hi rendition="#smaller">3</hi>d<hi rendition="#smaller">3</hi>e<hi rendition="#smaller">3</hi>g<hi rendition="#smaller">3</hi>n</hi> est ipsius <hi rendition="#i"><hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi> duplum. Unde <app type="Bfootnote">
-						<lem type="main">patet sinuositatis<index indexName="Sachen">
-							<term>sinuositas</term>
-							</index> ipsius spatii<index indexName="Sachen">
-							<term>spatium aeris</term>
-							</index> <hi rendition="#i">ehg</hi> non haberi rationem, sed tantum rectangulorum<index indexName="Sachen">
-							<term>rectangulum</term>
-							</index> ei aequalium,</lem>
-						<note type="lemma-abbrev">patet</note>
-						<rdg wit="#L" n="1"> non sinuositatem </rdg>
-						<rdg wit="#L" n="2"> sinuositatis ipsius spatii <hi rendition="#i">ehg</hi> non <app>
-							<rdg wit="#L" n="a">habere </rdg>
-							<rdg wit="#L" n="b">haberi rationem, sed tantum <app>
-								<rdg wit="#L" n="aa">rectanguli </rdg>
-								<rdg wit="#L" n="bb">rectangulorum ei <app>
-									<rdg wit="#L" n="aaa">aequalis, </rdg>
-									<rdg wit="#L" n="bbb">aequalium, <hi rendition="#i">L</hi></rdg>
-									</app></rdg>
-								</app></rdg>
-							</app></rdg>
-						</app> sive horum <app type="Bfootnote">
-						<lem type="main">altitudinum, nempe</lem>
-						<note type="lemma-abbrev">altitudinum,</note>
-						<rdg wit="#L" n="1"> nam </rdg>
-						<rdg wit="#L" n="2"> nempe <hi rendition="#i">L</hi></rdg>
-						</app> bases <hi rendition="#i">dn</hi>, <hi rendition="#i">eg</hi> semper manent, altitudines variantur[:] <app type="Bfootnote">
-						<lem type="main">nam posterior</lem>
-						<note type="lemma-abbrev">nam</note>
-						<rdg wit="#L" n="1"> accessio secunda </rdg>
-						<rdg wit="#L" n="2"> posterior <hi rendition="#i">L</hi></rdg>
-						</app> <hi rendition="#i"><hi rendition="#smaller">3</hi>d<hi rendition="#smaller">3</hi>e</hi> est <app type="Bfootnote">
-						<lem type="main">dupla ipsius <hi rendition="#i"><hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e</hi>,</lem>
-						<note type="lemma-abbrev">dupla</note>
-						<rdg wit="#L" n="1"> accessionis prioris </rdg>
-						<rdg wit="#L" n="2"> ipsius <hi rendition="#i"><hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e</hi>, <hi rendition="#i">L</hi></rdg>
-						</app> et <hi rendition="#i"><hi rendition="#smaller">3</hi>b<hi rendition="#smaller">3</hi>c</hi> tripla ipsius <hi rendition="#i"><hi rendition="#smaller">1</hi>b<hi rendition="#smaller">1</hi>c</hi>[;] et omnes computando <app type="Bfootnote">
-						<lem type="main">altitudines, ut est</lem>
-						<note type="lemma-abbrev">altitudines,</note>
-						<rdg wit="#L" n="1"> erit </rdg>
-						<rdg wit="#L" n="2"> ut est <hi rendition="#i">L</hi></rdg>
-						</app> pondus <hi rendition="#i">K</hi> ad pondus <hi rendition="#i">L</hi>, ita est extensio facta a pondere <hi rendition="#i">K</hi>, seu excessus<index indexName="Sachen">
-						<term>excessus</term>
-						</index> ipsius <hi rendition="#i"><hi rendition="#smaller">2</hi>a<hi rendition="#smaller">2</hi>f</hi> super <hi rendition="#i"><hi rendition="#smaller">1</hi>a<hi rendition="#smaller">1</hi>f</hi>, ad extensionem<index indexName="Sachen">
-						<term>extensio proportionalis</term>
-						</index> factam a pondere <hi rendition="#i">L</hi>,<index indexName="Sachen">
-						<term>pondus appensum</term>
-						</index> seu ad excessum<index indexName="Sachen">
-						<term>excessus</term>
-						</index> ipsius <hi rendition="#i"><hi rendition="#smaller">3</hi>a<hi rendition="#smaller">3</hi>f</hi> super <hi rendition="#i"><hi rendition="#smaller">1</hi>a<hi rendition="#smaller">1</hi>f</hi>. Quod demonstrandum erat. Manifestum est enim eandem ratiocinatio- nem<index indexName="Sachen">
-						<term>ratiocinatio</term>
-						</index> manere utcunque multiplicatae sint partes componentes,<index indexName="Sachen">
-						<term>pars componens</term>
-						</index> aut continuetur extensio,<index indexName="Sachen">
-						<term>extensio filamenti</term>
-						</index></p>
-					<p rendition="#noindent" xml:id="Ch14.S7.p25">donec <app type="Bfootnote">
-						<lem type="main">scilicet alicubi tantum fiat intervallum<index indexName="Sachen">
-							<term>intervallum</term>
-							</index> ut</lem>
-						<note type="lemma-abbrev">scilicet</note>
-						<rdg wit="#L" n="1"> tantum fiat intervallum ut alicubi </rdg>
-						<rdg wit="#L" n="2"> alicubi tantum fiat intervallum ut <hi rendition="#i">L</hi></rdg>
-						</app> fluido externo<index indexName="Sachen">
-						<term>fluidum externum</term>
-						</index> detur aditus,<index indexName="Sachen">
-						<term>aditus sufficiens</term>
-						</index> ubi nimirum ruptura<index indexName="Sachen">
-						<term>ruptura</term>
-						</index> continget. Et quod de extensionibus,<index indexName="Sachen">
-						<term>extensio proportionalis</term>
-						</index> idem eadem ratione de compressionibus<index indexName="Sachen">
-						<term>compressio</term>
-						</index> dicendum esse.<anchor xml:id="LH_35_09_16_002v_Festigkeitsmodell_redg-2"/></p>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p26_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d7a.svg" width="173.4pt" xml:id="Ch14.S7.p26.g1"/><head>[<hi rendition="#i">Fig. 7a, gestr.</hi>]</head></figure>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p26_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d7b.svg" width="112.7pt" xml:id="Ch14.S7.p27.g1"/><head>[<hi rendition="#i">Fig. 7b, gestr.</hi>]</head></figure>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p26_3"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d7c.svg" width="143.1pt" xml:id="Ch14.S7.p28.g1"/><head>[<hi rendition="#i">Fig. 7c, gestr.</hi>]</head></figure>
-					<figure rendition="#own-line_centered" xml:id="Ch14.S7.p30"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d7d.svg" width="398.9304pt" xml:id="Ch14.S7.p30.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 7d</hi>]<anchor xml:id="LH_35_09_16_003r_Fig.7"/></head></figure>
-				</div>
-			</div>
-		</body>
-	</text>
+							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+								<summary>
+									<p>Konzept: LH XXXV 9, 16 Bl. 2–3. Ein Bogen 2<hi rendition="#sup">o</hi>; ein Wasserzeichen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=965">Bl. 3</ref> mit Gegenmarke auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=962">Bl. 2</ref>: Papier aus dem Harz. Zwei stark bearbeitete Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963">Bl. 2 v<hi rendition="#sup">o</hi>
+									</ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=964">Bl. 3 r<hi rendition="#sup">o</hi>
+								</ref>;								<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=966">Bl. 3 v<hi rendition="#sup">o</hi>
+								</ref> ist leer; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=961">Bl. 2 r<hi rendition="#sup">o</hi>
+							</ref> und die ersten zwölf Zeilen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963">Bl. 2 v<hi rendition="#sup">o</hi>
+						</ref> überliefern das Konzept N. <ref corresp="L_section_146.xml#N.14.6"/>
+,					<hi rendition="#i">L<hi rendition="#sup">1</hi>
+					</hi>, das von N. <ref corresp="#N.14.7"/>
+ ursprünglich fortgesetzt wurde. Die Nummerierung der Diagramme [<hi rendition="#i">Fig. 1</hi>] bis [<hi rendition="#i">Fig. 6a</hi>] in N. <ref corresp="#N.14.7"/>
+ zählte ursprünglich drei in N. <ref corresp="L_section_146.xml#N.14.6"/>
+,		<hi rendition="#i">L<hi rendition="#sup">1</hi>
+		</hi> überlieferte Diagramme mit (siehe zu N. <ref corresp="L_section_146.xml#N.14.6"/>
+,	<hi rendition="#i">L<hi rendition="#sup">1</hi>
+	</hi>, S. <ref corresp="L_section_146.xml#dnr_AE_1684_319-325_Ueberlieferung_csjhfj-1"/>
+). Am Kopf von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=961">Bl. 2 r<hi rendition="#sup">o</hi>
+</ref> Vermerk von Leibnizens Hand: <hi rendition="#i">Demonstratio quod extensiones Elasticorum sint viribus tendentibus proportionales</hi> [/]<hi rendition="#i">Verte</hi>
+</p>
+</summary>
+</msContents>
+<physDesc>
+<objectDesc form="Handschrift"/>
+</physDesc>
+<history>
+<origin corresp="L_witness-origin-types.xml#origin-L"/>
+</history>
+</msDesc>
+</witness>
+</listWit>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+<rendition scheme="css" xml:id="i">font-style:italic</rendition>
+<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+</tagsDecl>
+<charDecl>
+<!-- Sonderzeichen OHNE Unicodeentsprechung -->
+<!--rightpropto-->
+<glyph xml:id="rightpropto">
+<glyphName>rightpropto</glyphName>
+<desc>...</desc>
+<charProp>
+<localName>baselineshift-in-ex</localName>
+<value>0</value>
+</charProp>
+<charProp>
+<localName>width-in-em</localName>
+<value>0.6</value>
+</charProp>
+<mapping type="TeX">\rightpropto</mapping>
+<graphic url="../../glyphs/rightpropto.svg"/>
+</glyph>
+<glyph xml:id="Pfund">
+<glyphName>Pfund</glyphName>
+<desc>stilisiertes lb-Zeichen (Pfund)</desc>
+<charProp>
+<localName>baselineshift-in-ex</localName>
+<value>0</value>
+</charProp>
+<charProp>
+<localName>width-in-em</localName>
+<value>0.7</value>
+</charProp>
+<mapping type="TeX">\Pfund</mapping>
+<graphic url="../../glyphs/Pfund.svg"/>
+</glyph>
+<!-- leibdashv -->
+<glyph xml:id="pleibdashv">
+<glyphName>pleibdashv</glyphName>
+<desc>Bedeutung (+−) - gesenkt</desc>
+<charProp>
+<localName>baselineshift-in-ex</localName>
+<value>-1</value>
+</charProp>
+<charProp>
+<localName>width-in-em</localName>
+<value>0.6</value>
+</charProp>
+<mapping type="PUA"/>
+<mapping type="TeX">\pleibdashv</mapping>
+<graphic url="../../glyphs/pm.svg"/>
+</glyph>
+<glyph xml:id="leibdashv">
+<glyphName>leibdashv</glyphName>
+<desc>Bedeutung (+−) - nicht-gesenkt</desc>
+<charProp>
+<localName>baselineshift-in-ex</localName>
+<value>0</value>
+</charProp>
+<charProp>
+<localName>width-in-em</localName>
+<value>0.6</value>
+</charProp>
+<mapping type="PUA"/>
+<mapping type="TeX">\leibdashv</mapping>
+<graphic url="../../glyphs/pm.svg"/>
+</glyph>
+<!-- Sonderzeichen MIT Unicodeentsprechung -->
+</charDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="la"/>
+</langUsage>
+<calendarDesc>
+<calendar xml:id="gregorian">
+<p>Gregorianischer Kalenderstil</p>
+</calendar>
+<calendar xml:id="julian">
+<p>Julianischer Kalenderstil</p>
+</calendar>
+</calendarDesc>
+<textClass>
+<catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
+<catRef scheme="L_terms" target="L_terms.xml#"/>
+</textClass>
+<abstract>
+<listPerson>
+<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+<person sameAs="L_persons.xml#"/>
+</listPerson>
+<listPlace>
+<place sameAs="L_places.xml#"/>
+</listPlace>
+</abstract>
+</profileDesc>
+<revisionDesc>
+<change when="2021" who="#telota" status="base"/>
+<change when="2023-02-09" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-014-007_facs-haupttextzeuge">
+<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1820&amp;tx_dlf%5Bpage%5D=3"/>
+<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1820&amp;tx_dlf%5Bpage%5D=4"/>
+<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1820&amp;tx_dlf%5Bpage%5D=5"/>
+<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1820&amp;tx_dlf%5Bpage%5D=6"/>
+</facsimile>
+<text xml:id="L_08-03-014-007_text">
+<body xml:id="Document">
+<div type="section" xml:id="Ch14.S7" n="147">
+<head>14<hi rendition="#sub">7</hi> DEMONSTRATIO QUOD EXTENSIONES ELASTICORUM SINT VIRIBUS TENDENTIBUS PROPORTIONALES</head>
+<head>[März / April 1683 – erste Hälfte 1684]</head>
+<div type="ueberlieferung">
+<p>
+<hi rendition="#b #smaller">Überlieferung:</hi>
+<listWit>
+<witness>
+<msDesc>
+<msIdentifier>
+<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+<idno type="Signatur">LH XXXV 9, 16 Bl. 2–3</idno>
+</msIdentifier>
+<msContents>
+<summary>
+<p>Konzept: LH XXXV 9, 16 Bl. 2–3. Ein Bogen 2<hi rendition="#sup">o</hi>; ein Wasserzeichen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=965">Bl. 3</ref> mit Gegenmarke auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=962">Bl. 2</ref>: Papier aus dem Harz. Zwei stark bearbeitete Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963">Bl. 2 v<hi rendition="#sup">o</hi>
+</ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=964">Bl. 3 r<hi rendition="#sup">o</hi>
+</ref>;<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=966">Bl. 3 v<hi rendition="#sup">o</hi>
+</ref> ist leer; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=961">Bl. 2 r<hi rendition="#sup">o</hi>
+</ref> und die ersten zwölf Zeilen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963">Bl. 2 v<hi rendition="#sup">o</hi>
+</ref> überliefern das Konzept N. <ref corresp="L_section_146.xml#N.14.6"/>
+,<hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi>, das von N. <ref corresp="#N.14.7"/>
+ ursprünglich fortgesetzt wurde. Die Nummerierung der Diagramme [<hi rendition="#i">Fig. 1</hi>] bis [<hi rendition="#i">Fig. 6a</hi>] in N. <ref corresp="#N.14.7"/>
+ zählte ursprünglich drei in N. <ref corresp="L_section_146.xml#N.14.6"/>
+,<hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi> überlieferte Diagramme mit (siehe zu N. <ref corresp="L_section_146.xml#N.14.6"/>
+,<hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi>, S. <ref corresp="L_section_146.xml#dnr_AE_1684_319-325_Ueberlieferung_csjhfj-1"/>
+). Am Kopf von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=961">Bl. 2 r<hi rendition="#sup">o</hi>
+</ref> Vermerk von Leibnizens Hand: <hi rendition="#i">Demonstratio quod extensiones Elasticorum sint viribus tendentibus proportionales</hi> [/]<hi rendition="#i">Verte</hi>
+</p>
+</summary>
+</msContents>
+<physDesc>
+<objectDesc form="Handschrift"/>
+</physDesc>
+<history>
+<origin/>
+</history>
+</msDesc>
+</witness>
+</listWit>
+</p>
+</div>
+
+<div type="text">
+<p rendition="#noindent" xml:id="Ch14.S7.p4">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=963">
+<pb type="L"/>
+<fw type="folNum">[2 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+<app type="Cfootnote" from="#LH_35_09_16_002v_Ueberschrift-1" to="#LH_35_09_16_002v_Ueberschrift-2">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<hi rendition="#g">Demonstratio</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#g">commeantis</hi>
+</note>
+<note type="editorial">Die Überschrift wurde als neuer Anfang von N. <ref corresp="#N.14.7"/>
+ am Rand von <ref>Bl. 2 v<hi rendition="#sup">o</hi>
+</ref> ergänzt, nachdem das Teilkonzept N. <ref corresp="L_section_146.xml#N.14.6"/>
+,<hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi> auf <ref>Bl. 2 r<hi rendition="#sup">o</hi>
+</ref> und in der ersten Zeilen von <ref>Bl. 2 v<hi rendition="#sup">o</hi>
+</ref> gestrichen worden war.</note>
+</app>
+<hi rendition="#g">Demonstratio</hi>
+<anchor xml:id="LH_35_09_16_002v_Ueberschrift-1"/>
+<index indexName="Sachen">
+<term>demonstratio</term>
+</index>
+<hi rendition="#g">nova, quod chordarum,</hi>
+<index indexName="Sachen">
+<term>chorda elastica</term>
+</index>
+<hi rendition="#g">aliorumque corporum</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">solidorum</hi>
+<index indexName="Sachen">
+<term>corpus solidum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">solidorum</hi>
+</note>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#g">Elasticorum</hi>
+<index indexName="Sachen">
+<term>corpus elasticum</term>
+</index>
+<hi rendition="#g">extensiones</hi>
+<index indexName="Sachen">
+<term>extensio elastici</term>
+</index>
+<hi rendition="#g">sint viribus tendentibus</hi>
+<index indexName="Sachen">
+<term>vis tendens</term>
+</index>
+<hi rendition="#g">proportionales,</hi>
+<index indexName="Sachen">
+<term>extensio proportionalis</term>
+</index>
+<hi rendition="#g">ex hypothesi fluidi</hi>
+<index indexName="Sachen">
+<term>hypothesis fluidi elastici</term>
+</index>
+<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">Elastici in eorum poris existentis,</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">Elastici</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">permeantis</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">in eorum poris existentis,</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<index indexName="Sachen">
+<term>porus</term>
+</index>
+<hi rendition="#g">non tamen satis libere per eos commeantis</hi>
+<anchor xml:id="LH_35_09_16_002v_Ueberschrift-2"/>
+</p>
+<p rendition="#noindent" xml:id="Ch14.S7.p5">Sit in<anchor xml:id="LH_35_09_16_002_Beweis-1"/>
+<index indexName="Sachen">
+<term>figura</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">fig. 1</lem>
+<note type="lemma-abbrev">fig.</note>
+<rdg wit="#L" n="1"> 4 </rdg>
+<rdg wit="#L" n="2"> 1 <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Cfootnote">
+<note type="lemma-abbrev">fig. 1</note>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 1</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.1"/>
+.</note>
+</app> chorda <hi rendition="#i">AB</hi> nullo modo tensa,<index indexName="Sachen">
+<term>chorda tensa</term>
+</index> sed in statu naturali constituta,<index indexName="Sachen">
+<term>status naturalis</term>
+</index> quae appenso pondere<index indexName="Sachen">
+<term>pondus appensum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[<hi rendition="#i">E</hi>]
+</add>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">E</hi>
+</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app> extendatur a <hi rendition="#i">B</hi> usque ad <hi rendition="#i">C</hi>, appenso autem pondere<index indexName="Sachen">
+<term>pondus appensum</term>
+</index>
+<app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">F</hi>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<hi rendition="#i">D</hi>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> extendatur a <hi rendition="#i">B</hi> usque <app type="Bfootnote">
+<lem type="main">ad <hi rendition="#i">D</hi>,<hi rendition="#g">ajo pondera tendentia fore</hi>
+<index indexName="Sachen">
+<term>pondus tendens</term>
+</index>
+</lem>
+<note type="lemma-abbrev">ad</note>
+<rdg wit="#L">
+<hi rendition="#i">D</hi>, 
+</rdg>
+<rdg wit="#L" n="1">
+<hi rendition="#g">erunt</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">ajo pondera tendentia fore</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g">extensionibus proportionalia,</hi>
+<index indexName="Sachen">
+<term>extensio chordae</term>
+</index> seu <hi rendition="#i">E</hi> ad <hi rendition="#i">F</hi> ut <hi rendition="#i">BC</hi> ad <hi rendition="#i">BD</hi>.<app type="Cfootnote">
+<lem type="main">Quae <app type="Bfootnote">
+<lem type="main">quidem propositio<index indexName="Sachen">
+<term>propositio</term>
+</index>
+</lem>
+<note type="lemma-abbrev">quidem</note>
+<rdg wit="#L" n="1"> Hypothesis </rdg>
+<rdg wit="#L" n="2"> propositio <hi rendition="#i">L</hi>
+</rdg>
+</app> demonstrari potest adhibito aere<index indexName="Sachen">
+<term>aer ordinarius</term>
+</index> vel alio fluido Elastico<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Quae <seg type="apparat-ellipsis"/>
+ Elastico</note>
+<note type="editorial">Siehe hierzu die Aufzeichnung LH XXXVII 3 Bl. 125–127 (sie soll in <hi rendition="#i">LSB</hi> VIII veröffentlicht werden).</note>
+</app>
+<app type="Bfootnote">
+<lem type="main">quod tanquam homogeneum<index indexName="Sachen">
+<term>fluidum homogeneum</term>
+</index> concipitur,</lem>
+<note type="lemma-abbrev">quod</note>
+<rdg wit="#L" cause="addition">
+<add>tanquam homogeneum concipitur</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> si quidem chordarum<index indexName="Sachen">
+<term>elastrum chordae</term>
+</index> vel aliorum corporum crassiorum<index indexName="Sachen">
+<term>elastrum corporis</term>
+</index> Elastrum ab eo <app type="Bfootnote">
+<lem type="main">oriri ponatur.</lem>
+<note type="lemma-abbrev">oriri</note>
+<rdg wit="#L" n="1"> concipiatur. </rdg>
+<rdg wit="#L" n="2"> ponatur. <hi rendition="#i">L</hi>
+</rdg>
+</app> Sit enim Tubus<anchor xml:id="LH_35_09_16_002v_asseruimus-1"/>
+<index indexName="Sachen">
+<term>tubus</term>
+</index>
+<hi rendition="#i">AB</hi> apertus in <hi rendition="#i">A</hi> clausus in <hi rendition="#i">B</hi>,<hi rendition="#g"></hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">figura</hi>
+<hi rendition="#g">2,</hi>
+<index indexName="Sachen">
+<term>figura</term>
+</index>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">figura</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">5,</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">2,</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Cfootnote">
+<note type="lemma-abbrev">
+<hi rendition="#g">figura 2</hi>
+</note>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 2</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.2"/>
+.</note>
+</app>
+<hi rendition="#g"></hi>pars <hi rendition="#i">BC</hi> plena aere<index indexName="Sachen">
+<term>aer ordinarius</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">ordinario. Embolus<index indexName="Sachen">
+<term>embolus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">ordinario</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>seu in statu naturali</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> . Embolus <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">LM</hi> extrahendo promoveatur</p>
+<p rendition="#noindent" xml:id="Ch14.S7.p6">a <hi rendition="#i">C</hi> usque ad <hi rendition="#i">E</hi>. Dico vim necessariam extractioni priori<index indexName="Sachen">
+<term>vis necessaria extractioni</term>
+</index>
+<index indexName="Sachen">
+<term>extractio</term>
+</index> fore ad vim necessariam extractioni posteriori<index indexName="Sachen">
+<term>vis necessaria extractioni</term>
+</index>
+<index indexName="Sachen">
+<term>extractio</term>
+</index> ut <hi rendition="#i">CD</hi>
+<anchor xml:id="KZeitz89"/>
+<app type="Bfootnote" from="#KZeitz89" to="#KZeitz90">
+<lem type="main"/>
+<note type="lemma-abbrev">ad</note>
+<rdg wit="#L">
+<hi rendition="#i">CE</hi>. 
+</rdg>
+<rdg wit="#L" n="1"> Nam aer externus qui Elastro aut pondere suo, aut potius utroque Embolum introrsum in tubum pellere conatur, impeditur vi Elastica aeris inclusi.<index indexName="Sachen">
+<term>elastrum aeris</term>
+</index>
+<index indexName="Sachen">
+<term>pondus aeris</term>
+</index> Constat autem (etiam experimentis)<index indexName="Sachen">
+<term>experimentum</term>
+</index>
+<app>
+<rdg wit="#L" n="a">vim Elasticam aeris<index indexName="Sachen">
+<term>vis aeris</term>
+</index>
+</rdg>
+<rdg wit="#L" n="b">eam </rdg>
+<rdg wit="#L" n="c">vim elasticam<index indexName="Sachen">
+<term>vis elastica</term>
+</index>
+</rdg>
+<rdg wit="#L" n="d">vim aeris inclusi diminui proportione aucti spatii quod ipsi conceditur ultra spatium ordinarium; quicquid autem decedit de vi Elastica aeris inclusi dandum est potentiae extrahenti,<index indexName="Sachen">
+<term>potentia extrahens</term>
+</index> quae scilicet inter extrahendum sustinere debet embolum contra vim aeris externi. Scio quidem quae de pondere et Elastro aeris a Torricellio,<index indexName="Personen">
+<term>
+<hi rendition="#g">Torricelli</hi> (Torricellius), Evangelista 1608–1647</term>
+</index> Pascalio,<index indexName="Personen">
+<term>
+<hi rendition="#g">Pascal</hi> (Pascalius), Blaise 1623–1662</term>
+</index> Gerickio<index indexName="Personen">
+<term>
+<hi rendition="#g">Guericke</hi> (Gerickius, Gerick.), Otto von 1602–1686</term>
+</index> et Boylio<index indexName="Personen">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius, Boyl), Robert 1627–1691</term>
+</index> asserta sunt quibusdam nondum adhuc probari, sed a me tamen habentur pro demonstratis, et brevitatis causa nunc supponuntur <note type="editorial">|</note> praesertim cum revera eodem res redeat sive </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="1"> dicas </rdg>
+<rdg wit="#L" n="2"> Elastrum statuas quo se aer dilatare conetur,<index indexName="Sachen">
+<term>dilatatio aeris</term>
+</index> sive funiculum quod se conetur contrahere,<index indexName="Sachen">
+<term>funiculum</term>
+</index> cum revera neutrum conatum per se, sed potius ab Aetheris motu habeat;<index indexName="Sachen">
+<term>motus aetheris</term>
+</index> nec referat an dicas aeris inclusi funiculum suspensum sustinere Mercurium,<index indexName="Sachen">
+<term>mercurius</term>
+</index> dum aeris externi <app>
+<rdg wit="#L" n="a">cylinder<index indexName="Sachen">
+<term>cylinder aeris</term>
+</index>
+</rdg>
+<rdg wit="#L" n="b" cause="addition">
+<add>pondus sustinetur ab aeris externi superioris funicolo; an potius dicas aeris externi pondus sustinere Mercurium</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> . 
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2" cause="addition"> Nam aer <seg type="apparat-ellipsis"/>
+ occupat spatium <note type="editorial">|</note>
+<add>proportione</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> majus externo, <seg type="apparat-ellipsis"/>
+ sint effectis <app>
+<rdg wit="#L" n="a">uniformis </rdg>
+<rdg wit="#L" n="b">homogeneis proportionales, <app>
+<rdg wit="#L" n="aa">causaque </rdg>
+<rdg wit="#L" n="bb" cause="deletion">effectusque sit difformitas <note type="editorial">|</note>
+<del>
+<add>seu differentia consistentiae inter aerem internum et externum</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u. gestr.</hi> |
+</note> ab aucto <seg type="apparat-ellipsis"/>
+ proportionales. Motum <app>
+<rdg wit="#L" n="aaa">autem </rdg>
+<rdg wit="#L" n="bbb">enim aetheris <seg type="apparat-ellipsis"/>
+ sumtis constat. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>ad <hi rendition="#i">CE</hi>.<note type="Afootnote" place="margin" resp="#L" target="#KZeitz89" targetEnd="KZeitz90">
+<note type="lemma-abbrev">
+<hi rendition="#i">Am Rand:</hi>
+</note>Demonstrandum hoc accuratius. <hi rendition="#i">Nachträglich hinzugefügt:</hi> Aer ordinarius<index indexName="Sachen">
+<term>aer ordinarius</term>
+</index> in vacuo<index indexName="Sachen">
+<term>vacuum</term>
+</index> positus sustinebit <formula xml:id="Ch14.S7.p6.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi mathvariant="normal">☿</m:mi>
+</m:math>
+</formula> =<hi rendition="#i">a</hi>
+<index indexName="Sachen">
+<term>mercurius</term>
+</index> talis scilicet aer qualis est in <hi rendition="#i">BC</hi>, ut Aer<index indexName="Sachen">
+<term>aer dilatatus</term>
+</index> dilatatus in <hi rendition="#i">BD</hi> sustinet <formula xml:id="Ch14.S7.p6.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> in <hi rendition="#i">BE</hi>
+<formula xml:id="Ch14.S7.p6.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch14.S7.p6.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi mathvariant="normal">☿</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext><!--<hi rendition="#sup">-->ii<!--</hi>--></m:mtext>
+</m:mrow>
+</m:math>
+</formula> etc. Ergo ad trahendum <hi rendition="#i">M</hi> in <hi rendition="#i">D</hi> opus est pondere <formula xml:id="Ch14.S7.p6.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<index indexName="Sachen">
+<term>pondus extrahens</term>
+</index> ad trahendum in <hi rendition="#i">E</hi> opus est pondere <formula xml:id="Ch14.S7.p6.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>2</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Et generaliter si <hi rendition="#i">EB</hi> :<hi rendition="#i">EC</hi> sit <hi rendition="#i">x</hi>, erit vis aeris inclusi elastica residua: 4 : <hi rendition="#i">x</hi>.<index indexName="Sachen">
+<term>vis elastica</term>
+</index>
+<index indexName="Sachen">
+<term>aer inclusus</term>
+</index>
+<index indexName="Sachen">
+<term>vis aeris</term>
+</index>
+<index indexName="Sachen">
+<term>vis residua</term>
+</index> Pondus autem quo ad <hi rendition="#i">E</hi> usque extrahendus embolus,<index indexName="Sachen">
+<term>embolus</term>
+</index>
+<index indexName="Sachen">
+<term>pondus extrahens</term>
+</index> erit <formula xml:id="Ch14.S7.p6.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mi>x</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Itaque in talibus Elasticis<index indexName="Sachen">
+<term>elasticum</term>
+</index> non sunt extensiones,<index indexName="Sachen">
+<term>extensio non proportionalis</term>
+</index> ut vires tendentes.<index indexName="Sachen">
+<term>vis tendens</term>
+</index>
+</note>Nam aer esternus<anchor xml:id="LH_35_09_16_002_erstzng-1"/>
+<index indexName="Sachen">
+<term>aer externus</term>
+</index> et tubo inclusus sunt in aequilibrio,<index indexName="Sachen">
+<term>aequilibrium</term>
+</index> seque continent in statu uniformitatis,<index indexName="Sachen">
+<term>status uniformitatis</term>
+</index>
+<index indexName="Sachen">
+<term>uniformitas</term>
+</index> vis autem Elastica<index indexName="Sachen">
+<term>vis elastica</term>
+</index> nascitur ex difformitate,<index indexName="Sachen">
+<term>difformitas</term>
+</index> dum verbi gratia aer internus<index indexName="Sachen">
+<term>aer internus</term>
+</index> occupat spatium<index indexName="Sachen">
+<term>spatium aeris</term>
+</index> proportione majus externo,<index indexName="Sachen">
+<term>aer externus</term>
+</index> cumque causae sint effectis homogeneis proportionales,<index indexName="Sachen">
+<term>causa proportionalis</term>
+</index>
+<index indexName="Sachen">
+<term>effectus homogeneus</term>
+</index> effectusque sit difformitas<index indexName="Sachen">
+<term>difformitas effectus</term>
+</index> ab aucto spatio aeris inclusi,<index indexName="Sachen">
+<term>aer inclusus</term>
+</index> utique vires<index indexName="Sachen">
+<term>vis extrahens</term>
+</index> spatium augentes<index indexName="Sachen">
+<term>spatium aeris</term>
+</index> seu embolum<index indexName="Sachen">
+<term>embolus</term>
+</index> extrahentes,<index indexName="Sachen">
+<term>vis extrahens</term>
+</index> erunt extractionibus<index indexName="Sachen">
+<term>extractio</term>
+</index> proportionales. <anchor xml:id="LH_35_09_16_002v_asseruimus-2"/>
+<anchor xml:id="KZeitz91"/>
+<app type="Cfootnote" from="#KZeitz91" to="#KZeitz92">
+<lem type="main"/>
+<note type="lemma-abbrev">Motum <seg type="apparat-ellipsis"/>
+ est</note>
+<note type="editorial">Siehe etwa <bibl corresp="#bib_00256">G. W. <hi rendition="#k">Leibniz</hi>,<hi rendition="#i">Hypothesis physica nova</hi>, Mainz 1671, § 27 (<hi rendition="#i">LSB</hi> VI, 2 N. 40, S. 234f.).</bibl>
+</note>
+</app>Motum enim aetheris<index indexName="Sachen">
+<term>motus aetheris</term>
+</index>
+<index indexName="Sachen">
+<term>aether</term>
+</index> difformitate<index indexName="Sachen">
+<term>difformitas</term>
+</index> illa turbari; atque inde vim elasticam<index indexName="Sachen">
+<term>vis elastica</term>
+</index>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p7_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d1.svg" width="216.8pt" xml:id="Ch14.S7.p7.g1"/>
+<head>[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_09_16_002v_Fig.1"/>
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p7_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d2.svg" width="216.8pt" xml:id="Ch14.S7.p8.g1"/>
+<head>[<hi rendition="#i">Fig. 2</hi>]<anchor xml:id="LH_35_09_16_002v_Fig.2"/>
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch14.S7.p10">
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]
+</note>
+<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 4</hi>.
+</note>
+</app>
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 2</hi>]
+</note>
+<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 5</hi>.
+</note>
+</app>seu conatum uniformitatis<index indexName="Sachen">
+<term>conatus uniformitatis</term>
+</index> oriri alias dictum est. <anchor xml:id="KZeitz92"/>
+<app type="Cfootnote">
+<lem type="main">Idem experimentis hydrargyro in aere sumtis constat.<anchor xml:id="LH_35_09_16_002_erstzng-2"/>
+<anchor xml:id="LH_35_09_16_002_Beweis-2"/>
+</lem>
+<note type="lemma-abbrev">Idem <seg type="apparat-ellipsis"/>
+ constat</note>
+<note type="editorial">Wie die Variante <hi rendition="#i">(1)</hi> zum Textabschnitt <hi rendition="#i">Nam aer</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">sumtis constat</hi> (<ref corresp="#LH_35_09_16_002_erstzng-1"/>
+) zeigt, meint Leibniz insbesondere die Experimente von E. Torricelli, B. Pascal, O. von Guericke und R. Boyle. Siehe <hi rendition="#i">LSB</hi> VIII, 1 N. 39, S. 306.<bibl corresp="#bib_01069"> In der Variante <hi rendition="#i">(1)</hi> erwähnt Leibniz zudem die alternative, auf der „Funiculus-Hypothese” beruhende Erklärung, die auf F. <hi rendition="#k">Linus</hi>,<hi rendition="#i">Tractatus de corporum inseparabilitate</hi>, London 1661,<bibl corresp="#bib_00072"> zurückgeht.<index indexName="Sachen">
+<term>funiculum</term>
+</index>
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Line</hi> (Linus), Francis 1595–1675</term>
+</index> Siehe <hi rendition="#i">LSB</hi> VIII, 1 N. 40, S. 326.9–18.<bibl corresp="#bib_01265"/>
+</bibl>
+</bibl>
+</note>
+</app>
+<anchor xml:id="KZeitz90"/>
+</p>
+<p xml:id="Ch14.S7.p11">Sed forte dubitabit aliquis quomodo chordarum aliorumque corporum <anchor xml:id="LH_35_09_16_002v_Festigkeitsmodell_redg-1"/>
+<app type="Bfootnote">
+<lem type="main">solidorum</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> tensio<index indexName="Sachen">
+<term>tensio chordae</term>
+</index>
+<index indexName="Sachen">
+<term>tensio corporis solidi</term>
+</index>
+<index indexName="Sachen">
+<term>corpus solidum</term>
+</index> derivari possit ab Elastro alicuius corporis fluidi,<index indexName="Sachen">
+<term>elastrum corporis fluidi</term>
+</index>
+<index indexName="Sachen">
+<term>corpus fluidum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">nam <hi rendition="#g">primo</hi>
+</lem>
+<note type="lemma-abbrev">nam</note>
+<rdg wit="#L" n="1"> praeterquam quod </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">primo</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Cfootnote">
+<lem type="main">Horologia <app type="Bfootnote">
+<lem type="main">portatilia<index indexName="Sachen">
+<term>horologium portatile</term>
+</index> laminis chalybeis<index indexName="Sachen">
+<term>lamina chalybea</term>
+</index>
+</lem>
+<note type="lemma-abbrev">portatilia</note>
+<rdg wit="#L" n="1"> Elastris </rdg>
+<rdg wit="#L" n="2"> laminis chalybeis <hi rendition="#i">L</hi>
+</rdg>
+</app> instructa non minus procedunt in aere dilatato<index indexName="Sachen">
+<term>aer dilatatus</term>
+</index> sive in vacuo Magdeburgico,<index indexName="Sachen">
+<term>vacuum Magdeburgicum</term>
+</index> quam in aere communi;<index indexName="Sachen">
+<term>aer communis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Horologia <seg type="apparat-ellipsis"/>
+ communi</note>
+<note type="editorial">Vgl. O. v. <hi rendition="#k">Guericke</hi>,<hi rendition="#i">Experimenta nova</hi>, l. III, cap. 15, Amsterdam 1672, S. 91f.<bibl corresp="#bib_00055"> Zu diesem Versuch <hi rendition="#i">De sono in vacuo</hi> hat Leibniz einen Auszug verfasst: <hi rendition="#i">LSB</hi> VIII, 1 N. 36, S. 256f.<bibl corresp="#bib_01197"/>
+</bibl>
+</note>
+</app>
+<hi rendition="#g"></hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">secundo</hi>
+</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#g"></hi>non videtur probabile tubos<index indexName="Sachen">
+<term>tubus</term>
+</index> atque embolos<index indexName="Sachen">
+<term>embolus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">exacte tubis respondentes,</lem>
+<note type="lemma-abbrev">exacte</note>
+<rdg wit="#L" cause="addition">
+<add>tubis respondentes,</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ubique in chordis<index indexName="Sachen">
+<term>chorda elastica</term>
+</index> aut laminis Elasticis<index indexName="Sachen">
+<term>lamina elastica</term>
+</index> fingere. Sed sciendum <anchor xml:id="KZeitz83"/>
+<app type="Bfootnote" from="#KZeitz83" to="#KZeitz84">
+<lem type="main"/>
+<note type="lemma-abbrev">est</note>
+<rdg wit="#L" n="1"> ex vacuo Magdeburgico ita di </rdg>
+<rdg wit="#L" n="2"> quoad <hi rendition="#g">primum,</hi>
+<seg type="apparat-ellipsis"/>
+ vacuum dicunt <app>
+<rdg wit="#L" n="a">superesse </rdg>
+<rdg wit="#L" n="b">exhauriri solummodo aerem crassiorem, superesse <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>est quoad <hi rendition="#g">primum,</hi> ex Recipiente quem vacuum dicunt<index indexName="Sachen">
+<term>recipiens vacuum</term>
+</index> exhauriri solummodo aerem</p>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p12">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d3.svg" width="351.2322pt" xml:id="Ch14.S7.p12.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]<anchor xml:id="LH_35_09_16_002v_Fig.3"/>
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch14.S7.p13">
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 3</hi>]
+</note>
+<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 6</hi>.
+</note>
+</app>crassiorem,<index indexName="Sachen">
+<term>aer crassior</term>
+</index> superesse vero alium <anchor xml:id="KZeitz84"/>
+<app type="Bfootnote">
+<lem type="main">subtiliorem,<index indexName="Sachen">
+<term>aer subtilior</term>
+</index> qui</lem>
+<note type="lemma-abbrev">subtiliorem,</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>
+<add>etiam Elasticum</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u. gestr.</hi> |
+</note> qui <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">per intervalla corporum majora transire potest,<index indexName="Sachen">
+<term>intervalla corporum</term>
+</index> licet excludatur</lem>
+<note type="lemma-abbrev">per</note>
+<rdg wit="#L" n="1"> poros </rdg>
+<rdg wit="#L" n="2"> intervalla corporum <app>
+<rdg wit="#L" n="a">transire potest, majores </rdg>
+<rdg wit="#L" n="b">majora transire potest, <app>
+<rdg wit="#L" n="aa">excludatur tamen </rdg>
+<rdg wit="#L" n="bb">licet excludatur <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app> a <app type="Bfootnote">
+<lem type="main">minoribus; unde ille</lem>
+<note type="lemma-abbrev">minoribus;</note>
+<rdg wit="#L" n="1"> et proinde </rdg>
+<rdg wit="#L" n="2"> unde ille <hi rendition="#i">L</hi>
+</rdg>
+</app> in partibus insensibilibus<index indexName="Sachen">
+<term>pars insensibilis</term>
+</index> chordarum et laminarum idem praestat<index indexName="Sachen">
+<term>chorda elastica</term>
+</index>
+<index indexName="Sachen">
+<term>lamina elastica</term>
+</index> quod aer communis<index indexName="Sachen">
+<term>aer communis</term>
+</index> in corporibus <app type="Bfootnote">
+<lem type="main">crassis.<index indexName="Sachen">
+<term>corpus crassum</term>
+</index> Hoc</lem>
+<note type="lemma-abbrev">crassis.</note>
+<rdg wit="#L" n="1"> Haec </rdg>
+<rdg wit="#L" n="2"> Hoc <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">admisso dicemus ad <hi rendition="#g">secundam</hi> objectionem<index indexName="Sachen">
+<term>objectio</term>
+</index>[:] etsi nulli sint tubi atque emboli illis exacte respondentes,<index indexName="Sachen">
+<term>tubus</term>
+</index>
+<index indexName="Sachen">
+<term>embolus</term>
+</index> esse tamen aliquid illis vicarium, quo natura<index indexName="Sachen">
+<term>natura</term>
+</index> idem quod tubis accurato embolo clausis praestat,<index indexName="Sachen">
+<term>tubus</term>
+</index>
+<index indexName="Sachen">
+<term>embolus</term>
+</index> simplicissimo sane artificio<index indexName="Sachen">
+<term>artificium naturae</term>
+</index> quod quia magni momenti est ad intellligendam corporum structuram,<index indexName="Sachen">
+<term>structura corporis</term>
+</index> distinctius aperiemus. Ponatur filamentum<index indexName="Sachen">
+<term>filamentum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">admisso</note>
+<rdg wit="#L" n="1"> aperiamus aliquid magni momenti ad intelligendam corporum structuram interiorem.<index indexName="Sachen">
+<term>structura corporis</term>
+</index> Nimirum </rdg>
+<rdg wit="#L" n="2" cause="addition"> dicemus ad <seg type="apparat-ellipsis"/>
+ atque emboli <note type="editorial">|</note>
+<add>illis</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> exacte respondentes, <seg type="apparat-ellipsis"/>
+ sane artificio <note type="editorial">|</note>
+<add>quod quia <seg type="apparat-ellipsis"/>
+ distinctius aperiemus</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> .<app>
+<rdg wit="#L" n="a">Ponamus filum<index indexName="Sachen">
+<term>filum</term>
+</index>
+</rdg>
+<rdg wit="#L" n="b">Ponatur filamentum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> aliquod <hi rendition="#i">AB</hi> in<index indexName="Sachen">
+<term>figura</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">fig<app type="Cfootnote">
+<lem type="main">. 3</lem>
+<note type="lemma-abbrev">fig. 3</note>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 3</hi>].
+</note>
+</app> constare</lem>
+<note type="lemma-abbrev">fig.</note>
+<rdg wit="#L" n="1"> 6 </rdg>
+<rdg wit="#L" n="2"> 3 <app>
+<rdg wit="#L" n="a">componi </rdg>
+<rdg wit="#L" n="b">constare <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> ex partibus irregularibus sibi in longum appositis quibuscunque, sive contiguis, sive etiam aliquando tantum vicinis;<index indexName="Sachen">
+<term>pars contigua</term>
+</index>
+<index indexName="Sachen">
+<term>pars vicina</term>
+</index> et <app type="Bfootnote">
+<lem type="main">intelligamus</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> per intervalla<index indexName="Sachen">
+<term>intervallum</term>
+</index> horum ruderum<index indexName="Sachen">
+<term>rudera</term>
+</index> sive <app type="Bfootnote">
+<lem type="main">fragminum<index indexName="Sachen">
+<term>fragmen</term>
+</index> aliquod fluidum elasticum<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">fragminum</note>
+<rdg wit="#L" n="1"> aerem illum subtilem<index indexName="Sachen">
+<term>aer subtilis</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> aliquod <app>
+<rdg wit="#L" n="a">in </rdg>
+<rdg wit="#L" n="b">fluidum elasticum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> diffundi. Quoniam <app type="Bfootnote">
+<lem type="main">ergo</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> corpora sunt valde irregularia,<index indexName="Sachen">
+<term>corpus irregulare</term>
+</index> et nihilominus valde sibi admota, hinc serratili <app type="Bfootnote">
+<lem type="main">sinuosave</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> forma,<index indexName="Sachen">
+<term>forma serratilis</term>
+</index>
+<index indexName="Sachen">
+<term>forma sinuosa</term>
+</index> modo sibi <app type="Bfootnote">
+<lem type="main">accedent, aut sese plane attingent, modo a se</lem>
+<note type="lemma-abbrev">accedent,</note>
+<rdg wit="#L" n="1">  modo a se </rdg>
+<rdg wit="#L" n="2"> aut sese <seg type="apparat-ellipsis"/>
+ a se <hi rendition="#i">L</hi>
+</rdg>
+</app> invicem recedent, atque ita intra hos sinus<index indexName="Sachen">
+<term>sinus</term>
+</index> multiplices plurimum fluidi<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index> comprehendent. Si <app type="Bfootnote">
+<lem type="main">jam ponantur</lem>
+<note type="lemma-abbrev">jam</note>
+<rdg wit="#L" n="1"> ponatur </rdg>
+<rdg wit="#L" n="2"> ponantur <hi rendition="#i">L</hi>
+</rdg>
+</app> fluidi<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index> hujus partes, comparatione nostri aeris<index indexName="Sachen">
+<term>aer communis</term>
+</index> subtiles, at comparatione angustiarum<index indexName="Sachen">
+<term>angustia</term>
+</index> quas rudera<index indexName="Sachen">
+<term>rudera</term>
+</index> (<?tex-source \phantom{)}?>ut<hi rendition="#i">C</hi> et <hi rendition="#i">D</hi><?tex-source \phantom{(}?>) inter se relinquunt satis adhuc crassae, vel saltem ad divisionem tam subtilem parum aptae (<?tex-source \phantom{)}?>quemadmodum videmus certe<app type="Bfootnote">
+<lem type="main">aerem communem<index indexName="Sachen">
+<term>aer communis</term>
+</index> licet</lem>
+<note type="lemma-abbrev">aerem</note>
+<rdg wit="#L" n="1"> ipsu </rdg>
+<rdg wit="#L" n="2"> licet </rdg>
+<rdg wit="#L" n="3"> communem licet <hi rendition="#i">L</hi>
+</rdg>
+</app> aqua<index indexName="Sachen">
+<term>aqua</term>
+</index> subtilior videatur, tamen quia se non libenter</p>
+<p rendition="#noindent" xml:id="Ch14.S7.p14">distrahi patitur, aliquando per corpora non penetrare, quae aqua<index indexName="Sachen">
+<term>aqua</term>
+</index> facile pervadit<?tex-source \phantom{(}?>) hinc etsi angustiae<index indexName="Sachen">
+<term>angustia</term>
+</index>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=964">
+<pb type="L"/>
+<fw type="folNum">[3 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref> illae sint apertae, tamen respectu fluidi<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">elastici</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">inclusi ac circumfusi, cui exitum<index indexName="Sachen">
+<term>exitus fluidi</term>
+</index> et</lem>
+<note type="lemma-abbrev">inclusi</note>
+<rdg wit="#L" n="1"> cui exitum et </rdg>
+<rdg wit="#L" n="2"> at </rdg>
+<rdg wit="#L" n="3" cause="deletion"> ac circumfusi <note type="editorial">|</note>
+<del>
+<add>de quo agitur</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u. gestr.</hi> |
+</note> , cui exitum et <hi rendition="#i">L</hi>
+</rdg>
+</app> introitum<index indexName="Sachen">
+<term>introitus fluidi</term>
+</index> negant, poterunt pro clausis haberi. Et ideo <app type="Bfootnote">
+<lem type="main">si filamentum<index indexName="Sachen">
+<term>filamentum</term>
+</index> ab uno</lem>
+<note type="lemma-abbrev">si</note>
+<rdg wit="#L" n="1"> quis </rdg>
+<rdg wit="#L" n="2"> filamentum ab uno <hi rendition="#i">L</hi>
+</rdg>
+</app> appehendatur in <hi rendition="#i">A</hi>, et trahatur versus <hi rendition="#i">A</hi>,<app type="Bfootnote">
+<lem type="main">et simul</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" cause="addition">
+<add>simul</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ab altero appehendatur in <hi rendition="#i">B</hi> et trahatur versus <hi rendition="#i">B</hi>, tunc fragmenta<index indexName="Sachen">
+<term>fragmentum</term>
+</index> ex quibus componitur, cohaerebunt vicinum vicino, instar duarum tabularum <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[marmorearum]<index indexName="Sachen">
+<term>tabula marmorea</term>
+</index>
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>marmoream</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> politissimarum,<index indexName="Sachen">
+<term>tabula polita</term>
+</index> non obstante irregularitate superficierum<index indexName="Sachen">
+<term>irregularitas superficiei</term>
+</index> quibus sibi admoventur. Exempli <app type="Bfootnote">
+<lem type="main">gratia fragmenta<index indexName="Sachen">
+<term>fragmentum</term>
+</index>
+<hi rendition="#i">C</hi> et <hi rendition="#i">D</hi>
+</lem>
+<note type="lemma-abbrev">gratia</note>
+<rdg wit="#L" n="1"> fragmenta <hi rendition="#i">C</hi> et </rdg>
+<rdg wit="#L" n="2"> fragmenta <hi rendition="#i">C</hi> et <hi rendition="#i">D</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> admoventur sibi superficiebus <hi rendition="#i">1.2</hi> et <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">3.4.5</hi>, quae licet</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">3.4.5</hi>,
+</note>
+<rdg wit="#L" n="1"> ubi licet </rdg>
+<rdg wit="#L" n="2"> quae licet <hi rendition="#i">L</hi>
+</rdg>
+</app> inter se non congruant, tamen modo fluidum <app type="Bfootnote">
+<lem type="main">elasticum<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index> internum et externum</lem>
+<note type="lemma-abbrev">elasticum</note>
+<rdg wit="#L" n="1"> de quo </rdg>
+<rdg wit="#L" n="2"> intus ⟨ab⟩ </rdg>
+<rdg wit="#L" n="3"> internum et externum <hi rendition="#i">L</hi>
+</rdg>
+</app> per angustias<index indexName="Sachen">
+<term>angustia</term>
+</index> inter <hi rendition="#i">1</hi> et <hi rendition="#i">3</hi> vel <hi rendition="#i">2</hi> et <hi rendition="#i">5</hi> penetrare non possit, perinde erit ac si superficies exacte congruerent. Similiter si<index indexName="Sachen">
+<term>promontorium</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">promontorium <hi rendition="#i">6</hi> in</lem>
+<note type="lemma-abbrev">promontorium</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>ipsius</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note>
+<hi rendition="#i">6</hi> in <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">sinum<index indexName="Sachen">
+<term>sinus</term>
+</index>
+<hi rendition="#i">7</hi> ita</lem>
+<note type="lemma-abbrev">sinum</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>ipsius</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note>
+<hi rendition="#i">7</hi> ita <hi rendition="#i">L</hi>
+</rdg>
+</app> procurrat ut <app type="Bfootnote">
+<lem type="main">parum intervalli<index indexName="Sachen">
+<term>intervallum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">parum</note>
+<rdg wit="#L" n="1"> spatii </rdg>
+<rdg wit="#L" n="2"> intervalli <hi rendition="#i">L</hi>
+</rdg>
+</app> relinquat, utique fluidum<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index> per <hi rendition="#i">8</hi> irrumpens, facile excludetur spatio <hi rendition="#i">6.7.9</hi>[;]<app type="Bfootnote">
+<lem type="main">et promontorium <hi rendition="#i">10</hi> sinum <hi rendition="#i">11</hi> licet sibi exacte non respondentem,<index indexName="Sachen">
+<term>promontorium</term>
+</index>
+<index indexName="Sachen">
+<term>sinus</term>
+</index> non minus claudet, ob eandem rationem ac embolus<index indexName="Sachen">
+<term>embolus</term>
+</index> tubum<index indexName="Sachen">
+<term>tubus</term>
+</index> solet,</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" n="1"> sinus </rdg>
+<rdg wit="#L" n="2"> promontorium <hi rendition="#i">10</hi> sinum <hi rendition="#i">11</hi>
+<app>
+<rdg wit="#L" n="a">eodem modo non minus claudet, ac embolus tubum solet, licet sibi </rdg>
+<rdg wit="#L" n="b">licet </rdg>
+<rdg wit="#L" n="c">licet sibi <seg type="apparat-ellipsis"/>
+ tubum solet, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> et ita difficulter sese ex eo extrahi patietur. Causa autem generationis<index indexName="Sachen">
+<term>causa generationis</term>
+</index> talium filamentorum<index indexName="Sachen">
+<term>filamentum</term>
+</index> ex <app type="Bfootnote">
+<lem type="main">hujusmodi</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ruderibus<index indexName="Sachen">
+<term>rudera</term>
+</index> sive fragminibus<index indexName="Sachen">
+<term>fragmen</term>
+</index> constantium multiplex<index indexName="Sachen">
+<term>causa multiplex</term>
+</index> esse <app type="Bfootnote">
+<lem type="main">potest, hanc</lem>
+<note type="lemma-abbrev">potest,</note>
+<rdg wit="#L" n="1"> illam </rdg>
+<rdg wit="#L" n="2"> hanc <hi rendition="#i">L</hi>
+</rdg>
+</app> tamen valde frequentem <anchor xml:id="KZeitz93"/>
+<app type="Bfootnote" from="#KZeitz93" to="#KZeitz94">
+<lem type="main"/>
+<note type="lemma-abbrev">arbitror,</note>
+<rdg wit="#L" n="1">
+<note type="editorial">|</note> ut <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> materia ob calorem motumque fluida paulatim congeletur, atque ita in <app>
+<rdg wit="#L" n="a">⟨rivum⟩ </rdg>
+<rdg wit="#L" n="b">lineam d </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> ut linea aliqua <app>
+<rdg wit="#L" n="a">fluida </rdg>
+<rdg wit="#L" n="b">duc </rdg>
+<rdg wit="#L" n="c">ducta ex <seg type="apparat-ellipsis"/>
+ congeletur, et <app>
+<rdg wit="#L" n="aa">in </rdg>
+<rdg wit="#L" n="bb">ita in <seg type="apparat-ellipsis"/>
+ quae tamen <app>
+<rdg wit="#L" n="aaa">nihilominus </rdg>
+<rdg wit="#L" n="bbb">non obstante irregularitate arcte <app>
+<rdg wit="#L" n="aaaa">sese </rdg>
+<rdg wit="#L" n="bbbb">satis sese contingent <app>
+<rdg wit="#L" n="aaaaa">. His ita intellectis perinde erit, </rdg>
+<rdg wit="#L" n="bbbbb">. Cum </rdg>
+<rdg wit="#L" n="ccccc">cum paulo <seg type="apparat-ellipsis"/>
+ in <hi rendition="#i">10.11.</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>arbitror, ut linea aliqua ducta ex materia adhuc ob motum caloremque fluida,<index indexName="Sachen">
+<term>materia fluida</term>
+</index>
+<index indexName="Sachen">
+<term>calor materiae</term>
+</index>
+<index indexName="Sachen">
+<term>motus materiae</term>
+</index> mox congeletur,<index indexName="Sachen">
+<term>materia congelata</term>
+</index> et ita in multa fragmina<index indexName="Sachen">
+<term>fragmen</term>
+</index> dissiliat, quae tamen non obstante irregularitate<index indexName="Sachen">
+<term>irregularitas superficiei</term>
+</index> arcte satis sese contingent[,] cum paulo ante cohaerserint, et a congelatione<index indexName="Sachen">
+<term>congelatio</term>
+</index> tantum rimas<index indexName="Sachen">
+<term>rima</term>
+</index> acceperint,<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 4</hi>]
+</note>
+<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 7</hi>.
+</note>
+</app>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p15">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d4.svg" width="173.448pt" xml:id="Ch14.S7.p15.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]<anchor xml:id="LH_35_09_16_003r_Fig.4"/>
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch14.S7.p16">ut in <hi rendition="#i">10.11.</hi> Fila<anchor xml:id="KZeitz94"/>
+<index indexName="Sachen">
+<term>filum</term>
+</index> autem quae nobis visibilia<index indexName="Sachen">
+<term>filum visibile</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">sunt ex</lem>
+<note type="lemma-abbrev">sunt</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>forte</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> ex <hi rendition="#i">L</hi>
+</rdg>
+</app> multis millibus filamentorum<index indexName="Sachen">
+<term>filamentum</term>
+</index> qualia depinximus constare credibile est, ut videmus certe fila araneae<index indexName="Sachen">
+<term>filum araneae</term>
+</index>
+<index indexName="Sachen">
+<term>aranea</term>
+</index> aut bombycis<index indexName="Sachen">
+<term>filum bombycis</term>
+</index>
+<index indexName="Sachen">
+<term>bombyx</term>
+</index> semper adhuc in alia dividi posse, et folia talci<index indexName="Sachen">
+<term>folium talci</term>
+</index>
+<index indexName="Sachen">
+<term>talcum</term>
+</index> in alia folia posse resolvi donec visum<index indexName="Sachen">
+<term>visus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">fugiant. Unde non est mirum tantam esse corporum quorundam tenacitatem.<index indexName="Sachen">
+<term>tenacitas</term>
+</index> Nam insertionibus illis continuis<index indexName="Sachen">
+<term>insertio continua</term>
+</index> prominentiae<index indexName="Sachen">
+<term>prominentia</term>
+</index> corporis unius in sinum<index indexName="Sachen">
+<term>sinus</term>
+</index> alterius, cujus prominentia<index indexName="Sachen">
+<term>prominentia</term>
+</index> rursus in sinum<index indexName="Sachen">
+<term>sinus</term>
+</index> tertii intrat, atque ita porro; idem praestatur quod in<index indexName="Sachen">
+<term>figura</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">fig. 4</lem>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 4</hi>] auf S. <ref corresp="#LH_35_09_16_003r_Fig.4"/>
+.</note>
+</app> si emboli<index indexName="Sachen">
+<term>embolus</term>
+</index> in tubos<index indexName="Sachen">
+<term>tubus</term>
+</index> inserantur, et embolis<index indexName="Sachen">
+<term>embolus</term>
+</index> novi rursus tubi<index indexName="Sachen">
+<term>tubus</term>
+</index> adhaereant. Item contactu<index indexName="Sachen">
+<term>contactus partium</term>
+</index> viciniaque<index indexName="Sachen">
+<term>vicinia partium</term>
+</index> partium in<index indexName="Sachen">
+<term>figura</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">fig. 3</lem>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 3</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.3"/>
+.</note>
+</app> idem praestatur quod</lem>
+<note type="lemma-abbrev">fugiant.</note>
+<rdg wit="#L" n="1"> Haec ergo fragmina idem praestabunt, quod plures tubi posito </rdg>
+<rdg wit="#L" n="2"> Unde non <seg type="apparat-ellipsis"/>
+ quorundam tenacitatem. <app>
+<rdg wit="#L" n="a">Quoni </rdg>
+<rdg wit="#L" n="b">Idem enim </rdg>
+<rdg wit="#L" n="c">Nam insertionibus illis <app>
+<rdg wit="#L" n="aa">sinu </rdg>
+<rdg wit="#L" n="bb">prominentiarum in sinus praestatur, quod </rdg>
+<rdg wit="#L" n="cc">continuis prominentiae <seg type="apparat-ellipsis"/>
+ quod in fig. <app>
+<rdg wit="#L" n="aaa">7 </rdg>
+<rdg wit="#L" n="bbb">4 <app>
+<rdg wit="#L" n="aaaa">tubis </rdg>
+<rdg wit="#L" n="bbbb">embolis in tubos insertis, in <app>
+<rdg wit="#L" n="aaaaa">qui </rdg>
+<rdg wit="#L" n="bbbbb">quibus emb </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="cccc">si emboli <seg type="apparat-ellipsis"/>
+ tubi adhaereant <app>
+<rdg wit="#L" n="aaaaa">, vel in fig. 8 </rdg>
+<rdg wit="#L" n="bbbbb">. Item contactu <hi rendition="#i">(aaaaa-a)</hi> et vicinia <hi rendition="#i">(bbbbb-b)</hi> viciniaque <hi rendition="#i">(aaaaa-aa)</hi> horum corporum <hi rendition="#i">(bbbbb-bb)</hi> co <hi rendition="#i">(ccccc-cc)</hi> fragmentor <hi rendition="#i">(ddddd-dd)</hi> partium in fig. <hi rendition="#i">(aaaaa-aaa)</hi> 6 <hi rendition="#i">(bbbbb-bbb)</hi> 3 idem praestatur, <hi rendition="#i">(aaaaa-aaaa)</hi> quod <hi rendition="#i">(bbbbb-bbbb)</hi> quod <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app> pluribus tabulis politis<index indexName="Sachen">
+<term>tabula polita</term>
+</index> sibi immistis ut in<index indexName="Sachen">
+<term>figura</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">fig. 5.</lem>
+<note type="lemma-abbrev">fig.</note>
+<rdg wit="#L" n="1"> 8. </rdg>
+<rdg wit="#L" n="2"> 5. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Cfootnote">
+<note type="lemma-abbrev">fig. 5</note>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 5</hi>].
+</note>
+</app> Et sciendum <anchor xml:id="LH_35_09_16_003r_tabulae-1"/>
+<app type="Cfootnote" from="#LH_35_09_16_003r_tabulae-1" to="#LH_35_09_16_003r_tabulae-2">
+<lem type="main"/>
+<note type="lemma-abbrev">sciendum <seg type="apparat-ellipsis"/>
+ divelli</note>
+<note type="editorial">Siehe N. <ref corresp="L_section_142.xml#N.14.2"/>
+, S. <ref corresp="L_section_142.xml#LH_37_03_069r_duaetabulae-1"/>
+, und N. <ref corresp="L_section_145.xml#N.14.5"/>
+.</note>
+</app>
+<app type="Bfootnote">
+<lem type="main">est tabulas</lem>
+<note type="lemma-abbrev">est</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>duas</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> tabulas <hi rendition="#i">L</hi>
+</rdg>
+</app> marmoreas<index indexName="Sachen">
+<term>tabula marmorea</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">politas,<index indexName="Sachen">
+<term>tabula polita</term>
+</index> licet eas tanquam perfecte</lem>
+<note type="lemma-abbrev">politas,</note>
+<rdg wit="#L" n="1"> quas velut perfecte </rdg>
+<rdg wit="#L" n="2"> licet eas tanquam perfecte <hi rendition="#i">L</hi>
+</rdg>
+</app> rigidas<index indexName="Sachen">
+<term>tabula perfecte rigida</term>
+</index> concipiamus, non tamen primo separationis momento<index indexName="Sachen">
+<term>momentum separationis</term>
+</index> a se invicem <app type="Bfootnote">
+<lem type="main">divelli. Nam in<anchor xml:id="LH_35_09_16_003r_tabulae-2"/>
+<index indexName="Sachen">
+<term>figura</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">fig. 6</lem>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 6a</hi>] auf S. <ref corresp="#LH_35_09_16_003r_Fig.6"/>
+.</note>
+</app> sint</lem>
+<note type="lemma-abbrev">divelli.</note>
+<rdg wit="#L" n="1"> Sit enim in fig. 9 </rdg>
+<rdg wit="#L" n="2"> Nam in fig. <app>
+<rdg wit="#L" n="a">9 </rdg>
+<rdg wit="#L" n="b">6 sint <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> tres tabulae marmoreae<index indexName="Sachen">
+<term>tabula marmorea</term>
+</index> politae<index indexName="Sachen">
+<term>tabula polita</term>
+</index> sibi <app type="Bfootnote">
+<lem type="main">applicatae,<index indexName="Sachen">
+<term>tabulae sibi applicatae</term>
+</index>
+<hi rendition="#i">1.2.3</hi>, quarum</lem>
+<note type="lemma-abbrev">applicatae,</note>
+<rdg wit="#L" n="1"> qua </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">1.2.3</hi>, quarum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">suprema <hi rendition="#i">1</hi> sit</lem>
+<note type="lemma-abbrev">suprema</note>
+<rdg wit="#L" n="1"> si </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">1</hi> sit <hi rendition="#i">L</hi>
+</rdg>
+</app> fixa in loco superiore, media <hi rendition="#i">2</hi> ei subsit, et huic tertia <hi rendition="#i">3</hi>, cui appensum pondus.<index indexName="Sachen">
+<term>pondus appensum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">Hoc pondus<index indexName="Sachen">
+<term>pondus appensum</term>
+</index> tabulas primo tam parum a se invicem removebit,</lem>
+<note type="lemma-abbrev">Hoc</note>
+<rdg wit="#L" cause="addition">
+<note type="editorial">|</note>
+<add>pondus</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> tabulas </rdg>
+<rdg wit="#L" n="1"> ⟨undiq⟩ </rdg>
+<rdg wit="#L" n="2"> non </rdg>
+<rdg wit="#L" n="3"> potest </rdg>
+<rdg wit="#L" n="4"> primo tam <seg type="apparat-ellipsis"/>
+ se invicem <app>
+<rdg wit="#L" n="a">removere </rdg>
+<rdg wit="#L" n="b">removebit, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> ut aeri circumfuso<index indexName="Sachen">
+<term>aer circumfusus</term>
+</index> nondum pateat <app type="Bfootnote">
+<lem type="main">introitus<index indexName="Sachen">
+<term>introitus aeris</term>
+</index>[,] itaque</lem>
+<note type="lemma-abbrev">introitus</note>
+<rdg wit="#L" n="1"> et </rdg>
+<rdg wit="#L" n="2"> itaque <hi rendition="#i">L</hi>
+</rdg>
+</app> non ante sequetur divulsio<index indexName="Sachen">
+<term>divulsio</term>
+</index> quam ubi intercapedo<index indexName="Sachen">
+<term>intercapedo</term>
+</index> sufficiens erit aeri transmittendo. Idem ergo dicendum est<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 5</hi>]
+</note>
+<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 8</hi>.
+</note>
+</app>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p17">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d5.svg" width="182.1204pt" xml:id="Ch14.S7.p17.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]<anchor xml:id="LH_35_09_16_003r_Fig.5"/>
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p18_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d6a.svg" width="216.8pt" xml:id="Ch14.S7.p18.g1"/>
+<head>[<hi rendition="#i">Fig. 6a</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p18_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d6b.svg" width="216.8pt" xml:id="Ch14.S7.p19.g1"/>
+<head>[<hi rendition="#i">Fig. 6b, gestr.</hi>]<anchor xml:id="LH_35_09_16_003r_Fig.6"/>
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch14.S7.p21">
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 6a</hi>]
+</note>
+<note type="editorial">Das Diagramm hieß ursprünglich <hi rendition="#i">fig. 9</hi>.
+</note>
+</app>in<index indexName="Sachen">
+<term>figura</term>
+</index>
+<anchor xml:id="KZeitz85"/>
+<app type="Bfootnote" from="#KZeitz85" to="#KZeitz86">
+<lem type="main"/>
+<note type="lemma-abbrev">fig.</note>
+<rdg wit="#L" n="1"> 6, </rdg>
+<rdg wit="#L" n="2"> 3, <hi rendition="#i">L</hi>
+</rdg>
+</app>fig. 3, et proinde filamenta<anchor xml:id="KZeitz86"/>
+<index indexName="Sachen">
+<term>filamentum</term>
+</index> tamdiu extendentur donec <app type="Bfootnote">
+<lem type="main">tandem separatio partium<index indexName="Sachen">
+<term>separatio partium</term>
+</index> ex quibus constant sufficiens fiat</lem>
+<note type="lemma-abbrev">tandem</note>
+<rdg wit="#L" n="1"> superet </rdg>
+<rdg wit="#L" n="2"> separatio partium <seg type="apparat-ellipsis"/>
+ sufficiens fiat <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">ad fluidum illud</lem>
+<note type="lemma-abbrev">ad</note>
+<rdg wit="#L" n="1"> aerem </rdg>
+<rdg wit="#L" n="2"> fluidum illlud <hi rendition="#i">L</hi>
+</rdg>
+</app> elasticum,<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index> quod aere communi<index indexName="Sachen">
+<term>aer communis</term>
+</index> subtilius <app type="Bfootnote">
+<lem type="main">esse[,] crassitiem tamen suam habere duximus</lem>
+<note type="lemma-abbrev">esse</note>
+<rdg wit="#L" cause="addition">
+<add>crassitiem <seg type="apparat-ellipsis"/>
+ habere duximus</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>[,] transmittendum; itaque eaedem leges<index indexName="Sachen">
+<term>lex</term>
+</index> quae in aere communi,<index indexName="Sachen">
+<term>aer communis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">hic</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> locum habebunt.</p>
+<p xml:id="Ch14.S7.p22">Etsi autem Tubus<index indexName="Sachen">
+<term>tubus</term>
+</index> unus in <app type="Bfootnote">
+<lem type="main">fig. 4</lem>
+<note type="lemma-abbrev">fig.</note>
+<rdg wit="#L" n="1"> 7 </rdg>
+<rdg wit="#L" n="2"> 4 <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Cfootnote">
+<note type="lemma-abbrev">fig. 4</note>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 4</hi>] auf S. <ref corresp="#LH_35_09_16_003r_Fig.4"/>
+.</note>
+</app> alio <app type="Bfootnote">
+<lem type="main">sit amplior,</lem>
+<note type="lemma-abbrev">sit</note>
+<rdg wit="#L" n="1"> latior </rdg>
+<rdg wit="#L" n="2"> amplior, <hi rendition="#i">L</hi>
+</rdg>
+</app> vel in<index indexName="Sachen">
+<term>figura</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">fig. 3</lem>
+<note type="lemma-abbrev">fig.</note>
+<rdg wit="#L" n="1"> 6 </rdg>
+<rdg wit="#L" n="2"> 3 <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Cfootnote">
+<note type="lemma-abbrev">fig. 3</note>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 3</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.3"/>
+.</note>
+</app> unum planum contactus<index indexName="Sachen">
+<term>planum contactus</term>
+</index> ut <hi rendition="#i">1.2</hi> alio ut <hi rendition="#i">12.13</hi>
+<app type="Bfootnote">
+<lem type="main">majus, tamen cum <hi rendition="#i">A</hi> et <hi rendition="#i">B</hi> in diversa trahuntur, simul omnes partes distrahentur,</lem>
+<note type="lemma-abbrev">majus,</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>(<?tex-source \phantom{)}?>neque enim sinuositas<index indexName="Sachen">
+<term>sinuositas</term>
+</index> sua consideranda est, sed planum ad lineam distrationis <hi rendition="#i">AB</hi> perpendiculare<?tex-source \phantom{(}?>)</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> tamen </rdg>
+<rdg wit="#L" n="1"> distrahendo </rdg>
+<rdg wit="#L" n="2"> cum <hi rendition="#i">A</hi> et <hi rendition="#i">B</hi> in diversa <app>
+<rdg wit="#L" n="a">dis </rdg>
+<rdg wit="#L" n="b" cause="deletion">trahuntur, simul omnes partes <note type="editorial">|</note>
+<del>vel tubi</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> distrahentur, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> omnesve emboli<index indexName="Sachen">
+<term>embolus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">extrahentur uniformi quaedam difformitate,<index indexName="Sachen">
+<term>difformitas uniformis</term>
+</index> nam ubique ita moderanda est extractio illa simultanea<index indexName="Sachen">
+<term>extractio simultanea</term>
+</index> ut spatia aeris inclusi<index indexName="Sachen">
+<term>aer inclusus</term>
+</index> proportionaliter augeantur, seu ut uno in duplum spatium<index indexName="Sachen">
+<term>spatium aeris</term>
+</index> dilatato, etiam alter fiat duplo rarior[;] et proinde ruptura<index indexName="Sachen">
+<term>ruptura</term>
+</index> continget caeteris paribus in loco maxime sinuoso,<index indexName="Sachen">
+<term>locus maxime sinuosus</term>
+</index> ubi maxima est distractio,<index indexName="Sachen">
+<term>distractio maxima</term>
+</index> ibi enim</lem>
+<note type="lemma-abbrev">extrahentur</note>
+<rdg wit="#L" n="1"> magis tamen illi quorum tubi sunt angustiores </rdg>
+<rdg wit="#L" n="2"> uniformi quaedam difformitate, <note type="editorial">|</note>
+</rdg>
+<rdg wit="#L" n="1"> extractione angustiam compensantem </rdg>
+<rdg wit="#L" n="2"> nam ubique <seg type="apparat-ellipsis"/>
+ simultanea ut <app>
+<rdg wit="#L" n="a">si unus aer unius </rdg>
+<rdg wit="#L" n="b" cause="addition">
+<add>spatia aeris <seg type="apparat-ellipsis"/>
+ duplo rarior</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> et proinde ruptura continget </rdg>
+<rdg wit="#L" n="a">in tubo vel breviore vel angustiore, aut </rdg>
+<rdg wit="#L" n="b">in contactu illo, ubi </rdg>
+<rdg wit="#L" n="c">caeteris paribus <seg type="apparat-ellipsis"/>
+ ibi enim <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> primum sufficiens<index indexName="Sachen">
+<term>aditus sufficiens</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">fluido externo<index indexName="Sachen">
+<term>fluidum externum</term>
+</index> aditus datur.</lem>
+<note type="lemma-abbrev">fluido</note>
+<rdg wit="#L" n="1"> via datur </rdg>
+<rdg wit="#L" n="2"> externo aditus datur. <hi rendition="#i">L</hi>
+</rdg>
+</app> Licet autem plures tubi conjuncti<index indexName="Sachen">
+<term>tubus conjunctus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">intelligantur, ut in fig. 4,</lem>
+<note type="lemma-abbrev">intelligantur,</note>
+<rdg wit="#L" n="1"> ut in </rdg>
+<rdg wit="#L" n="2"> ut in fig. <app>
+<rdg wit="#L" n="a">7, </rdg>
+<rdg wit="#L" n="b">4, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> iique capacitate<index indexName="Sachen">
+<term>capacitas tubi</term>
+</index> inaequales, tamen in singulis verum</p>
+<anchor xml:id="KZeitz95"/>
+<p rendition="#noindent" xml:id="Ch14.S7.p23">
+<app type="Bfootnote" from="#KZeitz95" to="#KZeitz96">
+<lem type="main"/>
+<note type="lemma-abbrev">erit,</note>
+<rdg wit="#L" n="1" cause="addition">
+<note type="editorial">|</note>
+<add>embolorum</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> extractiones, seu totius filamenti <app>
+<rdg wit="#L" n="a">ex iis compositi </rdg>
+<rdg wit="#L" n="b">ex his tubis vel partibus sinuosis compositi </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> per <app>
+<rdg wit="#L" n="a">ostens </rdg>
+<rdg wit="#L" n="b">ostensa ad fig. <app>
+<rdg wit="#L" n="aa">⟨5⟩ </rdg>
+<rdg wit="#L" n="bb">2 <app>
+<rdg wit="#L" n="aaa">extensiones </rdg>
+<rdg wit="#L" n="bbb">(<?tex-source \phantom{)}?>ac proinde et in toto<app>
+<rdg wit="#L" n="aaaa">ex iis </rdg>
+<rdg wit="#L" n="bbbb">filamento ex iis composito<?tex-source \phantom{(}?>),<app>
+<rdg wit="#L" n="aaaaa">extensiones, seu </rdg>
+<rdg wit="#L" n="bbbbb">quod asserimus, <seg type="apparat-ellipsis"/>
+ vel distractiones <hi rendition="#i">(aaaaa-a)</hi> partium vicinarum <hi rendition="#i">(bbbbb-b)</hi> vicinitatum, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>erit, per ostensa ad<index indexName="Sachen">
+<term>figura</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">fig. 2</lem>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 2</hi>] auf S. <ref corresp="#LH_35_09_16_002v_Fig.2"/>
+.</note>
+</app> (<?tex-source \phantom{)}?>ac proinde et in toto filamento<index indexName="Sachen">
+<term>filamentum</term>
+</index> ex iis composito<?tex-source \phantom{(}?>),<app type="Cfootnote">
+<lem type="main">quod asseruimus,</lem>
+<note type="lemma-abbrev">quod asseruimus</note>
+<note type="editorial">Vgl. S. <ref corresp="#LH_35_09_16_002v_asseruimus-1"/>
+.</note>
+</app> nempe extractiones embolorum<index indexName="Sachen">
+<term>extractio emboli</term>
+</index> seu prominentiarum<index indexName="Sachen">
+<term>prominentia</term>
+</index> ex tubis<index indexName="Sachen">
+<term>tubus</term>
+</index> vel sinubus,<index indexName="Sachen">
+<term>sinus</term>
+</index> vel distractiones<index indexName="Sachen">
+<term>distractio</term>
+</index> vicinitatum,<index indexName="Sachen">
+<term>vicinitas</term>
+</index> adeoque totius filamenti extensiones,<index indexName="Sachen">
+<term>extensio filamenti</term>
+</index>
+<anchor xml:id="KZeitz96"/>
+ fore <app type="Bfootnote">
+<lem type="main">viribus extendentibus<index indexName="Sachen">
+<term>vis tendens</term>
+</index> proportionales,<index indexName="Sachen">
+<term>extensio proportionalis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">viribus</note>
+<rdg wit="#L" n="1"> proportionales </rdg>
+<rdg wit="#L" n="2"> extendentibus proportionales, <hi rendition="#i">L</hi>
+</rdg>
+</app> quia si proportionalibus proportionalia addantur, tota proportionalia sunt.</p>
+<p xml:id="Ch14.S7.p24">Quod ut appareat distinctus, sint in<index indexName="Sachen">
+<term>figura</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">fig. 7</lem>
+<note type="editorial">Das Diagramm [<hi rendition="#i">Fig. 7d</hi>] auf S. <ref corresp="#LH_35_09_16_003r_Fig.7"/>
+.</note>
+</app> tria corpuscula<index indexName="Sachen">
+<term>corpusculum distractum</term>
+</index> hoc ordine<index indexName="Sachen">
+<term>ordo</term>
+</index> sibi apposita: <hi rendition="#i">ab</hi>
+<app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[<hi rendition="#i">m</hi>],
+</add>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">m</hi>
+</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app>
+<hi rendition="#i">cd</hi>
+<app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[<hi rendition="#i">n</hi>],
+</add>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">n</hi>
+</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app>
+<hi rendition="#i">efg</hi> et prope sibi admota in situ primo, at in situ<index indexName="Sachen">
+<term>situs</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">secundo per appensum pondus <hi rendition="#i">K</hi>
+<index indexName="Sachen">
+<term>pondus appensum</term>
+</index> distracta,<index indexName="Sachen">
+<term>corpusculum distractum</term>
+</index> ita quidem,</lem>
+<note type="lemma-abbrev">secundo</note>
+<rdg wit="#L" n="1"> ita </rdg>
+<rdg wit="#L" n="2"> per appensum pondus <hi rendition="#i">K</hi>
+<app>
+<rdg wit="#L" n="a">ita </rdg>
+<rdg wit="#L" n="b">distracta, ita quidem, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> ut aer comprehensus<index indexName="Sachen">
+<term>aer comprehensus</term>
+</index> antea in spatio <hi rendition="#i">
+<hi rendition="#smaller">1</hi>b<hi rendition="#smaller">1</hi>c<hi rendition="#smaller">1</hi>m</hi> nunc occupet spatium duplum <hi rendition="#i">
+<hi rendition="#smaller">2</hi>b<hi rendition="#smaller">2</hi>c<hi rendition="#smaller">2</hi>m</hi>, itaque similiter spatium<index indexName="Sachen">
+<term>spatium aeris</term>
+</index>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>h<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi> debet esse duplum spatii <hi rendition="#i">
+<hi rendition="#smaller">1</hi>d<hi rendition="#smaller">1</hi>e<hi rendition="#smaller">1</hi>h<hi rendition="#smaller">1</hi>g<hi rendition="#smaller">1</hi>n</hi>,<app type="Bfootnote">
+<lem type="main">seu rectangulum<index indexName="Sachen">
+<term>rectangulum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">seu</note>
+<rdg wit="#L" n="1"> parallelogrammum<index indexName="Sachen">
+<term>parallelogrammum</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> rectangulum <hi rendition="#i">L</hi>
+</rdg>
+</app> quod <app type="Bfootnote">
+<lem type="main">accessit[,] nempe <hi rendition="#i">
+<hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi>
+</lem>
+<note type="lemma-abbrev">accessit</note>
+<rdg wit="#L" n="1"> spatio ut <hi rendition="#i">
+<hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e</hi>
+</rdg>
+<rdg wit="#L" n="2"> nempe <hi rendition="#i">
+<hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>[,] ipsi <hi rendition="#i">
+<hi rendition="#smaller">1</hi>d<hi rendition="#smaller">1</hi>e<hi rendition="#smaller">1</hi>h<hi rendition="#smaller">1</hi>g<hi rendition="#smaller">1</hi>n</hi> aequale. Hinc si in tertio situ<index indexName="Sachen">
+<term>situs</term>
+</index> pondus appendatur <hi rendition="#i">L</hi>, duplum ponderis <hi rendition="#i">K</hi>,<index indexName="Sachen">
+<term>pondus appensum</term>
+</index> adhuc semel tantundem spatii<index indexName="Sachen">
+<term>spatium aeris</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">accedet, aerisque dilatatio<index indexName="Sachen">
+<term>dilatatio aeris</term>
+</index> duplicabitur,</lem>
+<note type="lemma-abbrev">accedet,</note>
+<rdg wit="#L" n="1"> nempe quantum spatium aeris </rdg>
+<rdg wit="#L" n="2"> aerisque dilatatio duplicabitur, <hi rendition="#i">L</hi>
+</rdg>
+</app> eritque spatium <hi rendition="#i">
+<hi rendition="#smaller">3</hi>b<hi rendition="#smaller">3</hi>c<hi rendition="#smaller">3</hi>m</hi> triplum ipsius <hi rendition="#i">
+<hi rendition="#smaller">1</hi>b<hi rendition="#smaller">1</hi>c<hi rendition="#smaller">1</hi>m</hi>, et <hi rendition="#i">
+<hi rendition="#smaller">3</hi>d<hi rendition="#smaller">3</hi>e<hi rendition="#smaller">3</hi>h<hi rendition="#smaller">3</hi>g<hi rendition="#smaller">3</hi>n</hi> triplum ipsius <hi rendition="#i">
+<hi rendition="#smaller">1</hi>d<hi rendition="#smaller">1</hi>e<hi rendition="#smaller">1</hi>h<hi rendition="#smaller">1</hi>g<hi rendition="#smaller">1</hi>n</hi>, et ut in secundo situ <app type="Bfootnote">
+<lem type="main">ad spatium<index indexName="Sachen">
+<term>spatium aeris</term>
+</index>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>h<hi rendition="#smaller">2</hi>g</hi> accessit aequale ipsi</lem>
+<note type="lemma-abbrev">ad</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>f<hi rendition="#smaller">2</hi>h<hi rendition="#smaller">2</hi>g</hi>
+</rdg>
+<rdg wit="#L" n="2"> spatium <hi rendition="#i">
+<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>h<hi rendition="#smaller">2</hi>g</hi>
+<app>
+<rdg wit="#L" n="a">aequale ipsi </rdg>
+<rdg wit="#L" n="b">accessit aequale ipsi <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> rectangulum<index indexName="Sachen">
+<term>rectangulum</term>
+</index>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi>, ita in situ<index indexName="Sachen">
+<term>situs</term>
+</index> tertio rursus accedit tale rectangulum, nam rectangulum<index indexName="Sachen">
+<term>rectangulum</term>
+</index>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>d<hi rendition="#smaller">3</hi>e<hi rendition="#smaller">3</hi>g<hi rendition="#smaller">3</hi>n</hi> est ipsius <hi rendition="#i">
+<hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e<hi rendition="#smaller">2</hi>g<hi rendition="#smaller">2</hi>n</hi> duplum. Unde <app type="Bfootnote">
+<lem type="main">patet sinuositatis<index indexName="Sachen">
+<term>sinuositas</term>
+</index> ipsius spatii<index indexName="Sachen">
+<term>spatium aeris</term>
+</index>
+<hi rendition="#i">ehg</hi> non haberi rationem, sed tantum rectangulorum<index indexName="Sachen">
+<term>rectangulum</term>
+</index> ei aequalium,</lem>
+<note type="lemma-abbrev">patet</note>
+<rdg wit="#L" n="1"> non sinuositatem </rdg>
+<rdg wit="#L" n="2"> sinuositatis ipsius spatii <hi rendition="#i">ehg</hi> non <app>
+<rdg wit="#L" n="a">habere </rdg>
+<rdg wit="#L" n="b">haberi rationem, sed tantum <app>
+<rdg wit="#L" n="aa">rectanguli </rdg>
+<rdg wit="#L" n="bb">rectangulorum ei <app>
+<rdg wit="#L" n="aaa">aequalis, </rdg>
+<rdg wit="#L" n="bbb">aequalium, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app> sive horum <app type="Bfootnote">
+<lem type="main">altitudinum, nempe</lem>
+<note type="lemma-abbrev">altitudinum,</note>
+<rdg wit="#L" n="1"> nam </rdg>
+<rdg wit="#L" n="2"> nempe <hi rendition="#i">L</hi>
+</rdg>
+</app> bases <hi rendition="#i">dn</hi>,<hi rendition="#i">eg</hi> semper manent, altitudines variantur[:] <app type="Bfootnote">
+<lem type="main">nam posterior</lem>
+<note type="lemma-abbrev">nam</note>
+<rdg wit="#L" n="1"> accessio secunda </rdg>
+<rdg wit="#L" n="2"> posterior <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>d<hi rendition="#smaller">3</hi>e</hi> est <app type="Bfootnote">
+<lem type="main">dupla ipsius <hi rendition="#i">
+<hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e</hi>,
+</lem>
+<note type="lemma-abbrev">dupla</note>
+<rdg wit="#L" n="1"> accessionis prioris </rdg>
+<rdg wit="#L" n="2"> ipsius <hi rendition="#i">
+<hi rendition="#smaller">2</hi>d<hi rendition="#smaller">2</hi>e</hi>,<hi rendition="#i">L</hi>
+</rdg>
+</app> et <hi rendition="#i">
+<hi rendition="#smaller">3</hi>b<hi rendition="#smaller">3</hi>c</hi> tripla ipsius <hi rendition="#i">
+<hi rendition="#smaller">1</hi>b<hi rendition="#smaller">1</hi>c</hi>[;] et omnes computando <app type="Bfootnote">
+<lem type="main">altitudines, ut est</lem>
+<note type="lemma-abbrev">altitudines,</note>
+<rdg wit="#L" n="1"> erit </rdg>
+<rdg wit="#L" n="2"> ut est <hi rendition="#i">L</hi>
+</rdg>
+</app> pondus <hi rendition="#i">K</hi> ad pondus <hi rendition="#i">L</hi>, ita est extensio facta a pondere <hi rendition="#i">K</hi>, seu excessus<index indexName="Sachen">
+<term>excessus</term>
+</index> ipsius <hi rendition="#i">
+<hi rendition="#smaller">2</hi>a<hi rendition="#smaller">2</hi>f</hi> super <hi rendition="#i">
+<hi rendition="#smaller">1</hi>a<hi rendition="#smaller">1</hi>f</hi>, ad extensionem<index indexName="Sachen">
+<term>extensio proportionalis</term>
+</index> factam a pondere <hi rendition="#i">L</hi>,<index indexName="Sachen">
+<term>pondus appensum</term>
+</index> seu ad excessum<index indexName="Sachen">
+<term>excessus</term>
+</index> ipsius <hi rendition="#i">
+<hi rendition="#smaller">3</hi>a<hi rendition="#smaller">3</hi>f</hi> super <hi rendition="#i">
+<hi rendition="#smaller">1</hi>a<hi rendition="#smaller">1</hi>f</hi>. Quod demonstrandum erat. Manifestum est enim eandem ratiocinatio- nem<index indexName="Sachen">
+<term>ratiocinatio</term>
+</index> manere utcunque multiplicatae sint partes componentes,<index indexName="Sachen">
+<term>pars componens</term>
+</index> aut continuetur extensio,<index indexName="Sachen">
+<term>extensio filamenti</term>
+</index>
+</p>
+<p rendition="#noindent" xml:id="Ch14.S7.p25">donec <app type="Bfootnote">
+<lem type="main">scilicet alicubi tantum fiat intervallum<index indexName="Sachen">
+<term>intervallum</term>
+</index> ut</lem>
+<note type="lemma-abbrev">scilicet</note>
+<rdg wit="#L" n="1"> tantum fiat intervallum ut alicubi </rdg>
+<rdg wit="#L" n="2"> alicubi tantum fiat intervallum ut <hi rendition="#i">L</hi>
+</rdg>
+</app> fluido externo<index indexName="Sachen">
+<term>fluidum externum</term>
+</index> detur aditus,<index indexName="Sachen">
+<term>aditus sufficiens</term>
+</index> ubi nimirum ruptura<index indexName="Sachen">
+<term>ruptura</term>
+</index> continget. Et quod de extensionibus,<index indexName="Sachen">
+<term>extensio proportionalis</term>
+</index> idem eadem ratione de compressionibus<index indexName="Sachen">
+<term>compressio</term>
+</index> dicendum esse.<anchor xml:id="LH_35_09_16_002v_Festigkeitsmodell_redg-2"/>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p26_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d7a.svg" width="173.4pt" xml:id="Ch14.S7.p26.g1"/>
+<head>[<hi rendition="#i">Fig. 7a, gestr.</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p26_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d7b.svg" width="112.7pt" xml:id="Ch14.S7.p27.g1"/>
+<head>[<hi rendition="#i">Fig. 7b, gestr.</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p26_3">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d7c.svg" width="143.1pt" xml:id="Ch14.S7.p28.g1"/>
+<head>[<hi rendition="#i">Fig. 7c, gestr.</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch14.S7.p30">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_002-003_d7d.svg" width="398.9304pt" xml:id="Ch14.S7.p30.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 7d</hi>]<anchor xml:id="LH_35_09_16_003r_Fig.7"/>
+</head>
+</figure>
+</div>
+</div>
+</body>
+</text>
 </TEI>

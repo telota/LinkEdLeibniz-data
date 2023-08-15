@@ -1,23 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-024-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-024-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De distractione 1</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De distractione 1</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="24">De distractione 1</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date><date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=237</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="189" to="190"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-024-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 5 Bl. 210-211</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
+            </author>
+            <title type="chapter" level="a" n="24">De distractione 1</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date>
+            <date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=237</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="189" to="190"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-024-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 5 Bl. 210-211</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
 1 Bog. 2<hi rendition="#sup">o</hi>.
 1 S. auf Bl. 211 v<hi rendition="#sup">o</hi>.
 Bl. 211 r<hi rendition="#sup">o</hi> leer.
-Bl. 210 überliefert N. 23.</p><p>Cc 2, Nr. 968 C</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+Bl. 210 überliefert N. 23.</p>
+                  <p>Cc 2, Nr. 968 C</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -643,63 +743,975 @@ Bl. 210 überliefert N. 23.</p><p>Cc 2, Nr. 968 C</p></summary></msContents><ph
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/><catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-07" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-07" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-024-000_facs-haupttextzeuge">
-    		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=645"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=646"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=645"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=646"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=647"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=648"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=648"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=649"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=650"/>
-  </facsimile><text xml:id="L_08-02-024-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch24" n="24"><pb type="VIII_2" n="189"/><head>24.
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=650"/>
+  </facsimile>
+  <text xml:id="L_08-02-024-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch24" n="24">
+        <pb type="VIII_2" n="189"/>
+        <head>24.
 DE DISTRACTIONE 1</head>
-<head>[September 1672 – März 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
+        <head>[September 1672 – März 1673]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
 1 Bog. 2<hi rendition="#sup">o</hi>.
 1 S. auf Bl. 211 v<hi rendition="#sup">o</hi>.
 Bl. 211 r<hi rendition="#sup">o</hi> leer.
-Bl. 210 überliefert N. 23.</p><p>Cc 2, Nr. 968 C</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch24.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>:
+Bl. 210 überliefert N. 23.</p>
+                      <p>Cc 2, Nr. 968 C</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch24.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>:
 Das vorliegende Stück N. 24 ist vorerst mit der Frage nach der Zugfestigkeit unelastischer Körper befasst.
 Hiermit knüpft N. 24 an die Thematik an,
-die Leibniz, im Anschluss an Galileis<index indexName="Namensregister"><term><hi rendition="#g #smaller">Galilei</hi> <hi rendition="#smaller">(Galilaeus, Galileus), Galileo 1564-1642</hi></term></index>
+die Leibniz, im Anschluss an Galileis<index indexName="Namensregister">
+              <term>
+                <hi rendition="#g #smaller">Galilei</hi>
+                <hi rendition="#smaller">(Galilaeus, Galileus), Galileo 1564-1642</hi>
+              </term>
+            </index>
 Ausführungen im zweiten Dialog der <hi rendition="#i">Discorsi e dimostrazioni matematiche</hi>,
 in den Stücken N. 19-23 behandelt,
 nämlich die Bruchfestigkeit von Balken
 (siehe für Einzelheiten die Datierungsgründe sowie den Forschungsapparat der letztgenannten Stücke).
 Ferner ist N. 24 auf demselben Träger wie N. 23 überliefert.
-Aus diesen Gründen wird die Datierung der Stücke N. 19-23 auch für N. 24 übernommen.</hi></p></div><div type="text"><figure rendition="#inline-margin-right" xml:id="Ch24.fig1_1">
-        <graphic url="./images/lh03705_211v-d1.svg" width="147.4308pt" xml:id="Ch24.g1"/>
-        
-        <head xml:id="Ch24.fig1_2">[<hi rendition="#i">Fig. 1</hi>]</head>
-      </figure><p xml:id="Ch24.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[211 v<hi rendition="#sup">o</hi>]</fw> <hi rendition="#g">De distractione.</hi>
-Sunto duae vis[,] altera applicata in <formula xml:id="Ch24.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> conans<index indexName="Sachverzeichnis"><term>vis conans</term></index> versus <formula xml:id="Ch24.p5.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>b</m:mi></m:math></formula>, altera applicata in <formula xml:id="Ch24.p5.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conans versus <formula xml:id="Ch24.p5.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>d</m:mi></m:math></formula>. Et vis <formula xml:id="Ch24.p5.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> alligata est tabulae<index indexName="Sachverzeichnis"><term>tabula</term></index> <formula xml:id="Ch24.p5.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula>, vis <formula xml:id="Ch24.p5.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> tabulae <formula xml:id="Ch24.p5.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula>.
-Tabulae autem <formula xml:id="Ch24.p5.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> et <formula xml:id="Ch24.p5.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> non aliter junctae sunt, quam <app type="Bfootnote"><lem type="main">filo,<index indexName="Sachverzeichnis"><term>filum</term></index> ita</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    16  -->filo,</note><rdg wit="#L" n="1"> quo </rdg><rdg wit="#L" n="2"> ita <hi rendition="#i">L</hi></rdg></app> ut inter distrahendum attrahatur filum, et attracto filo<index indexName="Sachverzeichnis"><term>filum</term></index> elevetur pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> <formula xml:id="Ch24.p5.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.<!--  \hack{\newline\hspace*{7.5mm}} 
-     \hackfor{\par}--></p><p xml:id="Ch24.p6">Ponamus primum vires <formula xml:id="Ch24.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">et</add></lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  18  --></note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> <formula xml:id="Ch24.p6.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> esse aequales.
-Tabula<index indexName="Sachverzeichnis"><term>tabula</term></index> <formula xml:id="Ch24.p6.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> habet conatum<index indexName="Sachverzeichnis"><term>conatus</term></index> <formula xml:id="Ch24.p6.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>.
-Sed hunc perducere non potest ad motum, nisi moveatur quoque in <formula xml:id="Ch24.p6.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> tabula <formula xml:id="Ch24.p6.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> vel elevetur pondus <formula xml:id="Ch24.p6.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.
-Quodsi pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> quoque <formula xml:id="Ch24.p6.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> conatui <formula xml:id="Ch24.p6.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> sit aequale, et renitentia quoque seu contrarius conatus <formula xml:id="Ch24.p6.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> aequalis sit cuilibet ipsorum: quid eventurum putamus?<!--  \hack{\end{window}} --></p><p xml:id="Ch24.p7">Manifestum est <formula xml:id="Ch24.p7.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> habere conatum <formula xml:id="Ch24.p7.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> et <app type="Bfootnote"><lem type="main"><formula xml:id="Ch24.p7.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conatum <formula xml:id="Ch24.p7.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mpadded other="+5pt"><m:mi>d</m:mi></m:mpadded></m:mrow><m:mspace/><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:math></formula> et <formula xml:id="Ch24.p7.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula></lem><note type="lemma-abbrev"><formula xml:id="Ch24.p7.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conatum <formula xml:id="Ch24.p7.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula></note><rdg wit="#L" cause="addition"><note type="editorial">|</note> <add><formula xml:id="Ch24.p7.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula> </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> et <formula xml:id="Ch24.p7.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> <hi rendition="#i">L</hi></rdg></app> conatum <formula xml:id="Ch24.p7.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mpadded other="+5pt"><m:mi>d</m:mi></m:mpadded></m:mrow><m:mspace/><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula> conditionaliter, si <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">pondus</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> <formula xml:id="Ch24.p7.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> sit fortius conatu <app type="Bfootnote"><lem type="main"><formula xml:id="Ch24.p7.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mpadded other="+5pt"><m:mi>b</m:mi></m:mpadded></m:mrow><m:mspace/><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:math></formula> et <formula xml:id="Ch24.p7.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conatum <formula xml:id="Ch24.p7.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula></lem><note type="lemma-abbrev"><formula xml:id="Ch24.p7.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mpadded other="+5pt"><m:mi>b</m:mi></m:mpadded></m:mrow><m:mspace/><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi/><m:mo>=</m:mo><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> et <formula xml:id="Ch24.p7.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> </rdg><rdg wit="#L" n="2"> conatum elevationis = conatui <formula xml:id="Ch24.p7.m17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="3"> et <formula xml:id="Ch24.p7.m18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> conatum <formula xml:id="Ch24.p7.m19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app> conditionaliter si pondus <formula xml:id="Ch24.p7.m20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> sit fortius conatu <formula xml:id="Ch24.p7.m21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula>.
-Et pondus <formula xml:id="Ch24.p7.m22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> conatum elevationis<index indexName="Sachverzeichnis"><term>conatus elevationis</term></index> ut <formula xml:id="Ch24.p7.m23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>, si <formula xml:id="Ch24.p7.m24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> sit fortior <formula xml:id="Ch24.p7.m25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.
-Et idem pondus <formula xml:id="Ch24.p7.m26"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> conatum elevationis ut <formula xml:id="Ch24.p7.m27"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula>, si <formula xml:id="Ch24.p7.m28"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> sit <anchor xml:id="distractione1"/>fortior <formula xml:id="Ch24.p7.m29"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.
-<app type="Bfootnote" from="#distractione1" to="#distractione2"><lem type="main"><anchor xml:id="distractione2"/>Ergo</lem><note type="lemma-abbrev">fortior <formula xml:id="Ch24.p7.m30"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.</note><rdg wit="#L" n="1"> Porro etiam <formula xml:id="Ch24.p7.m31"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> habet conatum <formula xml:id="Ch24.p7.m32"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> si aut <formula xml:id="Ch24.p7.m33"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> aut <formula xml:id="Ch24.p7.m34"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> in <formula xml:id="Ch24.p7.m35"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> </rdg><rdg wit="#L" n="2"> Ergo <hi rendition="#i">L</hi></rdg></app> cum nec <formula xml:id="Ch24.p7.m36"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> nec <formula xml:id="Ch24.p7.m37"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> sit fortior <formula xml:id="Ch24.p7.m38"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>, nec <formula xml:id="Ch24.p7.m39"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> vicissim fortior illis nullus erit conatus elevationis<index indexName="Sachverzeichnis"><term>conatus elevationis</term></index> in <formula xml:id="Ch24.p7.m40"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> nec <formula xml:id="Ch24.p7.m41"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> in <formula xml:id="Ch24.p7.m42"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> nec <formula xml:id="Ch24.p7.m43"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> in <formula xml:id="Ch24.p7.m44"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula>.</p><p xml:id="Ch24.p8">Hinc jam sequitur etiam conatum <formula xml:id="Ch24.p8.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> in <formula xml:id="Ch24.p8.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> et <formula xml:id="Ch24.p8.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> in <formula xml:id="Ch24.p8.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> destrui.
-Nam <app type="Bfootnote"><lem type="main">neuter ad exitum</lem><note type="lemma-abbrev">neuter</note><rdg wit="#L" n="1"> procedit, in </rdg><rdg wit="#L" n="2"> ad exitum <hi rendition="#i">L</hi></rdg></app> perduci potest, nisi aut oppositum accipiat conatum ipsius aut elevetur pondus <formula xml:id="Ch24.p8.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>.<index indexName="Sachverzeichnis"><term>pondus</term></index>
-Id est nisi aut pondus <formula xml:id="Ch24.p8.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> aut conatus <formula xml:id="Ch24.p8.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> vel <formula xml:id="Ch24.p8.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> sit fortior.
-Sed cum sint aequales nihil horum eligi potest, ergo nec conatus <formula xml:id="Ch24.p8.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> et <formula xml:id="Ch24.p8.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> exitum reperiunt, et proinde manet <anchor xml:id="distractione3"/>quies.</p><pb type="VIII_2" n="190"/><p xml:id="Ch24.p9"><app type="Bfootnote" from="#distractione3" to="#distractione4"><lem type="main">Hinc intelligi <anchor xml:id="distractione4"/></lem><note type="lemma-abbrev">quies.</note><rdg wit="#L" n="1" cause="addition"> Jam <note type="editorial">|</note> <add>conatus</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <formula xml:id="Ch24.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> et <formula xml:id="Ch24.p9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> inaequales sunto major <formula xml:id="Ch24.p9.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> minor <formula xml:id="Ch24.p9.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> seu <formula xml:id="Ch24.p9.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow><m:mo>+</m:mo><m:mi>F</m:mi></m:mrow></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="2"> Hinc <app><rdg wit="#L" n="a"> in genere </rdg><rdg wit="#L" n="b"> intelligi <hi rendition="#i">L</hi></rdg></app></rdg></app> <app type="Bfootnote"><lem type="main">potest distrahentibus</lem><rdg wit="#L" cause="deletion">potest <note type="editorial">|</note> <del>in</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> distrahentibus <hi rendition="#i">L</hi></rdg></app> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">aequalibus</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> non nisi dimidium virium applicatarum agere in vinculum connectens.
-Quod patet etiam, si Tibi <app type="Bfootnote"><lem type="main">imagineris, alterum</lem><note type="lemma-abbrev">imagineris,</note><rdg wit="#L" n="1"> quod </rdg><rdg wit="#L" n="2"> alterum <hi rendition="#i">L</hi></rdg></app> distrahendum non trahere sed reniti tantum, omnis enim renisus, retractio est.</p><p xml:id="Ch24.p10">Jam conatus <formula xml:id="Ch24.p10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> et <formula xml:id="Ch24.p10.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> inaequales sunto major <formula xml:id="Ch24.p10.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> minor <formula xml:id="Ch24.p10.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> seu <formula xml:id="Ch24.p10.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow><m:mo>+</m:mo><m:mi>F</m:mi></m:mrow></m:mrow></m:math></formula>.
-Pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> <formula xml:id="Ch24.p10.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula> potest intelligi aequale aut alterutri aut neutri.
+Aus diesen Gründen wird die Datierung der Stücke N. 19-23 auch für N. 24 übernommen.</hi>
+        </p>
+      </div>
+      <div type="text">
+        <figure rendition="#inline-margin-right" xml:id="Ch24.fig1_1">
+          <graphic url="./images/lh03705_211v-d1.svg" width="147.4308pt" xml:id="Ch24.g1"/>
+
+          <head xml:id="Ch24.fig1_2">[            <hi rendition="#i">Fig. 1</hi>]
+          </head>
+        </figure>
+        <p xml:id="Ch24.p5" rendition="#noindent">
+          <pb type="L"/>
+          <fw type="folNum">[211 v<hi rendition="#sup">o</hi>]
+          </fw>
+          <hi rendition="#g">De distractione.</hi>
+Sunto duae vis[,] altera applicata in <formula xml:id="Ch24.p5.m1">
+          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+            <m:mi>a</m:mi>
+          </m:math>
+        </formula> conans<index indexName="Sachverzeichnis">
+        <term>vis conans</term>
+      </index> versus <formula xml:id="Ch24.p5.m2">
+      <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mi>b</m:mi>
+      </m:math>
+    </formula>, altera applicata in <formula xml:id="Ch24.p5.m3">
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+      <m:mi>c</m:mi>
+    </m:math>
+  </formula> conans versus <formula xml:id="Ch24.p5.m4">
+  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+    <m:mi>d</m:mi>
+  </m:math>
+</formula>. Et vis <formula xml:id="Ch24.p5.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+  <m:mrow>
+    <m:mi>a</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>b</m:mi>
+  </m:mrow>
+</m:math>
+</formula> alligata est tabulae<index indexName="Sachverzeichnis">
+<term>tabula</term>
+</index>
+<formula xml:id="Ch24.p5.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula>, vis <formula xml:id="Ch24.p5.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> tabulae <formula xml:id="Ch24.p5.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula>.
+Tabulae autem <formula xml:id="Ch24.p5.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula> et <formula xml:id="Ch24.p5.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> non aliter junctae sunt, quam <app type="Bfootnote">
+<lem type="main">filo,<index indexName="Sachverzeichnis">
+<term>filum</term>
+</index> ita</lem>
+<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    16  -->filo,</note>
+<rdg wit="#L" n="1"> quo </rdg>
+<rdg wit="#L" n="2"> ita <hi rendition="#i">L</hi>
+</rdg>
+</app> ut inter distrahendum attrahatur filum, et attracto filo<index indexName="Sachverzeichnis">
+<term>filum</term>
+</index> elevetur pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>
+<formula xml:id="Ch24.p5.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula>.<!--  \hack{\newline\hspace*{7.5mm}} 
+     \hackfor{\par}--></p>
+<p xml:id="Ch24.p6">Ponamus primum vires <formula xml:id="Ch24.p6.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">et</add>
+</lem>
+<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  18  --></note>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+<formula xml:id="Ch24.p6.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> esse aequales.
+Tabula<index indexName="Sachverzeichnis">
+<term>tabula</term>
+</index>
+<formula xml:id="Ch24.p6.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula> habet conatum<index indexName="Sachverzeichnis">
+<term>conatus</term>
+</index>
+<formula xml:id="Ch24.p6.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+Sed hunc perducere non potest ad motum, nisi moveatur quoque in <formula xml:id="Ch24.p6.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> tabula <formula xml:id="Ch24.p6.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> vel elevetur pondus <formula xml:id="Ch24.p6.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula>.
+Quodsi pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> quoque <formula xml:id="Ch24.p6.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> conatui <formula xml:id="Ch24.p6.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> sit aequale, et renitentia quoque seu contrarius conatus <formula xml:id="Ch24.p6.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> aequalis sit cuilibet ipsorum: quid eventurum putamus?<!--  \hack{\end{window}} --></p>
+<p xml:id="Ch24.p7">Manifestum est <formula xml:id="Ch24.p7.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula> habere conatum <formula xml:id="Ch24.p7.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> et <app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch24.p7.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> conatum <formula xml:id="Ch24.p7.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+5pt">
+<m:mi>d</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mspace/>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mrow>
+<m:mi/>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> et <formula xml:id="Ch24.p7.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch24.p7.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> conatum <formula xml:id="Ch24.p7.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" cause="addition">
+<note type="editorial">|</note>
+<add>
+<formula xml:id="Ch24.p7.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mrow>
+<m:mi/>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> et <formula xml:id="Ch24.p7.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> conatum <formula xml:id="Ch24.p7.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+5pt">
+<m:mi>d</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mspace/>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mrow>
+<m:mi/>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> conditionaliter, si <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">pondus</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+<formula xml:id="Ch24.p7.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> sit fortius conatu <app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch24.p7.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+5pt">
+<m:mi>b</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mspace/>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mrow>
+<m:mi/>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> et <formula xml:id="Ch24.p7.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> conatum <formula xml:id="Ch24.p7.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch24.p7.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+5pt">
+<m:mi>b</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mspace/>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mrow>
+<m:mi/>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> et <formula xml:id="Ch24.p7.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2"> conatum elevationis = conatui <formula xml:id="Ch24.p7.m17">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="3"> et <formula xml:id="Ch24.p7.m18">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> conatum <formula xml:id="Ch24.p7.m19">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> conditionaliter si pondus <formula xml:id="Ch24.p7.m20">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> sit fortius conatu <formula xml:id="Ch24.p7.m21">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+Et pondus <formula xml:id="Ch24.p7.m22">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> conatum elevationis<index indexName="Sachverzeichnis">
+<term>conatus elevationis</term>
+</index> ut <formula xml:id="Ch24.p7.m23">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>, si <formula xml:id="Ch24.p7.m24">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> sit fortior <formula xml:id="Ch24.p7.m25">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula>.
+Et idem pondus <formula xml:id="Ch24.p7.m26">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> conatum elevationis ut <formula xml:id="Ch24.p7.m27">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula>, si <formula xml:id="Ch24.p7.m28">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> sit <anchor xml:id="distractione1"/>
+fortior <formula xml:id="Ch24.p7.m29">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula>.
+<app type="Bfootnote" from="#distractione1" to="#distractione2">
+<lem type="main">
+<anchor xml:id="distractione2"/>
+Ergo</lem>
+<note type="lemma-abbrev">fortior <formula xml:id="Ch24.p7.m30">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula>.
+</note>
+<rdg wit="#L" n="1"> Porro etiam <formula xml:id="Ch24.p7.m31">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula> habet conatum <formula xml:id="Ch24.p7.m32">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> si aut <formula xml:id="Ch24.p7.m33">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> aut <formula xml:id="Ch24.p7.m34">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> in <formula xml:id="Ch24.p7.m35">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2"> Ergo <hi rendition="#i">L</hi>
+</rdg>
+</app> cum nec <formula xml:id="Ch24.p7.m36">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> nec <formula xml:id="Ch24.p7.m37">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> sit fortior <formula xml:id="Ch24.p7.m38">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula>, nec <formula xml:id="Ch24.p7.m39">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> vicissim fortior illis nullus erit conatus elevationis<index indexName="Sachverzeichnis">
+<term>conatus elevationis</term>
+</index> in <formula xml:id="Ch24.p7.m40">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> nec <formula xml:id="Ch24.p7.m41">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> in <formula xml:id="Ch24.p7.m42">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> nec <formula xml:id="Ch24.p7.m43">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> in <formula xml:id="Ch24.p7.m44">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula>.
+</p>
+<p xml:id="Ch24.p8">Hinc jam sequitur etiam conatum <formula xml:id="Ch24.p8.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> in <formula xml:id="Ch24.p8.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula> et <formula xml:id="Ch24.p8.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> in <formula xml:id="Ch24.p8.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> destrui.
+Nam <app type="Bfootnote">
+<lem type="main">neuter ad exitum</lem>
+<note type="lemma-abbrev">neuter</note>
+<rdg wit="#L" n="1"> procedit, in </rdg>
+<rdg wit="#L" n="2"> ad exitum <hi rendition="#i">L</hi>
+</rdg>
+</app> perduci potest, nisi aut oppositum accipiat conatum ipsius aut elevetur pondus <formula xml:id="Ch24.p8.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula>.<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>
+Id est nisi aut pondus <formula xml:id="Ch24.p8.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> aut conatus <formula xml:id="Ch24.p8.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> vel <formula xml:id="Ch24.p8.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> sit fortior.
+Sed cum sint aequales nihil horum eligi potest, ergo nec conatus <formula xml:id="Ch24.p8.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> et <formula xml:id="Ch24.p8.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> exitum reperiunt, et proinde manet <anchor xml:id="distractione3"/>
+quies.</p>
+<pb type="VIII_2" n="190"/>
+<p xml:id="Ch24.p9">
+<app type="Bfootnote" from="#distractione3" to="#distractione4">
+<lem type="main">Hinc intelligi <anchor xml:id="distractione4"/>
+</lem>
+<note type="lemma-abbrev">quies.</note>
+<rdg wit="#L" n="1" cause="addition"> Jam <note type="editorial">|</note>
+<add>conatus</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<formula xml:id="Ch24.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> et <formula xml:id="Ch24.p9.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> inaequales sunto major <formula xml:id="Ch24.p9.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> minor <formula xml:id="Ch24.p9.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> seu <formula xml:id="Ch24.p9.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2"> Hinc <app>
+<rdg wit="#L" n="a"> in genere </rdg>
+<rdg wit="#L" n="b"> intelligi <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">potest distrahentibus</lem>
+<rdg wit="#L" cause="deletion">potest <note type="editorial">|</note>
+<del>in</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> distrahentibus <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">aequalibus</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> non nisi dimidium virium applicatarum agere in vinculum connectens.
+Quod patet etiam, si Tibi <app type="Bfootnote">
+<lem type="main">imagineris, alterum</lem>
+<note type="lemma-abbrev">imagineris,</note>
+<rdg wit="#L" n="1"> quod </rdg>
+<rdg wit="#L" n="2"> alterum <hi rendition="#i">L</hi>
+</rdg>
+</app> distrahendum non trahere sed reniti tantum, omnis enim renisus, retractio est.</p>
+<p xml:id="Ch24.p10">Jam conatus <formula xml:id="Ch24.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> et <formula xml:id="Ch24.p10.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> inaequales sunto major <formula xml:id="Ch24.p10.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> minor <formula xml:id="Ch24.p10.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> seu <formula xml:id="Ch24.p10.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+Pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>
+<formula xml:id="Ch24.p10.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula> potest intelligi aequale aut alterutri aut neutri.
 Si alterutri, aequale est aut majori, aut minori.
-Si <app type="Bfootnote"><lem type="main">majori, non sequetur</lem><note type="lemma-abbrev">majori,</note><rdg wit="#L" n="1"> necessario </rdg><rdg wit="#L" n="2"> non sequetur <hi rendition="#i">L</hi></rdg></app> distractio,<index indexName="Sachverzeichnis"><term>distractio</term></index> sed abreptio trahentis oppositi una cum distrahendo.
-Sed differentia virium<index indexName="Sachverzeichnis"><term>differentia virium</term></index> inter <app type="Bfootnote"><lem type="main">distrahens majus</lem><note type="lemma-abbrev">distrahens</note><rdg wit="#L" n="1"> ab </rdg><rdg wit="#L" n="2"> majus <hi rendition="#i">L</hi></rdg></app> et minus.
-Si minori aequale est, itidem fiet abreptio non distractio, si minore minus est fiet distractio.<index indexName="Sachverzeichnis"><term>distractio</term></index>
-Si majus non fiet.</p><p xml:id="Ch24.p11">Quaestio elegans, quando motus centralis, praevaleat libero seu absoluto.
-Esto molendinum<index indexName="Sachverzeichnis"><term>molendinum</term></index> navi<index indexName="Sachverzeichnis"><term>navis</term></index> impositum, <app type="Bfootnote"><lem type="main">quod circumactione</lem><note type="lemma-abbrev">quod</note><rdg wit="#L" n="1"> circumacta </rdg><rdg wit="#L" n="2"> circumactione <hi rendition="#i">L</hi></rdg></app> sua remos<index indexName="Sachverzeichnis"><term>remus</term></index> agat.
-Ventus<index indexName="Sachverzeichnis"><term>ventus</term></index> incidens in molendinum, quaeritur circumacturusne potius sit, an propulsurus, cum non sit locus fixus, circa quem fiat motus.
+Si <app type="Bfootnote">
+<lem type="main">majori, non sequetur</lem>
+<note type="lemma-abbrev">majori,</note>
+<rdg wit="#L" n="1"> necessario </rdg>
+<rdg wit="#L" n="2"> non sequetur <hi rendition="#i">L</hi>
+</rdg>
+</app> distractio,<index indexName="Sachverzeichnis">
+<term>distractio</term>
+</index> sed abreptio trahentis oppositi una cum distrahendo.
+Sed differentia virium<index indexName="Sachverzeichnis">
+<term>differentia virium</term>
+</index> inter <app type="Bfootnote">
+<lem type="main">distrahens majus</lem>
+<note type="lemma-abbrev">distrahens</note>
+<rdg wit="#L" n="1"> ab </rdg>
+<rdg wit="#L" n="2"> majus <hi rendition="#i">L</hi>
+</rdg>
+</app> et minus.
+Si minori aequale est, itidem fiet abreptio non distractio, si minore minus est fiet distractio.<index indexName="Sachverzeichnis">
+<term>distractio</term>
+</index>
+Si majus non fiet.</p>
+<p xml:id="Ch24.p11">Quaestio elegans, quando motus centralis, praevaleat libero seu absoluto.
+Esto molendinum<index indexName="Sachverzeichnis">
+<term>molendinum</term>
+</index> navi<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> impositum, <app type="Bfootnote">
+<lem type="main">quod circumactione</lem>
+<note type="lemma-abbrev">quod</note>
+<rdg wit="#L" n="1"> circumacta </rdg>
+<rdg wit="#L" n="2"> circumactione <hi rendition="#i">L</hi>
+</rdg>
+</app> sua remos<index indexName="Sachverzeichnis">
+<term>remus</term>
+</index> agat.
+Ventus<index indexName="Sachverzeichnis">
+<term>ventus</term>
+</index> incidens in molendinum, quaeritur circumacturusne potius sit, an propulsurus, cum non sit locus fixus, circa quem fiat motus.
 Et puto demonstrari posse, si valde onerata sit navis, facilius a vento circumactum iri quam propulsum.
-Nam si ventus propellat circumactione<index indexName="Sachverzeichnis"><term>circumactio</term></index> molendini motus potentiae est celer, ponderis tardus.
-At si propellat navem uterque motus est aeque celer, hinc fieri potest, ut quam navem<index indexName="Sachverzeichnis"><term>navis</term></index> ventus recta propellere non possit, seu quae ei renitatur, propulsurus sit circumagendo.
-Et ut minor sit impulsus rectus,<index indexName="Sachverzeichnis"><term>impulsus</term></index> potest molendinum<index indexName="Sachverzeichnis"><term>molendinum</term></index> ubi centro vicinius, esse interruptum, ita decedet vi rectae plurimum, curvae parum.
-Sed et opponi <app type="Bfootnote"><lem type="main">possunt aquae in plagam</lem><note type="lemma-abbrev">possunt</note><rdg wit="#L" n="1"> vento loco </rdg><rdg wit="#L" n="2"> aquae in plagam <hi rendition="#i">L</hi></rdg></app> quo ventus pellit coreacei quasi quidam sacci qui motu contra ventum<index indexName="Sachverzeichnis"><term>ventus</term></index> contrahuntur.
-En quasi ancoras in ipsa aqua fixas.</p></div></div></body>
-  </text>
+Nam si ventus propellat circumactione<index indexName="Sachverzeichnis">
+<term>circumactio</term>
+</index> molendini motus potentiae est celer, ponderis tardus.
+At si propellat navem uterque motus est aeque celer, hinc fieri potest, ut quam navem<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> ventus recta propellere non possit, seu quae ei renitatur, propulsurus sit circumagendo.
+Et ut minor sit impulsus rectus,<index indexName="Sachverzeichnis">
+<term>impulsus</term>
+</index> potest molendinum<index indexName="Sachverzeichnis">
+<term>molendinum</term>
+</index> ubi centro vicinius, esse interruptum, ita decedet vi rectae plurimum, curvae parum.
+Sed et opponi <app type="Bfootnote">
+<lem type="main">possunt aquae in plagam</lem>
+<note type="lemma-abbrev">possunt</note>
+<rdg wit="#L" n="1"> vento loco </rdg>
+<rdg wit="#L" n="2"> aquae in plagam <hi rendition="#i">L</hi>
+</rdg>
+</app> quo ventus pellit coreacei quasi quidam sacci qui motu contra ventum<index indexName="Sachverzeichnis">
+<term>ventus</term>
+</index> contrahuntur.
+En quasi ancoras in ipsa aqua fixas.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

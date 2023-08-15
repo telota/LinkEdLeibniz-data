@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-059-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-059-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -6,32 +7,57 @@
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke,
 					Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und
-							Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-						Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-							VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-							Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC
-						4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC
+						4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
@@ -48,7 +74,10 @@
 						<date calendar="#gregorian" notBefore="1671-06-14" resp="#K" cert="high">14.
 							Juni 1671</date>
 						<date calendar="#gregorian" notAfter="1671-06-14" resp="#K" cert="high"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=599</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+							<idno type="page">#page=599</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII:
@@ -61,18 +90,22 @@
 						</imprint>
 						<biblScope unit="page" from="554" to="561"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche
-							Schriften und Briefe</title></series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche
+							Schriften und Briefe</title>
+					</series>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-01-059-000_facs-haupttextzeuge"><msDesc>
+					<witness n="L" corresp="#L_08-01-059-000_facs-haupttextzeuge">
+						<msDesc>
 							<msIdentifier>
 								<repository>Gottfried Wilhelm Leibniz Bibliothek
 									Hannover</repository>
 								<idno type="Signatur">LH XXXVIII Bl. 202</idno>
 							</msIdentifier>
 							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-								<summary><p>Konzept: LH XXXVIII Bl. 202. 2/3 Bog. 2<hi rendition="#sup">o</hi>, oben und unten beschnitten.
+								<summary>
+									<p>Konzept: LH XXXVIII Bl. 202. 2/3 Bog. 2<hi rendition="#sup">o</hi>, oben und unten beschnitten.
 										3 S., zweispaltig. Bl. 202r<hi rendition="#sup">o</hi> und
 											202 v<hi rendition="#sup">o</hi> umfassen jeweils vier
 										Spalten. Textfolge: Spalte 1–4 von Bl. 202 r<hi rendition="#sup">o</hi>, Spalte 1–2 von Bl. 202 v<hi rendition="#sup">o</hi>. Spalte 3–4 von Bl. 202 v<hi rendition="#sup">o</hi> leer. Die Zeichnung <hi rendition="#i">[Fig. 1]</hi> befindet sich im oberen
@@ -80,8 +113,11 @@
 										Darunter eine Erklärung von Johann Daniel Crafft. Die in
 										Spalte 2 von Bl. 202 v<hi rendition="#sup">o</hi>
 										befindliche Zeichnung <hi rendition="#i">[Fig. 2]</hi> wurde
-										durch spätere Ergänzungen z. T. überschrieben.</p><p>KK 1,
-										Nr. 725<hi rendition="#sup">a</hi>, 725<hi rendition="#sup">b</hi></p></summary>
+										durch spätere Ergänzungen z. T. überschrieben.</p>
+									<p>KK 1,
+										Nr. 725<hi rendition="#sup">a</hi>, 725<hi rendition="#sup">b</hi>
+									</p>
+								</summary>
 							</msContents>
 							<physDesc>
 								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -89,7 +125,8 @@
 							<history>
 								<origin corresp="L_witness-origin-types.xml#origin-L"/>
 							</history>
-						</msDesc></witness>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -204,15 +241,19 @@
 				<head>59. PERPETUUM MOBILE</head>
 				<head>14. Juni 1671</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-							<witness><msDesc>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
 									<msIdentifier>
 										<repository>Gottfried Wilhelm Leibniz Bibliothek
 											Hannover</repository>
 										<idno type="Signatur">XXX</idno>
 									</msIdentifier>
 									<msContents>
-										<summary><p>Konzept: LH XXXVIII Bl. 202. 2/3 Bog. 2<hi rendition="#sup">o</hi>, oben und unten
+										<summary>
+											<p>Konzept: LH XXXVIII Bl. 202. 2/3 Bog. 2<hi rendition="#sup">o</hi>, oben und unten
 												beschnitten. 3 S., zweispaltig. Bl. 202r<hi rendition="#sup">o</hi> und 202 v<hi rendition="#sup">o</hi> umfassen jeweils vier
 												Spalten. Textfolge: Spalte 1–4 von Bl. 202 r<hi rendition="#sup">o</hi>, Spalte 1–2 von Bl. 202
 												v<hi rendition="#sup">o</hi>. Spalte 3–4 von Bl.
@@ -223,7 +264,10 @@
 												202 v<hi rendition="#sup">o</hi> befindliche
 												Zeichnung <hi rendition="#i">[Fig. 2]</hi> wurde
 												durch spätere Ergänzungen z. T.
-												überschrieben.</p><p>KK 1, Nr. 725<hi rendition="#sup">a</hi>, 725<hi rendition="#sup">b</hi></p></summary>
+												überschrieben.</p>
+											<p>KK 1, Nr. 725<hi rendition="#sup">a</hi>, 725<hi rendition="#sup">b</hi>
+											</p>
+										</summary>
 									</msContents>
 									<physDesc>
 										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -231,173 +275,232 @@
 									<history>
 										<origin/>
 									</history>
-								</msDesc></witness>
-						</listWit></p>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="contents">
-					<p xml:id="Ch59.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Die Datierung ergibt sich aus der Erklärung
+					<p xml:id="Ch59.p4">
+						<hi rendition="#smaller">
+							<hi rendition="#b">Datierungsgründe</hi>: Die Datierung ergibt sich aus der Erklärung
 							von Johann Daniel Crafft auf Bl. 202 r<hi rendition="#sup">o</hi>, die
-							als Datum der Unterzeichnung den 14. Juni 1671 ausweist.</hi></p>
+							als Datum der Unterzeichnung den 14. Juni 1671 ausweist.</hi>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch59.p5"><pb type="L"/><fw type="folNum">[202 r<hi rendition="#sup">o</hi>]</fw> Ich nachssbenanter bekenne dass mir heut dato H. Dr.
+					<p xml:id="Ch59.p5">
+						<pb type="L"/>
+						<fw type="folNum">[202 r<hi rendition="#sup">o</hi>]
+						</fw> Ich nachssbenanter bekenne dass mir heut dato H. Dr.
 							Leibnitz<index indexName="Namensregister">
-							<term><hi rendition="#g">Leibniz</hi> (Leibnitz), Gottfried Wilhelm
+						<term>
+							<hi rendition="#g">Leibniz</hi> (Leibnitz), Gottfried Wilhelm
 								(1646–1716)</term>
-						</index> gegenwertiges Vorhaben des Motus perpetui<index indexName="Sachverzeichnis">
-							<term>motus</term>
-							<index>
-								<term>perpetuus</term>
-							</index>
-						</index> gezeiget. Verspreche hergegen, dafern etwas daran ist, ihme auch
+					</index> gegenwertiges Vorhaben des Motus perpetui<index indexName="Sachverzeichnis">
+					<term>motus</term>
+					<index>
+						<term>perpetuus</term>
+					</index>
+				</index> gezeiget. Verspreche hergegen, dafern etwas daran ist, ihme auch
 						meine inuenta et experimenta bona fide zue communiciren. Vnd solle keiner
 						von bejiden etwass demen andern zue schaden, sondern alles communicato
 						consilio thun. Maÿntz den 14ten Junij 1671.</p>
-					<p xml:id="Ch59.p6">Joh. Daniel Crafft manu propria<index indexName="Namensregister">
-							<term><hi rendition="#g">Crafft,</hi> Johann Daniel 1624–1697</term>
-						</index></p>
-					<p xml:id="Ch59.p7">Esto vas aqua plenum <hi rendition="#i">abcd</hi>
-						<app type="Bfootnote">
-							<lem type="main">quantumcunque</lem>
-							<rdg wit="#L" cause="addition"><add>quantumcunque</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> in quo follis <hi rendition="#i">efgh</hi> cujus pars inferior <hi rendition="#i">he</hi> ex materia aqua graviore, ut plumbo<index indexName="Sachverzeichnis">
-							<term>plumbum</term>
-						</index>: Pars superior <hi rendition="#i">gf</hi> ex leviore ut ligno. Ita
+			<p xml:id="Ch59.p6">Joh. Daniel Crafft manu propria<index indexName="Namensregister">
+				<term>
+					<hi rendition="#g">Crafft,</hi> Johann Daniel 1624–1697</term>
+			</index>
+		</p>
+		<p xml:id="Ch59.p7">Esto vas aqua plenum <hi rendition="#i">abcd</hi>
+			<app type="Bfootnote">
+				<lem type="main">quantumcunque</lem>
+				<rdg wit="#L" cause="addition">
+					<add>quantumcunque</add>
+					<note type="editorial">
+						<hi rendition="#i">erg. L</hi>
+					</note>
+				</rdg>
+			</app> in quo follis <hi rendition="#i">efgh</hi> cujus pars inferior <hi rendition="#i">he</hi> ex materia aqua graviore, ut plumbo<index indexName="Sachverzeichnis">
+			<term>plumbum</term>
+		</index>: Pars superior <hi rendition="#i">gf</hi> ex leviore ut ligno. Ita
 						ut plus gravitet plumbum<index indexName="Sachverzeichnis">
-							<term>plumbum</term>
-						</index>, quam levitet lignum, ac proinde plumbum<index indexName="Sachverzeichnis">
-							<term>plumbum</term>
-						</index> contineat sub aqua lignum. Ponamus lignum esse dimidio levius aqua,
+		<term>plumbum</term>
+	</index>, quam levitet lignum, ac proinde plumbum<index indexName="Sachverzeichnis">
+	<term>plumbum</term>
+</index> contineat sub aqua lignum. Ponamus lignum esse dimidio levius aqua,
 							plumbum<index indexName="Sachverzeichnis">
-							<term>plumbum</term>
-						</index> decuplo gravius. Efficiamus eam rationem esse ligni ad
+<term>plumbum</term>
+</index> decuplo gravius. Efficiamus eam rationem esse ligni ad
 							plumbum<index indexName="Sachverzeichnis">
-							<term>plumbum</term>
-						</index>, ut si paulo plus ligni accederet, vinceret lignum, nunc vincatur.
+<term>plumbum</term>
+</index>, ut si paulo plus ligni accederet, vinceret lignum, nunc vincatur.
 						Sunto enim: plumbum<index indexName="Sachverzeichnis">
-							<term>plumbum</term>
-						</index> librarum decem, erit aqua paris spatii, librae unius; lignum
+<term>plumbum</term>
+</index> librarum decem, erit aqua paris spatii, librae unius; lignum
 						librarum octo, erit aqua paris spatii librarum 16. Erit ergo follis totum
 						pondus 18 librarum, aquae paris spatii 17 librarum, follis igitur totus
-						summersus <anchor xml:id="manebitstart"/><app type="Bfootnote" from="#manebitstart" to="#manebitend">
-							<lem type="main">manebit</lem>
-							<note type="lemma-abbrev">manebit.</note>
-							<rdg wit="#L" n="1"> Efficiamus nunc ut ascendat sponte sua </rdg>
-							<rdg wit="#L" n="2"> Efficiamus nunc, <seg type="apparat-ellipsis"/>
-								ascendat. <hi rendition="#i">L</hi></rdg>
-						</app>.</p>
-					<pb type="VIII_1" n="555"/>
-					<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch59.p8">
-						<table rend="boxed">
-							<row>
-								<cell style="; text-align:center">Follis pl.</cell>
-								<cell>10</cell>
-								<cell>\Pfund</cell>
-								<cell>lign. 8</cell>
-								<cell>\Pfund</cell>
-								<cell style="; text-align:center">f. 18</cell>
-								<cell style="; text-align:center">cavitas explicati</cell>
-							</row>
-							<row>
-								<cell style="; text-align:center">capit Aquae</cell>
-								<cell>1</cell>
-								<cell>—</cell>
-								<cell>16</cell>
-								<cell>—</cell>
-								<cell style="; text-align:center">f. 17</cell>
-								<cell style="; text-align:center">6 (2) + 23 (19)</cell>
-							</row>
-						</table>
-						<graphic url="./images/38_202r.svg" width="433.62pt" xml:id="Ch59.p8.g1"/>
-						<head><hi rendition="#i">[Fig. 1, tlw. Blindzeichnungen]</hi></head>
-					</figure>
-					<p xml:id="Ch59.p9">Efficiamus nunc, ut 18 \Pfund follis, tantum occupent
+						summersus <anchor xml:id="manebitstart"/>
+<app type="Bfootnote" from="#manebitstart" to="#manebitend">
+<lem type="main">manebit</lem>
+<note type="lemma-abbrev">manebit.</note>
+<rdg wit="#L" n="1"> Efficiamus nunc ut ascendat sponte sua </rdg>
+<rdg wit="#L" n="2"> Efficiamus nunc, <seg type="apparat-ellipsis"/>
+								ascendat. <hi rendition="#i">L</hi>
+</rdg>
+</app>.
+</p>
+<pb type="VIII_1" n="555"/>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch59.p8">
+<table rend="boxed">
+<row>
+<cell style="; text-align:center">Follis pl.</cell>
+<cell>10</cell>
+<cell>\Pfund</cell>
+<cell>lign. 8</cell>
+<cell>\Pfund</cell>
+<cell style="; text-align:center">f. 18</cell>
+<cell style="; text-align:center">cavitas explicati</cell>
+</row>
+<row>
+<cell style="; text-align:center">capit Aquae</cell>
+<cell>1</cell>
+<cell>—</cell>
+<cell>16</cell>
+<cell>—</cell>
+<cell style="; text-align:center">f. 17</cell>
+<cell style="; text-align:center">6 (2) + 23 (19)</cell>
+</row>
+</table>
+<graphic url="./images/38_202r.svg" width="433.62pt" xml:id="Ch59.p8.g1"/>
+<head>
+<hi rendition="#i">[Fig. 1, tlw. Blindzeichnungen]</hi>
+</head>
+</figure>
+<p xml:id="Ch59.p9">Efficiamus nunc, ut 18 \Pfund follis, tantum occupent
 						spatii, quantum 19 \Pfund et ultra, aquae, ac proinde follis in aqua
-							ascendat<anchor xml:id="manebitend"/>. Id fiet folle translato ex statu
+							ascendat<anchor xml:id="manebitend"/>
+. Id fiet folle translato ex statu
 						complicationis <hi rendition="#i">efgh</hi> in statum explicationis <hi rendition="#i">effggh</hi>. Explicabit autem ipse sese vi
 							intrinseca<index indexName="Sachverzeichnis">
-							<term>vis</term>
-							<index>
-								<term>intrinseca</term>
-							</index>
-						</index> hoc modo: Ponamus <hi rendition="#i">he</hi>
-						<app type="Bfootnote">
-							<lem type="main">plumbum<index indexName="Sachverzeichnis">
-									<term>plumbum</term>
-								</index></lem>
-							<rdg wit="#L" cause="addition"><add>plumbum<index indexName="Sachverzeichnis">
-										<term>plumbum</term>
-									</index>
-								</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> pessulo objecto ita esse firmatum, ut nec ascendere nec descendere
+<term>vis</term>
+<index>
+<term>intrinseca</term>
+</index>
+</index> hoc modo: Ponamus <hi rendition="#i">he</hi>
+<app type="Bfootnote">
+<lem type="main">plumbum<index indexName="Sachverzeichnis">
+<term>plumbum</term>
+</index>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>plumbum<index indexName="Sachverzeichnis">
+<term>plumbum</term>
+</index>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> pessulo objecto ita esse firmatum, ut nec ascendere nec descendere
 						possint in vase <hi rendition="#i">abcd</hi>; contra, lignum <hi rendition="#i">fg</hi> libere ascendere posse. Cumque sit 8 \Pfund, et
 						proinde occupet spatium aquae 16 \Pfund 8 \Pfund aquae quibus ab ea
 						superabitur conabuntur lignum elevare, seu levitatio ligni erit 8 \Pfund.
 						Ascendendo explicabit follem eumque ponet in statu <hi rendition="#i">heffgg</hi>. Sed quia explicando follem efficitur, ut tantum aquae loco
-						cedere debeat, quantum est spatium a folle <pb type="VIII_1" n="556"/><app type="Bfootnote">
-							<lem type="main">explicato</lem>
-							<rdg wit="#L" cause="addition"><add>explicato</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> intus vacuo soloque aere, id est quantum ad nostram computationem
+						cedere debeat, quantum est spatium a folle <pb type="VIII_1" n="556"/>
+<app type="Bfootnote">
+<lem type="main">explicato</lem>
+<rdg wit="#L" cause="addition">
+<add>explicato</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> intus vacuo soloque aere, id est quantum ad nostram computationem
 						nihilo, pleno, nunc occupatum, tantus erit renisus quantum cavitas explicati
 						follis aquae caperet: Ponamus capere aquae libras 6 vel tantum 2 ut lubet
 						satis magna enim hic latitudo eligendi permissa est. Ergo si ponis aquae
 						libras 6. Renisus erit ut 6. \Pfund si libras 2 erit ut 2 \Pfund. Utervis
 						superabitur a levitatione ligni, ut 8 \Pfund, ac proinde lignum poterit
 						explicare follem <app type="Bfootnote">
-							<lem type="main">attracto aere per canalem non angustum ex folle sursum
+<lem type="main">attracto aere per canalem non angustum ex folle sursum
 								ultra summum aquae <hi rendition="#i">ad</hi> in liberum aerem
 								exeuntem.</lem>
-							<rdg wit="#L" cause="addition">attracto aere per canalem <note type="editorial">|</note> <add>non angustum</add>
-								<note type="editorial"><hi rendition="#i">erg.</hi> |</note> <add>ex
-									folle <seg type="apparat-ellipsis"/> exeuntem.</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> Follis explicatus si capit <app type="Bfootnote">
-							<lem type="main">cavitatem</lem>
-							<rdg wit="#L" cause="addition"><add>cavitatem</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> 6 \Pfund (2) pondere 18 \Pfund occupabit aquae 23 (19) \Pfund, ac
+<rdg wit="#L" cause="addition">attracto aere per canalem <note type="editorial">|</note>
+<add>non angustum</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<add>ex
+									folle <seg type="apparat-ellipsis"/>
+ exeuntem.</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> Follis explicatus si capit <app type="Bfootnote">
+<lem type="main">cavitatem</lem>
+<rdg wit="#L" cause="addition">
+<add>cavitatem</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> 6 \Pfund (2) pondere 18 \Pfund occupabit aquae 23 (19) \Pfund, ac
 						proinde <app type="Bfootnote">
-							<lem type="main">totus, pessulo quod <hi rendition="#i">he</hi> tenebat,
+<lem type="main">totus, pessulo quod <hi rendition="#i">he</hi> tenebat,
 								ascendentis ligni potentia aperto, attolletur potentia 23 (19) – 18
 								\Pfund hoc est potentia 5 (1) librarum (librae)</lem>
-							<note type="lemma-abbrev">proinde</note>
-							<rdg wit="#L" n="1"> potentia 23 (19) – 18 \Pfund hoc est potentia 5 (1)
+<note type="lemma-abbrev">proinde</note>
+<rdg wit="#L" n="1"> potentia 23 (19) – 18 \Pfund hoc est potentia 5 (1)
 								librarum (librae) attolletur </rdg>
-							<rdg wit="#L" n="2"> totus, <seg type="apparat-ellipsis"/> (librae) <hi rendition="#i">L</hi></rdg>
-						</app> in lineis rectis <hi rendition="#i">eE</hi>, <hi rendition="#i">hH</hi>, <hi rendition="#i">ggGG</hi>, <hi rendition="#i">hhHH</hi>
-						etc. ex loco <hi rendition="#i">heffgg</hi> in locum<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">In Höhe der folgenden Zeile
+<rdg wit="#L" n="2"> totus, <seg type="apparat-ellipsis"/>
+ (librae) <hi rendition="#i">L</hi>
+</rdg>
+</app> in lineis rectis <hi rendition="#i">eE</hi>,<hi rendition="#i">hH</hi>,<hi rendition="#i">ggGG</hi>,<hi rendition="#i">hhHH</hi>
+						etc. ex loco <hi rendition="#i">heffgg</hi> in locum<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">In Höhe der folgenden Zeile
 								in der ersten Spalte:</hi> NB. Quod hic aqua, aliter aere fieri
 							potest.</note>
-						<hi rendition="#i">HEFFGG</hi>. Possunt autem lineae <hi rendition="#i">eE</hi> etc. esse quantaecunque, nam et vas <hi rendition="#i">abcd</hi> est quantumcumque. Quam autem magnitudinem eligi satis sit,
+<hi rendition="#i">HEFFGG</hi>. Possunt autem lineae <hi rendition="#i">eE</hi> etc. esse quantaecunque, nam et vas <hi rendition="#i">abcd</hi> est quantumcumque. Quam autem magnitudinem eligi satis sit,
 						mox patebit. Cum igitur follis <app type="Bfootnote">
-							<lem type="main">explicatus</lem>
-							<rdg wit="#L" cause="addition"><add>explicatus</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> sit in loco superiore nunc quaerendum est quomodo complicatio ejus,
+<lem type="main">explicatus</lem>
+<rdg wit="#L" cause="addition">
+<add>explicatus</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> sit in loco superiore nunc quaerendum est quomodo complicatio ejus,
 						ac descensus proinde rursus effici queat. Id ita fiet: <app type="Bfootnote">
-							<lem type="main">Plumbum<index indexName="Sachverzeichnis">
-									<term>plumbum</term>
-								</index></lem>
-							<rdg wit="#L" cause="addition"><add>Plumbum<index indexName="Sachverzeichnis">
-										<term>plumbum</term>
-									</index>
-								</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>
-						<hi rendition="#i">HE</hi> inciderit ascendendo in pessulum, ut nec sursum
+<lem type="main">Plumbum<index indexName="Sachverzeichnis">
+<term>plumbum</term>
+</index>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>Plumbum<index indexName="Sachverzeichnis">
+<term>plumbum</term>
+</index>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#i">HE</hi> inciderit ascendendo in pessulum, ut nec sursum
 						nec deorsum ire possit. Immineat pondus <hi rendition="#i">i</hi> ligno <hi rendition="#i">GGFF</hi> quod a pessulo quodam suo ascendentis ligni
 						potentia liberatum circumacta ex qua pendet trochlea<index indexName="Sachverzeichnis">
-							<term>trochlea</term>
-						</index> illabetur ligno <hi rendition="#i">GGFF</hi> pondereque suo lignum
+<term>trochlea</term>
+</index> illabetur ligno <hi rendition="#i">GGFF</hi> pondereque suo lignum
 						ex loco explicationis <hi rendition="#i">GGFF</hi>, deprimet in locum <app type="Bfootnote">
-							<lem type="main">complicationis</lem>
-							<rdg wit="#L" cause="addition"><add>complicationis</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>
-						<hi rendition="#i">GF</hi> aere per canalem eundem quo attractus est ex
+<lem type="main">complicationis</lem>
+<rdg wit="#L" cause="addition">
+<add>complicationis</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#i">GF</hi> aere per canalem eundem quo attractus est ex
 						folle rursus expresso. Ad hoc praestandum, videamus quanta ei potentia opus
 						sit. Ligni levitatio est 8 \Pfund per priora. Ea obtundetur a renisu aquae
 						aerem expellere, seque in ejus locum reponere conantis ut 6 (2) \Pfund. Erit
@@ -405,29 +508,36 @@
 						recomplicandum. Sed ne arctemus nos, et ut appareat libertas tanto major,
 						esto pondus <hi rendition="#i">i</hi> \Pfund<hi rendition="#sup">ras</hi> 9
 						recomplicabit sine controversia follem. Follis recomplicatus <app type="Bfootnote">
-							<lem type="main">rursus capiet</lem>
-							<note type="lemma-abbrev">recomplicatus</note>
-							<rdg wit="#L" n="1"> fiet </rdg>
-							<rdg wit="#L" n="2"> rursus capiet <hi rendition="#i">L</hi></rdg>
-						</app> tantum 17 \Pfund aquae, cum ipse ponderet 18, ac proinde aqua paris
+<lem type="main">rursus capiet</lem>
+<note type="lemma-abbrev">recomplicatus</note>
+<rdg wit="#L" n="1"> fiet </rdg>
+<rdg wit="#L" n="2"> rursus capiet <hi rendition="#i">L</hi>
+</rdg>
+</app> tantum 17 \Pfund aquae, cum ipse ponderet 18, ac proinde aqua paris
 						spatii gravior redescendet in locum priorem inferiorem.</p>
-					<p xml:id="Ch59.p10">Efficiendum autem ut redescensu suo, vel postea reascensu
+<p xml:id="Ch59.p10">Efficiendum autem ut redescensu suo, vel postea reascensu
 						vel utroque simul, recollocet pondus <hi rendition="#i">i</hi> in locum
 						priorem. Etsi enim potentia follis non sit nisi 1 \Pfund in descendendo, 5
 						(1) \Pfund in ascendendo: Pondus autem <hi rendition="#i">i</hi> sit 9
 						\Pfund ad summum <app type="Bfootnote">
-							<lem type="main">[quanquam sufficeret esse 3 (7) sed sinamus 9]</lem>
-							<note type="lemma-abbrev"><seg type="apparat-ellipsis"/></note>
-							<rdg wit="#L"><hi rendition="#i">Klammern von Leibniz</hi></rdg>
-						</app> facile tamen ex communis mechanicae principiis follis attollet pondus
-							<hi rendition="#i">i</hi> quia magnitudo vasis <hi rendition="#i">abcd</hi> potest esse quantacunque, ac proinde descensus ascensusque
-						follis seu lineae <hi rendition="#i">eE</hi>, <hi rendition="#i">hH</hi>
-						etc. <pb type="VIII_1" n="557"/>quantaecunque. <app type="Bfootnote">
-							<lem type="main">Ascensus</lem>
-							<note type="lemma-abbrev">quantaecunque.</note>
-							<rdg wit="#L" n="1"> Jam </rdg>
-							<rdg wit="#L" n="2"> Ascensus <hi rendition="#i">L</hi></rdg>
-						</app> autem vel descensus ponderis <hi rendition="#i">i</hi> non major quam
+<lem type="main">[quanquam sufficeret esse 3 (7) sed sinamus 9]</lem>
+<note type="lemma-abbrev">
+<seg type="apparat-ellipsis"/>
+</note>
+<rdg wit="#L">
+<hi rendition="#i">Klammern von Leibniz</hi>
+</rdg>
+</app> facile tamen ex communis mechanicae principiis follis attollet pondus
+<hi rendition="#i">i</hi> quia magnitudo vasis <hi rendition="#i">abcd</hi> potest esse quantacunque, ac proinde descensus ascensusque
+						follis seu lineae <hi rendition="#i">eE</hi>,<hi rendition="#i">hH</hi>
+						etc. <pb type="VIII_1" n="557"/>
+quantaecunque. <app type="Bfootnote">
+<lem type="main">Ascensus</lem>
+<note type="lemma-abbrev">quantaecunque.</note>
+<rdg wit="#L" n="1"> Jam </rdg>
+<rdg wit="#L" n="2"> Ascensus <hi rendition="#i">L</hi>
+</rdg>
+</app> autem vel descensus ponderis <hi rendition="#i">i</hi> non major quam
 						quanta est altitudo cavitatis follis explicati, seu quanta est <hi rendition="#i">G,GG</hi> quam possumus facere quantulam volumus. Quanto
 						enim latior longiorque est follis, seu quanto major est recta <hi rendition="#i">HE</hi>, tanto minorem necesse est esse altitudinem seu
 						rectam <hi rendition="#i">G,GG</hi> manente eadem capacitate. Constat autem
@@ -435,305 +545,363 @@
 						posse, ut pondus minus vincat majus modo inter movendum tanto magis sit
 						descensurum minus, quam ascensurum majus; quanto eo minus est: compensata
 						per velocitatem parvitate. Id ergo in casu proposito sic fiet.</p>
-					<p xml:id="Ch59.p11">Descendat follis non in recta <hi rendition="#i">Ee</hi>,
+<p xml:id="Ch59.p11">Descendat follis non in recta <hi rendition="#i">Ee</hi>,
 						sed in arcu <hi rendition="#i">LE</hi> radio <hi rendition="#i">kL</hi> vel
-							<hi rendition="#i">kE</hi> centro <hi rendition="#i">k</hi>. Portionem
+<hi rendition="#i">kE</hi> centro <hi rendition="#i">k</hi>. Portionem
 							trochleae<index indexName="Sachverzeichnis">
-							<term>trochlea</term>
-						</index> (<app type="Bfootnote">
-							<lem type="main"><hi rendition="#i">ELmno</hi></lem>
-							<note type="lemma-abbrev">trochleae</note>
-							<rdg wit="#L" n="1"> <hi rendition="#i">elEmno</hi>
-							</rdg>
-							<rdg wit="#L" n="2"> (<hi rendition="#i">ELmno</hi>) <hi rendition="#i">L</hi></rdg>
-						</app>) aequalem arcui <hi rendition="#i">elE</hi> nempe <hi rendition="#i">Em</hi> deferens secum in locum arcus <hi rendition="#i">elE</hi>. Sit
+<term>trochlea</term>
+</index> (<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">ELmno</hi>
+</lem>
+<note type="lemma-abbrev">trochleae</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">elEmno</hi>
+</rdg>
+<rdg wit="#L" n="2"> (<hi rendition="#i">ELmno</hi>)<hi rendition="#i">L</hi>
+</rdg>
+</app>) aequalem arcui <hi rendition="#i">elE</hi> nempe <hi rendition="#i">Em</hi> deferens secum in locum arcus <hi rendition="#i">elE</hi>. Sit
 						arcus <hi rendition="#i">Em</hi> dentatus, circumagatque rotam <index indexName="Sachverzeichnis">
-							<term>rota</term>
-							<index>
-								<term>dentata</term>
-							</index>
-						</index>
-						<hi rendition="#i">pq</hi> dentatam et ipsam, nisi malimus facilioris motus
+<term>rota</term>
+<index>
+<term>dentata</term>
+</index>
+</index>
+<hi rendition="#i">pq</hi> dentatam et ipsam, nisi malimus facilioris motus
 						causa connectere filo <hi rendition="#i">mqe</hi>, quo casu licebit dentibus
 						carere ex <hi rendition="#i">p</hi> in transversum exeat cylinder <hi rendition="#i">pr</hi> duobus tympanis<index indexName="Sachverzeichnis">
-							<term>tympanum</term>
-						</index>
-						<app type="Bfootnote">
-							<lem type="main">dentatis</lem>
-							<note type="lemma-abbrev">tympanis</note>
-							<rdg wit="#L" n="1"> rotatis </rdg>
-							<rdg wit="#L" n="2"> dentatis <hi rendition="#i">L</hi></rdg>
-						</app>
-						<hi rendition="#i">r</hi> et <hi rendition="#i">s</hi> incumbens rotae <hi rendition="#i">tr</hi> in extremo utroque diametri <hi rendition="#i">r</hi> et <hi rendition="#i">s</hi>. Rota <index indexName="Sachverzeichnis">
-							<term>rota</term>
-							<index>
-								<term>dentata</term>
-							</index>
-						</index>
-						<hi rendition="#i">tr</hi> sit dentata, sed interrupte, ita cum <app type="Bfootnote">
-							<lem type="main">tantum dentatum sit quantum tympanum incumbit,
+<term>tympanum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">dentatis</lem>
+<note type="lemma-abbrev">tympanis</note>
+<rdg wit="#L" n="1"> rotatis </rdg>
+<rdg wit="#L" n="2"> dentatis <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">r</hi> et <hi rendition="#i">s</hi> incumbens rotae <hi rendition="#i">tr</hi> in extremo utroque diametri <hi rendition="#i">r</hi> et <hi rendition="#i">s</hi>. Rota <index indexName="Sachverzeichnis">
+<term>rota</term>
+<index>
+<term>dentata</term>
+</index>
+</index>
+<hi rendition="#i">tr</hi> sit dentata, sed interrupte, ita cum <app type="Bfootnote">
+<lem type="main">tantum dentatum sit quantum tympanum incumbit,
 								tantundem uno ascensu vel descensu morsurum est,</lem>
-							<note type="lemma-abbrev">cum</note>
-							<rdg wit="#L" n="1"> tantundem dentatum sit quantum tympanum<index indexName="Sachverzeichnis">
-									<term>tympanum</term>
-								</index> incumbit, tantum ex adverso sit interruptum </rdg>
-							<rdg wit="#L" n="2"> tantum <seg type="apparat-ellipsis"/> est, <hi rendition="#i">L</hi></rdg>
-						</app> sit vacuum. Ita fiet ut dum tympanum <index indexName="Sachverzeichnis">
-							<term>tympanum</term>
-						</index>
-						<hi rendition="#i">r</hi>
-						<app type="Bfootnote">
-							<lem type="main">imminet vacui parti, quam nec tangit</lem>
-							<note type="lemma-abbrev"><hi rendition="#i">r</hi></note>
-							<rdg wit="#L" n="1"> incumbit vacuo </rdg>
-							<rdg wit="#L" n="2"> imminet <seg type="apparat-ellipsis"/> tangit <hi rendition="#i">L</hi></rdg>
-						</app> nec quicquam rotatio<pb type="VIII_1" n="558"/>ne cylindri <hi rendition="#i">rs</hi> per rotationem rotae <hi rendition="#i">pq</hi>
+<note type="lemma-abbrev">cum</note>
+<rdg wit="#L" n="1"> tantundem dentatum sit quantum tympanum<index indexName="Sachverzeichnis">
+<term>tympanum</term>
+</index> incumbit, tantum ex adverso sit interruptum </rdg>
+<rdg wit="#L" n="2"> tantum <seg type="apparat-ellipsis"/>
+ est, <hi rendition="#i">L</hi>
+</rdg>
+</app> sit vacuum. Ita fiet ut dum tympanum <index indexName="Sachverzeichnis">
+<term>tympanum</term>
+</index>
+<hi rendition="#i">r</hi>
+<app type="Bfootnote">
+<lem type="main">imminet vacui parti, quam nec tangit</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">r</hi>
+</note>
+<rdg wit="#L" n="1"> incumbit vacuo </rdg>
+<rdg wit="#L" n="2"> imminet <seg type="apparat-ellipsis"/>
+ tangit <hi rendition="#i">L</hi>
+</rdg>
+</app> nec quicquam rotatio<pb type="VIII_1" n="558"/>
+ne cylindri <hi rendition="#i">rs</hi> per rotationem rotae <hi rendition="#i">pq</hi>
 						ab arcu <hi rendition="#i">Em</hi> procurata agit, tympanum <index indexName="Sachverzeichnis">
-							<term>tympanum</term>
-						</index>
-						<hi rendition="#i">s</hi> incumbat dentatae, et agat suum. Arcusque <hi rendition="#i">Em</hi> descendens agat tympano<index indexName="Sachverzeichnis">
-							<term>tympanum</term>
-						</index> uno, ascendens opposito, atque ita utroque in eandem plagam<app type="Bfootnote">
-							<lem type="main">, quia</lem>
-							<note type="lemma-abbrev">plagam</note>
-							<rdg wit="#L" n="1"> . Idem sine interruptione certiore, puto, artificio
+<term>tympanum</term>
+</index>
+<hi rendition="#i">s</hi> incumbat dentatae, et agat suum. Arcusque <hi rendition="#i">Em</hi> descendens agat tympano<index indexName="Sachverzeichnis">
+<term>tympanum</term>
+</index> uno, ascendens opposito, atque ita utroque in eandem plagam<app type="Bfootnote">
+<lem type="main">, quia</lem>
+<note type="lemma-abbrev">plagam</note>
+<rdg wit="#L" n="1"> . Idem sine interruptione certiore, puto, artificio
 								fiet, si tympana<index indexName="Sachverzeichnis">
-									<term>tympanum</term>
-								</index> sint in baculo seu cylindro <hi rendition="#i">rs</hi>
+<term>tympanum</term>
+</index> sint in baculo seu cylindro <hi rendition="#i">rs</hi>
 								mobilia <app>
-									<rdg wit="#L" n="a">ascendendoque intra limites praescriptos, </rdg>
-									<rdg wit="#L" n="b">ascendendoque unum, descendendo oppositum
+<rdg wit="#L" n="a">ascendendoque intra limites praescriptos, </rdg>
+<rdg wit="#L" n="b">ascendendoque unum, descendendo oppositum
 										rotis incumbere efficiamus. Unum non totum exeat, <app>
-											<rdg wit="#L" n="aa">nisi initium jam </rdg>
-											<rdg wit="#L" n="bb">ante alterius ingressum, vel etiam,
+<rdg wit="#L" n="aa">nisi initium jam </rdg>
+<rdg wit="#L" n="bb">ante alterius ingressum, vel etiam,
 												ut facilius tympana dentibus reinserantur efficiamus
 												potius, ut modo hoc modo illud elevatum sit, ne
 												dentes tangat. Optimus denique modus sine omni
 												mutatione et perturbatione sui est. Sint
 												tympana<index indexName="Sachverzeichnis">
-												<term>tympanum</term>
-												</index> tam grandia, ut toto descensu, vel toto
+<term>tympanum</term>
+</index> tam grandia, ut toto descensu, vel toto
 												ascensu non nisi semicircumferentia eorum circumeat. <app>
-												<rdg wit="#L" n="aaa">Semicircumferentia </rdg>
-												<rdg wit="#L" n="bbb">Pars magna circumagi debet
+<rdg wit="#L" n="aaa">Semicircumferentia </rdg>
+<rdg wit="#L" n="bbb">Pars magna circumagi debet
 												cujusque sit una nuda altera dentibus armata; ita
 												ut cum unius armata inferior est dentesque tangit
 												alterius nuda inferior sit, ac proinde non tangat
 												unoque, proinde descensu <app>
-												<rdg wit="#L" n="aaaa">rotationem </rdg>
-												<rdg wit="#L" n="bbbb">semirotationem unam
+<rdg wit="#L" n="aaaa">rotationem </rdg>
+<rdg wit="#L" n="bbbb">semirotationem unam
 												absolvente, alterum ascensu alteram </rdg>
-												</app></rdg>
-												</app></rdg>
-										</app></rdg>
-								</app></rdg>
-							<rdg wit="#L" n="2"> , quia <hi rendition="#i">L</hi></rdg>
-						</app> opposito simul et loco et motu in eandem plagam <app type="Bfootnote">
-							<lem type="main">agat</lem>
-							<note type="lemma-abbrev">plagam</note>
-							<rdg wit="#L" n="1"> continuet </rdg>
-							<rdg wit="#L" n="2"> agat <hi rendition="#i">L</hi></rdg>
-						</app>. Nam si solus motus vel solus situs mutetur, contrarium; si uterque,
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> , quia <hi rendition="#i">L</hi>
+</rdg>
+</app> opposito simul et loco et motu in eandem plagam <app type="Bfootnote">
+<lem type="main">agat</lem>
+<note type="lemma-abbrev">plagam</note>
+<rdg wit="#L" n="1"> continuet </rdg>
+<rdg wit="#L" n="2"> agat <hi rendition="#i">L</hi>
+</rdg>
+</app>. Nam si solus motus vel solus situs mutetur, contrarium; si uterque,
 						idem evenit. Rotata jam rota <hi rendition="#i">tr</hi> pondus sibi affixum
-							<hi rendition="#i">i</hi> reattollet. Quod ostendo. Ponamus
+<hi rendition="#i">i</hi> reattollet. Quod ostendo. Ponamus
 							trochleam<index indexName="Sachverzeichnis">
-							<term>trochlea</term>
-						</index>
-						<hi rendition="#i">pq</hi> tantam esse, quanta est <hi rendition="#i">keE</hi>, tympana<index indexName="Sachverzeichnis">
-							<term>tympanum</term>
-						</index>
-						<hi rendition="#i">r</hi> et <hi rendition="#i">s</hi> tam parva quam lubet,
+<term>trochlea</term>
+</index>
+<hi rendition="#i">pq</hi> tantam esse, quanta est <hi rendition="#i">keE</hi>, tympana<index indexName="Sachverzeichnis">
+<term>tympanum</term>
+</index>
+<hi rendition="#i">r</hi> et <hi rendition="#i">s</hi> tam parva quam lubet,
 						nihilominus quia trochleae<index indexName="Sachverzeichnis">
-							<term>trochlea</term>
-						</index>
-						<hi rendition="#i">pq</hi> concentrica eodem tempore absolvent gyrum suum
+<term>trochlea</term>
+</index>
+<hi rendition="#i">pq</hi> concentrica eodem tempore absolvent gyrum suum
 						exiguum, quo trochlea<index indexName="Sachverzeichnis">
-							<term>trochlea</term>
-						</index>
-						<hi rendition="#i">ke</hi> vel <hi rendition="#i">pq</hi> magnum. Porro quo
+<term>trochlea</term>
+</index>
+<hi rendition="#i">ke</hi> vel <hi rendition="#i">pq</hi> magnum. Porro quo
 						tempore tympanum<index indexName="Sachverzeichnis">
-							<term>tympanum</term>
-						</index> absolvit <app type="Bfootnote">
-							<lem type="main">arcum</lem>
-							<note type="lemma-abbrev">absolvit</note>
-							<rdg wit="#L" n="1"> tantum sui </rdg>
-							<rdg wit="#L" n="2"> arcum <hi rendition="#i">L</hi></rdg>
-						</app> tot graduum, quot est arcus <hi rendition="#i">em</hi>, id est
+<term>tympanum</term>
+</index> absolvit <app type="Bfootnote">
+<lem type="main">arcum</lem>
+<note type="lemma-abbrev">absolvit</note>
+<rdg wit="#L" n="1"> tantum sui </rdg>
+<rdg wit="#L" n="2"> arcum <hi rendition="#i">L</hi>
+</rdg>
+</app> tot graduum, quot est arcus <hi rendition="#i">em</hi>, id est
 						postquam ascensus vel descensus absolutus est, toties mordeat rotam, <hi rendition="#i">tr</hi> quantum necesse est ad pondus <hi rendition="#i">i</hi> in locum priorem elevandum. Ita fiet ut <app type="Bfootnote">
-							<lem type="main">eodem aut rectius paulo minore tempore recollocetur in
+<lem type="main">eodem aut rectius paulo minore tempore recollocetur in
 								suum locum pondus</lem>
-							<note type="lemma-abbrev">eodem</note>
-							<rdg wit="#L" n="1"> tempore pondus </rdg>
-							<rdg wit="#L" n="2"> aut <seg type="apparat-ellipsis"/> pondus <hi rendition="#i">L</hi></rdg>
-						</app>
-						<hi rendition="#i">i</hi> et absolvat spatium parvum <hi rendition="#i">G,GG</hi>, quo follis ascendit et ascendit, absolvitque spatium si
+<note type="lemma-abbrev">eodem</note>
+<rdg wit="#L" n="1"> tempore pondus </rdg>
+<rdg wit="#L" n="2"> aut <seg type="apparat-ellipsis"/>
+ pondus <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">i</hi> et absolvat spatium parvum <hi rendition="#i">G,GG</hi>, quo follis ascendit et ascendit, absolvitque spatium si
 						volumus decuplo majus (nam in potestate est) <hi rendition="#i">eE</hi>
-						duplicatum. <pb type="L"/><fw type="folNum">[202 v<hi rendition="#sup">o</hi>]</fw> Ergo <app type="Bfootnote">
-							<lem type="main">etsi follis gravitas in descensu, levitas in
+						duplicatum. <pb type="L"/>
+<fw type="folNum">[202 v<hi rendition="#sup">o</hi>]
+</fw> Ergo <app type="Bfootnote">
+<lem type="main">etsi follis gravitas in descensu, levitas in
 								ascensu</lem>
-							<note type="lemma-abbrev">etsi</note>
-							<rdg wit="#L" n="1"> potentia follis </rdg>
-							<rdg wit="#L" n="2"> follis <seg type="apparat-ellipsis"/> ascensu <hi rendition="#i">L</hi></rdg>
-						</app> esset 1 \Pfund ponderis <hi rendition="#i">i</hi> vero gravitas <app type="Bfootnote">
-							<lem type="main">9 \Pfund. Si</lem>
-							<note type="lemma-abbrev">9 \Pfund.</note>
-							<rdg wit="#L" n="1"> Cum </rdg>
-							<rdg wit="#L" n="2"> Si <hi rendition="#i">L</hi></rdg>
-						</app> tamen motus follis sit noncuplo celerior, aequiponderabunt, si
+<note type="lemma-abbrev">etsi</note>
+<rdg wit="#L" n="1"> potentia follis </rdg>
+<rdg wit="#L" n="2"> follis <seg type="apparat-ellipsis"/>
+ ascensu <hi rendition="#i">L</hi>
+</rdg>
+</app> esset 1 \Pfund ponderis <hi rendition="#i">i</hi> vero gravitas <app type="Bfootnote">
+<lem type="main">9 \Pfund. Si</lem>
+<note type="lemma-abbrev">9 \Pfund.</note>
+<rdg wit="#L" n="1"> Cum </rdg>
+<rdg wit="#L" n="2"> Si <hi rendition="#i">L</hi>
+</rdg>
+</app> tamen motus follis sit noncuplo celerior, aequiponderabunt, si
 						decuplo, ut hic praeponderabit follis, attolletque pondus, quod erat
-						faciendum. Nihil ergo <pb type="VIII_1" n="559"/>video, quod ad machinae
+						faciendum. Nihil ergo <pb type="VIII_1" n="559"/>
+video, quod ad machinae
 						perfectionem desiderari possit. <app type="Bfootnote">
-							<lem type="main">Restituet enim motus</lem>
-							<note type="lemma-abbrev">possit.</note>
-							<rdg wit="#L" n="1"> Restituuntur enim omnia </rdg>
-							<rdg wit="#L" n="2"> Restituet enim motus <hi rendition="#i">L</hi></rdg>
-						</app> sibi situm priorem. Ergo causam suam. Effectus autem sibi restituens
+<lem type="main">Restituet enim motus</lem>
+<note type="lemma-abbrev">possit.</note>
+<rdg wit="#L" n="1"> Restituuntur enim omnia </rdg>
+<rdg wit="#L" n="2"> Restituet enim motus <hi rendition="#i">L</hi>
+</rdg>
+</app> sibi situm priorem. Ergo causam suam. Effectus autem sibi restituens
 						causam suam est perennis. Erit ergo motus machinae perennis<index indexName="Sachverzeichnis">
-							<term>motus</term>
-							<index>
-								<term>perennis</term>
-							</index>
-						</index>.</p>
-					<p xml:id="Ch59.p12">Nota pondus <hi rendition="#i">i</hi> delapsum ex loco in
+<term>motus</term>
+<index>
+<term>perennis</term>
+</index>
+</index>.
+</p>
+<p xml:id="Ch59.p12">Nota pondus <hi rendition="#i">i</hi> delapsum ex loco in
 						quo pessulo objecto quiescebat ubi follem depresserit, folle abeunte induet
 						se in catenam <index indexName="Sachverzeichnis">
-							<term>catena</term>
-						</index><app type="Bfootnote">
-							<lem type="main">uncinatam</lem>
-							<note type="lemma-abbrev">catenam</note>
-							<rdg wit="#L" n="1"> uncinatam </rdg>
-							<rdg wit="#L" n="2"> capsulatam </rdg>
-							<rdg wit="#L" n="3"> uncinatam <hi rendition="#i">L</hi></rdg>
-						</app> pendentem ex rota <hi rendition="#i">tr</hi>. <app type="Bfootnote">
-							<lem type="main">Sufficit unum esse uncinum eique a pondere <hi rendition="#i">i</hi> contactu adimi regressum, ac proinde cum
+<term>catena</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">uncinatam</lem>
+<note type="lemma-abbrev">catenam</note>
+<rdg wit="#L" n="1"> uncinatam </rdg>
+<rdg wit="#L" n="2"> capsulatam </rdg>
+<rdg wit="#L" n="3"> uncinatam <hi rendition="#i">L</hi>
+</rdg>
+</app> pendentem ex rota <hi rendition="#i">tr</hi>.<app type="Bfootnote">
+<lem type="main">Sufficit unum esse uncinum eique a pondere <hi rendition="#i">i</hi> contactu adimi regressum, ac proinde cum
 								catena seu filo attolli, ubi in locum superiorem venerit reddi
 								alicubi contactu libertatem, relabi in locum priorem</lem>
-							<note type="lemma-abbrev"><hi rendition="#i">tr.</hi></note>
-							<rdg wit="#L" n="1"> Quae ubi in locum priorem elevaverit </rdg>
-							<rdg wit="#L" n="2"> Sufficit <seg type="apparat-ellipsis"/> priorem <hi rendition="#i">L</hi></rdg>
-						</app>, simulque pondus <hi rendition="#i">i</hi> evertere ac deponere. Id
+<note type="lemma-abbrev">
+<hi rendition="#i">tr.</hi>
+</note>
+<rdg wit="#L" n="1"> Quae ubi in locum priorem elevaverit </rdg>
+<rdg wit="#L" n="2"> Sufficit <seg type="apparat-ellipsis"/>
+ priorem <hi rendition="#i">L</hi>
+</rdg>
+</app>, simulque pondus <hi rendition="#i">i</hi> evertere ac deponere. Id
 						fiet si ei pondus <hi rendition="#i">i</hi> contactu suo claudat foramen vel
 						angustet. Id faciet dum ei pondere suo innitens morderi filum faciet, vel in
 						filo annulum, ita ut se ipsum simul intercludat morsu. Sed <app type="Bfootnote">
-							<lem type="main">ubi</lem>
-							<rdg wit="#L" cause="deletion">ubi <note type="editorial">|</note> <del>pondus <hi rendition="#i">i</hi>
-								</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi> |</note> ascendendum <hi rendition="#i">L</hi></rdg>
-						</app> ascendendum erit quod <app type="Bfootnote">
-							<lem type="main">pessulum uncini</lem>
-							<note type="lemma-abbrev">pessulum</note>
-							<rdg wit="#L" n="1"> annuli </rdg>
-							<rdg wit="#L" n="2"> uncini <hi rendition="#i">L</hi></rdg>
-						</app> in contrariam partem <app type="Bfootnote">
-							<lem type="main">gyrans</lem>
-							<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>annulum</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi> |</note> deprimendo <hi rendition="#i">L</hi></rdg>
-						</app> deprimendo dum attollitur, ac proinde in opposito (quia circa
+<lem type="main">ubi</lem>
+<rdg wit="#L" cause="deletion">ubi <note type="editorial">|</note>
+<del>pondus <hi rendition="#i">i</hi>
+</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> ascendendum <hi rendition="#i">L</hi>
+</rdg>
+</app> ascendendum erit quod <app type="Bfootnote">
+<lem type="main">pessulum uncini</lem>
+<note type="lemma-abbrev">pessulum</note>
+<rdg wit="#L" n="1"> annuli </rdg>
+<rdg wit="#L" n="2"> uncini <hi rendition="#i">L</hi>
+</rdg>
+</app> in contrariam partem <app type="Bfootnote">
+<lem type="main">gyrans</lem>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>annulum</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> deprimendo <hi rendition="#i">L</hi>
+</rdg>
+</app> deprimendo dum attollitur, ac proinde in opposito (quia circa
 						axiculum mobilis) attollendo aperiet et faciet elabi pondus <hi rendition="#g">i</hi>, quo elapso et morsu cessabit, et uncinus
 						delabetur per filum in locum priorem, modo sit ibi extra filum mora, ne
 						descendere ulterius possit, vel sit ibi locus infimus semper fili.</p>
-					<p xml:id="Ch59.p13">Rectius breviusque sic: sit filum vel catena<index indexName="Sachverzeichnis">
-							<term>catena</term>
-						</index> (rotae <hi rendition="#i">tr</hi> superioris figurae cir-cumvoluta)
-							<hi rendition="#i">abc</hi> reliquum omne sit pondus <hi rendition="#i">i</hi> superioris figurae demtis <hi rendition="#i">d</hi> et <hi rendition="#i">e</hi> retina- culis, de quibus mox. Pars ponderis <hi rendition="#i">hfg</hi> si aperta sit, ut in situ punctato, vel etiam
+<p xml:id="Ch59.p13">Rectius breviusque sic: sit filum vel catena<index indexName="Sachverzeichnis">
+<term>catena</term>
+</index> (rotae <hi rendition="#i">tr</hi> superioris figurae cir-cumvoluta)
+<hi rendition="#i">abc</hi> reliquum omne sit pondus <hi rendition="#i">i</hi> superioris figurae demtis <hi rendition="#i">d</hi> et <hi rendition="#i">e</hi> retina- culis, de quibus mox. Pars ponderis <hi rendition="#i">hfg</hi> si aperta sit, ut in situ punctato, vel etiam
 						magis non possit pondus ea suspendi ex filo. Claudatur ergo, quod ita fiet
 						totum pondus <hi rendition="#i">i</hi> cum annexis descendens super folle
 						incidet <hi rendition="#i">h</hi> punctato in retinaculum <hi rendition="#i">e</hi> atque ita pondus <hi rendition="#i">h</hi> a retinaculo
 						elevabitur, pergente nimirum reliquo pondere et proinde <hi rendition="#i">fg</hi> ex altera parte gyratum circa centrum <hi rendition="#i">f</hi>
 						ex situ punctationis descendet in situm continuitatis ibique in <hi rendition="#i">n</hi> penetrabit <hi rendition="#i">g</hi> per decipulas
-							<hi rendition="#i">omnkl</hi>, et sic clausum, <hi rendition="#i">nf</hi>, abeunte fulcro, folle suspendet ex filo totum pondus, atque
+<hi rendition="#i">omnkl</hi>, et sic clausum, <hi rendition="#i">nf</hi>, abeunte fulcro, folle suspendet ex filo totum pondus, atque
 						ita, cum filo ascendet incidet enim inter fili pinnas. Sed ubi in locum
 						debitum pervenerit muscipulas <hi rendition="#i">nkl</hi> in <hi rendition="#i">l</hi> impinget retinaculo <hi rendition="#i">d</hi>,
 						deprimeturque <hi rendition="#i">l</hi> levabitur <hi rendition="#i">n</hi>
 						aperietur muscipula, et pondus <hi rendition="#i">h</hi> a retinaculo <hi rendition="#i">e</hi> liberum circa centrum <hi rendition="#i">f</hi>
 						attollet <hi rendition="#i">g</hi> aperietque <hi rendition="#i">f</hi> ita
-						pondus supra apertum pendere desinet elabeturque in locum suum. <pb type="VIII_1" n="560"/>Objici huic machinae potest 1) futurum ut
+						pondus supra apertum pendere desinet elabeturque in locum suum. <pb type="VIII_1" n="560"/>
+Objici huic machinae potest 1) futurum ut
 						congeletur aqua, 2) ut consumatur. Respondetur (1) plerique omnes motum
 						perennem etiam aquae ope quaesierunt, nemo invenit. (2) Sufficeret
 						praestitisse, quod hactenus nemo, ut motus aliquis vi machinae sibi
 						restituat causam suam, atque ita vi intrinseca<index indexName="Sachverzeichnis">
-							<term>vis</term>
-							<index>
-								<term>intrinseca</term>
-							</index>
-						</index> sit perennis, (3) uti congelabitur frigore, ita et calore aliquando
+<term>vis</term>
+<index>
+<term>intrinseca</term>
+</index>
+</index> sit perennis, (3) uti congelabitur frigore, ita et calore aliquando
 						redissolvetur; tunc ergo redibit motus erit ergo perennis, etsi interruptus.
 						Perennis, id est perpetuus, nam originario usu perenne est quod durat <hi rendition="#g">per</hi> totum <hi rendition="#g">annum</hi>, (4) dantur
 						liquores incongelabiles iique aut graves ut ☿, <graphic xml:id="Ch59.p13.g1" url="./images/vitriol.svg" width="7.80516pt"/>
-						<hi rendition="#sup">li</hi> etc. In ☿ pro plumbo<index indexName="Sachverzeichnis">
-							<term>plumbum</term>
-						</index> utendum erit auro<index indexName="Sachverzeichnis">
-							<term>aurum</term>
-						</index>. In <graphic xml:id="Ch59.p13.g2" url="./images/vitriol.svg" width="7.80516pt"/>
-						<hi rendition="#sup">li</hi> suffecerit plumbum<index indexName="Sachverzeichnis">
-							<term>plumbum</term>
-						</index>. Sed utrumque plumbum <index indexName="Sachverzeichnis">
-							<term>plumbum</term>
-						</index> aurumque <index indexName="Sachverzeichnis">
-							<term>aurum</term>
-						</index> vitro obductum esse debet, ne corrodatur aut leves, ut spiritus
+<hi rendition="#sup">li</hi> etc. In ☿ pro plumbo<index indexName="Sachverzeichnis">
+<term>plumbum</term>
+</index> utendum erit auro<index indexName="Sachverzeichnis">
+<term>aurum</term>
+</index>. In <graphic xml:id="Ch59.p13.g2" url="./images/vitriol.svg" width="7.80516pt"/>
+<hi rendition="#sup">li</hi> suffecerit plumbum<index indexName="Sachverzeichnis">
+<term>plumbum</term>
+</index>. Sed utrumque plumbum <index indexName="Sachverzeichnis">
+<term>plumbum</term>
+</index> aurumque <index indexName="Sachverzeichnis">
+<term>aurum</term>
+</index> vitro obductum esse debet, ne corrodatur aut leves, ut spiritus
 							vini<index indexName="Sachverzeichnis">
-							<term>spiritus</term>
-							<index>
-								<term>vini</term>
-							</index>
-						</index>, in hoc pro ligno utendum est bulla <app type="Bfootnote">
-							<lem type="main">clausa</lem>
-							<rdg wit="#L" cause="addition"><add>clausa</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> aere plena. (5) Impediri potest aquae congelatio, non tantum in
+<term>spiritus</term>
+<index>
+<term>vini</term>
+</index>
+</index>, in hoc pro ligno utendum est bulla <app type="Bfootnote">
+<lem type="main">clausa</lem>
+<rdg wit="#L" cause="addition">
+<add>clausa</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> aere plena. (5) Impediri potest aquae congelatio, non tantum in
 						hypocaustis sed et in liberrimo aere. Id ita fiet: Constat quicquid
 						congelascit prius tenui crustula vestiri. Quae si perpetuo ab astante aliquo
 						rumperetur, nunquam aqua congelasceret. Id pro astante faciet ipsa machina.
 						Canalis enim aqua eminens perpetuo motus spatium per quod sibi decurrendum
 						est, salvum praestabit, servabitque sibi jus aperturae. Nam si hic liber
 						maneat etsi latera et superficies caeteroquin concrescant, nihil <app type="Bfootnote">
-							<lem type="main">motui</lem>
-							<note type="lemma-abbrev">nihil</note>
-							<rdg wit="#L" n="1"> ad rem </rdg>
-							<rdg wit="#L" n="2"> motui <hi rendition="#i">L</hi></rdg>
-						</app> obstat. Aquae enim intima non congelascunt, sed tantum quibus latera
+<lem type="main">motui</lem>
+<note type="lemma-abbrev">nihil</note>
+<rdg wit="#L" n="1"> ad rem </rdg>
+<rdg wit="#L" n="2"> motui <hi rendition="#i">L</hi>
+</rdg>
+</app> obstat. Aquae enim intima non congelascunt, sed tantum quibus latera
 						tangit, aeremve. Imo efficiemus ut non praecise suum tantum spatium sed et
 						totam pene aquae extremitatem, minimam superficiem praeservet, si reticulus
 						per eam expansus <app type="Bfootnote">
-							<lem type="main">tactusque</lem>
-							<note type="lemma-abbrev">expansus</note>
-							<rdg wit="#L" n="1"> ab eaque </rdg>
-							<rdg wit="#L" n="2"> tactusque <hi rendition="#i">L</hi></rdg>
-						</app> motu ac commotus crustulam perpetuo rumpat. (6) At aqua consumetur
+<lem type="main">tactusque</lem>
+<note type="lemma-abbrev">expansus</note>
+<rdg wit="#L" n="1"> ab eaque </rdg>
+<rdg wit="#L" n="2"> tactusque <hi rendition="#i">L</hi>
+</rdg>
+</app> motu ac commotus crustulam perpetuo rumpat. (6) At aqua consumetur
 						magis etiam spiritus vini<index indexName="Sachverzeichnis">
-							<term>spiritus</term>
-							<index>
-								<term>vini</term>
-							</index>
-						</index> imo et ☿, sole vel calore extrahente. Respondeo in forma minore
-							<app type="Bfootnote">
-							<lem type="main">et majore</lem>
-							<rdg wit="#L" cause="addition"><add>et majore</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> hoc impediri in majore reparari potest. Reparabitur, si vicissim ita
+<term>spiritus</term>
+<index>
+<term>vini</term>
+</index>
+</index> imo et ☿, sole vel calore extrahente. Respondeo in forma minore
+<app type="Bfootnote">
+<lem type="main">et majore</lem>
+<rdg wit="#L" cause="addition">
+<add>et majore</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> hoc impediri in majore reparari potest. Reparabitur, si vicissim ita
 						apertum sit os vasis, ut aquam pluviam hauriat, et in abundanti reponat,
 						suffectura in casum deplementi impedietur vitro hermetice sigillato, si
 						intus sit tota machina intra aquam vel ut si pendulum<index indexName="Sachverzeichnis">
-							<term>pendulum</term>
-						</index> esse velimus, intra vas in aere spectabilis. Si vero agere
+<term>pendulum</term>
+</index> esse velimus, intra vas in aere spectabilis. Si vero agere
 						extrorsum aliquid debet, si intus aliquid agi, effici potest magnete<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-						</index> in aqua ubi conservatur vel cum canali supra, ut crebro
+<term>magnes</term>
+</index> in aqua ubi conservatur vel cum canali supra, ut crebro
 						redemergatur extremitati applicato et ita ferrum<index indexName="Sachverzeichnis">
-							<term>ferrum</term>
-						</index> exterius applicatum movente. Pone nos in ipsa machina non aperta
+<term>ferrum</term>
+</index> exterius applicatum movente. Pone nos in ipsa machina non aperta
 						(quod alioqui facile) aliquid corrigere velle, ut das pendulum<index indexName="Sachverzeichnis">
-							<term>pendulum</term>
-						</index> adjoustiren fiet magnete<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-						</index> exterius applicato.</p>
-					<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch59.p14">
-						<graphic url="./images/38_202v.svg" width="325.215pt" xml:id="Ch59.p14.g1"/>
-						<head><hi rendition="#i">[Fig. 1, tlw. Blindzeichnungen]</hi></head>
-					</figure>
-				</div>
-			</div>
-		</body>
-	</text>
+<term>pendulum</term>
+</index> adjoustiren fiet magnete<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> exterius applicato.</p>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch59.p14">
+<graphic url="./images/38_202v.svg" width="325.215pt" xml:id="Ch59.p14.g1"/>
+<head>
+<hi rendition="#i">[Fig. 1, tlw. Blindzeichnungen]</hi>
+</head>
+</figure>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,352 +1,560 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-037-000">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">De Legibus Concursus</title>
-<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-037-000">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">De Legibus Concursus</title>
+                <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
 Text</title>
-<respStmt>
-<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
-</resp>
-</respStmt>
-<respStmt>
-<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Martina</forename>
-<surname>Gödel</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Sebastian W.</forename>
-<surname>Stork</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
-</resp>
-</respStmt>
-</titleStmt>
-
-<publicationStmt>
-<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
-<date type="creation">2022</date>
-<availability>
-<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
-<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
-</licence>
-</availability>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-<analytic>
-<author>
-<persName ref="http://d-nb.info/gnd/118571249">
-<surname>Leibniz</surname>
-<forename>Gottfried Wilhelm</forename>
-</persName>
-</author>
-<title type="chapter" level="a" n="37">De Legibus Concursus</title>
-<title type="section" level="a" n=""/>
-<date calendar="#gregorian" notBefore="1676-12" resp="#ed" cert="low">[Winter
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sebastian W. Stork</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+                <date type="creation">2022</date>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+                        <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118571249">
+                                <surname>Leibniz</surname>
+                                <forename>Gottfried Wilhelm</forename>
+                            </persName>
+                        </author>
+                        <title type="chapter" level="a" n="37">De Legibus Concursus</title>
+                        <title type="section" level="a" n=""/>
+                        <date calendar="#gregorian" notBefore="1676-12" resp="#ed" cert="low">[Winter
 1676/1677 (?) – Januar 1678]</date>
-<date calendar="#gregorian" notAfter="1678-01" resp="#ed" cert="medium"/>
-<idno type="PDF">
-<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
-<idno type="page">#page=408</idno>
-</idno>
-</analytic>
-<monogr>
-<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+                        <date calendar="#gregorian" notAfter="1678-01" resp="#ed" cert="medium"/>
+                        <idno type="PDF">
+                            <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+                            <idno type="page">#page=408</idno>
+                        </idno>
+                    </analytic>
+                    <monogr>
+                        <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
 Naturwissenschaftliche, medizinische und technische Schriften</title>
-<title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
-<imprint>
-<publisher>Walter de Gruyter GmbH</publisher>
-<pubPlace>Berlin, Boston</pubPlace>
-<date type="publication">2021</date>
-</imprint>
-<biblScope unit="page" from="375" to="376"/>
-</monogr>
-<series>
-<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+                        <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+                        <imprint>
+                            <publisher>Walter de Gruyter GmbH</publisher>
+                            <pubPlace>Berlin, Boston</pubPlace>
+                            <date type="publication">2021</date>
+                        </imprint>
+                        <biblScope unit="page" from="375" to="376"/>
+                    </monogr>
+                    <series>
+                        <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
 Briefe</title>
-</series>
-</biblStruct>
-<listWit>
-<witness n="L" corresp="#L_08-03-037-000_facs-haupttextzeuge">
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-<idno type="Signatur">LH XXXVII 5 Bl. 24</idno>
-</msIdentifier>
-<msContents corresp="L_witness-content-types.xml#aufzeichnung">
-<summary>
-<p>Aufzeichnung: LH XXXVII 5 Bl. 24. Ein Blatt 8<hi rendition="#sup">o</hi>, am
+                    </series>
+                </biblStruct>
+                <listWit>
+                    <witness n="L" corresp="#L_08-03-037-000_facs-haupttextzeuge">
+                        <msDesc>
+                            <msIdentifier>
+                                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                                <idno type="Signatur">LH XXXVII 5 Bl. 24</idno>
+                            </msIdentifier>
+                            <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                                <summary>
+                                    <p>Aufzeichnung: LH XXXVII 5 Bl. 24. Ein Blatt 8<hi rendition="#sup">o</hi>, am
 Rand tlw. beschnitten; Papiererhaltungsmaßnahmen. Zwei Seiten.</p>
-</summary>
-</msContents>
-<physDesc>
-<objectDesc form="Handschrift"/>
-</physDesc>
-<history>
-<origin corresp="L_witness-origin-types.xml#origin-L"/>
-</history>
-</msDesc>
-</witness>
-</listWit>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<tagsDecl>
-<rendition scheme="css" xml:id="i">font-style:italic</rendition>
-<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-</tagsDecl>
-<charDecl>
-<!-- Sonderzeichen OHNE Unicodeentsprechung -->
-<!--rightpropto-->
-<glyph xml:id="rightpropto">
-<glyphName>rightpropto</glyphName>
-<desc>...</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="TeX">\rightpropto</mapping>
-<graphic url="../../glyphs/rightpropto.svg"/>
-</glyph>
-<glyph xml:id="Pfund">
-<glyphName>Pfund</glyphName>
-<desc>stilisiertes lb-Zeichen (Pfund)</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.7</value>
-</charProp>
-<mapping type="TeX">\Pfund</mapping>
-<graphic url="../../glyphs/Pfund.svg"/>
-</glyph>
-<!-- leibdashv -->
-<glyph xml:id="pleibdashv">
-<glyphName>pleibdashv</glyphName>
-<desc>Bedeutung (+−) - gesenkt</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>-1</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="PUA"/>
-<mapping type="TeX">\pleibdashv</mapping>
-<graphic url="../../glyphs/pm.svg"/>
-</glyph>
-<glyph xml:id="leibdashv">
-<glyphName>leibdashv</glyphName>
-<desc>Bedeutung (+−) - nicht-gesenkt</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="PUA"/>
-<mapping type="TeX">\leibdashv</mapping>
-<graphic url="../../glyphs/pm.svg"/>
-</glyph>
-<!-- Sonderzeichen MIT Unicodeentsprechung -->
-</charDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="la"/>
-</langUsage>
-<calendarDesc>
-<calendar xml:id="gregorian">
-<p>Gregorianischer Kalenderstil</p>
-</calendar>
-<calendar xml:id="julian">
-<p>Julianischer Kalenderstil</p>
-</calendar>
-</calendarDesc>
-<textClass>
-<catRef scheme="L_terms" target="L_subjects.xml#stoss"/>
-<catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
-<catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
-<catRef scheme="L_terms" target="L_terms.xml#"/>
-</textClass>
-<abstract>
-<listPerson>
-<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-<person sameAs="L_persons.xml#"/>
-</listPerson>
-<listPlace>
-<place sameAs="L_places.xml#"/>
-</listPlace>
-</abstract>
-</profileDesc>
-<revisionDesc>
-<change when="2021" who="#telota" status="base"/>
-<change when="2021-02-14" who="#stork" status="enrich_1"/>
-</revisionDesc>
-</teiHeader>
-<facsimile source="digilib.bbaw.de" xml:id="L_08-03-037-000_facs-haupttextzeuge">
-<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=70"/>
-<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=72"/>
-</facsimile>
-<text xml:id="L_08-03-037-000_text">
-<body xml:id="Document">
-<div type="chapter" xml:id="Ch37" n="37">
-<head>37 DE LEGIBUS CONCURSUS</head>
-<head>[Winter 1676/1677 (?) – Januar 1678]</head>
-<div type="ueberlieferung">
-<p>
-<hi rendition="#b #smaller">Überlieferung:</hi>
-<listWit>
-<witness>
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-<idno type="Signatur">LH XXXVII 5 Bl. 24</idno>
-</msIdentifier>
-<msContents>
-<summary>
-<p>Aufzeichnung: LH XXXVII 5 Bl. 24. Ein Blatt 8<hi rendition="#sup">o</hi>,
+                                </summary>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc form="Handschrift"/>
+                            </physDesc>
+                            <history>
+                                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+                <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+                <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+                <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+                <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+                <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+                <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+                <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+                <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+                <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+            </tagsDecl>
+            <charDecl>
+                <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+                <!--rightpropto-->
+                <glyph xml:id="rightpropto">
+                    <glyphName>rightpropto</glyphName>
+                    <desc>...</desc>
+                    <charProp>
+                        <localName>baselineshift-in-ex</localName>
+                        <value>0</value>
+                    </charProp>
+                    <charProp>
+                        <localName>width-in-em</localName>
+                        <value>0.6</value>
+                    </charProp>
+                    <mapping type="TeX">\rightpropto</mapping>
+                    <graphic url="../../glyphs/rightpropto.svg"/>
+                </glyph>
+                <glyph xml:id="Pfund">
+                    <glyphName>Pfund</glyphName>
+                    <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+                    <charProp>
+                        <localName>baselineshift-in-ex</localName>
+                        <value>0</value>
+                    </charProp>
+                    <charProp>
+                        <localName>width-in-em</localName>
+                        <value>0.7</value>
+                    </charProp>
+                    <mapping type="TeX">\Pfund</mapping>
+                    <graphic url="../../glyphs/Pfund.svg"/>
+                </glyph>
+                <!-- leibdashv -->
+                <glyph xml:id="pleibdashv">
+                    <glyphName>pleibdashv</glyphName>
+                    <desc>Bedeutung (+−) - gesenkt</desc>
+                    <charProp>
+                        <localName>baselineshift-in-ex</localName>
+                        <value>-1</value>
+                    </charProp>
+                    <charProp>
+                        <localName>width-in-em</localName>
+                        <value>0.6</value>
+                    </charProp>
+                    <mapping type="PUA"/>
+                    <mapping type="TeX">\pleibdashv</mapping>
+                    <graphic url="../../glyphs/pm.svg"/>
+                </glyph>
+                <glyph xml:id="leibdashv">
+                    <glyphName>leibdashv</glyphName>
+                    <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+                    <charProp>
+                        <localName>baselineshift-in-ex</localName>
+                        <value>0</value>
+                    </charProp>
+                    <charProp>
+                        <localName>width-in-em</localName>
+                        <value>0.6</value>
+                    </charProp>
+                    <mapping type="PUA"/>
+                    <mapping type="TeX">\leibdashv</mapping>
+                    <graphic url="../../glyphs/pm.svg"/>
+                </glyph>
+                <!-- Sonderzeichen MIT Unicodeentsprechung -->
+            </charDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="la"/>
+            </langUsage>
+            <calendarDesc>
+                <calendar xml:id="gregorian">
+                    <p>Gregorianischer Kalenderstil</p>
+                </calendar>
+                <calendar xml:id="julian">
+                    <p>Julianischer Kalenderstil</p>
+                </calendar>
+            </calendarDesc>
+            <textClass>
+                <catRef scheme="L_terms" target="L_subjects.xml#stoss"/>
+                <catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
+                <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+                <catRef scheme="L_terms" target="L_terms.xml#"/>
+            </textClass>
+            <abstract>
+                <listPerson>
+                    <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+                    <person sameAs="L_persons.xml#"/>
+                </listPerson>
+                <listPlace>
+                    <place sameAs="L_places.xml#"/>
+                </listPlace>
+            </abstract>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2021" who="#telota" status="base"/>
+            <change when="2021-02-14" who="#stork" status="enrich_1"/>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile source="digilib.bbaw.de" xml:id="L_08-03-037-000_facs-haupttextzeuge">
+        <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=70"/>
+        <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=72"/>
+    </facsimile>
+    <text xml:id="L_08-03-037-000_text">
+        <body xml:id="Document">
+            <div type="chapter" xml:id="Ch37" n="37">
+                <head>37 DE LEGIBUS CONCURSUS</head>
+                <head>[Winter 1676/1677 (?) – Januar 1678]</head>
+                <div type="ueberlieferung">
+                    <p>
+                        <hi rendition="#b #smaller">Überlieferung:</hi>
+                        <listWit>
+                            <witness>
+                                <msDesc>
+                                    <msIdentifier>
+                                        <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                                        <idno type="Signatur">LH XXXVII 5 Bl. 24</idno>
+                                    </msIdentifier>
+                                    <msContents>
+                                        <summary>
+                                            <p>Aufzeichnung: LH XXXVII 5 Bl. 24. Ein Blatt 8<hi rendition="#sup">o</hi>,
 am Rand tlw. beschnitten; Papiererhaltungsmaßnahmen. Zwei Seiten.</p>
-</summary>
-</msContents>
-<physDesc>
-<objectDesc form="Handschrift"/>
-</physDesc>
-<history>
-<origin/>
-</history>
-</msDesc>
-</witness>
-</listWit>
-</p>
-</div>
-<div type="contents">
-<p xml:id="Ch37.p1">
-<anchor xml:id="RK60282"/>
-<!--  \hackfor{\par} -->
-</p>
-<p xml:id="Ch37.p4">
-<hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi><anchor xml:id="LH_37_05_024_Datierung"/> Gegenstand der Aufzeichnung N. <ref corresp="#RK60282"/>
-<hi rendition="#i">De legibus concursus</hi> – kaum mehr als eine Notiz, die
+                                        </summary>
+                                    </msContents>
+                                    <physDesc>
+                                        <objectDesc form="Handschrift"/>
+                                    </physDesc>
+                                    <history>
+                                        <origin/>
+                                    </history>
+                                </msDesc>
+                            </witness>
+                        </listWit>
+                    </p>
+                </div>
+                <div type="contents">
+                    <p xml:id="Ch37.p1">
+                        <anchor xml:id="RK60282"/>
+                        <!--  \hackfor{\par} -->
+                    </p>
+                    <p xml:id="Ch37.p4">
+                        <hi rendition="#smaller">
+                            <hi rendition="#b">Datierungsgründe:</hi>
+                            <anchor xml:id="LH_37_05_024_Datierung"/>
+ Gegenstand der Aufzeichnung N. <ref corresp="#RK60282"/>
+                        <hi rendition="#i">De legibus concursus</hi> – kaum mehr als eine Notiz, die
 skizzenhafte Gedanken festhält – ist die Kinematik des gemeinsamen Schwerpunkts zweier
 Körper, die sich in einem Fluidum aneinander bewegen und gegebenenfalls aufeinander
 stoßen. Der Titel zeigt, dass die Stoßlehre Ausgangspunkt der Fragestellung ist. Dies
-rückt N. <ref corresp="#RK60282"/> inhaltlich in die Nähe weiterer in diesem Band
+rückt N. <ref corresp="#RK60282"/>
+ inhaltlich in die Nähe weiterer in diesem Band
 edierter Texte, in denen Leibniz im Rahmen seiner Untersuchung über die Stoßgesetze
 Gedankenexperimente entwirft, um das Gesetz der gleichförmigen Bewegung des
-gemeinsamen Schwerpunkts nachzuweisen: In den Entwürfen N. <ref corresp="L_chapter_39.xml#RK57266-1"/> (S. <ref corresp="L_chapter_39.xml#LH_37_05_162r_Gedankenexperiment-1"/>) und N. <ref corresp="L_section_432.xml#RK57268"/> (Randbemerkung zu S. <ref corresp="L_section_432.xml#_37_05_144r-145v_12a"/>), welche eigenhändig auf März
+gemeinsamen Schwerpunkts nachzuweisen: In den Entwürfen N. <ref corresp="L_chapter_39.xml#RK57266-1"/>
+ (S. <ref corresp="L_chapter_39.xml#LH_37_05_162r_Gedankenexperiment-1"/>
+) und N. <ref corresp="L_section_432.xml#RK57268"/>
+ (Randbemerkung zu S. <ref corresp="L_section_432.xml#_37_05_144r-145v_12a"/>
+), welche eigenhändig auf März
 bzw. Mai 1677 datiert sind, liegen klare aber knappe Andeutungen auf diese Thematik
 vor, wohingegen die im Januar 1678 verfasste <hi rendition="#i">Scheda IX de corporum
 concursu</hi> eine ausführliche Beschreibung ausgeklügelter Gedankenexperimente
-liefert (N. <ref corresp="L_section_5811.xml#dcc_09"/>, S. <ref corresp="L_section_5811.xml#LH_37_05_088rv_cntrmgrvtts-1"/>). Die inhaltliche
-Verwandtschaft mit diesen Texten legt nahe, auch für N. <ref corresp="#RK60282"/> eine
+liefert (N. <ref corresp="L_section_5811.xml#dcc_09"/>
+, S. <ref corresp="L_section_5811.xml#LH_37_05_088rv_cntrmgrvtts-1"/>
+). Die inhaltliche
+Verwandtschaft mit diesen Texten legt nahe, auch für N. <ref corresp="#RK60282"/>
+ eine
 Entstehungszeit zwischen Frühjahr 1677 und spätestens Januar 1678 anzunehmen.</hi>
 </p>
 </div>
 <div type="text">
 <p xml:id="Ch37.p5">
 <hi rendition="#smaller">Da Leibniz seit seiner Beschäftigung mit Huygens’ Stoßlehre im
-Sommer 1669 das Gesetz der gleichförmigen Bewegung des Schwerpunkts kannte (vgl. <hi rendition="#i">LSB</hi> VI, 2 N. 38,<ref corresp="#bib_02025"/> S. 158.1–8,
-159.3–7), ist eine auch erheblich frühere Datierung der Aufzeichnung N. <ref corresp="#RK60282"/> grundsätzlich möglich. Sie erweist sich aber als
+Sommer 1669 das Gesetz der gleichförmigen Bewegung des Schwerpunkts kannte (vgl. <hi rendition="#i">LSB</hi> VI, 2 N. 38,<ref corresp="#bib_02025"/>
+ S. 158.1–8,
+159.3–7), ist eine auch erheblich frühere Datierung der Aufzeichnung N. <ref corresp="#RK60282"/>
+ grundsätzlich möglich. Sie erweist sich aber als
 unwahrscheinlich, weil Leibniz nach heutigem Wissensstand die Kinematik des
 gemeinsamen Schwerpunkts aufeinander stoßender Körper erstmals in den genannten Texten
-N. <ref corresp="L_chapter_39.xml#RK57266-1"/> und N. <ref corresp="L_section_432.xml#RK57268"/> als Frage thematisiert und vornehmlich in den
-<hi rendition="#i">Schedae de corporum concursu</hi> behandelt (zunächst in N. <ref corresp="L_section_582.xml#dcc_02-1"/> bis N. <ref corresp="L_section_584.xml#dcc_03"/>). Allerdings fehlt in N. <ref corresp="#RK60282"/> – anders als in den übrigen genannten Texten aus dem Zeitraum
+N. <ref corresp="L_chapter_39.xml#RK57266-1"/>
+ und N. <ref corresp="L_section_432.xml#RK57268"/>
+ als Frage thematisiert und vornehmlich in den
+<hi rendition="#i">Schedae de corporum concursu</hi> behandelt (zunächst in N. <ref corresp="L_section_582.xml#dcc_02-1"/>
+ bis N. <ref corresp="L_section_584.xml#dcc_03"/>
+). Allerdings fehlt in N. <ref corresp="#RK60282"/>
+ – anders als in den übrigen genannten Texten aus dem Zeitraum
 von März 1677 bis Januar 1678 – der grundlegende Hinweis darauf, dass mit den
 entworfenen Gedankenexperimenten das Gesetz der gleichförmigen Bewegung des
 Schwerpunks nur dann nachgewiesen werden könne, wenn zusätzlich die Unmöglichkeit
 eines <hi rendition="#i">motus perpetuus artificialis</hi> (und somit letztlich die
 notwendige Äquipollenz von Ursache und Wirkung) vorausgesetzt werde. Dieser
-bemerkenswerte Tatbestand könnte als Zeichen dafür gedeutet werden, dass N. <ref corresp="#RK60282"/> eher im Vorfeld des Entwurfs N. <ref corresp="L_chapter_39.xml#RK57266-1"/> entstand, d.h. noch im Winter 1676–1677. Aus
+bemerkenswerte Tatbestand könnte als Zeichen dafür gedeutet werden, dass N. <ref corresp="#RK60282"/>
+ eher im Vorfeld des Entwurfs N. <ref corresp="L_chapter_39.xml#RK57266-1"/>
+ entstand, d.h. noch im Winter 1676–1677. Aus
 demselben Grund kommt eine Datierung der vorliegenden Aufzeichnung auf die Zeit nach
-N. <ref corresp="L_section_5811.xml#dcc_09"/> nicht in Frage. Vielmehr dürfte
-N. <ref corresp="#RK60282"/> noch vor Ende 1677 entstanden sein.</hi>
+N. <ref corresp="L_section_5811.xml#dcc_09"/>
+ nicht in Frage. Vielmehr dürfte
+N. <ref corresp="#RK60282"/>
+ noch vor Ende 1677 entstanden sein.</hi>
 </p>
-<p rendition="#noindent" xml:id="Ch37.p6"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=70"><pb type="L"/><fw type="folNum">[24 r<hi rendition="#sup">o</hi>]</fw></ref>                                    De legibus concursus<index indexName="Sachen"><term>leges concursus</term></index><index indexName="Sachen"><term>concursus corporum</term></index></p>
-<p rendition="#noindent" xml:id="Ch37.p7">Demonstrandum <app type="Bfootnote"><lem type="main">est primum</lem><note type="lemma-abbrev">est</note><rdg wit="#L" n="1"> in prim </rdg><rdg wit="#L" n="2"> primum <hi rendition="#i">L</hi></rdg></app>
-accuratissime, quod duorum corporum sive ascendentium<index indexName="Sachen"><term>corpus ascendens</term></index> sive descendentium<index indexName="Sachen"><term>corpus descendens</term></index>
-<app type="Bfootnote"><lem type="main">sive concurrant sive non,</lem><note type="lemma-abbrev">sive</note><rdg wit="#L" n="1"> ante concursum sive post
-concursum </rdg><rdg wit="#L" n="2"> concurrant sive non, <hi rendition="#i">L</hi></rdg></app>
-<app type="Bfootnote"><lem type="main">semper centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index></lem><note type="lemma-abbrev">semper</note><rdg wit="#L" n="1"> in eadem recta </rdg><rdg wit="#L" n="2"> centrum gravitatis <hi rendition="#i">L</hi></rdg></app> eadem
-celeritate ascendat vel descendat.<index indexName="Sachen"><term>celeritas
-ascensus</term></index><index indexName="Sachen"><term>celeritas
-descensus</term></index>
-<pb type="L"/>Quoniam nimirum gravitas totius<index indexName="Sachen"><term>gravitas
-totius</term></index> semper eadem <app type="Bfootnote"><lem type="main">est,
-posito quod non impediatur.</lem><note type="lemma-abbrev">est,</note><rdg wit="#L" n="1"> nec a quoquam impeditur. </rdg><rdg wit="#L" n="2"> posito quod non
-impediatur. <hi rendition="#i">L</hi></rdg></app>
-<app type="Bfootnote"><lem type="main">Sed jam</lem><note type="lemma-abbrev">sed</note><rdg wit="#L" n="1"> quoniam </rdg><rdg wit="#L" n="2"> jam <hi rendition="#i">L</hi></rdg></app> video ob accelerationem<index indexName="Sachen"><term>acceleratio</term></index>
-<app type="Bfootnote"><lem type="main">et retardationem<index indexName="Sachen"><term>retardatio</term></index></lem><note type="lemma-abbrev">et</note><rdg wit="#L" cause="addition"><add>retardationem</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> continue
-augeri vel minui, id ergo in calculum venire debet.<index indexName="Sachen"><term>calculus</term></index>
-<app type="Bfootnote"><lem type="main">Notandum tamen etiam cum</lem><note type="lemma-abbrev">Notandum</note><rdg wit="#L">tamen </rdg><rdg wit="#L" n="1"> cum </rdg><rdg wit="#L" n="2"> etiam cum <hi rendition="#i">L</hi></rdg></app>
-impeditur, tamen in eadem semper linea <app type="Bfootnote"><lem type="main">ferri
-centrum gravitatis,<index indexName="Sachen"><term>centrum
-gravitatis</term></index></lem><note type="lemma-abbrev">ferri</note><rdg wit="#L" n="1"> grave </rdg><rdg wit="#L" n="2"> centrum gravitatis, <hi rendition="#i">L</hi></rdg></app> etsi non semper ad easdem partes, cum nimirum partes
-diversimode. Cum autem non <app type="Bfootnote"><lem type="main">impeditur, ut
-autem</lem><note type="lemma-abbrev">impeditur</note><rdg wit="#L" n="1"> quod fit
-in </rdg><rdg wit="#L" n="2"> ut autem in <hi rendition="#i">L</hi></rdg></app> in
-eadem pergat linea necesse est in plano horizontali<index indexName="Sachen"><term>planum horizontale</term></index> eadem ferri celeritate.<index indexName="Sachen"><term>celeritas centri gravitatis</term></index>
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=72"><pb type="L"/><fw type="folNum">[24 v<hi rendition="#sup">o</hi>]</fw></ref></p>
-<p xml:id="Ch37.p8">Cogitandum etiam nullam amplius fore accelerationem<index indexName="Sachen"><term>acceleratio</term></index> cum sufficiens est liquidi
-ambientis resistentia.<index indexName="Sachen"><term>resistentia liquidi
-ambientis</term></index><index indexName="Sachen"><term>liquidum
-ambiens</term></index> Itaque hoc casu necesse est,<index indexName="Sachen"><term>casus</term></index> eadem celeritate ascendere<index indexName="Sachen"><term>celeritas ascensus</term></index>
-<app type="Bfootnote"><lem type="main">et descendere.<index indexName="Sachen"><term>celeritas descensus</term></index></lem><note type="lemma-abbrev">et</note><rdg wit="#L" cause="addition"><add>descendere</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> Ex his
-Mechanicis<index indexName="Sachen"><term>mechanica</term></index> postea
-physica<index indexName="Sachen"><term>physica</term></index> concludi possunt,
-nimirum necessario corpora <app type="Bfootnote"><lem type="main">gravia dura<index indexName="Sachen"><term>corpus grave</term></index><index indexName="Sachen"><term>corpus durum</term></index> esse Elastica.<index indexName="Sachen"><term>corpus elasticum</term></index></lem><note type="lemma-abbrev">gravia</note><rdg wit="#L" n="1"> esse Elastica. </rdg><rdg wit="#L" n="2"> dura
-esse Elastica. <hi rendition="#i">L</hi></rdg></app></p>
-<p xml:id="Ch37.p9">Hinc jam facilis transitus ad eum casum quo inclinatio plani<index indexName="Sachen"><term>inclinatio plani infinite parva</term></index> est infinite
-parva, eo autem casu<index indexName="Sachen"><term>casus</term></index> manifestum est
-nihil referre utcunque mutetur liquidum<index indexName="Sachen"><term>liquidum
-ambiens</term></index>[,] semper enim aeque non resistit gravitati<index indexName="Sachen"><term>gravitas</term></index>[;] vel potius fingamus corporum<index indexName="Sachen"><term>corpus grave</term></index><index indexName="Sachen"><term>corpus leve</term></index>
-<app type="Bfootnote"><lem type="main">gravium vel levium</lem><note type="lemma-abbrev">gravium</note><rdg wit="#L" cause="addition"><add>vel levium</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> unum
+<p rendition="#noindent" xml:id="Ch37.p6">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=70">
+<pb type="L"/>
+<fw type="folNum">[24 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>                                    De legibus concursus<index indexName="Sachen">
+<term>leges concursus</term>
+</index>
+<index indexName="Sachen">
+<term>concursus corporum</term>
+</index>
+</p>
+<p rendition="#noindent" xml:id="Ch37.p7">Demonstrandum <app type="Bfootnote">
+<lem type="main">est primum</lem>
+<note type="lemma-abbrev">est</note>
+<rdg wit="#L" n="1"> in prim </rdg>
+<rdg wit="#L" n="2"> primum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+accuratissime, quod duorum corporum sive ascendentium<index indexName="Sachen">
+<term>corpus ascendens</term>
+</index> sive descendentium<index indexName="Sachen">
+<term>corpus descendens</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">sive concurrant sive non,</lem>
+<note type="lemma-abbrev">sive</note>
+<rdg wit="#L" n="1"> ante concursum sive post
+concursum </rdg>
+<rdg wit="#L" n="2"> concurrant sive non, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">semper centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">semper</note>
+<rdg wit="#L" n="1"> in eadem recta </rdg>
+<rdg wit="#L" n="2"> centrum gravitatis <hi rendition="#i">L</hi>
+</rdg>
+</app> eadem
+celeritate ascendat vel descendat.<index indexName="Sachen">
+<term>celeritas
+ascensus</term>
+</index>
+<index indexName="Sachen">
+<term>celeritas
+descensus</term>
+</index>
+<pb type="L"/>
+Quoniam nimirum gravitas totius<index indexName="Sachen">
+<term>gravitas
+totius</term>
+</index> semper eadem <app type="Bfootnote">
+<lem type="main">est,
+posito quod non impediatur.</lem>
+<note type="lemma-abbrev">est,</note>
+<rdg wit="#L" n="1"> nec a quoquam impeditur. </rdg>
+<rdg wit="#L" n="2"> posito quod non
+impediatur. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">Sed jam</lem>
+<note type="lemma-abbrev">sed</note>
+<rdg wit="#L" n="1"> quoniam </rdg>
+<rdg wit="#L" n="2"> jam <hi rendition="#i">L</hi>
+</rdg>
+</app> video ob accelerationem<index indexName="Sachen">
+<term>acceleratio</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">et retardationem<index indexName="Sachen">
+<term>retardatio</term>
+</index>
+</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" cause="addition">
+<add>retardationem</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> continue
+augeri vel minui, id ergo in calculum venire debet.<index indexName="Sachen">
+<term>calculus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">Notandum tamen etiam cum</lem>
+<note type="lemma-abbrev">Notandum</note>
+<rdg wit="#L">tamen </rdg>
+<rdg wit="#L" n="1"> cum </rdg>
+<rdg wit="#L" n="2"> etiam cum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+impeditur, tamen in eadem semper linea <app type="Bfootnote">
+<lem type="main">ferri
+centrum gravitatis,<index indexName="Sachen">
+<term>centrum
+gravitatis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">ferri</note>
+<rdg wit="#L" n="1"> grave </rdg>
+<rdg wit="#L" n="2"> centrum gravitatis, <hi rendition="#i">L</hi>
+</rdg>
+</app> etsi non semper ad easdem partes, cum nimirum partes
+diversimode. Cum autem non <app type="Bfootnote">
+<lem type="main">impeditur, ut
+autem</lem>
+<note type="lemma-abbrev">impeditur</note>
+<rdg wit="#L" n="1"> quod fit
+in </rdg>
+<rdg wit="#L" n="2"> ut autem in <hi rendition="#i">L</hi>
+</rdg>
+</app> in
+eadem pergat linea necesse est in plano horizontali<index indexName="Sachen">
+<term>planum horizontale</term>
+</index> eadem ferri celeritate.<index indexName="Sachen">
+<term>celeritas centri gravitatis</term>
+</index>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=72">
+<pb type="L"/>
+<fw type="folNum">[24 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</p>
+<p xml:id="Ch37.p8">Cogitandum etiam nullam amplius fore accelerationem<index indexName="Sachen">
+<term>acceleratio</term>
+</index> cum sufficiens est liquidi
+ambientis resistentia.<index indexName="Sachen">
+<term>resistentia liquidi
+ambientis</term>
+</index>
+<index indexName="Sachen">
+<term>liquidum
+ambiens</term>
+</index> Itaque hoc casu necesse est,<index indexName="Sachen">
+<term>casus</term>
+</index> eadem celeritate ascendere<index indexName="Sachen">
+<term>celeritas ascensus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">et descendere.<index indexName="Sachen">
+<term>celeritas descensus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" cause="addition">
+<add>descendere</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> Ex his
+Mechanicis<index indexName="Sachen">
+<term>mechanica</term>
+</index> postea
+physica<index indexName="Sachen">
+<term>physica</term>
+</index> concludi possunt,
+nimirum necessario corpora <app type="Bfootnote">
+<lem type="main">gravia dura<index indexName="Sachen">
+<term>corpus grave</term>
+</index>
+<index indexName="Sachen">
+<term>corpus durum</term>
+</index> esse Elastica.<index indexName="Sachen">
+<term>corpus elasticum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">gravia</note>
+<rdg wit="#L" n="1"> esse Elastica. </rdg>
+<rdg wit="#L" n="2"> dura
+esse Elastica. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch37.p9">Hinc jam facilis transitus ad eum casum quo inclinatio plani<index indexName="Sachen">
+<term>inclinatio plani infinite parva</term>
+</index> est infinite
+parva, eo autem casu<index indexName="Sachen">
+<term>casus</term>
+</index> manifestum est
+nihil referre utcunque mutetur liquidum<index indexName="Sachen">
+<term>liquidum
+ambiens</term>
+</index>[,] semper enim aeque non resistit gravitati<index indexName="Sachen">
+<term>gravitas</term>
+</index>[;] vel potius fingamus corporum<index indexName="Sachen">
+<term>corpus grave</term>
+</index>
+<index indexName="Sachen">
+<term>corpus leve</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">gravium vel levium</lem>
+<note type="lemma-abbrev">gravium</note>
+<rdg wit="#L" cause="addition">
+<add>vel levium</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> unum
 ascendere alterum descendere[,] neque ullam esse accelerationem aut certe
-accelerationem<index indexName="Sachen"><term>acceleratio</term></index> tam esse
+accelerationem<index indexName="Sachen">
+<term>acceleratio</term>
+</index> tam esse
 parvam ut haberi queat pro nulla, respectu exigui spatii quod percurritur, et ob
-inclinationem exiguam<index indexName="Sachen"><term>inclinatio plani infinite
-parva</term></index> perinde erit ac si ponamus centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index> aeque celeriter
-procedere.<index indexName="Sachen"><term>processus centri
-gravitatis</term></index></p>
+inclinationem exiguam<index indexName="Sachen">
+<term>inclinatio plani infinite
+parva</term>
+</index> perinde erit ac si ponamus centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index> aeque celeriter
+procedere.<index indexName="Sachen">
+<term>processus centri
+gravitatis</term>
+</index>
+</p>
 <figure rendition="#own-line_centered" xml:id="Ch37.p10">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_024_d_024v.svg" width="182.1204pt" xml:id="Ch37.p10.g1"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]
+</head>
 </figure>
 </div>
 </div>

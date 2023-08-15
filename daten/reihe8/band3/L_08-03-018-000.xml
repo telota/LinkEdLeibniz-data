@@ -1,284 +1,905 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-018-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-018-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De Corpore Tensili Rumpendo</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2022</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De Corpore Tensili Rumpendo</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2022</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-            </author><title type="chapter" level="a" n="18">De Corpore Tensili Rumpendo</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1683-01-20" resp="#ed" cert="medium">[Ende Januar 1683 – Ende 1684]</date><date calendar="#gregorian" notAfter="1684-12" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=304</idno></idno></analytic><monogr><title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2021</date></imprint><biblScope unit="page" from="270" to="272"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-03-018-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 9, 15 Bl. 20.</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung: LH XXXV 9, 15 Bl. 20.
+            </author>
+            <title type="chapter" level="a" n="18">De Corpore Tensili Rumpendo</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1683-01-20" resp="#ed" cert="medium">[Ende Januar 1683 – Ende 1684]</date>
+            <date calendar="#gregorian" notAfter="1684-12" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=304</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2021</date>
+            </imprint>
+            <biblScope unit="page" from="270" to="272"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-03-018-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 9, 15 Bl. 20.</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung: LH XXXV 9, 15 Bl. 20.
 Ein Blatt 4<hi rendition="#sup">o</hi>;
 Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=950">Wasserzeichens</ref> am Blattrand:
 Papier aus dem Harz.
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=951">Bl. 20 v<hi rendition="#sup">o</hi></ref>;
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=949">Bl. 20 r<hi rendition="#sup">o</hi></ref> überliefert N. <ref corresp="L_chapter_19.xml#N.19"/>.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="../../glyphs/rightpropto.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="../../glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-      </charDecl>
-    </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2023-02-13" who="#stork" status="enrich_1"/></revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-018-000_facs-haupttextzeuge"><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=943"/><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=945"/><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=946"/></facsimile><text xml:id="L_08-03-018-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch18" n="18"><head>18
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=951">Bl. 20 v<hi rendition="#sup">o</hi>
+                  </ref>;
+                  <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=949">Bl. 20 r<hi rendition="#sup">o</hi>
+                  </ref> überliefert N. <ref corresp="L_chapter_19.xml#N.19"/>
+.</p>
+              </summary>
+            </msContents>
+            <physDesc>
+              <objectDesc form="Handschrift"/>
+            </physDesc>
+            <history>
+              <origin corresp="L_witness-origin-types.xml#origin-L"/>
+            </history>
+          </msDesc>
+        </witness>
+      </listWit>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <tagsDecl>
+      <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+      <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+      <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+      <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+      <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+      <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+      <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+      <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+    </tagsDecl>
+    <charDecl>
+      <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+      <!--rightpropto-->
+      <glyph xml:id="rightpropto">
+        <glyphName>rightpropto</glyphName>
+        <desc>...</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\rightpropto</mapping>
+        <graphic url="../../glyphs/rightpropto.svg"/>
+      </glyph>
+      <glyph xml:id="Pfund">
+        <glyphName>Pfund</glyphName>
+        <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.7</value>
+        </charProp>
+        <mapping type="TeX">\Pfund</mapping>
+        <graphic url="../../glyphs/Pfund.svg"/>
+      </glyph>
+      <!-- leibdashv -->
+      <glyph xml:id="pleibdashv">
+        <glyphName>pleibdashv</glyphName>
+        <desc>Bedeutung (+−) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\pleibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <glyph xml:id="leibdashv">
+        <glyphName>leibdashv</glyphName>
+        <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\leibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <!-- Sonderzeichen MIT Unicodeentsprechung -->
+    </charDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="la"/>
+    </langUsage>
+    <calendarDesc>
+      <calendar xml:id="gregorian">
+        <p>Gregorianischer Kalenderstil</p>
+      </calendar>
+      <calendar xml:id="julian">
+        <p>Julianischer Kalenderstil</p>
+      </calendar>
+    </calendarDesc>
+    <textClass>
+      <catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
+      <catRef scheme="L_terms" target="L_terms.xml#"/>
+    </textClass>
+    <abstract>
+      <listPerson>
+        <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+        <person sameAs="L_persons.xml#"/>
+      </listPerson>
+      <listPlace>
+        <place sameAs="L_places.xml#"/>
+      </listPlace>
+    </abstract>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021" who="#telota" status="base"/>
+    <change when="2023-02-13" who="#stork" status="enrich_1"/>
+  </revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-018-000_facs-haupttextzeuge">
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=943"/>
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=945"/>
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=946"/>
+</facsimile>
+<text xml:id="L_08-03-018-000_text">
+  <body xml:id="Document">
+    <div type="chapter" xml:id="Ch18" n="18">
+      <head>18
 DE CORPORE TENSILI RUMPENDO</head>
-      <head>[Ende Januar 1683 – Ende 1684]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 9, 15 Bl. 20</idno></msIdentifier><msContents><summary><p>Aufzeichnung: LH XXXV 9, 15 Bl. 20.
+      <head>[Ende Januar 1683 – Ende 1684]</head>
+      <div type="ueberlieferung">
+        <p>
+          <hi rendition="#b #smaller">Überlieferung:</hi>
+          <listWit>
+            <witness>
+              <msDesc>
+                <msIdentifier>
+                  <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                  <idno type="Signatur">LH XXXV 9, 15 Bl. 20</idno>
+                </msIdentifier>
+                <msContents>
+                  <summary>
+                    <p>Aufzeichnung: LH XXXV 9, 15 Bl. 20.
 Ein Blatt 4<hi rendition="#sup">o</hi>;
 Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=950">Wasserzeichens</ref> am Blattrand:
 Papier aus dem Harz.
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=951">Bl. 20 v<hi rendition="#sup">o</hi></ref>;
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=949">Bl. 20 r<hi rendition="#sup">o</hi></ref> überliefert N. <ref corresp="L_chapter_19.xml#N.19"/>.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch18.p1"><anchor xml:id="_60651"/>
-<anchor xml:id="N.18"/><!--  \hackfor{\par} --></p><p xml:id="Ch18.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi><anchor xml:id="LH_35_09_15_020v_Datierung"/>
-Ausschlaggebend für die Datierung der vorliegenden titellosen Aufzeichnung N. <ref corresp="#N.18"/> ist der inhaltliche Zusammenhang mitN. <ref corresp="L_chapter_17.xml#N.17"/>:
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=951">Bl. 20 v<hi rendition="#sup">o</hi>
+                    </ref>;
+                    <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=949">Bl. 20 r<hi rendition="#sup">o</hi>
+                    </ref> überliefert N. <ref corresp="L_chapter_19.xml#N.19"/>
+.</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift"/>
+              </physDesc>
+              <history>
+                <origin/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
+      </p>
+    </div>
+    <div type="contents">
+      <p xml:id="Ch18.p1">
+        <anchor xml:id="_60651"/>
+        <anchor xml:id="N.18"/>
+        <!--  \hackfor{\par} --></p>
+      <p xml:id="Ch18.p4">
+        <hi rendition="#smaller">
+          <hi rendition="#b">Datierungsgründe:</hi>
+          <anchor xml:id="LH_35_09_15_020v_Datierung"/>
+Ausschlaggebend für die Datierung der vorliegenden titellosen Aufzeichnung N. <ref corresp="#N.18"/>
+ ist der inhaltliche Zusammenhang mitN. <ref corresp="L_chapter_17.xml#N.17"/>
+:
 Hauptziel der Untersuchung ist in beiden Texten die Bestimmung der Spannkraft, die einen elastischen Körper wie etwa eine Saite zum Reißen führt.
-Im Hintergrund stehen bei N. <ref corresp="#N.18"/> sowie bei N. <ref corresp="L_chapter_17.xml#N.17"/> die umfangreichen Untersuchungen über die Festigkeit, die in N. <ref corresp="L_chapter_14.xml#N.14"/> versammelt sind.
-An einer Stelle (S. <ref corresp="#LH_35_09_15_020v_aliademonstrata_yuox-1"/>) verweist N. <ref corresp="#N.18"/> ferner auf ein Theorem, dessen Nachweis in N. <ref corresp="L_chapter_17.xml#N.17"/> erbracht wird (S. <ref corresp="L_chapter_17.xml#LH_35_09_15_018v_aliasdemonstrata_vldj-1"/>).
-Demgemäß ist anzunehmen, dass N. <ref corresp="#N.18"/> nach N. <ref corresp="L_chapter_17.xml#N.17"/> verfasst wurde.
-Dass beide Texte auch ungefähr zur gleichen Zeit entstanden, kann man ihren Trägern entnehmen: In beiden liegt dasselbe, von einer Papiermühle in Osterode stammende Wasserzeichen vor, das im Nachlass nach heutigem Wissensstand lediglich für die Jahre 1683 und 1684 belegt ist.<index indexName="Orte"><term><hi rendition="#smaller">Osterode</hi></term></index><index indexName="Orte"><term><hi rendition="#smaller">Harz</hi></term></index>
-Daher ist anzunehmen, dass auch die Aufzeichnung N. <ref corresp="#N.18"/> – ebenso wie N. <ref corresp="L_chapter_17.xml#N.17"/> – im Zeitraum von Ende Januar 1683 bis Ende des Jahres 1684 verfasst wurde.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch18.p5"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=951"><pb type="L"/><fw type="folNum">[20 v<hi rendition="#sup">o</hi>]</fw></ref> Sit linea<index indexName="Sachen"><term>linea rigida</term></index>
-<app type="Bfootnote"><lem type="main">rigida</lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+Im Hintergrund stehen bei N. <ref corresp="#N.18"/>
+ sowie bei N. <ref corresp="L_chapter_17.xml#N.17"/>
+ die umfangreichen Untersuchungen über die Festigkeit, die in N. <ref corresp="L_chapter_14.xml#N.14"/>
+ versammelt sind.
+An einer Stelle (S. <ref corresp="#LH_35_09_15_020v_aliademonstrata_yuox-1"/>
+) verweist N. <ref corresp="#N.18"/>
+ ferner auf ein Theorem, dessen Nachweis in N. <ref corresp="L_chapter_17.xml#N.17"/>
+ erbracht wird (S. <ref corresp="L_chapter_17.xml#LH_35_09_15_018v_aliasdemonstrata_vldj-1"/>
+).
+Demgemäß ist anzunehmen, dass N. <ref corresp="#N.18"/>
+ nach N. <ref corresp="L_chapter_17.xml#N.17"/>
+ verfasst wurde.
+Dass beide Texte auch ungefähr zur gleichen Zeit entstanden, kann man ihren Trägern entnehmen: In beiden liegt dasselbe, von einer Papiermühle in Osterode stammende Wasserzeichen vor, das im Nachlass nach heutigem Wissensstand lediglich für die Jahre 1683 und 1684 belegt ist.<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Osterode</hi>
+</term>
+</index>
+<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Harz</hi>
+</term>
+</index>
+Daher ist anzunehmen, dass auch die Aufzeichnung N. <ref corresp="#N.18"/>
+ – ebenso wie N. <ref corresp="L_chapter_17.xml#N.17"/>
+ – im Zeitraum von Ende Januar 1683 bis Ende des Jahres 1684 verfasst wurde.</hi>
+</p>
+</div>
+<div type="text">
+<p rendition="#noindent" xml:id="Ch18.p5">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=951">
+<pb type="L"/>
+<fw type="folNum">[20 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref> Sit linea<index indexName="Sachen">
+<term>linea rigida</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">rigida</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
 <hi rendition="#i">AB</hi>
-in quam libere natantem in aqua<index indexName="Sachen"><term>aqua</term></index>
-decidendo impingat globus <hi rendition="#i">C</hi><index indexName="Sachen"><term>globus impingens</term></index>
+in quam libere natantem in aqua<index indexName="Sachen">
+<term>aqua</term>
+</index>
+decidendo impingat globus <hi rendition="#i">C</hi>
+<index indexName="Sachen">
+<term>globus impingens</term>
+</index>
 in ipsius <hi rendition="#i">AB</hi> medio.
 Res utique eodem redit,
-ac si linea<index indexName="Sachen"><term>linea rigida</term></index>
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<hi rendition="#i">AB</hi>]</corr></lem><rdg wit="#L"><orig><hi rendition="#i">C</hi></orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-in globum<index indexName="Sachen"><term>globus impingens</term></index> impingeretur,
-quoad ictum<index indexName="Sachen"><term>ictus globi</term></index> scilicet
-seu vim ruptionis,<index indexName="Sachen"><term>vis ruptionis</term></index>
-et quo longior erit linea <hi rendition="#i">AB</hi>,<index indexName="Sachen"><term>linea rigida</term></index>
+ac si linea<index indexName="Sachen">
+<term>linea rigida</term>
+</index>
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">AB</hi>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<hi rendition="#i">C</hi>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+in globum<index indexName="Sachen">
+<term>globus impingens</term>
+</index> impingeretur,
+quoad ictum<index indexName="Sachen">
+<term>ictus globi</term>
+</index> scilicet
+seu vim ruptionis,<index indexName="Sachen">
+<term>vis ruptionis</term>
+</index>
+et quo longior erit linea <hi rendition="#i">AB</hi>,<index indexName="Sachen">
+<term>linea rigida</term>
+</index>
 eo facilius tunc rumpetur in medio,
-longior enim erit vectis,<index indexName="Sachen"><term>vectis</term></index>
+longior enim erit vectis,<index indexName="Sachen">
+<term>vectis</term>
+</index>
 qui eam rumpere conabitur,
 cum <hi rendition="#i">C</hi> consideretur velut
-<app type="Bfootnote"><lem type="main">sustentaculum,<index indexName="Sachen"><term>sustentaculum</term></index>
-ut cum baculum</lem><note type="lemma-abbrev">sustentaculum,</note><rdg wit="#L" n="1"> <note type="editorial">|</note> cum <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> bacul
-</rdg><rdg wit="#L" n="2"> ut cum baculum<index indexName="Sachen"><term>baculus</term></index> <hi rendition="#i">L</hi></rdg></app>
-super genu<index indexName="Sachen"><term>genu</term></index> frangimus.</p><p xml:id="Ch18.p6">Hinc sequitur paradoxum,<index indexName="Sachen"><term>paradoxon</term></index>
-nempe quo latius est scutum<index indexName="Sachen"><term>scutum</term></index> aliquod,
-eo facilius ictu hastae<index indexName="Sachen"><term>ictus hastae</term></index>
-vel globi<index indexName="Sachen"><term>globus impingens</term></index> vel alio quocunque
-<app type="Bfootnote"><lem type="main">perforari.<index indexName="Sachen"><term>perforatio</term></index>
-Opus tamen</lem><note type="lemma-abbrev">perforari.</note><rdg wit="#L" n="1"> , scilicet
-</rdg><rdg wit="#L" n="2"> . Opus tamen <hi rendition="#i">L</hi></rdg></app>
-ista habent quodam temperamento,<index indexName="Sachen"><term>temperamentum</term></index>
+<app type="Bfootnote">
+<lem type="main">sustentaculum,<index indexName="Sachen">
+<term>sustentaculum</term>
+</index>
+ut cum baculum</lem>
+<note type="lemma-abbrev">sustentaculum,</note>
+<rdg wit="#L" n="1">
+<note type="editorial">|</note> cum <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> bacul
+</rdg>
+<rdg wit="#L" n="2"> ut cum baculum<index indexName="Sachen">
+<term>baculus</term>
+</index>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+super genu<index indexName="Sachen">
+<term>genu</term>
+</index> frangimus.</p>
+<p xml:id="Ch18.p6">Hinc sequitur paradoxum,<index indexName="Sachen">
+<term>paradoxon</term>
+</index>
+nempe quo latius est scutum<index indexName="Sachen">
+<term>scutum</term>
+</index> aliquod,
+eo facilius ictu hastae<index indexName="Sachen">
+<term>ictus hastae</term>
+</index>
+vel globi<index indexName="Sachen">
+<term>globus impingens</term>
+</index> vel alio quocunque
+<app type="Bfootnote">
+<lem type="main">perforari.<index indexName="Sachen">
+<term>perforatio</term>
+</index>
+Opus tamen</lem>
+<note type="lemma-abbrev">perforari.</note>
+<rdg wit="#L" n="1"> , scilicet
+</rdg>
+<rdg wit="#L" n="2"> . Opus tamen <hi rendition="#i">L</hi>
+</rdg>
+</app>
+ista habent quodam temperamento,<index indexName="Sachen">
+<term>temperamentum</term>
+</index>
 nam
-<app type="Bfootnote"><lem type="main">magna latitudo<index indexName="Sachen"><term>latitudo corporis</term></index></lem><note type="lemma-abbrev">magna</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>admodum</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> latitudo <hi rendition="#i">L</hi></rdg></app>
-minuit vicissim et rigiditatem,<index indexName="Sachen"><term>rigiditas</term></index>
-seu reddit corpus flexibilius.<index indexName="Sachen"><term>corpus flexibile</term></index> Deinde non licet pro arbitrio<index indexName="Sachen"><term>arbitrium</term></index> fingere idem
-<app type="Bfootnote"><lem type="main">esse utrum</lem><note type="lemma-abbrev">esse</note><rdg wit="#L" n="1"> ac si
-</rdg><rdg wit="#L" n="2"> utrum <hi rendition="#i">L</hi></rdg></app>
-moveatur excipiens<index indexName="Sachen"><term>corpus excipiens</term></index> an incidens,<index indexName="Sachen"><term>corpus incidens</term></index></p><figure rendition="#own-line_centered" xml:id="Ch18.p7"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d1.svg" width="112.7412pt" xml:id="Ch18.p7.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head></figure><figure rendition="#own-line_centered" xml:id="Ch18.p8_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d2.svg" width="216.8pt" xml:id="Ch18.p8.g1"/><head>[<hi rendition="#i">Fig. 2</hi>]</head></figure><figure rendition="#own-line_centered" xml:id="Ch18.p8_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d3.svg" width="216.8pt" xml:id="Ch18.p9.g1"/><head>[<hi rendition="#i">Fig. 3</hi>]</head></figure><p rendition="#noindent" xml:id="Ch18.p11">ita enim potentiam<index indexName="Sachen"><term>potentia</term></index> augeremus;
+<app type="Bfootnote">
+<lem type="main">magna latitudo<index indexName="Sachen">
+<term>latitudo corporis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">magna</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>admodum</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> latitudo <hi rendition="#i">L</hi>
+</rdg>
+</app>
+minuit vicissim et rigiditatem,<index indexName="Sachen">
+<term>rigiditas</term>
+</index>
+seu reddit corpus flexibilius.<index indexName="Sachen">
+<term>corpus flexibile</term>
+</index> Deinde non licet pro arbitrio<index indexName="Sachen">
+<term>arbitrium</term>
+</index> fingere idem
+<app type="Bfootnote">
+<lem type="main">esse utrum</lem>
+<note type="lemma-abbrev">esse</note>
+<rdg wit="#L" n="1"> ac si
+</rdg>
+<rdg wit="#L" n="2"> utrum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+moveatur excipiens<index indexName="Sachen">
+<term>corpus excipiens</term>
+</index> an incidens,<index indexName="Sachen">
+<term>corpus incidens</term>
+</index>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch18.p7">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d1.svg" width="112.7412pt" xml:id="Ch18.p7.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch18.p8_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d2.svg" width="216.8pt" xml:id="Ch18.p8.g1"/>
+<head>[<hi rendition="#i">Fig. 2</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch18.p8_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d3.svg" width="216.8pt" xml:id="Ch18.p9.g1"/>
+<head>[<hi rendition="#i">Fig. 3</hi>]
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch18.p11">ita enim potentiam<index indexName="Sachen">
+<term>potentia</term>
+</index> augeremus;
 sed saltem ut fingamus
-<app type="Bfootnote"><lem type="main">amborum celeritatem esse reciprocam</lem><note type="lemma-abbrev">amborum</note><rdg wit="#L" n="1"> concursum esse aequalium vectium seu reciprocum<index indexName="Sachen"><term>concursus vectium aequalium</term></index>
-</rdg><rdg wit="#L" n="2"> celeritatem esse reciprocam <hi rendition="#i">L</hi></rdg></app>
-magnitudinibus;<index indexName="Sachen"><term>magnitudo corporis</term></index>
-distributa hoc modo inter ipsa celeritate.<index indexName="Sachen"><term>celeritas distributa</term></index></p><p xml:id="Ch18.p12">Si corpus<index indexName="Sachen"><term>corpus tensile</term></index>
-<app type="Bfootnote"><lem type="main">sit tensile,</lem><note type="lemma-abbrev">sit</note><rdg wit="#L" n="1"> flexile
-</rdg><rdg wit="#L" n="2"> tensile, <hi rendition="#i">L</hi></rdg></app>
-quanto longius, hoc rumpatur difficilius.<index indexName="Sachen"><term>ruptura corporis</term></index>
-<app type="Bfootnote"><lem type="main">Ponamus globum impingere<index indexName="Sachen"><term>globus impingens</term></index> in chordam</lem><note type="lemma-abbrev">Ponamus</note><rdg wit="#L" n="1"> chordam
-</rdg><rdg wit="#L" n="2"> globum
-<app><rdg wit="#L" n="a">incidere
-</rdg><rdg wit="#L" n="b">impingere in chordam <hi rendition="#i">L</hi></rdg></app></rdg></app>
-tensam <hi rendition="#i">AB</hi>,<index indexName="Sachen"><term>chorda tensa</term></index>
-vires globi<index indexName="Sachen"><term>vis globi impingentis</term></index>
-aestimandae quadrato celeritatis<index indexName="Sachen"><term>quadratum celeritatis</term></index>
-ductae in globum.<index indexName="Sachen"><term>celeritas globi impingentis</term></index>
-Debent autem vires esse ut longitudines chordarum<index indexName="Sachen"><term>longitudo chordae</term></index> per
-<app type="Cfootnote"><lem type="main"><anchor xml:id="LH_35_09_15_020v_aliademonstrata_yuox-1"/>alias demonstrata,<anchor xml:id="LH_35_09_15_020v_aliademonstrata_yuox-2"/></lem><note type="lemma-abbrev">alias demonstrata</note><note type="editorial">Siehe N. <ref corresp="L_chapter_17.xml#N.17"/>, S. <ref corresp="L_chapter_17.xml#LH_35_09_15_018v_aliasdemonstrata_vldj-1"/>.</note></app>
-<app type="Bfootnote"><lem type="main">ergo eodem manente globo
-qui suo impactu<index indexName="Sachen"><term>impactus globi</term></index>
+<app type="Bfootnote">
+<lem type="main">amborum celeritatem esse reciprocam</lem>
+<note type="lemma-abbrev">amborum</note>
+<rdg wit="#L" n="1"> concursum esse aequalium vectium seu reciprocum<index indexName="Sachen">
+<term>concursus vectium aequalium</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> celeritatem esse reciprocam <hi rendition="#i">L</hi>
+</rdg>
+</app>
+magnitudinibus;<index indexName="Sachen">
+<term>magnitudo corporis</term>
+</index>
+distributa hoc modo inter ipsa celeritate.<index indexName="Sachen">
+<term>celeritas distributa</term>
+</index>
+</p>
+<p xml:id="Ch18.p12">Si corpus<index indexName="Sachen">
+<term>corpus tensile</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">sit tensile,</lem>
+<note type="lemma-abbrev">sit</note>
+<rdg wit="#L" n="1"> flexile
+</rdg>
+<rdg wit="#L" n="2"> tensile, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+quanto longius, hoc rumpatur difficilius.<index indexName="Sachen">
+<term>ruptura corporis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">Ponamus globum impingere<index indexName="Sachen">
+<term>globus impingens</term>
+</index> in chordam</lem>
+<note type="lemma-abbrev">Ponamus</note>
+<rdg wit="#L" n="1"> chordam
+</rdg>
+<rdg wit="#L" n="2"> globum
+<app>
+<rdg wit="#L" n="a">incidere
+</rdg>
+<rdg wit="#L" n="b">impingere in chordam <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+tensam <hi rendition="#i">AB</hi>,<index indexName="Sachen">
+<term>chorda tensa</term>
+</index>
+vires globi<index indexName="Sachen">
+<term>vis globi impingentis</term>
+</index>
+aestimandae quadrato celeritatis<index indexName="Sachen">
+<term>quadratum celeritatis</term>
+</index>
+ductae in globum.<index indexName="Sachen">
+<term>celeritas globi impingentis</term>
+</index>
+Debent autem vires esse ut longitudines chordarum<index indexName="Sachen">
+<term>longitudo chordae</term>
+</index> per
+<app type="Cfootnote">
+<lem type="main">
+<anchor xml:id="LH_35_09_15_020v_aliademonstrata_yuox-1"/>
+alias demonstrata,<anchor xml:id="LH_35_09_15_020v_aliademonstrata_yuox-2"/>
+</lem>
+<note type="lemma-abbrev">alias demonstrata</note>
+<note type="editorial">Siehe N. <ref corresp="L_chapter_17.xml#N.17"/>
+, S. <ref corresp="L_chapter_17.xml#LH_35_09_15_018v_aliasdemonstrata_vldj-1"/>
+.</note>
+</app>
+<app type="Bfootnote">
+<lem type="main">ergo eodem manente globo
+qui suo impactu<index indexName="Sachen">
+<term>impactus globi</term>
+</index>
 rumpere debet chordam <hi rendition="#i">AB</hi>, et <hi rendition="#i">LM</hi>,
-erunt quadrata</lem><note type="lemma-abbrev">ergo</note><rdg wit="#L" n="1"> quadrata
-</rdg><rdg wit="#L" n="2"> eodem manente globo qui
-<app><rdg wit="#L" n="a">sua
-</rdg><rdg wit="#L" n="b">suo impactu <seg type="apparat-ellipsis"/> erunt quadrata <hi rendition="#i">L</hi></rdg></app></rdg></app>
-celeritatum<index indexName="Sachen"><term>quadratum celeritatis</term></index>
-<app type="Bfootnote"><lem type="main">globi perrumpentis<index indexName="Sachen"><term>globus perrumpens</term></index></lem><note type="lemma-abbrev">globi</note><rdg wit="#L" cause="addition"><add>perrumpentis</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-ut longitudines chordarum.<index indexName="Sachen"><term>longitudo chordae</term></index>
-Altitudines<index indexName="Sachen"><term>altitudo lapsus</term></index> autem
-ex quibus lapsus globus,<index indexName="Sachen"><term>globus lapsus</term></index>
-erunt ut chordae excipientes<index indexName="Sachen"><term>chorda excipiens</term></index>
-seu rumpendae.<index indexName="Sachen"><term>chorda rumpenda</term></index>
+erunt quadrata</lem>
+<note type="lemma-abbrev">ergo</note>
+<rdg wit="#L" n="1"> quadrata
+</rdg>
+<rdg wit="#L" n="2"> eodem manente globo qui
+<app>
+<rdg wit="#L" n="a">sua
+</rdg>
+<rdg wit="#L" n="b">suo impactu <seg type="apparat-ellipsis"/>
+ erunt quadrata <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+celeritatum<index indexName="Sachen">
+<term>quadratum celeritatis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">globi perrumpentis<index indexName="Sachen">
+<term>globus perrumpens</term>
+</index>
+</lem>
+<note type="lemma-abbrev">globi</note>
+<rdg wit="#L" cause="addition">
+<add>perrumpentis</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+ut longitudines chordarum.<index indexName="Sachen">
+<term>longitudo chordae</term>
+</index>
+Altitudines<index indexName="Sachen">
+<term>altitudo lapsus</term>
+</index> autem
+ex quibus lapsus globus,<index indexName="Sachen">
+<term>globus lapsus</term>
+</index>
+erunt ut chordae excipientes<index indexName="Sachen">
+<term>chorda excipiens</term>
+</index>
+seu rumpendae.<index indexName="Sachen">
+<term>chorda rumpenda</term>
+</index>
 Quaeri potest satiusne sit
-<app type="Bfootnote"><lem type="main">ad resistendum</lem><note type="lemma-abbrev">ad</note><rdg wit="#L" cause="addition"><add>resistendum</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-ex duabus chordis <hi rendition="#i">AB</hi>, <hi rendition="#i">DE</hi>
-facere unam duplo crassiorem,<index indexName="Sachen"><term>chorda duplo crassior</term></index>
-ut globus<index indexName="Sachen"><term>globus impingens</term></index> simul ambas rumpere debeat,
+<app type="Bfootnote">
+<lem type="main">ad resistendum</lem>
+<note type="lemma-abbrev">ad</note>
+<rdg wit="#L" cause="addition">
+<add>resistendum</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+ex duabus chordis <hi rendition="#i">AB</hi>,<hi rendition="#i">DE</hi>
+facere unam duplo crassiorem,<index indexName="Sachen">
+<term>chorda duplo crassior</term>
+</index>
+ut globus<index indexName="Sachen">
+<term>globus impingens</term>
+</index> simul ambas rumpere debeat,
 an
-<app type="Bfootnote"><lem type="main">vero eas separare, ita ut</lem><note type="lemma-abbrev">vero</note><rdg wit="#L" n="1"> ut
-</rdg><rdg wit="#L" n="2"> eas separare, ita ut <hi rendition="#i">L</hi></rdg></app>
-una perrupta<index indexName="Sachen"><term>chorda perrupta</term></index>
-alteram adhuc integram inveniat perrumpendam.<index indexName="Sachen"><term>chorda perrumpenda</term></index>
+<app type="Bfootnote">
+<lem type="main">vero eas separare, ita ut</lem>
+<note type="lemma-abbrev">vero</note>
+<rdg wit="#L" n="1"> ut
+</rdg>
+<rdg wit="#L" n="2"> eas separare, ita ut <hi rendition="#i">L</hi>
+</rdg>
+</app>
+una perrupta<index indexName="Sachen">
+<term>chorda perrupta</term>
+</index>
+alteram adhuc integram inveniat perrumpendam.<index indexName="Sachen">
+<term>chorda perrumpenda</term>
+</index>
 Ita
-<app type="Cfootnote"><lem type="main">quidam arbitrantur,</lem><note type="lemma-abbrev">quidam arbitrantur</note><note type="editorial">Anspielung nicht nachgewiesen.</note></app>
-<app type="Bfootnote"><lem type="main">sed rationem ejus opinionis nullam</lem><note type="lemma-abbrev">sed</note><rdg wit="#L" n="1"> cum re
-</rdg><rdg wit="#L" n="2"> rationem ejus
-<app><rdg wit="#L" n="a">nul
-</rdg><rdg wit="#L" n="b">opinionis nullam <hi rendition="#i">L</hi></rdg></app></rdg></app>
+<app type="Cfootnote">
+<lem type="main">quidam arbitrantur,</lem>
+<note type="lemma-abbrev">quidam arbitrantur</note>
+<note type="editorial">Anspielung nicht nachgewiesen.</note>
+</app>
+<app type="Bfootnote">
+<lem type="main">sed rationem ejus opinionis nullam</lem>
+<note type="lemma-abbrev">sed</note>
+<rdg wit="#L" n="1"> cum re
+</rdg>
+<rdg wit="#L" n="2"> rationem ejus
+<app>
+<rdg wit="#L" n="a">nul
+</rdg>
+<rdg wit="#L" n="b">opinionis nullam <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
 reperio.
-Omnis enim vis globi<index indexName="Sachen"><term>vis globi impingentis</term></index>
+Omnis enim vis globi<index indexName="Sachen">
+<term>vis globi impingentis</term>
+</index>
 transferri debet utique in corpus,
-seu ad ejus tensionem<index indexName="Sachen"><term>tensio corporis</term></index>
-ruptionemve<index indexName="Sachen"><term>ruptio corporis</term></index> insumi,
+seu ad ejus tensionem<index indexName="Sachen">
+<term>tensio corporis</term>
+</index>
+ruptionemve<index indexName="Sachen">
+<term>ruptio corporis</term>
+</index> insumi,
 itaque quamdium non est insumta
-<app type="Bfootnote"><lem type="main">tota, operabitur</lem><note type="lemma-abbrev">tota,</note><rdg wit="#L" n="1"> restabit
-</rdg><rdg wit="#L" n="2"> operabitur <hi rendition="#i">L</hi></rdg></app>
-adhuc globus,<index indexName="Sachen"><term>globus impingens</term></index>
+<app type="Bfootnote">
+<lem type="main">tota, operabitur</lem>
+<note type="lemma-abbrev">tota,</note>
+<rdg wit="#L" n="1"> restabit
+</rdg>
+<rdg wit="#L" n="2"> operabitur <hi rendition="#i">L</hi>
+</rdg>
+</app>
+adhuc globus,<index indexName="Sachen">
+<term>globus impingens</term>
+</index>
 nec refert itaque
-<app type="Bfootnote"><lem type="main">an operetur in duas chordas simul,</lem><note type="lemma-abbrev">an</note><rdg wit="#L" n="1"> simul
-</rdg><rdg wit="#L" n="2"> operetur in duas chordas simul, <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">an operetur in duas chordas simul,</lem>
+<note type="lemma-abbrev">an</note>
+<rdg wit="#L" n="1"> simul
+</rdg>
+<rdg wit="#L" n="2"> operetur in duas chordas simul, <hi rendition="#i">L</hi>
+</rdg>
+</app>
 quo casu cum ambae simul sint
-<app type="Bfootnote"><lem type="main">tendendae,<index indexName="Sachen"><term>chorda tendenda</term></index>
-eo minor erit tensio<index indexName="Sachen"><term>tensio chordae</term></index>
-in unaquaque</lem><note type="lemma-abbrev">tendendae,</note><rdg wit="#L" n="1"> dimidi
-</rdg><rdg wit="#L" n="2"> eo minor
-<app><rdg wit="#L" n="a">, seu
-</rdg><rdg wit="#L" n="b">erit tensio
-<app><rdg wit="#L" n="aa">, nempe
-</rdg><rdg wit="#L" n="bb">in unaquaque <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
-(<?tex-source \phantom{)}?>puto tantum fore quartam partem</p><figure rendition="#own-line_centered" xml:id="Ch18.p13_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d4.svg" width="130.1pt" xml:id="Ch18.p13.g1"/><head>[<hi rendition="#i">Fig. 4, gestr.</hi>]</head></figure><figure rendition="#own-line_centered" xml:id="Ch18.p13_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d5.svg" width="303.5pt" xml:id="Ch18.p14.g1"/><head>[<hi rendition="#i">Fig. 5, gestr.</hi>]</head></figure><p rendition="#noindent" xml:id="Ch18.p16">tensionis<?tex-source \phantom{(}?>)
-ruptura<index indexName="Sachen"><term>ruptura chordae</term></index> autem
-<app type="Bfootnote"><lem type="main">sequetur
-cum ambae simul quaelibet ad eam tensionem<index indexName="Sachen"><term>tensio chordae</term></index></lem><note type="lemma-abbrev">sequetur</note><rdg wit="#L" n="1"> cum ambae simul ad eam ten
-</rdg><rdg wit="#L" n="2"> cum ambae <seg type="apparat-ellipsis"/> eam tensionem <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">tendendae,<index indexName="Sachen">
+<term>chorda tendenda</term>
+</index>
+eo minor erit tensio<index indexName="Sachen">
+<term>tensio chordae</term>
+</index>
+in unaquaque</lem>
+<note type="lemma-abbrev">tendendae,</note>
+<rdg wit="#L" n="1"> dimidi
+</rdg>
+<rdg wit="#L" n="2"> eo minor
+<app>
+<rdg wit="#L" n="a">, seu
+</rdg>
+<rdg wit="#L" n="b">erit tensio
+<app>
+<rdg wit="#L" n="aa">, nempe
+</rdg>
+<rdg wit="#L" n="bb">in unaquaque <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+(<?tex-source \phantom{)}?>puto tantum fore quartam partem</p>
+<figure rendition="#own-line_centered" xml:id="Ch18.p13_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d4.svg" width="130.1pt" xml:id="Ch18.p13.g1"/>
+<head>[<hi rendition="#i">Fig. 4, gestr.</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch18.p13_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d5.svg" width="303.5pt" xml:id="Ch18.p14.g1"/>
+<head>[<hi rendition="#i">Fig. 5, gestr.</hi>]
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch18.p16">tensionis<?tex-source \phantom{(}?>)
+ruptura<index indexName="Sachen">
+<term>ruptura chordae</term>
+</index> autem
+<app type="Bfootnote">
+<lem type="main">sequetur
+cum ambae simul quaelibet ad eam tensionem<index indexName="Sachen">
+<term>tensio chordae</term>
+</index>
+</lem>
+<note type="lemma-abbrev">sequetur</note>
+<rdg wit="#L" n="1"> cum ambae simul ad eam ten
+</rdg>
+<rdg wit="#L" n="2"> cum ambae <seg type="apparat-ellipsis"/>
+ eam tensionem <hi rendition="#i">L</hi>
+</rdg>
+</app>
 perveniunt,
 quae singulas rumpere potest.
-Et si forte inaequalis sunt resistentiae,<index indexName="Sachen"><term>resistentia ad rupturam</term></index>
+Et si forte inaequalis sunt resistentiae,<index indexName="Sachen">
+<term>resistentia ad rupturam</term>
+</index>
 unaque rumpitur ante aliam,
-tunc quod reliquum virium<index indexName="Sachen"><term>vis globi impingentis</term></index>
+tunc quod reliquum virium<index indexName="Sachen">
+<term>vis globi impingentis</term>
+</index>
 impenditur in solam nondum
-<app type="Bfootnote"><lem type="main">ruptam.<index indexName="Sachen"><term>chorda rupta</term></index>
-An ergo satis est plures</lem><note type="lemma-abbrev">ruptam.</note><rdg wit="#L" n="1"> Imo globum
-</rdg><rdg wit="#L" n="2"> An ergo satis est
-<note type="editorial">|</note> satis est <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> plures <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">ruptam.<index indexName="Sachen">
+<term>chorda rupta</term>
+</index>
+An ergo satis est plures</lem>
+<note type="lemma-abbrev">ruptam.</note>
+<rdg wit="#L" n="1"> Imo globum
+</rdg>
+<rdg wit="#L" n="2"> An ergo satis est
+<note type="editorial">|</note> satis est <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> plures <hi rendition="#i">L</hi>
+</rdg>
+</app>
 simul
-<app type="Bfootnote"><lem type="main">tendere?
-<app type="Cfootnote"><lem type="main">Ut si globus <hi rendition="#i">E</hi>
+<app type="Bfootnote">
+<lem type="main">tendere?
+<app type="Cfootnote">
+<lem type="main">Ut si globus <hi rendition="#i">E</hi>
 impactus in <hi rendition="#i">b</hi> ipsum debeat avellere ab <hi rendition="#i">a</hi>,
 deinde impactus in <hi rendition="#i">d</hi> ipsum avellere a <hi rendition="#i">c</hi>,
-aut vero simul incidere in <hi rendition="#i">b</hi> et <hi rendition="#i">d</hi>, eaque simul avellere.</lem><note type="lemma-abbrev">Ut si <seg type="apparat-ellipsis"/> avellere</note><note type="editorial">Die Beschreibung bezieht sich auf das Diagramm [<hi rendition="#i">Fig. 6b</hi>].</note></app></lem><note type="lemma-abbrev">tendere?</note><rdg wit="#L" n="1"> Exempli gratia globus <hi rendition="#i">C</hi> simul avellere conatur <hi rendition="#i">a</hi> et <hi rendition="#i">b</hi>
-<app><rdg wit="#L" n="a">impetu suo, seu embolos illos educere
-</rdg><rdg wit="#L" n="b">simul ergo educens embolum <hi rendition="#i">a</hi> et <hi rendition="#i">b</hi>.
-</rdg></app></rdg><rdg wit="#L" n="2"> Ponamus
-</rdg><rdg wit="#L" n="3"> Ut si globus <hi rendition="#i">E</hi>
-<app><rdg wit="#L" n="a">cadens
-</rdg><rdg wit="#L" n="b">impactus in <hi rendition="#i">b</hi> <seg type="apparat-ellipsis"/> avellere ab <hi rendition="#i">a</hi>,
-<app><rdg wit="#L" n="aa">et
-</rdg><rdg wit="#L" n="bb">deinde
-<app><rdg wit="#L" n="aaa">incidens
-</rdg><rdg wit="#L" n="bbb">impactus in <hi rendition="#i">d</hi> ipsum avellere a <hi rendition="#i">c</hi>,
-<app><rdg wit="#L" n="aaaa">quaeri
-</rdg><rdg wit="#L" n="bbbb">quaeri
-</rdg><rdg wit="#L" n="cccc">aut vero <seg type="apparat-ellipsis"/> simul avellere. <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app></rdg></app></rdg></app>
+aut vero simul incidere in <hi rendition="#i">b</hi> et <hi rendition="#i">d</hi>, eaque simul avellere.</lem>
+<note type="lemma-abbrev">Ut si <seg type="apparat-ellipsis"/>
+ avellere</note>
+<note type="editorial">Die Beschreibung bezieht sich auf das Diagramm [<hi rendition="#i">Fig. 6b</hi>].
+</note>
+</app>
+</lem>
+<note type="lemma-abbrev">tendere?</note>
+<rdg wit="#L" n="1"> Exempli gratia globus <hi rendition="#i">C</hi> simul avellere conatur <hi rendition="#i">a</hi> et <hi rendition="#i">b</hi>
+<app>
+<rdg wit="#L" n="a">impetu suo, seu embolos illos educere
+</rdg>
+<rdg wit="#L" n="b">simul ergo educens embolum <hi rendition="#i">a</hi> et <hi rendition="#i">b</hi>.
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> Ponamus
+</rdg>
+<rdg wit="#L" n="3"> Ut si globus <hi rendition="#i">E</hi>
+<app>
+<rdg wit="#L" n="a">cadens
+</rdg>
+<rdg wit="#L" n="b">impactus in <hi rendition="#i">b</hi>
+<seg type="apparat-ellipsis"/>
+ avellere ab <hi rendition="#i">a</hi>,
+<app>
+<rdg wit="#L" n="aa">et
+</rdg>
+<rdg wit="#L" n="bb">deinde
+<app>
+<rdg wit="#L" n="aaa">incidens
+</rdg>
+<rdg wit="#L" n="bbb">impactus in <hi rendition="#i">d</hi> ipsum avellere a <hi rendition="#i">c</hi>,
+<app>
+<rdg wit="#L" n="aaaa">quaeri
+</rdg>
+<rdg wit="#L" n="bbbb">quaeri
+</rdg>
+<rdg wit="#L" n="cccc">aut vero <seg type="apparat-ellipsis"/>
+ simul avellere. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
 Dico si unum non potest, nec aliud posse.
-Intelligo autem globum<index indexName="Sachen"><term>globus impingens</term></index>
-non gravitate<index indexName="Sachen"><term>gravitas</term></index> agere,
-ita enim progressu novas acquiret vires,<index indexName="Sachen"><term>vis globi impingentis</term></index>
+Intelligo autem globum<index indexName="Sachen">
+<term>globus impingens</term>
+</index>
+non gravitate<index indexName="Sachen">
+<term>gravitas</term>
+</index> agere,
+ita enim progressu novas acquiret vires,<index indexName="Sachen">
+<term>vis globi impingentis</term>
+</index>
 sed
-<app type="Bfootnote"><lem type="main">impetu veluti horizontali.<index indexName="Sachen"><term>impetus horizontalis</term></index>
-In eo tamen satius</lem><note type="lemma-abbrev">impetu</note><rdg wit="#L" n="1"> ut ho
-</rdg><rdg wit="#L" n="2"> veluti horizontali.
-<app><rdg wit="#L" n="a">Satius
-</rdg><rdg wit="#L" n="b">In eo tamen satius <hi rendition="#i">L</hi></rdg></app></rdg></app>
+<app type="Bfootnote">
+<lem type="main">impetu veluti horizontali.<index indexName="Sachen">
+<term>impetus horizontalis</term>
+</index>
+In eo tamen satius</lem>
+<note type="lemma-abbrev">impetu</note>
+<rdg wit="#L" n="1"> ut ho
+</rdg>
+<rdg wit="#L" n="2"> veluti horizontali.
+<app>
+<rdg wit="#L" n="a">Satius
+</rdg>
+<rdg wit="#L" n="b">In eo tamen satius <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
 duo conjungi in unum,
 quod ita saltem neutrum rumpitur,
 si non rumpenda utraque,
 et ita durabilius
-<app type="Bfootnote"><lem type="main">est scutum.<index indexName="Sachen"><term>scutum</term></index></lem><note type="lemma-abbrev">est</note><rdg wit="#L" n="1"> opus
-</rdg><rdg wit="#L" n="2"> scutum. <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">est scutum.<index indexName="Sachen">
+<term>scutum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">est</note>
+<rdg wit="#L" n="1"> opus
+</rdg>
+<rdg wit="#L" n="2"> scutum. <hi rendition="#i">L</hi>
+</rdg>
+</app>
 Illud maxime cavendum,
-ut materia scuti non sit jam nimis tensa,<index indexName="Sachen"><term>materia tensa</term></index>
+ut materia scuti non sit jam nimis tensa,<index indexName="Sachen">
+<term>materia tensa</term>
+</index>
 ita
-<app type="Bfootnote"><lem type="main">enim rumpetur</lem><note type="lemma-abbrev">enim</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>facilius</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> rumpetur <hi rendition="#i">L</hi></rdg></app>
-sufficiente vi quadam,<index indexName="Sachen"><term>vis ruptionis</term></index>
-quae ad minus tensam rumpendam non suffecisset.</p><figure rendition="#own-line_centered" xml:id="Ch18.p17_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d6a.svg" width="216.8pt" xml:id="Ch18.p17.g1"/><head>[<hi rendition="#i">Fig. 6a, gestr.</hi>]</head></figure><figure rendition="#own-line_centered" xml:id="Ch18.p17_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d6b.svg" width="216.8pt" xml:id="Ch18.p18.g1"/><head>[<hi rendition="#i">Fig. 6b</hi>]<anchor xml:id="LH_35_09_15_020v_d6b"/></head></figure></div></div></body>
-  </text>
+<app type="Bfootnote">
+<lem type="main">enim rumpetur</lem>
+<note type="lemma-abbrev">enim</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>facilius</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> rumpetur <hi rendition="#i">L</hi>
+</rdg>
+</app>
+sufficiente vi quadam,<index indexName="Sachen">
+<term>vis ruptionis</term>
+</index>
+quae ad minus tensam rumpendam non suffecisset.</p>
+<figure rendition="#own-line_centered" xml:id="Ch18.p17_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d6a.svg" width="216.8pt" xml:id="Ch18.p17.g1"/>
+<head>[<hi rendition="#i">Fig. 6a, gestr.</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch18.p17_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_15_020v_d6b.svg" width="216.8pt" xml:id="Ch18.p18.g1"/>
+<head>[<hi rendition="#i">Fig. 6b</hi>]<anchor xml:id="LH_35_09_15_020v_d6b"/>
+</head>
+</figure>
+</div>
+</div>
+</body>
+</text>
 </TEI>

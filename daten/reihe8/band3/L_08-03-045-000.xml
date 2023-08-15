@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-045-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-045-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Motus centri potentiae</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2022</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="45">Motus centri potentiae</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1677" resp="#ed" cert="medium">[Mai – Mitte Juni 1677]</date>
 						<date calendar="#gregorian" notAfter="1677-06-15" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=476</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+							<idno type="page">#page=476</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,404 +86,461 @@
 						</imprint>
 						<biblScope unit="page" from="443" to="447"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-03-045-000_facs-haupttextzeuge"><msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXVII 5 Bl. 152</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-							<summary><p>Konzept: LH XXXVII 5 Bl. 152. Ein Blatt 2<hi rendition="#sup">o</hi>, nachträglich in 4<hi rendition="#sup">o</hi> gebrochen; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=464">Wasserzeichen</ref> in der Blattmitte; Papiererhaltungsmaßnahmen. Zweidrittel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=463">Bl. 152 r<hi rendition="#sup">o</hi></ref>, quer einspaltig beschrieben; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=465">Bl. 152 v<hi rendition="#sup">o</hi></ref> überliefert N. <ref corresp="L_chapter_47.xml#RK60344_2"/>.</p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc></witness>
-				</listWit>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<tagsDecl>
-				<rendition scheme="css" xml:id="i">font-style:italic</rendition>
-				<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-				<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-				<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-				<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-				<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-				<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-				<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-			</tagsDecl>
-			<charDecl>
-				<!-- Sonderzeichen OHNE Unicodeentsprechung -->
-				<!--rightpropto-->
-				<glyph xml:id="rightpropto">
-					<glyphName>rightpropto</glyphName>
-					<desc>...</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX">\rightpropto</mapping>
-					<graphic url="../../glyphs/rightpropto.svg"/>
-				</glyph>
-				<glyph xml:id="Pfund">
-					<glyphName>Pfund</glyphName>
-					<desc>stilisiertes lb-Zeichen (Pfund)</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.7</value>
-					</charProp>
-					<mapping type="TeX">\Pfund</mapping>
-					<graphic url="../../glyphs/Pfund.svg"/>
-				</glyph>
-				<!-- leibdashv -->
-				<glyph xml:id="pleibdashv">
-					<glyphName>pleibdashv</glyphName>
-					<desc>Bedeutung (+−) - gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>-1</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\pleibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<glyph xml:id="leibdashv">
-					<glyphName>leibdashv</glyphName>
-					<desc>Bedeutung (+−) - nicht-gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\leibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<!-- circle-2 -->
-				<glyph xml:id="circle-2">
-					<glyphName>circle-2</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-2.svg"/>
-				</glyph>
-				<!-- circle-2iw -->
-				<glyph xml:id="circle-2iw">
-					<glyphName>circle-2iw</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-2iw.svg"/>
-				</glyph>
-				<!-- circle-A -->
-				<glyph xml:id="circle-A">
-					<glyphName>circle-A</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-A.svg"/>
-				</glyph>
-				<!-- circle-ae -->
-				<glyph xml:id="circle-ae">
-					<glyphName>circle-ae</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-ae.svg"/>
-				</glyph>
-				<!-- circle-ae-accent-1 -->
-				<glyph xml:id="circle-ae-accent-1">
-					<glyphName>circle-ae-accent-1</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-ae-accent-1.svg"/>
-				</glyph>
-				<!-- circle-ae-accent-2 -->
-				<glyph xml:id="circle-ae-accent-2">
-					<glyphName>circle-ae-accent-2</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-ae-accent-2.svg"/>
-				</glyph>
-				<!-- circle-ay -->
-				<glyph xml:id="circle-ay">
-					<glyphName>circle-ay</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-ay.svg"/>
-				</glyph>
-				<!-- circle-B -->
-				<glyph xml:id="circle-B">
-					<glyphName>circle-B</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-B.svg"/>
-				</glyph>
-				<!-- circle-by -->
-				<glyph xml:id="circle-by">
-					<glyphName>circle-by</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-by.svg"/>
-				</glyph>
-				<!-- circle-i2-accent -->
-				<glyph xml:id="circle-i2-accent">
-					<glyphName>circle-i2-accent</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-i2-accent.svg"/>
-				</glyph>
-				<!-- circle-minus-ae -->
-				<glyph xml:id="circle-minus-ae">
-					<glyphName>circle-minus-ae</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-minus-ae.svg"/>
-				</glyph>
-				<!-- circle-minus-b2i -->
-				<glyph xml:id="circle-minus-b2i">
-					<glyphName>circle-minus-b2i</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-minus-b2i.svg"/>
-				</glyph>
-				<!-- circle-minus-i2-accent -->
-				<glyph xml:id="circle-minus-i2-accent">
-					<glyphName>circle-minus-i2-accent</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-minus-i2-accent.svg"/>
-				</glyph>
-				<!-- circle-plus-2iw -->
-				<glyph xml:id="circle-plus-2iw">
-					<glyphName>circle-plus-2iw</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/circle-plus-2iw.svg"/>
-				</glyph>
-				<!-- square-2 -->
-				<glyph xml:id="square-2">
-					<glyphName>square-2</glyphName>
-					<desc/>
-					<charProp>
-						<localName/>
-						<value/>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX"/>
-					<graphic url="../../glyphs/square-2.svg"/>
-				</glyph>
-				<!-- Sonderzeichen MIT Unicodeentsprechung -->
-			</charDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="la"/>
-			</langUsage>
-			<calendarDesc>
-				<calendar xml:id="gregorian">
-					<p>Gregorianischer Kalenderstil</p>
-				</calendar>
-				<calendar xml:id="julian">
-					<p>Julianischer Kalenderstil</p>
-				</calendar>
-			</calendarDesc>
-			<textClass>
-				<catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
-				<catRef scheme="L_terms" target="L_terms.xml#"/>
-			</textClass>
-			<abstract>
-				<listPerson>
-					<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-					<person sameAs="L_persons.xml#"/>
-				</listPerson>
-				<listPlace>
-					<place sameAs="L_places.xml#"/>
-				</listPlace>
-			</abstract>
-		</profileDesc>
-		<revisionDesc>
-			<change when="2021" who="#telota" status="base"/>
-			<change when="2023-02-20" who="#stork" status="enrich_1"/>
-		</revisionDesc>
-	</teiHeader>
-	<facsimile source="digilib.bbaw.de" xml:id="L_08-03-045-000_facs-haupttextzeuge">
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=463"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=465"/>
-	</facsimile>
-	<text xml:id="L_08-03-045-000_text">
-		<body xml:id="Document">
-			<div type="chapter" xml:id="Ch45" n="45">
-				<head>45 MOTUS CENTRI POTENTIAE</head>
-				<head>[Mai – Mitte Juni 1677]</head>
-				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-						<witness><msDesc>
+					<witness n="L" corresp="#L_08-03-045-000_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">LH XXXVII 5 Bl. 152</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+								<summary>
+									<p>Konzept: LH XXXVII 5 Bl. 152. Ein Blatt 2<hi rendition="#sup">o</hi>, nachträglich in 4<hi rendition="#sup">o</hi> gebrochen; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=464">Wasserzeichen</ref> in der Blattmitte; Papiererhaltungsmaßnahmen. Zweidrittel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=463">Bl. 152 r<hi rendition="#sup">o</hi>
+									</ref>, quer einspaltig beschrieben; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=465">Bl. 152 v<hi rendition="#sup">o</hi>
+								</ref> überliefert N. <ref corresp="L_chapter_47.xml#RK60344_2"/>
+.</p>
+						</summary>
+					</msContents>
+					<physDesc>
+						<objectDesc form="Handschrift"/>
+					</physDesc>
+					<history>
+						<origin corresp="L_witness-origin-types.xml#origin-L"/>
+					</history>
+				</msDesc>
+			</witness>
+		</listWit>
+	</sourceDesc>
+</fileDesc>
+<encodingDesc>
+	<tagsDecl>
+		<rendition scheme="css" xml:id="i">font-style:italic</rendition>
+		<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+		<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+		<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+		<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+		<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+		<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+		<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+		<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+		<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+	</tagsDecl>
+	<charDecl>
+		<!-- Sonderzeichen OHNE Unicodeentsprechung -->
+		<!--rightpropto-->
+		<glyph xml:id="rightpropto">
+			<glyphName>rightpropto</glyphName>
+			<desc>...</desc>
+			<charProp>
+				<localName>baselineshift-in-ex</localName>
+				<value>0</value>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX">\rightpropto</mapping>
+			<graphic url="../../glyphs/rightpropto.svg"/>
+		</glyph>
+		<glyph xml:id="Pfund">
+			<glyphName>Pfund</glyphName>
+			<desc>stilisiertes lb-Zeichen (Pfund)</desc>
+			<charProp>
+				<localName>baselineshift-in-ex</localName>
+				<value>0</value>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.7</value>
+			</charProp>
+			<mapping type="TeX">\Pfund</mapping>
+			<graphic url="../../glyphs/Pfund.svg"/>
+		</glyph>
+		<!-- leibdashv -->
+		<glyph xml:id="pleibdashv">
+			<glyphName>pleibdashv</glyphName>
+			<desc>Bedeutung (+−) - gesenkt</desc>
+			<charProp>
+				<localName>baselineshift-in-ex</localName>
+				<value>-1</value>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="PUA"/>
+			<mapping type="TeX">\pleibdashv</mapping>
+			<graphic url="../../glyphs/pm.svg"/>
+		</glyph>
+		<glyph xml:id="leibdashv">
+			<glyphName>leibdashv</glyphName>
+			<desc>Bedeutung (+−) - nicht-gesenkt</desc>
+			<charProp>
+				<localName>baselineshift-in-ex</localName>
+				<value>0</value>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="PUA"/>
+			<mapping type="TeX">\leibdashv</mapping>
+			<graphic url="../../glyphs/pm.svg"/>
+		</glyph>
+		<!-- circle-2 -->
+		<glyph xml:id="circle-2">
+			<glyphName>circle-2</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-2.svg"/>
+		</glyph>
+		<!-- circle-2iw -->
+		<glyph xml:id="circle-2iw">
+			<glyphName>circle-2iw</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-2iw.svg"/>
+		</glyph>
+		<!-- circle-A -->
+		<glyph xml:id="circle-A">
+			<glyphName>circle-A</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-A.svg"/>
+		</glyph>
+		<!-- circle-ae -->
+		<glyph xml:id="circle-ae">
+			<glyphName>circle-ae</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-ae.svg"/>
+		</glyph>
+		<!-- circle-ae-accent-1 -->
+		<glyph xml:id="circle-ae-accent-1">
+			<glyphName>circle-ae-accent-1</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-ae-accent-1.svg"/>
+		</glyph>
+		<!-- circle-ae-accent-2 -->
+		<glyph xml:id="circle-ae-accent-2">
+			<glyphName>circle-ae-accent-2</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-ae-accent-2.svg"/>
+		</glyph>
+		<!-- circle-ay -->
+		<glyph xml:id="circle-ay">
+			<glyphName>circle-ay</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-ay.svg"/>
+		</glyph>
+		<!-- circle-B -->
+		<glyph xml:id="circle-B">
+			<glyphName>circle-B</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-B.svg"/>
+		</glyph>
+		<!-- circle-by -->
+		<glyph xml:id="circle-by">
+			<glyphName>circle-by</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-by.svg"/>
+		</glyph>
+		<!-- circle-i2-accent -->
+		<glyph xml:id="circle-i2-accent">
+			<glyphName>circle-i2-accent</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-i2-accent.svg"/>
+		</glyph>
+		<!-- circle-minus-ae -->
+		<glyph xml:id="circle-minus-ae">
+			<glyphName>circle-minus-ae</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-minus-ae.svg"/>
+		</glyph>
+		<!-- circle-minus-b2i -->
+		<glyph xml:id="circle-minus-b2i">
+			<glyphName>circle-minus-b2i</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-minus-b2i.svg"/>
+		</glyph>
+		<!-- circle-minus-i2-accent -->
+		<glyph xml:id="circle-minus-i2-accent">
+			<glyphName>circle-minus-i2-accent</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-minus-i2-accent.svg"/>
+		</glyph>
+		<!-- circle-plus-2iw -->
+		<glyph xml:id="circle-plus-2iw">
+			<glyphName>circle-plus-2iw</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/circle-plus-2iw.svg"/>
+		</glyph>
+		<!-- square-2 -->
+		<glyph xml:id="square-2">
+			<glyphName>square-2</glyphName>
+			<desc/>
+			<charProp>
+				<localName/>
+				<value/>
+			</charProp>
+			<charProp>
+				<localName>width-in-em</localName>
+				<value>0.6</value>
+			</charProp>
+			<mapping type="TeX"/>
+			<graphic url="../../glyphs/square-2.svg"/>
+		</glyph>
+		<!-- Sonderzeichen MIT Unicodeentsprechung -->
+	</charDecl>
+</encodingDesc>
+<profileDesc>
+	<langUsage>
+		<language ident="la"/>
+	</langUsage>
+	<calendarDesc>
+		<calendar xml:id="gregorian">
+			<p>Gregorianischer Kalenderstil</p>
+		</calendar>
+		<calendar xml:id="julian">
+			<p>Julianischer Kalenderstil</p>
+		</calendar>
+	</calendarDesc>
+	<textClass>
+		<catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
+		<catRef scheme="L_terms" target="L_terms.xml#"/>
+	</textClass>
+	<abstract>
+		<listPerson>
+			<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+			<person sameAs="L_persons.xml#"/>
+		</listPerson>
+		<listPlace>
+			<place sameAs="L_places.xml#"/>
+		</listPlace>
+	</abstract>
+</profileDesc>
+<revisionDesc>
+	<change when="2021" who="#telota" status="base"/>
+	<change when="2023-02-20" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-045-000_facs-haupttextzeuge">
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=463"/>
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=465"/>
+</facsimile>
+<text xml:id="L_08-03-045-000_text">
+<body xml:id="Document">
+	<div type="chapter" xml:id="Ch45" n="45">
+		<head>45 MOTUS CENTRI POTENTIAE</head>
+		<head>[Mai – Mitte Juni 1677]</head>
+		<div type="ueberlieferung">
+			<p>
+				<hi rendition="#b #smaller">Überlieferung:</hi>
+				<listWit>
+					<witness>
+						<msDesc>
 							<msIdentifier>
 								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
 								<idno type="Signatur">LH XXXVII 5 Bl. 152</idno>
 							</msIdentifier>
 							<msContents>
-								<summary><p>Konzept: LH XXXVII 5 Bl. 152. Ein Blatt 2<hi rendition="#sup">o</hi>, nachträglich in 4<hi rendition="#sup">o</hi> gebrochen; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=464">Wasserzeichen</ref> in der Blattmitte; Papiererhaltungsmaßnahmen. Zweidrittel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=463">Bl. 152 r<hi rendition="#sup">o</hi></ref>, quer einspaltig beschrieben; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=465">Bl. 152 v<hi rendition="#sup">o</hi></ref> überliefert N. <ref corresp="L_chapter_47.xml#RK60344_2"/>.</p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						</listWit></p>
-				</div>
-				<div type="contents">
-					<p xml:id="Ch45.p1"><anchor xml:id="_60344_1"/> <anchor xml:id="RK60344_1"/><!--  \hackfor{\par} --></p>
-					<p xml:id="Ch45.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Im Konzept N. <ref corresp="#RK60344_1"/>, wie bereits in N. <ref corresp="L_chapter_44.xml#RK57273"/>, ist Leibniz um eine Einführung des Begriffs des <hi rendition="#i">centrum potentiae</hi> zweier Körper bemüht. Nach der Definition erörtert Leibniz in N. <ref corresp="#RK60344_1"/> die Eigenschaften der Bewegung des <hi rendition="#i">centrum potentiae</hi> und bestimmt, von den möglichen Bewegungen der zwei Körper ausgehend, seine Lage vor und nach dem Stoß. Dabei nimmt er auf S. <ref corresp="#_37_05_152r_7a"/> ausdrücklich auf einen früheren Text Bezug, worin er die Lage des <hi rendition="#i">centrum</hi> vor dem Stoß bereits untersucht haben soll. Es handelt sich höchstwahrscheinlich um eine Anspielung auf N. <ref corresp="L_chapter_44.xml#RK57273"/>, ein Konzept, das ebenfalls die Merkmale einer Einführung aufweist, aber tatsächlich nur die Konfiguration der Körper vor dem Stoß behandelt. Somit muss N. <ref corresp="L_chapter_44.xml#RK57273"/> (Mai bis Mitte Juni 1677) vor N. <ref corresp="#RK60344_1"/> abgefasst worden sein.</hi></p>
-				</div>
-				<div type="text">
-					<p xml:id="Ch45.p5"><hi rendition="#smaller">Zur weiteren Einkreisung der Entstehung von N. <ref corresp="#RK60344_1"/> kann das Konzept N. <ref corresp="L_chapter_46.xml#RK57274"/> herangezogen werden. Dieses zählt neben N. <ref corresp="L_chapter_52.xml#RK57277"/> und N. <ref corresp="L_chapter_54.xml#RK57275"/> zu den Stücken im Zeitraum 1677 bis Januar 1678, die sich auf den Begriff und die Eigenschaften des <hi rendition="#i">centrum potentiae</hi> berufen. Als Terminus ante quem für N. <ref corresp="L_chapter_46.xml#RK57274"/> kann Mitte Juni 1677 ermittelt werden (siehe die Datierungsgründe). Unter der Annahme, dass die grundlegenden Ausführungen von N. <ref corresp="#RK60344_1"/> (und N. <ref corresp="L_chapter_44.xml#RK57273"/>) der Abfassung von N. <ref corresp="L_chapter_46.xml#RK57274"/> vorausgingen, kann der genannte Ter- minus ante quem übernommen werden, woraus sich für N. <ref corresp="#RK60344_1"/> die vorgeschlagene Datierungsspanne ergibt.</hi></p>
-					<p rendition="#noindent" xml:id="Ch45.p6"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=463"><pb type="L"/><fw type="folNum">[152 r<hi rendition="#sup">o</hi>]</fw></ref></p>
-					<figure rendition="#own-line_centered" xml:id="Ch45.p7"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_152r_d.svg" width="390.258pt" xml:id="Ch45.p7.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note>
-						<note type="editorial">In der Figur verwendet Leibniz zumeist Bezeichnungen der Form (<hi rendition="#smaller #i">1</hi><hi rendition="#i">A</hi>) und ((<hi rendition="#smaller #i">1</hi><hi rendition="#i">A</hi>)), im Text dagegen <hi rendition="#smaller #i">1</hi>(<hi rendition="#i">A</hi>) und <hi rendition="#smaller #i">1</hi>((<hi rendition="#i">A</hi>)). Ein gestrichener Entwurf zum Diagramm wird nicht wiedergegeben.</note>
-						</app></head></figure>
-					<p xml:id="Ch45.p7image-replacement"><formula facs="./figurereplacements/443-1.svg" xml:id="Ch45.p7image-replacementf">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
-						<?tex-source \pstart\noindent%
+								<summary>
+									<p>Konzept: LH XXXVII 5 Bl. 152. Ein Blatt 2<hi rendition="#sup">o</hi>, nachträglich in 4<hi rendition="#sup">o</hi> gebrochen; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=464">Wasserzeichen</ref> in der Blattmitte; Papiererhaltungsmaßnahmen. Zweidrittel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=463">Bl. 152 r<hi rendition="#sup">o</hi>
+									</ref>, quer einspaltig beschrieben; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=465">Bl. 152 v<hi rendition="#sup">o</hi>
+								</ref> überliefert N. <ref corresp="L_chapter_47.xml#RK60344_2"/>
+.</p>
+						</summary>
+					</msContents>
+					<physDesc>
+						<objectDesc form="Handschrift"/>
+					</physDesc>
+					<history>
+						<origin/>
+					</history>
+				</msDesc>
+			</witness>
+		</listWit>
+	</p>
+</div>
+<div type="contents">
+	<p xml:id="Ch45.p1">
+		<anchor xml:id="_60344_1"/>
+		<anchor xml:id="RK60344_1"/>
+		<!--  \hackfor{\par} --></p>
+	<p xml:id="Ch45.p4">
+		<hi rendition="#smaller">
+			<hi rendition="#b">Datierungsgründe:</hi> Im Konzept N. <ref corresp="#RK60344_1"/>
+, wie bereits in N. <ref corresp="L_chapter_44.xml#RK57273"/>
+, ist Leibniz um eine Einführung des Begriffs des <hi rendition="#i">centrum potentiae</hi> zweier Körper bemüht. Nach der Definition erörtert Leibniz in N. <ref corresp="#RK60344_1"/>
+ die Eigenschaften der Bewegung des <hi rendition="#i">centrum potentiae</hi> und bestimmt, von den möglichen Bewegungen der zwei Körper ausgehend, seine Lage vor und nach dem Stoß. Dabei nimmt er auf S. <ref corresp="#_37_05_152r_7a"/>
+ ausdrücklich auf einen früheren Text Bezug, worin er die Lage des <hi rendition="#i">centrum</hi> vor dem Stoß bereits untersucht haben soll. Es handelt sich höchstwahrscheinlich um eine Anspielung auf N. <ref corresp="L_chapter_44.xml#RK57273"/>
+, ein Konzept, das ebenfalls die Merkmale einer Einführung aufweist, aber tatsächlich nur die Konfiguration der Körper vor dem Stoß behandelt. Somit muss N. <ref corresp="L_chapter_44.xml#RK57273"/>
+ (Mai bis Mitte Juni 1677) vor N. <ref corresp="#RK60344_1"/>
+ abgefasst worden sein.</hi>
+</p>
+</div>
+<div type="text">
+<p xml:id="Ch45.p5">
+<hi rendition="#smaller">Zur weiteren Einkreisung der Entstehung von N. <ref corresp="#RK60344_1"/>
+ kann das Konzept N. <ref corresp="L_chapter_46.xml#RK57274"/>
+ herangezogen werden. Dieses zählt neben N. <ref corresp="L_chapter_52.xml#RK57277"/>
+ und N. <ref corresp="L_chapter_54.xml#RK57275"/>
+ zu den Stücken im Zeitraum 1677 bis Januar 1678, die sich auf den Begriff und die Eigenschaften des <hi rendition="#i">centrum potentiae</hi> berufen. Als Terminus ante quem für N. <ref corresp="L_chapter_46.xml#RK57274"/>
+ kann Mitte Juni 1677 ermittelt werden (siehe die Datierungsgründe). Unter der Annahme, dass die grundlegenden Ausführungen von N. <ref corresp="#RK60344_1"/>
+ (und N. <ref corresp="L_chapter_44.xml#RK57273"/>
+) der Abfassung von N. <ref corresp="L_chapter_46.xml#RK57274"/>
+ vorausgingen, kann der genannte Ter- minus ante quem übernommen werden, woraus sich für N. <ref corresp="#RK60344_1"/>
+ die vorgeschlagene Datierungsspanne ergibt.</hi>
+</p>
+<p rendition="#noindent" xml:id="Ch45.p6">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=463">
+<pb type="L"/>
+<fw type="folNum">[152 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch45.p7">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_152r_d.svg" width="390.258pt" xml:id="Ch45.p7.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]
+</note>
+<note type="editorial">In der Figur verwendet Leibniz zumeist Bezeichnungen der Form (<hi rendition="#smaller #i">1</hi>
+<hi rendition="#i">A</hi>) und ((<hi rendition="#smaller #i">1</hi>
+<hi rendition="#i">A</hi>)), im Text dagegen <hi rendition="#smaller #i">1</hi>(<hi rendition="#i">A</hi>) und <hi rendition="#smaller #i">1</hi>((<hi rendition="#i">A</hi>)). Ein gestrichener Entwurf zum Diagramm wird nicht wiedergegeben.</note>
+</app>
+</head>
+</figure>
+<p xml:id="Ch45.p7image-replacement">
+<formula facs="./figurereplacements/443-1.svg" xml:id="Ch45.p7image-replacementf">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+<?tex-source \pstart\noindent%
 \textit{{\scriptsize1}A} vel \textit{{\scriptsize1}}(\textit{A}) vel \textit{{\scriptsize1}}((\textit{A})) situs corporis \textit{A} primus, \textit{{\scriptsize2}A} %
 situs secundus, seu ad quem\pend
 %
@@ -466,86 +561,220 @@ per motum pervenit.
 \parbox[b][][b]{\permotum}{$\dotfill$}
 \pend
 ?>
-						</formula></p>
-					<p xml:id="Ch45.p8"><app type="Bfootnote">
-						<lem type="main">vel <hi rendition="#smaller #i">2</hi>(<hi rendition="#i">A</hi>)</lem>
-						<rdg wit="#L" cause="addition"><add>vel <hi rendition="#smaller #i">2</hi>(<hi rendition="#i">A</hi>)</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app><app type="Bfootnote">
-						<lem type="main">[<hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi>]</lem>
-						<rdg wit="#L" cause="deletion"><hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi> <hi rendition="#i">ändert Hrsg.</hi> <note type="editorial">|</note> <del>vel <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi> </del><note type="editorial"><hi rendition="#i">gestr.</hi> |</note> … <hi rendition="#i">L</hi></rdg>
-						</app><app type="Bfootnote">
-						<lem type="main">vel <hi rendition="#smaller #i">2</hi>(<hi rendition="#i">B</hi>)</lem>
-						<rdg wit="#L" cause="addition"><add>vel <hi rendition="#smaller #i">2</hi>(<hi rendition="#i">B</hi>)</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app></p>
-					<p xml:id="Ch45.p9"><hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi> est centrum potentiae<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> inter corpora <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi> et <hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi> et recta <hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi><hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi> est ad rectam <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi><hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi>, <app type="Bfootnote">
-						<lem type="main">ut factum ex</lem>
-						<note type="lemma-abbrev">ut</note>
-						<rdg wit="#L" n="1"> corpus <hi rendition="#i">A</hi> ductum </rdg>
-						<rdg wit="#L" n="2"> factum <hi rendition="#i">L</hi></rdg>
-						</app> corpore <hi rendition="#i">A</hi> ducto in suam celeritatem,<index indexName="Sachen">
-						<term>factum ex corpore ducto in celeritatem</term>
-						</index> seu in viam, nempe rectam <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi><hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>, ad factum</lem>
-						<note type="lemma-abbrev">ad</note>
-						<rdg wit="#L" n="1"> corpus </rdg>
-						<rdg wit="#L" n="2"> factum <hi rendition="#i">L</hi></rdg>
-						</app> ex corpore <hi rendition="#i">B</hi> in suam <app type="Bfootnote">
-						<lem type="main">[celeritatem],<index indexName="Sachen">
-							<term>factum ex corpore ducto in celeritatem</term>
-							</index></lem>
-						<rdg wit="#ed" cause="addition"><add>celeritatem</add> <note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></rdg>
-						</app> seu in <app type="Bfootnote">
-						<lem type="main">rectam <hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi><hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>. <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi></lem>
-						<note type="lemma-abbrev">rectam</note>
-						<rdg wit="#L" n="1"> <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi> </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi><hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>. <app>
-							<rdg wit="#L" n="a">(<hi rendition="#i #smaller">2</hi>) est </rdg>
-							<rdg wit="#L" n="b"><hi rendition="#smaller #i">2</hi>(<hi rendition="#i">C</hi>) est secundus </rdg>
-							<rdg wit="#L" n="c"><hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi> <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> est secundus centri potentiae locus, cum corpora venere in <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi> et <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>.</p>
-					<p xml:id="Ch45.p10">Centrum potentiae semper inter duo corpora <app type="Bfootnote">
-						<lem type="main">situm est. Ergo</lem>
-						<note type="lemma-abbrev">situm est</note>
-						<rdg wit="#L" n="1"> , seu </rdg>
-						<rdg wit="#L" n="2"> . Ergo <hi rendition="#i">L</hi></rdg>
-						</app> si <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi> est dexterius (sinisterius) quam <hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi> erit etiam dexterius (sinisterius) quam</lem>
-						<note type="lemma-abbrev"><hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi> est</note>
-						<rdg wit="#L" n="1"> sinisterius </rdg>
-						<rdg wit="#L" n="2" cause="addition"> dexterius <note type="editorial">|</note> <add>(sinisterius)</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> quam <hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi> erit etiam dexterius <note type="editorial">|</note> <add>(sinisterius)</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> quam <hi rendition="#i">L</hi></rdg>
-						</app> <hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi>. <app type="Bfootnote">
-						<lem type="main">Item si</lem>
-						<rdg wit="#L" cause="deletion">Item <note type="editorial">|</note> <del>item</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> si <hi rendition="#i">L</hi></rdg>
-						</app> <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi> est dexterius (sinisterius) quam <hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi> erit etiam dexterius (sinisterius) quam <hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi>.</p>
-					<p xml:id="Ch45.p11">Ad calculum peragendum comperi necesse esse, ut <app type="Bfootnote">
-						<lem type="main">investig[et]ur</lem>
-						<rdg wit="#L #ed">investigentur <hi rendition="#i">L ändert Hrsg.</hi></rdg>
-						</app> in omnibus casibus situs quem habent inter se  <app type="Bfootnote">
-						<lem type="main"><hi rendition="#g">1 <hi rendition="#g #sup">mo</hi></hi>  puncta</lem>
-						<note type="lemma-abbrev"><hi rendition="#g">1 <hi rendition="#sup">mo</hi></hi></note>
-						<rdg wit="#L" n="1"> duo </rdg>
-						<rdg wit="#L" n="2"> puncta <hi rendition="#i">L</hi></rdg>
-						</app> tria: <table>
-						<row>
-							<cell style="; text-align:center"><hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>.</cell>
-						</row>
-						<row>
-							<cell style="; text-align:center"><hi rendition="#i #smaller">1</hi><hi rendition="#i">A</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi></cell>
-						</row>
-						</table>  <hi rendition="#g">2 <hi rendition="#g #sup">do</hi></hi>  puncta tria: <table>
-						<row>
-							<cell style="; text-align:center"><hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi>.<hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>.</cell>
-						</row>
-						<row>
-							<cell style="; text-align:center"><hi rendition="#i #smaller">1</hi><hi rendition="#i">A</hi>.<hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi></cell>
-						</row>
-						</table></p>
-					<p xml:id="Ch45.p11image-replacement"><formula facs="./figurereplacements/444-1.svg" xml:id="Ch45.p11image-replacementf">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
-						<?tex-source \pstart
+</formula>
+</p>
+<p xml:id="Ch45.p8">
+<app type="Bfootnote">
+<lem type="main">vel <hi rendition="#smaller #i">2</hi>(<hi rendition="#i">A</hi>)
+</lem>
+<rdg wit="#L" cause="addition">
+<add>vel <hi rendition="#smaller #i">2</hi>(<hi rendition="#i">A</hi>)
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">[<hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>]
+</lem>
+<rdg wit="#L" cause="deletion">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi>
+<hi rendition="#i">ändert Hrsg.</hi>
+<note type="editorial">|</note>
+<del>vel <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>
+</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> …<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">vel <hi rendition="#smaller #i">2</hi>(<hi rendition="#i">B</hi>)
+</lem>
+<rdg wit="#L" cause="addition">
+<add>vel <hi rendition="#smaller #i">2</hi>(<hi rendition="#i">B</hi>)
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch45.p9">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi> est centrum potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> inter corpora <hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi> et <hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi> et recta <hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi> est ad rectam <hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi>,<app type="Bfootnote">
+<lem type="main">ut factum ex</lem>
+<note type="lemma-abbrev">ut</note>
+<rdg wit="#L" n="1"> corpus <hi rendition="#i">A</hi> ductum </rdg>
+<rdg wit="#L" n="2"> factum <hi rendition="#i">L</hi>
+</rdg>
+</app> corpore <hi rendition="#i">A</hi> ducto in suam celeritatem,<index indexName="Sachen">
+<term>factum ex corpore ducto in celeritatem</term>
+</index> seu in viam, nempe rectam <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>, ad factum</lem>
+<note type="lemma-abbrev">ad</note>
+<rdg wit="#L" n="1"> corpus </rdg>
+<rdg wit="#L" n="2"> factum <hi rendition="#i">L</hi>
+</rdg>
+</app> ex corpore <hi rendition="#i">B</hi> in suam <app type="Bfootnote">
+<lem type="main">[celeritatem],<index indexName="Sachen">
+<term>factum ex corpore ducto in celeritatem</term>
+</index>
+</lem>
+<rdg wit="#ed" cause="addition">
+<add>celeritatem</add>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</rdg>
+</app> seu in <app type="Bfootnote">
+<lem type="main">rectam <hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>
+</lem>
+<note type="lemma-abbrev">rectam</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>.<app>
+<rdg wit="#L" n="a">(<hi rendition="#i #smaller">2</hi>) est </rdg>
+<rdg wit="#L" n="b">
+<hi rendition="#smaller #i">2</hi>(<hi rendition="#i">C</hi>) est secundus </rdg>
+<rdg wit="#L" n="c">
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> est secundus centri potentiae locus, cum corpora venere in <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi> et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>.
+</p>
+<p xml:id="Ch45.p10">Centrum potentiae semper inter duo corpora <app type="Bfootnote">
+<lem type="main">situm est. Ergo</lem>
+<note type="lemma-abbrev">situm est</note>
+<rdg wit="#L" n="1"> , seu </rdg>
+<rdg wit="#L" n="2"> . Ergo <hi rendition="#i">L</hi>
+</rdg>
+</app> si <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi> est dexterius (sinisterius) quam <hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi> erit etiam dexterius (sinisterius) quam</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi> est</note>
+<rdg wit="#L" n="1"> sinisterius </rdg>
+<rdg wit="#L" n="2" cause="addition"> dexterius <note type="editorial">|</note>
+<add>(sinisterius)</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> quam <hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi> erit etiam dexterius <note type="editorial">|</note>
+<add>(sinisterius)</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> quam <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>.<app type="Bfootnote">
+<lem type="main">Item si</lem>
+<rdg wit="#L" cause="deletion">Item <note type="editorial">|</note>
+<del>item</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> si <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi> est dexterius (sinisterius) quam <hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi> erit etiam dexterius (sinisterius) quam <hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi>.
+</p>
+<p xml:id="Ch45.p11">Ad calculum peragendum comperi necesse esse, ut <app type="Bfootnote">
+<lem type="main">investig[et]ur</lem>
+<rdg wit="#L #ed">investigentur <hi rendition="#i">L ändert Hrsg.</hi>
+</rdg>
+</app> in omnibus casibus situs quem habent inter se  <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">1 <hi rendition="#g #sup">mo</hi>
+</hi>  puncta</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">1 <hi rendition="#sup">mo</hi>
+</hi>
+</note>
+<rdg wit="#L" n="1"> duo </rdg>
+<rdg wit="#L" n="2"> puncta <hi rendition="#i">L</hi>
+</rdg>
+</app> tria: <table>
+<row>
+<cell style="; text-align:center">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>.
+</cell>
+</row>
+<row>
+<cell style="; text-align:center">
+<hi rendition="#i #smaller">1</hi>
+<hi rendition="#i">A</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>
+</cell>
+</row>
+</table>
+<hi rendition="#g">2 <hi rendition="#g #sup">do</hi>
+</hi>  puncta tria: <table>
+<row>
+<cell style="; text-align:center">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>.
+</cell>
+</row>
+<row>
+<cell style="; text-align:center">
+<hi rendition="#i #smaller">1</hi>
+<hi rendition="#i">A</hi>.<hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>
+</cell>
+</row>
+</table>
+</p>
+<p xml:id="Ch45.p11image-replacement">
+<formula facs="./figurereplacements/444-1.svg" xml:id="Ch45.p11image-replacementf">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+<?tex-source \pstart
 Ponamus \textit{{\scriptsize1}B} dexterius quam \textit{{\scriptsize1}A}, erit et \textit{{\scriptsize1}B} dexterius quam \textit{{\scriptsize1}C}, et \textit{{\scriptsize1}A} sinisterius quam \textit{{\scriptsize1}C}. %
 \pend
 %
@@ -560,1453 +789,1773 @@ Item erit et \textit{{\scriptsize2}B} dexterius quam \textit{{\scriptsize2}A} et
 quam \textit{{\scriptsize2}C}.
 \pend
 ?>
-						</formula></p>
-					<anchor xml:id="_37_05_152r_1a"/>
-					<p xml:id="Ch45.p12"><app type="Bfootnote" from="#_37_05_152r_1a" to="#_37_05_152r_1b">
-						<lem type="main"/>
-						<note type="lemma-abbrev">quam <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>.</note>
-						<rdg wit="#L" n="1"> Videndum an <app>
-							<rdg wit="#L" n="a">semper aliquod sumi possit </rdg>
-							<rdg wit="#L" n="b">corpus motum, quod semper </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#g">Semper</hi> <hi rendition="#i">L</hi></rdg>
-						</app></p>
-					<p xml:id="Ch45.p13"><hi rendition="#g">Semper</hi><anchor xml:id="_37_05_152r_1b"/> <hi rendition="#g">intelligi potest centrum potentiae,</hi><index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> <hi rendition="#g">et aliquod ex corporibus</hi>[,] <hi rendition="#g">tendere in eandem partem</hi>. Sit illud corpus <hi rendition="#i">B</hi>. Si corpora sibi occurrunt aut a se invicem divergunt, tunc centrum potentiae<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> aut quiescit aut movetur. Si quiescit, fingatur moveri sed motu tardissimo<index indexName="Sachen">
-						<term>motus tardissimus</term>
-						</index> et salvus erit calculus; sin movetur, tunc necessario in alterutram partem movetur. Ergo necessario movetur in partem in quam alterutrum corporum movetur, quoniam nullum <app type="Bfootnote">
-						<lem type="main">latus assignari</lem>
-						<note type="lemma-abbrev">latus</note>
-						<rdg wit="#L" n="1"> assignatur </rdg>
-						<rdg wit="#L" n="2"> assignari <hi rendition="#i">L</hi></rdg>
-						</app> potest, in <app type="Bfootnote">
-						<lem type="main">[quod]</lem>
-						<rdg wit="#L #ed">quem <hi rendition="#i">L ändert Hrsg.</hi></rdg>
-						</app> non in casu concursus<index indexName="Sachen">
-						<term>concursus</term>
-						</index> aut divergentiae<index indexName="Sachen">
-						<term>divergentia</term>
-						</index> aliquod corporum moveatur. Si vero <app type="Bfootnote">
-						<lem type="main">corpora ambo</lem>
-						<note type="lemma-abbrev">corpora</note>
-						<rdg wit="#L" n="1"> non ten </rdg>
-						<rdg wit="#L" n="2"> ambo <hi rendition="#i">L</hi></rdg>
-						</app> tendant in eandem partem, id est, neque divergant, neque occurrant, utique manifeste et centrum potentiae,<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> in eandem movetur <app type="Bfootnote">
-						<lem type="main">partem. Huc</lem>
-						<note type="lemma-abbrev">partem.</note>
-						<rdg wit="#L" n="1"> Ex hoc porro </rdg>
-						<rdg wit="#L" n="2"> Huc <hi rendition="#i">L</hi></rdg>
-						</app> pertinet, et si aliquod corporum quiescat, nam quietem<index indexName="Sachen">
-						<term>quies</term>
-						</index> habeo pro motu tardissimo.<index indexName="Sachen">
-						<term>motus tardissimus</term>
-						</index></p>
-					<p xml:id="Ch45.p14"><hi rendition="#g">Semper intelligi potest aliquod corporum sequi centrum potentiae</hi> <index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index><app type="Bfootnote">
-						<lem type="main"><hi rendition="#g">excepto divergentiae casu</hi>,</lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#g">excepto divergentiae casu</hi> </add><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> id est non tantum in eandem ire partem, sed et ipso esse posterius, seu (si motus fingatur a dextro ad sinistrum) dexterius. Ostendo, nam si</p>
-					<p rendition="#noindent" xml:id="Ch45.p15"><app type="Bfootnote">
-						<lem type="main">corpora sibi</lem>
-						<note type="lemma-abbrev">corpora</note>
-						<rdg wit="#L" n="1"> concurrant </rdg>
-						<rdg wit="#L" n="2"> sibi <hi rendition="#i">L</hi></rdg>
-						</app> occurrant, tunc id quod in eandem it partem cum centro potentiae<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> semper ipso est posterius. Nam centrum potentiae<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> propius est corpori opposito, seu sito versus latus in quod itur, ergo prius est, et corpus est <app type="Bfootnote">
-						<lem type="main">posterius. Si</lem>
-						<note type="lemma-abbrev">posterius.</note>
-						<rdg wit="#L" n="1"> Si corpora divergant tunc </rdg>
-						<rdg wit="#L" n="2"> Si <hi rendition="#i">L</hi></rdg>
-						</app> corpora in easdem partes inter se et cum centro potentiae<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> tendant, tunc alterutrum eorum erit centro potentiae<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> prius, alterutrum posterius, ergo semper <app type="Bfootnote">
-						<lem type="main">aliquod sequetur</lem>
-						<note type="lemma-abbrev">aliquod</note>
-						<rdg wit="#L" n="1"> centrum </rdg>
-						<rdg wit="#L" n="2"> sequetur <hi rendition="#i">L</hi></rdg>
-						</app> centrum potentiae.<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> Unus casus deest, cum divergunt, tunc enim corpus praecedit, potest tamen determinari casus ille aliunde sine calculo, quemadmodum in caeteris quoque omnibus. Id sciri potest sumendo casum divergentiae<index indexName="Sachen">
-						<term>divergentia</term>
-						</index> velut <app type="Bfootnote">
-						<lem type="main">inversum occursus,<index indexName="Sachen">
-							<term>occursus</term>
-							</index></lem>
-						<note type="lemma-abbrev">inversum</note>
-						<rdg wit="#L" n="1"> concursus </rdg>
-						<rdg wit="#L" n="2"> occursus, <hi rendition="#i">L</hi></rdg>
-						</app> et posteriorem. Idemque in genere est, intelligendum de motu quo a se invicem <anchor xml:id="_37_05_152r_6a"/><app type="Bfootnote" from="#_37_05_152r_6a" to="#_37_05_152r_6b">
-						<lem type="main"/>
-						<note type="lemma-abbrev">discedunt</note>
-						<rdg wit="#L" n="1"> : </rdg>
-						<rdg wit="#L" n="2"> . Alibi <hi rendition="#i">L</hi></rdg>
-						</app>discedunt.</p>
-					<anchor xml:id="_37_05_152r_7a"/>
-					<p xml:id="Ch45.p16"><app type="Cfootnote" from="#_37_05_152r_7a" to="#_37_05_152r_7b">
-						<lem type="main"/>
-						<note type="lemma-abbrev">Alibi <seg type="apparat-ellipsis"/> concursum</note>
-						<note type="editorial">Siehe N. <ref corresp="L_chapter_44.xml#RK57273"/>, S. <ref corresp="L_chapter_44.xml#_37_05_146-147_17a"/>.</note>
-						</app>Alibi jam excussimus situm <anchor xml:id="_37_05_152r_6b"/><app type="Bfootnote">
-						<lem type="main">horum punctorum a statu</lem>
-						<note type="lemma-abbrev">horum</note>
-						<rdg wit="#L" n="1"> signorum </rdg>
-						<rdg wit="#L" n="2"> punctorum <app>
-							<rdg wit="#L" n="a">ante concursum </rdg>
-							<rdg wit="#L" n="b">a statu <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> ante concursum<index indexName="Sachen">
-						<term>concursus</term>
-						</index> usque ad concursum. Nunc <anchor xml:id="_37_05_152r_7b"/><app type="Bfootnote">
-						<lem type="main">consideremus a concursu<index indexName="Sachen">
-							<term>concursus</term>
-							</index> ad statum</lem>
-						<note type="lemma-abbrev">consideremus a</note>
-						<rdg wit="#L" n="1"> statu concursus </rdg>
-						<rdg wit="#L" n="2"> concursu <app>
-							<rdg wit="#L" n="a">a statu </rdg>
-							<rdg wit="#L" n="b">ad statum <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> post concursum. <app type="Bfootnote">
-						<lem type="main">Et primum consideremus</lem>
-						<note type="lemma-abbrev">Et</note>
-						<rdg wit="#L" n="1"> quia primum manifestum est </rdg>
-						<rdg wit="#L" n="2"> primum consideremus <hi rendition="#i">L</hi></rdg>
-						</app> situm punctorum <table>
-						<row>
-							<cell style="; text-align:center"><hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>.<hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>,</cell>
-						</row>
-						<row>
-							<cell style="; text-align:center"><hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>.<hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi></cell>
-						</row>
-						</table> item situm punctorum <table>
-						<row>
-							<cell style="; text-align:center"><hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>.</cell>
-						</row>
-						<row>
-							<cell style="; text-align:center"><hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi></cell>
-						</row>
-						</table> Ubi imaginando calculi causa divergentiam<index indexName="Sachen">
-						<term>divergentia</term>
-						</index> esse <app type="Bfootnote">
-						<lem type="main">concurs[u]m<index indexName="Sachen">
-							<term>concursus</term>
-							</index></lem>
-						<rdg wit="#L #ed">concursuum <hi rendition="#i">L ändert Hrsg.</hi></rdg>
-						</app> et elongationem<index indexName="Sachen">
-						<term>elongatio</term>
-						</index> esse appropinquationem,<index indexName="Sachen">
-						<term>appropinquatio</term>
-						</index> tunc <app type="Bfootnote">
-						<lem type="main">videndum quodnam corpus</lem>
-						<note type="lemma-abbrev">videndum</note>
-						<rdg wit="#L" n="1"> an </rdg>
-						<rdg wit="#L" n="2"> quod corpus </rdg>
-						<rdg wit="#L" n="3"> quodnam corpus <hi rendition="#i">L</hi></rdg>
-						</app> in eandem eat partem cum <app type="Bfootnote">
-						<lem type="main">centro potentiae,<index indexName="Sachen">
-							<term>centrum potentiae</term>
-							</index></lem>
-						<note type="lemma-abbrev">centro</note>
-						<rdg wit="#L" n="1"> gravitatis, </rdg>
-						<rdg wit="#L" n="2"> potentiae, <hi rendition="#i">L</hi></rdg>
-						</app> ipsumque <app type="Bfootnote">
-						<lem type="main">sequatur. Manifestum</lem>
-						<note type="lemma-abbrev">sequatur.</note>
-						<rdg wit="#L" n="1"> Primum si duo corpora occurrerint, tunc divergent. Nam quia </rdg>
-						<rdg wit="#L" n="2"> Manifestum <hi rendition="#i">L</hi></rdg>
-						</app> autem illud corpus in cujus partem ivit <app type="Bfootnote">
-						<lem type="main">centrum potentiae<index indexName="Sachen">
-							<term>centrum potentiae</term>
-							</index></lem>
-						<note type="lemma-abbrev">centrum</note>
-						<rdg wit="#L" n="1"> gravitatis </rdg>
-						<rdg wit="#L" n="2"> potentiae <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main">ex <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi> in <hi rendition="#i"><hi rendition="#smaller">3</hi>C,</hi></lem>
-						<note type="lemma-abbrev">ex</note>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi> in <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi> </add><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> pro illo sumi posse, quod ipsum sequi intellegeretur si rediret ex <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi> in <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>. Illud tantum videndum an quod ante secutum est corpus nunc non sit illud quod sequatur. Idque <app type="Bfootnote">
-						<lem type="main">manifestum est, nam</lem>
-						<note type="lemma-abbrev">manifestum est,</note>
-						<rdg wit="#L" n="1"> quia illud corpus in cujus tendit partem seque </rdg>
-						<rdg wit="#L" n="2"> nam <hi rendition="#i">L</hi></rdg>
-						</app> semper unumquodque <app type="Bfootnote">
-						<lem type="main">corpus a qua</lem>
-						<note type="lemma-abbrev">corpus</note>
-						<rdg wit="#L" n="1"> ab </rdg>
-						<rdg wit="#L" n="2"> a qua <hi rendition="#i">L</hi></rdg>
-						</app> est parte, in ea <app type="Bfootnote" from="#KZeitz199" to="#KZeitz200">
-						<lem type="main"/>
-						<note type="lemma-abbrev">manet</note>
-						<rdg wit="#L" n="1"> , deinde <app>
-							<rdg wit="#L" n="a">corp </rdg>
-							<rdg wit="#L" n="b">corpus quod sequitur </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> inter <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi> </rdg>
-						<rdg wit="#L" n="3"> . Ponendo <app>
-							<rdg wit="#L" n="a"><hi rendition="#i">C</hi> </rdg>
-							<rdg wit="#L" n="b"><hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi> tendere sinistrorsum <app>
-								<rdg wit="#L" n="aa">erit </rdg>
-								<rdg wit="#L" n="bb">et <app>
-									<rdg wit="#L" n="aaa"><hi rendition="#i">B</hi> </rdg>
-									<rdg wit="#L" n="bbb"><hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi> <seg type="apparat-ellipsis"/> erit <app>
-										<rdg wit="#L" n="aaaa"><hi rendition="#i">A</hi> sinisterius quam <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>, </rdg>
-										<rdg wit="#L" n="bbbb"><hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi> sinisterius quam <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>, <hi rendition="#i">L</hi></rdg>
-										</app></rdg>
-									</app></rdg>
-								</app></rdg>
-							</app></rdg>
-						</app>manet. Ponendo <anchor xml:id="KZeitz199"/><hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi> tendere sinistrorsum et <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi> quoque ipsum sinistrorsum sequi, erit <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi> sini- sterius quam <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>,imo et <anchor xml:id="KZeitz200"/><hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> sinisterius quam <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>. Ergo fingendo redire <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> in <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>, et <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi></p>
-					<p rendition="#noindent" xml:id="Ch45.p17">in <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi> manifestum est sequi <hi rendition="#i">A</hi> ipsum <hi rendition="#i">C</hi>. (<?tex-source \phantom{)}?>Ponendo scilicet motum ipsius <hi rendition="#i">A</hi> et <hi rendition="#i">C</hi> semper esse uniformem<index indexName="Sachen">
-						<term>motus uniformis</term>
-						</index> seu <app type="Bfootnote">
-						<lem type="main">nunquam nunc praeter[veh]ere nunc</lem>
-						<note type="lemma-abbrev">nunquam</note>
-						<rdg wit="#L" n="1"> praeterevhere <hi rendition="#i">[!]</hi> </rdg>
-						<rdg wit="#L" n="2"> nunc <note type="editorial">|</note> praeterquere <hi rendition="#i">ändert Hrsg.</hi>  nunc <hi rendition="#i">L</hi></rdg>
-						</app> rursus a tergo relinqui<anchor xml:id="_37_05_152r_2a"/><?tex-source \phantom{(}?>).<app type="Bfootnote" from="#_37_05_152r_2a" to="#_37_05_152r_2b">
-						<lem type="main"/>
-						<note type="lemma-abbrev">relinqui).</note>
-						<rdg wit="#L" n="1"> Illud co </rdg>
-						<rdg wit="#L" n="2"> Si <hi rendition="#i">L</hi></rdg>
-						</app></p>
-					<p xml:id="Ch45.p18">Si corpora sibi occurrerunt, quaeritur quis sit situs <anchor xml:id="_37_05_152r_2b"/><app type="Bfootnote">
-						<lem type="main">corporis <hi rendition="#i">B</hi>.</lem>
-						<note type="lemma-abbrev">corporis</note>
-						<rdg wit="#L" n="1"> <hi rendition="#i">A</hi> </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#i">B</hi>. <hi rendition="#i">L</hi></rdg>
-						</app> Nam ille nunc quaerendus, seu <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>.<hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi> et <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>. Ac primum si corpora sibi occurrerunt, necesse est unum eorum retrocessisse quia enim <hi rendition="#i">C</hi> progressum est, hinc <hi rendition="#i">A</hi> quod ab latere sinistro est, in quod tendit, necessario retrocessit, quaeritur <app type="Bfootnote">
-						<lem type="main">[an]</lem>
-						<rdg wit="#ed" cause="addition"><add>an</add> <note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></rdg>
-						</app> alterum <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">B</hi></lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i">B</hi> </add><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> retrocesserit, an sit progressum quia celeritatum differentiae<index indexName="Sachen">
-						<term>differentia celeritatum</term>
-						</index> sunt ut corpora <app type="Bfootnote">
-						<lem type="main">reciproce,</lem>
-						<note type="lemma-abbrev">reciproce</note>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ergo potentiarum quoque differentiae<index indexName="Sachen">
-						<term>differentia potentiarum</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">sunt aequales,</lem>
-						<note type="lemma-abbrev">sunt</note>
-						<rdg wit="#L" n="1" cause="addition"> ut corpora <note type="editorial">|</note> <add>reciproce</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> </rdg>
-						<rdg wit="#L" n="2"> aequales, <hi rendition="#i">L</hi></rdg>
-						</app> seu <anchor xml:id="_37_05_152r_3a"/><formula xml:id="Ch45.p18.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mi>a</m:mi>
-										<m:mi>b</m:mi>
-									</m:mfrac>
-								</m:mstyle>
-								<m:mo>⊓</m:mo>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mrow>
-											<m:mi>m</m:mi>
-											<m:mo>-</m:mo>
-											<m:mi>f</m:mi>
-										</m:mrow>
-										<m:mrow>
-											<m:mi>e</m:mi>
-											<m:mo>-</m:mo>
-											<m:mi>i</m:mi>
-										</m:mrow>
-									</m:mfrac>
-								</m:mstyle>
-							</m:mrow>
-						</m:math>
-						</formula>. Ergo<anchor xml:id="_37_05_152r_3b"/><app type="Bfootnote" from="#_37_05_152r_3a" to="#_37_05_152r_3b">
-						<lem type="main"/>
-						<note type="lemma-abbrev">seu <formula xml:id="Ch45.p18.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mi>a</m:mi>
-											<m:mi>b</m:mi>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>⊓</m:mo>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mi>m</m:mi>
-												<m:mo>-</m:mo>
-												<m:mi>f</m:mi>
-											</m:mrow>
-											<m:mrow>
-												<m:mi>e</m:mi>
-												<m:mo>-</m:mo>
-												<m:mi>i</m:mi>
-											</m:mrow>
-										</m:mfrac>
-									</m:mstyle>
-								</m:mrow>
-							</m:math>
-							</formula></note>
-						<rdg wit="#L" n="1"> , seu <formula xml:id="Ch45.p18.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:msup>
-													<m:mi>a</m:mi>
-													<m:mn>2</m:mn>
-												</m:msup>
-												<m:mo>⁢</m:mo>
-												<m:mi>b</m:mi>
-											</m:mrow>
-											<m:mrow>
-												<m:mi>a</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:msup>
-													<m:mi>b</m:mi>
-													<m:mn>2</m:mn>
-												</m:msup>
-											</m:mrow>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>⊓</m:mo>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mrow>
-													<m:mi>m</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mi>b</m:mi>
-												</m:mrow>
-												<m:mo>-</m:mo>
-												<m:mrow>
-													<m:mi>f</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mi>b</m:mi>
-												</m:mrow>
-											</m:mrow>
-											<m:mi/>
-										</m:mfrac>
-									</m:mstyle>
-								</m:mrow>
-							</m:math>
-							</formula> </rdg>
-						<rdg wit="#L" n="2"> . Er </rdg>
-						<rdg wit="#L" n="3"> . Ergo <hi rendition="#i">L</hi></rdg>
-						</app> <formula xml:id="Ch45.p18.m4">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mi>a</m:mi>
-										<m:mi>b</m:mi>
-									</m:mfrac>
-								</m:mstyle>
-								<m:mo>⌢</m:mo>
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mi>b</m:mi>
-											<m:mi>a</m:mi>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>⊓</m:mo>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mi>m</m:mi>
-												<m:mo>-</m:mo>
-												<m:mi>f</m:mi>
-											</m:mrow>
-											<m:mrow>
-												<m:mi>e</m:mi>
-												<m:mo>-</m:mo>
-												<m:mi>i</m:mi>
-											</m:mrow>
-										</m:mfrac>
-									</m:mstyle>
-								</m:mrow>
-								<m:mo>⌢</m:mo>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mi>b</m:mi>
-										<m:mi>a</m:mi>
-									</m:mfrac>
-								</m:mstyle>
-							</m:mrow>
-						</m:math>
-						</formula>, seu <formula xml:id="Ch45.p18.m5">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mn>1</m:mn>
-								<m:mo>⊓</m:mo>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mrow>
-											<m:mrow>
-												<m:mi>m</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mi>b</m:mi>
-											</m:mrow>
-											<m:mo>-</m:mo>
-											<m:mrow>
-												<m:mi>f</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mi>b</m:mi>
-											</m:mrow>
-										</m:mrow>
-										<m:mrow>
-											<m:mrow>
-												<m:mi>e</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mi>a</m:mi>
-											</m:mrow>
-											<m:mo>-</m:mo>
-											<m:mrow>
-												<m:mi>i</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mi>a</m:mi>
-											</m:mrow>
-										</m:mrow>
-									</m:mfrac>
-								</m:mstyle>
-							</m:mrow>
-						</m:math>
-						</formula>, sive <formula xml:id="Ch45.p18.m6">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mi>e</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>a</m:mi>
-										</m:mrow>
-										<m:mo>-</m:mo>
-										<m:mrow>
-											<m:mi>i</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>a</m:mi>
-										</m:mrow>
-									</m:mrow>
-									<m:mo>⊓</m:mo>
-									<m:mrow>
-										<m:mi>m</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-								</m:mrow>
-								<m:mo>-</m:mo>
-								<m:mrow>
-									<m:mi>f</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-							</m:mrow>
-						</m:math>
-						</formula>, seu potentiarum mutationes<index indexName="Sachen">
-						<term>mutatio potentiae</term>
-						</index> sunt <app type="Bfootnote">
-						<lem type="main">aequales sive</lem>
-						<note type="lemma-abbrev">aequales</note>
-						<rdg wit="#L" n="1"> . Ergo </rdg>
-						<rdg wit="#L" n="2"> sive <hi rendition="#i">L</hi></rdg>
-						</app> quod idem est potentiarum summae,<index indexName="Sachen">
-						<term>summa potentiarum</term>
-						</index> seu <formula xml:id="Ch45.p18.m7">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mrow>
-										<m:mrow>
-											<m:mi>e</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>a</m:mi>
-										</m:mrow>
-										<m:mo>+</m:mo>
-										<m:mrow>
-											<m:mi>f</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mi>b</m:mi>
-										</m:mrow>
-									</m:mrow>
-									<m:mo>⊓</m:mo>
-									<m:mrow>
-										<m:mi>i</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>a</m:mi>
-									</m:mrow>
-								</m:mrow>
-								<m:mo>+</m:mo>
-								<m:mrow>
-									<m:mi>m</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>b</m:mi>
-								</m:mrow>
-							</m:mrow>
-						</m:math>
-						</formula><anchor xml:id="_37_05_152r_4a"/>. Seu <formula xml:id="Ch45.p18.m8">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mi>a</m:mi>
-										<m:mi>b</m:mi>
-									</m:mfrac>
-								</m:mstyle>
-								<m:mo>⊓</m:mo>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mrow>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-											</m:mrow>
-											<m:mo>-</m:mo>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-											</m:mrow>
-										</m:mrow>
-										<m:mrow>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-											</m:mrow>
-											<m:mo>-</m:mo>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-											</m:mrow>
-										</m:mrow>
-									</m:mfrac>
-								</m:mstyle>
-							</m:mrow>
-						</m:math>
-						</formula>. Jam<anchor xml:id="_37_05_152r_4b"/><app type="Bfootnote" from="#_37_05_152r_4a" to="#_37_05_152r_4b">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><formula xml:id="Ch45.p18.m9">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>i</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>a</m:mi>
-									</m:mrow>
-									<m:mo>+</m:mo>
-									<m:mrow>
-										<m:mi>m</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>b</m:mi>
-									</m:mrow>
-								</m:mrow>
-							</m:math>
-							</formula>.</note>
-						<rdg wit="#L" n="1"> Vel quod idem est: <app>
-							<rdg wit="#L" n="a"><hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi><hi rendition="#i #smaller">1</hi> </rdg>
-							<rdg wit="#L" n="b"><hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi><formula xml:id="Ch45.p18.m11">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mrow>
-										<m:mrow>
-											<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-											<m:mo>⁢</m:mo>
-											<m:mpadded width="+1.7pt">
-												<m:mi>A</m:mi>
-											</m:mpadded>
-										</m:mrow>
-										<m:mo>⊓</m:mo>
-									</m:mrow>
-								</m:math>
-								</formula> </rdg>
-							<rdg wit="#L" n="c"><hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi><hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi> ad </rdg>
-							<rdg wit="#L" n="d"><formula xml:id="Ch45.p18.m12">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>C</m:mi>
-											</m:mrow>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>C</m:mi>
-											</m:mrow>
-										</m:mfrac>
-									</m:mstyle>
-								</m:math>
-								</formula> </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> Seu <formula xml:id="Ch45.p18.m13">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mi>a</m:mi>
-											<m:mi>b</m:mi>
-										</m:mfrac>
-									</m:mstyle>
-									<m:mo>⊓</m:mo>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>B</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>B</m:mi>
-												</m:mrow>
-												<m:mo>-</m:mo>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>B</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>B</m:mi>
-												</m:mrow>
-											</m:mrow>
-											<m:mrow>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>A</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>A</m:mi>
-												</m:mrow>
-												<m:mo>-</m:mo>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>A</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>A</m:mi>
-												</m:mrow>
-											</m:mrow>
-										</m:mfrac>
-									</m:mstyle>
-								</m:mrow>
-							</m:math>
-							</formula> <app>
-							<rdg wit="#L" n="a" cause="addition"><formula xml:id="Ch45.p18.m14">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mrow>
-										<m:mo rspace="4.2pt">⊓</m:mo>
-										<m:mstyle displaystyle="true">
-											<m:mfrac>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>C</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>B</m:mi>
-												</m:mrow>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>C</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>A</m:mi>
-												</m:mrow>
-											</m:mfrac>
-										</m:mstyle>
-									</m:mrow>
-								</m:math>
-								</formula> <note type="editorial">|</note> <add><formula xml:id="Ch45.p18.m15">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mrow>
-										<m:mrow>
-											<m:mo rspace="4.2pt">⊓</m:mo>
-											<m:mstyle displaystyle="true">
-												<m:mfrac>
-													<m:mrow>
-														<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>C</m:mi>
-														<m:mo>⁢</m:mo>
-														<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>B</m:mi>
-													</m:mrow>
-													<m:mrow>
-														<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>C</m:mi>
-														<m:mo>⁢</m:mo>
-														<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>A</m:mi>
-													</m:mrow>
-												</m:mfrac>
-											</m:mstyle>
-										</m:mrow>
-										<m:mo>⊓</m:mo>
-										<m:mstyle displaystyle="true">
-											<m:mfrac>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>C</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>B</m:mi>
-												</m:mrow>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>C</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>A</m:mi>
-												</m:mrow>
-											</m:mfrac>
-										</m:mstyle>
-									</m:mrow>
-								</m:math>
-								</formula> </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> . <formula xml:id="Ch45.p18.m16">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mrow>
-										<m:mrow>
-											<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-											<m:mo>⁢</m:mo>
-											<m:mi>B</m:mi>
-											<m:mo>⁢</m:mo>
-											<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-											<m:mo>⁢</m:mo>
-											<m:mi>B</m:mi>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mrow>
-											<m:mtable rowspacing="10pt">
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>A</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>A</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>A</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-											</m:mtable>
-											<m:mo>-</m:mo>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-											</m:mrow>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mrow>
-											<m:mtable rowspacing="10pt">
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>A</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>A</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>A</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-											</m:mtable>
-											<m:mo>⊓</m:mo>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-											</m:mrow>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mrow>
-											<m:mtable rowspacing="10pt">
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>B</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>B</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>B</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-											</m:mtable>
-											<m:mo>-</m:mo>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-											</m:mrow>
-										</m:mrow>
-										<m:mo>⌢</m:mo>
-										<m:mrow>
-											<m:mtable rowspacing="10pt">
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>B</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>B</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-												<m:mtr>
-													<m:mtd columnalign="center">
-														<m:mrow>
-															<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>C</m:mi>
-															<m:mo>⁢</m:mo>
-															<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-															<m:mo>⁢</m:mo>
-															<m:mi>B</m:mi>
-														</m:mrow>
-													</m:mtd>
-												</m:mtr>
-											</m:mtable>
-											<m:mo>⊓</m:mo>
-										</m:mrow>
-									</m:mrow>
-								</m:math>
-								</formula> </rdg>
-							<rdg wit="#L" n="b">. Jam <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> <formula xml:id="Ch45.p18.m17">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mi>a</m:mi>
-										<m:mi>b</m:mi>
-									</m:mfrac>
-								</m:mstyle>
-								<m:mo>⊓</m:mo>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mrow>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>C</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-											</m:mrow>
-											<m:mo>⌣</m:mo>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-											</m:mrow>
-										</m:mrow>
-										<m:mrow>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>C</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-											</m:mrow>
-											<m:mo>⌣</m:mo>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>B</m:mi>
-											</m:mrow>
-										</m:mrow>
-									</m:mfrac>
-								</m:mstyle>
-							</m:mrow>
-						</m:math>
-						</formula> seu <formula xml:id="Ch45.p18.m18">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mrow>
-											<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-											<m:mi>C</m:mi>
-											<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-											<m:mi>B</m:mi>
-											<m:mo>,</m:mo>
-											<m:mo>⌢</m:mo>
-											<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-											<m:mi>B</m:mi>
-											<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-											<m:mi>B</m:mi>
-										</m:mrow>
-										<m:mrow>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>C</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-											</m:mrow>
-											<m:mo>⌢</m:mo>
-											<m:mrow>
-												<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-												<m:mo>⁢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mo>⁢</m:mo>
-												<m:mi>A</m:mi>
-											</m:mrow>
-										</m:mrow>
-									</m:mfrac>
-								</m:mstyle>
-								<m:mo>,</m:mo>
-								<m:mrow>
-									<m:mo>⊓</m:mo>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>C</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>B</m:mi>
-												</m:mrow>
-												<m:mo>⌢</m:mo>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>B</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>B</m:mi>
-												</m:mrow>
-											</m:mrow>
-											<m:mrow>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>C</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>A</m:mi>
-												</m:mrow>
-												<m:mo mathvariant="italic" separator="true"> </m:mo>
-												<m:mrow>
-													<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>A</m:mi>
-													<m:mo>⁢</m:mo>
-													<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-													<m:mo>⁢</m:mo>
-													<m:mi>A</m:mi>
-												</m:mrow>
-											</m:mrow>
-										</m:mfrac>
-									</m:mstyle>
-								</m:mrow>
-								<m:mo>,</m:mo>
-								<m:mrow>
-									<m:mrow>
-										<m:mo>⊓</m:mo>
-										<m:mstyle displaystyle="true">
-											<m:mfrac>
-												<m:mrow>
-													<m:mrow>
-														<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>C</m:mi>
-														<m:mo>⁢</m:mo>
-														<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>B</m:mi>
-													</m:mrow>
-													<m:mo>,</m:mo>
-													<m:mrow>
-														<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>B</m:mi>
-														<m:mo>⁢</m:mo>
-														<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>B</m:mi>
-													</m:mrow>
-												</m:mrow>
-												<m:mrow>
-													<m:mrow>
-														<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>C</m:mi>
-														<m:mo>⁢</m:mo>
-														<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>A</m:mi>
-													</m:mrow>
-													<m:mo>,</m:mo>
-													<m:mrow>
-														<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>A</m:mi>
-														<m:mo>⁢</m:mo>
-														<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-														<m:mo>⁢</m:mo>
-														<m:mi>A</m:mi>
-													</m:mrow>
-												</m:mrow>
-											</m:mfrac>
-										</m:mstyle>
-									</m:mrow>
-									<m:mo>⊓</m:mo>
-									<m:mstyle displaystyle="true">
-										<m:mfrac>
-											<m:mrow>
-												<m:mpadded depth="+2.6pt" height="-2.6pt">
-													<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#circle-2" style="; height: 7.139891pt" other="7.499886pt"/>
-												</m:mpadded>
-												<m:mi>C</m:mi>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mi>B</m:mi>
-												<m:mo>,</m:mo>
-												<m:mo>⌢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-												<m:mi>B</m:mi>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mi>B</m:mi>
-											</m:mrow>
-											<m:mrow>
-												<m:mpadded depth="+2.6pt" height="-2.6pt">
-													<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#circle-2" style="; height: 7.139891pt" other="7.499886pt"/>
-												</m:mpadded>
-												<m:mi>C</m:mi>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mi>A</m:mi>
-												<m:mo>,</m:mo>
-												<m:mo>⌢</m:mo>
-												<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-												<m:mi>A</m:mi>
-												<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-												<m:mi>A</m:mi>
-											</m:mrow>
-										</m:mfrac>
-									</m:mstyle>
-								</m:mrow>
-							</m:mrow>
-						</m:math>
-						</formula>.</p>
-					<p xml:id="Ch45.p19">Notandum est ubi post concursum<index indexName="Sachen">
-						<term>concursus</term>
-						</index> incipit discedendi iterum conatus,<index indexName="Sachen">
-						<term>conatus iterum discedendi</term>
-						</index> mutatis celeritatibus etiam centrum potentiae<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> mutari quod non amplius voco <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>, sed <formula xml:id="Ch45.p19.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#circle-2" style="; height: 7.139891pt" other="4.124937pt"/>
-						</m:math>
-						</formula><hi rendition="#i">C</hi>.</p>
-					<p xml:id="Ch45.p20">Si <formula xml:id="Ch45.p20.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-								<m:mo>⁢</m:mo>
-								<m:mi>B</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-								<m:mo>⁢</m:mo>
-								<m:mpadded width="+1.7pt">
-									<m:mi>B</m:mi>
-								</m:mpadded>
-								<m:mo>⁢</m:mo>
-								<m:mpadded width="-1.7pt">
-									<m:mpadded depth="+3.8pt" height="-3.8pt">
-										<m:mo/>
-										<m:mtext> </m:mtext>
-									</m:mpadded>
-								</m:mpadded>
-								<m:mo>⁢</m:mo>
-								<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-								<m:mo>⁢</m:mo>
-								<m:mi>B</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-								<m:mo>⁢</m:mo>
-								<m:mi>B</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula>, etiam <formula xml:id="Ch45.p20.m2">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-								<m:mo>⁢</m:mo>
-								<m:mi>A</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-								<m:mo>⁢</m:mo>
-								<m:mpadded width="+1.7pt">
-									<m:mi>A</m:mi>
-								</m:mpadded>
-								<m:mo>⁢</m:mo>
-								<m:mpadded width="-1.7pt">
-									<m:mpadded depth="+3.8pt" height="-3.8pt">
-										<m:mo/>
-										<m:mtext> </m:mtext>
-									</m:mpadded>
-								</m:mpadded>
-								<m:mo>⁢</m:mo>
-								<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-								<m:mo>⁢</m:mo>
-								<m:mi>A</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-								<m:mo>⁢</m:mo>
-								<m:mi>A</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> et <app type="Bfootnote">
-						<lem type="main">contra quia</lem>
-						<note type="lemma-abbrev">contra</note>
-						<rdg wit="#L" n="1"> ergo </rdg>
-						<rdg wit="#L" n="2"> si </rdg>
-						<rdg wit="#L" n="3"> <note type="editorial">|</note> porro <hi rendition="#i">streicht Hrsg.</hi>  </rdg>
-						<rdg wit="#L" n="4"> quia <hi rendition="#i">L</hi></rdg>
-						</app> ponimus <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> esse ab illa parte, a qua est centrum potentiae<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi> et fuisse ab eadem in casu <app type="Bfootnote">
-						<lem type="main">occursus,<index indexName="Sachen">
-							<term>occursus</term>
-							</index> jam</lem>
-						<note type="lemma-abbrev">occursus,</note>
-						<rdg wit="#L" n="1"> hinc </rdg>
-						<rdg wit="#L" n="2"> jam <hi rendition="#i">L</hi></rdg>
-						</app> ante, seu fuisse sinisterius quam <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>. Hinc sive (<hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>) cadat intra <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi> et <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>, quo casu minuta est celeritas per <app type="Bfootnote">
-						<lem type="main">occursum,<index indexName="Sachen">
-							<term>occursus</term>
-							</index> sive <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> cadat extra, erit recta</lem>
-						<note type="lemma-abbrev">occursum, sive</note>
-						<rdg wit="#L" n="1"> cadat extra in <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> cadat extra, erit <app>
-							<rdg wit="#L" n="a">sem </rdg>
-							<rdg wit="#L" n="b">recta <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi><hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>, differentia inter <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi><hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>, et <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi><hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>. Posito ergo <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> cadere intra <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi> et <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>, <app type="Bfootnote">
-						<lem type="main">tunc <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi><hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> erit</lem>
-						<rdg wit="#L">tunc <note type="editorial">|</note> tunc <hi rendition="#i">streicht Hrsg.</hi>  <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi><hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> erit <hi rendition="#i">L</hi></rdg>
-						</app> minor quam <hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi><hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>. Ergo et <hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi><hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi> erit minor quam <anchor xml:id="_37_05_152r_5a"/><hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi><hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>.<app type="Bfootnote" from="#_37_05_152r_5a" to="#_37_05_152r_5b">
-						<lem type="main"/>
-						<note type="lemma-abbrev">quam <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi><hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>.</note>
-						<rdg wit="#L" n="1"> Ergo si corpora <app>
-							<rdg wit="#L" n="a">sibi </rdg>
-							<rdg wit="#L" n="b"><hi rendition="#i">A</hi>, <hi rendition="#i">B</hi> sibi occurrunt, <app>
-								<rdg wit="#L" n="aa">erit locus <app>
-									<rdg wit="#L" n="aaa">post res </rdg>
-									<rdg wit="#L" n="bbb">corporis <hi rendition="#i">A</hi>, cui contrait centrum </rdg>
-									</app></rdg>
-								<rdg wit="#L" n="bb">et centrum potentiae contrait corpori <hi rendition="#i">A</hi>, tunc erit </rdg>
-								</app></rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> In <hi rendition="#i">L</hi></rdg>
-						</app></p>
-					<p xml:id="Ch45.p21">In quam partem it centrum potentiae,<anchor xml:id="_37_05_152r_5b"/><index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> in eam partem post occursum<index indexName="Sachen">
-						<term>occursus</term>
-						</index> ire necesse est <app type="Bfootnote">
-						<lem type="main">corpus ad</lem>
-						<note type="lemma-abbrev">corpus</note>
-						<rdg wit="#L" n="1"> quod </rdg>
-						<rdg wit="#L" n="2"> ad <hi rendition="#i">L</hi></rdg>
-						</app> cujus partem centrum potentiae<index indexName="Sachen">
-						<term>centrum potentiae</term>
-						</index> tendit, v.g. <app type="Bfootnote">
-						<lem type="main">quia centrum potentiae<index indexName="Sachen">
-							<term>centrum potentiae</term>
-							</index> it</lem>
-						<note type="lemma-abbrev">quia</note>
-						<rdg wit="#L">centrum potentiae </rdg>
-						<rdg wit="#L" n="1"> tendit </rdg>
-						<rdg wit="#L" n="2"> ab or </rdg>
-						<rdg wit="#L" n="3"> it <hi rendition="#i">L</hi></rdg>
-						</app> ordine <hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi>.<hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>.<hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>, versus <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>, hinc post occursum<index indexName="Sachen">
-						<term>occursus</term>
-						</index> necesse est <app type="Bfootnote">
-						<lem type="main">et <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi></lem>
-						<note type="lemma-abbrev">et</note>
-						<rdg wit="#L" n="1"> <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> tende </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi> <hi rendition="#i">L</hi></rdg>
-						</app> tendere versus <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>. Quaeritur jam in quam partem tendat corpus <hi rendition="#i">B</hi>; si corpus <hi rendition="#i">A</hi> post occursum<index indexName="Sachen">
-						<term>occursus</term>
-						</index> tendit celerius quam <app type="Bfootnote">
-						<lem type="main">prius, necesse est</lem>
-						<note type="lemma-abbrev">prius,</note>
-						<rdg wit="#L" n="1"> tendat, </rdg>
-						<rdg wit="#L" n="2"> necesse est <hi rendition="#i">L</hi></rdg>
-						</app> ut corpus <hi rendition="#i">B</hi> moveatur tardius, tantum quaeritur in quam <app type="Bfootnote">
-						<lem type="main">partem. Necesse</lem>
-						<note type="lemma-abbrev">partem.</note>
-						<rdg wit="#L" n="1"> Erit autem necessario eo casu </rdg>
-						<rdg wit="#L" n="2"> Necesse <hi rendition="#i">L</hi></rdg>
-						</app> est corpus cujus motus in contrariam partem augetur minus habere potentiae<index indexName="Sachen">
-						<term>potentia</term>
-						</index> quam id cujus <app type="Bfootnote">
-						<lem type="main">motus continuatur,</lem>
-						<note type="lemma-abbrev">motus</note>
-						<rdg wit="#L" n="1"> in contrariam </rdg>
-						<rdg wit="#L" n="2"> continuatur, <hi rendition="#i">L</hi></rdg>
-						</app> vel cujus motus in contrariam quidem sed minor est quam ante. Ergo <table>
-						<row>
-							<cell>si</cell>
-							<cell style="; text-align:center"><hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi><formula xml:id="Ch45.p21.m1">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mrow>
-										<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
-										<m:mo>⁢</m:mo>
-										<m:mpadded width="+1.7pt">
-											<m:mi>A</m:mi>
-										</m:mpadded>
-										<m:mo>⁢</m:mo>
-										<m:mpadded width="-1.7pt">
-											<m:mpadded depth="+3.8pt" height="-3.8pt">
-												<m:mo/>
-												<m:mtext> </m:mtext>
-											</m:mpadded>
-										</m:mpadded>
-									</m:mrow>
-								</m:math>
-								</formula><hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi><hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>,</cell>
-						</row>
-						<row>
-							<cell>seu</cell>
-							<cell style="; text-align:center"><hi rendition="#i"><hi rendition="#smaller">1</hi>B</hi><formula xml:id="Ch45.p21.m2">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mrow>
-										<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
-										<m:mo>⁢</m:mo>
-										<m:mpadded width="+1.7pt">
-											<m:mi>B</m:mi>
-										</m:mpadded>
-										<m:mo>⁢</m:mo>
-										<m:mpadded width="-1.7pt">
-											<m:mpadded depth="+3.8pt" height="-3.8pt">
-												<m:mo/>
-												<m:mtext> </m:mtext>
-											</m:mpadded>
-										</m:mpadded>
-									</m:mrow>
-								</m:math>
-								</formula><hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi><hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi></cell>
-						</row>
-						</table> fuit <hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi><formula xml:id="Ch45.p21.m3">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
-								<m:mo>⁢</m:mo>
-								<m:mpadded width="+1.7pt">
-									<m:mi>B</m:mi>
-								</m:mpadded>
-								<m:mo>⁢</m:mo>
-								<m:mpadded width="-1.7pt">
-									<m:mpadded depth="+3.8pt" height="-3.8pt">
-										<m:mo/>
-										<m:mtext> </m:mtext>
-									</m:mpadded>
-								</m:mpadded>
-							</m:mrow>
-						</m:math>
-						</formula><hi rendition="#i"><hi rendition="#smaller">1</hi>C</hi><hi rendition="#i"><hi rendition="#smaller">1</hi>A</hi>.</p>
-					<p xml:id="Ch45.p22">Sit casus quo corpus magnum<index indexName="Sachen">
-						<term>corpus magnum</term>
-						</index> motum ingruit in parvum quiescens.<index indexName="Sachen">
-						<term>corpus parvum quiescens</term>
-						</index> [<hi rendition="#i">Text bricht ab.</hi>]</p>
-				</div>
-			</div>
-		</body>
-	</text>
+</formula>
+</p>
+<anchor xml:id="_37_05_152r_1a"/>
+<p xml:id="Ch45.p12">
+<app type="Bfootnote" from="#_37_05_152r_1a" to="#_37_05_152r_1b">
+<lem type="main"/>
+<note type="lemma-abbrev">quam <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>.
+</note>
+<rdg wit="#L" n="1"> Videndum an <app>
+<rdg wit="#L" n="a">semper aliquod sumi possit </rdg>
+<rdg wit="#L" n="b">corpus motum, quod semper </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">Semper</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch45.p13">
+<hi rendition="#g">Semper</hi>
+<anchor xml:id="_37_05_152r_1b"/>
+<hi rendition="#g">intelligi potest centrum potentiae,</hi>
+<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index>
+<hi rendition="#g">et aliquod ex corporibus</hi>[,]<hi rendition="#g">tendere in eandem partem</hi>. Sit illud corpus <hi rendition="#i">B</hi>. Si corpora sibi occurrunt aut a se invicem divergunt, tunc centrum potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> aut quiescit aut movetur. Si quiescit, fingatur moveri sed motu tardissimo<index indexName="Sachen">
+<term>motus tardissimus</term>
+</index> et salvus erit calculus; sin movetur, tunc necessario in alterutram partem movetur. Ergo necessario movetur in partem in quam alterutrum corporum movetur, quoniam nullum <app type="Bfootnote">
+<lem type="main">latus assignari</lem>
+<note type="lemma-abbrev">latus</note>
+<rdg wit="#L" n="1"> assignatur </rdg>
+<rdg wit="#L" n="2"> assignari <hi rendition="#i">L</hi>
+</rdg>
+</app> potest, in <app type="Bfootnote">
+<lem type="main">[quod]</lem>
+<rdg wit="#L #ed">quem <hi rendition="#i">L ändert Hrsg.</hi>
+</rdg>
+</app> non in casu concursus<index indexName="Sachen">
+<term>concursus</term>
+</index> aut divergentiae<index indexName="Sachen">
+<term>divergentia</term>
+</index> aliquod corporum moveatur. Si vero <app type="Bfootnote">
+<lem type="main">corpora ambo</lem>
+<note type="lemma-abbrev">corpora</note>
+<rdg wit="#L" n="1"> non ten </rdg>
+<rdg wit="#L" n="2"> ambo <hi rendition="#i">L</hi>
+</rdg>
+</app> tendant in eandem partem, id est, neque divergant, neque occurrant, utique manifeste et centrum potentiae,<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> in eandem movetur <app type="Bfootnote">
+<lem type="main">partem. Huc</lem>
+<note type="lemma-abbrev">partem.</note>
+<rdg wit="#L" n="1"> Ex hoc porro </rdg>
+<rdg wit="#L" n="2"> Huc <hi rendition="#i">L</hi>
+</rdg>
+</app> pertinet, et si aliquod corporum quiescat, nam quietem<index indexName="Sachen">
+<term>quies</term>
+</index> habeo pro motu tardissimo.<index indexName="Sachen">
+<term>motus tardissimus</term>
+</index>
+</p>
+<p xml:id="Ch45.p14">
+<hi rendition="#g">Semper intelligi potest aliquod corporum sequi centrum potentiae</hi>
+<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">excepto divergentiae casu</hi>,
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#g">excepto divergentiae casu</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> id est non tantum in eandem ire partem, sed et ipso esse posterius, seu (si motus fingatur a dextro ad sinistrum) dexterius. Ostendo, nam si</p>
+<p rendition="#noindent" xml:id="Ch45.p15">
+<app type="Bfootnote">
+<lem type="main">corpora sibi</lem>
+<note type="lemma-abbrev">corpora</note>
+<rdg wit="#L" n="1"> concurrant </rdg>
+<rdg wit="#L" n="2"> sibi <hi rendition="#i">L</hi>
+</rdg>
+</app> occurrant, tunc id quod in eandem it partem cum centro potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> semper ipso est posterius. Nam centrum potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> propius est corpori opposito, seu sito versus latus in quod itur, ergo prius est, et corpus est <app type="Bfootnote">
+<lem type="main">posterius. Si</lem>
+<note type="lemma-abbrev">posterius.</note>
+<rdg wit="#L" n="1"> Si corpora divergant tunc </rdg>
+<rdg wit="#L" n="2"> Si <hi rendition="#i">L</hi>
+</rdg>
+</app> corpora in easdem partes inter se et cum centro potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> tendant, tunc alterutrum eorum erit centro potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> prius, alterutrum posterius, ergo semper <app type="Bfootnote">
+<lem type="main">aliquod sequetur</lem>
+<note type="lemma-abbrev">aliquod</note>
+<rdg wit="#L" n="1"> centrum </rdg>
+<rdg wit="#L" n="2"> sequetur <hi rendition="#i">L</hi>
+</rdg>
+</app> centrum potentiae.<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> Unus casus deest, cum divergunt, tunc enim corpus praecedit, potest tamen determinari casus ille aliunde sine calculo, quemadmodum in caeteris quoque omnibus. Id sciri potest sumendo casum divergentiae<index indexName="Sachen">
+<term>divergentia</term>
+</index> velut <app type="Bfootnote">
+<lem type="main">inversum occursus,<index indexName="Sachen">
+<term>occursus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">inversum</note>
+<rdg wit="#L" n="1"> concursus </rdg>
+<rdg wit="#L" n="2"> occursus, <hi rendition="#i">L</hi>
+</rdg>
+</app> et posteriorem. Idemque in genere est, intelligendum de motu quo a se invicem <anchor xml:id="_37_05_152r_6a"/>
+<app type="Bfootnote" from="#_37_05_152r_6a" to="#_37_05_152r_6b">
+<lem type="main"/>
+<note type="lemma-abbrev">discedunt</note>
+<rdg wit="#L" n="1"> : </rdg>
+<rdg wit="#L" n="2"> . Alibi <hi rendition="#i">L</hi>
+</rdg>
+</app>discedunt.</p>
+<anchor xml:id="_37_05_152r_7a"/>
+<p xml:id="Ch45.p16">
+<app type="Cfootnote" from="#_37_05_152r_7a" to="#_37_05_152r_7b">
+<lem type="main"/>
+<note type="lemma-abbrev">Alibi <seg type="apparat-ellipsis"/>
+ concursum</note>
+<note type="editorial">Siehe N. <ref corresp="L_chapter_44.xml#RK57273"/>
+, S. <ref corresp="L_chapter_44.xml#_37_05_146-147_17a"/>
+.</note>
+</app>Alibi jam excussimus situm <anchor xml:id="_37_05_152r_6b"/>
+<app type="Bfootnote">
+<lem type="main">horum punctorum a statu</lem>
+<note type="lemma-abbrev">horum</note>
+<rdg wit="#L" n="1"> signorum </rdg>
+<rdg wit="#L" n="2"> punctorum <app>
+<rdg wit="#L" n="a">ante concursum </rdg>
+<rdg wit="#L" n="b">a statu <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> ante concursum<index indexName="Sachen">
+<term>concursus</term>
+</index> usque ad concursum. Nunc <anchor xml:id="_37_05_152r_7b"/>
+<app type="Bfootnote">
+<lem type="main">consideremus a concursu<index indexName="Sachen">
+<term>concursus</term>
+</index> ad statum</lem>
+<note type="lemma-abbrev">consideremus a</note>
+<rdg wit="#L" n="1"> statu concursus </rdg>
+<rdg wit="#L" n="2"> concursu <app>
+<rdg wit="#L" n="a">a statu </rdg>
+<rdg wit="#L" n="b">ad statum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> post concursum. <app type="Bfootnote">
+<lem type="main">Et primum consideremus</lem>
+<note type="lemma-abbrev">Et</note>
+<rdg wit="#L" n="1"> quia primum manifestum est </rdg>
+<rdg wit="#L" n="2"> primum consideremus <hi rendition="#i">L</hi>
+</rdg>
+</app> situm punctorum <table>
+<row>
+<cell style="; text-align:center">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>,
+</cell>
+</row>
+<row>
+<cell style="; text-align:center">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>.<hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>
+</cell>
+</row>
+</table> item situm punctorum <table>
+<row>
+<cell style="; text-align:center">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>.
+</cell>
+</row>
+<row>
+<cell style="; text-align:center">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>
+</cell>
+</row>
+</table> Ubi imaginando calculi causa divergentiam<index indexName="Sachen">
+<term>divergentia</term>
+</index> esse <app type="Bfootnote">
+<lem type="main">concurs[u]m<index indexName="Sachen">
+<term>concursus</term>
+</index>
+</lem>
+<rdg wit="#L #ed">concursuum <hi rendition="#i">L ändert Hrsg.</hi>
+</rdg>
+</app> et elongationem<index indexName="Sachen">
+<term>elongatio</term>
+</index> esse appropinquationem,<index indexName="Sachen">
+<term>appropinquatio</term>
+</index> tunc <app type="Bfootnote">
+<lem type="main">videndum quodnam corpus</lem>
+<note type="lemma-abbrev">videndum</note>
+<rdg wit="#L" n="1"> an </rdg>
+<rdg wit="#L" n="2"> quod corpus </rdg>
+<rdg wit="#L" n="3"> quodnam corpus <hi rendition="#i">L</hi>
+</rdg>
+</app> in eandem eat partem cum <app type="Bfootnote">
+<lem type="main">centro potentiae,<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index>
+</lem>
+<note type="lemma-abbrev">centro</note>
+<rdg wit="#L" n="1"> gravitatis, </rdg>
+<rdg wit="#L" n="2"> potentiae, <hi rendition="#i">L</hi>
+</rdg>
+</app> ipsumque <app type="Bfootnote">
+<lem type="main">sequatur. Manifestum</lem>
+<note type="lemma-abbrev">sequatur.</note>
+<rdg wit="#L" n="1"> Primum si duo corpora occurrerint, tunc divergent. Nam quia </rdg>
+<rdg wit="#L" n="2"> Manifestum <hi rendition="#i">L</hi>
+</rdg>
+</app> autem illud corpus in cujus partem ivit <app type="Bfootnote">
+<lem type="main">centrum potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index>
+</lem>
+<note type="lemma-abbrev">centrum</note>
+<rdg wit="#L" n="1"> gravitatis </rdg>
+<rdg wit="#L" n="2"> potentiae <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">ex <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi> in <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C,</hi>
+</lem>
+<note type="lemma-abbrev">ex</note>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi> in <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> pro illo sumi posse, quod ipsum sequi intellegeretur si rediret ex <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi> in <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>. Illud tantum videndum an quod ante secutum est corpus nunc non sit illud quod sequatur. Idque <app type="Bfootnote">
+<lem type="main">manifestum est, nam</lem>
+<note type="lemma-abbrev">manifestum est,</note>
+<rdg wit="#L" n="1"> quia illud corpus in cujus tendit partem seque </rdg>
+<rdg wit="#L" n="2"> nam <hi rendition="#i">L</hi>
+</rdg>
+</app> semper unumquodque <app type="Bfootnote">
+<lem type="main">corpus a qua</lem>
+<note type="lemma-abbrev">corpus</note>
+<rdg wit="#L" n="1"> ab </rdg>
+<rdg wit="#L" n="2"> a qua <hi rendition="#i">L</hi>
+</rdg>
+</app> est parte, in ea <app type="Bfootnote" from="#KZeitz199" to="#KZeitz200">
+<lem type="main"/>
+<note type="lemma-abbrev">manet</note>
+<rdg wit="#L" n="1"> , deinde <app>
+<rdg wit="#L" n="a">corp </rdg>
+<rdg wit="#L" n="b">corpus quod sequitur </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> inter <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>
+</rdg>
+<rdg wit="#L" n="3"> . Ponendo <app>
+<rdg wit="#L" n="a">
+<hi rendition="#i">C</hi>
+</rdg>
+<rdg wit="#L" n="b">
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi> tendere sinistrorsum <app>
+<rdg wit="#L" n="aa">erit </rdg>
+<rdg wit="#L" n="bb">et <app>
+<rdg wit="#L" n="aaa">
+<hi rendition="#i">B</hi>
+</rdg>
+<rdg wit="#L" n="bbb">
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>
+<seg type="apparat-ellipsis"/>
+ erit <app>
+<rdg wit="#L" n="aaaa">
+<hi rendition="#i">A</hi> sinisterius quam <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>, 
+</rdg>
+<rdg wit="#L" n="bbbb">
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi> sinisterius quam <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>,<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>manet. Ponendo <anchor xml:id="KZeitz199"/>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi> tendere sinistrorsum et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi> quoque ipsum sinistrorsum sequi, erit <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi> sini- sterius quam <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>,imo et <anchor xml:id="KZeitz200"/>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> sinisterius quam <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>. Ergo fingendo redire <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> in <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>, et <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>
+</p>
+<p rendition="#noindent" xml:id="Ch45.p17">in <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi> manifestum est sequi <hi rendition="#i">A</hi> ipsum <hi rendition="#i">C</hi>. (<?tex-source \phantom{)}?>Ponendo scilicet motum ipsius<hi rendition="#i">A</hi> et <hi rendition="#i">C</hi> semper esse uniformem<index indexName="Sachen">
+<term>motus uniformis</term>
+</index> seu <app type="Bfootnote">
+<lem type="main">nunquam nunc praeter[veh]ere nunc</lem>
+<note type="lemma-abbrev">nunquam</note>
+<rdg wit="#L" n="1"> praeterevhere <hi rendition="#i">[!]</hi>
+</rdg>
+<rdg wit="#L" n="2"> nunc <note type="editorial">|</note> praeterquere <hi rendition="#i">ändert Hrsg.</hi>  nunc <hi rendition="#i">L</hi>
+</rdg>
+</app> rursus a tergo relinqui<anchor xml:id="_37_05_152r_2a"/>
+<?tex-source \phantom{(}?>).<app type="Bfootnote" from="#_37_05_152r_2a" to="#_37_05_152r_2b">
+<lem type="main"/>
+<note type="lemma-abbrev">relinqui).</note>
+<rdg wit="#L" n="1"> Illud co </rdg>
+<rdg wit="#L" n="2"> Si <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch45.p18">Si corpora sibi occurrerunt, quaeritur quis sit situs <anchor xml:id="_37_05_152r_2b"/>
+<app type="Bfootnote">
+<lem type="main">corporis <hi rendition="#i">B</hi>.
+</lem>
+<note type="lemma-abbrev">corporis</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">A</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">B</hi>.<hi rendition="#i">L</hi>
+</rdg>
+</app> Nam ille nunc quaerendus, seu <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi> et <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>. Ac primum si corpora sibi occurrerunt, necesse est unum eorum retrocessisse quia enim <hi rendition="#i">C</hi> progressum est, hinc <hi rendition="#i">A</hi> quod ab latere sinistro est, in quod tendit, necessario retrocessit, quaeritur <app type="Bfootnote">
+<lem type="main">[an]</lem>
+<rdg wit="#ed" cause="addition">
+<add>an</add>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</rdg>
+</app> alterum <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">B</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">B</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> retrocesserit, an sit progressum quia celeritatum differentiae<index indexName="Sachen">
+<term>differentia celeritatum</term>
+</index> sunt ut corpora <app type="Bfootnote">
+<lem type="main">reciproce,</lem>
+<note type="lemma-abbrev">reciproce</note>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ergo potentiarum quoque differentiae<index indexName="Sachen">
+<term>differentia potentiarum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">sunt aequales,</lem>
+<note type="lemma-abbrev">sunt</note>
+<rdg wit="#L" n="1" cause="addition"> ut corpora <note type="editorial">|</note>
+<add>reciproce</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="2"> aequales, <hi rendition="#i">L</hi>
+</rdg>
+</app> seu <anchor xml:id="_37_05_152r_3a"/>
+<formula xml:id="Ch45.p18.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>-</m:mo>
+<m:mi>f</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>e</m:mi>
+<m:mo>-</m:mo>
+<m:mi>i</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>. Ergo<anchor xml:id="_37_05_152r_3b"/>
+<app type="Bfootnote" from="#_37_05_152r_3a" to="#_37_05_152r_3b">
+<lem type="main"/>
+<note type="lemma-abbrev">seu <formula xml:id="Ch45.p18.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>-</m:mo>
+<m:mi>f</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>e</m:mi>
+<m:mo>-</m:mo>
+<m:mi>i</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> , seu <formula xml:id="Ch45.p18.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mi>a</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:msup>
+<m:mi>b</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>f</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mi/>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2"> . Er </rdg>
+<rdg wit="#L" n="3"> . Ergo <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch45.p18.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>b</m:mi>
+<m:mi>a</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>-</m:mo>
+<m:mi>f</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>e</m:mi>
+<m:mo>-</m:mo>
+<m:mi>i</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>b</m:mi>
+<m:mi>a</m:mi>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>, seu <formula xml:id="Ch45.p18.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>f</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>e</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>i</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>, sive <formula xml:id="Ch45.p18.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>e</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>i</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>f</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>, seu potentiarum mutationes<index indexName="Sachen">
+<term>mutatio potentiae</term>
+</index> sunt <app type="Bfootnote">
+<lem type="main">aequales sive</lem>
+<note type="lemma-abbrev">aequales</note>
+<rdg wit="#L" n="1"> . Ergo </rdg>
+<rdg wit="#L" n="2"> sive <hi rendition="#i">L</hi>
+</rdg>
+</app> quod idem est potentiarum summae,<index indexName="Sachen">
+<term>summa potentiarum</term>
+</index> seu <formula xml:id="Ch45.p18.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>e</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>f</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mi>i</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+<anchor xml:id="_37_05_152r_4a"/>
+. Seu <formula xml:id="Ch45.p18.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>. Jam<anchor xml:id="_37_05_152r_4b"/>
+<app type="Bfootnote" from="#_37_05_152r_4a" to="#_37_05_152r_4b">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch45.p18.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>i</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+</note>
+<rdg wit="#L" n="1"> Vel quod idem est: <app>
+<rdg wit="#L" n="a">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>
+<hi rendition="#i #smaller">1</hi>
+</rdg>
+<rdg wit="#L" n="b">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>
+<formula xml:id="Ch45.p18.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+1.7pt">
+<m:mi>A</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo>⊓</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="c">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi> ad </rdg>
+<rdg wit="#L" n="d">
+<formula xml:id="Ch45.p18.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> Seu <formula xml:id="Ch45.p18.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+<app>
+<rdg wit="#L" n="a" cause="addition">
+<formula xml:id="Ch45.p18.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+<note type="editorial">|</note>
+<add>
+<formula xml:id="Ch45.p18.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> .<formula xml:id="Ch45.p18.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+<m:mo>⊓</m:mo>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="b">. Jam <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+<formula xml:id="Ch45.p18.m17">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>⌣</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>⌣</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula> seu <formula xml:id="Ch45.p18.m18">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mi>C</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mi>B</m:mi>
+<m:mo>,</m:mo>
+<m:mo>⌢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mi>B</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>,</m:mo>
+<m:mrow>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo mathvariant="italic" separator="true"></m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mpadded depth="+2.6pt" height="-2.6pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#circle-2" style="; height: 7.139891pt" other="7.499886pt"/>
+</m:mpadded>
+<m:mi>C</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>B</m:mi>
+<m:mo>,</m:mo>
+<m:mo>⌢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mi>B</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mpadded depth="+2.6pt" height="-2.6pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#circle-2" style="; height: 7.139891pt" other="7.499886pt"/>
+</m:mpadded>
+<m:mi>C</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>A</m:mi>
+<m:mo>,</m:mo>
+<m:mo>⌢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mi>A</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+</p>
+<p xml:id="Ch45.p19">Notandum est ubi post concursum<index indexName="Sachen">
+<term>concursus</term>
+</index> incipit discedendi iterum conatus,<index indexName="Sachen">
+<term>conatus iterum discedendi</term>
+</index> mutatis celeritatibus etiam centrum potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> mutari quod non amplius voco <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>, sed <formula xml:id="Ch45.p19.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#circle-2" style="; height: 7.139891pt" other="4.124937pt"/>
+</m:math>
+</formula>
+<hi rendition="#i">C</hi>.
+</p>
+<p xml:id="Ch45.p20">Si <formula xml:id="Ch45.p20.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+1.7pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="-1.7pt">
+<m:mpadded depth="+3.8pt" height="-3.8pt">
+<m:mo/>
+<m:mtext></m:mtext>
+</m:mpadded>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula>, etiam <formula xml:id="Ch45.p20.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+1.7pt">
+<m:mi>A</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="-1.7pt">
+<m:mpadded depth="+3.8pt" height="-3.8pt">
+<m:mo/>
+<m:mtext></m:mtext>
+</m:mpadded>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math>
+</formula> et <app type="Bfootnote">
+<lem type="main">contra quia</lem>
+<note type="lemma-abbrev">contra</note>
+<rdg wit="#L" n="1"> ergo </rdg>
+<rdg wit="#L" n="2"> si </rdg>
+<rdg wit="#L" n="3">
+<note type="editorial">|</note> porro <hi rendition="#i">streicht Hrsg.</hi>
+</rdg>
+<rdg wit="#L" n="4"> quia <hi rendition="#i">L</hi>
+</rdg>
+</app> ponimus <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> esse ab illa parte, a qua est centrum potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi> et fuisse ab eadem in casu <app type="Bfootnote">
+<lem type="main">occursus,<index indexName="Sachen">
+<term>occursus</term>
+</index> jam</lem>
+<note type="lemma-abbrev">occursus,</note>
+<rdg wit="#L" n="1"> hinc </rdg>
+<rdg wit="#L" n="2"> jam <hi rendition="#i">L</hi>
+</rdg>
+</app> ante, seu fuisse sinisterius quam <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>. Hinc sive (<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>) cadat intra <hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi> et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>, quo casu minuta est celeritas per <app type="Bfootnote">
+<lem type="main">occursum,<index indexName="Sachen">
+<term>occursus</term>
+</index> sive <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> cadat extra, erit recta</lem>
+<note type="lemma-abbrev">occursum, sive</note>
+<rdg wit="#L" n="1"> cadat extra in <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> cadat extra, erit <app>
+<rdg wit="#L" n="a">sem </rdg>
+<rdg wit="#L" n="b">recta <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>, differentia inter <hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>, et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>. Posito ergo <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> cadere intra <hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi> et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>,<app type="Bfootnote">
+<lem type="main">tunc <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> erit</lem>
+<rdg wit="#L">tunc <note type="editorial">|</note> tunc <hi rendition="#i">streicht Hrsg.</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> erit <hi rendition="#i">L</hi>
+</rdg>
+</app> minor quam <hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>. Ergo et <hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi> erit minor quam <anchor xml:id="_37_05_152r_5a"/>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>.<app type="Bfootnote" from="#_37_05_152r_5a" to="#_37_05_152r_5b">
+<lem type="main"/>
+<note type="lemma-abbrev">quam <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>.
+</note>
+<rdg wit="#L" n="1"> Ergo si corpora <app>
+<rdg wit="#L" n="a">sibi </rdg>
+<rdg wit="#L" n="b">
+<hi rendition="#i">A</hi>,<hi rendition="#i">B</hi> sibi occurrunt, <app>
+<rdg wit="#L" n="aa">erit locus <app>
+<rdg wit="#L" n="aaa">post res </rdg>
+<rdg wit="#L" n="bbb">corporis <hi rendition="#i">A</hi>, cui contrait centrum </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="bb">et centrum potentiae contrait corpori <hi rendition="#i">A</hi>, tunc erit </rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> In <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch45.p21">In quam partem it centrum potentiae,<anchor xml:id="_37_05_152r_5b"/>
+<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> in eam partem post occursum<index indexName="Sachen">
+<term>occursus</term>
+</index> ire necesse est <app type="Bfootnote">
+<lem type="main">corpus ad</lem>
+<note type="lemma-abbrev">corpus</note>
+<rdg wit="#L" n="1"> quod </rdg>
+<rdg wit="#L" n="2"> ad <hi rendition="#i">L</hi>
+</rdg>
+</app> cujus partem centrum potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> tendit, v.g. <app type="Bfootnote">
+<lem type="main">quia centrum potentiae<index indexName="Sachen">
+<term>centrum potentiae</term>
+</index> it</lem>
+<note type="lemma-abbrev">quia</note>
+<rdg wit="#L">centrum potentiae </rdg>
+<rdg wit="#L" n="1"> tendit </rdg>
+<rdg wit="#L" n="2"> ab or </rdg>
+<rdg wit="#L" n="3"> it <hi rendition="#i">L</hi>
+</rdg>
+</app> ordine <hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi>.<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>.<hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>, versus <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>, hinc post occursum<index indexName="Sachen">
+<term>occursus</term>
+</index> necesse est <app type="Bfootnote">
+<lem type="main">et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>
+</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> tende </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> tendere versus <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>. Quaeritur jam in quam partem tendat corpus <hi rendition="#i">B</hi>; si corpus <hi rendition="#i">A</hi> post occursum<index indexName="Sachen">
+<term>occursus</term>
+</index> tendit celerius quam <app type="Bfootnote">
+<lem type="main">prius, necesse est</lem>
+<note type="lemma-abbrev">prius,</note>
+<rdg wit="#L" n="1"> tendat, </rdg>
+<rdg wit="#L" n="2"> necesse est <hi rendition="#i">L</hi>
+</rdg>
+</app> ut corpus <hi rendition="#i">B</hi> moveatur tardius, tantum quaeritur in quam <app type="Bfootnote">
+<lem type="main">partem. Necesse</lem>
+<note type="lemma-abbrev">partem.</note>
+<rdg wit="#L" n="1"> Erit autem necessario eo casu </rdg>
+<rdg wit="#L" n="2"> Necesse <hi rendition="#i">L</hi>
+</rdg>
+</app> est corpus cujus motus in contrariam partem augetur minus habere potentiae<index indexName="Sachen">
+<term>potentia</term>
+</index> quam id cujus <app type="Bfootnote">
+<lem type="main">motus continuatur,</lem>
+<note type="lemma-abbrev">motus</note>
+<rdg wit="#L" n="1"> in contrariam </rdg>
+<rdg wit="#L" n="2"> continuatur, <hi rendition="#i">L</hi>
+</rdg>
+</app> vel cujus motus in contrariam quidem sed minor est quam ante. Ergo <table>
+<row>
+<cell>si</cell>
+<cell style="; text-align:center">
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>
+<formula xml:id="Ch45.p21.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+1.7pt">
+<m:mi>A</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="-1.7pt">
+<m:mpadded depth="+3.8pt" height="-3.8pt">
+<m:mo/>
+<m:mtext></m:mtext>
+</m:mpadded>
+</m:mpadded>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>,
+</cell>
+</row>
+<row>
+<cell>seu</cell>
+<cell style="; text-align:center">
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>B</hi>
+<formula xml:id="Ch45.p21.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+1.7pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="-1.7pt">
+<m:mpadded depth="+3.8pt" height="-3.8pt">
+<m:mo/>
+<m:mtext></m:mtext>
+</m:mpadded>
+</m:mpadded>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>
+</cell>
+</row>
+</table> fuit <hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi>
+<formula xml:id="Ch45.p21.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">1</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+1.7pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="-1.7pt">
+<m:mpadded depth="+3.8pt" height="-3.8pt">
+<m:mo/>
+<m:mtext></m:mtext>
+</m:mpadded>
+</m:mpadded>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>C</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>A</hi>.
+</p>
+<p xml:id="Ch45.p22">Sit casus quo corpus magnum<index indexName="Sachen">
+<term>corpus magnum</term>
+</index> motum ingruit in parvum quiescens.<index indexName="Sachen">
+<term>corpus parvum quiescens</term>
+</index> [<hi rendition="#i">Text bricht ab.</hi>]
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

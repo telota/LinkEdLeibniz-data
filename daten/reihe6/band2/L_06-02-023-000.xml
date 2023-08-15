@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_06-02-023-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_06-02-023-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Carmina Memorialia nostri Juris</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note> </resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Inhaltliche Konzeption</note> </resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Martina</forename> <surname>Gödel</surname> </persName>
-					<resp> <note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note> </resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Sebastian W.</forename> <surname>Stork</surname> </persName>
-					<resp> <note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note> </resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"> <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p> </licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="23">Carmina Memorialia nostri Juris</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1665" resp="#ed" cert="low">[1665 (?)]</date>
 						<date calendar="#gregorian" notAfter="1665" resp="#ed" cert="low"/>
-						<idno type="PDF"> <idno type="url">https://www.uni-muenster.de/Leibniz/DatenVI2/A_VI_2.pdf</idno> <idno type="page">#page=41</idno> </idno>
+						<idno type="PDF">
+							<idno type="url">https://www.uni-muenster.de/Leibniz/DatenVI2/A_VI_2.pdf</idno>
+							<idno type="page">#page=41</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="6">Reihe VI: Philosophische Schriften</title>
@@ -48,24 +86,31 @@
 						</imprint>
 						<biblScope unit="page" from="3" to="3"/>
 					</monogr>
-					<series> <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title> </series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_06-02-023-000_facs-haupttextzeuge"> <msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH II 6 Bl. 86</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-							<summary> <p/> <p/> </summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc> </witness>
+					<witness n="L" corresp="#L_06-02-023-000_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">LH II 6 Bl. 86</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+								<summary>
+									<p/>
+									<p/>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -118,7 +163,8 @@
 	</teiHeader>
 	<facsimile source="http://digitale-sammlungen.gwlb.de/sammlungen/" xml:id="L_06-02-023-000_facs-haupttextzeuge">
 		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=2157&amp;tx_dlf%5Bpage%5D=169"/>
-		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=2157&amp;tx_dlf%5Bpage%5D=170"/> </facsimile>
+		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=2157&amp;tx_dlf%5Bpage%5D=170"/>
+	</facsimile>
 	<text xml:id="L_06-02-023-000_text">
 		<body>
 			<p/>

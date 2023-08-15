@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-011-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-011-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Comme les pilotes prennent les hauteurs sur mer</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note> </resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Inhaltliche Konzeption</note> </resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Martina</forename> <surname>Gödel</surname> </persName>
-					<resp> <note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note> </resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Sebastian W.</forename> <surname>Stork</surname> </persName>
-					<resp> <note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note> </resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"> <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p> </licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="11">Comme les pilotes prennent les hauteurs sur mer</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1673-06" resp="#ed" cert="medium">[Sommer 1673]</date>
 						<date calendar="#gregorian" notAfter="1673-08" resp="#ed" cert="medium"/>
-						<idno type="PDF"> <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno> <idno type="page">#page=147</idno> </idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+							<idno type="page">#page=147</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,39 +86,52 @@
 						</imprint>
 						<biblScope unit="page" from="102" to="103"/>
 					</monogr>
-					<series> <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title> </series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-01-011-000_facs-haupttextzeuge"> <msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXVIII Bl. 22</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#notiz">
-							<summary> <p>Notiz: LH XXXVIII Bl. 22. 1 Bl. 8<hi rendition="#sup">o</hi>. 3/4 S. Auf die obere Hälfte verteilt 7 Zeichnungen. Im oberen Viertel nicht von Leibniz’ Hand folgende Notiz, die sich vorher auf dem Blatt befunden haben muss: 72 + 5 (100 + 77) ad rd ut 72 ad tang rad. Im unteren Drittel quergeschrieben Überlegungen zu mathematischen Reihen, die in Reihe VII veröffentlicht werden. Rückseite leer.</p> <p>Cc 2, Nr. 1557</p> </summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc> </witness>
-					<witness n="E"> <msDesc>
-						<msIdentifier>
-							<collection>Leibniz-Bibliographie</collection>
-							<idno type="Laufende-Nummer">XXX</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#veroeffentlichung_posthum">
-							<summary> <p><ref corresp="#bib_00243"/><hi rendition="#k">Gerland</hi> 1906, S. 208.</p> </summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-E"/>
-						</history>
-						</msDesc> </witness>
+					<witness n="L" corresp="#L_08-01-011-000_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">LH XXXVIII Bl. 22</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#notiz">
+								<summary>
+									<p>Notiz: LH XXXVIII Bl. 22. 1 Bl. 8<hi rendition="#sup">o</hi>. 3/4 S. Auf die obere Hälfte verteilt 7 Zeichnungen. Im oberen Viertel nicht von Leibniz’ Hand folgende Notiz, die sich vorher auf dem Blatt befunden haben muss: 72 + 5 (100 + 77) ad rd ut 72 ad tang rad. Im unteren Drittel quergeschrieben Überlegungen zu mathematischen Reihen, die in Reihe VII veröffentlicht werden. Rückseite leer.</p>
+									<p>Cc 2, Nr. 1557</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
+					<witness n="E">
+						<msDesc>
+							<msIdentifier>
+								<collection>Leibniz-Bibliographie</collection>
+								<idno type="Laufende-Nummer">XXX</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#veroeffentlichung_posthum">
+								<summary>
+									<p>
+										<ref corresp="#bib_00243"/>
+										<hi rendition="#k">Gerland</hi> 1906, S. 208.</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-E"/>
+							</history>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -181,9 +232,9 @@
 		</revisionDesc>
 	</teiHeader>
 	<facsimile source="digilib.bbaw.de" xml:id="L_08-01-011-000_facs-haupttextzeuge">
-    <graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=2354&amp;tx_dlf%5Bpage%5D=43"/>
-    <graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=2354&amp;tx_dlf%5Bpage%5D=44"/>
-    </facsimile>
+		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=2354&amp;tx_dlf%5Bpage%5D=43"/>
+		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=2354&amp;tx_dlf%5Bpage%5D=44"/>
+	</facsimile>
 	<text xml:id="L_08-01-011-000_text">
 		<body xml:id="Document">
 			<div type="chapter" xml:id="Ch11" n="11">
@@ -191,73 +242,126 @@
 				<head>11. COMME LES PILOTES PRENNENT LES HAUTEURS SUR MER</head>
 				<head>[Sommer 1673]</head>
 				<div type="ueberlieferung">
-					<p> <hi rendition="#b #smaller">Überlieferung:</hi> <listWit>
-						<witness> <msDesc>
-							<msIdentifier>
-								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-								<idno type="Signatur">XXX</idno>
-							</msIdentifier>
-							<msContents>
-								<summary> <p>Notiz: LH XXXVIII Bl. 22. 1 Bl. 8<hi rendition="#sup">o</hi>. 3/4 S. Auf die obere Hälfte verteilt 7 Zeichnungen. Im oberen Viertel nicht von Leibniz’ Hand folgende Notiz, die sich vorher auf dem Blatt befunden haben muss: 72 + 5 (100 + 77) ad rd ut 72 ad tang rad. Im unteren Drittel quergeschrieben Überlegungen zu mathematischen Reihen, die in Reihe VII veröffentlicht werden. Rückseite leer.</p> <p>Cc 2, Nr. 1557</p> </summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc> </witness>
-						<witness> <msDesc>
-							<msIdentifier>
-								<collection>Leibniz-Bibliographie</collection>
-								<idno type="Laufende-Nummer">XXX</idno>
-							</msIdentifier>
-							<msContents>
-								<summary> <p><ref corresp="#bib_00243"/><hi rendition="#k">Gerland</hi> 1906, S. 208.</p> </summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc> </witness>
-						</listWit> </p>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+										<idno type="Signatur">XXX</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>Notiz: LH XXXVIII Bl. 22. 1 Bl. 8<hi rendition="#sup">o</hi>. 3/4 S. Auf die obere Hälfte verteilt 7 Zeichnungen. Im oberen Viertel nicht von Leibniz’ Hand folgende Notiz, die sich vorher auf dem Blatt befunden haben muss: 72 + 5 (100 + 77) ad rd ut 72 ad tang rad. Im unteren Drittel quergeschrieben Überlegungen zu mathematischen Reihen, die in Reihe VII veröffentlicht werden. Rückseite leer.</p>
+											<p>Cc 2, Nr. 1557</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<collection>Leibniz-Bibliographie</collection>
+										<idno type="Laufende-Nummer">XXX</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>
+												<ref corresp="#bib_00243"/>
+												<hi rendition="#k">Gerland</hi> 1906, S. 208.</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="contents">
-					<p xml:id="Ch11.p5"> <hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Für die Datierung sprechen inhaltliche Gründe, die sich aus der Methode ergeben, wie Seeleute die Höhe von Himmelskörpern über dem Meer bestimmen. Davon ist insbesondere in der von Leibniz ausführlich referierten Schrift Morins <hi rendition="#i">Scientia longitudinum</hi> die Rede. Wie aus N. 10 hervorgeht, hat Leibniz den Titel im Sommer 1673 gelesen. Wir betrachten das vorliegende Stück als eine Notiz zu dieser Lektüre und orientieren uns für die Datierung an N. 10. Diese wird zudem durch Überlegungen zu mathematischen Reihen im unteren Teil des Blattes gestützt. Ähnliche Überlegungen finden sich in <hi rendition="#i">LSB</hi> VII, 4 N. 15 und 16, die ebenfalls zu dieser Zeit entstanden sind.</hi> </p>
+					<p xml:id="Ch11.p5">
+						<hi rendition="#smaller">
+							<hi rendition="#b">Datierungsgründe</hi>: Für die Datierung sprechen inhaltliche Gründe, die sich aus der Methode ergeben, wie Seeleute die Höhe von Himmelskörpern über dem Meer bestimmen. Davon ist insbesondere in der von Leibniz ausführlich referierten Schrift Morins <hi rendition="#i">Scientia longitudinum</hi> die Rede. Wie aus N. 10 hervorgeht, hat Leibniz den Titel im Sommer 1673 gelesen. Wir betrachten das vorliegende Stück als eine Notiz zu dieser Lektüre und orientieren uns für die Datierung an N. 10. Diese wird zudem durch Überlegungen zu mathematischen Reihen im unteren Teil des Blattes gestützt. Ähnliche Überlegungen finden sich in <hi rendition="#i">LSB</hi> VII, 4 N. 15 und 16, die ebenfalls zu dieser Zeit entstanden sind.</hi>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch11.p6" rendition="#c"><pb type="L"/><fw type="folNum">[22 r<hi rendition="#sup">o</hi>]</fw> Comme les pilotes prennent les hauteurs sur mer.</p>
-					<figure rendition="#inline-margin-left" xml:id="Ch11.fig1_1"> <graphic url="./images/38_22r3.svg" width="251.4996pt" xml:id="Ch11.g1"/> <head xml:id="Ch11.fig1_2" style="; text-align:center"> <hi rendition="#i">[Fig. 1]</hi> </head> </figure>
+					<p xml:id="Ch11.p6" rendition="#c">
+						<pb type="L"/>
+						<fw type="folNum">[22 r<hi rendition="#sup">o</hi>]
+						</fw> Comme les pilotes prennent les hauteurs sur mer.</p>
+					<figure rendition="#inline-margin-left" xml:id="Ch11.fig1_1">
+						<graphic url="./images/38_22r3.svg" width="251.4996pt" xml:id="Ch11.g1"/>
+						<head xml:id="Ch11.fig1_2" style="; text-align:center">
+							<hi rendition="#i">[Fig. 1]</hi>
+						</head>
+					</figure>
 					<p xml:id="Ch11.p7">Primum male sumunt lineam horizontalem, aquam aspiciunt à fleur d’eau, sed ipsa primum altitudo navis errorem facit. Deinde quod longe importantius, usus instrumenti quod vocant l’arcbaleste<index indexName="Sachverzeichnis">
 						<term>arcbaleste</term>
-						</index>, est corruptissimus. Deberent inspicere ex centro <hi rendition="#i">a</hi> cum per extremam spiciant ut illi inspiciant <hi rendition="#i">db</hi>, <hi rendition="#i">ec</hi> separatim, at ipsi centrum ponunt in <app type="Bfootnote">
-						<lem type="main">media rectae</lem>
-						<note type="lemma-abbrev">media</note>
-						<rdg wit="#L" n="1"> arcus </rdg>
-						<rdg wit="#L" n="2"> rectae <hi rendition="#i">L</hi></rdg>
-						</app> <hi rendition="#i">ed</hi>.</p>
-					<pb type="VIII_1" n="103"/>
-					<p xml:id="Ch11.p8">Methodum habeo perfecte observandi in navi, quantum ab homine possibile</p>
-					<figure rendition="#inline-margin-left" xml:id="Ch11.fig2_1"> <graphic rendition="#c" url="./images/38_22r1.svg" width="86.724pt" xml:id="Ch11.g2"/> <head xml:id="Ch11.fig2_2" style="; text-align:center"> <hi rendition="#i">[Fig. 2]</hi> </head> <graphic rendition="#c" url="./images/38_22r2.svg" width="130.086pt" xml:id="Ch11.g3"/> <head xml:id="Ch11.fig2_3" style="; text-align:center"> <hi rendition="#i">[Fig. 3]</hi> </head> </figure>
-					<p xml:id="Ch11.p9">est. <lb/>Ope Instrumenti Thevenotiani <app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">Thevenotiani</note>
-						<note type="editorial"><bibl corresp="#bib_00135"><hi rendition="#k">M. Thévenot</hi></bibl>, <bibl corresp="#bib_00135"><hi rendition="#i">Machine nouvelle</hi>, <hi rendition="#i">JS</hi>, 15. November 1666, S. 439–443.</bibl></note>
-						</app> haberi potest linea horizontalis, inde forma quadam Camerae obscurae<index indexName="Sachverzeichnis">
-						<term>camera obscura</term>
-						</index> portabilis adhibita, chartaque inolita eousque mutetur situs, dum stella quaesita in certo appareat puncto chartae. Ubi ibi apparuit tacto quodam Elaterio machinae partibus stabilis quidam situs detur, quo facto habebitur angulus quaesitus. Hoc modo non opus est inspicere per dioptram<index indexName="Sachverzeichnis">
-						<term>dioptra</term>
-						</index>, quo casu quaerere difficile. At ipsam dioptram<index indexName="Sachverzeichnis">
-						<term>dioptra</term>
-						</index> dirigere in stellam, non inspiciendo per dioptram<index indexName="Sachverzeichnis">
-						<term>dioptra</term>
-						</index> videtur adhuc difficilius sed hoc invento emendatur.</p>
-					<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch11.p10_1"> <graphic url="./images/38_22r456.svg" width="216.81pt" xml:id="Ch11.p10.g1"/> <head> <hi rendition="#i">[Fig. 4]</hi> </head> </figure>
-					<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch11.p10_2"> <graphic url="./images/38_22r7.svg" width="216.81pt" xml:id="Ch11.p10.g2"/> <head> <hi rendition="#i">[Fig. 5]</hi> </head> </figure>
-				</div>
-			</div>
-		</body>
-	</text>
+					</index>, est corruptissimus. Deberent inspicere ex centro <hi rendition="#i">a</hi> cum per extremam spiciant ut illi inspiciant <hi rendition="#i">db</hi>,					<hi rendition="#i">ec</hi> separatim, at ipsi centrum ponunt in <app type="Bfootnote">
+					<lem type="main">media rectae</lem>
+					<note type="lemma-abbrev">media</note>
+					<rdg wit="#L" n="1"> arcus </rdg>
+					<rdg wit="#L" n="2"> rectae <hi rendition="#i">L</hi>
+					</rdg>
+				</app>
+				<hi rendition="#i">ed</hi>.
+			</p>
+			<pb type="VIII_1" n="103"/>
+			<p xml:id="Ch11.p8">Methodum habeo perfecte observandi in navi, quantum ab homine possibile</p>
+			<figure rendition="#inline-margin-left" xml:id="Ch11.fig2_1">
+				<graphic rendition="#c" url="./images/38_22r1.svg" width="86.724pt" xml:id="Ch11.g2"/>
+				<head xml:id="Ch11.fig2_2" style="; text-align:center">
+					<hi rendition="#i">[Fig. 2]</hi>
+				</head>
+				<graphic rendition="#c" url="./images/38_22r2.svg" width="130.086pt" xml:id="Ch11.g3"/>
+				<head xml:id="Ch11.fig2_3" style="; text-align:center">
+					<hi rendition="#i">[Fig. 3]</hi>
+				</head>
+			</figure>
+			<p xml:id="Ch11.p9">est. <lb/>
+Ope Instrumenti Thevenotiani <app type="Cfootnote">
+			<lem type="main"/>
+			<note type="lemma-abbrev">Thevenotiani</note>
+			<note type="editorial">
+				<bibl corresp="#bib_00135">
+					<hi rendition="#k">M. Thévenot</hi>
+				</bibl>,				<bibl corresp="#bib_00135">
+					<hi rendition="#i">Machine nouvelle</hi>,					<hi rendition="#i">JS</hi>, 15. November 1666, S. 439–443.</bibl>
+			</note>
+		</app> haberi potest linea horizontalis, inde forma quadam Camerae obscurae<index indexName="Sachverzeichnis">
+		<term>camera obscura</term>
+	</index> portabilis adhibita, chartaque inolita eousque mutetur situs, dum stella quaesita in certo appareat puncto chartae. Ubi ibi apparuit tacto quodam Elaterio machinae partibus stabilis quidam situs detur, quo facto habebitur angulus quaesitus. Hoc modo non opus est inspicere per dioptram<index indexName="Sachverzeichnis">
+	<term>dioptra</term>
+</index>, quo casu quaerere difficile. At ipsam dioptram<index indexName="Sachverzeichnis">
+<term>dioptra</term>
+</index> dirigere in stellam, non inspiciendo per dioptram<index indexName="Sachverzeichnis">
+<term>dioptra</term>
+</index> videtur adhuc difficilius sed hoc invento emendatur.</p>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch11.p10_1">
+<graphic url="./images/38_22r456.svg" width="216.81pt" xml:id="Ch11.p10.g1"/>
+<head>
+<hi rendition="#i">[Fig. 4]</hi>
+</head>
+</figure>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch11.p10_2">
+<graphic url="./images/38_22r7.svg" width="216.81pt" xml:id="Ch11.p10.g2"/>
+<head>
+<hi rendition="#i">[Fig. 5]</hi>
+</head>
+</figure>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-063-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-063-000">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -6,32 +7,56 @@
         <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
           Text</title>
         <respStmt>
-          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Digitale Konzeption und
-            Projektbegleitung</note></resp>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
         </respStmt>
         <respStmt>
-          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-            Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
-          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-            VIII</note></resp>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-            Berlin</note></resp>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
         </respStmt>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
         <date type="creation">2021</date>
         <availability>
-          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -48,7 +73,10 @@
             <date calendar="#gregorian" notBefore="1672-07-25" resp="#ed" cert="medium">[25. Juli
               – 12. Dezember 1672]</date>
             <date calendar="#gregorian" notAfter="1672-12-12" resp="#ed" cert="medium"/>
-            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=617</idno></idno>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+              <idno type="page">#page=617</idno>
+            </idno>
           </analytic>
           <monogr>
             <title type="main" level="s" n="8">Reihe VIII:
@@ -61,23 +89,29 @@
             </imprint>
             <biblScope unit="page" from="572" to="578"/>
           </monogr>
-          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
         </biblStruct>
         <listWit>
-          <witness n="L" corresp="#L_08-01-063-000_facs-haupttextzeuge"><msDesc>
+          <witness n="L" corresp="#L_08-01-063-000_facs-haupttextzeuge">
+            <msDesc>
               <msIdentifier>
                 <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                 <idno type="Signatur">LH XXXVII 3 Bl. 95–96</idno>
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-                <summary><p>Konzept: LH XXXVII 3 Bl. 95–96. 1 Bog. 2<hi rendition="#sup">o</hi>. 1
+                <summary>
+                  <p>Konzept: LH XXXVII 3 Bl. 95–96. 1 Bog. 2<hi rendition="#sup">o</hi>. 1
                     1/4 S., zweispaltig. Bl. 96 r<hi rendition="#sup">o</hi> und 1/4 von Bl. 96 v<hi rendition="#sup">o</hi> unser Text. Linke Spalte auf Bl. 96 r<hi rendition="#sup">o</hi> fortlaufender Text, rechts Rechnungen und Zeichnungen.
                     Bl. 95 sowie der größere Teil von Bl. 96 v<hi rendition="#sup">o</hi> zu N. 39
                     gehörend. Papierverluste an den Seitenrändern, jedoch kaum Textverluste. Auf Bl.
                     96 r<hi rendition="#sup">o</hi> eine unvollständige und gestrichene Zeichnung,
                     die als erster Versuch von <hi rendition="#i">[Fig. 1]</hi> im Druck nicht
-                    wiedergegeben wird.</p><p>Cc 2, Nr. 486 A tlw.</p></summary>
+                    wiedergegeben wird.</p>
+                  <p>Cc 2, Nr. 486 A tlw.</p>
+                </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -85,7 +119,8 @@
               <history>
                 <origin corresp="L_witness-origin-types.xml#origin-L"/>
               </history>
-            </msDesc></witness>
+            </msDesc>
+          </witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -193,7 +228,7 @@
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=288"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=289"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=290"/>
-    </facsimile>
+  </facsimile>
   <text xml:id="L_08-01-063-000_text">
     <body xml:id="Document">
       <div type="chapter" xml:id="Ch63" n="63">
@@ -201,20 +236,26 @@
         <head>63. CLEPSYDRA UNIFORMITER FLUENS</head>
         <head>[25. Juli – 12. Dezember 1672]</head>
         <div type="ueberlieferung">
-          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-              <witness><msDesc>
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
                   <msIdentifier>
                     <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                     <idno type="Signatur">XXX</idno>
                   </msIdentifier>
                   <msContents>
-                    <summary><p>Konzept: LH XXXVII 3 Bl. 95–96. 1 Bog. 2<hi rendition="#sup">o</hi>.
+                    <summary>
+                      <p>Konzept: LH XXXVII 3 Bl. 95–96. 1 Bog. 2<hi rendition="#sup">o</hi>.
                         1 1/4 S., zweispaltig. Bl. 96 r<hi rendition="#sup">o</hi> und 1/4 von Bl.
                         96 v<hi rendition="#sup">o</hi> unser Text. Linke Spalte auf Bl. 96 r<hi rendition="#sup">o</hi> fortlaufender Text, rechts Rechnungen und
                         Zeichnungen. Bl. 95 sowie der größere Teil von Bl. 96 v<hi rendition="#sup">o</hi> zu N. 39 gehörend. Papierverluste an den Seitenrändern, jedoch
                         kaum Textverluste. Auf Bl. 96 r<hi rendition="#sup">o</hi> eine
-                        unvollständige und gestrichene Zeichnung, die als erster Versuch von <hi rendition="#i">[Fig. 1]</hi> im Druck nicht wiedergegeben wird.</p><p>Cc
-                        2, Nr. 486 A tlw.</p></summary>
+                        unvollständige und gestrichene Zeichnung, die als erster Versuch von <hi rendition="#i">[Fig. 1]</hi> im Druck nicht wiedergegeben wird.</p>
+                      <p>Cc
+                        2, Nr. 486 A tlw.</p>
+                    </summary>
                   </msContents>
                   <physDesc>
                     <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -222,711 +263,874 @@
                   <history>
                     <origin/>
                   </history>
-                </msDesc></witness>
-            </listWit></p>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
         </div>
         <div type="contents">
-          <p xml:id="Ch63.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Der
+          <p xml:id="Ch63.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>: Der
               Text dieses Stücks befindet sich zusammen mit Textteilen von N. 39 auf einem Bogen.
               Aus dem Schriftbefund geht hervor, dass unser Stück entweder vor der Abfassung von N.
               39 vorhanden gewesen sein muss oder gleichzeitig damit entstand. Da sich beide Texte
               inhaltlich berühren, gehen wir von einem gemeinsamen Entstehungszeitraum aus und
-              übernehmen die Datierung aus N. 39.</hi></p>
+              übernehmen die Datierung aus N. 39.</hi>
+          </p>
         </div>
         <div type="text">
-          <p xml:id="Ch63.p5"><pb type="L"/><fw type="folNum">[96 r<hi rendition="#sup">o</hi>]</fw>
+          <p xml:id="Ch63.p5">
+            <pb type="L"/>
+            <fw type="folNum">[96 r<hi rendition="#sup">o</hi>]
+            </fw>
             <app type="Bfootnote">
               <lem type="main">Constat siphonem bicrurum ἑτερομήχη, aqua plenus altero crure
                 breviore in aquam vase quodam contentam intrantem, altero corpore extra vas
                 descendentem,</lem>
               <rdg wit="#L" n="1"> Galilaeus<index indexName="Namensregister">
-                  <term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo
+                <term>
+                  <hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo
                     1564–1642</term>
-                </index>
-              </rdg>
-              <rdg wit="#L" n="2"> Galilaeum<index indexName="Namensregister">
-                  <term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo
+              </index>
+            </rdg>
+            <rdg wit="#L" n="2"> Galilaeum<index indexName="Namensregister">
+              <term>
+                <hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo
                     1564–1642</term>
-                </index> memo </rdg>
-              <rdg wit="#L" n="3"> Recepta fuit sententia in scholis effectus quosdam
+            </index> memo </rdg>
+          <rdg wit="#L" n="3"> Recepta fuit sententia in scholis effectus quosdam
                 extraordinarios naturae, qui scilicet eveniunt, quoties alioquin corpore uno ex suo
                 loco exeunte, aliud sensibile intrare non posset; a <hi rendition="#g">fuga
                   Vacui</hi>
-                <index indexName="Sachverzeichnis">
-                  <term>fuga vacui</term>
-                </index>oriri, ut quod duae Tabulae politae<index indexName="Sachverzeichnis">
-                  <term>tabulae</term>
-                  <index>
-                    <term>politae</term>
-                  </index>
-                </index> cohaerent; <app>
-                  <rdg wit="#L" n="a">quod aqua </rdg>
-                  <rdg wit="#L" n="b">quod liquor ex vase non effluit, cujus unum tantum foramen
-                    apertum est, quod </rdg>
-                  <rdg wit="#L" n="c" cause="addition">quod corpore uno <note type="editorial">|</note> <add>ex loco quodam</add>
-                    <note type="editorial"><hi rendition="#i">erg.</hi> |</note> extracto proximum
-                    invita etiam gravitate<index indexName="Sachverzeichnis">
-                      <term>gravitas</term>
-                    </index> sua succedere cogitur (ut aere ex tubo quodam exucto globulum plumbeum
-                    in fundo positum prorumpere, et Embolo<index indexName="Sachverzeichnis">
-                      <term>embolus</term>
-                    </index> extracto aquam in antliam<index indexName="Sachverzeichnis">
-                      <term>antlia</term>
-                    </index> assurgere constat) quod Sipho<index indexName="Sachverzeichnis">
-                      <term>sipho</term>
-                    </index> bicrurus altero crure in aquam vase quodam contentam intrans, altero <app>
-                      <rdg wit="#L" n="aa">infra </rdg>
-                      <rdg wit="#L" n="bb">vasis </rdg>
-                      <rdg wit="#L" n="cc">aquae superficiem </rdg>
-                      <rdg wit="#L" n="dd">corpore extra vas descendens. </rdg>
-                    </app></rdg>
-                </app></rdg>
-              <rdg wit="#L" n="4"> Constat siphonem bicrurum ἑτερομήχη, <seg type="apparat-ellipsis"/> descendentem, <hi rendition="#i">L</hi></rdg>
-            </app> aquam ex vase <app type="Bfootnote">
-              <lem type="main">elicere</lem>
-              <note type="lemma-abbrev">vase</note>
-              <rdg wit="#L" n="1"> elici facit, donec </rdg>
-              <rdg wit="#L" n="2"> effluere facit </rdg>
-              <rdg wit="#L" n="3"> elicere <hi rendition="#i">L</hi></rdg>
-            </app>, donec superficies aquae ad <app type="Bfootnote">
-              <lem type="main">orificium</lem>
-              <note type="lemma-abbrev">ad</note>
-              <rdg wit="#L" n="1"> eundem cum </rdg>
-              <rdg wit="#L" n="2"> orificium <hi rendition="#i">L</hi></rdg>
-            </app> usque <pb type="VIII_1" n="573"/>cruris extra vas positi decreverit. <app type="Bfootnote">
-              <lem type="main">Hujus</lem>
-              <note type="lemma-abbrev">decreverit.</note>
-              <rdg wit="#L" n="1"> Ex quo </rdg>
-              <rdg wit="#L" n="2"> Cujus postremi </rdg>
-              <rdg wit="#L" n="3"> Hujus <hi rendition="#i">L</hi></rdg>
-            </app> phaenomeni ope <app type="Bfootnote">
-              <lem type="main">rationem</lem>
-              <note type="lemma-abbrev">ope</note>
-              <rdg wit="#L" n="1"> , ut obiter hoc loco exponam, aliquando </rdg>
-              <rdg wit="#L" n="2"> rationem <hi rendition="#i">L</hi></rdg>
-            </app> inveni conficiendi clepsydram<index indexName="Sachverzeichnis">
-              <term>clepsydra</term>
-            </index> uniformiter fluentem. Constat veteres clepsydris<index indexName="Sachverzeichnis">
-              <term>clepsydra</term>
-            </index>, aquam scilicet extillantibus fuisse usos. Sed cum <app type="Bfootnote">
-              <lem type="main">celeritas effluxus, decrescente continuo altitudine,</lem>
-              <note type="lemma-abbrev">cum</note>
-              <rdg wit="#L" n="1"> Clepsydra<index indexName="Sachverzeichnis">
-                  <term>clepsydra</term>
-                </index> initio fortius flueret, </rdg>
-              <rdg wit="#L" n="2"> celeritas effluxus, decrescente continuo altitudine, <hi rendition="#i">L</hi></rdg>
-            </app> ac proinde pressione aquae continuo diminueretur, <app type="Bfootnote">
-              <lem type="main">nec proinde satis ad tempus mensurandum uniformis esset</lem>
-              <note type="lemma-abbrev">diminueretur,</note>
-              <rdg wit="#L" n="1"> necesse erat rotas<index indexName="Sachverzeichnis">
-                  <term>rota</term>
-                </index> horarum dividere in partes inaequales, quod nec commode applicari poterat
-                ad <app>
-                  <rdg wit="#L" n="a">minuta </rdg>
-                  <rdg wit="#L" n="b">partes horae minutiores </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> nec <seg type="apparat-ellipsis"/> esset <hi rendition="#i">L</hi></rdg>
-            </app> Horologiis<index indexName="Sachverzeichnis">
-              <term>horologium</term>
-            </index> arenariis uti placuit, in quibus incommodum quidem idem at non aeque sensibile.
-            Ego considerato siphonis<index indexName="Sachverzeichnis">
-              <term>sipho</term>
-            </index> istius bicruri effectu hoc machinamentum <app type="Bfootnote">
-              <lem type="main">clepsydrae<index indexName="Sachverzeichnis">
-                  <term>clepsydra</term>
-                </index> uniformis</lem>
-              <rdg wit="#L" cause="addition"><add>clepsydrae<index indexName="Sachverzeichnis">
-                    <term>clepsydra</term>
-                  </index> uniformis</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> commentus sum.</p>
-          <figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch63.p6">
-            <graphic url="./images/37_3_96r2.svg" width="130.086pt" xml:id="Ch63.p6.g1"/>
-
-            <head><hi rendition="#i">[Fig. 1]</hi></head>
-          </figure>
-          <pb type="VIII_1" n="574"/>
-          <figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch63.p7">
-            <graphic url="./images/37_3_96r1.svg" width="303.534pt" xml:id="Ch63.p7.g1"/>
-
-            <head><hi rendition="#i">[Fig. 2]</hi></head>
-          </figure>
-          <p xml:id="Ch63.p8"><hi rendition="#i">Nebenrechnungen zu [Fig. 2]</hi>:<lb/><formula xml:id="Ch63.p8.m1">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mtable rowspacing="10pt">
-                  <m:mtr>
-                    <m:mtd columnalign="right">
-                      <m:mpadded lspace="5.5pt" width="+5.5pt">
-                        <m:mn>5</m:mn>
-                      </m:mpadded>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="right">
-                      <m:mrow>
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>1</m:mn>
-                        </m:menclose>
-                        <m:mo>⁢</m:mo>
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>3</m:mn>
-                        </m:menclose>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="right">
-                      <m:mpadded lspace="5.5pt" width="+5.5pt">
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>8</m:mn>
-                        </m:menclose>
-                      </m:mpadded>
-                    </m:mtd>
-                  </m:mtr>
-                </m:mtable>
-              </m:math>
-            </formula>
-            <formula xml:id="Ch63.p8.m2">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mtable>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mpadded width="+5.5pt">
-                          <m:mi>f</m:mi>
-                        </m:mpadded>
-                        <m:mo>⁢</m:mo>
-                        <m:mrow>
-                          <m:mn>1</m:mn>
-                          <m:mo>⁤</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>5</m:mn>
-                              <m:mn>8</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                </m:mtable>
-              </m:math>
-            </formula>           <formula xml:id="Ch63.p8.m3">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mtable rowspacing="10pt">
-                  <m:mtr>
-                    <m:mtd columnalign="right">
-                      <m:mn>31</m:mn>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="right">
-                      <m:mn>12</m:mn>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="right">
-                      <m:mover accent="true">
-                        <m:mn>62</m:mn>
-                        <m:mo>¯</m:mo>
-                      </m:mover>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="right">
-                      <m:mn>31</m:mn>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="right">
-                      <m:mover accent="true">
-                        <m:mrow>
-                          <m:mo stretchy="false">[</m:mo>
-                          <m:mn>372</m:mn>
-                          <m:mo stretchy="false">]</m:mo>
-                        </m:mrow>
-                        <m:mo>¯</m:mo>
-                      </m:mover>
-                    </m:mtd>
-                  </m:mtr>
-                </m:mtable>
-              </m:math>
-            </formula>           <formula xml:id="Ch63.p8.m4">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mtable rowspacing="10pt">
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mpadded lspace="5.5pt" width="+5.5pt">
-                        <m:mn>30</m:mn>
-                      </m:mpadded>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mn>12</m:mn>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mover accent="true">
-                        <m:mn>360</m:mn>
-                        <m:mo>¯</m:mo>
-                      </m:mover>
-                    </m:mtd>
-                  </m:mtr>
-                </m:mtable>
-              </m:math>
-            </formula>          <formula xml:id="Ch63.p8.m5">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mtable rowspacing="10pt">
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mn>1</m:mn>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:menclose notation="updiagonalstrike">
-                        <m:mn>3</m:mn>
-                      </m:menclose>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>1</m:mn>
-                        </m:menclose>
-                        <m:mo>⁢</m:mo>
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>8</m:mn>
-                        </m:menclose>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>3</m:mn>
-                        </m:menclose>
-                        <m:mo>⁢</m:mo>
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>6</m:mn>
-                        </m:menclose>
-                        <m:mo>⁢</m:mo>
-                        <m:mpadded width="+5.5pt">
-                          <m:menclose notation="updiagonalstrike">
-                            <m:mn>0</m:mn>
-                          </m:menclose>
-                        </m:mpadded>
-                        <m:mo>⁢</m:mo>
-                        <m:mpadded width="+5.5pt">
-                          <m:mi>f</m:mi>
-                        </m:mpadded>
-                        <m:mo>⁢</m:mo>
-                        <m:mn>25</m:mn>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>1</m:mn>
-                        </m:menclose>
-                        <m:mo>⁢</m:mo>
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>4</m:mn>
-                        </m:menclose>
-                        <m:mo>⁢</m:mo>
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>4</m:mn>
-                        </m:menclose>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mpadded lspace="10pt" width="+10pt">
-                        <m:menclose notation="updiagonalstrike">
-                          <m:mn>1</m:mn>
-                        </m:menclose>
-                      </m:mpadded>
-                    </m:mtd>
-                  </m:mtr>
-                </m:mtable>
-              </m:math>
-            </formula><app type="Bfootnote">
-              <!--is-correction-app-with-empty-lemma-->
-              <note type="editorial"><orig>373</orig>
-                <hi rendition="#i">L ändert Hrsg.</hi></note>
-            </app></p>
-          <pb type="VIII_1" n="575"/>
-          <p xml:id="Ch63.p9"><app type="Bfootnote">
-              <lem type="main">Esto vas <hi rendition="#i">A</hi> aquam continens, sipho bicrurus
-                  <hi rendition="#i">CDE</hi> cujus crus minus <hi rendition="#i">DC</hi> intret in
-                aquam vasis <hi rendition="#i">A</hi> et orificio <hi rendition="#i">C</hi> prope
-                attingat fundum vasis. Crus majus <hi rendition="#i">DE</hi> orificio <hi rendition="#i">E</hi> descendat infra <hi rendition="#i">C</hi>.</lem>
-              <rdg wit="#L" n="1"> Clepsydram<index indexName="Sachverzeichnis">
-                  <term>clepsydra</term>
-                </index> uniformem inde praeberi sic ostendo: <app>
-                  <rdg wit="#L" n="a">cum </rdg>
-                  <rdg wit="#L" n="b">rationem inveni facilem </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> Esto <app>
-                  <rdg wit="#L" n="a">in vase </rdg>
-                  <rdg wit="#L" n="b">vas <hi rendition="#i">A</hi> aquam   continens, <app>
-                      <rdg wit="#L" n="aa">in quod   intret </rdg>
-                      <rdg wit="#L" n="bb" cause="addition">sipho <seg type="apparat-ellipsis"/>
-                          minus <note type="editorial">|</note> <add><hi rendition="#i">DC</hi>
-                        </add>
-                        <note type="editorial"><hi rendition="#i">erg.</hi> |</note> intret in aquam
-                        vasis <hi rendition="#i">A</hi>
-                        <app>
-                          <rdg wit="#L" n="aaa">prope ad fundum crus min </rdg>
-                          <rdg wit="#L" n="bbb" cause="addition"><add>et <seg type="apparat-ellipsis"/>
-                              <hi rendition="#i">C</hi>.</add>
-                            <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-                        </app></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app></p>
-          <p xml:id="Ch63.p10"><app type="Bfootnote">
-              <lem type="main">Esto vas aquam continens <hi rendition="#i">A</hi> in aquae
-                superficie natans Tabula levis <hi rendition="#i">B</hi> cui infixus sipho bicrurus
-                  <hi rendition="#i">CDE</hi> cujus crus minus <hi rendition="#i">CD</hi> per mediam
-                Tabulam cui infixum est descendit attingit aquam in <hi rendition="#i">C</hi>
-                alterum crus majus <hi rendition="#i">DE</hi> extra aquam usque ad <hi rendition="#i">E</hi> infra fundum vasis <hi rendition="#i">A</hi>.</lem>
-              <rdg wit="#L">Esto <seg type="apparat-ellipsis"/> Tabula </rdg>
-              <rdg wit="#L" n="1"> lignea </rdg>
-              <rdg wit="#L" n="2" cause="addition"> levis <seg type="apparat-ellipsis"/> crus <note type="editorial">|</note> <add>minus</add>
-                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <hi rendition="#i">CD</hi>
-                <seg type="apparat-ellipsis"/> descendit <app>
-                  <rdg wit="#L" n="a">in aquam usque superficiem </rdg>
-                  <rdg wit="#L" n="b">in aquam usque ad C. </rdg>
-                  <rdg wit="#L" n="c" cause="addition-deletion">attingit <seg type="apparat-ellipsis"/> vasis <note type="editorial">|</note> <add><hi rendition="#i">A</hi>
-                    </add>
-                    <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <del>.</del>
-                    <note type="editorial"><hi rendition="#i">gestr. und wieder gültig gemacht
-                        L</hi></note></rdg>
-                </app></rdg>
-            </app> Esto vero et crassities siphonis<index indexName="Sachverzeichnis">
-              <term>sipho</term>
-            </index> et apertura utrobique aequalis tum in <hi rendition="#i">C</hi> tum in <hi rendition="#i">E</hi>. Sipho<index indexName="Sachverzeichnis">
-              <term>sipho</term>
-            </index> aqua impleatur, sive jam ante <app type="Bfootnote">
-              <lem type="main">immissa</lem>
-              <note type="lemma-abbrev">ante</note>
-              <rdg wit="#L" n="1"> infusa </rdg>
-              <rdg wit="#L" n="2"> immissa <hi rendition="#i">L</hi></rdg>
-            </app>, antequam aquae vasis <hi rendition="#i">A</hi> innatet, <app type="Bfootnote">
-              <lem type="main">orificiis</lem>
-              <note type="lemma-abbrev">innatet,</note>
-              <rdg wit="#L" n="1"> sive orificia </rdg>
-              <rdg wit="#L" n="2"> orificiis <hi rendition="#i">L</hi></rdg>
-            </app> interim <app type="Bfootnote">
-              <lem type="main">obturatis,</lem>
-              <rdg wit="#L" cause="deletion">interim <note type="editorial">|</note> <del>digito</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> obturatis, <hi rendition="#i">L</hi></rdg>
-            </app> ne effluat antequam opus sit; vel suctu <app type="Bfootnote">
-              <lem type="main">oris</lem>
-              <note type="lemma-abbrev">suctu</note>
-              <rdg wit="#L" n="1"> ex aqua </rdg>
-              <rdg wit="#L" n="2"> oris <hi rendition="#i">L</hi></rdg>
-            </app> in <hi rendition="#i">C</hi> applicati ex vase <hi rendition="#i">A</hi>
-            attracto. Quo facto aqua destillabit ex <hi rendition="#i">E</hi> in subjectum vas <hi rendition="#i">F</hi> novaque continue aqua in siphonem<index indexName="Sachverzeichnis">
-              <term>sipho</term>
-            </index> succedet, donec scilicet <app type="Bfootnote">
-              <lem type="main">superficies effluxu deminuta descendat infra <hi rendition="#i">C</hi>.</lem>
-              <note type="lemma-abbrev">scilicet</note>
-              <rdg wit="#L" n="1"> orificium cruris longioris <hi rendition="#i">E</hi>
-              </rdg>
-              <rdg wit="#L" n="2"> aquae in vase <hi rendition="#i">A</hi> continuo effluxu deminuta
-                descendat usque ad orificium cruris longioris <hi rendition="#i">E</hi>
-              </rdg>
-              <rdg wit="#L" n="3"> aquae in vase <hi rendition="#i">A</hi> effluxu deminuta
-                descendat infra <hi rendition="#i">C</hi>
-              </rdg>
-              <rdg wit="#L" n="4"> superficies <app>
-                  <rdg wit="#L" n="a">aquae in vase <hi rendition="#i">A</hi> effluxu aquae dimin </rdg>
-                  <rdg wit="#L" n="b">effluxu deminuta descendat infra <hi rendition="#i">C</hi>.
-                      <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main">Et hoc quidem fieret, si sipho<index indexName="Sachverzeichnis">
-                  <term>sipho</term>
-                </index> immobilis interim esset, verum quia sipho<index indexName="Sachverzeichnis">
-                  <term>sipho</term>
-                </index> aquae innatat una cum Tabula cui infixus est, descendet et ipse cum
-                orificio <hi rendition="#i">E</hi> quantum descendit aquae superficies. Nunquam ergo
-                aquae superficies orificium <hi rendition="#i">C</hi> deseret ac proinde nunquam <pb type="VIII_1" n="576"/>cessabit extillatio.</lem>
-              <rdg wit="#L">Et hoc <seg type="apparat-ellipsis"/> orificio <hi rendition="#i">E</hi>
-              </rdg>
-              <rdg wit="#L" n="1"> nunquam ergo cessabit <app>
-                  <rdg wit="#L" n="a">effluxus </rdg>
-                  <rdg wit="#L" n="b">extillatio, donec <app>
-                      <rdg wit="#L" n="aa">omnis aq </rdg>
-                      <rdg wit="#L" n="bb" cause="addition">vase <hi rendition="#i">A</hi> omni
-                          <note type="editorial">|</note> <add>pene</add>
-                        <note type="editorial"><hi rendition="#i">erg.</hi> |</note> aqua exhausto
-                        orificium <hi rendition="#i">C</hi> fundum ipsum vasis attingat. </rdg>
-                    </app></rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> quantum <seg type="apparat-ellipsis"/> orificium <app>
-                  <rdg wit="#L" n="a"><hi rendition="#i">E</hi> assequetur </rdg>
-                  <rdg wit="#L" n="b" cause="deletion"><del><hi rendition="#i">C</hi>
-                      <seg type="apparat-ellipsis"/> extillatio.</del>
-                    <note type="editorial"><hi rendition="#i">gestr. und wieder gültig gemacht
-                        L</hi></note></rdg>
-                </app></rdg>
-            </app> Cumque sipho<index indexName="Sachverzeichnis">
-              <term>sipho</term>
+            <index indexName="Sachverzeichnis">
+              <term>fuga vacui</term>
+            </index>oriri, ut quod duae Tabulae politae<index indexName="Sachverzeichnis">
+            <term>tabulae</term>
+            <index>
+              <term>politae</term>
             </index>
-            <app type="Bfootnote">
-              <lem type="main">interim</lem>
-              <rdg wit="#L" cause="addition"><add>interim</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> semper sit plenus, <app type="Bfootnote">
-              <lem type="main">et altitudo aquae super <hi rendition="#i">C</hi> eminentis, quae
+          </index> cohaerent; <app>
+          <rdg wit="#L" n="a">quod aqua </rdg>
+          <rdg wit="#L" n="b">quod liquor ex vase non effluit, cujus unum tantum foramen
+                    apertum est, quod </rdg>
+          <rdg wit="#L" n="c" cause="addition">quod corpore uno <note type="editorial">|</note>
+            <add>ex loco quodam</add>
+            <note type="editorial">
+              <hi rendition="#i">erg.</hi> |
+            </note> extracto proximum
+                    invita etiam gravitate<index indexName="Sachverzeichnis">
+            <term>gravitas</term>
+          </index> sua succedere cogitur (ut aere ex tubo quodam exucto globulum plumbeum
+                    in fundo positum prorumpere, et Embolo<index indexName="Sachverzeichnis">
+          <term>embolus</term>
+        </index> extracto aquam in antliam<index indexName="Sachverzeichnis">
+        <term>antlia</term>
+      </index> assurgere constat) quod Sipho<index indexName="Sachverzeichnis">
+      <term>sipho</term>
+    </index> bicrurus altero crure in aquam vase quodam contentam intrans, altero <app>
+    <rdg wit="#L" n="aa">infra </rdg>
+    <rdg wit="#L" n="bb">vasis </rdg>
+    <rdg wit="#L" n="cc">aquae superficiem </rdg>
+    <rdg wit="#L" n="dd">corpore extra vas descendens. </rdg>
+  </app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="4"> Constat siphonem bicrurum ἑτερομήχη, <seg type="apparat-ellipsis"/>
+ descendentem, <hi rendition="#i">L</hi>
+</rdg>
+</app> aquam ex vase <app type="Bfootnote">
+<lem type="main">elicere</lem>
+<note type="lemma-abbrev">vase</note>
+<rdg wit="#L" n="1"> elici facit, donec </rdg>
+<rdg wit="#L" n="2"> effluere facit </rdg>
+<rdg wit="#L" n="3"> elicere <hi rendition="#i">L</hi>
+</rdg>
+</app>, donec superficies aquae ad <app type="Bfootnote">
+<lem type="main">orificium</lem>
+<note type="lemma-abbrev">ad</note>
+<rdg wit="#L" n="1"> eundem cum </rdg>
+<rdg wit="#L" n="2"> orificium <hi rendition="#i">L</hi>
+</rdg>
+</app> usque <pb type="VIII_1" n="573"/>
+cruris extra vas positi decreverit. <app type="Bfootnote">
+<lem type="main">Hujus</lem>
+<note type="lemma-abbrev">decreverit.</note>
+<rdg wit="#L" n="1"> Ex quo </rdg>
+<rdg wit="#L" n="2"> Cujus postremi </rdg>
+<rdg wit="#L" n="3"> Hujus <hi rendition="#i">L</hi>
+</rdg>
+</app> phaenomeni ope <app type="Bfootnote">
+<lem type="main">rationem</lem>
+<note type="lemma-abbrev">ope</note>
+<rdg wit="#L" n="1"> , ut obiter hoc loco exponam, aliquando </rdg>
+<rdg wit="#L" n="2"> rationem <hi rendition="#i">L</hi>
+</rdg>
+</app> inveni conficiendi clepsydram<index indexName="Sachverzeichnis">
+<term>clepsydra</term>
+</index> uniformiter fluentem. Constat veteres clepsydris<index indexName="Sachverzeichnis">
+<term>clepsydra</term>
+</index>, aquam scilicet extillantibus fuisse usos. Sed cum <app type="Bfootnote">
+<lem type="main">celeritas effluxus, decrescente continuo altitudine,</lem>
+<note type="lemma-abbrev">cum</note>
+<rdg wit="#L" n="1"> Clepsydra<index indexName="Sachverzeichnis">
+<term>clepsydra</term>
+</index> initio fortius flueret, </rdg>
+<rdg wit="#L" n="2"> celeritas effluxus, decrescente continuo altitudine, <hi rendition="#i">L</hi>
+</rdg>
+</app> ac proinde pressione aquae continuo diminueretur, <app type="Bfootnote">
+<lem type="main">nec proinde satis ad tempus mensurandum uniformis esset</lem>
+<note type="lemma-abbrev">diminueretur,</note>
+<rdg wit="#L" n="1"> necesse erat rotas<index indexName="Sachverzeichnis">
+<term>rota</term>
+</index> horarum dividere in partes inaequales, quod nec commode applicari poterat
+                ad <app>
+<rdg wit="#L" n="a">minuta </rdg>
+<rdg wit="#L" n="b">partes horae minutiores </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> nec <seg type="apparat-ellipsis"/>
+ esset <hi rendition="#i">L</hi>
+</rdg>
+</app> Horologiis<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> arenariis uti placuit, in quibus incommodum quidem idem at non aeque sensibile.
+            Ego considerato siphonis<index indexName="Sachverzeichnis">
+<term>sipho</term>
+</index> istius bicruri effectu hoc machinamentum <app type="Bfootnote">
+<lem type="main">clepsydrae<index indexName="Sachverzeichnis">
+<term>clepsydra</term>
+</index> uniformis</lem>
+<rdg wit="#L" cause="addition">
+<add>clepsydrae<index indexName="Sachverzeichnis">
+<term>clepsydra</term>
+</index> uniformis</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> commentus sum.</p>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch63.p6">
+<graphic url="./images/37_3_96r2.svg" width="130.086pt" xml:id="Ch63.p6.g1"/>
+
+<head>
+<hi rendition="#i">[Fig. 1]</hi>
+</head>
+</figure>
+<pb type="VIII_1" n="574"/>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch63.p7">
+<graphic url="./images/37_3_96r1.svg" width="303.534pt" xml:id="Ch63.p7.g1"/>
+
+<head>
+<hi rendition="#i">[Fig. 2]</hi>
+</head>
+</figure>
+<p xml:id="Ch63.p8">
+<hi rendition="#i">Nebenrechnungen zu [Fig. 2]</hi>:<lb/>
+<formula xml:id="Ch63.p8.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mpadded lspace="5.5pt" width="+5.5pt">
+<m:mn>5</m:mn>
+</m:mpadded>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mrow>
+<m:menclose notation="updiagonalstrike">
+<m:mn>1</m:mn>
+</m:menclose>
+<m:mo>⁢</m:mo>
+<m:menclose notation="updiagonalstrike">
+<m:mn>3</m:mn>
+</m:menclose>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mpadded lspace="5.5pt" width="+5.5pt">
+<m:menclose notation="updiagonalstrike">
+<m:mn>8</m:mn>
+</m:menclose>
+</m:mpadded>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula>
+<formula xml:id="Ch63.p8.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mpadded width="+5.5pt">
+<m:mi>f</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁤</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>5</m:mn>
+<m:mn>8</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula>
+<formula xml:id="Ch63.p8.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mn>31</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mn>12</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mover accent="true">
+<m:mn>62</m:mn>
+<m:mo>¯</m:mo>
+</m:mover>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mn>31</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mover accent="true">
+<m:mrow>
+<m:mo stretchy="false">[</m:mo>
+<m:mn>372</m:mn>
+<m:mo stretchy="false">]</m:mo>
+</m:mrow>
+<m:mo>¯</m:mo>
+</m:mover>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula>
+<formula xml:id="Ch63.p8.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mpadded lspace="5.5pt" width="+5.5pt">
+<m:mn>30</m:mn>
+</m:mpadded>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mn>12</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mover accent="true">
+<m:mn>360</m:mn>
+<m:mo>¯</m:mo>
+</m:mover>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula>
+<formula xml:id="Ch63.p8.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mn>1</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:menclose notation="updiagonalstrike">
+<m:mn>3</m:mn>
+</m:menclose>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:menclose notation="updiagonalstrike">
+<m:mn>1</m:mn>
+</m:menclose>
+<m:mo>⁢</m:mo>
+<m:menclose notation="updiagonalstrike">
+<m:mn>8</m:mn>
+</m:menclose>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:menclose notation="updiagonalstrike">
+<m:mn>3</m:mn>
+</m:menclose>
+<m:mo>⁢</m:mo>
+<m:menclose notation="updiagonalstrike">
+<m:mn>6</m:mn>
+</m:menclose>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5.5pt">
+<m:menclose notation="updiagonalstrike">
+<m:mn>0</m:mn>
+</m:menclose>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5.5pt">
+<m:mi>f</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mn>25</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:menclose notation="updiagonalstrike">
+<m:mn>1</m:mn>
+</m:menclose>
+<m:mo>⁢</m:mo>
+<m:menclose notation="updiagonalstrike">
+<m:mn>4</m:mn>
+</m:menclose>
+<m:mo>⁢</m:mo>
+<m:menclose notation="updiagonalstrike">
+<m:mn>4</m:mn>
+</m:menclose>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mpadded lspace="10pt" width="+10pt">
+<m:menclose notation="updiagonalstrike">
+<m:mn>1</m:mn>
+</m:menclose>
+</m:mpadded>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<!--is-correction-app-with-empty-lemma-->
+<note type="editorial">
+<orig>373</orig>
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</app>
+</p>
+<pb type="VIII_1" n="575"/>
+<p xml:id="Ch63.p9">
+<app type="Bfootnote">
+<lem type="main">Esto vas <hi rendition="#i">A</hi> aquam continens, sipho bicrurus
+<hi rendition="#i">CDE</hi> cujus crus minus <hi rendition="#i">DC</hi> intret in
+                aquam vasis <hi rendition="#i">A</hi> et orificio <hi rendition="#i">C</hi> prope
+                attingat fundum vasis. Crus majus <hi rendition="#i">DE</hi> orificio <hi rendition="#i">E</hi> descendat infra <hi rendition="#i">C</hi>.
+</lem>
+<rdg wit="#L" n="1"> Clepsydram<index indexName="Sachverzeichnis">
+<term>clepsydra</term>
+</index> uniformem inde praeberi sic ostendo: <app>
+<rdg wit="#L" n="a">cum </rdg>
+<rdg wit="#L" n="b">rationem inveni facilem </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> Esto <app>
+<rdg wit="#L" n="a">in vase </rdg>
+<rdg wit="#L" n="b">vas <hi rendition="#i">A</hi> aquam   continens, <app>
+<rdg wit="#L" n="aa">in quod   intret </rdg>
+<rdg wit="#L" n="bb" cause="addition">sipho <seg type="apparat-ellipsis"/>
+                          minus <note type="editorial">|</note>
+<add>
+<hi rendition="#i">DC</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> intret in aquam
+                        vasis <hi rendition="#i">A</hi>
+<app>
+<rdg wit="#L" n="aaa">prope ad fundum crus min </rdg>
+<rdg wit="#L" n="bbb" cause="addition">
+<add>et <seg type="apparat-ellipsis"/>
+<hi rendition="#i">C</hi>.
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch63.p10">
+<app type="Bfootnote">
+<lem type="main">Esto vas aquam continens <hi rendition="#i">A</hi> in aquae
+                superficie natans Tabula levis <hi rendition="#i">B</hi> cui infixus sipho bicrurus
+<hi rendition="#i">CDE</hi> cujus crus minus <hi rendition="#i">CD</hi> per mediam
+                Tabulam cui infixum est descendit attingit aquam in <hi rendition="#i">C</hi>
+                alterum crus majus <hi rendition="#i">DE</hi> extra aquam usque ad <hi rendition="#i">E</hi> infra fundum vasis <hi rendition="#i">A</hi>.
+</lem>
+<rdg wit="#L">Esto <seg type="apparat-ellipsis"/>
+ Tabula </rdg>
+<rdg wit="#L" n="1"> lignea </rdg>
+<rdg wit="#L" n="2" cause="addition"> levis <seg type="apparat-ellipsis"/>
+ crus <note type="editorial">|</note>
+<add>minus</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<hi rendition="#i">CD</hi>
+<seg type="apparat-ellipsis"/>
+ descendit <app>
+<rdg wit="#L" n="a">in aquam usque superficiem </rdg>
+<rdg wit="#L" n="b">in aquam usque ad C. </rdg>
+<rdg wit="#L" n="c" cause="addition-deletion">attingit <seg type="apparat-ellipsis"/>
+ vasis <note type="editorial">|</note>
+<add>
+<hi rendition="#i">A</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<del>.</del>
+<note type="editorial">
+<hi rendition="#i">gestr. und wieder gültig gemacht
+                        L</hi>
+</note>
+</rdg>
+</app>
+</rdg>
+</app> Esto vero et crassities siphonis<index indexName="Sachverzeichnis">
+<term>sipho</term>
+</index> et apertura utrobique aequalis tum in <hi rendition="#i">C</hi> tum in <hi rendition="#i">E</hi>. Sipho<index indexName="Sachverzeichnis">
+<term>sipho</term>
+</index> aqua impleatur, sive jam ante <app type="Bfootnote">
+<lem type="main">immissa</lem>
+<note type="lemma-abbrev">ante</note>
+<rdg wit="#L" n="1"> infusa </rdg>
+<rdg wit="#L" n="2"> immissa <hi rendition="#i">L</hi>
+</rdg>
+</app>, antequam aquae vasis <hi rendition="#i">A</hi> innatet, <app type="Bfootnote">
+<lem type="main">orificiis</lem>
+<note type="lemma-abbrev">innatet,</note>
+<rdg wit="#L" n="1"> sive orificia </rdg>
+<rdg wit="#L" n="2"> orificiis <hi rendition="#i">L</hi>
+</rdg>
+</app> interim <app type="Bfootnote">
+<lem type="main">obturatis,</lem>
+<rdg wit="#L" cause="deletion">interim <note type="editorial">|</note>
+<del>digito</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> obturatis, <hi rendition="#i">L</hi>
+</rdg>
+</app> ne effluat antequam opus sit; vel suctu <app type="Bfootnote">
+<lem type="main">oris</lem>
+<note type="lemma-abbrev">suctu</note>
+<rdg wit="#L" n="1"> ex aqua </rdg>
+<rdg wit="#L" n="2"> oris <hi rendition="#i">L</hi>
+</rdg>
+</app> in <hi rendition="#i">C</hi> applicati ex vase <hi rendition="#i">A</hi>
+            attracto. Quo facto aqua destillabit ex <hi rendition="#i">E</hi> in subjectum vas <hi rendition="#i">F</hi> novaque continue aqua in siphonem<index indexName="Sachverzeichnis">
+<term>sipho</term>
+</index> succedet, donec scilicet <app type="Bfootnote">
+<lem type="main">superficies effluxu deminuta descendat infra <hi rendition="#i">C</hi>.
+</lem>
+<note type="lemma-abbrev">scilicet</note>
+<rdg wit="#L" n="1"> orificium cruris longioris <hi rendition="#i">E</hi>
+</rdg>
+<rdg wit="#L" n="2"> aquae in vase <hi rendition="#i">A</hi> continuo effluxu deminuta
+                descendat usque ad orificium cruris longioris <hi rendition="#i">E</hi>
+</rdg>
+<rdg wit="#L" n="3"> aquae in vase <hi rendition="#i">A</hi> effluxu deminuta
+                descendat infra <hi rendition="#i">C</hi>
+</rdg>
+<rdg wit="#L" n="4"> superficies <app>
+<rdg wit="#L" n="a">aquae in vase <hi rendition="#i">A</hi> effluxu aquae dimin </rdg>
+<rdg wit="#L" n="b">effluxu deminuta descendat infra <hi rendition="#i">C</hi>.
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">Et hoc quidem fieret, si sipho<index indexName="Sachverzeichnis">
+<term>sipho</term>
+</index> immobilis interim esset, verum quia sipho<index indexName="Sachverzeichnis">
+<term>sipho</term>
+</index> aquae innatat una cum Tabula cui infixus est, descendet et ipse cum
+                orificio <hi rendition="#i">E</hi> quantum descendit aquae superficies. Nunquam ergo
+                aquae superficies orificium <hi rendition="#i">C</hi> deseret ac proinde nunquam <pb type="VIII_1" n="576"/>
+cessabit extillatio.</lem>
+<rdg wit="#L">Et hoc <seg type="apparat-ellipsis"/>
+ orificio <hi rendition="#i">E</hi>
+</rdg>
+<rdg wit="#L" n="1"> nunquam ergo cessabit <app>
+<rdg wit="#L" n="a">effluxus </rdg>
+<rdg wit="#L" n="b">extillatio, donec <app>
+<rdg wit="#L" n="aa">omnis aq </rdg>
+<rdg wit="#L" n="bb" cause="addition">vase <hi rendition="#i">A</hi> omni
+<note type="editorial">|</note>
+<add>pene</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> aqua exhausto
+                        orificium <hi rendition="#i">C</hi> fundum ipsum vasis attingat. </rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> quantum <seg type="apparat-ellipsis"/>
+ orificium <app>
+<rdg wit="#L" n="a">
+<hi rendition="#i">E</hi> assequetur </rdg>
+<rdg wit="#L" n="b" cause="deletion">
+<del>
+<hi rendition="#i">C</hi>
+<seg type="apparat-ellipsis"/>
+ extillatio.</del>
+<note type="editorial">
+<hi rendition="#i">gestr. und wieder gültig gemacht
+                        L</hi>
+</note>
+</rdg>
+</app>
+</rdg>
+</app> Cumque sipho<index indexName="Sachverzeichnis">
+<term>sipho</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">interim</lem>
+<rdg wit="#L" cause="addition">
+<add>interim</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> semper sit plenus, <app type="Bfootnote">
+<lem type="main">et altitudo aquae super <hi rendition="#i">C</hi> eminentis, quae
                 sola in siphonem<index indexName="Sachverzeichnis">
-                  <term>sipho</term>
-                </index> premere posset, semper eadem, ergo</lem>
-              <rdg wit="#L" cause="addition"><add>et altitudo aquae super <hi rendition="#i">C</hi>
+<term>sipho</term>
+</index> premere posset, semper eadem, ergo</lem>
+<rdg wit="#L" cause="addition">
+<add>et altitudo aquae super <hi rendition="#i">C</hi>
                   eminentis, quae sola in siphonem<index indexName="Sachverzeichnis">
-                    <term>sipho</term>
-                  </index> premere posset, semper eadem, ergo</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> pressio aquae semper eadem, ac proinde extillatio aequalis erit. Quod
+<term>sipho</term>
+</index> premere posset, semper eadem, ergo</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> pressio aquae semper eadem, ac proinde extillatio aequalis erit. Quod
             desiderabatur. Destillatio ergo guttarum tempus exacte mensurabit<app type="Bfootnote">
-              <lem type="main">. Ausim dicere post penduli vibrationes nihil</lem>
-              <note type="lemma-abbrev">mansurabit</note>
-              <rdg wit="#L" n="1"> , ac proinde ita ut post penduli vibrationes<index indexName="Sachverzeichnis">
-                  <term>vibratio penduli</term>
-                </index> nihi </rdg>
-              <rdg wit="#L" n="2"> . Ausim dicere post penduli vibrationes nihil <hi rendition="#i">L</hi></rdg>
-            </app> nobis suppetere exactius. <app type="Bfootnote">
-              <lem type="main">Et</lem>
-              <note type="lemma-abbrev">exactius.</note>
-              <rdg wit="#L" n="1"> Nam </rdg>
-              <rdg wit="#L" n="2"> Et <hi rendition="#i">L</hi></rdg>
-            </app> quemadmodum penduli<index indexName="Sachverzeichnis">
-              <term>pendulum</term>
-            </index> cursus non cessat, etiam eo tempore quo Horologium<index indexName="Sachverzeichnis">
-              <term>horologium</term>
-            </index> tenditur <app type="Bfootnote">
-              <lem type="main">nec fit</lem>
-              <note type="lemma-abbrev">tenditur</note>
-              <rdg wit="#L" n="1"> ita </rdg>
-              <rdg wit="#L" n="2"> quod </rdg>
-              <rdg wit="#L" n="3"> qua praerogativa omnia alia </rdg>
-              <rdg wit="#L" n="4"> nec fit <hi rendition="#i">L</hi></rdg>
-            </app> irregularis etsi Elaterium<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> cui applicatur mature serove, <app type="Bfootnote">
-              <lem type="main">item</lem>
-              <note type="lemma-abbrev">serove,</note>
-              <rdg wit="#L" n="1"> an </rdg>
-              <rdg wit="#L" n="2"> item <hi rendition="#i">L</hi></rdg>
-            </app> fortiter aut debiliter tendatur; nec turbatur, etsi Elaterium<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> nunc celerius nunc tardius se restituat, et tractu temporis debilitetur, quae
-              <app type="Bfootnote">
-              <lem type="main">praerogativae</lem>
-              <rdg wit="#L" cause="addition"><add>praerogativae</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> nulli hactenus invento horologio<index indexName="Sachverzeichnis">
-              <term>horologium</term>
-            </index> tribui potuere; ita in hoc Horologio<index indexName="Sachverzeichnis">
-              <term>horologium</term>
-            </index> eadem evenire necesse est. Nam si aquam vel manu vel machina non difficulter
+<lem type="main">. Ausim dicere post penduli vibrationes nihil</lem>
+<note type="lemma-abbrev">mansurabit</note>
+<rdg wit="#L" n="1"> , ac proinde ita ut post penduli vibrationes<index indexName="Sachverzeichnis">
+<term>vibratio penduli</term>
+</index> nihi </rdg>
+<rdg wit="#L" n="2"> . Ausim dicere post penduli vibrationes nihil <hi rendition="#i">L</hi>
+</rdg>
+</app> nobis suppetere exactius. <app type="Bfootnote">
+<lem type="main">Et</lem>
+<note type="lemma-abbrev">exactius.</note>
+<rdg wit="#L" n="1"> Nam </rdg>
+<rdg wit="#L" n="2"> Et <hi rendition="#i">L</hi>
+</rdg>
+</app> quemadmodum penduli<index indexName="Sachverzeichnis">
+<term>pendulum</term>
+</index> cursus non cessat, etiam eo tempore quo Horologium<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> tenditur <app type="Bfootnote">
+<lem type="main">nec fit</lem>
+<note type="lemma-abbrev">tenditur</note>
+<rdg wit="#L" n="1"> ita </rdg>
+<rdg wit="#L" n="2"> quod </rdg>
+<rdg wit="#L" n="3"> qua praerogativa omnia alia </rdg>
+<rdg wit="#L" n="4"> nec fit <hi rendition="#i">L</hi>
+</rdg>
+</app> irregularis etsi Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> cui applicatur mature serove, <app type="Bfootnote">
+<lem type="main">item</lem>
+<note type="lemma-abbrev">serove,</note>
+<rdg wit="#L" n="1"> an </rdg>
+<rdg wit="#L" n="2"> item <hi rendition="#i">L</hi>
+</rdg>
+</app> fortiter aut debiliter tendatur; nec turbatur, etsi Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> nunc celerius nunc tardius se restituat, et tractu temporis debilitetur, quae
+<app type="Bfootnote">
+<lem type="main">praerogativae</lem>
+<rdg wit="#L" cause="addition">
+<add>praerogativae</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> nulli hactenus invento horologio<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> tribui potuere; ita in hoc Horologio<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> eadem evenire necesse est. Nam si aquam vel manu vel machina non difficulter
             applicanda ex vase <hi rendition="#i">F</hi> in vas <hi rendition="#i">A</hi> refundas,
             antequam totum exhaustum sit, <app type="Bfootnote">
-              <lem type="main">restituetur Horologium<index indexName="Sachverzeichnis">
-                  <term>horologium</term>
-                </index> in priorem statum, et</lem>
-              <rdg wit="#L" cause="addition"><add>restituetur Horologium<index indexName="Sachverzeichnis">
-                    <term>horologium</term>
-                  </index> in priorem statum, et</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> non ideo minus interim continuabitur <app type="Bfootnote">
-              <lem type="main">extillatio</lem>
-              <note type="lemma-abbrev">continuabitur</note>
-              <rdg wit="#L" n="1"> distillatio eodem </rdg>
-              <rdg wit="#L" n="2"> extillatio <hi rendition="#i">L</hi></rdg>
-            </app>, eodem plane modo: pressio enim non perturbatur quia aqua <app type="Bfootnote">
-              <lem type="main">vasis <hi rendition="#i">A</hi></lem>
-              <rdg wit="#L" cause="addition"><add>vasis <hi rendition="#i">A</hi>
-                </add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> aucta seu superficie ejus ascendente, etiam Tabula <hi rendition="#i">B</hi>
+<lem type="main">restituetur Horologium<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> in priorem statum, et</lem>
+<rdg wit="#L" cause="addition">
+<add>restituetur Horologium<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> in priorem statum, et</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> non ideo minus interim continuabitur <app type="Bfootnote">
+<lem type="main">extillatio</lem>
+<note type="lemma-abbrev">continuabitur</note>
+<rdg wit="#L" n="1"> distillatio eodem </rdg>
+<rdg wit="#L" n="2"> extillatio <hi rendition="#i">L</hi>
+</rdg>
+</app>, eodem plane modo: pressio enim non perturbatur quia aqua <app type="Bfootnote">
+<lem type="main">vasis <hi rendition="#i">A</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>vasis <hi rendition="#i">A</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> aucta seu superficie ejus ascendente, etiam Tabula <hi rendition="#i">B</hi>
             ascendet cum toto siphone<index indexName="Sachverzeichnis">
-              <term>sipho</term>
-            </index>. <app type="Bfootnote">
-              <lem type="main">Ut res</lem>
-              <note type="lemma-abbrev">siphone.</note>
-              <rdg wit="#L" n="1"> Ut experimentum </rdg>
-              <rdg wit="#L" n="2"> Ut res <hi rendition="#i">L</hi></rdg>
-            </app> succedat rectius, <app type="Bfootnote">
-              <lem type="main">opus est</lem>
-              <note type="lemma-abbrev">rectius,</note>
-              <rdg wit="#L" n="1"> necesse est </rdg>
-              <rdg wit="#L" n="2"> opus est <hi rendition="#i">L</hi></rdg>
-            </app> siphonem<index indexName="Sachverzeichnis">
-              <term>sipho</term>
-            </index> sustineri ne extra vas labatur, Tabulam <hi rendition="#i">B</hi>. esse satis
+<term>sipho</term>
+</index>.<app type="Bfootnote">
+<lem type="main">Ut res</lem>
+<note type="lemma-abbrev">siphone.</note>
+<rdg wit="#L" n="1"> Ut experimentum </rdg>
+<rdg wit="#L" n="2"> Ut res <hi rendition="#i">L</hi>
+</rdg>
+</app> succedat rectius, <app type="Bfootnote">
+<lem type="main">opus est</lem>
+<note type="lemma-abbrev">rectius,</note>
+<rdg wit="#L" n="1"> necesse est </rdg>
+<rdg wit="#L" n="2"> opus est <hi rendition="#i">L</hi>
+</rdg>
+</app> siphonem<index indexName="Sachverzeichnis">
+<term>sipho</term>
+</index> sustineri ne extra vas labatur, Tabulam <hi rendition="#i">B</hi>. esse satis
             levem, ut siphonem<index indexName="Sachverzeichnis">
-              <term>sipho</term>
-            </index> possit <app type="Bfootnote">
-              <lem type="main">ferre</lem>
-              <note type="lemma-abbrev">possit</note>
-              <rdg wit="#L" n="1"> sustinere </rdg>
-              <rdg wit="#L" n="2"> ferre <hi rendition="#i">L</hi></rdg>
-            </app>, <pb type="L"/><fw type="folNum">[96 v<hi rendition="#sup">o</hi>]</fw>
+<term>sipho</term>
+</index> possit <app type="Bfootnote">
+<lem type="main">ferre</lem>
+<note type="lemma-abbrev">possit</note>
+<rdg wit="#L" n="1"> sustinere </rdg>
+<rdg wit="#L" n="2"> ferre <hi rendition="#i">L</hi>
+</rdg>
+</app>,<pb type="L"/>
+<fw type="folNum">[96 v<hi rendition="#sup">o</hi>]
+</fw>
             altitudinem siphonis<index indexName="Sachverzeichnis">
-              <term>sipho</term>
-            </index> ultra vas, <app type="Bfootnote">
-              <lem type="main">non esse minorem</lem>
-              <note type="lemma-abbrev">vas,</note>
-              <rdg wit="#L" n="1"> majorem </rdg>
-              <rdg wit="#L" n="2"> non esse minorem <hi rendition="#i">L</hi></rdg>
-            </app> quam est altitudo descensus in vase, alioqui <hi rendition="#i">D</hi> lateribus
+<term>sipho</term>
+</index> ultra vas, <app type="Bfootnote">
+<lem type="main">non esse minorem</lem>
+<note type="lemma-abbrev">vas,</note>
+<rdg wit="#L" n="1"> majorem </rdg>
+<rdg wit="#L" n="2"> non esse minorem <hi rendition="#i">L</hi>
+</rdg>
+</app> quam est altitudo descensus in vase, alioqui <hi rendition="#i">D</hi> lateribus
             vasis impingeret; ac denique circumspiciendum est de exacta quadam <app type="Bfootnote">
-              <lem type="main">effluxus</lem>
-              <rdg wit="#L" cause="deletion">quadam <note type="editorial">|</note> <del>guttarum</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> effluxus <hi rendition="#i">L</hi></rdg>
-            </app> mensuratione. Ex quibus haec mihi maxime placuit; applicetur instrumentum quale
+<lem type="main">effluxus</lem>
+<rdg wit="#L" cause="deletion">quadam <note type="editorial">|</note>
+<del>guttarum</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> effluxus <hi rendition="#i">L</hi>
+</rdg>
+</app> mensuratione. Ex quibus haec mihi maxime placuit; applicetur instrumentum quale
             passibus numerandis adhibetur, in <app type="Bfootnote">
-              <lem type="main">latus unum rotae primae liquor extillans effluensve</lem>
-              <note type="lemma-abbrev">in</note>
-              <rdg wit="#L" n="1"> hoc </rdg>
-              <rdg wit="#L" n="2"> hujus rotam<index indexName="Sachverzeichnis">
-                  <term>rota</term>
-                </index>
-              </rdg>
-              <rdg wit="#L" n="3"> rotae<index indexName="Sachverzeichnis">
-                  <term>rota</term>
-                </index> primae latus unum desi </rdg>
-              <rdg wit="#L" n="4"> latus <seg type="apparat-ellipsis"/> effluensve <hi rendition="#i">L</hi></rdg>
-            </app> guttae extillantes, incidant, ac proinde Rotam<index indexName="Sachverzeichnis">
-              <term>rota</term>
-            </index> circumagant, rotae<index indexName="Sachverzeichnis">
-              <term>rota</term>
-            </index> conversiones ab instrumento numerabuntur<app type="Bfootnote">
-              <lem type="main">. Ponamus</lem>
-              <note type="lemma-abbrev">numerabuntur</note>
-              <rdg wit="#L" n="1"> , et apparebit praeterea </rdg>
-              <rdg wit="#L" n="2"> . Ponamus <hi rendition="#i">L</hi></rdg>
-            </app> rotam<index indexName="Sachverzeichnis">
-              <term>rota</term>
-            </index> semel circumagi uno minuto secundo (quod utique procurari non difficile est),
-              <app type="Bfootnote">
-              <lem type="main">et</lem>
-              <note type="lemma-abbrev">est),</note>
-              <rdg wit="#L" n="1"> ponamus </rdg>
-              <rdg wit="#L" n="2"> et <hi rendition="#i">L</hi></rdg>
-            </app> rotam<index indexName="Sachverzeichnis">
-              <term>rota</term>
-            </index> ipsam rursus in 60 dentibus<index indexName="Sachverzeichnis">
-              <term>dens</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">distingui</lem>
-              <note type="lemma-abbrev">dentibus</note>
-              <rdg wit="#L" n="1"> esse </rdg>
-              <rdg wit="#L" n="2"> distingui <hi rendition="#i">L</hi></rdg>
-            </app>; manifestum est ad tertia usque minuta procedi posse quorum 216000 horam<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Nebenrechnung</hi>:<lb/><formula xml:id="Ch63.p10.m1">
-                <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                  <m:mtable rowspacing="10pt">
-                    <m:mtr>
-                      <m:mtd columnalign="left">
-                        <m:mn>  6000</m:mn>
-                      </m:mtd>
-                    </m:mtr>
-                    <m:mtr>
-                      <m:mtd columnalign="left">
-                        <m:mn>  6</m:mn>
-                      </m:mtd>
-                    </m:mtr>
-                    <m:mtr>
-                      <m:mtd columnalign="left">
-                        <m:mover accent="true">
-                          <m:mn> 36000</m:mn>
-                          <m:mo>¯</m:mo>
-                        </m:mover>
-                      </m:mtd>
-                    </m:mtr>
-                    <m:mtr>
-                      <m:mtd columnalign="left">
-                        <m:mrow>
-                          <m:mpadded depth="-2.2pt" height="+2.2pt">
-                            <m:mtext>3</m:mtext>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mn> 6</m:mn>
-                        </m:mrow>
-                      </m:mtd>
-                    </m:mtr>
-                    <m:mtr>
-                      <m:mtd columnalign="left">
-                        <m:mover accent="true">
-                          <m:mn>216000</m:mn>
-                          <m:mo>¯</m:mo>
-                        </m:mover>
-                      </m:mtd>
-                    </m:mtr>
-                  </m:mtable>
-                </m:math>
-              </formula>
-            </note>
-            <app type="Bfootnote">
-              <lem type="main">componunt.</lem>
-              <rdg wit="#L">componunt. <note type="editorial">|</note> Et </rdg>
-              <rdg wit="#L" n="1"> fortasse in mari usus </rdg>
-              <rdg wit="#L" n="2"> cogitandum est an non <app>
-                  <rdg wit="#L" n="a">hujus instrumenti usus in mari sit ipso pendulo<index indexName="Sachverzeichnis">
-                      <term>pendulum</term>
-                    </index>
-                  </rdg>
-                  <rdg wit="#L" n="b">hoc instrumentum sit ad maris </rdg>
-                  <rdg wit="#L" n="c" cause="addition">hujus instrumenti usus possit esse in mari.
-                    Magna dubitatio est, an non pendula ipsa <note type="editorial">|</note> <add>in
+<lem type="main">latus unum rotae primae liquor extillans effluensve</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" n="1"> hoc </rdg>
+<rdg wit="#L" n="2"> hujus rotam<index indexName="Sachverzeichnis">
+<term>rota</term>
+</index>
+</rdg>
+<rdg wit="#L" n="3"> rotae<index indexName="Sachverzeichnis">
+<term>rota</term>
+</index> primae latus unum desi </rdg>
+<rdg wit="#L" n="4"> latus <seg type="apparat-ellipsis"/>
+ effluensve <hi rendition="#i">L</hi>
+</rdg>
+</app> guttae extillantes, incidant, ac proinde Rotam<index indexName="Sachverzeichnis">
+<term>rota</term>
+</index> circumagant, rotae<index indexName="Sachverzeichnis">
+<term>rota</term>
+</index> conversiones ab instrumento numerabuntur<app type="Bfootnote">
+<lem type="main">. Ponamus</lem>
+<note type="lemma-abbrev">numerabuntur</note>
+<rdg wit="#L" n="1"> , et apparebit praeterea </rdg>
+<rdg wit="#L" n="2"> . Ponamus <hi rendition="#i">L</hi>
+</rdg>
+</app> rotam<index indexName="Sachverzeichnis">
+<term>rota</term>
+</index> semel circumagi uno minuto secundo (quod utique procurari non difficile est),
+<app type="Bfootnote">
+<lem type="main">et</lem>
+<note type="lemma-abbrev">est),</note>
+<rdg wit="#L" n="1"> ponamus </rdg>
+<rdg wit="#L" n="2"> et <hi rendition="#i">L</hi>
+</rdg>
+</app> rotam<index indexName="Sachverzeichnis">
+<term>rota</term>
+</index> ipsam rursus in 60 dentibus<index indexName="Sachverzeichnis">
+<term>dens</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">distingui</lem>
+<note type="lemma-abbrev">dentibus</note>
+<rdg wit="#L" n="1"> esse </rdg>
+<rdg wit="#L" n="2"> distingui <hi rendition="#i">L</hi>
+</rdg>
+</app>; manifestum est ad tertia usque minuta procedi posse quorum 216000 horam<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Nebenrechnung</hi>:<lb/>
+<formula xml:id="Ch63.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mn>  6000</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mn>  6</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mover accent="true">
+<m:mn> 36000</m:mn>
+<m:mo>¯</m:mo>
+</m:mover>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mpadded depth="-2.2pt" height="+2.2pt">
+<m:mtext>3</m:mtext>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mn> 6</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mover accent="true">
+<m:mn>216000</m:mn>
+<m:mo>¯</m:mo>
+</m:mover>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula>
+</note>
+<app type="Bfootnote">
+<lem type="main">componunt.</lem>
+<rdg wit="#L">componunt. <note type="editorial">|</note> Et </rdg>
+<rdg wit="#L" n="1"> fortasse in mari usus </rdg>
+<rdg wit="#L" n="2"> cogitandum est an non <app>
+<rdg wit="#L" n="a">hujus instrumenti usus in mari sit ipso pendulo<index indexName="Sachverzeichnis">
+<term>pendulum</term>
+</index>
+</rdg>
+<rdg wit="#L" n="b">hoc instrumentum sit ad maris </rdg>
+<rdg wit="#L" n="c" cause="addition">hujus instrumenti usus possit esse in mari.
+                    Magna dubitatio est, an non pendula ipsa <note type="editorial">|</note>
+<add>in
                       longinquis itineribus</add>
-                    <note type="editorial"><hi rendition="#i">erg.</hi> |</note> pro aeris
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> pro aeris
                     conditione varient; rationis enim est tardiores esse vibrationes in aere
                     crassiore; at aeris variatio Mercurium, quem ego consultissime adhiberi puto nec
                     dilatabit magis nec rarefiet, nec premet certe, ut in Baroscopio, quia premere
                     potest ab omni parte. Quod pertinet ad perturbationem motus per jactationes
                     navis, primum ut pendulum, ita et hoc instrumentum suspendi potest, <app>
-                      <rdg wit="#L" n="aa">penduli<index indexName="Sachverzeichnis">
-                          <term>pendulum</term>
-                        </index> vibratio </rdg>
-                      <rdg wit="#L" n="bb" cause="deletion"><del>deinde si pendulum jactatur.</del>
-                        <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> Utile <hi rendition="#i">L</hi></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app> Utile est autem altitudinem <hi rendition="#i">EC</hi> seu differentiam crurum
-            esse magnam, ita enim fortius premetur citiusque effluet <pb type="VIII_1" n="577"/>liquor. Et Mercurius<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">inter caeteros</lem>
-              <rdg wit="#L" cause="addition"><add>inter caeteros</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> commoditatem habet, quod non gelatur, non facile consumitur, fortius cadit
+<rdg wit="#L" n="aa">penduli<index indexName="Sachverzeichnis">
+<term>pendulum</term>
+</index> vibratio </rdg>
+<rdg wit="#L" n="bb" cause="deletion">
+<del>deinde si pendulum jactatur.</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> Utile <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app> Utile est autem altitudinem <hi rendition="#i">EC</hi> seu differentiam crurum
+            esse magnam, ita enim fortius premetur citiusque effluet <pb type="VIII_1" n="577"/>
+liquor. Et Mercurius<index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">inter caeteros</lem>
+<rdg wit="#L" cause="addition">
+<add>inter caeteros</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> commoditatem habet, quod non gelatur, non facile consumitur, fortius cadit
             fluitque.</p>
-          <pb type="VIII_1" n="578"/>
-          <p xml:id="Ch63.p11" rendition="#noindent"><hi rendition="#i">Nicht zuzuordnende
+<pb type="VIII_1" n="578"/>
+<p xml:id="Ch63.p11" rendition="#noindent">
+<hi rendition="#i">Nicht zuzuordnende
               Zeichnungen in der rechten Spalte</hi>:<!--  \hack{\\} 
      \hackfor{\pend}--></p>
-          <figure rendition="#own-line_centered" xml:id="Ch63.p12">
-            <graphic rendition="#c" url="./images/37_3_96r345.svg" width="86.724pt" xml:id="Ch63.p12.g1"/>
-          </figure>
-          <figure rendition="#own-line_centered" xml:id="Ch63.p13">
-            <graphic rendition="#c" url="./images/37_3_96v1.svg" width="86.724pt" xml:id="Ch63.p13.g1"/>
-          </figure>
-          <p xml:id="Ch63.p14" rendition="#noindent"><hi rendition="#i">Nicht zuzuordnende
+<figure rendition="#own-line_centered" xml:id="Ch63.p12">
+<graphic rendition="#c" url="./images/37_3_96r345.svg" width="86.724pt" xml:id="Ch63.p12.g1"/>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch63.p13">
+<graphic rendition="#c" url="./images/37_3_96v1.svg" width="86.724pt" xml:id="Ch63.p13.g1"/>
+</figure>
+<p xml:id="Ch63.p14" rendition="#noindent">
+<hi rendition="#i">Nicht zuzuordnende
               Rechnungen in der rechten
               Spalte</hi>:<!--  \hack{\\
 \vspace{2.0ex}
@@ -938,9 +1142,10 @@
 \end{tabular}\\
 \rule{38mm}{0.4pt}\\
 \rule{34mm}{0pt}91 \hspace{6mm}
-$\protect\begin{array}{l} \cancel{1}3\\\cancel{9}\cancel{1} \hspace{5.5pt}f\hspace{5.5pt}22\protect\displaystyle\protect\frac{3}{4}\\\cancel{4}\cancel{4}\protect\end{array}$} --><formula xml:id="Ch63.p14f" facs="../figurereplacements/552-1.svg">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
-              <?tex-source \begin{tabular}{rcrcr}
+$\protect\begin{array}{l} \cancel{1}3\\\cancel{9}\cancel{1} \hspace{5.5pt}f\hspace{5.5pt}22\protect\displaystyle\protect\frac{3}{4}\\\cancel{4}\cancel{4}\protect\end{array}$} -->
+<formula xml:id="Ch63.p14f" facs="../figurereplacements/552-1.svg">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+<?tex-source \begin{tabular}{rcrcr}
   16 & \textendash & 26 & \textendash & 14 \\
   8 & & & & 7 \\
   4 & & 13 & & 7 \\
@@ -950,9 +1155,9 @@ $\protect\begin{array}{l} \cancel{1}3\\\cancel{9}\cancel{1} \hspace{5.5pt}f\hspa
   \rule{34mm}{0pt}91 \hspace{6mm}
   $\protect\begin{array}{l} \cancel{1}3\\\cancel{9}\cancel{1} \hspace{5.5pt}f\hspace{5.5pt}22\protect\displaystyle\protect\frac{3}{4}\\\cancel{4}\cancel{4}\protect\end{array}$
 ?>
-            </formula><!--  \hackfor{\pend} --></p>
-        </div>
-      </div>
-    </body>
-  </text>
+</formula><!--  \hackfor{\pend} --></p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

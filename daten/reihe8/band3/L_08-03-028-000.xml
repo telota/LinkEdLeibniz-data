@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-028-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-028-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">De Motu Elaterii Se Restituentis</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2022</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="28">De Motu Elaterii Se Restituentis</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1689-08-01" resp="#ed" cert="medium">[Anfang August – zweite Hälfte November 1689]</date>
 						<date calendar="#gregorian" notAfter="1689-11" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=354</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+							<idno type="page">#page=354</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,9 +86,15 @@
 						</imprint>
 						<biblScope unit="page" from="320" to="320"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-028-001"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-028-002"/></relatedItem>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-028-001"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-028-002"/>
+					</relatedItem>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
@@ -172,22 +216,60 @@
 				<head>28 DE MOTU ELATERII SE RESTITUENTIS</head>
 				<head>[Anfang August – zweite Hälfte November 1689]</head>
 				<div type="contents">
-					<p xml:id="Ch28.p1"><anchor xml:id="_58256_0"/> <anchor xml:id="N.28"/><!--  \hackfor{\par} --></p>
-					<p rendition="#noindent" xml:id="Ch28.p2"><hi rendition="#smaller">Beide folgenden Aufzeichnungen N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> sind auf demselben Träger (dem Oktavbogen LH XXXV 14, 2 Bl. 161–162) überliefert und erweisen sich auch inhaltlich als eng miteinander verbunden. In beiden Fällen handelt es sich um die mathematische Beschreibung der verzögerten Bewegung, mit der sich ein gespannter elastischer Körper zusammenzieht; dieser Körper wird in N. <ref corresp="L_section_281.xml#N.28.1"/> als eine Saite (<hi rendition="#i">chorda</hi>) beschrieben. Aufgrund der gemeinsamen Überlieferung und der thematischen Verbindung bietet sich an,N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> zusammenhängend zu edieren.</hi></p>
-					<p xml:id="Ch28.p3"><hi rendition="#smaller">Auf <ref target="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=323">Bl. 162 r<hi rendition="#sup">o</hi></ref> ist ein von der Aufzeichnung N. <ref corresp="L_section_281.xml#N.28.1"/> überschriebenes Satzfragment überliefert, das wohl den ersten Entwurf eines Briefes darstellt, den Leibniz am 6. August 1689 aus Rom an C. Gudenus, kurmainzischen Residenten in Wien,<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Gudenus</hi> <hi rendition="#smaller">Johann Christoph 1632–1705</hi></term>
-						</index> sendete (<hi rendition="#i">LSB</hi> I, 5 N. 250;<ref corresp="#bib_01297"/> auf S. 46.8–10 kommt eine nahezu gleiche Formulierung wie im Satzfragment auf <ref target="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=323">Bl. 162 r<hi rendition="#sup">o</hi></ref> vor). Der Träger der Texte N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> weist zudem das gleiche Wasserzeichen wie die Handschrift LBr 425 Bl. 57–58 auf, welche das vollständige Konzept des Briefes an Gudenus überliefert. Hieraus lässt sich schließen, dass die Texte N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> zwischen Anfang August 1689 und spätestens Leibnizens Abreise aus Rom<index indexName="Orte">
-						<term><hi rendition="#smaller">Rom</hi></term>
-						</index> – vermutlich am 21. November desselben Jahres (<hi rendition="#i">Chronik</hi>, S. 98<ref corresp="#bib_01236"/>) – entstanden sind, wahrscheinlich aber noch etwa zu der Zeit, als der Brief an Gudenus abgefasst wurde. Dagegen ist unwahrscheinlich, dass Leibniz den Oktavbogen nach Oberitalien<index indexName="Orte">
-						<term><hi rendition="#smaller">Italien</hi></term>
-						</index> mitgenommen hätte, wenn dort die Aufzeichnungen N. <ref corresp="L_section_281.xml#N.28.1"/> und <ref corresp="L_section_282.xml#N.28.2"/> nicht schon gestanden hätten.</hi></p>
-					<p xml:id="Ch28.p4"><hi rendition="#smaller">Mit Blick auf die relative Chronologie ist anzunehmen, dass gemäß der Anordnung der zwei Texte auf ihrem gemeinsamen Träger N. <ref corresp="L_section_281.xml#N.28.1"/> wohl als erster verfasst wurde. Schließlich gilt es zu bemerken, dass beide Aufzeichnungen eine besondere inhaltliche Verwandtschaft mit N. <ref corresp="L_chapter_25.xml#N.25"/> <hi rendition="#i">De restitutionis potentia</hi> aufweisen. Auch dort steht die verzögerte Bewegung eines sich zusammenziehenden elastischen Körpers im Mittelpunkt der Betrachtung; und auch N. <ref corresp="L_chapter_25.xml#N.25"/> knüpft ausdrücklich und mit Tadel auf R. Hookes<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Hooke</hi> <hi rendition="#smaller">(Hookius, Hook), Robert 1635–1703</hi></term>
-						</index> elastizitätstheoretische Ausführungen an.</hi></p>
-				</div>
-				
-				
-			</div>
-		</body>
-	</text>
+					<p xml:id="Ch28.p1">
+						<anchor xml:id="_58256_0"/>
+						<anchor xml:id="N.28"/>
+						<!--  \hackfor{\par} --></p>
+					<p rendition="#noindent" xml:id="Ch28.p2">
+						<hi rendition="#smaller">Beide folgenden Aufzeichnungen N. <ref corresp="L_section_281.xml#N.28.1"/>
+ und <ref corresp="L_section_282.xml#N.28.2"/>
+ sind auf demselben Träger (dem Oktavbogen LH XXXV 14, 2 Bl. 161–162) überliefert und erweisen sich auch inhaltlich als eng miteinander verbunden. In beiden Fällen handelt es sich um die mathematische Beschreibung der verzögerten Bewegung, mit der sich ein gespannter elastischer Körper zusammenzieht; dieser Körper wird in N. <ref corresp="L_section_281.xml#N.28.1"/>
+ als eine Saite (<hi rendition="#i">chorda</hi>) beschrieben. Aufgrund der gemeinsamen Überlieferung und der thematischen Verbindung bietet sich an,N. <ref corresp="L_section_281.xml#N.28.1"/>
+ und <ref corresp="L_section_282.xml#N.28.2"/>
+ zusammenhängend zu edieren.</hi>
+	</p>
+	<p xml:id="Ch28.p3">
+		<hi rendition="#smaller">Auf <ref target="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=323">Bl. 162 r<hi rendition="#sup">o</hi>
+		</ref> ist ein von der Aufzeichnung N. <ref corresp="L_section_281.xml#N.28.1"/>
+ überschriebenes Satzfragment überliefert, das wohl den ersten Entwurf eines Briefes darstellt, den Leibniz am 6. August 1689 aus Rom an C. Gudenus, kurmainzischen Residenten in Wien,<index indexName="Personen">
+	<term>
+		<hi rendition="#g #smaller">Gudenus</hi>
+		<hi rendition="#smaller">Johann Christoph 1632–1705</hi>
+	</term>
+</index> sendete (<hi rendition="#i">LSB</hi> I, 5 N. 250;<ref corresp="#bib_01297"/>
+ auf S. 46.8–10 kommt eine nahezu gleiche Formulierung wie im Satzfragment auf <ref target="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht/?id=6&amp;tx_dlf[id]=1747&amp;tx_dlf[page]=323">Bl. 162 r<hi rendition="#sup">o</hi>
+</ref> vor). Der Träger der Texte N. <ref corresp="L_section_281.xml#N.28.1"/>
+ und <ref corresp="L_section_282.xml#N.28.2"/>
+ weist zudem das gleiche Wasserzeichen wie die Handschrift LBr 425 Bl. 57–58 auf, welche das vollständige Konzept des Briefes an Gudenus überliefert. Hieraus lässt sich schließen, dass die Texte N. <ref corresp="L_section_281.xml#N.28.1"/>
+ und <ref corresp="L_section_282.xml#N.28.2"/>
+ zwischen Anfang August 1689 und spätestens Leibnizens Abreise aus Rom<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Rom</hi>
+</term>
+</index> – vermutlich am 21. November desselben Jahres (<hi rendition="#i">Chronik</hi>, S. 98<ref corresp="#bib_01236"/>
+) – entstanden sind, wahrscheinlich aber noch etwa zu der Zeit, als der Brief an Gudenus abgefasst wurde. Dagegen ist unwahrscheinlich, dass Leibniz den Oktavbogen nach Oberitalien<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Italien</hi>
+</term>
+</index> mitgenommen hätte, wenn dort die Aufzeichnungen N. <ref corresp="L_section_281.xml#N.28.1"/>
+ und <ref corresp="L_section_282.xml#N.28.2"/>
+ nicht schon gestanden hätten.</hi>
+</p>
+<p xml:id="Ch28.p4">
+<hi rendition="#smaller">Mit Blick auf die relative Chronologie ist anzunehmen, dass gemäß der Anordnung der zwei Texte auf ihrem gemeinsamen Träger N. <ref corresp="L_section_281.xml#N.28.1"/>
+ wohl als erster verfasst wurde. Schließlich gilt es zu bemerken, dass beide Aufzeichnungen eine besondere inhaltliche Verwandtschaft mit N. <ref corresp="L_chapter_25.xml#N.25"/>
+<hi rendition="#i">De restitutionis potentia</hi> aufweisen. Auch dort steht die verzögerte Bewegung eines sich zusammenziehenden elastischen Körpers im Mittelpunkt der Betrachtung; und auch N. <ref corresp="L_chapter_25.xml#N.25"/>
+ knüpft ausdrücklich und mit Tadel auf R. Hookes<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Hooke</hi>
+<hi rendition="#smaller">(Hookius, Hook), Robert 1635–1703</hi>
+</term>
+</index> elastizitätstheoretische Ausführungen an.</hi>
+</p>
+</div>
+
+
+</div>
+</body>
+</text>
 </TEI>

@@ -1,19 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-049-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-049-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De motus linea post concursum</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De motus linea post concursum</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="49">De motus linea post concursum</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1673-06" resp="#ed" cert="medium">[Sommer 1673]</date><date calendar="#gregorian" notAfter="1673-08" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=469</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="421" to="421"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-049-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 4 Bl. 34</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung: LH XXXVII 4 Bl. 34. Papierstreifen (23 x 6 cm), unregelmäßig beschnitten. 8 Z. auf Bl. 34 r<hi rendition="#sup">o</hi> und 1 Z. auf Bl. 34 v<hi rendition="#sup">o</hi>. Ein Wasserzeichen.</p><p>Cc 2, Nr. 482</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+            </author>
+            <title type="chapter" level="a" n="49">De motus linea post concursum</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1673-06" resp="#ed" cert="medium">[Sommer 1673]</date>
+            <date calendar="#gregorian" notAfter="1673-08" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=469</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="421" to="421"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-049-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 4 Bl. 34</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung: LH XXXVII 4 Bl. 34. Papierstreifen (23 x 6 cm), unregelmäßig beschnitten. 8 Z. auf Bl. 34 r<hi rendition="#sup">o</hi> und 1 Z. auf Bl. 34 v<hi rendition="#sup">o</hi>. Ein Wasserzeichen.</p>
+                  <p>Cc 2, Nr. 482</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -639,26 +739,126 @@
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass>
-      <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
-      <catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
-      <catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-09" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-09" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-049-000_facs-haupttextzeuge">
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=106"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=107"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=108"/>
-  </facsimile><text xml:id="L_08-02-049-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch49" n="49"><pb type="VIII_2" n="421"/><head>49.
+  </facsimile>
+  <text xml:id="L_08-02-049-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch49" n="49">
+        <pb type="VIII_2" n="421"/>
+        <head>49.
 DE MOTUS LINEA POST CONCURSUM</head>
-<head>[Sommer 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi>
-<listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung: LH XXXVII 4 Bl. 34. Papierstreifen (23 x 6 cm), unregelmäßig beschnitten. 8 Z. auf Bl. 34 r<hi rendition="#sup">o</hi> und 1 Z. auf Bl. 34 v<hi rendition="#sup">o</hi>. Ein Wasserzeichen.</p><p>Cc 2, Nr. 482</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents">
-          <p><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Das Wasserzeichen im Textträger des vorliegenden Stücks ist für den Sommer 1673 nachgewiesen.</hi></p>
-        </div><div type="text"><p xml:id="Ch49.p3" rendition="#noindent"><pb type="L"/><fw type="folNum">[34 r<hi rendition="#sup">o</hi>]</fw> Experimentum notabile quo definiri possit, omniane in curvis peragantur per tangentes. Supponamus corpus aliquod linea quadam curva ferri, ut parabolica <hi rendition="#i">ab</hi> aliudque in linea recta ei concurrere, quaeritur post momentum concursus<index indexName="Sachverzeichnis"><term>momentum concursus</term></index>, quaenam futura sit linea motus. Ducatur tangens <hi rendition="#i">bd</hi> crediderit aliquis, cum directio curvae, in puncto <hi rendition="#i">b</hi> sit in tangente <hi rendition="#i">db</hi> aliaque accedat directio in recta <hi rendition="#i">cb</hi> motum esse compositum ex his duabus directionibus. Sed hoc falsum est. Idem enim eveniret, si id verum esset, ac<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Links am Rand</hi>: Imo non est absurdum.</note> si corpus <hi rendition="#i">a</hi> in linea recta <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<hi rendition="#i">db</hi>]</corr></lem><rdg wit="#L"><orig><hi rendition="#i">bc</hi> </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> moveretur, quod est absurdum. Igitur sic potius cogitandum est, motum esse compositum <app type="Bfootnote"><lem type="main">ex</lem><note type="lemma-abbrev">compositum</note><rdg wit="#L" n="1"> in </rdg><rdg wit="#L" n="2"> ex <hi rendition="#i">L</hi></rdg></app> curvilineo illo et rectilineo, <app type="Bfootnote"><lem type="main">aut potius</lem><note type="lemma-abbrev">rectilineo,</note><rdg wit="#L" n="1"> quasi s </rdg><rdg wit="#L" n="2"> aut potius <hi rendition="#i">L</hi></rdg></app> ex tribus illis (pluribusve) directionibus, duabus nimirum (pluribusve) curvam constituentibus <pb type="L"/><fw type="folNum">[34 v<hi rendition="#sup">o</hi>]</fw> et nova rectilinea accedente unde novum curvae genus vel forte prioris curvae nova species.</p><figure rendition="#own-line_centered" xml:id="Ch49.p4">
-        <graphic rendition="#c" url="./images/lh374_34rkonvertiert.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="156.1032pt" xml:id="Ch49.p4.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
-      </figure></div></div></body>
-  </text>
+        <head>[Sommer 1673]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung: LH XXXVII 4 Bl. 34. Papierstreifen (23 x 6 cm), unregelmäßig beschnitten. 8 Z. auf Bl. 34 r<hi rendition="#sup">o</hi> und 1 Z. auf Bl. 34 v<hi rendition="#sup">o</hi>. Ein Wasserzeichen.</p>
+                      <p>Cc 2, Nr. 482</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p>
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi> Das Wasserzeichen im Textträger des vorliegenden Stücks ist für den Sommer 1673 nachgewiesen.</hi>
+          </p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch49.p3" rendition="#noindent">
+            <pb type="L"/>
+            <fw type="folNum">[34 r<hi rendition="#sup">o</hi>]
+            </fw> Experimentum notabile quo definiri possit, omniane in curvis peragantur per tangentes. Supponamus corpus aliquod linea quadam curva ferri, ut parabolica <hi rendition="#i">ab</hi> aliudque in linea recta ei concurrere, quaeritur post momentum concursus<index indexName="Sachverzeichnis">
+            <term>momentum concursus</term>
+          </index>, quaenam futura sit linea motus. Ducatur tangens <hi rendition="#i">bd</hi> crediderit aliquis, cum directio curvae, in puncto <hi rendition="#i">b</hi> sit in tangente <hi rendition="#i">db</hi> aliaque accedat directio in recta <hi rendition="#i">cb</hi> motum esse compositum ex his duabus directionibus. Sed hoc falsum est. Idem enim eveniret, si id verum esset, ac<note type="Afootnote" place="margin" resp="#L">
+          <hi rendition="#i">Links am Rand</hi>: Imo non est absurdum.</note> si corpus <hi rendition="#i">a</hi> in linea recta <app type="Bfootnote">        <!--is-correction-app-with-lemma-->
+        <lem type="main">
+          <corr resp="#ed">[            <hi rendition="#i">db</hi>]
+          </corr>
+        </lem>
+        <rdg wit="#L">
+          <orig>
+            <hi rendition="#i">bc</hi>
+          </orig>
+          <note type="editorial">
+            <hi rendition="#i">L ändert Hrsg.</hi>
+          </note>
+        </rdg>
+      </app> moveretur, quod est absurdum. Igitur sic potius cogitandum est, motum esse compositum <app type="Bfootnote">
+      <lem type="main">ex</lem>
+      <note type="lemma-abbrev">compositum</note>
+      <rdg wit="#L" n="1"> in </rdg>
+      <rdg wit="#L" n="2"> ex <hi rendition="#i">L</hi>
+      </rdg>
+    </app> curvilineo illo et rectilineo, <app type="Bfootnote">
+    <lem type="main">aut potius</lem>
+    <note type="lemma-abbrev">rectilineo,</note>
+    <rdg wit="#L" n="1"> quasi s </rdg>
+    <rdg wit="#L" n="2"> aut potius <hi rendition="#i">L</hi>
+    </rdg>
+  </app> ex tribus illis (pluribusve) directionibus, duabus nimirum (pluribusve) curvam constituentibus <pb type="L"/>
+<fw type="folNum">[34 v<hi rendition="#sup">o</hi>]
+</fw> et nova rectilinea accedente unde novum curvae genus vel forte prioris curvae nova species.</p>
+<figure rendition="#own-line_centered" xml:id="Ch49.p4">
+<graphic rendition="#c" url="./images/lh374_34rkonvertiert.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="156.1032pt" xml:id="Ch49.p4.g1"/>
+
+<head rendition="#c">[  <hi rendition="#i">Fig. 1</hi>]
+</head>
+</figure>
+</div>
+</div>
+</body>
+</text>
 </TEI>

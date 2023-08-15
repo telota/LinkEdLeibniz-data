@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-089-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-089-000">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -7,32 +8,56 @@
         <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
           Text</title>
         <respStmt>
-          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Digitale Konzeption und
-            Projektbegleitung</note></resp>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
         </respStmt>
         <respStmt>
-          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-            Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
-          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-            VIII</note></resp>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-            Berlin</note></resp>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
         </respStmt>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
         <date type="creation">2021</date>
         <availability>
-          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -50,7 +75,10 @@
             <date calendar="#gregorian" notBefore="1672-12" resp="#ed" cert="medium">[Ende 1672 – Anfang
               1673]</date>
             <date calendar="#gregorian" notAfter="1673-01" resp="#ed" cert="medium"/>
-            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=773</idno></idno>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=773</idno>
+            </idno>
           </analytic>
           <monogr>
             <title type="main" level="s" n="8">Reihe VIII:
@@ -63,18 +91,24 @@
             </imprint>
             <biblScope unit="page" from="725" to="727"/>
           </monogr>
-          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
         </biblStruct>
         <listWit>
-          <witness n="L" corresp="#L_08-02-089-000_facs-haupttextzeuge"><msDesc>
+          <witness n="L" corresp="#L_08-02-089-000_facs-haupttextzeuge">
+            <msDesc>
               <msIdentifier>
                 <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                 <idno type="Signatur">LH XXXV 11, 13 Bl. 9</idno>
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-                <summary><p>Konzept: LH XXXV 11, 13 Bl. 9. 1 Bl. 4<hi rendition="#sup">o</hi>. 1 1/2
-                    S.</p><p>Cc 2, Nr. 914</p></summary>
+                <summary>
+                  <p>Konzept: LH XXXV 11, 13 Bl. 9. 1 Bl. 4<hi rendition="#sup">o</hi>. 1 1/2
+                    S.</p>
+                  <p>Cc 2, Nr. 914</p>
+                </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -82,7 +116,8 @@
               <history>
                 <origin corresp="L_witness-origin-types.xml#origin-L"/>
               </history>
-            </msDesc></witness>
+            </msDesc>
+          </witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -753,106 +788,145 @@
           GEOMETRICA</head>
         <head>[Ende 1672 – Anfang 1673]</head>
         <div type="ueberlieferung">
-          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-              <witness><msDesc>
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
                   <msIdentifier>
                     <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                     <idno type="Signatur"/>
                   </msIdentifier>
                   <msContents>
-                    <summary><p>Konzept: LH XXXV 11, 13 Bl. 9. 1 Bl. 4<hi rendition="#sup">o</hi>.
+                    <summary>
+                      <p>Konzept: LH XXXV 11, 13 Bl. 9. 1 Bl. 4<hi rendition="#sup">o</hi>.
                           1 <formula xml:id="Ch89.p2.m1">
-                          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                            <m:mrow>
-                              <m:mn>1</m:mn>
-                              <m:mo>/</m:mo>
-                              <m:mn>2</m:mn>
-                            </m:mrow>
-                          </m:math>
-                        </formula> S.</p><p>Cc 2, Nr. 914</p></summary>
-                  </msContents>
-                  <physDesc>
-                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-                  </physDesc>
-                  <history>
-                    <origin/>
-                  </history>
-                </msDesc></witness>
-            </listWit></p>
-        </div>
-        <div type="contents">
-          <p xml:id="Ch89.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Die
+                        <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mo>/</m:mo>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:math>
+                      </formula> S.</p>
+                    <p>Cc 2, Nr. 914</p>
+                  </summary>
+                </msContents>
+                <physDesc>
+                  <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                </physDesc>
+                <history>
+                  <origin/>
+                </history>
+              </msDesc>
+            </witness>
+          </listWit>
+        </p>
+      </div>
+      <div type="contents">
+        <p xml:id="Ch89.p4">
+          <hi rendition="#smaller">
+            <hi rendition="#b">Datierungsgründe</hi>: Die
               für den Gang von Uhren bereits in N. 85 angeführte Elastizität wird hier in ihrer
               Wirkungsweise systematisch dargelegt und begrifflich definiert, was sich als
               fortgesetzte und vertiefende Auseinandersetzung deuten ließe, die im Anschluss an N.
-              85 etwas später erfolgt sein könnte.</hi></p>
-        </div>
-        <div type="text">
-          <p xml:id="Ch89.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[9 r<hi rendition="#sup">o</hi>]</fw></p>
-          <p xml:id="Ch89.p6" rendition="#c">De HOROLOGIO ABSOLUTO<lb/>sive De Motu aequabili pure
-            mechanico<lb/>demonstratio Geometrica:</p>
-          <p xml:id="Ch89.p7" rendition="#noindent">Axioma: <app type="Bfootnote">
-              <lem type="main">si idem sit agentium<index indexName="Sachverzeichnis">
-                  <term>agens</term>
-                </index> patientiumque<index indexName="Sachverzeichnis">
-                  <term>patiens</term>
-                </index> status; tempora<index indexName="Sachverzeichnis">
-                  <term>tempus</term>
-                </index> operationum eundem effectum<index indexName="Sachverzeichnis">
-                  <term>effectus</term>
-                </index> producentium, erunt aequalia.</lem>
-              <note type="lemma-abbrev">si</note>
-              <rdg wit="#L" n="1"> eaedem sint vires, eademque impedimenta<index indexName="Sachverzeichnis">
-                  <term>impedimentum</term>
-                </index>
-              </rdg>
-              <rdg wit="#L" n="2"> idem <seg type="apparat-ellipsis"/> status; <app>
-                  <rdg wit="#L" n="a">effectus aequali tempore sequetur </rdg>
-                  <rdg wit="#L" n="b">tempora <seg type="apparat-ellipsis"/> aequalia. <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app></p>
-          <p xml:id="Ch89.p8">Corollarium est hoc, axiomatis generalissimi, quod ejusdem positionis
+              85 etwas später erfolgt sein könnte.</hi>
+        </p>
+      </div>
+      <div type="text">
+        <p xml:id="Ch89.p5" rendition="#noindent">
+          <pb type="L"/>
+          <fw type="folNum">[9 r<hi rendition="#sup">o</hi>]
+          </fw>
+        </p>
+        <p xml:id="Ch89.p6" rendition="#c">De HOROLOGIO ABSOLUTO<lb/>
+sive De Motu aequabili pure
+            mechanico<lb/>
+demonstratio Geometrica:</p>
+      <p xml:id="Ch89.p7" rendition="#noindent">Axioma: <app type="Bfootnote">
+        <lem type="main">si idem sit agentium<index indexName="Sachverzeichnis">
+          <term>agens</term>
+        </index> patientiumque<index indexName="Sachverzeichnis">
+        <term>patiens</term>
+      </index> status; tempora<index indexName="Sachverzeichnis">
+      <term>tempus</term>
+    </index> operationum eundem effectum<index indexName="Sachverzeichnis">
+    <term>effectus</term>
+  </index> producentium, erunt aequalia.</lem>
+<note type="lemma-abbrev">si</note>
+<rdg wit="#L" n="1"> eaedem sint vires, eademque impedimenta<index indexName="Sachverzeichnis">
+  <term>impedimentum</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> idem <seg type="apparat-ellipsis"/>
+ status; <app>
+<rdg wit="#L" n="a">effectus aequali tempore sequetur </rdg>
+<rdg wit="#L" n="b">tempora <seg type="apparat-ellipsis"/>
+ aequalia. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch89.p8">Corollarium est hoc, axiomatis generalissimi, quod ejusdem positionis
             eaedem sunt consequentiae; unde ejusdem causae, caeteris paribus iidem effectus: et
             corpus <app type="Bfootnote">
-              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">idem situm eodem
-                  modo</add></lem>
-              <note type="lemma-abbrev">idem <seg type="apparat-ellipsis"/> modo</note>
-              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
-            </app> ex eadem altitudine per idem medium eodem tempore sua gravitate<index indexName="Sachverzeichnis">
-              <term>gravitas</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">libere</add></lem>
-              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
-            </app> descendet; et Elaterium<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">idem eodem</lem>
-              <note type="lemma-abbrev">idem</note>
-              <rdg wit="#L" n="1"> ad </rdg>
-              <rdg wit="#L" n="2"> eodem <hi rendition="#i">L</hi></rdg>
-            </app> semper modo <app type="Bfootnote">
-              <lem type="main">tensum, atque mox sibi permissum eodem tempore inde a momento
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">idem situm eodem
+                  modo</add>
+</lem>
+<note type="lemma-abbrev">idem <seg type="apparat-ellipsis"/>
+ modo</note>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> ex eadem altitudine per idem medium eodem tempore sua gravitate<index indexName="Sachverzeichnis">
+<term>gravitas</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">libere</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> descendet; et Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">idem eodem</lem>
+<note type="lemma-abbrev">idem</note>
+<rdg wit="#L" n="1"> ad </rdg>
+<rdg wit="#L" n="2"> eodem <hi rendition="#i">L</hi>
+</rdg>
+</app> semper modo <app type="Bfootnote">
+<lem type="main">tensum, atque mox sibi permissum eodem tempore inde a momento
                 recuperati sui juris ad eundem perveniet statum libertatis.</lem>
-              <note type="lemma-abbrev">tensum,</note>
-              <rdg wit="#L" n="1"> eodem tempore se liberabit </rdg>
-              <rdg wit="#L" n="2"> atque <app>
-                  <rdg wit="#L" n="a">dimissum </rdg>
-                  <rdg wit="#L" n="b">mox libertat </rdg>
-                  <rdg wit="#L" n="c">inde </rdg>
-                  <rdg wit="#L" n="d">mox <seg type="apparat-ellipsis"/> tempore <app>
-                      <rdg wit="#L" n="aa">ad eundem perveniet statum libertatis. </rdg>
-                      <rdg wit="#L" n="bb">inde <seg type="apparat-ellipsis"/> libertatis. <hi rendition="#i">L</hi></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app></p>
-          <p xml:id="Ch89.p9"><hi rendition="#g">Elaterium</hi>
-            <index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index>voco corpus quod figuram vi amissam vi cessante repetit; quam <hi rendition="#g">figuram</hi> voco<app type="Bfootnote">
-              <lem type="main">
-                <hi rendition="#g">naturalem.</hi><!--  \hack{
+<note type="lemma-abbrev">tensum,</note>
+<rdg wit="#L" n="1"> eodem tempore se liberabit </rdg>
+<rdg wit="#L" n="2"> atque <app>
+<rdg wit="#L" n="a">dimissum </rdg>
+<rdg wit="#L" n="b">mox libertat </rdg>
+<rdg wit="#L" n="c">inde </rdg>
+<rdg wit="#L" n="d">mox <seg type="apparat-ellipsis"/>
+ tempore <app>
+<rdg wit="#L" n="aa">ad eundem perveniet statum libertatis. </rdg>
+<rdg wit="#L" n="bb">inde <seg type="apparat-ellipsis"/>
+ libertatis. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch89.p9">
+<hi rendition="#g">Elaterium</hi>
+<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>voco corpus quod figuram vi amissam vi cessante repetit; quam <hi rendition="#g">figuram</hi> voco<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">naturalem.</hi><!--  \hack{
 \newline\indent\textso{Tensio }est actio causae figuram corporis Elaterio praediti naturalem mutantis.
 \newline\indent\textso{Displosio }est actio elaterii figuram naturalem repetentis.
 \newline\indent\textso{Liberatio }est ablatio impedimenti displosionis.
@@ -861,36 +935,58 @@
 ita adhibitis\textso{ detentaculis }disposita,
 ut primo \textit{A} liberato et ad certum displosionis statum perveniente, liberetur secundum \textit{B},
 et secundo \textit{B} liberato et ad certum displosionis statum perveniente,} --></lem>
-              <note type="lemma-abbrev"><hi rendition="#g">naturalem.</hi></note>
-              <rdg wit="#L" n="1"> Si sint <app>
-                  <rdg wit="#L" n="a">aliquot elateria <hi rendition="#i">A</hi>. <hi rendition="#i">B</hi>. <hi rendition="#i">C</hi>. etc. ita disposita, <app>
-                      <rdg wit="#L" n="aa">ut ipse <hi rendition="#i">A</hi>
-                      </rdg>
-                      <rdg wit="#L" n="bb">atque tensa </rdg>
-                    </app></rdg>
-                  <rdg wit="#L" n="b">quotcunque elateria tensa </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> <hi rendition="#g">Tensio</hi>
-                <app>
-                  <rdg wit="#L" n="a">est motus partium corporis Elaterio praediti, quo per vim a
+<note type="lemma-abbrev">
+<hi rendition="#g">naturalem.</hi>
+</note>
+<rdg wit="#L" n="1"> Si sint <app>
+<rdg wit="#L" n="a">aliquot elateria <hi rendition="#i">A</hi>.<hi rendition="#i">B</hi>.<hi rendition="#i">C</hi>. etc. ita disposita, <app>
+<rdg wit="#L" n="aa">ut ipse <hi rendition="#i">A</hi>
+</rdg>
+<rdg wit="#L" n="bb">atque tensa </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="b">quotcunque elateria tensa </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">Tensio</hi>
+<app>
+<rdg wit="#L" n="a">est motus partium corporis Elaterio praediti, quo per vim a
                     figura sua demovetur </rdg>
-                  <rdg wit="#L" n="b">est motus quo corpus elaterio praeditum mutat </rdg>
-                  <rdg wit="#L" n="c" cause="addition">est actio <seg type="apparat-ellipsis"/>
-                    displosionis.  <note type="editorial">|</note> <add><hi rendition="#g">Detentacula</hi>
-                      <seg type="apparat-ellipsis"/> Gallis.</add>
-                    <note type="editorial"><hi rendition="#i">erg.</hi> |</note> Si sint quotcunque
-                    Elateria, <note type="editorial">|</note> <add>tensa</add>
-                    <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <hi rendition="#i">A</hi>. <hi rendition="#i">B</hi>. <hi rendition="#i">C</hi>. etc. ita <note type="editorial">|</note> <add>adhibitis <hi rendition="#g">detentaculis</hi>
-                    </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> disposita, ut <app>
-                      <rdg wit="#L" n="aa">sub finem displosionis primi <hi rendition="#i">A</hi>,
+<rdg wit="#L" n="b">est motus quo corpus elaterio praeditum mutat </rdg>
+<rdg wit="#L" n="c" cause="addition">est actio <seg type="apparat-ellipsis"/>
+                    displosionis.  <note type="editorial">|</note>
+<add>
+<hi rendition="#g">Detentacula</hi>
+<seg type="apparat-ellipsis"/>
+ Gallis.</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> Si sint quotcunque
+                    Elateria, <note type="editorial">|</note>
+<add>tensa</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<hi rendition="#i">A</hi>.<hi rendition="#i">B</hi>.<hi rendition="#i">C</hi>. etc. ita <note type="editorial">|</note>
+<add>adhibitis <hi rendition="#g">detentaculis</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> disposita, ut <app>
+<rdg wit="#L" n="aa">sub finem displosionis primi <hi rendition="#i">A</hi>,
                         liberetur secundum <hi rendition="#i">B</hi>, et sub finem displosionis
                         secundi <hi rendition="#i">B</hi>
-                      </rdg>
-                      <rdg wit="#L" n="bb">primo <hi rendition="#i">A</hi>
-                        <seg type="apparat-ellipsis"/> perveniente <hi rendition="#i">L</hi></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app><!--  \hackfor{\par\textso{Tensio }est actio causae figuram corporis Elaterio praediti naturalem mutantis.
+</rdg>
+<rdg wit="#L" n="bb">primo <hi rendition="#i">A</hi>
+<seg type="apparat-ellipsis"/>
+ perveniente <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app><!--  \hackfor{\par\textso{Tensio }est actio causae figuram corporis Elaterio praediti naturalem mutantis.
 \par\textso{Displosio }est actio elaterii figuram naturalem repetentis.
 \par\textso{Liberatio }est ablatio impedimenti displosionis.
 \par\textso{Detentacula }sunt machinamenta ad elateria detinenda atque detendenda, sive liberanda, apta.\textso{ Detentes }Gallis.
@@ -898,241 +994,326 @@ et secundo \textit{B} liberato et ad certum displosionis statum perveniente,} --
 ita adhibitis\textso{ detentaculis }disposita,
 ut primo \textit{A} liberato et ad certum displosionis statum perveniente, liberetur secundum \textit{B},
 et secundo \textit{B} liberato et ad certum displosionis statum perveniente,} --></p>
-          <pb type="VIII_2" n="726"/>
-          <p xml:id="Ch89.p10"><hi rendition="#g">Tensio</hi> est actio causae figuram corporis
+<pb type="VIII_2" n="726"/>
+<p xml:id="Ch89.p10">
+<hi rendition="#g">Tensio</hi> est actio causae figuram corporis
             Elaterio praediti naturalem mutantis.</p>
-          <p xml:id="Ch89.p11"><hi rendition="#g">Displosio</hi> est actio elaterii figuram
+<p xml:id="Ch89.p11">
+<hi rendition="#g">Displosio</hi> est actio elaterii figuram
             naturalem repetentis.</p>
-          <p xml:id="Ch89.p12"><hi rendition="#g">Liberatio</hi> est ablatio impedimenti
+<p xml:id="Ch89.p12">
+<hi rendition="#g">Liberatio</hi> est ablatio impedimenti
             displosionis.</p>
-          <p xml:id="Ch89.p13"><hi rendition="#g">Detentacula</hi> sunt machinamenta ad elateria
+<p xml:id="Ch89.p13">
+<hi rendition="#g">Detentacula</hi> sunt machinamenta ad elateria
             detinenda atque detendenda, sive liberanda, apta. <hi rendition="#g">Detentes</hi>
             Gallis.</p>
-          <p xml:id="Ch89.p14">Si sint quotcunque Elateria, tensa <hi rendition="#i">A</hi>. <hi rendition="#i">B</hi>. <hi rendition="#i">C</hi>. etc. ita adhibitis <hi rendition="#g">detentaculis</hi> disposita, ut primo <hi rendition="#i">A</hi>
+<p xml:id="Ch89.p14">Si sint quotcunque Elateria, tensa <hi rendition="#i">A</hi>.<hi rendition="#i">B</hi>.<hi rendition="#i">C</hi>. etc. ita adhibitis <hi rendition="#g">detentaculis</hi> disposita, ut primo <hi rendition="#i">A</hi>
             liberato et ad certum displosionis statum perveniente, liberetur secundum <hi rendition="#i">B</hi>, et secundo <hi rendition="#i">B</hi> liberato et ad certum
             displosionis statum perveniente, liberetur tertium <hi rendition="#i">C</hi>, etc. <app type="Bfootnote">
-              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">et ita
-                pergatur</add></lem>
-              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
-            </app> usque dum ultimum <app type="Bfootnote">
-              <lem type="main">quoque faciat</lem>
-              <note type="lemma-abbrev">ultimum</note>
-              <rdg wit="#L" n="1"> absolvat </rdg>
-              <rdg wit="#L" n="2"> quoque faciat <hi rendition="#i">L</hi></rdg>
-            </app> displosionem <app type="Bfootnote">
-              <lem type="main">suam; rursusque ultimo ad certum displosionis statum perveniente,
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">et ita
+                pergatur</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> usque dum ultimum <app type="Bfootnote">
+<lem type="main">quoque faciat</lem>
+<note type="lemma-abbrev">ultimum</note>
+<rdg wit="#L" n="1"> absolvat </rdg>
+<rdg wit="#L" n="2"> quoque faciat <hi rendition="#i">L</hi>
+</rdg>
+</app> displosionem <app type="Bfootnote">
+<lem type="main">suam; rursusque ultimo ad certum displosionis statum perveniente,
                 liberetur denuo primum <hi rendition="#i">A</hi>, tempus ab</lem>
-              <note type="lemma-abbrev">suam;</note>
-              <rdg wit="#L" n="1"> tempus a </rdg>
-              <rdg wit="#L" n="2"> eodemque momento quo ultimum absolvit displosionem suam, </rdg>
-              <rdg wit="#L" n="3"> rursusque <app>
-                  <rdg wit="#L" n="a">sub finem displosionis ultimi, liberetur iterum primum <hi rendition="#i">A</hi>, (quod interea jam rursus tensum fuisse, et displosionem
+<note type="lemma-abbrev">suam;</note>
+<rdg wit="#L" n="1"> tempus a </rdg>
+<rdg wit="#L" n="2"> eodemque momento quo ultimum absolvit displosionem suam, </rdg>
+<rdg wit="#L" n="3"> rursusque <app>
+<rdg wit="#L" n="a">sub finem displosionis ultimi, liberetur iterum primum <hi rendition="#i">A</hi>, (quod interea jam rursus tensum fuisse, et displosionem
                     ultimi in eo statu expectare, supponitur.) </rdg>
-                  <rdg wit="#L" n="b">ultimo <seg type="apparat-ellipsis"/> tempus ab <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app> uno momento liberationis Elaterii<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index>
-            <hi rendition="#i">A</hi>, <app type="Bfootnote">
-              <lem type="main">ad momentum liberationis alterius</lem>
-              <note type="lemma-abbrev">ad</note>
-              <rdg wit="#L" n="1"> aliud </rdg>
-              <rdg wit="#L" n="2"> momentum liberationis alterius <hi rendition="#i">L</hi></rdg>
-            </app> proximae sequentis, ejusdem Elaterii<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index>
-            <hi rendition="#i">A</hi>, vocabo <hi rendition="#g">Periodum</hi>
-            <app type="Bfootnote">
-              <lem type="main"><hi rendition="#g">Elateriorum.</hi><!--  \hack{
+<rdg wit="#L" n="b">ultimo <seg type="apparat-ellipsis"/>
+ tempus ab <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> uno momento liberationis Elaterii<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>
+<hi rendition="#i">A</hi>,<app type="Bfootnote">
+<lem type="main">ad momentum liberationis alterius</lem>
+<note type="lemma-abbrev">ad</note>
+<rdg wit="#L" n="1"> aliud </rdg>
+<rdg wit="#L" n="2"> momentum liberationis alterius <hi rendition="#i">L</hi>
+</rdg>
+</app> proximae sequentis, ejusdem Elaterii<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>
+<hi rendition="#i">A</hi>, vocabo <hi rendition="#g">Periodum</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">Elateriorum.</hi><!--  \hack{
 \newline\indentSi duae sint Periodi Elateriorum eademque sint Elateria ac detentacula eodem modo sita,
 eademque cuilibet Elaterio, quae ante, vis, gradusque tensionis, erunt eae duae periodi inter se aequidiuturnae,} --></lem>
-              <rdg wit="#L" n="1"> Si quodlibet ex Elateriis <app>
-                  <rdg wit="#L" n="a">eodem sem </rdg>
-                  <rdg wit="#L" n="b">ad eundem semper <hi rendition="#g">tensionis statum</hi>
+<rdg wit="#L" n="1"> Si quodlibet ex Elateriis <app>
+<rdg wit="#L" n="a">eodem sem </rdg>
+<rdg wit="#L" n="b">ad eundem semper <hi rendition="#g">tensionis statum</hi>
                     redactum intelligatur, itemque a praecedente ad eundem <app>
-                      <rdg wit="#L" n="aa">tensionis </rdg>
-                      <rdg wit="#L" n="bb" cause="addition">semper displosionis statum perveniente
-                        liberetur; <note type="editorial">|</note> <add>neque quicquam extrinsecus
+<rdg wit="#L" n="aa">tensionis </rdg>
+<rdg wit="#L" n="bb" cause="addition">semper displosionis statum perveniente
+                        liberetur; <note type="editorial">|</note>
+<add>neque quicquam extrinsecus
                           variationem inducere intelligatur</add>
-                        <note type="editorial"><hi rendition="#i">erg.</hi> |</note> Periodi
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> Periodi
                         Elateriorum erunt aequidiuturnae. Nam <app>
-                          <rdg wit="#L" n="aaa">ad eu </rdg>
-                          <rdg wit="#L" n="bbb">eadem sunt </rdg>
-                          <rdg wit="#L" n="ccc">agentia patientiaque, elateria scilicet numero <app>
-                              <rdg wit="#L" n="aaaa">situque eo </rdg>
-                              <rdg wit="#L" n="bbbb" cause="addition">magnitudine materia, figura
-                                situ; denique ut verbo <note type="editorial">|</note> <add>scholarum</add>
-                                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> dicam,
+<rdg wit="#L" n="aaa">ad eu </rdg>
+<rdg wit="#L" n="bbb">eadem sunt </rdg>
+<rdg wit="#L" n="ccc">agentia patientiaque, elateria scilicet numero <app>
+<rdg wit="#L" n="aaaa">situque eo </rdg>
+<rdg wit="#L" n="bbbb" cause="addition">magnitudine materia, figura
+                                situ; denique ut verbo <note type="editorial">|</note>
+<add>scholarum</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> dicam,
                                 ipso individuo, eadem sunt. <app>
-                                  <rdg wit="#L" n="aaaaa">Vi </rdg>
-                                  <rdg wit="#L" n="bbbbb">Status quoque agentium semper idem, quia
+<rdg wit="#L" n="aaaaa">Vi </rdg>
+<rdg wit="#L" n="bbbbb">Status quoque agentium semper idem, quia
                                     eodem semper modo sunt tensa, ad idem scilicet ut ita dicam,
                                     punctum, ac tensionis gradum. Patientium quoque eadem plane
                                     dispositio, quoniam ad eundem sem </rdg>
-                                </app></rdg>
-                            </app></rdg>
-                        </app></rdg>
-                    </app></rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> Si duae sint Periodi Elateriorum <app>
-                  <rdg wit="#L" n="a">inter se </rdg>
-                  <rdg wit="#L" n="b">simillimae, neque quicquam extrinsecus </rdg>
-                  <rdg wit="#L" n="c">per omnia similes, neque quicquam extrinsecus variationem
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> Si duae sint Periodi Elateriorum <app>
+<rdg wit="#L" n="a">inter se </rdg>
+<rdg wit="#L" n="b">simillimae, neque quicquam extrinsecus </rdg>
+<rdg wit="#L" n="c">per omnia similes, neque quicquam extrinsecus variationem
                     inducere ponatur, erunt tempora periodorum aequidiuturna </rdg>
-                  <rdg wit="#L" n="d" cause="addition">eademque sint Elateria <note type="editorial">|</note> <add>ac detentacula</add>
-                    <note type="editorial"><hi rendition="#i">erg.</hi> |</note> eodem modo sita, <app>
-                      <rdg wit="#L" n="aa">idemque cujuslibet Elaterii, qui ante, </rdg>
-                      <rdg wit="#L" n="bb">eademque <seg type="apparat-ellipsis"/> aequidiuturnae,
-                          <hi rendition="#i">L</hi></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app><!--  \hackfor{\parSi duae sint Periodi Elateriorum eademque sint Elateria ac detentacula eodem modo sita,
+<rdg wit="#L" n="d" cause="addition">eademque sint Elateria <note type="editorial">|</note>
+<add>ac detentacula</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> eodem modo sita, <app>
+<rdg wit="#L" n="aa">idemque cujuslibet Elaterii, qui ante, </rdg>
+<rdg wit="#L" n="bb">eademque <seg type="apparat-ellipsis"/>
+ aequidiuturnae,
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app><!--  \hackfor{\parSi duae sint Periodi Elateriorum eademque sint Elateria ac detentacula eodem modo sita,
 eademque cuilibet Elaterio, quae ante, vis, gradusque tensionis, erunt eae duae periodi inter se aequidiuturnae,} --></p>
-          <p xml:id="Ch89.p15">Si duae sint Periodi Elateriorum eademque sint Elateria ac
+<p xml:id="Ch89.p15">Si duae sint Periodi Elateriorum eademque sint Elateria ac
             detentacula eodem modo sita, eademque cuilibet Elaterio, quae ante, vis, gradusque
             tensionis, erunt eae duae periodi inter se aequidiuturnae, modo nihil extrinsecus
             superveniens varietatem inducere ponatur.</p>
-          <p xml:id="Ch89.p16">Hoc enim posito sequetur, duas illas periodos esse per omnia similes,
+<p xml:id="Ch89.p16">Hoc enim posito sequetur, duas illas periodos esse per omnia similes,
             sive eundem utrobique agentium patientiumque statum esse, nam per definitionem <hi rendition="#g">periodi Elateriorum,<index indexName="Sachverzeichnis">
-                <term>elaterium</term>
-              </index></hi> nulla alia in ipsis agentia atque patientia sunt quam <app type="Bfootnote">
-              <lem type="main">Elateria ac <hi rendition="#g">detentacula.</hi></lem>
-              <note type="lemma-abbrev">Elateria</note>
-              <rdg wit="#L" n="1"> et idem Elaterium quod praecedenti est agens, sequenti est
+<term>elaterium</term>
+</index>
+</hi> nulla alia in ipsis agentia atque patientia sunt quam <app type="Bfootnote">
+<lem type="main">Elateria ac <hi rendition="#g">detentacula.</hi>
+</lem>
+<note type="lemma-abbrev">Elateria</note>
+<rdg wit="#L" n="1"> et idem Elaterium quod praecedenti est agens, sequenti est
                 patiens, idem autem qui ante est Elateriorum et instrumenta </rdg>
-              <rdg wit="#L" n="2"> ac <hi rendition="#g">detentacula.</hi>
-                <hi rendition="#i">L</hi></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main">Porro detentacula eadem</lem>
-              <note type="lemma-abbrev">Porro</note>
-              <rdg wit="#L" n="1"> in Elateriis nihil nisi numerus, et magnitudo, et ma </rdg>
-              <rdg wit="#L" n="2"> Elateria et </rdg>
-              <rdg wit="#L" n="3"> detentacula. <app>
-                  <rdg wit="#L" n="a">et numero (b) eadem <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app> ipsa sunt quae ante, eodemque modo sita: neque <pb type="VIII_2" n="727"/>alia in
+<rdg wit="#L" n="2"> ac <hi rendition="#g">detentacula.</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">Porro detentacula eadem</lem>
+<note type="lemma-abbrev">Porro</note>
+<rdg wit="#L" n="1"> in Elateriis nihil nisi numerus, et magnitudo, et ma </rdg>
+<rdg wit="#L" n="2"> Elateria et </rdg>
+<rdg wit="#L" n="3"> detentacula. <app>
+<rdg wit="#L" n="a">et numero (b) eadem <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> ipsa sunt quae ante, eodemque modo sita: neque <pb type="VIII_2" n="727"/>
+alia in
             Detentaculis quae rigida intelliguntur, <app type="Bfootnote">
-              <lem type="main">varietas potest concipi.</lem>
-              <note type="lemma-abbrev">varietas</note>
-              <rdg wit="#L" n="1"> intelligi </rdg>
-              <rdg wit="#L" n="2"> potest concipi. <hi rendition="#i">L</hi></rdg>
-            </app> Elateria<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> vero non tantum <pb type="L"/><fw type="folNum">[9 v<hi rendition="#sup">o</hi>]</fw> eadem ipsa sunt, eodemque modo sita; <app type="Bfootnote">
-              <lem type="main">sed et eandem restituendi sese vim, et flexionis sive tensionis
+<lem type="main">varietas potest concipi.</lem>
+<note type="lemma-abbrev">varietas</note>
+<rdg wit="#L" n="1"> intelligi </rdg>
+<rdg wit="#L" n="2"> potest concipi. <hi rendition="#i">L</hi>
+</rdg>
+</app> Elateria<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> vero non tantum <pb type="L"/>
+<fw type="folNum">[9 v<hi rendition="#sup">o</hi>]
+</fw> eadem ipsa sunt, eodemque modo sita; <app type="Bfootnote">
+<lem type="main">sed et eandem restituendi sese vim, et flexionis sive tensionis
                 gradum</lem>
-              <note type="lemma-abbrev">sed et</note>
-              <rdg wit="#L" n="1"> eundem flexionis sive tensionis gradum </rdg>
-              <rdg wit="#L" n="2"> eandem <seg type="apparat-ellipsis"/> gradum <hi rendition="#i">L</hi></rdg>
-            </app> habere intelliguntur: neque aliud quicquam in <app type="Bfootnote">
-              <lem type="main">illis fingi potest per Elaterii definitionem. Neque varietas ulla
+<note type="lemma-abbrev">sed et</note>
+<rdg wit="#L" n="1"> eundem flexionis sive tensionis gradum </rdg>
+<rdg wit="#L" n="2"> eandem <seg type="apparat-ellipsis"/>
+ gradum <hi rendition="#i">L</hi>
+</rdg>
+</app> habere intelliguntur: neque aliud quicquam in <app type="Bfootnote">
+<lem type="main">illis fingi potest per Elaterii definitionem. Neque varietas ulla
                 praeterea extrinsecus accedit; ex hypothesi erunt ergo paria omnia, idemque agentium
                 patientiumque status,</lem>
-              <note type="lemma-abbrev">illis</note>
-              <rdg wit="#L" n="1"> intelligi </rdg>
-              <rdg wit="#L" n="2"> fingi potest <app>
-                  <rdg wit="#L" n="a">. Cum ergo idem sit </rdg>
-                  <rdg wit="#L" n="b">per Elaterii definitionem. <app>
-                      <rdg wit="#L" n="aa">Eadem e </rdg>
-                      <rdg wit="#L" n="bb">Idem ergo erit, qui ante agentium patientiumque status;
+<note type="lemma-abbrev">illis</note>
+<rdg wit="#L" n="1"> intelligi </rdg>
+<rdg wit="#L" n="2"> fingi potest <app>
+<rdg wit="#L" n="a">. Cum ergo idem sit </rdg>
+<rdg wit="#L" n="b">per Elaterii definitionem. <app>
+<rdg wit="#L" n="aa">Eadem e </rdg>
+<rdg wit="#L" n="bb">Idem ergo erit, qui ante agentium patientiumque status;
                         neque ex hypothesi </rdg>
-                      <rdg wit="#L" n="cc">Neque ex hy </rdg>
-                      <rdg wit="#L" n="dd">Neque <seg type="apparat-ellipsis"/> accedit <app>
-                          <rdg wit="#L" n="aaa">; erunt ergo </rdg>
-                          <rdg wit="#L" n="bbb">; ex hypothesi <seg type="apparat-ellipsis"/>
-                            status, <hi rendition="#i">L</hi></rdg>
-                        </app></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app> ac proinde per <hi rendition="#g">axioma</hi> supradictum: tempora operationum
+<rdg wit="#L" n="cc">Neque ex hy </rdg>
+<rdg wit="#L" n="dd">Neque <seg type="apparat-ellipsis"/>
+ accedit <app>
+<rdg wit="#L" n="aaa">; erunt ergo </rdg>
+<rdg wit="#L" n="bbb">; ex hypothesi <seg type="apparat-ellipsis"/>
+                            status, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app> ac proinde per <hi rendition="#g">axioma</hi> supradictum: tempora operationum
             eadem, tempora <app type="Bfootnote">
-              <lem type="main">autem operationum, a primo ad ultimum</lem>
-              <note type="lemma-abbrev">autem operationum,</note>
-              <rdg wit="#L" n="1"> ab ultimo </rdg>
-              <rdg wit="#L" n="2"> a primo ad ultimum <hi rendition="#i">L</hi></rdg>
-            </app> usque in primum denuo agens, periodi sunt, erunt ergo periodi <app type="Bfootnote">
-              <lem type="main">Elateriorum
+<lem type="main">autem operationum, a primo ad ultimum</lem>
+<note type="lemma-abbrev">autem operationum,</note>
+<rdg wit="#L" n="1"> ab ultimo </rdg>
+<rdg wit="#L" n="2"> a primo ad ultimum <hi rendition="#i">L</hi>
+</rdg>
+</app> usque in primum denuo agens, periodi sunt, erunt ergo periodi <app type="Bfootnote">
+<lem type="main">Elateriorum
                 aequidiuturnae.<!--  \hack{\newline\indent\textso{Schol. }satis ex his patet, nihil referre an Elateriorum diversorum vires sint aequales inter se;
 neque enim ideo minus periodi omnium simul sumtorum erunt inter se aequales.
 Si Elateria in rotundum} --></lem>
-              <note type="lemma-abbrev">Elateriorum</note>
-              <rdg wit="#L" n="1"> eaedem </rdg>
-              <rdg wit="#L" n="2"> aequidiuturnae. <app>
-                  <rdg wit="#L" n="a">Si Elateria in rotundu </rdg>
-                  <rdg wit="#L" n="b">Satis ex his patet nih </rdg>
-                  <rdg wit="#L" n="c"><hi rendition="#g">Schol</hi>. <seg type="apparat-ellipsis"/>
+<note type="lemma-abbrev">Elateriorum</note>
+<rdg wit="#L" n="1"> eaedem </rdg>
+<rdg wit="#L" n="2"> aequidiuturnae. <app>
+<rdg wit="#L" n="a">Si Elateria in rotundu </rdg>
+<rdg wit="#L" n="b">Satis ex his patet nih </rdg>
+<rdg wit="#L" n="c">
+<hi rendition="#g">Schol</hi>.<seg type="apparat-ellipsis"/>
                     Elateriorum <app>
-                      <rdg wit="#L" n="aa">duorum </rdg>
-                      <rdg wit="#L" n="bb" cause="deletion">diversorum <seg type="apparat-ellipsis"/> Elateria <note type="editorial">|</note> <del>ita</del>
-                        <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> in rotundum
-                          <hi rendition="#i">L</hi></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app><!--  \hackfor{\par\textso{Schol. }satis ex his patet, nihil referre an Elateriorum diversorum vires sint aequales inter se;
+<rdg wit="#L" n="aa">duorum </rdg>
+<rdg wit="#L" n="bb" cause="deletion">diversorum <seg type="apparat-ellipsis"/>
+ Elateria <note type="editorial">|</note>
+<del>ita</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> in rotundum
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app><!--  \hackfor{\par\textso{Schol. }satis ex his patet, nihil referre an Elateriorum diversorum vires sint aequales inter se;
 neque enim ideo minus periodi omnium simul sumtorum erunt inter se aequales.
 Si Elateria in rotundum} --></p>
-          <p xml:id="Ch89.p17"><hi rendition="#g">Schol.</hi> satis ex his patet, nihil referre an
+<p xml:id="Ch89.p17">
+<hi rendition="#g">Schol.</hi> satis ex his patet, nihil referre an
             Elateriorum diversorum vires sint aequales inter se; neque enim ideo minus periodi
             omnium simul sumtorum erunt inter se aequales. Si Elateria in rotundum disposita sint ut
             ultimum ad primi viciniam redeat, ac proinde nihil referat quod ultimum quod primum
             habeatur; sitque vis quaedam separata, tantae celeritatis<index indexName="Sachverzeichnis">
-              <term>celeritas</term>
-            </index>, ut ejus ope quodlibet Elaterium<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">displosum</add></lem>
-              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
-            </app> ad priorem tensionis statum redigi intelligatur, <app type="Bfootnote">
-              <lem type="main">antequam absoluta periodo ordo displosionis ipsum denuo
+<term>celeritas</term>
+</index>, ut ejus ope quodlibet Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">displosum</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> ad priorem tensionis statum redigi intelligatur, <app type="Bfootnote">
+<lem type="main">antequam absoluta periodo ordo displosionis ipsum denuo
                 attingat;</lem>
-              <note type="lemma-abbrev">antequam</note>
-              <rdg wit="#L" n="1"> periodus </rdg>
-              <rdg wit="#L" n="2"> ad ipsum redeat </rdg>
-              <rdg wit="#L" n="3"> absoluta <seg type="apparat-ellipsis"/> attingat; <hi rendition="#i">L</hi></rdg>
-            </app> periodi <app type="Bfootnote">
-              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">uniformes</add></lem>
-              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
-            </app> sine interruptione continuabuntur, quamdiu ad omnia displosa re-tendenda
+<note type="lemma-abbrev">antequam</note>
+<rdg wit="#L" n="1"> periodus </rdg>
+<rdg wit="#L" n="2"> ad ipsum redeat </rdg>
+<rdg wit="#L" n="3"> absoluta <seg type="apparat-ellipsis"/>
+ attingat; <hi rendition="#i">L</hi>
+</rdg>
+</app> periodi <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">uniformes</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> sine interruptione continuabuntur, quamdiu ad omnia displosa re-tendenda
             sufficiet vis illa separata.</p>
-          <p xml:id="Ch89.p18">Nam vi illa separata hoc efficitur, ut <app type="Bfootnote">
-              <lem type="main">Elateria<index indexName="Sachverzeichnis">
-                  <term>elaterium</term>
-                </index> singula ad eum</lem>
-              <note type="lemma-abbrev">Elateria</note>
-              <rdg wit="#L" n="1"> omnia </rdg>
-              <rdg wit="#L" n="2"> singula <app>
-                  <rdg wit="#L" n="a">in eundem </rdg>
-                  <rdg wit="#L" n="b">ad eum <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app> quem ante tensionis statum redigantur, antequam <app type="Bfootnote">
-              <lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">ea</add></lem>
-              <note type="editorial"><hi rendition="#i">erg. L</hi></note>
-            </app> displosionis ordo rursus attingat; itaque idem, qui ante redibit semper agentium
+<p xml:id="Ch89.p18">Nam vi illa separata hoc efficitur, ut <app type="Bfootnote">
+<lem type="main">Elateria<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> singula ad eum</lem>
+<note type="lemma-abbrev">Elateria</note>
+<rdg wit="#L" n="1"> omnia </rdg>
+<rdg wit="#L" n="2"> singula <app>
+<rdg wit="#L" n="a">in eundem </rdg>
+<rdg wit="#L" n="b">ad eum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> quem ante tensionis statum redigantur, antequam <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">ea</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> displosionis ordo rursus attingat; itaque idem, qui ante redibit semper agentium
             patientiumque <app type="Bfootnote">
-              <lem type="main">status. Quae jam parata stabunt ad agendum patiendumve cum volabit
+<lem type="main">status. Quae jam parata stabunt ad agendum patiendumve cum volabit
                 ordo itaque semper ex ordine agent, semperque eodem modo agent.</lem>
-              <note type="lemma-abbrev">status</note>
-              <rdg wit="#L" n="1" cause="deletion"> , tunc scilicet cum agendi, ordo ea attigit
-                  <note type="editorial">|</note> <del><add>jam parata s</add></del>
-                <note type="editorial"><hi rendition="#i">erg. u. gestr.</hi> |</note> itaque semper <app>
-                  <rdg wit="#L" n="a">agent, semperque eodem modo agent </rdg>
-                  <rdg wit="#L" n="b">uniformes </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> . Quae <seg type="apparat-ellipsis"/> agent. <hi rendition="#i">L</hi></rdg>
-            </app> Periodi <app type="Bfootnote">
-              <lem type="main">ergo semper durabunt; et eodem modo durabunt, et sese sine
+<note type="lemma-abbrev">status</note>
+<rdg wit="#L" n="1" cause="deletion"> , tunc scilicet cum agendi, ordo ea attigit
+<note type="editorial">|</note>
+<del>
+<add>jam parata s</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u. gestr.</hi> |
+</note> itaque semper <app>
+<rdg wit="#L" n="a">agent, semperque eodem modo agent </rdg>
+<rdg wit="#L" n="b">uniformes </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> . Quae <seg type="apparat-ellipsis"/>
+ agent. <hi rendition="#i">L</hi>
+</rdg>
+</app> Periodi <app type="Bfootnote">
+<lem type="main">ergo semper durabunt; et eodem modo durabunt, et sese sine
                 interruptione consequentur.</lem>
-              <note type="lemma-abbrev">ergo</note>
-              <rdg wit="#L" n="1"> neque </rdg>
-              <rdg wit="#L" n="2"> nunquam interrumpentur; </rdg>
-              <rdg wit="#L" n="3"> sese sine ullo intervallo, </rdg>
-              <rdg wit="#L" n="4"> sine interruptione, sine intervallo excipient, </rdg>
-              <rdg wit="#L" n="5"> semper <seg type="apparat-ellipsis"/> consequentur. <hi rendition="#i">L</hi></rdg>
-            </app></p>
-        </div>
-      </div>
-    </body>
-  </text>
+<note type="lemma-abbrev">ergo</note>
+<rdg wit="#L" n="1"> neque </rdg>
+<rdg wit="#L" n="2"> nunquam interrumpentur; </rdg>
+<rdg wit="#L" n="3"> sese sine ullo intervallo, </rdg>
+<rdg wit="#L" n="4"> sine interruptione, sine intervallo excipient, </rdg>
+<rdg wit="#L" n="5"> semper <seg type="apparat-ellipsis"/>
+ consequentur. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-049-002">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-049-002">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -6,32 +7,57 @@
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke,
 					Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und
-							Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-						Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-							VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-							Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC
-						4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC
+						4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
@@ -48,7 +74,10 @@
 							essai</title>
 						<date calendar="#gregorian" notBefore="1673-03" resp="#ed" cert="medium"/>
 						<date calendar="#gregorian" notAfter="1673-05" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=507</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+							<idno type="page">#page=507</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII:
@@ -61,25 +90,32 @@
 						</imprint>
 						<biblScope unit="page" from="462" to="465"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche
-							Schriften und Briefe</title></series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche
+							Schriften und Briefe</title>
+					</series>
 					<relatedItem type="superordinated-chapter">
 						<ptr target="#L_08-01-049-000"/>
 					</relatedItem>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-01-049-002_facs-haupttextzeuge"><msDesc>
+					<witness n="L" corresp="#L_08-01-049-002_facs-haupttextzeuge">
+						<msDesc>
 							<msIdentifier>
 								<repository>Gottfried Wilhelm Leibniz Bibliothek
 									Hannover</repository>
 								<idno type="Signatur">LH XXXVII 3 Bl. 148–149</idno>
 							</msIdentifier>
 							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-								<summary><p>Konzept: LH XXXVII 3 Bl. 148–149. 1 Bog. 2<hi rendition="#sup">o</hi>. 2 1/2 S. zweispaltig. Bl. 149
+								<summary>
+									<p>Konzept: LH XXXVII 3 Bl. 148–149. 1 Bog. 2<hi rendition="#sup">o</hi>. 2 1/2 S. zweispaltig. Bl. 149
 											r<hi rendition="#sup">o</hi>
-										<pb type="VIII_1" n="462"/>zur Hälfte beschrieben, Bl. 149
-											v<hi rendition="#sup">o</hi> leer.</p><p>Cc 2, Nr. 491
-										F</p></summary>
+										<pb type="VIII_1" n="462"/>
+zur Hälfte beschrieben, Bl. 149
+											v<hi rendition="#sup">o</hi> leer.</p>
+									<p>Cc 2, Nr. 491
+										F</p>
+								</summary>
 							</msContents>
 							<physDesc>
 								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -87,7 +123,8 @@
 							<history>
 								<origin corresp="L_witness-origin-types.xml#origin-L"/>
 							</history>
-						</msDesc></witness>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -204,19 +241,26 @@
 				<head>49<hi rendition="#sub">2</hi>. SUR L’HYPOTHÈSE ÉTHÉRIENNE. DEUXIÈME
 					ESSAI</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-							<witness><msDesc>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
 									<msIdentifier>
 										<repository>Gottfried Wilhelm Leibniz Bibliothek
 											Hannover</repository>
 										<idno type="Signatur">XXX</idno>
 									</msIdentifier>
 									<msContents>
-										<summary><p>Konzept: LH XXXVII 3 Bl. 148–149. 1 Bog. 2<hi rendition="#sup">o</hi>. 2 1/2 S. zweispaltig. Bl.
+										<summary>
+											<p>Konzept: LH XXXVII 3 Bl. 148–149. 1 Bog. 2<hi rendition="#sup">o</hi>. 2 1/2 S. zweispaltig. Bl.
 												149 r<hi rendition="#sup">o</hi>
-												<pb type="VIII_1" n="462"/>zur Hälfte beschrieben,
-												Bl. 149 v<hi rendition="#sup">o</hi> leer.</p><p>Cc
-												2, Nr. 491 F</p></summary>
+												<pb type="VIII_1" n="462"/>
+zur Hälfte beschrieben,
+												Bl. 149 v<hi rendition="#sup">o</hi> leer.</p>
+											<p>Cc
+												2, Nr. 491 F</p>
+										</summary>
 									</msContents>
 									<physDesc>
 										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -224,420 +268,605 @@
 									<history>
 										<origin/>
 									</history>
-								</msDesc></witness>
-						</listWit></p>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch49.S2.p4"><pb type="L"/><fw type="folNum">[148 r<hi rendition="#sup">o</hi>]</fw> Toutes ces Hypotheses estant presque
+					<p xml:id="Ch49.S2.p4">
+						<pb type="L"/>
+						<fw type="folNum">[148 r<hi rendition="#sup">o</hi>]
+						</fw> Toutes ces Hypotheses estant presque
 						refutées déja par des <hi rendition="#g">experiences toutes faites,</hi> il
 						reste une seule, de celles dont je crois me pouuoir éclaircir entierement,
 						par des <hi rendition="#g">experiences</hi> aisées; <app type="Bfootnote">
-							<lem type="main">à faire; qui m’oblige de balancer encor</lem>
-							<note type="lemma-abbrev">aisées;</note>
-							<rdg wit="#L" n="1"> que je n’oserois encor condemner </rdg>
-							<rdg wit="#L" n="2"> à <seg type="apparat-ellipsis"/> encor <hi rendition="#i">L</hi></rdg>
-						</app> avec une indifference indeterminée, jusqu’à l’evenement de
+						<lem type="main">à faire; qui m’oblige de balancer encor</lem>
+						<note type="lemma-abbrev">aisées;</note>
+						<rdg wit="#L" n="1"> que je n’oserois encor condemner </rdg>
+						<rdg wit="#L" n="2"> à							<seg type="apparat-ellipsis"/>
+ encor <hi rendition="#i">L</hi>
+						</rdg>
+					</app> avec une indifference indeterminée, jusqu’à l’evenement de
 						l’experience probatoire. Elle me tomba dans l’esprit, en cherchant quelque
 						moyen, qui pourroit suppleoir icy, dans le Recipient épuisé même, le defaut
 						de la pression de l’Atmosphere<index indexName="Sachverzeichnis">
-							<term>atmosphère</term>
-						</index>. Je conçois donc un air rafiné, ou si vous voulez <app type="Bfootnote">
-							<lem type="main">matiere plus subtile que l’air</lem>
-							<note type="lemma-abbrev">voulez</note>
-							<rdg wit="#L" n="1"> aether<index indexName="Sachverzeichnis">
-									<term>aether</term>
-								</index> c’est à dire </rdg>
-							<rdg wit="#L" n="2"> matiere plus subtile que l’air <hi rendition="#i">L</hi></rdg>
-						</app>, dont l’atmosphere<index indexName="Sachverzeichnis">
-							<term>atmosphère</term>
-						</index>
-						<app type="Bfootnote">
-							<lem type="main">de l’air</lem>
-							<rdg wit="#L" cause="addition"><add>de l’air</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> est entrelassée: comme nous voyons que les vapeurs sont entrelassées
+					<term>atmosphère</term>
+				</index>. Je conçois donc un air rafiné, ou si vous voulez <app type="Bfootnote">
+				<lem type="main">matiere plus subtile que l’air</lem>
+				<note type="lemma-abbrev">voulez</note>
+				<rdg wit="#L" n="1"> aether<index indexName="Sachverzeichnis">
+					<term>aether</term>
+				</index> c’est à dire </rdg>
+			<rdg wit="#L" n="2"> matiere plus subtile que l’air <hi rendition="#i">L</hi>
+			</rdg>
+		</app>, dont l’atmosphere<index indexName="Sachverzeichnis">
+		<term>atmosphère</term>
+	</index>
+	<app type="Bfootnote">
+		<lem type="main">de l’air</lem>
+		<rdg wit="#L" cause="addition">
+			<add>de l’air</add>
+			<note type="editorial">
+				<hi rendition="#i">erg. L</hi>
+			</note>
+		</rdg>
+	</app> est entrelassée: comme nous voyons que les vapeurs sont entrelassées
 						d’air. Cette matiere quoyque peu grossiere, est pourtant pesante, (parce
 						qu’elle va sans comparaison plus <app type="Bfootnote">
-							<lem type="main">en</lem>
-							<rdg wit="#L" cause="addition"><add>en</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> haut que l’air,) et compose une essence d’une autre atmosphere<index indexName="Sachverzeichnis">
-							<term>atmosphère</term>
-						</index>, outre celle de l’air; à l’entour <app type="Bfootnote">
-							<lem type="main">du globe de la terre</lem>
-							<note type="lemma-abbrev">l’entour</note>
-							<rdg wit="#L" n="1"> de nostre terre<index indexName="Sachverzeichnis">
-									<term>terre</term>
-								</index>
-							</rdg>
-							<rdg wit="#L" n="2"> du globe de la terre <hi rendition="#i">L</hi></rdg>
-						</app>. Sa subtilité va jusqu’à passer par les pores même des solides, comme
+	<lem type="main">en</lem>
+	<rdg wit="#L" cause="addition">
+		<add>en</add>
+		<note type="editorial">
+			<hi rendition="#i">erg. L</hi>
+		</note>
+	</rdg>
+</app> haut que l’air,) et compose une essence d’une autre atmosphere<index indexName="Sachverzeichnis">
+<term>atmosphère</term>
+</index>, outre celle de l’air; à l’entour <app type="Bfootnote">
+<lem type="main">du globe de la terre</lem>
+<note type="lemma-abbrev">l’entour</note>
+<rdg wit="#L" n="1"> de nostre terre<index indexName="Sachverzeichnis">
+<term>terre</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> du globe de la terre <hi rendition="#i">L</hi>
+</rdg>
+</app>. Sa subtilité va jusqu’à passer par les pores même des solides, comme
 						du verre, pourveu qu’<app type="Bfootnote">
-							<lem type="main">on la force</lem>
-							<note type="lemma-abbrev">qu’</note>
-							<rdg wit="#L" n="1"> elle soit forcée </rdg>
-							<rdg wit="#L" n="2"> on la force <hi rendition="#i">L</hi></rdg>
-						</app>. <app type="Bfootnote">
-							<lem type="main">Car sans cela elles les suspend, comme la placque
+<lem type="main">on la force</lem>
+<note type="lemma-abbrev">qu’</note>
+<rdg wit="#L" n="1"> elle soit forcée </rdg>
+<rdg wit="#L" n="2"> on la force <hi rendition="#i">L</hi>
+</rdg>
+</app>.<app type="Bfootnote">
+<lem type="main">Car sans cela elles les suspend, comme la placque
 								inferieure, attachée à la superieure dans la vuide<index indexName="Sachverzeichnis">
-									<term>vide</term>
-								</index>, par le poids<index indexName="Sachverzeichnis">
-									<term>poids</term>
-								</index> d’une colomne de toute la hauteur de cette nouuelle
+<term>vide</term>
+</index>, par le poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index> d’une colomne de toute la hauteur de cette nouuelle
 									Atmosphere<index indexName="Sachverzeichnis">
-									<term>atmosphère</term>
-								</index>, mais de la largeur de la placque. Par consequent la
+<term>atmosphère</term>
+</index>, mais de la largeur de la placque. Par consequent la
 								placque dans l’air libre est suspendüe par le poids<index indexName="Sachverzeichnis">
-									<term>poids</term>
-								</index> de deux atmospheres<index indexName="Sachverzeichnis">
-									<term>atmosphère</term>
-								</index>, dans le vuide<index indexName="Sachverzeichnis">
-									<term>vide</term>
-								</index>, par la pression de la nouuelle seulement.</lem>
-							<rdg wit="#L" cause="addition"><add>Car <seg type="apparat-ellipsis"/>
+<term>poids</term>
+</index> de deux atmospheres<index indexName="Sachverzeichnis">
+<term>atmosphère</term>
+</index>, dans le vuide<index indexName="Sachverzeichnis">
+<term>vide</term>
+</index>, par la pression de la nouuelle seulement.</lem>
+<rdg wit="#L" cause="addition">
+<add>Car <seg type="apparat-ellipsis"/>
 									seulement.</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> Pour le passage des liqueurs, il y a une difference tres
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> Pour le passage des liqueurs, il y a une difference tres
 						considerable, car si les liqueurs sont entrelassées d’air, (comme une
 						esponge enflée d’eau) ce fluide subtil passe sans peine trouuant <app type="Bfootnote">
-							<lem type="main">passage par l’air</lem>
-							<note type="lemma-abbrev">trouuant</note>
-							<rdg wit="#L" n="1"> l’air, qui luy donne </rdg>
-							<rdg wit="#L" n="2"> passage par l’air <hi rendition="#i">L</hi></rdg>
-						</app>, son domicile ordinaire, dont elle n’est differente peut estre qu’en
+<lem type="main">passage par l’air</lem>
+<note type="lemma-abbrev">trouuant</note>
+<rdg wit="#L" n="1"> l’air, qui luy donne </rdg>
+<rdg wit="#L" n="2"> passage par l’air <hi rendition="#i">L</hi>
+</rdg>
+</app>, son domicile ordinaire, dont elle n’est differente peut estre qu’en
 						finesse. Mais si les liqueurs<index indexName="Sachverzeichnis">
-							<term>liqueur</term>
-							<index>
-								<term>purgée</term>
-							</index>
-						</index> en sont purgées, elle se trouue arrestée tout court. Les parties de
+<term>liqueur</term>
+<index>
+<term>purgée</term>
+</index>
+</index> en sont purgées, elle se trouue arrestée tout court. Les parties de
 						la liqueur estant à present plus serrées qu’il ne luy faut pour avoir
 						passage. <app type="Bfootnote">
-							<lem type="main">D’où vient que les liqueurs purgées<index indexName="Sachverzeichnis">
-									<term>liqueur</term>
-									<index>
-										<term>purgée</term>
-									</index>
-								</index>
-								<pb type="VIII_1" n="463"/>hors du Recipient, sont suspendües d’une
+<lem type="main">D’où vient que les liqueurs purgées<index indexName="Sachverzeichnis">
+<term>liqueur</term>
+<index>
+<term>purgée</term>
+</index>
+</index>
+<pb type="VIII_1" n="463"/>
+hors du Recipient, sont suspendües d’une
 								hauteur plus grande que les autres non purgées; et demeurent
 								suspendües dans le Recipient épuisé, quand les autres tombent.</lem>
-							<rdg wit="#L">D’où vient que les liqueurs purgées<index indexName="Sachverzeichnis">
-									<term>liqueur</term>
-									<index>
-										<term>purgée</term>
-									</index>
-								</index>
-							</rdg>
-							<rdg wit="#L" n="1"> sont suspendües non seulement par
+<rdg wit="#L">D’où vient que les liqueurs purgées<index indexName="Sachverzeichnis">
+<term>liqueur</term>
+<index>
+<term>purgée</term>
+</index>
+</index>
+</rdg>
+<rdg wit="#L" n="1"> sont suspendües non seulement par
 									l’atmosphere<index indexName="Sachverzeichnis">
-									<term>atmosphère</term>
-								</index>, </rdg>
-							<rdg wit="#L" n="2"> hors <seg type="apparat-ellipsis"/> grande <app>
-									<rdg wit="#L" n="a">que celle de l’atmosphere<index indexName="Sachverzeichnis">
-											<term>atmosphère</term>
-										</index>
-									</rdg>
-									<rdg wit="#L" n="b" cause="addition"><add>que <seg type="apparat-ellipsis"/> tombent.</add>
-										<note type="editorial"><hi rendition="#i">erg.
-										L</hi></note></rdg>
-								</app></rdg>
-						</app> Jusqu’à ce qu’une bulle d’air, quoyque petite, arrivant <app type="Bfootnote">
-							<lem type="main">à cette partie de la liqueur, qui est suspendüe
+<term>atmosphère</term>
+</index>, 
+</rdg>
+<rdg wit="#L" n="2"> hors <seg type="apparat-ellipsis"/>
+ grande <app>
+<rdg wit="#L" n="a">que celle de l’atmosphere<index indexName="Sachverzeichnis">
+<term>atmosphère</term>
+</index>
+</rdg>
+<rdg wit="#L" n="b" cause="addition">
+<add>que <seg type="apparat-ellipsis"/>
+ tombent.</add>
+<note type="editorial">
+<hi rendition="#i">erg.
+										L</hi>
+</note>
+</rdg>
+</app>
+</rdg>
+</app> Jusqu’à ce qu’une bulle d’air, quoyque petite, arrivant <app type="Bfootnote">
+<lem type="main">à cette partie de la liqueur, qui est suspendüe
 								par</lem>
-							<note type="lemma-abbrev">arrivant</note>
-							<rdg wit="#L" n="1"> à l’eau suspendüe par </rdg>
-							<rdg wit="#L" n="2"> à <seg type="apparat-ellipsis"/> par <hi rendition="#i">L</hi></rdg>
-						</app> la pression nouuelle,<app type="Bfootnote">
-							<lem type="main"/>
-							<rdg wit="#L" cause="deletion">nouuelle, <note type="editorial">|</note> <del>et</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi> |</note> la
-									<hi rendition="#i">L</hi></rdg>
-						</app> la pesanteur de la liqueur estant soûtenüe de celle de la nouuelle
+<note type="lemma-abbrev">arrivant</note>
+<rdg wit="#L" n="1"> à l’eau suspendüe par </rdg>
+<rdg wit="#L" n="2"> à<seg type="apparat-ellipsis"/>
+ par <hi rendition="#i">L</hi>
+</rdg>
+</app> la pression nouuelle,<app type="Bfootnote">
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">nouuelle, <note type="editorial">|</note>
+<del>et</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> la
+<hi rendition="#i">L</hi>
+</rdg>
+</app> la pesanteur de la liqueur estant soûtenüe de celle de la nouuelle
 						colomne, pour sortir du combat, est bien aisé de se servir de cet arbitre de
 						leurs differents, et oblige la bulle <app type="Bfootnote">
-							<lem type="main">d’air</lem>
-							<rdg wit="#L" cause="addition"><add>d’air</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> de se repandre en un moment, par toute la <app type="Bfootnote">
-							<lem type="main">liqueur</lem>
-							<note type="lemma-abbrev">la</note>
-							<rdg wit="#L" n="1"> matiere </rdg>
-							<rdg wit="#L" n="2"> liqueur <hi rendition="#i">L</hi></rdg>
-						</app>, pour faire <app type="Bfootnote">
-							<lem type="main">passage</lem>
-							<note type="lemma-abbrev">faire</note>
-							<rdg wit="#L" n="1"> place </rdg>
-							<rdg wit="#L" n="2"> passage <hi rendition="#i">L</hi></rdg>
-						</app> à ce fluide.</p>
-					<p xml:id="Ch49.S2.p5">Mais quoyque je n’ose pas encor prononcer contre cette
+<lem type="main">d’air</lem>
+<rdg wit="#L" cause="addition">
+<add>d’air</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> de se repandre en un moment, par toute la <app type="Bfootnote">
+<lem type="main">liqueur</lem>
+<note type="lemma-abbrev">la</note>
+<rdg wit="#L" n="1"> matiere </rdg>
+<rdg wit="#L" n="2"> liqueur <hi rendition="#i">L</hi>
+</rdg>
+</app>, pour faire <app type="Bfootnote">
+<lem type="main">passage</lem>
+<note type="lemma-abbrev">faire</note>
+<rdg wit="#L" n="1"> place </rdg>
+<rdg wit="#L" n="2"> passage <hi rendition="#i">L</hi>
+</rdg>
+</app> à ce fluide.</p>
+<p xml:id="Ch49.S2.p5">Mais quoyque je n’ose pas encor prononcer contre cette
 						Hypothese, je n’y trouue pas pourtant toute la satisfaction. <app type="Bfootnote">
-							<lem type="main">Car <pb type="L"/><fw type="folNum">[148 v<hi rendition="#sup">o</hi>]</fw> je</lem>
-							<note type="lemma-abbrev">Car</note>
-							<rdg wit="#L" n="1"> premierement </rdg>
-							<rdg wit="#L" n="2"> je <hi rendition="#i">L</hi></rdg>
-						</app> ne comprends pas <app type="Bfootnote">
-							<lem type="main">assez pourquoy</lem>
-							<note type="lemma-abbrev">pas</note>
-							<rdg wit="#L" n="1"> pourquoy si </rdg>
-							<rdg wit="#L" n="2"> assez pourquoy <hi rendition="#i">L</hi></rdg>
-						</app> cette matiere, ne passe aisément, que par l’air; et encor moins,
+<lem type="main">Car <pb type="L"/>
+<fw type="folNum">[148 v<hi rendition="#sup">o</hi>]
+</fw> je</lem>
+<note type="lemma-abbrev">Car</note>
+<rdg wit="#L" n="1"> premierement </rdg>
+<rdg wit="#L" n="2"> je <hi rendition="#i">L</hi>
+</rdg>
+</app> ne comprends pas <app type="Bfootnote">
+<lem type="main">assez pourquoy</lem>
+<note type="lemma-abbrev">pas</note>
+<rdg wit="#L" n="1"> pourquoy si </rdg>
+<rdg wit="#L" n="2"> assez pourquoy <hi rendition="#i">L</hi>
+</rdg>
+</app> cette matiere, ne passe aisément, que par l’air; et encor moins,
 						pourquoy un fluide plus subtil que l’air, sans comparaison, ne puisse
 						passer, où une bulle d’air trouuera passage. Car si la liqueur purgée<index indexName="Sachverzeichnis">
-							<term>liqueur</term>
-							<index>
-								<term>purgée</term>
-							</index>
-						</index> est assez serrée, pour exclure ce fluide nouueau, elle <app type="Bfootnote">
-							<lem type="main">ne sera pas assez</lem>
-							<note type="lemma-abbrev">elle</note>
-							<rdg wit="#L" n="1"> sera aussi </rdg>
-							<rdg wit="#L" n="2"> ne sera pas assez <hi rendition="#i">L</hi></rdg>
-						</app> ouuerte pour une bulle d’air. Je sçais bien qu’on se pourroit servir
+<term>liqueur</term>
+<index>
+<term>purgée</term>
+</index>
+</index> est assez serrée, pour exclure ce fluide nouueau, elle <app type="Bfootnote">
+<lem type="main">ne sera pas assez</lem>
+<note type="lemma-abbrev">elle</note>
+<rdg wit="#L" n="1"> sera aussi </rdg>
+<rdg wit="#L" n="2"> ne sera pas assez <hi rendition="#i">L</hi>
+</rdg>
+</app> ouuerte pour une bulle d’air. Je sçais bien qu’on se pourroit servir
 						de l’exemple de l’eau, de huyle, et du Mercure même, qui passent <app type="Bfootnote">
-							<lem type="main">par certains corps avec plus de facilité</lem>
-							<note type="lemma-abbrev">passent</note>
-							<rdg wit="#L" n="1"> plus <app>
-									<rdg wit="#L" n="a">aisé </rdg>
-									<rdg wit="#L" n="b">faci </rdg>
-								</app></rdg>
-							<rdg wit="#L" n="2"> par <seg type="apparat-ellipsis"/> facilité <hi rendition="#i">L</hi></rdg>
-						</app> que l’air. Mais cela n’est pas satisfaire l’esprit. <app type="Bfootnote">
-							<lem type="main">Outre qu’il est peu vraysemblable qu’une grande
+<lem type="main">par certains corps avec plus de facilité</lem>
+<note type="lemma-abbrev">passent</note>
+<rdg wit="#L" n="1"> plus <app>
+<rdg wit="#L" n="a">aisé </rdg>
+<rdg wit="#L" n="b">faci </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> par <seg type="apparat-ellipsis"/>
+ facilité <hi rendition="#i">L</hi>
+</rdg>
+</app> que l’air. Mais cela n’est pas satisfaire l’esprit. <app type="Bfootnote">
+<lem type="main">Outre qu’il est peu vraysemblable qu’une grande
 								quantité de Mercure purgé<index indexName="Sachverzeichnis">
-									<term>mercure</term>
-									<index>
-										<term>purgé</term>
-									</index>
-								</index> suspendu se laisse penetrer et comme enfler en un moment
+<term>mercure</term>
+<index>
+<term>purgé</term>
+</index>
+</index> suspendu se laisse penetrer et comme enfler en un moment
 								par une petite bulle d’air, qui passe par tous ses pores, comme un
 								éclair: estant constant d’ailleurs qu’il n’est pas facile à l’air de
 								passer par le Mercure.</lem>
-							<rdg wit="#L">Outre <seg type="apparat-ellipsis"/> suspendu </rdg>
-							<rdg wit="#L" n="1"> dans </rdg>
-							<rdg wit="#L" n="2"> se <seg type="apparat-ellipsis"/> moment <app>
-									<rdg wit="#L" n="a">en forme d’éclair qui passe par tous ses </rdg>
-									<rdg wit="#L" n="b">par <seg type="apparat-ellipsis"/> pas <app>
-											<rdg wit="#L" n="aa">aisé </rdg>
-											<rdg wit="#L" n="bb" cause="addition"><add>facile <seg type="apparat-ellipsis"/> Mercure.</add>
-												<note type="editorial"><hi rendition="#i">erg.
-												L</hi></note></rdg>
-										</app></rdg>
-								</app></rdg>
-						</app> Pourtant si je ne trouuois rien à <app type="Bfootnote">
-							<lem type="main">redire que cela</lem>
-							<note type="lemma-abbrev">à</note>
-							<rdg wit="#L" n="1"> dire </rdg>
-							<rdg wit="#L" n="2"> redire <app>
-									<rdg wit="#L" n="a">d’avantage </rdg>
-									<rdg wit="#L" n="b">que cela <hi rendition="#i">L</hi></rdg>
-								</app></rdg>
-						</app>, je mettrois cette Hypothese au rang de celles, dont je parleray
+<rdg wit="#L">Outre <seg type="apparat-ellipsis"/>
+ suspendu </rdg>
+<rdg wit="#L" n="1"> dans </rdg>
+<rdg wit="#L" n="2"> se <seg type="apparat-ellipsis"/>
+ moment <app>
+<rdg wit="#L" n="a">en forme d’éclair qui passe par tous ses </rdg>
+<rdg wit="#L" n="b">par <seg type="apparat-ellipsis"/>
+ pas <app>
+<rdg wit="#L" n="aa">aisé </rdg>
+<rdg wit="#L" n="bb" cause="addition">
+<add>facile <seg type="apparat-ellipsis"/>
+ Mercure.</add>
+<note type="editorial">
+<hi rendition="#i">erg.
+												L</hi>
+</note>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app> Pourtant si je ne trouuois rien à <app type="Bfootnote">
+<lem type="main">redire que cela</lem>
+<note type="lemma-abbrev">à</note>
+<rdg wit="#L" n="1"> dire </rdg>
+<rdg wit="#L" n="2"> redire <app>
+<rdg wit="#L" n="a">d’avantage </rdg>
+<rdg wit="#L" n="b">que cela <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>, je mettrois cette Hypothese au rang de celles, dont je parleray
 						bientost, lesquelles, quoyque imparfaites, sont pourtant au dessus de
 						l’evenement des Experiences <app type="Bfootnote">
-							<lem type="main">aisées</lem>
-							<rdg wit="#L" cause="addition"><add>aisées</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> dont je me puis aviser <app type="Bfootnote">
-							<lem type="main">pour les convaincre entierement</lem>
-							<rdg wit="#L" cause="addition"><add>pour les convaincre
+<lem type="main">aisées</lem>
+<rdg wit="#L" cause="addition">
+<add>aisées</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> dont je me puis aviser <app type="Bfootnote">
+<lem type="main">pour les convaincre entierement</lem>
+<rdg wit="#L" cause="addition">
+<add>pour les convaincre
 									entierement</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>. <app type="Bfootnote" from="#mais148v1" to="#mais148v2">
-							<lem type="main"><anchor xml:id="mais148v1"/></lem>
-							<note type="lemma-abbrev"><hi rendition="#i">Von</hi>
-								<hi rendition="#g">Mais</hi>
-								<hi rendition="#i">bis</hi>
-								<hi rendition="#g">suspendüe.</hi></note>
-							<rdg wit="#L"><hi rendition="#i">Markierung am Rand</hi></rdg>
-						</app>
-						<hi rendition="#g">Mais cela ne se fera pas, que quand elle aura soûtenu le
-							choc de deux experiences</hi><app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">. La premiere est</hi></lem>
-							<note type="lemma-abbrev"><hi rendition="#g">experiences</hi></note>
-							<rdg wit="#L" n="1"> <hi rendition="#g">, que je m’en vais proposer dont
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>.<app type="Bfootnote" from="#mais148v1" to="#mais148v2">
+<lem type="main">
+<anchor xml:id="mais148v1"/>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">Von</hi>
+<hi rendition="#g">Mais</hi>
+<hi rendition="#i">bis</hi>
+<hi rendition="#g">suspendüe.</hi>
+</note>
+<rdg wit="#L">
+<hi rendition="#i">Markierung am Rand</hi>
+</rdg>
+</app>
+<hi rendition="#g">Mais cela ne se fera pas, que quand elle aura soûtenu le
+							choc de deux experiences</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">. La premiere est</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">experiences</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">, que je m’en vais proposer dont
 									la premiere</hi>
-							</rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">. J’ay</hi>
-							</rdg>
-							<rdg wit="#L" n="3"> <hi rendition="#g">. La premiere est</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app><hi rendition="#g">, de faire monter la bulle</hi>
-						<app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">dans la</hi></lem>
-							<note type="lemma-abbrev"><hi rendition="#g">bulle</hi></note>
-							<rdg wit="#L" n="1"> <hi rendition="#g">au milieu de</hi>
-							</rdg>
-							<rdg wit="#L" n="2">  <hi rendition="#g">dans la</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>
-						<hi rendition="#g">phiole</hi>
-						<hi rendition="#g #i">A-CD</hi><app type="Bfootnote">
-							<lem type="main">
-								<hi rendition="#g">(fig. 1.)</hi></lem>
-							<note type="lemma-abbrev"><hi rendition="#g">fig. 1</hi></note>
-							<rdg wit="#L"><hi rendition="#i">unterstrichen</hi></rdg>
-						</app>
-						<hi rendition="#g">avec cette precaution, qu’elle ne touche pas la
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">. J’ay</hi>
+</rdg>
+<rdg wit="#L" n="3">
+<hi rendition="#g">. La premiere est</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g">, de faire monter la bulle</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">dans la</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">bulle</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">au milieu de</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">dans la</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g">phiole</hi>
+<hi rendition="#g #i">A-CD</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">(fig. 1.)</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">fig. 1</hi>
+</note>
+<rdg wit="#L">
+<hi rendition="#i">unterstrichen</hi>
+</rdg>
+</app>
+<hi rendition="#g">avec cette precaution, qu’elle ne touche pas la
 							superficie interieure de la phiole, en montant. Ce qui</hi>
-						<app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">se pourra</hi></lem>
-							<note type="lemma-abbrev"><hi rendition="#g">qui</hi></note>
-							<rdg wit="#L" n="1"> <hi rendition="#g">sera</hi>
-							</rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">se pourra</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>
-						<hi rendition="#g">practiquer aisément à ce que j’ay dit cy dessus, en
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">se pourra</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">qui</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">sera</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">se pourra</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g">practiquer aisément à ce que j’ay dit cy dessus, en
 							plantant un fil de fer ou petit bâton mince au milieu de la phiole,
 							auquel la bulle soit appuyée en montant. Alors si la liqueur ne tombe
 							pas, quoyque</hi>
-						<app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">la bulle</hi></lem>
-							<note type="lemma-abbrev"><hi rendition="#g">la</hi></note>
-							<rdg wit="#L" n="1"> <hi rendition="#g">liqueur</hi>
-							</rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">bulle</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>
-						<hi rendition="#g">ait passé</hi>
-						<hi rendition="#g #i">B</hi>
-						<hi rendition="#g">jusqu’à ce qu’elle rencontre la superficie interieure du
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">la bulle</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">la</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">liqueur</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">bulle</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g">ait passé</hi>
+<hi rendition="#g #i">B</hi>
+<hi rendition="#g">jusqu’à ce qu’elle rencontre la superficie interieure du
 							tuyau, nous pourrons estre asseurez de la fausseté de l’Hypothese: la
 							bulle estant au milieu de la liqueur serrée, suspendüe par la force
 							nouuelle, sans ouurir pourtant le passage au fluidenouueau,</hi>
-						<app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">contre ce qu’on avoit
-								supposé.</hi></lem>
-							<rdg wit="#L" cause="addition"><add><hi rendition="#g">contre ce qu’on
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">contre ce qu’on avoit
+								supposé.</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#g">contre ce qu’on
 										avoit supposé.</hi>
-								</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>
-						<hi rendition="#g">La deuxieme Experience n’est pas moins convainquante.
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#g">La deuxieme Experience n’est pas moins convainquante.
 							La</hi>
-						<hi rendition="#g">liqueur purgée</hi><index indexName="Sachverzeichnis">
-							<term>liqueur</term>
-							<index>
-								<term>purgée</term>
-							</index>
-						</index>
-						<hi rendition="#g">estant tombée par l’arrivée de la bulle, ayons soins de
+<hi rendition="#g">liqueur purgée</hi>
+<index indexName="Sachverzeichnis">
+<term>liqueur</term>
+<index>
+<term>purgée</term>
+</index>
+</index>
+<hi rendition="#g">estant tombée par l’arrivée de la bulle, ayons soins de
 							reprendre la même liqueur</hi>
-						<app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">précisement, qui s’est</hi></lem>
-							<note type="lemma-abbrev"><hi rendition="#g">liqueur</hi></note>
-							<rdg wit="#L" n="1"> <hi rendition="#g">incontinent</hi>
-							</rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">précisement, qui s’est</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>
-						<hi rendition="#g">ecoulée en partie, de la phiole, ou du tuyau, et qui
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">précisement, qui s’est</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">liqueur</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">incontinent</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">précisement, qui s’est</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g">ecoulée en partie, de la phiole, ou du tuyau, et qui
 							reste en partie la dedans, et de l’employer incontinent, pour refaire
 							l’experience de la</hi>
-						<hi rendition="#g">liqueur purgée</hi><index indexName="Sachverzeichnis">
-							<term>liqueur</term>
-							<index>
-								<term>purgée</term>
-							</index>
-						</index>
-						<pb type="VIII_1" n="465"/><hi rendition="#g">suspendüe: que si elle sert
+<hi rendition="#g">liqueur purgée</hi>
+<index indexName="Sachverzeichnis">
+<term>liqueur</term>
+<index>
+<term>purgée</term>
+</index>
+</index>
+<pb type="VIII_1" n="465"/>
+<hi rendition="#g">suspendüe: que si elle sert
 							encor une fois</hi>
-						<app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">sans estre purgée de
-								nouueau</hi></lem>
-							<rdg wit="#L" cause="addition"><add><hi rendition="#g">sans estre purgée
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">sans estre purgée de
+								nouueau</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#g">sans estre purgée
 										de nouueau</hi>
-								</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app><hi rendition="#g">, l’Hypothese est refutée, car si</hi>
-						<app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">la liqueur</hi></lem>
-							<note type="lemma-abbrev"><hi rendition="#g">si</hi></note>
-							<rdg wit="#L" n="1"> <hi rendition="#g">les pores</hi>
-							</rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">la liqueur</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>
-						<hi rendition="#g">a esté ouuerte par la bulle, elle sera encorouuerte,
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#g">, l’Hypothese est refutée, car si</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">la liqueur</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">si</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">les pores</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">la liqueur</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g">a esté ouuerte par la bulle, elle sera encorouuerte,
 							parce que rien l’a serrée de nouueau. Et si elle n’est pas serrée, le
 							fluide supposé passera sans peine, sans la soûtenir
-							suspendüe.</hi><anchor xml:id="mais148v2"/>
-						<pb type="L"/><fw type="folNum">[149 r<hi rendition="#sup">o</hi>]</fw>
+							suspendüe.</hi>
+<anchor xml:id="mais148v2"/>
+<pb type="L"/>
+<fw type="folNum">[149 r<hi rendition="#sup">o</hi>]
+</fw>
 						Devant que de passer aux Hypotheses, qui me semblent au dessus de
 						l’evenement des experiences aisées, je proposeray une Experience, mais un
 						peu difficile, laquelle nous en pourroit faire juger, si elle <app type="Bfootnote">
-							<lem type="main">se trouueroit faisable</lem>
-							<note type="lemma-abbrev">elle</note>
-							<rdg wit="#L" n="1"> estoit faisab </rdg>
-							<rdg wit="#L" n="2"> se trouueroit faisable <hi rendition="#i">L</hi></rdg>
-						</app> pour cet effect, <app type="Bfootnote">
-							<lem type="main"> </lem>
-							<note type="lemma-abbrev">effect,</note>
-							<rdg wit="#L" n="1"> employons un tuyau <app>
-									<rdg wit="#L" n="a">etroit, à l’ordinaire des barometres<index indexName="Sachverzeichnis">
-											<term>baromètre</term>
-										</index>
-									</rdg>
-									<rdg wit="#L" n="b">de la largeur </rdg>
-									<rdg wit="#L" n="c">assez large </rdg>
-									<rdg wit="#L" n="d">d’une hauteur <app>
-											<rdg wit="#L" n="aa">practicable </rdg>
-											<rdg wit="#L" n="bb">considerable, à laquelle l’ ouvrier
+<lem type="main">se trouueroit faisable</lem>
+<note type="lemma-abbrev">elle</note>
+<rdg wit="#L" n="1"> estoit faisab </rdg>
+<rdg wit="#L" n="2"> se trouueroit faisable <hi rendition="#i">L</hi>
+</rdg>
+</app> pour cet effect, <app type="Bfootnote">
+<lem type="main"></lem>
+<note type="lemma-abbrev">effect,</note>
+<rdg wit="#L" n="1"> employons un tuyau <app>
+<rdg wit="#L" n="a">etroit, à l’ordinaire des barometres<index indexName="Sachverzeichnis">
+<term>baromètre</term>
+</index>
+</rdg>
+<rdg wit="#L" n="b">de la largeur </rdg>
+<rdg wit="#L" n="c">assez large </rdg>
+<rdg wit="#L" n="d">d’une hauteur <app>
+<rdg wit="#L" n="aa">practicable </rdg>
+<rdg wit="#L" n="bb">considerable, à laquelle l’ ouvrier
 												puisse arriver, ou pour le soûlager de cette peine,
-											</rdg>
-										</app></rdg>
-								</app></rdg>
-							<rdg wit="#L" n="2" cause="addition"> <note type="editorial">|</note> <add>en</add>
-								<note type="editorial"><hi rendition="#i">erg.</hi> |</note> faisons
-								joindre deux ou trois à la flamme de la lampe <note type="editorial">|</note> <add>ou avec un bon ciment</add>
-								<note type="editorial"><hi rendition="#i">erg.</hi> |</note> </rdg>
-							<rdg wit="#L" n="3" cause="addition-deletion"> remplissons ce tuyau
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2" cause="addition">
+<note type="editorial">|</note>
+<add>en</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> faisons
+								joindre deux ou trois à la flamme de la lampe <note type="editorial">|</note>
+<add>ou avec un bon ciment</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="3" cause="addition-deletion"> remplissons ce tuyau
 								ouvert par un bout de Mercure purgé<index indexName="Sachverzeichnis">
-									<term>mercure</term>
-									<index>
-										<term>purgé</term>
-									</index>
-								</index>
-								<note type="editorial">|</note> <add>d’air</add>
-								<note type="editorial"><hi rendition="#i">erg.</hi> |</note> dont il
+<term>mercure</term>
+<index>
+<term>purgé</term>
+</index>
+</index>
+<note type="editorial">|</note>
+<add>d’air</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> dont il
 								nous faut une provision notable et en le renversant prenons garde,
 								qu’il ne se casse pas par la pesanteur du mercure<index indexName="Sachverzeichnis">
-									<term>mercure</term>
-								</index>. Ce qui s’evitera aisément, en le tenant couché <note type="editorial">|</note> <del><add>ou</add></del>
-								<note type="editorial"><hi rendition="#i">erg. u.
-									gestr.</hi> |</note> sur un ais à l’ordinaire des
+<term>mercure</term>
+</index>. Ce qui s’evitera aisément, en le tenant couché <note type="editorial">|</note>
+<del>
+<add>ou</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u.
+									gestr.</hi> |
+</note> sur un ais à l’ordinaire des
 									barometres<index indexName="Sachverzeichnis">
-									<term>baromètre</term>
-								</index>. Cependant jusqu’à ce qu’il soit renversé et debout, <note type="editorial">|</note> </rdg>
-							<rdg wit="#L" n="1"> et </rdg>
-							<rdg wit="#L" n="2" cause="deletion"> <del><add>trempant par le bout
-										ouuert dans un vase p</add></del>
-								<note type="editorial"><hi rendition="#i">erg. u. gestr.</hi>
-									|</note>, on bouchera <app>
-									<rdg wit="#L" n="a">l’ouuerture </rdg>
-									<rdg wit="#L" n="b">le bout ouuert avec la main, ou autrement, <app>
-											<rdg wit="#L" n="aa">et relachant un peu </rdg>
-											<rdg wit="#L" n="bb">et par apres ostant la main, voyons
+<term>baromètre</term>
+</index>. Cependant jusqu’à ce qu’il soit renversé et debout, <note type="editorial">|</note>
+</rdg>
+<rdg wit="#L" n="1"> et </rdg>
+<rdg wit="#L" n="2" cause="deletion">
+<del>
+<add>trempant par le bout
+										ouuert dans un vase p</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u. gestr.</hi>
+									|
+</note>, on bouchera <app>
+<rdg wit="#L" n="a">l’ouuerture </rdg>
+<rdg wit="#L" n="b">le bout ouuert avec la main, ou autrement, <app>
+<rdg wit="#L" n="aa">et relachant un peu </rdg>
+<rdg wit="#L" n="bb">et par apres ostant la main, voyons
 												si le Mercure purgé<index indexName="Sachverzeichnis">
-												<term>mercure</term>
-												<index>
-												<term>purgé</term>
-												</index>
-												</index> tombe par sa pesanteur </rdg>
-										</app></rdg>
-								</app></rdg>
-							<rdg wit="#L" n="4" cause="deletion"> <note type="editorial">|</note> <del>faisons premierement l’experience de Mons.
+<term>mercure</term>
+<index>
+<term>purgé</term>
+</index>
+</index> tombe par sa pesanteur </rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="4" cause="deletion">
+<note type="editorial">|</note>
+<del>faisons premierement l’experience de Mons.
 										Boyle<index indexName="Namensregister">
-										<term><hi rendition="#g">Boyle</hi> (Boylius, Boyl., Boyl),
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius, Boyl., Boyl),
 											Robert 1627–1691</term>
-									</index>, du Mercure purgé d’air suspendu dans un tuyau plein,
+</index>, du Mercure purgé d’air suspendu dans un tuyau plein,
 									de la hauteur de 75. pouces, et par apres tachons d’augmenter la
 									hauteur sans changer de Tube</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi> |</note>  <hi rendition="#i">L</hi></rdg>
-						</app> [<hi rendition="#i">Satz bricht ab</hi>]</p>
-				</div>
-			</div>
-		</body>
-	</text>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> [<hi rendition="#i">Satz bricht ab</hi>]
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

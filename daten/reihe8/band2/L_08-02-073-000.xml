@@ -1,691 +1,1160 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-073-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-073-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Essence styptique</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Essence styptique</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="73">Essence styptique</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1674-09" resp="#ed" cert="medium">[September 1674 – Oktober 1676]</date><date calendar="#gregorian" notAfter="1676-10" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=717</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="669" to="673"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-073-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH III, 5 Bl. 86-87</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#abschrift"><summary><p>Abschrift einer unbekannte<pb type="VIII_2" n="670"/>n Vorlage:
+            </author>
+            <title type="chapter" level="a" n="73">Essence styptique</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1674-09" resp="#ed" cert="medium">[September 1674 – Oktober 1676]</date>
+            <date calendar="#gregorian" notAfter="1676-10" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=717</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="669" to="673"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-073-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH III, 5 Bl. 86-87</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#abschrift">
+                <summary>
+                  <p>Abschrift einer unbekannte<pb type="VIII_2" n="670"/>
+n Vorlage:
 LH III, 5 Bl. 86-87.
 1 Bog. 4<hi rendition="#sup">o</hi>.
 3 S. Bl. 87 v<hi rendition="#sup">o</hi> leer.
-Bl. 87 im unteren Bereich beschnitten.</p><p>Cc 2, Nr. 430</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="./glyphs/rightpropto.svg"/>
-        </glyph>
-        <!-- PsMs -->
-        <glyph xml:id="pPsMs">
-          <glyphName>pPsMs</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-0.5</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pPsMs</mapping>
-          <graphic url="./glyphs/PsMs.svg"/>
-        </glyph>
-        <glyph xml:id="PsMs">
-          <glyphName>PsMs</glyphName>
-          <desc>Bedeutung (+−) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\PsMs</mapping>
-          <graphic url="./glyphs/PsMs.svg"/>
-        </glyph>
-        <!-- MsPs -->
-        <glyph xml:id="pMsPs">
-          <glyphName>pMsPs</glyphName>
-          <desc>Bedeutung (−+) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-0.5</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pMsPs</mapping>
-          <graphic url="./glyphs/MsPs.svg"/>
-        </glyph>
-        <glyph xml:id="MsPs">
-          <glyphName>MsPs</glyphName>
-          <desc>Bedeutung (−+) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\MsPs</mapping>
-          <graphic url="./glyphs/MsPs.svg"/>
-        </glyph>
-        <!-- PsPsMs -->
-        <glyph xml:id="pPsPsMs">
-          <glyphName>pPsPsMs</glyphName>
-          <desc>Bedeutung (+(+−)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pPsPsMs</mapping>
-          <graphic url="./glyphs/PsPsMs.svg"/>
-        </glyph>
-        <glyph xml:id="PsPsMs">
-          <glyphName>PsPsMs</glyphName>
-          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\PsPsMs</mapping>
-          <graphic url="./glyphs/PsPsMs.svg"/>
-        </glyph>
-        <!-- PsMsPs -->
-        <glyph xml:id="pPsMsPs">
-          <glyphName>pPsMsPs</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pPsMsPss</mapping>
-          <graphic url="./glyphs/PsMsPs.svg"/>
-        </glyph>
-        <glyph xml:id="PsMsPs">
-          <glyphName>PsMsPs</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\PsMsPs</mapping>
-          <graphic url="./glyphs/PsMsPs.svg"/>
-        </glyph>
-        <!-- MsPsMs -->
-        <glyph xml:id="pMsPsMs">
-          <glyphName>pMsPsMs</glyphName>
-          <desc>Bedeutung (−(+−)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pMsPsMs</mapping>
-          <graphic url="./glyphs/MsPsMs.svg"/>
-        </glyph>
-        <glyph xml:id="MsPsMs">
-          <glyphName>MsPsMs</glyphName>
-          <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\MsPsMs</mapping>
-          <graphic url="./glyphs/MsPsMs.svg"/>
-        </glyph>
-        <!-- MsMsPs -->
-        <glyph xml:id="pMsMsPs">
-          <glyphName>pMsMsPs</glyphName>
-          <desc>Bedeutung (−(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pMsMsPss</mapping>
-          <graphic url="./glyphs/MsMsPs.svg"/>
-        </glyph>
-        <glyph xml:id="MsMsPs">
-          <glyphName>MsMsPs</glyphName>
-          <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\MsMsPs</mapping>
-          <graphic url="./glyphs/MsMsPs.svg"/>
-        </glyph>
-        <!-- MsPsPs -->
-        <glyph xml:id="pMsPsPs">
-          <glyphName>pMsPsPs</glyphName>
-          <desc>Bedeutung (−(++)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pMsPsPs</mapping>
-          <graphic url="./glyphs/MsPsPs.svg"/>
-        </glyph>
-        <glyph xml:id="MsPsPs">
-          <glyphName>MsPsPs</glyphName>
-          <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\MsPsPs</mapping>
-          <graphic url="./glyphs/MsPsPs.svg"/>
-        </glyph>
-        <!-- pmD -->
-        <glyph xml:id="ppmD">
-          <glyphName>ppmD</glyphName>
-          <desc>Bedeutung (−(++)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmD</mapping>
-          <graphic url="./glyphs/pmD.svg"/>
-        </glyph>
-        <glyph xml:id="pmD">
-          <glyphName>pmD</glyphName>
-          <desc>Bedeutung (−(++))- nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmD</mapping>
-          <graphic url="./glyphs/pmD.svg"/>
-        </glyph>
-        <!-- pmE -->
-        <glyph xml:id="ppmE">
-          <glyphName>ppmE</glyphName>
-          <desc>Bedeutung (+(+−)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\ppmE</mapping>
-          <graphic url="./glyphs/pmE.svg"/>
-        </glyph>
-        <glyph xml:id="pmE">
-          <glyphName>pmE</glyphName>
-          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pmE</mapping>
-          <graphic url="./glyphs/pmE.svg"/>
-        </glyph>
-        <!-- pmG -->
-        <glyph xml:id="ppmG">
-          <glyphName>ppmG</glyphName>
-          <desc>Bedeutung (+(+−)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmG</mapping>
-          <graphic url="./glyphs/pmG.svg"/>
-        </glyph>
-        <glyph xml:id="pmG">
-          <glyphName>pmG</glyphName>
-          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmG</mapping>
-          <graphic url="./glyphs/pmG.svg"/>
-        </glyph>
-        <!-- pmH -->
-        <glyph xml:id="ppmH">
-          <glyphName>ppmH</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmH</mapping>
-          <graphic url="./glyphs/pmH.svg"/>
-        </glyph>
-        <glyph xml:id="pmH">
-          <glyphName>pmH</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmH</mapping>
-          <graphic url="./glyphs/pmH.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="./glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="./glyphs/pm.svg"/>
-        </glyph>
-        <!-- leibvdashv -->
-        <glyph xml:id="pleibvdash">
-          <glyphName>pleibvdash</glyphName>
-          <desc>Bedeutung (−+) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pleibvdash</mapping>
-          <graphic url="./glyphs/mp.svg"/>
-        </glyph>
-        <glyph xml:id="leibvdash">
-          <glyphName>leibvdash</glyphName>
-          <desc>Bedeutung (−+) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\leibvdash</mapping>
-          <graphic url="./glyphs/mp.svg"/>
-        </glyph>
-        <!-- groesser -->
-        <glyph xml:id="ggroesser">
-          <glyphName>ggroesser</glyphName>
-          <desc>Bedeutung (größer als) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ggroesser</mapping>
-          <graphic url="./glyphs/groesser.svg"/>
-        </glyph>
-        <glyph xml:id="groesser">
-          <glyphName>groesser</glyphName>
-          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\groesser</mapping>
-          <graphic url="./glyphs/groesser.svg"/>
-        </glyph>
-        <!-- kleiner -->
-        <glyph xml:id="kkleiner">
-          <glyphName>kkleiner</glyphName>
-          <desc>Bedeutung (kleiner als) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\kkleiner</mapping>
-          <graphic url="./glyphs/kleiner.svg"/>
-        </glyph>
-        <glyph xml:id="kleiner">
-          <glyphName>kleiner</glyphName>
-          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\kleiner</mapping>
-          <graphic url="./glyphs/kleiner.svg"/>
-        </glyph>
-        <!-- pmHH -->
-        <glyph xml:id="ppmHH">
-          <glyphName>ppmHH</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmHH</mapping>
-          <graphic url="./glyphs/pmHH.svg"/>
-        </glyph>
-        <glyph xml:id="pmHH">
-          <glyphName>pmHH</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmHH</mapping>
-          <graphic url="./glyphs/pmHH.svg"/>
-        </glyph>
-        <!-- pmDD -->
-        <glyph xml:id="ppmDD">
-          <glyphName>ppmDD</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmGG</mapping>
-          <graphic url="./glyphs/pmDD.svg"/>
-        </glyph>
-        <glyph xml:id="pmDD">
-          <glyphName>pmDD</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmDD</mapping>
-          <graphic url="./glyphs/pmDD.svg"/>
-        </glyph>
-        <!-- pmGG -->
-        <glyph xml:id="ppmGG">
-          <glyphName>ppmGG</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmGG</mapping>
-          <graphic url="./glyphs/pmGG.svg"/>
-        </glyph>
-        <glyph xml:id="pmGG">
-          <glyphName>pmGG</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmGG</mapping>
-          <graphic url="./glyphs/pmGG.svg"/>
-        </glyph>
-        <glyph xml:id="dsig">
-          <glyphName>dsig</glyphName>
-          <desc/>
-          <mapping type="TeX">\dsig</mapping>
-          <graphic url="./glyphs/dsig.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="./glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-        <glyph xml:id="fullmoon">
-          <glyphName>fullmoon</glyphName>
-          <desc>FULL MOON SYMBOL</desc>
-          <mapping type="PUA">U+1F315</mapping>
-          <mapping type="unicode">🌕</mapping>
-          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
-          <mapping type="TeX">\fullmoon</mapping>
-        </glyph>
-        <glyph xml:id="leftmoon">
-          <glyphName>leftmoon</glyphName>
-          <desc>LAST QUARTER MOON</desc>
-          <mapping type="PUA">U+263E</mapping>
-          <mapping type="unicode">☾</mapping>
-          <mapping type="TeX">\leftmoon</mapping>
-        </glyph>
-        <glyph xml:id="rightmoon">
-          <glyphName>rightmoon</glyphName>
-          <desc>FIRST QUARTER MOON</desc>
-          <desc type="PUA">U+263D</desc>
-          <mapping type="unicode">☽</mapping>
-          <mapping type="TeX">\rightmoon</mapping>
-        </glyph>
-        <glyph xml:id="newmoon">
-          <glyphName>newmoon</glyphName>
-          <desc>NEW MOON SYMBOL</desc>
-          <mapping type="PUA">U+1F311</mapping>
-          <mapping type="unicode">🌑</mapping>
-          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
-          <mapping type="TeX">\newmoon</mapping>
-        </glyph>
-        <glyph xml:id="astrosun">
-          <glyphName>astrosun</glyphName>
-          <desc>Sonne (astronomisch)</desc>
-          <mapping type="PUA">U+2609</mapping>
-          <mapping type="unicode">☉</mapping>
-          <mapping type="TeX">\astrosun</mapping>
-          <graphic url="../"/>
-        </glyph>
-        <glyph xml:id="venus">
-          <glyphName>venus</glyphName>
-          <desc>FEMALE SIGN (venus)</desc>
-          <mapping type="PUA">U+2640</mapping>
-          <mapping type="unicode">♀</mapping>
-          <mapping type="TeX">\venus</mapping>
-          <graphic url="../"/>
-        </glyph>
-      </charDecl>
-    </encodingDesc>
-    <profileDesc><langUsage><language ident="fr"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#medizin"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-16" who="#stork" status="enrich_1"/></revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-02-073-000_facs-haupttextzeuge">
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=266"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=267"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=268"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=269"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=270"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=271"/>
-  </facsimile><text xml:id="L_08-02-073-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch73" n="73"><pb type="VIII_2" n="669"/><head>73.
+Bl. 87 im unteren Bereich beschnitten.</p>
+                <p>Cc 2, Nr. 430</p>
+              </summary>
+            </msContents>
+            <physDesc>
+              <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+            </physDesc>
+            <history>
+              <origin corresp="L_witness-origin-types.xml#origin-L"/>
+            </history>
+          </msDesc>
+        </witness>
+      </listWit>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <tagsDecl>
+      <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+      <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+      <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+      <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+      <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+      <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+      <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+      <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+    </tagsDecl>
+    <charDecl>
+      <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+      <!--rightpropto-->
+      <glyph xml:id="rightpropto">
+        <glyphName>rightpropto</glyphName>
+        <desc>...</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\rightpropto</mapping>
+        <graphic url="./glyphs/rightpropto.svg"/>
+      </glyph>
+      <!-- PsMs -->
+      <glyph xml:id="pPsMs">
+        <glyphName>pPsMs</glyphName>
+        <desc>Bedeutung (+−) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-0.5</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\pPsMs</mapping>
+        <graphic url="./glyphs/PsMs.svg"/>
+      </glyph>
+      <glyph xml:id="PsMs">
+        <glyphName>PsMs</glyphName>
+        <desc>Bedeutung (+−) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\PsMs</mapping>
+        <graphic url="./glyphs/PsMs.svg"/>
+      </glyph>
+      <!-- MsPs -->
+      <glyph xml:id="pMsPs">
+        <glyphName>pMsPs</glyphName>
+        <desc>Bedeutung (−+) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-0.5</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\pMsPs</mapping>
+        <graphic url="./glyphs/MsPs.svg"/>
+      </glyph>
+      <glyph xml:id="MsPs">
+        <glyphName>MsPs</glyphName>
+        <desc>Bedeutung (−+) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\MsPs</mapping>
+        <graphic url="./glyphs/MsPs.svg"/>
+      </glyph>
+      <!-- PsPsMs -->
+      <glyph xml:id="pPsPsMs">
+        <glyphName>pPsPsMs</glyphName>
+        <desc>Bedeutung (+(+−)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\pPsPsMs</mapping>
+        <graphic url="./glyphs/PsPsMs.svg"/>
+      </glyph>
+      <glyph xml:id="PsPsMs">
+        <glyphName>PsPsMs</glyphName>
+        <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\PsPsMs</mapping>
+        <graphic url="./glyphs/PsPsMs.svg"/>
+      </glyph>
+      <!-- PsMsPs -->
+      <glyph xml:id="pPsMsPs">
+        <glyphName>pPsMsPs</glyphName>
+        <desc>Bedeutung (+(−+)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\pPsMsPss</mapping>
+        <graphic url="./glyphs/PsMsPs.svg"/>
+      </glyph>
+      <glyph xml:id="PsMsPs">
+        <glyphName>PsMsPs</glyphName>
+        <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\PsMsPs</mapping>
+        <graphic url="./glyphs/PsMsPs.svg"/>
+      </glyph>
+      <!-- MsPsMs -->
+      <glyph xml:id="pMsPsMs">
+        <glyphName>pMsPsMs</glyphName>
+        <desc>Bedeutung (−(+−)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\pMsPsMs</mapping>
+        <graphic url="./glyphs/MsPsMs.svg"/>
+      </glyph>
+      <glyph xml:id="MsPsMs">
+        <glyphName>MsPsMs</glyphName>
+        <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\MsPsMs</mapping>
+        <graphic url="./glyphs/MsPsMs.svg"/>
+      </glyph>
+      <!-- MsMsPs -->
+      <glyph xml:id="pMsMsPs">
+        <glyphName>pMsMsPs</glyphName>
+        <desc>Bedeutung (−(−+)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\pMsMsPss</mapping>
+        <graphic url="./glyphs/MsMsPs.svg"/>
+      </glyph>
+      <glyph xml:id="MsMsPs">
+        <glyphName>MsMsPs</glyphName>
+        <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\MsMsPs</mapping>
+        <graphic url="./glyphs/MsMsPs.svg"/>
+      </glyph>
+      <!-- MsPsPs -->
+      <glyph xml:id="pMsPsPs">
+        <glyphName>pMsPsPs</glyphName>
+        <desc>Bedeutung (−(++)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\pMsPsPs</mapping>
+        <graphic url="./glyphs/MsPsPs.svg"/>
+      </glyph>
+      <glyph xml:id="MsPsPs">
+        <glyphName>MsPsPs</glyphName>
+        <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\MsPsPs</mapping>
+        <graphic url="./glyphs/MsPsPs.svg"/>
+      </glyph>
+      <!-- pmD -->
+      <glyph xml:id="ppmD">
+        <glyphName>ppmD</glyphName>
+        <desc>Bedeutung (−(++)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\ppmD</mapping>
+        <graphic url="./glyphs/pmD.svg"/>
+      </glyph>
+      <glyph xml:id="pmD">
+        <glyphName>pmD</glyphName>
+        <desc>Bedeutung (−(++))- nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\pmD</mapping>
+        <graphic url="./glyphs/pmD.svg"/>
+      </glyph>
+      <!-- pmE -->
+      <glyph xml:id="ppmE">
+        <glyphName>ppmE</glyphName>
+        <desc>Bedeutung (+(+−)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\ppmE</mapping>
+        <graphic url="./glyphs/pmE.svg"/>
+      </glyph>
+      <glyph xml:id="pmE">
+        <glyphName>pmE</glyphName>
+        <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>1.2</value>
+        </charProp>
+        <mapping type="TeX">\pmE</mapping>
+        <graphic url="./glyphs/pmE.svg"/>
+      </glyph>
+      <!-- pmG -->
+      <glyph xml:id="ppmG">
+        <glyphName>ppmG</glyphName>
+        <desc>Bedeutung (+(+−)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\ppmG</mapping>
+        <graphic url="./glyphs/pmG.svg"/>
+      </glyph>
+      <glyph xml:id="pmG">
+        <glyphName>pmG</glyphName>
+        <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\pmG</mapping>
+        <graphic url="./glyphs/pmG.svg"/>
+      </glyph>
+      <!-- pmH -->
+      <glyph xml:id="ppmH">
+        <glyphName>ppmH</glyphName>
+        <desc>Bedeutung (+(−+)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\ppmH</mapping>
+        <graphic url="./glyphs/pmH.svg"/>
+      </glyph>
+      <glyph xml:id="pmH">
+        <glyphName>pmH</glyphName>
+        <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\pmH</mapping>
+        <graphic url="./glyphs/pmH.svg"/>
+      </glyph>
+      <!-- leibdashv -->
+      <glyph xml:id="pleibdashv">
+        <glyphName>pleibdashv</glyphName>
+        <desc>Bedeutung (+−) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\pleibdashv</mapping>
+        <graphic url="./glyphs/pm.svg"/>
+      </glyph>
+      <glyph xml:id="leibdashv">
+        <glyphName>leibdashv</glyphName>
+        <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\leibdashv</mapping>
+        <graphic url="./glyphs/pm.svg"/>
+      </glyph>
+      <!-- leibvdashv -->
+      <glyph xml:id="pleibvdash">
+        <glyphName>pleibvdash</glyphName>
+        <desc>Bedeutung (−+) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\pleibvdash</mapping>
+        <graphic url="./glyphs/mp.svg"/>
+      </glyph>
+      <glyph xml:id="leibvdash">
+        <glyphName>leibvdash</glyphName>
+        <desc>Bedeutung (−+) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\leibvdash</mapping>
+        <graphic url="./glyphs/mp.svg"/>
+      </glyph>
+      <!-- groesser -->
+      <glyph xml:id="ggroesser">
+        <glyphName>ggroesser</glyphName>
+        <desc>Bedeutung (größer als) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\ggroesser</mapping>
+        <graphic url="./glyphs/groesser.svg"/>
+      </glyph>
+      <glyph xml:id="groesser">
+        <glyphName>groesser</glyphName>
+        <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\groesser</mapping>
+        <graphic url="./glyphs/groesser.svg"/>
+      </glyph>
+      <!-- kleiner -->
+      <glyph xml:id="kkleiner">
+        <glyphName>kkleiner</glyphName>
+        <desc>Bedeutung (kleiner als) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\kkleiner</mapping>
+        <graphic url="./glyphs/kleiner.svg"/>
+      </glyph>
+      <glyph xml:id="kleiner">
+        <glyphName>kleiner</glyphName>
+        <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\kleiner</mapping>
+        <graphic url="./glyphs/kleiner.svg"/>
+      </glyph>
+      <!-- pmHH -->
+      <glyph xml:id="ppmHH">
+        <glyphName>ppmHH</glyphName>
+        <desc>Bedeutung (+(−+)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\ppmHH</mapping>
+        <graphic url="./glyphs/pmHH.svg"/>
+      </glyph>
+      <glyph xml:id="pmHH">
+        <glyphName>pmHH</glyphName>
+        <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\pmHH</mapping>
+        <graphic url="./glyphs/pmHH.svg"/>
+      </glyph>
+      <!-- pmDD -->
+      <glyph xml:id="ppmDD">
+        <glyphName>ppmDD</glyphName>
+        <desc>Bedeutung (+(−+)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\ppmGG</mapping>
+        <graphic url="./glyphs/pmDD.svg"/>
+      </glyph>
+      <glyph xml:id="pmDD">
+        <glyphName>pmDD</glyphName>
+        <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\pmDD</mapping>
+        <graphic url="./glyphs/pmDD.svg"/>
+      </glyph>
+      <!-- pmGG -->
+      <glyph xml:id="ppmGG">
+        <glyphName>ppmGG</glyphName>
+        <desc>Bedeutung (+(−+)) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\ppmGG</mapping>
+        <graphic url="./glyphs/pmGG.svg"/>
+      </glyph>
+      <glyph xml:id="pmGG">
+        <glyphName>pmGG</glyphName>
+        <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\pmGG</mapping>
+        <graphic url="./glyphs/pmGG.svg"/>
+      </glyph>
+      <glyph xml:id="dsig">
+        <glyphName>dsig</glyphName>
+        <desc/>
+        <mapping type="TeX">\dsig</mapping>
+        <graphic url="./glyphs/dsig.svg"/>
+      </glyph>
+      <glyph xml:id="Pfund">
+        <glyphName>Pfund</glyphName>
+        <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.7</value>
+        </charProp>
+        <mapping type="TeX">\Pfund</mapping>
+        <graphic url="./glyphs/Pfund.svg"/>
+      </glyph>
+      <!-- Sonderzeichen MIT Unicodeentsprechung -->
+      <glyph xml:id="fullmoon">
+        <glyphName>fullmoon</glyphName>
+        <desc>FULL MOON SYMBOL</desc>
+        <mapping type="PUA">U+1F315</mapping>
+        <mapping type="unicode">🌕</mapping>
+        <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
+        <mapping type="TeX">\fullmoon</mapping>
+      </glyph>
+      <glyph xml:id="leftmoon">
+        <glyphName>leftmoon</glyphName>
+        <desc>LAST QUARTER MOON</desc>
+        <mapping type="PUA">U+263E</mapping>
+        <mapping type="unicode">☾</mapping>
+        <mapping type="TeX">\leftmoon</mapping>
+      </glyph>
+      <glyph xml:id="rightmoon">
+        <glyphName>rightmoon</glyphName>
+        <desc>FIRST QUARTER MOON</desc>
+        <desc type="PUA">U+263D</desc>
+        <mapping type="unicode">☽</mapping>
+        <mapping type="TeX">\rightmoon</mapping>
+      </glyph>
+      <glyph xml:id="newmoon">
+        <glyphName>newmoon</glyphName>
+        <desc>NEW MOON SYMBOL</desc>
+        <mapping type="PUA">U+1F311</mapping>
+        <mapping type="unicode">🌑</mapping>
+        <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
+        <mapping type="TeX">\newmoon</mapping>
+      </glyph>
+      <glyph xml:id="astrosun">
+        <glyphName>astrosun</glyphName>
+        <desc>Sonne (astronomisch)</desc>
+        <mapping type="PUA">U+2609</mapping>
+        <mapping type="unicode">☉</mapping>
+        <mapping type="TeX">\astrosun</mapping>
+        <graphic url="../"/>
+      </glyph>
+      <glyph xml:id="venus">
+        <glyphName>venus</glyphName>
+        <desc>FEMALE SIGN (venus)</desc>
+        <mapping type="PUA">U+2640</mapping>
+        <mapping type="unicode">♀</mapping>
+        <mapping type="TeX">\venus</mapping>
+        <graphic url="../"/>
+      </glyph>
+    </charDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="fr"/>
+    </langUsage>
+    <calendarDesc>
+      <calendar xml:id="gregorian">
+        <p>Gregorianischer Kalenderstil</p>
+      </calendar>
+      <calendar xml:id="julian">
+        <p>Julianischer Kalenderstil</p>
+      </calendar>
+    </calendarDesc>
+    <textClass>
+      <catRef scheme="L_subjects" target="L_subjects.xml#medizin"/>
+      <catRef scheme="L_terms" target="L_terms.xml#"/>
+    </textClass>
+    <abstract>
+      <listPerson>
+        <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+        <person sameAs="L_persons.xml#"/>
+      </listPerson>
+      <listPlace>
+        <place sameAs="L_places.xml#"/>
+      </listPlace>
+    </abstract>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021" who="#telota" status="base"/>
+    <change when="2021-09-16" who="#stork" status="enrich_1"/>
+  </revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-02-073-000_facs-haupttextzeuge">
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=266"/>
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=267"/>
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=268"/>
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=269"/>
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=270"/>
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=271"/>
+</facsimile>
+<text xml:id="L_08-02-073-000_text">
+  <body xml:id="Document">
+    <div type="chapter" xml:id="Ch73" n="73">
+      <pb type="VIII_2" n="669"/>
+      <head>73.
 ESSENCE STYPTIQUE</head>
-<head>[September 1674 – Oktober 1676]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Abschrift einer unbekannte<pb type="VIII_2" n="670"/>n Vorlage:
+      <head>[September 1674 – Oktober 1676]</head>
+      <div type="ueberlieferung">
+        <p>
+          <hi rendition="#b #smaller">Überlieferung:</hi>
+          <listWit>
+            <witness>
+              <msDesc>
+                <msIdentifier>
+                  <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                  <idno type="Signatur"/>
+                </msIdentifier>
+                <msContents>
+                  <summary>
+                    <p>Abschrift einer unbekannte<pb type="VIII_2" n="670"/>
+n Vorlage:
 LH III, 5 Bl. 86-87.
 1 Bog. 4<hi rendition="#sup">o</hi>.
 3 S. Bl. 87 v<hi rendition="#sup">o</hi> leer.
-Bl. 87 im unteren Bereich beschnitten.</p><p>Cc 2, Nr. 430</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch73.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Bl. 87 im unteren Bereich beschnitten.</p>
+                  <p>Cc 2, Nr. 430</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
+      </p>
+    </div>
+    <div type="contents">
+      <p xml:id="Ch73.p4">
+        <hi rendition="#smaller">
+          <hi rendition="#b">Datierungsgründe:</hi>
 Im vorliegenden Stück N. 73 weist Leibniz eingangs darauf hin,
 die Methode zur Herstellung und Anwendung des im Text dargestellten Medikaments von <hi rendition="#i">Mons. Memmin</hi> übernommen zu haben.
 Ein <hi rendition="#i">Monsieur Memming</hi> wurde Leibniz in einem auf Anfang September 1674 datierbaren Brief von Günther Christoph Schelhammer vorgestellt (<hi rendition="#i">LSB</hi> III, 1 N. 32, S. 123).
 Auf Memmings ersten Besuch geht Leibniz in seiner wohl Mitte September 1674 verfassten Antwort an Schelhammer ein (<hi rendition="#i">LSB</hi> III, 5 N. I, S. 3).
-Ein <hi rendition="#i">Mons. Memmin</hi> wird ferner im Stück N. 77 erwähnt, das auf die zweite Hälfte O<pb type="VIII_2" n="671"/>ktober 1676 datiert werden kann (siehe unten, S. <ref corresp="L_chapter_77.xml#LH041_02_009r_Memmin"/>).
-Ebenda ist auch folgende <pb type="VIII_2" n="672"/>Bemerkung anzutreffen:
-<hi rendition="#i">Le Roy dépuis son rétablissement a eu du parlement plus 975259 liures sterlins et extraordinairement accordées, sans l’argent des cheminées et sur les vins.</hi>
-Hierauf dürfte sich wohl der Vermerk <hi rendition="#i">9752597 <formula xml:id="Ch73.p4.g1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula> sterling</hi> beziehen, welcher sich im vorliegenden Stück N. 73 am Rand von Bl. 87 r<hi rendition="#sup">o</hi> findet (siehe unten, S. <ref corresp="#LH003_05_087r_sterling"/>).
+Ein <hi rendition="#i">Mons. Memmin</hi> wird ferner im Stück N. 77 erwähnt, das auf die zweite Hälfte O<pb type="VIII_2" n="671"/>
+ktober 1676 datiert werden kann (siehe unten, S. <ref corresp="L_chapter_77.xml#LH041_02_009r_Memmin"/>
+).
+Ebenda ist auch folgende <pb type="VIII_2" n="672"/>
+Bemerkung anzutreffen:
+    <hi rendition="#i">Le Roy dépuis son rétablissement a eu du parlement plus 975259 liures sterlins et extraordinairement accordées, sans l’argent des cheminées et sur les vins.</hi>
+Hierauf dürfte sich wohl der Vermerk <hi rendition="#i">9752597 <formula xml:id="Ch73.p4.g1">
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+      <m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+    </m:math>
+  </formula> sterling</hi> beziehen, welcher sich im vorliegenden Stück N. 73 am Rand von Bl. 87 r<hi rendition="#sup">o</hi> findet (siehe unten, S. <ref corresp="#LH003_05_087r_sterling"/>
+).
 Handelt es sich beim erwähnten <hi rendition="#i">Mons. Memmin</hi> stets um ein und dieselbe Person, so lässt sich daraus folgern,
 dass Leibniz vom September 1674 bis zu seinem Londoner Aufenthalt im Oktober 1676 Gelegenheit hatte,
 von dem im vorliegenden Stück dargestellten Medikament Kenntnis zu erlangen.
 Da weitere Anhaltspunkte für eine genauere chronologische Einordnung fehlen,
-wird diese Zeitspanne als Datierung von N. 73 vorgeschlagen.</hi></p></div><div type="text"><p xml:id="Ch73.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[86 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch73.p6" rendition="#c">Essence styptique,</p><p xml:id="Ch73.p7" rendition="#noindent">qui arreste sang d’une artere ou d’une veine couppée et toute autre sorte d’hemorragie, qui guerit aussi facilement et promtement les playes, les ulceres, la gangrene et presque toutes les maladies externes, elle a esté inventée par Mons. de la Rouuiere<index indexName="Namensregister"><term><hi rendition="#g">de la Rouuiere</hi>, ???? ??-??</term></index> Medecin d’Aix en Provence<index indexName="Ortsregister"><term>Aix-en-Provence</term></index>, et communiquée par Mons. Motbill<index indexName="Namensregister"><term><hi rendition="#g">Motbill</hi>, ???? ??-??</term></index> Ecossois à Mons. <anchor xml:id="_____"/>Memmin.<index indexName="Namensregister"><term><hi rendition="#g">Memmin</hi>, ???? ??-??.</term></index></p><p xml:id="Ch73.p8">℞. Une liure de bonne et excellente chaux vive, mettez la dans un plat d’argent ou dans un pot de terre, versez sur icelle environ 5 ou 6 liur. d’eau, couurez le pot ou le plat, et laissez infuser cela environ 1. heure sans y toucher. Puis remuez bien le tout, avec un baston de bois, battant et agitant l’eau, durant un moment; après laissez encor infuser cela pendant 24 heures, pendant les quelles vous remuerez derechef le tout par 2 ou 3 fois. Finalement, vous laisserez bien rassoir la poudre blanche au fonds du pot, et l’eau estant bien claire et nette par dessus, vous la verserez doucement par inclination, sans la</p><p xml:id="Ch73.p9" rendition="#noindent">troubler, puis vous renfermerez dans des bouteilles de verre bien <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[bouchées]</corr></lem><rdg wit="#L"><orig>bouchée</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> pour l’usage suivant.</p><p xml:id="Ch73.p10">℞. 1. liure de cette eau de chaux, mettez la dans une phiole de verre, et y adjoutez 1. dragme et demie de sublimé corrosif, pillé et broyé en poudre subtile; puis agitez et secouez tres bien la phiole, à fin que la poudre du sublimé se dissolve, d’abord l’eau deviendra rougeastre, approchante de l’oranger, puis jaunastre et finalement claire et limpide, parce qu’une poudre rougeastre se precipitera aufonds. Toute la poudre s’estant donc rassise, et l’eau s’estant bien clarifiée, il la faut separer de la poudre, en la versant doucement par inclination, dans un autre vaisseau de verre, sans la troubler, et dans cette même eau, vous y ajouterez une dragme et demie de bon esprit de vitriol déφlegmé ou jusqu’à 2 dragmes, selon que l’esprit de <graphic xml:id="Ch73.p10.g1" url="./images/vitriol2.svg" width="8.6724pt"/> est fort ou foible. Car s’il estoit bien déφlegmé, 1 dragme suffiroit, et en vaudroit même mieux que 2 dragmes d’autre. Aposez encor avec cela à la dite eau de chaux, une dragme de sel ou de sucre de ♄:</p><p xml:id="Ch73.p11">Tout cela estant dans la φiole, il la faut remuer et secouer, pour agiter les matieres, et les bien mesler ensemble, laissez reposer ensuite l’eau, jusqu’à ce qu’elle soit parfaitement claire, apres quoy vuidez la par inclination dans une autre bouteille, et si elle n’est pas bien claire et limpide, filtrez la au travers du papier gris, pour la bien separer d’une poudre blanche, qui sera au fonds, et pour la clarifier à perfection, cela fait, vostre essence la sera aussi, gardez la seulement dans une bouteille bien fermée, comme un precieux tresor de la santé.</p><p xml:id="Ch73.p12">Il faut remarquer qu’on peut employer cette essence à des usages differens; il est necessaire d’en composer de forte, de foible, et de mediocre. La plus forte sera composée de <formula xml:id="Ch73.p12.g1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula>. i. d’eau de chaux <graphic xml:id="Ch73.p12.g2" url="./images/drachma.svg" width="5.63706pt"/>ij de sublimé corrosif, <graphic xml:id="Ch73.p12.g3" url="./images/drachma.svg" width="5.63706pt"/>ij de bon esprit de vitriol bien deφlegmé et de <graphic xml:id="Ch73.p12.g4" url="./images/drachma.svg" width="5.63706pt"/>i de sucre saturne. Car pour cette derniere drogue, on ne doit jamais l’augmenter, quoy qu’on augmente les autres ou en peut bien diminuer la dose mais non pas l’augmenter, car une dragme de ce sel de ♄ suffit tousjours pour <formula xml:id="Ch73.p12.g5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula>. i. d’eau.</p><p xml:id="Ch73.p13">La mediocre doit estre faite comme nous avons dit cy devant, c’est à dire, selon les poids. Ces doses que nous avons <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[marquez]</corr></lem><rdg wit="#L"><orig>marequez</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> à sçavoir <formula xml:id="Ch73.p13.g1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula>. i. d’eau de chaux, <graphic xml:id="Ch73.p13.g2" url="./images/drachma.svg" width="5.63706pt"/>i<graphic xml:id="Ch73.p13.g3" url="./images/semi.svg" width="8.6724pt"/> de sublimé corrosif, autant d’esprit de vitriol et <graphic xml:id="Ch73.p13.g4" url="./images/drachma.svg" width="5.63706pt"/>i de sel de ♄.</p><p xml:id="Ch73.p14">La plus foible sera composée de <graphic xml:id="Ch73.p14.g1" url="./images/semidrachma.svg" width="13.0086pt"/> de sublimé corrosif <graphic xml:id="Ch73.p14.g2" url="./images/semidrachma.svg" width="13.0086pt"/> d’esprit de vitriol et <graphic xml:id="Ch73.p14.g3" url="./images/semidrachma.svg" width="13.0086pt"/> de sucre de ♄. On garde ces 3 eaux separées dans des bouteilles bien bouchées. On se sert de la plus forte aux tres grandes hemorrhoides quand il y a des plus grands vaisseaux ou vases des cuisses coupées ou le foye même <app type="Bfootnote"><lem type="main">percé ou</lem><rdg wit="#L">percé <note type="editorial">|</note> ne <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> ou  <hi rendition="#i">L</hi></rdg></app>
+wird diese Zeitspanne als Datierung von N. 73 vorgeschlagen.</hi>
+</p>
+</div>
+<div type="text">
+<p xml:id="Ch73.p5" rendition="#noindent">
+<pb type="L"/>
+<fw type="folNum">[86 r<hi rendition="#sup">o</hi>]
+</fw>
+</p>
+<p xml:id="Ch73.p6" rendition="#c">Essence styptique,</p>
+<p xml:id="Ch73.p7" rendition="#noindent">qui arreste sang d’une artere ou d’une veine couppée et toute autre sorte d’hemorragie, qui guerit aussi facilement et promtement les playes, les ulceres, la gangrene et presque toutes les maladies externes, elle a esté inventée par Mons. de la Rouuiere<index indexName="Namensregister">
+<term>
+<hi rendition="#g">de la Rouuiere</hi>, ???? ??-??
+</term>
+</index> Medecin d’Aix en Provence<index indexName="Ortsregister">
+<term>Aix-en-Provence</term>
+</index>, et communiquée par Mons. Motbill<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Motbill</hi>, ???? ??-??
+</term>
+</index> Ecossois à Mons. <anchor xml:id="_____"/>
+Memmin.<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Memmin</hi>, ???? ??-??.
+</term>
+</index>
+</p>
+<p xml:id="Ch73.p8">℞. Une liure de bonne et excellente chaux vive, mettez la dans un plat d’argent ou dans un pot de terre, versez sur icelle environ 5 ou 6 liur. d’eau, couurez le pot ou le plat, et laissez infuser cela environ 1. heure sans y toucher. Puis remuez bien le tout, avec un baston de bois, battant et agitant l’eau, durant un moment; après laissez encor infuser cela pendant 24 heures, pendant les quelles vous remuerez derechef le tout par 2 ou 3 fois. Finalement, vous laisserez bien rassoir la poudre blanche au fonds du pot, et l’eau estant bien claire et nette par dessus, vous la verserez doucement par inclination, sans la</p>
+<p xml:id="Ch73.p9" rendition="#noindent">troubler, puis vous renfermerez dans des bouteilles de verre bien <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[bouchées]</corr>
+</lem>
+<rdg wit="#L">
+<orig>bouchée</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> pour l’usage suivant.</p>
+<p xml:id="Ch73.p10">℞. 1. liure de cette eau de chaux, mettez la dans une phiole de verre, et y adjoutez 1. dragme et demie de sublimé corrosif, pillé et broyé en poudre subtile; puis agitez et secouez tres bien la phiole, à fin que la poudre du sublimé se dissolve, d’abord l’eau deviendra rougeastre, approchante de l’oranger, puis jaunastre et finalement claire et limpide, parce qu’une poudre rougeastre se precipitera aufonds. Toute la poudre s’estant donc rassise, et l’eau s’estant bien clarifiée, il la faut separer de la poudre, en la versant doucement par inclination, dans un autre vaisseau de verre, sans la troubler, et dans cette même eau, vous y ajouterez une dragme et demie de bon esprit de vitriol déφlegmé ou jusqu’à 2 dragmes, selon que l’esprit de <graphic xml:id="Ch73.p10.g1" url="./images/vitriol2.svg" width="8.6724pt"/>
+ est fort ou foible. Car s’il estoit bien déφlegmé, 1 dragme suffiroit, et en vaudroit même mieux que 2 dragmes d’autre. Aposez encor avec cela à la dite eau de chaux, une dragme de sel ou de sucre de ♄:</p>
+<p xml:id="Ch73.p11">Tout cela estant dans la φiole, il la faut remuer et secouer, pour agiter les matieres, et les bien mesler ensemble, laissez reposer ensuite l’eau, jusqu’à ce qu’elle soit parfaitement claire, apres quoy vuidez la par inclination dans une autre bouteille, et si elle n’est pas bien claire et limpide, filtrez la au travers du papier gris, pour la bien separer d’une poudre blanche, qui sera au fonds, et pour la clarifier à perfection, cela fait, vostre essence la sera aussi, gardez la seulement dans une bouteille bien fermée, comme un precieux tresor de la santé.</p>
+<p xml:id="Ch73.p12">Il faut remarquer qu’on peut employer cette essence à des usages differens; il est necessaire d’en composer de forte, de foible, et de mediocre. La plus forte sera composée de <formula xml:id="Ch73.p12.g1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>. i. d’eau de chaux <graphic xml:id="Ch73.p12.g2" url="./images/drachma.svg" width="5.63706pt"/>
+ij de sublimé corrosif, <graphic xml:id="Ch73.p12.g3" url="./images/drachma.svg" width="5.63706pt"/>
+ij de bon esprit de vitriol bien deφlegmé et de <graphic xml:id="Ch73.p12.g4" url="./images/drachma.svg" width="5.63706pt"/>
+i de sucre saturne. Car pour cette derniere drogue, on ne doit jamais l’augmenter, quoy qu’on augmente les autres ou en peut bien diminuer la dose mais non pas l’augmenter, car une dragme de ce sel de ♄ suffit tousjours pour <formula xml:id="Ch73.p12.g5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>. i. d’eau.</p>
+<p xml:id="Ch73.p13">La mediocre doit estre faite comme nous avons dit cy devant, c’est à dire, selon les poids. Ces doses que nous avons <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[marquez]</corr>
+</lem>
+<rdg wit="#L">
+<orig>marequez</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> à sçavoir <formula xml:id="Ch73.p13.g1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>. i. d’eau de chaux, <graphic xml:id="Ch73.p13.g2" url="./images/drachma.svg" width="5.63706pt"/>
+i<graphic xml:id="Ch73.p13.g3" url="./images/semi.svg" width="8.6724pt"/>
+ de sublimé corrosif, autant d’esprit de vitriol et <graphic xml:id="Ch73.p13.g4" url="./images/drachma.svg" width="5.63706pt"/>
+i de sel de ♄.</p>
+<p xml:id="Ch73.p14">La plus foible sera composée de <graphic xml:id="Ch73.p14.g1" url="./images/semidrachma.svg" width="13.0086pt"/>
+ de sublimé corrosif <graphic xml:id="Ch73.p14.g2" url="./images/semidrachma.svg" width="13.0086pt"/>
+ d’esprit de vitriol et <graphic xml:id="Ch73.p14.g3" url="./images/semidrachma.svg" width="13.0086pt"/>
+ de sucre de ♄. On garde ces 3 eaux separées dans des bouteilles bien bouchées. On se sert de la plus forte aux tres grandes hemorrhoides quand il y a des plus grands vaisseaux ou vases des cuisses coupées ou le foye même <app type="Bfootnote">
+<lem type="main">percé ou</lem>
+<rdg wit="#L">percé <note type="editorial">|</note> ne <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> ou  <hi rendition="#i">L</hi>
+</rdg>
+</app>
 le sang de quelque grande artere sort en si grande quantité, et avec tant d’impetuosité, qu’on ne peut l’arrester par l’application des eaux moins fortes. Car par ex. si un homme avoit receu, quelque coup au
-<pb type="L"/><fw type="folNum">[86 v<hi rendition="#sup">o</hi>]</fw> gozier, qui luy eust coupé une partie de la gorge ou du col et que les veines et les arteres carotides fussent emportées.</p><p xml:id="Ch73.p15">Mais tant qu’il est possible d’arrester le sang par l’essence styptique foible ou mediocre, il ne faut point se servir de la forte, qui n’est ainsi faite que pour les grandes et extremes necessitez, suivant cet axiome de φilosophie, <app type="Cfootnote"><lem type="main">frustra fiunt per plura, quae fieri possunt <app type="Bfootnote"><lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[per]</add></lem><note type="lemma-abbrev">per</note><note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></app> pauciora:</lem><note type="lemma-abbrev">frustra <seg type="apparat-ellipsis"/> pauciora</note><note type="editorial">Siehe etwa <bibl corresp="#bib_01176"><hi rendition="#k">W. von Ockham</hi>, <hi rendition="#i">Summa totius logicae</hi>, I 12.</bibl></note></app>
+<pb type="L"/>
+<fw type="folNum">[86 v<hi rendition="#sup">o</hi>]
+</fw> gozier, qui luy eust coupé une partie de la gorge ou du col et que les veines et les arteres carotides fussent emportées.</p>
+<p xml:id="Ch73.p15">Mais tant qu’il est possible d’arrester le sang par l’essence styptique foible ou mediocre, il ne faut point se servir de la forte, qui n’est ainsi faite que pour les grandes et extremes necessitez, suivant cet axiome de φilosophie, <app type="Cfootnote">
+<lem type="main">frustra fiunt per plura, quae fieri possunt <app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[per]</add>
+</lem>
+<note type="lemma-abbrev">per</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app> pauciora:</lem>
+<note type="lemma-abbrev">frustra <seg type="apparat-ellipsis"/>
+ pauciora</note>
+<note type="editorial">Siehe etwa <bibl corresp="#bib_01176">
+<hi rendition="#k">W. von Ockham</hi>,<hi rendition="#i">Summa totius logicae</hi>, I 12.</bibl>
+</note>
+</app>
 ou plustost suivant cet axiome de Medecine, qui dit qu’en matiere de remedes a mitioribus est incipiendum, et ad fortiora progrediendum. On se sert de la foible ou plustost de la mediocre, tant interieurement parce qu’on la donne à boire dans de l’eau de
-<app type="Bfootnote"><lem type="main">plantain, avec un peu de succre rosat à ceux</lem><note type="lemma-abbrev">plantain,</note><rdg wit="#L" n="1"> sur l’ </rdg><rdg wit="#L" n="2"> avec un peu de
-<app><rdg wit="#L" n="a"> goutte </rdg><rdg wit="#L" n="b"> succre rosat
-<app><rdg wit="#L" n="aa"> avec un </rdg><rdg wit="#L" n="bb"> à ceux <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
-qui crachent ou qui glissent le sang pour avoir quelque veine ou artere rompue dans le corps et on en voit un succes le plus heureux du monde. On en donne alors 2. ou 3. cuillerées ou dépuis environ un quart d’once jusqu’ à <graphic xml:id="Ch73.p15.g1" url="./images/uncia.svg" width="6.07068pt"/>i et on en reitere cette prise 2 ou 3 fois par jour tant que le sang soit bien arresté, meslant à chaque prise <graphic xml:id="Ch73.p15.g2" url="./images/drachma.svg" width="5.63706pt"/>i ou ij de sucre rosat et environ <graphic xml:id="Ch73.p15.g3" url="./images/uncia.svg" width="6.07068pt"/>i ou ij d’eau de plantain ou d’eau rose, ou bien on la donne dans quelque decoction faite avec les herbes
-<app type="Bfootnote"><lem type="main">vulneraires, comme</lem><note type="lemma-abbrev">vulneraires,</note><rdg wit="#L" n="1"> car </rdg><rdg wit="#L" n="2"> comme <hi rendition="#i">L</hi></rdg></app>
-sont les mille feuilles, sanicles, grand consoulde, rubus, etc. ou bien on donne l’essence styptique toute seule, mais si le sang qu’on crache vient de quelque vaisseau rompu dans la poitrine le sucre rosat y est tres necessaire, et il n’est pas non plus inutile ailleurs. Voilà quand à la façon de l’essence styptique, et quant à son usage interne.</p><p xml:id="Ch73.p16">Usage <hi rendition="#g">externe de cette essence</hi>. On s’en sert de même que celle de Mons. Denys<index indexName="Namensregister"><term><hi rendition="#g">Denys</hi>, ???? ??-??)</term></index> c’est à dire que l’on trempe des compresses ou des <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[tampons]</corr></lem><rdg wit="#L"><orig>tempons</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> de linge dans cette eau, et on les applique sur la playe, puis on serre bien cela avec un bandage propre à la partie, et dans un moment le sang s’arreste en peu de temps apres la playe guerit par la seule application de la même foible ou mediocre selon que le mal est grand. Mais lors que ce n’est point pour arrester le sang mais pour guerir une playe ou une ulcere, il faut adjouter <graphic xml:id="Ch73.p16.g1" url="./images/uncia.svg" width="6.07068pt"/> d’esprit de vin sur <formula xml:id="Ch73.p16.g2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula>j d’essence, parce qu’outre la vertu qu’elle a d’arrester le sang, elle ne souffre point qu’il se face aucune corruption en la partie, ny par consequent aucun pus.</p><p xml:id="Ch73.p17">Elle est donc detersive astringente, glutinatiue, incarnatiue, consolidatiue et souuerainement curatiue de playes, ulceres, loupes, chancres, et par excellence de la gangrene, en adjoustant <graphic xml:id="Ch73.p17.g1" url="./images/uncia.svg" width="6.07068pt"/>i d’esprit du vin et sur une once de la dite essence foible ou mediocre. Que si la gangrene est fort <app type="Bfootnote"><lem type="main">grande et fort</lem><rdg wit="#L">grande <note type="editorial">|</note> est fort grande <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> et fort <hi rendition="#i">L</hi></rdg></app> avancée par une grande modification de la partie, il est bon de se servir de la plus forte, elle revigore la chaleur naturelle, et n’appelle les esprits à la partie gangrenée. Pour la guerison des ulceres et des playes la foible suffit en y adjoutant <graphic xml:id="Ch73.p17.g2" url="./images/uncia.svg" width="6.07068pt"/>i d’esprit de vin sur <formula xml:id="Ch73.p17.g3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula>j d’essence.</p><p xml:id="Ch73.p18">Outre cela elle guerit les Erysipeles, la bruslure, et presque toutes les maladies externes mieux que tous les emplastres, et tous les baumes du Monde estant elle même le vray baume, de nature comme l’experience infallible fera voir à ceux qui s’en serviront bien à propos. Pour la guerison <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[des]</corr></lem><rdg wit="#L"><orig>les</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> Eresypeles, la plus foible suffit aussi avec <graphic xml:id="Ch73.p18.g1" url="./images/uncia.svg" width="6.07068pt"/>ij d’esprit <app type="Bfootnote"><lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[de]</add></lem><note type="lemma-abbrev">de</note><note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></app> vin sur <formula xml:id="Ch73.p18.g2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula>j et il la faut aussi semblable pour une petite bruslure, mais si la bruslure <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[est]</corr></lem><rdg wit="#L"><orig>et</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> fort grande, il faut de la mediocre.</p><p xml:id="Ch73.p19">Pour l’hemorragie du nez ou des narines, on met un peu de cette essence styptique dans le creux de la main, et on la tire par le nez, puis on fait un petit bouchon de charpie ou de coton, qu’on trempe dans la dite essence, et on le met dans la narine qui saigne que <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[si]</corr></lem><rdg wit="#L"><orig>s’il</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> l’hemorragie se rend encore opiniastre à tout cela il faut boire quelques cuillerées de cette essence dans de l’eau d’ortie ou de plantin.</p><p xml:id="Ch73.p20">Pour la dysenterie. Elle est encor tres excellente pour les boyaux-ulcerez ou flux de sang qu’on appelle dysenterie, estant prise par
-<pb type="L"/><fw type="folNum">[87 r<hi rendition="#sup">o</hi>]</fw>
-la bouche avec de l’eau de rose, le plantin ou d’ortie ou quelque autre eau astringente et vulneraire. Comme aussi estant meslée avec la decoction des clysteres astringents. Par exemple on fait une decoction avec les herbes appellées tapsus <app type="Bfootnote"><lem type="main">barbatus</lem><note type="lemma-abbrev">tapsus</note><rdg wit="#L" n="1"> berbatus </rdg><rdg wit="#L" n="2"> barbatus <hi rendition="#i">L</hi></rdg></app> sive verbascum plantin, rubus, etc. les feuilles de chesne, les roses rouges et dans <graphic xml:id="Ch73.p20.g1" url="./images/uncia.svg" width="6.07068pt"/> viij de la decoction des dites herbes on mêle environ <graphic xml:id="Ch73.p20.g2" url="./images/uncia.svg" width="6.07068pt"/>iij ou iiij de l’essence foible <graphic xml:id="Ch73.p20.g3" url="./images/uncia.svg" width="6.07068pt"/>i des gros de<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand, ohne erkennbaren Zusammenhang mit dem Text:</hi> 9752597 <formula xml:id="Ch73.p20.g4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula> sterling</note><anchor xml:id="LH003_05_087r_sterling"/> ros. seches ou des grap. de coins, ou de quelque autre syrop astringent, ou de tout cela on fait un lavement qui n’a pas son pareil dans toute la medecine pour la guerison de la vraye dysenterie, et de tous autres ulceres des boyaux. Mais il faut avoir soin de reiterer les mêmes remedes jusqu’à <app type="Bfootnote"><lem type="main">la</lem><rdg wit="#L"> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> parfaite guerison,
-<app type="Bfootnote"><lem type="main">adjoutant un</lem><note type="lemma-abbrev">adjoutant</note><rdg wit="#L" n="1"> une </rdg><rdg wit="#L" n="2"> un <hi rendition="#i">L</hi></rdg></app> jaune d’oeuf aux dits lavements; lors que les douleurs dysenteriques sont grandes ou bien on mesle <graphic xml:id="Ch73.p20.g5" url="./images/uncia.svg" width="6.07068pt"/>iij ou iiij de cette essence foible avec une demie <formula xml:id="Ch73.p20.g6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula> <note type="Afootnote" place="margin" resp="#L"><hi rendition="#i"/>Am Rand, ohne erkennbaren Zusammenhang mit dem Text: long soleil</note> de lait de vache ferré, que nous appellons lac chalybeatum vel ustulatum, ce qui se <app type="Bfootnote"><lem type="main">fait en</lem><note type="lemma-abbrev">fait</note><rdg wit="#L" n="1"> avec </rdg><rdg wit="#L" n="2"> en <hi rendition="#i">L</hi></rdg></app> éteignant un quarré ou d’acier ou de petits cailloux rougis dans le dit lait; et puis on y mesle la dite essence, et on y dissout un jaune d’oeuf apres quoy on coule tout cela, et on le donne en clystere au malade.</p><p xml:id="Ch73.p21">On peut aussi tres à propos mesler <graphic xml:id="Ch73.p21.g1" url="./images/uncia.svg" width="6.07068pt"/>iiij de ce lait ferré avec <graphic xml:id="Ch73.p21.g2" url="./images/uncia.svg" width="6.07068pt"/>iiij de la decoction des dites herbes astringentes et vulneraires et <graphic xml:id="Ch73.p21.g3" url="./images/uncia.svg" width="6.07068pt"/>iij ou iiij de l’essence foible un jaune d’oeuf et <graphic xml:id="Ch73.p21.g4" url="./images/uncia.svg" width="6.07068pt"/>i du
-syrop de coin pour un lavement excellent.</p><pb type="VIII_2" n="673"/><p xml:id="Ch73.p22">Je me suis un peu estendu sur la maniere de traiter cette maladie parce qu’elle est des plus cruelles qui puissent attaquer le corps humain, et parce qu’il se trouue peu de personnes qui soyent munies d’un remede capable de la guerir comme sont ceux que je viens de décrire, estant animez et fortifiez par nostre precieuse essence sans laquelle ils ne seroient pas de grande energie.</p><p xml:id="Ch73.p23">Pour le <hi rendition="#g">scorbut</hi>. J’oubliois de vous dire une de ces plus grandes vertus et de vous apprendre un de ces plus utiles usages. C’est qu’elle guerit les ulceres de la bouche causés par le scorbut, mieux que tout autre remede, en se gargarisant et se lavant la bouche avec elle seule ou bien meslée avec la decoction des herbes vulneraires et astringentes ou bien meslée avec le lait ustulatus. Elle n’est pas moins bonne pour les contusions, les meurtrisseures, en adjoutant à <formula xml:id="Ch73.p23.g1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula>j de la foible <graphic xml:id="Ch73.p23.g2" url="./images/uncia.svg" width="6.07068pt"/>i d’esprit de vin ou vous trempés des compresses de linge et les appliqués sur la contusion ou meurtrisseure.</p><p xml:id="Ch73.p24">Nota qu’il faut remarquer que pour les erisypeles bruslures inflammations, des <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[plaies]</corr></lem><rdg wit="#L"><orig>plies</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>, contusions, meurtrisseures, il faut tousjours se servir <app type="Bfootnote"><lem type="main">de la</lem><note type="lemma-abbrev">de</note><rdg wit="#L" n="1"> cette </rdg><rdg wit="#L" n="2"> la <hi rendition="#i">L</hi></rdg></app> foible et adjouter <graphic xml:id="Ch73.p24.g1" url="./images/uncia.svg" width="6.07068pt"/>ij d’esprit de vin <app type="Bfootnote"><lem type="main">sur</lem><note type="lemma-abbrev">vin</note><rdg wit="#L" n="1"> le </rdg><rdg wit="#L" n="2"> sur  <hi rendition="#i">L</hi></rdg></app> <formula xml:id="Ch73.p24.g2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula>j au lieu que lors que c’est pour guerir les ulceres et les vieilles playes, il ne faut <graphic xml:id="Ch73.p24.g3" url="./images/uncia.svg" width="6.07068pt"/>i d’esprit de vin sur <formula xml:id="Ch73.p24.g4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/></m:math></formula>j de la dite essence.</p></div></div></body>
-  </text>
+<app type="Bfootnote">
+<lem type="main">plantain, avec un peu de succre rosat à ceux</lem>
+<note type="lemma-abbrev">plantain,</note>
+<rdg wit="#L" n="1"> sur l’ </rdg>
+<rdg wit="#L" n="2"> avec un peu de
+<app>
+<rdg wit="#L" n="a"> goutte </rdg>
+<rdg wit="#L" n="b"> succre rosat
+<app>
+<rdg wit="#L" n="aa"> avec un </rdg>
+<rdg wit="#L" n="bb"> à ceux <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+qui crachent ou qui glissent le sang pour avoir quelque veine ou artere rompue dans le corps et on en voit un succes le plus heureux du monde. On en donne alors 2. ou 3. cuillerées ou dépuis environ un quart d’once jusqu’ à <graphic xml:id="Ch73.p15.g1" url="./images/uncia.svg" width="6.07068pt"/>
+i et on en reitere cette prise 2 ou 3 fois par jour tant que le sang soit bien arresté, meslant à chaque prise <graphic xml:id="Ch73.p15.g2" url="./images/drachma.svg" width="5.63706pt"/>
+i ou ij de sucre rosat et environ <graphic xml:id="Ch73.p15.g3" url="./images/uncia.svg" width="6.07068pt"/>
+i ou ij d’eau de plantain ou d’eau rose, ou bien on la donne dans quelque decoction faite avec les herbes
+<app type="Bfootnote">
+<lem type="main">vulneraires, comme</lem>
+<note type="lemma-abbrev">vulneraires,</note>
+<rdg wit="#L" n="1"> car </rdg>
+<rdg wit="#L" n="2"> comme <hi rendition="#i">L</hi>
+</rdg>
+</app>
+sont les mille feuilles, sanicles, grand consoulde, rubus, etc. ou bien on donne l’essence styptique toute seule, mais si le sang qu’on crache vient de quelque vaisseau rompu dans la poitrine le sucre rosat y est tres necessaire, et il n’est pas non plus inutile ailleurs. Voilà quand à la façon de l’essence styptique, et quant à son usage interne.</p>
+<p xml:id="Ch73.p16">Usage <hi rendition="#g">externe de cette essence</hi>. On s’en sert de même que celle de Mons. Denys<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Denys</hi>, ???? ??-??)
+</term>
+</index> c’est à dire que l’on trempe des compresses ou des <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[tampons]</corr>
+</lem>
+<rdg wit="#L">
+<orig>tempons</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> de linge dans cette eau, et on les applique sur la playe, puis on serre bien cela avec un bandage propre à la partie, et dans un moment le sang s’arreste en peu de temps apres la playe guerit par la seule application de la même foible ou mediocre selon que le mal est grand. Mais lors que ce n’est point pour arrester le sang mais pour guerir une playe ou une ulcere, il faut adjouter <graphic xml:id="Ch73.p16.g1" url="./images/uncia.svg" width="6.07068pt"/>
+ d’esprit de vin sur <formula xml:id="Ch73.p16.g2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>j d’essence, parce qu’outre la vertu qu’elle a d’arrester le sang, elle ne souffre point qu’il se face aucune corruption en la partie, ny par consequent aucun pus.</p>
+<p xml:id="Ch73.p17">Elle est donc detersive astringente, glutinatiue, incarnatiue, consolidatiue et souuerainement curatiue de playes, ulceres, loupes, chancres, et par excellence de la gangrene, en adjoustant <graphic xml:id="Ch73.p17.g1" url="./images/uncia.svg" width="6.07068pt"/>
+i d’esprit du vin et sur une once de la dite essence foible ou mediocre. Que si la gangrene est fort <app type="Bfootnote">
+<lem type="main">grande et fort</lem>
+<rdg wit="#L">grande <note type="editorial">|</note> est fort grande <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> et fort <hi rendition="#i">L</hi>
+</rdg>
+</app> avancée par une grande modification de la partie, il est bon de se servir de la plus forte, elle revigore la chaleur naturelle, et n’appelle les esprits à la partie gangrenée. Pour la guerison des ulceres et des playes la foible suffit en y adjoutant <graphic xml:id="Ch73.p17.g2" url="./images/uncia.svg" width="6.07068pt"/>
+i d’esprit de vin sur <formula xml:id="Ch73.p17.g3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>j d’essence.</p>
+<p xml:id="Ch73.p18">Outre cela elle guerit les Erysipeles, la bruslure, et presque toutes les maladies externes mieux que tous les emplastres, et tous les baumes du Monde estant elle même le vray baume, de nature comme l’experience infallible fera voir à ceux qui s’en serviront bien à propos. Pour la guerison <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[des]</corr>
+</lem>
+<rdg wit="#L">
+<orig>les</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> Eresypeles, la plus foible suffit aussi avec <graphic xml:id="Ch73.p18.g1" url="./images/uncia.svg" width="6.07068pt"/>
+ij d’esprit <app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[de]</add>
+</lem>
+<note type="lemma-abbrev">de</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app> vin sur <formula xml:id="Ch73.p18.g2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>j et il la faut aussi semblable pour une petite bruslure, mais si la bruslure <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[est]</corr>
+</lem>
+<rdg wit="#L">
+<orig>et</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> fort grande, il faut de la mediocre.</p>
+<p xml:id="Ch73.p19">Pour l’hemorragie du nez ou des narines, on met un peu de cette essence styptique dans le creux de la main, et on la tire par le nez, puis on fait un petit bouchon de charpie ou de coton, qu’on trempe dans la dite essence, et on le met dans la narine qui saigne que <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[si]</corr>
+</lem>
+<rdg wit="#L">
+<orig>s’il</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> l’hemorragie se rend encore opiniastre à tout cela il faut boire quelques cuillerées de cette essence dans de l’eau d’ortie ou de plantin.</p>
+<p xml:id="Ch73.p20">Pour la dysenterie. Elle est encor tres excellente pour les boyaux-ulcerez ou flux de sang qu’on appelle dysenterie, estant prise par
+<pb type="L"/>
+<fw type="folNum">[87 r<hi rendition="#sup">o</hi>]
+</fw>
+la bouche avec de l’eau de rose, le plantin ou d’ortie ou quelque autre eau astringente et vulneraire. Comme aussi estant meslée avec la decoction des clysteres astringents. Par exemple on fait une decoction avec les herbes appellées tapsus <app type="Bfootnote">
+<lem type="main">barbatus</lem>
+<note type="lemma-abbrev">tapsus</note>
+<rdg wit="#L" n="1"> berbatus </rdg>
+<rdg wit="#L" n="2"> barbatus <hi rendition="#i">L</hi>
+</rdg>
+</app> sive verbascum plantin, rubus, etc. les feuilles de chesne, les roses rouges et dans <graphic xml:id="Ch73.p20.g1" url="./images/uncia.svg" width="6.07068pt"/>
+ viij de la decoction des dites herbes on mêle environ <graphic xml:id="Ch73.p20.g2" url="./images/uncia.svg" width="6.07068pt"/>
+iij ou iiij de l’essence foible <graphic xml:id="Ch73.p20.g3" url="./images/uncia.svg" width="6.07068pt"/>
+i des gros de<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am Rand, ohne erkennbaren Zusammenhang mit dem Text:</hi> 9752597 <formula xml:id="Ch73.p20.g4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula> sterling</note>
+<anchor xml:id="LH003_05_087r_sterling"/>
+ ros. seches ou des grap. de coins, ou de quelque autre syrop astringent, ou de tout cela on fait un lavement qui n’a pas son pareil dans toute la medecine pour la guerison de la vraye dysenterie, et de tous autres ulceres des boyaux. Mais il faut avoir soin de reiterer les mêmes remedes jusqu’à <app type="Bfootnote">
+<lem type="main">la</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> parfaite guerison,
+<app type="Bfootnote">
+<lem type="main">adjoutant un</lem>
+<note type="lemma-abbrev">adjoutant</note>
+<rdg wit="#L" n="1"> une </rdg>
+<rdg wit="#L" n="2"> un <hi rendition="#i">L</hi>
+</rdg>
+</app> jaune d’oeuf aux dits lavements; lors que les douleurs dysenteriques sont grandes ou bien on mesle <graphic xml:id="Ch73.p20.g5" url="./images/uncia.svg" width="6.07068pt"/>
+iij ou iiij de cette essence foible avec une demie <formula xml:id="Ch73.p20.g6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i"/>
+Am Rand, ohne erkennbaren Zusammenhang mit dem Text: long soleil</note> de lait de vache ferré, que nous appellons lac chalybeatum vel ustulatum, ce qui se <app type="Bfootnote">
+<lem type="main">fait en</lem>
+<note type="lemma-abbrev">fait</note>
+<rdg wit="#L" n="1"> avec </rdg>
+<rdg wit="#L" n="2"> en <hi rendition="#i">L</hi>
+</rdg>
+</app> éteignant un quarré ou d’acier ou de petits cailloux rougis dans le dit lait; et puis on y mesle la dite essence, et on y dissout un jaune d’oeuf apres quoy on coule tout cela, et on le donne en clystere au malade.</p>
+<p xml:id="Ch73.p21">On peut aussi tres à propos mesler <graphic xml:id="Ch73.p21.g1" url="./images/uncia.svg" width="6.07068pt"/>
+iiij de ce lait ferré avec <graphic xml:id="Ch73.p21.g2" url="./images/uncia.svg" width="6.07068pt"/>
+iiij de la decoction des dites herbes astringentes et vulneraires et <graphic xml:id="Ch73.p21.g3" url="./images/uncia.svg" width="6.07068pt"/>
+iij ou iiij de l’essence foible un jaune d’oeuf et <graphic xml:id="Ch73.p21.g4" url="./images/uncia.svg" width="6.07068pt"/>
+i du
+syrop de coin pour un lavement excellent.</p>
+<pb type="VIII_2" n="673"/>
+<p xml:id="Ch73.p22">Je me suis un peu estendu sur la maniere de traiter cette maladie parce qu’elle est des plus cruelles qui puissent attaquer le corps humain, et parce qu’il se trouue peu de personnes qui soyent munies d’un remede capable de la guerir comme sont ceux que je viens de décrire, estant animez et fortifiez par nostre precieuse essence sans laquelle ils ne seroient pas de grande energie.</p>
+<p xml:id="Ch73.p23">Pour le <hi rendition="#g">scorbut</hi>. J’oubliois de vous dire une de ces plus grandes vertus et de vous apprendre un de ces plus utiles usages. C’est qu’elle guerit les ulceres de la bouche causés par le scorbut, mieux que tout autre remede, en se gargarisant et se lavant la bouche avec elle seule ou bien meslée avec la decoction des herbes vulneraires et astringentes ou bien meslée avec le lait ustulatus. Elle n’est pas moins bonne pour les contusions, les meurtrisseures, en adjoutant à <formula xml:id="Ch73.p23.g1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>j de la foible <graphic xml:id="Ch73.p23.g2" url="./images/uncia.svg" width="6.07068pt"/>
+i d’esprit de vin ou vous trempés des compresses de linge et les appliqués sur la contusion ou meurtrisseure.</p>
+<p xml:id="Ch73.p24">Nota qu’il faut remarquer que pour les erisypeles bruslures inflammations, des <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[plaies]</corr>
+</lem>
+<rdg wit="#L">
+<orig>plies</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>, contusions, meurtrisseures, il faut tousjours se servir <app type="Bfootnote">
+<lem type="main">de la</lem>
+<note type="lemma-abbrev">de</note>
+<rdg wit="#L" n="1"> cette </rdg>
+<rdg wit="#L" n="2"> la <hi rendition="#i">L</hi>
+</rdg>
+</app> foible et adjouter <graphic xml:id="Ch73.p24.g1" url="./images/uncia.svg" width="6.07068pt"/>
+ij d’esprit de vin <app type="Bfootnote">
+<lem type="main">sur</lem>
+<note type="lemma-abbrev">vin</note>
+<rdg wit="#L" n="1"> le </rdg>
+<rdg wit="#L" n="2"> sur  <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch73.p24.g2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>j au lieu que lors que c’est pour guerir les ulceres et les vieilles playes, il ne faut <graphic xml:id="Ch73.p24.g3" url="./images/uncia.svg" width="6.07068pt"/>
+i d’esprit de vin sur <formula xml:id="Ch73.p24.g4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Pfund"/>
+</m:math>
+</formula>j de la dite essence.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,23 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-023-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-023-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De centro divulsionis</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De centro divulsionis</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="23">De centro divulsionis</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date><date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=233</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="185" to="188"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-023-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 5 Bl. 210-211</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
+            </author>
+            <title type="chapter" level="a" n="23">De centro divulsionis</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date>
+            <date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=233</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="185" to="188"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-023-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 5 Bl. 210-211</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
 1 Bog. 2<hi rendition="#sup">o</hi>.
 1 1/3 S. auf Bl. 210.
 Bl. 211 r<hi rendition="#sup">o</hi> ist leer.
-Bl. 211 v<hi rendition="#sup">o</hi> überliefert N. 24. Ein Wasserzeichen auf Bl. 211.</p><p>Cc 2, Nr. 968 B</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+Bl. 211 v<hi rendition="#sup">o</hi> überliefert N. 24. Ein Wasserzeichen auf Bl. 211.</p>
+                  <p>Cc 2, Nr. 968 B</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -643,64 +743,610 @@ Bl. 211 v<hi rendition="#sup">o</hi> überliefert N. 24. Ein Wasserzeichen auf 
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/><catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-07" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-07" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-023-000_facs-haupttextzeuge">
-    		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=645"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=646"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=645"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=646"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=647"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=648"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=648"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=649"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=650"/>
-  </facsimile><text xml:id="L_08-02-023-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch23" n="23"><pb type="VIII_2" n="185"/><head>23.
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=650"/>
+  </facsimile>
+  <text xml:id="L_08-02-023-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch23" n="23">
+        <pb type="VIII_2" n="185"/>
+        <head>23.
 DE CENTRO DIVULSIONIS</head>
-<head>[September 1672 – März 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
+        <head>[September 1672 – März 1673]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung: LH XXXVII 5 Bl. 210-211.
 1 Bog. 2<hi rendition="#sup">o</hi>.
-1 <formula xml:id="Ch23.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:math></formula> S. auf Bl. 210.
+1 <formula xml:id="Ch23.p2.m1">
+                        <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mo>/</m:mo>
+                            <m:mn>3</m:mn>
+                          </m:mrow>
+                        </m:math>
+                      </formula> S. auf Bl. 210.
 Bl. 211 r<hi rendition="#sup">o</hi> ist leer.
-Bl. 211 v<hi rendition="#sup">o</hi> überliefert N. 24. Ein Wasserzeichen auf Bl. 211.</p><p>Cc 2, Nr. 968 B</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch23.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>:
+Bl. 211 v<hi rendition="#sup">o</hi> überliefert N. 24. Ein Wasserzeichen auf Bl. 211.</p>
+                    <p>Cc 2, Nr. 968 B</p>
+                  </summary>
+                </msContents>
+                <physDesc>
+                  <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                </physDesc>
+                <history>
+                  <origin/>
+                </history>
+              </msDesc>
+            </witness>
+          </listWit>
+        </p>
+      </div>
+      <div type="contents">
+        <p xml:id="Ch23.p4">
+          <hi rendition="#smaller">
+            <hi rendition="#b">Datierungsgründe</hi>:
 Das vorliegende Stück N. 23 knüpft unmittelbar an die Thematik an,
-die in den Stücken N. 19-22 in Anlehnung an Galileis<index indexName="Namensregister"><term><hi rendition="#g #smaller">Galilei</hi> <hi rendition="#smaller">(Galilaeus, Galileus), Galileo 1564-1642</hi></term></index>
+die in den Stücken N. 19-22 in Anlehnung an Galileis<index indexName="Namensregister">
+            <term>
+              <hi rendition="#g #smaller">Galilei</hi>
+              <hi rendition="#smaller">(Galilaeus, Galileus), Galileo 1564-1642</hi>
+            </term>
+          </index>
 Ausführungen im zweiten Dialog der <hi rendition="#i">Discorsi e dimostrazioni matematiche</hi> behandelt wird,
 nämlich die Bruchfestigkeit von Balken
 (siehe für Einzelheiten die Datierungsgründe sowie den Forschungsapparat der letztgenannten Stücke).
-Ferner weist der Bogen, der N. 23 überliefert, das gleiche Wasserzeichen auf wie die Textträger der Stücke N. 19-21. Demgemäß wird die Datierung von N. 19-22 auch für das vorliegende Stück übernommen.</hi></p></div><div type="text"><figure rendition="#inline-margin-right" xml:id="Ch23.fig1_1">
+Ferner weist der Bogen, der N. 23 überliefert, das gleiche Wasserzeichen auf wie die Textträger der Stücke N. 19-21. Demgemäß wird die Datierung von N. 19-22 auch für das vorliegende Stück übernommen.</hi>
+      </p>
+    </div>
+    <div type="text">
+      <figure rendition="#inline-margin-right" xml:id="Ch23.fig1_1">
         <graphic url="./images/lh03705_210r-d1.svg" width="182.1204pt" xml:id="Ch23.g1"/>
-        
-        <head xml:id="Ch23.fig1_2" rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
-      </figure><p xml:id="Ch23.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[210 r<hi rendition="#sup">o</hi>]</fw> Si trabs<index indexName="Sachverzeichnis"><term>trabs</term></index> ita muro infixa sit, ut axis quidem ejus <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><formula xml:id="Ch23.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula></add></lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    12  --></note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> sit muro<index indexName="Sachverzeichnis"><term>murus</term></index> perpendicularis, <app type="Bfootnote"><lem type="main">seu horizonti parallelus,</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  12f.  -->seu</note><rdg wit="#L" n="1"> horizontalis </rdg><rdg wit="#L" n="2"> horizonti parallelus, <hi rendition="#i">L</hi></rdg></app> sed altitudo ejus <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><formula xml:id="Ch23.p5.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula></add></lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  13  --></note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> non sit horizonti perpendicularis, reddenda est ratio firmitatis<index indexName="Sachverzeichnis"><term>firmitas</term></index>, et augetur difficultas, <app type="Bfootnote"><lem type="main">cum minor</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  15   -->cum</note><rdg wit="#L" n="1"> nulla per </rdg><rdg wit="#L" n="2"> minor <hi rendition="#i">L</hi></rdg></app> est <formula xml:id="Ch23.p5.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula>.
-Quaerendum est ante omnia centrum divulsionis.<index indexName="Sachverzeichnis"><term>centrum divulsionis</term></index>
-Manifestum est divulsionem non fieri circa <formula xml:id="Ch23.p5.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula> nec circa <formula xml:id="Ch23.p5.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow></m:math></formula>.
-Si plane esset jacens foret circa <formula xml:id="Ch23.p5.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula>.
-Si plane erectus foret circa <formula xml:id="Ch23.p5.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>d</m:mi><m:mo>⁢</m:mo><m:mi>e</m:mi></m:mrow></m:math></formula>.<!--  \hack{\newline\hspace*{7,5mm}} 
-     \hackfor{\par}--></p><p xml:id="Ch23.p6">Ajo centrum divulsionis<index indexName="Sachverzeichnis"><term>centrum divulsionis</term></index> esse <formula xml:id="Ch23.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula>, axem divulsionis lineam horizonti pariter et Tabulae<index indexName="Sachverzeichnis"><term>tabula</term></index> sustinenti parallelam transeuntem per punctum <formula xml:id="Ch23.p6.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula>. Ex hoc jam principio in nostra potestate est, calcu-<!--  \hack{\end{window}} --></p><p xml:id="Ch23.p7" rendition="#noindent">lare quantitatem, sed generaliter bilanx<index indexName="Sachverzeichnis"><term>bilanx</term></index> mea rem facile determinabit, si eodem <app type="Bfootnote"><lem type="main">modo tabula</lem><note type="lemma-abbrev">modo</note><rdg wit="#L" n="1"> res </rdg><rdg wit="#L" n="2"> tabula <hi rendition="#i">L</hi></rdg></app> ex <formula xml:id="Ch23.p7.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>c</m:mi></m:math></formula> suspendatur.</p><p xml:id="Ch23.p8">Sed quid si neque axis sit horizonti parallelus, neque altitudo perpendicularis. Facilis est calculus ex dictis.</p><pb type="VIII_2" n="186"/><figure rendition="#inline-margin-left" xml:id="Ch23.fig2_1">
-        <graphic rendition="#c" url="./images/lh03705_210r-d2u3.svg" width="203.8014pt" xml:id="Ch23.g2"/>
-        
-        
-        <head xml:id="Ch23.fig2_2" rendition="#c">[<hi rendition="#i">Fig. 2 und 3</hi>]</head>
-      </figure><p xml:id="Ch23.p9">Data Trabe<index indexName="Sachverzeichnis"><term>trabs</term></index> fulcienda duobus locis, invenire optimum fulciendi modum. Scilicet duo fulcra<index indexName="Sachverzeichnis"><term>fulcrum</term></index> magis appropinquare <app type="Bfootnote"><lem type="main">debent extremis quam medio,</lem><note type="lemma-abbrev">debent</note><rdg wit="#L" n="1"> medio, quam extremis </rdg><rdg wit="#L" n="2"> extremis quam medio, <hi rendition="#i">L</hi></rdg></app> quia etsi augeatur praeponderatio tamen in medio ubi ruptura<index indexName="Sachverzeichnis"><term>ruptura</term></index> fieri <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">debet</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> <app type="Bfootnote"><lem type="main">resistentia consideranda</lem><note type="lemma-abbrev">resistentia</note><rdg wit="#L" n="1"> comparanda </rdg><rdg wit="#L" n="2"> consideranda <hi rendition="#i">L</hi></rdg></app> est. Res pendet a longitudine altitudini comparata. Scilicet danda opera est ut <formula xml:id="Ch23.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> non praeponderet connexioni <formula xml:id="Ch23.p9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula>. Nam ut <formula xml:id="Ch23.p9.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> praeponderet minor est metus, est enim ei <app type="Bfootnote"><lem type="main">superanda dupla</lem><note type="lemma-abbrev">superanda</note><rdg wit="#L" n="1"> sesqui </rdg><rdg wit="#L" n="2"> dupla <hi rendition="#i">L</hi></rdg></app> resistentia<index indexName="Sachverzeichnis"><term>resistentia</term></index> <app type="Bfootnote"><lem type="main">alterius in <formula xml:id="Ch23.p9.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula></lem><note type="lemma-abbrev">alterius</note><rdg wit="#L" cause="addition"><note type="editorial">|</note> <add>in</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <formula xml:id="Ch23.p9.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app> nimirum dimidia resistentia<index indexName="Sachverzeichnis"><term>resistentia</term></index> in <formula xml:id="Ch23.p9.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula> et dimidia in <formula xml:id="Ch23.p9.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>d</m:mi></m:math></formula>. Ergo duplo ponderosius debet esse <formula xml:id="Ch23.p9.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> quam <formula xml:id="Ch23.p9.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula>. Ergo si longitudo <formula xml:id="Ch23.p9.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> sit 1 longitudo <formula xml:id="Ch23.p9.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula> poterit esse Rq. 2.<!--  \hack{\newline\hspace*{7,5mm}} 
-     \hackfor{\par}--></p><p xml:id="Ch23.p10">Imo vero alius est calculus nec <app type="Bfootnote"><lem type="main">resistentia<index indexName="Sachverzeichnis"><term>resistentia</term></index> vere</lem><note type="lemma-abbrev">resistentia</note><rdg wit="#L" n="1"> fere </rdg><rdg wit="#L" n="2"> vere <hi rendition="#i">L</hi></rdg></app> dupla, ob mirabilem naturam nisus in <formula xml:id="Ch23.p10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>d</m:mi></m:math></formula> accurate excutiendam et <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[considerandam]</corr></lem><rdg wit="#L"><orig>considerandum </orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> solutionem ex centro nondum totam absolutam cum absoluta in centro <formula xml:id="Ch23.p10.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>d</m:mi></m:math></formula>.</p><figure rendition="#inline-margin-left" xml:id="Ch23.fig3_1">
-        <graphic rendition="#c" url="./images/lh03705_210r-d5.svg" width="121.4136pt" xml:id="Ch23.g3"/>
-        
-        <head xml:id="Ch23.fig3_2" rendition="#c">[<hi rendition="#i">Fig. 4</hi>]</head>
-      </figure><p xml:id="Ch23.p11">Considerandum de fractura<index indexName="Sachverzeichnis"><term>fractura ovi</term></index> ovi, cur difficulter rumpatur cum in extremis <formula xml:id="Ch23.p11.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>.</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> premitur et cur non aeque forte rectangulum. Et considerandum quis in linea pure Elliptica<index indexName="Sachverzeichnis"><term>linea elliptica</term></index> non ovali, quis in parabolica<index indexName="Sachverzeichnis"><term>linea parabolica</term></index> etc. effectus quae sphaerarum, quae fornicum fortitudo. Aliud longe compressio, aliud fractio seu ruptura<index indexName="Sachverzeichnis"><term>ruptura</term></index>.</p><pb type="VIII_2" n="187"/><figure rendition="#own-line_centered" xml:id="Ch23.p12">
-        <graphic rendition="#c" url="./images/lh03705_210r-d4.svg" width="203.8014pt" xml:id="Ch23.p12.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]</head>
-      </figure><p xml:id="Ch23.p13">Ut exacte omnia determinentur, circa rupturam<index indexName="Sachverzeichnis"><term>ruptura</term></index> super duobus fulcris<index indexName="Sachverzeichnis"><term>fulcrum</term></index> fingenda sunt appensa pondera in loco quoque rupturae<index indexName="Sachverzeichnis"><term>ruptura centralis</term></index> <app type="Bfootnote"><lem type="main">mediae. In rectis <formula xml:id="Ch23.p13.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula></lem><note type="lemma-abbrev">mediae.</note><rdg wit="#L" n="1"> Duo hic sunt conatus compositi </rdg><rdg wit="#L" n="2"> In rectis <formula xml:id="Ch23.p13.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app> vel <formula xml:id="Ch23.p13.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow><m:mo>.</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula> potest intelligi punctum <formula xml:id="Ch23.p13.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> moveri tum circa centrum <formula xml:id="Ch23.p13.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>d</m:mi></m:math></formula> tum circa centrum <formula xml:id="Ch23.p13.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>b</m:mi><m:mo>.</m:mo></m:mrow></m:math></formula> punctum <formula xml:id="Ch23.p13.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>b</m:mi></m:math></formula> movetur tantum circa centrum <formula xml:id="Ch23.p13.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>d</m:mi><m:mo>.</m:mo></m:mrow></m:math></formula></p><p xml:id="Ch23.p14" rendition="#noindent">[<hi rendition="#i">Auf Bl. 210 v<hi rendition="#sup">o</hi>, mittig:</hi>]</p><figure rendition="#own-line_centered" xml:id="Ch23.p15">
-        <graphic rendition="#c" url="./images/lh03705_210v-d1.svg" width="264.5082pt" xml:id="Ch23.p15.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 6</hi>]</head>
-      </figure><pb type="VIII_2" n="188"/><figure rendition="#inline-margin-left" xml:id="Ch23.fig4_1">
-        <graphic url="./images/lh03705_210v-d2.svg" style="trim:  0mm 0mm -5mm 0mm; clip: true" width="86.724pt" xml:id="Ch23.g4"/>
-        
-        <head xml:id="Ch23.fig4_2" rendition="#c">[<hi rendition="#i">Fig. 7</hi>]</head>
-      </figure><p xml:id="Ch23.p16">Ut trabs<index indexName="Sachverzeichnis"><term>trabs</term></index> <formula xml:id="Ch23.p16.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi><m:mo>⁢</m:mo><m:mi>e</m:mi><m:mo>⁢</m:mo><m:mi>f</m:mi></m:mrow></m:math></formula> rumpatur centraliter seu in <formula xml:id="Ch23.p16.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>e</m:mi></m:math></formula>
-necesse est elidi <formula xml:id="Ch23.p16.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>e</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:math></formula> ac proinde id non gravare in centrali ruptura.<index indexName="Sachverzeichnis"><term>ruptura centralis</term></index>
-Porro quantus est conatus in <formula xml:id="Ch23.p16.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>a</m:mi></m:math></formula> tantus est in <formula xml:id="Ch23.p16.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>f</m:mi></m:math></formula> et aliis omnibus arcus punctis.
-Ergo si triangulum <formula xml:id="Ch23.p16.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>h</m:mi><m:mo>⁢</m:mo><m:mi>i</m:mi><m:mo>⁢</m:mo><m:mi>k</m:mi></m:mrow></m:math></formula> repraesentet momentum resistentiae<index indexName="Sachverzeichnis"><term>resistentia</term></index> in <formula xml:id="Ch23.p16.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>f</m:mi></m:mrow></m:math></formula>
-et parallelogrammum [<hi rendition="#i">Text bricht ab.</hi>]</p></div></div></body>
-  </text>
+
+        <head xml:id="Ch23.fig1_2" rendition="#c">[          <hi rendition="#i">Fig. 1</hi>]
+        </head>
+      </figure>
+      <p xml:id="Ch23.p5" rendition="#noindent">
+        <pb type="L"/>
+        <fw type="folNum">[210 r<hi rendition="#sup">o</hi>]
+        </fw> Si trabs<index indexName="Sachverzeichnis">
+        <term>trabs</term>
+      </index> ita muro infixa sit, ut axis quidem ejus <app type="Bfootnote">
+      <lem type="main">        <!--is-addition-app-with-lemma-->
+        <add resp="#L">
+          <formula xml:id="Ch23.p5.m1">
+            <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+              <m:mrow>
+                <m:mi>a</m:mi>
+                <m:mo>⁢</m:mo>
+                <m:mi>b</m:mi>
+              </m:mrow>
+            </m:math>
+          </formula>
+        </add>
+      </lem>
+      <note type="lemma-abbrev">        <!--automatische Nummerierung unterdrückt-->        <!--Unterdrückt:    12  --></note>
+      <note type="editorial">
+        <hi rendition="#i">erg. L</hi>
+      </note>
+    </app> sit muro<index indexName="Sachverzeichnis">
+    <term>murus</term>
+  </index> perpendicularis, <app type="Bfootnote">
+  <lem type="main">seu horizonti parallelus,</lem>
+  <note type="lemma-abbrev">    <!--automatische Nummerierung unterdrückt-->    <!--Unterdrückt:  12f.  -->seu</note>
+  <rdg wit="#L" n="1"> horizontalis </rdg>
+  <rdg wit="#L" n="2"> horizonti parallelus, <hi rendition="#i">L</hi>
+  </rdg>
+</app> sed altitudo ejus <app type="Bfootnote">
+<lem type="main">  <!--is-addition-app-with-lemma-->
+  <add resp="#L">
+    <formula xml:id="Ch23.p5.m3">
+      <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mrow>
+          <m:mi>a</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>c</m:mi>
+        </m:mrow>
+      </m:math>
+    </formula>
+  </add>
+</lem>
+<note type="lemma-abbrev">  <!--automatische Nummerierung unterdrückt-->  <!--Unterdrückt:  13  --></note>
+<note type="editorial">
+  <hi rendition="#i">erg. L</hi>
+</note>
+</app> non sit horizonti perpendicularis, reddenda est ratio firmitatis<index indexName="Sachverzeichnis">
+<term>firmitas</term>
+</index>, et augetur difficultas, <app type="Bfootnote">
+<lem type="main">cum minor</lem>
+<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:  15   -->cum</note>
+<rdg wit="#L" n="1"> nulla per </rdg>
+<rdg wit="#L" n="2"> minor <hi rendition="#i">L</hi>
+</rdg>
+</app> est <formula xml:id="Ch23.p5.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+Quaerendum est ante omnia centrum divulsionis.<index indexName="Sachverzeichnis">
+<term>centrum divulsionis</term>
+</index>
+Manifestum est divulsionem non fieri circa <formula xml:id="Ch23.p5.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+</m:math>
+</formula> nec circa <formula xml:id="Ch23.p5.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+Si plane esset jacens foret circa <formula xml:id="Ch23.p5.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+Si plane erectus foret circa <formula xml:id="Ch23.p5.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+</m:mrow>
+</m:math>
+</formula>.<!--  \hack{\newline\hspace*{7,5mm}} 
+     \hackfor{\par}--></p>
+<p xml:id="Ch23.p6">Ajo centrum divulsionis<index indexName="Sachverzeichnis">
+<term>centrum divulsionis</term>
+</index> esse <formula xml:id="Ch23.p6.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula>, axem divulsionis lineam horizonti pariter et Tabulae<index indexName="Sachverzeichnis">
+<term>tabula</term>
+</index> sustinenti parallelam transeuntem per punctum <formula xml:id="Ch23.p6.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula>. Ex hoc jam principio in nostra potestate est, calcu-<!--  \hack{\end{window}} --></p>
+<p xml:id="Ch23.p7" rendition="#noindent">lare quantitatem, sed generaliter bilanx<index indexName="Sachverzeichnis">
+<term>bilanx</term>
+</index> mea rem facile determinabit, si eodem <app type="Bfootnote">
+<lem type="main">modo tabula</lem>
+<note type="lemma-abbrev">modo</note>
+<rdg wit="#L" n="1"> res </rdg>
+<rdg wit="#L" n="2"> tabula <hi rendition="#i">L</hi>
+</rdg>
+</app> ex <formula xml:id="Ch23.p7.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>c</m:mi>
+</m:math>
+</formula> suspendatur.</p>
+<p xml:id="Ch23.p8">Sed quid si neque axis sit horizonti parallelus, neque altitudo perpendicularis. Facilis est calculus ex dictis.</p>
+<pb type="VIII_2" n="186"/>
+<figure rendition="#inline-margin-left" xml:id="Ch23.fig2_1">
+<graphic rendition="#c" url="./images/lh03705_210r-d2u3.svg" width="203.8014pt" xml:id="Ch23.g2"/>
+
+
+<head xml:id="Ch23.fig2_2" rendition="#c">[<hi rendition="#i">Fig. 2 und 3</hi>]
+</head>
+</figure>
+<p xml:id="Ch23.p9">Data Trabe<index indexName="Sachverzeichnis">
+<term>trabs</term>
+</index> fulcienda duobus locis, invenire optimum fulciendi modum. Scilicet duo fulcra<index indexName="Sachverzeichnis">
+<term>fulcrum</term>
+</index> magis appropinquare <app type="Bfootnote">
+<lem type="main">debent extremis quam medio,</lem>
+<note type="lemma-abbrev">debent</note>
+<rdg wit="#L" n="1"> medio, quam extremis </rdg>
+<rdg wit="#L" n="2"> extremis quam medio, <hi rendition="#i">L</hi>
+</rdg>
+</app> quia etsi augeatur praeponderatio tamen in medio ubi ruptura<index indexName="Sachverzeichnis">
+<term>ruptura</term>
+</index> fieri <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">debet</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+<app type="Bfootnote">
+<lem type="main">resistentia consideranda</lem>
+<note type="lemma-abbrev">resistentia</note>
+<rdg wit="#L" n="1"> comparanda </rdg>
+<rdg wit="#L" n="2"> consideranda <hi rendition="#i">L</hi>
+</rdg>
+</app> est. Res pendet a longitudine altitudini comparata. Scilicet danda opera est ut <formula xml:id="Ch23.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> non praeponderet connexioni <formula xml:id="Ch23.p9.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+</m:math>
+</formula>. Nam ut <formula xml:id="Ch23.p9.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> praeponderet minor est metus, est enim ei <app type="Bfootnote">
+<lem type="main">superanda dupla</lem>
+<note type="lemma-abbrev">superanda</note>
+<rdg wit="#L" n="1"> sesqui </rdg>
+<rdg wit="#L" n="2"> dupla <hi rendition="#i">L</hi>
+</rdg>
+</app> resistentia<index indexName="Sachverzeichnis">
+<term>resistentia</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">alterius in <formula xml:id="Ch23.p9.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">alterius</note>
+<rdg wit="#L" cause="addition">
+<note type="editorial">|</note>
+<add>in</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<formula xml:id="Ch23.p9.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> nimirum dimidia resistentia<index indexName="Sachverzeichnis">
+<term>resistentia</term>
+</index> in <formula xml:id="Ch23.p9.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+</m:math>
+</formula> et dimidia in <formula xml:id="Ch23.p9.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>d</m:mi>
+</m:math>
+</formula>. Ergo duplo ponderosius debet esse <formula xml:id="Ch23.p9.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> quam <formula xml:id="Ch23.p9.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula>. Ergo si longitudo <formula xml:id="Ch23.p9.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> sit 1 longitudo <formula xml:id="Ch23.p9.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula> poterit esse Rq. 2.<!--  \hack{\newline\hspace*{7,5mm}} 
+     \hackfor{\par}--></p>
+<p xml:id="Ch23.p10">Imo vero alius est calculus nec <app type="Bfootnote">
+<lem type="main">resistentia<index indexName="Sachverzeichnis">
+<term>resistentia</term>
+</index> vere</lem>
+<note type="lemma-abbrev">resistentia</note>
+<rdg wit="#L" n="1"> fere </rdg>
+<rdg wit="#L" n="2"> vere <hi rendition="#i">L</hi>
+</rdg>
+</app> dupla, ob mirabilem naturam nisus in <formula xml:id="Ch23.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>d</m:mi>
+</m:math>
+</formula> accurate excutiendam et <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[considerandam]</corr>
+</lem>
+<rdg wit="#L">
+<orig>considerandum </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> solutionem ex centro nondum totam absolutam cum absoluta in centro <formula xml:id="Ch23.p10.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>d</m:mi>
+</m:math>
+</formula>.
+</p>
+<figure rendition="#inline-margin-left" xml:id="Ch23.fig3_1">
+<graphic rendition="#c" url="./images/lh03705_210r-d5.svg" width="121.4136pt" xml:id="Ch23.g3"/>
+
+<head xml:id="Ch23.fig3_2" rendition="#c">[<hi rendition="#i">Fig. 4</hi>]
+</head>
+</figure>
+<p xml:id="Ch23.p11">Considerandum de fractura<index indexName="Sachverzeichnis">
+<term>fractura ovi</term>
+</index> ovi, cur difficulter rumpatur cum in extremis <formula xml:id="Ch23.p11.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>.</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> premitur et cur non aeque forte rectangulum. Et considerandum quis in linea pure Elliptica<index indexName="Sachverzeichnis">
+<term>linea elliptica</term>
+</index> non ovali, quis in parabolica<index indexName="Sachverzeichnis">
+<term>linea parabolica</term>
+</index> etc. effectus quae sphaerarum, quae fornicum fortitudo. Aliud longe compressio, aliud fractio seu ruptura<index indexName="Sachverzeichnis">
+<term>ruptura</term>
+</index>.
+</p>
+<pb type="VIII_2" n="187"/>
+<figure rendition="#own-line_centered" xml:id="Ch23.p12">
+<graphic rendition="#c" url="./images/lh03705_210r-d4.svg" width="203.8014pt" xml:id="Ch23.p12.g1"/>
+
+<head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]
+</head>
+</figure>
+<p xml:id="Ch23.p13">Ut exacte omnia determinentur, circa rupturam<index indexName="Sachverzeichnis">
+<term>ruptura</term>
+</index> super duobus fulcris<index indexName="Sachverzeichnis">
+<term>fulcrum</term>
+</index> fingenda sunt appensa pondera in loco quoque rupturae<index indexName="Sachverzeichnis">
+<term>ruptura centralis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">mediae. In rectis <formula xml:id="Ch23.p13.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">mediae.</note>
+<rdg wit="#L" n="1"> Duo hic sunt conatus compositi </rdg>
+<rdg wit="#L" n="2"> In rectis <formula xml:id="Ch23.p13.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> vel <formula xml:id="Ch23.p13.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula> potest intelligi punctum <formula xml:id="Ch23.p13.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula> moveri tum circa centrum <formula xml:id="Ch23.p13.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>d</m:mi>
+</m:math>
+</formula> tum circa centrum <formula xml:id="Ch23.p13.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> punctum <formula xml:id="Ch23.p13.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>b</m:mi>
+</m:math>
+</formula> movetur tantum circa centrum <formula xml:id="Ch23.p13.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</p>
+<p xml:id="Ch23.p14" rendition="#noindent">[<hi rendition="#i">Auf Bl. 210 v<hi rendition="#sup">o</hi>, mittig:</hi>]
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch23.p15">
+<graphic rendition="#c" url="./images/lh03705_210v-d1.svg" width="264.5082pt" xml:id="Ch23.p15.g1"/>
+
+<head rendition="#c">[<hi rendition="#i">Fig. 6</hi>]
+</head>
+</figure>
+<pb type="VIII_2" n="188"/>
+<figure rendition="#inline-margin-left" xml:id="Ch23.fig4_1">
+<graphic url="./images/lh03705_210v-d2.svg" style="trim:  0mm 0mm -5mm 0mm; clip: true" width="86.724pt" xml:id="Ch23.g4"/>
+
+<head xml:id="Ch23.fig4_2" rendition="#c">[<hi rendition="#i">Fig. 7</hi>]
+</head>
+</figure>
+<p xml:id="Ch23.p16">Ut trabs<index indexName="Sachverzeichnis">
+<term>trabs</term>
+</index>
+<formula xml:id="Ch23.p16.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>c</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>e</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math>
+</formula> rumpatur centraliter seu in <formula xml:id="Ch23.p16.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>e</m:mi>
+</m:math>
+</formula>
+necesse est elidi <formula xml:id="Ch23.p16.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>e</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+</m:math>
+</formula> ac proinde id non gravare in centrali ruptura.<index indexName="Sachverzeichnis">
+<term>ruptura centralis</term>
+</index>
+Porro quantus est conatus in <formula xml:id="Ch23.p16.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>a</m:mi>
+</m:math>
+</formula> tantus est in <formula xml:id="Ch23.p16.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>f</m:mi>
+</m:math>
+</formula> et aliis omnibus arcus punctis.
+Ergo si triangulum <formula xml:id="Ch23.p16.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>h</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>i</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>k</m:mi>
+</m:mrow>
+</m:math>
+</formula> repraesentet momentum resistentiae<index indexName="Sachverzeichnis">
+<term>resistentia</term>
+</index> in <formula xml:id="Ch23.p16.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+et parallelogrammum [<hi rendition="#i">Text bricht ab.</hi>]
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

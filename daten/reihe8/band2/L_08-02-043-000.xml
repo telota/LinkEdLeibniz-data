@@ -1,26 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-043-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-043-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De guttarum cohaesione</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De guttarum cohaesione</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="43">De guttarum cohaesione</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date><date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=431</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="383" to="384"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-043-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 4 Bl. 49-50</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung:
+            </author>
+            <title type="chapter" level="a" n="43">De guttarum cohaesione</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1672-09" resp="#ed" cert="medium">[September 1672 – März 1673]</date>
+            <date calendar="#gregorian" notAfter="1673-03" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=431</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="383" to="384"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-043-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 4 Bl. 49-50</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung:
 LH XXXVII 4 Bl. 49-50.
 1 Bog. 2<hi rendition="#sup">o</hi>.
 Etwa 1 S. auf Bl. 50 v<hi rendition="#sup">o</hi>.
 Die letzten 4 Z. überliefern N. 88.
 Bl. 50 r<hi rendition="#sup">o</hi> ist leer.
 Bl. 49 überliefert N. 42. Ein Wasserzeichen
-auf Bl. 49.</p><p>Cc 2, Nr. 973 (tlw.)</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+auf Bl. 49.</p>
+                  <p>Cc 2, Nr. 973 (tlw.)</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -646,29 +746,255 @@ auf Bl. 49.</p><p>Cc 2, Nr. 973 (tlw.)</p></summary></msContents><physDesc><obj
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-09" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-09" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-043-000_facs-haupttextzeuge">
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=155"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=156"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=157"/>
-  </facsimile><text xml:id="L_08-02-043-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch43" n="43"><pb type="VIII_2" n="383"/><head>43.
+  </facsimile>
+  <text xml:id="L_08-02-043-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch43" n="43">
+        <pb type="VIII_2" n="383"/>
+        <head>43.
 DE GUTTARUM COHAESIONE</head>
-<head>[September 1672 – März 1673]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung:
+        <head>[September 1672 – März 1673]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung:
 LH XXXVII 4 Bl. 49-50.
 1 Bog. 2<hi rendition="#sup">o</hi>.
 Etwa 1 S. auf Bl. 50 v<hi rendition="#sup">o</hi>.
 Die letzten 4 Z. überliefern N. 88.
 Bl. 50 r<hi rendition="#sup">o</hi> ist leer.
 Bl. 49 überliefert N. 42. Ein Wasserzeichen
-auf Bl. 49.</p><p>Cc 2, Nr. 973 (tlw.)</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch43.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+auf Bl. 49.</p>
+                      <p>Cc 2, Nr. 973 (tlw.)</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch43.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi>
 Das vorliegende Stück N. 43 ist auf demselben Bogen überliefert wie das Stück N. 42. Dieses letztere ist editorisch auf September 1672 bis März 1673 datiert (siehe die Begründung dort).
-Die für N. 42 vorgeschlagene Datierung wird demgemäß auch für N. 43 übernommen.</hi></p></div><div type="text"><p xml:id="Ch43.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[50 v<hi rendition="#sup">o</hi>]</fw>
-<app type="Bfootnote"><lem type="main">Omne flexile</lem><note type="lemma-abbrev">Omne</note><rdg wit="#L" n="1"> filum hab </rdg><rdg wit="#L" n="2"> flexile <hi rendition="#i">L</hi></rdg></app> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">naturale</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> Elasticum<index indexName="Sachverzeichnis"><term>elasticum</term></index> est. Experimento id probatur, sumatur filum quodcunque ex eo pendat pondus, quod circumagatur, hoc facto filum repellet pondus et aperiet sese et multis spiris aget in contrariam partem, ubi rursus comprimet ultra modum, et rursus repelletur.</p><p xml:id="Ch43.p6">Magnum est discrimen inter Naturalia et artificialia, flexilia, cohaerentia, liquida, perspicua, <app type="Bfootnote"><lem type="main">figurata. Naturalia qualia sunt</lem><note type="lemma-abbrev">figurata.</note><rdg wit="#L" n="1"> Perspicua naturalia, sunt per mi </rdg><rdg wit="#L" n="2"> Naturalia qualia sunt <hi rendition="#i">L</hi></rdg></app> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">plerumque</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> per minima sunt, artificialia, per partes, relictis intervallis heterogeneis. Omnia perspicua naturalia refringunt, artificialia non refringunt. Flexilia naturalia Elastica sunt. Liquida naturalia (artificiale est pulvis) habent aliquam cohaesionem. Omnia cohaerentia naturalia tendibilia <anchor xml:id="flexile1"/>sunt.</p><p xml:id="Ch43.p7"><app type="Bfootnote" from="#flexile1" to="#flexile2"><lem type="main">Guttae<anchor xml:id="flexile2"/></lem><note type="lemma-abbrev">sunt.</note><rdg wit="#L" n="1"> Sphaerica vera seu </rdg><rdg wit="#L" n="2"> Guttae <hi rendition="#i">L</hi></rdg></app> in quas liquida formantur indicium sunt cohaesionis reliquae in ipsis.
-<app type="Cfootnote"><lem type="main">Galilaeus<index indexName="Namensregister"><term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term></index> in dial. mech. prim. ni fallor refert <app type="Bfootnote"><lem type="main">ad circumstantem aerem</lem><note type="lemma-abbrev">ad</note><rdg wit="#L" n="1"> aquam </rdg><rdg wit="#L" n="2"> circumstantem aerem <hi rendition="#i">L</hi></rdg></app> nescio quam aquae et aeris inimicitiam comminiscens.</lem><note type="lemma-abbrev">Galilaeus <seg type="apparat-ellipsis"/> comminiscens</note><note type="editorial"><bibl corresp="#bib_00050"><hi rendition="#k">G. Galilei</hi>, <hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 71f. (<bibl corresp="#bib_00048"><hi rendition="#i">GO</hi> VIII, S. 115f.).</bibl></bibl></note></app>
-Sed observatum est illas guttulas rotundas manere etiam aere exhausto.</p><p xml:id="Ch43.p8">Cur <app type="Bfootnote"><lem type="main">guttae liquoris alicujus in Tabula</lem><note type="lemma-abbrev">guttae</note><rdg wit="#L" n="1"> in <app><rdg wit="#L" n="a"> planis </rdg><rdg wit="#L" n="b"> superficie </rdg></app></rdg><rdg wit="#L" n="2"> liquorem </rdg><rdg wit="#L" n="3"> liquoris alicujus in Tabula <hi rendition="#i">L</hi></rdg></app>
-horizonti parallela, non humida, sed sicca, aut humore aliquo sed humoris stillantis diffusioni obsistente imbuta, rotundentur.</p><p xml:id="Ch43.p9">Manifestum est omnes aquae guttas dum cadunt pondere proprio reddi nonnihil ob<pb type="VIII_2" n="384" break="no"/>longas ut <hi rendition="#i">ab</hi> in <app type="Bfootnote"><lem type="main">imo</lem><note type="lemma-abbrev">in</note><rdg wit="#L" n="1"> basi </rdg><rdg wit="#L" n="2"> imo <hi rendition="#i">L</hi></rdg></app> tamen <hi rendition="#i">b</hi> non plana, instar cylindri, sed curva instar ovalis aut Ellipsis quae vero speciatim figura sit, id nihil pertinet ad rem nostram. Attingit ergo planum <hi rendition="#i">c</hi> puncto <hi rendition="#i">b</hi> et eodem tempore pondus superioris, incumbens inferiori conatur massam <hi rendition="#i">ab</hi> procudere in planum quantum <app type="Bfootnote"><lem type="main">potest latum</lem><note type="lemma-abbrev">potest</note><rdg wit="#L" n="1"> magnum </rdg><rdg wit="#L" n="2"> latum <hi rendition="#i">L</hi></rdg></app> sed tenue. <app type="Bfootnote"><lem type="main">At huic</lem><note type="lemma-abbrev">tenue.</note><rdg wit="#L" n="1"> Sed </rdg><rdg wit="#L" n="2"> At huic <hi rendition="#i">L</hi></rdg></app> diffusioni obsistit ipse fundus <hi rendition="#i">c</hi> aliquantulum tamen obtundi, complanarique ipsum <hi rendition="#i">b</hi> necesse est, velut ovo Columbi<index indexName="Namensregister"><term><hi rendition="#g">Kolumbus</hi>, Christoph (1451-1506)</term></index> marmori laevigato illiso. At reliquum super incumbens cum ultra progredi non possit recta, ibit in latus. Imo jam ab initio statim, quantum enim imum procuditur, tantum summum diffunditur. Quodsi tam exigua ponatur pressio aut tanta fundi resistentia, ut diffusio in <hi rendition="#i">b</hi> per <hi rendition="#i">c</hi> haberi possit pro nulla <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">seu ut contactus sit in puncto <hi rendition="#i">b</hi></add></lem><note type="lemma-abbrev">seu <seg type="apparat-ellipsis"/> puncto <hi rendition="#i">b</hi> </note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> rationis est guttam formari <app type="Bfootnote"><lem type="main">in globulum <hi rendition="#i">bef.</hi> Primum enim</lem><rdg wit="#L" cause="addition">in <note type="editorial">|</note> <add>globulum</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <hi rendition="#i">bef.</hi> </rdg><rdg wit="#L" n="1"> Contactus est ut dixi, in puncto. Ergo figura </rdg><rdg wit="#L" n="2"> Primum enim <hi rendition="#i">L</hi></rdg></app> fundus aquam se diffusuram cohibet interea omnia incumbentia superurgent, sed <app type="Bfootnote"><lem type="main">obstat descendere</lem><note type="lemma-abbrev">obstat</note><rdg wit="#L" n="1"> in fundum </rdg><rdg wit="#L" n="2"> descendere <hi rendition="#i">L</hi></rdg></app> conantibus ipsa partium connexio. <app type="Bfootnote"><lem type="main">Nota etsi gravitas in specie major connexione. Considerandum tamen an non mutata figura</lem><note type="lemma-abbrev">connexio.</note><rdg wit="#L" n="1"> Quae si aequalis gravitati<index indexName="Sachverzeichnis"><term>gravitas</term></index>, fiet mutuo nulla, sed corpus retinebit figuram quam habebat, quodsi major </rdg><rdg wit="#L" n="2"> Nota <seg type="apparat-ellipsis"/> figura, <hi rendition="#i">L</hi></rdg></app>, plus lucretur gravitas<index indexName="Sachverzeichnis"><term>gravitas</term></index>, quam perdit connexio, id est an plures descendant quam separentur; figura conciliatrix ubi plurimum descendit, minima separatione; aut aequilibratur tandem multitudo partium gradui conatuum. Ea denuo figura optima est. Et hanc considerationem nulli in <app type="Bfootnote"><lem type="main">mentem venisse memini</lem><note type="lemma-abbrev">mentem</note><rdg wit="#L" n="1"> venissem </rdg><rdg wit="#L" n="2"> venisse memini. <hi rendition="#i">L</hi></rdg></app>. Sed haec in calculum appendenda sunt per Geometriam indivisibilium sine qua nihil solidi ratiocinari possumus de motu. Ecce hic novum genus compensationis scilicet multitudinis partium per gradum conatus<index indexName="Sachverzeichnis"><term>conatus</term></index> simplicem, seu absolutum, ut alias magnitudinis ad celeritatem.</p><figure rendition="#own-line_centered" xml:id="Ch43.p10_1"><graphic url="./images/LH03704_50r-d1.svg" style="trim:  0mm 2.9mm 0mm 0mm; clip: true" width="216.8pt" xml:id="Ch43.p10.g1"/><head>[<hi rendition="#i">Fig. 1</hi>]</head></figure><figure rendition="#own-line_centered" xml:id="Ch43.p10_2"><graphic url="./images/LH03704_50r-d2.svg" width="216.8pt" xml:id="Ch43.p11.g1"/><head>[<hi rendition="#i">Fig. 2</hi>]</head></figure></div></div></body>
-  </text>
+Die für N. 42 vorgeschlagene Datierung wird demgemäß auch für N. 43 übernommen.</hi>
+          </p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch43.p5" rendition="#noindent">
+            <pb type="L"/>
+            <fw type="folNum">[50 v<hi rendition="#sup">o</hi>]
+            </fw>
+            <app type="Bfootnote">
+              <lem type="main">Omne flexile</lem>
+              <note type="lemma-abbrev">Omne</note>
+              <rdg wit="#L" n="1"> filum hab </rdg>
+              <rdg wit="#L" n="2"> flexile <hi rendition="#i">L</hi>
+              </rdg>
+            </app>
+            <app type="Bfootnote">
+              <lem type="main">                <!--is-addition-app-with-lemma-->
+                <add resp="#L">naturale</add>
+              </lem>
+              <note type="editorial">
+                <hi rendition="#i">erg. L</hi>
+              </note>
+            </app> Elasticum<index indexName="Sachverzeichnis">
+            <term>elasticum</term>
+          </index> est. Experimento id probatur, sumatur filum quodcunque ex eo pendat pondus, quod circumagatur, hoc facto filum repellet pondus et aperiet sese et multis spiris aget in contrariam partem, ubi rursus comprimet ultra modum, et rursus repelletur.</p>
+        <p xml:id="Ch43.p6">Magnum est discrimen inter Naturalia et artificialia, flexilia, cohaerentia, liquida, perspicua, <app type="Bfootnote">
+          <lem type="main">figurata. Naturalia qualia sunt</lem>
+          <note type="lemma-abbrev">figurata.</note>
+          <rdg wit="#L" n="1"> Perspicua naturalia, sunt per mi </rdg>
+          <rdg wit="#L" n="2"> Naturalia qualia sunt <hi rendition="#i">L</hi>
+          </rdg>
+        </app>
+        <app type="Bfootnote">
+          <lem type="main">            <!--is-addition-app-with-lemma-->
+            <add resp="#L">plerumque</add>
+          </lem>
+          <note type="editorial">
+            <hi rendition="#i">erg. L</hi>
+          </note>
+        </app> per minima sunt, artificialia, per partes, relictis intervallis heterogeneis. Omnia perspicua naturalia refringunt, artificialia non refringunt. Flexilia naturalia Elastica sunt. Liquida naturalia (artificiale est pulvis) habent aliquam cohaesionem. Omnia cohaerentia naturalia tendibilia <anchor xml:id="flexile1"/>
+sunt.</p>
+      <p xml:id="Ch43.p7">
+        <app type="Bfootnote" from="#flexile1" to="#flexile2">
+          <lem type="main">Guttae<anchor xml:id="flexile2"/>
+          </lem>
+          <note type="lemma-abbrev">sunt.</note>
+          <rdg wit="#L" n="1"> Sphaerica vera seu </rdg>
+          <rdg wit="#L" n="2"> Guttae <hi rendition="#i">L</hi>
+          </rdg>
+        </app> in quas liquida formantur indicium sunt cohaesionis reliquae in ipsis.
+        <app type="Cfootnote">
+          <lem type="main">Galilaeus<index indexName="Namensregister">
+            <term>
+              <hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
+          </index> in dial. mech. prim. ni fallor refert <app type="Bfootnote">
+          <lem type="main">ad circumstantem aerem</lem>
+          <note type="lemma-abbrev">ad</note>
+          <rdg wit="#L" n="1"> aquam </rdg>
+          <rdg wit="#L" n="2"> circumstantem aerem <hi rendition="#i">L</hi>
+          </rdg>
+        </app> nescio quam aquae et aeris inimicitiam comminiscens.</lem>
+      <note type="lemma-abbrev">Galilaeus <seg type="apparat-ellipsis"/>
+ comminiscens</note>
+      <note type="editorial">
+        <bibl corresp="#bib_00050">
+          <hi rendition="#k">G. Galilei</hi>,          <hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 71f. (<bibl corresp="#bib_00048">
+          <hi rendition="#i">GO</hi> VIII, S. 115f.).</bibl>
+      </bibl>
+    </note>
+  </app>
+Sed observatum est illas guttulas rotundas manere etiam aere exhausto.</p>
+<p xml:id="Ch43.p8">Cur <app type="Bfootnote">
+  <lem type="main">guttae liquoris alicujus in Tabula</lem>
+  <note type="lemma-abbrev">guttae</note>
+  <rdg wit="#L" n="1"> in <app>
+    <rdg wit="#L" n="a"> planis </rdg>
+    <rdg wit="#L" n="b"> superficie </rdg>
+  </app>
+</rdg>
+<rdg wit="#L" n="2"> liquorem </rdg>
+<rdg wit="#L" n="3"> liquoris alicujus in Tabula <hi rendition="#i">L</hi>
+</rdg>
+</app>
+horizonti parallela, non humida, sed sicca, aut humore aliquo sed humoris stillantis diffusioni obsistente imbuta, rotundentur.</p>
+<p xml:id="Ch43.p9">Manifestum est omnes aquae guttas dum cadunt pondere proprio reddi nonnihil ob<pb type="VIII_2" n="384" break="no"/>
+longas ut <hi rendition="#i">ab</hi> in <app type="Bfootnote">
+<lem type="main">imo</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" n="1"> basi </rdg>
+<rdg wit="#L" n="2"> imo <hi rendition="#i">L</hi>
+</rdg>
+</app> tamen <hi rendition="#i">b</hi> non plana, instar cylindri, sed curva instar ovalis aut Ellipsis quae vero speciatim figura sit, id nihil pertinet ad rem nostram. Attingit ergo planum <hi rendition="#i">c</hi> puncto <hi rendition="#i">b</hi> et eodem tempore pondus superioris, incumbens inferiori conatur massam <hi rendition="#i">ab</hi> procudere in planum quantum <app type="Bfootnote">
+<lem type="main">potest latum</lem>
+<note type="lemma-abbrev">potest</note>
+<rdg wit="#L" n="1"> magnum </rdg>
+<rdg wit="#L" n="2"> latum <hi rendition="#i">L</hi>
+</rdg>
+</app> sed tenue. <app type="Bfootnote">
+<lem type="main">At huic</lem>
+<note type="lemma-abbrev">tenue.</note>
+<rdg wit="#L" n="1"> Sed </rdg>
+<rdg wit="#L" n="2"> At huic <hi rendition="#i">L</hi>
+</rdg>
+</app> diffusioni obsistit ipse fundus <hi rendition="#i">c</hi> aliquantulum tamen obtundi, complanarique ipsum <hi rendition="#i">b</hi> necesse est, velut ovo Columbi<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Kolumbus</hi>, Christoph (1451-1506)</term>
+</index> marmori laevigato illiso. At reliquum super incumbens cum ultra progredi non possit recta, ibit in latus. Imo jam ab initio statim, quantum enim imum procuditur, tantum summum diffunditur. Quodsi tam exigua ponatur pressio aut tanta fundi resistentia, ut diffusio in <hi rendition="#i">b</hi> per <hi rendition="#i">c</hi> haberi possit pro nulla <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">seu ut contactus sit in puncto <hi rendition="#i">b</hi>
+</add>
+</lem>
+<note type="lemma-abbrev">seu <seg type="apparat-ellipsis"/>
+ puncto <hi rendition="#i">b</hi>
+</note>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> rationis est guttam formari <app type="Bfootnote">
+<lem type="main">in globulum <hi rendition="#i">bef.</hi> Primum enim</lem>
+<rdg wit="#L" cause="addition">in <note type="editorial">|</note>
+<add>globulum</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<hi rendition="#i">bef.</hi>
+</rdg>
+<rdg wit="#L" n="1"> Contactus est ut dixi, in puncto. Ergo figura </rdg>
+<rdg wit="#L" n="2"> Primum enim <hi rendition="#i">L</hi>
+</rdg>
+</app> fundus aquam se diffusuram cohibet interea omnia incumbentia superurgent, sed <app type="Bfootnote">
+<lem type="main">obstat descendere</lem>
+<note type="lemma-abbrev">obstat</note>
+<rdg wit="#L" n="1"> in fundum </rdg>
+<rdg wit="#L" n="2"> descendere <hi rendition="#i">L</hi>
+</rdg>
+</app> conantibus ipsa partium connexio. <app type="Bfootnote">
+<lem type="main">Nota etsi gravitas in specie major connexione. Considerandum tamen an non mutata figura</lem>
+<note type="lemma-abbrev">connexio.</note>
+<rdg wit="#L" n="1"> Quae si aequalis gravitati<index indexName="Sachverzeichnis">
+<term>gravitas</term>
+</index>, fiet mutuo nulla, sed corpus retinebit figuram quam habebat, quodsi major </rdg>
+<rdg wit="#L" n="2"> Nota <seg type="apparat-ellipsis"/>
+ figura, <hi rendition="#i">L</hi>
+</rdg>
+</app>, plus lucretur gravitas<index indexName="Sachverzeichnis">
+<term>gravitas</term>
+</index>, quam perdit connexio, id est an plures descendant quam separentur; figura conciliatrix ubi plurimum descendit, minima separatione; aut aequilibratur tandem multitudo partium gradui conatuum. Ea denuo figura optima est. Et hanc considerationem nulli in <app type="Bfootnote">
+<lem type="main">mentem venisse memini</lem>
+<note type="lemma-abbrev">mentem</note>
+<rdg wit="#L" n="1"> venissem </rdg>
+<rdg wit="#L" n="2"> venisse memini. <hi rendition="#i">L</hi>
+</rdg>
+</app>. Sed haec in calculum appendenda sunt per Geometriam indivisibilium sine qua nihil solidi ratiocinari possumus de motu. Ecce hic novum genus compensationis scilicet multitudinis partium per gradum conatus<index indexName="Sachverzeichnis">
+<term>conatus</term>
+</index> simplicem, seu absolutum, ut alias magnitudinis ad celeritatem.</p>
+<figure rendition="#own-line_centered" xml:id="Ch43.p10_1">
+<graphic url="./images/LH03704_50r-d1.svg" style="trim:  0mm 2.9mm 0mm 0mm; clip: true" width="216.8pt" xml:id="Ch43.p10.g1"/>
+<head>[<hi rendition="#i">Fig. 1</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch43.p10_2">
+<graphic url="./images/LH03704_50r-d2.svg" width="216.8pt" xml:id="Ch43.p11.g1"/>
+<head>[<hi rendition="#i">Fig. 2</hi>]
+</head>
+</figure>
+</div>
+</div>
+</body>
+</text>
 </TEI>

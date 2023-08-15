@@ -1,330 +1,1100 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-022-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-022-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De Funibus Inaequaliter Tensis</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2022</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De Funibus Inaequaliter Tensis</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2022</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-            </author><title type="chapter" level="a" n="22">De Funibus Inaequaliter Tensis</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1683-03-15" resp="#ed" cert="medium">[nach Mitte März 1683]</date><date calendar="#gregorian" notAfter="1716" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=320</idno></idno></analytic><monogr><title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2021</date></imprint><biblScope unit="page" from="286" to="289"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-03-022-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 9, 16 Bl. 19</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung:
+            </author>
+            <title type="chapter" level="a" n="22">De Funibus Inaequaliter Tensis</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1683-03-15" resp="#ed" cert="medium">[nach Mitte März 1683]</date>
+            <date calendar="#gregorian" notAfter="1716" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=320</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2021</date>
+            </imprint>
+            <biblScope unit="page" from="286" to="289"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-03-022-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 9, 16 Bl. 19</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung:
 LH XXXV 9, 16 Bl. 19.
 Ein Blatt 8<hi rendition="#sup">o</hi>.
 Zwei Seiten.
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1014">Bl. 19 v<hi rendition="#sup">o</hi></ref> überliefert ferner, gegenläufig und überschrieben, den Anfang eines Briefkonzeptes von Leibnizens Hand,
-dessen Adressat sich nicht eindeutig ermitteln lässt: <hi rendition="#i">WohlEdler Vester,<index indexName="Sachen"><term><hi rendition="#i #smaller">Vester</hi></term></index> insonders Hochgeehrter H. Mein schreiben aus Braunschweig<index indexName="Orte"><term><hi rendition="#i #smaller">Braunschweig</hi></term></index> wird verhoffentlich zu recht geliefert worden seyn. Anjezo muß selbigen abermahl bemühen. Ich habe anhehr eilen müßen weilen ich verstanden, daß man kunftigen Montag alhier aufbrechen will; und ich noch zuvor ein und anders alhier zu Verrichten habe. Unter anderm</hi> [<hi rendition="#i">Text bricht ab.</hi>]</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="../../glyphs/rightpropto.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="../../glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-      </charDecl>
-    </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#akustik"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2023-02-13" who="#stork" status="enrich_1"/></revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-022-000_facs-haupttextzeuge"><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1014"/></facsimile><text xml:id="L_08-03-022-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch22" n="22"><head>22
+                    <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1014">Bl. 19 v<hi rendition="#sup">o</hi>
+                    </ref> überliefert ferner, gegenläufig und überschrieben, den Anfang eines Briefkonzeptes von Leibnizens Hand,
+dessen Adressat sich nicht eindeutig ermitteln lässt: <hi rendition="#i">WohlEdler Vester,<index indexName="Sachen">
+                    <term>
+                      <hi rendition="#i #smaller">Vester</hi>
+                    </term>
+                  </index> insonders Hochgeehrter H. Mein schreiben aus Braunschweig<index indexName="Orte">
+                  <term>
+                    <hi rendition="#i #smaller">Braunschweig</hi>
+                  </term>
+                </index> wird verhoffentlich zu recht geliefert worden seyn. Anjezo muß selbigen abermahl bemühen. Ich habe anhehr eilen müßen weilen ich verstanden, daß man kunftigen Montag alhier aufbrechen will; und ich noch zuvor ein und anders alhier zu Verrichten habe. Unter anderm</hi> [              <hi rendition="#i">Text bricht ab.</hi>]
+            </p>
+          </summary>
+        </msContents>
+        <physDesc>
+          <objectDesc form="Handschrift"/>
+        </physDesc>
+        <history>
+          <origin corresp="L_witness-origin-types.xml#origin-L"/>
+        </history>
+      </msDesc>
+    </witness>
+  </listWit>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+  <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+  <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+  <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+  <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+  <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+  <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+  <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+  <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+  <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+  <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+</tagsDecl>
+<charDecl>
+  <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+  <!--rightpropto-->
+  <glyph xml:id="rightpropto">
+    <glyphName>rightpropto</glyphName>
+    <desc>...</desc>
+    <charProp>
+      <localName>baselineshift-in-ex</localName>
+      <value>0</value>
+    </charProp>
+    <charProp>
+      <localName>width-in-em</localName>
+      <value>0.6</value>
+    </charProp>
+    <mapping type="TeX">\rightpropto</mapping>
+    <graphic url="../../glyphs/rightpropto.svg"/>
+  </glyph>
+  <glyph xml:id="Pfund">
+    <glyphName>Pfund</glyphName>
+    <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+    <charProp>
+      <localName>baselineshift-in-ex</localName>
+      <value>0</value>
+    </charProp>
+    <charProp>
+      <localName>width-in-em</localName>
+      <value>0.7</value>
+    </charProp>
+    <mapping type="TeX">\Pfund</mapping>
+    <graphic url="../../glyphs/Pfund.svg"/>
+  </glyph>
+  <!-- leibdashv -->
+  <glyph xml:id="pleibdashv">
+    <glyphName>pleibdashv</glyphName>
+    <desc>Bedeutung (+−) - gesenkt</desc>
+    <charProp>
+      <localName>baselineshift-in-ex</localName>
+      <value>-1</value>
+    </charProp>
+    <charProp>
+      <localName>width-in-em</localName>
+      <value>0.6</value>
+    </charProp>
+    <mapping type="PUA"/>
+    <mapping type="TeX">\pleibdashv</mapping>
+    <graphic url="../../glyphs/pm.svg"/>
+  </glyph>
+  <glyph xml:id="leibdashv">
+    <glyphName>leibdashv</glyphName>
+    <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+    <charProp>
+      <localName>baselineshift-in-ex</localName>
+      <value>0</value>
+    </charProp>
+    <charProp>
+      <localName>width-in-em</localName>
+      <value>0.6</value>
+    </charProp>
+    <mapping type="PUA"/>
+    <mapping type="TeX">\leibdashv</mapping>
+    <graphic url="../../glyphs/pm.svg"/>
+  </glyph>
+  <!-- Sonderzeichen MIT Unicodeentsprechung -->
+</charDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+  <language ident="la"/>
+</langUsage>
+<calendarDesc>
+  <calendar xml:id="gregorian">
+    <p>Gregorianischer Kalenderstil</p>
+  </calendar>
+  <calendar xml:id="julian">
+    <p>Julianischer Kalenderstil</p>
+  </calendar>
+</calendarDesc>
+<textClass>
+  <catRef scheme="L_subjects" target="L_subjects.xml#akustik"/>
+  <catRef scheme="L_terms" target="L_terms.xml#"/>
+</textClass>
+<abstract>
+  <listPerson>
+    <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+    <person sameAs="L_persons.xml#"/>
+  </listPerson>
+  <listPlace>
+    <place sameAs="L_places.xml#"/>
+  </listPlace>
+</abstract>
+</profileDesc>
+<revisionDesc>
+<change when="2021" who="#telota" status="base"/>
+<change when="2023-02-13" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-022-000_facs-haupttextzeuge">
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1014"/>
+</facsimile>
+<text xml:id="L_08-03-022-000_text">
+<body xml:id="Document">
+<div type="chapter" xml:id="Ch22" n="22">
+  <head>22
 DE FUNIBUS INAEQUALITER TENSIS</head>
-      <head>[nach Mitte März 1683]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 9, 16 Bl. 19.</idno></msIdentifier><msContents><summary><p>Aufzeichnung:
+  <head>[nach Mitte März 1683]</head>
+  <div type="ueberlieferung">
+    <p>
+      <hi rendition="#b #smaller">Überlieferung:</hi>
+      <listWit>
+        <witness>
+          <msDesc>
+            <msIdentifier>
+              <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+              <idno type="Signatur">LH XXXV 9, 16 Bl. 19.</idno>
+            </msIdentifier>
+            <msContents>
+              <summary>
+                <p>Aufzeichnung:
 LH XXXV 9, 16 Bl. 19.
 Ein Blatt 8<hi rendition="#sup">o</hi>.
 Zwei Seiten.
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1014">Bl. 19 v<hi rendition="#sup">o</hi></ref> überliefert ferner, gegenläufig und überschrieben, den Anfang eines Briefkonzeptes von Leibnizens Hand,
-dessen Adressat sich nicht eindeutig ermitteln lässt: <hi rendition="#i">WohlEdler Vester,<index indexName="Sachen"><term><hi rendition="#i #smaller">Vester</hi></term></index> insonders Hochgeehrter H. Mein schreiben aus Braunschweig<index indexName="Orte"><term><hi rendition="#i #smaller">Braunschweig</hi></term></index> wird verhoffentlich zu recht geliefert worden seyn. Anjezo muß selbigen abermahl bemühen. Ich habe anhehr eilen müßen weilen ich verstanden, daß man kunftigen Montag alhier aufbrechen will; und ich noch zuvor ein und anders alhier zu Verrichten habe. Unter anderm</hi> [<hi rendition="#i">Text bricht ab.</hi>]</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch22.p1"><anchor xml:id="_41178"/>
-<anchor xml:id="N.22"/><!--  \hackfor{\par} --></p><p xml:id="Ch22.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
-In dem Brieffragment, das auf demselben Träger wie die Aufzeichnung N. <ref corresp="#N.22"/> mit überliefert ist, erwähnt Leibniz ein früheres <hi rendition="#i">Schreiben aus Braunschweig</hi>, das er offenbar an seinen (nicht ermittelten) Adressaten gesendet hatte.
-Von einem Besuch bei seinem Oheim J. Strauch<index indexName="Personen"><term><hi rendition="#g #smaller">Strauch</hi><hi rendition="#smaller">, Johann 1612(?)–1679(?)</hi></term></index> im März 1664 abgesehen, hielt sich Leibniz erstmals vom 10. bis zum 13. März 1683 in Braunschweig auf, als er dort Anton Ulrich von Wolfenbüttel<index indexName="Personen"><term><hi rendition="#g #smaller">Braunschweig-Lüneburg</hi><hi rendition="#smaller">, Anton Ulrich von Wolfenbüttel, Herzog von 1685–1714</hi></term></index> wahrscheinlich kennenlernte (<hi rendition="#i">Chronik</hi>, S. 8; 70<ref corresp="#bib_01236"/>).
+                  <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1014">Bl. 19 v<hi rendition="#sup">o</hi>
+                  </ref> überliefert ferner, gegenläufig und überschrieben, den Anfang eines Briefkonzeptes von Leibnizens Hand,
+dessen Adressat sich nicht eindeutig ermitteln lässt: <hi rendition="#i">WohlEdler Vester,<index indexName="Sachen">
+                  <term>
+                    <hi rendition="#i #smaller">Vester</hi>
+                  </term>
+                </index> insonders Hochgeehrter H. Mein schreiben aus Braunschweig<index indexName="Orte">
+                <term>
+                  <hi rendition="#i #smaller">Braunschweig</hi>
+                </term>
+              </index> wird verhoffentlich zu recht geliefert worden seyn. Anjezo muß selbigen abermahl bemühen. Ich habe anhehr eilen müßen weilen ich verstanden, daß man kunftigen Montag alhier aufbrechen will; und ich noch zuvor ein und anders alhier zu Verrichten habe. Unter anderm</hi> [            <hi rendition="#i">Text bricht ab.</hi>]
+          </p>
+        </summary>
+      </msContents>
+      <physDesc>
+        <objectDesc form="Handschrift"/>
+      </physDesc>
+      <history>
+        <origin/>
+      </history>
+    </msDesc>
+  </witness>
+</listWit>
+</p>
+</div>
+<div type="contents">
+<p xml:id="Ch22.p1">
+<anchor xml:id="_41178"/>
+<anchor xml:id="N.22"/>
+<!--  \hackfor{\par} --></p>
+<p xml:id="Ch22.p4">
+<hi rendition="#smaller">
+  <hi rendition="#b">Datierungsgründe:</hi>
+In dem Brieffragment, das auf demselben Träger wie die Aufzeichnung N. <ref corresp="#N.22"/>
+ mit überliefert ist, erwähnt Leibniz ein früheres <hi rendition="#i">Schreiben aus Braunschweig</hi>, das er offenbar an seinen (nicht ermittelten) Adressaten gesendet hatte.
+Von einem Besuch bei seinem Oheim J. Strauch<index indexName="Personen">
+<term>
+  <hi rendition="#g #smaller">Strauch</hi>
+  <hi rendition="#smaller">, Johann 1612(?)–1679(?)</hi>
+</term>
+</index> im März 1664 abgesehen, hielt sich Leibniz erstmals vom 10. bis zum 13. März 1683 in Braunschweig auf, als er dort Anton Ulrich von Wolfenbüttel<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Braunschweig-Lüneburg</hi>
+<hi rendition="#smaller">, Anton Ulrich von Wolfenbüttel, Herzog von 1685–1714</hi>
+</term>
+</index> wahrscheinlich kennenlernte (<hi rendition="#i">Chronik</hi>, S. 8; 70<ref corresp="#bib_01236"/>
+).
 Hieraus lässt sich der Terminus post quem der Datierung erschließen:
-Da das Brieffragment schon vorgelegen hatte, als die Aufzeichnung N. <ref corresp="#N.22"/> verfasst wurde, kann diese letztere nicht vor Mitte März 1683 entstanden sein.</hi></p></div><div type="text"><p xml:id="Ch22.p5"><hi rendition="#smaller">Ein Terminus ante quem lässt sich hingegen nach heutigem Wissensstand nicht eindeutig bestimmen.
+Da das Brieffragment schon vorgelegen hatte, als die Aufzeichnung N. <ref corresp="#N.22"/>
+ verfasst wurde, kann diese letztere nicht vor Mitte März 1683 entstanden sein.</hi>
+</p>
+</div>
+<div type="text">
+<p xml:id="Ch22.p5">
+<hi rendition="#smaller">Ein Terminus ante quem lässt sich hingegen nach heutigem Wissensstand nicht eindeutig bestimmen.
 Freilich spricht einiges dafür, die Aufzeichnung chronologisch noch in die Achtziger Jahre zu verorten (zwischen Mitte März 1683 und der Italienreise im Herbst 1687).
-Zunächst beschäftigte sich Leibniz seit den frühen Achtziger Jahren intensiv mit Themen der Elastizität und insbesondere mit dem mechanischen Verhalten gespannter Saiten oder Seile, wie zahlreiche Texte in diesem Band zeigen (etwa N. <ref corresp="L_chapter_8.xml#N.8"/>; <ref corresp="L_chapter_9.xml#N.9"/>; <ref corresp="L_chapter_10.xml#N.10"/>).
-Dies lässt sogar die Vermutung zu, dass N. <ref corresp="#N.22"/> nicht viel später als Mitte März 1683 entstanden sein dürfte, d.h. etwa zu der Zeit, als inhaltlich verwandte Texte wie N. <ref corresp="L_section_143.xml#N.14.3"/>, <ref corresp="L_section_147.xml#N.14.7"/> und <ref corresp="L_chapter_17.xml#N.17"/> verfasst wurden.
+Zunächst beschäftigte sich Leibniz seit den frühen Achtziger Jahren intensiv mit Themen der Elastizität und insbesondere mit dem mechanischen Verhalten gespannter Saiten oder Seile, wie zahlreiche Texte in diesem Band zeigen (etwa N. <ref corresp="L_chapter_8.xml#N.8"/>
+;<ref corresp="L_chapter_9.xml#N.9"/>
+;<ref corresp="L_chapter_10.xml#N.10"/>
+).
+Dies lässt sogar die Vermutung zu, dass N. <ref corresp="#N.22"/>
+ nicht viel später als Mitte März 1683 entstanden sein dürfte, d.h. etwa zu der Zeit, als inhaltlich verwandte Texte wie N. <ref corresp="L_section_143.xml#N.14.3"/>
+,<ref corresp="L_section_147.xml#N.14.7"/>
+ und <ref corresp="L_chapter_17.xml#N.17"/>
+ verfasst wurden.
 Auch die im Brieffragment verwendete Anrede <hi rendition="#i">Vester</hi> kommt am häufigsten – sofern der Zustand der Überlieferung eine Einschätzung ermöglicht – in Briefen vor, die Leibniz während der Achtiziger Jahre in amtlichen bzw. förmlichen Kontexten schrieb.
 So findet sich etwa die Formel <hi rendition="#i">WohlEdler Vester insonders Hochgeehrter Herr</hi> (allenfalls leicht variiert) u.a. in seinen Briefen an:
 F. W. Leidenfrost
 (Ende Juli 1680, <hi rendition="#i">LSB</hi> I, 3 N. 46;<ref corresp="#bib_01325"/>
 Mitte Januar 1682, ebd. N. 112;<ref corresp="#bib_01326"/>
-6.? April 1688, <hi rendition="#i">LSB</hi> I, 5 N. 33);<ref corresp="#bib_01327"/><index indexName="Personen"><term><hi rendition="#g #smaller">Leidenfrost</hi><hi rendition="#smaller">, Friedrich Wilhelm, nach 1648–1703</hi></term></index>
+6.? April 1688, <hi rendition="#i">LSB</hi> I, 5 N. 33);<ref corresp="#bib_01327"/>
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Leidenfrost</hi>
+<hi rendition="#smaller">, Friedrich Wilhelm, nach 1648–1703</hi>
+</term>
+</index>
 C. Wichmann
 (5./15. Mai 1682, <hi rendition="#i">LSB</hi> I, 3 N. 135;<ref corresp="#bib_01328"/>
-29. September/9. Oktober 1682, ebd. N. 165);<ref corresp="#bib_01329"/><index indexName="Personen"><term><hi rendition="#g #smaller">Wichmann</hi><hi rendition="#smaller">, Christoph, gest. 1690</hi></term></index>
+29. September/9. Oktober 1682, ebd. N. 165);<ref corresp="#bib_01329"/>
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Wichmann</hi>
+<hi rendition="#smaller">, Christoph, gest. 1690</hi>
+</term>
+</index>
 P. Marci
-(20./30. März 1685; <hi rendition="#i">LSB</hi> I, 4 N. 417);<ref corresp="#bib_01330"/><index indexName="Personen"><term><hi rendition="#g #smaller">Marci</hi><hi rendition="#smaller">, Polycarp 1654–1724</hi></term></index>
+(20./30. März 1685; <hi rendition="#i">LSB</hi> I, 4 N. 417);<ref corresp="#bib_01330"/>
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Marci</hi>
+<hi rendition="#smaller">, Polycarp 1654–1724</hi>
+</term>
+</index>
 P. P. Metzger
-(1685?; <hi rendition="#i">LSB</hi> I, 4 N. 457)<ref corresp="#bib_01331"/><index indexName="Personen"><term><hi rendition="#g #smaller">Metzger</hi><hi rendition="#smaller">, Peter Paul 1639–1699</hi></term></index>
+(1685?; <hi rendition="#i">LSB</hi> I, 4 N. 457)<ref corresp="#bib_01331"/>
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Metzger</hi>
+<hi rendition="#smaller">, Peter Paul 1639–1699</hi>
+</term>
+</index>
 oder G. Mennichen
-(Ende Januar 1687; <hi rendition="#i">LSB</hi> I, 4 N. 267).<ref corresp="#bib_01332"/><index indexName="Personen"><term><hi rendition="#g #smaller">Mennichen</hi><hi rendition="#smaller">, Georg gest. nach 1687</hi></term></index>
+(Ende Januar 1687; <hi rendition="#i">LSB</hi> I, 4 N. 267).<ref corresp="#bib_01332"/>
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mennichen</hi>
+<hi rendition="#smaller">, Georg gest. nach 1687</hi>
+</term>
+</index>
 Leidenfrosts Brief an Leibniz vom 12. (22.) März 1683 (<hi rendition="#i">LSB</hi> I, 3 N. 187)<ref corresp="#bib_01333"/>
 könnte möglicherweise sogar das erwähnte <hi rendition="#i">schreiben aus Braunschweig</hi> beantwortet haben.
 Eine sichere Zuordnung des Brieffragments ergibt sich aus diesen Umständen jedoch nicht.
 Vielmehr ist festzustellen, dass die Formel <hi rendition="#i">WohlEdler Vester insonders Hochgeehrter Herr</hi>
 sporadisch auch in späteren Briefen Leibnizens vorkommt,
 etwa an P. Marci (27. März/7. April 1691; <hi rendition="#i">LSB</hi> I, 6 N. 247)<ref corresp="#bib_01334"/>
-oder D. Flach (5./15. Juni 1693; <hi rendition="#i">LSB</hi> I, Supplementband Harz-Bergbau, N. 28).<ref corresp="#bib_01335"/><index indexName="Personen"><term><hi rendition="#g #smaller">Flach</hi><hi rendition="#smaller">, Daniel, gest. 1694</hi></term></index>
-Aufgrund dieser späteren Vorkommnisse und unter Berücksichtigung der zahlreichen Aufenthalte Leibnizens in Braunschweig<index indexName="Orte"><term><hi rendition="#smaller">Braunschweig</hi></term></index> und Wolfenbüttel<index indexName="Orte"><term><hi rendition="#smaller">Wolfenbüttel</hi></term></index> seit 1690 ist eine Datierung der Aufzeichnung N. <ref corresp="#N.22"/> auf die Zeit nach der Italienreise nicht auszuschließen.</hi></p><p rendition="#noindent" xml:id="Ch22.p6"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1012"><pb type="L"/><fw type="folNum">[19 r<hi rendition="#sup">o</hi>]</fw></ref> <note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Am oberen Rand:</hi></note>Haec subtilissima et magni momenti.
-(<?tex-source \phantom{)}?>Quae sub NB <formula xml:id="Ch22.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo>⊙</m:mo></m:math></formula>, re discussa pro veris habenda.<?tex-source \phantom{(}?>)<note type="Afootnote-sub" n="[a]">(<?tex-source \phantom{)}?>Quae <seg type="apparat-ellipsis"/> habenda.<?tex-source \phantom{(}?>) :
-Siehe die entsprechende Randbemerkung auf S. <ref corresp="#LH_35_09_16_019r_rndbmrkg_NBsun"/>.</note></note>Ex <app type="Cfootnote"><lem type="main">laqueari<index indexName="Sachen"><term>laquear</term></index>
-seu tecto<index indexName="Sachen"><term>tectum</term></index> <hi rendition="#i">ace</hi></lem><note type="lemma-abbrev">laqueari <seg type="apparat-ellipsis"/> <hi rendition="#i">ace</hi></note><note type="editorial">Siehe das Diagramm [<hi rendition="#i">Fig. 1</hi>].</note></app>
-pendeant tres funes<index indexName="Sachen"><term>funis pendens</term></index>
-aeque longi et crassi <hi rendition="#i">ab</hi>, <hi rendition="#i">cd</hi>,
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">ef</hi> per quorum extremitates inferiores</lem><note type="lemma-abbrev"><hi rendition="#i">ef</hi></note><rdg wit="#L" n="1"> per
-<app><rdg wit="#L" n="a">⟨eo⟩ </rdg><rdg wit="#L" n="b">infer
-</rdg></app></rdg><rdg wit="#L" n="2"> per quorum extremitates inferiores <hi rendition="#i">L</hi></rdg></app>
-transeat transversus baculus<index indexName="Sachen"><term>baculus transversus</term></index> <hi rendition="#i">bdf</hi>
+oder D. Flach (5./15. Juni 1693; <hi rendition="#i">LSB</hi> I, Supplementband Harz-Bergbau, N. 28).<ref corresp="#bib_01335"/>
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Flach</hi>
+<hi rendition="#smaller">, Daniel, gest. 1694</hi>
+</term>
+</index>
+Aufgrund dieser späteren Vorkommnisse und unter Berücksichtigung der zahlreichen Aufenthalte Leibnizens in Braunschweig<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Braunschweig</hi>
+</term>
+</index> und Wolfenbüttel<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Wolfenbüttel</hi>
+</term>
+</index> seit 1690 ist eine Datierung der Aufzeichnung N. <ref corresp="#N.22"/>
+ auf die Zeit nach der Italienreise nicht auszuschließen.</hi>
+</p>
+<p rendition="#noindent" xml:id="Ch22.p6">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1012">
+<pb type="L"/>
+<fw type="folNum">[19 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+<note type="Afootnote" place="margin" resp="#L">
+<note type="lemma-abbrev">
+<hi rendition="#i">Am oberen Rand:</hi>
+</note>Haec subtilissima et magni momenti.
+(<?tex-source \phantom{)}?>Quae sub NB<formula xml:id="Ch22.p6.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo>⊙</m:mo>
+</m:math>
+</formula>, re discussa pro veris habenda.<?tex-source \phantom{(}?>)<note type="Afootnote-sub" n="[a]">(<?tex-source \phantom{)}?>Quae<seg type="apparat-ellipsis"/>
+ habenda.<?tex-source \phantom{(}?>) :
+Siehe die entsprechende Randbemerkung auf S.<ref corresp="#LH_35_09_16_019r_rndbmrkg_NBsun"/>
+.</note>
+</note>Ex <app type="Cfootnote">
+<lem type="main">laqueari<index indexName="Sachen">
+<term>laquear</term>
+</index>
+seu tecto<index indexName="Sachen">
+<term>tectum</term>
+</index>
+<hi rendition="#i">ace</hi>
+</lem>
+<note type="lemma-abbrev">laqueari <seg type="apparat-ellipsis"/>
+<hi rendition="#i">ace</hi>
+</note>
+<note type="editorial">Siehe das Diagramm [<hi rendition="#i">Fig. 1</hi>].
+</note>
+</app>
+pendeant tres funes<index indexName="Sachen">
+<term>funis pendens</term>
+</index>
+aeque longi et crassi <hi rendition="#i">ab</hi>,<hi rendition="#i">cd</hi>,
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">ef</hi> per quorum extremitates inferiores</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">ef</hi>
+</note>
+<rdg wit="#L" n="1"> per
+<app>
+<rdg wit="#L" n="a">⟨eo⟩ </rdg>
+<rdg wit="#L" n="b">infer
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> per quorum extremitates inferiores <hi rendition="#i">L</hi>
+</rdg>
+</app>
+transeat transversus baculus<index indexName="Sachen">
+<term>baculus transversus</term>
+</index>
+<hi rendition="#i">bdf</hi>
 ex quo pendeat
-<app type="Bfootnote"><lem type="main">pondus<index indexName="Sachen"><term>pondus pendens</term></index> <hi rendition="#i">p</hi>.
+<app type="Bfootnote">
+<lem type="main">pondus<index indexName="Sachen">
+<term>pondus pendens</term>
+</index>
+<hi rendition="#i">p</hi>.
 His positis si pondus <hi rendition="#i">p</hi> sit in medio itemque funis <hi rendition="#i">cd</hi>,
-funes quidem <hi rendition="#i">ab</hi> et <hi rendition="#i">ef</hi></lem><note type="lemma-abbrev">pondus</note><rdg wit="#L"><hi rendition="#i">p</hi>.
-</rdg><rdg wit="#L" n="1"> His
-</rdg><rdg wit="#L" n="2"> Si pondus <hi rendition="#i">p</hi>,
-<app><rdg wit="#L" n="a">⟨et funis⟩ </rdg><rdg wit="#L" n="b">funes <hi rendition="#i">ab</hi>
-</rdg><rdg wit="#L" n="c">si
-</rdg></app></rdg><rdg wit="#L" n="3"> His positis <seg type="apparat-ellipsis"/> <hi rendition="#i">ab</hi> et <hi rendition="#i">ef</hi> <hi rendition="#i">L</hi></rdg></app>
+funes quidem <hi rendition="#i">ab</hi> et <hi rendition="#i">ef</hi>
+</lem>
+<note type="lemma-abbrev">pondus</note>
+<rdg wit="#L">
+<hi rendition="#i">p</hi>.
+</rdg>
+<rdg wit="#L" n="1"> His
+</rdg>
+<rdg wit="#L" n="2"> Si pondus <hi rendition="#i">p</hi>,
+<app>
+<rdg wit="#L" n="a">⟨et funis⟩ </rdg>
+<rdg wit="#L" n="b">funes <hi rendition="#i">ab</hi>
+</rdg>
+<rdg wit="#L" n="c">si
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="3"> His positis <seg type="apparat-ellipsis"/>
+<hi rendition="#i">ab</hi> et <hi rendition="#i">ef</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
 aequaliter
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[tendentur],</corr></lem><rdg wit="#L"><orig>tendi</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-sed et funis <hi rendition="#i">cd</hi> tantundem tendetur,<index indexName="Sachen"><term>funis tensus</term></index>
-nisi in quantum baculus<index indexName="Sachen"><term>baculus transversus</term></index> <hi rendition="#i">bdf</hi> curvabitur in medio.
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[tendentur],</corr>
+</lem>
+<rdg wit="#L">
+<orig>tendi</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+sed et funis <hi rendition="#i">cd</hi> tantundem tendetur,<index indexName="Sachen">
+<term>funis tensus</term>
+</index>
+nisi in quantum baculus<index indexName="Sachen">
+<term>baculus transversus</term>
+</index>
+<hi rendition="#i">bdf</hi> curvabitur in medio.
 Nam si rigidus ponatur,
 aut non aut aequaliter ubique descendet,
 ideoque et aequaliter ubique funes tendet,
 quare falsum est
-<app type="Cfootnote"><lem type="main">quod ajunt</lem><note type="editorial">Vgl. etwa
-<index indexName="Personen"><term><hi rendition="#g">Wallis</hi> (Wallisius), John 1616–1703</term></index>J. <hi rendition="#k">Wallis</hi>, <hi rendition="#i">Mechanica</hi>, pars III, cap. VI, prop. V
+<app type="Cfootnote">
+<lem type="main">quod ajunt</lem>
+<note type="editorial">Vgl. etwa
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Wallis</hi> (Wallisius), John 1616–1703</term>
+</index>J. <hi rendition="#k">Wallis</hi>,<hi rendition="#i">Mechanica</hi>, pars III, cap. VI, prop. V
 (London 1671–1672, Bd. II, S. 579f.;
-<hi rendition="#i">WO</hi> I, S. 946).<bibl corresp="#bib_00301"><bibl corresp="#bib_01008">
+<hi rendition="#i">WO</hi> I, S. 946).<bibl corresp="#bib_00301">
+<bibl corresp="#bib_01008">
 Leibniz hatte in Paris die Stelle exzerpiert:
-<hi rendition="#i">LSB</hi> VIII, 2 N. 8, S. 71.8–15.<bibl corresp="#bib_01343"/></bibl></bibl></note></app>
-propiorem centro gravitatis,<index indexName="Sachen"><term>centrum gravitatis</term></index>
-ut hoc loco funem <hi rendition="#i">cd</hi>,<index indexName="Sachen"><term>funis tensus</term></index>
+<hi rendition="#i">LSB</hi> VIII, 2 N. 8, S. 71.8–15.<bibl corresp="#bib_01343"/>
+</bibl>
+</bibl>
+</note>
+</app>
+propiorem centro gravitatis,<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index>
+ut hoc loco funem <hi rendition="#i">cd</hi>,<index indexName="Sachen">
+<term>funis tensus</term>
+</index>
 magis gravari.
-Verum si pondus <hi rendition="#i">p</hi><index indexName="Sachen"><term>pondus tendens</term></index>
+Verum si pondus <hi rendition="#i">p</hi>
+<index indexName="Sachen">
+<term>pondus tendens</term>
+</index>
 ponatur inter <hi rendition="#i">b</hi>
-<app type="Bfootnote"><lem type="main">et <hi rendition="#i">d</hi> in loco <hi rendition="#i"><hi rendition="#smaller">2</hi>p</hi>
+<app type="Bfootnote">
+<lem type="main">et <hi rendition="#i">d</hi> in loco <hi rendition="#i">
+<hi rendition="#smaller">2</hi>p</hi>
 tunc funis <hi rendition="#i">ab</hi>
-(<?tex-source \phantom{)}?>omittamus nunc funem <hi rendition="#i">cd</hi><?tex-source \phantom{(}?>)
-magis [gravabitur] quam funis <hi rendition="#i">ef</hi>.</lem><note type="lemma-abbrev">et <hi rendition="#i">d</hi></note><rdg wit="#L" n="1"> funes
-</rdg><rdg wit="#L" n="2"> in loco <hi rendition="#i"><hi rendition="#smaller">2</hi>p</hi> tunc
-<app><rdg wit="#L" n="a">funes
-</rdg><rdg wit="#L" n="b">funis <hi rendition="#i">ab</hi>
-<app><rdg wit="#L" n="aa">et <hi rendition="#i">cd</hi>
-</rdg><rdg wit="#L" n="bb">(<?tex-source \phantom{)}?>omittamus nunc funem <hi rendition="#i">cd</hi><?tex-source \phantom{(}?>) magis
-<note type="editorial">|</note> gravabuntur <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note> quam funis <hi rendition="#i">ef</hi>. <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
-Nam variis modis baculus transversus<index indexName="Sachen"><term>baculus transversus</term></index>
-cum annexo pondere<index indexName="Sachen"><term>pondus annexum</term></index> descendere potest,
-uno directo, ita ut ubique descendat aequaliter,<index indexName="Sachen"><term>descensus directus</term></index>
-et secundum hunc modum aequaliter tenderentur funes;<index indexName="Sachen"><term>funis tensus</term></index>
-altero circulari, eoque rursus duplici,<index indexName="Sachen"><term>descensus circularis</term></index>
-uno nempe ut circa centrum <hi rendition="#i">b</hi><index indexName="Sachen"><term>centrum</term></index>
-moveatur baculus <hi rendition="#i">bdf</hi>,<index indexName="Sachen"><term>baculus transversus</term></index>
-altero ut idem moveatur circa centrum <hi rendition="#i">f</hi>.<index indexName="Sachen"><term>centrum</term></index>
-Hoc autem postremo modo maxime facilis redditur descensus,<index indexName="Sachen"><term>descensus circularis</term></index>
+(<?tex-source \phantom{)}?>omittamus nunc funem<hi rendition="#i">cd</hi><?tex-source \phantom{(}?>)
+magis [gravabitur] quam funis<hi rendition="#i">ef</hi>.
+</lem>
+<note type="lemma-abbrev">et <hi rendition="#i">d</hi>
+</note>
+<rdg wit="#L" n="1"> funes
+</rdg>
+<rdg wit="#L" n="2"> in loco <hi rendition="#i">
+<hi rendition="#smaller">2</hi>p</hi> tunc
+<app>
+<rdg wit="#L" n="a">funes
+</rdg>
+<rdg wit="#L" n="b">funis <hi rendition="#i">ab</hi>
+<app>
+<rdg wit="#L" n="aa">et <hi rendition="#i">cd</hi>
+</rdg>
+<rdg wit="#L" n="bb">(<?tex-source \phantom{)}?>omittamus nunc funem<hi rendition="#i">cd</hi><?tex-source \phantom{(}?>) magis
+<note type="editorial">|</note> gravabuntur <note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi> |
+</note> quam funis <hi rendition="#i">ef</hi>.<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+Nam variis modis baculus transversus<index indexName="Sachen">
+<term>baculus transversus</term>
+</index>
+cum annexo pondere<index indexName="Sachen">
+<term>pondus annexum</term>
+</index> descendere potest,
+uno directo, ita ut ubique descendat aequaliter,<index indexName="Sachen">
+<term>descensus directus</term>
+</index>
+et secundum hunc modum aequaliter tenderentur funes;<index indexName="Sachen">
+<term>funis tensus</term>
+</index>
+altero circulari, eoque rursus duplici,<index indexName="Sachen">
+<term>descensus circularis</term>
+</index>
+uno nempe ut circa centrum <hi rendition="#i">b</hi>
+<index indexName="Sachen">
+<term>centrum</term>
+</index>
+moveatur baculus <hi rendition="#i">bdf</hi>,<index indexName="Sachen">
+<term>baculus transversus</term>
+</index>
+altero ut idem moveatur circa centrum <hi rendition="#i">f</hi>.<index indexName="Sachen">
+<term>centrum</term>
+</index>
+Hoc autem postremo modo maxime facilis redditur descensus,<index indexName="Sachen">
+<term>descensus circularis</term>
+</index>
 cum ita
-<app type="Bfootnote"><lem type="main">vis<index indexName="Sachen"><term>vis tendens</term></index>
-in funem <hi rendition="#i">ab</hi> maxime impendatur<index indexName="Sachen"><term>vis impendens</term></index>
-quae alias impenderetur in ambos <hi rendition="#i">ab</hi> et <hi rendition="#i">ef</hi>.</lem><note type="lemma-abbrev">vis</note><rdg wit="#L" n="1"> tota
-</rdg><rdg wit="#L" n="2"> in
-<app><rdg wit="#L" n="a">duos tales funes
-<app><rdg wit="#L" n="aa">impendatur
-</rdg><rdg wit="#L" n="bb"><hi rendition="#i">ab</hi>, <hi rendition="#i">ef</hi>
-</rdg></app></rdg><rdg wit="#L" n="b">funem <hi rendition="#i">ab</hi> <seg type="apparat-ellipsis"/> alias impenderetur
-<app><rdg wit="#L" n="aa">in ambos <hi rendition="#i">ab</hi> <hi rendition="#i">cd</hi>
-</rdg><rdg wit="#L" n="bb">in ambos <hi rendition="#i">ab</hi> et <hi rendition="#i">ef</hi>. <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
+<app type="Bfootnote">
+<lem type="main">vis<index indexName="Sachen">
+<term>vis tendens</term>
+</index>
+in funem <hi rendition="#i">ab</hi> maxime impendatur<index indexName="Sachen">
+<term>vis impendens</term>
+</index>
+quae alias impenderetur in ambos <hi rendition="#i">ab</hi> et <hi rendition="#i">ef</hi>.
+</lem>
+<note type="lemma-abbrev">vis</note>
+<rdg wit="#L" n="1"> tota
+</rdg>
+<rdg wit="#L" n="2"> in
+<app>
+<rdg wit="#L" n="a">duos tales funes
+<app>
+<rdg wit="#L" n="aa">impendatur
+</rdg>
+<rdg wit="#L" n="bb">
+<hi rendition="#i">ab</hi>,<hi rendition="#i">ef</hi>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="b">funem <hi rendition="#i">ab</hi>
+<seg type="apparat-ellipsis"/>
+ alias impenderetur
+<app>
+<rdg wit="#L" n="aa">in ambos <hi rendition="#i">ab</hi>
+<hi rendition="#i">cd</hi>
+</rdg>
+<rdg wit="#L" n="bb">in ambos <hi rendition="#i">ab</hi> et <hi rendition="#i">ef</hi>.<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
  Difficile  tamen  est  determinare
- quantum  quisque  funis  debeat  tendi.<index indexName="Sachen"><term>funis tensus</term></index></p><figure rendition="#own-line_centered" xml:id="Ch22.p7"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_019_d1.svg" width="86.724pt" xml:id="Ch22.p7.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_09_16_019r_Fig.1"/></head></figure><p rendition="#noindent" xml:id="Ch22.p8">Sane summa omnium tensionum<index indexName="Sachen"><term>summa tensionum</term></index> tanta esse debet
-quanta erat antea cum pondus<index indexName="Sachen"><term>pondus tendens</term></index> esset in medio,
-eadem enim vis<index indexName="Sachen"><term>vis tendens</term></index> quae
-<app type="Bfootnote"><lem type="main">ante,
-eandem producet effectus quantitatem,<index indexName="Sachen"><term>quantitas effectus</term></index></lem><note type="lemma-abbrev">ante,</note><rdg wit="#L" n="1"> eundem producet effectum<index indexName="Sachen"><term>effectus</term></index>
-</rdg><rdg wit="#L" n="2"> eandem producet effectus quantitatem, <hi rendition="#i">L</hi></rdg></app>
-deinde non potest dici totam vim<index indexName="Sachen"><term>vis tendens</term></index><index indexName="Sachen"><term>vis impendens</term></index><index indexName="Sachen"><term>vis tota</term></index>
-<app type="Bfootnote"><lem type="main">impendi soli funi <hi rendition="#i">ab</hi>,</lem><note type="lemma-abbrev">impendi</note><rdg wit="#L" n="1"> solis duobus funibus <hi rendition="#i">ab</hi> et <hi rendition="#i">cd</hi>
-</rdg><rdg wit="#L" n="2"> soli funi <hi rendition="#i">ab</hi>, <hi rendition="#i">L</hi></rdg></app>
+ quantum  quisque  funis  debeat  tendi.<index indexName="Sachen">
+<term>funis tensus</term>
+</index>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch22.p7">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_019_d1.svg" width="86.724pt" xml:id="Ch22.p7.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_09_16_019r_Fig.1"/>
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch22.p8">Sane summa omnium tensionum<index indexName="Sachen">
+<term>summa tensionum</term>
+</index> tanta esse debet
+quanta erat antea cum pondus<index indexName="Sachen">
+<term>pondus tendens</term>
+</index> esset in medio,
+eadem enim vis<index indexName="Sachen">
+<term>vis tendens</term>
+</index> quae
+<app type="Bfootnote">
+<lem type="main">ante,
+eandem producet effectus quantitatem,<index indexName="Sachen">
+<term>quantitas effectus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">ante,</note>
+<rdg wit="#L" n="1"> eundem producet effectum<index indexName="Sachen">
+<term>effectus</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> eandem producet effectus quantitatem, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+deinde non potest dici totam vim<index indexName="Sachen">
+<term>vis tendens</term>
+</index>
+<index indexName="Sachen">
+<term>vis impendens</term>
+</index>
+<index indexName="Sachen">
+<term>vis tota</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">impendi soli funi <hi rendition="#i">ab</hi>,
+</lem>
+<note type="lemma-abbrev">impendi</note>
+<rdg wit="#L" n="1"> solis duobus funibus <hi rendition="#i">ab</hi> et <hi rendition="#i">cd</hi>
+</rdg>
+<rdg wit="#L" n="2"> soli funi <hi rendition="#i">ab</hi>,<hi rendition="#i">L</hi>
+</rdg>
+</app>
 nam sciendum
-<app type="Bfootnote"><lem type="main">est illum aliquantum tensum</lem><note type="lemma-abbrev">est</note><rdg wit="#L" n="1"> illos aliquantum tensos
-</rdg><rdg wit="#L" n="2"> illum aliquantum tensum <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">est illum aliquantum tensum</lem>
+<note type="lemma-abbrev">est</note>
+<rdg wit="#L" n="1"> illos aliquantum tensos
+</rdg>
+<rdg wit="#L" n="2"> illum aliquantum tensum <hi rendition="#i">L</hi>
+</rdg>
+</app>
 magis resistere quam funem <hi rendition="#i">ef</hi> omnino nondum
-<app type="Bfootnote"><lem type="main">tensum,<index indexName="Sachen"><term>funis tensus</term></index>
-et ita hac differentia situs differentiam<index indexName="Sachen"><term>differentia situs</term></index> compensari.</lem><note type="lemma-abbrev">tensum,</note><rdg wit="#L" n="1"> licet alias com
-</rdg><rdg wit="#L" n="2"> et
-</rdg><rdg wit="#L" n="3"> et ita <seg type="apparat-ellipsis"/> differentiam compensari. <hi rendition="#i">L</hi></rdg></app>
-Pondere<index indexName="Sachen"><term>pondus tendens</term></index> ergo sito in <hi rendition="#i"><hi rendition="#smaller">2</hi>p</hi>,
+<app type="Bfootnote">
+<lem type="main">tensum,<index indexName="Sachen">
+<term>funis tensus</term>
+</index>
+et ita hac differentia situs differentiam<index indexName="Sachen">
+<term>differentia situs</term>
+</index> compensari.</lem>
+<note type="lemma-abbrev">tensum,</note>
+<rdg wit="#L" n="1"> licet alias com
+</rdg>
+<rdg wit="#L" n="2"> et
+</rdg>
+<rdg wit="#L" n="3"> et ita <seg type="apparat-ellipsis"/>
+ differentiam compensari. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+Pondere<index indexName="Sachen">
+<term>pondus tendens</term>
+</index> ergo sito in <hi rendition="#i">
+<hi rendition="#smaller">2</hi>p</hi>,
 eousque
-<app type="Bfootnote"><lem type="main">plus tendetur funis <hi rendition="#i">ab</hi></lem><note type="lemma-abbrev">plus</note><rdg wit="#L" n="1"> tendentur funes <hi rendition="#i">ab</hi>, <hi rendition="#i">cd</hi>
-</rdg><rdg wit="#L" n="2"> tendetur funis <hi rendition="#i">ab</hi> <hi rendition="#i">L</hi></rdg></app>
-quam funis <hi rendition="#i">ef</hi><index indexName="Sachen"><term>funis tensus</term></index>
-<app type="Bfootnote"><lem type="main">donec motui ponderis directo vel etiam circa centrum <hi rendition="#i">b</hi></lem><note type="lemma-abbrev">donec</note><rdg wit="#L" n="1"> motibus
-</rdg><rdg wit="#L" n="2" cause="addition"> motui ponderis
-<note type="editorial">|</note> <add>directo vel etiam</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> circa centrum <hi rendition="#i">b</hi> <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">plus tendetur funis <hi rendition="#i">ab</hi>
+</lem>
+<note type="lemma-abbrev">plus</note>
+<rdg wit="#L" n="1"> tendentur funes <hi rendition="#i">ab</hi>,<hi rendition="#i">cd</hi>
+</rdg>
+<rdg wit="#L" n="2"> tendetur funis <hi rendition="#i">ab</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+quam funis <hi rendition="#i">ef</hi>
+<index indexName="Sachen">
+<term>funis tensus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">donec motui ponderis directo vel etiam circa centrum <hi rendition="#i">b</hi>
+</lem>
+<note type="lemma-abbrev">donec</note>
+<rdg wit="#L" n="1"> motibus
+</rdg>
+<rdg wit="#L" n="2" cause="addition"> motui ponderis
+<note type="editorial">|</note>
+<add>directo vel etiam</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> circa centrum <hi rendition="#i">b</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
 minus resistat funis <hi rendition="#i">ef</hi>
-quam motui circa centrum <hi rendition="#i">f</hi> resistit funis <hi rendition="#i">ab</hi>.<index indexName="Sachen"><term>funis tensus</term></index>
-Res autem accurate sic poterit determinari,<index indexName="Sachen"><term>res determinata</term></index>
-ut pondus <hi rendition="#i">p</hi><index indexName="Sachen"><term>pondus tendens</term></index>
+quam motui circa centrum <hi rendition="#i">f</hi> resistit funis <hi rendition="#i">ab</hi>.<index indexName="Sachen">
+<term>funis tensus</term>
+</index>
+Res autem accurate sic poterit determinari,<index indexName="Sachen">
+<term>res determinata</term>
+</index>
+ut pondus <hi rendition="#i">p</hi>
+<index indexName="Sachen">
+<term>pondus tendens</term>
+</index>
 eo descendat, quo longissime potest
-eadem manente summa tensionum.<index indexName="Sachen"><term>tensio funis</term></index><index indexName="Sachen"><term>summa tensionum</term></index><anchor xml:id="LH_35_09_16_019r_rndbmrkg_NBsun"/><note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"> <hi rendition="#i">Am Rand, quer:</hi></note>NB <formula xml:id="Ch22.p8.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo>⊙</m:mo></m:math></formula> Pondus tantundem descendit quantum ante,<index indexName="Sachen"><term>pondus tendens</term></index>
-summa tensio-num eadem quae ante,<index indexName="Sachen"><term>summa tensionum</term></index>
-funium autem tensiones sunt reciproce<index indexName="Sachen"><term>tensio funis</term></index>
-ut distantiae a centro gravitatis.<index indexName="Sachen"><term>distantia a centro gravitatis</term></index>
-Ex his tribus res determinatur.<index indexName="Sachen"><term>res determinata</term></index>
-NB <formula xml:id="Ch22.p8.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo>⊙</m:mo></m:math></formula></note></p><p xml:id="Ch22.p9"><app type="Bfootnote"><lem type="main">Itaque
-<ref><pb type="L"/><fw type="folNum">[19 v<hi rendition="#sup">o</hi>]</fw></ref> si summa tensionum<index indexName="Sachen"><term>summa tensionum</term></index> possibilis ponatur esse data,
+eadem manente summa tensionum.<index indexName="Sachen">
+<term>tensio funis</term>
+</index>
+<index indexName="Sachen">
+<term>summa tensionum</term>
+</index>
+<anchor xml:id="LH_35_09_16_019r_rndbmrkg_NBsun"/>
+<note type="Afootnote" place="margin" resp="#L">
+<note type="lemma-abbrev">
+<hi rendition="#i">Am Rand, quer:</hi>
+</note>NB <formula xml:id="Ch22.p8.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo>⊙</m:mo>
+</m:math>
+</formula> Pondus tantundem descendit quantum ante,<index indexName="Sachen">
+<term>pondus tendens</term>
+</index>
+summa tensio-num eadem quae ante,<index indexName="Sachen">
+<term>summa tensionum</term>
+</index>
+funium autem tensiones sunt reciproce<index indexName="Sachen">
+<term>tensio funis</term>
+</index>
+ut distantiae a centro gravitatis.<index indexName="Sachen">
+<term>distantia a centro gravitatis</term>
+</index>
+Ex his tribus res determinatur.<index indexName="Sachen">
+<term>res determinata</term>
+</index>
+NB <formula xml:id="Ch22.p8.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo>⊙</m:mo>
+</m:math>
+</formula>
+</note>
+</p>
+<p xml:id="Ch22.p9">
+<app type="Bfootnote">
+<lem type="main">Itaque
+<ref>
+<pb type="L"/>
+<fw type="folNum">[19 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref> si summa tensionum<index indexName="Sachen">
+<term>summa tensionum</term>
+</index> possibilis ponatur esse data,
 et
-<app type="Cfootnote"><lem type="main">onus<index indexName="Sachen"><term>onus</term></index> seu trabs <hi rendition="#i">bpf</hi><index indexName="Sachen"><term>trabs</term></index>
-descendat ad <hi rendition="#i">(b)(p)(f)</hi></lem><note type="lemma-abbrev">onus <seg type="apparat-ellipsis"/> <hi rendition="#i">(b)(p)(f)</hi></note><note type="editorial">Siehe das Diagramm [<hi rendition="#i">Fig. 2</hi>].</note></app>
-quaeritur,</lem><note type="lemma-abbrev">Itaque</note><rdg wit="#L" n="1"> erit <ref><pb type="L"/><fw type="folNum">[19 v<hi rendition="#sup">o</hi>]</fw></ref> </rdg><rdg wit="#L" n="2"> si summa <seg type="apparat-ellipsis"/> esse data,
-<app><rdg wit="#L" n="a">quaeritur
-</rdg><rdg wit="#L" n="b">et onus <seg type="apparat-ellipsis"/> <hi rendition="#i">(b)(p)(f)</hi> quaeritur, <hi rendition="#i">L</hi></rdg></app></rdg></app>
+<app type="Cfootnote">
+<lem type="main">onus<index indexName="Sachen">
+<term>onus</term>
+</index> seu trabs <hi rendition="#i">bpf</hi>
+<index indexName="Sachen">
+<term>trabs</term>
+</index>
+descendat ad <hi rendition="#i">(b)(p)(f)</hi>
+</lem>
+<note type="lemma-abbrev">onus <seg type="apparat-ellipsis"/>
+<hi rendition="#i">(b)(p)(f)</hi>
+</note>
+<note type="editorial">Siehe das Diagramm [<hi rendition="#i">Fig. 2</hi>].
+</note>
+</app>
+quaeritur,</lem>
+<note type="lemma-abbrev">Itaque</note>
+<rdg wit="#L" n="1"> erit <ref>
+<pb type="L"/>
+<fw type="folNum">[19 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</rdg>
+<rdg wit="#L" n="2"> si summa <seg type="apparat-ellipsis"/>
+ esse data,
+<app>
+<rdg wit="#L" n="a">quaeritur
+</rdg>
+<rdg wit="#L" n="b">et onus <seg type="apparat-ellipsis"/>
+<hi rendition="#i">(b)(p)(f)</hi> quaeritur, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
 ubi debeat esse punctum <hi rendition="#i">(p)</hi>
-et quis angulus<index indexName="Sachen"><term>angulus obliquitatis</term></index> obliquitatis rectae <hi rendition="#i">(b)(p)(f)</hi>;
+et quis angulus<index indexName="Sachen">
+<term>angulus obliquitatis</term>
+</index> obliquitatis rectae <hi rendition="#i">(b)(p)(f)</hi>;
 et quidem differentiarum inter rectas <hi rendition="#i">ab</hi> et <hi rendition="#i">a(b)</hi>,
 item rectas <hi rendition="#i">ef</hi> et <hi rendition="#i">e(f)</hi>
-summa debet aequari summae tensionum datae.<index indexName="Sachen"><term>summa tensionum</term></index>
-<app type="Bfootnote"><lem type="main">(<?tex-source \phantom{)}?>Hinc sequitur summam <formula xml:id="Ch22.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mtext mathvariant="italic">a(b)</m:mtext><m:mo>+</m:mo><m:mtext mathvariant="italic">e(f)</m:mtext></m:mrow></m:math></formula> aequari quantitati datae
-id est summae tensionum<index indexName="Sachen"><term>summa tensionum</term></index>
-una cum summa funium<index indexName="Sachen"><term>funis tensus</term></index>
-<formula xml:id="Ch22.p9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mtext>𝑎𝑏</m:mtext><m:mo>+</m:mo><m:mtext>𝑒𝑓</m:mtext></m:mrow></m:math></formula> ante tensionem.<index indexName="Sachen"><term>tensio funis</term></index><?tex-source \phantom{(}?>)</lem><note type="lemma-abbrev">(<?tex-source \phantom{)}?>Hinc</note><rdg wit="#L" cause="addition"><add>sequitur <seg type="apparat-ellipsis"/> ante tensionem.<?tex-source \phantom{(}?>)</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-Verum cum una ista conditio<index indexName="Sachen"><term>conditio determinans</term></index>
+summa debet aequari summae tensionum datae.<index indexName="Sachen">
+<term>summa tensionum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">(<?tex-source \phantom{)}?>Hinc sequitur summam<formula xml:id="Ch22.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext mathvariant="italic">a(b)</m:mtext>
+<m:mo>+</m:mo>
+<m:mtext mathvariant="italic">e(f)</m:mtext>
+</m:mrow>
+</m:math>
+</formula> aequari quantitati datae
+id est summae tensionum<index indexName="Sachen">
+<term>summa tensionum</term>
+</index>
+una cum summa funium<index indexName="Sachen">
+<term>funis tensus</term>
+</index>
+<formula xml:id="Ch22.p9.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext>𝑎𝑏</m:mtext>
+<m:mo>+</m:mo>
+<m:mtext>𝑒𝑓</m:mtext>
+</m:mrow>
+</m:math>
+</formula> ante tensionem.<index indexName="Sachen">
+<term>tensio funis</term>
+</index><?tex-source \phantom{(}?>)</lem>
+<note type="lemma-abbrev">(<?tex-source \phantom{)}?>Hinc</note>
+<rdg wit="#L" cause="addition">
+<add>sequitur <seg type="apparat-ellipsis"/>
+ ante tensionem.<?tex-source \phantom{(}?>)</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+Verum cum una ista conditio<index indexName="Sachen">
+<term>conditio determinans</term>
+</index>
 ad omnia determinanda non sufficiat,
-adeoque</p><figure rendition="#own-line_centered" xml:id="Ch22.p10"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_019_d2.svg" width="69.3792pt" xml:id="Ch22.p10.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]<anchor xml:id="LH_35_09_16_019v_Fig.2"/></head></figure><p rendition="#noindent" xml:id="Ch22.p11">natura<index indexName="Sachen"><term>natura</term></index> habeat libertatem eligendi,<index indexName="Sachen"><term>libertas eligendi</term></index>
+adeoque</p>
+<figure rendition="#own-line_centered" xml:id="Ch22.p10">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_09_16_019_d2.svg" width="69.3792pt" xml:id="Ch22.p10.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]<anchor xml:id="LH_35_09_16_019v_Fig.2"/>
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch22.p11">natura<index indexName="Sachen">
+<term>natura</term>
+</index> habeat libertatem eligendi,<index indexName="Sachen">
+<term>libertas eligendi</term>
+</index>
 eliget maxime determinatum,
-seu centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index>
+seu centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index>
 descendet in linea recta,
-adeoque <hi rendition="#i">p(p)</hi> erit horizonti<index indexName="Sachen"><term>horizon</term></index>
-perpendicularis,<note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Oberhalb</hi> perpendicularis:</note>(+<?tex-source \phantom{)}?> forte in hoc error<index indexName="Sachen"><term>error</term></index>[;] vide finem<note type="Afootnote-sub" n="[a]">vide finem: S. <ref corresp="#LH_35_09_16_019v_videfinem-1"/>.</note> +<?tex-source \phantom{(}?>)<lb/></note>
-adeoque recta <hi rendition="#i">p(p)</hi> erit maxima<index indexName="Sachen"><term>recta maxima</term></index>
+adeoque <hi rendition="#i">p(p)</hi> erit horizonti<index indexName="Sachen">
+<term>horizon</term>
+</index>
+perpendicularis,<note type="Afootnote" place="margin" resp="#L">
+<note type="lemma-abbrev">
+<hi rendition="#i">Oberhalb</hi> perpendicularis:</note>(+<?tex-source \phantom{)}?> forte in hoc error<index indexName="Sachen">
+<term>error</term>
+</index>[;] vide finem<note type="Afootnote-sub" n="[a]">vide finem: S. <ref corresp="#LH_35_09_16_019v_videfinem-1"/>
+.</note> +<?tex-source \phantom{(}?>)<lb/>
+</note>
+adeoque recta <hi rendition="#i">p(p)</hi> erit maxima<index indexName="Sachen">
+<term>recta maxima</term>
+</index>
 quae esse potest.
 His adjungo pondus non longius nunc esse descensurum
-<index indexName="Sachen"><term>pondus pendens</term></index><index indexName="Sachen"><term>pondus tendens</term></index>
+<index indexName="Sachen">
+<term>pondus pendens</term>
+</index>
+<index indexName="Sachen">
+<term>pondus tendens</term>
+</index>
 quam ante cum esset in medio,
-est enim eadem vis,<index indexName="Sachen"><term>vis tendens</term></index>
-eademque resistentia<index indexName="Sachen"><term>resistentia funis</term></index>[;] ideo non major effectus in agente<index indexName="Sachen"><term>agens</term></index><index indexName="Sachen"><term>effectus in agente</term></index>
-quemadmodum non major effectus in patiente.<index indexName="Sachen"><term>patiens</term></index><index indexName="Sachen"><term>effectus in patiente</term></index>
+est enim eadem vis,<index indexName="Sachen">
+<term>vis tendens</term>
+</index>
+eademque resistentia<index indexName="Sachen">
+<term>resistentia funis</term>
+</index>[;] ideo non major effectus in agente<index indexName="Sachen">
+<term>agens</term>
+</index>
+<index indexName="Sachen">
+<term>effectus in agente</term>
+</index>
+quemadmodum non major effectus in patiente.<index indexName="Sachen">
+<term>patiens</term>
+</index>
+<index indexName="Sachen">
+<term>effectus in patiente</term>
+</index>
 Datur ergo punctum <hi rendition="#i">(p)</hi>.
 Quaeritur quomodo <hi rendition="#i">(b)(p)(f)</hi> ducenda sit,
-ut <formula xml:id="Ch22.p11.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mtext mathvariant="italic">a(b)</m:mtext><m:mo>+</m:mo><m:mtext mathvariant="italic">e(f)</m:mtext></m:mrow></m:math></formula> aequetur quantitati datae,
-id quidem fiet si horizontaliter descendat trabs,<index indexName="Sachen"><term>trabs</term></index>
+ut <formula xml:id="Ch22.p11.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext mathvariant="italic">a(b)</m:mtext>
+<m:mo>+</m:mo>
+<m:mtext mathvariant="italic">e(f)</m:mtext>
+</m:mrow>
+</m:math>
+</formula> aequetur quantitati datae,
+id quidem fiet si horizontaliter descendat trabs,<index indexName="Sachen">
+<term>trabs</term>
+</index>
 sed videndum jam an idem fieri possit alio modo,
 et quis sit ille quo discrimen inter <hi rendition="#i">a(b)</hi> et <hi rendition="#i">e(f)</hi> introducitur maximum.
 Si ergo centro <hi rendition="#i">(p)</hi> radio <hi rendition="#i">pb</hi>
-describatur arcus circuli<index indexName="Sachen"><term>arcus circuli</term></index>
+describatur arcus circuli<index indexName="Sachen">
+<term>arcus circuli</term>
+</index>
 ex parte <hi rendition="#i">(b)</hi>,
 et centro <hi rendition="#i">(p)</hi> radio <hi rendition="#i">pf</hi>
-arcus circuli<index indexName="Sachen"><term>arcus circuli</term></index>
+arcus circuli<index indexName="Sachen">
+<term>arcus circuli</term>
+</index>
 ex parte <hi rendition="#i">(f)</hi>,
-et ab unius circuli ad alterius circumferentiam<index indexName="Sachen"><term>circumferentia circuli</term></index>
-per <hi rendition="#i">(p)</hi> centrum commune<index indexName="Sachen"><term>centrum commune</term></index>
+et ab unius circuli ad alterius circumferentiam<index indexName="Sachen">
+<term>circumferentia circuli</term>
+</index>
+per <hi rendition="#i">(p)</hi> centrum commune<index indexName="Sachen">
+<term>centrum commune</term>
+</index>
 ducatur recta,
 quaeritur quomodo illa sit
-<app type="Bfootnote"><lem type="main">ducenda <hi rendition="#i">(b)(p)(f)</hi>,
-ut summa</lem><note type="lemma-abbrev">ducenda</note><rdg wit="#L" n="1"> , ut summa
-</rdg><rdg wit="#L" n="2"> <hi rendition="#i">(b)(p)(f)</hi>, ut summa <hi rendition="#i">L</hi></rdg></app>
-<formula xml:id="Ch22.p11.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mtext mathvariant="italic">a(b)</m:mtext><m:mo>+</m:mo><m:mtext mathvariant="italic">e(f)</m:mtext></m:mrow></m:math></formula> existente data,
+<app type="Bfootnote">
+<lem type="main">ducenda <hi rendition="#i">(b)(p)(f)</hi>,
+ut summa</lem>
+<note type="lemma-abbrev">ducenda</note>
+<rdg wit="#L" n="1"> , ut summa
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">(b)(p)(f)</hi>, ut summa <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch22.p11.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext mathvariant="italic">a(b)</m:mtext>
+<m:mo>+</m:mo>
+<m:mtext mathvariant="italic">e(f)</m:mtext>
+</m:mrow>
+</m:math>
+</formula> existente data,
 sit differentia earum omnium possibilium maxima.
-Cum autem problema sit determinatum<index indexName="Sachen"><term>problema determinatum</term></index>
+Cum autem problema sit determinatum<index indexName="Sachen">
+<term>problema determinatum</term>
+</index>
 ex solo dato puncto <hi rendition="#i">(p)</hi>
 et data recta <hi rendition="#i">bpf</hi>
-et data summa <formula xml:id="Ch22.p11.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathvariant="italic">a(b)</m:mtext><m:mo>+</m:mo><m:mtext mathvariant="italic">e(f)</m:mtext></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula>
+et data summa <formula xml:id="Ch22.p11.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathvariant="italic">a(b)</m:mtext>
+<m:mo>+</m:mo>
+<m:mtext mathvariant="italic">e(f)</m:mtext>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
 tantum enim opus rectam <hi rendition="#i">bpf</hi> circa centrum <hi rendition="#i">(p)</hi> moveri
 quo motu incidet
-<app type="Bfootnote"><lem type="main">in quaesita puncta,</lem><note type="lemma-abbrev">in</note><rdg wit="#L" n="1"> inf
-</rdg><rdg wit="#L" n="2"> casus
-</rdg><rdg wit="#L" n="3"> quaesita puncta, <hi rendition="#i">L</hi></rdg></app>
-et cum linea motus<index indexName="Sachen"><term>linea motus</term></index> sit unius dimensionis,
-solutiones<index indexName="Sachen"><term>solutio</term></index> non possunt esse infinitae
-sed casus addita conditione<index indexName="Sachen"><term>conditio determinans</term></index> summae, est
-<app type="Bfootnote"><lem type="main"><p>determinatus.<index indexName="Sachen"><term>casus determinatus</term></index></p><p><anchor xml:id="LH_35_09_16_019v_videfinem-1"/>Verum nova</p></lem><note type="lemma-abbrev">determinatus.</note><rdg wit="#L" n="1"> Sed addend
-</rdg><rdg wit="#L" n="2"> Verum nova <hi rendition="#i">L</hi></rdg></app>
-hic incidit consideratio<index indexName="Sachen"><term>consideratio</term></index>
+<app type="Bfootnote">
+<lem type="main">in quaesita puncta,</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" n="1"> inf
+</rdg>
+<rdg wit="#L" n="2"> casus
+</rdg>
+<rdg wit="#L" n="3"> quaesita puncta, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+et cum linea motus<index indexName="Sachen">
+<term>linea motus</term>
+</index> sit unius dimensionis,
+solutiones<index indexName="Sachen">
+<term>solutio</term>
+</index> non possunt esse infinitae
+sed casus addita conditione<index indexName="Sachen">
+<term>conditio determinans</term>
+</index> summae, est
+<app type="Bfootnote">
+<lem type="main">
+<p>determinatus.<index indexName="Sachen">
+<term>casus determinatus</term>
+</index>
+</p>
+<p>
+<anchor xml:id="LH_35_09_16_019v_videfinem-1"/>
+Verum nova</p>
+</lem>
+<note type="lemma-abbrev">determinatus.</note>
+<rdg wit="#L" n="1"> Sed addend
+</rdg>
+<rdg wit="#L" n="2"> Verum nova <hi rendition="#i">L</hi>
+</rdg>
+</app>
+hic incidit consideratio<index indexName="Sachen">
+<term>consideratio</term>
+</index>
 quod circa centrum <hi rendition="#i">(p)</hi> funes
-quasi vectes<index indexName="Sachen"><term>vectis</term></index> collectentur.
-Ergo ut sint in aequilibrio<index indexName="Sachen"><term>aequilibrium</term></index>
-<app type="Bfootnote"><lem type="main">vires<index indexName="Sachen"><term>vis tendens</term></index> seu tensiones<index indexName="Sachen"><term>tensio</term></index> debent</lem><note type="lemma-abbrev">vires</note><rdg wit="#L" n="1"> debent
-</rdg><rdg wit="#L" n="2"> seu tensiones debent <hi rendition="#i">L</hi></rdg></app>
-esse reciproce ut distantiae a centro.<index indexName="Sachen"><term>centrum</term></index>
-Idem est si plures funes.<index indexName="Sachen"><term>funis</term></index>
-Res ergo determinata per hoc,<index indexName="Sachen"><term>res determinata</term></index>
+quasi vectes<index indexName="Sachen">
+<term>vectis</term>
+</index> collectentur.
+Ergo ut sint in aequilibrio<index indexName="Sachen">
+<term>aequilibrium</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">vires<index indexName="Sachen">
+<term>vis tendens</term>
+</index> seu tensiones<index indexName="Sachen">
+<term>tensio</term>
+</index> debent</lem>
+<note type="lemma-abbrev">vires</note>
+<rdg wit="#L" n="1"> debent
+</rdg>
+<rdg wit="#L" n="2"> seu tensiones debent <hi rendition="#i">L</hi>
+</rdg>
+</app>
+esse reciproce ut distantiae a centro.<index indexName="Sachen">
+<term>centrum</term>
+</index>
+Idem est si plures funes.<index indexName="Sachen">
+<term>funis</term>
+</index>
+Res ergo determinata per hoc,<index indexName="Sachen">
+<term>res determinata</term>
+</index>
 etsi priori conciliari non potest.
 Non utique necesse est ut <hi rendition="#i">p(p)</hi> sit perpendicularis.
-<anchor xml:id="LH_35_09_16_019v_videfinem-2"/><app type="Cfootnote"><lem type="main">Sequitur NB <formula xml:id="Ch22.p11.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo>⊙</m:mo></m:math></formula> in pag. praecedenti.</lem><note type="lemma-abbrev">Sequitur <seg type="apparat-ellipsis"/> praecedenti</note><note type="editorial">Siehe die Randbemerkung auf S. <ref corresp="#LH_35_09_16_019r_rndbmrkg_NBsun"/>.</note></app></p></div></div></body>
-  </text>
+<anchor xml:id="LH_35_09_16_019v_videfinem-2"/>
+<app type="Cfootnote">
+<lem type="main">Sequitur NB <formula xml:id="Ch22.p11.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo>⊙</m:mo>
+</m:math>
+</formula> in pag. praecedenti.</lem>
+<note type="lemma-abbrev">Sequitur <seg type="apparat-ellipsis"/>
+ praecedenti</note>
+<note type="editorial">Siehe die Randbemerkung auf S. <ref corresp="#LH_35_09_16_019r_rndbmrkg_NBsun"/>
+.</note>
+</app>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

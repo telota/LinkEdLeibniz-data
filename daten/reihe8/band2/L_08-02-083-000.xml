@@ -1,19 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-083-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-083-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De variis rationibus procurandi motum uniformem</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De variis rationibus procurandi motum uniformem</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="83">De variis rationibus procurandi motum uniformem</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1671-03" resp="#ed" cert="medium">[Frühjahr – Sommer 1671]</date><date calendar="#gregorian" notAfter="1671-08" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=761</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="713" to="715"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-083-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 15, 6 Bl. 59</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung: LH XXXV 15, 6 Bl. 59. 1 Bl. 8<hi rendition="#sup">o</hi> ungleichmäßig beschnitten. 2 S.</p><p>KK 1, Nr. 194 C</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+            </author>
+            <title type="chapter" level="a" n="83">De variis rationibus procurandi motum uniformem</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1671-03" resp="#ed" cert="medium">[Frühjahr – Sommer 1671]</date>
+            <date calendar="#gregorian" notAfter="1671-08" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=761</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="713" to="715"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-083-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 15, 6 Bl. 59</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung: LH XXXV 15, 6 Bl. 59. 1 Bl. 8<hi rendition="#sup">o</hi> ungleichmäßig beschnitten. 2 S.</p>
+                  <p>KK 1, Nr. 194 C</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -639,34 +739,332 @@
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#technik"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-21" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#technik"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-21" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-083-000_facs-haupttextzeuge">
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4386"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4387"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4388"/>
-  </facsimile><text xml:id="L_08-02-083-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch83" n="83"><pb type="VIII_2" n="713"/><head>83.
+  </facsimile>
+  <text xml:id="L_08-02-083-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch83" n="83">
+        <pb type="VIII_2" n="713"/>
+        <head>83.
 DE VARIIS RATIONIBUS PROCURANDI MOTUM UNIFORMEM</head>
-<head>[Frühjahr – Sommer 1671]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung: LH XXXV 15, 6 Bl. 59. 1 Bl. 8<hi rendition="#sup">o</hi> ungleichmäßig beschnitten. 2 S.</p><p>KK 1, Nr. 194 C</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch83.p5"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Leibniz beschreibt verschiedene Mechanismen zur Erzeugung einer gleichförmigen Bewegung und beruft sich hierbei vor allem auf Francesco Lana,
-dessen <ref corresp="#bib_00069"/><hi rendition="#i">Prodromo</hi> (1670) er vermutlich in der zweiten Hälfte 1671 zur Optik exzerpiert hat (<ref corresp="#bib_01103"/><hi rendition="#i">LSB</hi> VIII, 1 N. 16).
+        <head>[Frühjahr – Sommer 1671]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung: LH XXXV 15, 6 Bl. 59. 1 Bl. 8<hi rendition="#sup">o</hi> ungleichmäßig beschnitten. 2 S.</p>
+                      <p>KK 1, Nr. 194 C</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch83.p5">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>: Leibniz beschreibt verschiedene Mechanismen zur Erzeugung einer gleichförmigen Bewegung und beruft sich hierbei vor allem auf Francesco Lana,
+dessen <ref corresp="#bib_00069"/>
+            <hi rendition="#i">Prodromo</hi> (1670) er vermutlich in der zweiten Hälfte 1671 zur Optik exzerpiert hat (<ref corresp="#bib_01103"/>
+          <hi rendition="#i">LSB</hi> VIII, 1 N. 16).
 Im vorliegenden Stück erwähnt Leibniz sein <hi rendition="#i">Perpetuum mobile</hi>,
-dessen Konstruktion er im Juni 1671 beschreibt (<ref corresp="#bib_01187"/><hi rendition="#i">LSB</hi> VIII, 1 N. 59).
+dessen Konstruktion er im Juni 1671 beschreibt (<ref corresp="#bib_01187"/>
+        <hi rendition="#i">LSB</hi> VIII, 1 N. 59).
 Auf dasselbe Jahr geht die Arbeit an seiner hier ebenfalls erwähnten Rechenmaschine für die vier Grundrechenarten (<hi rendition="#i">Panarithmicum</hi>) zurück.
-Über Kirchers <hi rendition="#i">Heliotropium</hi> hat sich Leibniz beim Jesuiten selbst im Mai und Juni 1670 informiert (<ref corresp="#bib_01188"/><hi rendition="#i">LSB</hi> II, 1, 2. Aufl., N. 20a und N. 23).
-Das vorliegende Stück mag daher zeitnah zu den Lana-Exzerpten entstanden sein.</hi></p></div><div type="text"><p xml:id="Ch83.p6" rendition="#noindent"><pb type="L"/><fw type="folNum">[59 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch83.p7" rendition="#c"><app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">Motum uniformem praestitit Galil.<index indexName="Namensregister"><term><hi rendition="#g">Galilei</hi>, Galileo (1564-1642)</term></index><app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">Galil.</note><note type="editorial"><hi rendition="#k">G. Galilei,</hi> <bibl corresp="#bib_00050"><hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 97f. (<hi rendition="#i">GO</hi> VIII, S. 140f.).</bibl></note></app>, perp. L.<app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">L.</note><note type="editorial"><hi rendition="#k">F. Lana,</hi> <bibl corresp="#bib_00069"><hi rendition="#i">Prodromo</hi>, Brescia 1670, S. 80-85.</bibl></note></app></add></lem><note type="lemma-abbrev">Motum <seg type="apparat-ellipsis"/> perp. L.</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app></p><p xml:id="Ch83.p8" rendition="#noindent"><hi rendition="#g">Motum uniformem</hi> <index indexName="Sachverzeichnis"><term>motus uniformis</term></index>pendulo<index indexName="Sachverzeichnis"><term>pendulum</term></index> praestari primus orbi aperuit Galilaeus<index indexName="Namensregister"><term><hi rendition="#g">Galilei</hi>, Galileo (1564-1642)</term></index>, eundem praestari restitutione elateris<index indexName="Sachverzeichnis"><term>elater</term></index> alii addidere, et huic principio innititur Horologiorum<index indexName="Sachverzeichnis"><term>horologium</term></index> portatilium Elasticorum constructio, quae non valde antiqua sunt. Posset ergo vibratione chordarum, restitutione arcuum<index indexName="Sachverzeichnis"><term>arcus</term></index>, pulsatione campanarum<index indexName="Sachverzeichnis"><term>campana</term></index> vel tympanorum<index indexName="Sachverzeichnis"><term>tympanum</term></index> haberi motus uniformis<index indexName="Sachverzeichnis"><term>motus uniformis</term></index>. Sed chordarum tympanorumque<index indexName="Sachverzeichnis"><term>tympanum</term></index> vibratio invisibilis in parvo visibilis futura si quid iis longi radii applicetur. Sed cum constet chordas in tensione sua mirifice variare (quanquam appenso pondere mederi liceat, quod remittentem attrahat magis) sit vero etiam applicatio futura difficillima, nunc quidem de hac re non dicemus. Etsi applicatione</p><pb type="VIII_2" n="714"/><p xml:id="Ch83.p9" rendition="#noindent">commoda reperta[,] res mirae perfectionis, futura sit machinula, cum non dubitem unam chordae vibrationem centesima millesima horae parte et fortasse minore absolvi. Ergo si vibratio quaelibet moveret rotam subtilissimam, ita constructam ut reciprocatione tamen eodem semper iret, et redeundo etiam prorsum ageret, <app type="Cfootnote"><lem type="main">uti Lana<index indexName="Namensregister"><term><hi rendition="#g">Lana de Terzi</hi>, Francesco 1631-1687</term></index> habet.</lem><note type="lemma-abbrev">uti Lana habet</note><note type="editorial"><bibl corresp="#bib_00069">a.a.O., S. 80-85.</bibl></note></app> Mirabilis subtilitatis esset haec temporis divisio, pone semper finem vibrantis unius <app type="Bfootnote"><lem type="main">facere pulsationem alterius,</lem><note type="lemma-abbrev">facere</note><rdg wit="#L" n="1"> vibrationem alterius
-</rdg><rdg wit="#L" n="2"> pulsationem alterius, <hi rendition="#i">L</hi></rdg></app> et rem in circulum redire, applicata nostra <app type="Cfootnote"><lem type="main">m. p.</lem><note type="editorial">motus perpetui.</note></app> machina. Haberet ea res haec commoda, <app type="Bfootnote"><lem type="main">quod chorda valide</lem><note type="lemma-abbrev">quod</note><rdg wit="#L" n="1"> valde </rdg><rdg wit="#L" n="2"> chorda valide <hi rendition="#i">L</hi></rdg></app> an leniter pulsaretur, nihil interesset, ut constat ex sono<index indexName="Sachverzeichnis"><term>sonus</term></index> chordarum in musicis. Nam etsi vehementia mutetur, sonus<index indexName="Sachverzeichnis"><term>sonus</term></index> tamen id est vibrationum isochronismus idem est. Applicatione tantum vel ponderis vel <app type="Bfootnote"><lem type="main">alterius moventis ita facta, daß die Seite sich selbst stimme.</lem><note type="lemma-abbrev">alterius</note><rdg wit="#L" n="1"> rei ita fac
-</rdg><rdg wit="#L" n="2"> moventis ita facta,
-<app><rdg wit="#L" n="a">ut chorda
-</rdg><rdg wit="#L" n="b">daß <seg type="apparat-ellipsis"/> stimme.
-<hi rendition="#i">L</hi></rdg></app></rdg></app> Ita tamen ut a pulsante non possit retrahi illud, quia scil. in alterum forte latus aliqua cum applicatione trahit, aut lente per circumvolutiones trochleares<index indexName="Sachverzeichnis"><term>trochlea</term></index>. Ut autem <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[commodissime]</corr></lem><rdg wit="#L"><orig>commodisse</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> numerari possint minuta, adhibenda Logistica decimalis, atque ea applicatio <app type="Bfootnote"><lem type="main">quam meo</lem><note type="lemma-abbrev">quam</note><rdg wit="#L" n="1"> ad </rdg><rdg wit="#L" n="2"> meo <hi rendition="#i">L</hi></rdg></app> <hi rendition="#g">Panarithmico</hi> destinavi, rotarum ita sibi applicatarum, ut una semel circumacta alterius decimam tantum partem circumagat, <app type="Cfootnote"><lem type="main">adde Lanam.<index indexName="Namensregister"><term><hi rendition="#g">Lana de Terzi</hi>, Francesco 1631-1687</term></index></lem><note type="lemma-abbrev">adde Lanam</note><note type="editorial"><bibl corresp="#bib_00069">a.a.O., Tafel XVI.</bibl></note></app> Haec de chordis, solida: campanae<index indexName="Sachverzeichnis"><term>campana</term></index>, tympana<index indexName="Sachverzeichnis"><term>tympanum</term></index> non sunt commodi usus, nisi construatur machina tantae subtilitatis, ut solo sono<index indexName="Sachverzeichnis"><term>sonus</term></index> moveatur uti chorda tensa <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[altera]</corr></lem><rdg wit="#L"><orig>aliter</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> similiter tensa sonante resonat. Ergo si campana<index indexName="Sachverzeichnis"><term>campana</term></index> sonans moveat chordam solo sono<index indexName="Sachverzeichnis"><term>sonus</term></index>, chorda mota circumagat aliquid quod vicissim eundem sonum<index indexName="Sachverzeichnis"><term>sonus</term></index> rursus imprimat[,]
-campanae<index indexName="Sachverzeichnis"><term>campana</term></index> habebitur circulatio et uniformitas
-<app type="Bfootnote"><lem type="main">summa.
-<pb type="L"/><fw type="folNum">[59 v<hi rendition="#sup">o</hi>]</fw>
-Arcuum [restitutione]</lem><note type="lemma-abbrev">summa. <pb type="L"/><fw type="folNum">[59 v<hi rendition="#sup">o</hi>]</fw></note><rdg wit="#L" n="1"> Arcubus ita forsan uti licebit, atque his
-</rdg><rdg wit="#L" n="2"> Arcuum restitutio
-<note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> quia sensibilissima, celerrima tamen facilius nos uti posse censeo. Sit circulus aliquis vel annulus meris arcubus circumdatus qui contrahente se seu minuente circulo tendantur[,] red-aperiente
-<app type="Bfootnote"><lem type="main">restituantur. Possint</lem><note type="lemma-abbrev">restituantur.</note><rdg wit="#L" n="1"> Applicat </rdg><rdg wit="#L" n="2"> Possint <hi rendition="#i">L</hi></rdg></app> tamen et sine circuli dilatatione aperiri a motis tantum quibusdam impedimentulis, ita ut arcus unus restitutus, ubi primum ad statum naturalem<index indexName="Sachverzeichnis"><term>status naturalis</term></index> rediit tangat alium eumque similiter liberet. Ita in toto dato spatio liberabuntur: et quidem uniformiter, quia restitutiones ejusdem arcus, etiam inaequaliter tensi, sunt Isochronae. Nec erit hic quae in Elatere<index indexName="Sachverzeichnis"><term>elater</term></index> communi se restituente irregularitas, quia eum multa morantur, hic cum restitutio sit pene momentanea, non potest esse sensibilis irregularitas: <pb type="VIII_2" n="715"/>restitutione chordae ultimae aperiatur circulus. Interea apertura sua chordae istae contraxere seu retendere circulum alium vicinum vel si lubet ejusdem partem oppositam. Atque ita motus continuabitur uniformiter. Non dubito decem millia restitutionum ejusmodi una hora fieri posse. Habebitur ergo horae <app type="Bfootnote"><lem type="main">pars decies</lem><note type="lemma-abbrev">pars</note><rdg wit="#L" n="1"> 10 </rdg><rdg wit="#L" n="2"> decies <hi rendition="#i">L</hi></rdg></app> millesima, forte non minore quam in pendulis<index indexName="Sachverzeichnis"><term>pendulum</term></index> regularitate, nullo autem jactationis maritimae metu. Ita ut applicari quoque horologiis portatilibus<index indexName="Sachverzeichnis"><term>horologium portabilium</term></index> possit. Porro ope Logisticae decimalis rotis pluribus applicatae, facile poterit etiam millesies millesima pars anni, si scil. ponamus integro anno currere posse horologium<index indexName="Sachverzeichnis"><term>horologium</term></index>, vel septimanae saltem (quanquam applicatione possit esse perpetuum) nullo negotio exhiberi. Una superest ratio procurandi motus uniformis<index indexName="Sachverzeichnis"><term>motus uniformis</term></index>. Nimirum per magnetem<index indexName="Sachverzeichnis"><term>magnes</term></index>, constat acum libratam diu vacillare antequam requiescat. Quaeritur ergo an vacillationes esse possint isochronae. Item an ipse motus tendendi ad polum isochronus quacunque posita distantia, ita scil. ut si remota sit longius, moveatur celerius. Sed hic subest ea difficultas, quod perpendicularis situs requiritur. Ergo videndum an attractione magnetica<index indexName="Sachverzeichnis"><term>attractio magnetica</term></index> quicquam agi possit, ita scil. ut acus attracta accessu aperiat aliquid quo repercutiatur, idque nova attractione<index indexName="Sachverzeichnis"><term>attractio</term></index> rursus claudat, novo tactu rursus <app type="Bfootnote"><lem type="main">aperiat. Rursus claudet, si in attrahendo</lem><note type="lemma-abbrev">aperiat</note><rdg wit="#L" n="1"> , attrahet </rdg><rdg wit="#L" n="2"> . Rursus claudet, si in attrahendo <hi rendition="#i">L</hi></rdg></app> applicetur spirae<index indexName="Sachverzeichnis"><term>spira</term></index> alicui vel vecti, sed non erit celeritas<index indexName="Sachverzeichnis"><term>celeritas</term></index> tanta[,] puto tamen absolvi posse intra minutum secundum. Machina pure magnetica sine omni elatere. A pondere si ab amico attrahatur, semel allapsa inimicum inveniat, et ab eo repellatur. <app type="Cfootnote"><lem type="main">Heliotropium Kircheri<index indexName="Namensregister"><term><hi rendition="#g">Kircher</hi>, Athanasius 1602-1680</term></index></lem><note type="lemma-abbrev">Heliotropium Kircheri</note><note type="editorial"><hi rendition="#k">A. Kircher,</hi> <bibl corresp="#bib_00067"><hi rendition="#i">Magnes</hi>, Rom 1654, S. 508.</bibl></note></app> habet etiam motum uniformem<index indexName="Sachverzeichnis"><term>motus uniformis</term></index>.</p></div></div></body>
-  </text>
+Über Kirchers <hi rendition="#i">Heliotropium</hi> hat sich Leibniz beim Jesuiten selbst im Mai und Juni 1670 informiert (<ref corresp="#bib_01188"/>
+      <hi rendition="#i">LSB</hi> II, 1, 2. Aufl., N. 20a und N. 23).
+Das vorliegende Stück mag daher zeitnah zu den Lana-Exzerpten entstanden sein.</hi>
+  </p>
+</div>
+<div type="text">
+  <p xml:id="Ch83.p6" rendition="#noindent">
+    <pb type="L"/>
+    <fw type="folNum">[59 r<hi rendition="#sup">o</hi>]
+    </fw>
+  </p>
+  <p xml:id="Ch83.p7" rendition="#c">
+    <app type="Bfootnote">
+      <lem type="main">        <!--is-addition-app-with-lemma-->
+        <add resp="#L">Motum uniformem praestitit Galil.<index indexName="Namensregister">
+          <term>
+            <hi rendition="#g">Galilei</hi>, Galileo (1564-1642)</term>
+        </index>
+        <app type="Cfootnote">
+          <lem type="main"/>
+          <note type="lemma-abbrev">Galil.</note>
+          <note type="editorial">
+            <hi rendition="#k">G. Galilei,</hi>
+            <bibl corresp="#bib_00050">
+              <hi rendition="#i">Discorsi</hi>, Leiden 1638, S. 97f. (<hi rendition="#i">GO</hi> VIII, S. 140f.).</bibl>
+          </note>
+        </app>, perp. L.<app type="Cfootnote">
+        <lem type="main"/>
+        <note type="lemma-abbrev">L.</note>
+        <note type="editorial">
+          <hi rendition="#k">F. Lana,</hi>
+          <bibl corresp="#bib_00069">
+            <hi rendition="#i">Prodromo</hi>, Brescia 1670, S. 80-85.</bibl>
+        </note>
+      </app>
+    </add>
+  </lem>
+  <note type="lemma-abbrev">Motum <seg type="apparat-ellipsis"/>
+ perp. L.</note>
+  <note type="editorial">
+    <hi rendition="#i">erg. L</hi>
+  </note>
+</app>
+</p>
+<p xml:id="Ch83.p8" rendition="#noindent">
+<hi rendition="#g">Motum uniformem</hi>
+<index indexName="Sachverzeichnis">
+  <term>motus uniformis</term>
+</index>pendulo<index indexName="Sachverzeichnis">
+<term>pendulum</term>
+</index> praestari primus orbi aperuit Galilaeus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Galilei</hi>, Galileo (1564-1642)</term>
+</index>, eundem praestari restitutione elateris<index indexName="Sachverzeichnis">
+<term>elater</term>
+</index> alii addidere, et huic principio innititur Horologiorum<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> portatilium Elasticorum constructio, quae non valde antiqua sunt. Posset ergo vibratione chordarum, restitutione arcuum<index indexName="Sachverzeichnis">
+<term>arcus</term>
+</index>, pulsatione campanarum<index indexName="Sachverzeichnis">
+<term>campana</term>
+</index> vel tympanorum<index indexName="Sachverzeichnis">
+<term>tympanum</term>
+</index> haberi motus uniformis<index indexName="Sachverzeichnis">
+<term>motus uniformis</term>
+</index>. Sed chordarum tympanorumque<index indexName="Sachverzeichnis">
+<term>tympanum</term>
+</index> vibratio invisibilis in parvo visibilis futura si quid iis longi radii applicetur. Sed cum constet chordas in tensione sua mirifice variare (quanquam appenso pondere mederi liceat, quod remittentem attrahat magis) sit vero etiam applicatio futura difficillima, nunc quidem de hac re non dicemus. Etsi applicatione</p>
+<pb type="VIII_2" n="714"/>
+<p xml:id="Ch83.p9" rendition="#noindent">commoda reperta[,] res mirae perfectionis, futura sit machinula, cum non dubitem unam chordae vibrationem centesima millesima horae parte et fortasse minore absolvi. Ergo si vibratio quaelibet moveret rotam subtilissimam, ita constructam ut reciprocatione tamen eodem semper iret, et redeundo etiam prorsum ageret, <app type="Cfootnote">
+<lem type="main">uti Lana<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Lana de Terzi</hi>, Francesco 1631-1687</term>
+</index> habet.</lem>
+<note type="lemma-abbrev">uti Lana habet</note>
+<note type="editorial">
+<bibl corresp="#bib_00069">a.a.O., S. 80-85.</bibl>
+</note>
+</app> Mirabilis subtilitatis esset haec temporis divisio, pone semper finem vibrantis unius <app type="Bfootnote">
+<lem type="main">facere pulsationem alterius,</lem>
+<note type="lemma-abbrev">facere</note>
+<rdg wit="#L" n="1"> vibrationem alterius
+</rdg>
+<rdg wit="#L" n="2"> pulsationem alterius, <hi rendition="#i">L</hi>
+</rdg>
+</app> et rem in circulum redire, applicata nostra <app type="Cfootnote">
+<lem type="main">m. p.</lem>
+<note type="editorial">motus perpetui.</note>
+</app> machina. Haberet ea res haec commoda, <app type="Bfootnote">
+<lem type="main">quod chorda valide</lem>
+<note type="lemma-abbrev">quod</note>
+<rdg wit="#L" n="1"> valde </rdg>
+<rdg wit="#L" n="2"> chorda valide <hi rendition="#i">L</hi>
+</rdg>
+</app> an leniter pulsaretur, nihil interesset, ut constat ex sono<index indexName="Sachverzeichnis">
+<term>sonus</term>
+</index> chordarum in musicis. Nam etsi vehementia mutetur, sonus<index indexName="Sachverzeichnis">
+<term>sonus</term>
+</index> tamen id est vibrationum isochronismus idem est. Applicatione tantum vel ponderis vel <app type="Bfootnote">
+<lem type="main">alterius moventis ita facta, daß die Seite sich selbst stimme.</lem>
+<note type="lemma-abbrev">alterius</note>
+<rdg wit="#L" n="1"> rei ita fac
+</rdg>
+<rdg wit="#L" n="2"> moventis ita facta,
+<app>
+<rdg wit="#L" n="a">ut chorda
+</rdg>
+<rdg wit="#L" n="b">daß <seg type="apparat-ellipsis"/>
+ stimme.
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> Ita tamen ut a pulsante non possit retrahi illud, quia scil. in alterum forte latus aliqua cum applicatione trahit, aut lente per circumvolutiones trochleares<index indexName="Sachverzeichnis">
+<term>trochlea</term>
+</index>. Ut autem <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[commodissime]</corr>
+</lem>
+<rdg wit="#L">
+<orig>commodisse</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> numerari possint minuta, adhibenda Logistica decimalis, atque ea applicatio <app type="Bfootnote">
+<lem type="main">quam meo</lem>
+<note type="lemma-abbrev">quam</note>
+<rdg wit="#L" n="1"> ad </rdg>
+<rdg wit="#L" n="2"> meo <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g">Panarithmico</hi> destinavi, rotarum ita sibi applicatarum, ut una semel circumacta alterius decimam tantum partem circumagat, <app type="Cfootnote">
+<lem type="main">adde Lanam.<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Lana de Terzi</hi>, Francesco 1631-1687</term>
+</index>
+</lem>
+<note type="lemma-abbrev">adde Lanam</note>
+<note type="editorial">
+<bibl corresp="#bib_00069">a.a.O., Tafel XVI.</bibl>
+</note>
+</app> Haec de chordis, solida: campanae<index indexName="Sachverzeichnis">
+<term>campana</term>
+</index>, tympana<index indexName="Sachverzeichnis">
+<term>tympanum</term>
+</index> non sunt commodi usus, nisi construatur machina tantae subtilitatis, ut solo sono<index indexName="Sachverzeichnis">
+<term>sonus</term>
+</index> moveatur uti chorda tensa <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[altera]</corr>
+</lem>
+<rdg wit="#L">
+<orig>aliter</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> similiter tensa sonante resonat. Ergo si campana<index indexName="Sachverzeichnis">
+<term>campana</term>
+</index> sonans moveat chordam solo sono<index indexName="Sachverzeichnis">
+<term>sonus</term>
+</index>, chorda mota circumagat aliquid quod vicissim eundem sonum<index indexName="Sachverzeichnis">
+<term>sonus</term>
+</index> rursus imprimat[,]
+campanae<index indexName="Sachverzeichnis">
+<term>campana</term>
+</index> habebitur circulatio et uniformitas
+<app type="Bfootnote">
+<lem type="main">summa.
+<pb type="L"/>
+<fw type="folNum">[59 v<hi rendition="#sup">o</hi>]
+</fw>
+Arcuum [restitutione]</lem>
+<note type="lemma-abbrev">summa. <pb type="L"/>
+<fw type="folNum">[59 v<hi rendition="#sup">o</hi>]
+</fw>
+</note>
+<rdg wit="#L" n="1"> Arcubus ita forsan uti licebit, atque his
+</rdg>
+<rdg wit="#L" n="2"> Arcuum restitutio
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> quia sensibilissima, celerrima tamen facilius nos uti posse censeo. Sit circulus aliquis vel annulus meris arcubus circumdatus qui contrahente se seu minuente circulo tendantur[,] red-aperiente
+<app type="Bfootnote">
+<lem type="main">restituantur. Possint</lem>
+<note type="lemma-abbrev">restituantur.</note>
+<rdg wit="#L" n="1"> Applicat </rdg>
+<rdg wit="#L" n="2"> Possint <hi rendition="#i">L</hi>
+</rdg>
+</app> tamen et sine circuli dilatatione aperiri a motis tantum quibusdam impedimentulis, ita ut arcus unus restitutus, ubi primum ad statum naturalem<index indexName="Sachverzeichnis">
+<term>status naturalis</term>
+</index> rediit tangat alium eumque similiter liberet. Ita in toto dato spatio liberabuntur: et quidem uniformiter, quia restitutiones ejusdem arcus, etiam inaequaliter tensi, sunt Isochronae. Nec erit hic quae in Elatere<index indexName="Sachverzeichnis">
+<term>elater</term>
+</index> communi se restituente irregularitas, quia eum multa morantur, hic cum restitutio sit pene momentanea, non potest esse sensibilis irregularitas: <pb type="VIII_2" n="715"/>
+restitutione chordae ultimae aperiatur circulus. Interea apertura sua chordae istae contraxere seu retendere circulum alium vicinum vel si lubet ejusdem partem oppositam. Atque ita motus continuabitur uniformiter. Non dubito decem millia restitutionum ejusmodi una hora fieri posse. Habebitur ergo horae <app type="Bfootnote">
+<lem type="main">pars decies</lem>
+<note type="lemma-abbrev">pars</note>
+<rdg wit="#L" n="1"> 10 </rdg>
+<rdg wit="#L" n="2"> decies <hi rendition="#i">L</hi>
+</rdg>
+</app> millesima, forte non minore quam in pendulis<index indexName="Sachverzeichnis">
+<term>pendulum</term>
+</index> regularitate, nullo autem jactationis maritimae metu. Ita ut applicari quoque horologiis portatilibus<index indexName="Sachverzeichnis">
+<term>horologium portabilium</term>
+</index> possit. Porro ope Logisticae decimalis rotis pluribus applicatae, facile poterit etiam millesies millesima pars anni, si scil. ponamus integro anno currere posse horologium<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index>, vel septimanae saltem (quanquam applicatione possit esse perpetuum) nullo negotio exhiberi. Una superest ratio procurandi motus uniformis<index indexName="Sachverzeichnis">
+<term>motus uniformis</term>
+</index>. Nimirum per magnetem<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index>, constat acum libratam diu vacillare antequam requiescat. Quaeritur ergo an vacillationes esse possint isochronae. Item an ipse motus tendendi ad polum isochronus quacunque posita distantia, ita scil. ut si remota sit longius, moveatur celerius. Sed hic subest ea difficultas, quod perpendicularis situs requiritur. Ergo videndum an attractione magnetica<index indexName="Sachverzeichnis">
+<term>attractio magnetica</term>
+</index> quicquam agi possit, ita scil. ut acus attracta accessu aperiat aliquid quo repercutiatur, idque nova attractione<index indexName="Sachverzeichnis">
+<term>attractio</term>
+</index> rursus claudat, novo tactu rursus <app type="Bfootnote">
+<lem type="main">aperiat. Rursus claudet, si in attrahendo</lem>
+<note type="lemma-abbrev">aperiat</note>
+<rdg wit="#L" n="1"> , attrahet </rdg>
+<rdg wit="#L" n="2"> . Rursus claudet, si in attrahendo <hi rendition="#i">L</hi>
+</rdg>
+</app> applicetur spirae<index indexName="Sachverzeichnis">
+<term>spira</term>
+</index> alicui vel vecti, sed non erit celeritas<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index> tanta[,] puto tamen absolvi posse intra minutum secundum. Machina pure magnetica sine omni elatere. A pondere si ab amico attrahatur, semel allapsa inimicum inveniat, et ab eo repellatur. <app type="Cfootnote">
+<lem type="main">Heliotropium Kircheri<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Kircher</hi>, Athanasius 1602-1680</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Heliotropium Kircheri</note>
+<note type="editorial">
+<hi rendition="#k">A. Kircher,</hi>
+<bibl corresp="#bib_00067">
+<hi rendition="#i">Magnes</hi>, Rom 1654, S. 508.</bibl>
+</note>
+</app> habet etiam motum uniformem<index indexName="Sachverzeichnis">
+<term>motus uniformis</term>
+</index>.
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-006-002">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-006-002">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -6,32 +7,57 @@
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke,
 					Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und
-							Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-						Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-							VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-							Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC
-						4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC
+						4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
@@ -48,7 +74,10 @@
 							secunda</title>
 						<date calendar="#gregorian" notBefore="1672-07" resp="#ed" cert="medium"/>
 						<date calendar="#gregorian" notAfter="1672-12" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=122</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+							<idno type="page">#page=122</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII:
@@ -61,21 +90,25 @@
 						</imprint>
 						<biblScope unit="page" from="77" to="92"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche
-							Schriften und Briefe</title></series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche
+							Schriften und Briefe</title>
+					</series>
 					<relatedItem type="superordinated-chapter">
 						<ptr target="#L_08-01-006-000"/>
 					</relatedItem>
 				</biblStruct>
 				<listWit>
-					<witness n="Lil" corresp="#L_08-01-006-002_facs-haupttextzeuge"><msDesc>
+					<witness n="Lil" corresp="#L_08-01-006-002_facs-haupttextzeuge">
+						<msDesc>
 							<msIdentifier>
 								<repository>Gottfried Wilhelm Leibniz Bibliothek
 									Hannover</repository>
 								<idno type="Signatur">LH XXXV 15, 6 Bl. 66–73</idno>
 							</msIdentifier>
 							<msContents corresp="L_witness-content-types.xml#reinschrift_verbessert">
-								<summary><p>Korrekturen und Unterstreichungen in einer Abschrift von
+								<summary>
+									<p>Korrekturen und Unterstreichungen in einer Abschrift von
 										Schreiberhand: LH XXXV 15, 6 Bl. 66–73. 4 Bog. 2<hi rendition="#sup">o</hi>. 15 S. zweispaltig. Linke Spalte
 										fortlaufender Text, rechts geringfügige Ergänzungen sowie
 										auf Bl. 67 v<hi rendition="#sup">o</hi> eine längere
@@ -88,7 +121,9 @@
 										Mitte von Bl. 71 v<hi rendition="#sup">o</hi> eine Rechnung.
 										Bl. 71 r<hi rendition="#sup">o</hi> enthält in der Mitte der
 										rechten Spalte die Zeichnung <hi rendition="#i">[Fig. 1]</hi>. Bl. 73 v<hi rendition="#sup">o</hi>
-										leer.</p><p>Cc 2, Nr. 484 B</p></summary>
+										leer.</p>
+									<p>Cc 2, Nr. 484 B</p>
+								</summary>
 							</msContents>
 							<physDesc>
 								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -96,7 +131,8 @@
 							<history>
 								<origin corresp="L_witness-origin-types.xml#origin-Lil"/>
 							</history>
-						</msDesc></witness>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -226,18 +262,24 @@
 	<text xml:id="L_08-01-006-002_text">
 		<body xml:id="Document">
 			<div type="section" xml:id="Ch6.S2" n="62">
-				<head>6<hi rendition="#sub">2</hi><pb type="VIII_1" n="77"/>. DE LONGITUDINUM
+				<head>6<hi rendition="#sub">2</hi>
+					<pb type="VIII_1" n="77"/>
+. DE LONGITUDINUM
 					DETERMINATIONE. SCHEDA SECUNDA</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-							<witness><msDesc>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
 									<msIdentifier>
 										<repository>Gottfried Wilhelm Leibniz Bibliothek
 											Hannover</repository>
 										<idno type="Signatur">XXX</idno>
 									</msIdentifier>
 									<msContents>
-										<summary><p>Korrekturen und Unterstreichungen in einer
+										<summary>
+											<p>Korrekturen und Unterstreichungen in einer
 												Abschrift von Schreiberhand: LH XXXV 15, 6 Bl.
 												66–73. 4 Bog. 2<hi rendition="#sup">o</hi>. 15 S.
 												zweispaltig. Linke Spalte fortlaufender Text, rechts
@@ -252,7 +294,9 @@
 												Leibniz’ Hand. Darunter etwa in der Mitte von Bl. 71
 												v<hi rendition="#sup">o</hi> eine Rechnung. Bl. 71
 												r<hi rendition="#sup">o</hi> enthält in der Mitte
-												der rechten Spalte die Zeichnung <hi rendition="#i">[Fig. 1]</hi>. Bl. 73 v<hi rendition="#sup">o</hi> leer.</p><p>Cc 2, Nr. 484 B</p></summary>
+												der rechten Spalte die Zeichnung <hi rendition="#i">[Fig. 1]</hi>. Bl. 73 v<hi rendition="#sup">o</hi> leer.</p>
+											<p>Cc 2, Nr. 484 B</p>
+										</summary>
 									</msContents>
 									<physDesc>
 										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -260,1743 +304,2144 @@
 									<history>
 										<origin/>
 									</history>
-								</msDesc></witness>
-						</listWit></p>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch6.S2.p4" rendition="#c"><pb type="L"/><fw type="folNum">[66 r<hi rendition="#sup">o</hi>]</fw> X</p>
+					<p xml:id="Ch6.S2.p4" rendition="#c">
+						<pb type="L"/>
+						<fw type="folNum">[66 r<hi rendition="#sup">o</hi>]
+						</fw> X</p>
 					<p xml:id="Ch6.S2.p5">Ex quo horologium<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> fune-pendulo<index indexName="Sachverzeichnis">
-							<term>funependulum</term>
-						</index> animatum, omnibus hactenus cognitis accuratius detectum est, in
+						<term>horologium</term>
+					</index> fune-pendulo<index indexName="Sachverzeichnis">
+					<term>funependulum</term>
+				</index> animatum, omnibus hactenus cognitis accuratius detectum est, in
 						magnam omnes spem erecti sumus negotii longitudinum<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> praecise aliquando penitus conficiendi, quantum ab observatione
+				<term>longitudo</term>
+			</index> praecise aliquando penitus conficiendi, quantum ab observatione
 						coeli sperari potest. Horologio<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> jam accurato supposito variae propositae sunt loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> per observationes coelestes inveniendi rationes, alia alia
+			<term>horologium</term>
+		</index> jam accurato supposito variae propositae sunt loci navis<index indexName="Sachverzeichnis">
+		<term>navis</term>
+	</index> per observationes coelestes inveniendi rationes, alia alia
 						commodior, ex quibus una mihi in mentem venit universalis admodum et
 						simplex, satisque ut credo accurata.</p>
-					<p xml:id="Ch6.S2.p6"><hi rendition="#g">Simplex,</hi> quia non nisi una
+<p xml:id="Ch6.S2.p6">
+	<hi rendition="#g">Simplex,</hi> quia non nisi una
 						observatione coelesti transigitur, cum contra ubi duabus pluribusque
 						observationibus <hi rendition="#g">diverso tempore</hi> factis opus est,
 						interea navi<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> provecta, difficillima reddatur computatio. <hi rendition="#g">Universalis,</hi> quia nulli fere tempori, non diei, non nocti, non
+	<term>navis</term>
+</index> provecta, difficillima reddatur computatio. <hi rendition="#g">Universalis,</hi> quia nulli fere tempori, non diei, non nocti, non
 						certis siderum altitudinibus alligata est; sed solis<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index>, Lunaeve<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>, aut stellae<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> cujusdam fixae conspectu contenta est, qui raro per notabile tempus
+<term>sol</term>
+</index>, Lunaeve<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>, aut stellae<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> cujusdam fixae conspectu contenta est, qui raro per notabile tempus
 						deesse potest. Cum contra solutiones quae ex <hi rendition="#g">Lunae</hi>
-						<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>observatione pendent, dimidio fere mensis tempore, ante et post
+<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>observatione pendent, dimidio fere mensis tempore, ante et post
 						novilunium, conspectu scil: Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> negato, cessent. Et quae <hi rendition="#g">Sole</hi><index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> indigent, noctu fieri nequeant, et eae in quibus duabus aequalibus
+<term>luna</term>
+</index> negato, cessent. Et quae <hi rendition="#g">Sole</hi>
+<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> indigent, noctu fieri nequeant, et eae in quibus duabus aequalibus
 						ejusdem sideris<index indexName="Sachverzeichnis">
-							<term>altitudo sideris</term>
-						</index> altitudinibus observatis opus est, hoc incommodum habeant, ut
+<term>altitudo sideris</term>
+</index> altitudinibus observatis opus est, hoc incommodum habeant, ut
 						priore observatione facta, posterior aeris marisve injuria facile
 						intercipiatur, ac proinde prior reddatur inutilis. Et eae quae meridianam
 						praecise altitudinem desiderant, cum certo quasi momento sint alligatae,
 						saepissime frustrentur, cum fortasse tempore meridianae, seu summae
 						altitudinis, non eandem quam aliis quibusdam indefinitis, antea posteave
 						momentis, serenitatem simus habituri. De quibus aliisque in hoc negotio
-						observandis legi <pb type="VIII_1" n="78"/>possunt tum quae ab Illustri
+						observandis legi <pb type="VIII_1" n="78"/>
+possunt tum quae ab Illustri
 							Hugenio<index indexName="Namensregister">
-							<term><hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens,
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Vgenius, Hugens,
 								Huguens), Christiaan 1629–1695</term>
-						</index>, horologii penduli<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-							<index>
-								<term>pendulum</term>
-							</index>
-						</index> inventore, circa applicationem ejus ad longitudines<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> sunt scripta,<app type="Cfootnote">
-							<lem type="main"/>
-							<note type="lemma-abbrev">scripta,</note>
-							<note type="editorial"><hi rendition="#k">Chr. Huygens</hi>, <bibl corresp="#bib_00212"><hi rendition="#i">Kort onderwijs</hi>, Den
+</index>, horologii penduli<index indexName="Sachverzeichnis">
+<term>horologium</term>
+<index>
+<term>pendulum</term>
+</index>
+</index> inventore, circa applicationem ejus ad longitudines<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> sunt scripta,<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">scripta,</note>
+<note type="editorial">
+<hi rendition="#k">Chr. Huygens</hi>,<bibl corresp="#bib_00212">
+<hi rendition="#i">Kort onderwijs</hi>, Den
 									Haag 1665 (<hi rendition="#i">HO</hi> XVII,
-								S. 199–237).</bibl></note>
-						</app> tum quae transactionibus Anglicanis num: 47. sunt inserta.<app type="Cfootnote">
-							<lem type="main"/>
-							<note type="lemma-abbrev">inserta.</note>
-							<note type="editorial"><hi rendition="#k">Chr. Huygens,</hi>
-								<bibl corresp="#bib_00064"><hi rendition="#i">Instructions
-										concerning the use of pendulum-watches</hi>, <hi rendition="#i">PT</hi> 4 (1669), S. 937–953 (<hi rendition="#i">HO</hi> VI, S. 446–459).</bibl></note>
-						</app>
-						<hi rendition="#g">Accurata</hi> denique satis est quam propono, ratio, tum
+								S. 199–237).</bibl>
+</note>
+</app> tum quae transactionibus Anglicanis num: 47. sunt inserta.<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">inserta.</note>
+<note type="editorial">
+<hi rendition="#k">Chr. Huygens,</hi>
+<bibl corresp="#bib_00064">
+<hi rendition="#i">Instructions
+										concerning the use of pendulum-watches</hi>,<hi rendition="#i">PT</hi> 4 (1669), S. 937–953 (<hi rendition="#i">HO</hi> VI, S. 446–459).</bibl>
+</note>
+</app>
+<hi rendition="#g">Accurata</hi> denique satis est quam propono, ratio, tum
 						quia calculo exiguo, aut facillimo, ac ne nautas quidem turbaturo indiget,
-						tum quia sola <pb type="L"/><fw type="folNum">[66 v<hi rendition="#sup">o</hi>]</fw> sideris cujusdam elevatione ultra Horizontem loci
+						tum quia sola <pb type="L"/>
+<fw type="folNum">[66 v<hi rendition="#sup">o</hi>]
+</fw> sideris cujusdam elevatione ultra Horizontem loci
 							navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> observata, quae certe instrumentis bonis, <app type="Bfootnote">
-							<lem type="main">(qualia in casu necessitatis fieri possent ad quartas
+<term>navis</term>
+</index> observata, quae certe instrumentis bonis, <app type="Bfootnote">
+<lem type="main">(qualia in casu necessitatis fieri possent ad quartas
 								usque minutorum partes, et ultra divisa, et vero ratio est
 								instrumenta communia ab uno observatore tractabilia, ad decimas
 								usque minutorum secundorum partes subdividendi)</lem>
-							<note type="lemma-abbrev">bonis,</note>
-							<rdg wit="#L" n="1"> ad quartas usque minutorum partes, et ultra
+<note type="lemma-abbrev">bonis,</note>
+<rdg wit="#L" n="1"> ad quartas usque minutorum partes, et ultra
 								divisis, </rdg>
-							<rdg wit="#L" n="2"> (qualia in casu necessitatis fieri possent ad
+<rdg wit="#L" n="2"> (qualia in casu necessitatis fieri possent ad
 								quartas usque minutorum secundorum partes, et ultra divisa) </rdg>
-							<rdg wit="#L" n="3"> (qualia <seg type="apparat-ellipsis"/>
-								subdividendi) <hi rendition="#i">L</hi></rdg>
-						</app> satis recte sumi potest, perficitur; neque enim nisi angulo
+<rdg wit="#L" n="3"> (qualia <seg type="apparat-ellipsis"/>
+								subdividendi) <hi rendition="#i">L</hi>
+</rdg>
+</app> satis recte sumi potest, perficitur; neque enim nisi angulo
 						indigemus, quem radius e sidere<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> dato ductus facit ad loci horizontem, quanquam exactitudine tanta
+<term>sidus</term>
+</index> dato ductus facit ad loci horizontem, quanquam exactitudine tanta
 						ne opus quidem sit, et tanto quidem minus, quanto locus est ab
 							aequatore<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> remotior, cum in aequatore ipso error minuti <app type="Bfootnote">
-							<lem type="main">gradus longitudinum<index indexName="Sachverzeichnis">
-									<term>longitudo</term>
-								</index></lem>
-							<rdg wit="#L" cause="addition"><add>gradus longitudinum<index indexName="Sachverzeichnis">
-										<term>longitudo</term>
-									</index>
-								</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> non sit major quam miliarii Italici, qualis profecto in mari est
+<term>aequator</term>
+</index> remotior, cum in aequatore ipso error minuti <app type="Bfootnote">
+<lem type="main">gradus longitudinum<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>gradus longitudinum<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> non sit major quam miliarii Italici, qualis profecto in mari est
 						nullius momenti. Nec a <hi rendition="#g">refractionibus</hi>
-						<index indexName="Sachverzeichnis">
-							<term>refractio</term>
-						</index>metuere nobis magnopere debemus, praeterquam enim quod sideris<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> ultra horizontem satis evecti refractio<index indexName="Sachverzeichnis">
-							<term>refractio</term>
-						</index> minus turbat, et tabula etiam computandarum refractionum<index indexName="Sachverzeichnis">
-							<term>refractio</term>
-						</index>, ex crepusculorum quantitate aliisque indiciis ab Astronomis
+<index indexName="Sachverzeichnis">
+<term>refractio</term>
+</index>metuere nobis magnopere debemus, praeterquam enim quod sideris<index indexName="Sachverzeichnis">
+<term>sidus</term>
+</index> ultra horizontem satis evecti refractio<index indexName="Sachverzeichnis">
+<term>refractio</term>
+</index> minus turbat, et tabula etiam computandarum refractionum<index indexName="Sachverzeichnis">
+<term>refractio</term>
+</index>, ex crepusculorum quantitate aliisque indiciis ab Astronomis
 						condita est; praeter inquam haec omnia en facilem occurrendi rationem. Si
 						eodem tempore duo pluraque sidera<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index>
-						<app type="Bfootnote">
-							<lem type="main">diversae super horizontem elevationis</lem>
-							<rdg wit="#L" cause="addition"><add>diversae super horizontem
+<term>sidus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">diversae super horizontem elevationis</lem>
+<rdg wit="#L" cause="addition">
+<add>diversae super horizontem
 									elevationis</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> (semper enim plures fixae<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> simul videntur) observentur, cum enim earum refractionem<index indexName="Sachverzeichnis">
-							<term>refractio</term>
-						</index> necesse sit esse diversam, sese mutuo corrigent observationes, quae
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> (semper enim plures fixae<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> simul videntur) observentur, cum enim earum refractionem<index indexName="Sachverzeichnis">
+<term>refractio</term>
+</index> necesse sit esse diversam, sese mutuo corrigent observationes, quae
 						cum eodem tempore fiant, <hi rendition="#g">uni observationi</hi>
 						aequipollent. Utile autem est sidus eligi prae caeteris, quod alte supra
 						horizontem loci assurget<app type="Bfootnote">
-							<lem type="main">, ejus enim Refractio<index indexName="Sachverzeichnis">
-									<term>refractio</term>
-								</index> exigua est; et stellae<index indexName="Sachverzeichnis">
-									<term>stella</term>
-								</index> verticalis, nulla</lem>
-							<rdg wit="#L" cause="addition">, ejus enim Refractio<index indexName="Sachverzeichnis">
-									<term>refractio</term>
-								</index> exigua est; et <note type="editorial">|</note> <add>stellae<index indexName="Sachverzeichnis">
-										<term>stella</term>
-									</index>
-								</add>
-								<note type="editorial"><hi rendition="#i">erg.</hi> |</note> <add>verticalis, nulla</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>.</p>
-					<p xml:id="Ch6.S2.p7">Problema ergo meum ita concipitur: <hi rendition="#g">Data</hi>
-						<hi rendition="#g">latitudine</hi><index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index><hi rendition="#g"> </hi><app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">loci</hi>
-								<hi rendition="#g">navis</hi><index indexName="Sachverzeichnis">
-									<term>navis</term>
-								</index></lem>
-							<rdg wit="#L" cause="addition-deletion"><hi rendition="#g">loci</hi>
-								<hi rendition="#g">navis</hi><index indexName="Sachverzeichnis">
-									<term>navis</term>
-								</index>
-								<note type="editorial">|</note> <del><hi rendition="#g">ac linea
+<lem type="main">, ejus enim Refractio<index indexName="Sachverzeichnis">
+<term>refractio</term>
+</index> exigua est; et stellae<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> verticalis, nulla</lem>
+<rdg wit="#L" cause="addition">, ejus enim Refractio<index indexName="Sachverzeichnis">
+<term>refractio</term>
+</index> exigua est; et <note type="editorial">|</note>
+<add>stellae<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<add>verticalis, nulla</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>.
+</p>
+<p xml:id="Ch6.S2.p7">Problema ergo meum ita concipitur: <hi rendition="#g">Data</hi>
+<hi rendition="#g">latitudine</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>
+<hi rendition="#g"></hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">loci</hi>
+<hi rendition="#g">navis</hi>
+<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>
+</lem>
+<rdg wit="#L" cause="addition-deletion">
+<hi rendition="#g">loci</hi>
+<hi rendition="#g">navis</hi>
+<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>
+<note type="editorial">|</note>
+<del>
+<hi rendition="#g">ac linea
 										meridiana</hi>
-								</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi> |</note> <add/>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app><hi rendition="#g"> </hi><pb type="VIII_1" n="79"/><hi rendition="#g">Horologioque</hi><index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index>
-						<hi rendition="#g">exacto, et accedente unica quacunque,</hi><hi rendition="#g">sideris</hi><index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index>
-						<hi rendition="#g">(motus explorati)</hi>
-						<hi rendition="#g">cujuscunque</hi>
-						<hi rendition="#g">(in horizonte navis</hi><index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index><hi rendition="#g">, motum satis sensibilem habentis,</hi>
-						<app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">et</hi></lem>
-							<note type="lemma-abbrev"><hi rendition="#g">habentis,</hi></note>
-							<rdg wit="#L" n="1"> <hi rendition="#g">seu</hi>
-							</rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">et</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app><hi rendition="#g"> </hi><hi rendition="#g">polo</hi><index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index>
-						<hi rendition="#g">nonnimis vicini) observatione,</hi>
-						<hi rendition="#g">Longitudines</hi><index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index><hi rendition="#g">, ac per consequens locum</hi>
-						<hi rendition="#g">navis</hi><index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>
-						<hi rendition="#g">reperire.</hi></p>
-					<p xml:id="Ch6.S2.p8">Turbare non debet quod hoc loco ad inventionem
+</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note>
+<add/>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#g"></hi>
+<pb type="VIII_1" n="79"/>
+<hi rendition="#g">Horologioque</hi>
+<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index>
+<hi rendition="#g">exacto, et accedente unica quacunque,</hi>
+<hi rendition="#g">sideris</hi>
+<index indexName="Sachverzeichnis">
+<term>sidus</term>
+</index>
+<hi rendition="#g">(motus explorati)</hi>
+<hi rendition="#g">cujuscunque</hi>
+<hi rendition="#g">(in horizonte navis</hi>
+<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>
+<hi rendition="#g">, motum satis sensibilem habentis,</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">et</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">habentis,</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">seu</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">et</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g"></hi>
+<hi rendition="#g">polo</hi>
+<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index>
+<hi rendition="#g">nonnimis vicini) observatione,</hi>
+<hi rendition="#g">Longitudines</hi>
+<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>
+<hi rendition="#g">, ac per consequens locum</hi>
+<hi rendition="#g">navis</hi>
+<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>
+<hi rendition="#g">reperire.</hi>
+</p>
+<p xml:id="Ch6.S2.p8">Turbare non debet quod hoc loco ad inventionem
 							longitudinum<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index>, latitudines<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> inventas praerequirimus; nam alioquin latitudinum<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> quoque inventio jam tum necessaria est ad cursum navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> gubernandum, et ut latitudo<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> sine longitudine<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index>, ita contra longitudo<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> quoque sine latitudine<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> non sufficit. Ut taceam hoc loco spem esse magnam, inveniri posse,
+<term>longitudo</term>
+</index>, latitudines<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> inventas praerequirimus; nam alioquin latitudinum<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> quoque inventio jam tum necessaria est ad cursum navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> gubernandum, et ut latitudo<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> sine longitudine<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>, ita contra longitudo<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> quoque sine latitudine<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> non sufficit. Ut taceam hoc loco spem esse magnam, inveniri posse,
 						aut ad perfectionem deduci quam primum inventionem latitudinis<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> seu elevationis Poli<index indexName="Sachverzeichnis">
-							<term>elevatio</term>
-							<index>
-								<term>poli</term>
-							</index>
-						</index> universalem, ab omni <pb type="L"/><fw type="folNum">[67 r<hi rendition="#sup">o</hi>]</fw> observatione coelesti, ac proinde
+<term>latitudo</term>
+</index> seu elevationis Poli<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index> universalem, ab omni <pb type="L"/>
+<fw type="folNum">[67 r<hi rendition="#sup">o</hi>]
+</fw> observatione coelesti, ac proinde
 						aeris marisque injuria independentem, de quo <app type="Bfootnote">
-							<lem type="main">alias</lem>
-							<rdg wit="#L" cause="addition"><add>alias</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> fusius dicendi locus erit.</p>
-					<p xml:id="Ch6.S2.p9">Problema jam propositum ita solvetur: <hi rendition="#g">Dato</hi>
-						<hi rendition="#g">Horologio</hi><index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index>
-						<hi rendition="#g">exacto, datur</hi>
-						<hi rendition="#g">locus sideris</hi><index indexName="Sachverzeichnis">
-							<term>locus sideris</term>
-						</index>
-						<hi rendition="#g">in</hi>
-						<hi rendition="#g">mundo, momento dato,</hi>
-						<hi rendition="#g">locus sideris</hi>
-						<index indexName="Sachverzeichnis">
-							<term>locus sideris</term>
-						</index>inquam, id est ejus longitudo<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> et latitudo<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index>: <hi rendition="#g">Latitudo</hi><index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> quidem si sidus cum polo<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> immobili; <hi rendition="#g">Longitudo,</hi><index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> si cum centro seu cum meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo in terra ut immobili supposita, ducto comparetur. <hi rendition="#g">Latitudo</hi><index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> ejus si quidem sit stella <hi rendition="#g">fixa,</hi><index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> semper eadem, ac proinde cognita est. Si <hi rendition="#g">planeta,</hi><index indexName="Sachverzeichnis">
-							<term>planeta</term>
-						</index> determinatur, determinato ejus loco in Zodiaco<index indexName="Sachverzeichnis">
-							<term>zodiacus</term>
-						</index> quem nobis Ephemerides<index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index> monstrant, hora, minutove dato. <hi rendition="#g">Longitudo</hi><index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> sideris<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> cognoscitur hora data, nam si <hi rendition="#g">fixa</hi><index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> est, scimus quantum a Meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo eam abesse, nunc necesse sit, quia fixarum<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> revolutiones sunt semper aequales, et praecise 24. horis
+<lem type="main">alias</lem>
+<rdg wit="#L" cause="addition">
+<add>alias</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> fusius dicendi locus erit.</p>
+<p xml:id="Ch6.S2.p9">Problema jam propositum ita solvetur: <hi rendition="#g">Dato</hi>
+<hi rendition="#g">Horologio</hi>
+<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index>
+<hi rendition="#g">exacto, datur</hi>
+<hi rendition="#g">locus sideris</hi>
+<index indexName="Sachverzeichnis">
+<term>locus sideris</term>
+</index>
+<hi rendition="#g">in</hi>
+<hi rendition="#g">mundo, momento dato,</hi>
+<hi rendition="#g">locus sideris</hi>
+<index indexName="Sachverzeichnis">
+<term>locus sideris</term>
+</index>inquam, id est ejus longitudo<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> et latitudo<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>:<hi rendition="#g">Latitudo</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> quidem si sidus cum polo<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index> immobili; <hi rendition="#g">Longitudo,</hi>
+<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> si cum centro seu cum meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo in terra ut immobili supposita, ducto comparetur. <hi rendition="#g">Latitudo</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> ejus si quidem sit stella <hi rendition="#g">fixa,</hi>
+<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> semper eadem, ac proinde cognita est. Si <hi rendition="#g">planeta,</hi>
+<index indexName="Sachverzeichnis">
+<term>planeta</term>
+</index> determinatur, determinato ejus loco in Zodiaco<index indexName="Sachverzeichnis">
+<term>zodiacus</term>
+</index> quem nobis Ephemerides<index indexName="Sachverzeichnis">
+<term>ephemeris</term>
+</index> monstrant, hora, minutove dato. <hi rendition="#g">Longitudo</hi>
+<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> sideris<index indexName="Sachverzeichnis">
+<term>sidus</term>
+</index> cognoscitur hora data, nam si <hi rendition="#g">fixa</hi>
+<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> est, scimus quantum a Meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo eam abesse, nunc necesse sit, quia fixarum<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> revolutiones sunt semper aequales, et praecise 24. horis
 						absolvuntur. Si ergo constet nobis, quo in loco tempore quodam cognito,
 						aliqua fuerit fixa<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index>, constabit nobis semper quo in loco, tempore quocunque dato eadem
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index>, constabit nobis semper quo in loco, tempore quocunque dato eadem
 							fixa<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index>, imo alia quaecunque futura sit. Nam ipsarum fixarum<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> motus peculiaris, a motu primi mobilis diversus, cum non nisi post
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index>, imo alia quaecunque futura sit. Nam ipsarum fixarum<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> motus peculiaris, a motu primi mobilis diversus, cum non nisi post
 						multa saecula sensibilis fiat, in calculum venire nec potest, nec debet.</p>
-					<p xml:id="Ch6.S2.p10">Sin <hi rendition="#g">Planeta</hi>
-						<index indexName="Sachverzeichnis">
-							<term>planeta</term>
-						</index>est, constabit nobis utique per easdem Ephemerides<index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index> quantum nunc absit a meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo versus ortum, occasumque, nam etsi revolutiones ejus non sint
+<p xml:id="Ch6.S2.p10">Sin <hi rendition="#g">Planeta</hi>
+<index indexName="Sachverzeichnis">
+<term>planeta</term>
+</index>est, constabit nobis utique per easdem Ephemerides<index indexName="Sachverzeichnis">
+<term>ephemeris</term>
+</index> quantum nunc absit a meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo versus ortum, occasumque, nam etsi revolutiones ejus non sint
 						revolutionibus fixarum aequales, differentia tamen nobis cognita est quae
 						supputari potest, potuitque. Sed in eam quidem rem planetis<index indexName="Sachverzeichnis">
-							<term>planeta</term>
-						</index> praeter solem<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> lunamque<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> (quorum exploratus satis cursus est) opus non habemus, <pb type="VIII_1" n="80"/>quoties enim caeteri planetae<index indexName="Sachverzeichnis">
-							<term>planeta</term>
-						</index> videri possunt, poterunt etiam fixae<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> videri, quarum usus certe expeditior.</p>
-					<p xml:id="Ch6.S2.p11"><hi rendition="#g">Dato porro</hi>
-						<hi rendition="#g">Loco sideris</hi><index indexName="Sachverzeichnis">
-							<term>locus sideris</term>
-						</index>
-						<hi rendition="#g">praesente (per</hi>
-						<hi rendition="#g">horologium</hi><index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index>
-						<hi rendition="#g">exactum Ephemeridesque)</hi><index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index>
-						<hi rendition="#g">dataque (per observatio-</hi><hi rendition="#g">nem)
+<term>planeta</term>
+</index> praeter solem<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> lunamque<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> (quorum exploratus satis cursus est) opus non habemus, <pb type="VIII_1" n="80"/>
+quoties enim caeteri planetae<index indexName="Sachverzeichnis">
+<term>planeta</term>
+</index> videri possunt, poterunt etiam fixae<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> videri, quarum usus certe expeditior.</p>
+<p xml:id="Ch6.S2.p11">
+<hi rendition="#g">Dato porro</hi>
+<hi rendition="#g">Loco sideris</hi>
+<index indexName="Sachverzeichnis">
+<term>locus sideris</term>
+</index>
+<hi rendition="#g">praesente (per</hi>
+<hi rendition="#g">horologium</hi>
+<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index>
+<hi rendition="#g">exactum Ephemeridesque)</hi>
+<index indexName="Sachverzeichnis">
+<term>ephemeris</term>
+</index>
+<hi rendition="#g">dataque (per observatio-</hi>
+<hi rendition="#g">nem)
 							elevatione ejus super</hi>
-						<app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">horizontem,</hi></lem>
-							<rdg wit="#L" cause="deletion"><hi rendition="#g">horizontem,</hi>
-								<note type="editorial">|</note> <del><add><hi rendition="#g">versus
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">horizontem,</hi>
+</lem>
+<rdg wit="#L" cause="deletion">
+<hi rendition="#g">horizontem,</hi>
+<note type="editorial">|</note>
+<del>
+<add>
+<hi rendition="#g">versus
 											definitam</hi>
-									</add></del><note type="editorial"><hi rendition="#i">erg. u.
-										gestr.</hi> |</note>  <hi rendition="#i">L</hi></rdg>
-						</app>
-						<pb type="L"/><fw type="folNum">[67 v<hi rendition="#sup">o</hi>]</fw>
-						<hi rendition="#g">punctiTelluris</hi><index indexName="Sachverzeichnis">
-							<term>tellus</term>
-						</index><hi rendition="#g"> </hi><hi rendition="#g">latitudinis</hi><index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index>
-						<hi rendition="#g">datae, dabitur ergo puncti</hi>
-						<hi rendition="#g">longitudo</hi><index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index><hi rendition="#g">; ac proinde, data jam ante</hi>
-						<hi rendition="#g">latitudine</hi><index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index><hi rendition="#g">, dabitur ipse puncti locus praecise</hi>. Hoc
+</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u.
+										gestr.</hi> |
+</note>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<pb type="L"/>
+<fw type="folNum">[67 v<hi rendition="#sup">o</hi>]
+</fw>
+<hi rendition="#g">punctiTelluris</hi>
+<index indexName="Sachverzeichnis">
+<term>tellus</term>
+</index>
+<hi rendition="#g"></hi>
+<hi rendition="#g">latitudinis</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>
+<hi rendition="#g">datae, dabitur ergo puncti</hi>
+<hi rendition="#g">longitudo</hi>
+<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>
+<hi rendition="#g">; ac proinde, data jam ante</hi>
+<hi rendition="#g">latitudine</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>
+<hi rendition="#g">, dabitur ipse puncti locus praecise</hi>. Hoc
 						fieri potest tum per <app type="Bfootnote">
-							<lem type="main">instrumentum <hi rendition="#g">Mechanice</hi></lem>
-							<note type="lemma-abbrev">instrumentum</note>
-							<rdg wit="#L" n="1"> Mechanice </rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">Mechanice</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>, tum per calculum <hi rendition="#g">Geometrice.</hi><anchor xml:id="geostart"/></p>
-					<p xml:id="Ch6.S2.p12"><app type="Bfootnote" from="#geostart" to="#geoend">
-							<lem type="main"><hi rendition="#g">Instrumentum</hi>
-								<anchor xml:id="geoend"/>
-							</lem>
-							<note type="lemma-abbrev"><hi rendition="#g">Geometrice.</hi></note>
-							<rdg wit="#L" n="1"> Instrumentum </rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">Instrumentum</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>nullum aptius reperio ipsa<app type="Bfootnote">
-							<lem type="main">
-								<hi rendition="#g">sphaera artificiali, novo quodam more</hi></lem>
-							<note type="lemma-abbrev">ipsa</note>
-							<rdg wit="#L" n="1"> sphaera artificiali, novo quodam more </rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">sphaera artificiali, novo quodam
+<lem type="main">instrumentum <hi rendition="#g">Mechanice</hi>
+</lem>
+<note type="lemma-abbrev">instrumentum</note>
+<rdg wit="#L" n="1"> Mechanice </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">Mechanice</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>, tum per calculum <hi rendition="#g">Geometrice.</hi>
+<anchor xml:id="geostart"/>
+</p>
+<p xml:id="Ch6.S2.p12">
+<app type="Bfootnote" from="#geostart" to="#geoend">
+<lem type="main">
+<hi rendition="#g">Instrumentum</hi>
+<anchor xml:id="geoend"/>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">Geometrice.</hi>
+</note>
+<rdg wit="#L" n="1"> Instrumentum </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">Instrumentum</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>nullum aptius reperio ipsa<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">sphaera artificiali, novo quodam more</hi>
+</lem>
+<note type="lemma-abbrev">ipsa</note>
+<rdg wit="#L" n="1"> sphaera artificiali, novo quodam more </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">sphaera artificiali, novo quodam
 									more</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>, nunc explicando recte <app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">instructa</hi></lem>
-							<note type="lemma-abbrev">recte</note>
-							<rdg wit="#L" n="1"> instructa </rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">instructa</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>, satisque ampla ad accuratas circulorum subdivisiones habendas. In
+<hi rendition="#i">L</hi>
+</rdg>
+</app>, nunc explicando recte <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">instructa</hi>
+</lem>
+<note type="lemma-abbrev">recte</note>
+<rdg wit="#L" n="1"> instructa </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">instructa</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>, satisque ampla ad accuratas circulorum subdivisiones habendas. In
 						hac sphaera elevetur Polus<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> supra horizontem immobilem artificialem quemadmodum postulat
+<term>polus</term>
+</index> supra horizontem immobilem artificialem quemadmodum postulat
 							latitudo<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> cognita puncti in quo est navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>; quo facto globus ita circumagatur ut sidus<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> observatum tot gradibus minutisve distet a meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index>, horizonteque artificiali loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>, quot monstrat sideris<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> ejusdem elevatio super horizontem loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> naturalem paulo ante observata<app type="Bfootnote">
-							<lem type="main">. Et quia distantia puncti cujusdam a linea quadam
+<term>latitudo</term>
+</index> cognita puncti in quo est navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>; quo facto globus ita circumagatur ut sidus<index indexName="Sachverzeichnis">
+<term>sidus</term>
+</index> observatum tot gradibus minutisve distet a meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index>, horizonteque artificiali loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>, quot monstrat sideris<index indexName="Sachverzeichnis">
+<term>sidus</term>
+</index> ejusdem elevatio super horizontem loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> naturalem paulo ante observata<app type="Bfootnote">
+<lem type="main">. Et quia distantia puncti cujusdam a linea quadam
 								semper tanta est, quanta est perpendicularis a puncto ad lineam
 								ducta. Ideo circumactio debita fiet</lem>
-							<note type="lemma-abbrev">observata</note>
-							<rdg wit="#L" n="1"> , quod fiet </rdg>
-							<rdg wit="#L" n="2"> , et quidem versus eandem <hi rendition="#g">plagam</hi>
-							</rdg>
-							<rdg wit="#L" n="3"> . Et <seg type="apparat-ellipsis"/> fiet <hi rendition="#i">L</hi></rdg>
-						</app> applicato ad sphaeram, ex horizonte, arcu quodam 90. grad. circuli
+<note type="lemma-abbrev">observata</note>
+<rdg wit="#L" n="1"> , quod fiet </rdg>
+<rdg wit="#L" n="2"> , et quidem versus eandem <hi rendition="#g">plagam</hi>
+</rdg>
+<rdg wit="#L" n="3"> . Et <seg type="apparat-ellipsis"/>
+ fiet <hi rendition="#i">L</hi>
+</rdg>
+</app> applicato ad sphaeram, ex horizonte, arcu quodam 90. grad. circuli
 						ipsi sphaerae artificiali congruentis, qua et vulgo in sphaeris
 						artificialibus utimur (supplendorum circulorum magnorum alioquin in sphaera
 						ubique ducendorum, sumendarumque inter duo sphaerae puncta distantiarum
 						causa) eoque arcu ita applicato <app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">ut ad horizontem angulum faciat
-									rectum</hi></lem>
-							<note type="lemma-abbrev">applicato</note>
-							<rdg wit="#L" n="1"> ut ad horizontem angulum faciat rectum </rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">ut</hi>
-								<seg type="apparat-ellipsis"/>
-								<hi rendition="#g">rectum</hi>
-								<hi rendition="#i">L</hi>  </rdg>
-						</app>, <app type="Bfootnote">
-							<lem type="main">seu ut portionem seu <hi rendition="#g">Quadrantem</hi>
-							</lem>
-							<rdg wit="#L" cause="addition"><add>seu <hi rendition="#g">Quadrantem</hi>
-								</add>
-								<note type="editorial"><hi rendition="#i">erg.</hi></note>  <hi rendition="#i">L</hi></rdg>
-						</app>repraesentet cujusdam verticalis. Quo <pb type="VIII_1" n="81"/>facto
+<lem type="main">
+<hi rendition="#g">ut ad horizontem angulum faciat
+									rectum</hi>
+</lem>
+<note type="lemma-abbrev">applicato</note>
+<rdg wit="#L" n="1"> ut ad horizontem angulum faciat rectum </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">ut</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#g">rectum</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>,<app type="Bfootnote">
+<lem type="main">seu ut portionem seu <hi rendition="#g">Quadrantem</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>seu <hi rendition="#g">Quadrantem</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+</note>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>repraesentet cujusdam verticalis. Quo <pb type="VIII_1" n="81"/>
+facto
 						sphaera <app type="Bfootnote">
-							<lem type="main">circa axem suum</lem>
-							<note type="lemma-abbrev">sphaera</note>
-							<rdg wit="#L" n="1"> super polum<index indexName="Sachverzeichnis">
-									<term>polus</term>
-								</index>
-							</rdg>
-							<rdg wit="#L" n="2"> circa axem suum <hi rendition="#i">L</hi></rdg>
-						</app> eousque circumagatur, et arcus iste super horizonte eousque retento
+<lem type="main">circa axem suum</lem>
+<note type="lemma-abbrev">sphaera</note>
+<rdg wit="#L" n="1"> super polum<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> circa axem suum <hi rendition="#i">L</hi>
+</rdg>
+</app> eousque circumagatur, et arcus iste super horizonte eousque retento
 						situ orthogonali moveatur, seu varie disponatur, donec sidus<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> observatum  praecise  incidat  in  eum  numerum  graduum 
+<term>sidus</term>
+</index> observatum  praecise  incidat  in  eum  numerum  graduum 
 						minutorumque  in  hoc</p>
-					<p xml:id="Ch6.S2.p13" rendition="#noindent">arcu inde ab horizonte
+<p xml:id="Ch6.S2.p13" rendition="#noindent">arcu inde ab horizonte
 						computatorum, quem observata sideris<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> elevatio super horizontem loci dedit. Quae circumactio seu sideris
+<term>sidus</term>
+</index> elevatio super horizontem loci dedit. Quae circumactio seu sideris
 							arcusque<index indexName="Sachverzeichnis">
-							<term>arcus</term>
-						</index> dicti applicatio <app type="Bfootnote">
-							<lem type="main">nullo negotio ad primos statim obtutus</lem>
-							<note type="lemma-abbrev">nullo</note>
-							<rdg wit="#L" n="1"> statim negotio ad primos obtutus </rdg>
-							<rdg wit="#L" n="2"> negotio ad primos statim obtutus <hi rendition="#i">L</hi></rdg>
-						</app> fiet: dummodo opera detur, ut situs arcus dicti ad horizontem sit
+<term>arcus</term>
+</index> dicti applicatio <app type="Bfootnote">
+<lem type="main">nullo negotio ad primos statim obtutus</lem>
+<note type="lemma-abbrev">nullo</note>
+<rdg wit="#L" n="1"> statim negotio ad primos obtutus </rdg>
+<rdg wit="#L" n="2"> negotio ad primos statim obtutus <hi rendition="#i">L</hi>
+</rdg>
+</app> fiet: dummodo opera detur, ut situs arcus dicti ad horizontem sit
 						orthogonalis, quod fieri secure poterit hac industria si crenae <app type="Bfootnote">
-							<lem type="main">cuidam</lem>
-							<rdg wit="#L" cause="addition"><add>cuidam</add>
-								<note type="editorial"><hi rendition="#i">erg.</hi></note>  <hi rendition="#i">L</hi></rdg>
-						</app> ipsi horizontis margini impressae quadrare possit, ut in ea
+<lem type="main">cuidam</lem>
+<rdg wit="#L" cause="addition">
+<add>cuidam</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+</note>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> ipsi horizontis margini impressae quadrare possit, ut in ea
 						constanter; dum nobis rursus eximere lubeat, circumagatur.</p>
-					<p xml:id="Ch6.S2.p14">Habemus ergo primum mobile artificiale ita constitutum in
+<p xml:id="Ch6.S2.p14">Habemus ergo primum mobile artificiale ita constitutum in
 						sphaera artificiali in respectu ad horizontem ejus, meridianumque<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index>, qui meridianum<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> loci repraesentat, uti primum mobile verum constitutum est in
+<term>meridianus</term>
+</index>, qui meridianum<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> loci repraesentat, uti primum mobile verum constitutum est in
 						respectu ad horizontem, meridianumque<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>. Sed quia de loco navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> nihil nisi latitudo<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> nobis explorata est, seu distantia a polo<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> immobili, non vero distantia a meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo in terra immobili supposito. Ideo coelum quidem sed nondum
+<term>meridianus</term>
+</index> loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>. Sed quia de loco navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> nihil nisi latitudo<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> nobis explorata est, seu distantia a polo<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index> immobili, non vero distantia a meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo in terra immobili supposito. Ideo coelum quidem sed nondum
 						terram in globo artificiali<index indexName="Sachverzeichnis">
-							<term>globus</term>
-							<index>
-								<term>artificialis</term>
-							</index>
-						</index> recte, et ad loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> normam, disposita, habemus.</p>
-					<p xml:id="Ch6.S2.p15">Ut ergo inveniatur etiam longitudo<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index>, adhibendum est quiddam repraesentans terram, sed quia globus
+<term>globus</term>
+<index>
+<term>artificialis</term>
+</index>
+</index> recte, et ad loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> normam, disposita, habemus.</p>
+<p xml:id="Ch6.S2.p15">Ut ergo inveniatur etiam longitudo<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>, adhibendum est quiddam repraesentans terram, sed quia globus
 							artificialis<index indexName="Sachverzeichnis">
-							<term>globus</term>
-							<index>
-								<term>artificialis</term>
-							</index>
-						</index> non potest commode fieri perspicuus, nec proinde terra in ejus
+<term>globus</term>
+<index>
+<term>artificialis</term>
+</index>
+</index> non potest commode fieri perspicuus, nec proinde terra in ejus
 						centro locari, sufficiet unum terrae circulum, nimirum meridianum<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primum adhiberi, utcunque eum assumere lubuerit, dummodo constet
+<term>meridianus</term>
+</index> primum adhiberi, utcunque eum assumere lubuerit, dummodo constet
 						per quam terrae regionem transeat, etsi utile foret unum eundemque
-						constanter ab <pb type="L"/><fw type="folNum">[68 r<hi rendition="#sup">o</hi>]</fw> omnibus <app type="Bfootnote">
-							<lem type="main">Geographis</lem>
-							<rdg wit="#L" cause="addition"><add>Geographis</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> usurpari. Hujus ergo meridiani<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primi tellurem totam repraesentatis loco adhibeatur circulus quidam
+						constanter ab <pb type="L"/>
+<fw type="folNum">[68 r<hi rendition="#sup">o</hi>]
+</fw> omnibus <app type="Bfootnote">
+<lem type="main">Geographis</lem>
+<rdg wit="#L" cause="addition">
+<add>Geographis</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> usurpari. Hujus ergo meridiani<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primi tellurem totam repraesentatis loco adhibeatur circulus quidam
 						rigidus, Polis<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> sphaerae artificialis affixus, sed mobiliter tamen, ita ut
+<term>polus</term>
+</index> sphaerae artificialis affixus, sed mobiliter tamen, ita ut
 						separatim circa polum pro lubitu circumagi possit. Separatim inquam hic
 						circulus circa polum<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> et sphaeram; et separatim ipsa sphaera circa polum<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index>; ita ut nec Meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo circumacto ideo circumagatur sphaera; nec sphaera circumacta
+<term>polus</term>
+</index> et sphaeram; et separatim ipsa sphaera circa polum<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index>; ita ut nec Meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo circumacto ideo circumagatur sphaera; nec sphaera circumacta
 						ideo circumagatur Meridianus<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primus.</p>
-					<p xml:id="Ch6.S2.p16">Quemadmodum autem sphaera, ita et Meridianus<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primus, cum polo<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> elevabitur aut deprimetur. Elevatione ergo poli<index indexName="Sachverzeichnis">
-							<term>elevatio</term>
-							<index>
-								<term>poli</term>
-							</index>
-						</index> data, ultra horizontem artificialem constituta, et sphaera
-						artificiali circa polum, ita acta, ut sidus observatum in sphaera <pb type="VIII_1" n="82"/>depictum, tantum distet ab horizonte et
+<term>meridianus</term>
+</index> primus.</p>
+<p xml:id="Ch6.S2.p16">Quemadmodum autem sphaera, ita et Meridianus<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primus, cum polo<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index> elevabitur aut deprimetur. Elevatione ergo poli<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index> data, ultra horizontem artificialem constituta, et sphaera
+						artificiali circa polum, ita acta, ut sidus observatum in sphaera <pb type="VIII_1" n="82"/>
+depictum, tantum distet ab horizonte et
 							meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>
-						<app type="Bfootnote">
-							<lem type="main">artificiali, quantum</lem>
-							<note type="lemma-abbrev">artificiali</note>
-							<rdg wit="#L" cause="deletion">
-								<note type="editorial">|</note> <del>immobili</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi> |</note> ,
-								quantum <hi rendition="#i">L</hi></rdg>
-						</app> distare observatum est ab horizonte et meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> vero. Hoc <app type="Bfootnote">
-							<lem type="main">inquam</lem>
-							<rdg wit="#L" cause="addition"><add>inquam</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> facto meridianus<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primus ita circumagatur ut sidus<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> in globo depictum quodcunque (idem, aliudve cum eo quod observatum
+<term>meridianus</term>
+</index> loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">artificiali, quantum</lem>
+<note type="lemma-abbrev">artificiali</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>immobili</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> ,
+								quantum <hi rendition="#i">L</hi>
+</rdg>
+</app> distare observatum est ab horizonte et meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> vero. Hoc <app type="Bfootnote">
+<lem type="main">inquam</lem>
+<rdg wit="#L" cause="addition">
+<add>inquam</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> facto meridianus<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primus ita circumagatur ut sidus<index indexName="Sachverzeichnis">
+<term>sidus</term>
+</index> in globo depictum quodcunque (idem, aliudve cum eo quod observatum
 						est) quod momento observationis per horologium<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> dato, calculus, aut Ephemerides<index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index> nostrae Meridianum<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primum subire, aut ab eo dato graduum minutorumque numero distare
+<term>horologium</term>
+</index> dato, calculus, aut Ephemerides<index indexName="Sachverzeichnis">
+<term>ephemeris</term>
+</index> nostrae Meridianum<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primum subire, aut ab eo dato graduum minutorumque numero distare
 						monstrant, subeat etiam Meridianum<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primum artificialem, aut eodem graduum minutorumve <app type="Bfootnote">
-							<lem type="main">numero in aequatore<index indexName="Sachverzeichnis">
-									<term>aequator</term>
-								</index></lem>
-							<note type="lemma-abbrev">numero</note>
-							<rdg wit="#L" n="1"> in aequatore<index indexName="Sachverzeichnis">
-									<term>aequator</term>
-								</index> aut parallelo, quem ejus sideris<index indexName="Sachverzeichnis">
-									<term>sidus</term>
-								</index> latitudo<index indexName="Sachverzeichnis">
-									<term>latitudo</term>
-								</index> monstrat, </rdg>
-							<rdg wit="#L" n="2" cause="deletion"> in aequatore <note type="editorial">|</note> <del>aut parallelo, quem ejus sideris
+<term>meridianus</term>
+</index> primum artificialem, aut eodem graduum minutorumve <app type="Bfootnote">
+<lem type="main">numero in aequatore<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index>
+</lem>
+<note type="lemma-abbrev">numero</note>
+<rdg wit="#L" n="1"> in aequatore<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> aut parallelo, quem ejus sideris<index indexName="Sachverzeichnis">
+<term>sidus</term>
+</index> latitudo<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> monstrat, </rdg>
+<rdg wit="#L" n="2" cause="deletion"> in aequatore <note type="editorial">|</note>
+<del>aut parallelo, quem ejus sideris
 									latitudo monstrat,</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi> |</note> numerato  <hi rendition="#i">L</hi></rdg>
-						</app> numerato, ab eo distet.</p>
-					<p xml:id="Ch6.S2.p17">Hoc facto habebimus mundum artificialem, vero similem, ac
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> numerato  <hi rendition="#i">L</hi>
+</rdg>
+</app> numerato, ab eo distet.</p>
+<p xml:id="Ch6.S2.p17">Hoc facto habebimus mundum artificialem, vero similem, ac
 						proinde eam distantiam Meridiani<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primi artificialis, a meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> loci artificiali, in globo, quae est veri primi, a vero loci in
+<term>meridianus</term>
+</index> primi artificialis, a meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> loci artificiali, in globo, quae est veri primi, a vero loci in
 						mundo et quod hinc sequitur gradus longitudinis<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> in aequatore<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> globi artificialis numerabiles inventos, quod erat faciendum.</p>
-					<p xml:id="Ch6.S2.p18">Saepe mecum miratus sum hanc sphaerae artificialis
-						accessionem, ad usum Geographicum, <pb type="L"/><fw type="folNum">[68 v<hi rendition="#sup">o</hi>]</fw>
-						<formula xml:id="Ch6.S2.p18.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟨</m:mo>
-							</m:math>
-						</formula>a<formula xml:id="Ch6.S2.p18.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mo stretchy="false">⟩</m:mo>
-							</m:math>
-						</formula>ut Nauticum summe utilem, imo necessariam hactenus
+<term>longitudo</term>
+</index> in aequatore<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> globi artificialis numerabiles inventos, quod erat faciendum.</p>
+<p xml:id="Ch6.S2.p18">Saepe mecum miratus sum hanc sphaerae artificialis
+						accessionem, ad usum Geographicum, <pb type="L"/>
+<fw type="folNum">[68 v<hi rendition="#sup">o</hi>]
+</fw>
+<formula xml:id="Ch6.S2.p18.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>a<formula xml:id="Ch6.S2.p18.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>ut Nauticum summe utilem, imo necessariam hactenus
 							praetermissam<app type="Bfootnote">
-							<lem type="main"/>
-							<rdg wit="#L" cause="deletion">praetermissam <note type="editorial">|</note> <del><add>esse</add></del>
-								<note type="editorial"><hi rendition="#i">erg. u.
-									gestr.</hi> |</note> ; sed <hi rendition="#i">L</hi></rdg>
-						</app>; sed scilicet coelo potius quam terrae astronomia accommodabatur.
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">praetermissam <note type="editorial">|</note>
+<del>
+<add>esse</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u.
+									gestr.</hi> |
+</note> ; sed <hi rendition="#i">L</hi>
+</rdg>
+</app>; sed scilicet coelo potius quam terrae astronomia accommodabatur.
 							Ephemeridibus<index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index> quocumque operosis si stellis fixis<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> utamur, opus ad rem praesentem non habemus. Quia enim omnes
+<term>ephemeris</term>
+</index> quocumque operosis si stellis fixis<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> utamur, opus ad rem praesentem non habemus. Quia enim omnes
 							fixarum<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> revolutiones sunt aequales, hinc si semel noverimus quantum
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> revolutiones sunt aequales, hinc si semel noverimus quantum
 							fixa<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> vel unica, momento aliquo cognito a meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo abfuerit sciemus quantum omnes quolibet momento sequente
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> vel unica, momento aliquo cognito a meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo abfuerit sciemus quantum omnes quolibet momento sequente
 						cognito, ab eo sunt abfuturae. Si scilicet tot revolutiones, quot 24. horas
 						inter tempus, quo distantia stellae<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index>, a meridiano <index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo cognita est, et aliud quo quaeritur, interjectas, numeremus,
+<term>stella</term>
+</index>, a meridiano <index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo cognita est, et aliud quo quaeritur, interjectas, numeremus,
 						et pro residuis horis aut minutis eum calculum instituamus, ut unum minutum
 						secundum horae; quindecim minutis secundis, vel quartae parti minuti primi
 							aequatoris<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> aut circuli aequatori<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> paralleli, respondeat.</p>
-					<p xml:id="Ch6.S2.p19">Et quia Aequator<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> Parallelorum<index indexName="Sachverzeichnis">
-							<term>circulus parallelus</term>
-						</index> omnium est maximus et in circulo majore accuratiores haberi possunt
+<term>aequator</term>
+</index> aut circuli aequatori<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> paralleli, respondeat.</p>
+<p xml:id="Ch6.S2.p19">Et quia Aequator<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> Parallelorum<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index> omnium est maximus et in circulo majore accuratiores haberi possunt
 						subdivisiones, ideo utile erit calculum institui in fixa sub aequatore<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> manente, eique meridianum<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primum artificialem, accommodari.</p>
-					<p xml:id="Ch6.S2.p20">Nauta ergo mari se commissurus ad hunc quidem usum ultra
+<term>aequator</term>
+</index> manente, eique meridianum<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primum artificialem, accommodari.</p>
+<p xml:id="Ch6.S2.p20">Nauta ergo mari se commissurus ad hunc quidem usum ultra
 						dudum necessaria, ut horologium<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> exactum, instrumentumque elevationibus poli<index indexName="Sachverzeichnis">
-							<term>elevatio</term>
-							<index>
-								<term>poli</term>
-							</index>
-						</index> stellarumve<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index> aliarum capiendis accommodatum, notitiamque fixarum<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> notabiliorum; neque in<pb type="VIII_1" n="83"/>strumento, neque
+<term>horologium</term>
+</index> exactum, instrumentumque elevationibus poli<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index> stellarumve<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> aliarum capiendis accommodatum, notitiamque fixarum<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> notabiliorum; neque in<pb type="VIII_1" n="83"/>
+strumento, neque
 						scientia alia opus habet, quam <hi rendition="#g">Sphaera</hi>
-						<hi rendition="#g">artificiali</hi> novo hoc modo adornata, <app type="Bfootnote">
-							<lem type="main">notitiaque usus ejus, et longitudinis<index indexName="Sachverzeichnis">
-									<term>longitudo</term>
-								</index> cujusdam fixae<index indexName="Sachverzeichnis">
-									<term>stella</term>
-									<index>
-										<term>fixa</term>
-									</index>
-								</index>. Sphaera Artificialis, quae poterit esse</lem>
-							<rdg wit="#L" cause="addition"><add>notitiaque <seg type="apparat-ellipsis"/> esse </add>  <note type="editorial"><hi rendition="#i">erg.</hi></note>    <hi rendition="#i">L</hi></rdg>
-						</app> ampla satis, ut aequator<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> ejus accuratarum divisionum  <app type="Bfootnote">
-							<lem type="main"/>
-							<rdg wit="#L" cause="deletion">divisionum <note type="editorial">|</note> <del>saltem</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi> |</note> ad
-									<hi rendition="#i">L</hi></rdg>
-						</app>ad  quartam  usque  minuti  graduum  primi  partem,  <app type="Bfootnote">
-							<lem type="main">si  velimus  </lem>
-							<rdg wit="#L" cause="addition"><add>si velimus</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> capax</p>
-					<p xml:id="Ch6.S2.p21" rendition="#noindent">sit. Si quidem velimus inquam,
+<hi rendition="#g">artificiali</hi> novo hoc modo adornata, <app type="Bfootnote">
+<lem type="main">notitiaque usus ejus, et longitudinis<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> cujusdam fixae<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index>. Sphaera Artificialis, quae poterit esse</lem>
+<rdg wit="#L" cause="addition">
+<add>notitiaque <seg type="apparat-ellipsis"/>
+ esse </add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+</note>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> ampla satis, ut aequator<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> ejus accuratarum divisionum  <app type="Bfootnote">
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">divisionum <note type="editorial">|</note>
+<del>saltem</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> ad
+<hi rendition="#i">L</hi>
+</rdg>
+</app>ad  quartam  usque  minuti  graduum  primi  partem,  <app type="Bfootnote">
+<lem type="main">si  velimus  </lem>
+<rdg wit="#L" cause="addition">
+<add>si velimus</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> capax</p>
+<p xml:id="Ch6.S2.p21" rendition="#noindent">sit. Si quidem velimus inquam,
 						eousque subtilitatis progredi in circulo aliquo coelesti, quousque progressi
 						sumus in Horologio<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index>, cum horologium<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> habeamus, quod secunda minuta satis fide monstret et minuta secunda
+<term>horologium</term>
+</index>, cum horologium<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> habeamus, quod secunda minuta satis fide monstret et minuta secunda
 						horaria, tribus quartis minuti gradus, respondeant tanta subtilitas ut jam
 						supra dixi necessaria non est; et si esset, possent commode nihilominus
 						rationes haberi, quibus plurimum divisionum lucremur. Praeter hanc sphaeram
-						ergo opus est nautae, tum et <hi rendition="#g">cognitio</hi><hi rendition="#g">ne usus</hi> ejus facillimi hactenus explicati, tum <app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">notitia longitudinis
-								fixae</hi></lem>
-							<note type="lemma-abbrev">tum</note>
-							<rdg wit="#L" n="1"> notitia longitudinis<index indexName="Sachverzeichnis">
-									<term>longitudo</term>
-								</index> fixae<index indexName="Sachverzeichnis">
-									<term>stella</term>
-									<index>
-										<term>fixa</term>
-									</index>
-								</index>
-							</rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">notitia longitudinis fixae</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app> (a polo remotioris) <pb type="L"/><fw type="folNum">[69 r<hi rendition="#sup">o</hi>]</fw>
-						<hi rendition="#g">cujuscunque,</hi> tempore aliquo cognito; seu ut sciat
+						ergo opus est nautae, tum et <hi rendition="#g">cognitio</hi>
+<hi rendition="#g">ne usus</hi> ejus facillimi hactenus explicati, tum <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">notitia longitudinis
+								fixae</hi>
+</lem>
+<note type="lemma-abbrev">tum</note>
+<rdg wit="#L" n="1"> notitia longitudinis<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> fixae<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">notitia longitudinis fixae</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> (a polo remotioris) <pb type="L"/>
+<fw type="folNum">[69 r<hi rendition="#sup">o</hi>]
+</fw>
+<hi rendition="#g">cujuscunque,</hi> tempore aliquo cognito; seu ut sciat
 							fixam<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> aliquam, aliquo tempore cognito a meridiano <index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo tantum abesse<app type="Bfootnote">
-							<lem type="main"/>
-							<rdg wit="#L" cause="deletion">abesse <note type="editorial">|</note> <del>debere</del>
-								<note type="editorial"><hi rendition="#i">gestr.</hi> |</note> .
-								Verbi <hi rendition="#i">L</hi></rdg>
-						</app>. Verbi gratia hanc, illamve fixam<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> pro arbitrio assumptam, mille ab hinc diebus 13. horis, 50.
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> aliquam, aliquo tempore cognito a meridiano <index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo tantum abesse<app type="Bfootnote">
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">abesse <note type="editorial">|</note>
+<del>debere</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> .
+								Verbi <hi rendition="#i">L</hi>
+</rdg>
+</app>. Verbi gratia hanc, illamve fixam<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> pro arbitrio assumptam, mille ab hinc diebus 13. horis, 50.
 						minutis, et 45. secundis horariis, et die non a solis sed primi mobilis
 						revolutione aestimato, a meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo terrae abfuisse: 80. gradibus, 50. minutis, et tribus minuti
+<term>meridianus</term>
+</index> primo terrae abfuisse: 80. gradibus, 50. minutis, et tribus minuti
 						graduum primi, quartis, in aequatore <index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> aut ejus parallelo<index indexName="Sachverzeichnis">
-							<term>circulus parallelus</term>
-						</index> numeratis, quod semel in universum eum ab Astronomo aliquo
+<term>aequator</term>
+</index> aut ejus parallelo<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index> numeratis, quod semel in universum eum ab Astronomo aliquo
 						dedicisse aut calculari sibi petiisse sufficit.</p>
-					<p xml:id="Ch6.S2.p22">Ita enim sciet eam nunc abesse ab eodem Meridiano <index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> 25. gr. et tribus quartis minuti graduum primi, et quantum
+<p xml:id="Ch6.S2.p22">Ita enim sciet eam nunc abesse ab eodem Meridiano <index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> 25. gr. et tribus quartis minuti graduum primi, et quantum
 						quocunque tempore sequenti per horologium<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> exactum sibi cognito, sit abfutura, quando postea opus erit
+<term>horologium</term>
+</index> exactum sibi cognito, sit abfutura, quando postea opus erit
 						calculabit. Quo calculo nihil est facilius, cum tantum horas ad gradus et
 						minuta secundaque horarum ad minuta secundaque graduum reducat.</p>
-					<p xml:id="Ch6.S2.p23">Hoc pacto si unius fixae<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> longitudinem<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> tempore dato sciet, sciet omnium, imo videbit in globo, si eam
+<p xml:id="Ch6.S2.p23">Hoc pacto si unius fixae<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> longitudinem<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> tempore dato sciet, sciet omnium, imo videbit in globo, si eam
 						tantum cujus longitudinem<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> cognovit, meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo debite admoveat. Ita enim caeteras omnes et eadem opera ei
+<term>longitudo</term>
+</index> cognovit, meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo debite admoveat. Ita enim caeteras omnes et eadem opera ei
 						debite admotas esse globus monstrabit.</p>
-					<p xml:id="Ch6.S2.p24">Si quis hujus quoque calculi compendium facere vellet,
+<p xml:id="Ch6.S2.p24">Si quis hujus quoque calculi compendium facere vellet,
 						posset ipsam sphaeram artificialem astris depictis notatam horologio<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> accurato accommodare, ut sua <pb type="VIII_1" n="84"/>revolutione
+<term>horologium</term>
+</index> accurato accommodare, ut sua <pb type="VIII_1" n="84"/>
+revolutione
 						horas ostendat, Meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo artificiali immobili manente, contra Horizonte et
+<term>meridianus</term>
+</index> primo artificiali immobili manente, contra Horizonte et
 							Meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> loci, qui vulgo in sphaeris artificialibus immobiles
+<term>meridianus</term>
+</index> loci, qui vulgo in sphaeris artificialibus immobiles
 						repraesentantur, totamque machinam velut sustentant, mobilibus redditis.</p>
-					<p xml:id="Ch6.S2.p25">Ut ita <app type="Bfootnote">
-							<lem type="main">eo casu</lem>
-							<rdg wit="#L" cause="addition"><add>eo casu</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ad poli elevationem<index indexName="Sachverzeichnis">
-							<term>elevatio</term>
-							<index>
-								<term>poli</term>
-							</index>
-						</index>, non polum<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> cum sphaera elevari sed horizontem cui meridianus<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> affixus est, deprimi necesse sit, et contra. Ita enim modo <pb type="L"/><fw type="folNum">[69 v<hi rendition="#sup">o</hi>]</fw>
+<p xml:id="Ch6.S2.p25">Ut ita <app type="Bfootnote">
+<lem type="main">eo casu</lem>
+<rdg wit="#L" cause="addition">
+<add>eo casu</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ad poli elevationem<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index>, non polum<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index> cum sphaera elevari sed horizontem cui meridianus<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> affixus est, deprimi necesse sit, et contra. Ita enim modo <pb type="L"/>
+<fw type="folNum">[69 v<hi rendition="#sup">o</hi>]
+</fw>
 							fixae<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> (id est saltem una earum, nam una bene posita, caeterae omnes bene
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> (id est saltem una earum, nam una bene posita, caeterae omnes bene
 						sunt positae) in vera quam tunc habent a meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo distantia initio sunt constitutae, veram distantiam supposita
+<term>meridianus</term>
+</index> primo distantia initio sunt constitutae, veram distantiam supposita
 							horologii<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> exactitudine in ipsa sphaera artificiali semper monstrabunt.</p>
-					<p xml:id="Ch6.S2.p26">Sed hoc curiosum magis et elegans, quam utile fore
+<term>horologium</term>
+</index> exactitudine in ipsa sphaera artificiali semper monstrabunt.</p>
+<p xml:id="Ch6.S2.p26">Sed hoc curiosum magis et elegans, quam utile fore
 						existimo pro fixarum<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> quidem usu, calculi tam facilis qui intra horae minutum nullo
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> quidem usu, calculi tam facilis qui intra horae minutum nullo
 						negotio fieri possit evitandi causa machinam adhibere velle. At habebit
 						fortasse usum cum Luminaribus observatis opus erit.</p>
-					<p xml:id="Ch6.S2.p27">Quod si ergo sole<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> Lunave<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> (quia interdiu sidera<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index>
-						<app type="Bfootnote">
-							<lem type="main">non lucent; noctu aliquando, Luna<index indexName="Sachverzeichnis">
-									<term>luna</term>
-								</index> lucente, caetera sidera</lem>
-							<rdg wit="#L" cause="addition"><add>non lucent; noctu aliquando,
+<p xml:id="Ch6.S2.p27">Quod si ergo sole<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> Lunave<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> (quia interdiu sidera<index indexName="Sachverzeichnis">
+<term>sidus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">non lucent; noctu aliquando, Luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> lucente, caetera sidera</lem>
+<rdg wit="#L" cause="addition">
+<add>non lucent; noctu aliquando,
 										Luna<index indexName="Sachverzeichnis">
-										<term>luna</term>
-									</index> lucente, caetera sidera</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> non lucent) uti velimus, similiter nulla alia re opus est, quam ut
+<term>luna</term>
+</index> lucente, caetera sidera</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> non lucent) uti velimus, similiter nulla alia re opus est, quam ut
 						praesentem locum horum planetarum in Zodiaco<index indexName="Sachverzeichnis">
-							<term>zodiacus</term>
-						</index>, seu latitudinem<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> et distantiam a meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo seu longitudinem <index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> sciamus.</p>
-					<p xml:id="Ch6.S2.p28">Hoc autem ex Ephemeridibus <index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index> facile sciri posse constat, aut certe Ephemerides<index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index> solis<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> Lunaeve<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> ita facile accommodari possunt ut hoc monstrent.</p>
-					<p xml:id="Ch6.S2.p29">Quodsi Ephemeridibus<index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index> carere velis sufficiet machinam horologii <index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> ipsi sphaerae artificiali, eo quem supra dixi modo applicari, et
+<term>zodiacus</term>
+</index>, seu latitudinem<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> et distantiam a meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo seu longitudinem <index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> sciamus.</p>
+<p xml:id="Ch6.S2.p28">Hoc autem ex Ephemeridibus <index indexName="Sachverzeichnis">
+<term>ephemeris</term>
+</index> facile sciri posse constat, aut certe Ephemerides<index indexName="Sachverzeichnis">
+<term>ephemeris</term>
+</index> solis<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> Lunaeve<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> ita facile accommodari possunt ut hoc monstrent.</p>
+<p xml:id="Ch6.S2.p29">Quodsi Ephemeridibus<index indexName="Sachverzeichnis">
+<term>ephemeris</term>
+</index> carere velis sufficiet machinam horologii <index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> ipsi sphaerae artificiali, eo quem supra dixi modo applicari, et
 						duo luminaria in eadem machina Zodiacum<index indexName="Sachverzeichnis">
-							<term>zodiacus</term>
-						</index> suis quodque spatiis percurrere, uti jam tum ab Automato-poeo
+<term>zodiacus</term>
+</index> suis quodque spatiis percurrere, uti jam tum ab Automato-poeo
 						quodam Germano procuratum vidi. Ita Machina semel recte constituta,
 							latitudinem<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index>, longitudinemque<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> solis<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> et Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>, et tandem unica elevationis eorum ultra horizontem loci
+<term>latitudo</term>
+</index>, longitudinemque<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> solis<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> et Lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>, et tandem unica elevationis eorum ultra horizontem loci
 							navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>, observatione ac per consequens Horizontis meridianique<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> loci in sphaera artificiali simili tum ad aequatorem<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index>, tum ad locum lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> solisve<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> accommodatione accedente, distantiam Meridiani<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>, a Meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primo, seu longitudinem<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>, vel [latitudine<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> quippe jam praecognita]<app type="Bfootnote">
-							<lem type="main"/>
-							<rdg wit="#L"><hi rendition="#i">Klammern von Leibniz</hi></rdg>
-						</app> locum navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> praecise, definiri posse manifestum est.</p>
-					<p xml:id="Ch6.S2.p30">Habes ergo <app type="Bfootnote">
-							<lem type="main">rationem <hi rendition="#g">Mechanicam</hi>
-							</lem>
-							<note type="lemma-abbrev">rationem</note>
-							<rdg wit="#L" n="1"> Mechanicam </rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">Mechanicam</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app>facilem <app type="Bfootnote">
-							<lem type="main">et</lem>
-							<rdg wit="#L">
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ad usum sufficientem dato horologio<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> exacto cognitaque loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> latitudine<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index>; unica, eaque propemodum inde<pb type="VIII_1" n="85"/>finita ac
+<term>navis</term>
+</index>, observatione ac per consequens Horizontis meridianique<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> loci in sphaera artificiali simili tum ad aequatorem<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index>, tum ad locum lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> solisve<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> accommodatione accedente, distantiam Meridiani<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>, a Meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primo, seu longitudinem<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>, vel [latitudine<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> quippe jam praecognita]<app type="Bfootnote">
+<lem type="main"/>
+<rdg wit="#L">
+<hi rendition="#i">Klammern von Leibniz</hi>
+</rdg>
+</app> locum navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> praecise, definiri posse manifestum est.</p>
+<p xml:id="Ch6.S2.p30">Habes ergo <app type="Bfootnote">
+<lem type="main">rationem <hi rendition="#g">Mechanicam</hi>
+</lem>
+<note type="lemma-abbrev">rationem</note>
+<rdg wit="#L" n="1"> Mechanicam </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">Mechanicam</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>facilem <app type="Bfootnote">
+<lem type="main">et</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ad usum sufficientem dato horologio<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> exacto cognitaque loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> latitudine<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>; unica, eaque propemodum inde<pb type="VIII_1" n="85"/>
+finita ac
 						rarissime per plures dies continuos defutura observatione,
 							Longitudines<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> seu locum navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> verum praecise inveniendi. Unde <app type="Bfootnote">
-							<lem type="main"><hi rendition="#g">Geometrica</hi></lem>
-							<note type="lemma-abbrev">Unde</note>
-							<rdg wit="#L" n="1"> Geometrica </rdg>
-							<rdg wit="#L" n="2"> <hi rendition="#g">Geometrica</hi>
-								<hi rendition="#i">L</hi></rdg>
-						</app> per calculum Trigonometricum definiendi ratio ignorari non potest,
+<term>longitudo</term>
+</index> seu locum navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> verum praecise inveniendi. Unde <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">Geometrica</hi>
+</lem>
+<note type="lemma-abbrev">Unde</note>
+<rdg wit="#L" n="1"> Geometrica </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">Geometrica</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> per calculum Trigonometricum definiendi ratio ignorari non potest,
 						quam prolixe exponere, hujus loci non est.</p>
-					<p xml:id="Ch6.S2.p31"><pb type="L"/><fw type="folNum">[70 r<hi rendition="#sup">o</hi>]</fw> Sed cum eorum omnium quae hactenus dicta sunt ad
+<p xml:id="Ch6.S2.p31">
+<pb type="L"/>
+<fw type="folNum">[70 r<hi rendition="#sup">o</hi>]
+</fw> Sed cum eorum omnium quae hactenus dicta sunt ad
 							Longitudines<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> applicatio ex horologio<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> exacto supposito pendeat: Et vero supersint quaedam circa usum
+<term>longitudo</term>
+</index> applicatio ex horologio<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> exacto supposito pendeat: Et vero supersint quaedam circa usum
 						penduli <index indexName="Sachverzeichnis">
-							<term>pendulum</term>
-						</index> in mari difficultates; operae pretium est exponi <hi rendition="#g">rationem novam, qua defectus</hi>
-						<hi rendition="#g">Horologii</hi><index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index>
-						<hi rendition="#g">ejusmodi accurati, de tempore in tempus suppleri
+<term>pendulum</term>
+</index> in mari difficultates; operae pretium est exponi <hi rendition="#g">rationem novam, qua defectus</hi>
+<hi rendition="#g">Horologii</hi>
+<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index>
+<hi rendition="#g">ejusmodi accurati, de tempore in tempus suppleri
 							possit,</hi> invenirique quae nunc sit hora, aut quod horae (a
 						revolutione primi mobilis aestimatae) minutum in loco cognitae
 							longitudinis<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index>, seu in universum in mundo. Nam invenire quae sit hora loci dati
+<term>longitudo</term>
+</index>, seu in universum in mundo. Nam invenire quae sit hora loci dati
 						v.g. si in eo sit meridies, nec nosse tamen loci longitudinem<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> usum habet nullum, non enim ideo cognoscetur hora universalis in
+<term>longitudo</term>
+</index> usum habet nullum, non enim ideo cognoscetur hora universalis in
 						mundo, quia nec ejus loci situs in mundo plene cognitus est. Quanquam ergo,
 						horologio <index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> exacto deficiente, inventio horae universalis inventionem
+<term>horologium</term>
+</index> exacto deficiente, inventio horae universalis inventionem
 							longitudinum<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> supponere videatur, venit tamen mihi in mentem haec, quam nunc
+<term>longitudo</term>
+</index> supponere videatur, venit tamen mihi in mentem haec, quam nunc
 						exponam ratio, quae nec longitudine<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> loci praesentis praecognita, nec horologio<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> exacto (in loco cognitae longitudinis<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index>, in hora minutove debito <app type="Bfootnote">
-							<lem type="main">primum</lem>
-							<rdg wit="#L" cause="addition"><add>primum</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> constituto, et hactenus currente) indigeat, etsi non semper possit
+<term>longitudo</term>
+</index> loci praesentis praecognita, nec horologio<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> exacto (in loco cognitae longitudinis<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>, in hora minutove debito <app type="Bfootnote">
+<lem type="main">primum</lem>
+<rdg wit="#L" cause="addition">
+<add>primum</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> constituto, et hactenus currente) indigeat, etsi non semper possit
 						adhiberi, quod nec necesse est <app type="Bfootnote">
-							<lem type="main">dummodo, ut dixi, <hi rendition="#g">de tempore in
+<lem type="main">dummodo, ut dixi, <hi rendition="#g">de tempore in
 									tempus</hi> usurpetur, ut, exempli causa de mense in mensem.
 								intermedium enim tempus horologio<index indexName="Sachverzeichnis">
-									<term>horologium</term>
-								</index> aliquo vulgari arenario, cujus etiam in navibus<index indexName="Sachverzeichnis">
-									<term>navis</term>
-								</index> usus esse solet (praesertim si certa quadam ratione
+<term>horologium</term>
+</index> aliquo vulgari arenario, cujus etiam in navibus<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> usus esse solet (praesertim si certa quadam ratione
 								emendentur) sic satis accurate scietur, nec paucis diebus error adeo
 								grandis intervenire potest, praesertim si horologia<index indexName="Sachverzeichnis">
-									<term>horologium</term>
-								</index> plura eorundem et plurium generum inter se conferantur. Ut
+<term>horologium</term>
+</index> plura eorundem et plurium generum inter se conferantur. Ut
 								taceam spem esse Horologia Elastica<index indexName="Sachverzeichnis">
-									<term>horologium</term>
-									<index>
-										<term>elasticum</term>
-									</index>
-								</index> a jactatione navis<index indexName="Sachverzeichnis">
-									<term>navis</term>
-								</index> independentia, sic satis accurata, diligentia adhibita,
+<term>horologium</term>
+<index>
+<term>elasticum</term>
+</index>
+</index> a jactatione navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> independentia, sic satis accurata, diligentia adhibita,
 								construendi</lem>
-							<rdg wit="#L" cause="addition">dummodo, <seg type="apparat-ellipsis"/>
-								plura <note type="editorial">|</note> <add>eorundem et</add>
-								<note type="editorial"><hi rendition="#i">erg.</hi> |</note> <add>plurium <seg type="apparat-ellipsis"/>
+<rdg wit="#L" cause="addition">dummodo, <seg type="apparat-ellipsis"/>
+								plura <note type="editorial">|</note>
+<add>eorundem et</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<add>plurium <seg type="apparat-ellipsis"/>
 									construendi</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>.</p>
-					<p xml:id="Ch6.S2.p32">Problema ita concipitur: <hi rendition="#g">Data per
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>.
+</p>
+<p xml:id="Ch6.S2.p32">Problema ita concipitur: <hi rendition="#g">Data per
 							observationem unicam, seu eodem tempore factam in loco incognitae</hi>
-						<hi rendition="#g">longitudinis</hi><index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index>
-						<hi rendition="#g">saltem latitudine</hi><index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index>
-						<hi rendition="#g">loci seu elevatione poli, acpraeterea elevatione lunae et
-							cujusdam alterius fixae</hi><index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index>
-						<hi rendition="#g">super horizontem loci dati; invenire tempus universale, a
+<hi rendition="#g">longitudinis</hi>
+<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>
+<hi rendition="#g">saltem latitudine</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>
+<hi rendition="#g">loci seu elevatione poli, acpraeterea elevatione lunae et
+							cujusdam alterius fixae</hi>
+<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index>
+<hi rendition="#g">super horizontem loci dati; invenire tempus universale, a
 							primi mobilis revolutione pendens, seu loci cognitae
-							longitudinis</hi><index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index><hi rendition="#g">, et per consequens ope problema<pb type="VIII_1" n="86"/>tis praecedentis, invenire longitudinem</hi><index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index>
-						<hi rendition="#g">loci dati; seu latitudine</hi><index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index>
-						<hi rendition="#g">jam praecognita, locum navis</hi><index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>
-						<hi rendition="#g">verum.</hi></p>
-					<p xml:id="Ch6.S2.p33">Hoc problema solvi potest, quoties simul et Polus<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index>, et Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>, et alia quaedam fixa<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> cognita non nimis Polo<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> vicina, videri possunt. Quod certe frequentissime continget. Cum
+							longitudinis</hi>
+<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>
+<hi rendition="#g">, et per consequens ope problema<pb type="VIII_1" n="86"/>
+tis praecedentis, invenire longitudinem</hi>
+<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>
+<hi rendition="#g">loci dati; seu latitudine</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>
+<hi rendition="#g">jam praecognita, locum navis</hi>
+<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>
+<hi rendition="#g">verum.</hi>
+</p>
+<p xml:id="Ch6.S2.p33">Hoc problema solvi potest, quoties simul et Polus<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index>, et Luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>, et alia quaedam fixa<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> cognita non nimis Polo<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index> vicina, videri possunt. Quod certe frequentissime continget. Cum
 						contra ii qui observationes suas sideri in meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> existenti, aliisque definitis circumstantiis alligare coguntur,
+<term>meridianus</term>
+</index> existenti, aliisque definitis circumstantiis alligare coguntur,
 						raro occasionem observandi reperiant. Ut enim definitum aliquod momentum
-						noctis, aut spatium coeli serenum <pb type="L"/><fw type="folNum">[70 v<hi rendition="#sup">o</hi>]</fw> reperiatur difficile est, cum etiam in
+						noctis, aut spatium coeli serenum <pb type="L"/>
+<fw type="folNum">[70 v<hi rendition="#sup">o</hi>]
+</fw> reperiatur difficile est, cum etiam in
 						nocte serena aut coelo sereno, multa sint momenta aut puncta non serena, et
 						inter ea facile hoc quoque. Contra in multis noctibus non serenis, aliquot
 						saltem momenta temporis aut loca coeli serena sunt, quod in nostra methodo
 						sufficit.</p>
-					<p xml:id="Ch6.S2.p34">Solutio haec est: in sphaera artificiali qualem supra
+<p xml:id="Ch6.S2.p34">Solutio haec est: in sphaera artificiali qualem supra
 						descripsi, polus<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> ad datam (<app type="Bfootnote">
-							<lem type="main">in horizonte</lem>
-							<rdg wit="#L" cause="addition"><add>in horizonte</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> loci navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index>) elevationem erigatur; stellae<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index> quoque observatae ea supra horizontem loci, quae observatione
+<term>polus</term>
+</index> ad datam (<app type="Bfootnote">
+<lem type="main">in horizonte</lem>
+<rdg wit="#L" cause="addition">
+<add>in horizonte</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> loci navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>) elevationem erigatur; stellae<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> quoque observatae ea supra horizontem loci, quae observatione
 						comperta est, elevatio in eadem sphaera detur. Observetur jam <hi rendition="#g">lunae</hi>
-						<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>non altitudo tantum seu <hi rendition="#g">elevatio super
+<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>non altitudo tantum seu <hi rendition="#g">elevatio super
 							horizontem,</hi> in instrumento ad horizontem perpendiculari: Sed et
 						eadem opera <hi rendition="#g">differentia</hi> seu declinatio<index indexName="Sachverzeichnis">
-							<term>declinatio</term>
-						</index>
-						<hi rendition="#g">plagae</hi>
-						<hi rendition="#g">Lunae</hi><index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>
-						<hi rendition="#g">a plaga</hi>
-						<hi rendition="#g">stellae</hi>
-						<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index>dictae; in horizonte vel instrumento graduum, ut circulo, aut
+<term>declinatio</term>
+</index>
+<hi rendition="#g">plagae</hi>
+<hi rendition="#g">Lunae</hi>
+<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>
+<hi rendition="#g">a plaga</hi>
+<hi rendition="#g">stellae</hi>
+<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index>dictae; in horizonte vel instrumento graduum, ut circulo, aut
 						semicirculo, aut quadrante etc. ad horizontem parallelo, seu ut appareat
 						quoad ejus fieri praecise potest quem planum Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> per centrum, Horizontis ad angulos <app type="Bfootnote">
-							<lem type="main">rectos</lem>
-							<rdg wit="#L" cause="addition"><add>rectos</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> transiens, ad planum stellae<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index> eodem modo transiens angulum faciat.</p>
-					<p xml:id="Ch6.S2.p35">Tametsi enim id planum stellae<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index> sit verticale, seu transeat per centrum telluris<index indexName="Sachverzeichnis">
-							<term>tellus</term>
-						</index>, at planum lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> non sit verticale, cum productum non transeat per centrum terrae,
+<term>luna</term>
+</index> per centrum, Horizontis ad angulos <app type="Bfootnote">
+<lem type="main">rectos</lem>
+<rdg wit="#L" cause="addition">
+<add>rectos</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> transiens, ad planum stellae<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> eodem modo transiens angulum faciat.</p>
+<p xml:id="Ch6.S2.p35">Tametsi enim id planum stellae<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> sit verticale, seu transeat per centrum telluris<index indexName="Sachverzeichnis">
+<term>tellus</term>
+</index>, at planum lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> non sit verticale, cum productum non transeat per centrum terrae,
 						nisi Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> sit loco verticalis; quia stella<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index> parallaxi<index indexName="Sachverzeichnis">
-							<term>parallaxis</term>
-						</index> caret, luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> vero habet parallaxin<index indexName="Sachverzeichnis">
-							<term>parallaxis</term>
-						</index>; nihilominus tamen postea per parallaxeos<index indexName="Sachverzeichnis">
-							<term>parallaxis</term>
-						</index> supputationem, errorem corrigendum esse dicemus.</p>
-					<p xml:id="Ch6.S2.p36">Quo facto Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> in sphaera artificiali eo in loco notetur, ubi tum, supra
+<term>luna</term>
+</index> sit loco verticalis; quia stella<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> parallaxi<index indexName="Sachverzeichnis">
+<term>parallaxis</term>
+</index> caret, luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> vero habet parallaxin<index indexName="Sachverzeichnis">
+<term>parallaxis</term>
+</index>; nihilominus tamen postea per parallaxeos<index indexName="Sachverzeichnis">
+<term>parallaxis</term>
+</index> supputationem, errorem corrigendum esse dicemus.</p>
+<p xml:id="Ch6.S2.p36">Quo facto Luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> in sphaera artificiali eo in loco notetur, ubi tum, supra
 						horizontem elevationem, tum a stella declinationem<index indexName="Sachverzeichnis">
-							<term>declinatio</term>
-						</index> habet datam, qui locus propterea eo ipso fit determinatus, ac
-						proinde <hi rendition="#g">habetur lunae</hi><index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>
-						<hi rendition="#g">latitudo.</hi><index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index></p>
-					<p xml:id="Ch6.S2.p37">Sed quia Parallaxis<index indexName="Sachverzeichnis">
-							<term>parallaxis</term>
-						</index> lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> turbat, et facit ut locus in sphaera primi mobilis <pb type="VIII_1" n="87"/>ei non debeat assignari, qui observatione
+<term>declinatio</term>
+</index> habet datam, qui locus propterea eo ipso fit determinatus, ac
+						proinde <hi rendition="#g">habetur lunae</hi>
+<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>
+<hi rendition="#g">latitudo.</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>
+</p>
+<p xml:id="Ch6.S2.p37">Sed quia Parallaxis<index indexName="Sachverzeichnis">
+<term>parallaxis</term>
+</index> lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> turbat, et facit ut locus in sphaera primi mobilis <pb type="VIII_1" n="87"/>
+ei non debeat assignari, qui observatione
 						deprehenditur (nisi <app type="Bfootnote">
-							<lem type="main">luna</lem>
-							<rdg wit="#L" cause="addition"><add>luna</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> sit <app type="Bfootnote">
-							<lem type="main">loco</lem>
-							<rdg wit="#L" cause="addition"><add>loco</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> verticalis, ubi parallaxi<index indexName="Sachverzeichnis">
-							<term>parallaxis</term>
-						</index> caret) quia ex alio loco spectanti alia loci determinatio <pb type="L"/><fw type="folNum">[71 r<hi rendition="#sup">o</hi>]</fw>
+<lem type="main">luna</lem>
+<rdg wit="#L" cause="addition">
+<add>luna</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> sit <app type="Bfootnote">
+<lem type="main">loco</lem>
+<rdg wit="#L" cause="addition">
+<add>loco</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> verticalis, ubi parallaxi<index indexName="Sachverzeichnis">
+<term>parallaxis</term>
+</index> caret) quia ex alio loco spectanti alia loci determinatio <pb type="L"/>
+<fw type="folNum">[71 r<hi rendition="#sup">o</hi>]
+</fw>
 						oriretur; ideo supputata lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> parallaxi<index indexName="Sachverzeichnis">
-							<term>parallaxis</term>
-						</index> corrigendus est ejus locus, indagandumque quo in loco sit nunc
+<term>luna</term>
+</index> parallaxi<index indexName="Sachverzeichnis">
+<term>parallaxis</term>
+</index> corrigendus est ejus locus, indagandumque quo in loco sit nunc
 						apparitura, si ex ipso terrae centro vel alio loco cui verticalis est,
 						spectetur. Parallaxis<index indexName="Sachverzeichnis">
-							<term>parallaxis</term>
-						</index> autem seu error tanto major est, quanto major obliquitas anguli
+<term>parallaxis</term>
+</index> autem seu error tanto major est, quanto major obliquitas anguli
 						quem facit ad horizontem, seu quanto minor elevatio. Sed correctio hujus
 						erroris est in potestate, tum quia anguli obliquitas observatione data est,
 						tum quia altitudinem Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>, et semidiametrum terrae satis explorata habemus. Esto Horizon loci
-							<hi rendition="#i">acb</hi> ad cujus centrum <hi rendition="#i">c</hi>
+<term>luna</term>
+</index>, et semidiametrum terrae satis explorata habemus. Esto Horizon loci
+<hi rendition="#i">acb</hi> ad cujus centrum <hi rendition="#i">c</hi>
 						radius lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>
-						<hi rendition="#i">cd</hi> facit angulum observatione cognitum <hi rendition="#i">dcb</hi>. Esto centrum terrae <hi rendition="#i">e</hi>
+<term>luna</term>
+</index>
+<hi rendition="#i">cd</hi> facit angulum observatione cognitum <hi rendition="#i">dcb</hi>. Esto centrum terrae <hi rendition="#i">e</hi>
 						ducaturque linea a centro terrae ad Lunam<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>
-						<hi rendition="#i">ed</hi>. Constat in Triangulo <hi rendition="#i">dec</hi>
+<term>luna</term>
+</index>
+<hi rendition="#i">ed</hi>. Constat in Triangulo <hi rendition="#i">dec</hi>
 						cognitum esse angulum <app type="Bfootnote">
-							<lem type="main">unum</lem>
-							<rdg wit="#L" cause="addition"><add>unum</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>
-						<hi rendition="#i">dce</hi> compositum ex angulo cognito <hi rendition="#i">dcb</hi> et recto <hi rendition="#i">bce</hi> et <app type="Bfootnote">
-							<lem type="main">cognita esse</lem>
-							<rdg wit="#L" cause="addition"><add>cognita esse</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> latera <app type="Bfootnote">
-							<lem type="main">duo</lem>
-							<rdg wit="#L" cause="addition"><add>duo</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>: <hi rendition="#i">ec</hi> semidiametrum terrae, et <hi rendition="#i">ed</hi> distantiam Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> a centro terrae. Ergo per canones trigonometricos etiam <app type="Bfootnote">
-							<lem type="main">unum</lem>
-							<rdg wit="#L" cause="addition"><add>unum</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> residuum latus <hi rendition="#i">cd</hi> et <app type="Bfootnote">
-							<lem type="main">duo</lem>
-							<rdg wit="#L" cause="addition"><add>duo</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> residui anguli <hi rendition="#i">cde</hi> et <hi rendition="#i">ced</hi> cognoscentur, et cognito angulo <hi rendition="#i">ced</hi>
+<lem type="main">unum</lem>
+<rdg wit="#L" cause="addition">
+<add>unum</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#i">dce</hi> compositum ex angulo cognito <hi rendition="#i">dcb</hi> et recto <hi rendition="#i">bce</hi> et <app type="Bfootnote">
+<lem type="main">cognita esse</lem>
+<rdg wit="#L" cause="addition">
+<add>cognita esse</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> latera <app type="Bfootnote">
+<lem type="main">duo</lem>
+<rdg wit="#L" cause="addition">
+<add>duo</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>:<hi rendition="#i">ec</hi> semidiametrum terrae, et <hi rendition="#i">ed</hi> distantiam Lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> a centro terrae. Ergo per canones trigonometricos etiam <app type="Bfootnote">
+<lem type="main">unum</lem>
+<rdg wit="#L" cause="addition">
+<add>unum</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> residuum latus <hi rendition="#i">cd</hi> et <app type="Bfootnote">
+<lem type="main">duo</lem>
+<rdg wit="#L" cause="addition">
+<add>duo</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> residui anguli <hi rendition="#i">cde</hi> et <hi rendition="#i">ced</hi> cognoscentur, et cognito angulo <hi rendition="#i">ced</hi>
 						cognoscetur arcus <hi rendition="#i">cf</hi> in terra et ei <app type="Bfootnote">
-							<lem type="main">respondens in circulo magno</lem>
-							<note type="lemma-abbrev">respondens</note>
-							<rdg wit="#L" n="1"> magno in circulo </rdg>
-							<rdg wit="#L" n="2"> in circulo magno <hi rendition="#i">L</hi></rdg>
-						</app> sphaerae coelestis arcus <hi rendition="#i">gh</hi> ex centro terrae
-							<hi rendition="#i">e</hi> et Zenith loci <hi rendition="#i">g</hi> in
+<lem type="main">respondens in circulo magno</lem>
+<note type="lemma-abbrev">respondens</note>
+<rdg wit="#L" n="1"> magno in circulo </rdg>
+<rdg wit="#L" n="2"> in circulo magno <hi rendition="#i">L</hi>
+</rdg>
+</app> sphaerae coelestis arcus <hi rendition="#i">gh</hi> ex centro terrae
+<hi rendition="#i">e</hi> et Zenith loci <hi rendition="#i">g</hi> in
 						sphaera coelesti sumpto descriptus, (ac proinde portio cujusdam verticalis
-							<app type="Bfootnote">
-							<lem type="main">loci) et, si</lem>
-							<note type="lemma-abbrev">loci)</note>
-							<rdg wit="#L" n="1"> etsi </rdg>
-							<rdg wit="#L" n="2"> et, si <hi rendition="#i">L</hi></rdg>
-						</app> continuetur, per locum Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> incorrectum <hi rendition="#i">i</hi> in eadem sphaera assumptum
+<app type="Bfootnote">
+<lem type="main">loci) et, si</lem>
+<note type="lemma-abbrev">loci)</note>
+<rdg wit="#L" n="1"> etsi </rdg>
+<rdg wit="#L" n="2"> et, si <hi rendition="#i">L</hi>
+</rdg>
+</app> continuetur, per locum Lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> incorrectum <hi rendition="#i">i</hi> in eadem sphaera assumptum
 						transiens. Unde intelligitur, <hi rendition="#i">h</hi> esse in sphaera
 						coelesti locum Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> verum. Hinc <hi rendition="#g">Tabulae</hi> construi poterunt,
+<term>luna</term>
+</index> verum. Hinc <hi rendition="#g">Tabulae</hi> construi poterunt,
 						quibus data Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> obliquitate seu elevatione <app type="Bfootnote">
-							<lem type="main">super horizontem</lem>
-							<rdg wit="#L" cause="addition"><add>super horizontem</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>, quantitas parallaxeos<index indexName="Sachverzeichnis">
-							<term>parallaxis</term>
-						</index> sine calculo inveniatur. Idem Mechanice, sine tabula et calculo,
-							<hi rendition="#g">instrumento</hi> apto, poterit praestari. Habemus
-						ergo veram <hi rendition="#g">Lunae</hi><index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>
-						<hi rendition="#g">latitudinem</hi>
-						<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index>hac observatione inventam, et in sphaera artificiali notandam.</p>
-					<p xml:id="Ch6.S2.p38">Ego vero hoc amplius ajo ex eadem observatione <hi rendition="#g">Tempus praesens Mundi</hi> elici posse.</p>
-					<pb type="VIII_1" n="88"/>
-					<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch6.S2.p39">
-						<graphic url="./images/35_15_6_71rfig1.svg" width="195.129pt" xml:id="Ch6.S2.p39.g1"/>
-						<head rendition="#c"><hi rendition="#i">[Fig. 1]</hi></head>
-					</figure>
-					<p xml:id="Ch6.S2.p40"><pb type="L"/><fw type="folNum">[71 v<hi rendition="#sup">o</hi>]</fw> Nam ex hac observatione praecise colligetur <hi rendition="#g">aetas</hi>
-						<hi rendition="#g">Lunae,</hi><index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> quod ita ostendo.</p>
-					<p xml:id="Ch6.S2.p41">Constat Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> revolutionem a primi mobilis revolutione 13. gradibus relinqui, ac
+<term>luna</term>
+</index> obliquitate seu elevatione <app type="Bfootnote">
+<lem type="main">super horizontem</lem>
+<rdg wit="#L" cause="addition">
+<add>super horizontem</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>, quantitas parallaxeos<index indexName="Sachverzeichnis">
+<term>parallaxis</term>
+</index> sine calculo inveniatur. Idem Mechanice, sine tabula et calculo,
+<hi rendition="#g">instrumento</hi> apto, poterit praestari. Habemus
+						ergo veram <hi rendition="#g">Lunae</hi>
+<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>
+<hi rendition="#g">latitudinem</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>hac observatione inventam, et in sphaera artificiali notandam.</p>
+<p xml:id="Ch6.S2.p38">Ego vero hoc amplius ajo ex eadem observatione <hi rendition="#g">Tempus praesens Mundi</hi> elici posse.</p>
+<pb type="VIII_1" n="88"/>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch6.S2.p39">
+<graphic url="./images/35_15_6_71rfig1.svg" width="195.129pt" xml:id="Ch6.S2.p39.g1"/>
+<head rendition="#c">
+<hi rendition="#i">[Fig. 1]</hi>
+</head>
+</figure>
+<p xml:id="Ch6.S2.p40">
+<pb type="L"/>
+<fw type="folNum">[71 v<hi rendition="#sup">o</hi>]
+</fw> Nam ex hac observatione praecise colligetur <hi rendition="#g">aetas</hi>
+<hi rendition="#g">Lunae,</hi>
+<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> quod ita ostendo.</p>
+<p xml:id="Ch6.S2.p41">Constat Lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> revolutionem a primi mobilis revolutione 13. gradibus relinqui, ac
 						proinde Lunam<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> continue per totum Mensem, situm in sphaera fixarum<index indexName="Sachverzeichnis">
-							<term>sphaera</term>
-							<index>
-								<term>fixarum</term>
-							</index>
-						</index> mutare, ergo dato loco Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> in sphaera fixarum<index indexName="Sachverzeichnis">
-							<term>sphaera</term>
-							<index>
-								<term>fixarum</term>
-							</index>
-						</index>, dabitur tempus mensis seu aetas Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>.</p>
-					<p xml:id="Ch6.S2.p42">Videamus tantum an mutatio illa loci seu situs <app type="Bfootnote">
-							<lem type="main">Lunae<index indexName="Sachverzeichnis">
-									<term>luna</term>
-								</index></lem>
-							<rdg wit="#L" cause="addition"><add>Lunae<index indexName="Sachverzeichnis">
-										<term>luna</term>
-									</index>
-								</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>, in respectu fixarum<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index>, exiguo tempore sit sensibilis, ad tempus mensis satis accurate
+<term>luna</term>
+</index> continue per totum Mensem, situm in sphaera fixarum<index indexName="Sachverzeichnis">
+<term>sphaera</term>
+<index>
+<term>fixarum</term>
+</index>
+</index> mutare, ergo dato loco Lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> in sphaera fixarum<index indexName="Sachverzeichnis">
+<term>sphaera</term>
+<index>
+<term>fixarum</term>
+</index>
+</index>, dabitur tempus mensis seu aetas Lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>.
+</p>
+<p xml:id="Ch6.S2.p42">Videamus tantum an mutatio illa loci seu situs <app type="Bfootnote">
+<lem type="main">Lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>Lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>, in respectu fixarum<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index>, exiguo tempore sit sensibilis, ad tempus mensis satis accurate
 						supputandum; quod ita inveniemus: cum Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> singulis 24. horis primi mobilis, 13. gradibus retardet, ergo una
+<term>luna</term>
+</index> singulis 24. horis primi mobilis, 13. gradibus retardet, ergo una
 						hora retardabit <app type="Bfootnote">
-							<lem type="main">seu a puncto sphaerae fixarum<index indexName="Sachverzeichnis">
-									<term>sphaera</term>
-									<index>
-										<term>fixarum</term>
-									</index>
-								</index> sub quo antea fuerat, praevenietur </lem>
-							<rdg wit="#L" cause="addition"><add>seu <seg type="apparat-ellipsis"/>
+<lem type="main">seu a puncto sphaerae fixarum<index indexName="Sachverzeichnis">
+<term>sphaera</term>
+<index>
+<term>fixarum</term>
+</index>
+</index> sub quo antea fuerat, praevenietur </lem>
+<rdg wit="#L" cause="addition">
+<add>seu <seg type="apparat-ellipsis"/>
 									praevenietur</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>
-						<formula xml:id="Ch6.S2.p42.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mn>13</m:mn>
-										<m:mn>24</m:mn>
-									</m:mfrac>
-								</m:mstyle>
-							</m:math>
-						</formula><hi rendition="#sup">tis</hi> gradus, et minuto horae <app type="Bfootnote">
-							<lem type="main">differet</lem>
-							<rdg wit="#L" cause="addition"><add>differet</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>
-						<formula xml:id="Ch6.S2.p42.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mstyle displaystyle="true">
-									<m:mfrac>
-										<m:mn>13</m:mn>
-										<m:mn>1440</m:mn>
-									</m:mfrac>
-								</m:mstyle>
-							</m:math>
-						</formula><hi rendition="#sup">mis</hi> gradus id est amplius paulo, quam
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<formula xml:id="Ch6.S2.p42.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>13</m:mn>
+<m:mn>24</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>
+<hi rendition="#sup">tis</hi> gradus, et minuto horae <app type="Bfootnote">
+<lem type="main">differet</lem>
+<rdg wit="#L" cause="addition">
+<add>differet</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<formula xml:id="Ch6.S2.p42.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>13</m:mn>
+<m:mn>1440</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>
+<hi rendition="#sup">mis</hi> gradus id est amplius paulo, quam
 						parte gradus centesima vigesima <app type="Bfootnote">
-							<lem type="main">(nam <formula xml:id="Ch6.S2.p42.m3">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mstyle displaystyle="true">
-											<m:mfrac>
-												<m:mn>12</m:mn>
-												<m:mn>1440</m:mn>
-											</m:mfrac>
-										</m:mstyle>
-									</m:math>
-								</formula>  est   <!--  \hack{\protect\rule[-4mm]{0.2mm}{10mm}\hspace{5pt}} -->
-								<!--\hackfor-in-math{\left\vert}--><!--\hackfor-in-math{\right.}--><formula xml:id="Ch6.S2.p42.m4">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:mrow>
-											<m:mo>|</m:mo>
-											<m:mstyle displaystyle="true">
-												<m:mfrac>
-												<m:mn>1</m:mn>
-												<m:mn>120</m:mn>
-												</m:mfrac>
-											</m:mstyle>
-										</m:mrow>
-									</m:math>
-								</formula>)</lem>
-							<rdg wit="#L" cause="addition"><add>(nam <formula xml:id="Ch6.S2.p42.m5">
-										<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-											<m:mpadded width="+5.5pt">
-												<m:mstyle displaystyle="true">
-												<m:mfrac>
-												<m:mn>12</m:mn>
-												<m:mn>1440</m:mn>
-												</m:mfrac>
-												</m:mstyle>
-											</m:mpadded>
-										</m:math>
-									</formula> est <!--  \hack{\protect\rule[-4mm]{0.2mm}{8mm}} -->
-									<!--\hackfor-in-math{\left\vert}--><!--\hackfor-in-math{\right.}--><formula xml:id="Ch6.S2.p42.m6">
-										<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-											<m:mrow>
-												<m:mo lspace="7.5pt">|</m:mo>
-												<m:mstyle displaystyle="true">
-												<m:mfrac>
-												<m:mn>1</m:mn>
-												<m:mn>120</m:mn>
-												</m:mfrac>
-												</m:mstyle>
-											</m:mrow>
-										</m:math>
-									</formula>)</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>, <pb type="VIII_1" n="89"/>seu paulo amplius dimidio minuto primo
+<lem type="main">(nam <formula xml:id="Ch6.S2.p42.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>12</m:mn>
+<m:mn>1440</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>  est   <!--  \hack{\protect\rule[-4mm]{0.2mm}{10mm}\hspace{5pt}} -->
+<!--\hackfor-in-math{\left\vert}--><!--\hackfor-in-math{\right.}-->
+<formula xml:id="Ch6.S2.p42.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo>|</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>120</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>)
+</lem>
+<rdg wit="#L" cause="addition">
+<add>(nam <formula xml:id="Ch6.S2.p42.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+5.5pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>12</m:mn>
+<m:mn>1440</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> est <!--  \hack{\protect\rule[-4mm]{0.2mm}{8mm}} -->
+<!--\hackfor-in-math{\left\vert}--><!--\hackfor-in-math{\right.}-->
+<formula xml:id="Ch6.S2.p42.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo lspace="7.5pt">|</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>120</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>)
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>,<pb type="VIII_1" n="89"/>
+seu paulo amplius dimidio minuto primo
 						gradus, quod <app type="Bfootnote">
-							<lem type="main">scilicet</lem>
-							<note type="lemma-abbrev">quod</note>
-							<rdg wit="#L" n="1"> scil. </rdg>
-							<rdg wit="#L" n="2"> scilicet <hi rendition="#i">L</hi></rdg>
-						</app> in circulo latitudinis<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> seu Parallelo<index indexName="Sachverzeichnis">
-							<term>circulus parallelus</term>
-						</index> in quo Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> versatur, est <app type="Bfootnote">
-							<lem type="main">aestimandum. Idque tanto</lem>
-							<note type="lemma-abbrev">est</note>
-							<rdg wit="#L" n="1"> aestimanda, </rdg>
-							<rdg wit="#L" n="2"> aestimandum, quod tanto </rdg>
-							<rdg wit="#L" n="3"> aestimandum. Idque tanto <hi rendition="#i">L</hi></rdg>
-						</app> exactius <app type="Bfootnote">
-							<lem type="main">poterit per observationes</lem>
-							<note type="lemma-abbrev">poterit</note>
-							<rdg wit="#L" n="1"> observationibus </rdg>
-							<rdg wit="#L" n="2"> per observationes <hi rendition="#i">L</hi></rdg>
-						</app> aestimari, quanto et ipsa <hi rendition="#g">Luna</hi><index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>
-						<hi rendition="#g">aequatori</hi><index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index>
-						<hi rendition="#g">est proprior,</hi> et nos propriores <hi rendition="#g">ipsi</hi>
-						<hi rendition="#g">Lunae.</hi><index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> Quanquam certe, quod ad primum casum attinet, <app type="Bfootnote">
-							<lem type="main">licet Luna<index indexName="Sachverzeichnis">
-									<term>luna</term>
-								</index> ab aequatore<index indexName="Sachverzeichnis">
-									<term>aequator</term>
-								</index> sit remotior</lem>
-							<rdg wit="#L" cause="addition"><add>licet Luna<index indexName="Sachverzeichnis">
-										<term>luna</term>
-									</index> ab aequatore<index indexName="Sachverzeichnis">
-										<term>aequator</term>
-									</index> sit remotior</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>, paralleli aequatoris<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index>, seu circuli latitudinis<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-						</index> intra aequatorem<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index>, in quibus scilicet solis<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> versari potest, non admodum inter se et ab aequatore<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> magnitudine differant; et quantum ad secundum, vicissim nos quanto
+<lem type="main">scilicet</lem>
+<note type="lemma-abbrev">quod</note>
+<rdg wit="#L" n="1"> scil. </rdg>
+<rdg wit="#L" n="2"> scilicet <hi rendition="#i">L</hi>
+</rdg>
+</app> in circulo latitudinis<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> seu Parallelo<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index> in quo Luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> versatur, est <app type="Bfootnote">
+<lem type="main">aestimandum. Idque tanto</lem>
+<note type="lemma-abbrev">est</note>
+<rdg wit="#L" n="1"> aestimanda, </rdg>
+<rdg wit="#L" n="2"> aestimandum, quod tanto </rdg>
+<rdg wit="#L" n="3"> aestimandum. Idque tanto <hi rendition="#i">L</hi>
+</rdg>
+</app> exactius <app type="Bfootnote">
+<lem type="main">poterit per observationes</lem>
+<note type="lemma-abbrev">poterit</note>
+<rdg wit="#L" n="1"> observationibus </rdg>
+<rdg wit="#L" n="2"> per observationes <hi rendition="#i">L</hi>
+</rdg>
+</app> aestimari, quanto et ipsa <hi rendition="#g">Luna</hi>
+<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>
+<hi rendition="#g">aequatori</hi>
+<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index>
+<hi rendition="#g">est proprior,</hi> et nos propriores <hi rendition="#g">ipsi</hi>
+<hi rendition="#g">Lunae.</hi>
+<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> Quanquam certe, quod ad primum casum attinet, <app type="Bfootnote">
+<lem type="main">licet Luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> ab aequatore<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> sit remotior</lem>
+<rdg wit="#L" cause="addition">
+<add>licet Luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> ab aequatore<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> sit remotior</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>, paralleli aequatoris<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index>, seu circuli latitudinis<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index> intra aequatorem<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index>, in quibus scilicet solis<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> versari potest, non admodum inter se et ab aequatore<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> magnitudine differant; et quantum ad secundum, vicissim nos quanto
 						magis a Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> versus Polum<index indexName="Sachverzeichnis">
-							<term>polus</term>
-						</index> absumus, seu quanto major Poli elevatio<index indexName="Sachverzeichnis">
-							<term>elevatio</term>
-							<index>
-								<term>poli</term>
-							</index>
-						</index> est, eo minus exactitudine observationum indigeamus, quia error
+<term>luna</term>
+</index> versus Polum<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index> absumus, seu quanto major Poli elevatio<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index> est, eo minus exactitudine observationum indigeamus, quia error
 						circa longitudines in Parallelo<index indexName="Sachverzeichnis">
-							<term>circulus parallelus</term>
-						</index> minore, seu ab aequatore <index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> remotione minus est sensibilis.</p>
-					<p xml:id="Ch6.S2.p43">Determinato ergo loco Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> in sphaera fixarum<index indexName="Sachverzeichnis">
-							<term>sphaera</term>
-							<index>
-								<term>fixarum</term>
-							</index>
-						</index>, quanta fieri potest exactitudine; patet per Ephemerides<index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index> ad institutum istud debite accommodatas, determinatam esse aetatem
+<term>circulus parallelus</term>
+</index> minore, seu ab aequatore <index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> remotione minus est sensibilis.</p>
+<p xml:id="Ch6.S2.p43">Determinato ergo loco Lunae<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> in sphaera fixarum<index indexName="Sachverzeichnis">
+<term>sphaera</term>
+<index>
+<term>fixarum</term>
+</index>
+</index>, quanta fieri potest exactitudine; patet per Ephemerides<index indexName="Sachverzeichnis">
+<term>ephemeris</term>
+</index> ad institutum istud debite accommodatas, determinatam esse aetatem
 							Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>, seu tempus mensis<app type="Bfootnote">
-							<lem type="main">. Et</lem>
-							<note type="lemma-abbrev">mensis</note>
-							<rdg wit="#L" n="1"> , et </rdg>
-							<rdg wit="#L" n="2"> . Et <hi rendition="#i">L</hi></rdg>
-						</app> omnium <pb type="L"/><fw type="folNum">[72 r<hi rendition="#sup">o</hi>]</fw> mensium similem esse rationem quia luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> ad easdem semper fixas<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> eodem modo redit.</p>
-					<p xml:id="Ch6.S2.p44">Ad hoc institutum tabulae peculiares usui nautico
+<term>luna</term>
+</index>, seu tempus mensis<app type="Bfootnote">
+<lem type="main">. Et</lem>
+<note type="lemma-abbrev">mensis</note>
+<rdg wit="#L" n="1"> , et </rdg>
+<rdg wit="#L" n="2"> . Et <hi rendition="#i">L</hi>
+</rdg>
+</app> omnium <pb type="L"/>
+<fw type="folNum">[72 r<hi rendition="#sup">o</hi>]
+</fw> mensium similem esse rationem quia luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> ad easdem semper fixas<index indexName="Sachverzeichnis">
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> eodem modo redit.</p>
+<p xml:id="Ch6.S2.p44">Ad hoc institutum tabulae peculiares usui nautico
 						accommodatae fieri possunt quae monstrent, qua mensis lunaris, non tantum
 						die horaque lunari, sed et minuto minimum primo, quis sit locus lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> in sphaera fixarum<index indexName="Sachverzeichnis">
-							<term>sphaera</term>
-							<index>
-								<term>fixarum</term>
-							</index>
-						</index>. Ad eandem rem machina fieri, vel potius ad sphaeram nostram
+<term>luna</term>
+</index> in sphaera fixarum<index indexName="Sachverzeichnis">
+<term>sphaera</term>
+<index>
+<term>fixarum</term>
+</index>
+</index>. Ad eandem rem machina fieri, vel potius ad sphaeram nostram
 						artificialem, eo quo supra dixi modo dispositam, accommodari potest, in qua
 							Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> artificialis Zodiacum<index indexName="Sachverzeichnis">
-							<term>zodiacus</term>
-						</index> sphaerae suo modo percurrens, sphaera ipsa interim suo motu proprio
+<term>luna</term>
+</index> artificialis Zodiacum<index indexName="Sachverzeichnis">
+<term>zodiacus</term>
+</index> sphaerae suo modo percurrens, sphaera ipsa interim suo motu proprio
 						revoluta, monstrabit, et (modo sphaera ipsa satis ampla sit), ad minuta
 						prima usque <app type="Bfootnote">
-							<lem type="main">definiet</lem>
-							<rdg wit="#L" cause="addition"><add>definiet</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>, si volumus, quo minuto primo, quo in loco coeli versetur Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>. Nec opus est machinam istam in Navi<index indexName="Sachverzeichnis">
-							<term>navis</term>
-						</index> esse, sufficeret eum, qui primus tabulam ejusmodi locorum
+<lem type="main">definiet</lem>
+<rdg wit="#L" cause="addition">
+<add>definiet</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>, si volumus, quo minuto primo, quo in loco coeli versetur Luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index>. Nec opus est machinam istam in Navi<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> esse, sufficeret eum, qui primus tabulam ejusmodi locorum
 							Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index>, sine calculi molestia de novo condere, aut tabulas ab aliis
+<term>luna</term>
+</index>, sine calculi molestia de novo condere, aut tabulas ab aliis
 						conditas examinare vellet, talem machinam ante oculos habere, et quidquid in
 						ea de minuto in minutum observat in tabulam referre suspenso cum volet et
 						postea rursus cum volet liberato motu machinae, prout ei otium ad eam rem
-							<app type="Bfootnote">
-							<lem type="main">observandam</lem>
-							<rdg wit="#L" cause="addition"><add>observandam</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> erit, aut non erit. Idque exactissime poterit haberi, si machina in
-						loco stabili posita, <pb type="VIII_1" n="90"/>pendulo<index indexName="Sachverzeichnis">
-							<term>pendulum</term>
-						</index> animetur. Imo nec homine opus erit machinam continuo observante:
+<app type="Bfootnote">
+<lem type="main">observandam</lem>
+<rdg wit="#L" cause="addition">
+<add>observandam</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> erit, aut non erit. Idque exactissime poterit haberi, si machina in
+						loco stabili posita, <pb type="VIII_1" n="90"/>
+pendulo<index indexName="Sachverzeichnis">
+<term>pendulum</term>
+</index> animetur. Imo nec homine opus erit machinam continuo observante:
 						fieri enim poterit, ut ipsamet Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> artificialis punctis quibusdam coloratis quolibet minuto <app type="Bfootnote">
-							<lem type="main">impressis</lem>
-							<rdg wit="#L" cause="addition"><add>impressis</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>, locum suum in sphaera artificiali monstret.</p>
-					<p xml:id="Ch6.S2.p45">Qua <hi rendition="#g">tabulas</hi> astronomicas condendi
+<term>luna</term>
+</index> artificialis punctis quibusdam coloratis quolibet minuto <app type="Bfootnote">
+<lem type="main">impressis</lem>
+<rdg wit="#L" cause="addition">
+<add>impressis</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>, locum suum in sphaera artificiali monstret.</p>
+<p xml:id="Ch6.S2.p45">Qua <hi rendition="#g">tabulas</hi> astronomicas condendi
 						aut examinandi ratione sane nova et satis ad usum Geographicum accurata,
 						nihil facile elegantius jucundiusque fingi potest.</p>
-					<p xml:id="Ch6.S2.p46">Ex his intelligi potest non in <hi rendition="#g">Luna</hi><index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> tantum sed et in omnibus Planetis aliis idem esse <pb type="L"/><fw type="folNum">[72 v<hi rendition="#sup">o</hi>]</fw> fundamentum
+<p xml:id="Ch6.S2.p46">Ex his intelligi potest non in <hi rendition="#g">Luna</hi>
+<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> tantum sed et in omnibus Planetis aliis idem esse <pb type="L"/>
+<fw type="folNum">[72 v<hi rendition="#sup">o</hi>]
+</fw> fundamentum
 						Astronomicum computandi tempus Mundi praesens, sed quod non aeque facile
-						praxi applicetur; et primum quod <hi rendition="#g">solem</hi><index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> attinet, <app type="Bfootnote">
-							<lem type="main">difficultas objicitur</lem>
-							<rdg wit="#L" cause="addition"><add>difficultas objicitur</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>
-						<hi rendition="#g">tum</hi> quia solis<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> locus in respectu ad alias stellas<index indexName="Sachverzeichnis">
-							<term>stella</term>
-						</index> non aeque facile observationibus haberi potest, (nisi quatenus eos
+						praxi applicetur; et primum quod <hi rendition="#g">solem</hi>
+<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> attinet, <app type="Bfootnote">
+<lem type="main">difficultas objicitur</lem>
+<rdg wit="#L" cause="addition">
+<add>difficultas objicitur</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#g">tum</hi> quia solis<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> locus in respectu ad alias stellas<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index> non aeque facile observationibus haberi potest, (nisi quatenus eos
 						radiis suis involvit, item quatenus saepe fit, ut sol<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> et luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> mane, aut vesperi simul videantur, quo casu itidem habemus facilem
+<term>sol</term>
+</index> et luna<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> mane, aut vesperi simul videantur, quo casu itidem habemus facilem
 						satis computandi rationem; aut quatenus eclipses nobis monstrant situm
 						utriusque sideris<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index>, etsi unum eorum tantum videatur;) <hi rendition="#g">tum</hi> quia
+<term>sidus</term>
+</index>, etsi unum eorum tantum videatur;) <hi rendition="#g">tum</hi> quia
 						solis motus a stellarum fixarum<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> motu diversus, exiguo tempore non redditur sensibilis; cum enim
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> motu diversus, exiguo tempore non redditur sensibilis; cum enim
 							Luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> una primi mobilis revolutione gradibus retardet tredecim, sol<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index> praeceditur non nisi uno; quod posterius incommodum est in <hi rendition="#g">caeteris planetis</hi> praeter Lunam<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> omnibus (demptis <app type="Bfootnote">
-							<lem type="main">certo modo</lem>
-							<rdg wit="#L" cause="addition"><add>certo modo</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> Jovialibus, ut postea dicam) et etsi priore careant, id est etsi
+<term>luna</term>
+</index> una primi mobilis revolutione gradibus retardet tredecim, sol<index indexName="Sachverzeichnis">
+<term>sol</term>
+</index> praeceditur non nisi uno; quod posterius incommodum est in <hi rendition="#g">caeteris planetis</hi> praeter Lunam<index indexName="Sachverzeichnis">
+<term>luna</term>
+</index> omnibus (demptis <app type="Bfootnote">
+<lem type="main">certo modo</lem>
+<rdg wit="#L" cause="addition">
+<add>certo modo</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> Jovialibus, ut postea dicam) et etsi priore careant, id est etsi
 						possint simul cum fixis<index indexName="Sachverzeichnis">
-							<term>stella</term>
-							<index>
-								<term>fixa</term>
-							</index>
-						</index> observari, habent tamen aliud, ut rarius appareant in coelo quam
+<term>stella</term>
+<index>
+<term>fixa</term>
+</index>
+</index> observari, habent tamen aliud, ut rarius appareant in coelo quam
 							sol<index indexName="Sachverzeichnis">
-							<term>sol</term>
-						</index>. Quicquid ejus tamen sit, certum est si plures simul aut diversis
+<term>sol</term>
+</index>. Quicquid ejus tamen sit, certum est si plures simul aut diversis
 						exigui inter se intervalli temporibus Planetae observentur, computationem
 						redditum iri certiorem. Et speciatim in <hi rendition="#g">sideribus
 							circumjovialibus</hi> notatum est, earum revolutiones peculiares circa
 							Jovem<index indexName="Sachverzeichnis">
-							<term>Jovis</term>
-						</index> esse satis celeres, quarum Ephemerides<index indexName="Sachverzeichnis">
-							<term>ephemeris</term>
-						</index>, si ut speramus ad perfectionem deducentur, poterit horum quoque
+<term>Jovis</term>
+</index> esse satis celeres, quarum Ephemerides<index indexName="Sachverzeichnis">
+<term>ephemeris</term>
+</index>, si ut speramus ad perfectionem deducentur, poterit horum quoque
 							siderum<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> telescopio<index indexName="Sachverzeichnis">
-							<term>telescopium</term>
-						</index> observatorum usus esse aliquando ad tempus mundi praesens, seu
+<term>sidus</term>
+</index> telescopio<index indexName="Sachverzeichnis">
+<term>telescopium</term>
+</index> observatorum usus esse aliquando ad tempus mundi praesens, seu
 						ipsius revolutionis vel periodi particularis aetatem definiendam, luna<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> non apparente; sed rarus eorum conspectus est, nec proinde magnus
+<term>luna</term>
+</index> non apparente; sed rarus eorum conspectus est, nec proinde magnus
 						inde fructus in mari sperandus, etsi ad longitudines<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> locorum <pb type="L"/><fw type="folNum">[73 r<hi rendition="#sup">o</hi>]</fw> terrae definiendas accuratius quam hactenus habemus,
+<term>longitudo</term>
+</index> locorum <pb type="L"/>
+<fw type="folNum">[73 r<hi rendition="#sup">o</hi>]
+</fw> terrae definiendas accuratius quam hactenus habemus,
 						insigni usui esse possint.</p>
-					<p xml:id="Ch6.S2.p47">Sed ut ad rem nostram redeamus dicet aliquis, aetate
+<p xml:id="Ch6.S2.p47">Sed ut ad rem nostram redeamus dicet aliquis, aetate
 							Lunae<index indexName="Sachverzeichnis">
-							<term>luna</term>
-						</index> definita (aut periodo siderum circumjovialium) definietur non ideo
-						tempus praesens mundi, <pb type="VIII_1" n="91"/>quia ignoramus quoto mense
+<term>luna</term>
+</index> definita (aut periodo siderum circumjovialium) definietur non ideo
+						tempus praesens mundi, <pb type="VIII_1" n="91"/>
+quia ignoramus quoto mense
 						aut <app type="Bfootnote">
-							<lem type="main">quota </lem>
-							<rdg wit="#L" cause="addition"><add>quota</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>periodo nunc a patria seu loco cognitae longitudinis<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> absimus, sciemus ergo aetatem mensis (aut periodi) sed non cujus
+<lem type="main">quota </lem>
+<rdg wit="#L" cause="addition">
+<add>quota</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>periodo nunc a patria seu loco cognitae longitudinis<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> absimus, sciemus ergo aetatem mensis (aut periodi) sed non cujus
 						mensis aut cujus periodi. Sed facilis responsio est non posse Nautas in
 						tempore suo etiam sine omnibus horologiis<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> numerando, ita aberrare ut
+<term>horologium</term>
+</index> numerando, ita aberrare ut
 							<!--  \hack{\edtext{pluribus diebus integris}{\lemma{ut}\Afootnote{ \textit{ (1) }\ una die integra \textit{ (2) }\ pluribus diebus integris \textit{ L }\ \hspace{10mm}15f.\hspace{3mm} 3 $^\smallfrown$ 720\textsuperscript{ma} \textit{ (1) }\ pars circuli seu \textit{ (2) }\ seu 2160\textsuperscript{ma} pars circuli \textit{ L}}}} 
-     \hackfor{\edtext{pluribus diebus integris}{\lemma{ut}\Afootnote{ \textit{ (1) }\ una die integra \textit{ (2) }\ pluribus diebus integris \textit{ L }}}\edtext{}{\lemma{}\Afootnote{3 $^\smallfrown$ 720\textsuperscript{ma} \textit{ (1) }\ pars circuli seu \textit{ (2) }\ seu 2160\textsuperscript{ma} pars circuli \textit{ L}}}}--><app type="Bfootnote">
-							<lem type="main">pluribus diebus integris</lem>
-							<note type="lemma-abbrev">ut</note>
-							<rdg wit="#L" n="1"> una die integra </rdg>
-							<rdg wit="#L" n="2"> pluribus diebus integris <hi rendition="#i">L</hi>
-							</rdg>
-						</app><app type="Bfootnote">
-							<lem type="main"/>
-							<rdg wit="#L">3 <formula xml:id="Ch6.S2.p47.m1">
-									<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-										<m:msup>
-											<m:mi/>
-											<m:mo>⌢</m:mo>
-										</m:msup>
-									</m:math>
-								</formula> 720<hi rendition="#sup">ma</hi>
-							</rdg>
-							<rdg wit="#L" n="1"> pars circuli seu </rdg>
-							<rdg wit="#L" n="2"> seu 2160<hi rendition="#sup">ma</hi> pars circuli
-									<hi rendition="#i">L</hi></rdg>
-						</app>, nedum ut mense toto (idem est de circumjoviali periodo, etsi mense
+     \hackfor{\edtext{pluribus diebus integris}{\lemma{ut}\Afootnote{ \textit{ (1) }\ una die integra \textit{ (2) }\ pluribus diebus integris \textit{ L }}}\edtext{}{\lemma{}\Afootnote{3 $^\smallfrown$ 720\textsuperscript{ma} \textit{ (1) }\ pars circuli seu \textit{ (2) }\ seu 2160\textsuperscript{ma} pars circuli \textit{ L}}}}-->
+<app type="Bfootnote">
+<lem type="main">pluribus diebus integris</lem>
+<note type="lemma-abbrev">ut</note>
+<rdg wit="#L" n="1"> una die integra </rdg>
+<rdg wit="#L" n="2"> pluribus diebus integris <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main"/>
+<rdg wit="#L">3 <formula xml:id="Ch6.S2.p47.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:msup>
+<m:mi/>
+<m:mo>⌢</m:mo>
+</m:msup>
+</m:math>
+</formula> 720<hi rendition="#sup">ma</hi>
+</rdg>
+<rdg wit="#L" n="1"> pars circuli seu </rdg>
+<rdg wit="#L" n="2"> seu 2160<hi rendition="#sup">ma</hi> pars circuli
+<hi rendition="#i">L</hi>
+</rdg>
+</app>, nedum ut mense toto (idem est de circumjoviali periodo, etsi mense
 						minori) fallantur; nec numeratio tantum dierum et noctium, sed et
 						qualecunque Horologium<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> eos ab hoc periculo expediet.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: NB. Malum in eo est, quod
+<term>horologium</term>
+</index> eos ab hoc periculo expediet.<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am Rand</hi>: NB. Malum in eo est, quod
 							nondum restitutus est motus lunaris, fatente ipso Bullialdo<index indexName="Namensregister">
-								<term><hi rendition="#g">Boulliau</hi> (Bullialdus), Ismael
+<term>
+<hi rendition="#g">Boulliau</hi> (Bullialdus), Ismael
 									1605–1694</term>
-							</index>. Sed errari potest tertia horae parte, seu 72<hi rendition="#sup">ma</hi> circuli <formula xml:id="Ch6.S2.p47.m2">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:mtable rowspacing="10pt">
-										<m:mtr>
-											<m:mtd columnalign="left">
-												<m:mpadded lspace="5.5pt" width="+5.5pt">
-												<m:mn>8</m:mn>
-												</m:mpadded>
-											</m:mtd>
-										</m:mtr>
-										<m:mtr>
-											<m:mtd columnalign="left">
-												<m:mrow>
-												<m:menclose notation="updiagonalstrike">
-												<m:mn>3</m:mn>
-												</m:menclose>
-												<m:mo>⁢</m:mo>
-												<m:mpadded width="+5.5pt">
-												<m:mn>60</m:mn>
-												</m:mpadded>
-												<m:mo>⁢</m:mo>
-												<m:mpadded width="+5.5pt">
-												<m:mi>f</m:mi>
-												</m:mpadded>
-												<m:mo>⁢</m:mo>
-												<m:mn>5</m:mn>
-												</m:mrow>
-											</m:mtd>
-										</m:mtr>
-										<m:mtr>
-											<m:mtd columnalign="left">
-												<m:mrow>
-												<m:mpadded lspace="5.5pt" width="+5.5pt">
-												<m:menclose notation="updiagonalstrike">
-												<m:mn>7</m:mn>
-												</m:menclose>
-												</m:mpadded>
-												<m:mo>⁢</m:mo>
-												<m:mn>2</m:mn>
-												</m:mrow>
-											</m:mtd>
-										</m:mtr>
-									</m:mtable>
-								</m:math>
-							</formula> id est gradibus 5. Ac nescio an aliorum planetarum motus sit
+</index>. Sed errari potest tertia horae parte, seu 72<hi rendition="#sup">ma</hi> circuli <formula xml:id="Ch6.S2.p47.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mpadded lspace="5.5pt" width="+5.5pt">
+<m:mn>8</m:mn>
+</m:mpadded>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:menclose notation="updiagonalstrike">
+<m:mn>3</m:mn>
+</m:menclose>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5.5pt">
+<m:mn>60</m:mn>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5.5pt">
+<m:mi>f</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mn>5</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mpadded lspace="5.5pt" width="+5.5pt">
+<m:menclose notation="updiagonalstrike">
+<m:mn>7</m:mn>
+</m:menclose>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mn>2</m:mn>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula> id est gradibus 5. Ac nescio an aliorum planetarum motus sit
 							praecise exploratus. NB. autem fortasse tertia horae pars, seu error
 							motus lunaris intelligi debet non in circulo diurno, sed in
 								Zodiaco<index indexName="Sachverzeichnis">
-								<term>zodiacus</term>
-							</index>, quem☽  absolvit mense, id est diebus circiter 30. seu horis
+<term>zodiacus</term>
+</index>, quem☽  absolvit mense, id est diebus circiter 30. seu horis
 							720. Ergo error tabularum est 3 <formula xml:id="Ch6.S2.p47.m3">
-								<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-									<m:msup>
-										<m:mi/>
-										<m:mo>⌢</m:mo>
-									</m:msup>
-								</m:math>
-							</formula> 720<hi rendition="#sup">ma</hi> seu 2160<hi rendition="#sup">ma</hi> pars circuli Zodiaci<index indexName="Sachverzeichnis">
-								<term>zodiacus</term>
-							</index>. Cumque Zodiacus<index indexName="Sachverzeichnis">
-								<term>zodiacus</term>
-							</index> inclinatus sit ad aequatorem<index indexName="Sachverzeichnis">
-								<term>aequator</term>
-							</index> et parallelos<index indexName="Sachverzeichnis">
-								<term>circulus parallelus</term>
-							</index>, error in illis adhuc erit minor. Ergo vix futurus esset error
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:msup>
+<m:mi/>
+<m:mo>⌢</m:mo>
+</m:msup>
+</m:math>
+</formula> 720<hi rendition="#sup">ma</hi> seu 2160<hi rendition="#sup">ma</hi> pars circuli Zodiaci<index indexName="Sachverzeichnis">
+<term>zodiacus</term>
+</index>. Cumque Zodiacus<index indexName="Sachverzeichnis">
+<term>zodiacus</term>
+</index> inclinatus sit ad aequatorem<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> et parallelos<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index>, error in illis adhuc erit minor. Ergo vix futurus esset error
 							2 miliarium Germanicorum. An fortasse ratio erroris, in determinando
 							futuro Lunae<index indexName="Sachverzeichnis">
-								<term>luna</term>
-							</index> loco provenit ex variante distantia☽<hi rendition="#sup">nae</hi> a terra unde varia ejus parallaxis<index indexName="Sachverzeichnis">
-								<term>parallaxis</term>
-							</index>. Distantiae ergo☽<hi rendition="#sup">naris</hi> a terra
+<term>luna</term>
+</index> loco provenit ex variante distantia☽<hi rendition="#sup">nae</hi> a terra unde varia ejus parallaxis<index indexName="Sachverzeichnis">
+<term>parallaxis</term>
+</index>. Distantiae ergo☽<hi rendition="#sup">naris</hi> a terra
 							notitia nobis opus est, sine qua nec parallaxes<index indexName="Sachverzeichnis">
-								<term>parallaxis</term>
-							</index> haberi possunt.</note><app type="Cfootnote">
-							<lem type="main"/>
-							<note type="lemma-abbrev">Bullialdo</note>
-							<note type="editorial"><hi rendition="#k">J. Boulliau</hi>, <bibl corresp="#bib_00013"><hi rendition="#i">Astronomia
-										philolaica</hi>, Paris 1645, S. 131.</bibl></note>
-						</app></p>
-					<p xml:id="Ch6.S2.p48">Reperto ergo tandem tempore Mundi, longitudines<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> loci habemus in potestate, secundum methodum <hi rendition="#g">problematis prioris,</hi> perinde scilicet ac si Horo<pb type="VIII_1" n="92"/>logium<index indexName="Sachverzeichnis">
-							<term>horologium</term>
-						</index> exactum haberemus, Meridiano<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index>
-						<app type="Bfootnote">
-							<lem type="main">scilicet</lem>
-							<note type="lemma-abbrev">Meridiano</note>
-							<rdg wit="#L" n="1"> scil. </rdg>
-							<rdg wit="#L" n="2"> scilicet <hi rendition="#i">L</hi></rdg>
-						</app> primo sphaerae artificialis <app type="Bfootnote">
-							<lem type="main">supra descripto</lem>
-							<rdg wit="#L" cause="addition"><add>supra descripto</add>
-								<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> sideri<index indexName="Sachverzeichnis">
-							<term>sidus</term>
-						</index> cuidam, cujus cognita nobis ab eo praesens in Mundo distantia est,
+<term>parallaxis</term>
+</index> haberi possunt.</note>
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">Bullialdo</note>
+<note type="editorial">
+<hi rendition="#k">J. Boulliau</hi>,<bibl corresp="#bib_00013">
+<hi rendition="#i">Astronomia
+										philolaica</hi>, Paris 1645, S. 131.</bibl>
+</note>
+</app>
+</p>
+<p xml:id="Ch6.S2.p48">Reperto ergo tandem tempore Mundi, longitudines<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> loci habemus in potestate, secundum methodum <hi rendition="#g">problematis prioris,</hi> perinde scilicet ac si Horo<pb type="VIII_1" n="92"/>
+logium<index indexName="Sachverzeichnis">
+<term>horologium</term>
+</index> exactum haberemus, Meridiano<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">scilicet</lem>
+<note type="lemma-abbrev">Meridiano</note>
+<rdg wit="#L" n="1"> scil. </rdg>
+<rdg wit="#L" n="2"> scilicet <hi rendition="#i">L</hi>
+</rdg>
+</app> primo sphaerae artificialis <app type="Bfootnote">
+<lem type="main">supra descripto</lem>
+<rdg wit="#L" cause="addition">
+<add>supra descripto</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> sideri<index indexName="Sachverzeichnis">
+<term>sidus</term>
+</index> cuidam, cujus cognita nobis ab eo praesens in Mundo distantia est,
 						debite admoto: ita differentia Meridiani<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> loci et Meridiani<index indexName="Sachverzeichnis">
-							<term>meridianus</term>
-						</index> primi in aequatore<index indexName="Sachverzeichnis">
-							<term>aequator</term>
-						</index> numeranda, seu gradus longitudinis<index indexName="Sachverzeichnis">
-							<term>longitudo</term>
-						</index> apparebit. Quodsi diversae aut simul, aut diversis temporibus ex
+<term>meridianus</term>
+</index> loci et Meridiani<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> primi in aequatore<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index> numeranda, seu gradus longitudinis<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> apparebit. Quodsi diversae aut simul, aut diversis temporibus ex
 						cognitae distantiae locis observationes instituantur ac inter se
 						comparentur, quales occasiones utique subinde offerentur, sic satis secura
 						reddetur navigatio, quantum ab observationibus coelestibus sperari
 						potest.</p>
-				</div>
-			</div>
-		</body>
-	</text>
+</div>
+</div>
+</body>
+</text>
 </TEI>

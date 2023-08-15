@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-047-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-047-000">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -6,38 +7,49 @@
         <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
           Text</title>
         <respStmt>
-          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-          <resp>
-            <note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
-          </resp>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
         </respStmt>
         <respStmt>
-          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-            Wissenschaften</orgName>
-          <resp>
-            <note type="remarkResponsibility">Inhaltliche Konzeption</note>
-          </resp>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
         </respStmt>
         <respStmt>
-          <persName>
-            <forename>Martina</forename>
-            <surname>Gödel</surname>
-          </persName>
-          <resp>
-            <note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
-          </resp>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
         </respStmt>
         <respStmt>
-          <persName>
-            <forename>Sebastian W.</forename>
-            <surname>Stork</surname>
-          </persName>
-          <resp>
-            <note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
-          </resp>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
         </respStmt>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
         <date type="creation">2021</date>
@@ -91,210 +103,231 @@
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#lektuere">
                 <summary>
-                  <p>Marginalien und Unterstreichungen im <ref corresp="#bib_00163"/><hi rendition="#i">Brief Huets an Chouet</hi> vom März 1673: Leibn. Marg. 105.</p>
+                  <p>Marginalien und Unterstreichungen im <ref corresp="#bib_00163"/>
+                  <hi rendition="#i">Brief Huets an Chouet</hi> vom März 1673: Leibn. Marg. 105.</p>
+              </summary>
+            </msContents>
+            <physDesc>
+              <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+            </physDesc>
+            <history>
+              <origin corresp="L_witness-origin-types.xml#origin-LiH"/>
+            </history>
+          </msDesc>
+        </witness>
+      </listWit>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <tagsDecl>
+      <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+      <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+      <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+      <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+      <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+      <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+      <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+      <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+    </tagsDecl>
+    <charDecl>
+      <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+      <!--rightpropto-->
+      <glyph xml:id="rightpropto">
+        <glyphName>rightpropto</glyphName>
+        <desc>...</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\rightpropto</mapping>
+        <graphic url="../../glyphs/rightpropto.svg"/>
+      </glyph>
+      <!-- leibdashv -->
+      <glyph xml:id="pleibdashv">
+        <glyphName>pleibdashv</glyphName>
+        <desc>Bedeutung (+−) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\pleibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <glyph xml:id="leibdashv">
+        <glyphName>leibdashv</glyphName>
+        <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\leibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <!-- Sonderzeichen MIT Unicodeentsprechung -->
+    </charDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="la"/>
+      <language ident="fr"/>
+    </langUsage>
+    <calendarDesc>
+      <calendar xml:id="gregorian">
+        <p>Gregorianischer Kalenderstil</p>
+      </calendar>
+      <calendar xml:id="julian">
+        <p>Julianischer Kalenderstil</p>
+      </calendar>
+    </calendarDesc>
+    <textClass>
+      <catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
+      <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+      <catRef scheme="L_subjects" target="L_subjects.xml#pneumatik"/>
+      <catRef scheme="L_terms" target="L_terms.xml#"/>
+    </textClass>
+    <abstract>
+      <listPerson>
+        <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+        <person sameAs="L_persons.xml#"/>
+      </listPerson>
+      <listPlace>
+        <place sameAs="L_places.xml#"/>
+      </listPlace>
+    </abstract>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021" who="#telota" status="base"/>
+    <change when="2021-11-16" who="#stork" status="enrich_1"/>
+  </revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-01-047-000_facs-haupttextzeuge">
+  <graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1610&amp;tx_dlf%5Bpage%5D=9"/>
+</facsimile>
+<text xml:id="L_08-01-047-000_text">
+  <body xml:id="Document">
+    <div type="chapter" xml:id="Ch47" n="47">
+      <head>47. ZU LETTRE À M. CHOUET</head>
+      <pb type="VIII_1" n="414"/>
+      <head>[Frühjahr 1673]</head>
+      <div type="ueberlieferung">
+        <p>
+          <hi rendition="#b #smaller">Überlieferung:</hi>
+          <listWit>
+            <witness>
+              <msDesc>
+                <msIdentifier>
+                  <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                  <idno type="Signatur">XXX</idno>
+                </msIdentifier>
+                <msContents>
+                  <summary>
+                    <p>Marginalien und Unterstreichungen im <ref corresp="#bib_00163"/>
+                    <hi rendition="#i">Brief Huets an Chouet</hi> vom März 1673: Leibn. Marg.
+                        105.</p>
                 </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
               </physDesc>
               <history>
-                <origin corresp="L_witness-origin-types.xml#origin-LiH"/>
+                <origin/>
               </history>
             </msDesc>
           </witness>
         </listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="../../glyphs/rightpropto.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-      </charDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="la"/>
-        <language ident="fr"/>
-      </langUsage>
-      <calendarDesc>
-        <calendar xml:id="gregorian">
-          <p>Gregorianischer Kalenderstil</p>
-        </calendar>
-        <calendar xml:id="julian">
-          <p>Julianischer Kalenderstil</p>
-        </calendar>
-      </calendarDesc>
-      <textClass>
-        <catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
-        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
-        <catRef scheme="L_subjects" target="L_subjects.xml#pneumatik"/>
-        <catRef scheme="L_terms" target="L_terms.xml#"/>
-      </textClass>
-      <abstract>
-        <listPerson>
-          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-          <person sameAs="L_persons.xml#"/>
-        </listPerson>
-        <listPlace>
-          <place sameAs="L_places.xml#"/>
-        </listPlace>
-      </abstract>
-    </profileDesc>
-    <revisionDesc>
-      <change when="2021" who="#telota" status="base"/>
-      <change when="2021-11-16" who="#stork" status="enrich_1"/>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-01-047-000_facs-haupttextzeuge">
-    <graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1610&amp;tx_dlf%5Bpage%5D=9"/>
-    </facsimile>
-  <text xml:id="L_08-01-047-000_text">
-    <body xml:id="Document">
-      <div type="chapter" xml:id="Ch47" n="47">
-        <head>47. ZU LETTRE À M. CHOUET</head>
-        <pb type="VIII_1" n="414"/>
-        <head>[Frühjahr 1673]</head>
-        <div type="ueberlieferung">
-          <p>
-            <hi rendition="#b #smaller">Überlieferung:</hi>
-            <listWit>
-              <witness>
-                <msDesc>
-                  <msIdentifier>
-                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-                    <idno type="Signatur">XXX</idno>
-                  </msIdentifier>
-                  <msContents>
-                    <summary>
-                      <p>Marginalien und Unterstreichungen im <ref corresp="#bib_00163"/><hi rendition="#i">Brief Huets an Chouet</hi> vom März 1673: Leibn. Marg.
-                        105.</p>
-                    </summary>
-                  </msContents>
-                  <physDesc>
-                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-                  </physDesc>
-                  <history>
-                    <origin/>
-                  </history>
-                </msDesc>
-              </witness>
-            </listWit>
-          </p>
-        </div>
-        <div type="contents">
-          <p xml:id="Ch47.p3">
-            <hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Der Brief trägt das
+      </p>
+    </div>
+    <div type="contents">
+      <p xml:id="Ch47.p3">
+        <hi rendition="#smaller">
+          <hi rendition="#b">Datierungsgründe</hi>: Der Brief trägt das
               Datum März 1673</hi>
-          </p>
-        </div>
-        <div type="text">
-          <p xml:id="Ch47.p4">[p. 6] <seg type="apparat-ellipsis"/> Car, comme celuy-cy ne commence
+      </p>
+    </div>
+    <div type="text">
+      <p xml:id="Ch47.p4">[p. 6] <seg type="apparat-ellipsis"/>
+ Car, comme celuy-cy ne commence
             à jouër, que quand l’eau de sa jambe exterieure a plus de hauteur (son poids estant
             alors plus grand, l’emporte par dessus l’autre) il arriva de même dans cette experience
-            de l’eau purgée<index indexName="Sachverzeichnis"><term>eau purgée</term></index>,
+            de l’eau purgée<index indexName="Sachverzeichnis">
+      <term>eau purgée</term>
+    </index>,
             qu’une petite bulle, qui se forma au bas du col de la phiole, par exemple en A, ne fit
             que monter le long du col de la phiole, jusques à ce qu’elle fust parvenuë à la hauteur
             d’un pouce au dessus du niveau de l’eau du verre; comme à la ligne BB, laquelle étoit un
             peu au dessus du lieu où l’air, resté dans le recipient, pouvoit soûtenir l’eau. La
             colomne AC et la colomne BD avoient jusques là combattu par leur poids, [p. 7] comme
             font toutes les liqueurs; car elles étoient également pressées en haut par toute la
-            force de la matiere subtile<index indexName="Sachverzeichnis"><term>matière</term><index><term>subtile</term></index></index> qui étoit, d’un
-              costé<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz
-                unterstreicht</hi>: d’un costé</note> dans la bulle, et de l’autre<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Leibniz
-                unterstreicht</hi>: de l’autre.<lb/><hi rendition="#i">Am Rand auf beide
+            force de la matiere subtile<index indexName="Sachverzeichnis">
+    <term>matière</term>
+    <index>
+      <term>subtile</term>
+    </index>
+  </index> qui étoit, d’un
+              costé<note type="Afootnote" place="margin" resp="#L">
+  <hi rendition="#i">Leibniz
+                unterstreicht</hi>: d’un costé</note> dans la bulle, et de l’autre<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Leibniz
+                unterstreicht</hi>: de l’autre.<lb/>
+<hi rendition="#i">Am Rand auf beide
                 vorausgehenden Unterstreichungen bezogen</hi>: inaequales sunt</note> dans le
             recipient; mais comme il ne faut conter la hauteur de la colomne BD que depuis B, puis
-            que ce qui étoit plus bas étoit soutenu par l’air, la colomne AC<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: imo c’est le même avec <hi rendition="#i">ABC</hi></note> étoit toûjours la plus haute; et il faut croire
+            que ce qui étoit plus bas étoit soutenu par l’air, la colomne AC<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am Rand</hi>: imo c’est le même avec <hi rendition="#i">ABC</hi>
+</note> étoit toûjours la plus haute; et il faut croire
             qu’elle l’emportoit par son poids, le matras pourtant ne se vuidoit pas encore pour
-              cela,<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>:
+              cela,<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am Rand</hi>:
               non capio</note> parce qu’il ne pouvoit venir que de l’eau du costé de BD, et la bulle
             cependant montoit, comme font tous les corps plus legers que l’eau.</p>
-          <figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch47.p5">
-            <graphic url="./images/huet.svg" width="130.086pt" xml:id="Ch47.p5.g1"/>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch47.p5">
+<graphic url="./images/huet.svg" width="130.086pt" xml:id="Ch47.p5.g1"/>
 
-            <head>
-              <hi rendition="#i">[Fig. 1]</hi>
-              <note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Zur Zeichnung</hi>:
+<head>
+<hi rendition="#i">[Fig. 1]</hi>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Zur Zeichnung</hi>:
                 Statim ab initio quando bulla est in <hi rendition="#i">A</hi> major erit pressio ab
-                  <hi rendition="#i">A</hi> versus <hi rendition="#i">C</hi> quam a <hi rendition="#i">B</hi> versus <hi rendition="#i">D</hi>, nam illic est materiae
+<hi rendition="#i">A</hi> versus <hi rendition="#i">C</hi> quam a <hi rendition="#i">B</hi> versus <hi rendition="#i">D</hi>, nam illic est materiae
                 subtilis in recipiente et bulla, hic ejus e recipiente tantum. Statim ergo deberet
-                elevare columnam <hi rendition="#i">AB</hi>.</note>
-            </head>
-          </figure>
-          <p xml:id="Ch47.p6">
-            <app type="Bfootnote">
-              <lem type="main"/>
-              <note type="lemma-abbrev">est</note>
-              <rdg wit="#L" n="1"> aeris in reci </rdg>
-              <rdg wit="#L" n="2"> materiae subtilis in recipiente <hi rendition="#i">L</hi></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main"/>
-              <note type="lemma-abbrev">hic</note>
-              <rdg wit="#L" n="1"> in bulla </rdg>
-              <rdg wit="#L" n="2"> ejus e recipiente <hi rendition="#i">L</hi></rdg>
-            </app>
-          </p>
-        </div>
-      </div>
-    </body>
-  </text>
+                elevare columnam <hi rendition="#i">AB</hi>.
+</note>
+</head>
+</figure>
+<p xml:id="Ch47.p6">
+<app type="Bfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">est</note>
+<rdg wit="#L" n="1"> aeris in reci </rdg>
+<rdg wit="#L" n="2"> materiae subtilis in recipiente <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">hic</note>
+<rdg wit="#L" n="1"> in bulla </rdg>
+<rdg wit="#L" n="2"> ejus e recipiente <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

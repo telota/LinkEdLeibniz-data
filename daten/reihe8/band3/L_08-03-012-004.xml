@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-012-004">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-012-004">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Aus Günther Christoph Schelhammer, De Auditu</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2022</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="12"/>
 						<title type="section" level="a" n="4">Aus Günther Christoph Schelhammer, De Auditu</title>
 						<date calendar="#gregorian" notBefore="1684-03" resp="#ed" cert="medium"/>
 						<date calendar="#gregorian" notAfter="1685-06" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=182</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+							<idno type="page">#page=182</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,477 +86,892 @@
 						</imprint>
 						<biblScope unit="page" from="148" to="185"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
-					<relatedItem type="superordinated-chapter"><ptr target="#L_08-03-012-000"/></relatedItem></biblStruct>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
+					<relatedItem type="superordinated-chapter">
+						<ptr target="#L_08-03-012-000"/>
+					</relatedItem>
+				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-03-012-004_facs-haupttextzeuge"><msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXVII 1 Bl. 14</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#auszug">
-							<summary><p>Auszüge aus <ref corresp="#bib_01204"/><hi rendition="#k">G. C. Schelhammer</hi>, <hi rendition="#i">De auditu</hi>, Leiden 1684, S. 124–129: LH XXXVII 1 Bl. 14. Ein Blatt 4<hi rendition="#sup">o</hi>; Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=42">Wasserzeichens</ref>. Zwei voll beschriebene Seiten. Leibniz verweist in N. <ref corresp="L_section_123.xml#N.12.3"/> (S. <ref corresp="L_section_123.xml#LH_37_01_007v_y1"/>; <ref corresp="L_section_123.xml#LH_37_01_007v_w1"/>; <ref corresp="L_section_123.xml#LH_37_01_008v_novissime-1"/>) auf Schelhammers Abhandlung und nimmt insbesondere auf die in N. <ref corresp="#N.12.4"/> exzerpierten Stellen Bezug.</p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc></witness>
-				</listWit>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<tagsDecl>
-				<rendition scheme="css" xml:id="i">font-style:italic</rendition>
-				<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-				<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-				<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-				<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-				<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-				<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-				<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-				<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-			</tagsDecl>
-			<charDecl>
-				<!-- Sonderzeichen OHNE Unicodeentsprechung -->
-				<!--rightpropto-->
-				<glyph xml:id="rightpropto">
-					<glyphName>rightpropto</glyphName>
-					<desc>...</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="TeX">\rightpropto</mapping>
-					<graphic url="../../glyphs/rightpropto.svg"/>
-				</glyph>
-				<glyph xml:id="Pfund">
-					<glyphName>Pfund</glyphName>
-					<desc>stilisiertes lb-Zeichen (Pfund)</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.7</value>
-					</charProp>
-					<mapping type="TeX">\Pfund</mapping>
-					<graphic url="../../glyphs/Pfund.svg"/>
-				</glyph>
-				<!-- leibdashv -->
-				<glyph xml:id="pleibdashv">
-					<glyphName>pleibdashv</glyphName>
-					<desc>Bedeutung (+−) - gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>-1</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\pleibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<glyph xml:id="leibdashv">
-					<glyphName>leibdashv</glyphName>
-					<desc>Bedeutung (+−) - nicht-gesenkt</desc>
-					<charProp>
-						<localName>baselineshift-in-ex</localName>
-						<value>0</value>
-					</charProp>
-					<charProp>
-						<localName>width-in-em</localName>
-						<value>0.6</value>
-					</charProp>
-					<mapping type="PUA"/>
-					<mapping type="TeX">\leibdashv</mapping>
-					<graphic url="../../glyphs/pm.svg"/>
-				</glyph>
-				<!-- Sonderzeichen MIT Unicodeentsprechung -->
-			</charDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="la"/>
-			</langUsage>
-			<calendarDesc>
-				<calendar xml:id="gregorian">
-					<p>Gregorianischer Kalenderstil</p>
-				</calendar>
-				<calendar xml:id="julian">
-					<p>Julianischer Kalenderstil</p>
-				</calendar>
-			</calendarDesc>
-			<textClass>
-				<catRef scheme="L_subjects" target="L_subjects.xml#akustik"/>
-				<catRef scheme="L_terms" target="L_terms.xml#"/>
-			</textClass>
-			<abstract>
-				<listPerson>
-					<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-					<person sameAs="L_persons.xml#"/>
-				</listPerson>
-				<listPlace>
-					<place sameAs="L_places.xml#"/>
-				</listPlace>
-			</abstract>
-		</profileDesc>
-		<revisionDesc>
-			<change when="2021" who="#telota" status="base"/>
-			<change when="2023-02-08" who="#stork" status="enrich_1"/>
-		</revisionDesc>
-	</teiHeader>
-	<facsimile source="digilib.bbaw.de" xml:id="L_08-03-012-004_facs-haupttextzeuge">
-		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1972&amp;tx_dlf%5Bpage%5D=27"/>
-		<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1972&amp;tx_dlf%5Bpage%5D=28"/>
-	</facsimile>
-	<text xml:id="L_08-03-012-004_text">
-		<body xml:id="Document">
-			<div type="section" xml:id="Ch12.S4" n="124">
-				<head>12<hi rendition="#sub">4</hi> AUS GÜNTHER CHRISTOPH SCHELHAMMER, DE AUDITU</head>
-				<head>[Frühjahr 1684 – erste Hälfte 1685]</head>
-				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-						<witness><msDesc>
+					<witness n="L" corresp="#L_08-03-012-004_facs-haupttextzeuge">
+						<msDesc>
 							<msIdentifier>
 								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
 								<idno type="Signatur">LH XXXVII 1 Bl. 14</idno>
 							</msIdentifier>
-							<msContents>
-								<summary><p>Auszüge aus <ref corresp="#bib_01204"/><hi rendition="#k">G. C. Schelhammer</hi>, <hi rendition="#i">De auditu</hi>, Leiden 1684, S. 124–129: LH XXXVII 1 Bl. 14. Ein Blatt 4<hi rendition="#sup">o</hi>; Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=42">Wasserzeichens</ref>. Zwei voll beschriebene Seiten. Leibniz verweist in N. <ref corresp="L_section_123.xml#N.12.3"/> (S. <ref corresp="L_section_123.xml#LH_37_01_007v_y1"/>; <ref corresp="L_section_123.xml#LH_37_01_007v_w1"/>; <ref corresp="L_section_123.xml#LH_37_01_008v_novissime-1"/>) auf Schelhammers Abhandlung und nimmt insbesondere auf die in N. <ref corresp="#N.12.4"/> exzerpierten Stellen Bezug.</p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						</listWit></p>
-				</div>
-				
-				<div type="text">
-					<p rendition="#noindent" xml:id="Ch12.S4.p4"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=41"><pb type="L"/><fw type="folNum">[14 r<hi rendition="#sup">o</hi>]</fw></ref></p>
-					<p rendition="#c" xml:id="Ch12.S4.p5">Guntherus Christophorus Schelhammerus<index indexName="Personen">
-						<term><hi rendition="#g">Schelhammer</hi> (Schelhammerus), Günther Christoph 1649–1716</term>
-						</index> <hi rendition="#i">de auditu</hi>,<lb/>edito Lugd. Batavorum 1684 8<hi rendition="#sup">o</hi>.<ref corresp="#bib_01204"/><index indexName="Sachen">
-						<term>auditus</term>
-						</index></p>
-					<p rendition="#noindent" xml:id="Ch12.S4.p6"><app type="Bfootnote">
-						<lem type="main">Is <app type="Cfootnote">
-							<lem type="main">axiomate<index indexName="Sachen">
-								<term>axioma</term>
-								</index> 13</lem>
-							<note type="lemma-abbrev">axiomate 13</note>
-							<note type="editorial">„Sonus<index indexName="Sachen">
-								<term>sonus</term>
-								</index> quousque permeat, omnem ambientem<index indexName="Sachen">
-								<term>aer ambiens</term>
-								</index> aerem occupat.” <bibl corresp="#bib_01204"><hi rendition="#k">G. C. Schelhammer</hi>, <hi rendition="#i">De auditu</hi>, Leiden 1684, S. 124. Der exzerpierte Abschnitt folgt unmittelbar der Formulierung des Axioms.</bibl></note>
-							</app> pag. 124</lem>
-						<note type="lemma-abbrev">Is</note>
-						<rdg wit="#L" n="1"> pag. 124 </rdg>
-						<rdg wit="#L" n="2"> axiomate 13 pag. 124 <hi rendition="#i">L</hi></rdg>
-						</app> ita habet[:]</p>
-					<p xml:id="Ch12.S4.p7"><app type="Cfootnote">
-						<lem type="main"><hi rendition="#i">Problema:<index indexName="Sachen">
-							<term><hi rendition="#i">problema</hi></term>
-							</index> quomodo sonus per aerem propagetur explicare.<index indexName="Sachen">
-							<term><hi rendition="#i">propagatio soni</hi></term>
-							</index></hi> <hi rendition="#i">Ex praemissis hactenus colligere licet, dum corpora duo vel actu<index indexName="Sachen">
-							<term><hi rendition="#i">actus</hi></term>
-							</index> vel potentia<index indexName="Sachen">
-							<term><hi rendition="#i">potentia</hi></term>
-							</index> dura<index indexName="Sachen">
-							<term><hi rendition="#i">corpus durum</hi></term>
-							</index> ac solida<index indexName="Sachen">
-							<term><hi rendition="#i">corpus solidum</hi></term>
-							</index> colliduntur, quae productio est soni,<index indexName="Sachen">
-							<term><hi rendition="#i">productio soni</hi></term>
-							</index> tunc aerem ex necessitate commoveri</hi> et <hi rendition="#i">concuti, ob eam rationem qua fluida<index indexName="Sachen">
-							<term><hi rendition="#i">fluidum</hi></term>
-							</index> omnia id pati ostensum est, <app type="Cfootnote">
-							<lem type="main">Axiomate 4.</lem>
-							<note type="lemma-abbrev">Axiomate 4</note>
-							<note type="editorial">„Corpus fluidum<index indexName="Sachen">
-								<term>corpus fluidum</term>
-								</index> compressum solidi trementis<index indexName="Sachen">
-								<term>corpus tremens</term>
-								</index> rationem<index indexName="Sachen">
-								<term>ratio</term>
-								</index> habet.” <bibl corresp="#bib_01204">a.a.O., S. 110.</bibl></note>
-							</app> Cum vero aer<index indexName="Sachen">
-							<term><hi rendition="#i">aer</hi></term>
-							</index> sit corpus fluidum compressum<index indexName="Sachen">
-							<term><hi rendition="#i">corpus compressum</hi></term>
-							</index> indeque elastro<index indexName="Sachen">
-							<term><hi rendition="#i">elastrum</hi></term>
-							</index> praeditum, ac in tremorem<index indexName="Sachen">
-							<term><hi rendition="#i">tremor</hi></term>
-							</index> agi aptum, patet non alio modo id fieri, quam quia impressam<index indexName="Sachen">
-							<term><hi rendition="#i">species impressa</hi></term>
-							</index> semel speciem soni<index indexName="Sachen">
-							<term><hi rendition="#i">species soni</hi></term>
-							</index> una particula<index indexName="Sachen">
-							<term><hi rendition="#i">particula aeris</hi></term>
-							</index> in aliam decurrente totoque aere contremente per se ipsum idem propaget, ut solida corpora idem facere, <app type="Cfootnote">
-							<lem type="main">axiomate<index indexName="Sachen">
-								<term><hi rendition="#i">axioma</hi></term>
-								</index> 3.</lem>
-							<note type="lemma-abbrev">axiomate 3</note>
-							<note type="editorial">„Corpus solidum<index indexName="Sachen">
-								<term>corpus solidum</term>
-								</index> in tremorem<index indexName="Sachen">
-								<term>tremor</term>
-								</index> agi aptum, sonum impressum<index indexName="Sachen">
-								<term>sonus impressus</term>
-								</index> per se ipsum totum transmittit.” <bibl corresp="#bib_01204">a.a.O., S. 110.</bibl></note>
-							</app> docuimus. Non secus enim</hi></lem>
-						<note type="lemma-abbrev"><hi rendition="#i">Problema</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">enim</hi></note>
-						<note type="editorial"><bibl corresp="#bib_01204">a.a.O., S. 124.</bibl></note>
-						</app> <app type="Cfootnote" from="#KZeitz157" to="#KZeitz158">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><hi rendition="#i">ac videmus</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">addensatum</hi></note>
-						<note type="editorial"><bibl corresp="#bib_01204">a.a.O., S. 125. Zitat mit Auslassung.</bibl></note>
-						</app><anchor xml:id="KZeitz157"/><hi rendition="#i">ac videmus chordam<index indexName="Sachen">
-						<term><hi rendition="#i">chorda</hi></term>
-						</index> commoveri ac reciprocis ictibus<index indexName="Sachen">
-						<term><hi rendition="#i">ictus</hi></term>
-						</index> huc illuc decurrere</hi>[,] <hi rendition="#i">aer quoque commoveri totus videtur, hinc una aeris particula<index indexName="Sachen">
-						<term><hi rendition="#i">particula aeris</hi></term>
-						</index> alteri impressam speciem<index indexName="Sachen">
-						<term><hi rendition="#i">species impressa</hi></term>
-						</index> perpetuo communicat, donec ob reactionem particularum vis<index indexName="Sachen">
-						<term><hi rendition="#i">vis</hi></term>
-						</index> tandem ac motus omnis elanguescat, et sonus propagari desinat.<index indexName="Sachen">
-						<term><hi rendition="#i">propagatio soni</hi></term>
-						</index> Hoc autem inventum non mihi soli deberi fateor sed magna ex parte viro ingeniosissimo ac varia doctrina atque eruditione instructissimo<anchor xml:id="LH_37_01_014r_Leibnizerwaehnt-1"/> <hi rendition="#g">J. Leibnizio</hi><index indexName="Personen">
-						<term><hi rendition="#g #i">Leibniz</hi> <hi rendition="#i">(Leibnitius, GGL), Gottfried Wilhelm 1646–1716</hi></term>
-						</index><hi rendition="#g"> </hi>Seren. Ducis Luneb. et Brunsv. Hannoverani<index indexName="Personen">
-						<term><hi rendition="#g #i">Braunschweig-Lüneburg</hi><hi rendition="#i">, Ernst August von, Herzog 1680–1698, Kurfürst von Hannover 1692–1698</hi></term>
-						</index> hoc tempore</hi> <hi rendition="#i">Consiliario qui pro suo in nos affectu Lutetiae Parisiorum<index indexName="Orte">
-						<term><hi rendition="#i">Paris</hi></term>
-						</index> dudum nato</hi>[,] <app type="Cfootnote" from="#KZeitz159" to="#KZeitz160">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><hi rendition="#i">cum audiret</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">esse</hi></note>
-						<note type="editorial">Siehe G. C. <hi rendition="#k">Schelhammer</hi>, Briefe an G. W. Leibniz vom 8. (18.) November und vom 31. Dezember 1680 (10. Januar 1681; <hi rendition="#i">LSB</hi> III, 3 N. 124;<bibl corresp="#bib_01279"> 153<bibl corresp="#bib_01280">).</bibl></bibl></note>
-						</app><anchor xml:id="KZeitz159"/><hi rendition="#i">cum audiret de</hi></p>
-					<p rendition="#noindent" xml:id="Ch12.S4.p8"><hi rendition="#i">auditu mihi dissertationem sub manibus esse,</hi> <anchor xml:id="KZeitz160"/><app type="Cfootnote">
-						<lem type="main"><hi rendition="#i">per literas mecum communicare non dubitavit, et de corporum tremore<index indexName="Sachen">
-							<term><hi rendition="#i">tremor</hi></term>
-							</index> quaedam egregia monere.</hi></lem>
-						<note type="lemma-abbrev"><hi rendition="#i">per literas</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">monere</hi></note>
-						<note type="editorial">Siehe G. W. <hi rendition="#k">Leibniz</hi>, Briefe an G. C. Schelhammer, 6. (16.) Dezember 1680; Februar/März 1681; 13. (23.) Januar 1682 (<hi rendition="#i">LSB</hi> III, 3 N. 139;<bibl corresp="#bib_01275"> 182;<bibl corresp="#bib_01194"> 311<bibl corresp="#bib_01195">).</bibl></bibl></bibl></note>
-						</app> <anchor xml:id="LH_37_01_014r_Leibnizerwaehnt-2"/><hi rendition="#i">Subolfactum id autem jam olim fuit eruditis quibusdam et emunctae naris viris, quamvis non ita distinctim, sed per transennam, quod dicitur</hi>[,] <hi rendition="#i">rem perceperint. Prae caeteris vero summo Philosopho Medico atque poetae Hieronymo Fracastorio,<index indexName="Personen">
-						<term><hi rendition="#g #i">Fracastoro</hi> <hi rendition="#i">(Fracastorius), Girolamo 1478–1553</hi></term>
-						</index> qui elegantissimis verbis id exposuit Lib. de sympathia et antipathia cap. 4.</hi> <app type="Cfootnote" from="#LH_37_01_014_a1" to="#LH_37_01_014_a2">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><hi rendition="#i">Species</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">densantibus</hi></note>
-						<note type="editorial">Wörtlich zitiert nach G. <hi rendition="#k">Fracastoro</hi>, <hi rendition="#i">De sympathia</hi>, cap. 4 (Venedig 1546, S. 3 r<hi rendition="#sup">o</hi>/v<hi rendition="#sup">o</hi>; <hi rendition="#i">Opera</hi> I, Lyon 1591, S. 9 f.).<bibl corresp="#bib_01215"><bibl corresp="#bib_01216"/></bibl></note>
-						</app><anchor xml:id="LH_37_01_014_a1"/><hi rendition="#i">Species soni,<index indexName="Sachen">
-						<term><hi rendition="#i">species soni</hi></term>
-						</index> inquit, si movere sensum<index indexName="Sachen">
-						<term><hi rendition="#i">sensus</hi></term>
-						</index> debet, medium poscit continenter densum,<index indexName="Sachen">
-						<term><hi rendition="#i">medium densum</hi></term>
-						</index> non per admistionem terrae<index indexName="Sachen">
-						<term><hi rendition="#i">terra</hi></term>
-						</index> sed vi addensatum,</hi> <anchor xml:id="KZeitz158"/><app type="Cfootnote">
-						<lem type="main"><p><hi rendition="#i">quod in aere<index indexName="Sachen">
-							<term><hi rendition="#i">aer</hi></term>
-							</index> accidit facto ictu.<index indexName="Sachen">
-							<term><hi rendition="#i">ictus</hi></term>
-							</index> Inde enim facta prius distractione<index indexName="Sachen">
-							<term><hi rendition="#i">distractio</hi></term>
-							</index> et rarefactione<index indexName="Sachen">
-							<term><hi rendition="#i">rarefactio</hi></term>
-							</index></hi>[,] <hi rendition="#i">tum subita fit addensatio partis post partem more undarum,<index indexName="Sachen">
-							<term><hi rendition="#i">unda</hi></term>
-							</index> unde circulationes conflantur. Quod non aliud est, quam successiva quaedam aeris addensatio<index indexName="Sachen">
-							<term><hi rendition="#i">addensatio aeris</hi></term>
-							</index> in orbem<index indexName="Sachen">
-							<term><hi rendition="#i">orbis</hi></term>
-							</index> facta per quam delata species<index indexName="Sachen">
-							<term><hi rendition="#i">species propagata</hi></term>
-							</index></hi>  <ref><pb type="L"/><fw type="folNum">[14 v<hi rendition="#sup">o</hi>]</fw></ref> <hi rendition="#i">a primo profecta sensum<index indexName="Sachen">
-							<term><hi rendition="#i">sensus</hi></term>
-							</index> dimovere potest. Fit autem successiva illa addensatio in aere<index indexName="Sachen">
-							<term><hi rendition="#i">addensatio aeris</hi></term>
-							</index></hi>[,] <hi rendition="#i">prioribus quidem partibus subito ac vi<index indexName="Sachen">
-							<term><hi rendition="#i">vis</hi></term>
-							</index> densatis</hi>[,] <hi rendition="#i">subito etiam</hi> se <hi rendition="#i">rarefacientibus ac alias successive densantibus.</hi><anchor xml:id="LH_37_01_014_a2"/></p><p><hi rendition="#i"><index indexName="Sachen">
-							<term><hi rendition="#i">paradoxon</hi></term>
-							</index><hi rendition="#g">Paradoxon. Sonus per aerem propagatus a principio ad finem undique fertur pari velocitate sed viribus remittit.</hi> <index indexName="Sachen">
-							<term><hi rendition="#i">propagatio soni</hi></term>
-							</index><index indexName="Sachen">
-							<term><hi rendition="#i">velocitas</hi></term>
-							</index><index indexName="Sachen">
-							<term><hi rendition="#i">vis</hi></term>
-							</index><anchor xml:id="LH_37_01_014v_z1"/>Nullus dubito hoc assertum tam a vero absonum plerisque videri, ut vix fidem habeant. Cum actione<index indexName="Sachen">
-							<term><hi rendition="#i">actio</hi></term>
-							</index> et reactione<index indexName="Sachen">
-							<term><hi rendition="#i">reactio</hi></term>
-							</index></hi> <app type="Cfootnote">
-							<lem type="main">partium</lem>
-							<note type="editorial"><hi rendition="#i">particularum</hi> in der Vorlage.</note>
-							</app> <hi rendition="#i">aeris<index indexName="Sachen">
-							<term><hi rendition="#i">particula aeris</hi></term>
-							</index> trementium,<index indexName="Sachen">
-							<term><hi rendition="#i">aer tremens</hi></term>
-							</index> videatur omnis earum vis<index indexName="Sachen">
-							<term><hi rendition="#i">vis</hi></term>
-							</index> frangi debere nec tantum imminui sonus,<index indexName="Sachen">
-							<term><hi rendition="#i">sonus</hi></term>
-							</index> sed tardius etiam</hi></p></lem>
-						<note type="lemma-abbrev"><hi rendition="#i">quod in</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">tardius etiam</hi></note>
-						<note type="editorial"><bibl corresp="#bib_01204"><hi rendition="#k">Schelhammer</hi>, <hi rendition="#i">De auditu</hi>, S. 126. Zitat mit Auslassung.</bibl></note>
-						</app> <app type="Cfootnote" from="#KZeitz161" to="#KZeitz162">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><hi rendition="#i">ferri</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">proportione</hi></note>
-						<note type="editorial"><bibl corresp="#bib_01204">a.a.O., S. 127. Zitat mit Auslassung.</bibl></note>
-						</app><anchor xml:id="KZeitz161"/><hi rendition="#i">ferri debere. Et vero nos ipsi etiam in eo fuimus errore, antequam a <app type="Bfootnote">
-						<lem type="main">Mathematico consummatissimo et rerum naturalium apprime curioso,</lem>
-						<note type="lemma-abbrev">Mathematico</note>
-						<rdg wit="#L" n="1"> curiosissimo </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#i">consummatissimo et</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">apprime curioso,</hi> <hi rendition="#i">L</hi></rdg>
-						</app> Paulo Heigelio<index indexName="Personen">
-						<term><hi rendition="#g #i">Heigel</hi> <hi rendition="#i">(Heigelius), Paul 1640–1690</hi></term>
-						</index> Collega Honoratissimo dubium ea de re nobis moveretur. Tunc enim experientia<index indexName="Sachen">
-						<term><hi rendition="#i">experientia</hi></term>
-						</index> consuluimus, et eodem praesente comperti sumus post mille passus<index indexName="Sachen">
-						<term><hi rendition="#i">passus</hi></term>
-						</index> eadem celeritate<index indexName="Sachen">
-						<term><hi rendition="#i">celeritas</hi></term>
-						</index> procedere ulterius sonus,<index indexName="Sachen">
-						<term><hi rendition="#i">sonus</hi></term>
-						</index> atque fecerat in ipso principio. Experimentum<index indexName="Sachen">
-						<term><hi rendition="#i">experimentum</hi></term>
-						</index> tale fuit: stationem<index indexName="Sachen">
-						<term><hi rendition="#i">statio</hi></term>
-						</index> eligimus in loco <app type="Bfootnote">
-						<lem type="main">paulo eminentiore,</lem>
-						<note type="lemma-abbrev">paulo</note>
-						<rdg wit="#L"><note type="editorial">|</note> paulo <note type="editorial"><hi rendition="#i">streicht Hrsg. nach Vorlage</hi> |</note> <hi rendition="#i">eminentiore</hi> <hi rendition="#i">L</hi></rdg>
-						</app> ibique collocata bombarda<index indexName="Sachen">
-						<term><hi rendition="#i">bombarda</hi></term>
-						</index> majore et relictis sociis<index indexName="Sachen">
-						<term><hi rendition="#i">socius</hi></term>
-						</index> explodendae bombardae mensuravimus ab illo loco perticas 10.<index indexName="Sachen">
-						<term><hi rendition="#i">pertica</hi></term>
-						</index> Hic pedem fiximus, et perpendiculo brevissimo,<index indexName="Sachen">
-						<term><hi rendition="#i">perpendiculum</hi></term>
-						</index> ut citissime ac saepius posset recurrere</hi>[,] <hi rendition="#i">instructi</hi>[,] <hi rendition="#i">signum<index indexName="Sachen">
-						<term><hi rendition="#i">signum</hi></term>
-						</index> dedimus minore sclopeto,<index indexName="Sachen">
-						<term><hi rendition="#i">sclopetum</hi></term>
-						</index> et ut primum ignem<index indexName="Sachen">
-						<term><hi rendition="#i">ignis</hi></term>
-						</index> vidimus deflagrantem, laxato perpendiculo computavimus seorsim quilibet quot vicibus reciprocam decursionem perpendiculum<index indexName="Sachen">
-						<term><hi rendition="#i">perpendiculum</hi></term>
-						</index> absolveret antequam</hi> <hi rendition="#i">ad aures<index indexName="Sachen">
-						<term><hi rendition="#i">auris</hi></term>
-						</index> allaberetur sonus.<index indexName="Sachen">
-						<term><hi rendition="#i">sonus</hi></term>
-						</index> Hoc diligenter notato rursus 10 perticis<index indexName="Sachen">
-						<term><hi rendition="#i">pertica</hi></term>
-						</index> emensis signum dedi-</hi></p>
-					<p rendition="#noindent" xml:id="Ch12.S4.p9"><hi rendition="#i">mus et ut ante instituimus computationem,<index indexName="Sachen">
-						<term><hi rendition="#i">computatio</hi></term>
-						</index> idque aliquoties fecimus, donec internoscere signum,<index indexName="Sachen">
-						<term><hi rendition="#i">signum</hi></term>
-						</index> vel ipsum etiam ignem<index indexName="Sachen">
-						<term><hi rendition="#i">ignis</hi></term>
-						</index> non amplius</hi> potuimus <hi rendition="#i">idque constanter deprehendimus, <app type="Bfootnote">
-						<lem type="main">non Geometrica sed Arithmetica proportione<index indexName="Sachen">
-							<term><hi rendition="#i">proportio geometrica</hi></term>
-							</index><index indexName="Sachen">
-							<term><hi rendition="#i">proportio arithmetica</hi></term>
-							</index> </lem>
-						<note type="lemma-abbrev">non</note>
-						<rdg wit="#L" n="1"> Arithmetica </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#i">Geometrica sed Arithmetica</hi> <app>
-							<rdg wit="#L" n="a">ratione </rdg>
-							<rdg wit="#L" n="b"><hi rendition="#i">proportione</hi> <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app></hi> <anchor xml:id="KZeitz162"/><app type="Cfootnote">
-						<lem type="main"><hi rendition="#i">crescere numerum reciprocationis</hi><index indexName="Sachen">
-							<term>reciprocatio</term>
-							</index> <app type="Cfootnote">
-							<lem type="main">penduli.<index indexName="Sachen">
-								<term>pendulum</term>
-								</index></lem>
-							<note type="lemma-abbrev">penduli</note>
-							<note type="editorial"><hi rendition="#i">perpendiculi</hi> in der Vorlage.</note>
-							</app> <hi rendition="#i">Interim sonus<index indexName="Sachen">
-							<term><hi rendition="#i">sonus</hi></term>
-							</index> ita imminuebatur, ut percipi</hi> vix <hi rendition="#i">tandem posset. Ego vero inexpectato eventu turbatus<anchor xml:id="LH_37_01_014v_z2"/></hi>[,] <hi rendition="#i">de causa<index indexName="Sachen">
-							<term><hi rendition="#i">causa</hi></term>
-							</index> rei tam mirae cogitare sedulo cepi. Et parum abfuit</hi> <app type="Bfootnote">
-							<lem type="main"><hi rendition="#i">quin</hi> subtilibus</lem>
-							<note type="lemma-abbrev"><hi rendition="#i">quin</hi></note>
-							<rdg wit="#L" n="1"> <hi rendition="#i">subtilius</hi> </rdg>
-							<rdg wit="#L" n="2"> subtilibus <hi rendition="#i">L</hi></rdg>
-							</app> <hi rendition="#i">aere<index indexName="Sachen">
-							<term><hi rendition="#i">aer</hi></term>
-							</index> elementum<index indexName="Sachen">
-							<term><hi rendition="#i">elementum</hi></term>
-							</index><index indexName="Sachen">
-							<term><hi rendition="#i">aether</hi></term>
-							</index> poris<index indexName="Sachen">
-							<term><hi rendition="#i">porus</hi></term>
-							</index></hi> ejus <hi rendition="#i">haerere crederem</hi>. Sed quod <hi rendition="#i">haec sententia perquam improbabilis semper mihi plurimis de causis antea visa</hi> esset <hi rendition="#i">ad stagnum<index indexName="Sachen">
-							<term><hi rendition="#i">stagnum</hi></term>
-							</index> spatiosum non admodum profundum me contuli, ibique statutis signis<index indexName="Sachen">
-							<term><hi rendition="#i">signum</hi></term>
-							</index> eadem distantia ab invicem dissidentibus</hi>[,] <hi rendition="#i">baculis et lapillis injectis,<index indexName="Sachen">
-							<term><hi rendition="#i">lapillus injectus</hi></term>
-							</index> coepi ut antea momenta temporis<index indexName="Sachen">
-							<term><hi rendition="#i">momentum temporis</hi></term>
-							</index> solicite connumerare.</hi> Et <hi rendition="#i">vidi manifesto circulos<index indexName="Sachen">
-							<term><hi rendition="#i">circulus aqueus</hi></term>
-							</index> istos initio velocius</hi>[,] <note type="editorial"><hi rendition="#i">remissius postremo loco decurrere per superficiem, verum <app type="Bfootnote">
-							<lem type="main">nihilominus</lem>
-							<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-							</app> non esse diversum tempus,<index indexName="Sachen">
-							<term><hi rendition="#i">tempus</hi></term>
-							</index> quo ab uno spatio notato ad alterum devenirent illorum extremi. Hoc autem fieri ideo quod qui primus excitatur, non</hi></note> ideo <hi rendition="#i">primus permanet, sed ubi parum processit,</hi></lem>
-						<note type="lemma-abbrev"><hi rendition="#i">crescere</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">processit</hi></note>
-						<note type="editorial"><bibl corresp="#bib_01204">a.a.O., S. 128. Zitat mit Auslassungen.</bibl></note>
-						</app> <app type="Cfootnote">
-						<lem type="main"><hi rendition="#i">alios atque alios justo spatio excitat</hi>[,] <hi rendition="#i">hi rursus alios qui</hi> <app type="Bfootnote">
-							<!--is-correction-app-with-lemma-->
-							<lem type="main"><corr resp="#ed">[<hi rendition="#i">omnes</hi>]</corr></lem>
-							<rdg wit="#L"><orig>rursus</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg. nach Vorlage</hi></note></rdg>
-							</app> <hi rendition="#i">illum qui primo loco factus erat, praecurrunt longe. Sicque hujus tarditatem<index indexName="Sachen">
-							<term><hi rendition="#i">tarditas</hi></term>
-							</index> sua frequentia<index indexName="Sachen">
-							<term><hi rendition="#i">frequentia</hi></term>
-							</index> et multiplicatione pensatum eunt. Ut pateat pati hic aquam<index indexName="Sachen">
-							<term><hi rendition="#i">aqua</hi></term>
-							</index> trementem a reactione<index indexName="Sachen">
-							<term><hi rendition="#i">reactio</hi></term>
-							</index> proxime adstantis et tamen eodem modo quo aer<index indexName="Sachen">
-							<term><hi rendition="#i">aer</hi></term>
-							</index> aequali temporis<index indexName="Sachen">
-							<term><hi rendition="#i">tempus</hi></term>
-							</index> spatio hos circulos<index indexName="Sachen">
-							<term><hi rendition="#i">circulus aqueus</hi></term>
-							</index> ad finem decurrere.</hi></lem>
-						<note type="lemma-abbrev"><hi rendition="#i">alios</hi> <seg type="apparat-ellipsis"/> <hi rendition="#i">decurrere</hi></note>
-						<note type="editorial"><bibl corresp="#bib_01204">a.a.O., S. 129.</bibl></note>
-						</app></p>
-				</div>
-			</div>
-		</body>
-	</text>
+							<msContents corresp="L_witness-content-types.xml#auszug">
+								<summary>
+									<p>Auszüge aus <ref corresp="#bib_01204"/>
+									<hi rendition="#k">G. C. Schelhammer</hi>,									<hi rendition="#i">De auditu</hi>, Leiden 1684, S. 124–129: LH XXXVII 1 Bl. 14. Ein Blatt 4<hi rendition="#sup">o</hi>; Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=42">Wasserzeichens</ref>. Zwei voll beschriebene Seiten. Leibniz verweist in N. <ref corresp="L_section_123.xml#N.12.3"/>
+ (S. <ref corresp="L_section_123.xml#LH_37_01_007v_y1"/>
+;							<ref corresp="L_section_123.xml#LH_37_01_007v_w1"/>
+;							<ref corresp="L_section_123.xml#LH_37_01_008v_novissime-1"/>
+) auf Schelhammers Abhandlung und nimmt insbesondere auf die in N. <ref corresp="#N.12.4"/>
+ exzerpierten Stellen Bezug.</p>
+					</summary>
+				</msContents>
+				<physDesc>
+					<objectDesc form="Handschrift"/>
+				</physDesc>
+				<history>
+					<origin corresp="L_witness-origin-types.xml#origin-L"/>
+				</history>
+			</msDesc>
+		</witness>
+	</listWit>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+	<rendition scheme="css" xml:id="i">font-style:italic</rendition>
+	<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+	<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+	<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+	<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+	<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+	<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+	<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+	<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+	<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+</tagsDecl>
+<charDecl>
+	<!-- Sonderzeichen OHNE Unicodeentsprechung -->
+	<!--rightpropto-->
+	<glyph xml:id="rightpropto">
+		<glyphName>rightpropto</glyphName>
+		<desc>...</desc>
+		<charProp>
+			<localName>baselineshift-in-ex</localName>
+			<value>0</value>
+		</charProp>
+		<charProp>
+			<localName>width-in-em</localName>
+			<value>0.6</value>
+		</charProp>
+		<mapping type="TeX">\rightpropto</mapping>
+		<graphic url="../../glyphs/rightpropto.svg"/>
+	</glyph>
+	<glyph xml:id="Pfund">
+		<glyphName>Pfund</glyphName>
+		<desc>stilisiertes lb-Zeichen (Pfund)</desc>
+		<charProp>
+			<localName>baselineshift-in-ex</localName>
+			<value>0</value>
+		</charProp>
+		<charProp>
+			<localName>width-in-em</localName>
+			<value>0.7</value>
+		</charProp>
+		<mapping type="TeX">\Pfund</mapping>
+		<graphic url="../../glyphs/Pfund.svg"/>
+	</glyph>
+	<!-- leibdashv -->
+	<glyph xml:id="pleibdashv">
+		<glyphName>pleibdashv</glyphName>
+		<desc>Bedeutung (+−) - gesenkt</desc>
+		<charProp>
+			<localName>baselineshift-in-ex</localName>
+			<value>-1</value>
+		</charProp>
+		<charProp>
+			<localName>width-in-em</localName>
+			<value>0.6</value>
+		</charProp>
+		<mapping type="PUA"/>
+		<mapping type="TeX">\pleibdashv</mapping>
+		<graphic url="../../glyphs/pm.svg"/>
+	</glyph>
+	<glyph xml:id="leibdashv">
+		<glyphName>leibdashv</glyphName>
+		<desc>Bedeutung (+−) - nicht-gesenkt</desc>
+		<charProp>
+			<localName>baselineshift-in-ex</localName>
+			<value>0</value>
+		</charProp>
+		<charProp>
+			<localName>width-in-em</localName>
+			<value>0.6</value>
+		</charProp>
+		<mapping type="PUA"/>
+		<mapping type="TeX">\leibdashv</mapping>
+		<graphic url="../../glyphs/pm.svg"/>
+	</glyph>
+	<!-- Sonderzeichen MIT Unicodeentsprechung -->
+</charDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+	<language ident="la"/>
+</langUsage>
+<calendarDesc>
+	<calendar xml:id="gregorian">
+		<p>Gregorianischer Kalenderstil</p>
+	</calendar>
+	<calendar xml:id="julian">
+		<p>Julianischer Kalenderstil</p>
+	</calendar>
+</calendarDesc>
+<textClass>
+	<catRef scheme="L_subjects" target="L_subjects.xml#akustik"/>
+	<catRef scheme="L_terms" target="L_terms.xml#"/>
+</textClass>
+<abstract>
+	<listPerson>
+		<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+		<person sameAs="L_persons.xml#"/>
+	</listPerson>
+	<listPlace>
+		<place sameAs="L_places.xml#"/>
+	</listPlace>
+</abstract>
+</profileDesc>
+<revisionDesc>
+<change when="2021" who="#telota" status="base"/>
+<change when="2023-02-08" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-012-004_facs-haupttextzeuge">
+<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1972&amp;tx_dlf%5Bpage%5D=27"/>
+<graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1972&amp;tx_dlf%5Bpage%5D=28"/>
+</facsimile>
+<text xml:id="L_08-03-012-004_text">
+<body xml:id="Document">
+<div type="section" xml:id="Ch12.S4" n="124">
+	<head>12<hi rendition="#sub">4</hi> AUS GÜNTHER CHRISTOPH SCHELHAMMER, DE AUDITU</head>
+	<head>[Frühjahr 1684 – erste Hälfte 1685]</head>
+	<div type="ueberlieferung">
+		<p>
+			<hi rendition="#b #smaller">Überlieferung:</hi>
+			<listWit>
+				<witness>
+					<msDesc>
+						<msIdentifier>
+							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+							<idno type="Signatur">LH XXXVII 1 Bl. 14</idno>
+						</msIdentifier>
+						<msContents>
+							<summary>
+								<p>Auszüge aus <ref corresp="#bib_01204"/>
+								<hi rendition="#k">G. C. Schelhammer</hi>,								<hi rendition="#i">De auditu</hi>, Leiden 1684, S. 124–129: LH XXXVII 1 Bl. 14. Ein Blatt 4<hi rendition="#sup">o</hi>; Fragment eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=42">Wasserzeichens</ref>. Zwei voll beschriebene Seiten. Leibniz verweist in N. <ref corresp="L_section_123.xml#N.12.3"/>
+ (S. <ref corresp="L_section_123.xml#LH_37_01_007v_y1"/>
+;						<ref corresp="L_section_123.xml#LH_37_01_007v_w1"/>
+;						<ref corresp="L_section_123.xml#LH_37_01_008v_novissime-1"/>
+) auf Schelhammers Abhandlung und nimmt insbesondere auf die in N. <ref corresp="#N.12.4"/>
+ exzerpierten Stellen Bezug.</p>
+				</summary>
+			</msContents>
+			<physDesc>
+				<objectDesc form="Handschrift"/>
+			</physDesc>
+			<history>
+				<origin/>
+			</history>
+		</msDesc>
+	</witness>
+</listWit>
+</p>
+</div>
+
+<div type="text">
+<p rendition="#noindent" xml:id="Ch12.S4.p4">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=41">
+	<pb type="L"/>
+	<fw type="folNum">[14 r<hi rendition="#sup">o</hi>]
+	</fw>
+</ref>
+</p>
+<p rendition="#c" xml:id="Ch12.S4.p5">Guntherus Christophorus Schelhammerus<index indexName="Personen">
+<term>
+	<hi rendition="#g">Schelhammer</hi> (Schelhammerus), Günther Christoph 1649–1716</term>
+</index>
+<hi rendition="#i">de auditu</hi>,<lb/>
+edito Lugd. Batavorum 1684 8<hi rendition="#sup">o</hi>.<ref corresp="#bib_01204"/>
+<index indexName="Sachen">
+<term>auditus</term>
+</index>
+</p>
+<p rendition="#noindent" xml:id="Ch12.S4.p6">
+<app type="Bfootnote">
+<lem type="main">Is <app type="Cfootnote">
+	<lem type="main">axiomate<index indexName="Sachen">
+		<term>axioma</term>
+	</index> 13</lem>
+<note type="lemma-abbrev">axiomate 13</note>
+<note type="editorial">„Sonus<index indexName="Sachen">
+	<term>sonus</term>
+</index> quousque permeat, omnem ambientem<index indexName="Sachen">
+<term>aer ambiens</term>
+</index> aerem occupat.” <bibl corresp="#bib_01204">
+<hi rendition="#k">G. C. Schelhammer</hi>,<hi rendition="#i">De auditu</hi>, Leiden 1684, S. 124. Der exzerpierte Abschnitt folgt unmittelbar der Formulierung des Axioms.</bibl>
+</note>
+</app> pag. 124</lem>
+<note type="lemma-abbrev">Is</note>
+<rdg wit="#L" n="1"> pag. 124 </rdg>
+<rdg wit="#L" n="2"> axiomate 13 pag. 124 <hi rendition="#i">L</hi>
+</rdg>
+</app> ita habet[:]</p>
+<p xml:id="Ch12.S4.p7">
+<app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i">Problema:<index indexName="Sachen">
+<term>
+<hi rendition="#i">problema</hi>
+</term>
+</index> quomodo sonus per aerem propagetur explicare.<index indexName="Sachen">
+<term>
+<hi rendition="#i">propagatio soni</hi>
+</term>
+</index>
+</hi>
+<hi rendition="#i">Ex praemissis hactenus colligere licet, dum corpora duo vel actu<index indexName="Sachen">
+<term>
+<hi rendition="#i">actus</hi>
+</term>
+</index> vel potentia<index indexName="Sachen">
+<term>
+<hi rendition="#i">potentia</hi>
+</term>
+</index> dura<index indexName="Sachen">
+<term>
+<hi rendition="#i">corpus durum</hi>
+</term>
+</index> ac solida<index indexName="Sachen">
+<term>
+<hi rendition="#i">corpus solidum</hi>
+</term>
+</index> colliduntur, quae productio est soni,<index indexName="Sachen">
+<term>
+<hi rendition="#i">productio soni</hi>
+</term>
+</index> tunc aerem ex necessitate commoveri</hi> et <hi rendition="#i">concuti, ob eam rationem qua fluida<index indexName="Sachen">
+<term>
+<hi rendition="#i">fluidum</hi>
+</term>
+</index> omnia id pati ostensum est, <app type="Cfootnote">
+<lem type="main">Axiomate 4.</lem>
+<note type="lemma-abbrev">Axiomate 4</note>
+<note type="editorial">„Corpus fluidum<index indexName="Sachen">
+<term>corpus fluidum</term>
+</index> compressum solidi trementis<index indexName="Sachen">
+<term>corpus tremens</term>
+</index> rationem<index indexName="Sachen">
+<term>ratio</term>
+</index> habet.” <bibl corresp="#bib_01204">a.a.O., S. 110.</bibl>
+</note>
+</app> Cum vero aer<index indexName="Sachen">
+<term>
+<hi rendition="#i">aer</hi>
+</term>
+</index> sit corpus fluidum compressum<index indexName="Sachen">
+<term>
+<hi rendition="#i">corpus compressum</hi>
+</term>
+</index> indeque elastro<index indexName="Sachen">
+<term>
+<hi rendition="#i">elastrum</hi>
+</term>
+</index> praeditum, ac in tremorem<index indexName="Sachen">
+<term>
+<hi rendition="#i">tremor</hi>
+</term>
+</index> agi aptum, patet non alio modo id fieri, quam quia impressam<index indexName="Sachen">
+<term>
+<hi rendition="#i">species impressa</hi>
+</term>
+</index> semel speciem soni<index indexName="Sachen">
+<term>
+<hi rendition="#i">species soni</hi>
+</term>
+</index> una particula<index indexName="Sachen">
+<term>
+<hi rendition="#i">particula aeris</hi>
+</term>
+</index> in aliam decurrente totoque aere contremente per se ipsum idem propaget, ut solida corpora idem facere, <app type="Cfootnote">
+<lem type="main">axiomate<index indexName="Sachen">
+<term>
+<hi rendition="#i">axioma</hi>
+</term>
+</index> 3.</lem>
+<note type="lemma-abbrev">axiomate 3</note>
+<note type="editorial">„Corpus solidum<index indexName="Sachen">
+<term>corpus solidum</term>
+</index> in tremorem<index indexName="Sachen">
+<term>tremor</term>
+</index> agi aptum, sonum impressum<index indexName="Sachen">
+<term>sonus impressus</term>
+</index> per se ipsum totum transmittit.” <bibl corresp="#bib_01204">a.a.O., S. 110.</bibl>
+</note>
+</app> docuimus. Non secus enim</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">Problema</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">enim</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_01204">a.a.O., S. 124.</bibl>
+</note>
+</app>
+<app type="Cfootnote" from="#KZeitz157" to="#KZeitz158">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<hi rendition="#i">ac videmus</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">addensatum</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_01204">a.a.O., S. 125. Zitat mit Auslassung.</bibl>
+</note>
+</app>
+<anchor xml:id="KZeitz157"/>
+<hi rendition="#i">ac videmus chordam<index indexName="Sachen">
+<term>
+<hi rendition="#i">chorda</hi>
+</term>
+</index> commoveri ac reciprocis ictibus<index indexName="Sachen">
+<term>
+<hi rendition="#i">ictus</hi>
+</term>
+</index> huc illuc decurrere</hi>[,]<hi rendition="#i">aer quoque commoveri totus videtur, hinc una aeris particula<index indexName="Sachen">
+<term>
+<hi rendition="#i">particula aeris</hi>
+</term>
+</index> alteri impressam speciem<index indexName="Sachen">
+<term>
+<hi rendition="#i">species impressa</hi>
+</term>
+</index> perpetuo communicat, donec ob reactionem particularum vis<index indexName="Sachen">
+<term>
+<hi rendition="#i">vis</hi>
+</term>
+</index> tandem ac motus omnis elanguescat, et sonus propagari desinat.<index indexName="Sachen">
+<term>
+<hi rendition="#i">propagatio soni</hi>
+</term>
+</index> Hoc autem inventum non mihi soli deberi fateor sed magna ex parte viro ingeniosissimo ac varia doctrina atque eruditione instructissimo<anchor xml:id="LH_37_01_014r_Leibnizerwaehnt-1"/>
+<hi rendition="#g">J. Leibnizio</hi>
+<index indexName="Personen">
+<term>
+<hi rendition="#g #i">Leibniz</hi>
+<hi rendition="#i">(Leibnitius, GGL), Gottfried Wilhelm 1646–1716</hi>
+</term>
+</index>
+<hi rendition="#g"></hi>Seren. Ducis Luneb. et Brunsv. Hannoverani<index indexName="Personen">
+<term>
+<hi rendition="#g #i">Braunschweig-Lüneburg</hi>
+<hi rendition="#i">, Ernst August von, Herzog 1680–1698, Kurfürst von Hannover 1692–1698</hi>
+</term>
+</index> hoc tempore</hi>
+<hi rendition="#i">Consiliario qui pro suo in nos affectu Lutetiae Parisiorum<index indexName="Orte">
+<term>
+<hi rendition="#i">Paris</hi>
+</term>
+</index> dudum nato</hi>[,]<app type="Cfootnote" from="#KZeitz159" to="#KZeitz160">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<hi rendition="#i">cum audiret</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">esse</hi>
+</note>
+<note type="editorial">Siehe G. C. <hi rendition="#k">Schelhammer</hi>, Briefe an G. W. Leibniz vom 8. (18.) November und vom 31. Dezember 1680 (10. Januar 1681; <hi rendition="#i">LSB</hi> III, 3 N. 124;<bibl corresp="#bib_01279"> 153<bibl corresp="#bib_01280">).</bibl>
+</bibl>
+</note>
+</app>
+<anchor xml:id="KZeitz159"/>
+<hi rendition="#i">cum audiret de</hi>
+</p>
+<p rendition="#noindent" xml:id="Ch12.S4.p8">
+<hi rendition="#i">auditu mihi dissertationem sub manibus esse,</hi>
+<anchor xml:id="KZeitz160"/>
+<app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i">per literas mecum communicare non dubitavit, et de corporum tremore<index indexName="Sachen">
+<term>
+<hi rendition="#i">tremor</hi>
+</term>
+</index> quaedam egregia monere.</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">per literas</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">monere</hi>
+</note>
+<note type="editorial">Siehe G. W. <hi rendition="#k">Leibniz</hi>, Briefe an G. C. Schelhammer, 6. (16.) Dezember 1680; Februar/März 1681; 13. (23.) Januar 1682 (<hi rendition="#i">LSB</hi> III, 3 N. 139;<bibl corresp="#bib_01275"> 182;<bibl corresp="#bib_01194"> 311<bibl corresp="#bib_01195">).</bibl>
+</bibl>
+</bibl>
+</note>
+</app>
+<anchor xml:id="LH_37_01_014r_Leibnizerwaehnt-2"/>
+<hi rendition="#i">Subolfactum id autem jam olim fuit eruditis quibusdam et emunctae naris viris, quamvis non ita distinctim, sed per transennam, quod dicitur</hi>[,]<hi rendition="#i">rem perceperint. Prae caeteris vero summo Philosopho Medico atque poetae Hieronymo Fracastorio,<index indexName="Personen">
+<term>
+<hi rendition="#g #i">Fracastoro</hi>
+<hi rendition="#i">(Fracastorius), Girolamo 1478–1553</hi>
+</term>
+</index> qui elegantissimis verbis id exposuit Lib. de sympathia et antipathia cap. 4.</hi>
+<app type="Cfootnote" from="#LH_37_01_014_a1" to="#LH_37_01_014_a2">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<hi rendition="#i">Species</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">densantibus</hi>
+</note>
+<note type="editorial">Wörtlich zitiert nach G. <hi rendition="#k">Fracastoro</hi>,<hi rendition="#i">De sympathia</hi>, cap. 4 (Venedig 1546, S. 3 r<hi rendition="#sup">o</hi>/v<hi rendition="#sup">o</hi>;<hi rendition="#i">Opera</hi> I, Lyon 1591, S. 9 f.).<bibl corresp="#bib_01215">
+<bibl corresp="#bib_01216"/>
+</bibl>
+</note>
+</app>
+<anchor xml:id="LH_37_01_014_a1"/>
+<hi rendition="#i">Species soni,<index indexName="Sachen">
+<term>
+<hi rendition="#i">species soni</hi>
+</term>
+</index> inquit, si movere sensum<index indexName="Sachen">
+<term>
+<hi rendition="#i">sensus</hi>
+</term>
+</index> debet, medium poscit continenter densum,<index indexName="Sachen">
+<term>
+<hi rendition="#i">medium densum</hi>
+</term>
+</index> non per admistionem terrae<index indexName="Sachen">
+<term>
+<hi rendition="#i">terra</hi>
+</term>
+</index> sed vi addensatum,</hi>
+<anchor xml:id="KZeitz158"/>
+<app type="Cfootnote">
+<lem type="main">
+<p>
+<hi rendition="#i">quod in aere<index indexName="Sachen">
+<term>
+<hi rendition="#i">aer</hi>
+</term>
+</index> accidit facto ictu.<index indexName="Sachen">
+<term>
+<hi rendition="#i">ictus</hi>
+</term>
+</index> Inde enim facta prius distractione<index indexName="Sachen">
+<term>
+<hi rendition="#i">distractio</hi>
+</term>
+</index> et rarefactione<index indexName="Sachen">
+<term>
+<hi rendition="#i">rarefactio</hi>
+</term>
+</index>
+</hi>[,]<hi rendition="#i">tum subita fit addensatio partis post partem more undarum,<index indexName="Sachen">
+<term>
+<hi rendition="#i">unda</hi>
+</term>
+</index> unde circulationes conflantur. Quod non aliud est, quam successiva quaedam aeris addensatio<index indexName="Sachen">
+<term>
+<hi rendition="#i">addensatio aeris</hi>
+</term>
+</index> in orbem<index indexName="Sachen">
+<term>
+<hi rendition="#i">orbis</hi>
+</term>
+</index> facta per quam delata species<index indexName="Sachen">
+<term>
+<hi rendition="#i">species propagata</hi>
+</term>
+</index>
+</hi>
+<ref>
+<pb type="L"/>
+<fw type="folNum">[14 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+<hi rendition="#i">a primo profecta sensum<index indexName="Sachen">
+<term>
+<hi rendition="#i">sensus</hi>
+</term>
+</index> dimovere potest. Fit autem successiva illa addensatio in aere<index indexName="Sachen">
+<term>
+<hi rendition="#i">addensatio aeris</hi>
+</term>
+</index>
+</hi>[,]<hi rendition="#i">prioribus quidem partibus subito ac vi<index indexName="Sachen">
+<term>
+<hi rendition="#i">vis</hi>
+</term>
+</index> densatis</hi>[,]<hi rendition="#i">subito etiam</hi> se <hi rendition="#i">rarefacientibus ac alias successive densantibus.</hi>
+<anchor xml:id="LH_37_01_014_a2"/>
+</p>
+<p>
+<hi rendition="#i">
+<index indexName="Sachen">
+<term>
+<hi rendition="#i">paradoxon</hi>
+</term>
+</index>
+<hi rendition="#g">Paradoxon. Sonus per aerem propagatus a principio ad finem undique fertur pari velocitate sed viribus remittit.</hi>
+<index indexName="Sachen">
+<term>
+<hi rendition="#i">propagatio soni</hi>
+</term>
+</index>
+<index indexName="Sachen">
+<term>
+<hi rendition="#i">velocitas</hi>
+</term>
+</index>
+<index indexName="Sachen">
+<term>
+<hi rendition="#i">vis</hi>
+</term>
+</index>
+<anchor xml:id="LH_37_01_014v_z1"/>
+Nullus dubito hoc assertum tam a vero absonum plerisque videri, ut vix fidem habeant. Cum actione<index indexName="Sachen">
+<term>
+<hi rendition="#i">actio</hi>
+</term>
+</index> et reactione<index indexName="Sachen">
+<term>
+<hi rendition="#i">reactio</hi>
+</term>
+</index>
+</hi>
+<app type="Cfootnote">
+<lem type="main">partium</lem>
+<note type="editorial">
+<hi rendition="#i">particularum</hi> in der Vorlage.</note>
+</app>
+<hi rendition="#i">aeris<index indexName="Sachen">
+<term>
+<hi rendition="#i">particula aeris</hi>
+</term>
+</index> trementium,<index indexName="Sachen">
+<term>
+<hi rendition="#i">aer tremens</hi>
+</term>
+</index> videatur omnis earum vis<index indexName="Sachen">
+<term>
+<hi rendition="#i">vis</hi>
+</term>
+</index> frangi debere nec tantum imminui sonus,<index indexName="Sachen">
+<term>
+<hi rendition="#i">sonus</hi>
+</term>
+</index> sed tardius etiam</hi>
+</p>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">quod in</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">tardius etiam</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_01204">
+<hi rendition="#k">Schelhammer</hi>,<hi rendition="#i">De auditu</hi>, S. 126. Zitat mit Auslassung.</bibl>
+</note>
+</app>
+<app type="Cfootnote" from="#KZeitz161" to="#KZeitz162">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<hi rendition="#i">ferri</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">proportione</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_01204">a.a.O., S. 127. Zitat mit Auslassung.</bibl>
+</note>
+</app>
+<anchor xml:id="KZeitz161"/>
+<hi rendition="#i">ferri debere. Et vero nos ipsi etiam in eo fuimus errore, antequam a <app type="Bfootnote">
+<lem type="main">Mathematico consummatissimo et rerum naturalium apprime curioso,</lem>
+<note type="lemma-abbrev">Mathematico</note>
+<rdg wit="#L" n="1"> curiosissimo </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">consummatissimo et</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">apprime curioso,</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> Paulo Heigelio<index indexName="Personen">
+<term>
+<hi rendition="#g #i">Heigel</hi>
+<hi rendition="#i">(Heigelius), Paul 1640–1690</hi>
+</term>
+</index> Collega Honoratissimo dubium ea de re nobis moveretur. Tunc enim experientia<index indexName="Sachen">
+<term>
+<hi rendition="#i">experientia</hi>
+</term>
+</index> consuluimus, et eodem praesente comperti sumus post mille passus<index indexName="Sachen">
+<term>
+<hi rendition="#i">passus</hi>
+</term>
+</index> eadem celeritate<index indexName="Sachen">
+<term>
+<hi rendition="#i">celeritas</hi>
+</term>
+</index> procedere ulterius sonus,<index indexName="Sachen">
+<term>
+<hi rendition="#i">sonus</hi>
+</term>
+</index> atque fecerat in ipso principio. Experimentum<index indexName="Sachen">
+<term>
+<hi rendition="#i">experimentum</hi>
+</term>
+</index> tale fuit: stationem<index indexName="Sachen">
+<term>
+<hi rendition="#i">statio</hi>
+</term>
+</index> eligimus in loco <app type="Bfootnote">
+<lem type="main">paulo eminentiore,</lem>
+<note type="lemma-abbrev">paulo</note>
+<rdg wit="#L">
+<note type="editorial">|</note> paulo <note type="editorial">
+<hi rendition="#i">streicht Hrsg. nach Vorlage</hi> |
+</note>
+<hi rendition="#i">eminentiore</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> ibique collocata bombarda<index indexName="Sachen">
+<term>
+<hi rendition="#i">bombarda</hi>
+</term>
+</index> majore et relictis sociis<index indexName="Sachen">
+<term>
+<hi rendition="#i">socius</hi>
+</term>
+</index> explodendae bombardae mensuravimus ab illo loco perticas 10.<index indexName="Sachen">
+<term>
+<hi rendition="#i">pertica</hi>
+</term>
+</index> Hic pedem fiximus, et perpendiculo brevissimo,<index indexName="Sachen">
+<term>
+<hi rendition="#i">perpendiculum</hi>
+</term>
+</index> ut citissime ac saepius posset recurrere</hi>[,]<hi rendition="#i">instructi</hi>[,]<hi rendition="#i">signum<index indexName="Sachen">
+<term>
+<hi rendition="#i">signum</hi>
+</term>
+</index> dedimus minore sclopeto,<index indexName="Sachen">
+<term>
+<hi rendition="#i">sclopetum</hi>
+</term>
+</index> et ut primum ignem<index indexName="Sachen">
+<term>
+<hi rendition="#i">ignis</hi>
+</term>
+</index> vidimus deflagrantem, laxato perpendiculo computavimus seorsim quilibet quot vicibus reciprocam decursionem perpendiculum<index indexName="Sachen">
+<term>
+<hi rendition="#i">perpendiculum</hi>
+</term>
+</index> absolveret antequam</hi>
+<hi rendition="#i">ad aures<index indexName="Sachen">
+<term>
+<hi rendition="#i">auris</hi>
+</term>
+</index> allaberetur sonus.<index indexName="Sachen">
+<term>
+<hi rendition="#i">sonus</hi>
+</term>
+</index> Hoc diligenter notato rursus 10 perticis<index indexName="Sachen">
+<term>
+<hi rendition="#i">pertica</hi>
+</term>
+</index> emensis signum dedi-</hi>
+</p>
+<p rendition="#noindent" xml:id="Ch12.S4.p9">
+<hi rendition="#i">mus et ut ante instituimus computationem,<index indexName="Sachen">
+<term>
+<hi rendition="#i">computatio</hi>
+</term>
+</index> idque aliquoties fecimus, donec internoscere signum,<index indexName="Sachen">
+<term>
+<hi rendition="#i">signum</hi>
+</term>
+</index> vel ipsum etiam ignem<index indexName="Sachen">
+<term>
+<hi rendition="#i">ignis</hi>
+</term>
+</index> non amplius</hi> potuimus <hi rendition="#i">idque constanter deprehendimus, <app type="Bfootnote">
+<lem type="main">non Geometrica sed Arithmetica proportione<index indexName="Sachen">
+<term>
+<hi rendition="#i">proportio geometrica</hi>
+</term>
+</index>
+<index indexName="Sachen">
+<term>
+<hi rendition="#i">proportio arithmetica</hi>
+</term>
+</index>
+</lem>
+<note type="lemma-abbrev">non</note>
+<rdg wit="#L" n="1"> Arithmetica </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">Geometrica sed Arithmetica</hi>
+<app>
+<rdg wit="#L" n="a">ratione </rdg>
+<rdg wit="#L" n="b">
+<hi rendition="#i">proportione</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</hi>
+<anchor xml:id="KZeitz162"/>
+<app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i">crescere numerum reciprocationis</hi>
+<index indexName="Sachen">
+<term>reciprocatio</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">penduli.<index indexName="Sachen">
+<term>pendulum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">penduli</note>
+<note type="editorial">
+<hi rendition="#i">perpendiculi</hi> in der Vorlage.</note>
+</app>
+<hi rendition="#i">Interim sonus<index indexName="Sachen">
+<term>
+<hi rendition="#i">sonus</hi>
+</term>
+</index> ita imminuebatur, ut percipi</hi> vix <hi rendition="#i">tandem posset. Ego vero inexpectato eventu turbatus<anchor xml:id="LH_37_01_014v_z2"/>
+</hi>[,]<hi rendition="#i">de causa<index indexName="Sachen">
+<term>
+<hi rendition="#i">causa</hi>
+</term>
+</index> rei tam mirae cogitare sedulo cepi. Et parum abfuit</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">quin</hi> subtilibus</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">quin</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">subtilius</hi>
+</rdg>
+<rdg wit="#L" n="2"> subtilibus <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">aere<index indexName="Sachen">
+<term>
+<hi rendition="#i">aer</hi>
+</term>
+</index> elementum<index indexName="Sachen">
+<term>
+<hi rendition="#i">elementum</hi>
+</term>
+</index>
+<index indexName="Sachen">
+<term>
+<hi rendition="#i">aether</hi>
+</term>
+</index> poris<index indexName="Sachen">
+<term>
+<hi rendition="#i">porus</hi>
+</term>
+</index>
+</hi> ejus <hi rendition="#i">haerere crederem</hi>. Sed quod <hi rendition="#i">haec sententia perquam improbabilis semper mihi plurimis de causis antea visa</hi> esset <hi rendition="#i">ad stagnum<index indexName="Sachen">
+<term>
+<hi rendition="#i">stagnum</hi>
+</term>
+</index> spatiosum non admodum profundum me contuli, ibique statutis signis<index indexName="Sachen">
+<term>
+<hi rendition="#i">signum</hi>
+</term>
+</index> eadem distantia ab invicem dissidentibus</hi>[,]<hi rendition="#i">baculis et lapillis injectis,<index indexName="Sachen">
+<term>
+<hi rendition="#i">lapillus injectus</hi>
+</term>
+</index> coepi ut antea momenta temporis<index indexName="Sachen">
+<term>
+<hi rendition="#i">momentum temporis</hi>
+</term>
+</index> solicite connumerare.</hi> Et <hi rendition="#i">vidi manifesto circulos<index indexName="Sachen">
+<term>
+<hi rendition="#i">circulus aqueus</hi>
+</term>
+</index> istos initio velocius</hi>[,]<note type="editorial">
+<hi rendition="#i">remissius postremo loco decurrere per superficiem, verum <app type="Bfootnote">
+<lem type="main">nihilominus</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> non esse diversum tempus,<index indexName="Sachen">
+<term>
+<hi rendition="#i">tempus</hi>
+</term>
+</index> quo ab uno spatio notato ad alterum devenirent illorum extremi. Hoc autem fieri ideo quod qui primus excitatur, non</hi>
+</note> ideo <hi rendition="#i">primus permanet, sed ubi parum processit,</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">crescere</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">processit</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_01204">a.a.O., S. 128. Zitat mit Auslassungen.</bibl>
+</note>
+</app>
+<app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i">alios atque alios justo spatio excitat</hi>[,]<hi rendition="#i">hi rursus alios qui</hi>
+<app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">omnes</hi>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>rursus</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg. nach Vorlage</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#i">illum qui primo loco factus erat, praecurrunt longe. Sicque hujus tarditatem<index indexName="Sachen">
+<term>
+<hi rendition="#i">tarditas</hi>
+</term>
+</index> sua frequentia<index indexName="Sachen">
+<term>
+<hi rendition="#i">frequentia</hi>
+</term>
+</index> et multiplicatione pensatum eunt. Ut pateat pati hic aquam<index indexName="Sachen">
+<term>
+<hi rendition="#i">aqua</hi>
+</term>
+</index> trementem a reactione<index indexName="Sachen">
+<term>
+<hi rendition="#i">reactio</hi>
+</term>
+</index> proxime adstantis et tamen eodem modo quo aer<index indexName="Sachen">
+<term>
+<hi rendition="#i">aer</hi>
+</term>
+</index> aequali temporis<index indexName="Sachen">
+<term>
+<hi rendition="#i">tempus</hi>
+</term>
+</index> spatio hos circulos<index indexName="Sachen">
+<term>
+<hi rendition="#i">circulus aqueus</hi>
+</term>
+</index> ad finem decurrere.</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">alios</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">decurrere</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_01204">a.a.O., S. 129.</bibl>
+</note>
+</app>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

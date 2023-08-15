@@ -1,24 +1,124 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-072-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-072-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Aus einem Gespräch mit Edme Mariotte</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Aus einem Gespräch mit Edme Mariotte</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="72">Aus einem Gespräch mit Edme Mariotte</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1674-07" resp="#ed" cert="medium">[zweite Hälfte 1674 – Anfang 1675]</date><date calendar="#gregorian" notAfter="1675-01" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=715</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="667" to="668"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-072-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH III 5 Bl. 89</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung:
+            </author>
+            <title type="chapter" level="a" n="72">Aus einem Gespräch mit Edme Mariotte</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1674-07" resp="#ed" cert="medium">[zweite Hälfte 1674 – Anfang 1675]</date>
+            <date calendar="#gregorian" notAfter="1675-01" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=715</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="667" to="668"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-072-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH III 5 Bl. 89</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung:
 LH III 5 Bl. 89.
 1 Bl. 4<hi rendition="#sup">o</hi>, an den Rändern beschnitten.
 1 S. auf Bl. 89 r<hi rendition="#sup">o</hi>.
 Bl. 89 v<hi rendition="#sup">o</hi> leer.
-Ein Wasserzeichen.</p><p>Cc 2, Nr. 869</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+Ein Wasserzeichen.</p>
+                  <p>Cc 2, Nr. 869</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -644,26 +744,190 @@ Ein Wasserzeichen.</p><p>Cc 2, Nr. 869</p></summary></msContents><physDesc><obje
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="fr"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#medizin"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-16" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#medizin"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-16" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-072-000_facs-haupttextzeuge">
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=277"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=277"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH003,05/&amp;pn=277"/>
-  </facsimile><text xml:id="L_08-02-072-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch72" n="72"><pb type="VIII_2" n="667"/><head>72.
+  </facsimile>
+  <text xml:id="L_08-02-072-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch72" n="72">
+        <pb type="VIII_2" n="667"/>
+        <head>72.
 AUS EINEM GESPRÄCH MIT EDME MARIOTTE</head>
-<head>[zweite Hälfte 1674 – Anfang 1675]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung:
+        <head>[zweite Hälfte 1674 – Anfang 1675]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung:
 LH III 5 Bl. 89.
 1 Bl. 4<hi rendition="#sup">o</hi>, an den Rändern beschnitten.
 1 S. auf Bl. 89 r<hi rendition="#sup">o</hi>.
 Bl. 89 v<hi rendition="#sup">o</hi> leer.
-Ein Wasserzeichen.</p><p>Cc 2, Nr. 869</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch72.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Ein Wasserzeichen.</p>
+                      <p>Cc 2, Nr. 869</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch72.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi>
 Das Wasserzeichen im Textträger des vorliegenden Stücks ist für die zweite Hälfte 1674 und den Anfang 1675 belegt.
 Das gleiche Wasserzeichen kommt unter anderem im Stück N. 10 vor, welches von Leibniz eigenhändig auf Dezember 1674 datiert wurde.
-In demselben Zeitraum hat sich Leibniz intensiv mit Mariottes Abhandlung <ref corresp="#bib_00311"/><hi rendition="#i">De la percussion ou chocq des corps</hi> befasst
-(siehe die Datierungsgründe von N. 50).</hi></p></div><div type="text"><p xml:id="Ch72.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[89 r<hi rendition="#sup">o</hi>]</fw> Mons. l’Abbé de Mariotte<index indexName="Namensregister"><term><hi rendition="#g">Mariotte</hi>, Edme 1620-1684</term></index> a des pensées <app type="Bfootnote"><lem type="main">tres belles</lem><note type="lemma-abbrev">tres</note><rdg wit="#L" n="1"> importantes </rdg><rdg wit="#L" n="2"> belles <hi rendition="#i">L</hi></rdg></app> pour la perfection de la physique. Il me dit que Mons. Du Vernette<index indexName="Namensregister"><term><hi rendition="#g">du Vernette</hi>, ???? ??-??</term></index> s’offre d’assister à la dissection des malades de l’hostel <app type="Bfootnote"><lem type="main">Dieu, si on l’ordonne</lem><note type="lemma-abbrev">Dieu,</note><rdg wit="#L" n="1"> s’il plaira l’ord </rdg><rdg wit="#L" n="2"> si on l’ordonne <hi rendition="#i">L</hi></rdg></app> qu’on en fasse.</p><p xml:id="Ch72.p6">Mons. Sanguien<index indexName="Namensregister"><term><hi rendition="#g">Sanguien</hi>, ????, ??-??</term></index> a peur d’estre empoisonné, il guerit une femme abandonnée des Medecins, par des remedes qui estoient effectivement trop violents.</p><p xml:id="Ch72.p7">Mons. De Mariotte<index indexName="Namensregister"><term><hi rendition="#g">Mariotte</hi>, Edme 1620-1684</term></index> m’a <app type="Bfootnote"><lem type="main">appris un</lem><note type="lemma-abbrev">appris</note><rdg wit="#L" n="1"> une </rdg><rdg wit="#L" n="2"> un <hi rendition="#i">L</hi></rdg></app> remede fort important, qu’il a appris d’une paisane. Il avoit mal à la gorge, il y avoit comme de petits ulceres et inflammations; on luy donna quantité de remedes inutilement, et il apprehendoit pour la suite. Une paisane par hazard dit qu’elle l’en gueriroit en moins de rien. <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[Effectivement]</corr></lem><rdg wit="#L"><orig>Effectifement</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> elle luy apprit un remede, <app type="Bfootnote"><lem type="main">dont je</lem><rdg wit="#L">dont <note type="editorial">|</note> que <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> je <hi rendition="#i">L</hi></rdg></app> diray par apres, c’estoit un éspece de Gargarisme. En se couchant il en prit; il en gargarisa la gorge, il en avalla même quelque chose. A minuit, il en prit quelques autres cuillerées de même, et <app type="Bfootnote"><lem type="main">il s’en</lem><note type="lemma-abbrev">il</note><rdg wit="#L" n="1"> se </rdg><rdg wit="#L" n="2"> s’en <hi rendition="#i">L</hi></rdg></app> trouva encor mieux ayant fait cela la même nuit, la troisiesme <app type="Bfootnote"><lem type="main">fois; le</lem><note type="lemma-abbrev">fois;</note><rdg wit="#L" n="1"> il </rdg><rdg wit="#L" n="2"> le <hi rendition="#i">L</hi></rdg></app> lendemain le mal avoit cessé entierement, par une espece de merveille. La même <app type="Bfootnote"><lem type="main">cure luy a</lem><note type="lemma-abbrev">cure luy</note><rdg wit="#L" n="1"> avoit </rdg><rdg wit="#L" n="2"> a <hi rendition="#i">L</hi></rdg></app> reussi trois fois. Estant incommodé à Dijon<index indexName="Ortsregister"><term>Dijon</term></index>
-du même mal, on luy donna quantité de choses; comme sirop de meures, etc. mais cela ne faisoit rien; on le voulut saigner et se servir d’autres remedes. Cela l’obligea d’avoir recours à son remede. <app type="Bfootnote"><lem type="main">Il en fit</lem><note type="lemma-abbrev">Il</note><rdg wit="#L" n="1"> fit </rdg><rdg wit="#L" n="2"> en fit <hi rendition="#i">L</hi></rdg></app> chercher. Et il fut gueri tout de même. La troisiesme fois à <app type="Bfootnote"><lem type="main">Paris,<index indexName="Ortsregister"><term>Paris</term></index> où</lem><note type="lemma-abbrev">Paris,</note><rdg wit="#L" n="1"> et </rdg><rdg wit="#L" n="2"> il </rdg><rdg wit="#L" n="3"> où  <hi rendition="#i">L</hi></rdg></app> eut de la peine à trouver du <hi rendition="#g">ronce</hi>, dont je parleray par apres; et on luy porta au lieu de cela <pb type="VIII_2" n="668"/>des feuilles de rosier sauvage mais enfin on trouua du dit ronce.</p><p xml:id="Ch72.p8">Le remede est tel: prenez cinq ou six feuilles de <hi rendition="#g">sauge</hi> (: salvia :) et deux mains des bouts ou extremitez ou pointes des feuilles de <hi rendition="#g">ronce</hi> (rubus) faites bouillir cela dans de l’eau d’<hi rendition="#g">orge</hi>, ou si vous voulez avec de l’orge. Mettez dedans du bon <hi rendition="#g">miel de Narbonne</hi><index indexName="Ortsregister"><term>Narbonne</term></index> (: peut estre que le succre feroit le même effect, car il y a des gens qui ont de l’aversion pour le miel à cause qu’on en met dans les lavements :) et vous aurez un gargarisme, dont vous vous servirez comme j’ay dit cy dessus.</p></div></div></body>
-  </text>
+In demselben Zeitraum hat sich Leibniz intensiv mit Mariottes Abhandlung <ref corresp="#bib_00311"/>
+            <hi rendition="#i">De la percussion ou chocq des corps</hi> befasst
+(siehe die Datierungsgründe von N. 50).</hi>
+        </p>
+      </div>
+      <div type="text">
+        <p xml:id="Ch72.p5" rendition="#noindent">
+          <pb type="L"/>
+          <fw type="folNum">[89 r<hi rendition="#sup">o</hi>]
+          </fw> Mons. l’Abbé de Mariotte<index indexName="Namensregister">
+          <term>
+            <hi rendition="#g">Mariotte</hi>, Edme 1620-1684</term>
+        </index> a des pensées <app type="Bfootnote">
+        <lem type="main">tres belles</lem>
+        <note type="lemma-abbrev">tres</note>
+        <rdg wit="#L" n="1"> importantes </rdg>
+        <rdg wit="#L" n="2"> belles <hi rendition="#i">L</hi>
+        </rdg>
+      </app> pour la perfection de la physique. Il me dit que Mons. Du Vernette<index indexName="Namensregister">
+      <term>
+        <hi rendition="#g">du Vernette</hi>, ???? ??-??
+      </term>
+    </index> s’offre d’assister à la dissection des malades de l’hostel <app type="Bfootnote">
+    <lem type="main">Dieu, si on l’ordonne</lem>
+    <note type="lemma-abbrev">Dieu,</note>
+    <rdg wit="#L" n="1"> s’il plaira l’ord </rdg>
+    <rdg wit="#L" n="2"> si on l’ordonne <hi rendition="#i">L</hi>
+    </rdg>
+  </app> qu’on en fasse.</p>
+<p xml:id="Ch72.p6">Mons. Sanguien<index indexName="Namensregister">
+  <term>
+    <hi rendition="#g">Sanguien</hi>, ????, ??-??
+  </term>
+</index> a peur d’estre empoisonné, il guerit une femme abandonnée des Medecins, par des remedes qui estoient effectivement trop violents.</p>
+<p xml:id="Ch72.p7">Mons. De Mariotte<index indexName="Namensregister">
+<term>
+  <hi rendition="#g">Mariotte</hi>, Edme 1620-1684</term>
+</index> m’a <app type="Bfootnote">
+<lem type="main">appris un</lem>
+<note type="lemma-abbrev">appris</note>
+<rdg wit="#L" n="1"> une </rdg>
+<rdg wit="#L" n="2"> un <hi rendition="#i">L</hi>
+</rdg>
+</app> remede fort important, qu’il a appris d’une paisane. Il avoit mal à la gorge, il y avoit comme de petits ulceres et inflammations; on luy donna quantité de remedes inutilement, et il apprehendoit pour la suite. Une paisane par hazard dit qu’elle l’en gueriroit en moins de rien. <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[Effectivement]</corr>
+</lem>
+<rdg wit="#L">
+<orig>Effectifement</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> elle luy apprit un remede, <app type="Bfootnote">
+<lem type="main">dont je</lem>
+<rdg wit="#L">dont <note type="editorial">|</note> que <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> je <hi rendition="#i">L</hi>
+</rdg>
+</app> diray par apres, c’estoit un éspece de Gargarisme. En se couchant il en prit; il en gargarisa la gorge, il en avalla même quelque chose. A minuit, il en prit quelques autres cuillerées de même, et <app type="Bfootnote">
+<lem type="main">il s’en</lem>
+<note type="lemma-abbrev">il</note>
+<rdg wit="#L" n="1"> se </rdg>
+<rdg wit="#L" n="2"> s’en <hi rendition="#i">L</hi>
+</rdg>
+</app> trouva encor mieux ayant fait cela la même nuit, la troisiesme <app type="Bfootnote">
+<lem type="main">fois; le</lem>
+<note type="lemma-abbrev">fois;</note>
+<rdg wit="#L" n="1"> il </rdg>
+<rdg wit="#L" n="2"> le <hi rendition="#i">L</hi>
+</rdg>
+</app> lendemain le mal avoit cessé entierement, par une espece de merveille. La même <app type="Bfootnote">
+<lem type="main">cure luy a</lem>
+<note type="lemma-abbrev">cure luy</note>
+<rdg wit="#L" n="1"> avoit </rdg>
+<rdg wit="#L" n="2"> a <hi rendition="#i">L</hi>
+</rdg>
+</app> reussi trois fois. Estant incommodé à Dijon<index indexName="Ortsregister">
+<term>Dijon</term>
+</index>
+du même mal, on luy donna quantité de choses; comme sirop de meures, etc. mais cela ne faisoit rien; on le voulut saigner et se servir d’autres remedes. Cela l’obligea d’avoir recours à son remede. <app type="Bfootnote">
+<lem type="main">Il en fit</lem>
+<note type="lemma-abbrev">Il</note>
+<rdg wit="#L" n="1"> fit </rdg>
+<rdg wit="#L" n="2"> en fit <hi rendition="#i">L</hi>
+</rdg>
+</app> chercher. Et il fut gueri tout de même. La troisiesme fois à <app type="Bfootnote">
+<lem type="main">Paris,<index indexName="Ortsregister">
+<term>Paris</term>
+</index> où</lem>
+<note type="lemma-abbrev">Paris,</note>
+<rdg wit="#L" n="1"> et </rdg>
+<rdg wit="#L" n="2"> il </rdg>
+<rdg wit="#L" n="3"> où  <hi rendition="#i">L</hi>
+</rdg>
+</app> eut de la peine à trouver du <hi rendition="#g">ronce</hi>, dont je parleray par apres; et on luy porta au lieu de cela <pb type="VIII_2" n="668"/>
+des feuilles de rosier sauvage mais enfin on trouua du dit ronce.</p>
+<p xml:id="Ch72.p8">Le remede est tel: prenez cinq ou six feuilles de <hi rendition="#g">sauge</hi> (: salvia :) et deux mains des bouts ou extremitez ou pointes des feuilles de <hi rendition="#g">ronce</hi> (rubus) faites bouillir cela dans de l’eau d’<hi rendition="#g">orge</hi>, ou si vous voulez avec de l’orge. Mettez dedans du bon <hi rendition="#g">miel de Narbonne</hi>
+<index indexName="Ortsregister">
+<term>Narbonne</term>
+</index> (: peut estre que le succre feroit le même effect, car il y a des gens qui ont de l’aversion pour le miel à cause qu’on en met dans les lavements :) et vous aurez un gargarisme, dont vous vous servirez comme j’ay dit cy dessus.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

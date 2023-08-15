@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-051-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-051-000">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -6,32 +7,56 @@
         <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
           Text</title>
         <respStmt>
-          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Digitale Konzeption und
-            Projektbegleitung</note></resp>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
         </respStmt>
         <respStmt>
-          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-            Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
-          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-            VIII</note></resp>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-            Berlin</note></resp>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
         </respStmt>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
         <date type="creation">2021</date>
         <availability>
-          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -48,7 +73,10 @@
             <date calendar="#gregorian" notBefore="1673-03" resp="#ed" cert="medium">[Frühjahr
               1673]</date>
             <date calendar="#gregorian" notAfter="1673-05" resp="#ed" cert="medium"/>
-            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=543</idno></idno>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+              <idno type="page">#page=543</idno>
+            </idno>
           </analytic>
           <monogr>
             <title type="main" level="s" n="8">Reihe VIII:
@@ -61,21 +89,27 @@
             </imprint>
             <biblScope unit="page" from="498" to="502"/>
           </monogr>
-          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
         </biblStruct>
         <listWit>
-          <witness n="L" corresp="#L_08-01-051-000_facs-haupttextzeuge"><msDesc>
+          <witness n="L" corresp="#L_08-01-051-000_facs-haupttextzeuge">
+            <msDesc>
               <msIdentifier>
                 <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                 <idno type="Signatur">LH XXXVII 3 Bl. 144–145</idno>
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-                <summary><p>Konzept: LH XXXVII 3 Bl. 144–145. 1 Bog. 2<hi rendition="#sup">o</hi>. 3
+                <summary>
+                  <p>Konzept: LH XXXVII 3 Bl. 144–145. 1 Bog. 2<hi rendition="#sup">o</hi>. 3
                     2/3 S. zweispaltig. Bl. 145 v<hi rendition="#sup">o</hi> 2/3 beschrieben. Auf
                     dieser Seite oben rechts die Zeichnung fig. 4. Nur wenige Korrekturen am Text
                     und ein ungewöhnlich sauberes Schriftbild verweisen auf den in gewisser Hinsicht
-                    abschließenden Charakter des Stücks.</p><p>Cc 2, Nr. 491 D</p></summary>
+                    abschließenden Charakter des Stücks.</p>
+                  <p>Cc 2, Nr. 491 D</p>
+                </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -83,7 +117,8 @@
               <history>
                 <origin corresp="L_witness-origin-types.xml#origin-L"/>
               </history>
-            </msDesc></witness>
+            </msDesc>
+          </witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -192,7 +227,7 @@
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=436"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=437"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=438"/>
-    </facsimile>
+  </facsimile>
   <text xml:id="L_08-01-051-000_text">
     <body xml:id="Document">
       <div type="chapter" xml:id="Ch51" n="51">
@@ -200,18 +235,24 @@
         <pb type="VIII_1" n="498"/>
         <head>[Frühjahr 1673]</head>
         <div type="ueberlieferung">
-          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-              <witness><msDesc>
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
                   <msIdentifier>
                     <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                     <idno type="Signatur">XXX</idno>
                   </msIdentifier>
                   <msContents>
-                    <summary><p>Konzept: LH XXXVII 3 Bl. 144–145. 1 Bog. 2<hi rendition="#sup">o</hi>. 3 2/3 S. zweispaltig. Bl. 145 v<hi rendition="#sup">o</hi> 2/3
+                    <summary>
+                      <p>Konzept: LH XXXVII 3 Bl. 144–145. 1 Bog. 2<hi rendition="#sup">o</hi>. 3 2/3 S. zweispaltig. Bl. 145 v<hi rendition="#sup">o</hi> 2/3
                         beschrieben. Auf dieser Seite oben rechts die Zeichnung fig. 4. Nur wenige
                         Korrekturen am Text und ein ungewöhnlich sauberes Schriftbild verweisen auf
-                        den in gewisser Hinsicht abschließenden Charakter des Stücks.</p><p>Cc 2,
-                        Nr. 491 D</p></summary>
+                        den in gewisser Hinsicht abschließenden Charakter des Stücks.</p>
+                      <p>Cc 2,
+                        Nr. 491 D</p>
+                    </summary>
                   </msContents>
                   <physDesc>
                     <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -219,475 +260,589 @@
                   <history>
                     <origin/>
                   </history>
-                </msDesc></witness>
-            </listWit></p>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
         </div>
         <div type="contents">
-          <p xml:id="Ch51.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>:
+          <p xml:id="Ch51.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>:
               Auch dieses Stück gehört inhaltlich zu den Systematisierungsversuchen, die Leibniz
               hinsichtlich der Vakuumphänomene vornimmt, um zu einer alle diese Phänomene
               erklärenden Hypothese zu gelangen. Insbesondere gibt es Übereinstimmungen mit N. 51,
               die sich u. a. darin ausdrücken, dass sich die Zeichnung fig. 4 von Bl. 145 v<hi rendition="#sup">o</hi> unseres Stücks auch auf Bl. 142 v<hi rendition="#sup">o</hi>
               von N. 51 findet, wo sie unter der Bezeichnung fig. 5 firmiert. Wir nehmen dies als
               Indiz für einen vergleichbaren Entstehungszeitraum und stützen diesen Befund durch das
-              mit den Textträgern von N. 50 und N. 51 übereinstimmende Wasserzeichen.</hi></p>
+              mit den Textträgern von N. 50 und N. 51 übereinstimmende Wasserzeichen.</hi>
+          </p>
         </div>
         <div type="text">
-          <p xml:id="Ch51.p5"><pb type="L"/><fw type="folNum">[144 r<hi rendition="#sup">o</hi>]</fw> Pour rendre Raison d’un phaenomene il faut tacher de se garder de toutes
+          <p xml:id="Ch51.p5">
+            <pb type="L"/>
+            <fw type="folNum">[144 r<hi rendition="#sup">o</hi>]
+            </fw> Pour rendre Raison d’un phaenomene il faut tacher de se garder de toutes
             les hypotheses, autant qu’il est possible: et en effect, je crois pouuoir rendre raison
-              <app type="Bfootnote">
+            <app type="Bfootnote">
               <lem type="main">des experiences</lem>
               <note type="lemma-abbrev">raison</note>
               <rdg wit="#L" n="1"> de tous les phenomenes </rdg>
               <rdg wit="#L" n="2"> de toutes les experiences </rdg>
-              <rdg wit="#L" n="3"> des experiences <hi rendition="#i">L</hi></rdg>
+              <rdg wit="#L" n="3"> des experiences <hi rendition="#i">L</hi>
+              </rdg>
             </app> de l’attachement des corps dans le Recipient épuisé, et de leur suspension quand
             même leur hauteur ou pesanteur semble surpasser les forces de la pression de
               l’Atmosphere<index indexName="Sachverzeichnis">
-              <term>atmosphère</term>
-            </index>, en n’y employant que le Ressort de l’air (dont nous sommes convaincus par une
+            <term>atmosphère</term>
+          </index>, en n’y employant que le Ressort de l’air (dont nous sommes convaincus par une
             infinité d’experiences), s’il en reste tant soit dans le Recipient épuisé, <app type="Bfootnote">
-              <lem type="main">puisque asseurement il en reste tousjours.</lem>
-              <rdg wit="#L" cause="addition"><add>puisque <seg type="apparat-ellipsis"/>
+          <lem type="main">puisque asseurement il en reste tousjours.</lem>
+          <rdg wit="#L" cause="addition">
+            <add>puisque <seg type="apparat-ellipsis"/>
                   tousjours.</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> Et à fin que ceux qui prendront la peine de lire ces lignes, ne soyent pas
+            <note type="editorial">
+              <hi rendition="#i">erg. L</hi>
+            </note>
+          </rdg>
+        </app> Et à fin que ceux qui prendront la peine de lire ces lignes, ne soyent pas
             rebutés par une proposition qui leur semblera d’abord si peu croyable, sçavoir que le
             peu d’air qui reste dans le Recipient, et qui est incapable de soûtenir l’eau <app type="Bfootnote">
-              <lem type="main">ordinaire</lem>
-              <rdg wit="#L" cause="addition"><add>ordinaire</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> de la hauteur d’un pouce, puisse soûtenir dix ou douze de la purgée; je les prie
+        <lem type="main">ordinaire</lem>
+        <rdg wit="#L" cause="addition">
+          <add>ordinaire</add>
+          <note type="editorial">
+            <hi rendition="#i">erg. L</hi>
+          </note>
+        </rdg>
+      </app> de la hauteur d’un pouce, puisse soûtenir dix ou douze de la purgée; je les prie
             de considerer, que si une bulle d’air à peine visible, dans la liqueur purgée<index indexName="Sachverzeichnis">
-              <term>liqueur</term>
-              <index>
-                <term>purgée</term>
-              </index>
-            </index>, <app type="Bfootnote">
-              <lem type="main">la peut faire tomber comme nous voyons;</lem>
-              <note type="lemma-abbrev">purgée,</note>
-              <rdg wit="#L" n="1"> peut faire tomber; qu </rdg>
-              <rdg wit="#L" n="2"> la <seg type="apparat-ellipsis"/> voyons; <hi rendition="#i">L</hi></rdg>
-            </app> il y a de l’apparence qu’aussi peu d’air, dans le Recipient, hors de la liqueur
+      <term>liqueur</term>
+      <index>
+        <term>purgée</term>
+      </index>
+    </index>,    <app type="Bfootnote">
+      <lem type="main">la peut faire tomber comme nous voyons;</lem>
+      <note type="lemma-abbrev">purgée,</note>
+      <rdg wit="#L" n="1"> peut faire tomber; qu </rdg>
+      <rdg wit="#L" n="2"> la <seg type="apparat-ellipsis"/>
+ voyons; <hi rendition="#i">L</hi>
+    </rdg>
+  </app> il y a de l’apparence qu’aussi peu d’air, dans le Recipient, hors de la liqueur
               purgée<index indexName="Sachverzeichnis">
-              <term>liqueur</term>
-              <index>
-                <term>purgée</term>
-              </index>
-            </index>, la puisse soûtenir, comme je croy. Mais il est un peu plus difficile, <pb type="VIII_1" n="499"/>de montrer la maniere de cette pression, et comment le ressort
+  <term>liqueur</term>
+  <index>
+    <term>purgée</term>
+  </index>
+</index>, la puisse soûtenir, comme je croy. Mais il est un peu plus difficile, <pb type="VIII_1" n="499"/>
+de montrer la maniere de cette pression, et comment le ressort
             d’un peu d’air, dont les forces semblent si petites, puisse <app type="Bfootnote">
-              <lem type="main">soûtenir un si grand poids</lem>
-              <note type="lemma-abbrev">puisse</note>
-              <rdg wit="#L" n="1"> faire <app>
-                  <rdg wit="#L" n="a">des effects si grands </rdg>
-                  <rdg wit="#L" n="b">un si grand effect </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> soûtenir un si grand poids <hi rendition="#i">L</hi></rdg>
-            </app>; parce que cela depend d’un theoreme assez paradoxe, que vous allez voir
+<lem type="main">soûtenir un si grand poids</lem>
+<note type="lemma-abbrev">puisse</note>
+<rdg wit="#L" n="1"> faire <app>
+<rdg wit="#L" n="a">des effects si grands </rdg>
+<rdg wit="#L" n="b">un si grand effect </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> soûtenir un si grand poids <hi rendition="#i">L</hi>
+</rdg>
+</app>; parce que cela depend d’un theoreme assez paradoxe, que vous allez voir
             démontré; sçavoir <hi rendition="#g">que le Ressort de la moindre bulle d’air quand elle
               a toute la liberté d’agir est d’une force presqu’infinie, et capable d’elever un
               poids</hi>
-            <app type="Bfootnote">
-              <lem type="main"><hi rendition="#g">grandissime;</hi></lem>
-              <rdg wit="#L" cause="deletion">
-                <note type="editorial">|</note> <del>car</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> Monsieur <hi rendition="#i">L</hi></rdg>
-            </app> Monsieur Boyle<index indexName="Namensregister">
-              <term><hi rendition="#g">Boyle</hi> (Boylius, Boyl., Boyl), Robert 1627–1691</term>
-            </index> a prouué par des experiences, que l’air est capable d’une rarefaction
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">grandissime;</hi>
+</lem>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>car</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> Monsieur <hi rendition="#i">L</hi>
+</rdg>
+</app> Monsieur Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius, Boyl., Boyl), Robert 1627–1691</term>
+</index> a prouué par des experiences, que l’air est capable d’une rarefaction
             incroyable; et il y a de l’apparence, que la moindre bulle pourroit remplir toute la
             place de l’atmosphere<index indexName="Sachverzeichnis">
-              <term>atmosphère</term>
-            </index> si le reste de l’air venoit à estre reduit en rien. Mais pour venir à une
+<term>atmosphère</term>
+</index> si le reste de l’air venoit à estre reduit en rien. Mais pour venir à une
             demonstration, voyla comme je croy m’y pouuoir prendre. Je dis donc, que la moindre
             bulle d’air dans sa constitution naturelle, comme nous l’appellons à nostre égard, c’est
             à dire <app type="Bfootnote">
-              <lem type="main">dans un degrez de rarefaction conforme à</lem>
-              <note type="lemma-abbrev">dire</note>
-              <rdg wit="#L" n="1"> comme elle </rdg>
-              <rdg wit="#L" n="2"> dans le degrez de rarefaction qu’elle a, quand </rdg>
-              <rdg wit="#L" n="3"> dans <seg type="apparat-ellipsis"/> à <hi rendition="#i">L</hi></rdg>
-            </app> celuy de l’air ambient, soûtient effectivement <app type="Bfootnote">
-              <lem type="main"/>
-              <rdg wit="#L" cause="deletion">effectivement <note type="editorial">|</note> <del>pour
+<lem type="main">dans un degrez de rarefaction conforme à</lem>
+<note type="lemma-abbrev">dire</note>
+<rdg wit="#L" n="1"> comme elle </rdg>
+<rdg wit="#L" n="2"> dans le degrez de rarefaction qu’elle a, quand </rdg>
+<rdg wit="#L" n="3"> dans <seg type="apparat-ellipsis"/>
+ à<hi rendition="#i">L</hi>
+</rdg>
+</app> celuy de l’air ambient, soûtient effectivement <app type="Bfootnote">
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">effectivement <note type="editorial">|</note>
+<del>pour
                   ainsi dire</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> l’effort <hi rendition="#i">L</hi></rdg>
-            </app>l’effort de tout le monde, ou au moins (pour ne mêler pas les conjectures, quoyque
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> l’effort <hi rendition="#i">L</hi>
+</rdg>
+</app>l’effort de tout le monde, ou au moins (pour ne mêler pas les conjectures, quoyque
             vraysemblables, avec la demonstration), de toute l’atmosphere<index indexName="Sachverzeichnis">
-              <term>atmosphère</term>
-            </index>. Je ne dis pas le poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index> de l’atmosphere<index indexName="Sachverzeichnis">
-              <term>atmosphère</term>
-            </index>, mais son effort. Car le poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index> de la colomne d’air qui presse la bulle donnée, est peu de chose, et égale
+<term>atmosphère</term>
+</index>. Je ne dis pas le poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index> de l’atmosphere<index indexName="Sachverzeichnis">
+<term>atmosphère</term>
+</index>, mais son effort. Car le poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index> de la colomne d’air qui presse la bulle donnée, est peu de chose, et égale
             environ le poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index> d’une colomne de vif argent<index indexName="Sachverzeichnis">
-              <term>vif argent</term>
-            </index> de la hauteur, de 27 pouces, et de la largeur de la Bulle donnée.</p>
-          <p xml:id="Ch51.p6"><pb type="L"/><fw type="folNum">[144 v<hi rendition="#sup">o</hi>]</fw> Mais l’effort de toute l’atmosphere<index indexName="Sachverzeichnis">
-              <term>atmosphère</term>
-            </index> contient non seulement ce poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index>, mais aussi tout son ressort. Et il est bon de remarquer icy, que la pression
+<term>poids</term>
+</index> d’une colomne de vif argent<index indexName="Sachverzeichnis">
+<term>vif argent</term>
+</index> de la hauteur, de 27 pouces, et de la largeur de la Bulle donnée.</p>
+<p xml:id="Ch51.p6">
+<pb type="L"/>
+<fw type="folNum">[144 v<hi rendition="#sup">o</hi>]
+</fw> Mais l’effort de toute l’atmosphere<index indexName="Sachverzeichnis">
+<term>atmosphère</term>
+</index> contient non seulement ce poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index>, mais aussi tout son ressort. Et il est bon de remarquer icy, que la pression
             du poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index> de l’atmosphere<index indexName="Sachverzeichnis">
-              <term>atmosphère</term>
-            </index> n’est que de la colomne superincumbante. Mais une bulle d’air <app type="Bfootnote">
-              <lem type="main">libre</lem>
-              <rdg wit="#L" cause="addition"><add>libre</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> chez nous <app type="Bfootnote">
-              <lem type="main">souffre le ressort de l’ocean de tout l’Air libre</lem>
-              <note type="lemma-abbrev">nous</note>
-              <rdg wit="#L" n="1"> ne souffre le poids<index indexName="Sachverzeichnis">
-                  <term>poids</term>
-                </index> de tout l’air libre to </rdg>
-              <rdg wit="#L" n="2"> souffre <seg type="apparat-ellipsis"/> libre <hi rendition="#i">L</hi></rdg>
-            </app> du monde. Car supposons qu’une Bulle d’air chez les Antipodes<index indexName="Sachverzeichnis">
-              <term>antipodes</term>
-            </index> vienne à estre annihilée, il est manifeste que tout l’air libre du monde en
+<term>poids</term>
+</index> de l’atmosphere<index indexName="Sachverzeichnis">
+<term>atmosphère</term>
+</index> n’est que de la colomne superincumbante. Mais une bulle d’air <app type="Bfootnote">
+<lem type="main">libre</lem>
+<rdg wit="#L" cause="addition">
+<add>libre</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> chez nous <app type="Bfootnote">
+<lem type="main">souffre le ressort de l’ocean de tout l’Air libre</lem>
+<note type="lemma-abbrev">nous</note>
+<rdg wit="#L" n="1"> ne souffre le poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index> de tout l’air libre to </rdg>
+<rdg wit="#L" n="2"> souffre <seg type="apparat-ellipsis"/>
+ libre <hi rendition="#i">L</hi>
+</rdg>
+</app> du monde. Car supposons qu’une Bulle d’air chez les Antipodes<index indexName="Sachverzeichnis">
+<term>antipodes</term>
+</index> vienne à estre annihilée, il est manifeste que tout l’air libre du monde en
             souffriroit quelque changement, et que la bulle donnée chez nous seroit aussi de la
             partie, et se dilateroit à proportion, profitant de l’heritage de feüe sa soeur. Or
             supposons que la Bulle annihilée soit recreée, il est manifeste que la nostre y perdroit
             autant qu’elle avoit gagné, se trouuant obligée de rentrer dans sa coquille. Donc, si
             tout demeure dans le même estat, sans annihilation ny creation, il est aisé à juger, que
             la Bulle donnée, chez nous, sera contrainte<app type="Bfootnote">
-              <lem type="main"/>
-              <rdg wit="#L" cause="deletion">contrainte <note type="editorial">|</note> <del>et
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">contrainte <note type="editorial">|</note>
+<del>et
                   pressée</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> en <hi rendition="#i">L</hi></rdg>
-            </app> en quelque facon par l’assignée chez <pb type="VIII_1" n="500"/>les antipodes, et
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> en <hi rendition="#i">L</hi>
+</rdg>
+</app> en quelque facon par l’assignée chez <pb type="VIII_1" n="500"/>
+les antipodes, et
             par consequent chaque bulle assignable <app type="Bfootnote">
-              <lem type="main">en son particulier</lem>
-              <rdg wit="#L" cause="addition"><add>en son particulier</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> par toutes les autres ensemble. <app type="Bfootnote">
-              <lem type="main">Maintenant, pour</lem>
-              <note type="lemma-abbrev">ensemble.</note>
-              <rdg wit="#L" n="1"> Pour </rdg>
-              <rdg wit="#L" n="2"> Maintenant, pour <hi rendition="#i">L</hi></rdg>
-            </app> comprendre plus clairement une verité assez importante, feignons que la bulle
+<lem type="main">en son particulier</lem>
+<rdg wit="#L" cause="addition">
+<add>en son particulier</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> par toutes les autres ensemble. <app type="Bfootnote">
+<lem type="main">Maintenant, pour</lem>
+<note type="lemma-abbrev">ensemble.</note>
+<rdg wit="#L" n="1"> Pour </rdg>
+<rdg wit="#L" n="2"> Maintenant, pour <hi rendition="#i">L</hi>
+</rdg>
+</app> comprendre plus clairement une verité assez importante, feignons que la bulle
             donnée soit privée de son Ressort par la tout-puissance de Dieu retenant neantmoins la
             compressibilité, mais sans reaction ny resistence. Cela fait, elle sera reduite
             subitement à un rien, <app type="Bfootnote">
-              <lem type="main">pour ainsi dire, ou plustost,</lem>
-              <note type="lemma-abbrev">rien,</note>
-              <rdg wit="#L" n="1"> ou </rdg>
-              <rdg wit="#L" n="2"> pour ainsi dire, ou plustost, <hi rendition="#i">L</hi></rdg>
-            </app> dans un point par <app type="Bfootnote">
-              <lem type="main">le ressort de toute</lem>
-              <note type="lemma-abbrev">par</note>
-              <rdg wit="#L" n="1"> l’effort de tout </rdg>
-              <rdg wit="#L" n="2"> le ressort de toute <hi rendition="#i">L</hi></rdg>
-            </app> la Masse ambiente, laquelle tâchant tousjours de se dilater, et trouuant une
+<lem type="main">pour ainsi dire, ou plustost,</lem>
+<note type="lemma-abbrev">rien,</note>
+<rdg wit="#L" n="1"> ou </rdg>
+<rdg wit="#L" n="2"> pour ainsi dire, ou plustost, <hi rendition="#i">L</hi>
+</rdg>
+</app> dans un point par <app type="Bfootnote">
+<lem type="main">le ressort de toute</lem>
+<note type="lemma-abbrev">par</note>
+<rdg wit="#L" n="1"> l’effort de tout </rdg>
+<rdg wit="#L" n="2"> le ressort de toute <hi rendition="#i">L</hi>
+</rdg>
+</app> la Masse ambiente, laquelle tâchant tousjours de se dilater, et trouuant une
             place sans resistence, s’en saisira avec <app type="Bfootnote">
-              <lem type="main">la derniere vîtesse</lem>
-              <note type="lemma-abbrev">avec</note>
-              <rdg wit="#L" n="1"> une vîtesse<index indexName="Sachverzeichnis">
-                  <term>vitesse</term>
-                </index> incroyable </rdg>
-              <rdg wit="#L" n="2"> la derniere vîtesse <hi rendition="#i">L</hi></rdg>
-            </app>, partageant le gain entre ses parties, avec une justice inimitable. Or feignons à
+<lem type="main">la derniere vîtesse</lem>
+<note type="lemma-abbrev">avec</note>
+<rdg wit="#L" n="1"> une vîtesse<index indexName="Sachverzeichnis">
+<term>vitesse</term>
+</index> incroyable </rdg>
+<rdg wit="#L" n="2"> la derniere vîtesse <hi rendition="#i">L</hi>
+</rdg>
+</app>, partageant le gain entre ses parties, avec une justice inimitable. Or feignons à
             present que Dieu rende à nostre Bulle ses premieres forces, alors tout reviendra au
             premier estat, et nostre Bulle reprennant sa place, en chassera tout ce qu’elle y
             trouue, malgré l’effort de toute la Masse, laquelle en souffrira quelque contrainte en
             toutes ses parties. C’est donc une vérité incontestable, que la bulle donnée soûtient
             l’effort du Ressort de toute l’atmosphere<index indexName="Sachverzeichnis">
-              <term>atmosphère</term>
-            </index>, puisque toute l’atmosphere<index indexName="Sachverzeichnis">
-              <term>atmosphère</term>
-            </index> profiteroit incontinent de son absence, ou foiblesse, estant à present empechée
+<term>atmosphère</term>
+</index>, puisque toute l’atmosphere<index indexName="Sachverzeichnis">
+<term>atmosphère</term>
+</index> profiteroit incontinent de son absence, ou foiblesse, estant à present empechée
             par le Ressort de la bulle. J’ay dit que cela se doit entendre de la bulle qui est dans
             l’air libre. C’est à dire qui communique avec l’ocean general de l’air, comme le pont
               Euxin<index indexName="Ortsregister">
-              <term>Schwarzes Meer (pont Euxin)</term>
-            </index> avec l’ocean d’eau, et qui ne soit pas renfermée comme la Mer Caspie<index indexName="Ortsregister">
-              <term>Kaspisches Meer (Mer Caspie)</term>
-            </index>. Mais si la bulle donnée <app type="Bfootnote">
-              <lem type="main">ou quelqu’autre petite portion d’air</lem>
-              <rdg wit="#L">ou quelqu’autre petite </rdg>
-              <rdg wit="#L" n="1"> masse </rdg>
-              <rdg wit="#L" n="2" cause="addition"> <add>portion d’air</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> est renfermée dans <pb type="L"/><fw type="folNum">[145 r<hi rendition="#sup">o</hi>]</fw> un Vase, comme dans un Recipient de verre, elle ne soutient pas en
+<term>Schwarzes Meer (pont Euxin)</term>
+</index> avec l’ocean d’eau, et qui ne soit pas renfermée comme la Mer Caspie<index indexName="Ortsregister">
+<term>Kaspisches Meer (Mer Caspie)</term>
+</index>. Mais si la bulle donnée <app type="Bfootnote">
+<lem type="main">ou quelqu’autre petite portion d’air</lem>
+<rdg wit="#L">ou quelqu’autre petite </rdg>
+<rdg wit="#L" n="1"> masse </rdg>
+<rdg wit="#L" n="2" cause="addition">
+<add>portion d’air</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> est renfermée dans <pb type="L"/>
+<fw type="folNum">[145 r<hi rendition="#sup">o</hi>]
+</fw> un Vase, comme dans un Recipient de verre, elle ne soutient pas en
             verité, l’effort de toute la masse, mais elle est contrainte par quelqu’autre chose,
             dont la resistence vaut bien l’effort de toute la masse, sçavoir par la fermeté du Vase
             continent. Quoyque cette fermeté soit plustost une resistence passive, qu’une force
             active; <app type="Bfootnote">
-              <lem type="main">puisqu’elle ne cherche pas de</lem>
-              <note type="lemma-abbrev">active;</note>
-              <rdg wit="#L" n="1"> ne cherchant pas </rdg>
-              <rdg wit="#L" n="2"> puisqu’elle ne cherche pas de <hi rendition="#i">L</hi></rdg>
-            </app> dilater ses limites, estant contante de se maintenir, et même de <app type="Bfootnote">
-              <lem type="main">reflechir</lem>
-              <note type="lemma-abbrev">de</note>
-              <rdg wit="#L" n="1"> repousser </rdg>
-              <rdg wit="#L" n="2"> reflechir <hi rendition="#i">L</hi></rdg>
-            </app> par <hi rendition="#g">un ressort borné</hi> les corps, qui la choquent; au lieu
-            que le ressort d’une <pb type="VIII_1" n="501"/>petite portion d’air, est <hi rendition="#g">sans bornes,</hi> ou au moins sans autres que celles de toute
+<lem type="main">puisqu’elle ne cherche pas de</lem>
+<note type="lemma-abbrev">active;</note>
+<rdg wit="#L" n="1"> ne cherchant pas </rdg>
+<rdg wit="#L" n="2"> puisqu’elle ne cherche pas de <hi rendition="#i">L</hi>
+</rdg>
+</app> dilater ses limites, estant contante de se maintenir, et même de <app type="Bfootnote">
+<lem type="main">reflechir</lem>
+<note type="lemma-abbrev">de</note>
+<rdg wit="#L" n="1"> repousser </rdg>
+<rdg wit="#L" n="2"> reflechir <hi rendition="#i">L</hi>
+</rdg>
+</app> par <hi rendition="#g">un ressort borné</hi> les corps, qui la choquent; au lieu
+            que le ressort d’une <pb type="VIII_1" n="501"/>
+petite portion d’air, est <hi rendition="#g">sans bornes,</hi> ou au moins sans autres que celles de toute
               l’atmosphere<index indexName="Sachverzeichnis">
-              <term>atmosphère</term>
-            </index>. On voit par là que la fermeté ou tenacité des corps<index indexName="Sachverzeichnis">
-              <term>corps</term>
-              <index>
-                <term>sensible</term>
-              </index>
-            </index> sensibles, comme du verre, ou même, <app type="Bfootnote">
-              <lem type="main">de cette pellicule si mince d’une</lem>
-              <note type="lemma-abbrev">même,</note>
-              <rdg wit="#L" n="1"> d’une petite </rdg>
-              <rdg wit="#L" n="2"> de <seg type="apparat-ellipsis"/> d’une <hi rendition="#i">L</hi></rdg>
-            </app> bulle d’air née sur la superficie de l’eau est capable de soutenir l’effort de
+<term>atmosphère</term>
+</index>. On voit par là que la fermeté ou tenacité des corps<index indexName="Sachverzeichnis">
+<term>corps</term>
+<index>
+<term>sensible</term>
+</index>
+</index> sensibles, comme du verre, ou même, <app type="Bfootnote">
+<lem type="main">de cette pellicule si mince d’une</lem>
+<note type="lemma-abbrev">même,</note>
+<rdg wit="#L" n="1"> d’une petite </rdg>
+<rdg wit="#L" n="2"> de <seg type="apparat-ellipsis"/>
+ d’une <hi rendition="#i">L</hi>
+</rdg>
+</app> bulle d’air née sur la superficie de l’eau est capable de soutenir l’effort de
             toute la masse, <app type="Bfootnote">
-              <lem type="main">ne pouuant pas prendre</lem>
-              <note type="lemma-abbrev">masse,</note>
-              <rdg wit="#L" n="1"> parce qu’il est compensé </rdg>
-              <rdg wit="#L" n="2"> ne pouuant pas prendre <hi rendition="#i">L</hi></rdg>
-            </app> aisément un plus petit volume: de sorte que le Ressort de la masse en la
+<lem type="main">ne pouuant pas prendre</lem>
+<note type="lemma-abbrev">masse,</note>
+<rdg wit="#L" n="1"> parce qu’il est compensé </rdg>
+<rdg wit="#L" n="2"> ne pouuant pas prendre <hi rendition="#i">L</hi>
+</rdg>
+</app> aisément un plus petit volume: de sorte que le Ressort de la masse en la
             dissipant, ne gagneroit rien, ce qui fait, qu’il ne la dissipe pas, la nature ne faisant
             rien en vain.</p>
-          <p xml:id="Ch51.p7">Il faut pourtant se garder icy d’une paralogisme. Car une bulle donnée
+<p xml:id="Ch51.p7">Il faut pourtant se garder icy d’une paralogisme. Car une bulle donnée
             quoyqu’elle soûtienne l’effort <app type="Bfootnote">
-              <lem type="main">de tout l’air</lem>
-              <note type="lemma-abbrev">l’effort</note>
-              <rdg wit="#L" n="1"> de toute la masse </rdg>
-              <rdg wit="#L" n="2"> de tout l’air <hi rendition="#i">L</hi></rdg>
-            </app> n’a pas pourtant des forces égales à celles du tout, car une autre bulle égale en
+<lem type="main">de tout l’air</lem>
+<note type="lemma-abbrev">l’effort</note>
+<rdg wit="#L" n="1"> de toute la masse </rdg>
+<rdg wit="#L" n="2"> de tout l’air <hi rendition="#i">L</hi>
+</rdg>
+</app> n’a pas pourtant des forces égales à celles du tout, car une autre bulle égale en
             quantité et <app type="Bfootnote">
-              <lem type="main">degrez</lem>
-              <rdg wit="#L" cause="deletion">degrez <note type="editorial">|</note> <del>à
+<lem type="main">degrez</lem>
+<rdg wit="#L" cause="deletion">degrez <note type="editorial">|</note>
+<del>à
                   elle</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> , est <hi rendition="#i">L</hi></rdg>
-            </app>, est aussi égale en forces à la donnée: la donnée donc estant égalée d’une partie
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> , est <hi rendition="#i">L</hi>
+</rdg>
+</app>, est aussi égale en forces à la donnée: la donnée donc estant égalée d’une partie
             du tout, ne peut pas égaler le tout, en forces. On demandera donc comment la Bulle
             donnée peut soûtenir le choc avec des forces inégalles? La raison est, parce que la
             Masse <app type="Bfootnote">
-              <lem type="main">entiere ne se sert pas</lem>
-              <note type="lemma-abbrev">entiere</note>
-              <rdg wit="#L" n="1"> n’employe p </rdg>
-              <rdg wit="#L" n="2"> ne se sert pas <hi rendition="#i">L</hi></rdg>
-            </app> de toutes ses forces, quoyqu’elle employe toutes ses parties. Car chaque partie
+<lem type="main">entiere ne se sert pas</lem>
+<note type="lemma-abbrev">entiere</note>
+<rdg wit="#L" n="1"> n’employe p </rdg>
+<rdg wit="#L" n="2"> ne se sert pas <hi rendition="#i">L</hi>
+</rdg>
+</app> de toutes ses forces, quoyqu’elle employe toutes ses parties. Car chaque partie
             de la masse, employe seulement une partie de ces forces, sçavoir autant de forces, <app type="Bfootnote">
-              <lem type="main">à proportion</lem>
-              <rdg wit="#L" cause="addition"><add>à proportion</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> qu’elle gagneroit de place si l’on pourroit chasser ou contraindre dans un point,
+<lem type="main">à proportion</lem>
+<rdg wit="#L" cause="addition">
+<add>à proportion</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> qu’elle gagneroit de place si l’on pourroit chasser ou contraindre dans un point,
             la bulle donnée; employant le reste de ses forces contre le reste de la masse. Donc les
             forces employées <app type="Bfootnote">
-              <lem type="main">contre la bulle</lem>
-              <rdg wit="#L">contre </rdg>
-              <rdg wit="#L" n="1"> les non employées </rdg>
-              <rdg wit="#L" n="2" cause="addition"> <add>la bulle</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> aux non <app type="Bfootnote">
-              <lem type="main">employées, sont</lem>
-              <rdg wit="#L" cause="deletion">employées, <note type="editorial">|</note> <del>ou
+<lem type="main">contre la bulle</lem>
+<rdg wit="#L">contre </rdg>
+<rdg wit="#L" n="1"> les non employées </rdg>
+<rdg wit="#L" n="2" cause="addition">
+<add>la bulle</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> aux non <app type="Bfootnote">
+<lem type="main">employées, sont</lem>
+<rdg wit="#L" cause="deletion">employées, <note type="editorial">|</note>
+<del>ou
                   employées</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> sont <hi rendition="#i">L</hi></rdg>
-            </app> comme la bulle donnée, à toute la masse; ou comme ce que la bulle gagnante
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> sont <hi rendition="#i">L</hi>
+</rdg>
+</app> comme la bulle donnée, à toute la masse; ou comme ce que la bulle gagnante
             gagneroit sur la donnée, à ce qu’elle gagneroit sur toute la masse. Toutes ses forces
             donc de toutes les parties ramassées en un ne sont plus que les forces de la bulle
             donnée. <app type="Bfootnote">
-              <lem type="main">Et pour la proposition mise en</lem>
-              <note type="lemma-abbrev">donnée.</note>
-              <rdg wit="#L" n="1"> Et par consequent il y avoit un paralogisme en </rdg>
-              <rdg wit="#L" n="2"> Et <seg type="apparat-ellipsis"/> en <hi rendition="#i">L</hi></rdg>
-            </app> avant, qu’une petite bulle puisse soutenir un grand poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index> est fausse. Car le poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index> la presse dans un plus petit espace, quand l’air ambient ne pouuoit pas. Pour
-            le montrer plus <pb type="L"/><fw type="folNum">[145 v<hi rendition="#sup">o</hi>]</fw>
+<lem type="main">Et pour la proposition mise en</lem>
+<note type="lemma-abbrev">donnée.</note>
+<rdg wit="#L" n="1"> Et par consequent il y avoit un paralogisme en </rdg>
+<rdg wit="#L" n="2"> Et <seg type="apparat-ellipsis"/>
+ en <hi rendition="#i">L</hi>
+</rdg>
+</app> avant, qu’une petite bulle puisse soutenir un grand poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index> est fausse. Car le poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index> la presse dans un plus petit espace, quand l’air ambient ne pouuoit pas. Pour
+            le montrer plus <pb type="L"/>
+<fw type="folNum">[145 v<hi rendition="#sup">o</hi>]
+</fw>
             clairement, soit le Tuyau <hi rendition="#i">A</hi> plein d’air uniforme <hi rendition="#i">AB</hi> et <hi rendition="#i">AC</hi> dont le milieu est <hi rendition="#i">A</hi>. L’air <hi rendition="#i">AC</hi> à present soit pressé dans la
             moitié de son volume <app type="Bfootnote">
-              <lem type="main"><hi rendition="#i">CD</hi></lem>
-              <rdg wit="#L" cause="addition"><add><hi rendition="#i">CD</hi>
-                </add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> par le poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index>
-            <hi rendition="#i">D</hi>. Il est manifeste,</p>
-          <figure rendition="#inline-margin-left" xml:id="Ch51.fig1_1">
-            <graphic url="./images/37_3_145v.svg" width="130.086pt" xml:id="Ch51.g1"/>
+<lem type="main">
+<hi rendition="#i">CD</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">CD</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> par le poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index>
+<hi rendition="#i">D</hi>. Il est manifeste,</p>
+<figure rendition="#inline-margin-left" xml:id="Ch51.fig1_1">
+<graphic url="./images/37_3_145v.svg" width="130.086pt" xml:id="Ch51.g1"/>
 
 
-            <head xml:id="Ch51.fig1_2"> <hi rendition="#i">[Fig. 1]</hi></head>
-          </figure>
-          <p xml:id="Ch51.p8">que le poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index>
-            <hi rendition="#i">D</hi> fait la même chose que feroit l’air <hi rendition="#i">BD</hi>
+<head xml:id="Ch51.fig1_2">
+<hi rendition="#i">[Fig. 1]</hi>
+</head>
+</figure>
+<p xml:id="Ch51.p8">que le poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index>
+<hi rendition="#i">D</hi> fait la même chose que feroit l’air <hi rendition="#i">BD</hi>
             égale en consistence à <app type="Bfootnote">
-              <lem type="main"><hi rendition="#i">CD</hi> ou</lem>
-              <rdg wit="#L" cause="addition"><add><hi rendition="#i">CD</hi> ou</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app>
-            <hi rendition="#i">AC</hi> doublement <anchor xml:id="_145vstart"/>pressé. Soit l’air
-              <formula xml:id="Ch51.p8.m1">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mrow>
-                    <m:mi>A</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>C</m:mi>
-                  </m:mrow>
-                  <m:mo>=</m:mo>
-                  <m:mrow>
-                    <m:mi>A</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>B</m:mi>
-                  </m:mrow>
-                  <m:mo>=</m:mo>
-                  <m:mrow>
-                    <m:mstyle displaystyle="true">
-                      <m:mfrac>
-                        <m:mn>1</m:mn>
-                        <m:mn>2</m:mn>
-                      </m:mfrac>
-                    </m:mstyle>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>a</m:mi>
-                  </m:mrow>
-                </m:mrow>
-              </m:math>
-            </formula> l’espace <formula xml:id="Ch51.p8.m2">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mrow>
-                    <m:mi>A</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>C</m:mi>
-                  </m:mrow>
-                  <m:mo>=</m:mo>
-                  <m:mrow>
-                    <m:mi>A</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>B</m:mi>
-                  </m:mrow>
-                  <m:mo>=</m:mo>
-                  <m:mrow>
-                    <m:mstyle displaystyle="true">
-                      <m:mfrac>
-                        <m:mn>1</m:mn>
-                        <m:mn>2</m:mn>
-                      </m:mfrac>
-                    </m:mstyle>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>b</m:mi>
-                  </m:mrow>
-                </m:mrow>
-              </m:math>
-            </formula> l’espace <formula xml:id="Ch51.p8.m3">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mrow>
-                    <m:mi>D</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>C</m:mi>
-                  </m:mrow>
-                  <m:mo>=</m:mo>
-                  <m:mrow>
-                    <m:mstyle displaystyle="true">
-                      <m:mfrac>
-                        <m:mn>1</m:mn>
-                        <m:mn>4</m:mn>
-                      </m:mfrac>
-                    </m:mstyle>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>b</m:mi>
-                  </m:mrow>
-                </m:mrow>
-              </m:math>
-            </formula> l’espace <formula xml:id="Ch51.p8.m4">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mrow>
-                    <m:mi>D</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>B</m:mi>
-                  </m:mrow>
-                  <m:mo>=</m:mo>
-                  <m:mrow>
-                    <m:mstyle displaystyle="true">
-                      <m:mfrac>
-                        <m:mn>3</m:mn>
-                        <m:mn>4</m:mn>
-                      </m:mfrac>
-                    </m:mstyle>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>b</m:mi>
-                  </m:mrow>
-                </m:mrow>
-              </m:math>
-            </formula>.<anchor xml:id="_145vend"/><app type="Bfootnote" from="#_145vstart" to="#_145vend">
-              <lem type="main"/>
-              <note type="lemma-abbrev">pressé.</note>
-              <rdg wit="#L" n="1"> Et comme la consistence de <hi rendition="#i">CD</hi>
-              </rdg>
-              <rdg wit="#L" n="2"> L’espace </rdg>
-              <rdg wit="#L" n="3"> Soit <seg type="apparat-ellipsis"/>
-                <formula xml:id="Ch51.p8.m5">
-                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                    <m:mrow>
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mi>D</m:mi>
-                          <m:mo>⁢</m:mo>
-                          <m:mi>B</m:mi>
-                        </m:mrow>
-                        <m:mo>=</m:mo>
-                        <m:mrow>
-                          <m:mfrac>
-                            <m:mn>3</m:mn>
-                            <m:mn>4</m:mn>
-                          </m:mfrac>
-                          <m:mo>⁢</m:mo>
-                          <m:mi>b</m:mi>
-                        </m:mrow>
-                      </m:mrow>
-                      <m:mo>.</m:mo>
-                    </m:mrow>
-                  </m:math>
-                </formula>
-                <hi rendition="#i">L</hi></rdg>
-            </app> Donc deux quantitez d’air égales <hi rendition="#i">AC</hi> et <hi rendition="#i">AB</hi> occuperont l’une <hi rendition="#i">AB</hi>
-            <pb type="VIII_1" n="502"/>l’espace <hi rendition="#i">DB</hi> triple de l’espace <hi rendition="#i">DC</hi> qu’occupe l’autre <hi rendition="#i">AC</hi>. Donc pour retenir
+<lem type="main">
+<hi rendition="#i">CD</hi> ou</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">CD</hi> ou</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#i">AC</hi> doublement <anchor xml:id="_145vstart"/>
+pressé. Soit l’air
+<formula xml:id="Ch51.p8.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> l’espace <formula xml:id="Ch51.p8.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> l’espace <formula xml:id="Ch51.p8.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> l’espace <formula xml:id="Ch51.p8.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.<anchor xml:id="_145vend"/>
+<app type="Bfootnote" from="#_145vstart" to="#_145vend">
+<lem type="main"/>
+<note type="lemma-abbrev">pressé.</note>
+<rdg wit="#L" n="1"> Et comme la consistence de <hi rendition="#i">CD</hi>
+</rdg>
+<rdg wit="#L" n="2"> L’espace </rdg>
+<rdg wit="#L" n="3"> Soit <seg type="apparat-ellipsis"/>
+<formula xml:id="Ch51.p8.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>=</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> Donc deux quantitez d’air égales <hi rendition="#i">AC</hi> et <hi rendition="#i">AB</hi> occuperont l’une <hi rendition="#i">AB</hi>
+<pb type="VIII_1" n="502"/>
+l’espace <hi rendition="#i">DB</hi> triple de l’espace <hi rendition="#i">DC</hi> qu’occupe l’autre <hi rendition="#i">AC</hi>. Donc pour retenir
             l’air <hi rendition="#i">AC</hi> dans l’espace <hi rendition="#i">DC</hi> si même le
               poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index>
-            <hi rendition="#i">D</hi> seroit osté, il faut que l’air <hi rendition="#i">AB</hi> en
-              <hi rendition="#i">DB</hi> soit également condensé avec l’air en <hi rendition="#i">DC</hi> et par consequent il doit estre condensé trois fois plus qu’il n’est en
+<term>poids</term>
+</index>
+<hi rendition="#i">D</hi> seroit osté, il faut que l’air <hi rendition="#i">AB</hi> en
+<hi rendition="#i">DB</hi> soit également condensé avec l’air en <hi rendition="#i">DC</hi> et par consequent il doit estre condensé trois fois plus qu’il n’est en
             effect. Donc le poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index>
-            <hi rendition="#i">D</hi> faut autant que deux fois l’air <hi rendition="#i">AB</hi> ou
-              <hi rendition="#i">AC</hi> et par consequent la force du ressort de l’air quoyqu’elle
+<term>poids</term>
+</index>
+<hi rendition="#i">D</hi> faut autant que deux fois l’air <hi rendition="#i">AB</hi> ou
+<hi rendition="#i">AC</hi> et par consequent la force du ressort de l’air quoyqu’elle
             agisse librement, peut estre surmontée par un poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index> mediocre, contre ce que j’avois avancé au commencement. Supposons à present que
+<term>poids</term>
+</index> mediocre, contre ce que j’avois avancé au commencement. Supposons à present que
             l’air <hi rendition="#i">AB</hi> soit osté de <hi rendition="#i">DB</hi> entierement, et
             l’air <hi rendition="#i">AC</hi> dans l’espace <hi rendition="#i">DC</hi> privé d’un
             tiers de sa quantité, ou si vous voulez l’air <hi rendition="#i">AC</hi> laissé comme il
             est dans l’espace <hi rendition="#i">DC</hi> et au lieu de l’air <hi rendition="#i">AB</hi> osté, le poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index>
-            <hi rendition="#i">D</hi> augmenté de la moitié de ses forces alors le poids<index indexName="Sachverzeichnis">
-              <term>poids</term>
-            </index>
-            <hi rendition="#i">D</hi> augmenté contraindra <app type="Bfootnote">
-              <lem type="main">ou retiendra</lem>
-              <rdg wit="#L" cause="addition"><add>ou retiendra</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> l’air en <hi rendition="#i">DC</hi> quoyque la place <hi rendition="#i">DB</hi>
+<term>poids</term>
+</index>
+<hi rendition="#i">D</hi> augmenté de la moitié de ses forces alors le poids<index indexName="Sachverzeichnis">
+<term>poids</term>
+</index>
+<hi rendition="#i">D</hi> augmenté contraindra <app type="Bfootnote">
+<lem type="main">ou retiendra</lem>
+<rdg wit="#L" cause="addition">
+<add>ou retiendra</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> l’air en <hi rendition="#i">DC</hi> quoyque la place <hi rendition="#i">DB</hi>
             soit entierement s’il n’y a point d’autre force que celle du ressort de l’air.</p>
-        </div>
-      </div>
-    </body>
-  </text>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-058-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-058-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">De Corporum Concursu</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2022</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="58">De Corporum Concursu</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1678-01" resp="#ed" cert="medium">Januar – Februar 1678</date>
 						<date calendar="#gregorian" notAfter="1678-02" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=561</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+							<idno type="page">#page=561</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,19 +86,45 @@
 						</imprint>
 						<biblScope unit="page" from="527" to="529"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-001"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-002"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-003"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-004"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-005"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-006"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-007"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-008"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-009"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-010"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-011"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-058-012"/></relatedItem>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-001"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-002"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-003"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-004"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-005"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-006"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-007"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-008"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-009"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-010"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-011"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-058-012"/>
+					</relatedItem>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
@@ -182,87 +246,265 @@
 				<head>58 DE CORPORUM CONCURSU</head>
 				<head>Januar – Februar 1678</head>
 				<div type="contents">
-					<p xml:id="Ch58.p1"><anchor xml:id="dcc_00"/><!--  \hackfor{\par} --></p>
-					<p rendition="#noindent" xml:id="Ch58.p2"><hi rendition="#smaller">Der in LH XXXV 9, 23 Bl. 1–22, LH XXXVII 4 Bl. 59–60 und LH XXXVII 5 Bl. 86–91 überlieferte Textkomplex N. <ref corresp="#dcc_00"/> <hi rendition="#i">De corporum concursu</hi> ist eine umfangreiche systematische Untersuchung über die Gesetze des direkten zentralen Stoßes zweier Körper, bei welcher durch die Erörterung einzelner, zunehmend schwierigerer Stoßfälle allgemeine Lehrsätze aufgestellt und überprüft werden sollen; erst zum Schluss werden auch einfache Fälle des Stoßes dreier Körper ansatzweise untersucht. Mit den zwölf fortschreitend nummerierten Unterstücken folgt N. <ref corresp="#dcc_00"/> der Einteilung in nummerierte <hi rendition="#i">schedae</hi> (<hi rendition="#i">I</hi> bis <hi rendition="#i">X</hi> mit zusätzlich <hi rendition="#i">II-II</hi> und <hi rendition="#i">VI-II</hi>), die Leibniz selbst für den gesamten Textkomplex vorgenommen hat. (Dabei entspricht N. <ref corresp="L_section_583.xml#dcc_02-2"/> der <hi rendition="#i">Scheda II-II</hi> und N. <ref corresp="L_section_588.xml#dcc_06-2"/> der <hi rendition="#i">Scheda VI-II</hi>.) Mit Ausnahme einer einzigen undatierten <hi rendition="#i">scheda</hi> (N. <ref corresp="L_section_583.xml#dcc_02-2"/>) sind die übrigen von Leibniz selbst auf Januar 1678, N. <ref corresp="L_section_5812.xml#dcc_10"/> auf Januar und Februar 1678 datiert worden. Hieraus ergibt sich die Gesamtdatierung des Textkomplexes, der in seinen nicht gestrichenen Teilen erstmals in <hi rendition="#k">Fichant</hi> 1994, S. 71–171 veröffentlicht worden ist.</hi></p>
-					<p xml:id="Ch58.p3"><hi rendition="#smaller">Dass Leibniz ganz zu Beginn des Jahres 1678 mit der Stoßlehre im Allgemeinen und vornehmlich mit den Gesetzen besonderer Stoßfälle befasst war, bezeugt auch sein Brief an H. Conring vom 3. (13.) Januar 1678:<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Conring</hi><hi rendition="#smaller">, Hermann 1606–1681</hi></term>
-						</index> Dort gibt er zu, noch keine befriedigende Antwort auf die Frage zu haben, <hi rendition="#i">quid fiat si duo corpora dura magnitudine inaequalia concurrant</hi> – eine Antwort, die man selbst bei Koryphäen der neuen Naturwissenschaft wie Descartes und Huygens vergeblich suchen würde (<hi rendition="#i">LSB</hi> II, 1 [2006] N. 162, S. 581.5–7;<ref corresp="#bib_02053"/> siehe <hi rendition="#k">Fichant</hi> 1994, S. 192).<ref corresp="#bib_01056"/><index indexName="Personen">
-						<term><hi rendition="#g #smaller">Descartes</hi> <hi rendition="#smaller">(Cartesius, des Cartes), René 1596–1650</hi></term>
-						</index><index indexName="Personen">
-						<term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term>
-						</index> Ob Leibniz hiermit besonders auf N. <ref corresp="#dcc_00"/> oder aber auf frühere Untersuchungen zur Stoßlehre anspielt, lässt sich nicht mit Sicherheit entscheiden. Dennoch ist bemerkenswert, dass ein beachtlicher Teil der <hi rendition="#i">schedae</hi> – von N. <ref corresp="L_section_581.xml#dcc_01"/> bis zu N. <ref corresp="L_section_588.xml#dcc_06-2"/> – vornehmlich mit dem Stoß ungleicher Körper hadert (vgl. dazu den ebenfalls auf Januar 1678 zurückgehenden Entwurf N. <ref corresp="L_chapter_57.xml#RK57279"/>). Der Brief an Conring<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Conring</hi><hi rendition="#smaller">, Hermann 1606–1681</hi></term>
-						</index> rechtfertigt somit die Frage, ob der umfangreiche Textkomplex <hi rendition="#i">De corporum concursu</hi> am Stück verfasst wurde oder vielmehr in verschiedenen Etappen, die sich über die ersten zwei Monate des Jahres 1678 hinweg erstreckt haben. Der Brief lässt sogar die Vermutung zu, dass die Anfertigung von N. <ref corresp="#dcc_00"/> bereits vor Ende 1677 begonnen haben könnte.</hi></p>
-					<p xml:id="Ch58.p4"><hi rendition="#smaller">Für eine Abfassung des Textkomplexes in verschiedenen Etappen sprechen auch weitere Gründe. Zunächst gilt es, auf die besondere Verteilung der Wasserzeichen in den Trägern der einzelnen <hi rendition="#i">schedae</hi> hinzuweisen. Von N. <ref corresp="L_section_581.xml#dcc_01"/> abgesehen, lassen sich in dieser Hinsicht zwei verschiedene, homogene Gruppen feststellen: Sämtliche Bogen zu N. <ref corresp="L_section_582.xml#dcc_02-1"/> und N. <ref corresp="L_section_584.xml#dcc_03"/> bis <ref corresp="L_section_586.xml#dcc_05"/> weisen ein und dasselbe Wasserzeichen auf, welches sich von dem einzigen unterscheidet, das in den Trägern der übrigen <hi rendition="#i">schedae</hi> N. <ref corresp="L_section_587.xml#dcc_06-1"/> bis <ref corresp="L_section_5812.xml#dcc_10"/> vorkommt. Diese Feststellung wird umso aussagekräftiger, als sie einigermaßen mit den inhaltlichen Zäsuren übereinstimmt, die sich im Textkomplex ermitteln lassen. Vom inhaltlichen Standpunkt aus bilden die einzelnen zwölf <hi rendition="#i">schedae</hi> nämlich keine geschlossenen Einheiten. Der Text lässt sich diesbezüglich vielmehr in drei fortlaufende Abschnitte unterteilen:</hi></p>
-					<p xml:id="Ch58.p5"><hi rendition="#smaller">(1) von der <hi rendition="#i">Scheda I</hi> (N. <ref corresp="L_section_581.xml#dcc_01"/>) bis zur Mitte der <hi rendition="#i">Scheda V</hi> (N. <ref corresp="L_section_586.xml#dcc_05"/>, S. <ref corresp="L_section_586.xml#LH_35_09_23_011v_jbcagk"/>), wo sich durch die Einführung des Elastizitätsgedankens als zusätzlichen Gegenstand der Untersuchung ein abrupter und markanter Einschnitt ergibt;</hi></p>
-					<p xml:id="Ch58.p6"><hi rendition="#smaller">(2) von dorther bis zur <hi rendition="#i">Scheda VI-II</hi> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>), mit der die Untersuchung Zwischenergebnisse erreicht, die nachträglich geprüft und erweitert wurden;</hi></p>
-					<p xml:id="Ch58.p7"><hi rendition="#smaller">(3) von der beim Axiom der Äquipollenz von Ursache und Wirkung neu ansetzenden <hi rendition="#i">Scheda VII</hi> (N. <ref corresp="L_section_589.xml#dcc_07"/>) bis zur <hi rendition="#i">Scheda X</hi> (N. <ref corresp="L_section_5812.xml#dcc_10"/>), die eher unvermittelt die Untersuchung abschließt (siehe zum Aufbau des gesamten Textkomplexes <hi rendition="#k">Fichant</hi> 1994, S. 175 f.).<ref corresp="#bib_01056"/></hi></p>
-					<p xml:id="Ch58.p8"><hi rendition="#smaller">Diese drei Abschnitte stellen möglichwerweise auch drei verschiedene Etappen der Entstehung von N. <ref corresp="#dcc_00"/> dar, welche sich in der Verteilung der Wasserzeichen wenigstens insofern abbilden, als diese letztere besonders die Zäsur in der Mitte von N. <ref corresp="L_section_586.xml#dcc_05"/> zum Vorschein bringt.</hi></p>
-					<p xml:id="Ch58.p9"><hi rendition="#smaller">Die durch die Nummerierung der <anchor xml:id="dcc_Vorbemerkung_reform-1"/><hi rendition="#i">schedae</hi> festgelegte Textfolge entspricht ohnehin nicht durchgän-gig der Entstehung und chronologischen Ordnung der Textschichten, da Leibniz nachträglich, am häufigs-ten mit Randbemerkungen, zuweilen aber auch durch umfangreichere Textzusätze, die älteren <hi rendition="#i">schedae</hi> berichtigt oder erweitert hat. Anlass zu den meisten nachträglichen Erweiterungen gab die „Entdeckung”, dass beim Phänomen des zentralen Stoßes nicht, wie früher gewöhnlich angenommen, die Summe der Bewegungsgröße (<hi rendition="#i">quantitas motus</hi>) <hi rendition="#i">mv</hi> erhalten bleibe, sondern die Summe der kinetischen „Kraft” (<hi rendition="#i">vis</hi>) <formula xml:id="Ch58.p9.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>m</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:msup>
-										<m:mi>v</m:mi>
-										<m:mn>2</m:mn>
-									</m:msup>
-								</m:mrow>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> Die entsprechende Formel hatte Leibniz bereits im Mai oder Juni 1677 algebraisch hergeleitet, ohne allerdings ihre physikalische Interpretation als Erhaltungssatz der „Kraft” zu thematisieren (siehe N. <ref corresp="L_chapter_44.xml#RK57273"/> und N. <ref corresp="L_chapter_47.xml#RK60344_2"/>). Die neue Einsicht – Geburtsstunde von Leibnizens <hi rendition="#i">réforme de la dynamique</hi> (<hi rendition="#k">Fichant</hi> 1994<ref corresp="#bib_01056"/>) – wird am Anfang der <hi rendition="#i">Scheda VIII</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>, S. <ref corresp="L_section_5810.xml#LH_37_05_086r_reformatio_idzg-1"/>) angekündigt. Zahlreiche Texterweiterungen in den früheren <hi rendition="#i">schedae</hi> sind mithin erst <hi rendition="#i">post reformationem</hi> entstanden (den Ausdruck hat Leibniz selbst eingeführt; vgl. die Randbemerkungen zu N. <ref corresp="L_section_584.xml#dcc_03"/>, S. <ref corresp="L_section_584.xml#LH_35_09_23_007v_zkuo-1"/>; N. <ref corresp="L_section_585.xml#dcc_04"/>, S. <ref corresp="L_section_585.xml#LH_35_09_23_009r_hdsw-1"/>, <ref corresp="L_section_585.xml#LH_35_09_23_010r_jdzwrkm-1"/>; N. <ref corresp="L_section_587.xml#dcc_06-1"/>, S. <ref corresp="L_section_587.xml#LH_35_09_23_013r_ersteMarg-1"/>).<anchor xml:id="dcc_Vorbemerkung_reform-2"/></hi></p>
-					<p xml:id="Ch58.p10"><hi rendition="#smaller">Einen besonderen Fall stellen in dieser Hinsicht die <hi rendition="#i">Scheda II-II</hi> (N. <ref corresp="L_section_583.xml#dcc_02-2"/>) und die <hi rendition="#i">Scheda VI-II</hi> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>) dar, welche beide, wie bereits ihre Nummerierung zeigt, von Leibniz nachträglich vervollständigt und in den Textkomplex <hi rendition="#i">De corporum concursu</hi> eingefügt wurden.</hi></p>
-					<p xml:id="Ch58.p11"><hi rendition="#smaller">In der <anchor xml:id="dcc_intro_II-II_gdr-1"/><hi rendition="#i">Scheda II-II</hi> (LH XXXV 9, 23 Bl. 4–5) lassen sich insgesamt mindestens zwei Textschichten unterscheiden. In der ältesten überprüft Leibniz rechnerisch ein Ergebnis aus der <hi rendition="#i">Scheda II</hi>: Unter Annahme des Bewegungsquantums <hi rendition="#i">mv</hi> als Erhaltungsgröße erweise sich im Fall des Stoßes eines kleineren auf einen ruhenden Körper als unmöglich, dass ihre relative Stoßgeschwindigkeit sowie die Richtung und die Geschwindigkeit ihres gemeinsamen Schwerpunkts erhalten bleiben würden (N. <ref corresp="L_section_582.xml#dcc_02-1"/>, S. <ref corresp="L_section_582.xml#LH_35_09_23_006r_viacentrigrav_mesj-1"/>). Dieses Ergebnis wird in der <hi rendition="#i">Scheda II-II</hi> zunächst auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1141">Bl. 5 r<hi rendition="#sup">o</hi></ref> durch einen erneuten Beweisgang überprüft (N. <ref corresp="L_section_583.xml#dcc_02-2"/>, S. <ref corresp="L_section_583.xml#LH_35_09_23_004-005_Blatt5r-1"/>) und dann auf dem gegenüberliegenden <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1138">Bl. 4 v<hi rendition="#sup">o</hi></ref> in sauberer Form nochmals bestätigt (N. <ref corresp="L_section_583.xml#dcc_02-2"/>, S. <ref corresp="L_section_583.xml#LH_35_09_23_004-005_Blatt4v-1"/>). Da der Beweisgang bei dieser zweifachen Prüfung den gleichen Ansatz wie in N. <ref corresp="L_section_582.xml#dcc_02-1"/> aufweist, dürfte diese früheste Textschicht von N. <ref corresp="L_section_583.xml#dcc_02-2"/> insgesamt in unmittelbarem Anschluss an N. <ref corresp="L_section_582.xml#dcc_02-1"/> oder kurz danach entstanden sein. Später – in der <hi rendition="#i">Scheda VIII</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>) und der <hi rendition="#i">Scheda IX</hi> (N. <ref corresp="L_section_5811.xml#dcc_09"/>) – stellt Leibniz doch fest, dass unter Annahme der „Kraft” <formula xml:id="Ch58.p11.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>m</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:msup>
-									<m:mi>v</m:mi>
-									<m:mn>2</m:mn>
-								</m:msup>
-							</m:mrow>
-						</m:math>
-						</formula> als Erhaltungsgröße sowohl die relative Stoßgeschwindigkeit wie auch die Richtung und Geschwindigkeit des gemeinsamen Schwerpunkts erhalten bleiben würden. Im Nachhinein kehrt er somit zur <hi rendition="#i">Scheda II-II</hi> zurück und verfasst die aus diesem neuen Ergebnis hervorgehenden Ausführungen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1141">Bl. 5 r<hi rendition="#sup">o</hi></ref> (N. <ref corresp="L_section_583.xml#dcc_02-2"/>, S. <ref corresp="L_section_583.xml#LH_35_09_23_004-005_Blatt5v-1"/>). Diese zweite Textschicht berichtigt die früheren irrtümlichen Feststellungen über die relative Stoßgeschwindigkeit und die Bewegung des gemeinsamen Schwerpunktes. Schließlich entstand die Bemerkung auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1138">Bl. 4 r<hi rendition="#sup">o</hi></ref> (N. <ref corresp="L_section_583.xml#dcc_02-2"/>, S. <ref corresp="L_section_583.xml#LH_35_09_23_004-005_Blatt4r-1"/>), in der klargestellt wird, dass der ursprüngliche rechnerische Beweis in der ersten Textschicht nur unter der (jetzt zurückgewiesenen) „kartesischen” Annahme des Bewegungsquantums (<hi rendition="#i">mv</hi>) als Erhaltungsgröße formal gültig sei.<anchor xml:id="dcc_intro_II-II_gdr-2"/></hi></p>
-					<p xml:id="Ch58.p12"><hi rendition="#smaller">Die <anchor xml:id="dcc_intro_VI-II_fzr-1"/><hi rendition="#i">Scheda VI-II</hi> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>), die als umfangreichste im ganzen Textkomplex <hi rendition="#i">De corporum concursu</hi> die Handschriften LH XXXV 9, 23 Bl. 15–20, LH XXXVII 4 Bl. 59–60 und LH XXXVII 5 Bl. 91 umfasst, weist ebenfalls mehrere Textschichten auf, die teilweise noch vor der <hi rendition="#i">Scheda VII</hi> (N. <ref corresp="L_section_589.xml#dcc_07"/>) oder zur gleichen Zeit wie diese, teilweise nach den letzten drei <hi rendition="#i">schedae</hi> (oder wenigstens nach N. <ref corresp="L_section_5810.xml#dcc_08"/>) verfasst wurden. In der ältesten Schicht (<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1171">Bl. 15 r<hi rendition="#sup">o</hi></ref>, <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1173">15 v<hi rendition="#sup">o</hi></ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1186">20 r<hi rendition="#sup">o</hi></ref>; N. <ref corresp="L_section_588.xml#dcc_06-2"/>, S. <ref corresp="L_section_588.xml#LH_35_09_23_015r_anfang_fhg"/>) wiederholt Leibniz eine Ausführung aus der <hi rendition="#i">Scheda VI</hi>, in der der allgemeine Fall des elastischen Stoßes gegen einen ungleich schweren, ruhenden Körper berechnet wird (N. <ref corresp="L_section_587.xml#dcc_06-1"/>, S. <ref corresp="L_section_587.xml#LH_35_09_23_014r_percussioinquiescens"/> ff.) mit der Absicht, sie endgültig zu überprüfen. Aus der neuen Berechnung ergeben sich zwei Gleichungen, <pb type="L"/>auf denen die späteren Textschichten der Scheda <hi rendition="#i">VI-II</hi> aufbauen. Die zweite Textschicht (<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=182">Bl. 59 r<hi rendition="#sup">o</hi></ref>, <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=184">59 v<hi rendition="#sup">o</hi></ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=185">60 r<hi rendition="#sup">o</hi></ref>; N. <ref corresp="L_section_588.xml#dcc_06-2"/>, S. <ref corresp="L_section_588.xml#_37_04_059r_Regnauld_Anfang"/>–<ref corresp="L_section_588.xml#_37_04_060r_Regnauld_Ende"/>) besteht aus neun tabellarischen Darstellungen experimenteller Werte, die Leibniz, zum Teil mit Hilfe eines unbekannten Schreibers, aus F. Regnaulds<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Regnauld</hi> <hi rendition="#smaller">(Regnaud; Regnaldus), François de 1626–1689</hi></term>
-						</index> Brief vom 21. Dezember 1655 an B. de Monconys<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Monconys</hi> <hi rendition="#smaller">(Monconisius), Balthasar de 1611–1665</hi></term>
-						</index> übernommen hat (vgl. <ref corresp="#bib_02021"/>B. <hi rendition="#k">de Monconys</hi>, <ref corresp="#bib_00118"/><hi rendition="#i">Journal des voyages</hi>, Teil III: „Lettres escrittes à Monsieur de Monconys”, Lyon 1666, S. 52–55; dieser Quelle hatte Leibniz bereits früher seine Aufmerksamkeit gewidmet, wie auch die Notiz N. <ref corresp="L_chapter_35.xml#RK60070"/> in diesem Band zeigt). Bei diesen Exzerpten, die Leibniz zuweilen mit eigenen Bemerkungen erörtert hat, geht es um Regnaulds<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Regnauld</hi> <hi rendition="#smaller">(Regnaud; Regnaldus), François de 1626–1689</hi></term>
-						</index> Bemessungen des Stoßes eines unterschiedlich schweren Pendels, das aus verschiedenen Höhen auf ein zweites, ruhendes Pendel fällt. Diese tabellarischen Darstellungen dienten wiederum als Teilvorlage für die dritte Textschicht von N. <ref corresp="L_section_588.xml#dcc_06-2"/>, in der Regnaulds experimentelle Ergebnisse mit entsprechenden Werten verglichen werden, die Leibniz rein rechnerisch aus beiden in der ersten Textschicht bestimmten Gleichungen (S. <ref corresp="L_section_588.xml#LH_35_09_23_015v_Gleichung_1-1"/>) herleitet.<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Regnauld</hi> <hi rendition="#smaller">(Regnaud; Regnaldus), François de 1626–1689</hi></term>
-						</index> Der Vergleich, der offenbar Leibnizens Ausführung zum elastischen Stoß in N. <ref corresp="L_section_587.xml#dcc_06-1"/> (S. <ref corresp="L_section_587.xml#LH_35_09_23_014r_percussioinquiescens"/> ff.) und N. <ref corresp="L_section_588.xml#dcc_06-2"/> (S. <ref corresp="L_section_588.xml#LH_35_09_23_015r_anfang_fhg"/>) bestätigen sollte, erfolgt anhand weiterer tabellarischer Darstellungen in zwei Schritten: zunächst im gestrichenen Text auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=274">Bl. 91 r<hi rendition="#sup">o</hi></ref> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>, S. <ref corresp="L_section_588.xml#LH_37_05_091r_gestrtab"/>–<ref corresp="L_section_588.xml#LH_37_05_091r_ende"/>) und dann wieder in (vorübergehend) gültiger Gestalt auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1179">Bl. 17 v<hi rendition="#sup">o</hi></ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1180">18 r<hi rendition="#sup">o</hi></ref> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>, S. <ref corresp="L_section_588.xml#LH_35_09_23_017v_tab1"/>–<ref/>). Auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1179">Bl. 17 v<hi rendition="#sup">o</hi></ref> bis <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1182">18 v<hi rendition="#sup">o</hi></ref> sind ferner begleitende Anmerkungen anzutreffen (N. <ref corresp="L_section_588.xml#dcc_06-2"/>, S. <ref corresp="L_section_588.xml#LH_35_09_23_018v_iiiSchichtKomm-1"/>), die ebenfalls zur dritten Textschicht gehören und wie diese und die zwei vorausgehenden Textschichten vor der <hi rendition="#i">Scheda VIII</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>) verfasst wurden. Anders verhält es sich mit einer weiteren, auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1182">Bl. 18 v<hi rendition="#sup">o</hi></ref> vorliegenden Bemerkung (N. <ref corresp="L_section_588.xml#dcc_06-2"/>, S. <ref corresp="L_section_588.xml#LH_35_09_23_018v_ivSchicht-1"/>), die auf die <hi rendition="#i">reformatio</hi> hinweist und folglich mit großer Wahrscheinlichkeit nach (mindestens) N. <ref corresp="L_section_5810.xml#dcc_08"/> verfasst wurde. Diese Bemerkung ist demgemäß einer vierten und letzten Textschicht von N. <ref corresp="L_section_588.xml#dcc_06-2"/> zuzuschreiben, welche ebenfalls den Vermerk auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1177">Bl. 17 r<hi rendition="#sup">o</hi></ref> (S. <ref corresp="L_section_588.xml#LH_35_09_23_017r_nota_bkjm-1"/>) sowie hauptsächlich die <hi rendition="#i">Tabula III</hi> auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1183">Bl. 19 r<hi rendition="#sup">o</hi></ref> (S. <ref corresp="L_section_588.xml#LH_35_09_23_019r_tab3"/>) umfasst. Diese letztere ergibt sich aus der Neuberechnung der früheren Tabelle auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1180">Bl. 18 r<hi rendition="#sup">o</hi></ref> (S. <ref/>) unter Berücksichtigung des Faktors <formula xml:id="Ch58.p12.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>m</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:msup>
-									<m:mi>v</m:mi>
-									<m:mn>2</m:mn>
-								</m:msup>
-							</m:mrow>
-						</m:math>
-						</formula> anstelle des Faktors <hi rendition="#i">mv</hi>. Die Erläuterung auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1176">Bl. 16 v<hi rendition="#sup">o</hi></ref>, welche die experimentellen Bedingungen von Regnaulds<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Regnauld</hi> <hi rendition="#smaller">(Regnaud; Regnaldus), François de 1626–1689</hi></term>
-						</index> Bemessungen ein weiteres Mal zusammenfasst und gleichsam den Abschluss von N. <ref corresp="L_section_588.xml#dcc_06-2"/> darstellt, dürfte in ihrem ersten Teil (S. <ref corresp="L_section_588.xml#LH_35_09_23_016v_Teil1_tsf-1"/>) noch zur dritten Textschicht gehören, während ihr zweiter und letzter Teil (S. <ref corresp="L_section_588.xml#LH_35_09_23_016v_Teil2_tsf-1"/>) offensichtlich der vierten Textschicht zuzuschreiben ist.<anchor xml:id="dcc_intro_VI-II_fzr-2"/></hi></p>
-					<p xml:id="Ch58.p13"><hi rendition="#smaller">Aus der vorausgehenden Darstellung lässt sich festhalten, dass die jüngsten Textschichten in N. <ref corresp="L_section_583.xml#dcc_02-2"/> und N. <ref corresp="L_section_588.xml#dcc_06-2"/> – ebenso wie zahlreiche Texterweiterungen in den übrigen <hi rendition="#i">ante reformationem</hi> entstandenen <hi rendition="#i">schedae</hi> – erst in einer späten Bearbeitungsphase des Textkomplexes <hi rendition="#i">De corporum concursu</hi> verfasst wurden, d.h. möglicherweise erst im Februar 1678.</hi></p>
-				</div>
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			</div>
-		</body>
-	</text>
+					<p xml:id="Ch58.p1">
+						<anchor xml:id="dcc_00"/>
+						<!--  \hackfor{\par} --></p>
+					<p rendition="#noindent" xml:id="Ch58.p2">
+						<hi rendition="#smaller">Der in LH XXXV 9, 23 Bl. 1–22, LH XXXVII 4 Bl. 59–60 und LH XXXVII 5 Bl. 86–91 überlieferte Textkomplex N. <ref corresp="#dcc_00"/>
+						<hi rendition="#i">De corporum concursu</hi> ist eine umfangreiche systematische Untersuchung über die Gesetze des direkten zentralen Stoßes zweier Körper, bei welcher durch die Erörterung einzelner, zunehmend schwierigerer Stoßfälle allgemeine Lehrsätze aufgestellt und überprüft werden sollen; erst zum Schluss werden auch einfache Fälle des Stoßes dreier Körper ansatzweise untersucht. Mit den zwölf fortschreitend nummerierten Unterstücken folgt N. <ref corresp="#dcc_00"/>
+ der Einteilung in nummerierte <hi rendition="#i">schedae</hi> (					<hi rendition="#i">I</hi> bis <hi rendition="#i">X</hi> mit zusätzlich <hi rendition="#i">II-II</hi> und <hi rendition="#i">VI-II</hi>), die Leibniz selbst für den gesamten Textkomplex vorgenommen hat. (Dabei entspricht N. <ref corresp="L_section_583.xml#dcc_02-2"/>
+ der <hi rendition="#i">Scheda II-II</hi> und N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+ der <hi rendition="#i">Scheda VI-II</hi>.) Mit Ausnahme einer einzigen undatierten <hi rendition="#i">scheda</hi> (N. <ref corresp="L_section_583.xml#dcc_02-2"/>
+) sind die übrigen von Leibniz selbst auf Januar 1678, N. <ref corresp="L_section_5812.xml#dcc_10"/>
+ auf Januar und Februar 1678 datiert worden. Hieraus ergibt sich die Gesamtdatierung des Textkomplexes, der in seinen nicht gestrichenen Teilen erstmals in <hi rendition="#k">Fichant</hi> 1994, S. 71–171 veröffentlicht worden ist.</hi>
+</p>
+<p xml:id="Ch58.p3">
+<hi rendition="#smaller">Dass Leibniz ganz zu Beginn des Jahres 1678 mit der Stoßlehre im Allgemeinen und vornehmlich mit den Gesetzen besonderer Stoßfälle befasst war, bezeugt auch sein Brief an H. Conring vom 3. (13.) Januar 1678:<index indexName="Personen">
+	<term>
+		<hi rendition="#g #smaller">Conring</hi>
+		<hi rendition="#smaller">, Hermann 1606–1681</hi>
+	</term>
+</index> Dort gibt er zu, noch keine befriedigende Antwort auf die Frage zu haben, <hi rendition="#i">quid fiat si duo corpora dura magnitudine inaequalia concurrant</hi> – eine Antwort, die man selbst bei Koryphäen der neuen Naturwissenschaft wie Descartes und Huygens vergeblich suchen würde (<hi rendition="#i">LSB</hi> II, 1 [2006] N. 162, S. 581.5–7;<ref corresp="#bib_02053"/>
+ siehe <hi rendition="#k">Fichant</hi> 1994, S. 192).<ref corresp="#bib_01056"/>
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Descartes</hi>
+<hi rendition="#smaller">(Cartesius, des Cartes), René 1596–1650</hi>
+</term>
+</index>
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Huygens</hi>
+<hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi>
+</term>
+</index> Ob Leibniz hiermit besonders auf N. <ref corresp="#dcc_00"/>
+ oder aber auf frühere Untersuchungen zur Stoßlehre anspielt, lässt sich nicht mit Sicherheit entscheiden. Dennoch ist bemerkenswert, dass ein beachtlicher Teil der <hi rendition="#i">schedae</hi> – von N. <ref corresp="L_section_581.xml#dcc_01"/>
+ bis zu N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+ – vornehmlich mit dem Stoß ungleicher Körper hadert (vgl. dazu den ebenfalls auf Januar 1678 zurückgehenden Entwurf N. <ref corresp="L_chapter_57.xml#RK57279"/>
+). Der Brief an Conring<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Conring</hi>
+<hi rendition="#smaller">, Hermann 1606–1681</hi>
+</term>
+</index> rechtfertigt somit die Frage, ob der umfangreiche Textkomplex <hi rendition="#i">De corporum concursu</hi> am Stück verfasst wurde oder vielmehr in verschiedenen Etappen, die sich über die ersten zwei Monate des Jahres 1678 hinweg erstreckt haben. Der Brief lässt sogar die Vermutung zu, dass die Anfertigung von N. <ref corresp="#dcc_00"/>
+ bereits vor Ende 1677 begonnen haben könnte.</hi>
+</p>
+<p xml:id="Ch58.p4">
+<hi rendition="#smaller">Für eine Abfassung des Textkomplexes in verschiedenen Etappen sprechen auch weitere Gründe. Zunächst gilt es, auf die besondere Verteilung der Wasserzeichen in den Trägern der einzelnen <hi rendition="#i">schedae</hi> hinzuweisen. Von N. <ref corresp="L_section_581.xml#dcc_01"/>
+ abgesehen, lassen sich in dieser Hinsicht zwei verschiedene, homogene Gruppen feststellen: Sämtliche Bogen zu N. <ref corresp="L_section_582.xml#dcc_02-1"/>
+ und N. <ref corresp="L_section_584.xml#dcc_03"/>
+ bis <ref corresp="L_section_586.xml#dcc_05"/>
+ weisen ein und dasselbe Wasserzeichen auf, welches sich von dem einzigen unterscheidet, das in den Trägern der übrigen <hi rendition="#i">schedae</hi> N. <ref corresp="L_section_587.xml#dcc_06-1"/>
+ bis <ref corresp="L_section_5812.xml#dcc_10"/>
+ vorkommt. Diese Feststellung wird umso aussagekräftiger, als sie einigermaßen mit den inhaltlichen Zäsuren übereinstimmt, die sich im Textkomplex ermitteln lassen. Vom inhaltlichen Standpunkt aus bilden die einzelnen zwölf <hi rendition="#i">schedae</hi> nämlich keine geschlossenen Einheiten. Der Text lässt sich diesbezüglich vielmehr in drei fortlaufende Abschnitte unterteilen:</hi>
+</p>
+<p xml:id="Ch58.p5">
+<hi rendition="#smaller">(1) von der <hi rendition="#i">Scheda I</hi> (N. <ref corresp="L_section_581.xml#dcc_01"/>
+) bis zur Mitte der <hi rendition="#i">Scheda V</hi> (N. <ref corresp="L_section_586.xml#dcc_05"/>
+, S. <ref corresp="L_section_586.xml#LH_35_09_23_011v_jbcagk"/>
+), wo sich durch die Einführung des Elastizitätsgedankens als zusätzlichen Gegenstand der Untersuchung ein abrupter und markanter Einschnitt ergibt;</hi>
+</p>
+<p xml:id="Ch58.p6">
+<hi rendition="#smaller">(2) von dorther bis zur <hi rendition="#i">Scheda VI-II</hi> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+), mit der die Untersuchung Zwischenergebnisse erreicht, die nachträglich geprüft und erweitert wurden;</hi>
+</p>
+<p xml:id="Ch58.p7">
+<hi rendition="#smaller">(3) von der beim Axiom der Äquipollenz von Ursache und Wirkung neu ansetzenden <hi rendition="#i">Scheda VII</hi> (N. <ref corresp="L_section_589.xml#dcc_07"/>
+) bis zur <hi rendition="#i">Scheda X</hi> (N. <ref corresp="L_section_5812.xml#dcc_10"/>
+), die eher unvermittelt die Untersuchung abschließt (siehe zum Aufbau des gesamten Textkomplexes <hi rendition="#k">Fichant</hi> 1994, S. 175 f.).<ref corresp="#bib_01056"/>
+</hi>
+</p>
+<p xml:id="Ch58.p8">
+<hi rendition="#smaller">Diese drei Abschnitte stellen möglichwerweise auch drei verschiedene Etappen der Entstehung von N. <ref corresp="#dcc_00"/>
+ dar, welche sich in der Verteilung der Wasserzeichen wenigstens insofern abbilden, als diese letztere besonders die Zäsur in der Mitte von N. <ref corresp="L_section_586.xml#dcc_05"/>
+ zum Vorschein bringt.</hi>
+</p>
+<p xml:id="Ch58.p9">
+<hi rendition="#smaller">Die durch die Nummerierung der <anchor xml:id="dcc_Vorbemerkung_reform-1"/>
+<hi rendition="#i">schedae</hi> festgelegte Textfolge entspricht ohnehin nicht durchgän-gig der Entstehung und chronologischen Ordnung der Textschichten, da Leibniz nachträglich, am häufigs-ten mit Randbemerkungen, zuweilen aber auch durch umfangreichere Textzusätze, die älteren <hi rendition="#i">schedae</hi> berichtigt oder erweitert hat. Anlass zu den meisten nachträglichen Erweiterungen gab die „Entdeckung”, dass beim Phänomen des zentralen Stoßes nicht, wie früher gewöhnlich angenommen, die Summe der Bewegungsgröße (<hi rendition="#i">quantitas motus</hi>)<hi rendition="#i">mv</hi> erhalten bleibe, sondern die Summe der kinetischen „Kraft” (<hi rendition="#i">vis</hi>)<formula xml:id="Ch58.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:msup>
+<m:mi>v</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Die entsprechende Formel hatte Leibniz bereits im Mai oder Juni 1677 algebraisch hergeleitet, ohne allerdings ihre physikalische Interpretation als Erhaltungssatz der „Kraft” zu thematisieren (siehe N. <ref corresp="L_chapter_44.xml#RK57273"/>
+ und N. <ref corresp="L_chapter_47.xml#RK60344_2"/>
+). Die neue Einsicht – Geburtsstunde von Leibnizens <hi rendition="#i">réforme de la dynamique</hi> (<hi rendition="#k">Fichant</hi> 1994<ref corresp="#bib_01056"/>
+) – wird am Anfang der <hi rendition="#i">Scheda VIII</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>
+, S. <ref corresp="L_section_5810.xml#LH_37_05_086r_reformatio_idzg-1"/>
+) angekündigt. Zahlreiche Texterweiterungen in den früheren <hi rendition="#i">schedae</hi> sind mithin erst <hi rendition="#i">post reformationem</hi> entstanden (den Ausdruck hat Leibniz selbst eingeführt; vgl. die Randbemerkungen zu N. <ref corresp="L_section_584.xml#dcc_03"/>
+, S. <ref corresp="L_section_584.xml#LH_35_09_23_007v_zkuo-1"/>
+; N. <ref corresp="L_section_585.xml#dcc_04"/>
+, S. <ref corresp="L_section_585.xml#LH_35_09_23_009r_hdsw-1"/>
+,<ref corresp="L_section_585.xml#LH_35_09_23_010r_jdzwrkm-1"/>
+; N. <ref corresp="L_section_587.xml#dcc_06-1"/>
+, S. <ref corresp="L_section_587.xml#LH_35_09_23_013r_ersteMarg-1"/>
+).<anchor xml:id="dcc_Vorbemerkung_reform-2"/>
+</hi>
+</p>
+<p xml:id="Ch58.p10">
+<hi rendition="#smaller">Einen besonderen Fall stellen in dieser Hinsicht die <hi rendition="#i">Scheda II-II</hi> (N. <ref corresp="L_section_583.xml#dcc_02-2"/>
+) und die <hi rendition="#i">Scheda VI-II</hi> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+) dar, welche beide, wie bereits ihre Nummerierung zeigt, von Leibniz nachträglich vervollständigt und in den Textkomplex <hi rendition="#i">De corporum concursu</hi> eingefügt wurden.</hi>
+</p>
+<p xml:id="Ch58.p11">
+<hi rendition="#smaller">In der <anchor xml:id="dcc_intro_II-II_gdr-1"/>
+<hi rendition="#i">Scheda II-II</hi> (LH XXXV 9, 23 Bl. 4–5) lassen sich insgesamt mindestens zwei Textschichten unterscheiden. In der ältesten überprüft Leibniz rechnerisch ein Ergebnis aus der <hi rendition="#i">Scheda II</hi>: Unter Annahme des Bewegungsquantums <hi rendition="#i">mv</hi> als Erhaltungsgröße erweise sich im Fall des Stoßes eines kleineren auf einen ruhenden Körper als unmöglich, dass ihre relative Stoßgeschwindigkeit sowie die Richtung und die Geschwindigkeit ihres gemeinsamen Schwerpunkts erhalten bleiben würden (N. <ref corresp="L_section_582.xml#dcc_02-1"/>
+, S. <ref corresp="L_section_582.xml#LH_35_09_23_006r_viacentrigrav_mesj-1"/>
+). Dieses Ergebnis wird in der <hi rendition="#i">Scheda II-II</hi> zunächst auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1141">Bl. 5 r<hi rendition="#sup">o</hi>
+</ref> durch einen erneuten Beweisgang überprüft (N. <ref corresp="L_section_583.xml#dcc_02-2"/>
+, S. <ref corresp="L_section_583.xml#LH_35_09_23_004-005_Blatt5r-1"/>
+) und dann auf dem gegenüberliegenden <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1138">Bl. 4 v<hi rendition="#sup">o</hi>
+</ref> in sauberer Form nochmals bestätigt (N. <ref corresp="L_section_583.xml#dcc_02-2"/>
+, S. <ref corresp="L_section_583.xml#LH_35_09_23_004-005_Blatt4v-1"/>
+). Da der Beweisgang bei dieser zweifachen Prüfung den gleichen Ansatz wie in N. <ref corresp="L_section_582.xml#dcc_02-1"/>
+ aufweist, dürfte diese früheste Textschicht von N. <ref corresp="L_section_583.xml#dcc_02-2"/>
+ insgesamt in unmittelbarem Anschluss an N. <ref corresp="L_section_582.xml#dcc_02-1"/>
+ oder kurz danach entstanden sein. Später – in der <hi rendition="#i">Scheda VIII</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>
+) und der <hi rendition="#i">Scheda IX</hi> (N. <ref corresp="L_section_5811.xml#dcc_09"/>
+) – stellt Leibniz doch fest, dass unter Annahme der „Kraft” <formula xml:id="Ch58.p11.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:msup>
+<m:mi>v</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</formula> als Erhaltungsgröße sowohl die relative Stoßgeschwindigkeit wie auch die Richtung und Geschwindigkeit des gemeinsamen Schwerpunkts erhalten bleiben würden. Im Nachhinein kehrt er somit zur <hi rendition="#i">Scheda II-II</hi> zurück und verfasst die aus diesem neuen Ergebnis hervorgehenden Ausführungen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1141">Bl. 5 r<hi rendition="#sup">o</hi>
+</ref> (N. <ref corresp="L_section_583.xml#dcc_02-2"/>
+, S. <ref corresp="L_section_583.xml#LH_35_09_23_004-005_Blatt5v-1"/>
+). Diese zweite Textschicht berichtigt die früheren irrtümlichen Feststellungen über die relative Stoßgeschwindigkeit und die Bewegung des gemeinsamen Schwerpunktes. Schließlich entstand die Bemerkung auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1138">Bl. 4 r<hi rendition="#sup">o</hi>
+</ref> (N. <ref corresp="L_section_583.xml#dcc_02-2"/>
+, S. <ref corresp="L_section_583.xml#LH_35_09_23_004-005_Blatt4r-1"/>
+), in der klargestellt wird, dass der ursprüngliche rechnerische Beweis in der ersten Textschicht nur unter der (jetzt zurückgewiesenen) „kartesischen” Annahme des Bewegungsquantums (<hi rendition="#i">mv</hi>) als Erhaltungsgröße formal gültig sei.<anchor xml:id="dcc_intro_II-II_gdr-2"/>
+</hi>
+</p>
+<p xml:id="Ch58.p12">
+<hi rendition="#smaller">Die <anchor xml:id="dcc_intro_VI-II_fzr-1"/>
+<hi rendition="#i">Scheda VI-II</hi> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+), die als umfangreichste im ganzen Textkomplex <hi rendition="#i">De corporum concursu</hi> die Handschriften LH XXXV 9, 23 Bl. 15–20, LH XXXVII 4 Bl. 59–60 und LH XXXVII 5 Bl. 91 umfasst, weist ebenfalls mehrere Textschichten auf, die teilweise noch vor der <hi rendition="#i">Scheda VII</hi> (N. <ref corresp="L_section_589.xml#dcc_07"/>
+) oder zur gleichen Zeit wie diese, teilweise nach den letzten drei <hi rendition="#i">schedae</hi> (oder wenigstens nach N. <ref corresp="L_section_5810.xml#dcc_08"/>
+) verfasst wurden. In der ältesten Schicht (<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1171">Bl. 15 r<hi rendition="#sup">o</hi>
+</ref>,<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1173">15 v<hi rendition="#sup">o</hi>
+</ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1186">20 r<hi rendition="#sup">o</hi>
+</ref>; N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+, S. <ref corresp="L_section_588.xml#LH_35_09_23_015r_anfang_fhg"/>
+) wiederholt Leibniz eine Ausführung aus der <hi rendition="#i">Scheda VI</hi>, in der der allgemeine Fall des elastischen Stoßes gegen einen ungleich schweren, ruhenden Körper berechnet wird (N. <ref corresp="L_section_587.xml#dcc_06-1"/>
+, S. <ref corresp="L_section_587.xml#LH_35_09_23_014r_percussioinquiescens"/>
+ ff.) mit der Absicht, sie endgültig zu überprüfen. Aus der neuen Berechnung ergeben sich zwei Gleichungen, <pb type="L"/>
+auf denen die späteren Textschichten der Scheda <hi rendition="#i">VI-II</hi> aufbauen. Die zweite Textschicht (<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=182">Bl. 59 r<hi rendition="#sup">o</hi>
+</ref>,<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=184">59 v<hi rendition="#sup">o</hi>
+</ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=185">60 r<hi rendition="#sup">o</hi>
+</ref>; N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+, S. <ref corresp="L_section_588.xml#_37_04_059r_Regnauld_Anfang"/>
+–<ref corresp="L_section_588.xml#_37_04_060r_Regnauld_Ende"/>
+) besteht aus neun tabellarischen Darstellungen experimenteller Werte, die Leibniz, zum Teil mit Hilfe eines unbekannten Schreibers, aus F. Regnaulds<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Regnauld</hi>
+<hi rendition="#smaller">(Regnaud; Regnaldus), François de 1626–1689</hi>
+</term>
+</index> Brief vom 21. Dezember 1655 an B. de Monconys<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Monconys</hi>
+<hi rendition="#smaller">(Monconisius), Balthasar de 1611–1665</hi>
+</term>
+</index> übernommen hat (vgl. <ref corresp="#bib_02021"/>
+B. <hi rendition="#k">de Monconys</hi>,<ref corresp="#bib_00118"/>
+<hi rendition="#i">Journal des voyages</hi>, Teil III: „Lettres escrittes à Monsieur de Monconys”, Lyon 1666, S. 52–55; dieser Quelle hatte Leibniz bereits früher seine Aufmerksamkeit gewidmet, wie auch die Notiz N. <ref corresp="L_chapter_35.xml#RK60070"/>
+ in diesem Band zeigt). Bei diesen Exzerpten, die Leibniz zuweilen mit eigenen Bemerkungen erörtert hat, geht es um Regnaulds<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Regnauld</hi>
+<hi rendition="#smaller">(Regnaud; Regnaldus), François de 1626–1689</hi>
+</term>
+</index> Bemessungen des Stoßes eines unterschiedlich schweren Pendels, das aus verschiedenen Höhen auf ein zweites, ruhendes Pendel fällt. Diese tabellarischen Darstellungen dienten wiederum als Teilvorlage für die dritte Textschicht von N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+, in der Regnaulds experimentelle Ergebnisse mit entsprechenden Werten verglichen werden, die Leibniz rein rechnerisch aus beiden in der ersten Textschicht bestimmten Gleichungen (S. <ref corresp="L_section_588.xml#LH_35_09_23_015v_Gleichung_1-1"/>
+) herleitet.<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Regnauld</hi>
+<hi rendition="#smaller">(Regnaud; Regnaldus), François de 1626–1689</hi>
+</term>
+</index> Der Vergleich, der offenbar Leibnizens Ausführung zum elastischen Stoß in N. <ref corresp="L_section_587.xml#dcc_06-1"/>
+ (S. <ref corresp="L_section_587.xml#LH_35_09_23_014r_percussioinquiescens"/>
+ ff.) und N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+ (S. <ref corresp="L_section_588.xml#LH_35_09_23_015r_anfang_fhg"/>
+) bestätigen sollte, erfolgt anhand weiterer tabellarischer Darstellungen in zwei Schritten: zunächst im gestrichenen Text auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=274">Bl. 91 r<hi rendition="#sup">o</hi>
+</ref> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+, S. <ref corresp="L_section_588.xml#LH_37_05_091r_gestrtab"/>
+–<ref corresp="L_section_588.xml#LH_37_05_091r_ende"/>
+) und dann wieder in (vorübergehend) gültiger Gestalt auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1179">Bl. 17 v<hi rendition="#sup">o</hi>
+</ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1180">18 r<hi rendition="#sup">o</hi>
+</ref> (N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+, S. <ref corresp="L_section_588.xml#LH_35_09_23_017v_tab1"/>
+–<ref/>
+). Auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1179">Bl. 17 v<hi rendition="#sup">o</hi>
+</ref> bis <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1182">18 v<hi rendition="#sup">o</hi>
+</ref> sind ferner begleitende Anmerkungen anzutreffen (N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+, S. <ref corresp="L_section_588.xml#LH_35_09_23_018v_iiiSchichtKomm-1"/>
+), die ebenfalls zur dritten Textschicht gehören und wie diese und die zwei vorausgehenden Textschichten vor der <hi rendition="#i">Scheda VIII</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>
+) verfasst wurden. Anders verhält es sich mit einer weiteren, auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1182">Bl. 18 v<hi rendition="#sup">o</hi>
+</ref> vorliegenden Bemerkung (N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+, S. <ref corresp="L_section_588.xml#LH_35_09_23_018v_ivSchicht-1"/>
+), die auf die <hi rendition="#i">reformatio</hi> hinweist und folglich mit großer Wahrscheinlichkeit nach (mindestens) N. <ref corresp="L_section_5810.xml#dcc_08"/>
+ verfasst wurde. Diese Bemerkung ist demgemäß einer vierten und letzten Textschicht von N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+ zuzuschreiben, welche ebenfalls den Vermerk auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1177">Bl. 17 r<hi rendition="#sup">o</hi>
+</ref> (S. <ref corresp="L_section_588.xml#LH_35_09_23_017r_nota_bkjm-1"/>
+) sowie hauptsächlich die <hi rendition="#i">Tabula III</hi> auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1183">Bl. 19 r<hi rendition="#sup">o</hi>
+</ref> (S. <ref corresp="L_section_588.xml#LH_35_09_23_019r_tab3"/>
+) umfasst. Diese letztere ergibt sich aus der Neuberechnung der früheren Tabelle auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1180">Bl. 18 r<hi rendition="#sup">o</hi>
+</ref> (S. <ref/>
+) unter Berücksichtigung des Faktors <formula xml:id="Ch58.p12.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:msup>
+<m:mi>v</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</formula> anstelle des Faktors <hi rendition="#i">mv</hi>. Die Erläuterung auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1176">Bl. 16 v<hi rendition="#sup">o</hi>
+</ref>, welche die experimentellen Bedingungen von Regnaulds<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Regnauld</hi>
+<hi rendition="#smaller">(Regnaud; Regnaldus), François de 1626–1689</hi>
+</term>
+</index> Bemessungen ein weiteres Mal zusammenfasst und gleichsam den Abschluss von N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+ darstellt, dürfte in ihrem ersten Teil (S. <ref corresp="L_section_588.xml#LH_35_09_23_016v_Teil1_tsf-1"/>
+) noch zur dritten Textschicht gehören, während ihr zweiter und letzter Teil (S. <ref corresp="L_section_588.xml#LH_35_09_23_016v_Teil2_tsf-1"/>
+) offensichtlich der vierten Textschicht zuzuschreiben ist.<anchor xml:id="dcc_intro_VI-II_fzr-2"/>
+</hi>
+</p>
+<p xml:id="Ch58.p13">
+<hi rendition="#smaller">Aus der vorausgehenden Darstellung lässt sich festhalten, dass die jüngsten Textschichten in N. <ref corresp="L_section_583.xml#dcc_02-2"/>
+ und N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+ – ebenso wie zahlreiche Texterweiterungen in den übrigen <hi rendition="#i">ante reformationem</hi> entstandenen <hi rendition="#i">schedae</hi> – erst in einer späten Bearbeitungsphase des Textkomplexes <hi rendition="#i">De corporum concursu</hi> verfasst wurden, d.h. möglicherweise erst im Februar 1678.</hi>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</text>
 </TEI>

@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-015-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-015-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Aus einer fremden Schrift, Autor unbekannt</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note> </resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp> <note type="remarkResponsibility">Inhaltliche Konzeption</note> </resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Martina</forename> <surname>Gödel</surname> </persName>
-					<resp> <note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note> </resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName> <forename>Sebastian W.</forename> <surname>Stork</surname> </persName>
-					<resp> <note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note> </resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"> <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p> </licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="15">Aus einer fremden Schrift, Autor unbekannt</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1671-07" resp="#ed" cert="medium">[2. Hälfte 1671]</date>
 						<date calendar="#gregorian" notAfter="1671-12" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=XXX</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+							<idno type="page">#page=XXX</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,39 +86,50 @@
 						</imprint>
 						<biblScope unit="page" from="137" to="138"/>
 					</monogr>
-					<series> <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title> </series>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-01-015-000_facs-haupttextzeuge"> <msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXVII 2 Bl. 1–2</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#auszuege-kommentare">
-							<summary> <p>Exzerpt: LH XXXVII 2 Bl. 1–2. 1 Bog. 2<hi rendition="#sup">o</hi>. 1 S. zweispaltig auf Bl. 1 v<hi rendition="#sup">o</hi>. Linke Spalte fortlaufender Text, rechte Spalte oben eine Marginalie. Die verbleibenden Seiten des Bogens N. 16 und N. 18.</p> <p>KK 1, Nr. 973 B</p> </summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc> </witness>
-					<witness n="L"> <msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek</repository>
-							<idno type="Signatur">LH XXXVII 2 Bl. 1–2</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#auszug">
-							<summary> <p/> </summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc> </witness>
+					<witness n="L" corresp="#L_08-01-015-000_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">LH XXXVII 2 Bl. 1–2</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#auszuege-kommentare">
+								<summary>
+									<p>Exzerpt: LH XXXVII 2 Bl. 1–2. 1 Bog. 2<hi rendition="#sup">o</hi>. 1 S. zweispaltig auf Bl. 1 v<hi rendition="#sup">o</hi>. Linke Spalte fortlaufender Text, rechte Spalte oben eine Marginalie. Die verbleibenden Seiten des Bogens N. 16 und N. 18.</p>
+									<p>KK 1, Nr. 973 B</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
+					<witness n="L">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek</repository>
+								<idno type="Signatur">LH XXXVII 2 Bl. 1–2</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#auszug">
+								<summary>
+									<p/>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -181,13 +230,13 @@
 		</revisionDesc>
 	</teiHeader>
 	<facsimile source="digilib.bbaw.de" xml:id="L_08-01-015-000_facs-haupttextzeuge">
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=1"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=2"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=3"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=4"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=5"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=6"/>
-    </facsimile>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=1"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=2"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=3"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=4"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=5"/>
+		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=6"/>
+	</facsimile>
 	<text xml:id="L_08-01-015-000_text">
 		<body xml:id="Document">
 			<div type="chapter" xml:id="Ch15" n="15">
@@ -195,170 +244,226 @@
 				<head>15. AUS EINER FREMDEN SCHRIFT, AUTOR UNBEKANNT</head>
 				<head>[2. Hälfte 1671]</head>
 				<div type="ueberlieferung">
-					<p> <hi rendition="#b #smaller">Überlieferung:</hi> <listWit>
-						<witness> <msDesc>
-							<msIdentifier>
-								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-								<idno type="Signatur">XXX</idno>
-							</msIdentifier>
-							<msContents>
-								<summary> <p>Exzerpt: LH XXXVII 2 Bl. 1–2. 1 Bog. 2<hi rendition="#sup">o</hi>. 1 S. zweispaltig auf Bl. 1 v<hi rendition="#sup">o</hi>. Linke Spalte fortlaufender Text, rechte Spalte oben eine Marginalie. Die verbleibenden Seiten des Bogens N. 16 und N. 18.</p> <p>KK 1, Nr. 973 B</p> </summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc> </witness>
-						<witness> <msDesc>
-							<msIdentifier>
-								<repository>Gottfried Wilhelm Leibniz Bibliothek</repository>
-								<idno type="Signatur">LH XXXVII 2 Bl. 1–2</idno>
-							</msIdentifier>
-							<msContents>
-								<summary> <p/> </summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc> </witness>
-						</listWit> </p>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+										<idno type="Signatur">XXX</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>Exzerpt: LH XXXVII 2 Bl. 1–2. 1 Bog. 2<hi rendition="#sup">o</hi>. 1 S. zweispaltig auf Bl. 1 v<hi rendition="#sup">o</hi>. Linke Spalte fortlaufender Text, rechte Spalte oben eine Marginalie. Die verbleibenden Seiten des Bogens N. 16 und N. 18.</p>
+											<p>KK 1, Nr. 973 B</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek</repository>
+										<idno type="Signatur">LH XXXVII 2 Bl. 1–2</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p/>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="contents">
-					<p xml:id="Ch15.p5"> <hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Die Datierung erfolgt aufgrund des Wasserzeichens. Vgl. dazu N. 18.</hi> </p>
+					<p xml:id="Ch15.p5">
+						<hi rendition="#smaller">
+							<hi rendition="#b">Datierungsgründe</hi>: Die Datierung erfolgt aufgrund des Wasserzeichens. Vgl. dazu N. 18.</hi>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch15.p6"><pb type="L"/><fw type="folNum">[1 v<hi rendition="#sup">o</hi>]</fw> Cum Hyperbola<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">In der rechten Spalte</hi>: Potest fieri quadam quasi <hi rendition="#g">Hyperbola</hi> Mechanica, dispositionibus sectionum ex sphaeris. Ad Hyperbolam etc. exacte elaborandam motus uno velut ictu ac momento, ope pulveris pyrii exercendus.</note> et Ellipsis colligant omnes radios ex puncto in axe optico<index indexName="Sachverzeichnis">
-						<term>axis</term>
-						<index>
-							<term>opticus</term>
-						</index>
-						</index>, et vicinissimis tanto scil. pluribus, licet tam minus accurate, quanto ipsa Hyperbola aut Ellipsis obtusior. Hinc fieri potest figura optica quasi perfecta. Constans ex meris vel Ellipsibus Hyperbolisque sibi appositis quasi mechanica quadam construendi ratione, ut huic hoc illi aliud objecti punctum sit in axe optico<index indexName="Sachverzeichnis">
-						<term>axis</term>
-						<index>
-							<term>opticus</term>
-						</index>
-						</index>, ita totum simul perfecte, quantum possibile est detegetur: inprimis si illae variae projectiones inter se uniantur, ut si in unum speculum concavum<index indexName="Sachverzeichnis">
-						<term>speculum</term>
-						<index>
-							<term>concavum</term>
-						</index>
-						</index> incidant, ubi unientur ob auctam magnitudinem. Aut si in convexum<index indexName="Sachverzeichnis">
-						<term>speculum</term>
-						<index>
-							<term>convexum</term>
-						</index>
-						</index> ubi unientur <!--  \hack{\edtext{ob arctitatem}{\lemma{ob}\Afootnote{ \textit{ (1) }\ arctam \textit{ (2) }\ arctitatem \textit{ L}\hspace{10mm}22 \hspace{3mm} etc. \textit{ erg.}\ \textit{ L }}}} 
-     \hackfor{\edtext{ob arctitatem}{\lemma{ob}\Afootnote{ \textit{ (1) }\ arctam \textit{ (2) }\ arctitatem \textit{ L}}}\edtext{}{\lemma{}\Afootnote{etc. \textit{ erg.}\ \textit{ L }}}}--><app type="Bfootnote">
-						<lem type="main">ob arctitatem</lem>
-						<note type="lemma-abbrev">ob</note>
-						<rdg wit="#L" n="1"> arctam </rdg>
-						<rdg wit="#L" n="2"> arctitatem <hi rendition="#i">L</hi></rdg>
-						</app><app type="Bfootnote">
-						<lem type="main"/>
-						<rdg wit="#L" cause="addition"><add>etc.</add> <note type="editorial"><hi rendition="#i">erg.</hi></note>  <hi rendition="#i">L</hi> </rdg>
-						</app> spatii poterunt autem inde projici in amplificans speculum Tubumque<index indexName="Sachverzeichnis">
-						<term>tubus</term>
-						<index>
-							<term>opticus</term>
-						</index>
-						</index>. Amplificatio in parte erit. Haec tantum pro iis quae lucida non sunt, aut non illustrabilia. Illustrabilia satis radiis datis possumus videre solis sphaericis lentibus<index indexName="Sachverzeichnis">
-						<term>lens</term>
-						<index>
-							<term>sphaerica</term>
-						</index>
-						</index>. Nota si objectum in centro pluries Hyperbolae circa collocatum ipsum respicientes quodammodo videbuntur in unam figuram conjunctae et praestabunt <pb type="VIII_1" n="138"/>lentem<index indexName="Sachverzeichnis">
-						<term>lens</term>
-						</index> perfectam mechanicam. Videbitur <app type="Bfootnote">
-						<lem type="main">sic totum</lem>
-						<note type="lemma-abbrev">Videbitur</note>
-						<rdg wit="#L" n="1"> quidem </rdg>
-						<rdg wit="#L" n="2"> sic totum <hi rendition="#i">L</hi> </rdg>
-						</app> objectum saepe simul, sed ita omnes ejus partes distinctissime.</p>
-					<p xml:id="Ch15.p7">Magnitudo augeri potest in infinitum tum aucto vitro sphaerae majoris, et magis remoto a sphaera exigua. Quod tamen plurimum nocet luci, tamen quod aptius adhibito speculo concavissimo<index indexName="Sachverzeichnis">
-						<term>speculum</term>
-						<index>
-							<term>concavum</term>
-						</index>
-						</index> aut etiam parabolico <index indexName="Sachverzeichnis">
-						<term>speculum</term>
-						<index>
-							<term>parabolicum</term>
-						</index>
-						</index> dicendum est in infinitum auget, manente eadem via nec proinde aucta longitudine Tubi quae parit obscuritatem.</p>
-					<p xml:id="Ch15.p8">An utile objectum in speculum<index indexName="Sachverzeichnis">
-						<term>speculum</term>
-						</index> allapsum microscopio <index indexName="Sachverzeichnis">
-						<term>microscopium</term>
-						</index> intueri. Ita arbitror est enim quasi pictura. Sed speculum<index indexName="Sachverzeichnis">
-						<term>speculum</term>
-						</index> obscurandum quantum licet. Cogitandum de rationibus obscurandi in summo gradu.</p>
-					<p xml:id="Ch15.p9">Hyperbolis et Ellipsibus in Tubis, parabolis in speculis<index indexName="Sachverzeichnis">
-						<term>speculum</term>
-						</index> potest augeri Lux<index indexName="Sachverzeichnis">
-						<term>lux</term>
-						</index> dati puncti seu numerus radiorum collectorum in infinitum, pluribus conjunctis defectura.</p>
-					<p xml:id="Ch15.p10">Apertura in Hyperbolis <app type="Bfootnote">
-						<lem type="main">et parabolis</lem>
-						<rdg wit="#L" cause="addition"><add>et parabolis</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> in arbitrio est. Magnitudo deinde vel speculis concavis<index indexName="Sachverzeichnis">
-						<term>speculum</term>
-						<index>
-							<term>concavum</term>
-						</index>
-						</index>, vel Tubis, seu proportione lentis<index indexName="Sachverzeichnis">
-						<term>lens</term>
-						</index> ad objectivum<index indexName="Sachverzeichnis">
-						<term>objectivum</term>
-						</index>. Ita puto rem opticam posse augeri in infinitum. Ita videor reperire, quod summum potest. Nisi quis figuram simplicem reperiat quae praestet vicem Ellipsium vel Hyperbolarum conjunctarum.</p>
-					<p xml:id="Ch15.p11">Nota. Quoniam <app type="Bfootnote">
-						<lem type="main">non anguli sed sinus refractionum</lem>
-						<note type="lemma-abbrev">Quoniam</note>
-						<rdg wit="#L" n="1"> Refractio<index indexName="Sachverzeichnis">
-							<term>refractio</term>
-							</index> </rdg>
-						<rdg wit="#L" n="2"> non anguli sed sinus refractionum <hi rendition="#i">L</hi></rdg>
-						</app> sunt proportionales. Ideo licet refractionibus multiplicatis lucrari aliquid facereque per exemplum. NB. Solis vitris concavis ac proinde pandochis <app type="Bfootnote">
-						<lem type="main">seu ordinatis</lem>
-						<rdg wit="#L" cause="addition"><add>seu ordinatis</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> radios convergentes.</p>
-					<p xml:id="Ch15.p12">Adde modum <app type="Bfootnote">
-						<lem type="main">Hookii</lem>
-						<note type="lemma-abbrev">modum</note>
-						<rdg wit="#L" n="1"> Lanae<index indexName="Namensregister">
-							<term><hi rendition="#g">Lana,</hi> Francesco 1631–1687</term>
-							</index> </rdg>
-						<rdg wit="#L" n="2"> Hookii <hi rendition="#i">L</hi></rdg>
-						</app> eundem Tubum<index indexName="Sachverzeichnis">
-						<term>tubus</term>
-						<index>
-							<term>opticus</term>
-						</index>
-						</index> faciendi iisdem vitris longiorem.<app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">longiorem.</note>
-						<note type="editorial"><hi rendition="#k">R. Hooke,</hi> <bibl corresp="#bib_00061"><hi rendition="#i">Micrographia</hi>, London 1665, Vorwort, e–f.</bibl></note>
-						</app></p>
-					<p xml:id="Ch15.p13">Consule propositiones Auzuti<index indexName="Namensregister">
-						<term><hi rendition="#g">Auzout</hi> (Auzutus), Adrien 1622–1603</term>
-						</index> ad Hookium<index indexName="Namensregister">
-						<term><hi rendition="#g">Hooke</hi> (Hookius, Hook), Robert 1635–1703</term>
-						</index> ubi petit ejus artem faciendi exiguae sphaerae vitro Tubum<index indexName="Sachverzeichnis">
-						<term>tubus</term>
-						<index>
-							<term>opticus</term>
-						</index>
-						</index> magnum.<app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">magnum.</note>
-						<note type="editorial"><hi rendition="#k">Anonym</hi>, <bibl corresp="#bib_00283"><hi rendition="#i">Considerations</hi>, <hi rendition="#i">PT</hi> 1 (1665), S. 60f.</bibl></note>
-						</app></p>
-				</div>
-			</div>
-		</body>
-	</text>
+					<p xml:id="Ch15.p6">
+						<pb type="L"/>
+						<fw type="folNum">[1 v<hi rendition="#sup">o</hi>]
+						</fw> Cum Hyperbola<note type="Afootnote" place="margin" resp="#L">
+						<hi rendition="#i">In der rechten Spalte</hi>: Potest fieri quadam quasi <hi rendition="#g">Hyperbola</hi> Mechanica, dispositionibus sectionum ex sphaeris. Ad Hyperbolam etc. exacte elaborandam motus uno velut ictu ac momento, ope pulveris pyrii exercendus.</note> et Ellipsis colligant omnes radios ex puncto in axe optico<index indexName="Sachverzeichnis">
+					<term>axis</term>
+					<index>
+						<term>opticus</term>
+					</index>
+				</index>, et vicinissimis tanto scil. pluribus, licet tam minus accurate, quanto ipsa Hyperbola aut Ellipsis obtusior. Hinc fieri potest figura optica quasi perfecta. Constans ex meris vel Ellipsibus Hyperbolisque sibi appositis quasi mechanica quadam construendi ratione, ut huic hoc illi aliud objecti punctum sit in axe optico<index indexName="Sachverzeichnis">
+				<term>axis</term>
+				<index>
+					<term>opticus</term>
+				</index>
+			</index>, ita totum simul perfecte, quantum possibile est detegetur: inprimis si illae variae projectiones inter se uniantur, ut si in unum speculum concavum<index indexName="Sachverzeichnis">
+			<term>speculum</term>
+			<index>
+				<term>concavum</term>
+			</index>
+		</index> incidant, ubi unientur ob auctam magnitudinem. Aut si in convexum<index indexName="Sachverzeichnis">
+		<term>speculum</term>
+		<index>
+			<term>convexum</term>
+		</index>
+	</index> ubi unientur 	<!--  \hack{\edtext{ob arctitatem}{\lemma{ob}\Afootnote{ \textit{ (1) }\ arctam \textit{ (2) }\ arctitatem \textit{ L}\hspace{10mm}22 \hspace{3mm} etc. \textit{ erg.}\ \textit{ L }}}} 
+     \hackfor{\edtext{ob arctitatem}{\lemma{ob}\Afootnote{ \textit{ (1) }\ arctam \textit{ (2) }\ arctitatem \textit{ L}}}\edtext{}{\lemma{}\Afootnote{etc. \textit{ erg.}\ \textit{ L }}}}-->
+	<app type="Bfootnote">
+		<lem type="main">ob arctitatem</lem>
+		<note type="lemma-abbrev">ob</note>
+		<rdg wit="#L" n="1"> arctam </rdg>
+		<rdg wit="#L" n="2"> arctitatem <hi rendition="#i">L</hi>
+		</rdg>
+	</app>
+	<app type="Bfootnote">
+		<lem type="main"/>
+		<rdg wit="#L" cause="addition">
+			<add>etc.</add>
+			<note type="editorial">
+				<hi rendition="#i">erg.</hi>
+			</note>
+			<hi rendition="#i">L</hi>
+		</rdg>
+	</app> spatii poterunt autem inde projici in amplificans speculum Tubumque<index indexName="Sachverzeichnis">
+	<term>tubus</term>
+	<index>
+		<term>opticus</term>
+	</index>
+</index>. Amplificatio in parte erit. Haec tantum pro iis quae lucida non sunt, aut non illustrabilia. Illustrabilia satis radiis datis possumus videre solis sphaericis lentibus<index indexName="Sachverzeichnis">
+<term>lens</term>
+<index>
+	<term>sphaerica</term>
+</index>
+</index>. Nota si objectum in centro pluries Hyperbolae circa collocatum ipsum respicientes quodammodo videbuntur in unam figuram conjunctae et praestabunt <pb type="VIII_1" n="138"/>
+lentem<index indexName="Sachverzeichnis">
+<term>lens</term>
+</index> perfectam mechanicam. Videbitur <app type="Bfootnote">
+<lem type="main">sic totum</lem>
+<note type="lemma-abbrev">Videbitur</note>
+<rdg wit="#L" n="1"> quidem </rdg>
+<rdg wit="#L" n="2"> sic totum <hi rendition="#i">L</hi>
+</rdg>
+</app> objectum saepe simul, sed ita omnes ejus partes distinctissime.</p>
+<p xml:id="Ch15.p7">Magnitudo augeri potest in infinitum tum aucto vitro sphaerae majoris, et magis remoto a sphaera exigua. Quod tamen plurimum nocet luci, tamen quod aptius adhibito speculo concavissimo<index indexName="Sachverzeichnis">
+<term>speculum</term>
+<index>
+<term>concavum</term>
+</index>
+</index> aut etiam parabolico <index indexName="Sachverzeichnis">
+<term>speculum</term>
+<index>
+<term>parabolicum</term>
+</index>
+</index> dicendum est in infinitum auget, manente eadem via nec proinde aucta longitudine Tubi quae parit obscuritatem.</p>
+<p xml:id="Ch15.p8">An utile objectum in speculum<index indexName="Sachverzeichnis">
+<term>speculum</term>
+</index> allapsum microscopio <index indexName="Sachverzeichnis">
+<term>microscopium</term>
+</index> intueri. Ita arbitror est enim quasi pictura. Sed speculum<index indexName="Sachverzeichnis">
+<term>speculum</term>
+</index> obscurandum quantum licet. Cogitandum de rationibus obscurandi in summo gradu.</p>
+<p xml:id="Ch15.p9">Hyperbolis et Ellipsibus in Tubis, parabolis in speculis<index indexName="Sachverzeichnis">
+<term>speculum</term>
+</index> potest augeri Lux<index indexName="Sachverzeichnis">
+<term>lux</term>
+</index> dati puncti seu numerus radiorum collectorum in infinitum, pluribus conjunctis defectura.</p>
+<p xml:id="Ch15.p10">Apertura in Hyperbolis <app type="Bfootnote">
+<lem type="main">et parabolis</lem>
+<rdg wit="#L" cause="addition">
+<add>et parabolis</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> in arbitrio est. Magnitudo deinde vel speculis concavis<index indexName="Sachverzeichnis">
+<term>speculum</term>
+<index>
+<term>concavum</term>
+</index>
+</index>, vel Tubis, seu proportione lentis<index indexName="Sachverzeichnis">
+<term>lens</term>
+</index> ad objectivum<index indexName="Sachverzeichnis">
+<term>objectivum</term>
+</index>. Ita puto rem opticam posse augeri in infinitum. Ita videor reperire, quod summum potest. Nisi quis figuram simplicem reperiat quae praestet vicem Ellipsium vel Hyperbolarum conjunctarum.</p>
+<p xml:id="Ch15.p11">Nota. Quoniam <app type="Bfootnote">
+<lem type="main">non anguli sed sinus refractionum</lem>
+<note type="lemma-abbrev">Quoniam</note>
+<rdg wit="#L" n="1"> Refractio<index indexName="Sachverzeichnis">
+<term>refractio</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> non anguli sed sinus refractionum <hi rendition="#i">L</hi>
+</rdg>
+</app> sunt proportionales. Ideo licet refractionibus multiplicatis lucrari aliquid facereque per exemplum. NB. Solis vitris concavis ac proinde pandochis <app type="Bfootnote">
+<lem type="main">seu ordinatis</lem>
+<rdg wit="#L" cause="addition">
+<add>seu ordinatis</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> radios convergentes.</p>
+<p xml:id="Ch15.p12">Adde modum <app type="Bfootnote">
+<lem type="main">Hookii</lem>
+<note type="lemma-abbrev">modum</note>
+<rdg wit="#L" n="1"> Lanae<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Lana,</hi> Francesco 1631–1687</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> Hookii <hi rendition="#i">L</hi>
+</rdg>
+</app> eundem Tubum<index indexName="Sachverzeichnis">
+<term>tubus</term>
+<index>
+<term>opticus</term>
+</index>
+</index> faciendi iisdem vitris longiorem.<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">longiorem.</note>
+<note type="editorial">
+<hi rendition="#k">R. Hooke,</hi>
+<bibl corresp="#bib_00061">
+<hi rendition="#i">Micrographia</hi>, London 1665, Vorwort, e–f.</bibl>
+</note>
+</app>
+</p>
+<p xml:id="Ch15.p13">Consule propositiones Auzuti<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Auzout</hi> (Auzutus), Adrien 1622–1603</term>
+</index> ad Hookium<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Hooke</hi> (Hookius, Hook), Robert 1635–1703</term>
+</index> ubi petit ejus artem faciendi exiguae sphaerae vitro Tubum<index indexName="Sachverzeichnis">
+<term>tubus</term>
+<index>
+<term>opticus</term>
+</index>
+</index> magnum.<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">magnum.</note>
+<note type="editorial">
+<hi rendition="#k">Anonym</hi>,<bibl corresp="#bib_00283">
+<hi rendition="#i">Considerations</hi>,<hi rendition="#i">PT</hi> 1 (1665), S. 60f.</bibl>
+</note>
+</app>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,1007 +1,2740 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-029-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-029-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Axioma de potentia et effectu</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Axioma de potentia et effectu</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="29">Axioma de potentia et effectu</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1676-02" resp="#ed" cert="medium">[Februar – September 1676]</date><date calendar="#gregorian" notAfter="1676-09" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=283</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="235" to="242"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-029-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 4 Bl. 61-62</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#konzept-entwurf"><summary><p>Konzept: LH XXXVII 4 Bl. 61-62. 1 Bog. 2<hi rendition="#sup">o</hi>, Bl. 62 u<pb type="VIII_2" n="236"/>m die untere<pb type="VIII_2" n="240"/>n 2/3 beschnitten. 2 1/3 S. Bl. 62 v<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen auf Bl. 61. Dort auch Textverluste durch Papierabbrüche am Rand.
-Textträger durch Papiererhaltungsmaßnahmen gesichert.</p><p>Cc 2, Nr. 1504</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="./glyphs/rightpropto.svg"/>
-        </glyph>
-        <!-- PsMs -->
-        <glyph xml:id="pPsMs">
-          <glyphName>pPsMs</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-0.5</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pPsMs</mapping>
-          <graphic url="./glyphs/PsMs.svg"/>
-        </glyph>
-        <glyph xml:id="PsMs">
-          <glyphName>PsMs</glyphName>
-          <desc>Bedeutung (+−) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\PsMs</mapping>
-          <graphic url="./glyphs/PsMs.svg"/>
-        </glyph>
-        <!-- MsPs -->
-        <glyph xml:id="pMsPs">
-          <glyphName>pMsPs</glyphName>
-          <desc>Bedeutung (−+) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-0.5</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pMsPs</mapping>
-          <graphic url="./glyphs/MsPs.svg"/>
-        </glyph>
-        <glyph xml:id="MsPs">
-          <glyphName>MsPs</glyphName>
-          <desc>Bedeutung (−+) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\MsPs</mapping>
-          <graphic url="./glyphs/MsPs.svg"/>
-        </glyph>
-        <!-- PsPsMs -->
-        <glyph xml:id="pPsPsMs">
-          <glyphName>pPsPsMs</glyphName>
-          <desc>Bedeutung (+(+−)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pPsPsMs</mapping>
-          <graphic url="./glyphs/PsPsMs.svg"/>
-        </glyph>
-        <glyph xml:id="PsPsMs">
-          <glyphName>PsPsMs</glyphName>
-          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\PsPsMs</mapping>
-          <graphic url="./glyphs/PsPsMs.svg"/>
-        </glyph>
-        <!-- PsMsPs -->
-        <glyph xml:id="pPsMsPs">
-          <glyphName>pPsMsPs</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pPsMsPss</mapping>
-          <graphic url="./glyphs/PsMsPs.svg"/>
-        </glyph>
-        <glyph xml:id="PsMsPs">
-          <glyphName>PsMsPs</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\PsMsPs</mapping>
-          <graphic url="./glyphs/PsMsPs.svg"/>
-        </glyph>
-        <!-- MsPsMs -->
-        <glyph xml:id="pMsPsMs">
-          <glyphName>pMsPsMs</glyphName>
-          <desc>Bedeutung (−(+−)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pMsPsMs</mapping>
-          <graphic url="./glyphs/MsPsMs.svg"/>
-        </glyph>
-        <glyph xml:id="MsPsMs">
-          <glyphName>MsPsMs</glyphName>
-          <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\MsPsMs</mapping>
-          <graphic url="./glyphs/MsPsMs.svg"/>
-        </glyph>
-        <!-- MsMsPs -->
-        <glyph xml:id="pMsMsPs">
-          <glyphName>pMsMsPs</glyphName>
-          <desc>Bedeutung (−(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pMsMsPss</mapping>
-          <graphic url="./glyphs/MsMsPs.svg"/>
-        </glyph>
-        <glyph xml:id="MsMsPs">
-          <glyphName>MsMsPs</glyphName>
-          <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\MsMsPs</mapping>
-          <graphic url="./glyphs/MsMsPs.svg"/>
-        </glyph>
-        <!-- MsPsPs -->
-        <glyph xml:id="pMsPsPs">
-          <glyphName>pMsPsPs</glyphName>
-          <desc>Bedeutung (−(++)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pMsPsPs</mapping>
-          <graphic url="./glyphs/MsPsPs.svg"/>
-        </glyph>
-        <glyph xml:id="MsPsPs">
-          <glyphName>MsPsPs</glyphName>
-          <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\MsPsPs</mapping>
-          <graphic url="./glyphs/MsPsPs.svg"/>
-        </glyph>
-        <!-- pmD -->
-        <glyph xml:id="ppmD">
-          <glyphName>ppmD</glyphName>
-          <desc>Bedeutung (−(++)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmD</mapping>
-          <graphic url="./glyphs/pmD.svg"/>
-        </glyph>
-        <glyph xml:id="pmD">
-          <glyphName>pmD</glyphName>
-          <desc>Bedeutung (−(++))- nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmD</mapping>
-          <graphic url="./glyphs/pmD.svg"/>
-        </glyph>
-        <!-- pmE -->
-        <glyph xml:id="ppmE">
-          <glyphName>ppmE</glyphName>
-          <desc>Bedeutung (+(+−)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\ppmE</mapping>
-          <graphic url="./glyphs/pmE.svg"/>
-        </glyph>
-        <glyph xml:id="pmE">
-          <glyphName>pmE</glyphName>
-          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>1.2</value>
-          </charProp>
-          <mapping type="TeX">\pmE</mapping>
-          <graphic url="./glyphs/pmE.svg"/>
-        </glyph>
-        <!-- pmG -->
-        <glyph xml:id="ppmG">
-          <glyphName>ppmG</glyphName>
-          <desc>Bedeutung (+(+−)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmG</mapping>
-          <graphic url="./glyphs/pmG.svg"/>
-        </glyph>
-        <glyph xml:id="pmG">
-          <glyphName>pmG</glyphName>
-          <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmG</mapping>
-          <graphic url="./glyphs/pmG.svg"/>
-        </glyph>
-        <!-- pmH -->
-        <glyph xml:id="ppmH">
-          <glyphName>ppmH</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmH</mapping>
-          <graphic url="./glyphs/pmH.svg"/>
-        </glyph>
-        <glyph xml:id="pmH">
-          <glyphName>pmH</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmH</mapping>
-          <graphic url="./glyphs/pmH.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="./glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="./glyphs/pm.svg"/>
-        </glyph>
-        <!-- leibvdashv -->
-        <glyph xml:id="pleibvdash">
-          <glyphName>pleibvdash</glyphName>
-          <desc>Bedeutung (−+) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pleibvdash</mapping>
-          <graphic url="./glyphs/mp.svg"/>
-        </glyph>
-        <glyph xml:id="leibvdash">
-          <glyphName>leibvdash</glyphName>
-          <desc>Bedeutung (−+) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\leibvdash</mapping>
-          <graphic url="./glyphs/mp.svg"/>
-        </glyph>
-        <!-- groesser -->
-        <glyph xml:id="ggroesser">
-          <glyphName>ggroesser</glyphName>
-          <desc>Bedeutung (größer als) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ggroesser</mapping>
-          <graphic url="./glyphs/groesser.svg"/>
-        </glyph>
-        <glyph xml:id="groesser">
-          <glyphName>groesser</glyphName>
-          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\groesser</mapping>
-          <graphic url="./glyphs/groesser.svg"/>
-        </glyph>
-        <!-- kleiner -->
-        <glyph xml:id="kkleiner">
-          <glyphName>kkleiner</glyphName>
-          <desc>Bedeutung (kleiner als) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\kkleiner</mapping>
-          <graphic url="./glyphs/kleiner.svg"/>
-        </glyph>
-        <glyph xml:id="kleiner">
-          <glyphName>kleiner</glyphName>
-          <desc>Bedeutung (größer als) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\kleiner</mapping>
-          <graphic url="./glyphs/kleiner.svg"/>
-        </glyph>
-        <!-- pmHH -->
-        <glyph xml:id="ppmHH">
-          <glyphName>ppmHH</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmHH</mapping>
-          <graphic url="./glyphs/pmHH.svg"/>
-        </glyph>
-        <glyph xml:id="pmHH">
-          <glyphName>pmHH</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmHH</mapping>
-          <graphic url="./glyphs/pmHH.svg"/>
-        </glyph>
-        <!-- pmDD -->
-        <glyph xml:id="ppmDD">
-          <glyphName>ppmDD</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmGG</mapping>
-          <graphic url="./glyphs/pmDD.svg"/>
-        </glyph>
-        <glyph xml:id="pmDD">
-          <glyphName>pmDD</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmDD</mapping>
-          <graphic url="./glyphs/pmDD.svg"/>
-        </glyph>
-        <!-- pmGG -->
-        <glyph xml:id="ppmGG">
-          <glyphName>ppmGG</glyphName>
-          <desc>Bedeutung (+(−+)) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\ppmGG</mapping>
-          <graphic url="./glyphs/pmGG.svg"/>
-        </glyph>
-        <glyph xml:id="pmGG">
-          <glyphName>pmGG</glyphName>
-          <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\pmGG</mapping>
-          <graphic url="./glyphs/pmGG.svg"/>
-        </glyph>
-        <glyph xml:id="dsig">
-          <glyphName>dsig</glyphName>
-          <desc/>
-          <mapping type="TeX">\dsig</mapping>
-          <graphic url="./glyphs/dsig.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="./glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-        <glyph xml:id="fullmoon">
-          <glyphName>fullmoon</glyphName>
-          <desc>FULL MOON SYMBOL</desc>
-          <mapping type="PUA">U+1F315</mapping>
-          <mapping type="unicode">🌕</mapping>
-          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
-          <mapping type="TeX">\fullmoon</mapping>
-        </glyph>
-        <glyph xml:id="leftmoon">
-          <glyphName>leftmoon</glyphName>
-          <desc>LAST QUARTER MOON</desc>
-          <mapping type="PUA">U+263E</mapping>
-          <mapping type="unicode">☾</mapping>
-          <mapping type="TeX">\leftmoon</mapping>
-        </glyph>
-        <glyph xml:id="rightmoon">
-          <glyphName>rightmoon</glyphName>
-          <desc>FIRST QUARTER MOON</desc>
-          <desc type="PUA">U+263D</desc>
-          <mapping type="unicode">☽</mapping>
-          <mapping type="TeX">\rightmoon</mapping>
-        </glyph>
-        <glyph xml:id="newmoon">
-          <glyphName>newmoon</glyphName>
-          <desc>NEW MOON SYMBOL</desc>
-          <mapping type="PUA">U+1F311</mapping>
-          <mapping type="unicode">🌑</mapping>
-          <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
-          <mapping type="TeX">\newmoon</mapping>
-        </glyph>
-        <glyph xml:id="astrosun">
-          <glyphName>astrosun</glyphName>
-          <desc>Sonne (astronomisch)</desc>
-          <mapping type="PUA">U+2609</mapping>
-          <mapping type="unicode">☉</mapping>
-          <mapping type="TeX">\astrosun</mapping>
-          <graphic url="../"/>
-        </glyph>
-        <glyph xml:id="venus">
-          <glyphName>venus</glyphName>
-          <desc>FEMALE SIGN (venus)</desc>
-          <mapping type="PUA">U+2640</mapping>
-          <mapping type="unicode">♀</mapping>
-          <mapping type="TeX">\venus</mapping>
-          <graphic url="../"/>
-        </glyph>
-      </charDecl>
-    </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/><catRef scheme="L_subjects" target="L_subjects.xml#kraft"/><catRef scheme="L_terms" target="L_subjects.xml#festigkeit"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-08" who="#stork" status="enrich_1"/></revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-02-029-000_facs-haupttextzeuge">
-       <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=188"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=190"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=191"/>
-    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=193"/>
-  </facsimile><text xml:id="L_08-02-029-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch29" n="29"><head>29.
-AXIOM<pb type="VIII_2" n="238"/>A DE POTENTIA ET EFFECTU</head>
-<pb type="VIII_2" n="235"/><head>[Februar – September 1676]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Konzept: LH XXXVII 4 Bl. 61-62. 1 Bog. 2<hi rendition="#sup">o</hi>, Bl. 62 u<pb type="VIII_2" n="236"/>m die untere<pb type="VIII_2" n="240"/>n <formula xml:id="Ch29.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>2</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:math></formula> beschnitten. 2 <formula xml:id="Ch29.p2.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>3</m:mn></m:mrow></m:math></formula> S. Bl. 62 v<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen auf Bl. 61. Dort auch Textverluste durch Papierabbrüche am Rand.
-Textträger durch Papiererhaltungsmaßnahmen gesichert.</p><p>Cc 2, Nr. 1504</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch29.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Das Wasserzeichen ist für die Monate Februar bis September 1676 belegt.</hi></p></div><div type="text"><p xml:id="Ch29.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[61 r<hi rendition="#sup">o</hi>]</fw>
-Aeque facile est corpora disposita in arcu <formula xml:id="Ch29.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula> sursum attollere
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">circa centrum <formula xml:id="Ch29.p5.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">⟨</m:mo><m:mi>A</m:mi><m:mo stretchy="false">⟩</m:mo></m:mrow></m:math></formula></add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>,
-quam corpora aequalia disposita in recta <formula xml:id="Ch29.p5.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>E</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula>. quia idem corpus pendulum<index indexName="Sachverzeichnis"><term>pendulum</term></index> <formula xml:id="Ch29.p5.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula> ex <formula xml:id="Ch29.p5.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>
-veniens in <formula xml:id="Ch29.p5.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula>, ipsum arcum
-<app type="Bfootnote"><lem type="main"><formula xml:id="Ch29.p5.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula> cum suis globis transferet in <formula xml:id="Ch29.p5.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>G</m:mi><m:mo>⁢</m:mo><m:mi>L</m:mi></m:mrow></m:math></formula>,</lem><note type="lemma-abbrev"><formula xml:id="Ch29.p5.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> cum chordis connexis transferet in arcum
-</rdg><rdg wit="#L" n="2"> cum <seg type="apparat-ellipsis"/> <formula xml:id="Ch29.p5.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>G</m:mi><m:mo>⁢</m:mo><m:mi>L</m:mi></m:mrow></m:math></formula>,
-<hi rendition="#i">L</hi></rdg></app>
-quantum praecise satis est, ut corpus <formula xml:id="Ch29.p5.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> elevatum
-in <formula xml:id="Ch29.p5.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>G</m:mi></m:math></formula> possit currere in <formula xml:id="Ch29.p5.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>, eademque continuare;
-et <app type="Bfootnote"><lem type="main">idem <formula xml:id="Ch29.p5.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>, si ex eadem altitudine pervenisset in</lem><note type="lemma-abbrev">idem</note><rdg wit="#L" n="1"> pendulum<index indexName="Sachverzeichnis"><term>pendulum</term></index> <formula xml:id="Ch29.p5.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>G</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula> si in
-</rdg><rdg wit="#L" n="2"> <formula xml:id="Ch29.p5.m17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>, si <seg type="apparat-ellipsis"/> pervenisset in
-<hi rendition="#i">L</hi></rdg></app>
-<app type="Bfootnote"><!--is-correction-app-with-future-lemma--><lem type="main"><corr resp="#ed">[<formula xml:id="Ch29.p5.m18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>M</m:mi><m:mo>⁢</m:mo><m:mi>N</m:mi></m:mrow></m:math></formula>]</corr></lem><rdg wit="#L"><orig><formula xml:id="Ch29.p5.m19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula> </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>,
-<app type="Bfootnote"><!--is-correction-app-with-future-lemma--><lem type="main"><corr resp="#ed">[rectam]</corr></lem><rdg wit="#L"><orig>recta </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>,
-utique eandem in fine vim habet, eandem scilicet<index indexName="Sachverzeichnis"><term>velocitas</term></index> <hi rendition="#g">ve<pb type="VIII_2" n="237"/>locitatem et</hi> <app type="Bfootnote"><lem type="main"><hi rendition="#g">molem.</hi><index indexName="Sachverzeichnis"><term>molis</term></index> Et</lem><note type="lemma-abbrev"><hi rendition="#g">molem.</hi></note><rdg wit="#L" n="1"> Ergo
-</rdg><rdg wit="#L" n="2"> Et
-<hi rendition="#i">L</hi></rdg></app>
-idem tunc incidens in <formula xml:id="Ch29.p5.m20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>M</m:mi><m:mo>⁢</m:mo><m:mi>N</m:mi></m:mrow></m:math></formula> et funem<index indexName="Sachverzeichnis"><term>funis</term></index>
-<app type="Bfootnote"><!--is-correction-app-with-future-lemma--><lem type="main"><corr resp="#ed">[<formula xml:id="Ch29.p5.m21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>N</m:mi><m:mo>⁢</m:mo><m:mi>P</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula>]</corr></lem><rdg wit="#L"><orig><formula xml:id="Ch29.p5.m22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>M</m:mi><m:mo>⁢</m:mo><m:mi>P</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula> </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-circa trochleam<index indexName="Sachverzeichnis"><term>trochlea</term></index> <formula xml:id="Ch29.p5.m23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>P</m:mi></m:math></formula> replicatum trahens[,]
-etiam elevabit <formula xml:id="Ch29.p5.m24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>E</m:mi></m:mrow></m:math></formula> in <formula xml:id="Ch29.p5.m25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>H</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow></m:math></formula>. quae autem
-<app type="Bfootnote"><lem type="main">ab eadem causa<index indexName="Sachverzeichnis"><term>causa</term></index> praecise fieri possunt aequalia sunt</lem><note type="lemma-abbrev">ab</note><rdg wit="#L" n="1"> eodem proveniunt effectu<index indexName="Sachverzeichnis"><term>effectus</term></index> aequalia sunt
-</rdg><rdg wit="#L" n="2"> eadem <seg type="apparat-ellipsis"/> sunt
-<hi rendition="#i">L</hi></rdg></app>,
+            </author>
+            <title type="chapter" level="a" n="29">Axioma de potentia et effectu</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1676-02" resp="#ed" cert="medium">[Februar – September 1676]</date>
+            <date calendar="#gregorian" notAfter="1676-09" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=283</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="235" to="242"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-029-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 4 Bl. 61-62</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                <summary>
+                  <p>Konzept: LH XXXVII 4 Bl. 61-62. 1 Bog. 2<hi rendition="#sup">o</hi>, Bl. 62 u<pb type="VIII_2" n="236"/>
+m die untere<pb type="VIII_2" n="240"/>
+n 2/3 beschnitten. 2 1/3 S. Bl. 62 v<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen auf Bl. 61. Dort auch Textverluste durch Papierabbrüche am Rand.
+Textträger durch Papiererhaltungsmaßnahmen gesichert.</p>
+              <p>Cc 2, Nr. 1504</p>
+            </summary>
+          </msContents>
+          <physDesc>
+            <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+          </physDesc>
+          <history>
+            <origin corresp="L_witness-origin-types.xml#origin-L"/>
+          </history>
+        </msDesc>
+      </witness>
+    </listWit>
+  </sourceDesc>
+</fileDesc>
+<encodingDesc>
+  <tagsDecl>
+    <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+    <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+    <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+    <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+    <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+    <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+    <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+    <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+    <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+    <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+  </tagsDecl>
+  <charDecl>
+    <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+    <!--rightpropto-->
+    <glyph xml:id="rightpropto">
+      <glyphName>rightpropto</glyphName>
+      <desc>...</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\rightpropto</mapping>
+      <graphic url="./glyphs/rightpropto.svg"/>
+    </glyph>
+    <!-- PsMs -->
+    <glyph xml:id="pPsMs">
+      <glyphName>pPsMs</glyphName>
+      <desc>Bedeutung (+−) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-0.5</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\pPsMs</mapping>
+      <graphic url="./glyphs/PsMs.svg"/>
+    </glyph>
+    <glyph xml:id="PsMs">
+      <glyphName>PsMs</glyphName>
+      <desc>Bedeutung (+−) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\PsMs</mapping>
+      <graphic url="./glyphs/PsMs.svg"/>
+    </glyph>
+    <!-- MsPs -->
+    <glyph xml:id="pMsPs">
+      <glyphName>pMsPs</glyphName>
+      <desc>Bedeutung (−+) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-0.5</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\pMsPs</mapping>
+      <graphic url="./glyphs/MsPs.svg"/>
+    </glyph>
+    <glyph xml:id="MsPs">
+      <glyphName>MsPs</glyphName>
+      <desc>Bedeutung (−+) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\MsPs</mapping>
+      <graphic url="./glyphs/MsPs.svg"/>
+    </glyph>
+    <!-- PsPsMs -->
+    <glyph xml:id="pPsPsMs">
+      <glyphName>pPsPsMs</glyphName>
+      <desc>Bedeutung (+(+−)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\pPsPsMs</mapping>
+      <graphic url="./glyphs/PsPsMs.svg"/>
+    </glyph>
+    <glyph xml:id="PsPsMs">
+      <glyphName>PsPsMs</glyphName>
+      <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\PsPsMs</mapping>
+      <graphic url="./glyphs/PsPsMs.svg"/>
+    </glyph>
+    <!-- PsMsPs -->
+    <glyph xml:id="pPsMsPs">
+      <glyphName>pPsMsPs</glyphName>
+      <desc>Bedeutung (+(−+)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\pPsMsPss</mapping>
+      <graphic url="./glyphs/PsMsPs.svg"/>
+    </glyph>
+    <glyph xml:id="PsMsPs">
+      <glyphName>PsMsPs</glyphName>
+      <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\PsMsPs</mapping>
+      <graphic url="./glyphs/PsMsPs.svg"/>
+    </glyph>
+    <!-- MsPsMs -->
+    <glyph xml:id="pMsPsMs">
+      <glyphName>pMsPsMs</glyphName>
+      <desc>Bedeutung (−(+−)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\pMsPsMs</mapping>
+      <graphic url="./glyphs/MsPsMs.svg"/>
+    </glyph>
+    <glyph xml:id="MsPsMs">
+      <glyphName>MsPsMs</glyphName>
+      <desc>Bedeutung (−(+−)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\MsPsMs</mapping>
+      <graphic url="./glyphs/MsPsMs.svg"/>
+    </glyph>
+    <!-- MsMsPs -->
+    <glyph xml:id="pMsMsPs">
+      <glyphName>pMsMsPs</glyphName>
+      <desc>Bedeutung (−(−+)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\pMsMsPss</mapping>
+      <graphic url="./glyphs/MsMsPs.svg"/>
+    </glyph>
+    <glyph xml:id="MsMsPs">
+      <glyphName>MsMsPs</glyphName>
+      <desc>Bedeutung (−(−+)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\MsMsPs</mapping>
+      <graphic url="./glyphs/MsMsPs.svg"/>
+    </glyph>
+    <!-- MsPsPs -->
+    <glyph xml:id="pMsPsPs">
+      <glyphName>pMsPsPs</glyphName>
+      <desc>Bedeutung (−(++)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\pMsPsPs</mapping>
+      <graphic url="./glyphs/MsPsPs.svg"/>
+    </glyph>
+    <glyph xml:id="MsPsPs">
+      <glyphName>MsPsPs</glyphName>
+      <desc>Bedeutung (−(++)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\MsPsPs</mapping>
+      <graphic url="./glyphs/MsPsPs.svg"/>
+    </glyph>
+    <!-- pmD -->
+    <glyph xml:id="ppmD">
+      <glyphName>ppmD</glyphName>
+      <desc>Bedeutung (−(++)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\ppmD</mapping>
+      <graphic url="./glyphs/pmD.svg"/>
+    </glyph>
+    <glyph xml:id="pmD">
+      <glyphName>pmD</glyphName>
+      <desc>Bedeutung (−(++))- nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\pmD</mapping>
+      <graphic url="./glyphs/pmD.svg"/>
+    </glyph>
+    <!-- pmE -->
+    <glyph xml:id="ppmE">
+      <glyphName>ppmE</glyphName>
+      <desc>Bedeutung (+(+−)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\ppmE</mapping>
+      <graphic url="./glyphs/pmE.svg"/>
+    </glyph>
+    <glyph xml:id="pmE">
+      <glyphName>pmE</glyphName>
+      <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>1.2</value>
+      </charProp>
+      <mapping type="TeX">\pmE</mapping>
+      <graphic url="./glyphs/pmE.svg"/>
+    </glyph>
+    <!-- pmG -->
+    <glyph xml:id="ppmG">
+      <glyphName>ppmG</glyphName>
+      <desc>Bedeutung (+(+−)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\ppmG</mapping>
+      <graphic url="./glyphs/pmG.svg"/>
+    </glyph>
+    <glyph xml:id="pmG">
+      <glyphName>pmG</glyphName>
+      <desc>Bedeutung (+(+−)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\pmG</mapping>
+      <graphic url="./glyphs/pmG.svg"/>
+    </glyph>
+    <!-- pmH -->
+    <glyph xml:id="ppmH">
+      <glyphName>ppmH</glyphName>
+      <desc>Bedeutung (+(−+)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\ppmH</mapping>
+      <graphic url="./glyphs/pmH.svg"/>
+    </glyph>
+    <glyph xml:id="pmH">
+      <glyphName>pmH</glyphName>
+      <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\pmH</mapping>
+      <graphic url="./glyphs/pmH.svg"/>
+    </glyph>
+    <!-- leibdashv -->
+    <glyph xml:id="pleibdashv">
+      <glyphName>pleibdashv</glyphName>
+      <desc>Bedeutung (+−) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="PUA"/>
+      <mapping type="TeX">\pleibdashv</mapping>
+      <graphic url="./glyphs/pm.svg"/>
+    </glyph>
+    <glyph xml:id="leibdashv">
+      <glyphName>leibdashv</glyphName>
+      <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="PUA"/>
+      <mapping type="TeX">\leibdashv</mapping>
+      <graphic url="./glyphs/pm.svg"/>
+    </glyph>
+    <!-- leibvdashv -->
+    <glyph xml:id="pleibvdash">
+      <glyphName>pleibvdash</glyphName>
+      <desc>Bedeutung (−+) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\pleibvdash</mapping>
+      <graphic url="./glyphs/mp.svg"/>
+    </glyph>
+    <glyph xml:id="leibvdash">
+      <glyphName>leibvdash</glyphName>
+      <desc>Bedeutung (−+) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\leibvdash</mapping>
+      <graphic url="./glyphs/mp.svg"/>
+    </glyph>
+    <!-- groesser -->
+    <glyph xml:id="ggroesser">
+      <glyphName>ggroesser</glyphName>
+      <desc>Bedeutung (größer als) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\ggroesser</mapping>
+      <graphic url="./glyphs/groesser.svg"/>
+    </glyph>
+    <glyph xml:id="groesser">
+      <glyphName>groesser</glyphName>
+      <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\groesser</mapping>
+      <graphic url="./glyphs/groesser.svg"/>
+    </glyph>
+    <!-- kleiner -->
+    <glyph xml:id="kkleiner">
+      <glyphName>kkleiner</glyphName>
+      <desc>Bedeutung (kleiner als) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\kkleiner</mapping>
+      <graphic url="./glyphs/kleiner.svg"/>
+    </glyph>
+    <glyph xml:id="kleiner">
+      <glyphName>kleiner</glyphName>
+      <desc>Bedeutung (größer als) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\kleiner</mapping>
+      <graphic url="./glyphs/kleiner.svg"/>
+    </glyph>
+    <!-- pmHH -->
+    <glyph xml:id="ppmHH">
+      <glyphName>ppmHH</glyphName>
+      <desc>Bedeutung (+(−+)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\ppmHH</mapping>
+      <graphic url="./glyphs/pmHH.svg"/>
+    </glyph>
+    <glyph xml:id="pmHH">
+      <glyphName>pmHH</glyphName>
+      <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\pmHH</mapping>
+      <graphic url="./glyphs/pmHH.svg"/>
+    </glyph>
+    <!-- pmDD -->
+    <glyph xml:id="ppmDD">
+      <glyphName>ppmDD</glyphName>
+      <desc>Bedeutung (+(−+)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\ppmGG</mapping>
+      <graphic url="./glyphs/pmDD.svg"/>
+    </glyph>
+    <glyph xml:id="pmDD">
+      <glyphName>pmDD</glyphName>
+      <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\pmDD</mapping>
+      <graphic url="./glyphs/pmDD.svg"/>
+    </glyph>
+    <!-- pmGG -->
+    <glyph xml:id="ppmGG">
+      <glyphName>ppmGG</glyphName>
+      <desc>Bedeutung (+(−+)) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\ppmGG</mapping>
+      <graphic url="./glyphs/pmGG.svg"/>
+    </glyph>
+    <glyph xml:id="pmGG">
+      <glyphName>pmGG</glyphName>
+      <desc>Bedeutung (+(−+)) - nicht gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\pmGG</mapping>
+      <graphic url="./glyphs/pmGG.svg"/>
+    </glyph>
+    <glyph xml:id="dsig">
+      <glyphName>dsig</glyphName>
+      <desc/>
+      <mapping type="TeX">\dsig</mapping>
+      <graphic url="./glyphs/dsig.svg"/>
+    </glyph>
+    <glyph xml:id="Pfund">
+      <glyphName>Pfund</glyphName>
+      <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.7</value>
+      </charProp>
+      <mapping type="TeX">\Pfund</mapping>
+      <graphic url="./glyphs/Pfund.svg"/>
+    </glyph>
+    <!-- Sonderzeichen MIT Unicodeentsprechung -->
+    <glyph xml:id="fullmoon">
+      <glyphName>fullmoon</glyphName>
+      <desc>FULL MOON SYMBOL</desc>
+      <mapping type="PUA">U+1F315</mapping>
+      <mapping type="unicode">🌕</mapping>
+      <!--Vereinfachende Alternative: <mapping type="PUA">U+26AA</mapping><mapping type="unicode">⚪</mapping>-->
+      <mapping type="TeX">\fullmoon</mapping>
+    </glyph>
+    <glyph xml:id="leftmoon">
+      <glyphName>leftmoon</glyphName>
+      <desc>LAST QUARTER MOON</desc>
+      <mapping type="PUA">U+263E</mapping>
+      <mapping type="unicode">☾</mapping>
+      <mapping type="TeX">\leftmoon</mapping>
+    </glyph>
+    <glyph xml:id="rightmoon">
+      <glyphName>rightmoon</glyphName>
+      <desc>FIRST QUARTER MOON</desc>
+      <desc type="PUA">U+263D</desc>
+      <mapping type="unicode">☽</mapping>
+      <mapping type="TeX">\rightmoon</mapping>
+    </glyph>
+    <glyph xml:id="newmoon">
+      <glyphName>newmoon</glyphName>
+      <desc>NEW MOON SYMBOL</desc>
+      <mapping type="PUA">U+1F311</mapping>
+      <mapping type="unicode">🌑</mapping>
+      <!--Vereinfachende Alternative: <mapping type="PUA">U+26AB</mapping><mapping type="unicode">⚫</mapping>-->
+      <mapping type="TeX">\newmoon</mapping>
+    </glyph>
+    <glyph xml:id="astrosun">
+      <glyphName>astrosun</glyphName>
+      <desc>Sonne (astronomisch)</desc>
+      <mapping type="PUA">U+2609</mapping>
+      <mapping type="unicode">☉</mapping>
+      <mapping type="TeX">\astrosun</mapping>
+      <graphic url="../"/>
+    </glyph>
+    <glyph xml:id="venus">
+      <glyphName>venus</glyphName>
+      <desc>FEMALE SIGN (venus)</desc>
+      <mapping type="PUA">U+2640</mapping>
+      <mapping type="unicode">♀</mapping>
+      <mapping type="TeX">\venus</mapping>
+      <graphic url="../"/>
+    </glyph>
+  </charDecl>
+</encodingDesc>
+<profileDesc>
+  <langUsage>
+    <language ident="la"/>
+  </langUsage>
+  <calendarDesc>
+    <calendar xml:id="gregorian">
+      <p>Gregorianischer Kalenderstil</p>
+    </calendar>
+    <calendar xml:id="julian">
+      <p>Julianischer Kalenderstil</p>
+    </calendar>
+  </calendarDesc>
+  <textClass>
+    <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+    <catRef scheme="L_subjects" target="L_subjects.xml#kraft"/>
+    <catRef scheme="L_terms" target="L_subjects.xml#festigkeit"/>
+  </textClass>
+  <abstract>
+    <listPerson>
+      <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+      <person sameAs="L_persons.xml#"/>
+    </listPerson>
+    <listPlace>
+      <place sameAs="L_places.xml#"/>
+    </listPlace>
+  </abstract>
+</profileDesc>
+<revisionDesc>
+  <change when="2021" who="#telota" status="base"/>
+  <change when="2021-09-08" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-02-029-000_facs-haupttextzeuge">
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=188"/>
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=190"/>
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=191"/>
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=193"/>
+</facsimile>
+<text xml:id="L_08-02-029-000_text">
+<body xml:id="Document">
+  <div type="chapter" xml:id="Ch29" n="29">
+    <head>29.
+AXIOM<pb type="VIII_2" n="238"/>
+A DE POTENTIA ET EFFECTU</head>
+    <pb type="VIII_2" n="235"/>
+    <head>[Februar – September 1676]</head>
+    <div type="ueberlieferung">
+      <p>
+        <hi rendition="#b #smaller">Überlieferung:</hi>
+        <listWit>
+          <witness>
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur"/>
+              </msIdentifier>
+              <msContents>
+                <summary>
+                  <p>Konzept: LH XXXVII 4 Bl. 61-62. 1 Bog. 2<hi rendition="#sup">o</hi>, Bl. 62 u<pb type="VIII_2" n="236"/>
+m die untere<pb type="VIII_2" n="240"/>
+n <formula xml:id="Ch29.p2.m1">
+                <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                  <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>/</m:mo>
+                    <m:mn>3</m:mn>
+                  </m:mrow>
+                </m:math>
+              </formula> beschnitten. 2 <formula xml:id="Ch29.p2.m2">
+              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                <m:mrow>
+                  <m:mn>1</m:mn>
+                  <m:mo>/</m:mo>
+                  <m:mn>3</m:mn>
+                </m:mrow>
+              </m:math>
+            </formula> S. Bl. 62 v<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen auf Bl. 61. Dort auch Textverluste durch Papierabbrüche am Rand.
+Textträger durch Papiererhaltungsmaßnahmen gesichert.</p>
+          <p>Cc 2, Nr. 1504</p>
+        </summary>
+      </msContents>
+      <physDesc>
+        <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+      </physDesc>
+      <history>
+        <origin/>
+      </history>
+    </msDesc>
+  </witness>
+</listWit>
+</p>
+</div>
+<div type="contents">
+<p xml:id="Ch29.p4">
+<hi rendition="#smaller">
+  <hi rendition="#b">Datierungsgründe</hi>: Das Wasserzeichen ist für die Monate Februar bis September 1676 belegt.</hi>
+</p>
+</div>
+<div type="text">
+<p xml:id="Ch29.p5" rendition="#noindent">
+<pb type="L"/>
+<fw type="folNum">[61 r<hi rendition="#sup">o</hi>]
+</fw>
+Aeque facile est corpora disposita in arcu <formula xml:id="Ch29.p5.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+  <m:mrow>
+    <m:mi>B</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>C</m:mi>
+  </m:mrow>
+</m:math>
+</formula> sursum attollere
+<app type="Bfootnote">
+<lem type="main">  <!--is-addition-app-with-lemma-->
+  <add resp="#L">circa centrum <formula xml:id="Ch29.p5.m2">
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+      <m:mrow>
+        <m:mo stretchy="false">⟨</m:mo>
+        <m:mi>A</m:mi>
+        <m:mo stretchy="false">⟩</m:mo>
+      </m:mrow>
+    </m:math>
+  </formula>
+</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>,
+quam corpora aequalia disposita in recta <formula xml:id="Ch29.p5.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>E</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula>. quia idem corpus pendulum<index indexName="Sachverzeichnis">
+<term>pendulum</term>
+</index>
+<formula xml:id="Ch29.p5.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula> ex <formula xml:id="Ch29.p5.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>
+veniens in <formula xml:id="Ch29.p5.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula>, ipsum arcum
+<app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch29.p5.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula> cum suis globis transferet in <formula xml:id="Ch29.p5.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>L</m:mi>
+</m:mrow>
+</m:math>
+</formula>,
+</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch29.p5.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> cum chordis connexis transferet in arcum
+</rdg>
+<rdg wit="#L" n="2"> cum <seg type="apparat-ellipsis"/>
+<formula xml:id="Ch29.p5.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>L</m:mi>
+</m:mrow>
+</m:math>
+</formula>,
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+quantum praecise satis est, ut corpus <formula xml:id="Ch29.p5.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> elevatum
+in <formula xml:id="Ch29.p5.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>G</m:mi>
+</m:math>
+</formula> possit currere in <formula xml:id="Ch29.p5.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>, eademque continuare;
+et <app type="Bfootnote">
+<lem type="main">idem <formula xml:id="Ch29.p5.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>, si ex eadem altitudine pervenisset in</lem>
+<note type="lemma-abbrev">idem</note>
+<rdg wit="#L" n="1"> pendulum<index indexName="Sachverzeichnis">
+<term>pendulum</term>
+</index>
+<formula xml:id="Ch29.p5.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula> si in
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch29.p5.m17">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>, si <seg type="apparat-ellipsis"/>
+ pervenisset in
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote"><!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[<formula xml:id="Ch29.p5.m18">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>N</m:mi>
+</m:mrow>
+</m:math>
+</formula>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<formula xml:id="Ch29.p5.m19">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>M</m:mi>
+</m:math>
+</formula>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>,
+<app type="Bfootnote"><!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[rectam]</corr>
+</lem>
+<rdg wit="#L">
+<orig>recta </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>,
+utique eandem in fine vim habet, eandem scilicet<index indexName="Sachverzeichnis">
+<term>velocitas</term>
+</index>
+<hi rendition="#g">ve<pb type="VIII_2" n="237"/>
+locitatem et</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">molem.</hi>
+<index indexName="Sachverzeichnis">
+<term>molis</term>
+</index> Et</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">molem.</hi>
+</note>
+<rdg wit="#L" n="1"> Ergo
+</rdg>
+<rdg wit="#L" n="2"> Et
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+idem tunc incidens in <formula xml:id="Ch29.p5.m20">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>N</m:mi>
+</m:mrow>
+</m:math>
+</formula> et funem<index indexName="Sachverzeichnis">
+<term>funis</term>
+</index>
+<app type="Bfootnote"><!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[<formula xml:id="Ch29.p5.m21">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>N</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>P</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<formula xml:id="Ch29.p5.m22">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>P</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+circa trochleam<index indexName="Sachverzeichnis">
+<term>trochlea</term>
+</index>
+<formula xml:id="Ch29.p5.m23">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>P</m:mi>
+</m:math>
+</formula> replicatum trahens[,]
+etiam elevabit <formula xml:id="Ch29.p5.m24">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math>
+</formula> in <formula xml:id="Ch29.p5.m25">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>H</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>Q</m:mi>
+</m:mrow>
+</m:math>
+</formula>. quae autem
+<app type="Bfootnote">
+<lem type="main">ab eadem causa<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index> praecise fieri possunt aequalia sunt</lem>
+<note type="lemma-abbrev">ab</note>
+<rdg wit="#L" n="1"> eodem proveniunt effectu<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> aequalia sunt
+</rdg>
+<rdg wit="#L" n="2"> eadem <seg type="apparat-ellipsis"/>
+ sunt
+<hi rendition="#i">L</hi>
+</rdg>
+</app>,
 par ergo est difficultas illa quam haec elevare,
-quod et aliunde constat. Ex natura scilicet plani inclinati<index indexName="Sachverzeichnis"><term>planum inclinatum</term></index>.
-Et ex his etiam forte supposito jam plano inclinato<index indexName="Sachverzeichnis"><term>planum inclinatum</term></index>,
+quod et aliunde constat. Ex natura scilicet plani inclinati<index indexName="Sachverzeichnis">
+<term>planum inclinatum</term>
+</index>.
+Et ex his etiam forte supposito jam plano inclinato<index indexName="Sachverzeichnis">
+<term>planum inclinatum</term>
+</index>,
 contraria ratione demonstrari poterit principium nostrum.
 Necesse est enim tantundem attolli posse
-utcunque inclinatio<index indexName="Sachverzeichnis"><term>inclinatio</term></index> in plano curvaque superficie
+utcunque inclinatio<index indexName="Sachverzeichnis">
+<term>inclinatio</term>
+</index> in plano curvaque superficie
 inter easdem parallelas disposita.
-Sed dubito an nostra hinc possint demonstrari.</p><p xml:id="Ch29.p6">Corpus <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L"><formula xml:id="Ch29.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula></add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-in superficie inclinata <formula xml:id="Ch29.p6.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula>
-descendens et in recta <formula xml:id="Ch29.p6.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula> procurrens,
-impingit in seriem <app type="Bfootnote"><lem type="main">corporum in <formula xml:id="Ch29.p6.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>E</m:mi></m:mrow></m:math></formula> arcu</lem><note type="lemma-abbrev">corporum</note><rdg wit="#L" cause="addition"><note type="editorial">|</note> <add>in</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <formula xml:id="Ch29.p6.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>E</m:mi></m:mrow></m:math></formula> arcu <hi rendition="#i">L</hi></rdg></app> aliquo vel superficie dispositorum
-eamque elevat in <formula xml:id="Ch29.p6.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>G</m:mi></m:mrow></m:math></formula>.
-Ajo si contra catena<index indexName="Sachverzeichnis"><term>catena</term></index> fuisset in <formula xml:id="Ch29.p6.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>F</m:mi><m:mo>⁢</m:mo><m:mi>G</m:mi></m:mrow></m:math></formula>,
-et descendisset in <formula xml:id="Ch29.p6.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>E</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>.
-eodemque momento corpus <app type="Bfootnote"><!--is-correction-app-with-future-lemma--><lem type="main"><corr resp="#ed">[<formula xml:id="Ch29.p6.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>]</corr></lem><rdg wit="#L"><orig><formula xml:id="Ch29.p6.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula> </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-emenso spatio <formula xml:id="Ch29.p6.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>
-in <formula xml:id="Ch29.p6.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula> occurrisset,
-fuisset aequilibrium virium<index indexName="Sachverzeichnis"><term>aequilibrium virium</term></index>.
+Sed dubito an nostra hinc possint demonstrari.</p>
+<p xml:id="Ch29.p6">Corpus <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">
+<formula xml:id="Ch29.p6.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>
+</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+in superficie inclinata <formula xml:id="Ch29.p6.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+descendens et in recta <formula xml:id="Ch29.p6.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula> procurrens,
+impingit in seriem <app type="Bfootnote">
+<lem type="main">corporum in <formula xml:id="Ch29.p6.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math>
+</formula> arcu</lem>
+<note type="lemma-abbrev">corporum</note>
+<rdg wit="#L" cause="addition">
+<note type="editorial">|</note>
+<add>in</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<formula xml:id="Ch29.p6.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math>
+</formula> arcu <hi rendition="#i">L</hi>
+</rdg>
+</app> aliquo vel superficie dispositorum
+eamque elevat in <formula xml:id="Ch29.p6.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+Ajo si contra catena<index indexName="Sachverzeichnis">
+<term>catena</term>
+</index> fuisset in <formula xml:id="Ch29.p6.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+</m:math>
+</formula>,
+et descendisset in <formula xml:id="Ch29.p6.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>E</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+eodemque momento corpus <app type="Bfootnote"><!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[<formula xml:id="Ch29.p6.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<formula xml:id="Ch29.p6.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+emenso spatio <formula xml:id="Ch29.p6.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+in <formula xml:id="Ch29.p6.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula> occurrisset,
+fuisset aequilibrium virium<index indexName="Sachverzeichnis">
+<term>aequilibrium virium</term>
+</index>.
 Nam tanta est vis unaquaeque, quanta est vis
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">tota</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">tota</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
 quam produxit.
 (Res tantum distinctius explicanda.)
 Imo quod elegantissimum idem erit,
-semperque erit aequilibrium<index indexName="Sachverzeichnis"><term>aequilibrium</term></index>,
+semperque erit aequilibrium<index indexName="Sachverzeichnis">
+<term>aequilibrium</term>
+</index>,
 ubicunque alio in loco sibi occurrant,
-ut si catena<index indexName="Sachverzeichnis"><term>catena</term></index>
-<app type="Bfootnote"><lem type="main">ejusmodi <formula xml:id="Ch29.p6.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>G</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula> per <formula xml:id="Ch29.p6.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>E</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>, eat usque in</lem><note type="lemma-abbrev">ejusmodi</note><rdg wit="#L" n="1"> reascendat usque in
-</rdg><rdg wit="#L" n="2"> <formula xml:id="Ch29.p6.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>G</m:mi><m:mo>⁢</m:mo><m:mi>F</m:mi></m:mrow></m:math></formula> <seg type="apparat-ellipsis"/> usque in
-<hi rendition="#i">L</hi></rdg></app>
-<formula xml:id="Ch29.p6.m17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula>, et ibi occurrat eidem</p><figure rendition="#own-line_centered" xml:id="Ch29.p7">
-        <graphic rendition="#c" url="./images/LH037,04_061r-d1.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="329.5512pt" xml:id="Ch29.p7.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
-      </figure><p xml:id="Ch29.p8" rendition="#noindent">corpori <formula xml:id="Ch29.p8.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>
-ex <formula xml:id="Ch29.p8.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> in <formula xml:id="Ch29.p8.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula> eodem tempore venienti[,]
-rursus erit aequilibrium<index indexName="Sachverzeichnis"><term>aequilibrium</term></index>,
-(modo scilicet descensus<index indexName="Sachverzeichnis"><term>descensus</term></index> ejus non fuerit major quam ex altitudine <formula xml:id="Ch29.p8.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>G</m:mi><m:mo>⁢</m:mo><m:mi>E</m:mi></m:mrow></m:math></formula>)
-idem erit, etsi tota catena<index indexName="Sachverzeichnis"><term>catena</term></index> in unam massam<index indexName="Sachverzeichnis"><term>massa</term></index> collecta,
-et ex suae gravitatis centro<index indexName="Sachverzeichnis"><term>centrum gravitatis</term></index> suspensa intelligatur.</p><p xml:id="Ch29.p9">Demonstrandum est generaliter,
-quod in his quoque sufficiat consideratio centri gravitatis<index indexName="Sachverzeichnis"><term>centrum gravitatis</term></index>,
+ut si catena<index indexName="Sachverzeichnis">
+<term>catena</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">ejusmodi <formula xml:id="Ch29.p6.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula> per <formula xml:id="Ch29.p6.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>E</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula>, eat usque in</lem>
+<note type="lemma-abbrev">ejusmodi</note>
+<rdg wit="#L" n="1"> reascendat usque in
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch29.p6.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<seg type="apparat-ellipsis"/>
+ usque in
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch29.p6.m17">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>M</m:mi>
+</m:math>
+</formula>, et ibi occurrat eidem</p>
+<figure rendition="#own-line_centered" xml:id="Ch29.p7">
+<graphic rendition="#c" url="./images/LH037,04_061r-d1.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="329.5512pt" xml:id="Ch29.p7.g1"/>
+
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]
+</head>
+</figure>
+<p xml:id="Ch29.p8" rendition="#noindent">corpori <formula xml:id="Ch29.p8.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>
+ex <formula xml:id="Ch29.p8.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> in <formula xml:id="Ch29.p8.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>M</m:mi>
+</m:math>
+</formula> eodem tempore venienti[,]
+rursus erit aequilibrium<index indexName="Sachverzeichnis">
+<term>aequilibrium</term>
+</index>,
+(modo scilicet descensus<index indexName="Sachverzeichnis">
+<term>descensus</term>
+</index> ejus non fuerit major quam ex altitudine <formula xml:id="Ch29.p8.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math>
+</formula>)
+idem erit, etsi tota catena<index indexName="Sachverzeichnis">
+<term>catena</term>
+</index> in unam massam<index indexName="Sachverzeichnis">
+<term>massa</term>
+</index> collecta,
+et ex suae gravitatis centro<index indexName="Sachverzeichnis">
+<term>centrum gravitatis</term>
+</index> suspensa intelligatur.</p>
+<p xml:id="Ch29.p9">Demonstrandum est generaliter,
+quod in his quoque sufficiat consideratio centri gravitatis<index indexName="Sachverzeichnis">
+<term>centrum gravitatis</term>
+</index>,
 seu quod corpus eandem vim habeat,
-etsi omne ejus pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> in centrum gravitatis<index indexName="Sachverzeichnis"><term>centrum gravitatis</term></index> sit collectum.
+etsi omne ejus pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> in centrum gravitatis<index indexName="Sachverzeichnis">
+<term>centrum gravitatis</term>
+</index> sit collectum.
 Et generaliter in quantamcunque licet exiguitatem.
-Quod dixi nihil referre, ubi occurrat in <formula xml:id="Ch29.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula> an alibi[,]
-vel hinc patet, quod si <formula xml:id="Ch29.p9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula> proximum sit ipsi <formula xml:id="Ch29.p9.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>,
-ubi corpus descensu<index indexName="Sachverzeichnis"><term>descensus</term></index> nullam adhuc quasi vim acquirit, ei etiam aequilibrabitur.</p><figure rendition="#own-line_centered" xml:id="Ch29.p10">
-        <graphic rendition="#c" url="./images/LH037,04_061r-d2.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="325.215pt" xml:id="Ch29.p10.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]</head>
-      </figure><pb type="VIII_2" n="237"/><p xml:id="Ch29.p11">Si causa<index indexName="Sachverzeichnis"><term>causa</term></index> egit quantum potest; effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> tantum potest quantum causa.
-His demonstratis locutiones de communicata potentia<index indexName="Sachverzeichnis"><term>potentia communicata</term></index> poterunt admitti.</p><p xml:id="Ch29.p12">Omnis potentia<index indexName="Sachverzeichnis"><term>potentia</term></index> aequalem sibi potentiam<index indexName="Sachverzeichnis"><term>potentia aequalis</term></index> producere potest; in subjecto scilicet habili;
-<app type="Bfootnote"><lem type="main">et si ad</lem><note type="lemma-abbrev">et si</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>scilicet</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> ad  <hi rendition="#i">L</hi></rdg></app>
+Quod dixi nihil referre, ubi occurrat in <formula xml:id="Ch29.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>M</m:mi>
+</m:math>
+</formula> an alibi[,]
+vel hinc patet, quod si <formula xml:id="Ch29.p9.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>M</m:mi>
+</m:math>
+</formula> proximum sit ipsi <formula xml:id="Ch29.p9.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>,
+ubi corpus descensu<index indexName="Sachverzeichnis">
+<term>descensus</term>
+</index> nullam adhuc quasi vim acquirit, ei etiam aequilibrabitur.</p>
+<figure rendition="#own-line_centered" xml:id="Ch29.p10">
+<graphic rendition="#c" url="./images/LH037,04_061r-d2.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="325.215pt" xml:id="Ch29.p10.g1"/>
+
+<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]
+</head>
+</figure>
+<pb type="VIII_2" n="237"/>
+<p xml:id="Ch29.p11">Si causa<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index> egit quantum potest; effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> tantum potest quantum causa.
+His demonstratis locutiones de communicata potentia<index indexName="Sachverzeichnis">
+<term>potentia communicata</term>
+</index> poterunt admitti.</p>
+<p xml:id="Ch29.p12">Omnis potentia<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index> aequalem sibi potentiam<index indexName="Sachverzeichnis">
+<term>potentia aequalis</term>
+</index> producere potest; in subjecto scilicet habili;
+<app type="Bfootnote">
+<lem type="main">et si ad</lem>
+<note type="lemma-abbrev">et si</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>scilicet</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> ad  <hi rendition="#i">L</hi>
+</rdg>
+</app>
 agendum disposita
-<app type="Bfootnote"><lem type="main">sit. Nam hoc ipso potentiam<index indexName="Sachverzeichnis"><term>potentia</term></index> metimur, ex quantitate scilicet effectus<index indexName="Sachverzeichnis"><term>quantitas effectus</term></index> quem producere potest.</lem><note type="lemma-abbrev">sit.</note><rdg wit="#L" n="1"> Ponatur enim potentiam suae
-<app><rdg wit="#L" n="a">minorem
-</rdg><rdg wit="#L" n="b">aequalem producere non posse,
-<app><rdg wit="#L" n="aa">erit et
-</rdg><rdg wit="#L" n="bb">et aliquid esse, sequitur
-</rdg></app></rdg></app></rdg><rdg wit="#L" n="2"> Nam
-<app><rdg wit="#L" n="a">alioqui
-</rdg><rdg wit="#L" n="b">hoc <seg type="apparat-ellipsis"/> potest.
-<hi rendition="#i">L</hi></rdg></app></rdg></app>
-Effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> scilicet non circa rem indifferentem,
-sed circa potentiam<index indexName="Sachverzeichnis"><term>potentia</term></index>.
-Alioqui enim quidlibet posset infinitum<index indexName="Sachverzeichnis"><term>infinitum</term></index>.
+<app type="Bfootnote">
+<lem type="main">sit. Nam hoc ipso potentiam<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index> metimur, ex quantitate scilicet effectus<index indexName="Sachverzeichnis">
+<term>quantitas effectus</term>
+</index> quem producere potest.</lem>
+<note type="lemma-abbrev">sit.</note>
+<rdg wit="#L" n="1"> Ponatur enim potentiam suae
+<app>
+<rdg wit="#L" n="a">minorem
+</rdg>
+<rdg wit="#L" n="b">aequalem producere non posse,
+<app>
+<rdg wit="#L" n="aa">erit et
+</rdg>
+<rdg wit="#L" n="bb">et aliquid esse, sequitur
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> Nam
+<app>
+<rdg wit="#L" n="a">alioqui
+</rdg>
+<rdg wit="#L" n="b">hoc <seg type="apparat-ellipsis"/>
+ potest.
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+Effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> scilicet non circa rem indifferentem,
+sed circa potentiam<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index>.
+Alioqui enim quidlibet posset infinitum<index indexName="Sachverzeichnis">
+<term>infinitum</term>
+</index>.
 Opus est autem quadam Potentiarum communi mensura;
-<app type="Bfootnote"><lem type="main">ita corporis potentiam<index indexName="Sachverzeichnis"><term>potentia corporis</term></index> exprimemus si dicemus ipsam producere posse tantam</lem><note type="lemma-abbrev">ita</note><rdg wit="#L"><note type="editorial">|</note> dicimus <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> </rdg><rdg wit="#L" n="1"> tantum posse corporis potentiam
-</rdg><rdg wit="#L" n="2"> corporis <seg type="apparat-ellipsis"/> posse tantam
-<hi rendition="#i">L</hi></rdg></app>
-gravis<index indexName="Sachverzeichnis"><term>grave</term></index> alicujus altitudinem.
-Et quod etiam tantam gravis<index indexName="Sachverzeichnis"><term>grave</term></index> ejusdem altitudinem producere poterit,
+<app type="Bfootnote">
+<lem type="main">ita corporis potentiam<index indexName="Sachverzeichnis">
+<term>potentia corporis</term>
+</index> exprimemus si dicemus ipsam producere posse tantam</lem>
+<note type="lemma-abbrev">ita</note>
+<rdg wit="#L">
+<note type="editorial">|</note> dicimus <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="1"> tantum posse corporis potentiam
+</rdg>
+<rdg wit="#L" n="2"> corporis <seg type="apparat-ellipsis"/>
+ posse tantam
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+gravis<index indexName="Sachverzeichnis">
+<term>grave</term>
+</index> alicujus altitudinem.
+Et quod etiam tantam gravis<index indexName="Sachverzeichnis">
+<term>grave</term>
+</index> ejusdem altitudinem producere poterit,
 id tantundem posse videbitur;
-cumque grave<index indexName="Sachverzeichnis"><term>grave</term></index> ipsam suam altitudinem possit reproducere;
-hinc patet jam hinc effectum<index indexName="Sachverzeichnis"><term>effectus aequipollens</term></index> suae causae<index indexName="Sachverzeichnis"><term>causa</term></index> aequipollere.
-Hinc etiam <app type="Bfootnote"><lem type="main">demonstratum alium quemlibet</lem><note type="lemma-abbrev">demonstratum</note><rdg wit="#L" n="1"> aliud quodlibet
-</rdg><rdg wit="#L" n="2"> alium quemlibet
-<hi rendition="#i">L</hi></rdg></app>
-<app type="Bfootnote"><lem type="main">effectum<index indexName="Sachverzeichnis"><term>effectus</term></index> posse reproducere suam</lem><note type="lemma-abbrev">effectum</note><rdg wit="#L" n="1"> suam
-</rdg><rdg wit="#L" n="2"> posse reproducere suam
-<hi rendition="#i">L</hi></rdg></app>
-<app type="Bfootnote"><lem type="main">causam<index indexName="Sachverzeichnis"><term>causa</term></index>, nam</lem><note type="lemma-abbrev">causam,</note><rdg wit="#L" n="1"> quoniam
-</rdg><rdg wit="#L" n="2"> enim
-</rdg><rdg wit="#L" n="3"> nam
-<hi rendition="#i">L</hi></rdg></app>
-aequalium potentiarum<index indexName="Sachverzeichnis"><term>potentia aequalis</term></index> effectus sunt
-<app type="Bfootnote"><lem type="main">aequales<index indexName="Sachverzeichnis"><term>effectus aequalis</term></index>. Sit</lem><note type="lemma-abbrev">aequales</note><rdg wit="#L" n="1"> ; et
-</rdg><rdg wit="#L" n="2"> . Sit
-<hi rendition="#i">L</hi></rdg></app>
-potentia<index indexName="Sachverzeichnis"><term>potentia</term></index> <formula xml:id="Ch29.p12.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>. effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> <formula xml:id="Ch29.p12.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>,
-<app type="Bfootnote"><lem type="main">qui sit productio</lem><note type="lemma-abbrev">qui sit</note><rdg wit="#L" n="1"> gravis<index indexName="Sachverzeichnis"><term>grave</term></index> rep
-</rdg><rdg wit="#L" n="2"> reproductio
-</rdg><rdg wit="#L" n="3"> productio
-<hi rendition="#i">L</hi></rdg></app>
-<app type="Bfootnote"><lem type="main">altitudinis[,] tertius</lem><note type="lemma-abbrev">altitudinis[,]</note><rdg wit="#L" n="1"> se
-</rdg><rdg wit="#L" n="2"> tertius
-<hi rendition="#i">L</hi></rdg></app>
-effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> ipsius <formula xml:id="Ch29.p12.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>,
-ope <formula xml:id="Ch29.p12.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>. appelletur <formula xml:id="Ch29.p12.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula>,
+cumque grave<index indexName="Sachverzeichnis">
+<term>grave</term>
+</index> ipsam suam altitudinem possit reproducere;
+hinc patet jam hinc effectum<index indexName="Sachverzeichnis">
+<term>effectus aequipollens</term>
+</index> suae causae<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index> aequipollere.
+Hinc etiam <app type="Bfootnote">
+<lem type="main">demonstratum alium quemlibet</lem>
+<note type="lemma-abbrev">demonstratum</note>
+<rdg wit="#L" n="1"> aliud quodlibet
+</rdg>
+<rdg wit="#L" n="2"> alium quemlibet
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">effectum<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> posse reproducere suam</lem>
+<note type="lemma-abbrev">effectum</note>
+<rdg wit="#L" n="1"> suam
+</rdg>
+<rdg wit="#L" n="2"> posse reproducere suam
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">causam<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index>, nam</lem>
+<note type="lemma-abbrev">causam,</note>
+<rdg wit="#L" n="1"> quoniam
+</rdg>
+<rdg wit="#L" n="2"> enim
+</rdg>
+<rdg wit="#L" n="3"> nam
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+aequalium potentiarum<index indexName="Sachverzeichnis">
+<term>potentia aequalis</term>
+</index> effectus sunt
+<app type="Bfootnote">
+<lem type="main">aequales<index indexName="Sachverzeichnis">
+<term>effectus aequalis</term>
+</index>. Sit</lem>
+<note type="lemma-abbrev">aequales</note>
+<rdg wit="#L" n="1"> ; et
+</rdg>
+<rdg wit="#L" n="2"> . Sit
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+potentia<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index>
+<formula xml:id="Ch29.p12.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>. effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index>
+<formula xml:id="Ch29.p12.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>,
+<app type="Bfootnote">
+<lem type="main">qui sit productio</lem>
+<note type="lemma-abbrev">qui sit</note>
+<rdg wit="#L" n="1"> gravis<index indexName="Sachverzeichnis">
+<term>grave</term>
+</index> rep
+</rdg>
+<rdg wit="#L" n="2"> reproductio
+</rdg>
+<rdg wit="#L" n="3"> productio
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">altitudinis[,] tertius</lem>
+<note type="lemma-abbrev">altitudinis[,]</note>
+<rdg wit="#L" n="1"> se
+</rdg>
+<rdg wit="#L" n="2"> tertius
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> ipsius <formula xml:id="Ch29.p12.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>,
+ope <formula xml:id="Ch29.p12.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>. appelletur <formula xml:id="Ch29.p12.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>,
 qui sit reproductio altitudinis.
-Sit alius effectus diversus ipsius <formula xml:id="Ch29.p12.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>, nempe <formula xml:id="Ch29.p12.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>.
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">et effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> <formula xml:id="Ch29.p12.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>, sit <formula xml:id="Ch29.p12.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>.</add></lem><note type="lemma-abbrev">et effectus <formula xml:id="Ch29.p12.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>, sit <formula xml:id="Ch29.p12.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>.</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-ajo ante omnia <formula xml:id="Ch29.p12.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula> posse producere
-<formula xml:id="Ch29.p12.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⊓</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula>.
-nam <formula xml:id="Ch29.p12.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>E</m:mi><m:mo>⊓</m:mo><m:mi>B</m:mi></m:mrow></m:math></formula>.
-quia effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> ejusdem causae<index indexName="Sachverzeichnis"><term>causa</term></index>[,]
-aequalium autem potentiarum<index indexName="Sachverzeichnis"><term>potentia aequalis</term></index> aequales effectus<index indexName="Sachverzeichnis"><term>effectus aequalis</term></index>,
-ergo <formula xml:id="Ch29.p12.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula> effectus ipsius <formula xml:id="Ch29.p12.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>
-et <formula xml:id="Ch29.p12.m17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:math></formula> effectus ipsius <formula xml:id="Ch29.p12.m18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> aequales<index indexName="Sachverzeichnis"><term>effectus aequalis</term></index>.
-Est autem <formula xml:id="Ch29.p12.m19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>⊓</m:mo><m:mi>B</m:mi></m:mrow></m:math></formula>.
-ergo <formula xml:id="Ch29.p12.m20"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⊓</m:mo><m:mi>B</m:mi></m:mrow></m:math></formula>.
-Jam <formula xml:id="Ch29.p12.m21"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>B</m:mi><m:mo>⊓</m:mo><m:mi>E</m:mi></m:mrow></m:math></formula>.
-ergo <formula xml:id="Ch29.p12.m22"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⊓</m:mo><m:mi>E</m:mi></m:mrow></m:math></formula>.
-Unde elaterium<index indexName="Sachverzeichnis"><term>elaterium</term></index> etiam se retendere potest perfecte,
+Sit alius effectus diversus ipsius <formula xml:id="Ch29.p12.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>, nempe <formula xml:id="Ch29.p12.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>.
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">et effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index>
+<formula xml:id="Ch29.p12.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>, sit <formula xml:id="Ch29.p12.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>.
+</add>
+</lem>
+<note type="lemma-abbrev">et effectus <formula xml:id="Ch29.p12.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>, sit <formula xml:id="Ch29.p12.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>.
+</note>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+ajo ante omnia <formula xml:id="Ch29.p12.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula> posse producere
+<formula xml:id="Ch29.p12.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+nam <formula xml:id="Ch29.p12.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>E</m:mi>
+<m:mo>⊓</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+quia effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> ejusdem causae<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index>[,]
+aequalium autem potentiarum<index indexName="Sachverzeichnis">
+<term>potentia aequalis</term>
+</index> aequales effectus<index indexName="Sachverzeichnis">
+<term>effectus aequalis</term>
+</index>,
+ergo <formula xml:id="Ch29.p12.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula> effectus ipsius <formula xml:id="Ch29.p12.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>
+et <formula xml:id="Ch29.p12.m17">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula> effectus ipsius <formula xml:id="Ch29.p12.m18">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> aequales<index indexName="Sachverzeichnis">
+<term>effectus aequalis</term>
+</index>.
+Est autem <formula xml:id="Ch29.p12.m19">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+ergo <formula xml:id="Ch29.p12.m20">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⊓</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+Jam <formula xml:id="Ch29.p12.m21">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⊓</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+ergo <formula xml:id="Ch29.p12.m22">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⊓</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+Unde elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> etiam se retendere potest perfecte,
 aliaque res quaecunque producere statum,
 qui tantundem possit quantum ipsa.
 Sed haec demonstratio supponit aliunde demonstratum,
-quod corpus grave<index indexName="Sachverzeichnis"><term>corpus grave</term></index> descendens posito rigore accelerationis<index indexName="Sachverzeichnis"><term>acceleratio</term></index>,
+quod corpus grave<index indexName="Sachverzeichnis">
+<term>corpus grave</term>
+</index> descendens posito rigore accelerationis<index indexName="Sachverzeichnis">
+<term>acceleratio</term>
+</index>,
 ad eandem altitudinem resurgat.
-Nec alio <app type="Bfootnote"><lem type="main">opus fuit axiomate<index indexName="Sachverzeichnis"><term>axioma</term></index>,</lem><note type="lemma-abbrev">opus fuit</note><rdg wit="#L"><note type="editorial">|</note> opus <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note>  axiomate  <hi rendition="#i">L</hi></rdg></app>
-quam <app type="Bfootnote"><lem type="main">hoc[:] earundem potentiarum<index indexName="Sachverzeichnis"><term>potentia</term></index></lem><note type="lemma-abbrev">hoc[:]</note><rdg wit="#L" n="1"> ejusdem poten
-</rdg><rdg wit="#L" n="2"> earundem potentiarum
-<hi rendition="#i">L</hi></rdg></app>
-effectus sunt aequales<index indexName="Sachverzeichnis"><term>effectus aequalis</term></index>.
-Effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> autem et ipsi a potentia<index indexName="Sachverzeichnis"><term>potentia</term></index> quam continent aestimantur.
-Unde cum di<formula xml:id="Ch29.p12.m23"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>citur<formula xml:id="Ch29.p12.m24"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula>
-aequales esse effectus<index indexName="Sachverzeichnis"><term>effectus aequalis</term></index>, intelligitur aequalis esse potentiae;
-et dici poterat, aequalium potentiarum<index indexName="Sachverzeichnis"><term>potentia aequalis</term></index>
-effectus pleni<index indexName="Sachverzeichnis"><term>effectus plenus</term></index> sunt aequipollentes<index indexName="Sachverzeichnis"><term>effectus aequipollens</term></index>.
-Ex hoc axiomate<index indexName="Sachverzeichnis"><term>axioma</term></index> etiam nulla re aliunde ascita videb<formula xml:id="Ch29.p12.m25"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>itur<formula xml:id="Ch29.p12.m26"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula>
+Nec alio <app type="Bfootnote">
+<lem type="main">opus fuit axiomate<index indexName="Sachverzeichnis">
+<term>axioma</term>
+</index>,
+</lem>
+<note type="lemma-abbrev">opus fuit</note>
+<rdg wit="#L">
+<note type="editorial">|</note> opus <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note>  axiomate  <hi rendition="#i">L</hi>
+</rdg>
+</app>
+quam <app type="Bfootnote">
+<lem type="main">hoc[:] earundem potentiarum<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index>
+</lem>
+<note type="lemma-abbrev">hoc[:]</note>
+<rdg wit="#L" n="1"> ejusdem poten
+</rdg>
+<rdg wit="#L" n="2"> earundem potentiarum
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+effectus sunt aequales<index indexName="Sachverzeichnis">
+<term>effectus aequalis</term>
+</index>.
+Effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> autem et ipsi a potentia<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index> quam continent aestimantur.
+Unde cum di<formula xml:id="Ch29.p12.m23">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>citur<formula xml:id="Ch29.p12.m24">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+aequales esse effectus<index indexName="Sachverzeichnis">
+<term>effectus aequalis</term>
+</index>, intelligitur aequalis esse potentiae;
+et dici poterat, aequalium potentiarum<index indexName="Sachverzeichnis">
+<term>potentia aequalis</term>
+</index>
+effectus pleni<index indexName="Sachverzeichnis">
+<term>effectus plenus</term>
+</index> sunt aequipollentes<index indexName="Sachverzeichnis">
+<term>effectus aequipollens</term>
+</index>.
+Ex hoc axiomate<index indexName="Sachverzeichnis">
+<term>axioma</term>
+</index> etiam nulla re aliunde ascita videb<formula xml:id="Ch29.p12.m25">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>itur<formula xml:id="Ch29.p12.m26">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
 demonstrari posse, quod effectus sit
-<app type="Bfootnote"><lem type="main">causae<index indexName="Sachverzeichnis"><term>causa</term></index> aequipollens<index indexName="Sachverzeichnis"><term>effectus equipollens</term></index></lem><note type="lemma-abbrev">causae</note><rdg wit="#L" n="1"> aequalis
-</rdg><rdg wit="#L" n="2"> aequipollens
-<hi rendition="#i">L</hi></rdg></app>,
-quia <formula xml:id="Ch29.p12.m27"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula> et <formula xml:id="Ch29.p12.m28"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula> sunt effectus pleni<index indexName="Sachverzeichnis"><term>effectus plenus</term></index> ejusdem <formula xml:id="Ch29.p12.m29"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>causae.<formula xml:id="Ch29.p12.m30"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula>
-<pb type="L"/><fw type="folNum">[61 v<hi rendition="#sup">o</hi>]</fw></p><figure rendition="#inline-margin-left" xml:id="Ch29.fig1_1">
-        <graphic url="./images/LH037,04_061v-d1.svg" style="trim:  0mm -3mm -5mm 0mm; clip: true" width="212.4738pt" xml:id="Ch29.g1"/>
-        
-        <head xml:id="Ch29.fig1_2" rendition="#c">[<hi rendition="#i">Fig. 3</hi>]</head>
-      </figure><p xml:id="Ch29.p13">Et mirum sane axioma<index indexName="Sachverzeichnis"><term>axioma</term></index> est, quod afferimus;
-quolibet momento temporis ab eadem causa<index indexName="Sachverzeichnis"><term>causa</term></index>
-aequalem semper potentiam<index indexName="Sachverzeichnis"><term>potentia aequalis</term></index> produci.
-Sit machina<index indexName="Sachverzeichnis"><term>machina</term></index> quaelibet in motu constituta,
+<app type="Bfootnote">
+<lem type="main">causae<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index> aequipollens<index indexName="Sachverzeichnis">
+<term>effectus equipollens</term>
+</index>
+</lem>
+<note type="lemma-abbrev">causae</note>
+<rdg wit="#L" n="1"> aequalis
+</rdg>
+<rdg wit="#L" n="2"> aequipollens
+<hi rendition="#i">L</hi>
+</rdg>
+</app>,
+quia <formula xml:id="Ch29.p12.m27">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula> et <formula xml:id="Ch29.p12.m28">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula> sunt effectus pleni<index indexName="Sachverzeichnis">
+<term>effectus plenus</term>
+</index> ejusdem <formula xml:id="Ch29.p12.m29">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>causae.<formula xml:id="Ch29.p12.m30">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+<pb type="L"/>
+<fw type="folNum">[61 v<hi rendition="#sup">o</hi>]
+</fw>
+</p>
+<figure rendition="#inline-margin-left" xml:id="Ch29.fig1_1">
+<graphic url="./images/LH037,04_061v-d1.svg" style="trim:  0mm -3mm -5mm 0mm; clip: true" width="212.4738pt" xml:id="Ch29.g1"/>
+
+<head xml:id="Ch29.fig1_2" rendition="#c">[<hi rendition="#i">Fig. 3</hi>]
+</head>
+</figure>
+<p xml:id="Ch29.p13">Et mirum sane axioma<index indexName="Sachverzeichnis">
+<term>axioma</term>
+</index> est, quod afferimus;
+quolibet momento temporis ab eadem causa<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index>
+aequalem semper potentiam<index indexName="Sachverzeichnis">
+<term>potentia aequalis</term>
+</index> produci.
+Sit machina<index indexName="Sachverzeichnis">
+<term>machina</term>
+</index> quaelibet in motu constituta,
 ajo aequali semper vi ad eam sistendam esse opus,
 modo scilicet totam vim suam jam possideat;
-aliud enim est si ipsa potentia<index indexName="Sachverzeichnis"><term>potentia</term></index> augeri possit,
-ut si nova ei pondera<index indexName="Sachverzeichnis"><term>pondus</term></index> appendi possint;
+aliud enim est si ipsa potentia<index indexName="Sachverzeichnis">
+<term>potentia</term>
+</index> augeri possit,
+ut si nova ei pondera<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> appendi possint;
 aut si inferius possint descendere.
 Hinc si lapis aliquis a summo ad quantam potest altitudinem descenderit,
 tunc si continuet suas reciprocationes, aequali semper vi opus erit ad ipsum sistendum;
 imo non ita res exprimenda sed hoc modo[:]
-si corpus <formula xml:id="Ch29.p13.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula> ex <formula xml:id="Ch29.p13.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>, et <formula xml:id="Ch29.p13.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>E</m:mi></m:mrow></m:math></formula> ex <formula xml:id="Ch29.p13.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>,
+si corpus <formula xml:id="Ch29.p13.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> ex <formula xml:id="Ch29.p13.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>, et <formula xml:id="Ch29.p13.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math>
+</formula> ex <formula xml:id="Ch29.p13.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>,
 descendentia alicubi aequivaleant, ubilibet aequivalebunt.
-Nostrum autem <app type="Bfootnote"><lem type="main">axioma<index indexName="Sachverzeichnis"><term>axioma</term></index> intelligitur,</lem><note type="lemma-abbrev">axioma</note><rdg wit="#L" n="1"> tale errat;
-</rdg><rdg wit="#L" n="2"> intelligitur,
-<hi rendition="#i">L</hi></rdg></app>
-modo nova absit actio<index indexName="Sachverzeichnis"><term>actio</term></index>, hinc ubi grave<index indexName="Sachverzeichnis"><term>grave</term></index> post descensum<index indexName="Sachverzeichnis"><term>descensus</term></index> in planum horizontale pervenit,
-nihil amplius conferet vis gravitatis<index indexName="Sachverzeichnis"><term>vis gravitatis</term></index>, adeoque eandem semper vim habebit.</p><p xml:id="Ch29.p14">Caeterum si quis neget hanc consequentiam[:]
-si sint <formula xml:id="Ch29.p14.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>. <formula xml:id="Ch29.p14.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>. <formula xml:id="Ch29.p14.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>.
-et <formula xml:id="Ch29.p14.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> causa<index indexName="Sachverzeichnis"><term>causa</term></index> <formula xml:id="Ch29.p14.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>, et <formula xml:id="Ch29.p14.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula> causa <formula xml:id="Ch29.p14.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>,
-aequipollere <formula xml:id="Ch29.p14.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula> et <formula xml:id="Ch29.p14.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>,
-quippe Effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> ejusdem causae<index indexName="Sachverzeichnis"><term>causa</term></index> <formula xml:id="Ch29.p14.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>.</m:mo></m:mrow></m:math></formula>
-ei ostendendum, quodsi minor effectus <formula xml:id="Ch29.p14.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula> quam <formula xml:id="Ch29.p14.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>,
-utique quia tempus <formula xml:id="Ch29.p14.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>E</m:mi></m:mrow></m:math></formula>, quod
-<app type="Bfootnote"><lem type="main">inter <formula xml:id="Ch29.p14.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> et Effectum<index indexName="Sachverzeichnis"><term>effectus</term></index></lem><note type="lemma-abbrev">inter</note><rdg wit="#L" n="1"> effectum
-</rdg><rdg wit="#L" n="2"> <formula xml:id="Ch29.p14.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> et Effectum
-<hi rendition="#i">L</hi></rdg></app>
-<formula xml:id="Ch29.p14.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula> intercedit in infinitas<index indexName="Sachverzeichnis"><term>infinitas</term></index> dividi potest partes;
-posse interponi effectus infinitos<index indexName="Sachverzeichnis"><term>effectus infinitus</term></index> priores ipso</p><figure rendition="#inline-margin-left" xml:id="Ch29.fig2_1">
-        <graphic url="./images/LH037,04_061v-d2.svg" style="trim:  0mm -3mm -5mm 0mm; clip: true" width="173.448pt" xml:id="Ch29.g2"/>
-        
-        <head xml:id="Ch29.fig2_2" rendition="#c">[<hi rendition="#i">Fig. 4</hi>]</head>
-      </figure><p xml:id="Ch29.p15">effectu <formula xml:id="Ch29.p15.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>.
-quodsi ergo sola per se distantia effectus a causa<index indexName="Sachverzeichnis"><term>causa</term></index> diminuit
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">vel auget</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> effectum<index indexName="Sachverzeichnis"><term>effectus</term></index>;
+Nostrum autem <app type="Bfootnote">
+<lem type="main">axioma<index indexName="Sachverzeichnis">
+<term>axioma</term>
+</index> intelligitur,</lem>
+<note type="lemma-abbrev">axioma</note>
+<rdg wit="#L" n="1"> tale errat;
+</rdg>
+<rdg wit="#L" n="2"> intelligitur,
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+modo nova absit actio<index indexName="Sachverzeichnis">
+<term>actio</term>
+</index>, hinc ubi grave<index indexName="Sachverzeichnis">
+<term>grave</term>
+</index> post descensum<index indexName="Sachverzeichnis">
+<term>descensus</term>
+</index> in planum horizontale pervenit,
+nihil amplius conferet vis gravitatis<index indexName="Sachverzeichnis">
+<term>vis gravitatis</term>
+</index>, adeoque eandem semper vim habebit.</p>
+<p xml:id="Ch29.p14">Caeterum si quis neget hanc consequentiam[:]
+si sint <formula xml:id="Ch29.p14.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>.<formula xml:id="Ch29.p14.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>.<formula xml:id="Ch29.p14.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>.
+et <formula xml:id="Ch29.p14.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> causa<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index>
+<formula xml:id="Ch29.p14.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>, et <formula xml:id="Ch29.p14.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula> causa <formula xml:id="Ch29.p14.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>,
+aequipollere <formula xml:id="Ch29.p14.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula> et <formula xml:id="Ch29.p14.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>,
+quippe Effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> ejusdem causae<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index>
+<formula xml:id="Ch29.p14.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+ei ostendendum, quodsi minor effectus <formula xml:id="Ch29.p14.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula> quam <formula xml:id="Ch29.p14.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>,
+utique quia tempus <formula xml:id="Ch29.p14.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math>
+</formula>, quod
+<app type="Bfootnote">
+<lem type="main">inter <formula xml:id="Ch29.p14.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> et Effectum<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">inter</note>
+<rdg wit="#L" n="1"> effectum
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch29.p14.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> et Effectum
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch29.p14.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula> intercedit in infinitas<index indexName="Sachverzeichnis">
+<term>infinitas</term>
+</index> dividi potest partes;
+posse interponi effectus infinitos<index indexName="Sachverzeichnis">
+<term>effectus infinitus</term>
+</index> priores ipso</p>
+<figure rendition="#inline-margin-left" xml:id="Ch29.fig2_1">
+<graphic url="./images/LH037,04_061v-d2.svg" style="trim:  0mm -3mm -5mm 0mm; clip: true" width="173.448pt" xml:id="Ch29.g2"/>
+
+<head xml:id="Ch29.fig2_2" rendition="#c">[<hi rendition="#i">Fig. 4</hi>]
+</head>
+</figure>
+<p xml:id="Ch29.p15">effectu <formula xml:id="Ch29.p15.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>.
+quodsi ergo sola per se distantia effectus a causa<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index> diminuit
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">vel auget</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> effectum<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index>;
 demonstrari poterit, diminui proportionaliter pro ratione elongationis;
 neque enim ulla alia relatio determinata fingi potest,
 quia hic nulla particularis consideratio;
 itaque alterutrum sequeretur,
-vel effectum fore infinitum<index indexName="Sachverzeichnis"><term>effectus infinitus</term></index> relatione ad aliquam causam<index indexName="Sachverzeichnis"><term>causa</term></index>,
+vel effectum fore infinitum<index indexName="Sachverzeichnis">
+<term>effectus infinitus</term>
+</index> relatione ad aliquam causam<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index>,
 vel contra eodem modo demonstrari potest absurditas,
-si ponatur effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> <app type="Bfootnote"><lem type="main">in duplicata ratione</lem><note type="lemma-abbrev">in</note><rdg wit="#L" n="1"> proportione qua
-</rdg><rdg wit="#L" n="2"> duplicata ratione
-<hi rendition="#i">L</hi></rdg></app>
+si ponatur effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">in duplicata ratione</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" n="1"> proportione qua
+</rdg>
+<rdg wit="#L" n="2"> duplicata ratione
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
 elongationum, vel in reciproca vel ut differentiae.
 Sed nec in reciproca potest esse,
-foret <app type="Bfootnote"><lem type="main">enim alicubi</lem><note type="lemma-abbrev">enim</note><rdg wit="#L" n="1"> mox
-</rdg><rdg wit="#L" n="2"> alicubi
-<hi rendition="#i">L</hi></rdg></app>
-causa infinita<index indexName="Sachverzeichnis"><term>causa infinita</term></index> vel contra, etsi alterum nunquam.
-Restant tantum <pb type="VIII_2" n="239"/>curvae,
+foret <app type="Bfootnote">
+<lem type="main">enim alicubi</lem>
+<note type="lemma-abbrev">enim</note>
+<rdg wit="#L" n="1"> mox
+</rdg>
+<rdg wit="#L" n="2"> alicubi
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+causa infinita<index indexName="Sachverzeichnis">
+<term>causa infinita</term>
+</index> vel contra, etsi alterum nunquam.
+Restant tantum <pb type="VIII_2" n="239"/>
+curvae,
 quae in unam tantum partem habent
-<app type="Bfootnote"><lem type="main">asymptoton<index indexName="Sachverzeichnis"><term>asymptotos</term></index>[,] secundum quas fingi posset incrementum vel decrementum, sed</lem><note type="lemma-abbrev">asymptoton[,]</note><rdg wit="#L" n="1"> sed
-</rdg><rdg wit="#L" n="2"> secundum <seg type="apparat-ellipsis"/> decrementum, sed
-<hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">asymptoton<index indexName="Sachverzeichnis">
+<term>asymptotos</term>
+</index>[,] secundum quas fingi posset incrementum vel decrementum, sed</lem>
+<note type="lemma-abbrev">asymptoton[,]</note>
+<rdg wit="#L" n="1"> sed
+</rdg>
+<rdg wit="#L" n="2"> secundum <seg type="apparat-ellipsis"/>
+ decrementum, sed
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
 eae specialibus utique opus habent naturis.
 Et generalis sufficit demonstratio nobis,
 sine curvarum speciali consideratione;
 quod scilicet[,] in summa generalitate, nulla alia
-<app type="Bfootnote"><lem type="main">potest haberi relatio</lem><note type="lemma-abbrev">potest</note><rdg wit="#L" n="1"> consideratio
-</rdg><rdg wit="#L" n="2"> haberi relatio
-<hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">potest haberi relatio</lem>
+<note type="lemma-abbrev">potest</note>
+<rdg wit="#L" n="1"> consideratio
+</rdg>
+<rdg wit="#L" n="2"> haberi relatio
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
 quam proportio simplex,
 cum sola distantia temporis sine ullo alio contribuente,
-dicatur diminuere effectum<index indexName="Sachverzeichnis"><term>effectus</term></index> vel augere.</p><p xml:id="Ch29.p16">Est et alia fortissima ratio, quod scilicet effici potest,
-ut idem effectus<index indexName="Sachverzeichnis"><term>effectus</term></index> longiore post tempore sequatur[,]
-quare si sola temporis differentia causa<index indexName="Sachverzeichnis"><term>causa</term></index> est,
+dicatur diminuere effectum<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> vel augere.</p>
+<p xml:id="Ch29.p16">Est et alia fortissima ratio, quod scilicet effici potest,
+ut idem effectus<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> longiore post tempore sequatur[,]
+quare si sola temporis differentia causa<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index> est,
 utique idem sibi ipsi inaequale erit,
 poterit tamen responderi
-multitudinem effectuum<index indexName="Sachverzeichnis"><term>effectus</term></index> interjectorum[,] non ipsum per se tempus esse in
-<app type="Bfootnote"><lem type="main">causa; imo non multitudinem</lem><note type="lemma-abbrev">causa;</note><rdg wit="#L" n="1"> item, cum mu
-</rdg><rdg wit="#L" n="2"> imo non multitudinem
-<hi rendition="#i">L</hi></rdg></app>
-solum sed quantitatem<index indexName="Sachverzeichnis"><term>quantitas effectus</term></index>.
+multitudinem effectuum<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> interjectorum[,] non ipsum per se tempus esse in
+<app type="Bfootnote">
+<lem type="main">causa; imo non multitudinem</lem>
+<note type="lemma-abbrev">causa;</note>
+<rdg wit="#L" n="1"> item, cum mu
+</rdg>
+<rdg wit="#L" n="2"> imo non multitudinem
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+solum sed quantitatem<index indexName="Sachverzeichnis">
+<term>quantitas effectus</term>
+</index>.
 Alio uti licebit argumento;
 nimirum, opus esse quadam incrementi vel diminutionis
-<app type="Bfootnote"><lem type="main">uniformitate<index indexName="Sachverzeichnis"><term>uniformitas</term></index>; vel in</lem><note type="lemma-abbrev">uniformitate;</note><rdg wit="#L" n="1"> ut si
-</rdg><rdg wit="#L" n="2"> vel in
-<hi rendition="#i">L</hi></rdg></app>
-re recte expensa quaeritur longitudo ipsarum <formula xml:id="Ch29.p16.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula>. <formula xml:id="Ch29.p16.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>N</m:mi></m:math></formula>. <formula xml:id="Ch29.p16.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>P</m:mi></m:math></formula>.
-seu natura curvae <formula xml:id="Ch29.p16.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula>. <formula xml:id="Ch29.p16.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>N</m:mi></m:math></formula>. <formula xml:id="Ch29.p16.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>P</m:mi></m:math></formula>.
-cum in infinitum<index indexName="Sachverzeichnis"><term>infinitum</term></index> retro eadem semper futura sit curva;
-et, quod demonstrare poterimus in <formula xml:id="Ch29.p16.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>. <formula xml:id="Ch29.p16.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>E</m:mi></m:math></formula>. <formula xml:id="Ch29.p16.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>,
-pari jure initio potuerimus dicere de <formula xml:id="Ch29.p16.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula>. <formula xml:id="Ch29.p16.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula>. <formula xml:id="Ch29.p16.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>D</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula>[;]
-ideo curva <formula xml:id="Ch29.p16.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>M</m:mi><m:mo>⁢</m:mo><m:mi>N</m:mi><m:mo>⁢</m:mo><m:mi>P</m:mi></m:mrow></m:math></formula>. curvae <formula xml:id="Ch29.p16.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>M</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>N</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>P</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:math></formula> per omnia congruet,
+<app type="Bfootnote">
+<lem type="main">uniformitate<index indexName="Sachverzeichnis">
+<term>uniformitas</term>
+</index>; vel in</lem>
+<note type="lemma-abbrev">uniformitate;</note>
+<rdg wit="#L" n="1"> ut si
+</rdg>
+<rdg wit="#L" n="2"> vel in
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+re recte expensa quaeritur longitudo ipsarum <formula xml:id="Ch29.p16.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>M</m:mi>
+</m:math>
+</formula>.<formula xml:id="Ch29.p16.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>N</m:mi>
+</m:math>
+</formula>.<formula xml:id="Ch29.p16.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>P</m:mi>
+</m:math>
+</formula>.
+seu natura curvae <formula xml:id="Ch29.p16.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>M</m:mi>
+</m:math>
+</formula>.<formula xml:id="Ch29.p16.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>N</m:mi>
+</m:math>
+</formula>.<formula xml:id="Ch29.p16.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>P</m:mi>
+</m:math>
+</formula>.
+cum in infinitum<index indexName="Sachverzeichnis">
+<term>infinitum</term>
+</index> retro eadem semper futura sit curva;
+et, quod demonstrare poterimus in <formula xml:id="Ch29.p16.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>.<formula xml:id="Ch29.p16.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>E</m:mi>
+</m:math>
+</formula>.<formula xml:id="Ch29.p16.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>,
+pari jure initio potuerimus dicere de <formula xml:id="Ch29.p16.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>A</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</formula>.<formula xml:id="Ch29.p16.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>E</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</formula>.<formula xml:id="Ch29.p16.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>D</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</formula>[;]
+ideo curva <formula xml:id="Ch29.p16.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>N</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>P</m:mi>
+</m:mrow>
+</m:math>
+</formula>. curvae <formula xml:id="Ch29.p16.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>M</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>N</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>P</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> per omnia congruet,
 seu erit recta,
-<app type="Bfootnote"><lem type="main">ut si curva</lem><note type="lemma-abbrev">ut si</note><rdg wit="#L" n="1"> alicubi curva
-</rdg><rdg wit="#L" n="2"> curva
-<hi rendition="#i">L</hi></rdg></app> sit;
+<app type="Bfootnote">
+<lem type="main">ut si curva</lem>
+<note type="lemma-abbrev">ut si</note>
+<rdg wit="#L" n="1"> alicubi curva
+</rdg>
+<rdg wit="#L" n="2"> curva
+<hi rendition="#i">L</hi>
+</rdg>
+</app> sit;
 erit utique tangens ejus talis,
-ut certum aliquem angulum faciat ad <formula xml:id="Ch29.p16.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>E</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>.</p><p xml:id="Ch29.p17">Item aliter: quoniam non est determinatum,
+ut certum aliquem angulum faciat ad <formula xml:id="Ch29.p16.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+</p>
+<p xml:id="Ch29.p17">Item aliter: quoniam non est determinatum,
 quomodo sumi debeat una ex rectis,
-<app type="Bfootnote"><lem type="main">ut <formula xml:id="Ch29.p17.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>M</m:mi></m:mrow></m:math></formula>,
-tunc vero reliquae omnes <formula xml:id="Ch29.p17.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>E</m:mi><m:mo>⁢</m:mo><m:mi>N</m:mi></m:mrow></m:math></formula>, <formula xml:id="Ch29.p17.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>P</m:mi></m:mrow></m:math></formula> fiant etiam minores;
-et vero nulla sit linea <formula xml:id="Ch29.p17.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>M</m:mi><m:mo>⁢</m:mo><m:mi>N</m:mi><m:mo>⁢</m:mo><m:mi>P</m:mi></m:mrow></m:math></formula>, in qua</lem><note type="lemma-abbrev">ut <formula xml:id="Ch29.p17.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>M</m:mi></m:mrow></m:math></formula>,</note><rdg wit="#L" n="1"> et vero nulla est linearum in qu
-</rdg><rdg wit="#L" n="2"> tunc <seg type="apparat-ellipsis"/> in qua
-<hi rendition="#i">L</hi></rdg></app>
-proportionalia fiant omnia quamcunque sumas <formula xml:id="Ch29.p17.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>M</m:mi></m:mrow></m:math></formula>, praeterquam si sit recta;
-ideo necesse est <formula xml:id="Ch29.p17.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>M</m:mi><m:mo>⁢</m:mo><m:mi>N</m:mi><m:mo>⁢</m:mo><m:mi>P</m:mi></m:mrow></m:math></formula> esse rectam;
-eadem non est inclinata ad <formula xml:id="Ch29.p17.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>,
+<app type="Bfootnote">
+<lem type="main">ut <formula xml:id="Ch29.p17.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>M</m:mi>
+</m:mrow>
+</m:math>
+</formula>,
+tunc vero reliquae omnes <formula xml:id="Ch29.p17.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>E</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>N</m:mi>
+</m:mrow>
+</m:math>
+</formula>,<formula xml:id="Ch29.p17.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>P</m:mi>
+</m:mrow>
+</m:math>
+</formula> fiant etiam minores;
+et vero nulla sit linea <formula xml:id="Ch29.p17.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>N</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>P</m:mi>
+</m:mrow>
+</m:math>
+</formula>, in qua</lem>
+<note type="lemma-abbrev">ut <formula xml:id="Ch29.p17.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>M</m:mi>
+</m:mrow>
+</m:math>
+</formula>,
+</note>
+<rdg wit="#L" n="1"> et vero nulla est linearum in qu
+</rdg>
+<rdg wit="#L" n="2"> tunc <seg type="apparat-ellipsis"/>
+ in qua
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+proportionalia fiant omnia quamcunque sumas <formula xml:id="Ch29.p17.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>M</m:mi>
+</m:mrow>
+</m:math>
+</formula>, praeterquam si sit recta;
+ideo necesse est <formula xml:id="Ch29.p17.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>N</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>P</m:mi>
+</m:mrow>
+</m:math>
+</formula> esse rectam;
+eadem non est inclinata ad <formula xml:id="Ch29.p17.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula>,
 alioquin ei alicubi occurreret,
 et aliquando effectus
-<app type="Bfootnote"><lem type="main">foret infinite parvus<index indexName="Sachverzeichnis"><term>effectus infinite parvus</term></index>; ut</lem><note type="lemma-abbrev">foret</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>infinitus</del> <note type="editorial"><hi rendition="#i">gestr.</hi>
-|</note> vel <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi>
-|</note> infinite parvus;
-</rdg><rdg wit="#L" n="1"> quoniam
-</rdg><rdg wit="#L" n="2"> ut
-<hi rendition="#i">L</hi></rdg></app>
-in <formula xml:id="Ch29.p17.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>Q</m:mi></m:math></formula>.
+<app type="Bfootnote">
+<lem type="main">foret infinite parvus<index indexName="Sachverzeichnis">
+<term>effectus infinite parvus</term>
+</index>; ut</lem>
+<note type="lemma-abbrev">foret</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>infinitus</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi>
+|
+</note> vel <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi>
+|
+</note> infinite parvus;
+</rdg>
+<rdg wit="#L" n="1"> quoniam
+</rdg>
+<rdg wit="#L" n="2"> ut
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+in <formula xml:id="Ch29.p17.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>Q</m:mi>
+</m:math>
+</formula>.
 Sed tunc idem rursus absurdum,
-nam alio longiore sumto <formula xml:id="Ch29.p17.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>M</m:mi></m:math></formula> initio, idem <formula xml:id="Ch29.p17.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>Q</m:mi></m:math></formula> seu effectus infinite parvus<index indexName="Sachverzeichnis"><term>effectus infinite parvus</term></index>
+nam alio longiore sumto <formula xml:id="Ch29.p17.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>M</m:mi>
+</m:math>
+</formula> initio, idem <formula xml:id="Ch29.p17.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>Q</m:mi>
+</m:math>
+</formula> seu effectus infinite parvus<index indexName="Sachverzeichnis">
+<term>effectus infinite parvus</term>
+</index>
 longius differretur,
-ergo necesse est rectam <formula xml:id="Ch29.p17.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>M</m:mi><m:mo>⁢</m:mo><m:mi>N</m:mi><m:mo>⁢</m:mo><m:mi>P</m:mi></m:mrow></m:math></formula> esse
-<app type="Bfootnote"><lem type="main">parallelam ipsi <formula xml:id="Ch29.p17.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>Q</m:mi></m:mrow></m:math></formula>. ita enim nihil referet</lem><note type="lemma-abbrev">parallelam</note><rdg wit="#L" n="1"> , ita enim nihil referet
-</rdg><rdg wit="#L" n="2"> ipsi <seg type="apparat-ellipsis"/> referet
-<hi rendition="#i">L</hi></rdg></app>
-quae initio sumatur <formula xml:id="Ch29.p17.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>M</m:mi></m:mrow></m:math></formula>.
+ergo necesse est rectam <formula xml:id="Ch29.p17.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>N</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>P</m:mi>
+</m:mrow>
+</m:math>
+</formula> esse
+<app type="Bfootnote">
+<lem type="main">parallelam ipsi <formula xml:id="Ch29.p17.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>Q</m:mi>
+</m:mrow>
+</m:math>
+</formula>. ita enim nihil referet</lem>
+<note type="lemma-abbrev">parallelam</note>
+<rdg wit="#L" n="1"> , ita enim nihil referet
+</rdg>
+<rdg wit="#L" n="2"> ipsi <seg type="apparat-ellipsis"/>
+ referet
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+quae initio sumatur <formula xml:id="Ch29.p17.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>M</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
 Magni momenti videntur esse hujusmodi universales ratiocinationes.
 Certe si inclinata
-<app type="Bfootnote"><lem type="main">esset, recta una ad aliam; jam dudum</lem><note type="lemma-abbrev">esset,</note><rdg wit="#L" n="1"> tum jam dudum
-</rdg><rdg wit="#L" n="2"> recta <seg type="apparat-ellipsis"/> dudum
- <hi rendition="#i">L</hi></rdg></app>
-infinite abhinc eam attigisset, cum quaelibet causa<index indexName="Sachverzeichnis"><term>causa</term></index> habeat
-effectus ante ipsam infinitos<index indexName="Sachverzeichnis"><term>effectus infinitus</term></index>.</p><figure rendition="#own-line_centered" xml:id="Ch29.p18">
-        <graphic rendition="#c" url="./images/LH037,04_061v-d3.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="251.4996pt" xml:id="Ch29.p18.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]</head>
-      </figure><figure rendition="#own-line_centered" style="; width:149.6pt" xml:id="Ch29.p19">
-        
-        <graphic url="./images/LH037,04_061v-d4.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="149.6pt" xml:id="Ch29.p19.g1"/>
-        <head>[<hi rendition="#i">Fig. 6</hi>]</head>
-      </figure><figure rendition="#own-line_centered" style="; width:173.4pt" xml:id="Ch29.p20">
-        
-        <graphic url="./images/LH037,04_061v-d5.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="173.4pt" xml:id="Ch29.p20.g1"/>
-        <head>[<hi rendition="#i">Fig. 7</hi>]</head>
-      </figure><pb type="VIII_2" n="241"/><figure rendition="#own-line_centered" xml:id="Ch29.p21">
-        <graphic rendition="#c" url="./images/LH037,04_061v-d6.svg" style="trim:  0mm -1mm 0mm 0mm; clip: true" width="208.1376pt" xml:id="Ch29.p21.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 8</hi>]</head>
-      </figure><p xml:id="Ch29.p22">Adjicienda ratiocinatio de quantitate viae, seu loci successivi.
+<app type="Bfootnote">
+<lem type="main">esset, recta una ad aliam; jam dudum</lem>
+<note type="lemma-abbrev">esset,</note>
+<rdg wit="#L" n="1"> tum jam dudum
+</rdg>
+<rdg wit="#L" n="2"> recta <seg type="apparat-ellipsis"/>
+ dudum
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+infinite abhinc eam attigisset, cum quaelibet causa<index indexName="Sachverzeichnis">
+<term>causa</term>
+</index> habeat
+effectus ante ipsam infinitos<index indexName="Sachverzeichnis">
+<term>effectus infinitus</term>
+</index>.
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch29.p18">
+<graphic rendition="#c" url="./images/LH037,04_061v-d3.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="251.4996pt" xml:id="Ch29.p18.g1"/>
+
+<head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" style="; width:149.6pt" xml:id="Ch29.p19">
+
+<graphic url="./images/LH037,04_061v-d4.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="149.6pt" xml:id="Ch29.p19.g1"/>
+<head>[<hi rendition="#i">Fig. 6</hi>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" style="; width:173.4pt" xml:id="Ch29.p20">
+
+<graphic url="./images/LH037,04_061v-d5.svg" style="trim:  0mm -3mm 0mm 0mm; clip: true" width="173.4pt" xml:id="Ch29.p20.g1"/>
+<head>[<hi rendition="#i">Fig. 7</hi>]
+</head>
+</figure>
+<pb type="VIII_2" n="241"/>
+<figure rendition="#own-line_centered" xml:id="Ch29.p21">
+<graphic rendition="#c" url="./images/LH037,04_061v-d6.svg" style="trim:  0mm -1mm 0mm 0mm; clip: true" width="208.1376pt" xml:id="Ch29.p21.g1"/>
+
+<head rendition="#c">[<hi rendition="#i">Fig. 8</hi>]
+</head>
+</figure>
+<p xml:id="Ch29.p22">Adjicienda ratiocinatio de quantitate viae, seu loci successivi.
 Item examinandum an aliquid solidi subsit huic ratiocinationi meae veteri.
-Corpora <formula xml:id="Ch29.p22.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>. <formula xml:id="Ch29.p22.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> eadem celeritate<index indexName="Sachverzeichnis"><term>celeritas</term></index> sibi occurrunt,
+Corpora <formula xml:id="Ch29.p22.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>.<formula xml:id="Ch29.p22.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> eadem celeritate<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index> sibi occurrunt,
 ajo reditura eadem qua venere celeritate;
-supposito conatum impossibilem<index indexName="Sachverzeichnis"><term>conatus impossibilis</term></index> evanescere.
-In momento concursus<index indexName="Sachverzeichnis"><term>concursus</term></index>, <formula xml:id="Ch29.p22.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> accipit
-<app type="Bfootnote"><lem type="main">a <formula xml:id="Ch29.p22.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> conatum</lem><note type="lemma-abbrev">a <formula xml:id="Ch29.p22.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula></note><rdg wit="#L" n="1"> celeritatem
-</rdg><rdg wit="#L" n="2"> conatum
-<hi rendition="#i">L</hi></rdg></app>
-a <formula xml:id="Ch29.p22.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula> versus <formula xml:id="Ch29.p22.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula> eundi;
-et dat ipsi <app type="Bfootnote"><!--is-correction-app-with-future-lemma--><lem type="main"><corr resp="#ed">[<formula xml:id="Ch29.p22.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula>]</corr></lem><rdg wit="#L"><orig><formula xml:id="Ch29.p22.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula> </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-conatum<index indexName="Sachverzeichnis"><term>conatus</term></index> a <formula xml:id="Ch29.p22.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula> versus <formula xml:id="Ch29.p22.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula> eundi;
+supposito conatum impossibilem<index indexName="Sachverzeichnis">
+<term>conatus impossibilis</term>
+</index> evanescere.
+In momento concursus<index indexName="Sachverzeichnis">
+<term>concursus</term>
+</index>,<formula xml:id="Ch29.p22.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> accipit
+<app type="Bfootnote">
+<lem type="main">a <formula xml:id="Ch29.p22.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> conatum</lem>
+<note type="lemma-abbrev">a <formula xml:id="Ch29.p22.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> celeritatem
+</rdg>
+<rdg wit="#L" n="2"> conatum
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+a <formula xml:id="Ch29.p22.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula> versus <formula xml:id="Ch29.p22.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> eundi;
+et dat ipsi <app type="Bfootnote"><!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[<formula xml:id="Ch29.p22.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<formula xml:id="Ch29.p22.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+conatum<index indexName="Sachverzeichnis">
+<term>conatus</term>
+</index> a <formula xml:id="Ch29.p22.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> versus <formula xml:id="Ch29.p22.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula> eundi;
 habent ergo ambo
-<app type="Bfootnote"><lem type="main">simul utrumque</lem><note type="lemma-abbrev">simul</note><rdg wit="#L" n="1"> ipsum
-</rdg><rdg wit="#L" n="2"> utrumque
-<hi rendition="#i">L</hi></rdg></app> conatum;
+<app type="Bfootnote">
+<lem type="main">simul utrumque</lem>
+<note type="lemma-abbrev">simul</note>
+<rdg wit="#L" n="1"> ipsum
+</rdg>
+<rdg wit="#L" n="2"> utrumque
+<hi rendition="#i">L</hi>
+</rdg>
+</app> conatum;
 eum quem habebant et quem accepere;
-<app type="Bfootnote"><lem type="main">conatus impossibilis<index indexName="Sachverzeichnis"><term>conatus impossibilis</term></index> effectu<index indexName="Sachverzeichnis"><term>effectus</term></index> caret.</lem><note type="lemma-abbrev">conatus</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>autem</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> impossibilis
-</rdg><rdg wit="#L" n="1"> evanescit
-</rdg><rdg wit="#L" n="2"> effectu caret
-<hi rendition="#i">L</hi></rdg></app>
-Est autem impossibile <formula xml:id="Ch29.p22.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> ire versus <formula xml:id="Ch29.p22.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>,
-et <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">simul</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-<formula xml:id="Ch29.p22.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> ire versus <formula xml:id="Ch29.p22.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula> ob corporum impenetrabilitatem<index indexName="Sachverzeichnis"><term>impenetrabilitas</term></index>. Ergo restabit in <formula xml:id="Ch29.p22.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> tantum conatus<index indexName="Sachverzeichnis"><term>conatus</term></index> redeundi versus <formula xml:id="Ch29.p22.m17"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula>,
-et in <formula xml:id="Ch29.p22.m18"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> <app type="Bfootnote"><lem type="main">conatus redeundi</lem><note type="lemma-abbrev">conatus</note><rdg wit="#L" n="1"> eundi
-</rdg><rdg wit="#L" n="2"> redeundi
-<hi rendition="#i">L</hi></rdg></app>
-versus <formula xml:id="Ch29.p22.m19"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>.
-Videtur hinc porro sequi quod etsi inaequali venerint celeritate<index indexName="Sachverzeichnis"><term>celeritas</term></index>[,]
+<app type="Bfootnote">
+<lem type="main">conatus impossibilis<index indexName="Sachverzeichnis">
+<term>conatus impossibilis</term>
+</index> effectu<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> caret.</lem>
+<note type="lemma-abbrev">conatus</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>autem</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> impossibilis
+</rdg>
+<rdg wit="#L" n="1"> evanescit
+</rdg>
+<rdg wit="#L" n="2"> effectu caret
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+Est autem impossibile <formula xml:id="Ch29.p22.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> ire versus <formula xml:id="Ch29.p22.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>,
+et <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">simul</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+<formula xml:id="Ch29.p22.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> ire versus <formula xml:id="Ch29.p22.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> ob corporum impenetrabilitatem<index indexName="Sachverzeichnis">
+<term>impenetrabilitas</term>
+</index>. Ergo restabit in <formula xml:id="Ch29.p22.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> tantum conatus<index indexName="Sachverzeichnis">
+<term>conatus</term>
+</index> redeundi versus <formula xml:id="Ch29.p22.m17">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula>,
+et in <formula xml:id="Ch29.p22.m18">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">conatus redeundi</lem>
+<note type="lemma-abbrev">conatus</note>
+<rdg wit="#L" n="1"> eundi
+</rdg>
+<rdg wit="#L" n="2"> redeundi
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+versus <formula xml:id="Ch29.p22.m19">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>.
+Videtur hinc porro sequi quod etsi inaequali venerint celeritate<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index>[,]
 modo ipsa sint aequalia[,] permutatis eant celeritatibus.
 Sed si inaequalia ostendendum habendam magnitudinis rationem.
-<pb type="L"/><fw type="folNum">[62 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch29.p23">Si duo conatus incompossibiles<index indexName="Sachverzeichnis"><term>conatus incompossibilis</term></index> aequales componantur,
+<pb type="L"/>
+<fw type="folNum">[62 r<hi rendition="#sup">o</hi>]
+</fw>
+</p>
+<p xml:id="Ch29.p23">Si duo conatus incompossibiles<index indexName="Sachverzeichnis">
+<term>conatus incompossibilis</term>
+</index> aequales componantur,
 nil refert, quod unus fortior alio,
-jam enim fecere effectum<index indexName="Sachverzeichnis"><term>effectus</term></index> suum,
-quare non est quaestio de eorum fortitudine<index indexName="Sachverzeichnis"><term>fortitudo</term></index>.
-Conatus<index indexName="Sachverzeichnis"><term>conatus</term></index> duo,
+jam enim fecere effectum<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> suum,
+quare non est quaestio de eorum fortitudine<index indexName="Sachverzeichnis">
+<term>fortitudo</term>
+</index>.
+Conatus<index indexName="Sachverzeichnis">
+<term>conatus</term>
+</index> duo,
 ut idem corpus simul tendat in diversas partes[,]
 inter se possunt componi;
 non vero ut duo corpora simul tendant in eundem locum,
 seu se penetrent.
-Nihil refert <app type="Bfootnote"><lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[utrum]</add></lem><note type="lemma-abbrev">utrum</note><note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></app>
-duo mobilia<index indexName="Sachverzeichnis"><term>mobile</term></index> ad se invicem ferantur
+Nihil refert <app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[utrum]</add>
+</lem>
+<note type="lemma-abbrev">utrum</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app>
+duo mobilia<index indexName="Sachverzeichnis">
+<term>mobile</term>
+</index> ad se invicem ferantur
 an vero alterum quiescat alterum moveatur;
-poterit et celeritas<index indexName="Sachverzeichnis"><term>celeritas</term></index> inter ea dividi aequaliter.
+poterit et celeritas<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index> inter ea dividi aequaliter.
 Ostendendum est semper prodire idem.
-Nulla est destructio in conatibus<index indexName="Sachverzeichnis"><term>conatus</term></index>;
-nam cum duo inaequalis fortitudinis<index indexName="Sachverzeichnis"><term>fortitudo</term></index> concurrunt
+Nulla est destructio in conatibus<index indexName="Sachverzeichnis">
+<term>conatus</term>
+</index>;
+nam cum duo inaequalis fortitudinis<index indexName="Sachverzeichnis">
+<term>fortitudo</term>
+</index> concurrunt
 non ideo fortior destruit debiliorem ullo modo,
 sed uterque durat et componuntur si unum moveatur alterum quiescat,
 ex his etiam sequitur motum vim quiescentis accipere, et ei dare suam.
@@ -1010,32 +2743,130 @@ Videtur enim majus non semper in loco minoris consistere eique suam vim dare,
 quod tamen ex his positis sequeretur.
 Haec ergo ratiocinatio forte non exacta.
 Si haec vera essent corpus maximum a minimo sisteretur,
-sed minimum hoc reciperet totam vim majoris adeoque maxima moveretur celeritate<index indexName="Sachverzeichnis"><term>celeritas</term></index>.
+sed minimum hoc reciperet totam vim majoris adeoque maxima moveretur celeritate<index indexName="Sachverzeichnis">
+<term>celeritas</term>
+</index>.
 Haec ergo exactius examinanda;
 et difficultas etiam ex eo, quod ista videntur eventura, indifferenter;
 salvo semper eodem principio de vi prima manente.
-An forte si nullum esset Elaterium<index indexName="Sachverzeichnis"><term>elaterium</term></index> sed durities<index indexName="Sachverzeichnis"><term>durities</term></index> summa,
-ista evenirent? Videndum.</p><pb type="VIII_2" n="242"/><p xml:id="Ch29.p24">In Elastico corpore<index indexName="Sachverzeichnis"><term>corpus elasticum</term></index> video multa conjungenda,
+An forte si nullum esset Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> sed durities<index indexName="Sachverzeichnis">
+<term>durities</term>
+</index> summa,
+ista evenirent? Videndum.</p>
+<pb type="VIII_2" n="242"/>
+<p xml:id="Ch29.p24">In Elastico corpore<index indexName="Sachverzeichnis">
+<term>corpus elasticum</term>
+</index> video multa conjungenda,
 et rem subtilius examinandam,
-conatus penetrationis<index indexName="Sachverzeichnis"><term>conatus penetrationis</term></index> seu quo corpus alteri cedit,
-effectum<index indexName="Sachverzeichnis"><term>effectus</term></index> suum hic sortitur;
+conatus penetrationis<index indexName="Sachverzeichnis">
+<term>conatus penetrationis</term>
+</index> seu quo corpus alteri cedit,
+effectum<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index> suum hic sortitur;
 non ex toto tamen,
-fit enim quaedam lucta inter corporis resistentiam<index indexName="Sachverzeichnis"><term>resistentia corporis</term></index>
-<app type="Bfootnote"><lem type="main">ad transformationem</lem><note type="lemma-abbrev">ad</note><rdg wit="#L" n="1"> flexum
-</rdg><rdg wit="#L" n="2"> transformationem
-<hi rendition="#i">L</hi></rdg></app>,
+fit enim quaedam lucta inter corporis resistentiam<index indexName="Sachverzeichnis">
+<term>resistentia corporis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">ad transformationem</lem>
+<note type="lemma-abbrev">ad</note>
+<rdg wit="#L" n="1"> flexum
+</rdg>
+<rdg wit="#L" n="2"> transformationem
+<hi rendition="#i">L</hi>
+</rdg>
+</app>,
 et inter ipsum motum unius ad alterum,
-ubi ad eum venere compressionis<index indexName="Sachverzeichnis"><term>compressio</term></index> statum,
-<app type="Bfootnote"><lem type="main">ut tota</lem><note type="lemma-abbrev">ut</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>non amplius</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> tota <hi rendition="#i">L</hi></rdg></app>
+ubi ad eum venere compressionis<index indexName="Sachverzeichnis">
+<term>compressio</term>
+</index> statum,
+<app type="Bfootnote">
+<lem type="main">ut tota</lem>
+<note type="lemma-abbrev">ut</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>non amplius</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> tota <hi rendition="#i">L</hi>
+</rdg>
+</app>
 vis consumta sit;
 tunc vis quae in corpore est, se restituendi, suas partes agit.
 Opus ista habent adhuc exacta discussione.
 Et determinandum est,
-quae sit magnitudo corporis<index indexName="Sachverzeichnis"><term>magnitudo corporis</term></index>,
-ubi a corpore parvo sisti desinit.</p><p xml:id="Ch29.p25" rendition="#noindent">[<hi rendition="#i">In der unteren linken Ecke von Bl. 61 v<hi rendition="#sup">o</hi>, durch eine Linie umrahmt</hi>:]</p><p xml:id="Ch29.p26" rendition="#noindent"><formula xml:id="Ch29.p26.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>— —<formula xml:id="Ch29.p26.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> mirum eadem praestare
-<formula xml:id="Ch29.p26.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>— —<formula xml:id="Ch29.p26.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> quae duritiem<index indexName="Sachverzeichnis"><term>durities</term></index>, quia posita vi elaterii<index indexName="Sachverzeichnis"><term>vis elaterii</term></index>
-<formula xml:id="Ch29.p26.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>— —<formula xml:id="Ch29.p26.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> in statum priorem sequitur
-<formula xml:id="Ch29.p26.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>— —<formula xml:id="Ch29.p26.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula>ore effectum<index indexName="Sachverzeichnis"><term>effectus</term></index>,
-<formula xml:id="Ch29.p26.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>— —<formula xml:id="Ch29.p26.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula> ab eo no<formula xml:id="Ch29.p26.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>— —<formula xml:id="Ch29.p26.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula></p></div></div></body>
-  </text>
+quae sit magnitudo corporis<index indexName="Sachverzeichnis">
+<term>magnitudo corporis</term>
+</index>,
+ubi a corpore parvo sisti desinit.</p>
+<p xml:id="Ch29.p25" rendition="#noindent">[<hi rendition="#i">In der unteren linken Ecke von Bl. 61 v<hi rendition="#sup">o</hi>, durch eine Linie umrahmt</hi>:]
+</p>
+<p xml:id="Ch29.p26" rendition="#noindent">
+<formula xml:id="Ch29.p26.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>— —<formula xml:id="Ch29.p26.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula> mirum eadem praestare
+<formula xml:id="Ch29.p26.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>— —<formula xml:id="Ch29.p26.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula> quae duritiem<index indexName="Sachverzeichnis">
+<term>durities</term>
+</index>, quia posita vi elaterii<index indexName="Sachverzeichnis">
+<term>vis elaterii</term>
+</index>
+<formula xml:id="Ch29.p26.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>— —<formula xml:id="Ch29.p26.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula> in statum priorem sequitur
+<formula xml:id="Ch29.p26.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>— —<formula xml:id="Ch29.p26.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>ore effectum<index indexName="Sachverzeichnis">
+<term>effectus</term>
+</index>,
+<formula xml:id="Ch29.p26.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>— —<formula xml:id="Ch29.p26.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula> ab eo no<formula xml:id="Ch29.p26.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>— —<formula xml:id="Ch29.p26.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

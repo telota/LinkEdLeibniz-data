@@ -1,100 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-040-000">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">Ex Duobus Regulis Concursus Consequentiae</title>
-<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-040-000">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Ex Duobus Regulis Concursus Consequentiae</title>
+                <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
 Text</title>
-<respStmt>
-<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
-</resp>
-</respStmt>
-<respStmt>
-<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Martina</forename>
-<surname>Gödel</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Sebastian W.</forename>
-<surname>Stork</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
-</resp>
-</respStmt>
-</titleStmt>
-
-<publicationStmt>
-<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
-<date type="creation">2022</date>
-<availability>
-<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
-<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
-</licence>
-</availability>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-<analytic>
-<author>
-<persName ref="http://d-nb.info/gnd/118571249">
-<surname>Leibniz</surname>
-<forename>Gottfried Wilhelm</forename>
-</persName>
-</author>
-<title type="chapter" level="a" n="40">Ex Duobus Regulis Concursus Consequentiae</title>
-<title type="section" level="a" n=""/>
-<date calendar="#gregorian" notBefore="1677-03" resp="#L" cert="high">März 1677</date>
-<date calendar="#gregorian" notAfter="1677-03" resp="#L" cert="high"/>
-<idno type="PDF">
-<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
-<idno type="page">#page=423</idno>
-</idno>
-</analytic>
-<monogr>
-<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sebastian W. Stork</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+                <date type="creation">2022</date>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+                        <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118571249">
+                                <surname>Leibniz</surname>
+                                <forename>Gottfried Wilhelm</forename>
+                            </persName>
+                        </author>
+                        <title type="chapter" level="a" n="40">Ex Duobus Regulis Concursus Consequentiae</title>
+                        <title type="section" level="a" n=""/>
+                        <date calendar="#gregorian" notBefore="1677-03" resp="#L" cert="high">März 1677</date>
+                        <date calendar="#gregorian" notAfter="1677-03" resp="#L" cert="high"/>
+                        <idno type="PDF">
+                            <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+                            <idno type="page">#page=423</idno>
+                        </idno>
+                    </analytic>
+                    <monogr>
+                        <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
 Naturwissenschaftliche, medizinische und technische Schriften</title>
-<title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
-<imprint>
-<publisher>Walter de Gruyter GmbH</publisher>
-<pubPlace>Berlin, Boston</pubPlace>
-<date type="publication">2021</date>
-</imprint>
-<biblScope unit="page" from="390" to="395"/>
-</monogr>
-<series>
-<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+                        <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+                        <imprint>
+                            <publisher>Walter de Gruyter GmbH</publisher>
+                            <pubPlace>Berlin, Boston</pubPlace>
+                            <date type="publication">2021</date>
+                        </imprint>
+                        <biblScope unit="page" from="390" to="395"/>
+                    </monogr>
+                    <series>
+                        <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
 Briefe</title>
-</series>
-</biblStruct>
-<listWit>
-<witness n="L" corresp="#L_08-03-040-000_facs-haupttextzeuge">
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-<idno type="Signatur">LH XXXVII 5 Bl. 144–145</idno>
-</msIdentifier>
-<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-<summary>
-<p>Konzept: LH XXXVII 5 Bl. 144–145. Ein Bogen 2<hi rendition="#sup">o</hi>;
+                    </series>
+                </biblStruct>
+                <listWit>
+                    <witness n="L" corresp="#L_08-03-040-000_facs-haupttextzeuge">
+                        <msDesc>
+                            <msIdentifier>
+                                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                                <idno type="Signatur">LH XXXVII 5 Bl. 144–145</idno>
+                            </msIdentifier>
+                            <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                                <summary>
+                                    <p>Konzept: LH XXXVII 5 Bl. 144–145. Ein Bogen 2<hi rendition="#sup">o</hi>;
 Wasserzeichen in der Mitte von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=440">Bl. 145</ref>; Papiererhaltungsmaßnahmen; Papierbruch an den Blatträndern mit
-geringfügigem Textverlust. Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>. Auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi></ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi></ref> sowie im Randbereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref> wird N. <ref corresp="L_section_421.xml#_57267_2"/> überliefert. Die unteren zwei Drittel
-von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">Bl. 145 r<hi rendition="#sup">o</hi></ref> und der obere Rand von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref> überliefern N. <ref corresp="L_section_423.xml#_57267_3"/>. <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref> und der untere linke Bereich von
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi></ref> überliefern N. <ref corresp="L_section_432.xml#_57268"/>.</p>
+geringfügigem Textverlust. Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+                                    </ref>. Auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi>
+                                </ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi>
+                            </ref> sowie im Randbereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+                        </ref> wird N. <ref corresp="L_section_421.xml#_57267_2"/>
+ überliefert. Die unteren zwei Drittel
+von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">Bl. 145 r<hi rendition="#sup">o</hi>
+                </ref> und der obere Rand von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi>
+            </ref> überliefern N. <ref corresp="L_section_423.xml#_57267_3"/>
+.        <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi>
+        </ref> und der untere linke Bereich von
+        <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi>
+        </ref> überliefern N. <ref corresp="L_section_432.xml#_57268"/>
+.</p>
 </summary>
 </msContents>
 <physDesc>
@@ -113,7 +136,8 @@ von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/L
 </msIdentifier>
 <msContents corresp="L_witness-content-types.xml#veroeffentlichung_unselbstaendig">
 <summary>
-<p>(tlw.) <hi rendition="#k">Fichant</hi> 1994, S. 356f.<ref corresp="#bib_01056"/></p>
+    <p>(tlw.) <hi rendition="#k">Fichant</hi> 1994, S. 356f.<ref corresp="#bib_01056"/>
+    </p>
 </summary>
 </msContents>
 <physDesc>
@@ -255,17 +279,28 @@ von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/L
 <listWit>
 <witness>
 <msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-<idno type="Signatur">LH XXXVII 5 Bl. 144–145</idno>
-</msIdentifier>
-<msContents>
-<summary>
-<p>Konzept: LH XXXVII 5 Bl. 144–145. Ein Bogen 2<hi rendition="#sup">o</hi>;
+    <msIdentifier>
+        <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+        <idno type="Signatur">LH XXXVII 5 Bl. 144–145</idno>
+    </msIdentifier>
+    <msContents>
+        <summary>
+            <p>Konzept: LH XXXVII 5 Bl. 144–145. Ein Bogen 2<hi rendition="#sup">o</hi>;
 Wasserzeichen in der Mitte von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=440">Bl. 145</ref>; Papiererhaltungsmaßnahmen; Papierbruch an den Blatträndern
-mit geringfügigem Textverlust. Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>. Auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi></ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi></ref> sowie im Randbereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref> wird N. <ref corresp="L_section_421.xml#_57267_2"/> überliefert. Die unteren zwei
-Drittel von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">Bl. 145 r<hi rendition="#sup">o</hi></ref> und der obere Rand von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref> überliefern N. <ref corresp="L_section_423.xml#_57267_3"/>. <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref> und der untere linke Bereich
-von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi></ref> überliefern N. <ref corresp="L_section_432.xml#_57268"/>.</p>
+mit geringfügigem Textverlust. Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+            </ref>. Auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi>
+        </ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi>
+    </ref> sowie im Randbereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+</ref> wird N. <ref corresp="L_section_421.xml#_57267_2"/>
+ überliefert. Die unteren zwei
+Drittel von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">Bl. 145 r<hi rendition="#sup">o</hi>
+</ref> und der obere Rand von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi>
+</ref> überliefern N. <ref corresp="L_section_423.xml#_57267_3"/>
+.<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi>
+</ref> und der untere linke Bereich
+von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi>
+</ref> überliefern N. <ref corresp="L_section_432.xml#_57268"/>
+.</p>
 </summary>
 </msContents>
 <physDesc>
@@ -284,7 +319,8 @@ von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/L
 </msIdentifier>
 <msContents>
 <summary>
-<p>(tlw.) <hi rendition="#k">Fichant</hi> 1994, S. 356f.<ref corresp="#bib_01056"/></p>
+<p>(tlw.) <hi rendition="#k">Fichant</hi> 1994, S. 356f.<ref corresp="#bib_01056"/>
+</p>
 </summary>
 </msContents>
 <physDesc>
@@ -309,58 +345,375 @@ von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/L
 <p rendition="#noindent" xml:id="Ch40.p5">
 <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">
 <pb type="L"/>
-<fw type="folNum">[144 r<hi rendition="#sup">o</hi>]</fw>
+<fw type="folNum">[144 r<hi rendition="#sup">o</hi>]
+</fw>
 </ref>
 </p>
 <p rendition="#noindent" xml:id="Ch40.p6">Martii 1677</p>
 <anchor xml:id="_37_05_144r_1a"/>
-<p rendition="#noindent" xml:id="Ch40.p7"><app type="Bfootnote" from="#_37_05_144r_1a" to="#_37_05_144r_1b"><lem type="main"/><rdg wit="#L" cause="addition"><add>Regulae
-<seg type="apparat-ellipsis"/> derivemus.</add>
-<note type="editorial"><hi rendition="#i">erg.</hi></note> <hi rendition="#i">L</hi></rdg></app>Regulae duae:</p>
-<p xml:id="Ch40.p8">(1) Eadem <app type="Bfootnote"><lem type="main">est potentia
-corporum<index indexName="Sachen"><term>potentia</term></index></lem><note type="lemma-abbrev">est</note><rdg wit="#L" n="1"> vis </rdg><rdg wit="#L" n="2"> potentia <app><rdg wit="#L" n="a">ante et post concursum </rdg><rdg wit="#L" n="b">corporum <hi rendition="#i">L</hi></rdg></app></rdg></app> ante et post
-concursum<index indexName="Sachen"><term>concursus</term></index>.</p>
-<p xml:id="Ch40.p9">(2) Centrum gravitatis<index indexName="Sachen"><term>centrum
-gravitatis</term></index> corporum aequaliter procedit<index indexName="Sachen"><term>centrum gravitatis aequaliter procedens</term></index> ante et post
-concursum.<index indexName="Sachen"><term>concursus</term></index> Seu eadem est
-directio aggregati corporum<index indexName="Sachen"><term>aggregatum
-corporum</term></index><index indexName="Sachen"><term>directio aggregati
-corporum</term></index> ante et post concursum.<index indexName="Sachen"><term>concursus</term></index></p>
-<p xml:id="Ch40.p10">Ex his reliqua derivemus.<anchor xml:id="_37_05_144r_1b"/></p>
+<p rendition="#noindent" xml:id="Ch40.p7">
+<app type="Bfootnote" from="#_37_05_144r_1a" to="#_37_05_144r_1b">
+<lem type="main"/>
+<rdg wit="#L" cause="addition">
+<add>Regulae
+<seg type="apparat-ellipsis"/>
+ derivemus.</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+</note>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>Regulae duae:</p>
+<p xml:id="Ch40.p8">(1) Eadem <app type="Bfootnote">
+<lem type="main">est potentia
+corporum<index indexName="Sachen">
+<term>potentia</term>
+</index>
+</lem>
+<note type="lemma-abbrev">est</note>
+<rdg wit="#L" n="1"> vis </rdg>
+<rdg wit="#L" n="2"> potentia <app>
+<rdg wit="#L" n="a">ante et post concursum </rdg>
+<rdg wit="#L" n="b">corporum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> ante et post
+concursum<index indexName="Sachen">
+<term>concursus</term>
+</index>.
+</p>
+<p xml:id="Ch40.p9">(2) Centrum gravitatis<index indexName="Sachen">
+<term>centrum
+gravitatis</term>
+</index> corporum aequaliter procedit<index indexName="Sachen">
+<term>centrum gravitatis aequaliter procedens</term>
+</index> ante et post
+concursum.<index indexName="Sachen">
+<term>concursus</term>
+</index> Seu eadem est
+directio aggregati corporum<index indexName="Sachen">
+<term>aggregatum
+corporum</term>
+</index>
+<index indexName="Sachen">
+<term>directio aggregati
+corporum</term>
+</index> ante et post concursum.<index indexName="Sachen">
+<term>concursus</term>
+</index>
+</p>
+<p xml:id="Ch40.p10">Ex his reliqua derivemus.<anchor xml:id="_37_05_144r_1b"/>
+</p>
 <figure rendition="#own-line_centered" xml:id="Ch40.p11_1">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_144r_d1.svg" width="303.534pt" xml:id="Ch40.p11.g1"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]
+</head>
 </figure>
 <figure rendition="#own-line_centered" xml:id="Ch40.p11_2">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_144r_d2.svg" width="303.534pt" xml:id="Ch40.p11.g2"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]
+</head>
 </figure>
-<p xml:id="Ch40.p12">Sint duo corpora aequalia<index indexName="Sachen"><term>corpora
-aequalia</term></index>
-<hi rendition="#i">A</hi>, <hi rendition="#i">B</hi>, concurrentia celeritatibus
-inaequalibus<index indexName="Sachen"><term>celeritates inaequales</term></index>
-<hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>, <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>. Centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index> eorum erit in medio distantiae <hi rendition="#i">C</hi>, nempe ita ut sint <hi rendition="#i">AC</hi> et <hi rendition="#i">BC</hi> aequales. Concursu<index indexName="Sachen"><term>concursus</term></index> translatum erit in <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>, adeoque via centri gravitatis<index indexName="Sachen"><term>via centri gravitatis</term></index> erit <hi rendition="#i">C<hi rendition="#smaller">2</hi>C</hi>. Post concursum<index indexName="Sachen"><term>concursus</term></index> intellegimus nihilominus <pb type="L"/>centrum
-gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index> aequaliter
-procedere<index indexName="Sachen"><term>centrum gravitatis aequaliter
-procedens</term></index> in <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>, et esse <hi rendition="#i"><hi rendition="#smaller">2</hi>C<hi rendition="#smaller">3</hi>C</hi> aequ. <hi rendition="#i">C<hi rendition="#smaller">2</hi>C</hi>. Quaeruntur loca jam <app type="Bfootnote"><lem type="main">in
-qu[ae] <hi rendition="#i">A</hi></lem><note type="lemma-abbrev">in</note><rdg wit="#L"><note type="editorial">|</note> quibus <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note> </rdg><rdg wit="#L" n="1"> consistent
-</rdg><rdg wit="#L" n="2"> <hi rendition="#i">A</hi> <hi rendition="#i">L</hi></rdg></app> et <hi rendition="#i">B</hi>
-<app type="Bfootnote"><lem type="main">post concursum<index indexName="Sachen"><term>concursus</term></index> eadem</lem><note type="lemma-abbrev">concursum</note><rdg wit="#L" n="1"> ea qua </rdg><rdg wit="#L" n="2"> eadem <hi rendition="#i">L</hi></rdg></app> qua ad concursum<index indexName="Sachen"><term>concursus</term></index> venere celeritate deferentur, seu quaeruntur puncta
-<formula xml:id="Ch40.p12.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo>,</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:math></formula>.</p>
-<p xml:id="Ch40.p13">Patet ante omnia <hi rendition="#i"><hi rendition="#smaller">3</hi>A<hi rendition="#smaller">3</hi>C</hi> esse aequalem ipsi <hi rendition="#i"><hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>.</p>
-<p xml:id="Ch40.p14">Patet quoque <formula xml:id="Ch40.p14.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:math></formula>
-aequare debere <formula xml:id="Ch40.p14.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+1.7pt"><m:mi>A</m:mi></m:mpadded></m:mrow><m:mo>+</m:mo></m:mrow></m:math></formula>
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>, ex eo qui[a] eandem</lem><note type="lemma-abbrev"><hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi></note><rdg wit="#L" n="1"> .
-Ergo </rdg><rdg wit="#L" n="2"> , ex eo <note type="editorial">|</note> qui <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note> eandem <hi rendition="#i">L</hi></rdg></app> vim<index indexName="Sachen"><term>vis</term></index> servatam esse necesse est, ac proinde eandem quantitatem
-celeritatum in corpora ductarum,<index indexName="Sachen"><term>quantitas celeritatis in
-corpus ductae</term></index> id est (quia corpora aequalia sunt) eandem longitudinem
-rectarum <app type="Bfootnote"><lem type="main">percursarum. Addatur</lem><note type="lemma-abbrev">percursarum.</note><rdg wit="#L" n="1"> Ergo erit </rdg><rdg wit="#L" n="2"> Addatur <hi rendition="#i">L</hi></rdg></app> utrobique <hi rendition="#i"><hi rendition="#smaller">2</hi>A<hi rendition="#smaller">2</hi>B</hi>,
-fiet <formula xml:id="Ch40.p14.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded width="+5pt"><m:munder><m:munder accentunder="true"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>A</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo movablelimits="false">+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>A</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mo movablelimits="false">+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mtext mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">A</m:mi><m:mo>⁢</m:mo><m:mtext mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">B</m:mi></m:mrow></m:munder></m:mpadded><m:mo>⊓</m:mo></m:mrow></m:math></formula><app type="Bfootnote"><lem type="main"><formula xml:id="Ch40.p14.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:munder><m:munder accentunder="true"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo movablelimits="false">+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>A</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mo movablelimits="false">+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mi mathsize="142%">A</m:mi><m:mo>⁢</m:mo><m:mi mathsize="142%">B</m:mi></m:mrow></m:munder></m:math></formula>. Quia</lem><note type="lemma-abbrev">
-<formula xml:id="Ch40.p14.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:munder><m:munder accentunder="true"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo movablelimits="false">+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>A</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mo movablelimits="false">+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mi mathsize="142%">A</m:mi><m:mo>⁢</m:mo><m:mi mathsize="142%">B</m:mi></m:mrow></m:munder></m:math></formula>
-</note><rdg wit="#L" n="1"> . Ergo cum detur punctum <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>, medium rectae </rdg><rdg wit="#L" n="2"> Quia <hi rendition="#i">L</hi></rdg></app> ergo <hi rendition="#i">AB</hi> et
-<hi rendition="#i"><hi rendition="#smaller">3</hi>A<hi rendition="#smaller">3</hi>B</hi> aequantur, ergo et dimidiae, <hi rendition="#i">AC</hi>, <hi rendition="#i"><hi rendition="#smaller">3</hi>A<hi rendition="#smaller">3</hi>C</hi>,
-<hi rendition="#i">BC</hi>, <hi rendition="#i"><hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi> aequabuntur. Ergo si ex puncto <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi> dato velut centro, radio autem <hi rendition="#i">AC</hi> describatur circulus[,] is rectam in qua corpora decurrunt
-secabit in punctis <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>, <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>. Eaque proinde habentur. Hinc
+<p xml:id="Ch40.p12">Sint duo corpora aequalia<index indexName="Sachen">
+<term>corpora
+aequalia</term>
+</index>
+<hi rendition="#i">A</hi>,<hi rendition="#i">B</hi>, concurrentia celeritatibus
+inaequalibus<index indexName="Sachen">
+<term>celeritates inaequales</term>
+</index>
+<hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>,<hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>. Centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index> eorum erit in medio distantiae <hi rendition="#i">C</hi>, nempe ita ut sint <hi rendition="#i">AC</hi> et <hi rendition="#i">BC</hi> aequales. Concursu<index indexName="Sachen">
+<term>concursus</term>
+</index> translatum erit in <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>, adeoque via centri gravitatis<index indexName="Sachen">
+<term>via centri gravitatis</term>
+</index> erit <hi rendition="#i">C<hi rendition="#smaller">2</hi>C</hi>. Post concursum<index indexName="Sachen">
+<term>concursus</term>
+</index> intellegimus nihilominus <pb type="L"/>
+centrum
+gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index> aequaliter
+procedere<index indexName="Sachen">
+<term>centrum gravitatis aequaliter
+procedens</term>
+</index> in <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>, et esse <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C<hi rendition="#smaller">3</hi>C</hi> aequ. <hi rendition="#i">C<hi rendition="#smaller">2</hi>C</hi>. Quaeruntur loca jam <app type="Bfootnote">
+<lem type="main">in
+qu[ae] <hi rendition="#i">A</hi>
+</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L">
+<note type="editorial">|</note> quibus <note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="1"> consistent
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">A</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> et <hi rendition="#i">B</hi>
+<app type="Bfootnote">
+<lem type="main">post concursum<index indexName="Sachen">
+<term>concursus</term>
+</index> eadem</lem>
+<note type="lemma-abbrev">concursum</note>
+<rdg wit="#L" n="1"> ea qua </rdg>
+<rdg wit="#L" n="2"> eadem <hi rendition="#i">L</hi>
+</rdg>
+</app> qua ad concursum<index indexName="Sachen">
+<term>concursus</term>
+</index> venere celeritate deferentur, seu quaeruntur puncta
+<formula xml:id="Ch40.p12.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+</p>
+<p xml:id="Ch40.p13">Patet ante omnia <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A<hi rendition="#smaller">3</hi>C</hi> esse aequalem ipsi <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>.
+</p>
+<p xml:id="Ch40.p14">Patet quoque <formula xml:id="Ch40.p14.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+aequare debere <formula xml:id="Ch40.p14.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+1.7pt">
+<m:mi>A</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo>+</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>, ex eo qui[a] eandem</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>
+</note>
+<rdg wit="#L" n="1"> .
+Ergo </rdg>
+<rdg wit="#L" n="2"> , ex eo <note type="editorial">|</note> qui <note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi> |
+</note> eandem <hi rendition="#i">L</hi>
+</rdg>
+</app> vim<index indexName="Sachen">
+<term>vis</term>
+</index> servatam esse necesse est, ac proinde eandem quantitatem
+celeritatum in corpora ductarum,<index indexName="Sachen">
+<term>quantitas celeritatis in
+corpus ductae</term>
+</index> id est (quia corpora aequalia sunt) eandem longitudinem
+rectarum <app type="Bfootnote">
+<lem type="main">percursarum. Addatur</lem>
+<note type="lemma-abbrev">percursarum.</note>
+<rdg wit="#L" n="1"> Ergo erit </rdg>
+<rdg wit="#L" n="2"> Addatur <hi rendition="#i">L</hi>
+</rdg>
+</app> utrobique <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A<hi rendition="#smaller">2</hi>B</hi>,
+fiet <formula xml:id="Ch40.p14.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mpadded width="+5pt">
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mtext mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">B</m:mi>
+</m:mrow>
+</m:munder>
+</m:mpadded>
+<m:mo>⊓</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch40.p14.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mi mathsize="142%">A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">B</m:mi>
+</m:mrow>
+</m:munder>
+</m:math>
+</formula>. Quia</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch40.p14.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mi mathsize="142%">A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">B</m:mi>
+</m:mrow>
+</m:munder>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> . Ergo cum detur punctum <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>, medium rectae </rdg>
+<rdg wit="#L" n="2"> Quia <hi rendition="#i">L</hi>
+</rdg>
+</app> ergo <hi rendition="#i">AB</hi> et
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A<hi rendition="#smaller">3</hi>B</hi> aequantur, ergo et dimidiae, <hi rendition="#i">AC</hi>,<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A<hi rendition="#smaller">3</hi>C</hi>,
+<hi rendition="#i">BC</hi>,<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi> aequabuntur. Ergo si ex puncto <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi> dato velut centro, radio autem <hi rendition="#i">AC</hi> describatur circulus[,] is rectam in qua corpora decurrunt
+secabit in punctis <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>,<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>. Eaque proinde habentur. Hinc
 patet corpora <hi rendition="#i">AB</hi> inter se permutasse celeritatem.</p>
 <table>
 
@@ -371,7 +724,8 @@ patet corpora <hi rendition="#i">AB</hi> inter se permutasse celeritatem.</p>
 </cell>
 <cell>quod venerat in</cell>
 <cell>
-<hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>
 </cell>
 <cell>celeritate</cell>
 <cell>
@@ -379,7 +733,8 @@ patet corpora <hi rendition="#i">AB</hi> inter se permutasse celeritatem.</p>
 </cell>
 <cell>redit in</cell>
 <cell>
-<hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi>
 </cell>
 </row>
 
@@ -391,19 +746,24 @@ patet corpora <hi rendition="#i">AB</hi> inter se permutasse celeritatem.</p>
 </cell>
 <cell>……</cell>
 <cell>
-<hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>
 </cell>
 <cell>……</cell>
-<cell>……<hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi></cell>
+<cell>……<hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>
+</cell>
 <cell>……</cell>
-<cell>……<hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi></cell>
+<cell>……<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>
+</cell>
 </row>
 <row>
 <cell/>
 <cell/>
 <cell>celeritate</cell>
 <cell>
-<hi rendition="#i"><hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi>
 </cell>
 <cell>aequali</cell>
 <cell>
@@ -416,129 +776,1424 @@ patet corpora <hi rendition="#i">AB</hi> inter se permutasse celeritatem.</p>
 <cell/>
 <cell/>
 <cell>……</cell>
-<cell>……<hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi></cell>
+<cell>……<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi>
+</cell>
 <cell>……</cell>
-<cell>……<hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>.</cell>
+<cell>……<hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>.
+</cell>
 <cell/>
 <cell/>
 </row>
 
 </table>
-<p rendition="#noindent" xml:id="Ch40.p16">Esse autem <hi rendition="#i"><hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi> aequ. <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi> et <hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi> aequ. <hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi> sic demonstratur.</p>
-<p rendition="#noindent" xml:id="Ch40.p17"><formula xml:id="Ch40.p17.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mtable columnspacing="5pt" rowspacing="10pt"><m:mtr><m:mtd columnalign="right"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>A</m:mi></m:mpadded><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mtext>aequ.</m:mtext></m:mpadded><m:mo>⁢</m:mo><m:munder><m:munder accentunder="true"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mrow><m:mi mathsize="142%">A</m:mi><m:mo>⁢</m:mo><m:mpadded width="+2.8pt"><m:mi mathsize="142%">C</m:mi></m:mpadded></m:mrow><m:mo mathsize="142%" rspace="5.3pt" stretchy="false">⊓</m:mo><m:mrow><m:mi mathsize="142%">B</m:mi><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:mrow></m:munder></m:mrow></m:mtd><m:mtd columnalign="right"><m:mrow><m:mo>+</m:mo><m:munder><m:munder accentunder="true"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mi mathsize="142%">C</m:mi><m:mo>⁢</m:mo><m:mtext mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:munder></m:mrow></m:mtd><m:mtd columnalign="right"><m:mrow><m:mo>-</m:mo><m:munder><m:munder accentunder="true"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mtext mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi><m:mo>⁢</m:mo><m:mtext mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">B</m:mi></m:mrow></m:munder></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="right"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>B</m:mi></m:mpadded><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mtext>aequ.</m:mtext></m:mpadded><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mtd><m:mtd columnalign="right"><m:mrow><m:mo>+</m:mo><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:mtd><m:mtd columnalign="right"><m:mrow><m:mo>-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable><m:mo mathvariant="italic" separator="true"> </m:mo><m:mo>}</m:mo></m:mrow></m:math></formula> Ergo <hi rendition="#i"><hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi> aequ. <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>, et eodem modo erit <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi>]</corr></lem><rdg wit="L"><orig><hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>A</hi> <hi rendition="#i">L</hi>
+<p rendition="#noindent" xml:id="Ch40.p16">Esse autem <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi> aequ. <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi> et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi> aequ. <hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi> sic demonstratur.</p>
+<p rendition="#noindent" xml:id="Ch40.p17">
+<formula xml:id="Ch40.p17.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtable columnspacing="5pt" rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>A</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mtext>aequ.</m:mtext>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mrow>
+<m:mi mathsize="142%">A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mi mathsize="142%">C</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo mathsize="142%" rspace="5.3pt" stretchy="false">⊓</m:mo>
+<m:mrow>
+<m:mi mathsize="142%">B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:munder>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="right">
+<m:mrow>
+<m:mo>+</m:mo>
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mi mathsize="142%">C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:munder>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="right">
+<m:mrow>
+<m:mo>-</m:mo>
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mtext mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">B</m:mi>
+</m:mrow>
+</m:munder>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="right">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mtext>aequ.</m:mtext>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="right">
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="right">
+<m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+<m:mo mathvariant="italic" separator="true"></m:mo>
+<m:mo>}</m:mo>
+</m:mrow>
+</m:math>
+</formula> Ergo <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi> aequ. <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>, et eodem modo erit <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi>]
+</corr>
+</lem>
+<rdg wit="L">
+<orig>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>A</hi>
+<hi rendition="#i">L</hi>
 </orig>
-<note type="editorial"><hi rendition="#i">ändert Hrsg.</hi></note></rdg></app>
-aequ. <hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>.</p>
-<p xml:id="Ch40.p18">Sint jam duo corpora inaequalia,<index indexName="Sachen"><term>corpora inaequalia</term></index>
-<hi rendition="#i">A</hi>, <hi rendition="#i">B</hi>, eaque ponantur ferri celeritate
-aequali<index indexName="Sachen"><term>celeritates aequales</term></index> usque ad
-concursum,<index indexName="Sachen"><term>concursus</term></index> quaeritur quid sit
-futurum post concursum<index indexName="Sachen"><term>concursus</term></index>.</p>
+<note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+aequ. <hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>.
+</p>
+<p xml:id="Ch40.p18">Sint jam duo corpora inaequalia,<index indexName="Sachen">
+<term>corpora inaequalia</term>
+</index>
+<hi rendition="#i">A</hi>,<hi rendition="#i">B</hi>, eaque ponantur ferri celeritate
+aequali<index indexName="Sachen">
+<term>celeritates aequales</term>
+</index> usque ad
+concursum,<index indexName="Sachen">
+<term>concursus</term>
+</index> quaeritur quid sit
+futurum post concursum<index indexName="Sachen">
+<term>concursus</term>
+</index>.
+</p>
 <figure rendition="#own-line_centered" xml:id="Ch40.p19">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_144r_d3.svg" width="303.534pt" xml:id="Ch40.p19.g1"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]
+</head>
 </figure>
 <figure rendition="#own-line_centered" xml:id="Ch40.p20_1">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_144r_d4.svg" width="303.534pt" xml:id="Ch40.p20.g1"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]
+</head>
 </figure>
 <figure rendition="#own-line_centered" xml:id="Ch40.p20_2">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_144r_d5.svg" width="143.0946pt" xml:id="Ch40.p20.g2"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]
+</head>
 </figure>
 <p xml:id="Ch40.p21">In ipsa <hi rendition="#i">AB</hi>
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">suma[t]ur</corr></lem><rdg wit="#L"><orig>sumantur </orig>
-<note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-<hi rendition="#i">C</hi>, centrum gravitatis<index indexName="Sachen"><term>centrum
-gravitatis</term></index> corporum <hi rendition="#i">A</hi>[,] <hi rendition="#i">B</hi>, ita ut <hi rendition="#i">AC</hi> sit ad <hi rendition="#i">BC</hi>, ut <hi rendition="#i">B</hi> ad <hi rendition="#i">A</hi>. Eodem modo habebitur punctum <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>, erit enim <hi rendition="#i"><hi rendition="#smaller">2</hi>A<hi rendition="#smaller">2</hi>C</hi> ad <hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">2</hi>C</hi>,
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">suma[t]ur</corr>
+</lem>
+<rdg wit="#L">
+<orig>sumantur </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#i">C</hi>, centrum gravitatis<index indexName="Sachen">
+<term>centrum
+gravitatis</term>
+</index> corporum <hi rendition="#i">A</hi>[,]<hi rendition="#i">B</hi>, ita ut <hi rendition="#i">AC</hi> sit ad <hi rendition="#i">BC</hi>, ut <hi rendition="#i">B</hi> ad <hi rendition="#i">A</hi>. Eodem modo habebitur punctum <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>, erit enim <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A<hi rendition="#smaller">2</hi>C</hi> ad <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">2</hi>C</hi>,
 ut <hi rendition="#i">B</hi> ad <hi rendition="#i">A</hi>, seu ut <hi rendition="#i">AC</hi> ad <hi rendition="#i">BC</hi>. Datis ergo punctis <hi rendition="#i">C</hi>
-et <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi>, datur etiam punctum <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>, quia <hi rendition="#i"><hi rendition="#smaller">2</hi>C<hi rendition="#smaller">3</hi>C</hi>, aequ. <hi rendition="#i">C<hi rendition="#smaller">2</hi>C</hi>. <app type="Bfootnote"><lem type="main">Porro potentia<index indexName="Sachen"><term>potentia</term></index>
-corporum</lem><note type="lemma-abbrev">Porro</note><rdg wit="#L" n="1"> vis
-</rdg><rdg wit="#L" n="2"> potentia <app><rdg wit="#L" n="a">ante </rdg><rdg wit="#L" n="b">corporum <hi rendition="#i">L</hi></rdg></app></rdg></app> ante
-concursum<index indexName="Sachen"><term>concursus</term></index> erat factum ex
-corporibus in celeritatem hoc loco communem,<index indexName="Sachen"><term>factum ex
-corporibus in celeritatem communem</term></index> et quia celeritas illa hoc loco
+et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi>, datur etiam punctum <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>, quia <hi rendition="#i">
+<hi rendition="#smaller">2</hi>C<hi rendition="#smaller">3</hi>C</hi>, aequ. <hi rendition="#i">C<hi rendition="#smaller">2</hi>C</hi>.<app type="Bfootnote">
+<lem type="main">Porro potentia<index indexName="Sachen">
+<term>potentia</term>
+</index>
+corporum</lem>
+<note type="lemma-abbrev">Porro</note>
+<rdg wit="#L" n="1"> vis
+</rdg>
+<rdg wit="#L" n="2"> potentia <app>
+<rdg wit="#L" n="a">ante </rdg>
+<rdg wit="#L" n="b">corporum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> ante
+concursum<index indexName="Sachen">
+<term>concursus</term>
+</index> erat factum ex
+corporibus in celeritatem hoc loco communem,<index indexName="Sachen">
+<term>factum ex
+corporibus in celeritatem communem</term>
+</index> et quia celeritas illa hoc loco
 est <hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi> vel <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi> aequales, corpora vero repraesentari
-possunt, <hi rendition="#i">B</hi> quidem recta <hi rendition="#i">AC</hi>, et <hi rendition="#i">A</hi> recta <hi rendition="#i">BC</hi>. Ideoque <app type="Bfootnote"><lem type="main">potentia <index indexName="Sachen"><term>potentia</term></index>
-corporum</lem><note type="lemma-abbrev">potentia</note><rdg wit="#L" n="1"> haec
-reprae </rdg><rdg wit="#L" n="2"> corporum <hi rendition="#i">L</hi></rdg></app>
-tota repraesentabitur per <formula xml:id="Ch40.p21.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mi>C</m:mi><m:mo>+</m:mo><m:mi>C</m:mi><m:mi>B</m:mi><m:mo rspace="7.5pt">,</m:mo><m:mo rspace="7.5pt">⌢</m:mo><m:mi>A</m:mi><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mi>A</m:mi></m:mrow></m:math></formula> seu <formula xml:id="Ch40.p21.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>B</m:mi></m:mpadded></m:mrow><m:mo rspace="7.5pt">⌢</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:math></formula>. Ut
-ergo aequalis sit haec potentia<index indexName="Sachen"><term>potentia</term></index>
-etiam post concursum<index indexName="Sachen"><term>concursus</term></index>, ideo
-necesse est <hi rendition="#i">BC</hi> in <formula xml:id="Ch40.p21.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo>,</m:mo><m:mrow><m:mo>+</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:mrow></m:math></formula>
-in <hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi> aequari ipsi <hi rendition="#i">AC</hi> in <table> <row>
-<cell style="; text-align:center"><formula xml:id="Ch40.p21.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula></cell>
-<cell style="; text-align:center"><formula xml:id="Ch40.p21.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo rspace="7.5pt">+</m:mo><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:math></formula></cell>
-</row> <row>
-<cell style="; text-align:center">vel <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi></cell>
-<cell/>
-</row> </table> in <table> <row>
-<cell style="; text-align:center"><hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>.</cell>
+possunt, <hi rendition="#i">B</hi> quidem recta <hi rendition="#i">AC</hi>, et <hi rendition="#i">A</hi> recta <hi rendition="#i">BC</hi>. Ideoque <app type="Bfootnote">
+<lem type="main">potentia <index indexName="Sachen">
+<term>potentia</term>
+</index>
+corporum</lem>
+<note type="lemma-abbrev">potentia</note>
+<rdg wit="#L" n="1"> haec
+reprae </rdg>
+<rdg wit="#L" n="2"> corporum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+tota repraesentabitur per <formula xml:id="Ch40.p21.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mi>C</m:mi>
+<m:mo>+</m:mo>
+<m:mi>C</m:mi>
+<m:mi>B</m:mi>
+<m:mo rspace="7.5pt">,</m:mo>
+<m:mo rspace="7.5pt">⌢</m:mo>
+<m:mi>A</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math>
+</formula> seu <formula xml:id="Ch40.p21.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="7.5pt">⌢</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Ut
+ergo aequalis sit haec potentia<index indexName="Sachen">
+<term>potentia</term>
+</index>
+etiam post concursum<index indexName="Sachen">
+<term>concursus</term>
+</index>, ideo
+necesse est <hi rendition="#i">BC</hi> in <formula xml:id="Ch40.p21.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+in <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi> aequari ipsi <hi rendition="#i">AC</hi> in <table>
+<row>
+<cell style="; text-align:center">
+<formula xml:id="Ch40.p21.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</cell>
+<cell style="; text-align:center">
+<formula xml:id="Ch40.p21.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo rspace="7.5pt">+</m:mo>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+</cell>
 </row>
 <row>
-<cell style="; text-align:center">vel <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi></cell>
-</row> </table></p>
-<p rendition="#noindent" xml:id="Ch40.p22"><formula xml:id="Ch40.p22.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>A</m:mi></m:mpadded></m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:munder><m:munder accentunder="true"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mi mathsize="142%">C</m:mi><m:mo>⁢</m:mo><m:mtext mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:munder></m:mrow><m:mo rspace="4.2pt">+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow></m:math></formula> et <!--  \hack{${\scriptstyle\textit{2}}B{\scriptstyle\textit{3}}B \ \sqcap\ {\scriptstyle\textit{2}}B{\scriptstyle\textit{2}}C \edtext{+ {\scriptstyle\textit{2}}C{\scriptstyle\textit{3}}C - {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}B$ si corpus \textit{B} progredi pergit. Est}{\lemma{$+ {\scriptstyle\textit{2}}C{\scriptstyle\textit{3}}C$}\Bfootnote{\textit{(1)}~\pleibdashv\textit{(2)}~$ -\; {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}B $ \textbar\ si corpus \textit{B} progredi \textit{(1)}~continuat \textit{(2)}~pergit \textit{erg.}~\textbar\ . Est
+<cell style="; text-align:center">vel <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>
+</cell>
+<cell/>
+</row>
+</table> in <table>
+<row>
+<cell style="; text-align:center">
+<hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>.
+</cell>
+</row>
+<row>
+<cell style="; text-align:center">vel <hi rendition="#i">B<hi rendition="#smaller">2</hi>B</hi>
+</cell>
+</row>
+</table>
+</p>
+<p rendition="#noindent" xml:id="Ch40.p22">
+<formula xml:id="Ch40.p22.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>A</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mi mathsize="142%">C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:munder>
+</m:mrow>
+<m:mo rspace="4.2pt">+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> et <!--  \hack{${\scriptstyle\textit{2}}B{\scriptstyle\textit{3}}B \ \sqcap\ {\scriptstyle\textit{2}}B{\scriptstyle\textit{2}}C \edtext{+ {\scriptstyle\textit{2}}C{\scriptstyle\textit{3}}C - {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}B$ si corpus \textit{B} progredi pergit. Est}{\lemma{$+ {\scriptstyle\textit{2}}C{\scriptstyle\textit{3}}C$}\Bfootnote{\textit{(1)}~\pleibdashv\textit{(2)}~$ -\; {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}B $ \textbar\ si corpus \textit{B} progredi \textit{(1)}~continuat \textit{(2)}~pergit \textit{erg.}~\textbar\ . Est
 \textit{L}}}} -->
 <!--  \hackfor{${\scriptstyle\textit{2}}B{\scriptstyle\textit{3}}B \ \sqcap\ {\scriptstyle\textit{2}}B{\scriptstyle\textit{2}}C + {\scriptstyle\textit{2}}C{\scriptstyle\textit{3}}C - {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}B$ si corpus \textit{B} progredi pergit. Est\edtext{}{\lemma{$+ {\scriptstyle\textit{2}}C{\scriptstyle\textit{3}}C$}\Bfootnote{\textit{(1)}~\pleibdashv\textit{(2)}~$ -\; {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}B $ \textbar\ si corpus \textit{B} progredi \textit{(1)}~continuat \textit{(2)}~pergit \textit{erg.}~\textbar\ . Est
-\textit{L}}}} --><formula xml:id="Ch40.p22.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>B</m:mi></m:mpadded></m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:math></formula> si
-corpus <hi rendition="#i">B</hi> progredi pergit. Est<app type="Bfootnote"><lem type="main"/><note type="lemma-abbrev"><formula xml:id="Ch40.p22.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> <formula xml:id="Ch40.p22.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mpadded width="-1.7pt"><m:mpadded depth="+3.0pt" height="-3.0pt"><m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#leibdashv"/><m:mtext> </m:mtext></m:mpadded></m:mpadded></m:math></formula></rdg><rdg wit="#L" n="2"> <formula xml:id="Ch40.p22.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo rspace="5.3pt">-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:math></formula>
+\textit{L}}}} -->
+<formula xml:id="Ch40.p22.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula> si
+corpus <hi rendition="#i">B</hi> progredi pergit. Est<app type="Bfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch40.p22.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch40.p22.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="-1.7pt">
+<m:mpadded depth="+3.0pt" height="-3.0pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#leibdashv"/>
+<m:mtext></m:mtext>
+</m:mpadded>
+</m:mpadded>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch40.p22.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo rspace="5.3pt">-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
 <note type="editorial">|</note> si corpus <hi rendition="#i">B</hi> progredi
-</rdg><rdg wit="#L" n="1"> continuat </rdg><rdg wit="#L" n="2" cause="addition"> <add>pergit</add>
-<note type="editorial"><hi rendition="#i">erg.</hi> |</note> . Est <hi rendition="#i">L</hi></rdg></app>
-<formula xml:id="Ch40.p22.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded width="+5pt"><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mfrac></m:mstyle></m:mpadded><m:mo rspace="7.5pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>.
-Ergo erit <formula xml:id="Ch40.p22.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>B</m:mi></m:mpadded></m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mpadded width="+1.7pt"><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mfrac></m:mstyle></m:mpadded><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow></m:math></formula>. Unde
-in aequatione praecedenti <pb type="L"/>explicando <hi rendition="#i"><hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi>, <hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi>,
-<hi rendition="#i"><hi rendition="#smaller">3</hi>C<hi rendition="#smaller">3</hi>B</hi> fiet: <!--  \hack{$C{\scriptstyle\textit{2}}C \smallfrownBC,+ {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}A \smallfrownBC,\, -
+</rdg>
+<rdg wit="#L" n="1"> continuat </rdg>
+<rdg wit="#L" n="2" cause="addition">
+<add>pergit</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> . Est <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch40.p22.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mpadded width="+5pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>.
+Ergo erit <formula xml:id="Ch40.p22.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mrow>
+<m:mpadded width="+1.7pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Unde
+in aequatione praecedenti <pb type="L"/>
+explicando <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi>,<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi>,
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>C<hi rendition="#smaller">3</hi>B</hi> fiet: <!--  \hack{$C{\scriptstyle\textit{2}}C \smallfrownBC,+ {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}A \smallfrownBC,\, -
 \underbrace{{\scriptstyle\textit{2}}C{\scriptstyle\textit{2}}A \smallfrownBC,,\, + {\scriptstyle\textit{2}}B{\scriptstyle\textit{2}}C \smallfrownAC,}_{\displaystyle\sqcap\ 0} \,+ C{\scriptstyle\textit{2}}C \smallfrownAC,\, - \displaystyle\frac{BC}{\ovalbox{\textit{AC}}}\, {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}A \smallfrown\ovalbox{\textit{AC}} \ \sqcap\ AC \smallfrownA{\scriptstyle\textit{2}}A,\, +
 \edtext{CB \smallfrown$ \textit{A{\scriptsize2}A}. At}{\lemma{$CB \smallfrown$ \textit{A{\scriptsize2}A}.}\Bfootnote{\textit{(1)}~Quod si jam \textit{(a)}~$\leibdashv$ \textit{(aa)}~\textit{BC} \textit{(bb)}~${\scriptstyle\textit{3}}$ \textit{(cc)}~$BC \ \sqcap$ \textit{(b)}~fiet \textit{{\scriptsize3}C} \textit{(2)}~At~\textit{L}}}} -->
 <!--  \hackfor{$C{\scriptstyle\textit{2}}C \smallfrownBC,+ {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}A \smallfrownBC,\, -
 \underbrace{{\scriptstyle\textit{2}}C{\scriptstyle\textit{2}}A \smallfrownBC,,\, + {\scriptstyle\textit{2}}B{\scriptstyle\textit{2}}C \smallfrownAC,}_{\displaystyle\sqcap\ 0} \,+ C{\scriptstyle\textit{2}}C \smallfrownAC,\, - \displaystyle\frac{BC}{\ovalbox{\textit{AC}}}\, {\scriptstyle\textit{3}}C{\scriptstyle\textit{3}}A \smallfrown\ovalbox{\textit{AC}} \ \sqcap\ AC \smallfrownA{\scriptstyle\textit{2}}A,\, +
-CB \smallfrown$ \textit{A{\scriptsize2}A}. At\edtext{}{\lemma{$CB \smallfrown$ \textit{A{\scriptsize2}A}.}\Bfootnote{\textit{(1)}~Quod si jam \textit{(a)}~$\leibdashv$ \textit{(aa)}~\textit{BC} \textit{(bb)}~${\scriptstyle\textit{3}}$ \textit{(cc)}~$BC \ \sqcap$ \textit{(b)}~fiet \textit{{\scriptsize3}C} \textit{(2)}~At~\textit{L}}}} --><formula xml:id="Ch40.p22.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>,</m:mo><m:mrow><m:mrow><m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo rspace="4.2pt">,</m:mo><m:mrow><m:mrow><m:mrow><m:mrow><m:mo>-</m:mo><m:mpadded width="+1.7pt"><m:munder><m:munder accentunder="true"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mi>C</m:mi><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mi>A</m:mi><m:mo movablelimits="false">⌢</m:mo><m:mi>B</m:mi><m:mi>C</m:mi><m:mo movablelimits="false">,</m:mo><m:mo movablelimits="false" rspace="4.2pt">,</m:mo><m:mo movablelimits="false">+</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mi>B</m:mi><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mi>C</m:mi><m:mo movablelimits="false">⌢</m:mo><m:mi>A</m:mi><m:mi>C</m:mi><m:mo movablelimits="false">,</m:mo></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mo mathsize="142%" stretchy="false">⊓</m:mo><m:mn mathsize="142%"> 0</m:mn></m:mrow></m:munder></m:mpadded></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo rspace="4.2pt">,</m:mo><m:mrow><m:mrow><m:mo>-</m:mo><m:mrow><m:mpadded width="+1.7pt"><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:menclose class="roundedbox" notation="roundedbox"><m:mrow><m:mtext/><m:mtext mathvariant="italic">AC</m:mtext><m:mtext/></m:mrow></m:menclose></m:mfrac></m:mstyle></m:mpadded><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mpadded class="roundedbox" width="+5pt"><m:menclose notation="roundedbox"><m:mrow><m:mtext/><m:mtext mathvariant="italic">AC</m:mtext><m:mtext/></m:mrow></m:menclose></m:mpadded><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow><m:mo rspace="4.2pt">,</m:mo><m:mrow><m:mrow><m:mo>+</m:mo><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mi/></m:mrow></m:mrow></m:math></formula>
-<hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>. At<app type="Bfootnote"><lem type="main"/><note type="lemma-abbrev"><formula xml:id="Ch40.p22.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mo>⌢</m:mo><m:mi/></m:mrow></m:math></formula>
-<hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>.</note><rdg wit="#L" n="1"> Quod si jam <app><rdg wit="#L" n="a"><graphic url="./images/pm.svg" style="; height: 9.379857pt" width="4.049938pt" xml:id="Ch40.p22.m10.g1"/>
-<app><rdg wit="#L" n="aa"><hi rendition="#i">BC</hi>
-</rdg><rdg wit="#L" n="bb"><hi rendition="#i #smaller">3</hi>
-</rdg><rdg wit="#L" n="cc"><formula xml:id="Ch40.p22.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>C</m:mi></m:mpadded></m:mrow><m:mo>⊓</m:mo></m:mrow></m:math></formula>
-</rdg></app></rdg><rdg wit="#L" n="b">fiet <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>
-</rdg></app></rdg><rdg wit="#L" n="2"> At <hi rendition="#i">L</hi></rdg></app>
-<formula xml:id="Ch40.p22.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula>
-destruetur et restabit <formula xml:id="Ch40.p22.m14"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mpadded width="+5pt"><m:munder accentunder="true"><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:munder></m:mpadded><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mrow><m:mpadded width="+5pt"><m:munder accentunder="true"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:munder></m:mpadded><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:munder accentunder="true"><m:mrow><m:mpadded lspace="1.7pt" width="+8.4pt"><m:mtext>seu</m:mtext></m:mpadded><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mrow><m:mpadded lspace="1.7pt" width="+8.4pt"><m:mtext>vel</m:mtext></m:mpadded><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:munder></m:mpadded></m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:mrow></m:math></formula>.
-Quod est absurdum, nam si <formula xml:id="Ch40.p22.m15"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>B</m:mi></m:mpadded></m:mrow><m:mo>⊓</m:mo><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula>
-erit <formula xml:id="Ch40.p22.m16"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>C</m:mi></m:mpadded></m:mrow><m:mo>⊓</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula>
+CB \smallfrown$ \textit{A{\scriptsize2}A}. At\edtext{}{\lemma{$CB \smallfrown$ \textit{A{\scriptsize2}A}.}\Bfootnote{\textit{(1)}~Quod si jam \textit{(a)}~$\leibdashv$ \textit{(aa)}~\textit{BC} \textit{(bb)}~${\scriptstyle\textit{3}}$ \textit{(cc)}~$BC \ \sqcap$ \textit{(b)}~fiet \textit{{\scriptsize3}C} \textit{(2)}~At~\textit{L}}}} -->
+<formula xml:id="Ch40.p22.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>,</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo rspace="4.2pt">,</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mo>-</m:mo>
+<m:mpadded width="+1.7pt">
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>C</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>A</m:mi>
+<m:mo movablelimits="false">⌢</m:mo>
+<m:mi>B</m:mi>
+<m:mi>C</m:mi>
+<m:mo movablelimits="false">,</m:mo>
+<m:mo movablelimits="false" rspace="4.2pt">,</m:mo>
+<m:mo movablelimits="false">+</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>B</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>C</m:mi>
+<m:mo movablelimits="false">⌢</m:mo>
+<m:mi>A</m:mi>
+<m:mi>C</m:mi>
+<m:mo movablelimits="false">,</m:mo>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mo mathsize="142%" stretchy="false">⊓</m:mo>
+<m:mn mathsize="142%"> 0</m:mn>
+</m:mrow>
+</m:munder>
+</m:mpadded>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo rspace="4.2pt">,</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mpadded width="+1.7pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:menclose class="roundedbox" notation="roundedbox">
+<m:mrow>
+<m:mtext/>
+<m:mtext mathvariant="italic">AC</m:mtext>
+<m:mtext/>
+</m:mrow>
+</m:menclose>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mpadded class="roundedbox" width="+5pt">
+<m:menclose notation="roundedbox">
+<m:mrow>
+<m:mtext/>
+<m:mtext mathvariant="italic">AC</m:mtext>
+<m:mtext/>
+</m:mrow>
+</m:menclose>
+</m:mpadded>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+<m:mo rspace="4.2pt">,</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mi/>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>. At<app type="Bfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch40.p22.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mi/>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">A<hi rendition="#smaller">2</hi>A</hi>.
+</note>
+<rdg wit="#L" n="1"> Quod si jam <app>
+<rdg wit="#L" n="a">
+<graphic url="./images/pm.svg" style="; height: 9.379857pt" width="4.049938pt" xml:id="Ch40.p22.m10.g1"/>
+<app>
+<rdg wit="#L" n="aa">
+<hi rendition="#i">BC</hi>
+</rdg>
+<rdg wit="#L" n="bb">
+<hi rendition="#i #smaller">3</hi>
+</rdg>
+<rdg wit="#L" n="cc">
+<formula xml:id="Ch40.p22.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>C</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo>⊓</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="b">fiet <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> At <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch40.p22.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+destruetur et restabit <formula xml:id="Ch40.p22.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mpadded width="+5pt">
+<m:munder accentunder="true">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:munder>
+</m:mpadded>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+5pt">
+<m:munder accentunder="true">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:munder>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:munder accentunder="true">
+<m:mrow>
+<m:mpadded lspace="1.7pt" width="+8.4pt">
+<m:mtext>seu</m:mtext>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mpadded lspace="1.7pt" width="+8.4pt">
+<m:mtext>vel</m:mtext>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:munder>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+Quod est absurdum, nam si <formula xml:id="Ch40.p22.m15">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+erit <formula xml:id="Ch40.p22.m16">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>C</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
 quod est absurdum.</p>
-<p xml:id="Ch40.p23">Huic absurditati non licet aliter mederi, quam <app type="Bfootnote"><lem type="main">faciendo ut <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi> non pergat, sed regrediatur. Quod ut fiat punctum <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi> sumendum in contrariam partem, ita
-erit</lem><note type="lemma-abbrev">faciendo</note><rdg wit="#L" n="1"> <formula xml:id="Ch40.p23.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded width="+1.1pt"><m:mpadded depth="+3.0pt" height="-3.0pt"><m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#leibdashv"/><m:mtext> </m:mtext></m:mpadded></m:mpadded><m:mo rspace="5.3pt">⊓</m:mo><m:mo>+</m:mo></m:mrow></m:math></formula> seu <formula xml:id="Ch40.p23.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mo>⊓</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:math></formula>.
-Quod fiet <app><rdg wit="#L" n="a">si </rdg><rdg wit="#L" n="b">si </rdg><rdg wit="#L" n="c" cause="addition"><hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi> sumendo in contrariam partem, ita ut corpus <note type="editorial">|</note> <add>ex</add>
-<note type="editorial"><hi rendition="#i">erg.</hi> |</note> <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi> regredi intelligitur,
-</rdg></app></rdg><rdg wit="#L" n="2"> ut <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>
-<seg type="apparat-ellipsis"/> erit <hi rendition="#i">L</hi></rdg></app> enim
-<formula xml:id="Ch40.p23.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>B</m:mi></m:mpadded></m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>C</m:mi></m:mpadded><m:mo>⁢</m:mo><m:munder><m:munder accentunder="true"><m:mrow><m:mrow><m:mo movablelimits="false">-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo movablelimits="false">-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mo mathsize="142%" stretchy="false">-</m:mo><m:mrow><m:mtext mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">B</m:mi><m:mo>⁢</m:mo><m:mtext mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:mrow></m:munder></m:mrow></m:mrow></m:math></formula>.</p>
-<p xml:id="Ch40.p24">Nimirum cum necessario <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi> sit inter <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> et
-<hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi> quippe eorum centrum,<index indexName="Sachen"><term>centrum</term></index> et ob impenetrabilitatem,<index indexName="Sachen"><term>impenetrabilitas</term></index> necessario <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi> maneat ad partem dextram <hi rendition="#i"><hi rendition="#smaller">3</hi>A</hi> ad sinistram, ideo alterutrum necesse
-est[:] vel <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi> cadere inter <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>
-<app type="Bfootnote"><lem type="main">et <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>, seu corpus <hi rendition="#i">B</hi> progredi ex <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi> in <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>[,]</lem><note type="lemma-abbrev">et <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>,</note><rdg wit="#L" n="1"> et erit </rdg><rdg wit="#L" n="2"> seu corpus <seg type="apparat-ellipsis"/> in
-<hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi> <hi rendition="#i">L</hi></rdg></app> et tunc erit <hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi> aequ. <formula xml:id="Ch40.p24.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+2.8pt"><m:mi>C</m:mi></m:mpadded></m:mrow><m:mo>-</m:mo></m:mrow></m:math></formula>
-<app type="Bfootnote"><lem type="main"><hi rendition="#i"><hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>, quod</lem><note type="lemma-abbrev"><hi rendition="#i"><hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>,</note><rdg wit="#L" n="1"> vel </rdg><rdg wit="#L" n="2"> quod <hi rendition="#i">L</hi></rdg></app> absurdum parere
-ostendimus. Vel necesse est <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>
-cadere inter <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi> et <hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>, et tunc <hi rendition="#i">B</hi> regredietur ex <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi> in <hi rendition="#i"><hi rendition="#smaller">3</hi>B</hi>, fietque <formula xml:id="Ch40.p24.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>B</m:mi></m:mpadded></m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula>.</p>
-<p xml:id="Ch40.p25">Hinc patet <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[si]</corr></lem><rdg wit="#L"><orig>suo </orig>
-<note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> duo
-corpora perfecte dura<index indexName="Sachen"><term>corpus perfecte
-durum</term></index> utcunque inaequalia<index indexName="Sachen"><term>corpora
-inaequalia</term></index> in eadem recta sibi occurrant aequivelociter, necessario
-repelli ambo, ac proinde etiam maximum corpus<index indexName="Sachen"><term>corpus
-maximum</term></index> a minimo<index indexName="Sachen"><term>corpus
-minimum</term></index> aequiveloci repelli. Jam et aequale ab aequali repellitur, si
+<p xml:id="Ch40.p23">Huic absurditati non licet aliter mederi, quam <app type="Bfootnote">
+<lem type="main">faciendo ut <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi> non pergat, sed regrediatur. Quod ut fiat punctum <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi> sumendum in contrariam partem, ita
+erit</lem>
+<note type="lemma-abbrev">faciendo</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch40.p23.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mpadded width="+1.1pt">
+<m:mpadded depth="+3.0pt" height="-3.0pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#leibdashv"/>
+<m:mtext></m:mtext>
+</m:mpadded>
+</m:mpadded>
+<m:mo rspace="5.3pt">⊓</m:mo>
+<m:mo>+</m:mo>
+</m:mrow>
+</m:math>
+</formula> seu <formula xml:id="Ch40.p23.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+Quod fiet <app>
+<rdg wit="#L" n="a">si </rdg>
+<rdg wit="#L" n="b">si </rdg>
+<rdg wit="#L" n="c" cause="addition">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi> sumendo in contrariam partem, ita ut corpus <note type="editorial">|</note>
+<add>ex</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi> regredi intelligitur,
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> ut <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>
+<seg type="apparat-ellipsis"/>
+ erit <hi rendition="#i">L</hi>
+</rdg>
+</app> enim
+<formula xml:id="Ch40.p23.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>C</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mrow>
+<m:mo movablelimits="false">-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo movablelimits="false">-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mo mathsize="142%" stretchy="false">-</m:mo>
+<m:mrow>
+<m:mtext mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:munder>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+</p>
+<p xml:id="Ch40.p24">Nimirum cum necessario <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi> sit inter <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> et
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi> quippe eorum centrum,<index indexName="Sachen">
+<term>centrum</term>
+</index> et ob impenetrabilitatem,<index indexName="Sachen">
+<term>impenetrabilitas</term>
+</index> necessario <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi> maneat ad partem dextram <hi rendition="#i">
+<hi rendition="#smaller">3</hi>A</hi> ad sinistram, ideo alterutrum necesse
+est[:] vel <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi> cadere inter <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>
+<app type="Bfootnote">
+<lem type="main">et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>, seu corpus <hi rendition="#i">B</hi> progredi ex <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi> in <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>[,]
+</lem>
+<note type="lemma-abbrev">et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>,
+</note>
+<rdg wit="#L" n="1"> et erit </rdg>
+<rdg wit="#L" n="2"> seu corpus <seg type="apparat-ellipsis"/>
+ in
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> et tunc erit <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">3</hi>B</hi> aequ. <formula xml:id="Ch40.p24.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mi>C</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo>-</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>, quod</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>,
+</note>
+<rdg wit="#L" n="1"> vel </rdg>
+<rdg wit="#L" n="2"> quod <hi rendition="#i">L</hi>
+</rdg>
+</app> absurdum parere
+ostendimus. Vel necesse est <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>
+cadere inter <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi> et <hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>, et tunc <hi rendition="#i">B</hi> regredietur ex <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi> in <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B</hi>, fietque <formula xml:id="Ch40.p24.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+</p>
+<p xml:id="Ch40.p25">Hinc patet <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[si]</corr>
+</lem>
+<rdg wit="#L">
+<orig>suo </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> duo
+corpora perfecte dura<index indexName="Sachen">
+<term>corpus perfecte
+durum</term>
+</index> utcunque inaequalia<index indexName="Sachen">
+<term>corpora
+inaequalia</term>
+</index> in eadem recta sibi occurrant aequivelociter, necessario
+repelli ambo, ac proinde etiam maximum corpus<index indexName="Sachen">
+<term>corpus
+maximum</term>
+</index> a minimo<index indexName="Sachen">
+<term>corpus
+minimum</term>
+</index> aequiveloci repelli. Jam et aequale ab aequali repellitur, si
 aequivelocia sunt, itaque illud generale erit: si duo corpora aequivelociter sibi in
-eadem recta occurrant, ambo <app type="Bfootnote"><lem type="main">repellentur,
-atque</lem><note type="lemma-abbrev">repellentur,</note><rdg wit="#L" n="1"> ita a
-</rdg><rdg wit="#L" n="2"> atque <hi rendition="#i">L</hi></rdg></app> ita motus
-corporis maximi<index indexName="Sachen"><term>corpus maximum</term></index> a
-minimo<index indexName="Sachen"><term>corpus minimum</term></index> occurrente
-aequivelociter in contrarium verti potest. Quod videtur paradoxum,<index indexName="Sachen"><term>paradoxum</term></index> et ab omni ratione<index indexName="Sachen"><term>ratio</term></index> alienum, experientiae<index indexName="Sachen"><term>experientia</term></index> quoque contrarium, in omnibus quae
+eadem recta occurrant, ambo <app type="Bfootnote">
+<lem type="main">repellentur,
+atque</lem>
+<note type="lemma-abbrev">repellentur,</note>
+<rdg wit="#L" n="1"> ita a
+</rdg>
+<rdg wit="#L" n="2"> atque <hi rendition="#i">L</hi>
+</rdg>
+</app> ita motus
+corporis maximi<index indexName="Sachen">
+<term>corpus maximum</term>
+</index> a
+minimo<index indexName="Sachen">
+<term>corpus minimum</term>
+</index> occurrente
+aequivelociter in contrarium verti potest. Quod videtur paradoxum,<index indexName="Sachen">
+<term>paradoxum</term>
+</index> et ab omni ratione<index indexName="Sachen">
+<term>ratio</term>
+</index> alienum, experientiae<index indexName="Sachen">
+<term>experientia</term>
+</index> quoque contrarium, in omnibus quae
 apud nos sunt corporibus. Interim calculum absolvemus:</p>
-<p rendition="#noindent" xml:id="Ch40.p26"><formula xml:id="Ch40.p26.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>A</m:mi></m:mpadded></m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow></m:math></formula>. Ergo
+<p rendition="#noindent" xml:id="Ch40.p26">
+<formula xml:id="Ch40.p26.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>A</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Ergo
 fiet:</p>
 <p rendition="#noindent" xml:id="Ch40.p27">
 <formula xml:id="Ch40.p27.m1">
@@ -750,55 +2405,1360 @@ fiet:</p>
 </m:math>
 </formula>
 </p>
-<p rendition="#noindent" xml:id="Ch40.p28">Ergo <formula xml:id="Ch40.p28.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:munder accentunder="true"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:menclose class="roundedbox" notation="roundedbox"><m:mrow><m:mtext>vel
-</m:mtext><m:mrow><m:mtext mathvariant="italic">B</m:mtext><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mtext>𝐵</m:mtext></m:mrow><m:mtext/></m:mrow></m:menclose></m:munder><m:mo>⌢</m:mo><m:mrow><m:munder accentunder="true"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:munder><m:mo mathvariant="italic" separator="true"> </m:mo><m:munder accentunder="true"><m:mrow><m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mrow><m:mrow><m:mo>-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:munder></m:mrow></m:mrow><m:mrow><m:menclose class="roundedbox" notation="roundedbox"><m:mtext>2</m:mtext></m:menclose><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>
-et <hi rendition="#i"><hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>
-<formula xml:id="Ch40.p28.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:munder accentunder="true"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mrow><m:mtext> </m:mtext><m:menclose class="roundedbox" notation="roundedbox"><m:mrow><m:mtext> vel
-</m:mtext><m:mrow><m:mtext mathvariant="italic">B</m:mtext><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mtext>𝐵</m:mtext></m:mrow><m:mtext> </m:mtext></m:mrow></m:menclose><m:mtext> </m:mtext></m:mrow></m:munder><m:mo>⌢</m:mo><m:mrow><m:munder accentunder="true"><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:munder><m:mo mathvariant="italic" separator="true"> </m:mo><m:mover><m:munderover accent="true" accentunder="true"><m:mrow><m:mrow><m:mo movablelimits="false">+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo movablelimits="false">⌢</m:mo><m:mrow><m:mi>A</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mrow><m:mrow><m:mo mathsize="142%" movablelimits="false" stretchy="false">-</m:mo><m:mrow><m:mtext mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi mathsize="142%">A</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:mrow><m:mo mathsize="142%" movablelimits="false" stretchy="false">⌢</m:mo><m:mrow><m:mi mathsize="142%">B</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:mrow><m:mo movablelimits="false">⏞</m:mo></m:munderover><m:mrow><m:mrow><m:mo mathsize="142%" stretchy="false">+</m:mo><m:mrow><m:mtext mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi><m:mo>⁢</m:mo><m:mtext mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:mrow><m:mo mathsize="142%" stretchy="false">⌢</m:mo><m:munder accentunder="true"><m:mrow><m:mo mathsize="142%" stretchy="false">+</m:mo><m:mrow><m:mi mathsize="142%">A</m:mi><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:mrow><m:mrow><m:mo mathsize="142%" stretchy="false">-</m:mo><m:mrow><m:mi mathsize="142%">B</m:mi><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:mrow></m:munder></m:mrow></m:mover></m:mrow></m:mrow><m:mrow><m:menclose class="roundedbox" notation="roundedbox"><m:mtext>2</m:mtext></m:menclose><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Bezogen auf</hi>
-<formula xml:id="Ch40.p28.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mrow><m:mo>-</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:munder></m:mrow></m:math></formula> : posito
-puncta <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>, <hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>, <hi rendition="#i"><hi rendition="#smaller">2</hi>C</hi> coincidere.</note></p>
-<p rendition="#noindent" xml:id="Ch40.p29"><formula xml:id="Ch40.p29.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>⊓</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula>.
-<formula xml:id="Ch40.p29.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mi>A</m:mi><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mi>C</m:mi><m:mo>⊓</m:mo><m:mo>-</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mi>A</m:mi><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mi>C</m:mi><m:mo>+</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mi>C</m:mi><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mi>C</m:mi></m:mrow></m:math></formula>[,] <formula xml:id="Ch40.p29.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>⊓</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>,</m:mo><m:mrow><m:mrow><m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>,</m:mo><m:mrow><m:mrow><m:mo>+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>-</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:mrow><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>C</m:mi></m:mpadded></m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mrow><m:mpadded width="+5pt"><m:mtext>bis</m:mtext></m:mpadded><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:munder><m:munder accentunder="true"><m:mrow><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo movablelimits="false">⌢</m:mo><m:mrow><m:mi>A</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mrow><m:mtext mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">A</m:mi><m:mo>⁢</m:mo><m:mtext mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow><m:mo mathsize="142%" stretchy="false">⌢</m:mo><m:mrow><m:mi mathsize="142%">B</m:mi><m:mo>⁢</m:mo><m:mi mathsize="142%">C</m:mi></m:mrow></m:mrow></m:munder></m:mpadded></m:mrow></m:mrow><m:mo rspace="7.5pt">+</m:mo><m:mrow><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mo>⌢</m:mo><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow><m:mrow><m:mo>-</m:mo><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:munder></m:mrow></m:mrow></m:mrow></m:math></formula>.<app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">[<hi rendition="#i">Fig. 6</hi>]</note><note type="editorial">Ein Teil der Zeichnung erstreckt sich
-auf <ref>Bl. 145 v<hi rendition="#sup">o</hi></ref>. Durch Abrieb im
+<p rendition="#noindent" xml:id="Ch40.p28">Ergo <formula xml:id="Ch40.p28.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:menclose class="roundedbox" notation="roundedbox">
+<m:mrow>
+<m:mtext>vel
+</m:mtext>
+<m:mrow>
+<m:mtext mathvariant="italic">B</m:mtext>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mtext>𝐵</m:mtext>
+</m:mrow>
+<m:mtext/>
+</m:mrow>
+</m:menclose>
+</m:munder>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:munder>
+<m:mo mathvariant="italic" separator="true"></m:mo>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:munder>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:menclose class="roundedbox" notation="roundedbox">
+<m:mtext>2</m:mtext>
+</m:menclose>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+et <hi rendition="#i">
+<hi rendition="#smaller">3</hi>B<hi rendition="#smaller">3</hi>C</hi>
+<formula xml:id="Ch40.p28.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mtext></m:mtext>
+<m:menclose class="roundedbox" notation="roundedbox">
+<m:mrow>
+<m:mtext> vel
+</m:mtext>
+<m:mrow>
+<m:mtext mathvariant="italic">B</m:mtext>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mtext>𝐵</m:mtext>
+</m:mrow>
+<m:mtext></m:mtext>
+</m:mrow>
+</m:menclose>
+<m:mtext></m:mtext>
+</m:mrow>
+</m:munder>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:munder>
+<m:mo mathvariant="italic" separator="true"></m:mo>
+<m:mover>
+<m:munderover accent="true" accentunder="true">
+<m:mrow>
+<m:mrow>
+<m:mo movablelimits="false">+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo movablelimits="false">⌢</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mo mathsize="142%" movablelimits="false" stretchy="false">-</m:mo>
+<m:mrow>
+<m:mtext mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi mathsize="142%">A</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo mathsize="142%" movablelimits="false" stretchy="false">⌢</m:mo>
+<m:mrow>
+<m:mi mathsize="142%">B</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo movablelimits="false">⏞</m:mo>
+</m:munderover>
+<m:mrow>
+<m:mrow>
+<m:mo mathsize="142%" stretchy="false">+</m:mo>
+<m:mrow>
+<m:mtext mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo mathsize="142%" stretchy="false">⌢</m:mo>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mo mathsize="142%" stretchy="false">+</m:mo>
+<m:mrow>
+<m:mi mathsize="142%">A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo mathsize="142%" stretchy="false">-</m:mo>
+<m:mrow>
+<m:mi mathsize="142%">B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:munder>
+</m:mrow>
+</m:mover>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:menclose class="roundedbox" notation="roundedbox">
+<m:mtext>2</m:mtext>
+</m:menclose>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Bezogen auf</hi>
+<formula xml:id="Ch40.p28.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:munder>
+</m:mrow>
+</m:math>
+</formula> : posito
+puncta <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>,<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>,<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C</hi> coincidere.</note>
+</p>
+<p rendition="#noindent" xml:id="Ch40.p29">
+<formula xml:id="Ch40.p29.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+<formula xml:id="Ch40.p29.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>A</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mi>C</m:mi>
+<m:mo>⊓</m:mo>
+<m:mo>-</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>A</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>C</m:mi>
+<m:mo>+</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mi>C</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>[,]<formula xml:id="Ch40.p29.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>,</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>,</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>C</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="7.5pt">⊓</m:mo>
+<m:mrow>
+<m:mpadded width="+5pt">
+<m:mtext>bis</m:mtext>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">⌢</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mrow>
+<m:mtext mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+<m:mo mathsize="142%" stretchy="false">⌢</m:mo>
+<m:mrow>
+<m:mi mathsize="142%">B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:munder>
+</m:mpadded>
+</m:mrow>
+</m:mrow>
+<m:mo rspace="7.5pt">+</m:mo>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:munder>
+</m:mrow>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 6</hi>]
+</note>
+<note type="editorial">Ein Teil der Zeichnung erstreckt sich
+auf <ref>Bl. 145 v<hi rendition="#sup">o</hi>
+</ref>. Durch Abrieb im
 Bogenfalzbereich ist die Beschriftung oberhalb der Linie <hi rendition="#i">AB</hi>
-tlw. nicht mehr lesbar.</note></app></p>
+tlw. nicht mehr lesbar.</note>
+</app>
+</p>
 <figure rendition="#own-line_centered" xml:id="Ch40.p30">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_144r_d6.svg" width="173.448pt" xml:id="Ch40.p30.g1"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 6</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 6</hi>]
+</head>
 </figure>
-<p rendition="#noindent" xml:id="Ch40.p31"><formula xml:id="Ch40.p31.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mtable columnspacing="5pt" rowspacing="10pt"><m:mtr><m:mtd columnalign="center"><m:mi>b</m:mi></m:mtd><m:mtd columnalign="center"><m:mi>a</m:mi></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mtd><m:mtd columnalign="center"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>.</m:mo></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="center"><m:mi>x</m:mi></m:mtd><m:mtd columnalign="center"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mi>b</m:mi><m:mi>c</m:mi></m:mfrac></m:mstyle><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:math></formula>
-<formula xml:id="L_08-03-040-000_1-image-replacementf" facs="figurereplacements/L_08-03-040-000_1.svg" style="width:200pt;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/></formula>
-<anchor xml:id="_37_05_144r_2a"/>.<app type="Bfootnote" from="#_37_05_144r_2a" to="#_37_05_144r_2b"><lem type="main"/><note type="lemma-abbrev">
-<formula xml:id="L_08-03-040-000_2-image-replacementf" facs="figurereplacements/L_08-03-040-000_2.svg" style="width:200pt;"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/></formula>.</note><rdg wit="#L" n="1"> <hi rendition="#i">AC</hi> sit <hi rendition="#i">x</hi> et <hi rendition="#i">BC</hi>
-</rdg><rdg wit="#L" n="2"> <hi rendition="#i"><hi rendition="#smaller">3</hi>A<hi rendition="#smaller">2</hi>C</hi> sit <hi rendition="#i">x</hi> et <hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">2</hi>C</hi>
-<hi rendition="#i">L</hi></rdg></app></p>
-<p rendition="#noindent" xml:id="Ch40.p32"><hi rendition="#i"><hi rendition="#smaller">3</hi>A<hi rendition="#smaller">2</hi>C</hi> sit <hi rendition="#i">x</hi> et <hi rendition="#i"><hi rendition="#smaller">2</hi>B<hi rendition="#smaller">2</hi>C</hi>
-sit <anchor xml:id="_37_05_144r_2b"/><formula xml:id="Ch40.p32.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mstyle><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:math></formula>.
+<p rendition="#noindent" xml:id="Ch40.p31">
+<formula xml:id="Ch40.p31.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable columnspacing="5pt" rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mi>b</m:mi>
+</m:mtd>
+<m:mtd columnalign="center">
+<m:mi>a</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>A</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>B</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="center">
+<m:mi>x</m:mi>
+</m:mtd>
+<m:mtd columnalign="center">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>b</m:mi>
+<m:mi>c</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula>
+<formula xml:id="L_08-03-040-000_1-image-replacementf" facs="figurereplacements/L_08-03-040-000_1.svg" style="width:200pt;">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+</formula>
+<anchor xml:id="_37_05_144r_2a"/>
+.<app type="Bfootnote" from="#_37_05_144r_2a" to="#_37_05_144r_2b">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="L_08-03-040-000_2-image-replacementf" facs="figurereplacements/L_08-03-040-000_2.svg" style="width:200pt;">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+</formula>.
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">AC</hi> sit <hi rendition="#i">x</hi> et <hi rendition="#i">BC</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A<hi rendition="#smaller">2</hi>C</hi> sit <hi rendition="#i">x</hi> et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">2</hi>C</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p rendition="#noindent" xml:id="Ch40.p32">
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>A<hi rendition="#smaller">2</hi>C</hi> sit <hi rendition="#i">x</hi> et <hi rendition="#i">
+<hi rendition="#smaller">2</hi>B<hi rendition="#smaller">2</hi>C</hi>
+sit <anchor xml:id="_37_05_144r_2b"/>
+<formula xml:id="Ch40.p32.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
 Et sit <!--  \hack{$CD \;\sqcap\; \edtext{d \;\sqcap\; D{\scriptstyle\textit{2}}C$. Erit $\textit{D{\scriptsize3}A}}{\lemma{$d \;\sqcap$}\Bfootnote{\textit{(1)}~\textit{D}(\textit{C}) \textit{(2)}~\textit{D{\scriptsize2}C}. Erit \textit{(a)}~\textit{D}(\textit{A}) \textit{(b)}~\textit{D{\scriptsize3}A}
 \textit{L}}}\;\sqcap\underset{\displaystyleD{\scriptstyle\textit{2}}C}{\displaystyled} + \overset{\displaystyle{\scriptstyle\textit{3}}A{\scriptstyle\textit{2}}C}{\displaystylex}$.} -->
 <!--  \hackfor{$CD \;\sqcap\; d \;\sqcap\; D{\scriptstyle\textit{2}}C$. Erit $\textit{D{\scriptsize3}A}
 \;\sqcap\underset{\displaystyleD{\scriptstyle\textit{2}}C}{\displaystyled} + \overset{\displaystyle{\scriptstyle\textit{3}}A{\scriptstyle\textit{2}}C}{\displaystylex}$\edtext{}{\lemma{$d \;\sqcap$}\Bfootnote{\textit{(1)}~\textit{D}(\textit{C}) \textit{(2)}~\textit{D{\scriptsize2}C}. Erit \textit{(a)}~\textit{D}(\textit{A}) \textit{(b)}~\textit{D{\scriptsize3}A}
-\textit{L}}}.} --><formula xml:id="Ch40.p32.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mpadded width="+2.8pt"><m:mi>D</m:mi></m:mpadded></m:mrow><m:mo rspace="5.3pt">⊓</m:mo><m:mpadded width="+2.8pt"><m:mi>d</m:mi></m:mpadded><m:mo rspace="5.3pt">⊓</m:mo><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula>.
-Erit <formula xml:id="Ch40.p32.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mpadded width="+2.8pt"><m:mrow><m:mtext>𝐷</m:mtext><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mtext>𝐴</m:mtext></m:mrow></m:mpadded><m:mo>⊓</m:mo><m:munder accentunder="true"><m:mi>d</m:mi><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:munder></m:mrow><m:mo>+</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mover></m:mrow></m:math></formula><app type="Bfootnote"><lem type="main"/><note type="lemma-abbrev"><formula xml:id="Ch40.p32.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded width="+2.8pt"><m:mi>d</m:mi></m:mpadded><m:mo>⊓</m:mo></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> <hi rendition="#i">D</hi>(<hi rendition="#i">C</hi>) </rdg><rdg wit="#L" n="2"> <hi rendition="#i">D<hi rendition="#smaller">2</hi>C</hi>. Erit
-<app><rdg wit="#L" n="a"><hi rendition="#i">D</hi>(<hi rendition="#i">A</hi>)
-</rdg><rdg wit="#L" n="b"><hi rendition="#i">D<hi rendition="#smaller">3</hi>A</hi>
-<hi rendition="#i">L</hi></rdg></app></rdg></app>. Et jam <!--  \hack{$\overset{\displaystyled}{D{\scriptstyle\textit{3}}(B)} \edtext{\smallfrownb,,+D{\scriptstyle\textit{3}}(A)a}{\lemma{$\smallfrownb,,+$}\Bfootnote{\textit{(1)}~\textit{D{\scriptsize2}}(\textit{A})\textit{a} \textit{(2)}~\textit{D{\scriptsize3}}(\textit{A})\textit{a} ~\textit{L}}}\, \sqcap\, \underset{\displaystyleg}{DBb} + \underset{\displaystylec}{DA},a$.} -->
+\textit{L}}}.} -->
+<formula xml:id="Ch40.p32.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mi>D</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="5.3pt">⊓</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mi>d</m:mi>
+</m:mpadded>
+<m:mo rspace="5.3pt">⊓</m:mo>
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+Erit <formula xml:id="Ch40.p32.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+2.8pt">
+<m:mrow>
+<m:mtext>𝐷</m:mtext>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mtext>𝐴</m:mtext>
+</m:mrow>
+</m:mpadded>
+<m:mo>⊓</m:mo>
+<m:munder accentunder="true">
+<m:mi>d</m:mi>
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:munder>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mover>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch40.p32.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mpadded width="+2.8pt">
+<m:mi>d</m:mi>
+</m:mpadded>
+<m:mo>⊓</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">D</hi>(<hi rendition="#i">C</hi>) 
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">D<hi rendition="#smaller">2</hi>C</hi>. Erit
+<app>
+<rdg wit="#L" n="a">
+<hi rendition="#i">D</hi>(<hi rendition="#i">A</hi>)
+</rdg>
+<rdg wit="#L" n="b">
+<hi rendition="#i">D<hi rendition="#smaller">3</hi>A</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>. Et jam <!--  \hack{$\overset{\displaystyled}{D{\scriptstyle\textit{3}}(B)} \edtext{\smallfrownb,,+D{\scriptstyle\textit{3}}(A)a}{\lemma{$\smallfrownb,,+$}\Bfootnote{\textit{(1)}~\textit{D{\scriptsize2}}(\textit{A})\textit{a} \textit{(2)}~\textit{D{\scriptsize3}}(\textit{A})\textit{a} ~\textit{L}}}\, \sqcap\, \underset{\displaystyleg}{DBb} + \underset{\displaystylec}{DA},a$.} -->
 <!--  \hackfor{$\overset{\displaystyled}{D{\scriptstyle\textit{3}}(B)} \smallfrownb,,+D{\scriptstyle\textit{3}}(A)a
-\, \sqcap\, \underset{\displaystyleg}{DBb} + \underset{\displaystylec}{DA},a$.\edtext{}{\lemma{$\smallfrownb,,+$}\Bfootnote{\textit{(1)}~\textit{D{\scriptsize2}}(\textit{A})\textit{a} \textit{(2)}~\textit{D{\scriptsize3}}(\textit{A})\textit{a} ~\textit{L}}}} --><formula xml:id="Ch40.p32.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mover accent="true"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>𝑑</m:mo></m:mover><m:mo>⌢</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mo>,</m:mo><m:mo>+</m:mo><m:mi>D</m:mi><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mpadded width="+1.7pt"><m:mi>a</m:mi></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:munder accentunder="true"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow><m:mo>𝑔</m:mo></m:munder><m:mo>+</m:mo><m:munder accentunder="true"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo>𝑐</m:mo></m:munder><m:mo>,</m:mo><m:mi>a</m:mi></m:mrow></m:math></formula>.<app type="Bfootnote"><lem type="main"/><note type="lemma-abbrev"><formula xml:id="Ch40.p32.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo>⌢</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mo>,</m:mo><m:mo>+</m:mo></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> <hi rendition="#i">D<hi rendition="#smaller">2</hi></hi>(<hi rendition="#i">A</hi>)<hi rendition="#i">a</hi>
-</rdg><rdg wit="#L" n="2"> <hi rendition="#i">D<hi rendition="#smaller">3</hi></hi>(<hi rendition="#i">A</hi>)<hi rendition="#i">a</hi>  <hi rendition="#i">L</hi></rdg></app></p>
+\, \sqcap\, \underset{\displaystyleg}{DBb} + \underset{\displaystylec}{DA},a$.\edtext{}{\lemma{$\smallfrownb,,+$}\Bfootnote{\textit{(1)}~\textit{D{\scriptsize2}}(\textit{A})\textit{a} \textit{(2)}~\textit{D{\scriptsize3}}(\textit{A})\textit{a} ~\textit{L}}}} -->
+<formula xml:id="Ch40.p32.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mover accent="true">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>B</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mrow>
+<m:mo>𝑑</m:mo>
+</m:mover>
+<m:mo>⌢</m:mo>
+<m:mi>b</m:mi>
+<m:mo>,</m:mo>
+<m:mo>,</m:mo>
+<m:mo>+</m:mo>
+<m:mi>D</m:mi>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>A</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mpadded width="+1.7pt">
+<m:mi>a</m:mi>
+</m:mpadded>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>𝑔</m:mo>
+</m:munder>
+<m:mo>+</m:mo>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>𝑐</m:mo>
+</m:munder>
+<m:mo>,</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:math>
+</formula>.<app type="Bfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch40.p32.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo>⌢</m:mo>
+<m:mi>b</m:mi>
+<m:mo>,</m:mo>
+<m:mo>,</m:mo>
+<m:mo>+</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">D<hi rendition="#smaller">2</hi>
+</hi>(<hi rendition="#i">A</hi>)<hi rendition="#i">a</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">D<hi rendition="#smaller">3</hi>
+</hi>(<hi rendition="#i">A</hi>)<hi rendition="#i">a</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
 <p rendition="#noindent" xml:id="Ch40.p33">Et <!--  \hack{$D{\scriptstyle\textit{2}}(B) \sqcap\; \leibdashv\begin{array}{l}D{\scriptstyle\textit{2}}C\\d\end{array}\leibvdash\;
 \edlabel{37_05_144r_3a}\edtext{}{{\xxref{37_05_144r_3a}{37_05_144r_3b}}\lemma{}\Bfootnote{$\underbrace{{\scriptstyle\textit{3}}B{\scriptstyle\textit{2}}C}_{\displaystyle\frac{a}{b}x}$. \textbar\ Vel $ 2{\scriptstyle\textit{2}}(B) \sqcap\displaystyle\frac{b}{a}x -d $ \textit{gestr.}~\textbar\ Ergo~\textit{L}}}\underbrace{{\scriptstyle\textit{3}}B{\scriptstyle\textit{2}}C}_{\displaystyle\frac{a}{b}x}$.} -->
 <!--  \hackfor{$D{\scriptstyle\textit{2}}(B) \sqcap\; \leibdashv\begin{array}{l}D{\scriptstyle\textit{2}}C\\d\end{array}\leibvdash\;
-\underbrace{{\scriptstyle\textit{3}}B{\scriptstyle\textit{2}}C}_{\displaystyle\frac{a}{b}x}$\edlabel{37_05_144r_3a}\edtext{}{{\xxref{37_05_144r_3a}{37_05_144r_3b}}\lemma{}\Bfootnote{$\underbrace{{\scriptstyle\textit{3}}B{\scriptstyle\textit{2}}C}_{\displaystyle\frac{a}{b}x}$. \textbar\ Vel $ 2{\scriptstyle\textit{2}}(B) \sqcap\displaystyle\frac{b}{a}x -d $ \textit{gestr.}~\textbar\ Ergo~\textit{L}}}.} --><formula xml:id="Ch40.p33.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo rspace="5.3pt">⊓</m:mo><m:mrow><m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#leibdashv"/><m:mo>⁢</m:mo><m:mtable rowspacing="10pt"><m:mtr><m:mtd columnalign="left"><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd columnalign="left"><m:mi>d</m:mi></m:mtd></m:mtr></m:mtable><m:mo>⁢</m:mo><m:mpadded width="+2.8pt"><m:mo/></m:mpadded><m:mo>⁢</m:mo><m:munder><m:munder accentunder="true"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mstyle displaystyle="true" scriptlevel="-1"><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mstyle><m:mo>⁢</m:mo><m:mi mathsize="142%">x</m:mi></m:mrow></m:munder></m:mrow></m:mrow></m:math></formula><anchor xml:id="_37_05_144r_3a"/><app type="Bfootnote" from="#_37_05_144r_3a" to="#_37_05_144r_3b"><lem type="main"/><rdg wit="#L" cause="deletion"><formula xml:id="Ch40.p33.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:munder><m:munder accentunder="true"><m:mrow><m:mtext mathsize="70%" mathvariant="italic">3</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>B</m:mi><m:mo movablelimits="false">⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo movablelimits="false">⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo movablelimits="false">⏟</m:mo></m:munder><m:mrow><m:mstyle displaystyle="true" scriptlevel="-1"><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mstyle><m:mo>⁢</m:mo><m:mi mathsize="142%">x</m:mi></m:mrow></m:munder></m:math></formula>. <note type="editorial">|</note> <del>Vel <formula xml:id="Ch40.p33.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>⊓</m:mo><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mi>b</m:mi><m:mi>a</m:mi></m:mfrac></m:mstyle><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mo>-</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula>
-</del><note type="editorial"><hi rendition="#i">gestr.</hi> |</note> Ergo <hi rendition="#i">L</hi></rdg></app>.</p>
-<p rendition="#noindent" xml:id="Ch40.p34">Ergo <anchor xml:id="_37_05_144r_3b"/><formula xml:id="Ch40.p34.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>d</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⁢</m:mo><m:mpadded width="+2.8pt"><m:mi>a</m:mi></m:mpadded><m:mo>⁢</m:mo><m:mpadded width="+2.8pt"><m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#leibdashv"/></m:mpadded><m:mo>⁢</m:mo><m:mi>d</m:mi><m:mo>⁢</m:mo><m:mpadded width="+2.8pt"><m:mi>b</m:mi></m:mpadded><m:mo>⁢</m:mo><m:mpadded width="+2.8pt"><m:mo/></m:mpadded><m:mo>⁢</m:mo><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mpadded width="+2.8pt"><m:mi>x</m:mi></m:mpadded></m:mrow></m:mrow><m:mo rspace="5.3pt">⊓</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi></m:mrow></m:mrow></m:math></formula>.</p>
-<p rendition="#noindent" xml:id="Ch40.p35">Si <graphic url="./images/mp.svg" style="; height: 9.379857pt" width="4.049938pt" xml:id="Ch40.p35.m1.g1"/> sit <formula xml:id="Ch40.p35.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo>-</m:mo></m:math></formula> fiet <formula xml:id="Ch40.p35.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mi>d</m:mi></m:mrow><m:mrow><m:mo>-</m:mo><m:mi>c</m:mi></m:mrow></m:munder><m:mo>⌢</m:mo><m:mrow><m:mpadded width="+1.7pt"><m:mi>a</m:mi></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:munder accentunder="true"><m:mrow><m:mo>+</m:mo><m:mi>g</m:mi></m:mrow><m:mrow><m:mo>-</m:mo><m:mi>d</m:mi></m:mrow></m:munder></m:mrow><m:mo>⌢</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>.
-Ergo <formula xml:id="Ch40.p35.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mi>a</m:mi><m:mi>b</m:mi></m:mfrac></m:mstyle><m:mo>⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>g</m:mi><m:mo>-</m:mo><m:mi>d</m:mi></m:mrow><m:mrow><m:mi>d</m:mi><m:mo>-</m:mo><m:mi>c</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>
-seu <formula xml:id="Ch40.p35.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo>⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mrow><m:mo>-</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mtext mathsize="70%" mathvariant="italic">2</m:mtext><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>
-si sit <hi rendition="#i">D</hi> inter <hi rendition="#i">A</hi> et <hi rendition="#i">C</hi>. Sed si <hi rendition="#i">C</hi> inter <hi rendition="#i">D</hi> et <hi rendition="#i">A</hi> tunc fiet <formula xml:id="Ch40.p35.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo>⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi mathvariant="normal">Ω</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>
-quae absurda. Itaque faciemus <formula xml:id="Ch40.p35.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>d</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mrow><m:mo>-</m:mo><m:mrow><m:mi>d</m:mi><m:mo>⁢</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>x</m:mi><m:mo>⁢</m:mo><m:mpadded width="+1.7pt"><m:mi>a</m:mi></m:mpadded></m:mrow></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi></m:mrow></m:mrow></m:math></formula>
-seu <formula xml:id="Ch40.p35.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mpadded width="+1.7pt"><m:mi>x</m:mi></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:mover accent="true"><m:mrow><m:mrow><m:mi>b</m:mi><m:mo>-</m:mo><m:mi>a</m:mi></m:mrow><m:mo>⌢</m:mo><m:mi>d</m:mi></m:mrow><m:mo>¯</m:mo></m:mover></m:mrow><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>c</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>
-seu <formula xml:id="Ch40.p35.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mpadded width="+1.7pt"><m:mi>x</m:mi></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>d</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>c</m:mi><m:mo>-</m:mo><m:mi>d</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>g</m:mi></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>.</p>
+\underbrace{{\scriptstyle\textit{3}}B{\scriptstyle\textit{2}}C}_{\displaystyle\frac{a}{b}x}$\edlabel{37_05_144r_3a}\edtext{}{{\xxref{37_05_144r_3a}{37_05_144r_3b}}\lemma{}\Bfootnote{$\underbrace{{\scriptstyle\textit{3}}B{\scriptstyle\textit{2}}C}_{\displaystyle\frac{a}{b}x}$. \textbar\ Vel $ 2{\scriptstyle\textit{2}}(B) \sqcap\displaystyle\frac{b}{a}x -d $ \textit{gestr.}~\textbar\ Ergo~\textit{L}}}.} -->
+<formula xml:id="Ch40.p33.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>B</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mrow>
+<m:mo rspace="5.3pt">⊓</m:mo>
+<m:mrow>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#leibdashv"/>
+<m:mo>⁢</m:mo>
+<m:mtable rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mi>d</m:mi>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mo/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mstyle displaystyle="true" scriptlevel="-1">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">x</m:mi>
+</m:mrow>
+</m:munder>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+<anchor xml:id="_37_05_144r_3a"/>
+<app type="Bfootnote" from="#_37_05_144r_3a" to="#_37_05_144r_3b">
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">
+<formula xml:id="Ch40.p33.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:munder>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mtext mathsize="70%" mathvariant="italic">3</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo movablelimits="false">⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo movablelimits="false">⏟</m:mo>
+</m:munder>
+<m:mrow>
+<m:mstyle displaystyle="true" scriptlevel="-1">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi mathsize="142%">x</m:mi>
+</m:mrow>
+</m:munder>
+</m:math>
+</formula>.<note type="editorial">|</note>
+<del>Vel <formula xml:id="Ch40.p33.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>B</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>b</m:mi>
+<m:mi>a</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> Ergo <hi rendition="#i">L</hi>
+</rdg>
+</app>.
+</p>
+<p rendition="#noindent" xml:id="Ch40.p34">Ergo <anchor xml:id="_37_05_144r_3b"/>
+<formula xml:id="Ch40.p34.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mi>a</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#leibdashv"/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mi>b</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mo/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.8pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+</m:mrow>
+</m:mrow>
+<m:mo rspace="5.3pt">⊓</m:mo>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>g</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>.
+</p>
+<p rendition="#noindent" xml:id="Ch40.p35">Si <graphic url="./images/mp.svg" style="; height: 9.379857pt" width="4.049938pt" xml:id="Ch40.p35.m1.g1"/>
+ sit <formula xml:id="Ch40.p35.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo>-</m:mo>
+</m:math>
+</formula> fiet <formula xml:id="Ch40.p35.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+</m:munder>
+<m:mo>⌢</m:mo>
+<m:mrow>
+<m:mpadded width="+1.7pt">
+<m:mi>a</m:mi>
+</m:mpadded>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:munder accentunder="true">
+<m:mrow>
+<m:mo>+</m:mo>
+<m:mi>g</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:munder>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+Ergo <formula xml:id="Ch40.p35.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>a</m:mi>
+<m:mi>b</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>g</m:mi>
+<m:mo>-</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mo>-</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+seu <formula xml:id="Ch40.p35.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mtext mathsize="70%" mathvariant="italic">2</m:mtext>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+si sit <hi rendition="#i">D</hi> inter <hi rendition="#i">A</hi> et <hi rendition="#i">C</hi>. Sed si <hi rendition="#i">C</hi> inter <hi rendition="#i">D</hi> et <hi rendition="#i">A</hi> tunc fiet <formula xml:id="Ch40.p35.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi mathvariant="normal">Ω</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+quae absurda. Itaque faciemus <formula xml:id="Ch40.p35.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>d</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+1.7pt">
+<m:mi>a</m:mi>
+</m:mpadded>
+</m:mrow>
+</m:mrow>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>g</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+seu <formula xml:id="Ch40.p35.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+1.7pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mover accent="true">
+<m:mrow>
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>-</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+<m:mo>⌢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+<m:mo>¯</m:mo>
+</m:mover>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>c</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>g</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+seu <formula xml:id="Ch40.p35.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+1.7pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>-</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>+</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>b</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>g</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>.
+</p>
 </div>
 </div>
 </body>

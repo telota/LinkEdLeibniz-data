@@ -1,26 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-060-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-060-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Notizen zur Botanik</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Notizen zur Botanik</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="60">Notizen zur Botanik</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1676-02" resp="#ed" cert="medium">[Februar – September 1676]</date><date calendar="#gregorian" notAfter="1676-09" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=654</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="606" to="613"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-060-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 14, 2 Bl. 105-107</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#auszuege-kommentare"><summary><p>Aufzeichnung mit Auszügen aus unbekannter Vorlage: LH XXXV 14, 2 Bl. 105-107.
+            </author>
+            <title type="chapter" level="a" n="60">Notizen zur Botanik</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1676-02" resp="#ed" cert="medium">[Februar – September 1676]</date>
+            <date calendar="#gregorian" notAfter="1676-09" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=654</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="606" to="613"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-060-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 14, 2 Bl. 105-107</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#auszuege-kommentare">
+                <summary>
+                  <p>Aufzeichnung mit Auszügen aus unbekannter Vorlage: LH XXXV 14, 2 Bl. 105-107.
 1 Bog. (Bl. 105-106) und 1 Bl. 2<hi rendition="#sup">o</hi>
 (Bl. 105 weist zwei quere Ausschnitte auf;
 Bl. 107 ist unregelmäßig beschnitten).
 Etwa 3 S. auf Bl. 105 r<hi rendition="#sup">o</hi>, 106 v<hi rendition="#sup">o</hi> und 107 r<hi rendition="#sup">o</hi>.
 Bl. 105 v<hi rendition="#sup">o</hi>, 106 r<hi rendition="#sup">o</hi> und 107 v<hi rendition="#sup">o</hi> sind leer.
 Auf jedem Blatt je ein Wasserzeichen.
-Bl. 105-107 sind ferner von dem aus Bl. 104 und 108 bestehenden Bogen eingeschlossen, welcher N. 59 überliefert.</p><p xml:id="Ch60.p2">Cc 2, Nr. 1366 B</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+Bl. 105-107 sind ferner von dem aus Bl. 104 und 108 bestehenden Bogen eingeschlossen, welcher N. 59 überliefert.</p>
+                  <p xml:id="Ch60.p2">Cc 2, Nr. 1366 B</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -646,96 +746,1266 @@ Bl. 105-107 sind ferner von dem aus Bl. 104 und 108 bestehenden Bogen eingesch
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage>
-      <language ident="fr"/>
-      <language ident="la"/>
-    </langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#botanik"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-09" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr"/>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#botanik"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-09" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-02-060-000_facs-haupttextzeuge"><graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/silo10!Leibniz8!tripleIF!LH035!LH035_14_02_105_ra_07635.jpg"/><graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/silo10!Leibniz8!tripleIF!LH035!LH035_14_02_105_rd_07636.jpg"/><graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/silo10!Leibniz8!tripleIF!LH035!LH035_14_02_105_va_07637.jpg"/><graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/silo10!Leibniz8!tripleIF!LH035!LH035_14_02_106_ra_07638.jpg"/><graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/silo10!Leibniz8!tripleIF!LH035!LH035_14_02_106_rd_07639.jpg"/><graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/silo10!Leibniz8!tripleIF!LH035!LH035_14_02_106_va_07640.jpg"/><graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/silo10!Leibniz8!tripleIF!LH035!LH035_14_02_107_ra_07641.jpg"/><graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/silo10!Leibniz8!tripleIF!LH035!LH035_14_02_107_rd_07642.jpg"/><graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/silo10!Leibniz8!tripleIF!LH035!LH035_14_02_107_va_07643.jpg"/></facsimile><text xml:id="L_08-02-060-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch60" n="60"><pb type="VIII_2" n="606"/><head>60.
+  <facsimile source="digilib.bbaw.de" xml:id="L_08-02-060-000_facs-haupttextzeuge">
+    <graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/projects!leibniz8!LH035!LH035_14_02_105_ra_07635.jpg"/>
+    <graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/projects!leibniz8!LH035!LH035_14_02_105_rd_07636.jpg"/>
+    <graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/projects!leibniz8!LH035!LH035_14_02_105_va_07637.jpg"/>
+    <graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/projects!leibniz8!LH035!LH035_14_02_106_ra_07638.jpg"/>
+    <graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/projects!leibniz8!LH035!LH035_14_02_106_rd_07639.jpg"/>
+    <graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/projects!leibniz8!LH035!LH035_14_02_106_va_07640.jpg"/>
+    <graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/projects!leibniz8!LH035!LH035_14_02_107_ra_07641.jpg"/>
+    <graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/projects!leibniz8!LH035!LH035_14_02_107_rd_07642.jpg"/>
+    <graphic url="https://digilib.bbaw.de/digilib/Scaler/IIIF/projects!leibniz8!LH035!LH035_14_02_107_va_07643.jpg"/>
+  </facsimile>
+  <text xml:id="L_08-02-060-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch60" n="60">
+        <pb type="VIII_2" n="606"/>
+        <head>60.
 NOTIZEN ZUR BOTANIK</head>
-<head>[Februar – September 1676]</head><div type="ueberlieferung"><p><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung mit Auszügen aus unbekannter Vorlage: LH XXXV 14, 2 Bl. 105-107.
+        <head>[Februar – September 1676]</head>
+        <div type="ueberlieferung">
+          <p>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung mit Auszügen aus unbekannter Vorlage: LH XXXV 14, 2 Bl. 105-107.
 1 Bog. (Bl. 105-106) und 1 Bl. 2<hi rendition="#sup">o</hi>
 (Bl. 105 weist zwei quere Ausschnitte auf;
 Bl. 107 ist unregelmäßig beschnitten).
 Etwa 3 S. auf Bl. 105 r<hi rendition="#sup">o</hi>, 106 v<hi rendition="#sup">o</hi> und 107 r<hi rendition="#sup">o</hi>.
 Bl. 105 v<hi rendition="#sup">o</hi>, 106 r<hi rendition="#sup">o</hi> und 107 v<hi rendition="#sup">o</hi> sind leer.
 Auf jedem Blatt je ein Wasserzeichen.
-Bl. 105-107 sind ferner von dem aus Bl. 104 und 108 bestehenden Bogen eingeschlossen, welcher N. 59 überliefert.</p><p xml:id="Ch60.p2x">Cc 2, Nr. 1366 B</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch60.p3"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Bl. 105-107 sind ferner von dem aus Bl. 104 und 108 bestehenden Bogen eingeschlossen, welcher N. 59 überliefert.</p>
+                      <p xml:id="Ch60.p2x">Cc 2, Nr. 1366 B</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch60.p3">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi>
 Die Wasserzeichen sind denen gleich, die in den Textträgern der Stücke N. 54 und N. 58 vorkommen.
-Diese letzteren lassen sich auf die Monate Februar bis September 1676 datieren.</hi></p></div><div type="text"><p xml:id="Ch60.p4" rendition="#noindent"><pb type="L"/><fw type="folNum">[105 r<hi rendition="#sup">o</hi>]</fw>
-Lettre à Mons. Oldenbourg<index indexName="Namensregister"><term><hi rendition="#g">Oldenburg</hi> (Grubendol), Heinrich 1618-1677</term></index> de Mons. Boccone<index indexName="Namensregister"><term><hi rendition="#g">Boccone</hi>, Paolo 1633-1704</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">parle du corail<index indexName="Sachverzeichnis"><term>corail</term></index></add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>. Chambre d’Anatomie à Delpht<index indexName="Ortsregister"><term>Delft</term></index> des chirurgiens de la ville. Il y a un rhinoceros embaumé entier. Mons. Cornelius Gravesande<index indexName="Namensregister"><term><hi rendition="#g">‘s-Gravesande</hi>, Cornelius 1631-1691</term></index> doct. Medec. qui a succedé à la place de
-<app type="Bfootnote"><lem type="main">Regnero de Graef,<index indexName="Namensregister"><term><hi rendition="#g">Graaf</hi> (Graeff), Reinier de 1641-1673</term></index></lem><rdg wit="#L" cause="addition">Regnero <note type="editorial">|</note> <add>de</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> Graef, <hi rendition="#i">L</hi></rdg></app>
-à Mons. Sylvestre Buonfioli<index indexName="Namensregister"><term><hi rendition="#g">Bonfioli</hi>, Silvestro (??-??)</term></index> Anatomiste, Mathematicien medecin et sçavant philosophe à Boulogne.<index indexName="Ortsregister"><term>Bologna</term></index></p><p xml:id="Ch60.p5">Mons. Jannone, herboriste à Boulogne<index indexName="Ortsregister"><term>Bologna</term></index> habile dans ces plantes.
-J’ay <app type="Bfootnote"><lem type="main">veu il y a</lem><note type="lemma-abbrev">veu</note><rdg wit="#L" n="1"> derniere m </rdg><rdg wit="#L" n="2"> il y a <hi rendition="#i">L</hi></rdg></app>
-quelques mois à Bruxelles<index indexName="Ortsregister"><term>Brüssel</term></index> chez Mons. Jean Herman,<index indexName="Namensregister"><term><hi rendition="#g">Herman</hi>, Jean</term></index>
+Diese letzteren lassen sich auf die Monate Februar bis September 1676 datieren.</hi>
+          </p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch60.p4" rendition="#noindent">
+            <pb type="L"/>
+            <fw type="folNum">[105 r<hi rendition="#sup">o</hi>]
+            </fw>
+Lettre à Mons. Oldenbourg<index indexName="Namensregister">
+            <term>
+              <hi rendition="#g">Oldenburg</hi> (Grubendol), Heinrich 1618-1677</term>
+          </index> de Mons. Boccone<index indexName="Namensregister">
+          <term>
+            <hi rendition="#g">Boccone</hi>, Paolo 1633-1704</term>
+        </index>
+        <app type="Bfootnote">
+          <lem type="main">            <!--is-addition-app-with-lemma-->
+            <add resp="#L">parle du corail<index indexName="Sachverzeichnis">
+              <term>corail</term>
+            </index>
+          </add>
+        </lem>
+        <note type="editorial">
+          <hi rendition="#i">erg. L</hi>
+        </note>
+      </app>. Chambre d’Anatomie à Delpht<index indexName="Ortsregister">
+      <term>Delft</term>
+    </index> des chirurgiens de la ville. Il y a un rhinoceros embaumé entier. Mons. Cornelius Gravesande<index indexName="Namensregister">
+    <term>
+      <hi rendition="#g">‘s-Gravesande</hi>, Cornelius 1631-1691</term>
+  </index> doct. Medec. qui a succedé à la place de
+  <app type="Bfootnote">
+    <lem type="main">Regnero de Graef,<index indexName="Namensregister">
+      <term>
+        <hi rendition="#g">Graaf</hi> (Graeff), Reinier de 1641-1673</term>
+    </index>
+  </lem>
+  <rdg wit="#L" cause="addition">Regnero <note type="editorial">|</note>
+    <add>de</add>
+    <note type="editorial">
+      <hi rendition="#i">erg.</hi> |
+    </note> Graef, <hi rendition="#i">L</hi>
+  </rdg>
+</app>
+à Mons. Sylvestre Buonfioli<index indexName="Namensregister">
+<term>
+  <hi rendition="#g">Bonfioli</hi>, Silvestro (??-??)</term>
+</index> Anatomiste, Mathematicien medecin et sçavant philosophe à Boulogne.<index indexName="Ortsregister">
+<term>Bologna</term>
+</index>
+</p>
+<p xml:id="Ch60.p5">Mons. Jannone, herboriste à Boulogne<index indexName="Ortsregister">
+<term>Bologna</term>
+</index> habile dans ces plantes.
+J’ay <app type="Bfootnote">
+<lem type="main">veu il y a</lem>
+<note type="lemma-abbrev">veu</note>
+<rdg wit="#L" n="1"> derniere m </rdg>
+<rdg wit="#L" n="2"> il y a <hi rendition="#i">L</hi>
+</rdg>
+</app>
+quelques mois à Bruxelles<index indexName="Ortsregister">
+<term>Brüssel</term>
+</index> chez Mons. Jean Herman,<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Herman</hi>, Jean</term>
+</index>
 Apothicaire et Herboriste fort habile, le catalogue des plantes nouuelles que Mons. Jannone
-temoignoit dans ses lettres vouloir faire imprimer en l’an 1673. J’espere qu’il sera publié à present.</p><p xml:id="Ch60.p6">Personne nous a monstré encor la methode de rechercher les proprietez des plantes par quelque experience particuliere.
-On a dans le nort l’usage de quelques plantes, dont nous ignorons l’utilité en Italie,<index indexName="Ortsregister"><term>Italien</term></index>
-comme la Sophia, et la <app type="Cfootnote"><lem type="main">jacea nigra.<index indexName="Sachverzeichnis"><term>jacea nigra</term></index></lem><note type="lemma-abbrev">jacea nigra</note><note type="editorial">Wohl Centaurea jacea nigra oder Schwarze Flockenblume.</note></app>
+temoignoit dans ses lettres vouloir faire imprimer en l’an 1673. J’espere qu’il sera publié à present.</p>
+<p xml:id="Ch60.p6">Personne nous a monstré encor la methode de rechercher les proprietez des plantes par quelque experience particuliere.
+On a dans le nort l’usage de quelques plantes, dont nous ignorons l’utilité en Italie,<index indexName="Ortsregister">
+<term>Italien</term>
+</index>
+comme la Sophia, et la <app type="Cfootnote">
+<lem type="main">jacea nigra.<index indexName="Sachverzeichnis">
+<term>jacea nigra</term>
+</index>
+</lem>
+<note type="lemma-abbrev">jacea nigra</note>
+<note type="editorial">Wohl Centaurea jacea nigra oder Schwarze Flockenblume.</note>
+</app>
 La voye des signatures peu seure.
-Rolfinckius refert quaedam <app type="Cfootnote"><lem type="main">loca Avicennae<index indexName="Namensregister"><term><hi rendition="#g">ibn-Sīnā</hi> (Avicenna), Abū Alī al-Ḥusain ibn Abdullāh ca. 980-1037</term></index></lem><note type="lemma-abbrev">loca Avicennae</note><note type="editorial"><bibl corresp="#bib_00319"><hi rendition="#k">W. Rolfinck</hi>, <hi rendition="#i">De vegetabilibus</hi>, Jena 1670, S. 197, verweist auf <bibl corresp="#bib_01167"><hi rendition="#k">Avicenna</hi>, <hi rendition="#i">Canon</hi>, lib. II, tract. I, cap. II, § 3.</bibl></bibl></note></app> de modo investigandi haec particularia.
-Adde <app type="Cfootnote"><lem type="main">Porta</lem><note type="editorial"><bibl corresp="#bib_00320"><hi rendition="#k">G. B. Della Porta</hi>, <hi rendition="#i">Magia naturalis</hi>, Leiden 1650, S. 446.</bibl></note></app><index indexName="Namensregister"><term><hi rendition="#g">Della Porta</hi>, Giovanni Battista 1535-1615</term></index> in <hi rendition="#i">Magia</hi> pag. 446 edit. Lugd. Bat. 1650 titulo <hi rendition="#i">quomodo virtutes plantarum vestigandae</hi>.
-Item <index indexName="Namensregister"><term><hi rendition="#g">Tacke</hi> (Tachenius), Otto 1610-1680</term></index><app type="Cfootnote"><lem type="main">Tachen</lem><note type="editorial"><bibl corresp="#bib_00479"><hi rendition="#k">O. Tachenius</hi>, <hi rendition="#i">Hippocrates chymicus</hi>, Braunschweig 1668.</bibl></note></app> <hi rendition="#i">Hippoc.</hi>
-<app type="Cfootnote"><lem type="main">Willis</lem><note type="editorial"><bibl corresp="#bib_00322"><hi rendition="#k">T. Willis</hi>, <hi rendition="#i">Pharmaceutice rationalis</hi>, Oxford 1674.</bibl></note></app><index indexName="Namensregister"><term><hi rendition="#g">Willis</hi>, Thomas 1621-1675</term></index> <hi rendition="#i">Pharmaceutice rationalis</hi>
-et <app type="Cfootnote"><lem type="main">Pechlin</lem><note type="editorial"><bibl corresp="#bib_00499"><hi rendition="#k">J. N. Pechlin</hi>, <hi rendition="#i">De purgantium facultatibus</hi>, Leiden 1672.</bibl></note></app><index indexName="Namensregister"><term><hi rendition="#g">Pechlin</hi>, Johann Nicolas 1644-1706</term></index> dans une exercitation.</p><p xml:id="Ch60.p7"><app type="Cfootnote"><lem type="main"><anchor xml:id="_035_14_02_105r_01"/><hi rendition="#i">Recherches</hi></lem><note type="editorial"><bibl corresp="#bib_00318"><hi rendition="#k">P. Boccone</hi>, <hi rendition="#i">Recherches</hi>, Amsterdam 1674.</bibl></note></app> <hi rendition="#i">et observations naturelles</hi> imprimées à Amsterdam<index indexName="Ortsregister"><term>Amsterdam</term></index> 1674 chez Jean Jans<pb type="VIII_2" n="607"/>son<index indexName="Namensregister"><term><hi rendition="#g">Janssonius</hi>, Johannes 1588-1664</term></index> a Waesbergue.<index indexName="Ortsregister"><term>Waesberghe</term></index><anchor xml:id="_035_14_02_105r_02"/></p><p xml:id="Ch60.p8">Mons. Van der Meer Medecin et Apothicaire de la ville de Delpht.<index indexName="Ortsregister"><term>Delft</term></index></p><p xml:id="Ch60.p9">Pseudo-corallium<index indexName="Sachverzeichnis"><term>corail</term></index> album fungosum d’Imperatus<index indexName="Namensregister"><term><hi rendition="#g">Imperato</hi>, Ferrante 1550-1631</term></index> est rare, je ne l’ay veu dans le naturel, qu’une fois dans la ville d’Agrigentum<index indexName="Ortsregister"><term>Agrigent</term></index> 1668 chez Mr Rocco Pinzellone<index indexName="Namensregister"><term><hi rendition="#g">Pinzellone</hi>, Rocco</term></index> Apothicaire.</p><p xml:id="Ch60.p10">Jean Brayne<index indexName="Namensregister"><term><hi rendition="#g">Brayne</hi>, Jean</term></index> droguiste fort curieux à Amsterdam<index indexName="Ortsregister"><term>Amsterdam</term></index> dans la rue de Nest.</p><p xml:id="Ch60.p11">Volckert Janse<index indexName="Namensregister"><term><hi rendition="#g">Janse</hi>, Volckert</term></index> marchant à Amsterdam<index indexName="Ortsregister"><term>Amsterdam</term></index> curieux des choses naturelles Mons. Cognart apothiquaire à Rouen<index indexName="Ortsregister"><term>Rouen</term></index> curieux.</p><p xml:id="Ch60.p12">Mons. Montalbani<index indexName="Namensregister"><term><hi rendition="#g">Montalbano</hi>, Ovidio 1601-1671</term></index> professeur de Mathematique (+ J’ose, etc. +) avoit dessein de faire imprimer des restes d’Aldrovandi<index indexName="Namensregister"><term><hi rendition="#g">Aldrovandi</hi>, Ulisse 1522-1605</term></index>, il a donné déja la <app type="Cfootnote"><lem type="main"><hi rendition="#i">dendrologia</hi>.</lem><note type="lemma-abbrev"><hi rendition="#i">dendrologia</hi></note><note type="editorial"><bibl corresp="#bib_00323"><hi rendition="#k">U. Aldrovandi</hi>, <hi rendition="#i">Dendrologia. Ovidius Montalbanus collegit</hi>, Frankfurt 1671.</bibl></note></app></p><p xml:id="Ch60.p13">Mr Joach. Jean Nuiz.<index indexName="Namensregister"><term><hi rendition="#g">Nuiz</hi>, Joachim Jean</term></index></p><p xml:id="Ch60.p14">Touchant le pumex<index indexName="Sachverzeichnis"><term>pumex</term></index> ou pierre ponce des orfeuures lettre de Mons. Boccone.<index indexName="Namensregister"><term><hi rendition="#g">Boccone</hi>, Paolo 1633-1704</term></index></p><p xml:id="Ch60.p15">Mons. des Jardins, docteur en Medecine à Bruxelles.<index indexName="Ortsregister"><term>Brüssel</term></index></p><p xml:id="Ch60.p16">Mons. Lewenhoeck<index indexName="Namensregister"><term><hi rendition="#g">Van Leeuwenhoek</hi>, Antoni 1632-1723</term></index> à Delpht.<index indexName="Ortsregister"><term>Delft</term></index></p><p xml:id="Ch60.p17">Cornelius Mayer<index indexName="Namensregister"><term><hi rendition="#g">Mayer</hi>, Cornelius</term></index> Medecin a un oculus mundi ou opal qui plongé dans l’eau devient transparent. J’ay veu quelques morceaux de cristal de roche de la longueur et de l’epaisseur d’un pouce, <app type="Bfootnote"><lem type="main">les quels</lem><note type="lemma-abbrev">les</note><rdg wit="#L" n="1"> quelques </rdg><rdg wit="#L" n="2"> quels <hi rendition="#i">L</hi></rdg></app> avoient des cavitez dans le milieu qui renfermoient quelque portion d’air et d’eau claire c’estoit une piece rare à voir, à cause que toutes les fois qu’on la remuoit et qu’on tournoit entre deux doigts un de ces morceaux de cristal au travers du jour, on y remarquoit dans les cavitez une boule d’eau, la quelle à proportion du mouuement qu’on donnoit à ce corps solide, <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[changeoit]</corr></lem><rdg wit="#L"><orig>changoit</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> de place (+ se troubloit, à cause d’un peu de terre, qui y estoit encor +) et par apres s’éclaircissoit.</p><p xml:id="Ch60.p18">Estant dans l’isle d’Elbe<index indexName="Ortsregister"><term>Elba</term></index> j’ay remarqué dans le bol rouge des petits morceaux de fer,
+Rolfinckius refert quaedam <app type="Cfootnote">
+<lem type="main">loca Avicennae<index indexName="Namensregister">
+<term>
+<hi rendition="#g">ibn-Sīnā</hi> (Avicenna), Abū Alī al-Ḥusain ibn Abdullāh ca. 980-1037</term>
+</index>
+</lem>
+<note type="lemma-abbrev">loca Avicennae</note>
+<note type="editorial">
+<bibl corresp="#bib_00319">
+<hi rendition="#k">W. Rolfinck</hi>,<hi rendition="#i">De vegetabilibus</hi>, Jena 1670, S. 197, verweist auf <bibl corresp="#bib_01167">
+<hi rendition="#k">Avicenna</hi>,<hi rendition="#i">Canon</hi>, lib. II, tract. I, cap. II, § 3.</bibl>
+</bibl>
+</note>
+</app> de modo investigandi haec particularia.
+Adde <app type="Cfootnote">
+<lem type="main">Porta</lem>
+<note type="editorial">
+<bibl corresp="#bib_00320">
+<hi rendition="#k">G. B. Della Porta</hi>,<hi rendition="#i">Magia naturalis</hi>, Leiden 1650, S. 446.</bibl>
+</note>
+</app>
+<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Della Porta</hi>, Giovanni Battista 1535-1615</term>
+</index> in <hi rendition="#i">Magia</hi> pag. 446 edit. Lugd. Bat. 1650 titulo <hi rendition="#i">quomodo virtutes plantarum vestigandae</hi>.
+Item <index indexName="Namensregister">
+<term>
+<hi rendition="#g">Tacke</hi> (Tachenius), Otto 1610-1680</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">Tachen</lem>
+<note type="editorial">
+<bibl corresp="#bib_00479">
+<hi rendition="#k">O. Tachenius</hi>,<hi rendition="#i">Hippocrates chymicus</hi>, Braunschweig 1668.</bibl>
+</note>
+</app>
+<hi rendition="#i">Hippoc.</hi>
+<app type="Cfootnote">
+<lem type="main">Willis</lem>
+<note type="editorial">
+<bibl corresp="#bib_00322">
+<hi rendition="#k">T. Willis</hi>,<hi rendition="#i">Pharmaceutice rationalis</hi>, Oxford 1674.</bibl>
+</note>
+</app>
+<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Willis</hi>, Thomas 1621-1675</term>
+</index>
+<hi rendition="#i">Pharmaceutice rationalis</hi>
+et <app type="Cfootnote">
+<lem type="main">Pechlin</lem>
+<note type="editorial">
+<bibl corresp="#bib_00499">
+<hi rendition="#k">J. N. Pechlin</hi>,<hi rendition="#i">De purgantium facultatibus</hi>, Leiden 1672.</bibl>
+</note>
+</app>
+<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Pechlin</hi>, Johann Nicolas 1644-1706</term>
+</index> dans une exercitation.</p>
+<p xml:id="Ch60.p7">
+<app type="Cfootnote">
+<lem type="main">
+<anchor xml:id="_035_14_02_105r_01"/>
+<hi rendition="#i">Recherches</hi>
+</lem>
+<note type="editorial">
+<bibl corresp="#bib_00318">
+<hi rendition="#k">P. Boccone</hi>,<hi rendition="#i">Recherches</hi>, Amsterdam 1674.</bibl>
+</note>
+</app>
+<hi rendition="#i">et observations naturelles</hi> imprimées à Amsterdam<index indexName="Ortsregister">
+<term>Amsterdam</term>
+</index> 1674 chez Jean Jans<pb type="VIII_2" n="607"/>
+son<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Janssonius</hi>, Johannes 1588-1664</term>
+</index> a Waesbergue.<index indexName="Ortsregister">
+<term>Waesberghe</term>
+</index>
+<anchor xml:id="_035_14_02_105r_02"/>
+</p>
+<p xml:id="Ch60.p8">Mons. Van der Meer Medecin et Apothicaire de la ville de Delpht.<index indexName="Ortsregister">
+<term>Delft</term>
+</index>
+</p>
+<p xml:id="Ch60.p9">Pseudo-corallium<index indexName="Sachverzeichnis">
+<term>corail</term>
+</index> album fungosum d’Imperatus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Imperato</hi>, Ferrante 1550-1631</term>
+</index> est rare, je ne l’ay veu dans le naturel, qu’une fois dans la ville d’Agrigentum<index indexName="Ortsregister">
+<term>Agrigent</term>
+</index> 1668 chez Mr Rocco Pinzellone<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Pinzellone</hi>, Rocco</term>
+</index> Apothicaire.</p>
+<p xml:id="Ch60.p10">Jean Brayne<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Brayne</hi>, Jean</term>
+</index> droguiste fort curieux à Amsterdam<index indexName="Ortsregister">
+<term>Amsterdam</term>
+</index> dans la rue de Nest.</p>
+<p xml:id="Ch60.p11">Volckert Janse<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Janse</hi>, Volckert</term>
+</index> marchant à Amsterdam<index indexName="Ortsregister">
+<term>Amsterdam</term>
+</index> curieux des choses naturelles Mons. Cognart apothiquaire à Rouen<index indexName="Ortsregister">
+<term>Rouen</term>
+</index> curieux.</p>
+<p xml:id="Ch60.p12">Mons. Montalbani<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Montalbano</hi>, Ovidio 1601-1671</term>
+</index> professeur de Mathematique (+ J’ose, etc. +) avoit dessein de faire imprimer des restes d’Aldrovandi<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Aldrovandi</hi>, Ulisse 1522-1605</term>
+</index>, il a donné déja la <app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i">dendrologia</hi>.
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">dendrologia</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_00323">
+<hi rendition="#k">U. Aldrovandi</hi>,<hi rendition="#i">Dendrologia. Ovidius Montalbanus collegit</hi>, Frankfurt 1671.</bibl>
+</note>
+</app>
+</p>
+<p xml:id="Ch60.p13">Mr Joach. Jean Nuiz.<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Nuiz</hi>, Joachim Jean</term>
+</index>
+</p>
+<p xml:id="Ch60.p14">Touchant le pumex<index indexName="Sachverzeichnis">
+<term>pumex</term>
+</index> ou pierre ponce des orfeuures lettre de Mons. Boccone.<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boccone</hi>, Paolo 1633-1704</term>
+</index>
+</p>
+<p xml:id="Ch60.p15">Mons. des Jardins, docteur en Medecine à Bruxelles.<index indexName="Ortsregister">
+<term>Brüssel</term>
+</index>
+</p>
+<p xml:id="Ch60.p16">Mons. Lewenhoeck<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Van Leeuwenhoek</hi>, Antoni 1632-1723</term>
+</index> à Delpht.<index indexName="Ortsregister">
+<term>Delft</term>
+</index>
+</p>
+<p xml:id="Ch60.p17">Cornelius Mayer<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Mayer</hi>, Cornelius</term>
+</index> Medecin a un oculus mundi ou opal qui plongé dans l’eau devient transparent. J’ay veu quelques morceaux de cristal de roche de la longueur et de l’epaisseur d’un pouce, <app type="Bfootnote">
+<lem type="main">les quels</lem>
+<note type="lemma-abbrev">les</note>
+<rdg wit="#L" n="1"> quelques </rdg>
+<rdg wit="#L" n="2"> quels <hi rendition="#i">L</hi>
+</rdg>
+</app> avoient des cavitez dans le milieu qui renfermoient quelque portion d’air et d’eau claire c’estoit une piece rare à voir, à cause que toutes les fois qu’on la remuoit et qu’on tournoit entre deux doigts un de ces morceaux de cristal au travers du jour, on y remarquoit dans les cavitez une boule d’eau, la quelle à proportion du mouuement qu’on donnoit à ce corps solide, <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[changeoit]</corr>
+</lem>
+<rdg wit="#L">
+<orig>changoit</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> de place (+ se troubloit, à cause d’un peu de terre, qui y estoit encor +) et par apres s’éclaircissoit.</p>
+<p xml:id="Ch60.p18">Estant dans l’isle d’Elbe<index indexName="Ortsregister">
+<term>Elba</term>
+</index> j’ay remarqué dans le bol rouge des petits morceaux de fer,
 le plus souuent chaque morceau de fer avoit des cavitez de figure angulaire dans la surface qui repondent à celles qu’on voit dans ces corps metalliques,
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[appellés]</corr></lem><rdg wit="#L"><orig>appellées</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-<app type="Cfootnote"><lem type="main">par <index indexName="Namensregister"><term><hi rendition="#g">Imperato</hi>, Ferrante 1550-1631</term></index>
-Imperatus</lem><note type="lemma-abbrev">par Imperatus</note><note type="editorial"><bibl corresp="#bib_00500"><hi rendition="#k">F. Imperato</hi>, <hi rendition="#i">Historia naturale</hi>, Venedig 1672, lib. XVI, cap. 13, S. 401f.</bibl></note></app>
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[appellés]</corr>
+</lem>
+<rdg wit="#L">
+<orig>appellées</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+<app type="Cfootnote">
+<lem type="main">par <index indexName="Namensregister">
+<term>
+<hi rendition="#g">Imperato</hi>, Ferrante 1550-1631</term>
+</index>
+Imperatus</lem>
+<note type="lemma-abbrev">par Imperatus</note>
+<note type="editorial">
+<bibl corresp="#bib_00500">
+<hi rendition="#k">F. Imperato</hi>,<hi rendition="#i">Historia naturale</hi>, Venedig 1672, lib. XVI, cap. 13, S. 401f.</bibl>
+</note>
+</app>
 Glebe di ferro et
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[suoi]</corr></lem><rdg wit="#L"><orig>suo</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[suoi]</corr>
+</lem>
+<rdg wit="#L">
+<orig>suo</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
 ingemmamenti lib. 16, <hi rendition="#i">Hist. nat.</hi>
-Et comme cela est fort regulier dans cette espece de bol, nous pouuons dire que cette demonstration confirme l’opinion de Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi>, Robert 1627-1691</term></index> de gemmis, fuisse olim gemmas ex parte saltem liquidas et pellucidas. Adde effectum boli <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">illius</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> astringentem a ferro.</p><p xml:id="Ch60.p19">Eremitage de S. Cire<index indexName="Ortsregister"><term>Saint-Cyr-au-Mont-d’Or</term></index> proche de Lion<index indexName="Ortsregister"><term>Lyon</term></index>. Il y a une prodigieuse quantité de Belemnites, et les paysans les appellent des quilles, à cause de leur figure sont bitumineux. Puisqu’on dit qu’ils sont bons pour la gravelle, on les pourroit preparer comme Ludus Paracelsi<index indexName="Sachverzeichnis"><term>Ludus Paracelsi</term></index> dont a parlé Helmont<index indexName="Namensregister"><term><hi rendition="#g">Van Helmont</hi>, Johan Baptista 1580-1644</term></index>.
-Estant à Haure<index indexName="Ortsregister"><term>Le Havre</term></index> de grace et me promenant j’ay trouué de petits cailloux, <app type="Bfootnote"><lem type="main">agathes<index indexName="Sachverzeichnis"><term>agate</term></index> et</lem><note type="lemma-abbrev">agathes</note><rdg wit="#L" n="1"> des </rdg><rdg wit="#L" n="2"> et <hi rendition="#i">L</hi></rdg></app> autres especes, fermé blanche, comme bol, dedans; Mons. Tauron qui s’y trouue, homme d’esprit et curieux me dit qu’une personne fort ingenieuse a composé un cabinet de ces morceaux d’Agathe<index indexName="Sachverzeichnis"><term>agate</term></index> qu’il avoit triés des cailloux qu’il avoit <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[cassés]</corr></lem><rdg wit="#L"><orig>cassé </orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>.
+Et comme cela est fort regulier dans cette espece de bol, nous pouuons dire que cette demonstration confirme l’opinion de Mons. Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi>, Robert 1627-1691</term>
+</index> de gemmis, fuisse olim gemmas ex parte saltem liquidas et pellucidas. Adde effectum boli <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">illius</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> astringentem a ferro.</p>
+<p xml:id="Ch60.p19">Eremitage de S. Cire<index indexName="Ortsregister">
+<term>Saint-Cyr-au-Mont-d’Or</term>
+</index> proche de Lion<index indexName="Ortsregister">
+<term>Lyon</term>
+</index>. Il y a une prodigieuse quantité de Belemnites, et les paysans les appellent des quilles, à cause de leur figure sont bitumineux. Puisqu’on dit qu’ils sont bons pour la gravelle, on les pourroit preparer comme Ludus Paracelsi<index indexName="Sachverzeichnis">
+<term>Ludus Paracelsi</term>
+</index> dont a parlé Helmont<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Van Helmont</hi>, Johan Baptista 1580-1644</term>
+</index>.
+Estant à Haure<index indexName="Ortsregister">
+<term>Le Havre</term>
+</index> de grace et me promenant j’ay trouué de petits cailloux, <app type="Bfootnote">
+<lem type="main">agathes<index indexName="Sachverzeichnis">
+<term>agate</term>
+</index> et</lem>
+<note type="lemma-abbrev">agathes</note>
+<rdg wit="#L" n="1"> des </rdg>
+<rdg wit="#L" n="2"> et <hi rendition="#i">L</hi>
+</rdg>
+</app> autres especes, fermé blanche, comme bol, dedans; Mons. Tauron qui s’y trouue, homme d’esprit et curieux me dit qu’une personne fort ingenieuse a composé un cabinet de ces morceaux d’Agathe<index indexName="Sachverzeichnis">
+<term>agate</term>
+</index> qu’il avoit triés des cailloux qu’il avoit <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[cassés]</corr>
+</lem>
+<rdg wit="#L">
+<orig>cassé </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>.
 (J’ay trouué aussi comme des cristaux dans ces pierres).
 Cette même personne avoit une adresse merveilleuse à casser un
-<app type="Bfootnote"><lem type="main">bizet à plat d’un coup de [poigne] en</lem><note type="lemma-abbrev">bizet à</note><rdg wit="#L" n="1"> coups de poign </rdg><rdg wit="#L" n="2"> plat </rdg><rdg wit="#L" n="3"> plat d’un coup de <note type="editorial">|</note> poign <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note> en <hi rendition="#i">L</hi></rdg></app>
-suspendant le bizet avec deux doigts sur la surface de la terre. En montant la riviere pour venir à Rouen<index indexName="Ortsregister"><term>Rouen</term></index> je <pb type="VIII_2" n="608"/>trouuay une partie de ces cailloux qui faisoient du bruit en les <app type="Bfootnote"><lem type="main">secouant</lem><note type="lemma-abbrev">les</note><rdg wit="#L" n="1"> remuant </rdg><rdg wit="#L" n="2"> secouant <hi rendition="#i">L</hi></rdg></app> ce que le vulgaire appelle Corail noir<index indexName="Sachverzeichnis"><term>corail</term></index>, n’est qu’un vray Antipates.</p><p xml:id="Ch60.p20">Mons. Alex. Strayti<index indexName="Namensregister"><term><hi rendition="#g">Strayti</hi>, Alexandre</term></index> de Trapani.<index indexName="Ortsregister"><term>Trapani</term></index></p><p xml:id="Ch60.p21">Ceux qui ont la peine de comprendre Faba Egyptia <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">des anciens</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> après ce que dit <app type="Cfootnote"><lem type="main">Clusius</lem><note type="editorial"><bibl corresp="#bib_00489"><hi rendition="#k">C. de L’Ecluse</hi>, <hi rendition="#i">Exoticorum libri</hi>, Leiden 1605, S. 32.</bibl></note></app><index indexName="Namensregister"><term><hi rendition="#g">L’Ecluse</hi> (Clusius), Charles de 1526-1609</term></index>
+<app type="Bfootnote">
+<lem type="main">bizet à plat d’un coup de [poigne] en</lem>
+<note type="lemma-abbrev">bizet à</note>
+<rdg wit="#L" n="1"> coups de poign </rdg>
+<rdg wit="#L" n="2"> plat </rdg>
+<rdg wit="#L" n="3"> plat d’un coup de <note type="editorial">|</note> poign <note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi> |
+</note> en <hi rendition="#i">L</hi>
+</rdg>
+</app>
+suspendant le bizet avec deux doigts sur la surface de la terre. En montant la riviere pour venir à Rouen<index indexName="Ortsregister">
+<term>Rouen</term>
+</index> je <pb type="VIII_2" n="608"/>
+trouuay une partie de ces cailloux qui faisoient du bruit en les <app type="Bfootnote">
+<lem type="main">secouant</lem>
+<note type="lemma-abbrev">les</note>
+<rdg wit="#L" n="1"> remuant </rdg>
+<rdg wit="#L" n="2"> secouant <hi rendition="#i">L</hi>
+</rdg>
+</app> ce que le vulgaire appelle Corail noir<index indexName="Sachverzeichnis">
+<term>corail</term>
+</index>, n’est qu’un vray Antipates.</p>
+<p xml:id="Ch60.p20">Mons. Alex. Strayti<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Strayti</hi>, Alexandre</term>
+</index> de Trapani.<index indexName="Ortsregister">
+<term>Trapani</term>
+</index>
+</p>
+<p xml:id="Ch60.p21">Ceux qui ont la peine de comprendre Faba Egyptia <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">des anciens</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> après ce que dit <app type="Cfootnote">
+<lem type="main">Clusius</lem>
+<note type="editorial">
+<bibl corresp="#bib_00489">
+<hi rendition="#k">C. de L’Ecluse</hi>,<hi rendition="#i">Exoticorum libri</hi>, Leiden 1605, S. 32.</bibl>
+</note>
+</app>
+<index indexName="Namensregister">
+<term>
+<hi rendition="#g">L’Ecluse</hi> (Clusius), Charles de 1526-1609</term>
+</index>
 lib. 2 cap. 13
-et <app type="Cfootnote"><lem type="main">Theophrastus</lem><note type="editorial"><bibl corresp="#bib_00325"><hi rendition="#k">Theophrast</hi>, <hi rendition="#i">De historia plantarum</hi>, Amsterdam 1644, S. 448.</bibl></note></app><index indexName="Namensregister"><term><hi rendition="#g">Theophrast</hi> 371-287 v.Chr.</term></index> cum notis Bodaei a Stapel<index indexName="Namensregister"><term><hi rendition="#g">Bodaeus Van Stapel</hi>, Johannes 1602-1636</term></index> pag. 448,
-pourront voir le fruit de la même faba Egyptia dans son entier dans le cabinet de Mons. de S. Victor à Bruxelles<index indexName="Ortsregister"><term>Brüssel</term></index>, confirmée par le fidel rapport de Justus Heurnius<index indexName="Namensregister"><term><hi rendition="#g">Heurnius</hi>, Justus 1587-1652</term></index> sous le nom de
-<app type="Bfootnote"><lem type="main">Nymphaea glandifera Batavica</lem><note type="lemma-abbrev">Nymphaea</note><rdg wit="#L" n="1"> Buccifera </rdg><rdg wit="#L" n="2"> glandifera Batavica <hi rendition="#i">L</hi></rdg></app>
-Javorum.</p><p xml:id="Ch60.p22">Cabinet de M. Justus Roeters<index indexName="Namensregister"><term><hi rendition="#g">Roeters</hi>, Justus</term></index> Conseiller de la ville d’Amsterdam.<index indexName="Ortsregister"><term>Amsterdam</term></index></p><p xml:id="Ch60.p23">Mons. Porree <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[marchand]</corr></lem><rdg wit="#L"><orig>marchande </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> de Rouen <index indexName="Ortsregister"><term>Rouen</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">de la</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> connaissance de Mons. Boccone.<index indexName="Namensregister"><term><hi rendition="#g">Boccone</hi>, Paolo 1633-1704</term></index>
-<pb type="L"/><fw type="folNum">[106 v<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch60.p24">Je viens d’apprendre par une lettre que Mons. Chatton chirurgien tres habile de Montargis<index indexName="Ortsregister"><term>Montargis</term></index> a <app type="Bfootnote"><lem type="main">ecrit il</lem><rdg wit="#L">ecrit <note type="editorial">|</note> de <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> il <hi rendition="#i">L</hi></rdg></app> y a quelques mois à Mons. Thuillier docteur en Medecine de l’université d’Angers<index indexName="Ortsregister"><term>Angers</term></index> d’un bled
-que les paisans du Gastinois<index indexName="Ortsregister"><term>Gastinois</term></index> et de la Sologne<index indexName="Ortsregister"><term>Sologne</term></index> appellent bled
-cornu à cause de sa figure. Estant à Amsterdam<index indexName="Ortsregister"><term>Amsterdam</term></index> Mons. Justus Schrader<index indexName="Namensregister"><term><hi rendition="#g">Schrader</hi>, Justus</term></index> me dit qu’il vouloit écrire de veneno<index indexName="Sachverzeichnis"><term>venenum</term></index>, et d’enseigner les veritables remedes et antidotes<index indexName="Sachverzeichnis"><term>antidote</term></index> contre chacun en particulier. Il me pria de luy communiquer ce que j’en sçavois. Je <app type="Bfootnote"><lem type="main">m’excusa</lem><note type="lemma-abbrev">Je</note><rdg wit="#L" n="1"> luy repo </rdg><rdg wit="#L" n="2"> m’excusa, <hi rendition="#i">L</hi></rdg></app>, disant que cela me paroissoit trop dangereux à cause de l’abus. Des forçats<index indexName="Sachverzeichnis"><term>forçats</term></index> ayant mangé dans une salade apparemment des feuilles de mandragore<index indexName="Sachverzeichnis"><term>mandragore</term></index>, ayant cueilli cette salade au bord de la mer, l’un en mourut, les autres n’en furent que legerement incommodés ayant mangé peu. Je croy que c’estoit Mandragore<index indexName="Sachverzeichnis"><term>mandragore</term></index>, car elle est commune dans les isles de la mediterranée<index indexName="Ortsregister"><term>Mittelmeer</term></index>. La cigue a esté mise souuent pour du cerfeuil<index indexName="Sachverzeichnis"><term>cerfeuil</term></index> et persil<index indexName="Sachverzeichnis"><term>persil</term></index>. Un esclave à Pisa<index indexName="Ortsregister"><term>Pisa</term></index> l’ayant fait, on le trouua mort, ayant jetté par le nez et la bouche une matiere blanche en façon d’ecume ou de cervelle liquéfiée. Un enfant de Bruxelles<index indexName="Ortsregister"><term>Brüssel</term></index>, aagé de 6 ans, en avoit mangé avec son
-Bu<formula xml:id="Ch60.p24.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟨</m:mo></m:math></formula>ter<formula xml:id="Ch60.p24.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mo stretchy="false">⟩</m:mo></m:math></formula>ramme.
-Des paysans proche de l’isle l’année que le Roy la prit, <pb type="VIII_2" n="609"/>mangerent du solanum Lethale furiosum<index indexName="Sachverzeichnis"><term>solanum lethale</term></index>, ou Belladonna Italorum<index indexName="Sachverzeichnis"><term>Belladonna</term></index>, fruits qui ressemblant assez à des cerises, <app type="Bfootnote"><lem type="main">les uns</lem><note type="lemma-abbrev">cerises,</note><rdg wit="#L" n="1"> les un </rdg><rdg wit="#L" n="2"> les uns <hi rendition="#i">L</hi></rdg></app> en moururent, les autres devinrent fols, et furent gueris enfin après 8 jours ou plus. Voyez Tragus<index indexName="Sachverzeichnis"><term>tragus</term></index> des proprietez de cette plante qui s’y rapporte assez. Semence d’Hyoscyamum<index indexName="Sachverzeichnis"><term>hyoscyamum</term></index> dans la salade en Italie<index indexName="Ortsregister"><term>Italien</term></index> fit une violente fieure de 10 heures vin noir, ou rouge antidote de cicuta<index indexName="Sachverzeichnis"><term>cicuta</term></index>, sel saturne<index indexName="Sachverzeichnis"><term>sel saturne</term></index> pris trop souuent <app type="Bfootnote"><lem type="main">fit</lem><note type="lemma-abbrev">souuent</note><rdg wit="#L" n="1"> fait pe </rdg><rdg wit="#L" n="2"> fit <hi rendition="#i">L</hi></rdg></app> mourir ayant osté l’appetit.</p><p xml:id="Ch60.p25">Semence de Stramonium<index indexName="Sachverzeichnis"><term>stramonium</term></index> rend les personnes folles et furieuses. Remede avec vinaigre ou jus de citron<index indexName="Sachverzeichnis"><term>citron</term></index>. Le même remede <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[est salutaire]</corr></lem><rdg wit="#L"><orig>sont salutaires</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> pour la graine de jusquiasme<index indexName="Sachverzeichnis"><term>jusquiasme</term></index> et pour l’opium<index indexName="Sachverzeichnis"><term>opium</term></index>. On a remarqué en quelques quartiers d’Italie<index indexName="Ortsregister"><term>Italien</term></index> que dans <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[l’ombelle<index indexName="Sachverzeichnis"><term>ombelle</term></index>]</corr></lem><rdg wit="#L"><orig>l’umbelle</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> de fenouil<index indexName="Sachverzeichnis"><term>fenouil</term></index> et dans le coeur de raphanus<index indexName="Sachverzeichnis"><term>raphanus</term></index> se <hi rendition="#g">trouue des estranges bestes</hi> longa radice se trouuent des insectes, qui causent estranges aardens. En Angleterre<index indexName="Ortsregister"><term>England</term></index> on fait grand estat de la serpentaria virginiana<index indexName="Sachverzeichnis"><term>serpentaria virginiana</term></index>, je ne sçay si cette plante est la radix Snagroel<index indexName="Sachverzeichnis"><term>radix Snagroel</term></index> (notae Anglicae). Les curieux de Florence<index indexName="Ortsregister"><term>Florenz</term></index> ont fait experience devant son altesse de Toscane<index indexName="Ortsregister"><term>Toskana</term></index> d’une huyle qu’ils sçavent preparer dans la quelle si l’on trempe un fil et que l’on le passe dans la cuisse de quelques poules ou chapons, les animaux meurent incontinent. Ceux qui ont quelque connoissance des plantes n’auront point de peine à decouurir qu’elle est l’herbe de Balestrero<index indexName="Sachverzeichnis"><term>herbe de Balestrero</term></index> dont on se sert en Espagne<index indexName="Ortsregister"><term>Spanien</term></index> pour empoisonner les fleches au rapport de Schenckius<index indexName="Namensregister"><term><hi rendition="#g">Schenck</hi>, Matthias 1517-1571</term></index> en ces observations. J’ay quelque part dans mes memoires le nom d’une plante de laquelle si l’on fait du charbon, <app type="Bfootnote"><lem type="main">pour</lem><note type="lemma-abbrev">charbon,</note><rdg wit="#L" n="1"> et si </rdg><rdg wit="#L" n="2"> pour <hi rendition="#i">L</hi></rdg></app> en composer de la poudre à canon on aura une poudre qui fera mourir sur <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[les]</corr></lem><rdg wit="#L"><orig>le</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> champs, les animaux qui en auront esté blessez.</p><p xml:id="Ch60.p26">A Peruse<index indexName="Ortsregister"><term>Perugia</term></index> on me fit voir un traité des venins, Ms. avec <app type="Bfootnote"><lem type="main">40</lem><note type="lemma-abbrev">avec</note><rdg wit="#L" n="1"> une </rdg><rdg wit="#L" n="2"> 40 <hi rendition="#i">L</hi></rdg></app> figures deja gravées en tailledouce. Ce discours en Latin, L’auteur Annibal Camilli<index indexName="Namensregister"><term><hi rendition="#g">Camilli</hi>, Annibale geb. 1498</term></index> deja mort. Son ms. possedé par Charles Camilli<index indexName="Namensregister"><term><hi rendition="#g">Camilli</hi>, Charles</term></index> <app type="Bfootnote"><lem type="main">notaire</lem><rdg wit="#L">notaire <note type="editorial">|</note> notaire <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> de <hi rendition="#i">L</hi></rdg></app> de la dite ville. Ces figures de Camilli et de Mons. Grevin<index indexName="Namensregister"><term><hi rendition="#g">Grevin</hi>, Jacques 1538-1570</term></index> me parurent si semblables, comme si les unes estoient copiées des autres mais cela ne peut pas estre.</p><p xml:id="Ch60.p27">Le bled cornu vient vers le bas de l’espic du seigle, il est de l’epaisseur d’un grain de froment, il est egalement gris dans toute sa longueur excepté vers les extremes, où il deminue un peu, et il est composé de 3 morceaux[,] il est de couleur de chastaigne mais fort obscure tirant sur le noir. Il a tantost demy pouce de longueur, tantost un pouce, presque figure quarrée, estant divisé par un sulcus qui va d’une extremité à l’autre. J’ay dessein <pb type="VIII_2" n="610"/>de le semer, pour voir s’il degenere, et quelle plante il pourroit produire. Caspar<index indexName="Namensregister"><term><hi rendition="#g">Bauhin</hi>, Caspar 1560-1624</term></index> et Joh. Bauhinus<index indexName="Namensregister"><term><hi rendition="#g">Bauhin</hi>, Johann 1541-1612</term></index> en ont fait mention sous le nom de secale luxurians<index indexName="Sachverzeichnis"><term>secale luxurians</term></index> vid. pag. 23.
-<app type="Cfootnote"><lem type="main"><hi rendition="#i">pinax.</hi></lem><note type="lemma-abbrev"><hi rendition="#i">pinax</hi></note><note type="editorial"><bibl corresp="#bib_00502"><hi rendition="#k">C. Bauhin</hi>, <hi rendition="#i">Pinax theatri botanici</hi>, Basel 1671, S. 23.</bibl></note></app>
-L’an 1675 aux environs de Bourges<index indexName="Ortsregister"><term>Bourges</term></index> capitale du Berry<index indexName="Ortsregister"><term>Berry</term></index> plusieurs paisans en furent estrangement incommodes et que lors la gangrene<index indexName="Sachverzeichnis"><term>gangrene</term></index> s’attache elle rongé et fond la chair en pourriture, et sur les os ordinairement, il ne s’engendre point de chair, laissant la peau <app type="Bfootnote"><lem type="main">et les nerfs</lem><note type="lemma-abbrev">et les</note><rdg wit="#L" n="1"> os </rdg><rdg wit="#L" n="2"> nerfs <hi rendition="#i">L</hi></rdg></app> à sec. Extrait de la lettre même. C’est un des grains de l’epic du seigle qui se convertit ainsi, croissant et s’allongeant de beaucoup hors de l’egalité de l’epy, il est courbé un peu, <graphic xml:id="Ch60.p27.g1" url="./images/lh0351402_106v-d1.svg" width="86.724pt"/> noir <app type="Bfootnote"><lem type="main">dessous</lem><note type="lemma-abbrev">noir</note><rdg wit="#L" n="1"> dedans </rdg><rdg wit="#L" n="2"> dessous, <hi rendition="#i">L</hi></rdg></app>, blanc dedans. <app type="Bfootnote"><lem type="main">Les</lem><note type="lemma-abbrev">dedans.</note><rdg wit="#L" n="1"> Un </rdg><rdg wit="#L" n="2"> Les <hi rendition="#i">L</hi></rdg></app> auteurs n’en parlent pas, on n’en ressent point incontinent les effects, mais un certain engourdissement quelques fois à une, quelques fois à 2 jambes, après cela un peu de douleur, enflure pas inflammation, on sent de la froideur; ensuite il y paroist une lividité, et après une gangrene<index indexName="Sachverzeichnis"><term>gangrene</term></index>, qui est longtemps aux parties internes; avant qu’elle paroisse à la peau, ces jours passés ouurant <app type="Bfootnote"><lem type="main">ce</lem><note type="lemma-abbrev">ouurant</note><rdg wit="#L" n="1"> de </rdg><rdg wit="#L" n="2"> ce <hi rendition="#i">L</hi></rdg></app> cuir pour sçavoir si le dessous estoit gangrené, introduisant mon doigt dans l’ouuerture, et separant les chairs qui estoient gangrenées, il en sortit des vents avec bruit si grand qu’ils eteignirent la chandelle qui estoit proche et celuy qui la tenoit, fils du chirurgien tomba à la renverse par la puanteur extraordinaire. Si on n’est pas securu par l’amputation<index indexName="Sachverzeichnis"><term>amputation</term></index>, la gangrene<index indexName="Sachverzeichnis"><term>gangrene</term></index> monte jusqu’ aux epaules, avant qu’ils meurent. C’est un de mes etonnemens, mais il faut croire, que des jambes et cuisses elle monte par derriere le long de l’épine du dos, et non pas par devant. Les jambes cependant deviennent seches, menues et d’une noirceur épouuentable, sans tomber en pourriture, comme s’il ne restoit que des os couuerts de la peau. J’ay veu il y a 38 ans ce mal regner dans la Sologne<index indexName="Ortsregister"><term>Sologne</term></index> dont il mourut beaucoup de paisans qui y sont plus sujets, ne mangeant que du pain de seigle. Le pays n’en produisant point d’autre. Et ce pays cornu ne s’engendre que dans le seigle comme l’yuraye au froment. L’un et l’autre arrive dans les annees extraordinaires. Mais le bled cornu est plus rare: je ne le sçay que pour la 3<hi rendition="#sup">me</hi> fois en 38 ans.
+et <app type="Cfootnote">
+<lem type="main">Theophrastus</lem>
+<note type="editorial">
+<bibl corresp="#bib_00325">
+<hi rendition="#k">Theophrast</hi>,<hi rendition="#i">De historia plantarum</hi>, Amsterdam 1644, S. 448.</bibl>
+</note>
+</app>
+<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Theophrast</hi> 371-287 v.Chr.</term>
+</index> cum notis Bodaei a Stapel<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Bodaeus Van Stapel</hi>, Johannes 1602-1636</term>
+</index> pag. 448,
+pourront voir le fruit de la même faba Egyptia dans son entier dans le cabinet de Mons. de S. Victor à Bruxelles<index indexName="Ortsregister">
+<term>Brüssel</term>
+</index>, confirmée par le fidel rapport de Justus Heurnius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Heurnius</hi>, Justus 1587-1652</term>
+</index> sous le nom de
+<app type="Bfootnote">
+<lem type="main">Nymphaea glandifera Batavica</lem>
+<note type="lemma-abbrev">Nymphaea</note>
+<rdg wit="#L" n="1"> Buccifera </rdg>
+<rdg wit="#L" n="2"> glandifera Batavica <hi rendition="#i">L</hi>
+</rdg>
+</app>
+Javorum.</p>
+<p xml:id="Ch60.p22">Cabinet de M. Justus Roeters<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Roeters</hi>, Justus</term>
+</index> Conseiller de la ville d’Amsterdam.<index indexName="Ortsregister">
+<term>Amsterdam</term>
+</index>
+</p>
+<p xml:id="Ch60.p23">Mons. Porree <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[marchand]</corr>
+</lem>
+<rdg wit="#L">
+<orig>marchande </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> de Rouen <index indexName="Ortsregister">
+<term>Rouen</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">de la</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> connaissance de Mons. Boccone.<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boccone</hi>, Paolo 1633-1704</term>
+</index>
+<pb type="L"/>
+<fw type="folNum">[106 v<hi rendition="#sup">o</hi>]
+</fw>
+</p>
+<p xml:id="Ch60.p24">Je viens d’apprendre par une lettre que Mons. Chatton chirurgien tres habile de Montargis<index indexName="Ortsregister">
+<term>Montargis</term>
+</index> a <app type="Bfootnote">
+<lem type="main">ecrit il</lem>
+<rdg wit="#L">ecrit <note type="editorial">|</note> de <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> il <hi rendition="#i">L</hi>
+</rdg>
+</app> y a quelques mois à Mons. Thuillier docteur en Medecine de l’université d’Angers<index indexName="Ortsregister">
+<term>Angers</term>
+</index> d’un bled
+que les paisans du Gastinois<index indexName="Ortsregister">
+<term>Gastinois</term>
+</index> et de la Sologne<index indexName="Ortsregister">
+<term>Sologne</term>
+</index> appellent bled
+cornu à cause de sa figure. Estant à Amsterdam<index indexName="Ortsregister">
+<term>Amsterdam</term>
+</index> Mons. Justus Schrader<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Schrader</hi>, Justus</term>
+</index> me dit qu’il vouloit écrire de veneno<index indexName="Sachverzeichnis">
+<term>venenum</term>
+</index>, et d’enseigner les veritables remedes et antidotes<index indexName="Sachverzeichnis">
+<term>antidote</term>
+</index> contre chacun en particulier. Il me pria de luy communiquer ce que j’en sçavois. Je <app type="Bfootnote">
+<lem type="main">m’excusa</lem>
+<note type="lemma-abbrev">Je</note>
+<rdg wit="#L" n="1"> luy repo </rdg>
+<rdg wit="#L" n="2"> m’excusa, <hi rendition="#i">L</hi>
+</rdg>
+</app>, disant que cela me paroissoit trop dangereux à cause de l’abus. Des forçats<index indexName="Sachverzeichnis">
+<term>forçats</term>
+</index> ayant mangé dans une salade apparemment des feuilles de mandragore<index indexName="Sachverzeichnis">
+<term>mandragore</term>
+</index>, ayant cueilli cette salade au bord de la mer, l’un en mourut, les autres n’en furent que legerement incommodés ayant mangé peu. Je croy que c’estoit Mandragore<index indexName="Sachverzeichnis">
+<term>mandragore</term>
+</index>, car elle est commune dans les isles de la mediterranée<index indexName="Ortsregister">
+<term>Mittelmeer</term>
+</index>. La cigue a esté mise souuent pour du cerfeuil<index indexName="Sachverzeichnis">
+<term>cerfeuil</term>
+</index> et persil<index indexName="Sachverzeichnis">
+<term>persil</term>
+</index>. Un esclave à Pisa<index indexName="Ortsregister">
+<term>Pisa</term>
+</index> l’ayant fait, on le trouua mort, ayant jetté par le nez et la bouche une matiere blanche en façon d’ecume ou de cervelle liquéfiée. Un enfant de Bruxelles<index indexName="Ortsregister">
+<term>Brüssel</term>
+</index>, aagé de 6 ans, en avoit mangé avec son
+Bu<formula xml:id="Ch60.p24.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>ter<formula xml:id="Ch60.p24.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>ramme.
+Des paysans proche de l’isle l’année que le Roy la prit, <pb type="VIII_2" n="609"/>
+mangerent du solanum Lethale furiosum<index indexName="Sachverzeichnis">
+<term>solanum lethale</term>
+</index>, ou Belladonna Italorum<index indexName="Sachverzeichnis">
+<term>Belladonna</term>
+</index>, fruits qui ressemblant assez à des cerises, <app type="Bfootnote">
+<lem type="main">les uns</lem>
+<note type="lemma-abbrev">cerises,</note>
+<rdg wit="#L" n="1"> les un </rdg>
+<rdg wit="#L" n="2"> les uns <hi rendition="#i">L</hi>
+</rdg>
+</app> en moururent, les autres devinrent fols, et furent gueris enfin après 8 jours ou plus. Voyez Tragus<index indexName="Sachverzeichnis">
+<term>tragus</term>
+</index> des proprietez de cette plante qui s’y rapporte assez. Semence d’Hyoscyamum<index indexName="Sachverzeichnis">
+<term>hyoscyamum</term>
+</index> dans la salade en Italie<index indexName="Ortsregister">
+<term>Italien</term>
+</index> fit une violente fieure de 10 heures vin noir, ou rouge antidote de cicuta<index indexName="Sachverzeichnis">
+<term>cicuta</term>
+</index>, sel saturne<index indexName="Sachverzeichnis">
+<term>sel saturne</term>
+</index> pris trop souuent <app type="Bfootnote">
+<lem type="main">fit</lem>
+<note type="lemma-abbrev">souuent</note>
+<rdg wit="#L" n="1"> fait pe </rdg>
+<rdg wit="#L" n="2"> fit <hi rendition="#i">L</hi>
+</rdg>
+</app> mourir ayant osté l’appetit.</p>
+<p xml:id="Ch60.p25">Semence de Stramonium<index indexName="Sachverzeichnis">
+<term>stramonium</term>
+</index> rend les personnes folles et furieuses. Remede avec vinaigre ou jus de citron<index indexName="Sachverzeichnis">
+<term>citron</term>
+</index>. Le même remede <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[est salutaire]</corr>
+</lem>
+<rdg wit="#L">
+<orig>sont salutaires</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> pour la graine de jusquiasme<index indexName="Sachverzeichnis">
+<term>jusquiasme</term>
+</index> et pour l’opium<index indexName="Sachverzeichnis">
+<term>opium</term>
+</index>. On a remarqué en quelques quartiers d’Italie<index indexName="Ortsregister">
+<term>Italien</term>
+</index> que dans <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[l’ombelle<index indexName="Sachverzeichnis">
+<term>ombelle</term>
+</index>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>l’umbelle</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> de fenouil<index indexName="Sachverzeichnis">
+<term>fenouil</term>
+</index> et dans le coeur de raphanus<index indexName="Sachverzeichnis">
+<term>raphanus</term>
+</index> se <hi rendition="#g">trouue des estranges bestes</hi> longa radice se trouuent des insectes, qui causent estranges aardens. En Angleterre<index indexName="Ortsregister">
+<term>England</term>
+</index> on fait grand estat de la serpentaria virginiana<index indexName="Sachverzeichnis">
+<term>serpentaria virginiana</term>
+</index>, je ne sçay si cette plante est la radix Snagroel<index indexName="Sachverzeichnis">
+<term>radix Snagroel</term>
+</index> (notae Anglicae). Les curieux de Florence<index indexName="Ortsregister">
+<term>Florenz</term>
+</index> ont fait experience devant son altesse de Toscane<index indexName="Ortsregister">
+<term>Toskana</term>
+</index> d’une huyle qu’ils sçavent preparer dans la quelle si l’on trempe un fil et que l’on le passe dans la cuisse de quelques poules ou chapons, les animaux meurent incontinent. Ceux qui ont quelque connoissance des plantes n’auront point de peine à decouurir qu’elle est l’herbe de Balestrero<index indexName="Sachverzeichnis">
+<term>herbe de Balestrero</term>
+</index> dont on se sert en Espagne<index indexName="Ortsregister">
+<term>Spanien</term>
+</index> pour empoisonner les fleches au rapport de Schenckius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Schenck</hi>, Matthias 1517-1571</term>
+</index> en ces observations. J’ay quelque part dans mes memoires le nom d’une plante de laquelle si l’on fait du charbon, <app type="Bfootnote">
+<lem type="main">pour</lem>
+<note type="lemma-abbrev">charbon,</note>
+<rdg wit="#L" n="1"> et si </rdg>
+<rdg wit="#L" n="2"> pour <hi rendition="#i">L</hi>
+</rdg>
+</app> en composer de la poudre à canon on aura une poudre qui fera mourir sur <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[les]</corr>
+</lem>
+<rdg wit="#L">
+<orig>le</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> champs, les animaux qui en auront esté blessez.</p>
+<p xml:id="Ch60.p26">A Peruse<index indexName="Ortsregister">
+<term>Perugia</term>
+</index> on me fit voir un traité des venins, Ms. avec <app type="Bfootnote">
+<lem type="main">40</lem>
+<note type="lemma-abbrev">avec</note>
+<rdg wit="#L" n="1"> une </rdg>
+<rdg wit="#L" n="2"> 40 <hi rendition="#i">L</hi>
+</rdg>
+</app> figures deja gravées en tailledouce. Ce discours en Latin, L’auteur Annibal Camilli<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Camilli</hi>, Annibale geb. 1498</term>
+</index> deja mort. Son ms. possedé par Charles Camilli<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Camilli</hi>, Charles</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">notaire</lem>
+<rdg wit="#L">notaire <note type="editorial">|</note> notaire <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> de <hi rendition="#i">L</hi>
+</rdg>
+</app> de la dite ville. Ces figures de Camilli et de Mons. Grevin<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Grevin</hi>, Jacques 1538-1570</term>
+</index> me parurent si semblables, comme si les unes estoient copiées des autres mais cela ne peut pas estre.</p>
+<p xml:id="Ch60.p27">Le bled cornu vient vers le bas de l’espic du seigle, il est de l’epaisseur d’un grain de froment, il est egalement gris dans toute sa longueur excepté vers les extremes, où il deminue un peu, et il est composé de 3 morceaux[,] il est de couleur de chastaigne mais fort obscure tirant sur le noir. Il a tantost demy pouce de longueur, tantost un pouce, presque figure quarrée, estant divisé par un sulcus qui va d’une extremité à l’autre. J’ay dessein <pb type="VIII_2" n="610"/>
+de le semer, pour voir s’il degenere, et quelle plante il pourroit produire. Caspar<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Bauhin</hi>, Caspar 1560-1624</term>
+</index> et Joh. Bauhinus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Bauhin</hi>, Johann 1541-1612</term>
+</index> en ont fait mention sous le nom de secale luxurians<index indexName="Sachverzeichnis">
+<term>secale luxurians</term>
+</index> vid. pag. 23.
+<app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i">pinax.</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">pinax</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_00502">
+<hi rendition="#k">C. Bauhin</hi>,<hi rendition="#i">Pinax theatri botanici</hi>, Basel 1671, S. 23.</bibl>
+</note>
+</app>
+L’an 1675 aux environs de Bourges<index indexName="Ortsregister">
+<term>Bourges</term>
+</index> capitale du Berry<index indexName="Ortsregister">
+<term>Berry</term>
+</index> plusieurs paisans en furent estrangement incommodes et que lors la gangrene<index indexName="Sachverzeichnis">
+<term>gangrene</term>
+</index> s’attache elle rongé et fond la chair en pourriture, et sur les os ordinairement, il ne s’engendre point de chair, laissant la peau <app type="Bfootnote">
+<lem type="main">et les nerfs</lem>
+<note type="lemma-abbrev">et les</note>
+<rdg wit="#L" n="1"> os </rdg>
+<rdg wit="#L" n="2"> nerfs <hi rendition="#i">L</hi>
+</rdg>
+</app> à sec. Extrait de la lettre même. C’est un des grains de l’epic du seigle qui se convertit ainsi, croissant et s’allongeant de beaucoup hors de l’egalité de l’epy, il est courbé un peu, <graphic xml:id="Ch60.p27.g1" url="./images/lh0351402_106v-d1.svg" width="86.724pt"/>
+ noir <app type="Bfootnote">
+<lem type="main">dessous</lem>
+<note type="lemma-abbrev">noir</note>
+<rdg wit="#L" n="1"> dedans </rdg>
+<rdg wit="#L" n="2"> dessous, <hi rendition="#i">L</hi>
+</rdg>
+</app>, blanc dedans. <app type="Bfootnote">
+<lem type="main">Les</lem>
+<note type="lemma-abbrev">dedans.</note>
+<rdg wit="#L" n="1"> Un </rdg>
+<rdg wit="#L" n="2"> Les <hi rendition="#i">L</hi>
+</rdg>
+</app> auteurs n’en parlent pas, on n’en ressent point incontinent les effects, mais un certain engourdissement quelques fois à une, quelques fois à 2 jambes, après cela un peu de douleur, enflure pas inflammation, on sent de la froideur; ensuite il y paroist une lividité, et après une gangrene<index indexName="Sachverzeichnis">
+<term>gangrene</term>
+</index>, qui est longtemps aux parties internes; avant qu’elle paroisse à la peau, ces jours passés ouurant <app type="Bfootnote">
+<lem type="main">ce</lem>
+<note type="lemma-abbrev">ouurant</note>
+<rdg wit="#L" n="1"> de </rdg>
+<rdg wit="#L" n="2"> ce <hi rendition="#i">L</hi>
+</rdg>
+</app> cuir pour sçavoir si le dessous estoit gangrené, introduisant mon doigt dans l’ouuerture, et separant les chairs qui estoient gangrenées, il en sortit des vents avec bruit si grand qu’ils eteignirent la chandelle qui estoit proche et celuy qui la tenoit, fils du chirurgien tomba à la renverse par la puanteur extraordinaire. Si on n’est pas securu par l’amputation<index indexName="Sachverzeichnis">
+<term>amputation</term>
+</index>, la gangrene<index indexName="Sachverzeichnis">
+<term>gangrene</term>
+</index> monte jusqu’ aux epaules, avant qu’ils meurent. C’est un de mes etonnemens, mais il faut croire, que des jambes et cuisses elle monte par derriere le long de l’épine du dos, et non pas par devant. Les jambes cependant deviennent seches, menues et d’une noirceur épouuentable, sans tomber en pourriture, comme s’il ne restoit que des os couuerts de la peau. J’ay veu il y a 38 ans ce mal regner dans la Sologne<index indexName="Ortsregister">
+<term>Sologne</term>
+</index> dont il mourut beaucoup de paisans qui y sont plus sujets, ne mangeant que du pain de seigle. Le pays n’en produisant point d’autre. Et ce pays cornu ne s’engendre que dans le seigle comme l’yuraye au froment. L’un et l’autre arrive dans les annees extraordinaires. Mais le bled cornu est plus rare: je ne le sçay que pour la 3<hi rendition="#sup">me</hi> fois en 38 ans.
 À la seconde il, n’y en avoit pas beaucoup.
-<pb type="L"/><fw type="folNum">[107 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch60.p28">Il y a en Dauphiné<index indexName="Ortsregister"><term>Dauphiné</term></index> un arc haut d’une montagne où il se trouue point de fonds et qui est couuert, d’une herbe particuliere entrelassée si serrée qu’elle porte les hommes et <pb type="VIII_2" n="611"/>le bestial.</p><p xml:id="Ch60.p29">Lettre <hi rendition="#g">de</hi> <hi rendition="#g">fucis maritimis</hi><index indexName="Sachverzeichnis"><term>fucus maritimus</term></index>. Lettre à Messieurs Mousson et I. Rayus touchant toutes sortes de plantes observées en Angleterre<index indexName="Ortsregister"><term>England</term></index> de variis fucis et muscis maritimis<index indexName="Sachverzeichnis"><term>muscus maritimus</term></index>. Muscum<index indexName="Sachverzeichnis"><term>muscus</term></index> in terram missum propagare sui simile nemo observavit. Professeur en Hollande<index indexName="Ortsregister"><term>Holland</term></index> qui croit que les couleurs dans les feuilles des plantes precipitations du sel de vitriol<index indexName="Sachverzeichnis"><term>sel de vitriol</term></index> dans l’air, que les fleurs ne prennent leur couleur que quand elles sont dans l’air. Car pour rendre blanches
-les feuilles et les tiges de fenouil<index indexName="Sachverzeichnis"><term>fenouil</term></index>, asperges<index indexName="Sachverzeichnis"><term>asperge</term></index>, artichauts<index indexName="Sachverzeichnis"><term>artichaut</term></index>, chicorées<index indexName="Sachverzeichnis"><term>chicorée</term></index> cardons<index indexName="Sachverzeichnis"><term>cardon</term></index>, scellery<index indexName="Sachverzeichnis"><term>scellery</term></index> on les enterre et on les empaille pour les rendre blanches, en empechant cette precipitation. J’ay remarqué à ce sujet que la racine de plantago latifolia incana<index indexName="Sachverzeichnis"><term>plantago latifolia incana</term></index> <app type="Cfootnote"><lem type="main">(Bauhin. <hi rendition="#i">pinax</hi>),</lem><note type="lemma-abbrev">(Bauhin. <hi rendition="#i">pinax</hi>)</note><note type="editorial"><bibl corresp="#bib_00502">a.a.O., S. 189.</bibl></note></app>
-estant moitié plantée en terre moitié hors de terre, a la partie exposée à l’air rouge, l’autre <anchor xml:id="Boccone11"/>plante [<hi rendition="#i">Satz bricht ab.</hi>]</p><p xml:id="Ch60.p30"><app type="Bfootnote" from="#Boccone11" to="#Boccone12"><lem type="main">D’où <anchor xml:id="Boccone12"/>vient</lem><note type="lemma-abbrev">plante</note><rdg wit="#L" n="1"> D’où vient </rdg><rdg wit="#L" n="2"> Il y </rdg><rdg wit="#L" n="3"> D’où vient <hi rendition="#i">L</hi></rdg></app>
-que les sucs des plantes sont colorés sans avoir besoin de cette precipitation de l’air, ut Chelidonium<index indexName="Sachverzeichnis"><term>chelidonium</term></index> majus
-<app type="Cfootnote"><lem type="main">Matthioli,</lem><note type="lemma-abbrev">Matthioli</note><note type="editorial"><bibl corresp="#bib_00501"><hi rendition="#k">P.A. Mattioli</hi>, <hi rendition="#i">Opera omnia</hi>, Basel 1674, S. 468f.</bibl></note></app>
-testes coupées de Cnicus sylvestris<index indexName="Sachverzeichnis"><term>Cnicus sylvestris</term></index> spinosior
-<app type="Cfootnote"><lem type="main">Bauhini <hi rendition="#i">pinax</hi>,</lem><note type="lemma-abbrev">Bauhini <hi rendition="#i">pinax</hi></note><note type="editorial"><bibl corresp="#bib_00502"><hi rendition="#k">C. Bauhin</hi>, <hi rendition="#i">Pinax theatri botanici</hi>, Basel 1671, S. 378f.</bibl></note></app>
-car ces couleurs sont renfermées dans les tiges des plantes. D’où vient qu’il n’y a point de fleur entierement noire.</p><p xml:id="Ch60.p31">Le Cinabre<index indexName="Sachverzeichnis"><term>cinabre</term></index> artificiel est rangé par fibres, par le melange du mercure<index indexName="Sachverzeichnis"><term>mercure</term></index> et par son arrangement en se sublimant.</p><p xml:id="Ch60.p32">Observations touchant Stenomarga<index indexName="Sachverzeichnis"><term>stenomarga</term></index> à Mons. Matthaeus Sladus<index indexName="Namensregister"><term><hi rendition="#g">Sladus</hi>, Matthaeus (1569-1628)</term></index> Medec. d’Amsterdam<index indexName="Ortsregister"><term>Amsterdam</term></index> à Rouan<index indexName="Ortsregister"><term>Rouen</term></index> cassé des cailloux appellés Birets en Normandie<index indexName="Ortsregister"><term>Normandie</term></index>. Tousjours <formula xml:id="Ch60.p32.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:math></formula> lieue au plus de la ville. J’ay remarqué quelques fois de la boue dedans semblable à celle de la terre où ils estoient. L’opinion de M. des Cartes<index indexName="Namensregister"><term><hi rendition="#g">Descartes</hi>, René (1596-1650)</term></index> sur les boules vraysemblables en la composition de plusieurs corps solides: on en trouue dans la corne d’ammon<index indexName="Sachverzeichnis"><term>corne d’ammon</term></index> de Bauhin<index indexName="Namensregister"><term><hi rendition="#g">Bauhin</hi>, ()</term></index> et Wormius<index indexName="Namensregister"><term><hi rendition="#g">Wormius</hi>, Olaus (1588-1654)</term></index>, dans l’eau où a esté dissout la stenomarga<index indexName="Sachverzeichnis"><term>stenomarga</term></index>, dans le sang, dans le jaune d’oeuf, dans le lait. Et selon les remarques de <app type="Bfootnote"><lem type="main">Swammerdam<index indexName="Namensregister"><term><hi rendition="#g">Swammerdam</hi>, Jan (1637-1680)</term></index> et de M. Lewenhoeck dans le Corail</lem><note type="lemma-abbrev">Swammerdam</note><rdg wit="#L" n="1"> dans le Corail<index indexName="Sachverzeichnis"><term>corail</term></index> </rdg><rdg wit="#L" n="2"> et de <seg type="apparat-ellipsis"/> Corail. <hi rendition="#i">L</hi></rdg></app>.</p><p xml:id="Ch60.p33">Terre de M. Mililli dont j’ay donné à Paris<index indexName="Ortsregister"><term>Paris</term></index> à Mons. Emery<index indexName="Namensregister"><term><hi rendition="#g">L’Emery</hi>, Nicolas (1645-1715)</term></index> apothicaire en Angleterre<index indexName="Ortsregister"><term>England</term></index> à Mons. Charles Howard<index indexName="Namensregister"><term><hi rendition="#g">Howard</hi>, Charles (1536-1624)</term></index> frere du Comt. de Norfolk<index indexName="Ortsregister"><term>Norfolk</term></index> et M. Charles Halton<index indexName="Namensregister"><term><hi rendition="#g">Halton</hi>, Charles ?</term></index> esquire sous le nom de terra samia<index indexName="Sachverzeichnis"><term>terra samia</term></index> ou Bol de Siale.</p><p xml:id="Ch60.p34">Je juge la terre trouuée dans ces birets medicamenteuse, comme la <app type="Bfootnote"><!--is-correction-app-with-future-lemma--><lem type="main"><corr resp="#ed">[samienne]</corr></lem><rdg wit="#L"><orig>samie</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>, ou Agaricum minerale<index indexName="Sachverzeichnis"><term>agaricum minerale</term></index>.
-Voyez sa Medulla<index indexName="Sachverzeichnis"><term>medulla</term></index> ou Stenomarga Agricolae<index indexName="Sachverzeichnis"><term>stenomarga Agricolae</term></index>. Trouuée un morceau de fer cela grosseur d’une épingle dans le milieu d’un <app type="Bfootnote"><lem type="main">Biret</lem><note type="lemma-abbrev">d’un</note><rdg wit="#L" n="1"> Bizet </rdg><rdg wit="#L" n="2"> Biret <hi rendition="#i">L</hi></rdg></app> (+ Biret ou Bizet +) laver le <pb type="VIII_2" n="612"/>plus subtil, et en faire des pastilles <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">ou tablettes</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> avec gomme trayant. Je croy que c’est de même vertu avec les tablettes que fait Camilli<index indexName="Namensregister"><term><hi rendition="#g">Camilli</hi>, Annibal (1498-?)</term></index> medecin à Nocera<index indexName="Ortsregister"><term>Nocera</term></index> en Ombrie<index indexName="Ortsregister"><term>Umbrien</term></index> du clocher de Spoleto<index indexName="Ortsregister"><term>Spoleto</term></index>.</p><p xml:id="Ch60.p35">Messieurs Syen<index indexName="Namensregister"><term><hi rendition="#g">Syen</hi>, ??</term></index>, Margrave<index indexName="Namensregister"><term><hi rendition="#g">Margrave</hi>, ??</term></index>, Maetz<index indexName="Namensregister"><term><hi rendition="#g">Maetz</hi>, ??</term></index>, Schrader<index indexName="Namensregister"><term><hi rendition="#g">Schrader</hi>, Friedrich (1657-1704)</term></index>, Swammerdam<index indexName="Namensregister"><term><hi rendition="#g">Swammerdam</hi>, Jan (1637-1680)</term></index>, Bellanger<index indexName="Namensregister"><term><hi rendition="#g">Bellanger</hi>, ??</term></index>, Gravesande<index indexName="Namensregister"><term><hi rendition="#g">Gravesande</hi>, Cornelius (??-??)</term></index>, Meyer<index indexName="Namensregister"><term><hi rendition="#g">Meyer</hi>, ??</term></index>, Medecins, Jean Commelin<index indexName="Namensregister"><term><hi rendition="#g">Commelijn</hi>, Jan (1629-1692)</term></index>, Vandenbrug<index indexName="Namensregister"><term><hi rendition="#g">Vandenbrug</hi>, ??</term></index>, Blayne<index indexName="Namensregister"><term><hi rendition="#g"/>,</term></index>, Droguistes; Servenhuisen<index indexName="Namensregister"><term><hi rendition="#g">Servenhuisen</hi>, ?</term></index> Apoticaire Bleau<index indexName="Namensregister"><term><hi rendition="#g">Bleau</hi>, David? (?-?)</term></index>, Frisius Elzevir<index indexName="Namensregister"><term sortKey="_Elzevir_Frisius_"> <hi rendition="#g">Elzevir</hi>, Frisius ?</term></index>, et Waesbergue<index indexName="Namensregister"><term><hi rendition="#g">Waesbergen</hi>, Jan van (1661-1681)</term></index>, libraires.</p><p xml:id="Ch60.p36">Monsieur Muntinus<index indexName="Namensregister"><term><hi rendition="#g">Muntinus</hi>, Gotthard (?-?)</term></index>, professeur de Groningue.<index indexName="Ortsregister"><term>Groningen</term></index></p><p xml:id="Ch60.p37">Il faut que le peuple cultive l’usage des plantes et autres experiences sans cela elles se perdent, comme ils cultivent encor le Cottinus ou coccigrya<index indexName="Sachverzeichnis"><term>cotinus coggygria</term></index> dans les collines de Rome<index indexName="Ortsregister"><term>Rom</term></index>, le Rhus<index indexName="Sachverzeichnis"><term>Rhus</term></index> ou Summac<index indexName="Sachverzeichnis"><term>Summac</term></index> en Crète<index indexName="Ortsregister"><term>Kreta</term></index>, le Lentiscus<index indexName="Sachverzeichnis"><term>Lentiscus</term></index> en Scio,<index indexName="Ortsregister"><term>Scio</term></index> le Coton<index indexName="Sachverzeichnis"><term>Coton</term></index> à Malthe<index indexName="Ortsregister"><term>Malta</term></index> et aux environs des villes de Marsala<index indexName="Ortsregister"><term>Marsala</term></index> et Mazzara<index indexName="Ortsregister"><term>Massera</term></index> en Sicile,<index indexName="Ortsregister"><term>Sizilien</term></index>
-<app type="Cfootnote"><lem type="main">l’Isatis<index indexName="Sachverzeichnis"><term>Isatis</term></index></lem><note type="lemma-abbrev">Isatis</note><note type="editorial">I. tinctoria, Quelle für den Farbstoff Indigo.</note></app> ou Glastum<index indexName="Sachverzeichnis"><term>Glastum</term></index>, le <app type="Cfootnote"><lem type="main">Lutum herba,<index indexName="Sachverzeichnis"><term>Lutum herba</term></index></lem><note type="lemma-abbrev">Lutum herba</note><note type="editorial">Herba lutea oder Gelber Enzian, Heilpflanze und Quelle für gelben Farbstoff.</note></app> la Rubia Major<index indexName="Sachverzeichnis"><term>Rubia major</term></index>, Genistella tinctorum<index indexName="Sachverzeichnis"><term>Genistella tinctorum</term></index>, et le Carduus fullonum<index indexName="Sachverzeichnis"><term>Carduus fullonum</term></index> en plusieurs provinces d’Europe<index indexName="Ortsregister"><term>Europa</term></index>.
-On a perdu à Naples<index indexName="Ortsregister"><term>Neapel</term></index> et Rome<index indexName="Ortsregister"><term>Rom</term></index> faute de cultiver l’usage de plusieurs plantes,
-comme de la Radicetta<index indexName="Sachverzeichnis"><term>Radicetta</term></index> ou Struthium,<index indexName="Sachverzeichnis"><term>Struthium</term></index> dont
-<app type="Cfootnote"><lem type="main">Imperatus</lem><note type="editorial"><bibl corresp="#bib_00500"><hi rendition="#k">F. Imperato</hi>, <hi rendition="#i">Historia naturale</hi>, Venedig 1672, S. 661.</bibl></note></app>
+<pb type="L"/>
+<fw type="folNum">[107 r<hi rendition="#sup">o</hi>]
+</fw>
+</p>
+<p xml:id="Ch60.p28">Il y a en Dauphiné<index indexName="Ortsregister">
+<term>Dauphiné</term>
+</index> un arc haut d’une montagne où il se trouue point de fonds et qui est couuert, d’une herbe particuliere entrelassée si serrée qu’elle porte les hommes et <pb type="VIII_2" n="611"/>
+le bestial.</p>
+<p xml:id="Ch60.p29">Lettre <hi rendition="#g">de</hi>
+<hi rendition="#g">fucis maritimis</hi>
+<index indexName="Sachverzeichnis">
+<term>fucus maritimus</term>
+</index>. Lettre à Messieurs Mousson et I. Rayus touchant toutes sortes de plantes observées en Angleterre<index indexName="Ortsregister">
+<term>England</term>
+</index> de variis fucis et muscis maritimis<index indexName="Sachverzeichnis">
+<term>muscus maritimus</term>
+</index>. Muscum<index indexName="Sachverzeichnis">
+<term>muscus</term>
+</index> in terram missum propagare sui simile nemo observavit. Professeur en Hollande<index indexName="Ortsregister">
+<term>Holland</term>
+</index> qui croit que les couleurs dans les feuilles des plantes precipitations du sel de vitriol<index indexName="Sachverzeichnis">
+<term>sel de vitriol</term>
+</index> dans l’air, que les fleurs ne prennent leur couleur que quand elles sont dans l’air. Car pour rendre blanches
+les feuilles et les tiges de fenouil<index indexName="Sachverzeichnis">
+<term>fenouil</term>
+</index>, asperges<index indexName="Sachverzeichnis">
+<term>asperge</term>
+</index>, artichauts<index indexName="Sachverzeichnis">
+<term>artichaut</term>
+</index>, chicorées<index indexName="Sachverzeichnis">
+<term>chicorée</term>
+</index> cardons<index indexName="Sachverzeichnis">
+<term>cardon</term>
+</index>, scellery<index indexName="Sachverzeichnis">
+<term>scellery</term>
+</index> on les enterre et on les empaille pour les rendre blanches, en empechant cette precipitation. J’ay remarqué à ce sujet que la racine de plantago latifolia incana<index indexName="Sachverzeichnis">
+<term>plantago latifolia incana</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">(Bauhin. <hi rendition="#i">pinax</hi>),
+</lem>
+<note type="lemma-abbrev">(Bauhin. <hi rendition="#i">pinax</hi>)
+</note>
+<note type="editorial">
+<bibl corresp="#bib_00502">a.a.O., S. 189.</bibl>
+</note>
+</app>
+estant moitié plantée en terre moitié hors de terre, a la partie exposée à l’air rouge, l’autre <anchor xml:id="Boccone11"/>
+plante [<hi rendition="#i">Satz bricht ab.</hi>]
+</p>
+<p xml:id="Ch60.p30">
+<app type="Bfootnote" from="#Boccone11" to="#Boccone12">
+<lem type="main">D’où <anchor xml:id="Boccone12"/>
+vient</lem>
+<note type="lemma-abbrev">plante</note>
+<rdg wit="#L" n="1"> D’où vient </rdg>
+<rdg wit="#L" n="2"> Il y </rdg>
+<rdg wit="#L" n="3"> D’où vient <hi rendition="#i">L</hi>
+</rdg>
+</app>
+que les sucs des plantes sont colorés sans avoir besoin de cette precipitation de l’air, ut Chelidonium<index indexName="Sachverzeichnis">
+<term>chelidonium</term>
+</index> majus
+<app type="Cfootnote">
+<lem type="main">Matthioli,</lem>
+<note type="lemma-abbrev">Matthioli</note>
+<note type="editorial">
+<bibl corresp="#bib_00501">
+<hi rendition="#k">P.A. Mattioli</hi>,<hi rendition="#i">Opera omnia</hi>, Basel 1674, S. 468f.</bibl>
+</note>
+</app>
+testes coupées de Cnicus sylvestris<index indexName="Sachverzeichnis">
+<term>Cnicus sylvestris</term>
+</index> spinosior
+<app type="Cfootnote">
+<lem type="main">Bauhini <hi rendition="#i">pinax</hi>,
+</lem>
+<note type="lemma-abbrev">Bauhini <hi rendition="#i">pinax</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_00502">
+<hi rendition="#k">C. Bauhin</hi>,<hi rendition="#i">Pinax theatri botanici</hi>, Basel 1671, S. 378f.</bibl>
+</note>
+</app>
+car ces couleurs sont renfermées dans les tiges des plantes. D’où vient qu’il n’y a point de fleur entierement noire.</p>
+<p xml:id="Ch60.p31">Le Cinabre<index indexName="Sachverzeichnis">
+<term>cinabre</term>
+</index> artificiel est rangé par fibres, par le melange du mercure<index indexName="Sachverzeichnis">
+<term>mercure</term>
+</index> et par son arrangement en se sublimant.</p>
+<p xml:id="Ch60.p32">Observations touchant Stenomarga<index indexName="Sachverzeichnis">
+<term>stenomarga</term>
+</index> à Mons. Matthaeus Sladus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Sladus</hi>, Matthaeus (1569-1628)</term>
+</index> Medec. d’Amsterdam<index indexName="Ortsregister">
+<term>Amsterdam</term>
+</index> à Rouan<index indexName="Ortsregister">
+<term>Rouen</term>
+</index> cassé des cailloux appellés Birets en Normandie<index indexName="Ortsregister">
+<term>Normandie</term>
+</index>. Tousjours <formula xml:id="Ch60.p32.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:math>
+</formula> lieue au plus de la ville. J’ay remarqué quelques fois de la boue dedans semblable à celle de la terre où ils estoient. L’opinion de M. des Cartes<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Descartes</hi>, René (1596-1650)</term>
+</index> sur les boules vraysemblables en la composition de plusieurs corps solides: on en trouue dans la corne d’ammon<index indexName="Sachverzeichnis">
+<term>corne d’ammon</term>
+</index> de Bauhin<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Bauhin</hi>, ()
+</term>
+</index> et Wormius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Wormius</hi>, Olaus (1588-1654)</term>
+</index>, dans l’eau où a esté dissout la stenomarga<index indexName="Sachverzeichnis">
+<term>stenomarga</term>
+</index>, dans le sang, dans le jaune d’oeuf, dans le lait. Et selon les remarques de <app type="Bfootnote">
+<lem type="main">Swammerdam<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Swammerdam</hi>, Jan (1637-1680)</term>
+</index> et de M. Lewenhoeck dans le Corail</lem>
+<note type="lemma-abbrev">Swammerdam</note>
+<rdg wit="#L" n="1"> dans le Corail<index indexName="Sachverzeichnis">
+<term>corail</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> et de <seg type="apparat-ellipsis"/>
+ Corail. <hi rendition="#i">L</hi>
+</rdg>
+</app>.
+</p>
+<p xml:id="Ch60.p33">Terre de M. Mililli dont j’ay donné à Paris<index indexName="Ortsregister">
+<term>Paris</term>
+</index> à Mons. Emery<index indexName="Namensregister">
+<term>
+<hi rendition="#g">L’Emery</hi>, Nicolas (1645-1715)</term>
+</index> apothicaire en Angleterre<index indexName="Ortsregister">
+<term>England</term>
+</index> à Mons. Charles Howard<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Howard</hi>, Charles (1536-1624)</term>
+</index> frere du Comt. de Norfolk<index indexName="Ortsregister">
+<term>Norfolk</term>
+</index> et M. Charles Halton<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Halton</hi>, Charles ?</term>
+</index> esquire sous le nom de terra samia<index indexName="Sachverzeichnis">
+<term>terra samia</term>
+</index> ou Bol de Siale.</p>
+<p xml:id="Ch60.p34">Je juge la terre trouuée dans ces birets medicamenteuse, comme la <app type="Bfootnote"><!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[samienne]</corr>
+</lem>
+<rdg wit="#L">
+<orig>samie</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>, ou Agaricum minerale<index indexName="Sachverzeichnis">
+<term>agaricum minerale</term>
+</index>.
+Voyez sa Medulla<index indexName="Sachverzeichnis">
+<term>medulla</term>
+</index> ou Stenomarga Agricolae<index indexName="Sachverzeichnis">
+<term>stenomarga Agricolae</term>
+</index>. Trouuée un morceau de fer cela grosseur d’une épingle dans le milieu d’un <app type="Bfootnote">
+<lem type="main">Biret</lem>
+<note type="lemma-abbrev">d’un</note>
+<rdg wit="#L" n="1"> Bizet </rdg>
+<rdg wit="#L" n="2"> Biret <hi rendition="#i">L</hi>
+</rdg>
+</app> (+ Biret ou Bizet +) laver le <pb type="VIII_2" n="612"/>
+plus subtil, et en faire des pastilles <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">ou tablettes</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> avec gomme trayant. Je croy que c’est de même vertu avec les tablettes que fait Camilli<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Camilli</hi>, Annibal (1498-?)</term>
+</index> medecin à Nocera<index indexName="Ortsregister">
+<term>Nocera</term>
+</index> en Ombrie<index indexName="Ortsregister">
+<term>Umbrien</term>
+</index> du clocher de Spoleto<index indexName="Ortsregister">
+<term>Spoleto</term>
+</index>.
+</p>
+<p xml:id="Ch60.p35">Messieurs Syen<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Syen</hi>, ??
+</term>
+</index>, Margrave<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Margrave</hi>, ??
+</term>
+</index>, Maetz<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Maetz</hi>, ??
+</term>
+</index>, Schrader<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Schrader</hi>, Friedrich (1657-1704)</term>
+</index>, Swammerdam<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Swammerdam</hi>, Jan (1637-1680)</term>
+</index>, Bellanger<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Bellanger</hi>, ??
+</term>
+</index>, Gravesande<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Gravesande</hi>, Cornelius (??-??)</term>
+</index>, Meyer<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Meyer</hi>, ??
+</term>
+</index>, Medecins, Jean Commelin<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Commelijn</hi>, Jan (1629-1692)</term>
+</index>, Vandenbrug<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Vandenbrug</hi>, ??
+</term>
+</index>, Blayne<index indexName="Namensregister">
+<term>
+<hi rendition="#g"/>
+,</term>
+</index>, Droguistes; Servenhuisen<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Servenhuisen</hi>, ?
+</term>
+</index> Apoticaire Bleau<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Bleau</hi>, David? (?-?)</term>
+</index>, Frisius Elzevir<index indexName="Namensregister">
+<term sortKey="_Elzevir_Frisius_">
+<hi rendition="#g">Elzevir</hi>, Frisius ?</term>
+</index>, et Waesbergue<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Waesbergen</hi>, Jan van (1661-1681)</term>
+</index>, libraires.</p>
+<p xml:id="Ch60.p36">Monsieur Muntinus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Muntinus</hi>, Gotthard (?-?)</term>
+</index>, professeur de Groningue.<index indexName="Ortsregister">
+<term>Groningen</term>
+</index>
+</p>
+<p xml:id="Ch60.p37">Il faut que le peuple cultive l’usage des plantes et autres experiences sans cela elles se perdent, comme ils cultivent encor le Cottinus ou coccigrya<index indexName="Sachverzeichnis">
+<term>cotinus coggygria</term>
+</index> dans les collines de Rome<index indexName="Ortsregister">
+<term>Rom</term>
+</index>, le Rhus<index indexName="Sachverzeichnis">
+<term>Rhus</term>
+</index> ou Summac<index indexName="Sachverzeichnis">
+<term>Summac</term>
+</index> en Crète<index indexName="Ortsregister">
+<term>Kreta</term>
+</index>, le Lentiscus<index indexName="Sachverzeichnis">
+<term>Lentiscus</term>
+</index> en Scio,<index indexName="Ortsregister">
+<term>Scio</term>
+</index> le Coton<index indexName="Sachverzeichnis">
+<term>Coton</term>
+</index> à Malthe<index indexName="Ortsregister">
+<term>Malta</term>
+</index> et aux environs des villes de Marsala<index indexName="Ortsregister">
+<term>Marsala</term>
+</index> et Mazzara<index indexName="Ortsregister">
+<term>Massera</term>
+</index> en Sicile,<index indexName="Ortsregister">
+<term>Sizilien</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">l’Isatis<index indexName="Sachverzeichnis">
+<term>Isatis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Isatis</note>
+<note type="editorial">I. tinctoria, Quelle für den Farbstoff Indigo.</note>
+</app> ou Glastum<index indexName="Sachverzeichnis">
+<term>Glastum</term>
+</index>, le <app type="Cfootnote">
+<lem type="main">Lutum herba,<index indexName="Sachverzeichnis">
+<term>Lutum herba</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Lutum herba</note>
+<note type="editorial">Herba lutea oder Gelber Enzian, Heilpflanze und Quelle für gelben Farbstoff.</note>
+</app> la Rubia Major<index indexName="Sachverzeichnis">
+<term>Rubia major</term>
+</index>, Genistella tinctorum<index indexName="Sachverzeichnis">
+<term>Genistella tinctorum</term>
+</index>, et le Carduus fullonum<index indexName="Sachverzeichnis">
+<term>Carduus fullonum</term>
+</index> en plusieurs provinces d’Europe<index indexName="Ortsregister">
+<term>Europa</term>
+</index>.
+On a perdu à Naples<index indexName="Ortsregister">
+<term>Neapel</term>
+</index> et Rome<index indexName="Ortsregister">
+<term>Rom</term>
+</index> faute de cultiver l’usage de plusieurs plantes,
+comme de la Radicetta<index indexName="Sachverzeichnis">
+<term>Radicetta</term>
+</index> ou Struthium,<index indexName="Sachverzeichnis">
+<term>Struthium</term>
+</index> dont
+<app type="Cfootnote">
+<lem type="main">Imperatus</lem>
+<note type="editorial">
+<bibl corresp="#bib_00500">
+<hi rendition="#k">F. Imperato</hi>,<hi rendition="#i">Historia naturale</hi>, Venedig 1672, S. 661.</bibl>
+</note>
+</app>
 nous a donné beaucoup de lumiere, et qui se rapporte exactement aux anciens.
-Bellon<index indexName="Namensregister"><term><hi rendition="#g">Bellonius</hi>, Pierre (1517-1564)</term></index> rapporte qu’en Grece<index indexName="Ortsregister"><term>Griechenland</term></index> ils tannent leurs cuirs et épaississent les peaux des calyces<index indexName="Sachverzeichnis"><term>calyce</term></index> des glandes d’Esculus<index indexName="Sachverzeichnis"><term>glandes d’Esculus</term></index> etc.
-Je sçay par experience, qu’en Sicile<index indexName="Ortsregister"><term>Sizilien</term></index> on a coustume de se servir des feuilles de Myrthus<index indexName="Sachverzeichnis"><term>Myrthus</term></index> communis Italica
-<app type="Cfootnote"><lem type="main">Bauh. <hi rendition="#i">pin.</hi></lem><note type="editorial"><bibl corresp="#bib_00502"><hi rendition="#k">C. Bauhin</hi>, <hi rendition="#i">Pinax theatri botanici</hi>, Basel 1671, S. 468ff.</bibl></note></app>
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">abondant</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> dans le Val de Mazzera.<index indexName="Ortsregister"><term>Mazzara</term></index>
-Les nouuelles experiences abolissent les vieilles. Le savon dur blanc<index indexName="Sachverzeichnis"><term>savon dur blanc</term></index> ce savon noir<index indexName="Sachverzeichnis"><term>savon noir</term></index> et autres sont en vogue à cause de leur senteur bonne comme ceux de Naples,<index indexName="Ortsregister"><term>Neapel</term></index> Bologne,<index indexName="Ortsregister"><term>Bologna</term></index> Italie.<index indexName="Ortsregister"><term>Italien</term></index>
-Les paysans de Lionnois<index indexName="Ortsregister"><term>Lyon</term></index> et ceux de Toscane<index indexName="Ortsregister"><term>Toscana</term></index> se servent quelques fois de saponaria recentiorum s. major laevis
-<app type="Cfootnote"><lem type="main">Bauhinus <hi rendition="#i">pin.</hi></lem><note type="editorial">a.a.O., S. 206.</note></app>
+Bellon<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Bellonius</hi>, Pierre (1517-1564)</term>
+</index> rapporte qu’en Grece<index indexName="Ortsregister">
+<term>Griechenland</term>
+</index> ils tannent leurs cuirs et épaississent les peaux des calyces<index indexName="Sachverzeichnis">
+<term>calyce</term>
+</index> des glandes d’Esculus<index indexName="Sachverzeichnis">
+<term>glandes d’Esculus</term>
+</index> etc.
+Je sçay par experience, qu’en Sicile<index indexName="Ortsregister">
+<term>Sizilien</term>
+</index> on a coustume de se servir des feuilles de Myrthus<index indexName="Sachverzeichnis">
+<term>Myrthus</term>
+</index> communis Italica
+<app type="Cfootnote">
+<lem type="main">Bauh. <hi rendition="#i">pin.</hi>
+</lem>
+<note type="editorial">
+<bibl corresp="#bib_00502">
+<hi rendition="#k">C. Bauhin</hi>,<hi rendition="#i">Pinax theatri botanici</hi>, Basel 1671, S. 468ff.</bibl>
+</note>
+</app>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">abondant</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> dans le Val de Mazzera.<index indexName="Ortsregister">
+<term>Mazzara</term>
+</index>
+Les nouuelles experiences abolissent les vieilles. Le savon dur blanc<index indexName="Sachverzeichnis">
+<term>savon dur blanc</term>
+</index> ce savon noir<index indexName="Sachverzeichnis">
+<term>savon noir</term>
+</index> et autres sont en vogue à cause de leur senteur bonne comme ceux de Naples,<index indexName="Ortsregister">
+<term>Neapel</term>
+</index> Bologne,<index indexName="Ortsregister">
+<term>Bologna</term>
+</index> Italie.<index indexName="Ortsregister">
+<term>Italien</term>
+</index>
+Les paysans de Lionnois<index indexName="Ortsregister">
+<term>Lyon</term>
+</index> et ceux de Toscane<index indexName="Ortsregister">
+<term>Toscana</term>
+</index> se servent quelques fois de saponaria recentiorum s. major laevis
+<app type="Cfootnote">
+<lem type="main">Bauhinus <hi rendition="#i">pin.</hi>
+</lem>
+<note type="editorial">a.a.O., S. 206.</note>
+</app>
 lorsquelle est en fleur, pour exciter l’écume comme celle du savon.
-Adde <app type="Cfootnote"><lem type="main">Piso<index indexName="Sachverzeichnis"><term>Piso</term></index></lem><note type="lemma-abbrev">Piso</note><note type="editorial"><bibl corresp="#bib_00503"><hi rendition="#k">G. Piso</hi>, <hi rendition="#i">De Indiae utriusque re naturali</hi>, Amsterdam 1658, S. 162.</bibl></note></app>
-et autres de la saponaria<index indexName="Sachverzeichnis"><term>saponaria</term></index> du Bresil<index indexName="Ortsregister"><term>Brasilien</term></index>.
-Les jesuites à Sacca<index indexName="Ortsregister"><term>Sacca</term></index> se servent du Kali floridum Neapolitanum columnae<index indexName="Sachverzeichnis"><term>Kali</term></index> pour oster les taches des draps noirs.
-À Malthe<index indexName="Ortsregister"><term>Malta</term></index> j’ay veu l’experience de les oster avec les feuilles de laegosagamus Alpini<index indexName="Sachverzeichnis"><term>laego-sagamus Alpini</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">albus creticus<index indexName="Sachverzeichnis"><term>albus creticus</term></index></add></lem><note type="lemma-abbrev">albus creticus</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>.
-On frotte le drap avec un pacquet de fleurs, sur la tache on laisse sescher, et ensuite on lave le drap avec de l’eau chaude. En cas de besoin on le repete cenere di chebba<index indexName="Sachverzeichnis"><term>cenere di chebba</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">ou scebba</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app> des paysans d’Agrigentum<index indexName="Ortsregister"><term>Agrigent</term></index> pour blanchir la toile qui sort du metier preferée à tout autre.
-<app type="Bfootnote"><lem type="main">Est ex</lem><note type="lemma-abbrev">autre.</note><rdg wit="#L" n="1"> Tachenius </rdg><rdg wit="#L" n="2"> Est ex <hi rendition="#i">L</hi></rdg></app> Kali florido<index indexName="Sachverzeichnis"><term>Kali floridum</term></index> lignoso floribus membranaceis semine cochleato <index indexName="Sachverzeichnis"><term>cochleatum</term></index> on a accoustumé de faire un trou en façon de fourneau dans les champs, on met sur ce fourneau les branches de la plante, qu’ils appellent Liuta<index indexName="Sachverzeichnis"><term>Liuta</term></index>, et que j’appelle Kali floridum etc. apres l’avoir laissé secher à l’air 24 heures ou environ en esté. Estant ainsi preparées on les brusle avec de la paille, et à mesure qu’elles se consument on y adjoute des <app type="Bfootnote"><lem type="main">nouuelles branches</lem><note type="lemma-abbrev">nouuelles</note><rdg wit="#L" n="1"> plantes </rdg><rdg wit="#L" n="2"> branches; <hi rendition="#i">L</hi></rdg></app>; dont on tire enfin une cendre spongieuse grisâtre approchante à la cendre gravellée qu’on vend cher les chandeliers et vinaigriers mais elle est plus legere de poids. On souffle pendant l’operation beaucoup de fumée. <pb type="VIII_2" n="613"/>Les paisans la font aussi avec d’autres plantes, comme malva vulgaris<index indexName="Sachverzeichnis"><term>malva vulgaris</term></index>, chrysanthemum creticum<index indexName="Sachverzeichnis"><term>Chrysanthemum creticum</term></index> et autres.
-Mais la meilleure est du Kali.<index indexName="Sachverzeichnis"><term>Kali</term></index>
-<app type="Cfootnote"><lem type="main">Tachen<index indexName="Namensregister"><term><hi rendition="#g">Tachenius</hi> (Tacke), Otto 1610-1680</term></index></lem><note type="lemma-abbrev">Tachen</note><note type="editorial"><bibl corresp="#bib_00479"><hi rendition="#k">O. Tachenius</hi>, <hi rendition="#i">Hippocrates chymicus</hi>, Braunschweig 1668, S. 113.</bibl></note></app> in <hi rendition="#i">Hippoc. chym.</hi>
-donne une operation approchante afin de garder une grande partie du sel volatil<index indexName="Sachverzeichnis"><term>sel volatil</term></index> des plantes.</p></div></div></body>
-  </text>
+Adde <app type="Cfootnote">
+<lem type="main">Piso<index indexName="Sachverzeichnis">
+<term>Piso</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Piso</note>
+<note type="editorial">
+<bibl corresp="#bib_00503">
+<hi rendition="#k">G. Piso</hi>,<hi rendition="#i">De Indiae utriusque re naturali</hi>, Amsterdam 1658, S. 162.</bibl>
+</note>
+</app>
+et autres de la saponaria<index indexName="Sachverzeichnis">
+<term>saponaria</term>
+</index> du Bresil<index indexName="Ortsregister">
+<term>Brasilien</term>
+</index>.
+Les jesuites à Sacca<index indexName="Ortsregister">
+<term>Sacca</term>
+</index> se servent du Kali floridum Neapolitanum columnae<index indexName="Sachverzeichnis">
+<term>Kali</term>
+</index> pour oster les taches des draps noirs.
+À Malthe<index indexName="Ortsregister">
+<term>Malta</term>
+</index> j’ay veu l’experience de les oster avec les feuilles de laegosagamus Alpini<index indexName="Sachverzeichnis">
+<term>laego-sagamus Alpini</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">albus creticus<index indexName="Sachverzeichnis">
+<term>albus creticus</term>
+</index>
+</add>
+</lem>
+<note type="lemma-abbrev">albus creticus</note>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>.
+On frotte le drap avec un pacquet de fleurs, sur la tache on laisse sescher, et ensuite on lave le drap avec de l’eau chaude. En cas de besoin on le repete cenere di chebba<index indexName="Sachverzeichnis">
+<term>cenere di chebba</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">ou scebba</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app> des paysans d’Agrigentum<index indexName="Ortsregister">
+<term>Agrigent</term>
+</index> pour blanchir la toile qui sort du metier preferée à tout autre.
+<app type="Bfootnote">
+<lem type="main">Est ex</lem>
+<note type="lemma-abbrev">autre.</note>
+<rdg wit="#L" n="1"> Tachenius </rdg>
+<rdg wit="#L" n="2"> Est ex <hi rendition="#i">L</hi>
+</rdg>
+</app> Kali florido<index indexName="Sachverzeichnis">
+<term>Kali floridum</term>
+</index> lignoso floribus membranaceis semine cochleato <index indexName="Sachverzeichnis">
+<term>cochleatum</term>
+</index> on a accoustumé de faire un trou en façon de fourneau dans les champs, on met sur ce fourneau les branches de la plante, qu’ils appellent Liuta<index indexName="Sachverzeichnis">
+<term>Liuta</term>
+</index>, et que j’appelle Kali floridum etc. apres l’avoir laissé secher à l’air 24 heures ou environ en esté. Estant ainsi preparées on les brusle avec de la paille, et à mesure qu’elles se consument on y adjoute des <app type="Bfootnote">
+<lem type="main">nouuelles branches</lem>
+<note type="lemma-abbrev">nouuelles</note>
+<rdg wit="#L" n="1"> plantes </rdg>
+<rdg wit="#L" n="2"> branches; <hi rendition="#i">L</hi>
+</rdg>
+</app>; dont on tire enfin une cendre spongieuse grisâtre approchante à la cendre gravellée qu’on vend cher les chandeliers et vinaigriers mais elle est plus legere de poids. On souffle pendant l’operation beaucoup de fumée. <pb type="VIII_2" n="613"/>
+Les paisans la font aussi avec d’autres plantes, comme malva vulgaris<index indexName="Sachverzeichnis">
+<term>malva vulgaris</term>
+</index>, chrysanthemum creticum<index indexName="Sachverzeichnis">
+<term>Chrysanthemum creticum</term>
+</index> et autres.
+Mais la meilleure est du Kali.<index indexName="Sachverzeichnis">
+<term>Kali</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">Tachen<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Tachenius</hi> (Tacke), Otto 1610-1680</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Tachen</note>
+<note type="editorial">
+<bibl corresp="#bib_00479">
+<hi rendition="#k">O. Tachenius</hi>,<hi rendition="#i">Hippocrates chymicus</hi>, Braunschweig 1668, S. 113.</bibl>
+</note>
+</app> in <hi rendition="#i">Hippoc. chym.</hi>
+donne une operation approchante afin de garder une grande partie du sel volatil<index indexName="Sachverzeichnis">
+<term>sel volatil</term>
+</index> des plantes.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

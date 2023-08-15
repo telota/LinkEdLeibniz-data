@@ -1,22 +1,123 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-005-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-005-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De magnetis sphaera</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De magnetis sphaera</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="5">De magnetis sphaera</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1674-07" resp="#ed" cert="medium">[zweite Hälfte 1674 – Anfang 1675]</date><date calendar="#gregorian" notAfter="1675-01" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=98</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="50" to="51"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-005-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 10, 9 Bl. 3-4</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung:
+            </author>
+            <title type="chapter" level="a" n="5">De magnetis sphaera</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1674-07" resp="#ed" cert="medium">[zweite Hälfte 1674 – Anfang 1675]</date>
+            <date calendar="#gregorian" notAfter="1675-01" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=98</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="50" to="51"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-005-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 10, 9 Bl. 3-4</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung:
 LH XXXV 10, 9 Bl. 3-4. 1 Bog. 2<hi rendition="#sup">o</hi>.
 1/2 Sp. auf Bl. 3 r<hi rendition="#sup">o</hi> links oben.
-Der übrige Text auf Bl. 3 r<hi rendition="#sup">o</hi> gehört zu N. 28<hi rendition="#sub">5</hi>. Der Bog. überliefert ferner N. 28<hi rendition="#sub">1</hi>, N. 28<hi rendition="#sub">2</hi> und N. 28<hi rendition="#sub">6</hi>.</p><p>Cc 2, Nr. 1191 (tlw.)</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+Der übrige Text auf Bl. 3 r<hi rendition="#sup">o</hi> gehört zu N. 28<hi rendition="#sub">5</hi>. Der Bog. überliefert ferner N. 28<hi rendition="#sub">1</hi>, N. 28<hi rendition="#sub">2</hi> und N. 28<hi rendition="#sub">6</hi>.
+                  </p>
+                  <p>Cc 2, Nr. 1191 (tlw.)</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -642,31 +743,341 @@ Der übrige Text auf Bl. 3 r<hi rendition="#sup">o</hi> gehört zu N. 28<hi re
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#magnetismus"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-03" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#magnetismus"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-03" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-005-000_facs-haupttextzeuge">
-    		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1707"/>
-      <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1708"/>
-      <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1709"/>
-      <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1710"/>
-      <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1711"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1712"/>
-  </facsimile><text xml:id="L_08-02-005-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch5" n="5"><pb type="VIII_2" n="50"/><head>5.
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1707"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1708"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1709"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1710"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1711"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1712"/>
+  </facsimile>
+  <text xml:id="L_08-02-005-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch5" n="5">
+        <pb type="VIII_2" n="50"/>
+        <head>5.
 DE MAGNETIS SPHAERA</head>
-<head>[zweite Hälfte 1674 – Anfang 1675]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung:
+        <head>[zweite Hälfte 1674 – Anfang 1675]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung:
 LH XXXV 10, 9 Bl. 3-4. 1 Bog. 2<hi rendition="#sup">o</hi>.
-<formula xml:id="Ch5.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>2</m:mn></m:mrow></m:math></formula> Sp. auf Bl. 3 r<hi rendition="#sup">o</hi> links oben.
-Der übrige Text auf Bl. 3 r<hi rendition="#sup">o</hi> gehört zu N. 28<hi rendition="#sub">5</hi>. Der Bog. überliefert ferner N. 28<hi rendition="#sub">1</hi>, N. 28<hi rendition="#sub">2</hi> und N. 28<hi rendition="#sub">6</hi>.</p><p>Cc 2, Nr. 1191 (tlw.)</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch5.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Das vorliegende Stück befindet sich zusammen mit Unterstücken von N. 28 auf einem Bogen und dürfte daher zeitnah zu diesen letzteren entstanden sein.
-Die Datierung von N. 28 – zweite Hälfte 1674 bis Anfang 1675 – wird demgemäß auch für das vorliegende Stück übernommen.</hi></p></div><div type="text"><figure rendition="#inline-margin-left" xml:id="Ch5.fig1_1">
-        <graphic url="./images/lh0351009_003r-d1.svg" style="trim:  0mm -3mm -4mm 0mm; clip: true" width="164.7756pt" xml:id="Ch5.g1"/>
-        
-        <head xml:id="Ch5.fig1_2" rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
-      </figure><p xml:id="Ch5.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[3 r<hi rendition="#sup">o</hi>]</fw> Experiundum est, an Magnes<index indexName="Sachverzeichnis"><term>magnes</term></index> habeat sphaeram activitatis<index indexName="Sachverzeichnis"><term>sphaera activitatis</term></index> determinatam, id est, pone Magnetem elevare posse certum ferri<index indexName="Sachverzeichnis"><term>ferrum</term></index> pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> ex distantia data; ita ut aucta distantia elevare amplius non possit; quaeritur an aucta distantia omnino non agat in ferrum<index indexName="Sachverzeichnis"><term>ferrum</term></index> illud. Hoc ita experiri licet: Pone ferrum<index indexName="Sachverzeichnis"><term>ferrum</term></index> illud in fundo vasis<index indexName="Sachverzeichnis"><term>vas</term></index> aqua<index indexName="Sachverzeichnis"><term>aqua</term></index> pleni esse; distantia a magnete<index indexName="Sachverzeichnis"><term>magnes</term></index> superposito, majore paulo quam ut ab eo attrahi possit. Jam infigamus illud ferrum<index indexName="Sachverzeichnis"><term>ferrum</term></index> rei cuidam levi ut suberi<index indexName="Sachverzeichnis"><term>suber</term></index>; ita tamen ut pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> ferri<index indexName="Sachverzeichnis"><term>ferrum</term></index> praeponderet levitati suberis<index indexName="Sachverzeichnis"><term>suber</term></index>; id est ut maneat in fundo: Experiundum erit admoto magnete, an frustum illud ex ferro<index indexName="Sachverzeichnis"><term>ferrum</term></index> et subere<index indexName="Sachverzeichnis"><term>suber</term></index> elevare possit; nam si elevat; sequitur sphaeram illam activitatis<index indexName="Sachverzeichnis"><term>sphaera activitatis</term></index> non fuisse determinatam; sed magnetem<index indexName="Sachverzeichnis"><term>magnes</term></index> egisse in ferrum<index indexName="Sachverzeichnis"><term>ferrum</term></index> etsi non satis fortiter, quod nunc apparet; quoniam levius redditum attolit. Sin minus patet magnetem habere sphaeram activitatis<index indexName="Sachverzeichnis"><term>sphaera activitatis</term></index> determinatam; ultra quam omnino non agat.</p><p xml:id="Ch5.p6">Idem sic quoque facilius indagari potest; examinando an sit distantia quaedam assignabilis; ex qua magnes<index indexName="Sachverzeichnis"><term>magnes</term></index> frustum ferri<index indexName="Sachverzeichnis"><term>ferrum</term></index> parvum elevet, majus quod ex minore elevaret, non <app type="Bfootnote"><lem type="main">elevaret.
-Hinc patebit an magnes eadem vi agat in magna parva distantia.</lem><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    27-S. 51.1--></note><rdg wit="#L" cause="addition">elevaret. <note type="editorial">|</note> <add>Hinc <seg type="apparat-ellipsis"/> distantia.</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> </rdg><rdg wit="#L" n="1"> Si duo </rdg><rdg wit="#L" n="2"> Si sit <hi rendition="#i">L</hi></rdg></app></p><p xml:id="Ch5.p7">Si sit pila<index indexName="Sachverzeichnis"><term>pila</term></index> ferrea, et duobus magnetibus<index indexName="Sachverzeichnis"><term>magnes</term></index> in oppositis punctis <formula xml:id="Ch5.p7.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>A</m:mi><m:mo>.</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>, opposito modo <pb type="VIII_2" n="51"/>fricetur, ponendo magnetes esse aequales, destruetur effectus mutuo. Jam examinandum est, quid fiat, si fricetur simul in <formula xml:id="Ch5.p7.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> et <formula xml:id="Ch5.p7.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula> pro varia anguli ratione.</p><p xml:id="Ch5.p8">Experiendum an eundem effectum faciat annulus<index indexName="Sachverzeichnis"><term>annulus</term></index> ferreus, quem pila<index indexName="Sachverzeichnis"><term>pila</term></index> aut acus<index indexName="Sachverzeichnis"><term>acus</term></index>: idem quae aliae a figuris varietates. Experiendum an mutatio oriatur, certis partibus in magnete<index indexName="Sachverzeichnis"><term>magnes</term></index> <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">aut pila<index indexName="Sachverzeichnis"><term>pila</term></index></add></lem><note type="lemma-abbrev">aut pila</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-igne mutilibus redditis, v.g. aequatore<index indexName="Sachverzeichnis"><term>aequator</term></index>; et aliis; item quid fiat uno polo<index indexName="Sachverzeichnis"><term>polus</term></index> ignito, altero <app type="Bfootnote"><lem type="main">relicto.</lem><note type="lemma-abbrev">altero</note><rdg wit="#L" n="1"> destructo </rdg><rdg wit="#L" n="2"> relicto <hi rendition="#i">L</hi></rdg></app></p><p xml:id="Ch5.p9">De ratione faciendi compassum<index indexName="Sachverzeichnis"><term>compassus</term></index> nauticum maximum ad minuta usque secunda divisum. Acus<index indexName="Sachverzeichnis"><term>acus</term></index> magneticae in extremitate <formula xml:id="Ch5.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>M</m:mi><m:mo>.</m:mo></m:mrow></m:math></formula></p><p xml:id="Ch5.p10">De modo inclinationem<index indexName="Sachverzeichnis"><term>inclinatio</term></index> et declinationem<index indexName="Sachverzeichnis"><term>declinatio</term></index> ad regulam revocandi, in terra<index indexName="Sachverzeichnis"><term>terra</term></index>: per <formula xml:id="Ch5.p10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>P</m:mi></m:math></formula> parallelos et meridianos.</p><p xml:id="Ch5.p11">Magnetis<index indexName="Sachverzeichnis"><term>magnes</term></index> vis attractiva<index indexName="Sachverzeichnis"><term>vis attractiva</term></index> <formula xml:id="Ch5.p11.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo>+</m:mo><m:mi>h</m:mi></m:mrow></m:math></formula>, pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[pilulae]</corr></lem><rdg wit="#L"><orig>pilylae</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> <app type="Bfootnote"><lem type="main">ferro<index indexName="Sachverzeichnis"><term>ferrum</term></index> gravis</lem><note type="lemma-abbrev">ferro</note><rdg wit="#L" n="1"> imbuit </rdg><rdg wit="#L" n="2"> gravis <hi rendition="#i">L</hi></rdg></app> <formula xml:id="Ch5.p11.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>g</m:mi><m:mo>+</m:mo><m:mi>h</m:mi></m:mrow></m:math></formula>. <formula xml:id="Ch5.p11.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>h</m:mi></m:math></formula> pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> aquae<index indexName="Sachverzeichnis"><term>aqua</term></index> paris spatii[,] <formula xml:id="Ch5.p11.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>c</m:mi><m:mo>+</m:mo><m:mi>g</m:mi><m:mo>+</m:mo><m:mi>h</m:mi><m:mo>+</m:mo><m:mi>d</m:mi></m:mrow></m:math></formula>
-pondus<index indexName="Sachverzeichnis"><term>pondus</term></index> ipsius magnetis<index indexName="Sachverzeichnis"><term>magnes</term></index>[,] ex centro <formula xml:id="Ch5.p11.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>E</m:mi><m:mo>,</m:mo></m:mrow></m:math></formula> radio <formula xml:id="Ch5.p11.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>E</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula>
-Hactenus figura data, fiat nova.</p></div></div></body>
-  </text>
+                        <formula xml:id="Ch5.p2.m1">
+                          <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mo>/</m:mo>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:math>
+                        </formula> Sp. auf Bl. 3 r<hi rendition="#sup">o</hi> links oben.
+Der übrige Text auf Bl. 3 r<hi rendition="#sup">o</hi> gehört zu N. 28<hi rendition="#sub">5</hi>. Der Bog. überliefert ferner N. 28<hi rendition="#sub">1</hi>, N. 28<hi rendition="#sub">2</hi> und N. 28<hi rendition="#sub">6</hi>.
+                      </p>
+                      <p>Cc 2, Nr. 1191 (tlw.)</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch5.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>: Das vorliegende Stück befindet sich zusammen mit Unterstücken von N. 28 auf einem Bogen und dürfte daher zeitnah zu diesen letzteren entstanden sein.
+Die Datierung von N. 28 – zweite Hälfte 1674 bis Anfang 1675 – wird demgemäß auch für das vorliegende Stück übernommen.</hi>
+          </p>
+        </div>
+        <div type="text">
+          <figure rendition="#inline-margin-left" xml:id="Ch5.fig1_1">
+            <graphic url="./images/lh0351009_003r-d1.svg" style="trim:  0mm -3mm -4mm 0mm; clip: true" width="164.7756pt" xml:id="Ch5.g1"/>
+
+            <head xml:id="Ch5.fig1_2" rendition="#c">[              <hi rendition="#i">Fig. 1</hi>]
+            </head>
+          </figure>
+          <p xml:id="Ch5.p5" rendition="#noindent">
+            <pb type="L"/>
+            <fw type="folNum">[3 r<hi rendition="#sup">o</hi>]
+            </fw> Experiundum est, an Magnes<index indexName="Sachverzeichnis">
+            <term>magnes</term>
+          </index> habeat sphaeram activitatis<index indexName="Sachverzeichnis">
+          <term>sphaera activitatis</term>
+        </index> determinatam, id est, pone Magnetem elevare posse certum ferri<index indexName="Sachverzeichnis">
+        <term>ferrum</term>
+      </index> pondus<index indexName="Sachverzeichnis">
+      <term>pondus</term>
+    </index> ex distantia data; ita ut aucta distantia elevare amplius non possit; quaeritur an aucta distantia omnino non agat in ferrum<index indexName="Sachverzeichnis">
+    <term>ferrum</term>
+  </index> illud. Hoc ita experiri licet: Pone ferrum<index indexName="Sachverzeichnis">
+  <term>ferrum</term>
+</index> illud in fundo vasis<index indexName="Sachverzeichnis">
+<term>vas</term>
+</index> aqua<index indexName="Sachverzeichnis">
+<term>aqua</term>
+</index> pleni esse; distantia a magnete<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> superposito, majore paulo quam ut ab eo attrahi possit. Jam infigamus illud ferrum<index indexName="Sachverzeichnis">
+<term>ferrum</term>
+</index> rei cuidam levi ut suberi<index indexName="Sachverzeichnis">
+<term>suber</term>
+</index>; ita tamen ut pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> ferri<index indexName="Sachverzeichnis">
+<term>ferrum</term>
+</index> praeponderet levitati suberis<index indexName="Sachverzeichnis">
+<term>suber</term>
+</index>; id est ut maneat in fundo: Experiundum erit admoto magnete, an frustum illud ex ferro<index indexName="Sachverzeichnis">
+<term>ferrum</term>
+</index> et subere<index indexName="Sachverzeichnis">
+<term>suber</term>
+</index> elevare possit; nam si elevat; sequitur sphaeram illam activitatis<index indexName="Sachverzeichnis">
+<term>sphaera activitatis</term>
+</index> non fuisse determinatam; sed magnetem<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> egisse in ferrum<index indexName="Sachverzeichnis">
+<term>ferrum</term>
+</index> etsi non satis fortiter, quod nunc apparet; quoniam levius redditum attolit. Sin minus patet magnetem habere sphaeram activitatis<index indexName="Sachverzeichnis">
+<term>sphaera activitatis</term>
+</index> determinatam; ultra quam omnino non agat.</p>
+<p xml:id="Ch5.p6">Idem sic quoque facilius indagari potest; examinando an sit distantia quaedam assignabilis; ex qua magnes<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> frustum ferri<index indexName="Sachverzeichnis">
+<term>ferrum</term>
+</index> parvum elevet, majus quod ex minore elevaret, non <app type="Bfootnote">
+<lem type="main">elevaret.
+Hinc patebit an magnes eadem vi agat in magna parva distantia.</lem>
+<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    27-S. 51.1--></note>
+<rdg wit="#L" cause="addition">elevaret. <note type="editorial">|</note>
+<add>Hinc <seg type="apparat-ellipsis"/>
+ distantia.</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="1"> Si duo </rdg>
+<rdg wit="#L" n="2"> Si sit <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch5.p7">Si sit pila<index indexName="Sachverzeichnis">
+<term>pila</term>
+</index> ferrea, et duobus magnetibus<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> in oppositis punctis <formula xml:id="Ch5.p7.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>.</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula>, opposito modo <pb type="VIII_2" n="51"/>
+fricetur, ponendo magnetes esse aequales, destruetur effectus mutuo. Jam examinandum est, quid fiat, si fricetur simul in <formula xml:id="Ch5.p7.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> et <formula xml:id="Ch5.p7.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula> pro varia anguli ratione.</p>
+<p xml:id="Ch5.p8">Experiendum an eundem effectum faciat annulus<index indexName="Sachverzeichnis">
+<term>annulus</term>
+</index> ferreus, quem pila<index indexName="Sachverzeichnis">
+<term>pila</term>
+</index> aut acus<index indexName="Sachverzeichnis">
+<term>acus</term>
+</index>: idem quae aliae a figuris varietates. Experiendum an mutatio oriatur, certis partibus in magnete<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">aut pila<index indexName="Sachverzeichnis">
+<term>pila</term>
+</index>
+</add>
+</lem>
+<note type="lemma-abbrev">aut pila</note>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+igne mutilibus redditis, v.g. aequatore<index indexName="Sachverzeichnis">
+<term>aequator</term>
+</index>; et aliis; item quid fiat uno polo<index indexName="Sachverzeichnis">
+<term>polus</term>
+</index> ignito, altero <app type="Bfootnote">
+<lem type="main">relicto.</lem>
+<note type="lemma-abbrev">altero</note>
+<rdg wit="#L" n="1"> destructo </rdg>
+<rdg wit="#L" n="2"> relicto <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch5.p9">De ratione faciendi compassum<index indexName="Sachverzeichnis">
+<term>compassus</term>
+</index> nauticum maximum ad minuta usque secunda divisum. Acus<index indexName="Sachverzeichnis">
+<term>acus</term>
+</index> magneticae in extremitate <formula xml:id="Ch5.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>M</m:mi>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</p>
+<p xml:id="Ch5.p10">De modo inclinationem<index indexName="Sachverzeichnis">
+<term>inclinatio</term>
+</index> et declinationem<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index> ad regulam revocandi, in terra<index indexName="Sachverzeichnis">
+<term>terra</term>
+</index>: per <formula xml:id="Ch5.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>P</m:mi>
+</m:math>
+</formula> parallelos et meridianos.</p>
+<p xml:id="Ch5.p11">Magnetis<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> vis attractiva<index indexName="Sachverzeichnis">
+<term>vis attractiva</term>
+</index>
+<formula xml:id="Ch5.p11.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>+</m:mo>
+<m:mi>g</m:mi>
+<m:mo>+</m:mo>
+<m:mi>h</m:mi>
+</m:mrow>
+</m:math>
+</formula>, pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[pilulae]</corr>
+</lem>
+<rdg wit="#L">
+<orig>pilylae</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">ferro<index indexName="Sachverzeichnis">
+<term>ferrum</term>
+</index> gravis</lem>
+<note type="lemma-abbrev">ferro</note>
+<rdg wit="#L" n="1"> imbuit </rdg>
+<rdg wit="#L" n="2"> gravis <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch5.p11.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>g</m:mi>
+<m:mo>+</m:mo>
+<m:mi>h</m:mi>
+</m:mrow>
+</m:math>
+</formula>.<formula xml:id="Ch5.p11.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>h</m:mi>
+</m:math>
+</formula> pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> aquae<index indexName="Sachverzeichnis">
+<term>aqua</term>
+</index> paris spatii[,] <formula xml:id="Ch5.p11.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>c</m:mi>
+<m:mo>+</m:mo>
+<m:mi>g</m:mi>
+<m:mo>+</m:mo>
+<m:mi>h</m:mi>
+<m:mo>+</m:mo>
+<m:mi>d</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> ipsius magnetis<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index>[,] ex centro <formula xml:id="Ch5.p11.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>E</m:mi>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> radio <formula xml:id="Ch5.p11.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>E</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+Hactenus figura data, fiat nova.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

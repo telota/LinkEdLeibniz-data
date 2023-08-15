@@ -1,332 +1,673 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-036-000">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">De Concursu Duorum Corporum</title>
-<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-036-000">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">De Concursu Duorum Corporum</title>
+                <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
 Text</title>
-<respStmt>
-<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
-</resp>
-</respStmt>
-<respStmt>
-<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Martina</forename>
-<surname>Gödel</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Sebastian W.</forename>
-<surname>Stork</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
-</resp>
-</respStmt>
-</titleStmt>
-
-<publicationStmt>
-<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
-<date type="creation">2022</date>
-<availability>
-<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
-<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
-</licence>
-</availability>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-<analytic>
-<author>
-<persName ref="http://d-nb.info/gnd/118571249">
-<surname>Leibniz</surname>
-<forename>Gottfried Wilhelm</forename>
-</persName>
-</author>
-<title type="chapter" level="a" n="36">De Concursu Duorum Corporum</title>
-<title type="section" level="a" n=""/>
-<date calendar="#gregorian" notBefore="1676-11-15" resp="#ed" cert="medium">[zweite
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sebastian W. Stork</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+                <date type="creation">2022</date>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+                        <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118571249">
+                                <surname>Leibniz</surname>
+                                <forename>Gottfried Wilhelm</forename>
+                            </persName>
+                        </author>
+                        <title type="chapter" level="a" n="36">De Concursu Duorum Corporum</title>
+                        <title type="section" level="a" n=""/>
+                        <date calendar="#gregorian" notBefore="1676-11-15" resp="#ed" cert="medium">[zweite
 Hälfte November 1676]</date>
-<date calendar="#gregorian" notAfter="1676-11-30" resp="#ed" cert="medium"/>
-<idno type="PDF">
-<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
-<idno type="page">#page=406</idno>
-</idno>
-</analytic>
-<monogr>
-<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+                        <date calendar="#gregorian" notAfter="1676-11-30" resp="#ed" cert="medium"/>
+                        <idno type="PDF">
+                            <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+                            <idno type="page">#page=406</idno>
+                        </idno>
+                    </analytic>
+                    <monogr>
+                        <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
 Naturwissenschaftliche, medizinische und technische Schriften</title>
-<title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
-<imprint>
-<publisher>Walter de Gruyter GmbH</publisher>
-<pubPlace>Berlin, Boston</pubPlace>
-<date type="publication">2021</date>
-</imprint>
-<biblScope unit="page" from="373" to="374"/>
-</monogr>
-<series>
-<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+                        <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+                        <imprint>
+                            <publisher>Walter de Gruyter GmbH</publisher>
+                            <pubPlace>Berlin, Boston</pubPlace>
+                            <date type="publication">2021</date>
+                        </imprint>
+                        <biblScope unit="page" from="373" to="374"/>
+                    </monogr>
+                    <series>
+                        <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
 Briefe</title>
-</series>
-</biblStruct>
-<listWit>
-<witness n="L" corresp="#L_08-03-036-000_facs-haupttextzeuge">
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-<idno type="Signatur">LH XXXV 10, 16 Bl. 7</idno>
-</msIdentifier>
-<msContents corresp="L_witness-content-types.xml#notiz">
-<summary>
-<p><!--Notiz: LH XXXV 10, 16 Bl. 7. Ein Zettel (<?tex-source \phantom{)}?> 9,5 x 12
+                    </series>
+                </biblStruct>
+                <listWit>
+                    <witness n="L" corresp="#L_08-03-036-000_facs-haupttextzeuge">
+                        <msDesc>
+                            <msIdentifier>
+                                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                                <idno type="Signatur">LH XXXV 10, 16 Bl. 7</idno>
+                            </msIdentifier>
+                            <msContents corresp="L_witness-content-types.xml#notiz">
+                                <summary>
+                                    <p>                                        <!--Notiz: LH XXXV 10, 16 Bl. 7. Ein Zettel (<?tex-source \phantom{)}?> 9,5 x 12
 cm<?tex-source \phantom{(}?>); oberer Rand abgerissen, die übrigen beschnitten.
-Eine halbe Seite auf <ref
-target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2357"
->Bl. 7 r<hi rendition="#sup">o</hi></ref>; auf <ref
-target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2359"
->Bl. 7  v<hi rendition="#sup">o</hi></ref> Kostenaufstellung von fremder
+Eine halbe Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2357">Bl. 7 r<hi rendition="#sup">o</hi></ref>; auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2359">Bl. 7  v<hi rendition="#sup">o</hi></ref> Kostenaufstellung von fremder
 Hand:--></p>
-</summary>
-</msContents>
-<physDesc>
-<objectDesc form="Handschrift"/>
-</physDesc>
-<history>
-<origin corresp="L_witness-origin-types.xml#origin-L"/>
-</history>
-</msDesc>
-</witness>
-</listWit>
-</sourceDesc>
-</fileDesc>
-<encodingDesc>
-<tagsDecl>
-<rendition scheme="css" xml:id="i">font-style:italic</rendition>
-<rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-<rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-<rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-<rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-<rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-<rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-<rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-<rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-<rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-</tagsDecl>
-<charDecl>
-<!-- Sonderzeichen OHNE Unicodeentsprechung -->
-<!--rightpropto-->
-<glyph xml:id="rightpropto">
-<glyphName>rightpropto</glyphName>
-<desc>...</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="TeX">\rightpropto</mapping>
-<graphic url="../../glyphs/rightpropto.svg"/>
-</glyph>
-<glyph xml:id="Pfund">
-<glyphName>Pfund</glyphName>
-<desc>stilisiertes lb-Zeichen (Pfund)</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.7</value>
-</charProp>
-<mapping type="TeX">\Pfund</mapping>
-<graphic url="../../glyphs/Pfund.svg"/>
-</glyph>
-<!-- leibdashv -->
-<glyph xml:id="pleibdashv">
-<glyphName>pleibdashv</glyphName>
-<desc>Bedeutung (+−) - gesenkt</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>-1</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="PUA"/>
-<mapping type="TeX">\pleibdashv</mapping>
-<graphic url="../../glyphs/pm.svg"/>
-</glyph>
-<glyph xml:id="leibdashv">
-<glyphName>leibdashv</glyphName>
-<desc>Bedeutung (+−) - nicht-gesenkt</desc>
-<charProp>
-<localName>baselineshift-in-ex</localName>
-<value>0</value>
-</charProp>
-<charProp>
-<localName>width-in-em</localName>
-<value>0.6</value>
-</charProp>
-<mapping type="PUA"/>
-<mapping type="TeX">\leibdashv</mapping>
-<graphic url="../../glyphs/pm.svg"/>
-</glyph>
-<!-- Sonderzeichen MIT Unicodeentsprechung -->
-</charDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="la"/>
-</langUsage>
-<calendarDesc>
-<calendar xml:id="gregorian">
-<p>Gregorianischer Kalenderstil</p>
-</calendar>
-<calendar xml:id="julian">
-<p>Julianischer Kalenderstil</p>
-</calendar>
-</calendarDesc>
-<textClass>
-<catRef scheme="L_terms" target="L_subjects.xml#stoss"/>
-<catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
-<catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
-<catRef scheme="L_terms" target="L_terms.xml#"/>
-</textClass>
-<abstract>
-<listPerson>
-<person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-<person sameAs="L_persons.xml#"/>
-</listPerson>
-<listPlace>
-<place sameAs="L_places.xml#"/>
-</listPlace>
-</abstract>
-</profileDesc>
-<revisionDesc>
-<change when="2021" who="#telota" status="base"/>
-<change when="2021-02-14" who="#stork" status="enrich_1"/>
-</revisionDesc>
-</teiHeader>
-<facsimile source="digilib.bbaw.de" xml:id="L_08-03-036-000_facs-haupttextzeuge">
-<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2357"/>
-<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2359"/>
-</facsimile>
-<text xml:id="L_08-03-036-000_text">
-<body xml:id="Document">
-<div type="chapter" xml:id="Ch36" n="36">
-<head>36 DE CONCURSU DUORUM CORPORUM</head>
-<head>[zweite Hälfte November 1676]</head>
-<div type="ueberlieferung">
-<p>
-<hi rendition="#b #smaller">Überlieferung:</hi>
-<listWit>
-<witness>
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-<idno type="Signatur">LH XXXV 10, 16 Bl. 7</idno>
-</msIdentifier>
-<msContents>
-<summary>
-<p>Notiz: LH XXXV 10, 16 Bl. 7. Ein Zettel (<?tex-source \phantom{)}?> 9,5 x
-12 cm<?tex-source \phantom{(}?>); oberer Rand abgerissen, die übrigen
-beschnitten. Eine halbe Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2357">Bl. 7 r<hi rendition="#sup">o</hi></ref>; auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2359">Bl. 7  v<hi rendition="#sup">o</hi></ref> Kostenaufstellung von fremder
+                                </summary>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc form="Handschrift"/>
+                            </physDesc>
+                            <history>
+                                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+                <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+                <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+                <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+                <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+                <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+                <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+                <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+                <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+                <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+            </tagsDecl>
+            <charDecl>
+                <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+                <!--rightpropto-->
+                <glyph xml:id="rightpropto">
+                    <glyphName>rightpropto</glyphName>
+                    <desc>...</desc>
+                    <charProp>
+                        <localName>baselineshift-in-ex</localName>
+                        <value>0</value>
+                    </charProp>
+                    <charProp>
+                        <localName>width-in-em</localName>
+                        <value>0.6</value>
+                    </charProp>
+                    <mapping type="TeX">\rightpropto</mapping>
+                    <graphic url="../../glyphs/rightpropto.svg"/>
+                </glyph>
+                <glyph xml:id="Pfund">
+                    <glyphName>Pfund</glyphName>
+                    <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+                    <charProp>
+                        <localName>baselineshift-in-ex</localName>
+                        <value>0</value>
+                    </charProp>
+                    <charProp>
+                        <localName>width-in-em</localName>
+                        <value>0.7</value>
+                    </charProp>
+                    <mapping type="TeX">\Pfund</mapping>
+                    <graphic url="../../glyphs/Pfund.svg"/>
+                </glyph>
+                <!-- leibdashv -->
+                <glyph xml:id="pleibdashv">
+                    <glyphName>pleibdashv</glyphName>
+                    <desc>Bedeutung (+−) - gesenkt</desc>
+                    <charProp>
+                        <localName>baselineshift-in-ex</localName>
+                        <value>-1</value>
+                    </charProp>
+                    <charProp>
+                        <localName>width-in-em</localName>
+                        <value>0.6</value>
+                    </charProp>
+                    <mapping type="PUA"/>
+                    <mapping type="TeX">\pleibdashv</mapping>
+                    <graphic url="../../glyphs/pm.svg"/>
+                </glyph>
+                <glyph xml:id="leibdashv">
+                    <glyphName>leibdashv</glyphName>
+                    <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+                    <charProp>
+                        <localName>baselineshift-in-ex</localName>
+                        <value>0</value>
+                    </charProp>
+                    <charProp>
+                        <localName>width-in-em</localName>
+                        <value>0.6</value>
+                    </charProp>
+                    <mapping type="PUA"/>
+                    <mapping type="TeX">\leibdashv</mapping>
+                    <graphic url="../../glyphs/pm.svg"/>
+                </glyph>
+                <!-- Sonderzeichen MIT Unicodeentsprechung -->
+            </charDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="la"/>
+            </langUsage>
+            <calendarDesc>
+                <calendar xml:id="gregorian">
+                    <p>Gregorianischer Kalenderstil</p>
+                </calendar>
+                <calendar xml:id="julian">
+                    <p>Julianischer Kalenderstil</p>
+                </calendar>
+            </calendarDesc>
+            <textClass>
+                <catRef scheme="L_terms" target="L_subjects.xml#stoss"/>
+                <catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
+                <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+                <catRef scheme="L_terms" target="L_terms.xml#"/>
+            </textClass>
+            <abstract>
+                <listPerson>
+                    <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+                    <person sameAs="L_persons.xml#"/>
+                </listPerson>
+                <listPlace>
+                    <place sameAs="L_places.xml#"/>
+                </listPlace>
+            </abstract>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2021" who="#telota" status="base"/>
+            <change when="2021-02-14" who="#stork" status="enrich_1"/>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile source="digilib.bbaw.de" xml:id="L_08-03-036-000_facs-haupttextzeuge">
+        <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2357"/>
+        <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2359"/>
+    </facsimile>
+    <text xml:id="L_08-03-036-000_text">
+        <body xml:id="Document">
+            <div type="chapter" xml:id="Ch36" n="36">
+                <head>36 DE CONCURSU DUORUM CORPORUM</head>
+                <head>[zweite Hälfte November 1676]</head>
+                <div type="ueberlieferung">
+                    <p>
+                        <hi rendition="#b #smaller">Überlieferung:</hi>
+                        <listWit>
+                            <witness>
+                                <msDesc>
+                                    <msIdentifier>
+                                        <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                                        <idno type="Signatur">LH XXXV 10, 16 Bl. 7</idno>
+                                    </msIdentifier>
+                                    <msContents>
+                                        <summary>
+                                            <p>Notiz: LH XXXV 10, 16 Bl. 7. Ein Zettel (                                                <?tex-source \phantom{)}?> 9,5 x
+12 cm                                                <?tex-source \phantom{(}?>); oberer Rand abgerissen, die übrigen
+beschnitten. Eine halbe Seite auf                                                <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2357">Bl. 7 r<hi rendition="#sup">o</hi>
+                                                </ref>; auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2359">Bl. 7  v<hi rendition="#sup">o</hi>
+                                            </ref> Kostenaufstellung von fremder
 Hand:</p>
-</summary>
-</msContents>
-<physDesc>
-<objectDesc form="Handschrift"/>
-</physDesc>
-<history>
-<origin/>
-</history>
-</msDesc>
-</witness>
-</listWit>
-</p>
-</div>
-<div type="contents">
-<p xml:id="Ch36.p1">
-<anchor xml:id="RK60127"/>
-<!--  \hackfor{\par} -->
-</p>
-<p xml:id="Ch36.p5">
-<hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> Die inhaltliche
+                                    </summary>
+                                </msContents>
+                                <physDesc>
+                                    <objectDesc form="Handschrift"/>
+                                </physDesc>
+                                <history>
+                                    <origin/>
+                                </history>
+                            </msDesc>
+                        </witness>
+                    </listWit>
+                </p>
+            </div>
+            <div type="contents">
+                <p xml:id="Ch36.p1">
+                    <anchor xml:id="RK60127"/>
+                    <!--  \hackfor{\par} -->
+                </p>
+                <p xml:id="Ch36.p5">
+                    <hi rendition="#smaller">
+                        <hi rendition="#b">Datierungsgründe:</hi> Die inhaltliche
 Auseinandersetzung mit dem Stoß sowie die Kostenaufstellung auf Holländisch sprechen
 für eine frühe Entstehung des Textes wahrscheinlich noch auf Leibnizens Rückreise aus
-Frankreich, die vom 12. bis Ende November 1676 durch die Niederlande führte.<index indexName="Orte"><term><hi rendition="#smaller">Frankreich (Gallia,
-Francia)</hi></term></index><index indexName="Orte"><term><hi rendition="#smaller">Niederlande</hi></term></index></hi>
+Frankreich, die vom 12. bis Ende November 1676 durch die Niederlande führte.<index indexName="Orte">
+                        <term>
+                            <hi rendition="#smaller">Frankreich (Gallia,
+Francia)</hi>
+                        </term>
+                    </index>
+                    <index indexName="Orte">
+                        <term>
+                            <hi rendition="#smaller">Niederlande</hi>
+                        </term>
+                    </index>
+                </hi>
+            </p>
+        </div>
+        <div type="text">
+            <p rendition="#noindent" xml:id="Ch36.p6">
+                <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2357">
+                    <pb type="L"/>
+                    <fw type="folNum">[7 r<hi rendition="#sup">o</hi>]
+                    </fw>
+                </ref> Si in
+Globum majorem quiescentem<index indexName="Sachen">
+                <term>globus
+major</term>
+            </index>
+            <index indexName="Sachen">
+                <term>globus quiescens</term>
+            </index>
+            <app type="Bfootnote">                <!--is-correction-app-with-lemma-->
+                <lem type="main">
+                    <corr resp="#ed">[                        <hi rendition="#i">a</hi>]
+                    </corr>
+                </lem>
+                <rdg wit="#L">
+                    <orig>
+                        <hi rendition="#i">A</hi>
+                    </orig>
+                    <note type="editorial">
+                        <hi rendition="#i">erg. L, ändert
+Hrsg.</hi>
+                    </note>
+                </rdg>
+            </app> ingruat <app type="Bfootnote">
+            <lem type="main">directe</lem>
+            <rdg wit="#L">
+                <note type="editorial">
+                    <hi rendition="#i">erg. L</hi>
+                </note>
+            </rdg>
+        </app> minor,<index indexName="Sachen">
+        <term>globus
+minor</term>
+    </index> lex haec.<index indexName="Sachen">
+    <term>lex
+concursus</term>
+</index> Sit major 1, minor <formula xml:id="Ch36.p6.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+    <m:mrow>
+        <m:mrow>
+            <m:mn>1</m:mn>
+            <m:mo>:</m:mo>
+            <m:mi>n</m:mi>
+        </m:mrow>
+        <m:mo>,</m:mo>
+    </m:mrow>
+</m:math>
+</formula>
+fiet reflexio minoris <formula xml:id="Ch36.p6.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+    <m:mrow>
+        <m:mrow>
+            <m:mi>n</m:mi>
+            <m:mo>-</m:mo>
+            <m:mn>1</m:mn>
+        </m:mrow>
+        <m:mo rspace="4.2pt">,</m:mo>
+        <m:mo rspace="4.2pt">:</m:mo>
+        <m:mo rspace="4.2pt">,</m:mo>
+        <m:mrow>
+            <m:mi>n</m:mi>
+            <m:mo>+</m:mo>
+            <m:mn>1</m:mn>
+        </m:mrow>
+    </m:mrow>
+    <m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<index indexName="Sachen">
+<term>reflexio corporis minoris</term>
+</index> progressus majoris
+<formula xml:id="Ch36.p6.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+    <m:mn>2</m:mn>
+    <m:mo rspace="4.2pt">:</m:mo>
+    <m:mo>,</m:mo>
+    <m:mi>n</m:mi>
+    <m:mo>+</m:mo>
+    <m:mn>1</m:mn>
+    <m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<index indexName="Sachen">
+<term>progressus corporis majoris</term>
+</index>
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]
+</note>
+<note type="editorial">Das Diagramm zeigt vermutlich zwei
+mögliche Stoßrichtungen.</note>
+</app>
 </p>
-</div>
-<div type="text">
-<p rendition="#noindent" xml:id="Ch36.p6"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=2357"><pb type="L"/><fw type="folNum">[7 r<hi rendition="#sup">o</hi>]</fw></ref> Si in
-Globum majorem quiescentem<index indexName="Sachen"><term>globus
-major</term></index><index indexName="Sachen"><term>globus quiescens</term></index>
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<hi rendition="#i">a</hi>]</corr></lem><rdg wit="#L"><orig><hi rendition="#i">A</hi></orig>
-<note type="editorial"><hi rendition="#i">erg. L, ändert
-Hrsg.</hi></note></rdg></app> ingruat <app type="Bfootnote"><lem type="main">directe</lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app> minor,<index indexName="Sachen"><term>globus
-minor</term></index> lex haec.<index indexName="Sachen"><term>lex
-concursus</term></index> Sit major 1, minor <formula xml:id="Ch36.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo>:</m:mo><m:mi>n</m:mi></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula>
-fiet reflexio minoris <formula xml:id="Ch36.p6.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow><m:mo rspace="4.2pt">,</m:mo><m:mo rspace="4.2pt">:</m:mo><m:mo rspace="4.2pt">,</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula><index indexName="Sachen"><term>reflexio corporis minoris</term></index> progressus majoris
-<formula xml:id="Ch36.p6.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>2</m:mn><m:mo rspace="4.2pt">:</m:mo><m:mo>,</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:mrow></m:math></formula><index indexName="Sachen"><term>progressus corporis majoris</term></index><app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note><note type="editorial">Das Diagramm zeigt vermutlich zwei
-mögliche Stoßrichtungen.</note></app></p>
 <figure rendition="#own-line_centered" xml:id="Ch36.p7">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_16_007_d1_007r.svg" width="78.0516pt" xml:id="Ch36.p7.g1"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]
+</head>
 </figure>
 <p xml:id="Ch36.p8">
 <formula xml:id="Ch36.p8.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mtable columnspacing="5pt" rowspacing="10pt">
-<m:mtr>
-<m:mtd class="ltx_border_rr" columnalign="center">
-<m:mi>a</m:mi>
-</m:mtd>
-<m:mtd class="ltx_border_r" columnalign="center">
-<m:mi>v</m:mi>
-</m:mtd>
-<m:mtd columnalign="center">
-<m:mi>x</m:mi>
-</m:mtd>
-</m:mtr>
-<m:mtr>
-<m:mtd class="ltx_border_rr" columnalign="center">
-<m:mi>b</m:mi>
-</m:mtd>
-<m:mtd class="ltx_border_r" columnalign="center">
-<m:mi>y</m:mi>
-</m:mtd>
-<m:mtd columnalign="center">
-<m:mi>z</m:mi>
-</m:mtd>
-</m:mtr>
+    <m:mtr>
+        <m:mtd class="ltx_border_rr" columnalign="center">
+            <m:mi>a</m:mi>
+        </m:mtd>
+        <m:mtd class="ltx_border_r" columnalign="center">
+            <m:mi>v</m:mi>
+        </m:mtd>
+        <m:mtd columnalign="center">
+            <m:mi>x</m:mi>
+        </m:mtd>
+    </m:mtr>
+    <m:mtr>
+        <m:mtd class="ltx_border_rr" columnalign="center">
+            <m:mi>b</m:mi>
+        </m:mtd>
+        <m:mtd class="ltx_border_r" columnalign="center">
+            <m:mi>y</m:mi>
+        </m:mtd>
+        <m:mtd columnalign="center">
+            <m:mi>z</m:mi>
+        </m:mtd>
+    </m:mtr>
 </m:mtable>
 </m:math>
 </formula>
 </p>
-<p rendition="#noindent" xml:id="Ch36.p9"><formula xml:id="Ch36.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi>v</m:mi><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow></m:mrow></m:math></formula>
- <anchor xml:id="_35_10_16_007_1a"/><formula xml:id="Ch36.p9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>v</m:mi><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math></formula><app type="Bfootnote" from="#_35_10_16_007_1a" to="#_35_10_16_007_1b"><lem type="main"/><note type="lemma-abbrev"><formula xml:id="Ch36.p9.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>v</m:mi><m:mo>+</m:mo><m:mi>x</m:mi></m:mrow><m:mo>=</m:mo><m:mi>z</m:mi></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> <formula xml:id="Ch36.p9.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>v</m:mi><m:mo>=</m:mo><m:mrow><m:mi>z</m:mi><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mrow></m:math></formula>
-</rdg><rdg wit="#L" n="2"> <formula xml:id="Ch36.p9.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow><m:mo>-</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app></p>
-<p rendition="#noindent" xml:id="Ch36.p10"><formula xml:id="Ch36.p10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow><m:mo>-</m:mo><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>x</m:mi></m:mrow></m:mrow></m:mrow></m:math></formula>,
- et <anchor xml:id="_35_10_16_007_1b"/><formula xml:id="Ch36.p10.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mrow><m:mi>v</m:mi><m:mo rspace="4.2pt">,</m:mo><m:mrow><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi></m:mrow><m:mo rspace="4.2pt">,</m:mo><m:mo rspace="4.2pt">:</m:mo><m:mo rspace="4.2pt">,</m:mo><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:mrow></m:mrow></m:math></formula></p>
-<p rendition="#noindent" xml:id="Ch36.p11"><formula xml:id="Ch36.p11.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>v</m:mi></m:mrow><m:mo>-</m:mo><m:mi>z</m:mi></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mi>b</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow></m:mrow><m:mo>,</m:mo></m:mrow></m:math></formula>
- fit <formula xml:id="Ch36.p11.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mi>v</m:mi><m:mo>,</m:mo><m:mn> 2</m:mn><m:mi>a</m:mi><m:mo rspace="4.2pt">:</m:mo><m:mo rspace="4.2pt">,</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula></p>
+<p rendition="#noindent" xml:id="Ch36.p9">
+<formula xml:id="Ch36.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+    <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mrow>
+                <m:mi>v</m:mi>
+                <m:mo>-</m:mo>
+                <m:mi>x</m:mi>
+            </m:mrow>
+            <m:mo stretchy="false">)</m:mo>
+        </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+        <m:mi>b</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>z</m:mi>
+    </m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+<anchor xml:id="_35_10_16_007_1a"/>
+<formula xml:id="Ch36.p9.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+    <m:mrow>
+        <m:mi>v</m:mi>
+        <m:mo>+</m:mo>
+        <m:mi>x</m:mi>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mi>z</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote" from="#_35_10_16_007_1a" to="#_35_10_16_007_1b">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch36.p9.m3">
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mrow>
+            <m:mrow>
+                <m:mi>v</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>x</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>z</m:mi>
+        </m:mrow>
+    </m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch36.p9.m4">
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mrow>
+            <m:mi>v</m:mi>
+            <m:mo>=</m:mo>
+            <m:mrow>
+                <m:mi>z</m:mi>
+                <m:mo>-</m:mo>
+                <m:mi>x</m:mi>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+                <m:mrow>
+                    <m:mi>b</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>z</m:mi>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mrow>
+                    <m:mi>a</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                </m:mrow>
+            </m:mrow>
+        </m:mrow>
+    </m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch36.p9.m5">
+    <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+        <m:mrow>
+            <m:mrow>
+                <m:mrow>
+                    <m:mi>a</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>v</m:mi>
+                </m:mrow>
+                <m:mo>-</m:mo>
+                <m:mrow>
+                    <m:mi>a</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                </m:mrow>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mrow>
+                <m:mrow>
+                    <m:mi>b</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>v</m:mi>
+                </m:mrow>
+                <m:mo>+</m:mo>
+                <m:mrow>
+                    <m:mi>b</m:mi>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>x</m:mi>
+                </m:mrow>
+            </m:mrow>
+        </m:mrow>
+    </m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p rendition="#noindent" xml:id="Ch36.p10">
+<formula xml:id="Ch36.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+    <m:mrow>
+        <m:mrow>
+            <m:mi>a</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>v</m:mi>
+        </m:mrow>
+        <m:mo>-</m:mo>
+        <m:mrow>
+            <m:mi>a</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>x</m:mi>
+        </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+        <m:mrow>
+            <m:mi>b</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>v</m:mi>
+        </m:mrow>
+        <m:mo>+</m:mo>
+        <m:mrow>
+            <m:mi>b</m:mi>
+            <m:mo>⁢</m:mo>
+            <m:mi>x</m:mi>
+        </m:mrow>
+    </m:mrow>
+</m:mrow>
+</m:math>
+</formula>,
+ et <anchor xml:id="_35_10_16_007_1b"/>
+<formula xml:id="Ch36.p10.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>=</m:mo>
+<m:mrow>
+    <m:mi>v</m:mi>
+    <m:mo rspace="4.2pt">,</m:mo>
+    <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mo>-</m:mo>
+        <m:mi>b</m:mi>
+    </m:mrow>
+    <m:mo rspace="4.2pt">,</m:mo>
+    <m:mo rspace="4.2pt">:</m:mo>
+    <m:mo rspace="4.2pt">,</m:mo>
+    <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mo>+</m:mo>
+        <m:mi>b</m:mi>
+    </m:mrow>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>
+</p>
+<p rendition="#noindent" xml:id="Ch36.p11">
+<formula xml:id="Ch36.p11.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+    <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mrow>
+            <m:mo stretchy="false">(</m:mo>
+            <m:mrow>
+                <m:mrow>
+                    <m:mn>2</m:mn>
+                    <m:mo>⁢</m:mo>
+                    <m:mi>v</m:mi>
+                </m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>z</m:mi>
+            </m:mrow>
+            <m:mo stretchy="false">)</m:mo>
+        </m:mrow>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+        <m:mi>b</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>z</m:mi>
+    </m:mrow>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+ fit <formula xml:id="Ch36.p11.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>z</m:mi>
+<m:mo>=</m:mo>
+<m:mi>v</m:mi>
+<m:mo>,</m:mo>
+<m:mn> 2</m:mn>
+<m:mi>a</m:mi>
+<m:mo rspace="4.2pt">:</m:mo>
+<m:mo rspace="4.2pt">,</m:mo>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</p>
 <p rendition="#noindent" xml:id="Ch36.p12">
 <formula xml:id="Ch36.p12.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
@@ -337,39 +678,106 @@ mögliche Stoßrichtungen.</note></app></p>
 <m:mi>z</m:mi>
 <m:mo>=</m:mo>
 <m:mrow>
-<m:mrow>
-<m:mi>a</m:mi>
-<m:mo>-</m:mo>
-<m:mi>b</m:mi>
-</m:mrow>
-<m:mo rspace="4.2pt">,</m:mo>
-<m:mo rspace="4.2pt">:</m:mo>
-<m:mo>,</m:mo>
-<m:mrow>
-<m:mn> 2</m:mn>
-<m:mo>⁢</m:mo>
-<m:mi>a</m:mi>
-</m:mrow>
+    <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mo>-</m:mo>
+        <m:mi>b</m:mi>
+    </m:mrow>
+    <m:mo rspace="4.2pt">,</m:mo>
+    <m:mo rspace="4.2pt">:</m:mo>
+    <m:mo>,</m:mo>
+    <m:mrow>
+        <m:mn> 2</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi>a</m:mi>
+    </m:mrow>
 </m:mrow>
 </m:mrow>
 </m:mrow>
 </m:math>
 </formula>
 </p>
-<p xml:id="Ch36.p13">Si globus <hi rendition="#i">a</hi><index indexName="Sachen"><term>globus major</term></index> incidat directe in globum quiescentem <hi rendition="#i">b</hi><index indexName="Sachen"><term>globus minor</term></index><index indexName="Sachen"><term>globus quiescens</term></index> erit celeritas globi <hi rendition="#i">a</hi> nova<index indexName="Sachen"><term>celeritas globi
-nova</term></index> ad priorem<index indexName="Sachen"><term>celeritas globi
-prior</term></index> ut <formula xml:id="Ch36.p13.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>-</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>
-ad <anchor xml:id="_35_10_16_007_2a"/><formula xml:id="Ch36.p13.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow></m:math></formula>.
-<app type="Bfootnote" from="#_35_10_16_007_2a" to="#_35_10_16_007_2b"><lem type="main"/><note type="lemma-abbrev"><formula xml:id="Ch36.p13.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> Si corpus </rdg><rdg wit="#L" n="2"> Si globus major <app><rdg wit="#L" n="a"><hi rendition="#i">A</hi>
-</rdg><rdg wit="#L" n="b"><hi rendition="#i">a</hi> ingruat in mino
-</rdg></app></rdg><rdg wit="#L" n="3"> Si globus <app><rdg wit="#L" n="a"><hi rendition="#i">A</hi>
-</rdg><rdg wit="#L" n="b"><hi rendition="#i">a</hi> motus, incidat indirecte in
-globum <hi rendition="#i">b</hi> <hi rendition="#i">L</hi></rdg></app></rdg></app></p>
+<p xml:id="Ch36.p13">Si globus <hi rendition="#i">a</hi>
+<index indexName="Sachen">
+<term>globus major</term>
+</index> incidat directe in globum quiescentem <hi rendition="#i">b</hi>
+<index indexName="Sachen">
+<term>globus minor</term>
+</index>
+<index indexName="Sachen">
+<term>globus quiescens</term>
+</index> erit celeritas globi <hi rendition="#i">a</hi> nova<index indexName="Sachen">
+<term>celeritas globi
+nova</term>
+</index> ad priorem<index indexName="Sachen">
+<term>celeritas globi
+prior</term>
+</index> ut <formula xml:id="Ch36.p13.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>-</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+ad <anchor xml:id="_35_10_16_007_2a"/>
+<formula xml:id="Ch36.p13.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+<app type="Bfootnote" from="#_35_10_16_007_2a" to="#_35_10_16_007_2b">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch36.p13.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>a</m:mi>
+<m:mo>+</m:mo>
+<m:mi>b</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> Si corpus </rdg>
+<rdg wit="#L" n="2"> Si globus major <app>
+<rdg wit="#L" n="a">
+<hi rendition="#i">A</hi>
+</rdg>
+<rdg wit="#L" n="b">
+<hi rendition="#i">a</hi> ingruat in mino
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="3"> Si globus <app>
+<rdg wit="#L" n="a">
+<hi rendition="#i">A</hi>
+</rdg>
+<rdg wit="#L" n="b">
+<hi rendition="#i">a</hi> motus, incidat indirecte in
+globum <hi rendition="#i">b</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</p>
 <p xml:id="Ch36.p14">Si globus <hi rendition="#i">a</hi> motus, incidat indirecte in
-globum <hi rendition="#i">b</hi> quiescentem [<anchor xml:id="_35_10_16_007_2b"/><hi rendition="#i">Text bricht ab.</hi>]</p>
+globum <hi rendition="#i">b</hi> quiescentem [<anchor xml:id="_35_10_16_007_2b"/>
+<hi rendition="#i">Text bricht ab.</hi>]
+</p>
 <figure rendition="#own-line_centered" xml:id="Ch36.p15">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_16_007_d2_007r.svg" width="39.0258pt" xml:id="Ch36.p15.g1"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]
+</head>
 </figure>
 </div>
 </div>

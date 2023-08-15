@@ -1,38 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-017-002">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-017-002">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Sur les petites oscillations des pendules 2</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp>
-						<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-					</resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Martina</forename>
-						<surname>Gödel</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note>
-					</resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName>
-						<forename>Sebastian W.</forename>
-						<surname>Stork</surname>
-					</persName>
-					<resp>
-						<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note>
-					</resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
@@ -57,7 +71,10 @@
 						<title type="section" level="a" n="2">Sur les petites oscillations des pendules 2</title>
 						<date calendar="#gregorian" notBefore="1674-10" resp="#ed" cert="medium"/>
 						<date calendar="#gregorian" notAfter="1675-05" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=206</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+							<idno type="page">#page=206</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII:
@@ -74,7 +91,9 @@
 						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
               Briefe</title>
 					</series>
-					<relatedItem type="superordinated-chapter"><ptr target="#L_08-02-017-000"/></relatedItem>
+					<relatedItem type="superordinated-chapter">
+						<ptr target="#L_08-02-017-000"/>
+					</relatedItem>
 				</biblStruct>
 				<listWit>
 					<witness n="L" corresp="#L_08-02-017-002_facs-haupttextzeuge">
@@ -773,49 +792,304 @@ Papier durch Erhaltungsmaßnahmen stabilisiert.</p>
 				<head>17<hi rendition="#sub">2</hi>.
 SUR LES PETITES OSCILLATIONS DES PENDULES 2</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung:
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+										<idno type="Signatur"/>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>Aufzeichnung:
 LH XXXVII 5 Bl. 56.
 1 Bl. 4<hi rendition="#sup">o</hi>.
-<formula xml:id="Ch17.S2.p2.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn>4</m:mn><m:mo>/</m:mo><m:mn>5</m:mn></m:mrow></m:math></formula> S. auf Bl. 56 v<hi rendition="#sup">o</hi>.
+												<formula xml:id="Ch17.S2.p2.m1">
+													<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+														<m:mrow>
+															<m:mn>4</m:mn>
+															<m:mo>/</m:mo>
+															<m:mn>5</m:mn>
+														</m:mrow>
+													</m:math>
+												</formula> S. auf Bl. 56 v<hi rendition="#sup">o</hi>.
 Bl. 56 r<hi rendition="#sup">o</hi> und das unterste Fünftel von Bl. 56 v<hi rendition="#sup">o</hi> überliefern N. 17<hi rendition="#sub">1</hi>.
 Ein Wasserzeichen, beschnitten.
-Papier durch Erhaltungsmaßnahmen stabilisiert.</p><p>Cc 2, Nr. 975 B</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p>
+Papier durch Erhaltungsmaßnahmen stabilisiert.</p>
+											<p>Cc 2, Nr. 975 B</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch17.S2.p4" rendition="#noindent"><pb type="L"/><fw type="folNum">[56 v<hi rendition="#sup">o</hi>]</fw>
-Si vous demandez la longueur d’un pendule,<index indexName="Sachverzeichnis"><term>pendule</term></index>
+					<p xml:id="Ch17.S2.p4" rendition="#noindent">
+						<pb type="L"/>
+						<fw type="folNum">[56 v<hi rendition="#sup">o</hi>]
+						</fw>
+Si vous demandez la longueur d’un pendule,<index indexName="Sachverzeichnis">
+						<term>pendule</term>
+					</index>
 qui fasse un certain nombre de battements dans un certain temps,
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">par exemple dans un quart d’heure;</add></lem><note type="lemma-abbrev">par <seg type="apparat-ellipsis"/> d’heure</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
+					<app type="Bfootnote">
+						<lem type="main">							<!--is-addition-app-with-lemma-->
+							<add resp="#L">par exemple dans un quart d’heure;</add>
+						</lem>
+						<note type="lemma-abbrev">par <seg type="apparat-ellipsis"/>
+ d’heure</note>
+						<note type="editorial">
+							<hi rendition="#i">erg. L</hi>
+						</note>
+					</app>
 vous la pourrez trouver ainsi:</p>
-					<p xml:id="Ch17.S2.p5">Prenez
-<app type="Bfootnote"><lem type="main">une pendule,</lem><note type="lemma-abbrev">une</note><rdg wit="#L" n="1"> autre pendule, dont </rdg><rdg wit="#L" n="2"> pendule, <hi rendition="#i">L</hi></rdg></app>
+				<p xml:id="Ch17.S2.p5">Prenez
+					<app type="Bfootnote">
+						<lem type="main">une pendule,</lem>
+						<note type="lemma-abbrev">une</note>
+						<rdg wit="#L" n="1"> autre pendule, dont </rdg>
+						<rdg wit="#L" n="2"> pendule, <hi rendition="#i">L</hi>
+						</rdg>
+					</app>
 à discretion, mesurez sa longueur; et contez combien de battements elle fait dans le même temps susdit, par exemple dans un quart d’heure.</p>
-					<p xml:id="Ch17.S2.p6">A present pour s’expliquer plus aisement, appellons le nombre des battements de la pendule, prise à discretion, <hi rendition="#i"><formula xml:id="Ch17.S2.p6.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo mathvariant="normal" stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo mathvariant="normal" stretchy="false">)</m:mo></m:mrow></m:math></formula></hi> et le nombre des battements demandé, de la pendule dont nous cherchons la longueur, <hi rendition="#i"><formula xml:id="Ch17.S2.p6.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo mathvariant="normal" stretchy="false">(</m:mo><m:mi>B</m:mi><m:mo mathvariant="normal" stretchy="false">)</m:mo></m:mrow></m:math></formula></hi> et la longueur de la pendule prise à discretion, <hi rendition="#i"><formula xml:id="Ch17.S2.p6.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo mathvariant="normal" stretchy="false">(</m:mo><m:mi>C</m:mi><m:mo mathvariant="normal" stretchy="false">)</m:mo></m:mrow></m:math></formula></hi> et enfin la longueur de la pendule demandée, <hi rendition="#i"><formula xml:id="Ch17.S2.p6.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo mathvariant="normal" stretchy="false">(</m:mo><m:mi>D</m:mi><m:mo mathvariant="normal" stretchy="false">)</m:mo></m:mrow></m:math></formula></hi>.
+				<p xml:id="Ch17.S2.p6">A present pour s’expliquer plus aisement, appellons le nombre des battements de la pendule, prise à discretion, <hi rendition="#i">
+					<formula xml:id="Ch17.S2.p6.m1">
+						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+							<m:mrow>
+								<m:mo mathvariant="normal" stretchy="false">(</m:mo>
+								<m:mi>A</m:mi>
+								<m:mo mathvariant="normal" stretchy="false">)</m:mo>
+							</m:mrow>
+						</m:math>
+					</formula>
+				</hi> et le nombre des battements demandé, de la pendule dont nous cherchons la longueur, <hi rendition="#i">
+				<formula xml:id="Ch17.S2.p6.m2">
+					<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+						<m:mrow>
+							<m:mo mathvariant="normal" stretchy="false">(</m:mo>
+							<m:mi>B</m:mi>
+							<m:mo mathvariant="normal" stretchy="false">)</m:mo>
+						</m:mrow>
+					</m:math>
+				</formula>
+			</hi> et la longueur de la pendule prise à discretion, <hi rendition="#i">
+			<formula xml:id="Ch17.S2.p6.m3">
+				<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+					<m:mrow>
+						<m:mo mathvariant="normal" stretchy="false">(</m:mo>
+						<m:mi>C</m:mi>
+						<m:mo mathvariant="normal" stretchy="false">)</m:mo>
+					</m:mrow>
+				</m:math>
+			</formula>
+		</hi> et enfin la longueur de la pendule demandée, <hi rendition="#i">
+		<formula xml:id="Ch17.S2.p6.m4">
+			<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+				<m:mrow>
+					<m:mo mathvariant="normal" stretchy="false">(</m:mo>
+					<m:mi>D</m:mi>
+					<m:mo mathvariant="normal" stretchy="false">)</m:mo>
+				</m:mrow>
+			</m:math>
+		</formula>
+	</hi>.
 Cela estant posé, l’operation sera telle.</p>
-					<p xml:id="Ch17.S2.p7" rendition="#noindent">[<hi rendition="#i">Nachfolgend klein gedruckter Text gestrichen:</hi>]</p>
-					<p xml:id="Ch17.S2.p8" rendition="#noindent"><hi rendition="#smaller">Des deux nombres, <formula xml:id="Ch17.S2.p8.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula> et <formula xml:id="Ch17.S2.p8.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula> divisez le plus grand par le moindre;
+<p xml:id="Ch17.S2.p7" rendition="#noindent">[	<hi rendition="#i">Nachfolgend klein gedruckter Text gestrichen:</hi>]
+</p>
+<p xml:id="Ch17.S2.p8" rendition="#noindent">
+	<hi rendition="#smaller">Des deux nombres, <formula xml:id="Ch17.S2.p8.m1">
+		<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+			<m:mrow>
+				<m:mo stretchy="false">(</m:mo>
+				<m:mi>A</m:mi>
+				<m:mo stretchy="false">)</m:mo>
+			</m:mrow>
+		</m:math>
+	</formula> et <formula xml:id="Ch17.S2.p8.m2">
+	<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+		<m:mrow>
+			<m:mo stretchy="false">(</m:mo>
+			<m:mi>B</m:mi>
+			<m:mo stretchy="false">)</m:mo>
+		</m:mrow>
+	</m:math>
+</formula> divisez le plus grand par le moindre;
 et multipliez le quotient par luy même, ou (ce qui est la même chose) prenez le quarré du dit quotient:
-appellons le dit quarré, <formula xml:id="Ch17.S2.p8.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula>.</hi></p>
-					<p xml:id="Ch17.S2.p9"><hi rendition="#smaller">Enfin faites l’operation suivante de la regle des
-<app type="Bfootnote"><lem type="main">trois;<!--  \hack{\newlineSi le nombre quarr\'{e} $(E)$,} --></lem><rdg wit="#L" n="1"> Comme le nombre quarré <formula xml:id="Ch17.S2.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>F</m:mi></m:math></formula>, </rdg><rdg wit="#L" n="2"> Si le nombre quarré <formula xml:id="Ch17.S2.p9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula>
-									<hi rendition="#i">L</hi></rdg></app><!--  \hackfor{\par\noindentSi le nombre quarr\'{e} $(E)$,} --></hi></p>
-					<p xml:id="Ch17.S2.p10" rendition="#noindent"><hi rendition="#smaller">Si le nombre quarré <formula xml:id="Ch17.S2.p10.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></formula>,
-donne l’Unité; combien</hi></p>
-					<p xml:id="Ch17.S2.p11"><formula xml:id="Ch17.S2.p11.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mi mathsize="80%">A</m:mi><m:mi mathsize="80%">B</m:mi></m:mfrac></m:mstyle></m:math></formula>   <formula xml:id="Ch17.S2.p11.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:msup><m:mi mathsize="80%">A</m:mi><m:mn mathsize="80%">2</m:mn></m:msup><m:munder accentunder="true"><m:munder accentunder="true"><m:msup><m:mi mathsize="80%">B</m:mi><m:mn mathsize="80%">2</m:mn></m:msup><m:mo mathsize="80%" stretchy="false">¯</m:mo></m:munder><m:mo mathsize="80%" stretchy="false">¯</m:mo></m:munder></m:mfrac></m:mstyle></m:math></formula>   <formula xml:id="Ch17.S2.p11.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mi mathsize="80%">C</m:mi><m:mi mathsize="80%">D</m:mi></m:mfrac></m:mstyle></m:math></formula><hi rendition="#smaller"/></p>
-					<p xml:id="Ch17.S2.p12"> <formula xml:id="Ch17.S2.p12.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>r</m:mi></m:math></formula></p>
-					<p xml:id="Ch17.S2.p13" rendition="#noindent">Multipliez le nombre <formula xml:id="Ch17.S2.p13.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> par luy même, ou (: ce qui est la même chose :) prenez son quarré;
-de même multipliez le nombre <formula xml:id="Ch17.S2.p13.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> par luy même, ou prenez son quarré;
+appellons le dit quarré, <formula xml:id="Ch17.S2.p8.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+	<m:mrow>
+		<m:mo stretchy="false">(</m:mo>
+		<m:mi>E</m:mi>
+		<m:mo stretchy="false">)</m:mo>
+	</m:mrow>
+</m:math>
+</formula>.
+</hi>
+</p>
+<p xml:id="Ch17.S2.p9">
+<hi rendition="#smaller">Enfin faites l’operation suivante de la regle des
+<app type="Bfootnote">
+<lem type="main">trois;	<!--  \hack{\newlineSi le nombre quarr\'{e} $(E)$,} --></lem>
+<rdg wit="#L" n="1"> Comme le nombre quarré <formula xml:id="Ch17.S2.p9.m1">
+	<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+		<m:mi>F</m:mi>
+	</m:math>
+</formula>, 
+</rdg>
+<rdg wit="#L" n="2"> Si le nombre quarré <formula xml:id="Ch17.S2.p9.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+	<m:mrow>
+		<m:mo stretchy="false">(</m:mo>
+		<m:mi>E</m:mi>
+		<m:mo stretchy="false">)</m:mo>
+	</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app><!--  \hackfor{\par\noindentSi le nombre quarr\'{e} $(E)$,} --></hi>
+</p>
+<p xml:id="Ch17.S2.p10" rendition="#noindent">
+<hi rendition="#smaller">Si le nombre quarré <formula xml:id="Ch17.S2.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>E</m:mi>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math>
+</formula>,
+donne l’Unité; combien</hi>
+</p>
+<p xml:id="Ch17.S2.p11">
+<formula xml:id="Ch17.S2.p11.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi mathsize="80%">A</m:mi>
+<m:mi mathsize="80%">B</m:mi>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>
+<formula xml:id="Ch17.S2.p11.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:msup>
+<m:mi mathsize="80%">A</m:mi>
+<m:mn mathsize="80%">2</m:mn>
+</m:msup>
+<m:munder accentunder="true">
+<m:munder accentunder="true">
+	<m:msup>
+		<m:mi mathsize="80%">B</m:mi>
+		<m:mn mathsize="80%">2</m:mn>
+	</m:msup>
+	<m:mo mathsize="80%" stretchy="false">¯</m:mo>
+</m:munder>
+<m:mo mathsize="80%" stretchy="false">¯</m:mo>
+</m:munder>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>
+<formula xml:id="Ch17.S2.p11.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi mathsize="80%">C</m:mi>
+<m:mi mathsize="80%">D</m:mi>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>
+<hi rendition="#smaller"/>
+</p>
+<p xml:id="Ch17.S2.p12">
+<formula xml:id="Ch17.S2.p12.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>r</m:mi>
+</m:math>
+</formula>
+</p>
+<p xml:id="Ch17.S2.p13" rendition="#noindent">Multipliez le nombre <formula xml:id="Ch17.S2.p13.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> par luy même, ou (: ce qui est la même chose :) prenez son quarré;
+de même multipliez le nombre <formula xml:id="Ch17.S2.p13.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> par luy même, ou prenez son quarré;
 et enfin faites une telle operation de la regle des trois:</p>
-					<p xml:id="Ch17.S2.p14"><app type="Bfootnote"><lem type="main">Si le quarré du nombre <formula xml:id="Ch17.S2.p14.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> des battements</lem><note type="lemma-abbrev">Si le</note><rdg wit="#L" n="1"> nombre </rdg><rdg wit="#L" n="2"> quarré du nombre <app><rdg wit="#L" n="a"> des battements <formula xml:id="Ch17.S2.p14.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula>
-									</rdg><rdg wit="#L" n="b"><formula xml:id="Ch17.S2.p14.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>A</m:mi></m:math></formula> des battements <hi rendition="#i">L</hi></rdg></app></rdg></app>
-de la pendule prise à discretion, donne la longueur <formula xml:id="Ch17.S2.p14.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>C</m:mi></m:math></formula>, de sa pendule.</p>
-					<p xml:id="Ch17.S2.p15">Combien donnera le quarré du Nombre
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">donné</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-						<formula xml:id="Ch17.S2.p15.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>B</m:mi></m:math></formula> des battements de la pendule demandée,
-pour la longueur <formula xml:id="Ch17.S2.p15.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>, de la dite pendule.</p>
-					<p xml:id="Ch17.S2.p16">Et le produit de cette operation, vous donnera la dite longueur <formula xml:id="Ch17.S2.p16.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>D</m:mi></m:math></formula>, que vous aviez demandée.</p>
-				</div>
-			</div>
-		</body>
-	</text>
+<p xml:id="Ch17.S2.p14">
+<app type="Bfootnote">
+<lem type="main">Si le quarré du nombre <formula xml:id="Ch17.S2.p14.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> des battements</lem>
+<note type="lemma-abbrev">Si le</note>
+<rdg wit="#L" n="1"> nombre </rdg>
+<rdg wit="#L" n="2"> quarré du nombre <app>
+<rdg wit="#L" n="a"> des battements <formula xml:id="Ch17.S2.p14.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="b">
+<formula xml:id="Ch17.S2.p14.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>A</m:mi>
+</m:math>
+</formula> des battements <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+de la pendule prise à discretion, donne la longueur <formula xml:id="Ch17.S2.p14.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>C</m:mi>
+</m:math>
+</formula>, de sa pendule.</p>
+<p xml:id="Ch17.S2.p15">Combien donnera le quarré du Nombre
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">donné</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+<formula xml:id="Ch17.S2.p15.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>B</m:mi>
+</m:math>
+</formula> des battements de la pendule demandée,
+pour la longueur <formula xml:id="Ch17.S2.p15.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>, de la dite pendule.</p>
+<p xml:id="Ch17.S2.p16">Et le produit de cette operation, vous donnera la dite longueur <formula xml:id="Ch17.S2.p16.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>D</m:mi>
+</m:math>
+</formula>, que vous aviez demandée.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

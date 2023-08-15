@@ -1,22 +1,122 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-063-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-063-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Ars conficiendi omnis generis gemmas</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Ars conficiendi omnis generis gemmas</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="63">Ars conficiendi omnis generis gemmas</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1675-09" resp="#ed" cert="medium">[September 1675]</date><date calendar="#gregorian" notAfter="1675-09" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=674</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="626" to="628"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-063-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 6 Bl. 3-4</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung: LH XXXVII 6 Bl. 3-4.
+            </author>
+            <title type="chapter" level="a" n="63">Ars conficiendi omnis generis gemmas</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1675-09" resp="#ed" cert="medium">[September 1675]</date>
+            <date calendar="#gregorian" notAfter="1675-09" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=674</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="626" to="628"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-063-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 6 Bl. 3-4</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung: LH XXXVII 6 Bl. 3-4.
 1 Bog. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 4 v<hi rendition="#sup">o</hi> und letzte 11 Z. auf Bl. 3 r<hi rendition="#sup">o</hi>.
 Bl. 3 v<hi rendition="#sup">o</hi> und 4 r<hi rendition="#sup">o</hi> leer.
-Bl. 3 r<hi rendition="#sup">o</hi> überliefert zudem N. 64.</p><p>Cc 2, Nr. 1054 (tlw.)</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+Bl. 3 r<hi rendition="#sup">o</hi> überliefert zudem N. 64.</p>
+                  <p>Cc 2, Nr. 1054 (tlw.)</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -642,8 +742,37 @@ Bl. 3 r<hi rendition="#sup">o</hi> überliefert zudem N. 64.</p><p>Cc 2, Nr. 1
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="de"/><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#chemie"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-15" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de"/>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#chemie"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-15" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-063-000_facs-haupttextzeuge">
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,06/&amp;pn=7"/>
@@ -652,36 +781,202 @@ Bl. 3 r<hi rendition="#sup">o</hi> überliefert zudem N. 64.</p><p>Cc 2, Nr. 1
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,06/&amp;pn=10"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,06/&amp;pn=11"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,06/&amp;pn=12"/>
-  </facsimile><text xml:id="L_08-02-063-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch63" n="63"><pb type="VIII_2" n="626"/><head>63.
+  </facsimile>
+  <text xml:id="L_08-02-063-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch63" n="63">
+        <pb type="VIII_2" n="626"/>
+        <head>63.
 ARS CONFICIENDI OMNIS GENERIS GEMMAS</head>
-<head>[September 1675]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung: LH XXXVII 6 Bl. 3-4.
+        <head>[September 1675]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung: LH XXXVII 6 Bl. 3-4.
 1 Bog. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 4 v<hi rendition="#sup">o</hi> und letzte 11 Z. auf Bl. 3 r<hi rendition="#sup">o</hi>.
 Bl. 3 v<hi rendition="#sup">o</hi> und 4 r<hi rendition="#sup">o</hi> leer.
-Bl. 3 r<hi rendition="#sup">o</hi> überliefert zudem N. 64.</p><p>Cc 2, Nr. 1054 (tlw.)</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch63.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
-Das vorliegende Stück ist auf demselben Textträger überliefert wie das von Leibniz eigenhändig auf September 1675 datierte Stück N. 64.</hi></p></div><div type="text"><pb type="L"/><fw type="folNum">[4 v<hi rendition="#sup">o</hi>]</fw><head xml:id="Ch63.p6" rendition="#c"><hi rendition="#g">Ars conficiendi omnis generis gemmas</hi></head><p xml:id="Ch63.p7" rendition="#noindent"><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand:</hi> (1)</note>Wie man das Cristall preparirn soll. Nim schohnen Berg Cristall<index indexName="Sachverzeichnis"><term>Bergkristall</term></index>, so viel Du wilt, in einem reinen Tiegel<index indexName="Sachverzeichnis"><term>Tiegel</term></index> decke ihn zu mit einem andern Tiegel<index indexName="Sachverzeichnis"><term>Tiegel</term></index>
-dass<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand:</hi> quoad corpus</note>
-kein staub oder aschen darein falle. Seze dasselbige in ein Kohlfeüer und laß es wohl durch glühen, hernach nim es aus dem feuer und schütte es also glüend in dein gross geschirr mit reinem kalten waßer. Thue es wieder in Tiegel<index indexName="Sachverzeichnis"><term>Tiegel</term></index> und glüe es wieder, und lesche es im waßer ab, daß thue zu 12 mahlen nacheinander.
-Wann es dann gnug calcinirt ist, so truckne den Cristall sauber, und reibe ihn auff einen harten porphyr-stein zum aller subtilsten staub-pulver. Es muss in keinen metallinen Mörser gestossenn noch auff einen weichen marmorstein gerieben werden sonst wird es vom Metall oder weichen marmorstein soglich darunter menget, verunreiniget, und ist zu dieser arbeit nicht tauglich, also siehe wohl zu daß alles auffs reineste und subtilste gemacht werde, und verschaffe dir also dieses pulvers eine zimliche quantität, denn dieß ist aller edelgestein prima materia.</p><p xml:id="Ch63.p8"><hi rendition="#g">Smaragden</hi><index indexName="Sachverzeichnis"><term>Smaragd</term></index> <hi rendition="#g">zu machen.</hi>
-Nim des preparirten Cristals 2 Unzen; Minie 4 unzen diese zwey vermische auffs beste als immer möglich auff einem harten reibestein thue dazu 45 gran grünspan. und Croci ♂<hi rendition="#sup">tis</hi> 8 gran nach fleissiger Vermischung thue die materi in einen reinen tiegel, doch das der tiegel nicht viel über die helfte voll sey; denn es thut sich anfangs hoch auff damit es nicht mag überlauffen; der tiegel mus auch mit einem Deckel verlutirt werden, dann seze es in einen ofen und gieb ihm starck feüer mit dürrem holz, bey 24 stunden, und siehe wohl zu, dass es in gleicher hize stehe, als ob <pb type="VIII_2" n="627"/>man gold schmelzte, dann las es wohl erkalten und mache den tiegel auff, wann du nun siehest dass es schohn clar und durchsichtig geschmolzen so schlag den Tiegel<index indexName="Sachverzeichnis"><term>Tiegel</term></index> enzwey, so wirstu finden einen schöhnen Smaragd<index indexName="Sachverzeichnis"><term>Smaragd</term></index>. Ist es aber noch blasericht, so verlutir den tiegel wieder oder seze ihn wieder in den Windofen, bis es schöhn clar und rein wird, und diese manier soltu mercken bey allen farben, dann es ist einerley arbeit und handgriff.</p><p xml:id="Ch63.p9">Eine <hi rendition="#g">ander art schmaragd</hi> <index indexName="Sachverzeichnis"><term>Smaragd</term></index>zu machen.
-Nim des bereiteten Cristals 1. Unzen Minii 6 <formula xml:id="Ch63.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle></m:math></formula> Unz. mische es wohl, thue dazu 75 gran grünspann,
-Croci<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand:</hi> In his omnibus minimum minii seu vitrii quod facit nimis ponderosum sine necessitate.</note>
-♂<hi rendition="#sup">tis</hi> 10 gran: procedire wie oben, so wirstu haben einen schohnen hochfarbig Smaragd<index indexName="Sachverzeichnis"><term>Smaragd</term></index> zu kleinen steinen geschliffen, werden sich auffen folio unglaublich schöhn praesentirn.</p><p xml:id="Ch63.p10">Aliter ℞. deines Cristals 2 unzen. Minii 7 unzen und zu ieden unzen sez 10 gran grünspan mische es wohl durcheinander, dann thue noch dabey 10 gran croci tis, schmelze es zusammen wie oben.</p><p xml:id="Ch63.p11"><hi rendition="#g">Adhuc aliter.</hi>
-Nim des Cristallpulvers 2 Unzen. Minii 6 Unzen. Seze ieder Unzen 10 gran grünspan zu, ohne den crocum Martis, schmelze es.</p><p xml:id="Ch63.p12"><hi rendition="#g">Topasius</hi><index indexName="Sachverzeichnis"><term>topasius.</term></index>
-Cristall 2 Unzen Minii 7 unzen schmelz es.</p><p xml:id="Ch63.p13"><hi rendition="#g">Chrysolithus orientalis.</hi>
-Cristall 2 unzen, Minii 8 unzen. Croci ♂<hi rendition="#sup">tis</hi> 12 gran, las es zimlich lang im fluss stehen.</p><p xml:id="Ch63.p14"><hi rendition="#g">Himmelblau.</hi>
-Cristall 2 Unzen, <app type="Bfootnote"><lem type="main">minii 5 unzen, Zapherae 21 gr.</lem><note type="lemma-abbrev">minii 5 unzen,</note><rdg wit="#L" n="1"> smalt 26 gr </rdg><rdg wit="#L" n="2"> Zapherae 21 gr. <hi rendition="#i">L</hi></rdg></app></p><p xml:id="Ch63.p15"><hi rendition="#g">Violet himmelfarb.</hi>
-Cristall 2 unzen, minii 4 <formula xml:id="Ch63.p15.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle></m:math></formula> unz. Smalt 26 gran.
-<pb type="L"/><fw type="folNum">[3 r<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch63.p16"><hi rendition="#g">Oriental saphir.</hi>
-Cristall 2. unz., minii 6 unz. Zapherae 2 scrup. Magnesiae pedemontanae 6 gr.</p><p xml:id="Ch63.p17"><hi rendition="#g">Ein hochfarbig Saphir.</hi>
-Cristall 2 unz. minii 5 unz. Zafferae 42 gr. Magnesiae 8 gr.</p><p xml:id="Ch63.p18"><hi rendition="#g">Granatus orientalis.</hi>
-Cristall 2 unz. minii 6 unz. magnesiae 16 gran. Zafferae 2 gran.</p><p xml:id="Ch63.p19"><hi rendition="#g">Granatus sehr hochfärbig.</hi>
-Cristall 2 unz. minii 5 <formula xml:id="Ch63.p19.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mstyle></m:math></formula>unz., magnesiae 15 gr. Zapherae 4. gr.</p><pb type="VIII_2" n="628"/><p xml:id="Ch63.p20"><hi rendition="#g">Aliter:</hi>
-<app type="Bfootnote"><lem type="main">Cristall 2 unz. minii 5 unz. magnesiae</lem><note type="lemma-abbrev">Cristall 2 unz.</note><rdg wit="#L" n="1"> magnesiae </rdg><rdg wit="#L" n="2"> minii 5 unz. magnesiae <hi rendition="#i">L</hi></rdg></app> 35 gr. Zaph. 4. gr.</p><p xml:id="Ch63.p21"><hi rendition="#g">Crocum ♂<hi rendition="#sup">tis</hi></hi><index indexName="Sachverzeichnis"><term>crocus martis</term></index> zu machen
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">pro gemmis.</add></lem><note type="lemma-abbrev">pro gemmis</note><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-Nim feilspän vom besten stahl, mische es wohl in einem verglasierten geschirr mit guthem distillirten essig,<index indexName="Sachverzeichnis"><term>Essig</term></index>
-dann seze das geschirr in die sonne, las wieder trocken werden denn zerreibe es wieder und befeuchte es wieder mit essig,<index indexName="Sachverzeichnis"><term>Essig</term></index>
+Bl. 3 r<hi rendition="#sup">o</hi> überliefert zudem N. 64.</p>
+                      <p>Cc 2, Nr. 1054 (tlw.)</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch63.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi>
+Das vorliegende Stück ist auf demselben Textträger überliefert wie das von Leibniz eigenhändig auf September 1675 datierte Stück N. 64.</hi>
+          </p>
+        </div>
+        <div type="text">
+          <pb type="L"/>
+          <fw type="folNum">[4 v<hi rendition="#sup">o</hi>]
+          </fw>
+          <head xml:id="Ch63.p6" rendition="#c">
+            <hi rendition="#g">Ars conficiendi omnis generis gemmas</hi>
+          </head>
+          <p xml:id="Ch63.p7" rendition="#noindent">
+            <note type="Afootnote" place="margin" resp="#L">
+              <hi rendition="#i">Am Rand:</hi> (1)</note>Wie man das Cristall preparirn soll. Nim schohnen Berg Cristall<index indexName="Sachverzeichnis">
+            <term>Bergkristall</term>
+          </index>, so viel Du wilt, in einem reinen Tiegel<index indexName="Sachverzeichnis">
+          <term>Tiegel</term>
+        </index> decke ihn zu mit einem andern Tiegel<index indexName="Sachverzeichnis">
+        <term>Tiegel</term>
+      </index>
+dass<note type="Afootnote" place="margin" resp="#L">
+      <hi rendition="#i">Am Rand:</hi> quoad corpus</note>
+kein staub oder aschen darein falle. Seze dasselbige in ein Kohlfeüer und laß es wohl durch glühen, hernach nim es aus dem feuer und schütte es also glüend in dein gross geschirr mit reinem kalten waßer. Thue es wieder in Tiegel<index indexName="Sachverzeichnis">
+    <term>Tiegel</term>
+  </index> und glüe es wieder, und lesche es im waßer ab, daß thue zu 12 mahlen nacheinander.
+Wann es dann gnug calcinirt ist, so truckne den Cristall sauber, und reibe ihn auff einen harten porphyr-stein zum aller subtilsten staub-pulver. Es muss in keinen metallinen Mörser gestossenn noch auff einen weichen marmorstein gerieben werden sonst wird es vom Metall oder weichen marmorstein soglich darunter menget, verunreiniget, und ist zu dieser arbeit nicht tauglich, also siehe wohl zu daß alles auffs reineste und subtilste gemacht werde, und verschaffe dir also dieses pulvers eine zimliche quantität, denn dieß ist aller edelgestein prima materia.</p>
+<p xml:id="Ch63.p8">
+  <hi rendition="#g">Smaragden</hi>
+  <index indexName="Sachverzeichnis">
+    <term>Smaragd</term>
+  </index>
+  <hi rendition="#g">zu machen.</hi>
+Nim des preparirten Cristals 2 Unzen; Minie 4 unzen diese zwey vermische auffs beste als immer möglich auff einem harten reibestein thue dazu 45 gran grünspan. und Croci ♂<hi rendition="#sup">tis</hi> 8 gran nach fleissiger Vermischung thue die materi in einen reinen tiegel, doch das der tiegel nicht viel über die helfte voll sey; denn es thut sich anfangs hoch auff damit es nicht mag überlauffen; der tiegel mus auch mit einem Deckel verlutirt werden, dann seze es in einen ofen und gieb ihm starck feüer mit dürrem holz, bey 24 stunden, und siehe wohl zu, dass es in gleicher hize stehe, als ob <pb type="VIII_2" n="627"/>
+man gold schmelzte, dann las es wohl erkalten und mache den tiegel auff, wann du nun siehest dass es schohn clar und durchsichtig geschmolzen so schlag den Tiegel<index indexName="Sachverzeichnis">
+<term>Tiegel</term>
+</index> enzwey, so wirstu finden einen schöhnen Smaragd<index indexName="Sachverzeichnis">
+<term>Smaragd</term>
+</index>. Ist es aber noch blasericht, so verlutir den tiegel wieder oder seze ihn wieder in den Windofen, bis es schöhn clar und rein wird, und diese manier soltu mercken bey allen farben, dann es ist einerley arbeit und handgriff.</p>
+<p xml:id="Ch63.p9">Eine <hi rendition="#g">ander art schmaragd</hi>
+<index indexName="Sachverzeichnis">
+<term>Smaragd</term>
+</index>zu machen.
+Nim des bereiteten Cristals 1. Unzen Minii 6 <formula xml:id="Ch63.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+  <m:mn>1</m:mn>
+  <m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula> Unz. mische es wohl, thue dazu 75 gran grünspann,
+Croci<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am Rand:</hi> In his omnibus minimum minii seu vitrii quod facit nimis ponderosum sine necessitate.</note>
+♂<hi rendition="#sup">tis</hi> 10 gran: procedire wie oben, so wirstu haben einen schohnen hochfarbig Smaragd<index indexName="Sachverzeichnis">
+<term>Smaragd</term>
+</index> zu kleinen steinen geschliffen, werden sich auffen folio unglaublich schöhn praesentirn.</p>
+<p xml:id="Ch63.p10">Aliter ℞. deines Cristals 2 unzen. Minii 7 unzen und zu ieden unzen sez 10 gran grünspan mische es wohl durcheinander, dann thue noch dabey 10 gran croci tis, schmelze es zusammen wie oben.</p>
+<p xml:id="Ch63.p11">
+<hi rendition="#g">Adhuc aliter.</hi>
+Nim des Cristallpulvers 2 Unzen. Minii 6 Unzen. Seze ieder Unzen 10 gran grünspan zu, ohne den crocum Martis, schmelze es.</p>
+<p xml:id="Ch63.p12">
+<hi rendition="#g">Topasius</hi>
+<index indexName="Sachverzeichnis">
+<term>topasius.</term>
+</index>
+Cristall 2 Unzen Minii 7 unzen schmelz es.</p>
+<p xml:id="Ch63.p13">
+<hi rendition="#g">Chrysolithus orientalis.</hi>
+Cristall 2 unzen, Minii 8 unzen. Croci ♂<hi rendition="#sup">tis</hi> 12 gran, las es zimlich lang im fluss stehen.</p>
+<p xml:id="Ch63.p14">
+<hi rendition="#g">Himmelblau.</hi>
+Cristall 2 Unzen, <app type="Bfootnote">
+<lem type="main">minii 5 unzen, Zapherae 21 gr.</lem>
+<note type="lemma-abbrev">minii 5 unzen,</note>
+<rdg wit="#L" n="1"> smalt 26 gr </rdg>
+<rdg wit="#L" n="2"> Zapherae 21 gr. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch63.p15">
+<hi rendition="#g">Violet himmelfarb.</hi>
+Cristall 2 unzen, minii 4 <formula xml:id="Ch63.p15.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula> unz. Smalt 26 gran.
+<pb type="L"/>
+<fw type="folNum">[3 r<hi rendition="#sup">o</hi>]
+</fw>
+</p>
+<p xml:id="Ch63.p16">
+<hi rendition="#g">Oriental saphir.</hi>
+Cristall 2. unz., minii 6 unz. Zapherae 2 scrup. Magnesiae pedemontanae 6 gr.</p>
+<p xml:id="Ch63.p17">
+<hi rendition="#g">Ein hochfarbig Saphir.</hi>
+Cristall 2 unz. minii 5 unz. Zafferae 42 gr. Magnesiae 8 gr.</p>
+<p xml:id="Ch63.p18">
+<hi rendition="#g">Granatus orientalis.</hi>
+Cristall 2 unz. minii 6 unz. magnesiae 16 gran. Zafferae 2 gran.</p>
+<p xml:id="Ch63.p19">
+<hi rendition="#g">Granatus sehr hochfärbig.</hi>
+Cristall 2 unz. minii 5 <formula xml:id="Ch63.p19.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>unz., magnesiae 15 gr. Zapherae 4. gr.</p>
+<pb type="VIII_2" n="628"/>
+<p xml:id="Ch63.p20">
+<hi rendition="#g">Aliter:</hi>
+<app type="Bfootnote">
+<lem type="main">Cristall 2 unz. minii 5 unz. magnesiae</lem>
+<note type="lemma-abbrev">Cristall 2 unz.</note>
+<rdg wit="#L" n="1"> magnesiae </rdg>
+<rdg wit="#L" n="2"> minii 5 unz. magnesiae <hi rendition="#i">L</hi>
+</rdg>
+</app> 35 gr. Zaph. 4. gr.</p>
+<p xml:id="Ch63.p21">
+<hi rendition="#g">Crocum ♂<hi rendition="#sup">tis</hi>
+</hi>
+<index indexName="Sachverzeichnis">
+<term>crocus martis</term>
+</index> zu machen
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">pro gemmis.</add>
+</lem>
+<note type="lemma-abbrev">pro gemmis</note>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+Nim feilspän vom besten stahl, mische es wohl in einem verglasierten geschirr mit guthem distillirten essig,<index indexName="Sachverzeichnis">
+<term>Essig</term>
+</index>
+dann seze das geschirr in die sonne, las wieder trocken werden denn zerreibe es wieder und befeuchte es wieder mit essig,<index indexName="Sachverzeichnis">
+<term>Essig</term>
+</index>
 und lass wieder trocken werden dass thue so lange bis die feilspene alle zu einem subtilen pulver sind worden,
-ander farben wie ziegel-mähl, so hastu crocum ♂<hi rendition="#sup">tis</hi>.<index indexName="Sachverzeichnis"><term>crocus martis</term></index></p></div></div></body>
-  </text>
+ander farben wie ziegel-mähl, so hastu crocum ♂<hi rendition="#sup">tis</hi>.<index indexName="Sachverzeichnis">
+<term>crocus martis</term>
+</index>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

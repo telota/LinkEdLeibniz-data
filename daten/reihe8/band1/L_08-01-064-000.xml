@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-064-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-064-000">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -7,32 +8,56 @@
         <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
           Text</title>
         <respStmt>
-          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Digitale Konzeption und
-            Projektbegleitung</note></resp>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
         </respStmt>
         <respStmt>
-          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-            Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
-          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-            VIII</note></resp>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-            Berlin</note></resp>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
         </respStmt>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
         <date type="creation">2021</date>
         <availability>
-          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -50,7 +75,10 @@
             <date calendar="#gregorian" notBefore="1673-03" resp="#ed" cert="medium">[Frühjahr
               – Sommer 1673]</date>
             <date calendar="#gregorian" notAfter="1673-08" resp="#ed" cert="medium"/>
-            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=624</idno></idno>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+              <idno type="page">#page=624</idno>
+            </idno>
           </analytic>
           <monogr>
             <title type="main" level="s" n="8">Reihe VIII:
@@ -63,22 +91,28 @@
             </imprint>
             <biblScope unit="page" from="579" to="580"/>
           </monogr>
-          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
         </biblStruct>
         <listWit>
-          <witness n="L" corresp="#L_08-01-064-000_facs-haupttextzeuge"><msDesc>
+          <witness n="L" corresp="#L_08-01-064-000_facs-haupttextzeuge">
+            <msDesc>
               <msIdentifier>
                 <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                 <idno type="Signatur">LH XXXV 3A, 8 Bl. 27</idno>
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#notiz">
-                <summary><p>Notizen: LH XXXV 3A, 8 Bl. 27. 1 Bl. 20 x 21 cm, 1 S., Rückseite mit
+                <summary>
+                  <p>Notizen: LH XXXV 3A, 8 Bl. 27. 1 Bl. 20 x 21 cm, 1 S., Rückseite mit
                     Rechnungen und Zeichnungen zur Rechenmaschine, die in einem separaten Band mit
                     den Texten zur Leibniz’schen Rechenmaschine gedruckt werden. Linke und untere
                     Seite beschnitten. Links etwa in der Mitte noch einmal ein Rechteck von 2 x 9 cm
                     herausgeschnitten. Die Zeichnung befindet sich in der rechten unteren
-                    Ecke.</p><p>Cc 2, Nr. 282</p></summary>
+                    Ecke.</p>
+                  <p>Cc 2, Nr. 282</p>
+                </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -86,7 +120,8 @@
               <history>
                 <origin corresp="L_witness-origin-types.xml#origin-L"/>
               </history>
-            </msDesc></witness>
+            </msDesc>
+          </witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -192,7 +227,7 @@
   <facsimile source="http://digitale-sammlungen.gwlb.de/sammlungen/" xml:id="L_08-01-064-000_facs-haupttextzeuge">
     <graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1669&amp;tx_dlf%5Bpage%5D=53"/>
     <graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1669&amp;tx_dlf%5Bpage%5D=54"/>
-    </facsimile>
+  </facsimile>
   <text xml:id="L_08-01-064-000_text">
     <body xml:id="Document">
       <div type="chapter" xml:id="Ch64" n="64">
@@ -201,19 +236,25 @@
           EXPÉRIENCES OPTIQUES DE MARIOTTE</head>
         <head>[Frühjahr – Sommer 1673]</head>
         <div type="ueberlieferung">
-          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-              <witness><msDesc>
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
                   <msIdentifier>
                     <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                     <idno type="Signatur">XXX</idno>
                   </msIdentifier>
                   <msContents>
-                    <summary><p>Notizen: LH XXXV 3A, 8 Bl. 27. 1 Bl. 20 x 21 cm, 1 S., Rückseite mit
+                    <summary>
+                      <p>Notizen: LH XXXV 3A, 8 Bl. 27. 1 Bl. 20 x 21 cm, 1 S., Rückseite mit
                         Rechnungen und Zeichnungen zur Rechenmaschine, die in einem separaten Band
                         mit den Texten zur Leibniz’schen Rechenmaschine gedruckt werden. Linke und
                         untere Seite beschnitten. Links etwa in der Mitte noch einmal ein Rechteck
                         von 2 x 9 cm herausgeschnitten. Die Zeichnung befindet sich in der rechten
-                        unteren Ecke.</p><p>Cc 2, Nr. 282</p></summary>
+                        unteren Ecke.</p>
+                      <p>Cc 2, Nr. 282</p>
+                    </summary>
                   </msContents>
                   <physDesc>
                     <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -221,174 +262,222 @@
                   <history>
                     <origin/>
                   </history>
-                </msDesc></witness>
-            </listWit></p>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
         </div>
         <div type="contents">
-          <p xml:id="Ch64.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Bei
+          <p xml:id="Ch64.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>: Bei
               dem mittleren Teil des Textes handelt sich offenbar um Gesprächsnotizen, in denen
               Details zum Inhalt der von Mariotte<index indexName="Namensregister">
-                <term><hi rendition="#g #smaller">Mariotte,</hi>
-                  <hi rendition="#smaller">Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term>
-              </index> geplanten Schrift <ref corresp="#bib_00186"/><hi rendition="#i">De la nature
+              <term>
+                <hi rendition="#g #smaller">Mariotte,</hi>
+                <hi rendition="#smaller">Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+              </term>
+            </index> geplanten Schrift <ref corresp="#bib_00186"/>
+          <hi rendition="#i">De la nature
                 des couleurs</hi> mitgeteilt werden. Leibniz hat Mariotte im Frühjahr 1673 in Paris
               persönlich kennengelernt, so dass die Aufzeichnungen erst danach entstanden sein
               können. Ein Entstehungsdatum kurz nach dieser Unterredung wird durch das Wasserzeichen
               des benutzten Papiers gestützt, das für die 2. Hälfte 1672 sowie die 1. Hälfte 1673
               belegt ist. Der Text wird daher zwischen Frühjahr und Sommer 1673 entstanden
-              sein.</hi></p>
-        </div>
-        <div type="text">
-          <p xml:id="Ch64.p5"><pb type="L"/><fw type="folNum">[27 r<hi rendition="#sup">o</hi>]</fw>
+              sein.</hi>
+      </p>
+    </div>
+    <div type="text">
+      <p xml:id="Ch64.p5">
+        <pb type="L"/>
+        <fw type="folNum">[27 r<hi rendition="#sup">o</hi>]
+        </fw>
             Instrument pour Niveller<index indexName="Sachverzeichnis">
-              <term>instrument pour niveller</term>
-            </index> avec une boule d’air.</p>
-          <p xml:id="Ch64.p6">Hubin<index indexName="Namensregister">
-              <term><hi rendition="#g">Hubin,</hi> Ludion de</term>
-            </index> a fait un petit homme, quand l’eau est pressée <app type="Bfootnote">
-              <lem type="main">l’air dans</lem>
-              <note type="lemma-abbrev">pressée</note>
-              <rdg wit="#L" n="1"> l’eau dans </rdg>
-              <rdg wit="#L" n="2"> l’air dans <hi rendition="#i">L</hi></rdg>
-            </app> cet homme est pressé aussi, et l’eau entre plus avant dedans. Ainsi il devient
+        <term>instrument pour niveller</term>
+      </index> avec une boule d’air.</p>
+    <p xml:id="Ch64.p6">Hubin<index indexName="Namensregister">
+      <term>
+        <hi rendition="#g">Hubin,</hi> Ludion de</term>
+    </index> a fait un petit homme, quand l’eau est pressée <app type="Bfootnote">
+    <lem type="main">l’air dans</lem>
+    <note type="lemma-abbrev">pressée</note>
+    <rdg wit="#L" n="1"> l’eau dans </rdg>
+    <rdg wit="#L" n="2"> l’air dans <hi rendition="#i">L</hi>
+    </rdg>
+  </app> cet homme est pressé aussi, et l’eau entre plus avant dedans. Ainsi il devient
             pesant et tombe, en retirant l’eau par force, il ressort et remonte, autrement non. Le
             doigt doit entrer justement. Il a fait l’enfer, et le ciel, je luy appris aussi à faire
             le <hi rendition="#g">purgatoire au milieu</hi>
-            <app type="Bfootnote">
-              <lem type="main">c’est par deux liqueurs l’une sur l’autre</lem>
-              <rdg wit="#L"> c’est par deux liqueurs </rdg>
-              <rdg wit="#L" n="1"> de </rdg>
-              <rdg wit="#L" n="2"> sur la </rdg>
-              <rdg wit="#L" n="3" cause="addition"> <add>l’une sur l’autre</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app>.</p>
-          <p xml:id="Ch64.p7">Thermometre de Florence<index indexName="Sachverzeichnis">
-              <term>Thermomètre de Florence</term>
-            </index>, huict Boules, pour la froideur, et 4. pour la chaleur<index indexName="Sachverzeichnis">
-              <term>chaleur</term>
-            </index>, parce qu’il y a plus de froideur<index indexName="Sachverzeichnis">
-              <term>froideur</term>
-            </index> aupres de nous que de chaleur<index indexName="Sachverzeichnis">
-              <term>chaleur</term>
-            </index>. Mais ainsi on n’a que <app type="Bfootnote">
-              <lem type="main">12</lem>
-              <note type="lemma-abbrev">que</note>
-              <rdg wit="#L" n="1"> huict </rdg>
-              <rdg wit="#L" n="2"> 12 <hi rendition="#i">L</hi></rdg>
-            </app> degrés seulement, c’est peu. Man mus haben soviel blaßen als degre, c’est
+  <app type="Bfootnote">
+    <lem type="main">c’est par deux liqueurs l’une sur l’autre</lem>
+    <rdg wit="#L"> c’est par deux liqueurs </rdg>
+    <rdg wit="#L" n="1"> de </rdg>
+    <rdg wit="#L" n="2"> sur la </rdg>
+    <rdg wit="#L" n="3" cause="addition">
+      <add>l’une sur l’autre</add>
+      <note type="editorial">
+        <hi rendition="#i">erg. L</hi>
+      </note>
+    </rdg>
+  </app>.
+</p>
+<p xml:id="Ch64.p7">Thermometre de Florence<index indexName="Sachverzeichnis">
+  <term>Thermomètre de Florence</term>
+</index>, huict Boules, pour la froideur, et 4. pour la chaleur<index indexName="Sachverzeichnis">
+<term>chaleur</term>
+</index>, parce qu’il y a plus de froideur<index indexName="Sachverzeichnis">
+<term>froideur</term>
+</index> aupres de nous que de chaleur<index indexName="Sachverzeichnis">
+<term>chaleur</term>
+</index>. Mais ainsi on n’a que <app type="Bfootnote">
+<lem type="main">12</lem>
+<note type="lemma-abbrev">que</note>
+<rdg wit="#L" n="1"> huict </rdg>
+<rdg wit="#L" n="2"> 12 <hi rendition="#i">L</hi>
+</rdg>
+</app> degrés seulement, c’est peu. Man mus haben soviel blaßen als degre, c’est
               Bagatelle<app type="Bfootnote">
-              <lem type="main">, aber man kans auch besser machen.</lem>
-              <rdg wit="#L" cause="addition"><add>, c’est <seg type="apparat-ellipsis"/>
+<lem type="main">, aber man kans auch besser machen.</lem>
+<rdg wit="#L" cause="addition">
+<add>, c’est <seg type="apparat-ellipsis"/>
                   machen.</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> Man müste vielmehr machen daß eine Boule bald so weit auff, bald so weit
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> Man müste vielmehr machen daß eine Boule bald so weit auff, bald so weit
             absteige, nach der invention Mons. Boyle<index indexName="Namensregister">
-              <term><hi rendition="#g">Boyle</hi> (Boylius, Boyl., Boyl), Robert 1627–1691</term>
-            </index>, das eine Boule fallet, wenn man mehr wasser drauff giesset, oder wenn sie
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius, Boyl., Boyl), Robert 1627–1691</term>
+</index>, das eine Boule fallet, wenn man mehr wasser drauff giesset, oder wenn sie
             tieffer. M. l’Abbé Mariotte<index indexName="Namensregister">
-              <term><hi rendition="#g">Mariotte,</hi> Edme, Seigneur de Chazeuil ca.
+<term>
+<hi rendition="#g">Mariotte,</hi> Edme, Seigneur de Chazeuil ca.
                 1620–1684</term>
-            </index> publiera un traité de perspective<index indexName="Sachverzeichnis">
-              <term>perspective</term>
-            </index>, ce sera la 7<hi rendition="#sup">me</hi> partie de son <hi rendition="#i">optique</hi><app type="Cfootnote">
-              <lem type="main"/>
-              <note type="lemma-abbrev">son</note>
-              <note type="editorial"><hi rendition="#k">E. Mariotte</hi>, <bibl corresp="#bib_00186"><hi rendition="#i">De la nature des couleurs</hi>, Paris 1681.</bibl></note>
-            </app> Il cherche sur tout le point d’oil <hi rendition="#i">[!]</hi>, dont il tire
+</index> publiera un traité de perspective<index indexName="Sachverzeichnis">
+<term>perspective</term>
+</index>, ce sera la 7<hi rendition="#sup">me</hi> partie de son <hi rendition="#i">optique</hi>
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">son</note>
+<note type="editorial">
+<hi rendition="#k">E. Mariotte</hi>,<bibl corresp="#bib_00186">
+<hi rendition="#i">De la nature des couleurs</hi>, Paris 1681.</bibl>
+</note>
+</app> Il cherche sur tout le point d’oil <hi rendition="#i">[!]</hi>, dont il tire
             toutes les autres, dont l’intersection represente tout. Ducit in Tabulam lineam
             parallelam lineis rei designandae, haec cadit in punctum visus etc.</p>
-          <p xml:id="Ch64.p8">Arc en ciel<index indexName="Sachverzeichnis">
-              <term>arc en ciel</term>
-            </index>
-            <app type="Cfootnote">
-              <lem type="main"/>
-              <note type="lemma-abbrev">etc.</note>
-              <note type="editorial"><hi rendition="#k">E. Mariotte</hi>, <bibl corresp="#bib_00186">a.a.O., Teil X.</bibl></note>
-            </app> de M. l’Abbé Mariotte. Il sera publié bien tost. Il y rend raison <pb type="VIII_1" n="580"/>de tout par des Experiences. Il prend un tuyau de verre met au
+<p xml:id="Ch64.p8">Arc en ciel<index indexName="Sachverzeichnis">
+<term>arc en ciel</term>
+</index>
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">etc.</note>
+<note type="editorial">
+<hi rendition="#k">E. Mariotte</hi>,<bibl corresp="#bib_00186">a.a.O., Teil X.</bibl>
+</note>
+</app> de M. l’Abbé Mariotte. Il sera publié bien tost. Il y rend raison <pb type="VIII_1" n="580"/>
+de tout par des Experiences. Il prend un tuyau de verre met au
             bas du vif argent<index indexName="Sachverzeichnis">
-              <term>vif argent</term>
-            </index> sur cela du papier sur le papier de l’eau, le rayon <app type="Bfootnote">
-              <lem type="main">petit du soleil<index indexName="Sachverzeichnis">
-                  <term>soleil</term>
-                </index> entrant par un trou laissé ouuert dans une chambre fermée</lem>
-              <rdg wit="#L" cause="addition"><add>petit <index indexName="Sachverzeichnis">
-                    <term>soleil</term>
-                  </index>
-                  <seg type="apparat-ellipsis"/> fermée</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> tombant sur le papier le peint en divers couleurs<index indexName="Sachverzeichnis">
-              <term>couleur</term>
-            </index>, principalement bleu et rouge. Ostez le papier laissez le vif argent<index indexName="Sachverzeichnis">
-              <term>vif argent</term>
-            </index>, et l’eau, il se reflechira, à cause du vif argent<index indexName="Sachverzeichnis">
-              <term>vif argent</term>
-            </index> qui l’empeche de passer, et on voit le rayon<index indexName="Sachverzeichnis">
-              <term>rayon</term>
-            </index> reflechi sans couleurs<index indexName="Sachverzeichnis">
-              <term>couleur</term>
-            </index>, car tout est remis. Il prend au lieu de l’argent vif<index indexName="Sachverzeichnis">
-              <term>vif argent</term>
-            </index> un miroir<index indexName="Sachverzeichnis">
-              <term>miroir</term>
-            </index> et incliné à sa volonté. Si l’angle de l’incidence<index indexName="Sachverzeichnis">
-              <term>angle</term>
-              <index>
-                <term>d’incidence</term>
-              </index>
-            </index><index indexName="Sachverzeichnis">
-              <term>angle</term>
-              <index>
-                <term>d’incidence</term>
-              </index>
-            </index><index indexName="Sachverzeichnis">
-              <term>angle</term>
-              <index>
-                <term>d’incidence</term>
-              </index>
-            </index> et reflexion<index indexName="Sachverzeichnis">
-              <term>angle</term>
-              <index>
-                <term>de réflexion</term>
-              </index>
-            </index><index indexName="Sachverzeichnis">
-              <term>angle</term>
-              <index>
-                <term>de réflexion</term>
-              </index>
-            </index> est égal, il n’y a point de couleur, si le miroir<index indexName="Sachverzeichnis">
-              <term>miroir</term>
-            </index> est incliné l’angle n’est pas égal, et voila les couleurs<index indexName="Sachverzeichnis">
-              <term>couleur</term>
-            </index><index indexName="Sachverzeichnis">
-              <term>couleur</term>
-            </index> couleur, bleu rouge, bleu rouge, bleu rouge; rien, rouge bleu, rouge bleu,
+<term>vif argent</term>
+</index> sur cela du papier sur le papier de l’eau, le rayon <app type="Bfootnote">
+<lem type="main">petit du soleil<index indexName="Sachverzeichnis">
+<term>soleil</term>
+</index> entrant par un trou laissé ouuert dans une chambre fermée</lem>
+<rdg wit="#L" cause="addition">
+<add>petit <index indexName="Sachverzeichnis">
+<term>soleil</term>
+</index>
+<seg type="apparat-ellipsis"/>
+ fermée</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> tombant sur le papier le peint en divers couleurs<index indexName="Sachverzeichnis">
+<term>couleur</term>
+</index>, principalement bleu et rouge. Ostez le papier laissez le vif argent<index indexName="Sachverzeichnis">
+<term>vif argent</term>
+</index>, et l’eau, il se reflechira, à cause du vif argent<index indexName="Sachverzeichnis">
+<term>vif argent</term>
+</index> qui l’empeche de passer, et on voit le rayon<index indexName="Sachverzeichnis">
+<term>rayon</term>
+</index> reflechi sans couleurs<index indexName="Sachverzeichnis">
+<term>couleur</term>
+</index>, car tout est remis. Il prend au lieu de l’argent vif<index indexName="Sachverzeichnis">
+<term>vif argent</term>
+</index> un miroir<index indexName="Sachverzeichnis">
+<term>miroir</term>
+</index> et incliné à sa volonté. Si l’angle de l’incidence<index indexName="Sachverzeichnis">
+<term>angle</term>
+<index>
+<term>d’incidence</term>
+</index>
+</index>
+<index indexName="Sachverzeichnis">
+<term>angle</term>
+<index>
+<term>d’incidence</term>
+</index>
+</index>
+<index indexName="Sachverzeichnis">
+<term>angle</term>
+<index>
+<term>d’incidence</term>
+</index>
+</index> et reflexion<index indexName="Sachverzeichnis">
+<term>angle</term>
+<index>
+<term>de réflexion</term>
+</index>
+</index>
+<index indexName="Sachverzeichnis">
+<term>angle</term>
+<index>
+<term>de réflexion</term>
+</index>
+</index> est égal, il n’y a point de couleur, si le miroir<index indexName="Sachverzeichnis">
+<term>miroir</term>
+</index> est incliné l’angle n’est pas égal, et voila les couleurs<index indexName="Sachverzeichnis">
+<term>couleur</term>
+</index>
+<index indexName="Sachverzeichnis">
+<term>couleur</term>
+</index> couleur, bleu rouge, bleu rouge, bleu rouge; rien, rouge bleu, rouge bleu,
             rouge bleu, de l’autre costé.</p>
-          <p xml:id="Ch64.p9">Instrument à Niveller<index indexName="Sachverzeichnis">
-              <term>instrument pour niveller</term>
-            </index>. Versez de l’eau <app type="Bfootnote">
-              <lem type="main">sur une planche longue couuerte</lem>
-              <note type="lemma-abbrev">l’eau</note>
-              <rdg wit="#L" n="1"> dans un long cana </rdg>
-              <rdg wit="#L" n="2"> sur une planche longue couuerte <hi rendition="#i">L</hi></rdg>
-            </app></p>
-          <figure rendition="#inline-margin-left" xml:id="Ch64.fig1_1">
-            <graphic url="./images/35_3A_8_27r.svg" width="130.086pt" xml:id="Ch64.g1"/>
+<p xml:id="Ch64.p9">Instrument à Niveller<index indexName="Sachverzeichnis">
+<term>instrument pour niveller</term>
+</index>. Versez de l’eau <app type="Bfootnote">
+<lem type="main">sur une planche longue couuerte</lem>
+<note type="lemma-abbrev">l’eau</note>
+<rdg wit="#L" n="1"> dans un long cana </rdg>
+<rdg wit="#L" n="2"> sur une planche longue couuerte <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<figure rendition="#inline-margin-left" xml:id="Ch64.fig1_1">
+<graphic url="./images/35_3A_8_27r.svg" width="130.086pt" xml:id="Ch64.g1"/>
 
-            <head xml:id="Ch64.fig1_2" rendition="#c"><hi rendition="#i">[Fig. 1]</hi></head>
-          </figure>
-          <p xml:id="Ch64.p10">de costez, ouuerte par avant et par derriere, la cire empeche l’eau
+<head xml:id="Ch64.fig1_2" rendition="#c">
+<hi rendition="#i">[Fig. 1]</hi>
+</head>
+</figure>
+<p xml:id="Ch64.p10">de costez, ouuerte par avant et par derriere, la cire empeche l’eau
             de ne sortir pas. Regardez l’objet prenez deux <app type="Bfootnote">
-              <lem type="main">points dedans, <hi rendition="#i">a</hi> et <hi rendition="#i">b</hi></lem>
-              <note type="lemma-abbrev">deux</note>
-              <rdg wit="#L" n="1"> parties dedans, si vous </rdg>
-              <rdg wit="#L" n="2"> points dedans, <hi rendition="#i">a</hi> et <hi rendition="#i">b</hi>
-                <hi rendition="#i">L</hi></rdg>
-            </app> les haussez et baissez si long temps, jusqu’à ce qu’ <hi rendition="#i">a</hi> se
+<lem type="main">points dedans, <hi rendition="#i">a</hi> et <hi rendition="#i">b</hi>
+</lem>
+<note type="lemma-abbrev">deux</note>
+<rdg wit="#L" n="1"> parties dedans, si vous </rdg>
+<rdg wit="#L" n="2"> points dedans, <hi rendition="#i">a</hi> et <hi rendition="#i">b</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> les haussez et baissez si long temps, jusqu’à ce qu’ <hi rendition="#i">a</hi> se
             represente in <hi rendition="#i">aa</hi> infra <hi rendition="#i">b</hi> in aqua, in
             eadem distantia, ut <hi rendition="#i">a</hi> est supra <hi rendition="#i">b</hi> ita
-              <hi rendition="#i">aa</hi> erit infra <hi rendition="#i">b</hi>.</p>
-        </div>
-      </div>
-    </body>
-  </text>
+<hi rendition="#i">aa</hi> erit infra <hi rendition="#i">b</hi>.
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

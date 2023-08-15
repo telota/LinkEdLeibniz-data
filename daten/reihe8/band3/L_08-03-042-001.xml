@@ -1,117 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-042-001">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">Regle De Mons. hugens</title>
-<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke,
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-042-001">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Regle De Mons. hugens</title>
+                <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke,
 Metadaten und Text</title>
-<respStmt>
-<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Digitale Konzeption und
-Projektbegleitung</note>
-</resp>
-</respStmt>
-<respStmt>
-<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-Wissenschaften</orgName>
-<resp>
-<note type="remarkResponsibility">Inhaltliche Konzeption</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Martina</forename>
-<surname>Gödel</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-VIII</note>
-</resp>
-</respStmt>
-<respStmt>
-<persName>
-<forename>Sebastian W.</forename>
-<surname>Stork</surname>
-</persName>
-<resp>
-<note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-Berlin</note>
-</resp>
-</respStmt>
-</titleStmt>
-<publicationStmt>
-<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
-<date type="creation">2022</date>
-<availability>
-<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
-<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
-</licence>
-</availability>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-<analytic>
-<author>
-<persName ref="http://d-nb.info/gnd/118571249">
-<surname>Leibniz</surname>
-<forename>Gottfried Wilhelm</forename>
-</persName>
-</author>
-<title type="chapter" level="a" n="42"/>
-<title type="section" level="a" n="1">Regle De Mons. hugens</title>
-<date calendar="#gregorian" notBefore="1677-03" resp="#ed" cert="medium">[März – Mai 1677]</date>
-<date calendar="#gregorian" notAfter="1677-05" resp="#ed" cert="medium"/>
-<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=433</idno></idno>
-</analytic>
-<monogr>
-<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sebastian W. Stork</persName>
+                    <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+                </respStmt>
+                <respStmt>
+                    <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+                    <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+                    <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+                    <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+                <date type="creation">2022</date>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+                        <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>
+                            <persName ref="http://d-nb.info/gnd/118571249">
+                                <surname>Leibniz</surname>
+                                <forename>Gottfried Wilhelm</forename>
+                            </persName>
+                        </author>
+                        <title type="chapter" level="a" n="42"/>
+                        <title type="section" level="a" n="1">Regle De Mons. hugens</title>
+                        <date calendar="#gregorian" notBefore="1677-03" resp="#ed" cert="medium">[März – Mai 1677]</date>
+                        <date calendar="#gregorian" notAfter="1677-05" resp="#ed" cert="medium"/>
+                        <idno type="PDF">
+                            <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+                            <idno type="page">#page=433</idno>
+                        </idno>
+                    </analytic>
+                    <monogr>
+                        <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
 Naturwissenschaftliche, medizinische und technische Schriften</title>
-<title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
-<imprint>
-<publisher>Walter de Gruyter GmbH</publisher>
-<pubPlace>Berlin, Boston</pubPlace>
-<date type="publication">2021</date>
-</imprint>
-<biblScope unit="page" from="400" to="406"/>
-</monogr>
-<series>
-<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften
+                        <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+                        <imprint>
+                            <publisher>Walter de Gruyter GmbH</publisher>
+                            <pubPlace>Berlin, Boston</pubPlace>
+                            <date type="publication">2021</date>
+                        </imprint>
+                        <biblScope unit="page" from="400" to="406"/>
+                    </monogr>
+                    <series>
+                        <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften
 und Briefe</title>
-</series>
-<relatedItem type="superordinated-chapter">
-<ptr target="#L_08-03-042-000"/>
-</relatedItem>
-</biblStruct>
-<listWit>
-<witness n="L" corresp="#L_08-03-042-001_facs-haupttextzeuge">
-<msDesc>
-<msIdentifier>
-<repository>Gottfried Wilhelm Leibniz Bibliothek
+                    </series>
+                    <relatedItem type="superordinated-chapter">
+                        <ptr target="#L_08-03-042-000"/>
+                    </relatedItem>
+                </biblStruct>
+                <listWit>
+                    <witness n="L" corresp="#L_08-03-042-001_facs-haupttextzeuge">
+                        <msDesc>
+                            <msIdentifier>
+                                <repository>Gottfried Wilhelm Leibniz Bibliothek
 Hannover</repository>
-<idno type="Signatur"> LH XXXVII 5 Bl. 144–145</idno>
-</msIdentifier>
-<msContents corresp="L_witness-content-types.xml#auszuege-kommentare">
-<summary>
-<p>Auszüge mit Bemerkungen aus <index indexName="Personen">
-<term><hi rendition="#g #smaller">Huygens</hi>
-<hi rendition="#smaller">(Hugenius, Ugenius, Hugens,
-Huguens), Christiaan 1629–1695</hi></term>
-</index><hi rendition="#k">C. Huygens</hi>, <ref corresp="#bib_00529"/>„Regles du mouvement dans la
-rencontre des corps”, <ref corresp="#bib_00157"/><hi rendition="#i">JS</hi>, 18. März 1669, S. 22–24:
+                                <idno type="Signatur"> LH XXXVII 5 Bl. 144–145</idno>
+                            </msIdentifier>
+                            <msContents corresp="L_witness-content-types.xml#auszuege-kommentare">
+                                <summary>
+                                    <p>Auszüge mit Bemerkungen aus <index indexName="Personen">
+                                        <term>
+                                            <hi rendition="#g #smaller">Huygens</hi>
+                                            <hi rendition="#smaller">(Hugenius, Ugenius, Hugens,
+Huguens), Christiaan 1629–1695</hi>
+                                        </term>
+                                    </index>
+                                    <hi rendition="#k">C. Huygens</hi>,                                    <ref corresp="#bib_00529"/>
+„Regles du mouvement dans la
+rencontre des corps”, <ref corresp="#bib_00157"/>
+                                <hi rendition="#i">JS</hi>, 18. März 1669, S. 22–24:
 LH XXXVII 5 Bl. 144–145. Ein Bogen 2<hi rendition="#sup">o</hi>; Wasserzeichen in der Mitte von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=440">Bl. 145</ref>; Papiererhaltungsmaßnahmen; Papierbruch
 an den Blatträndern mit Textverlust. Eineindrittel Seiten
-auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi></ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi></ref> sowie einige
-Zeilen im Randbereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>.
-Textfolge: <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi></ref>;
-Rechnungen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">144 r<hi rendition="#sup">o</hi></ref>; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi></ref>. <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>
-überliefert N. <anchor xml:id="BE_N42-1-Punkt"/><ref corresp="L_chapter_40.xml#_57267_1"/>. Die unteren zwei
-Drittel von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">Bl. 145 r<hi rendition="#sup">o</hi></ref> und der
-obere Rand von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref>
-überliefern N. <ref corresp="L_section_423.xml#_57267_3"/>;
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref> und der
-untere linke Bereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>
-überliefern N. <ref corresp="L_section_432.xml#_57268"/>.</p>
+auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi>
+                            </ref> und <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi>
+                        </ref> sowie einige
+Zeilen im Randbereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+                    </ref>.
+Textfolge: <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi>
+                </ref>;
+Rechnungen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">144 r<hi rendition="#sup">o</hi>
+            </ref>;            <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi>
+            </ref>.            <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+            </ref>
+überliefert N. <anchor xml:id="BE_N42-1-Punkt"/>
+        <ref corresp="L_chapter_40.xml#_57267_1"/>
+. Die unteren zwei
+Drittel von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">Bl. 145 r<hi rendition="#sup">o</hi>
+    </ref> und der
+obere Rand von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi>
+</ref>
+überliefern N. <ref corresp="L_section_423.xml#_57267_3"/>
+;
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi>
+</ref> und der
+untere linke Bereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+</ref>
+überliefern N. <ref corresp="L_section_432.xml#_57268"/>
+.</p>
 </summary>
 </msContents>
 <physDesc>
@@ -130,7 +163,8 @@ untere linke Bereich von <ref target="http://digilib.bbaw.de/digitallibrary/digi
 </msIdentifier>
 <msContents corresp="L_witness-content-types.xml#veroeffentlichung_unselbstaendig">
 <summary>
-<p>(tlw.) <hi rendition="#k">Fichant</hi> 1994, S. 357–361<ref corresp="#bib_01056"/>.</p>
+<p>(tlw.) <hi rendition="#k">Fichant</hi> 1994, S. 357–361<ref corresp="#bib_01056"/>
+.</p>
 </summary>
 </msContents>
 <physDesc>
@@ -280,26 +314,46 @@ Hannover</repository>
 <msContents>
 <summary>
 <p>Auszüge mit Bemerkungen aus <index indexName="Personen">
-<term><hi rendition="#g #smaller">Huygens</hi>
-<hi rendition="#smaller">(Hugenius, Ugenius,
-Hugens, Huguens), Christiaan 1629–1695</hi></term>
-</index><hi rendition="#k">C. Huygens</hi>, <ref corresp="#bib_00529"/>„Regles du mouvement dans la
-rencontre des corps”, <ref corresp="#bib_00157"/><hi rendition="#i">JS</hi>, 18. März 1669, S. 22–24:
+<term>
+    <hi rendition="#g #smaller">Huygens</hi>
+    <hi rendition="#smaller">(Hugenius, Ugenius,
+Hugens, Huguens), Christiaan 1629–1695</hi>
+</term>
+</index>
+<hi rendition="#k">C. Huygens</hi>,<ref corresp="#bib_00529"/>
+„Regles du mouvement dans la
+rencontre des corps”, <ref corresp="#bib_00157"/>
+<hi rendition="#i">JS</hi>, 18. März 1669, S. 22–24:
 LH XXXVII 5 Bl. 144–145. Ein Bogen 2<hi rendition="#sup">o</hi>; Wasserzeichen in der
 Mitte von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=440">Bl. 145</ref>; Papiererhaltungsmaßnahmen;
 Papierbruch an den Blatträndern mit Textverlust.
-Eineindrittel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi></ref> und
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi></ref> sowie
-einige Zeilen im Randbereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>.
-Textfolge: <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi></ref>;
-Rechnungen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">144 r<hi rendition="#sup">o</hi></ref>; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi></ref>. <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>
+Eineindrittel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi>
+</ref> und
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi>
+</ref> sowie
+einige Zeilen im Randbereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+</ref>.
+Textfolge: <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">Bl. 144 v<hi rendition="#sup">o</hi>
+</ref>;
+Rechnungen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">144 r<hi rendition="#sup">o</hi>
+</ref>;<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">145 r<hi rendition="#sup">o</hi>
+</ref>.<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+</ref>
 überliefert
-N. <!--<anchor xml:id="BE_N42-1-Punkt"/>--><ref corresp="L_chapter_40.xml#_57267_1"/>. Die unteren
-zwei Drittel von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">Bl. 145 r<hi rendition="#sup">o</hi></ref> und
-der obere Rand von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref>
-überliefern N. <ref corresp="L_section_423.xml#_57267_3"/>; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi></ref> und
-der untere linke Bereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi></ref>
-überliefern N. <ref corresp="L_section_432.xml#_57268"/>.</p>
+N. <!--<anchor xml:id="BE_N42-1-Punkt"/>-->
+<ref corresp="L_chapter_40.xml#_57267_1"/>
+. Die unteren
+zwei Drittel von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">Bl. 145 r<hi rendition="#sup">o</hi>
+</ref> und
+der obere Rand von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi>
+</ref>
+überliefern N. <ref corresp="L_section_423.xml#_57267_3"/>
+;<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=441">Bl. 145 v<hi rendition="#sup">o</hi>
+</ref> und
+der untere linke Bereich von <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">Bl. 144 r<hi rendition="#sup">o</hi>
+</ref>
+überliefern N. <ref corresp="L_section_432.xml#_57268"/>
+.</p>
 </summary>
 </msContents>
 <physDesc>
@@ -319,7 +373,8 @@ der untere linke Bereich von <ref target="http://digilib.bbaw.de/digitallibrary/
 <msContents>
 <summary>
 <p>(tlw.) <hi rendition="#k">Fichant</hi> 1994,
-S. 357–361<ref corresp="#bib_01056"/>.</p>
+S. 357–361<ref corresp="#bib_01056"/>
+.</p>
 </summary>
 </msContents>
 <physDesc>
@@ -339,157 +394,271 @@ S. 357–361<ref corresp="#bib_01056"/>.</p>
 <p rendition="#noindent" xml:id="Ch42.S1.p5">
 <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=438">
 <pb type="L"/>
-<fw type="folNum">[144 v<hi rendition="#sup">o</hi>]</fw>
+<fw type="folNum">[144 v<hi rendition="#sup">o</hi>]
+</fw>
 </ref>
 </p>
-<p rendition="#c" xml:id="Ch42.S1.p6"><app type="Bfootnote">
+<p rendition="#c" xml:id="Ch42.S1.p6">
+<app type="Bfootnote">
 <lem type="main">Regle de Mons. Hugens<index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
 Hugens, Huguens), Christiaan 1629–1695</term>
-</index></lem>
-<rdg wit="#L" cause="addition"><add>Regle de Mons. Hugens</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-</app><app type="Cfootnote">
+</index>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>Regle de Mons. Hugens</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<app type="Cfootnote">
 <note type="lemma-abbrev">Regle de Mons. Hugens</note>
-<note type="editorial"><index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
+<note type="editorial">
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
 Hugens, Huguens), Christiaan 1629–1695</term>
-</index><hi rendition="#k">C. Huygens</hi>, <bibl corresp="#bib_00529">„Regles du mouvement dans la rencontre des
-corps”</bibl>, <bibl corresp="#bib_00157"><hi rendition="#i">JS</hi> (Pariser Ausgabe), 18. März 1669, S. 22–24 (<bibl corresp="#bib_00113"><hi rendition="#i">HO</hi> XVI,
-S. 179–181).</bibl></bibl></note>
-</app>.</p>
+</index>
+<hi rendition="#k">C. Huygens</hi>,<bibl corresp="#bib_00529">„Regles du mouvement dans la rencontre des
+corps”</bibl>,<bibl corresp="#bib_00157">
+<hi rendition="#i">JS</hi> (Pariser Ausgabe), 18. März 1669, S. 22–24 (<bibl corresp="#bib_00113">
+<hi rendition="#i">HO</hi> XVI,
+S. 179–181).</bibl>
+</bibl>
+</note>
+</app>.
+</p>
 <anchor xml:id="_37_05_144-145_1a"/>
 <p rendition="#noindent" xml:id="Ch42.S1.p7">
 <app type="Cfootnote" from="#_37_05_144-145_1a" to="#_37_05_144-145_1b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">La regle</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">l’autre</hi></note>
+<note type="lemma-abbrev">
+<hi rendition="#i">La regle</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">l’autre</hi>
+</note>
 <note type="editorial">
 <bibl corresp="#bib_00529">a.a.O., §4, S. 22.</bibl>
 </note>
 </app>
 <hi rendition="#i">La regle generale pour determiner le mouvement
 qu’acquierent les corps durs<index indexName="Sachen">
-<term><hi rendition="#i">corps dur</hi></term>
+<term>
+<hi rendition="#i">corps dur</hi>
+</term>
 </index> par leur rencontre directe,<index indexName="Sachen">
-<term><hi rendition="#i">rencontre directe</hi></term>
-</index><index indexName="Sachen">
-<term><hi rendition="#i">rencontre</hi></term>
+<term>
+<hi rendition="#i">rencontre directe</hi>
+</term>
+</index>
+<index indexName="Sachen">
+<term>
+<hi rendition="#i">rencontre</hi>
+</term>
 </index> est telle:</hi>
 </p>
-<p xml:id="Ch42.S1.p8"><hi rendition="#i">Soyent les corps A et B desquels A
+<p xml:id="Ch42.S1.p8">
+<hi rendition="#i">Soyent les corps A et B desquels A
 soit meu avec la vistesse AD, et que B aille à sa rencontre<index indexName="Sachen">
-<term><hi rendition="#i">rencontre</hi></term>
+<term>
+<hi rendition="#i">rencontre</hi>
+</term>
 </index> ou bien vers le même costé avec la vistesse BD ou que mêmes il
-soit en repos</hi>[,] <hi rendition="#i">le point D en ce cas estant le
+soit en repos</hi>[,]<hi rendition="#i">le point D en ce cas estant le
 même que B. Ayant trouvé dans la ligne AB le point C, centre de
 gravité<index indexName="Sachen">
-<term><hi rendition="#i">centre de gravité</hi></term>
-</index> des corps A</hi>[,] <hi rendition="#i">B, il faut prendre CE
+<term>
+<hi rendition="#i">centre de gravité</hi>
+</term>
+</index> des corps A</hi>[,]<hi rendition="#i">B, il faut prendre CE
 egale à CD et l’on aura EA pour la vistesse du corps A après la
 rencontre<index indexName="Sachen">
-<term><hi rendition="#i">rencontre</hi></term>
+<term>
+<hi rendition="#i">rencontre</hi>
+</term>
 </index> et EB pour celle du corps B, et l’une et l’autre</hi>
-<anchor xml:id="_37_05_144-145_1b"/><anchor xml:id="_37_05_144-145_2a"/><app type="Cfootnote" from="#_37_05_144-145_2a" to="#_37_05_144-145_2b">
+<anchor xml:id="_37_05_144-145_1b"/>
+<anchor xml:id="_37_05_144-145_2a"/>
+<app type="Cfootnote" from="#_37_05_144-145_2a" to="#_37_05_144-145_2b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">vers</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">repos</hi></note>
-<note type="editorial"><bibl corresp="#bib_00529">a.a.O.,
-S. 23.</bibl></note>
-</app><hi rendition="#i">vers le costé</hi>
+<note type="lemma-abbrev">
+<hi rendition="#i">vers</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">repos</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_00529">a.a.O.,
+S. 23.</bibl>
+</note>
+</app>
+<hi rendition="#i">vers le costé</hi>
 <app type="Bfootnote">
-<lem type="main">[<hi rendition="#i">que</hi>]</lem>
-<rdg wit="#ed" cause="addition"><add><hi rendition="#i">que</hi>
-</add><note type="editorial"><hi rendition="#i">erg. Hrsg. nach
-Vorlage</hi></note></rdg>
+<lem type="main">[<hi rendition="#i">que</hi>]
+</lem>
+<rdg wit="#ed" cause="addition">
+<add>
+<hi rendition="#i">que</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg. nach
+Vorlage</hi>
+</note>
+</rdg>
 </app>
 <hi rendition="#i">montre l’ordre des points EA, EB. Que s’il arrive que le
 point E tombe</hi>
 <app type="Bfootnote">
-<lem type="main"><hi rendition="#i">en A ou</hi></lem>
-<note type="lemma-abbrev"><hi rendition="#i">en A</hi></note>
+<lem type="main">
+<hi rendition="#i">en A ou</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">en A</hi>
+</note>
 <rdg wit="#L" n="1"> , et le point </rdg>
-<rdg wit="#L" n="2"> <hi rendition="#i">ou</hi> <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">ou</hi>
+<hi rendition="#i">L</hi>
+</rdg>
 </app>
-<hi rendition="#i">en B</hi>[,] <hi rendition="#i">les corps A ou B seront
+<hi rendition="#i">en B</hi>[,]<hi rendition="#i">les corps A ou B seront
 reduits au</hi>
-<anchor xml:id="_37_05_144-145_3a"/><hi rendition="#i">repos.</hi>
-<anchor xml:id="_37_05_144-145_2b"/></p>
-<p xml:id="Ch42.S1.p9">Par consequent, <anchor xml:id="_37_05_144-145_3b"/><app type="Bfootnote" from="#_37_05_144-145_3a" to="#_37_05_144-145_3b">
+<anchor xml:id="_37_05_144-145_3a"/>
+<hi rendition="#i">repos.</hi>
+<anchor xml:id="_37_05_144-145_2b"/>
+</p>
+<p xml:id="Ch42.S1.p9">Par consequent, <anchor xml:id="_37_05_144-145_3b"/>
+<app type="Bfootnote" from="#_37_05_144-145_3a" to="#_37_05_144-145_3b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">repos</hi>.</note>
+<note type="lemma-abbrev">
+<hi rendition="#i">repos</hi>.
+</note>
 <rdg wit="#L" n="1"> Par consequent, <hi rendition="#i">quand un</hi>
 </rdg>
-<rdg wit="#L" n="2"> <note type="editorial">|</note> Videndum an semper:
+<rdg wit="#L" n="2">
+<note type="editorial">|</note> Videndum an semper:
 <hi rendition="#i">D</hi>
-<hi rendition="#i">streicht</hi> <hi rendition="#i">Hrsg.</hi>  </rdg>
-<rdg wit="#L" n="3"> <hi rendition="#i">La quantité du mouvement qu’ont
+<hi rendition="#i">streicht</hi>
+<hi rendition="#i">Hrsg.</hi>
+</rdg>
+<rdg wit="#L" n="3">
+<hi rendition="#i">La quantité du mouvement qu’ont
 deux corps se peut augmenter ou diminuer</hi>
 </rdg>
-<rdg wit="#L" n="4"> Par consequent, <hi rendition="#i">L</hi></rdg>
-</app><anchor xml:id="_37_05_144-145_4a"/><app type="Cfootnote" from="#_37_05_144-145_4a" to="#_37_05_144-145_4b">
+<rdg wit="#L" n="4"> Par consequent, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<anchor xml:id="_37_05_144-145_4a"/>
+<app type="Cfootnote" from="#_37_05_144-145_4a" to="#_37_05_144-145_4b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">quand</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">rencontre</hi></note>
-<note type="editorial"><bibl corresp="#bib_00529">a.a.O., §1,
-S. 22.</bibl></note>
-</app><hi rendition="#i">quand un corps dur<index indexName="Sachen">
-<term><hi rendition="#i">corps dur</hi></term>
+<note type="lemma-abbrev">
+<hi rendition="#i">quand</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">rencontre</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_00529">a.a.O., §1,
+S. 22.</bibl>
+</note>
+</app>
+<hi rendition="#i">quand un corps dur<index indexName="Sachen">
+<term>
+<hi rendition="#i">corps dur</hi>
+</term>
 </index> rencontre directement un autre corps dur,<index indexName="Sachen">
-<term><hi rendition="#i">corps dur</hi></term>
+<term>
+<hi rendition="#i">corps dur</hi>
+</term>
 </index> qui lui est egal,<index indexName="Sachen">
-<term><hi rendition="#i">corps durs égaux</hi></term>
-</index> et qui est en repos</hi>[,] <hi rendition="#i">il lui
+<term>
+<hi rendition="#i">corps durs égaux</hi>
+</term>
+</index> et qui est en repos</hi>[,]<hi rendition="#i">il lui
 transporte tout son mouvement et demeure immobile après</hi>
 <app type="Bfootnote">
 <!--is-correction-app-with-lemma-->
-<lem type="main"><corr resp="#ed">[<hi rendition="#i">la</hi>]</corr></lem>
-<rdg wit="#L"><orig>sa </orig>
-<note type="editorial"><hi rendition="#i">L ändert Hrsg. nach
-Vorlage</hi></note></rdg>
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">la</hi>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>sa </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg. nach
+Vorlage</hi>
+</note>
+</rdg>
 </app>
-<hi rendition="#i">rencontre.</hi><anchor xml:id="_37_05_144-145_4b"/></p>
+<hi rendition="#i">rencontre.</hi>
+<anchor xml:id="_37_05_144-145_4b"/>
+</p>
 <figure rendition="#own-line_centered" xml:id="Ch42.S1.p10">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_144-145_d1_144v.svg" width="325.215pt" xml:id="Ch42.S1.p10.g1"/>
 <head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<!--  \hackfor{
 \edtext{}{\lemma{\hspace*{1,6mm}\lbrack\textit{Fig.~1}\rbrack}\Cfootnote[nonum]{Das Diagramm ist Huygens' Aufsatz entnommen (S.~23). Leibniz hat folgende Elemente ergänzt: die Nummern 1 bis 10 zur Bezeichnung der Fälle; im 2.\ Fall, die Verlängerung der Strecke rechts von \textit{B} sowie die Punkte \textit{{\scriptsize2}A}, \textit{{\scriptsize2}B}... \textit{{\scriptsize3}C}; im 9.\ Fall, die Zahl \textit{2} und die Kreise unterhalb der Linie \textit{AB}.}}} -->
 <app type="Cfootnote">
 <lem type="main"/>
-<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]
+</note>
 <note type="editorial">Das Diagramm ist Huygens’ Aufsatz entnommen
 (S. 23). Leibniz hat folgende Elemente ergänzt: die Nummern 1
 bis 10 zur Bezeichnung der Fälle; im 2. Fall, die Verlängerung
 der Strecke rechts von <hi rendition="#i">B</hi> sowie die
-Punkte <hi rendition="#i"><hi rendition="#smaller">2</hi>A</hi>,
-<hi rendition="#i"><hi rendition="#smaller">2</hi>B</hi>…
-<hi rendition="#i"><hi rendition="#smaller">3</hi>C</hi>; im
+Punkte <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A</hi>,
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>B</hi>…
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>C</hi>; im
 9. Fall, die Zahl <hi rendition="#i">2</hi> und die Kreise
-unterhalb der Linie <hi rendition="#i">AB</hi>.</note>
-</app></head>
+unterhalb der Linie <hi rendition="#i">AB</hi>.
+</note>
+</app>
+</head>
 </figure>
 <anchor xml:id="_37_05_144-145_5a"/>
-<p xml:id="Ch42.S1.p11"><app type="Cfootnote" from="#_37_05_144-145_5a" to="#_37_05_144-145_5b">
+<p xml:id="Ch42.S1.p11">
+<app type="Cfootnote" from="#_37_05_144-145_5a" to="#_37_05_144-145_5b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">Mais</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">mouvemens</hi></note>
-<note type="editorial"><bibl corresp="#bib_00529">a.a.O., §2,
-S. 22.</bibl></note>
-</app><hi rendition="#i">Mais si cet autre corps égal est aussi en
-mouvement, et qu’il soit porté dans la même ligne droite</hi>[,] <hi rendition="#i">ils font un echange reciproque de</hi>
+<note type="lemma-abbrev">
+<hi rendition="#i">Mais</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">mouvemens</hi>
+</note>
+<note type="editorial">
+<bibl corresp="#bib_00529">a.a.O., §2,
+S. 22.</bibl>
+</note>
+</app>
+<hi rendition="#i">Mais si cet autre corps égal est aussi en
+mouvement, et qu’il soit porté dans la même ligne droite</hi>[,]<hi rendition="#i">ils font un echange reciproque de</hi>
 <app type="Bfootnote">
-<lem type="main"><hi rendition="#i">leur</hi>[<hi rendition="#i">s</hi>]</lem>
-<rdg wit="#ed">leur <hi rendition="#i">L ändert</hi> <hi rendition="#i">Hrsg.</hi> <hi rendition="#i">nach Vorlage</hi></rdg>
+<lem type="main">
+<hi rendition="#i">leur</hi>[<hi rendition="#i">s</hi>]
+</lem>
+<rdg wit="#ed">leur <hi rendition="#i">L ändert</hi>
+<hi rendition="#i">Hrsg.</hi>
+<hi rendition="#i">nach Vorlage</hi>
+</rdg>
 </app>
 <hi rendition="#i">mouvemens.<index indexName="Sachen">
-<term><hi rendition="#i">echange reciproque de mouvemens</hi></term>
-</index></hi>
-<anchor xml:id="_37_05_144-145_5b"/></p>
+<term>
+<hi rendition="#i">echange reciproque de mouvemens</hi>
+</term>
+</index>
+</hi>
+<anchor xml:id="_37_05_144-145_5b"/>
+</p>
 <anchor xml:id="_37_05_144-145_6a"/>
 <p xml:id="Ch42.S1.p12">
 <app type="Cfootnote" from="#_37_05_144-145_6a" to="#_37_05_144-145_6b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">Un corps</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">mouvement</hi></note>
+<note type="lemma-abbrev">
+<hi rendition="#i">Un corps</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">mouvement</hi>
+</note>
 <note type="editorial">
 <bibl corresp="#bib_00529">a.a.O., §3, S. 22.</bibl>
 </note>
@@ -503,8 +672,11 @@ luy donnera quelque mouvement.</hi>
 <p xml:id="Ch42.S1.p13">
 <app type="Cfootnote" from="#_37_05_144-145_7a" to="#_37_05_144-145_7b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">La quantité</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">contraire</hi></note>
+<note type="lemma-abbrev">
+<hi rendition="#i">La quantité</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">contraire</hi>
+</note>
 <note type="editorial">
 <bibl corresp="#bib_00529">a.a.O., §5, S. 23.</bibl>
 </note>
@@ -521,16 +693,24 @@ luy donnera quelque mouvement.</hi>
 <hi rendition="#i">quantité</hi>
 </note>
 <rdg wit="#L" n="1"> de mou </rdg>
-<rdg wit="#L" n="2"> <hi rendition="#i">du mouvement</hi> <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">du mouvement</hi>
+<hi rendition="#i">L</hi>
+</rdg>
 </app>
 <hi rendition="#i">qu’ont deux corps se peut augmenter et diminuer par leur
 rencontre,<index indexName="Sachen">
-<term><hi rendition="#i">rencontre</hi></term>
-</index></hi>
+<term>
+<hi rendition="#i">rencontre</hi>
+</term>
+</index>
+</hi>
 <hi rendition="#i">mais il y reste tousjours la même quantité vers le même
 costé, en soustrayant la quantité</hi>
 <hi rendition="#i">du mouvement<index indexName="Sachen">
-<term><hi rendition="#i">quantité du mouvement</hi></term>
+<term>
+<hi rendition="#i">quantité du mouvement</hi>
+</term>
 </index> contraire.</hi>
 <anchor xml:id="_37_05_144-145_7b"/>
 </p>
@@ -538,33 +718,50 @@ costé, en soustrayant la quantité</hi>
 <p xml:id="Ch42.S1.p14">
 <app type="Cfootnote" from="#_37_05_144-145_8a" to="#_37_05_144-145_8b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">La somme</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">rencontre</hi></note>
+<note type="lemma-abbrev">
+<hi rendition="#i">La somme</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">rencontre</hi>
+</note>
 <note type="editorial">
 <bibl corresp="#bib_00529">a.a.O., §6, S. 23.</bibl>
 </note>
 </app>
 <hi rendition="#i">La somme des produits faits de la grandeur de chaque
 corps dur<index indexName="Sachen">
-<term><hi rendition="#i">corps dur</hi></term>
-</index></hi>
+<term>
+<hi rendition="#i">corps dur</hi>
+</term>
+</index>
+</hi>
 <hi rendition="#i">multiplié par le quarré de sa vitesse,<index indexName="Sachen">
-<term><hi rendition="#i">quarré de la vitesse</hi></term>
-</index><index indexName="Sachen">
-<term><hi rendition="#i">produit de la grandeur par le quarré de la
-vitesse</hi></term>
+<term>
+<hi rendition="#i">quarré de la vitesse</hi>
+</term>
+</index>
+<index indexName="Sachen">
+<term>
+<hi rendition="#i">produit de la grandeur par le quarré de la
+vitesse</hi>
+</term>
 </index> est tousjours la même devant</hi>
 <hi rendition="#i">et après leur rencontre.<index indexName="Sachen">
-<term><hi rendition="#i">rencontre</hi></term>
-</index></hi>
+<term>
+<hi rendition="#i">rencontre</hi>
+</term>
+</index>
+</hi>
 <anchor xml:id="_37_05_144-145_8b"/>
 </p>
 <anchor xml:id="_37_05_144-145_9a"/>
 <p xml:id="Ch42.S1.p15">
 <app type="Cfootnote" from="#_37_05_144-145_9a" to="#_37_05_144-145_9b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">Un corps</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">repos</hi></note>
+<note type="lemma-abbrev">
+<hi rendition="#i">Un corps</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">repos</hi>
+</note>
 <note type="editorial">
 <bibl corresp="#bib_00529">a.a.O., §7, S. 23.</bibl>
 </note>
@@ -574,7 +771,8 @@ par un autre corps dur plus grand ou moindre que luy par</hi>
 <app type="Bfootnote">
 <!--is-correction-app-with-lemma-->
 <lem type="main">
-<corr resp="#ed">[<hi rendition="#i">l’</hi>]</corr>
+<corr resp="#ed">[<hi rendition="#i">l’</hi>]
+</corr>
 </lem>
 <rdg wit="#L">
 <orig>un</orig>
@@ -584,11 +782,14 @@ par un autre corps dur plus grand ou moindre que luy par</hi>
 </rdg>
 </app>
 <hi rendition="#i">interposition<index indexName="Sachen">
-<term><hi rendition="#i">corps interposé</hi></term>
+<term>
+<hi rendition="#i">corps interposé</hi>
+</term>
 </index> d’un tiers de grandeur moyenne, que s’il en etoit frappé
 immediatement, et si</hi>
 <app type="Bfootnote">
-<lem type="main">[<hi rendition="#i">ce</hi>]</lem>
+<lem type="main">[<hi rendition="#i">ce</hi>]
+</lem>
 <rdg wit="#ed" cause="addition">
 <add>
 <hi rendition="#i">ce</hi>
@@ -599,9 +800,13 @@ immediatement, et si</hi>
 </rdg>
 </app>
 <hi rendition="#i">corps interposé<index indexName="Sachen">
-<term><hi rendition="#i">corps interposé</hi></term>
+<term>
+<hi rendition="#i">corps interposé</hi>
+</term>
 </index> est moyen proportionel<index indexName="Sachen">
-<term><hi rendition="#i">moyen proportionel</hi></term>
+<term>
+<hi rendition="#i">moyen proportionel</hi>
+</term>
 </index> entre les deux autres il fera le plus d’impression sur celuy
 qui est en repos.</hi>
 <anchor xml:id="_37_05_144-145_9b"/>
@@ -610,24 +815,34 @@ qui est en repos.</hi>
 <p xml:id="Ch42.S1.p16">
 <app type="Cfootnote" from="#_37_05_144-145_10a" to="#_37_05_144-145_10b">
 <lem type="main"/>
-<note type="lemma-abbrev"><hi rendition="#i">Je</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">autres</hi></note>
+<note type="lemma-abbrev">
+<hi rendition="#i">Je</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">autres</hi>
+</note>
 <note type="editorial">
 <bibl corresp="#bib_00529">a.a.O., S. 23.</bibl>
 </note>
 </app>
 <hi rendition="#i">Je considere en tout cecy des corps d’une même matiere,
 ou bien j’entends que leur grandeur soit estimée par le poids<index indexName="Sachen">
-<term><hi rendition="#i">poids</hi></term>
-</index>.</hi>
+<term>
+<hi rendition="#i">poids</hi>
+</term>
+</index>.
+</hi>
 </p>
 <p xml:id="Ch42.S1.p17">
 <hi rendition="#i">Au reste j’ay remarqué une loix admirable de la
 nature<index indexName="Sachen">
-<term><hi rendition="#i">loix admirable de la nature</hi></term>
+<term>
+<hi rendition="#i">loix admirable de la nature</hi>
+</term>
 </index>, la quelle je puis demonstrer en ce qui est des corps
 spheriques,<index indexName="Sachen">
-<term><hi rendition="#i">corps sphérique</hi></term>
+<term>
+<hi rendition="#i">corps sphérique</hi>
+</term>
 </index> et qui semble estre generale en tous les autres,</hi>
 <anchor xml:id="_37_05_144-145_10b"/>
 <anchor xml:id="_37_05_144-145_11a"/>
@@ -636,18 +851,29 @@ spheriques,<index indexName="Sachen">
 <note type="lemma-abbrev">
 <hi rendition="#i">ta</hi>
 </note>
-<note type="editorial"><hi rendition="#i">nt</hi>
-<seg type="apparat-ellipsis"/> <hi rendition="#i">rencontre</hi>:
- <bibl corresp="#bib_00529">a.a.O., S. 24.</bibl></note>
+<note type="editorial">
+<hi rendition="#i">nt</hi>
+<seg type="apparat-ellipsis"/>
+<hi rendition="#i">rencontre</hi>:
+<bibl corresp="#bib_00529">a.a.O., S. 24.</bibl>
+</note>
 </app>
 <hi rendition="#i">tant durs<index indexName="Sachen">
-<term><hi rendition="#i">corps dur</hi></term>
+<term>
+<hi rendition="#i">corps dur</hi>
+</term>
 </index> que mols,<index indexName="Sachen">
-<term><hi rendition="#i">corps mou</hi></term>
+<term>
+<hi rendition="#i">corps mou</hi>
+</term>
 </index> soit que la rencontre soit directe<index indexName="Sachen">
-<term><hi rendition="#i">rencontre directe</hi></term>
+<term>
+<hi rendition="#i">rencontre directe</hi>
+</term>
 </index> ou oblique:<index indexName="Sachen">
-<term><hi rendition="#i">rencontre oblique</hi></term>
+<term>
+<hi rendition="#i">rencontre oblique</hi>
+</term>
 </index> c’est que le</hi>
 <app type="Bfootnote">
 <lem type="main">
@@ -657,10 +883,15 @@ spheriques,<index indexName="Sachen">
 <hi rendition="#i">centre</hi>
 </note>
 <rdg wit="#L" n="1"> de gravité </rdg>
-<rdg wit="#L" n="2"> <hi rendition="#i">commun</hi> <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">commun</hi>
+<hi rendition="#i">L</hi>
+</rdg>
 </app>
 <hi rendition="#i">de gravité<index indexName="Sachen">
-<term><hi rendition="#i">centre commun de gravité</hi></term>
+<term>
+<hi rendition="#i">centre commun de gravité</hi>
+</term>
 </index> de deux ou de trois, ou de tant qu’on voudra de corps avance
 tousjours</hi>
 <app type="Bfootnote">
@@ -671,13 +902,17 @@ tousjours</hi>
 <hi rendition="#i">également</hi>
 </note>
 <rdg wit="#L" n="1"> en même </rdg>
-<rdg wit="#L" n="2"> <hi rendition="#i">vers</hi> <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">vers</hi>
+<hi rendition="#i">L</hi>
+</rdg>
 </app>
 <hi rendition="#i">le même costé en ligne</hi>
 <app type="Bfootnote">
 <!--is-correction-app-with-lemma-->
 <lem type="main">
-<corr resp="#ed">[<hi rendition="#i">droite</hi>],</corr>
+<corr resp="#ed">[<hi rendition="#i">droite</hi>],
+</corr>
 </lem>
 <rdg wit="#L">
 <orig>directe </orig>
@@ -687,24 +922,35 @@ tousjours</hi>
 </rdg>
 </app>
 <hi rendition="#i">devant et après leur rencontre.<index indexName="Sachen">
-<term><hi rendition="#i">rencontre</hi></term>
-</index></hi>
+<term>
+<hi rendition="#i">rencontre</hi>
+</term>
+</index>
+</hi>
 <anchor xml:id="_37_05_144-145_11b"/>
 </p>
 <p xml:id="Ch42.S1.p18">
 <app type="Cfootnote">
 <lem type="main">Haec habet Hugenius<index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
 Hugens, Huguens), Christiaan 1629–1695</term>
 </index> in <hi rendition="#i">Diario Eruditorum</hi> 9 Decembris
 1669.</lem>
-<note type="lemma-abbrev">Haec <seg type="apparat-ellipsis"/> 1669</note>
-<note type="editorial">Es gab keine Lieferung des <bibl corresp="#bib_00157"><hi rendition="#i">JS</hi> am 9. Dezember
+<note type="lemma-abbrev">Haec <seg type="apparat-ellipsis"/>
+ 1669</note>
+<note type="editorial">Es gab keine Lieferung des <bibl corresp="#bib_00157">
+<hi rendition="#i">JS</hi> am 9. Dezember
 1669. Huygens’ Aufsatz<bibl corresp="#bib_00529"> erschien in
 der Ausgabe vom 18. März und dessen lateinische
-Übersetzung<bibl corresp="#bib_01067"> in den <bibl corresp="#bib_00158"><hi rendition="#i">PT</hi> vom
+Übersetzung<bibl corresp="#bib_01067"> in den <bibl corresp="#bib_00158">
+<hi rendition="#i">PT</hi> vom
 12. (22.) April
-1669.</bibl></bibl></bibl></bibl></note>
+1669.</bibl>
+</bibl>
+</bibl>
+</bibl>
+</note>
 </app>
 </p>
 <p xml:id="Ch42.S1.p19">Cum vero mihi semper visum sit, et etiamnum videatur
@@ -716,9 +962,11 @@ potentiam,<index indexName="Sachen">
 motus perpetuus Mechanicus<index indexName="Sachen">
 <term>motus perpetuus Mechanicus</term>
 </index> consequeretur, ideo Decem casus Hugenianos<index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens,
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens,
 Huguens), Christiaan 1629–1695</term>
-</index><index indexName="Sachen">
+</index>
+<index indexName="Sachen">
 <term>decem casus Hugeniani</term>
 </index> ad hoc principium meum<index indexName="Sachen">
 <term>principium meum</term>
@@ -749,9 +997,15 @@ Huguens), Christiaan 1629–1695</term>
 </m:math>
 </formula> in <hi rendition="#i">AC</hi>
 <app type="Bfootnote">
-<lem type="main">aequ. <hi rendition="#i">AD</hi></lem>
-<rdg wit="#L">aequ. <note type="editorial">|</note> aequ. <note type="editorial"><hi rendition="#i">streicht
-Hrsg.</hi> |</note> <hi rendition="#i">AD</hi> <hi rendition="#i">L</hi></rdg>
+<lem type="main">aequ. <hi rendition="#i">AD</hi>
+</lem>
+<rdg wit="#L">aequ. <note type="editorial">|</note> aequ. <note type="editorial">
+<hi rendition="#i">streicht
+Hrsg.</hi> |
+</note>
+<hi rendition="#i">AD</hi>
+<hi rendition="#i">L</hi>
+</rdg>
 </app> in <formula xml:id="Ch42.S1.p20.m2">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
@@ -768,14 +1022,20 @@ Hrsg.</hi> |</note> <hi rendition="#i">AD</hi> <hi rendition="#i">L</hi></rdg
 </m:mrow>
 </m:mrow>
 </m:math>
-</formula> in <hi rendition="#i">AC</hi>. Nam <anchor xml:id="_37_05_144-145_25b"/><hi rendition="#i">AC</hi>
+</formula> in <hi rendition="#i">AC</hi>. Nam <anchor xml:id="_37_05_144-145_25b"/>
+<hi rendition="#i">AC</hi>
 <app type="Bfootnote">
 <lem type="main">et <hi rendition="#i">BC</hi> lineae representant</lem>
 <rdg wit="#L" cause="addition">et <hi rendition="#i">BC</hi>
-<note type="editorial">|</note> <add>lineae</add>
-<note type="editorial"><hi rendition="#i">erg.</hi> |</note> </rdg>
+<note type="editorial">|</note>
+<add>lineae</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+</rdg>
 <rdg wit="#L" n="1"> representat </rdg>
-<rdg wit="#L" n="2"> representant <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="2"> representant <hi rendition="#i">L</hi>
+</rdg>
 </app> quantitatem corporum,<index indexName="Sachen">
 <term>quantitas corporis</term>
 </index> illud corporis <hi rendition="#i">B</hi> hoc corporis <hi rendition="#i">A</hi>, sunt enim brachia<index indexName="Sachen">
@@ -789,8 +1049,13 @@ corporis <hi rendition="#i">A</hi> in</lem>
 <rdg wit="#L" n="1"> Sunt autem <hi rendition="#i">AE</hi>
 </rdg>
 <rdg wit="#L" n="2" cause="addition"> Ergo <hi rendition="#i">AD</hi>
-<note type="editorial">|</note> <add>celeritas corporis <hi rendition="#i">A</hi>
-</add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> in <hi rendition="#i">L</hi></rdg>
+<note type="editorial">|</note>
+<add>celeritas corporis <hi rendition="#i">A</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> in <hi rendition="#i">L</hi>
+</rdg>
 </app>
 <hi rendition="#i">BC</hi> seu in corpus <hi rendition="#i">A</hi> est
 potentia<index indexName="Sachen">
@@ -826,7 +1091,7 @@ potentia<index indexName="Sachen">
 <term>concursus</term>
 </index> Et quia post concursum<index indexName="Sachen">
 <term>concursus</term>
-</index> pro celeritatibus <hi rendition="#i">AD</hi>, <hi rendition="#i">BD</hi> substituuntur <hi rendition="#i">AE</hi>, <hi rendition="#i">BE</hi>, hinc <hi rendition="#i">AE</hi> in <formula xml:id="Ch42.S1.p20.m4">
+</index> pro celeritatibus <hi rendition="#i">AD</hi>,<hi rendition="#i">BD</hi> substituuntur <hi rendition="#i">AE</hi>,<hi rendition="#i">BE</hi>, hinc <hi rendition="#i">AE</hi> in <formula xml:id="Ch42.S1.p20.m4">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
 <m:mrow>
@@ -847,12 +1112,19 @@ potentia<index indexName="Sachen">
 </m:math>
 </formula> in <hi rendition="#i">AC</hi>, sunt <app type="Bfootnote">
 <!--is-correction-app-with-lemma-->
-<lem type="main"><corr resp="#ed">[potentiae]<index indexName="Sachen">
+<lem type="main">
+<corr resp="#ed">[potentiae]<index indexName="Sachen">
 <term>potentia</term>
-</index></corr></lem>
-<rdg wit="#L"><orig>potentia </orig>
-<note type="editorial"><hi rendition="#i">L ändert
-Hrsg.</hi></note></rdg>
+</index>
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>potentia </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert
+Hrsg.</hi>
+</note>
+</rdg>
 </app> utriusque corporis post concursum,<index indexName="Sachen">
 <term>concursus</term>
 </index> quas potentias<index indexName="Sachen">
@@ -1040,7 +1312,8 @@ Hrsg.</hi></note></rdg>
 </m:mstyle>
 </m:mrow>
 </m:math>
-</formula>. Unde ex hypothesi nostra manentis potentiae,<anchor xml:id="_37_05_144-145_26b"/><index indexName="Sachen">
+</formula>. Unde ex hypothesi nostra manentis potentiae,<anchor xml:id="_37_05_144-145_26b"/>
+<index indexName="Sachen">
 <term>hypothesis manentis potentiae</term>
 </index> sequitur theorema<index indexName="Sachen">
 <term>theorema pulchrum</term>
@@ -1052,8 +1325,11 @@ Hrsg.</hi></note></rdg>
 <app type="Bfootnote">
 <lem type="main">esse reciproce</lem>
 <note type="lemma-abbrev">esse</note>
-<rdg wit="#L" n="1"> <note type="editorial">|</note> ut <hi rendition="#i">streicht</hi> <hi rendition="#i">Hrsg.</hi>  corpora </rdg>
-<rdg wit="#L" n="2"> reciproce <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="1">
+<note type="editorial">|</note> ut <hi rendition="#i">streicht</hi>
+<hi rendition="#i">Hrsg.</hi>  corpora </rdg>
+<rdg wit="#L" n="2"> reciproce <hi rendition="#i">L</hi>
+</rdg>
 </app> ut corpora concurrentia, quod et rationi<index indexName="Sachen">
 <term>ratio</term>
 </index> egregie consentaneum est, nam resistunt mutationi celeritatis<index indexName="Sachen">
@@ -1062,7 +1338,8 @@ Hrsg.</hi></note></rdg>
 <lem type="main">possit, nihil</lem>
 <note type="lemma-abbrev">possit,</note>
 <rdg wit="#L" n="1"> necesse est ut </rdg>
-<rdg wit="#L" n="2"> nihil <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="2"> nihil <hi rendition="#i">L</hi>
+</rdg>
 </app> aliud contribuere potest, quam ad conservationem celeritatis<index indexName="Sachen">
 <term>conservatio celeritatis</term>
 </index>, qua <app type="Bfootnote">
@@ -1071,15 +1348,19 @@ Hrsg.</hi></note></rdg>
 <rdg wit="#L" n="1"> celeritas </rdg>
 <rdg wit="#L" n="2"> celeritates ergo <app>
 <rdg wit="#L" n="a">conservatae </rdg>
-<rdg wit="#L" n="b">perditae <hi rendition="#i">L</hi></rdg>
-</app></rdg>
+<rdg wit="#L" n="b">perditae <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
 </app> sunt inter se in ratione <app type="Bfootnote">
 <lem type="main">composita directa<index indexName="Sachen">
 <term>ratio composita directa</term>
-</index></lem>
+</index>
+</lem>
 <note type="lemma-abbrev">composita</note>
 <rdg wit="#L" n="1"> ex </rdg>
-<rdg wit="#L" n="2"> directa <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="2"> directa <hi rendition="#i">L</hi>
+</rdg>
 </app> ipsarum celeritatum, reciproca<index indexName="Sachen">
 <term>ratio composita reciproca</term>
 </index> magnitudinum. Hanc ergo aequationem <formula xml:id="Ch42.S1.p21.m4">
@@ -1136,16 +1417,19 @@ Hrsg.</hi></note></rdg>
 </m:mrow>
 </m:math>
 </formula> decem Hugenii<index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens,
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens,
 Huguens), Christiaan 1629–1695</term>
 </index> casibus<index indexName="Sachen">
 <term>decem casus Hugeniani</term>
 </index> applicemus:</p>
 <anchor xml:id="_37_05_144-145_27a"/>
-<p xml:id="Ch42.S1.p22"><app type="Cfootnote" from="#_37_05_144-145_27a" to="#_37_05_144-145_27b">
+<p xml:id="Ch42.S1.p22">
+<app type="Cfootnote" from="#_37_05_144-145_27a" to="#_37_05_144-145_27b">
 <lem type="main"/>
 <note type="lemma-abbrev">1<hi rendition="#sup">mo</hi>
-<seg type="apparat-ellipsis"/> potest</note>
+<seg type="apparat-ellipsis"/>
+ potest</note>
 <note type="editorial">Leibnizens Bewertung von Huygens’ Ergebnissen als
 falsch oder ungewiss geht auf seine fehlerhafte Handhabung der
 Vorzeichen in der Vektoraddition zurück.</note>
@@ -1194,10 +1478,11 @@ Vorzeichen in der Vektoraddition zurück.</note>
 <m:mo>.</m:mo>
 </m:mrow>
 </m:math>
-</formula> Falsum nam <hi rendition="#i">AB</hi>, <hi rendition="#i">BC</hi>
+</formula> Falsum nam <hi rendition="#i">AB</hi>,<hi rendition="#i">BC</hi>
 inaequal.</p>
 <p xml:id="Ch42.S1.p23">2<hi rendition="#sup">do</hi> casu
-<!--\hackfor-in-math{\lbrack AC\rbrack}--><!--\hack-in-math{\edtext{\lbrack AC\rbrack}{\lemma{}\Bfootnote{\textit{AB} \textit{L ändert Hrsg.}\ }}}--><formula xml:id="Ch42.S1.p23.m1">
+<!--\hackfor-in-math{\lbrack AC\rbrack}--><!--\hack-in-math{\edtext{\lbrack AC\rbrack}{\lemma{}\Bfootnote{\textit{AB} \textit{L ändert Hrsg.}\ }}}-->
+<formula xml:id="Ch42.S1.p23.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
 <m:mstyle displaystyle="true">
@@ -1238,15 +1523,21 @@ inaequal.</p>
 </m:mstyle>
 </m:mrow>
 </m:math>
-</formula><!--  \hackfor{\edtext{}{\lemma{}\Bfootnote{\textit{AB} \textit{L ändert Hrsg.}\ }}} --><app type="Bfootnote">
+</formula><!--  \hackfor{\edtext{}{\lemma{}\Bfootnote{\textit{AB} \textit{L ändert Hrsg.}\ }}} -->
+<app type="Bfootnote">
 <!--is-correction-app-with-empty-lemma-->
-<note type="editorial"><orig><hi rendition="#i">AB</hi>  </orig>
-<hi rendition="#i">L ändert Hrsg.</hi></note>
+<note type="editorial">
+<orig>
+<hi rendition="#i">AB</hi>
+</orig>
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
 </app> absurdum. Neque enim quantitas negativa<index indexName="Sachen">
 <term>quantitas negativa</term>
 </index> aequalis positivae.<index indexName="Sachen">
 <term>quantitas positiva</term>
-</index></p>
+</index>
+</p>
 <p xml:id="Ch42.S1.p24">3<hi rendition="#sup">tio</hi> casu <formula xml:id="Ch42.S1.p24.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
@@ -1292,7 +1583,8 @@ inaequal.</p>
 </formula> quod est dubium, id est non potest esse semper verum, ut hic
 dicitur.</p>
 <p xml:id="Ch42.S1.p25">Quarto casu: <app type="Bfootnote">
-<lem type="main"><formula xml:id="Ch42.S1.p25.m1">
+<lem type="main">
+<formula xml:id="Ch42.S1.p25.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
 <m:mstyle displaystyle="true">
@@ -1343,7 +1635,8 @@ dicitur.</p>
 </m:mrow>
 </m:math>
 </formula> dub</lem>
-<note type="lemma-abbrev"><formula xml:id="Ch42.S1.p25.m2">
+<note type="lemma-abbrev">
+<formula xml:id="Ch42.S1.p25.m2">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mstyle displaystyle="true">
 <m:mfrac>
@@ -1376,12 +1669,16 @@ dicitur.</p>
 </m:mfrac>
 </m:mstyle>
 </m:math>
-</formula></note>
+</formula>
+</note>
 <rdg wit="#L" n="1"> \Denarius </rdg>
-<rdg wit="#L" n="2"> dub. <hi rendition="#i">L</hi></rdg>
-</app>.</p>
+<rdg wit="#L" n="2"> dub. <hi rendition="#i">L</hi>
+</rdg>
+</app>.
+</p>
 <p xml:id="Ch42.S1.p26">5<hi rendition="#sup">to</hi> casu <app type="Bfootnote">
-<lem type="main"><formula xml:id="Ch42.S1.p26.m1">
+<lem type="main">
+<formula xml:id="Ch42.S1.p26.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
 <m:mstyle displaystyle="true">
@@ -1424,7 +1721,8 @@ dicitur.</p>
 </m:mrow>
 </m:math>
 </formula> dub</lem>
-<note type="lemma-abbrev"><formula xml:id="Ch42.S1.p26.m2">
+<note type="lemma-abbrev">
+<formula xml:id="Ch42.S1.p26.m2">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mstyle displaystyle="true">
 <m:mfrac>
@@ -1449,10 +1747,13 @@ dicitur.</p>
 </m:mfrac>
 </m:mstyle>
 </m:math>
-</formula></note>
+</formula>
+</note>
 <rdg wit="#L" n="1"> \Denarius </rdg>
-<rdg wit="#L" n="2"> dub. <hi rendition="#i">L</hi></rdg>
-</app>.</p>
+<rdg wit="#L" n="2"> dub. <hi rendition="#i">L</hi>
+</rdg>
+</app>.
+</p>
 <p xml:id="Ch42.S1.p27">6<hi rendition="#sup">to</hi> casu <formula xml:id="Ch42.S1.p27.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
@@ -1497,10 +1798,19 @@ dicitur.</p>
 </m:math>
 </formula> falsum deberent enim <app type="Bfootnote">
 <!--is-correction-app-with-lemma-->
-<lem type="main"><corr resp="#ed">[<hi rendition="#i">AC</hi>],</corr></lem>
-<rdg wit="#L"><orig><hi rendition="#i">AB</hi>  </orig>
-<note type="editorial"><hi rendition="#i">L ändert
-Hrsg.</hi></note></rdg>
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">AC</hi>],
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<hi rendition="#i">AB</hi>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert
+Hrsg.</hi>
+</note>
+</rdg>
 </app> et <hi rendition="#i">BC</hi> esse aequales.</p>
 <p xml:id="Ch42.S1.p28">7<hi rendition="#sup">mo</hi> casu <formula xml:id="Ch42.S1.p28.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
@@ -1526,7 +1836,8 @@ Hrsg.</hi></note></rdg>
 </m:math>
 </formula>
 <app type="Bfootnote">
-<lem type="main"> <formula xml:id="Ch42.S1.p28.m2">
+<lem type="main">
+<formula xml:id="Ch42.S1.p28.m2">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mstyle displaystyle="true">
 <m:mfrac>
@@ -1585,15 +1896,25 @@ Hrsg.</hi></note></rdg>
 <rdg wit="#L" n="3"> falsum, <app>
 <rdg wit="#L" n="a">nam <hi rendition="#i">AB</hi>
 </rdg>
-<rdg wit="#L" n="b">nam quia <hi rendition="#i">L</hi></rdg>
-</app></rdg>
+<rdg wit="#L" n="b">nam quia <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
 </app> in hoc casu <hi rendition="#i">AC</hi> aequ. <hi rendition="#i">CD</hi> erit <hi rendition="#i">AC</hi> plus quam duplum ipsius <app type="Bfootnote">
 <!--is-correction-app-with-lemma-->
-<lem type="main"><corr resp="#ed">[<hi rendition="#i">BC</hi>].</corr></lem>
-<rdg wit="#L"><orig><hi rendition="#i">CD</hi>
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">BC</hi>].
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<hi rendition="#i">CD</hi>
 </orig>
-<note type="editorial"><hi rendition="#i">L ändert
-Hrsg.</hi></note></rdg>
+<note type="editorial">
+<hi rendition="#i">L ändert
+Hrsg.</hi>
+</note>
+</rdg>
 </app> Sed <hi rendition="#i">DA</hi> minor est duplo ipsius <formula xml:id="Ch42.S1.p28.m4">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
@@ -1610,7 +1931,8 @@ Hrsg.</hi></note></rdg>
 </m:mrow>
 </m:mrow>
 </m:math>
-</formula>.</p>
+</formula>.
+</p>
 <p xml:id="Ch42.S1.p29">8<hi rendition="#sup">vo</hi> casu <formula xml:id="Ch42.S1.p29.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
@@ -1740,8 +2062,12 @@ Hrsg.</hi></note></rdg>
 </m:math>
 </formula> falsum <app type="Bfootnote">
 <lem type="main">plerumque</lem>
-<rdg wit="#L" cause="addition"><add>plerumque</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
+<rdg wit="#L" cause="addition">
+<add>plerumque</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
 </app> nam <formula xml:id="Ch42.S1.p31.m2">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
@@ -2030,11 +2356,14 @@ Hrsg.</hi></note></rdg>
 </m:mrow>
 </m:mrow>
 </m:math>
-</formula> quod tamen universaliter verum esse non potest.<anchor xml:id="_37_05_144-145_27b"/></p>
+</formula> quod tamen universaliter verum esse non potest.<anchor xml:id="_37_05_144-145_27b"/>
+</p>
 <anchor xml:id="_37_05_144-145_19a"/>
-<p xml:id="Ch42.S1.p32"><app type="Cfootnote" from="#_37_05_144-145_19a" to="#_37_05_144-145_19b">
+<p xml:id="Ch42.S1.p32">
+<app type="Cfootnote" from="#_37_05_144-145_19a" to="#_37_05_144-145_19b">
 <lem type="main"/>
-<note type="lemma-abbrev">Casu 7. <seg type="apparat-ellipsis"/> <formula xml:id="Ch42.S1.p32.m1">
+<note type="lemma-abbrev">Casu 7. <seg type="apparat-ellipsis"/>
+<formula xml:id="Ch42.S1.p32.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mstyle displaystyle="true">
 <m:mfrac>
@@ -2067,14 +2396,21 @@ Hrsg.</hi></note></rdg>
 </m:mfrac>
 </m:mstyle>
 </m:math>
-</formula></note>
+</formula>
+</note>
 <note type="editorial">Leibniz verwendet hier das Komma als
 Multiplikationszeichen, neben dem üblicheren Zeichen <formula xml:id="Ch42.S1.p32.m2">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mo>⌢</m:mo>
 </m:math>
-</formula> .</note>
-</app><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436"><pb type="L"/><fw type="folNum">[144 r<hi rendition="#sup">o</hi>]</fw></ref> ⟨–⟩ Casu 7. <formula xml:id="Ch42.S1.p32.m3">
+</formula> .
+</note>
+</app>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=436">
+<pb type="L"/>
+<fw type="folNum">[144 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref> ⟨–⟩ Casu 7. <formula xml:id="Ch42.S1.p32.m3">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:munder>
 <m:munder accentunder="true">
@@ -2169,7 +2505,8 @@ Multiplikationszeichen, neben dem üblicheren Zeichen <formula xml:id="Ch42.S1.p
 </m:mrow>
 </m:math>
 </formula> in <hi rendition="#i">AC</hi> seu debet esse
-<!--\hackfor-in-math{\lbrack BC\rbrack}--><!--\hack-in-math{\edtext{\lbrack BC\rbrack}{\lemma{\textit{AC}}\Bfootnote{\textit{L ändert Hrsg.}\ }}}--><formula xml:id="Ch42.S1.p32.m7">
+<!--\hackfor-in-math{\lbrack BC\rbrack}--><!--\hack-in-math{\edtext{\lbrack BC\rbrack}{\lemma{\textit{AC}}\Bfootnote{\textit{L ändert Hrsg.}\ }}}-->
+<formula xml:id="Ch42.S1.p32.m7">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
 <m:mrow>
@@ -2226,11 +2563,17 @@ Multiplikationszeichen, neben dem üblicheren Zeichen <formula xml:id="Ch42.S1.p
 </m:mrow>
 </m:mrow>
 </m:math>
-</formula><!--  \hackfor{\edtext{}{\lemma{\textit{AC}}\Bfootnote{\textit{L ändert Hrsg.}\ }}} --><app type="Bfootnote">
+</formula><!--  \hackfor{\edtext{}{\lemma{\textit{AC}}\Bfootnote{\textit{L ändert Hrsg.}\ }}} -->
+<app type="Bfootnote">
 <!--is-correction-app-with-empty-lemma-->
-<note type="editorial"><orig><hi rendition="#i">AC</hi> </orig>
-<hi rendition="#i">L ändert Hrsg.</hi></note>
-</app>.</p>
+<note type="editorial">
+<orig>
+<hi rendition="#i">AC</hi>
+</orig>
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</app>.
+</p>
 <p xml:id="Ch42.S1.p33">Ergo <formula xml:id="Ch42.S1.p33.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
@@ -2286,7 +2629,7 @@ Multiplikationszeichen, neben dem üblicheren Zeichen <formula xml:id="Ch42.S1.p
 <m:mi>C</m:mi>
 </m:mrow>
 </m:math>
-</formula>. <app type="Cfootnote">
+</formula>.<app type="Cfootnote">
 <lem type="main">Seu <formula xml:id="Ch42.S1.p33.m2">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
@@ -2323,8 +2666,10 @@ Multiplikationszeichen, neben dem üblicheren Zeichen <formula xml:id="Ch42.S1.p
 <m:mi>D</m:mi>
 </m:mrow>
 </m:math>
-</formula>.</lem>
-<note type="lemma-abbrev">Seu <seg type="apparat-ellipsis"/> <formula xml:id="Ch42.S1.p33.m3">
+</formula>.
+</lem>
+<note type="lemma-abbrev">Seu <seg type="apparat-ellipsis"/>
+<formula xml:id="Ch42.S1.p33.m3">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
 <m:mrow>
@@ -2340,7 +2685,8 @@ Multiplikationszeichen, neben dem üblicheren Zeichen <formula xml:id="Ch42.S1.p
 </m:mrow>
 </m:mrow>
 </m:math>
-</formula></note>
+</formula>
+</note>
 <note type="editorial">Die rechte Seite der Gleichung heißt eigentlich
 <formula xml:id="Ch42.S1.p33.m4">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
@@ -2408,8 +2754,14 @@ aus.</note>
 </m:mstyle>
 </m:mrow>
 </m:math>
-</formula>.<anchor xml:id="_37_05_144-145_19b"/></p>
-<p xml:id="Ch42.S1.p34"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439"><pb type="L"/><fw type="folNum">[145 r<hi rendition="#sup">o</hi>]</fw></ref> Hic ut obiter dicam notabile calculi
+</formula>.<anchor xml:id="_37_05_144-145_19b"/>
+</p>
+<p xml:id="Ch42.S1.p34">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=439">
+<pb type="L"/>
+<fw type="folNum">[145 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref> Hic ut obiter dicam notabile calculi
 exemplum<index indexName="Sachen">
 <term>notabile exemplum calculi</term>
 </index>
@@ -2635,29 +2987,38 @@ aequ. <formula xml:id="Ch42.S1.p34.m7">
 <m:mi>y</m:mi>
 </m:mrow>
 </m:math>
-</formula>.</p>
+</formula>.
+</p>
 <figure rendition="#own-line_centered" xml:id="Ch42.S1.p35">
 <graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_144-145_d2_145r.svg" width="216.81pt" xml:id="Ch42.S1.p35.g1"/>
-<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]</head>
+<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]
+</head>
 </figure>
 <p xml:id="Ch42.S1.p36">Sit <app type="Bfootnote">
 <lem type="main">recta <hi rendition="#i">ABCDE</hi> divisa ita ut</lem>
 <note type="lemma-abbrev">recta</note>
-<rdg wit="#L" n="1"> <hi rendition="#i">AE</hi>
+<rdg wit="#L" n="1">
+<hi rendition="#i">AE</hi>
 </rdg>
-<rdg wit="#L" n="2"> <hi rendition="#i">ABCDE</hi> divisa <app>
+<rdg wit="#L" n="2">
+<hi rendition="#i">ABCDE</hi> divisa <app>
 <rdg wit="#L" n="a">in <app>
 <rdg wit="#L" n="aa">quatuor </rdg>
-<rdg wit="#L" n="bb">tribus punctis <hi rendition="#i">B</hi>, <hi rendition="#i">C</hi>, <hi rendition="#i">D</hi>
+<rdg wit="#L" n="bb">tribus punctis <hi rendition="#i">B</hi>,<hi rendition="#i">C</hi>,<hi rendition="#i">D</hi>
 </rdg>
-</app></rdg>
-<rdg wit="#L" n="b">ita ut <hi rendition="#i">L</hi></rdg>
-</app></rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="b">ita ut <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
 </app> sit <hi rendition="#i">CD</hi> aequ. <hi rendition="#i">DE</hi> et
 <hi rendition="#i">AC</hi> ad totam <hi rendition="#i">A</hi>⟨<hi rendition="#i">E</hi>⟩ ut <hi rendition="#i">BD</hi> ad <hi rendition="#i">AB</hi>. Erit <hi rendition="#i">AB</hi> aequ. <hi rendition="#i">BE</hi>. Sed hoc obiter.</p>
-<p xml:id="Ch42.S1.p37"><app type="Cfootnote">
+<p xml:id="Ch42.S1.p37">
+<app type="Cfootnote">
 <lem type="main">Si Hugenii<index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
 Hugens, Huguens), Christiaan 1629–1695</term>
 </index> regula<index indexName="Sachen">
 <term>regula Hugenii</term>
@@ -2665,15 +3026,19 @@ Hugens, Huguens), Christiaan 1629–1695</term>
 <lem type="main">quod facta</lem>
 <note type="lemma-abbrev">quod</note>
 <rdg wit="#L" n="1"> factum </rdg>
-<rdg wit="#L" n="2"> facta <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="2"> facta <hi rendition="#i">L</hi>
+</rdg>
 </app> ex corporibus in quadrata celeritatum,<index indexName="Sachen">
 <term>factum ex corpore in quadratum celeritatis</term>
 </index> simul addita, ante et post concursum<index indexName="Sachen">
 <term>concursus</term>
 </index> sint aequalia,</lem>
-<note type="lemma-abbrev">Si <seg type="apparat-ellipsis"/> aequalia</note>
-<note type="editorial"><bibl corresp="#bib_00529">a.a.O., §6,
-S. 23.</bibl></note>
+<note type="lemma-abbrev">Si <seg type="apparat-ellipsis"/>
+ aequalia</note>
+<note type="editorial">
+<bibl corresp="#bib_00529">a.a.O., §6,
+S. 23.</bibl>
+</note>
 </app> foret <formula xml:id="Ch42.S1.p37.m1">
 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
 <m:mrow>
@@ -2801,8 +3166,10 @@ proditurum ex simplici aequipollentia[+<?tex-source \phantom{(}?>)].<index index
 <rdg wit="#L" n="1"> summae </rdg>
 <rdg wit="#L" n="2"> corpora <app>
 <rdg wit="#L" n="a">in reciproca </rdg>
-<rdg wit="#L" n="b">reciproce in <hi rendition="#i">L</hi></rdg>
-</app></rdg>
+<rdg wit="#L" n="b">reciproce in <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
 </app> composita ratione ex summis<index indexName="Sachen">
 <term>summa celeritatum priorum et posteriorum</term>
 </index> et differentiis celeritatum priorum et posteriorum.<index indexName="Sachen">
@@ -2943,38 +3310,53 @@ inter <hi rendition="#i">E</hi> et <hi rendition="#i">A</hi>, vel <hi rendition=
 </index> coincidet</p>
 <p rendition="#noindent" xml:id="Ch42.S1.p38">cum nostra.<index indexName="Sachen">
 <term>regula nostra</term>
-</index> Et hoc fit casu 4<anchor xml:id="_37_05_144-145_29a"/><hi rendition="#sup">to</hi>, 7<hi rendition="#sup">mo</hi> et 10<hi rendition="#sup">mo</hi>. Ergo secundum hanc <app type="Bfootnote">
+</index> Et hoc fit casu 4<anchor xml:id="_37_05_144-145_29a"/>
+<hi rendition="#sup">to</hi>, 7<hi rendition="#sup">mo</hi> et 10<hi rendition="#sup">mo</hi>. Ergo secundum hanc <app type="Bfootnote">
 <lem type="main">regulam Hugenii<index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
 Hugens, Huguens), Christiaan 1629–1695</term>
-</index></lem>
+</index>
+</lem>
 <note type="lemma-abbrev">regulam</note>
 <rdg wit="#L" n="1"> Hugenii decisio quam affert casu </rdg>
-<rdg wit="#L" n="2"> Hugenii <hi rendition="#i">L</hi></rdg>
+<rdg wit="#L" n="2"> Hugenii <hi rendition="#i">L</hi>
+</rdg>
 </app> solutio casuum 4, 7, 10 debet coincidere cum nostra.<index indexName="Sachen">
 <term>solutio nostra</term>
-</index><anchor xml:id="_37_05_144-145_29b"/> Et tamen supra determinavimus
+</index>
+<anchor xml:id="_37_05_144-145_29b"/>
+ Et tamen supra determinavimus
 regulas Hugenii<index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens,
-Huguens), Christiaan 1629–1695</term>
-</index><index indexName="Sachen">
-<term>regulae Hugenii</term>
-</index> fallere secundum nostram Hypothesin in casu 7, 10. Ergo regulae
-Hugenii<index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens,
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens,
 Huguens), Christiaan 1629–1695</term>
 </index>
 <index indexName="Sachen">
 <term>regulae Hugenii</term>
-</index> in hoc quidem casu ne sibi quidem ipsis constant. <anchor xml:id="_37_05_144-145_28a"/><app type="Cfootnote">
+</index> fallere secundum nostram Hypothesin in casu 7, 10. Ergo regulae
+Hugenii<index indexName="Personen">
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens,
+Huguens), Christiaan 1629–1695</term>
+</index>
+<index indexName="Sachen">
+<term>regulae Hugenii</term>
+</index> in hoc quidem casu ne sibi quidem ipsis constant. <anchor xml:id="_37_05_144-145_28a"/>
+<app type="Cfootnote">
 <lem type="main">Quod ipsi Hugenio<index indexName="Personen">
-<term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius,
 Hugens, Huguens), Christiaan 1629–1695</term>
 </index> significare operae pretium esse videtur.</lem>
-<note type="lemma-abbrev">Quod <seg type="apparat-ellipsis"/> videtur</note>
+<note type="lemma-abbrev">Quod <seg type="apparat-ellipsis"/>
+ videtur</note>
 <note type="editorial">Aus dem Zeitraum Juli 1676 bis Mitte September
 1679 sind keine Briefe zwischen Leibniz und Huygens bekannt.</note>
-</app><anchor xml:id="_37_05_144-145_24b"/><anchor xml:id="_37_05_144-145_28b"/></p>
+</app>
+<anchor xml:id="_37_05_144-145_24b"/>
+<anchor xml:id="_37_05_144-145_28b"/>
+</p>
 </div>
 </div>
 </body>

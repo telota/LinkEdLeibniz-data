@@ -1,24 +1,124 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-065-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-065-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Aus einem Gespräch mit Artus de Roannez</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Aus einem Gespräch mit Artus de Roannez</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="65">Aus einem Gespräch mit Artus de Roannez</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1675-12-31" resp="#L" cert="high">31. Dezember 1675</date><date calendar="#gregorian" notAfter="1675-12-31" resp="#L" cert="high"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=679</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="631" to="631"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-065-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 3 Bl. 89</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung:
+            </author>
+            <title type="chapter" level="a" n="65">Aus einem Gespräch mit Artus de Roannez</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1675-12-31" resp="#L" cert="high">31. Dezember 1675</date>
+            <date calendar="#gregorian" notAfter="1675-12-31" resp="#L" cert="high"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=679</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="631" to="631"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-065-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 3 Bl. 89</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung:
 LH XXXVII 3 Bl. 89.
 Zettel (etwa 20 x 6 cm), unregelmäßig beschnitten.
 12 Z. auf Bl. 89 r<hi rendition="#sup">o</hi>, 2 Z. auf Bl. 89 v<hi rendition="#sup">o</hi>.
 Ursprünglich dürfte der Zettel Teil des Textträgers von N. 97<hi rendition="#sub">4</hi>
-gewesen sein.</p><p>Cc 2, Nr. 1179</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+gewesen sein.</p>
+                  <p>Cc 2, Nr. 1179</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -644,23 +744,155 @@ gewesen sein.</p><p>Cc 2, Nr. 1179</p></summary></msContents><physDesc><objectDe
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="fr"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#chemie"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-15" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#chemie"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-15" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-065-000_facs-haupttextzeuge">
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=267"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=268"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=269"/>
-  </facsimile><text xml:id="L_08-02-065-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch65" n="65"><pb type="VIII_2" n="631"/><head>65.
+  </facsimile>
+  <text xml:id="L_08-02-065-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch65" n="65">
+        <pb type="VIII_2" n="631"/>
+        <head>65.
 AUS EINEM GESPRÄCH MIT ARTUS DE ROANNEZ</head>
-<head>31. Dezember 1675</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung:
+        <head>31. Dezember 1675</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung:
 LH XXXVII 3 Bl. 89.
 Zettel (etwa 20 x 6 cm), unregelmäßig beschnitten.
 12 Z. auf Bl. 89 r<hi rendition="#sup">o</hi>, 2 Z. auf Bl. 89 v<hi rendition="#sup">o</hi>.
 Ursprünglich dürfte der Zettel Teil des Textträgers von N. 97<hi rendition="#sub">4</hi>
-gewesen sein.</p><p>Cc 2, Nr. 1179</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="text"><p xml:id="Ch65.p4" rendition="#noindent"><pb type="L"/><fw type="folNum">[89 r<hi rendition="#sup">o</hi>]</fw>
-J’ay parlé aujourdhuy (ultimo anni 1675) à Mons. le duc de Roanez<index indexName="Namensregister"><term><hi rendition="#g">de Roannez</hi>, Artus Gouffier 1627-1699</term></index> en presence de Mons. de S. Martin, de ma <app type="Bfootnote"><lem type="main">pensée de dessaler</lem><note type="lemma-abbrev">pensée de</note><rdg wit="#L" n="1"> faire </rdg><rdg wit="#L" n="2"> dessaler <hi rendition="#i">L</hi></rdg></app> l’eau de mer, sans feu. Car ayant <app type="Bfootnote"><lem type="main">avoué, que</lem><note type="lemma-abbrev">avoué,</note><rdg wit="#L" n="1"> qu’on </rdg><rdg wit="#L" n="2"> que  <hi rendition="#i">L</hi></rdg></app> la distillation<index indexName="Sachverzeichnis"><term>distillation</term></index> ne sert de rien, à cause qu’on peut remplir d’eau la place qui seroit necessaire pour les charbons; je luy dis que j’avois un moyen <app type="Bfootnote"><lem type="main">de dessaler</lem><note type="lemma-abbrev">de</note><rdg wit="#L" n="1"> faire </rdg><rdg wit="#L" n="2"> dessaler  <hi rendition="#i">L</hi></rdg></app> l’eau sans feu, en la pressant et <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[l’obligeant]</corr></lem><rdg wit="#L"><orig>l’obligant</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> de passer par quelque chose, comme pierre, sable, plomb. Il me dit qu’il trouvoit cela fort considerable, d’autant qu’il sçavoit que l’eau passoit même par le fer; <app type="Bfootnote"><lem type="main">et qu’un</lem><note type="lemma-abbrev">et</note><rdg wit="#L" n="1"> qu’une </rdg><rdg wit="#L" n="2"> qu’un <hi rendition="#i">L</hi></rdg></app> millier pesant sur piston de demy pouce de diametre a fait pisser l’eau par le fer de deux lignes de largeur. Il me dit de n’en pas parler, afin qu’on le pût essayer.</p><p xml:id="Ch65.p5">Mons. de Galinée<index indexName="Namensregister"><term><hi rendition="#g">Galinée</hi>, Abbé de 1678</term></index> a porté une pierre blanche de Bretagne<index indexName="Ortsregister"><term>Bretagne</term></index>, à travers de la quelle les choses distillées<index indexName="Sachverzeichnis"><term>distiller</term></index> perdent le goust<index indexName="Sachverzeichnis"><term>goût</term></index>. L’urine<index indexName="Sachverzeichnis"><term>urine</term></index> même. Mais il faut tousjours. Il y a une difficulté icy: comment oster la salûre au <index indexName="Sachverzeichnis"><term>plomb</term></index>plomb? Car il y restera du <index indexName="Sachverzeichnis"><term>sel</term></index>sel, il en seroit tout changé. Je croy qu’en le remettant dans <app type="Bfootnote"><lem type="main">l’eau et l’y</lem><note type="lemma-abbrev">l’eau et</note><rdg wit="#L" n="1"> luy </rdg><rdg wit="#L" n="2"> l’y  <hi rendition="#i">L</hi></rdg></app> remuant, le sel se dissoudroit et sortiroit.
-<pb type="L"/><fw type="folNum">[89 v<hi rendition="#sup">o</hi>]</fw></p><p xml:id="Ch65.p6">On pourroit faire passer l’eau à travers de la poudre de plomb au lieu de sable, et quand l’eau ne voudroit plus passer, ny le plomb retenir du sel d’avantage on le pourroit fondre, et pulveriser derechef.</p></div></div></body>
-  </text>
+gewesen sein.</p>
+                      <p>Cc 2, Nr. 1179</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch65.p4" rendition="#noindent">
+            <pb type="L"/>
+            <fw type="folNum">[89 r<hi rendition="#sup">o</hi>]
+            </fw>
+J’ay parlé aujourdhuy (ultimo anni 1675) à Mons. le duc de Roanez<index indexName="Namensregister">
+            <term>
+              <hi rendition="#g">de Roannez</hi>, Artus Gouffier 1627-1699</term>
+          </index> en presence de Mons. de S. Martin, de ma <app type="Bfootnote">
+          <lem type="main">pensée de dessaler</lem>
+          <note type="lemma-abbrev">pensée de</note>
+          <rdg wit="#L" n="1"> faire </rdg>
+          <rdg wit="#L" n="2"> dessaler <hi rendition="#i">L</hi>
+          </rdg>
+        </app> l’eau de mer, sans feu. Car ayant <app type="Bfootnote">
+        <lem type="main">avoué, que</lem>
+        <note type="lemma-abbrev">avoué,</note>
+        <rdg wit="#L" n="1"> qu’on </rdg>
+        <rdg wit="#L" n="2"> que  <hi rendition="#i">L</hi>
+        </rdg>
+      </app> la distillation<index indexName="Sachverzeichnis">
+      <term>distillation</term>
+    </index> ne sert de rien, à cause qu’on peut remplir d’eau la place qui seroit necessaire pour les charbons; je luy dis que j’avois un moyen <app type="Bfootnote">
+    <lem type="main">de dessaler</lem>
+    <note type="lemma-abbrev">de</note>
+    <rdg wit="#L" n="1"> faire </rdg>
+    <rdg wit="#L" n="2"> dessaler  <hi rendition="#i">L</hi>
+    </rdg>
+  </app> l’eau sans feu, en la pressant et <app type="Bfootnote">  <!--is-correction-app-with-lemma-->
+  <lem type="main">
+    <corr resp="#ed">[l’obligeant]</corr>
+  </lem>
+  <rdg wit="#L">
+    <orig>l’obligant</orig>
+    <note type="editorial">
+      <hi rendition="#i">L ändert Hrsg.</hi>
+    </note>
+  </rdg>
+</app> de passer par quelque chose, comme pierre, sable, plomb. Il me dit qu’il trouvoit cela fort considerable, d’autant qu’il sçavoit que l’eau passoit même par le fer; <app type="Bfootnote">
+<lem type="main">et qu’un</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" n="1"> qu’une </rdg>
+<rdg wit="#L" n="2"> qu’un <hi rendition="#i">L</hi>
+</rdg>
+</app> millier pesant sur piston de demy pouce de diametre a fait pisser l’eau par le fer de deux lignes de largeur. Il me dit de n’en pas parler, afin qu’on le pût essayer.</p>
+<p xml:id="Ch65.p5">Mons. de Galinée<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Galinée</hi>, Abbé de 1678</term>
+</index> a porté une pierre blanche de Bretagne<index indexName="Ortsregister">
+<term>Bretagne</term>
+</index>, à travers de la quelle les choses distillées<index indexName="Sachverzeichnis">
+<term>distiller</term>
+</index> perdent le goust<index indexName="Sachverzeichnis">
+<term>goût</term>
+</index>. L’urine<index indexName="Sachverzeichnis">
+<term>urine</term>
+</index> même. Mais il faut tousjours. Il y a une difficulté icy: comment oster la salûre au <index indexName="Sachverzeichnis">
+<term>plomb</term>
+</index>plomb? Car il y restera du <index indexName="Sachverzeichnis">
+<term>sel</term>
+</index>sel, il en seroit tout changé. Je croy qu’en le remettant dans <app type="Bfootnote">
+<lem type="main">l’eau et l’y</lem>
+<note type="lemma-abbrev">l’eau et</note>
+<rdg wit="#L" n="1"> luy </rdg>
+<rdg wit="#L" n="2"> l’y  <hi rendition="#i">L</hi>
+</rdg>
+</app> remuant, le sel se dissoudroit et sortiroit.
+<pb type="L"/>
+<fw type="folNum">[89 v<hi rendition="#sup">o</hi>]
+</fw>
+</p>
+<p xml:id="Ch65.p6">On pourroit faire passer l’eau à travers de la poudre de plomb au lieu de sable, et quand l’eau ne voudroit plus passer, ny le plomb retenir du sel d’avantage on le pourroit fondre, et pulveriser derechef.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

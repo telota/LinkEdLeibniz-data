@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-042-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-042-000">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -6,32 +7,56 @@
         <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
           Text</title>
         <respStmt>
-          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Digitale Konzeption und
-            Projektbegleitung</note></resp>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
         </respStmt>
         <respStmt>
-          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-            Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
-          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-            VIII</note></resp>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-            Berlin</note></resp>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
         </respStmt>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
         <date type="creation">2021</date>
         <availability>
-          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -48,7 +73,10 @@
             <date calendar="#gregorian" notBefore="1672-07-25" resp="#ed" cert="medium">[25. Juli
               – 12. Dezember 1672]</date>
             <date calendar="#gregorian" notAfter="1672-12-12" resp="#ed" cert="medium"/>
-            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=407</idno></idno>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+              <idno type="page">#page=407</idno>
+            </idno>
           </analytic>
           <monogr>
             <title type="main" level="s" n="8">Reihe VIII:
@@ -61,21 +89,27 @@
             </imprint>
             <biblScope unit="page" from="362" to="364"/>
           </monogr>
-          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
         </biblStruct>
         <listWit>
-          <witness n="L" corresp="#L_08-01-042-000_facs-haupttextzeuge"><msDesc>
+          <witness n="L" corresp="#L_08-01-042-000_facs-haupttextzeuge">
+            <msDesc>
               <msIdentifier>
                 <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                 <idno type="Signatur">LH XXXVII 4 Bl. 71</idno>
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-                <summary><p>Konzept: LH XXXVII 4 Bl. 71, 1 Bl. 2<hi rendition="#sup">o</hi>. 1 1/3
+                <summary>
+                  <p>Konzept: LH XXXVII 4 Bl. 71, 1 Bl. 2<hi rendition="#sup">o</hi>. 1 1/3
                     S. In der linken oberen Ecke von Bl. 71 r<hi rendition="#sup">o</hi> etwa 10 x
                     12 cm des Papiers ausgeschnitten. Am unteren Rand Papierabbruch mit
                     Textverlusten. Die untere Hälfte von Bl. 71 v<hi rendition="#sup">o</hi> etwa zu
-                    1/3 beschrieben.</p><p>Cc 2, Nr. 28</p></summary>
+                    1/3 beschrieben.</p>
+                  <p>Cc 2, Nr. 28</p>
+                </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -83,7 +117,8 @@
               <history>
                 <origin corresp="L_witness-origin-types.xml#origin-L"/>
               </history>
-            </msDesc></witness>
+            </msDesc>
+          </witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -189,7 +224,7 @@
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=231"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=232"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,04/&amp;pn=233"/>
-    </facsimile>
+  </facsimile>
   <text xml:id="L_08-01-042-000_text">
     <body xml:id="Document">
       <div type="chapter" xml:id="Ch42" n="42">
@@ -197,18 +232,24 @@
         <head>42. EXPERIMENTA IN VACUO FACIENDA</head>
         <head>[25. Juli – 12. Dezember 1672]</head>
         <div type="ueberlieferung">
-          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-              <witness><msDesc>
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
                   <msIdentifier>
                     <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                     <idno type="Signatur">XXX</idno>
                   </msIdentifier>
                   <msContents>
-                    <summary><p>Konzept: LH XXXVII 4 Bl. 71, 1 Bl. 2<hi rendition="#sup">o</hi>. 1
+                    <summary>
+                      <p>Konzept: LH XXXVII 4 Bl. 71, 1 Bl. 2<hi rendition="#sup">o</hi>. 1
                         1/3 S. In der linken oberen Ecke von Bl. 71 r<hi rendition="#sup">o</hi>
                         etwa 10 x 12 cm des Papiers ausgeschnitten. Am unteren Rand Papierabbruch
                         mit Textverlusten. Die untere Hälfte von Bl. 71 v<hi rendition="#sup">o</hi>
-                        etwa zu 1/3 beschrieben.</p><p>Cc 2, Nr. 28</p></summary>
+                        etwa zu 1/3 beschrieben.</p>
+                      <p>Cc 2, Nr. 28</p>
+                    </summary>
                   </msContents>
                   <physDesc>
                     <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -216,225 +257,273 @@
                   <history>
                     <origin/>
                   </history>
-                </msDesc></witness>
-            </listWit></p>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
         </div>
         <div type="contents">
-          <p xml:id="Ch42.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Das
+          <p xml:id="Ch42.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>: Das
               Wasserzeichen des Papiers weist in die Zeit des Beginns der Auseinandersetzung mit
               Vakuumphänomenen in Paris. Dasselbe Wasserzeichen befindet sich auf den Textträgern
               von N. 6, N. 41 und N. 47, die sich alle auf die 2. Hälfte 1672 datieren lassen. Auch
               inhaltlich passt sich das Stück gut in die Thematik der Pneumatica dieser Zeit
-              ein.</hi></p>
+              ein.</hi>
+          </p>
         </div>
         <div type="text">
-          <p xml:id="Ch42.p5"><pb type="L"/><fw type="folNum">[71 r<hi rendition="#sup">o</hi>]</fw>
+          <p xml:id="Ch42.p5">
+            <pb type="L"/>
+            <fw type="folNum">[71 r<hi rendition="#sup">o</hi>]
+            </fw>
             Novum elegansque experimentum hoc institui potest, constat duas chordas <app type="Bfootnote">
-              <lem type="main">similiter tensas</lem>
-              <note type="lemma-abbrev">chordas</note>
-              <rdg wit="#L" n="1"> unam alia tensa, </rdg>
-              <rdg wit="#L" n="2"> tendi </rdg>
-              <rdg wit="#L" n="3"> similiter tensas <hi rendition="#i">L</hi></rdg>
-            </app> ita comparatas esse, ut una tacta altera etiam non tacta resonet. Id facile
+            <lem type="main">similiter tensas</lem>
+            <note type="lemma-abbrev">chordas</note>
+            <rdg wit="#L" n="1"> unam alia tensa, </rdg>
+            <rdg wit="#L" n="2"> tendi </rdg>
+            <rdg wit="#L" n="3"> similiter tensas <hi rendition="#i">L</hi>
+            </rdg>
+          </app> ita comparatas esse, ut una tacta altera etiam non tacta resonet. Id facile
             experiemur an ab aere pendeat an non, si altera tacta, altera similiter si non resonet,
             id enim audire non poterimus, saltem tremat.</p>
-          <p xml:id="Ch42.p6">Accendantur corpora combustibilia in vacuo, speculo ardente, videndum
+        <p xml:id="Ch42.p6">Accendantur corpora combustibilia in vacuo, speculo ardente, videndum
             an intus durare diu ignis possit, item an sit locum repleturus fumo seu aere ita ut aer
             externus tantum postea irrumpendi conatum<index indexName="Sachverzeichnis">
-              <term>conatus</term>
-            </index> non habeat. Hoc experimento discemus naturam effluviorum rerum combustibilium,
+          <term>conatus</term>
+        </index> non habeat. Hoc experimento discemus naturam effluviorum rerum combustibilium,
             et an ea recolligi possint in aliam materiam combustibilem utique cum pura hic sint seu
             aeri non confundantur.</p>
-          <p xml:id="Ch42.p7">Experiendum quae figurae quibus gradibus facilius rumpantur, item quae
-            crassities, et cujus materiae. Inde rationes duci poterunt de corporum soliditate.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Unterhalb des
+      <p xml:id="Ch42.p7">Experiendum quae figurae quibus gradibus facilius rumpantur, item quae
+            crassities, et cujus materiae. Inde rationes duci poterunt de corporum soliditate.<note type="Afootnote" place="margin" resp="#L">
+        <hi rendition="#i">Unterhalb des
                 Ausschnitts</hi>: Experiendum qui liquores<index indexName="Sachverzeichnis">
-                <term>liquor</term>
-                <index>
-                  <term>purgatus</term>
-                </index>
-              </index> aere purgandi plus dent bullarum vel diutius.</note></p>
-          <pb type="VIII_1" n="363"/>
-          <p xml:id="Ch42.p8">An corpora in vacuo putrescant, saltem per partes interiores. Et an
+        <term>liquor</term>
+        <index>
+          <term>purgatus</term>
+        </index>
+      </index> aere purgandi plus dent bullarum vel diutius.</note>
+  </p>
+  <pb type="VIII_1" n="363"/>
+  <p xml:id="Ch42.p8">An corpora in vacuo putrescant, saltem per partes interiores. Et an
             vermes in vacuo nascantur. Spiritus vini<index indexName="Sachverzeichnis">
-              <term>spiritus</term>
-              <index>
-                <term>vini</term>
-              </index>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">vitrum</lem>
-              <note type="lemma-abbrev">vini</note>
-              <rdg wit="#L" n="1"> vas </rdg>
-              <rdg wit="#L" n="2"> vitrum <hi rendition="#i">L</hi></rdg>
-            </app> quoddam replens, solo manuum calore rupturus ut mihi refert dominus
+    <term>spiritus</term>
+    <index>
+      <term>vini</term>
+    </index>
+  </index>
+  <app type="Bfootnote">
+    <lem type="main">vitrum</lem>
+    <note type="lemma-abbrev">vini</note>
+    <rdg wit="#L" n="1"> vas </rdg>
+    <rdg wit="#L" n="2"> vitrum <hi rendition="#i">L</hi>
+    </rdg>
+  </app> quoddam replens, solo manuum calore rupturus ut mihi refert dominus
               Dalancay<index indexName="Namensregister">
-              <term><hi rendition="#g">Dalancé</hi> (Dalancay), Joachim 1640–1707</term>
-            </index> dissiluitque in mille fragmina vitrum. Erat l’instrument pour niveller. Ex eo
+  <term>
+    <hi rendition="#g">Dalancé</hi> (Dalancay), Joachim 1640–1707</term>
+</index> dissiluitque in mille fragmina vitrum. Erat l’instrument pour niveller. Ex eo
             tempore Hubin<index indexName="Namensregister">
-              <term><hi rendition="#g">Hubin,</hi> Ludion de</term>
-            </index> adhibet aquam secundam.</p>
-          <p xml:id="Ch42.p9">Experimenta in Vacuo facienda: Thermometrum<index indexName="Sachverzeichnis">
-              <term>thermometrum</term>
-            </index> in eo suspendendum, item Hygrometrum<index indexName="Sachverzeichnis">
-              <term>hygrometrum</term>
-            </index>, ut appareat an siccitas et humiditas per ipsum vitri corpus sentiantur, ac per
+<term>
+  <hi rendition="#g">Hubin,</hi> Ludion de</term>
+</index> adhibet aquam secundam.</p>
+<p xml:id="Ch42.p9">Experimenta in Vacuo facienda: Thermometrum<index indexName="Sachverzeichnis">
+<term>thermometrum</term>
+</index> in eo suspendendum, item Hygrometrum<index indexName="Sachverzeichnis">
+<term>hygrometrum</term>
+</index>, ut appareat an siccitas et humiditas per ipsum vitri corpus sentiantur, ac per
             consequens in solis vaporibus corporeis non insint. An in Vacuo rumpatur lacryma vitri,
             et si non rumpitur an statim aperto vase rumpatur. Si rumpitur in ipso Vacuo, videndum
             an rumpatur in compresso an statim compresso vase rumpatur.</p>
-          <p xml:id="Ch42.p10">Videndum an in vacuo liquores altius ascendant in Tubum exiguum, et
+<p xml:id="Ch42.p10">Videndum an in vacuo liquores altius ascendant in Tubum exiguum, et
             per consequens an contribuat aeris compressio<index indexName="Sachverzeichnis">
-              <term>compressio</term>
-            </index>. Item an in vacuo quoque medium vasis aqua pleni sit altius extremo, item alia
+<term>compressio</term>
+</index>. Item an in vacuo quoque medium vasis aqua pleni sit altius extremo, item alia
             a Rohaultio<index indexName="Namensregister">
-              <term><hi rendition="#g">Rohault</hi> (Rohaultius), Jacques 1620–1675</term>
-            </index>
-            <app type="Cfootnote">
-              <lem type="main">dicta.</lem>
-              <note type="editorial"><hi rendition="#k">J. Rohault</hi>, <bibl corresp="#bib_00087"><hi rendition="#i">Traité de physique</hi>, Teil 1, Paris 1671, S. 246,
-                  254.</bibl></note>
-            </app> An in vacuo exerceatur succini vis Electrica, qua corpora retinet. An alia sit
+<term>
+<hi rendition="#g">Rohault</hi> (Rohaultius), Jacques 1620–1675</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">dicta.</lem>
+<note type="editorial">
+<hi rendition="#k">J. Rohault</hi>,<bibl corresp="#bib_00087">
+<hi rendition="#i">Traité de physique</hi>, Teil 1, Paris 1671, S. 246,
+                  254.</bibl>
+</note>
+</app> An in vacuo exerceatur succini vis Electrica, qua corpora retinet. An alia sit
               refractio<index indexName="Sachverzeichnis">
-              <term>refractio</term>
-            </index> radii in vacuo quam in pleno, et an refringatur radius magis a perpendiculari,
+<term>refractio</term>
+</index> radii in vacuo quam in pleno, et an refringatur radius magis a perpendiculari,
             quam <app type="Bfootnote">
-              <lem type="main">ante. Si vis Electrica exercetur in vacuo</lem>
-              <note type="lemma-abbrev">ante.</note>
-              <rdg wit="#L" n="1"> An in vacuo </rdg>
-              <rdg wit="#L" n="2"> Si <seg type="apparat-ellipsis"/> vacuo <hi rendition="#i">L</hi></rdg>
-            </app>, falsum erit quod dicebat Baconus<index indexName="Namensregister">
-              <term><hi rendition="#g">Bacon</hi> (Baconus), Francis 1561–1626</term>
-            </index> causam vis Electricae esse, quod corpora facilius corpori solidiori<index indexName="Sachverzeichnis">
-              <term>corpus</term>
-              <index>
-                <term>solidum</term>
-              </index>
-            </index> quam aeri <app type="Cfootnote">
-              <lem type="main">adhaereant,</lem>
-              <note type="lemma-abbrev">adhaerent,</note>
-              <note type="editorial"><hi rendition="#k">F. Bacon</hi>, <bibl corresp="#bib_00270"><hi rendition="#i">Novum organum</hi>, London 1620, S. 316.</bibl></note>
-            </app> sin contra: verum<app type="Bfootnote">
-              <lem type="main">, in <hi rendition="#i">Instauratione Magna seu novo organo</hi>, ubi
+<lem type="main">ante. Si vis Electrica exercetur in vacuo</lem>
+<note type="lemma-abbrev">ante.</note>
+<rdg wit="#L" n="1"> An in vacuo </rdg>
+<rdg wit="#L" n="2"> Si <seg type="apparat-ellipsis"/>
+ vacuo <hi rendition="#i">L</hi>
+</rdg>
+</app>, falsum erit quod dicebat Baconus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Bacon</hi> (Baconus), Francis 1561–1626</term>
+</index> causam vis Electricae esse, quod corpora facilius corpori solidiori<index indexName="Sachverzeichnis">
+<term>corpus</term>
+<index>
+<term>solidum</term>
+</index>
+</index> quam aeri <app type="Cfootnote">
+<lem type="main">adhaereant,</lem>
+<note type="lemma-abbrev">adhaerent,</note>
+<note type="editorial">
+<hi rendition="#k">F. Bacon</hi>,<bibl corresp="#bib_00270">
+<hi rendition="#i">Novum organum</hi>, London 1620, S. 316.</bibl>
+</note>
+</app> sin contra: verum<app type="Bfootnote">
+<lem type="main">, in <hi rendition="#i">Instauratione Magna seu novo organo</hi>, ubi
                 et addit</lem>
-              <note type="lemma-abbrev">verum</note>
-              <rdg wit="#L" n="1"> . Adde Baconi<index indexName="Namensregister">
-                  <term><hi rendition="#g">Bacon</hi> (Baconus), Francis 1561–1626</term>
-                </index> dictum </rdg>
-              <rdg wit="#L" n="2"> , in <hi rendition="#i">Instauratione Magna seu novo organo</hi>,
-                ubi et addit <hi rendition="#i">L</hi></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main">ideo bracteolas tenuissimas</lem>
-              <note type="lemma-abbrev">ideo</note>
-              <rdg wit="#L" n="1"> laminam tenuissimam </rdg>
-              <rdg wit="#L" n="2"> bracteolas tenuissimas <hi rendition="#i">L</hi></rdg>
-            </app> aureas digito quasi subito <app type="Cfootnote">
-              <lem type="main">adhaerere,</lem>
-              <note type="editorial"><hi rendition="#k">F. Bacon</hi>, <bibl corresp="#bib_00270">a.a.O., S. 315.</bibl></note>
-            </app> quod aerem magis fugiant. Experiendum an Gerickianus<index indexName="Namensregister">
-              <term><hi rendition="#g">Guericke</hi> (Gerickius, Gerick.), Otto v. 1602–1686</term>
-            </index> Globus <app type="Cfootnote">
-              <lem type="main">sulphureus</lem>
-              <note type="editorial"><hi rendition="#k">O. v. Guericke</hi>, <bibl corresp="#bib_00055"><hi rendition="#i">Experimenta nova</hi>, Amsterdam 1672, S.
-                  147–150.</bibl></note>
-            </app> exerceri possit in vacuo.</p>
-          <p xml:id="Ch42.p11">Experiendum an pulvis pyrius tanta vi displodatur in vacuo, quam
+<note type="lemma-abbrev">verum</note>
+<rdg wit="#L" n="1"> . Adde Baconi<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Bacon</hi> (Baconus), Francis 1561–1626</term>
+</index> dictum </rdg>
+<rdg wit="#L" n="2"> , in <hi rendition="#i">Instauratione Magna seu novo organo</hi>,
+                ubi et addit <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">ideo bracteolas tenuissimas</lem>
+<note type="lemma-abbrev">ideo</note>
+<rdg wit="#L" n="1"> laminam tenuissimam </rdg>
+<rdg wit="#L" n="2"> bracteolas tenuissimas <hi rendition="#i">L</hi>
+</rdg>
+</app> aureas digito quasi subito <app type="Cfootnote">
+<lem type="main">adhaerere,</lem>
+<note type="editorial">
+<hi rendition="#k">F. Bacon</hi>,<bibl corresp="#bib_00270">a.a.O., S. 315.</bibl>
+</note>
+</app> quod aerem magis fugiant. Experiendum an Gerickianus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Guericke</hi> (Gerickius, Gerick.), Otto v. 1602–1686</term>
+</index> Globus <app type="Cfootnote">
+<lem type="main">sulphureus</lem>
+<note type="editorial">
+<hi rendition="#k">O. v. Guericke</hi>,<bibl corresp="#bib_00055">
+<hi rendition="#i">Experimenta nova</hi>, Amsterdam 1672, S.
+                  147–150.</bibl>
+</note>
+</app> exerceri possit in vacuo.</p>
+<p xml:id="Ch42.p11">Experiendum an pulvis pyrius tanta vi displodatur in vacuo, quam
             extra ope speculi ardentis intus accendentis. Si tanta vi exploditur, non erit ejus vis
             ab aere exhausto nisi <formula xml:id="Ch42.p11.m1">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟨</m:mo>
-              </m:math>
-            </formula>valde<formula xml:id="Ch42.p11.m2">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟩</m:mo>
-              </m:math>
-            </formula> sit. Tentandum postea an et in compresso aere. Videndum et <formula xml:id="Ch42.p11.m3">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟨</m:mo>
-              </m:math>
-            </formula>an<formula xml:id="Ch42.p11.m4">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟩</m:mo>
-              </m:math>
-            </formula>
-            <formula xml:id="Ch42.p11.m5">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟨</m:mo>
-              </m:math>
-            </formula>tanta<formula xml:id="Ch42.p11.m6">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟩</m:mo>
-              </m:math>
-            </formula>
-            <formula xml:id="Ch42.p11.m7">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟨</m:mo>
-              </m:math>
-            </formula>—<formula xml:id="Ch42.p11.m8">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟩</m:mo>
-              </m:math>
-            </formula>
-            <anchor xml:id="displo1"/><formula xml:id="Ch42.p11.m9">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟨</m:mo>
-              </m:math>
-            </formula>displosis<formula xml:id="Ch42.p11.m10">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mo stretchy="false">⟩</m:mo>
-              </m:math>
-            </formula><app type="Bfootnote" from="#displo1" to="#displo2">
-              <lem type="main"/>
-              <note type="lemma-abbrev"><formula xml:id="Ch42.p11.m11">
-                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                    <m:mo stretchy="false">⟨</m:mo>
-                  </m:math>
-                </formula>displosis<formula xml:id="Ch42.p11.m12">
-                  <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                    <m:mo stretchy="false">⟩</m:mo>
-                  </m:math>
-                </formula></note>
-              <rdg wit="#L" n="1"> An disploso plurimo pulvere musquetario per partes materia tandem
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>valde<formula xml:id="Ch42.p11.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula> sit. Tentandum postea an et in compresso aere. Videndum et <formula xml:id="Ch42.p11.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>an<formula xml:id="Ch42.p11.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+<formula xml:id="Ch42.p11.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>tanta<formula xml:id="Ch42.p11.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+<formula xml:id="Ch42.p11.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>—<formula xml:id="Ch42.p11.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+<anchor xml:id="displo1"/>
+<formula xml:id="Ch42.p11.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>displosis<formula xml:id="Ch42.p11.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+<app type="Bfootnote" from="#displo1" to="#displo2">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<formula xml:id="Ch42.p11.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟨</m:mo>
+</m:math>
+</formula>displosis<formula xml:id="Ch42.p11.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mo stretchy="false">⟩</m:mo>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> An disploso plurimo pulvere musquetario per partes materia tandem
                 vitrum sit impletura. </rdg>
-              <rdg wit="#L" n="2"> An <seg type="apparat-ellipsis"/> impletura. <hi rendition="#i">L</hi></rdg>
-            </app></p>
-          <p xml:id="Ch42.p12"><pb type="L"/><pb type="VIII_1" n="364"/><fw type="folNum">[71 v<hi rendition="#sup">o</hi>]</fw> An disploso plurimo pulvere tormentario per partes,
-            materia tandem vitrum sit impletura.<anchor xml:id="displo2"/></p>
-          <p xml:id="Ch42.p13">Barometrum<index indexName="Sachverzeichnis">
-              <term>barometrum</term>
-            </index> non gravitatem aeris<index indexName="Sachverzeichnis">
-              <term>gravitas</term>
-              <index>
-                <term>aeris</term>
-              </index>
-            </index> sed Elaterem<index indexName="Sachverzeichnis">
-              <term>elater</term>
-            </index> et per consequens calorem et frigus monstrans si scilicet Barometrum<index indexName="Sachverzeichnis">
-              <term>barometrum</term>
-            </index> sit clausum. Hac ratione sciemus non tantum calorem et frigus sed generaliter
+<rdg wit="#L" n="2"> An <seg type="apparat-ellipsis"/>
+ impletura. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch42.p12">
+<pb type="L"/>
+<pb type="VIII_1" n="364"/>
+<fw type="folNum">[71 v<hi rendition="#sup">o</hi>]
+</fw> An disploso plurimo pulvere tormentario per partes,
+            materia tandem vitrum sit impletura.<anchor xml:id="displo2"/>
+</p>
+<p xml:id="Ch42.p13">Barometrum<index indexName="Sachverzeichnis">
+<term>barometrum</term>
+</index> non gravitatem aeris<index indexName="Sachverzeichnis">
+<term>gravitas</term>
+<index>
+<term>aeris</term>
+</index>
+</index> sed Elaterem<index indexName="Sachverzeichnis">
+<term>elater</term>
+</index> et per consequens calorem et frigus monstrans si scilicet Barometrum<index indexName="Sachverzeichnis">
+<term>barometrum</term>
+</index> sit clausum. Hac ratione sciemus non tantum calorem et frigus sed generaliter
             quantum mutetur aeris Externi Elaterium<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> quatenus id per Tubos penetrare potest.</p>
-          <p xml:id="Ch42.p14">Ratio capiendi exacte sine aere admixto materiam ex corporibus,
+<term>elaterium</term>
+</index> quatenus id per Tubos penetrare potest.</p>
+<p xml:id="Ch42.p14">Ratio capiendi exacte sine aere admixto materiam ex corporibus,
             combustione, fermentatione, reactione etc. exhalantem, si exhalet in recipiente exhausto
             inde aperto recipienti non aer sed liquor alius, usque si placet aere purgatus, nec se
             cum hoc vapore confundens, ut Mercurius<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> immittatur, qui hunc liquorem pondere suo in exiguum spatium coget et fortasse
+<term>mercurius</term>
+</index> immittatur, qui hunc liquorem pondere suo in exiguum spatium coget et fortasse
             in liquorem, si plurimus Mercurius<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> superfundatur. Habebimus quandam destillationem et condensationem sine calore
-            et <anchor xml:id="frigorestart"/>frigore.</p>
-          <p xml:id="Ch42.p15">Experiendum<anchor xml:id="frigoreend"/> an <app type="Bfootnote" from="#frigorestart" to="#frigoreend">
-              <lem type="main">Thermometrum</lem>
-              <note type="lemma-abbrev">frigore.</note>
-              <rdg wit="#L" n="1"> Barometro<index indexName="Sachverzeichnis">
-                  <term>barometrum</term>
-                </index> illo </rdg>
-              <rdg wit="#L" n="2"> Experiendum an Thermometrum <hi rendition="#i">L</hi></rdg>
-            </app> variet in summis montibus a locis inferioribus, eodem tempore et quantum. Idem de
+<term>mercurius</term>
+</index> superfundatur. Habebimus quandam destillationem et condensationem sine calore
+            et <anchor xml:id="frigorestart"/>
+frigore.</p>
+<p xml:id="Ch42.p15">Experiendum<anchor xml:id="frigoreend"/>
+ an <app type="Bfootnote" from="#frigorestart" to="#frigoreend">
+<lem type="main">Thermometrum</lem>
+<note type="lemma-abbrev">frigore.</note>
+<rdg wit="#L" n="1"> Barometro<index indexName="Sachverzeichnis">
+<term>barometrum</term>
+</index> illo </rdg>
+<rdg wit="#L" n="2"> Experiendum an Thermometrum <hi rendition="#i">L</hi>
+</rdg>
+</app> variet in summis montibus a locis inferioribus, eodem tempore et quantum. Idem de
             locis subterraneis.</p>
-        </div>
-      </div>
-    </body>
-  </text>
+</div>
+</div>
+</body>
+</text>
 </TEI>

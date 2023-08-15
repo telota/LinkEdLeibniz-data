@@ -1,168 +1,459 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-061-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-061-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De Aequilibrio In Corporum Concursu</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2022</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De Aequilibrio In Corporum Concursu</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2022</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-            </author><title type="chapter" level="a" n="61">De Aequilibrio In Corporum Concursu</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1680" resp="#ed" cert="low">[1680 (?) – 1685 (?)]</date><date calendar="#gregorian" notAfter="1685" resp="#ed" cert="low"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=702</idno></idno></analytic><monogr><title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2021</date></imprint><biblScope unit="page" from="668" to="669"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-03-061-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 9, 16 Bl. 6</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#notiz"><summary><p>Notiz:
+            </author>
+            <title type="chapter" level="a" n="61">De Aequilibrio In Corporum Concursu</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1680" resp="#ed" cert="low">[1680 (?) – 1685 (?)]</date>
+            <date calendar="#gregorian" notAfter="1685" resp="#ed" cert="low"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=702</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2021</date>
+            </imprint>
+            <biblScope unit="page" from="668" to="669"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-03-061-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 9, 16 Bl. 6</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#notiz">
+                <summary>
+                  <p>Notiz:
 LH XXXV 9, 16 Bl. 6.
 Ein Zettel (etwa 9 x 5 cm);
 rechter und unterer Rand beschnitten.
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=975">Bl. 6 v<hi rendition="#sup">o</hi></ref>;
-auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=973">Bl. 6 r<hi rendition="#sup">o</hi></ref> Zeilenanfänge eines abgeschnittenen Texts von Leibnizens Hand:
-<hi rendition="#i">Weilen ich v</hi>⟨–⟩ [/] <hi rendition="#i">aestimation ein</hi> ⟨–⟩ [/] <hi rendition="#i">Hertze von der</hi> ⟨–⟩ [/] <hi rendition="#i">mir den gefallen</hi> ⟨–⟩ [/] <hi rendition="#i">dieß werck zu be</hi>⟨–⟩ [/] <hi rendition="#i">nehmen, mithin</hi> ⟨–⟩ [/] <hi rendition="#i">in einigen fällen</hi> ⟨–⟩ [/] <hi rendition="#i">von den Rechnun</hi>⟨–⟩ [/] <hi rendition="#i">richtung geben,</hi> ⟨–⟩ [/] <hi rendition="#i">lieffe zum Schluß g</hi>⟨–⟩ [/] <hi rendition="#i">oder doch in den</hi>⟨–⟩ [/] <hi rendition="#i">Cammer gelangen</hi> ⟨–⟩.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="../../glyphs/rightpropto.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="../../glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-      </charDecl>
-    </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#stoss"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2023-02-21" who="#stork" status="enrich_1"/></revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-061-000_facs-haupttextzeuge"><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=975"/></facsimile><text xml:id="L_08-03-061-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch61" n="61"><head>61
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=975">Bl. 6 v<hi rendition="#sup">o</hi>
+                  </ref>;
+auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=973">Bl. 6 r<hi rendition="#sup">o</hi>
+                </ref> Zeilenanfänge eines abgeschnittenen Texts von Leibnizens Hand:
+                <hi rendition="#i">Weilen ich v</hi>⟨–⟩ [/]                <hi rendition="#i">aestimation ein</hi> ⟨–⟩ [/]                <hi rendition="#i">Hertze von der</hi> ⟨–⟩ [/]                <hi rendition="#i">mir den gefallen</hi> ⟨–⟩ [/]                <hi rendition="#i">dieß werck zu be</hi>⟨–⟩ [/]                <hi rendition="#i">nehmen, mithin</hi> ⟨–⟩ [/]                <hi rendition="#i">in einigen fällen</hi> ⟨–⟩ [/]                <hi rendition="#i">von den Rechnun</hi>⟨–⟩ [/]                <hi rendition="#i">richtung geben,</hi> ⟨–⟩ [/]                <hi rendition="#i">lieffe zum Schluß g</hi>⟨–⟩ [/]                <hi rendition="#i">oder doch in den</hi>⟨–⟩ [/]                <hi rendition="#i">Cammer gelangen</hi> ⟨–⟩.
+              </p>
+            </summary>
+          </msContents>
+          <physDesc>
+            <objectDesc form="Handschrift"/>
+          </physDesc>
+          <history>
+            <origin corresp="L_witness-origin-types.xml#origin-L"/>
+          </history>
+        </msDesc>
+      </witness>
+    </listWit>
+  </sourceDesc>
+</fileDesc>
+<encodingDesc>
+  <tagsDecl>
+    <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+    <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+    <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+    <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+    <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+    <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+    <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+    <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+    <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+    <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+  </tagsDecl>
+  <charDecl>
+    <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+    <!--rightpropto-->
+    <glyph xml:id="rightpropto">
+      <glyphName>rightpropto</glyphName>
+      <desc>...</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\rightpropto</mapping>
+      <graphic url="../../glyphs/rightpropto.svg"/>
+    </glyph>
+    <glyph xml:id="Pfund">
+      <glyphName>Pfund</glyphName>
+      <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.7</value>
+      </charProp>
+      <mapping type="TeX">\Pfund</mapping>
+      <graphic url="../../glyphs/Pfund.svg"/>
+    </glyph>
+    <!-- leibdashv -->
+    <glyph xml:id="pleibdashv">
+      <glyphName>pleibdashv</glyphName>
+      <desc>Bedeutung (+−) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="PUA"/>
+      <mapping type="TeX">\pleibdashv</mapping>
+      <graphic url="../../glyphs/pm.svg"/>
+    </glyph>
+    <glyph xml:id="leibdashv">
+      <glyphName>leibdashv</glyphName>
+      <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="PUA"/>
+      <mapping type="TeX">\leibdashv</mapping>
+      <graphic url="../../glyphs/pm.svg"/>
+    </glyph>
+    <!-- Sonderzeichen MIT Unicodeentsprechung -->
+  </charDecl>
+</encodingDesc>
+<profileDesc>
+  <langUsage>
+    <language ident="la"/>
+  </langUsage>
+  <calendarDesc>
+    <calendar xml:id="gregorian">
+      <p>Gregorianischer Kalenderstil</p>
+    </calendar>
+    <calendar xml:id="julian">
+      <p>Julianischer Kalenderstil</p>
+    </calendar>
+  </calendarDesc>
+  <textClass>
+    <catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
+    <catRef scheme="L_terms" target="L_terms.xml#"/>
+  </textClass>
+  <abstract>
+    <listPerson>
+      <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+      <person sameAs="L_persons.xml#"/>
+    </listPerson>
+    <listPlace>
+      <place sameAs="L_places.xml#"/>
+    </listPlace>
+  </abstract>
+</profileDesc>
+<revisionDesc>
+  <change when="2021" who="#telota" status="base"/>
+  <change when="2023-02-21" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-061-000_facs-haupttextzeuge">
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=975"/>
+</facsimile>
+<text xml:id="L_08-03-061-000_text">
+<body xml:id="Document">
+  <div type="chapter" xml:id="Ch61" n="61">
+    <head>61
 DE AEQUILIBRIO IN CORPORUM CONCURSU</head>
-      <head>[1680 (?) – 1685 (?)]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 9, 16 Bl. 6</idno></msIdentifier><msContents><summary><p>Notiz:
+    <head>[1680 (?) – 1685 (?)]</head>
+    <div type="ueberlieferung">
+      <p>
+        <hi rendition="#b #smaller">Überlieferung:</hi>
+        <listWit>
+          <witness>
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 9, 16 Bl. 6</idno>
+              </msIdentifier>
+              <msContents>
+                <summary>
+                  <p>Notiz:
 LH XXXV 9, 16 Bl. 6.
 Ein Zettel (etwa 9 x 5 cm);
 rechter und unterer Rand beschnitten.
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=975">Bl. 6 v<hi rendition="#sup">o</hi></ref>;
-auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=973">Bl. 6 r<hi rendition="#sup">o</hi></ref> Zeilenanfänge eines abgeschnittenen Texts von Leibnizens Hand:
-<hi rendition="#i">Weilen ich v</hi>⟨–⟩ [/] <hi rendition="#i">aestimation ein</hi> ⟨–⟩ [/] <hi rendition="#i">Hertze von der</hi> ⟨–⟩ [/] <hi rendition="#i">mir den gefallen</hi> ⟨–⟩ [/] <hi rendition="#i">dieß werck zu be</hi>⟨–⟩ [/] <hi rendition="#i">nehmen, mithin</hi> ⟨–⟩ [/] <hi rendition="#i">in einigen fällen</hi> ⟨–⟩ [/] <hi rendition="#i">von den Rechnun</hi>⟨–⟩ [/] <hi rendition="#i">richtung geben,</hi> ⟨–⟩ [/] <hi rendition="#i">lieffe zum Schluß g</hi>⟨–⟩ [/] <hi rendition="#i">oder doch in den</hi>⟨–⟩ [/] <hi rendition="#i">Cammer gelangen</hi> ⟨–⟩.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch61.p1"><anchor xml:id="RK41176"/><!--  \hackfor{\par} --></p><p xml:id="Ch61.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
-Anlass zur vorliegenden Notiz N. <ref corresp="#RK41176"/> gibt die Feststellung, dass der direkte zentrale Stoß zweier elastischer Körper, deren Geschwindigkeiten sich umgekehrt wie die Massen (<hi rendition="#i">magnitudines</hi>) verhalten, dem Zustand des Gleichgewichts in einem statischen System entspricht.
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=975">Bl. 6 v<hi rendition="#sup">o</hi>
+                  </ref>;
+auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=973">Bl. 6 r<hi rendition="#sup">o</hi>
+                </ref> Zeilenanfänge eines abgeschnittenen Texts von Leibnizens Hand:
+                <hi rendition="#i">Weilen ich v</hi>⟨–⟩ [/]                <hi rendition="#i">aestimation ein</hi> ⟨–⟩ [/]                <hi rendition="#i">Hertze von der</hi> ⟨–⟩ [/]                <hi rendition="#i">mir den gefallen</hi> ⟨–⟩ [/]                <hi rendition="#i">dieß werck zu be</hi>⟨–⟩ [/]                <hi rendition="#i">nehmen, mithin</hi> ⟨–⟩ [/]                <hi rendition="#i">in einigen fällen</hi> ⟨–⟩ [/]                <hi rendition="#i">von den Rechnun</hi>⟨–⟩ [/]                <hi rendition="#i">richtung geben,</hi> ⟨–⟩ [/]                <hi rendition="#i">lieffe zum Schluß g</hi>⟨–⟩ [/]                <hi rendition="#i">oder doch in den</hi>⟨–⟩ [/]                <hi rendition="#i">Cammer gelangen</hi> ⟨–⟩.
+              </p>
+            </summary>
+          </msContents>
+          <physDesc>
+            <objectDesc form="Handschrift"/>
+          </physDesc>
+          <history>
+            <origin/>
+          </history>
+        </msDesc>
+      </witness>
+    </listWit>
+  </p>
+</div>
+<div type="contents">
+  <p xml:id="Ch61.p1">
+    <anchor xml:id="RK41176"/>
+    <!--  \hackfor{\par} --></p>
+  <p xml:id="Ch61.p4">
+    <hi rendition="#smaller">
+      <hi rendition="#b">Datierungsgründe:</hi>
+Anlass zur vorliegenden Notiz N. <ref corresp="#RK41176"/>
+ gibt die Feststellung, dass der direkte zentrale Stoß zweier elastischer Körper, deren Geschwindigkeiten sich umgekehrt wie die Massen (<hi rendition="#i">magnitudines</hi>) verhalten, dem Zustand des Gleichgewichts in einem statischen System entspricht.
 In einem solchen Stoßfall verhalte es sich nämlich sowohl mit den „lebendigen” wie mit den „toten” Kräften gleichermaßen.
 (Beim Gleichgewicht einer Balkenwaage sind es indes nur die „toten Kräfte”, die sich balancieren, d.h. bloß die Drehmomente).
-Hierfür gibt Leibniz die Begründung ab, dass die zwei sich stoßenden Körper „am Anfang lediglich mit ihren toten Kräften gegeneinander kämpfen, obwohl sie auch lebendige Kräfte besitzen,” könnten doch diese letzteren nicht „augenblicklich” wirken.</hi></p></div><div type="text"><p xml:id="Ch61.p5"><hi rendition="#smaller">Die Unterscheidung von <hi rendition="#i">vis viva</hi> und <hi rendition="#i">vis mortua</hi> lässt sich bei Leibniz nach heutigem Kenntnisstand bis in die Pariser Zeit zurückverfolgen (vgl. <hi rendition="#i">LSB</hi> III, 1 N. 25, S. 107; 109 f.;<ref corresp="#bib_01374"/>
+Hierfür gibt Leibniz die Begründung ab, dass die zwei sich stoßenden Körper „am Anfang lediglich mit ihren toten Kräften gegeneinander kämpfen, obwohl sie auch lebendige Kräfte besitzen,” könnten doch diese letzteren nicht „augenblicklich” wirken.</hi>
+</p>
+</div>
+<div type="text">
+<p xml:id="Ch61.p5">
+  <hi rendition="#smaller">Die Unterscheidung von <hi rendition="#i">vis viva</hi> und <hi rendition="#i">vis mortua</hi> lässt sich bei Leibniz nach heutigem Kenntnisstand bis in die Pariser Zeit zurückverfolgen (vgl. <hi rendition="#i">LSB</hi> III, 1 N. 25, S. 107; 109 f.;<ref corresp="#bib_01374"/>
 VIII, 2 N. 9, S. 119.4;<ref corresp="#bib_01375"/>
 N. 12, S. 134.4–7;<ref corresp="#bib_01352"/>
 N. 18, S. 162.4–8;<ref corresp="#bib_01376"/>
 siehe <hi rendition="#k">Antognazza</hi> 2009, S. 314, Anm. 94.)<ref corresp="#bib_01381"/>
-Das Textfragment auf der Vorderseite – vermutlich ein Briefentwurf, der in Zusammenhang mit Leibnizens Bergwerkunternehmungen im Harz<index indexName="Orte"><term><hi rendition="#smaller">Harz</hi></term></index> gestanden haben könnte (vgl. das ähnlich anlautende Promemoria vom September 1686 für das Bergamt zu Clausthal<index indexName="Orte"><term><hi rendition="#smaller">Clausthal</hi></term></index>, <hi rendition="#i">LSB</hi> I, 4 N. 245, S. 284.7–8)<ref corresp="#bib_01377"/> – schließt jedoch eine Entstehung der vorliegenden Notiz vor Leibnizens Rückkehr nach Deutschland<index indexName="Orte"><term><hi rendition="#smaller">Deutschland (Germania, Duitsland)</hi></term></index> Ende 1676 aus.
-Ferner ist bekannt, dass Leibniz nicht sofort nach seiner Entdeckung des Kraftmaßes <formula xml:id="Ch61.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></formula> Anfang 1678 begonnen hat, dieses systematisch als „lebendige Kraft” zu bezeichnen (siehe <hi rendition="#k">Fichant</hi> 1994, S. 64).<ref corresp="#bib_01056"/>
-Vielmehr gewann das Begriffspaar <hi rendition="#i">vis viva</hi> / <hi rendition="#i">vis mortua</hi> vorwiegend in späteren Jahren an Bedeutung, als Leibniz seine Kräftelehre ausbaute.
+Das Textfragment auf der Vorderseite – vermutlich ein Briefentwurf, der in Zusammenhang mit Leibnizens Bergwerkunternehmungen im Harz<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Harz</hi>
+</term>
+</index> gestanden haben könnte (vgl. das ähnlich anlautende Promemoria vom September 1686 für das Bergamt zu Clausthal<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Clausthal</hi>
+</term>
+</index>,<hi rendition="#i">LSB</hi> I, 4 N. 245, S. 284.7–8)<ref corresp="#bib_01377"/>
+ – schließt jedoch eine Entstehung der vorliegenden Notiz vor Leibnizens Rückkehr nach Deutschland<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Deutschland (Germania, Duitsland)</hi>
+</term>
+</index> Ende 1676 aus.
+Ferner ist bekannt, dass Leibniz nicht sofort nach seiner Entdeckung des Kraftmaßes <formula xml:id="Ch61.p5.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:msup>
+<m:mi>v</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</formula> Anfang 1678 begonnen hat, dieses systematisch als „lebendige Kraft” zu bezeichnen (siehe <hi rendition="#k">Fichant</hi> 1994, S. 64).<ref corresp="#bib_01056"/>
+Vielmehr gewann das Begriffspaar <hi rendition="#i">vis viva</hi> /<hi rendition="#i">vis mortua</hi> vorwiegend in späteren Jahren an Bedeutung, als Leibniz seine Kräftelehre ausbaute.
 In Druckschriften tritt es nach heutigem Wissensstand erstmals im <hi rendition="#i">Tentamen de motuum coelestium causis</hi>, § 10 auf (<hi rendition="#i">AE</hi>, Februar 1689, S. 87f;
 <hi rendition="#i">LMG</hi> VI, S. 153;<ref corresp="#bib_00543"/>
 siehe <hi rendition="#k">Bertoloni Meli</hi> 1993, S. 100 f.).<ref corresp="#bib_01357"/>
-In der handschriftlichen Überlieferung kommt es besonders häufig im Briefwechsel der Jahre 1675–1677 zwischen Leibniz und D. Papin<index indexName="Personen"><term><hi rendition="#g #smaller">Papin</hi> <hi rendition="#smaller">(Papinus), Denis 1647–?1712</hi></term></index>
+In der handschriftlichen Überlieferung kommt es besonders häufig im Briefwechsel der Jahre 1675–1677 zwischen Leibniz und D. Papin<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Papin</hi>
+<hi rendition="#smaller">(Papinus), Denis 1647–?1712</hi>
+</term>
+</index>
 vor, in dem sich um die <hi rendition="#i">force vive</hi> und <hi rendition="#i">force morte</hi> ein reger Meinungsstreit zwischen beiden Gelehrten entwickelt.
-Die Unterscheidung wird dort in Leibnizens Brief an Papin<index indexName="Personen"><term><hi rendition="#g #smaller">Papin</hi> <hi rendition="#smaller">(Papinus), Denis 1647–?1712</hi></term></index>
+Die Unterscheidung wird dort in Leibnizens Brief an Papin<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Papin</hi>
+<hi rendition="#smaller">(Papinus), Denis 1647–?1712</hi>
+</term>
+</index>
 vom 17. November 1695 eingeführt, und zwar wieder im Zusammenhang mit der Deutung des elastischen Stoßes als Gleichgewichtszustand
 (vgl. <hi rendition="#i">LSB</hi> III, 6 N. 172, S. 540.15–22;<ref corresp="#bib_01378"/>
-siehe auch den Brief an G. F. de l’Hospital vom 4./14. Dezember 1696: III, 7 N. 56, S. 215.14–18).<ref corresp="#bib_01379"/></hi></p><p xml:id="Ch61.p6"><hi rendition="#smaller">Bereits im Laufe der 1680er Jahre finden sich aber im Nachlass Texte, die Verwandtschaft mit der vorliegenden Notiz N. <ref corresp="#RK41176"/> aufweisen.
-Dies trifft etwa auf die in diesem Band edierten Entwürfe N. <ref corresp="L_chapter_21.xml#_38538"/> (Ende Januar 1683 [?] bis Juli 1686 [?]), N. <ref corresp="L_chapter_68.xml#RK60323"/> (Herbst 1688) und N. <ref corresp="L_chapter_66.xml#RK60320"/> (1686 [?] bis Oktober 1687; vgl. dort bes. S. <ref corresp="L_chapter_66.xml#LH_37_05_097_naturaictus-1"/>)
+siehe auch den Brief an G. F. de l’Hospital vom 4./14. Dezember 1696: III, 7 N. 56, S. 215.14–18).<ref corresp="#bib_01379"/>
+</hi>
+</p>
+<p xml:id="Ch61.p6">
+<hi rendition="#smaller">Bereits im Laufe der 1680er Jahre finden sich aber im Nachlass Texte, die Verwandtschaft mit der vorliegenden Notiz N. <ref corresp="#RK41176"/>
+ aufweisen.
+Dies trifft etwa auf die in diesem Band edierten Entwürfe N. <ref corresp="L_chapter_21.xml#_38538"/>
+ (Ende Januar 1683 [?] bis Juli 1686 [?]), N. <ref corresp="L_chapter_68.xml#RK60323"/>
+ (Herbst 1688) und N. <ref corresp="L_chapter_66.xml#RK60320"/>
+ (1686 [?] bis Oktober 1687; vgl. dort bes. S. <ref corresp="L_chapter_66.xml#LH_37_05_097_naturaictus-1"/>
+)
 sowie vorwiegend auf den Entwurf <hi rendition="#i">LSB</hi> VI, 4 N. 379 zu, der mutmaßlich im Winter 1689/1690 verfasst wurde (die Datierung beruht auf der Feststellung, dass der Entwurf inhaltlich Leibnizens Konzeption der Dynamik, wie sie im Laufe der Italienreise Gestalt angenommen habe, voraussetze; ebd., S. 2077.12–14).<ref corresp="#bib_01380"/>
-Die Begriffe <hi rendition="#i">potentia viva</hi> / <hi rendition="#i">potentia mortua</hi> werden auch in diesem letzteren Text im Zusammenhang mit dem Stoß zweier elastischer Körper,
-<pb type="L"/>deren Geschwindigkeiten sich umgekehrt wie die Massen verhalten, eingeführt und erläutert (ebd., S. 2077.23–2078.9).<ref corresp="#bib_01380"/>
-Die anschließende Ausführung über das Zusammenspiel der „lebendigen” und „toten” Kräfte beider Körper unmittelbar nach dem Stoß (ebd., S. 2078.11–31) entfaltet einen ähnlichen Gedanken wie den, den Leibniz am Ende von N. <ref corresp="#RK41176"/> als Begründung andeutet.</hi></p><p xml:id="Ch61.p7"><hi rendition="#smaller">Ausschlaggebend für die Datierung der vorliegenden Notiz dürfte trotzdem sein, dass die Annahme, von der N. <ref corresp="#RK41176"/> unmittelbar ausgeht, sich auch für die Aufzeichnung N. <ref corresp="L_chapter_62.xml#RK41205"/> als grundlegend erweist: nämlich, dass die Gesetze des Gleichgewichts sich auf den Fall des Stoßes übertragen ließen.
-Das Begriffspaar <hi rendition="#i">vis viva</hi> / <hi rendition="#i">vis mortua</hi> tritt in N. <ref corresp="L_chapter_62.xml#RK41205"/> freilich nicht ausdrücklich auf, die Unterscheidung „lebendig / tot” wird dort aber auf verwandte Begriffe angewendet (<hi rendition="#i">impetus</hi>, <hi rendition="#i">conatus</hi>; vgl. S. <ref corresp="L_chapter_62.xml#LH_35_09_21_007v_par3-1"/>).
-Auch der in N. <ref corresp="#RK41176"/> abschließende Gedanke – im ersten Augenblick nach dem Stoß „kämpfen” die zwei Körper gegeneinander lediglich mit ihren toten Kräften, d.h. mit ihren bloßen Bewegungsgrößen – weist Ähnlichkeit mit einer Ausführung in N. <ref corresp="L_chapter_62.xml#RK41205"/> auf (vgl. S. <ref corresp="L_chapter_62.xml#LH_35_09_21_007v_par1-1"/>).
-Diese inhaltliche Übereinstimmung lässt die Vermutung zu, dass die vorliegende Notiz N. <ref corresp="#RK41176"/> im Zusammenhang mit der Aufzeichnung N. <ref corresp="L_chapter_62.xml#RK41205"/> und somit in demselben Zeitraum entstanden sein könnte, d.h. zwischen 1680 und 1685 (siehe die Datierungsgründe auf S. <ref corresp="L_chapter_62.xml#LH_35_09_21_007_Datierung"/>).
-Weder eine frühere (ab 1677) noch vor allem eine spätere Datierung lassen sich jedoch ausschließen.</hi></p><p rendition="#noindent" xml:id="Ch61.p8"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=975"><pb type="L"/><fw type="folNum">[6 v<hi rendition="#sup">o</hi>]</fw></ref> Quando duo corpora<index indexName="Sachen"><term>corpora concurrentia</term></index>
-<app type="Bfootnote"><lem type="main">concurrunt,
-reciprocis</lem><note type="lemma-abbrev">concurrunt,</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>quoad directionem</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> reciprocis <hi rendition="#i">L</hi></rdg></app>
-magnitudini velocitatibus[,]<index indexName="Sachen"><term>velocitas reciproca magnitudini</term></index>
-in aequilibrio<index indexName="Sachen"><term>aequilibrium</term></index>
+Die Begriffe <hi rendition="#i">potentia viva</hi> /<hi rendition="#i">potentia mortua</hi> werden auch in diesem letzteren Text im Zusammenhang mit dem Stoß zweier elastischer Körper,
+<pb type="L"/>
+deren Geschwindigkeiten sich umgekehrt wie die Massen verhalten, eingeführt und erläutert (ebd., S. 2077.23–2078.9).<ref corresp="#bib_01380"/>
+Die anschließende Ausführung über das Zusammenspiel der „lebendigen” und „toten” Kräfte beider Körper unmittelbar nach dem Stoß (ebd., S. 2078.11–31) entfaltet einen ähnlichen Gedanken wie den, den Leibniz am Ende von N. <ref corresp="#RK41176"/>
+ als Begründung andeutet.</hi>
+</p>
+<p xml:id="Ch61.p7">
+<hi rendition="#smaller">Ausschlaggebend für die Datierung der vorliegenden Notiz dürfte trotzdem sein, dass die Annahme, von der N. <ref corresp="#RK41176"/>
+ unmittelbar ausgeht, sich auch für die Aufzeichnung N. <ref corresp="L_chapter_62.xml#RK41205"/>
+ als grundlegend erweist: nämlich, dass die Gesetze des Gleichgewichts sich auf den Fall des Stoßes übertragen ließen.
+Das Begriffspaar <hi rendition="#i">vis viva</hi> /<hi rendition="#i">vis mortua</hi> tritt in N. <ref corresp="L_chapter_62.xml#RK41205"/>
+ freilich nicht ausdrücklich auf, die Unterscheidung „lebendig / tot” wird dort aber auf verwandte Begriffe angewendet (<hi rendition="#i">impetus</hi>,<hi rendition="#i">conatus</hi>; vgl. S. <ref corresp="L_chapter_62.xml#LH_35_09_21_007v_par3-1"/>
+).
+Auch der in N. <ref corresp="#RK41176"/>
+ abschließende Gedanke – im ersten Augenblick nach dem Stoß „kämpfen” die zwei Körper gegeneinander lediglich mit ihren toten Kräften, d.h. mit ihren bloßen Bewegungsgrößen – weist Ähnlichkeit mit einer Ausführung in N. <ref corresp="L_chapter_62.xml#RK41205"/>
+ auf (vgl. S. <ref corresp="L_chapter_62.xml#LH_35_09_21_007v_par1-1"/>
+).
+Diese inhaltliche Übereinstimmung lässt die Vermutung zu, dass die vorliegende Notiz N. <ref corresp="#RK41176"/>
+ im Zusammenhang mit der Aufzeichnung N. <ref corresp="L_chapter_62.xml#RK41205"/>
+ und somit in demselben Zeitraum entstanden sein könnte, d.h. zwischen 1680 und 1685 (siehe die Datierungsgründe auf S. <ref corresp="L_chapter_62.xml#LH_35_09_21_007_Datierung"/>
+).
+Weder eine frühere (ab 1677) noch vor allem eine spätere Datierung lassen sich jedoch ausschließen.</hi>
+</p>
+<p rendition="#noindent" xml:id="Ch61.p8">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=975">
+<pb type="L"/>
+<fw type="folNum">[6 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref> Quando duo corpora<index indexName="Sachen">
+<term>corpora concurrentia</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">concurrunt,
+reciprocis</lem>
+<note type="lemma-abbrev">concurrunt,</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>quoad directionem</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> reciprocis <hi rendition="#i">L</hi>
+</rdg>
+</app>
+magnitudini velocitatibus[,]<index indexName="Sachen">
+<term>velocitas reciproca magnitudini</term>
+</index>
+in aequilibrio<index indexName="Sachen">
+<term>aequilibrium</term>
+</index>
 sunt,
-<app type="Bfootnote"><lem type="main">et perinde res procedit in vi perfecta<index indexName="Sachen"><term>vis perfecta</term></index>
-seu viva,<index indexName="Sachen"><term>vis viva</term></index>
-ac in imperfecta<index indexName="Sachen"><term>vis imperfecta</term></index>
-seu mortua,<index indexName="Sachen"><term>vis mortua</term></index></lem><note type="lemma-abbrev">et</note><rdg wit="#L" n="1"> tantum praestat
-<note type="editorial">|</note> vis <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> mortua seu imperfecta,
-</rdg><rdg wit="#L" n="2"> perinde res <seg type="apparat-ellipsis"/> seu mortua, <hi rendition="#i">L</hi></rdg></app>
-impetu<index indexName="Sachen"><term>impetus</term></index>
+<app type="Bfootnote">
+<lem type="main">et perinde res procedit in vi perfecta<index indexName="Sachen">
+<term>vis perfecta</term>
+</index>
+seu viva,<index indexName="Sachen">
+<term>vis viva</term>
+</index>
+ac in imperfecta<index indexName="Sachen">
+<term>vis imperfecta</term>
+</index>
+seu mortua,<index indexName="Sachen">
+<term>vis mortua</term>
+</index>
+</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" n="1"> tantum praestat
+<note type="editorial">|</note> vis <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> mortua seu imperfecta,
+</rdg>
+<rdg wit="#L" n="2"> perinde res <seg type="apparat-ellipsis"/>
+ seu mortua, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+impetu<index indexName="Sachen">
+<term>impetus</term>
+</index>
 acquisito carente.
 Cujus rei ratio esse videtur,
-quod etsi vim habeant vivam,<index indexName="Sachen"><term>vis viva</term></index>
-tamen non nisi mortua<index indexName="Sachen"><term>vis mortua</term></index>
+quod etsi vim habeant vivam,<index indexName="Sachen">
+<term>vis viva</term>
+</index>
+tamen non nisi mortua<index indexName="Sachen">
+<term>vis mortua</term>
+</index>
 initio colluctentur,
 neque enim alterum in altero
-effectum<index indexName="Sachen"><term>effectus potentiae vivae</term></index>
-vivae potentiae<index indexName="Sachen"><term>potentia viva</term></index>
-momento imprimere potest,<index indexName="Sachen"><term>momentum temporis</term></index>
-quippe quem ipsummet momento acquirere non potuit.</p></div></div></body>
-  </text>
+effectum<index indexName="Sachen">
+<term>effectus potentiae vivae</term>
+</index>
+vivae potentiae<index indexName="Sachen">
+<term>potentia viva</term>
+</index>
+momento imprimere potest,<index indexName="Sachen">
+<term>momentum temporis</term>
+</index>
+quippe quem ipsummet momento acquirere non potuit.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-013-004">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-013-004">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Problemata hydrographica nova</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2021</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="13"/>
 						<title type="section" level="a" n="4">Problemata hydrographica nova</title>
 						<date calendar="#gregorian" notBefore="1676-07" resp="#ed" cert="medium"/>
 						<date calendar="#gregorian" notAfter="1676-12" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=160</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+							<idno type="page">#page=160</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,40 +86,55 @@
 						</imprint>
 						<biblScope unit="page" from="115" to="119"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
-					<relatedItem type="superordinated-chapter"><ptr target="#L_08-01-013-000"/></relatedItem>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
+					<relatedItem type="superordinated-chapter">
+						<ptr target="#L_08-01-013-000"/>
+					</relatedItem>
 				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-01-XXX-134_facs-haupttextzeuge"><msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXVIII Bl. 21</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-							<summary><p>Konzept: LH XXXVIII Bl. 21. 1 Bl. 4<hi rendition="#sup">o</hi>. 2 S. Die Zeichnung <hi rendition="#i">[Fig. 1]</hi> am rechten oberen Rand von Bl. 21 r<hi rendition="#sup">o</hi>, die Zeichnung <hi rendition="#i">[Fig. 2]</hi> in der linken oberen Ecke von Bl. 21 v<hi rendition="#sup">o</hi>. Schriftbefund der Abschnitte (5) und (6) auf Bl. 21 v<hi rendition="#sup">o</hi> an der Zeichnung beginnend parallel zum linken Seitenrand.</p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc></witness>
-					<witness n="E"><msDesc>
-						<msIdentifier>
-							<collection>Leibniz-Bibliographie</collection>
-							<idno type="Laufende-Nummer">XXX</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#veroeffentlichung_posthum">
-							<summary><p><ref corresp="#bib_00243"/><hi rendition="#k">Gerland</hi> 1906, S. 201–203.</p><p>Cc 2, Nr. 478</p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-E"/>
-						</history>
-						</msDesc></witness>
+					<witness n="L" corresp="#L_08-01-XXX-134_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">LH XXXVIII Bl. 21</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+								<summary>
+									<p>Konzept: LH XXXVIII Bl. 21. 1 Bl. 4<hi rendition="#sup">o</hi>. 2 S. Die Zeichnung <hi rendition="#i">[Fig. 1]</hi> am rechten oberen Rand von Bl. 21 r<hi rendition="#sup">o</hi>, die Zeichnung <hi rendition="#i">[Fig. 2]</hi> in der linken oberen Ecke von Bl. 21 v<hi rendition="#sup">o</hi>. Schriftbefund der Abschnitte (5) und (6) auf Bl. 21 v<hi rendition="#sup">o</hi> an der Zeichnung beginnend parallel zum linken Seitenrand.</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
+					<witness n="E">
+						<msDesc>
+							<msIdentifier>
+								<collection>Leibniz-Bibliographie</collection>
+								<idno type="Laufende-Nummer">XXX</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#veroeffentlichung_posthum">
+								<summary>
+									<p>
+										<ref corresp="#bib_00243"/>
+										<hi rendition="#k">Gerland</hi> 1906, S. 201–203.</p>
+									<p>Cc 2, Nr. 478</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-E"/>
+							</history>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -189,55 +242,90 @@
 	<text xml:id="L_08-01-013-004_text">
 		<body xml:id="Document">
 			<div type="section" xml:id="Ch13.S4" n="134">
-				<head>13<hi rendition="#sub">4</hi><pb type="VIII_1" n="115"/>. PROBLEMATA HYDROGRAPHICA NOVA</head>
+				<head>13<hi rendition="#sub">4</hi>
+					<pb type="VIII_1" n="115"/>
+. PROBLEMATA HYDROGRAPHICA NOVA</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-						<witness><msDesc>
-							<msIdentifier>
-								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-								<idno type="Signatur">XXX</idno>
-							</msIdentifier>
-							<msContents>
-								<summary><p>Konzept: LH XXXVIII Bl. 21. 1 Bl. 4<hi rendition="#sup">o</hi>. 2 S. Die Zeichnung <hi rendition="#i">[Fig. 1]</hi> am rechten oberen Rand von Bl. 21 r<hi rendition="#sup">o</hi>, die Zeichnung <hi rendition="#i">[Fig. 2]</hi> in der linken oberen Ecke von Bl. 21 v<hi rendition="#sup">o</hi>. Schriftbefund der Abschnitte (5) und (6) auf Bl. 21 v<hi rendition="#sup">o</hi> an der Zeichnung beginnend parallel zum linken Seitenrand.</p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						<witness><msDesc>
-							<msIdentifier>
-								<collection>Leibniz-Bibliographie</collection>
-								<idno type="Laufende-Nummer">XXX</idno>
-							</msIdentifier>
-							<msContents>
-								<summary><p><ref corresp="#bib_00243"/><hi rendition="#k">Gerland</hi> 1906, S. 201–203.</p><p>Cc 2, Nr. 478</p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						</listWit></p>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+										<idno type="Signatur">XXX</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>Konzept: LH XXXVIII Bl. 21. 1 Bl. 4<hi rendition="#sup">o</hi>. 2 S. Die Zeichnung <hi rendition="#i">[Fig. 1]</hi> am rechten oberen Rand von Bl. 21 r<hi rendition="#sup">o</hi>, die Zeichnung <hi rendition="#i">[Fig. 2]</hi> in der linken oberen Ecke von Bl. 21 v<hi rendition="#sup">o</hi>. Schriftbefund der Abschnitte (5) und (6) auf Bl. 21 v<hi rendition="#sup">o</hi> an der Zeichnung beginnend parallel zum linken Seitenrand.</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<collection>Leibniz-Bibliographie</collection>
+										<idno type="Laufende-Nummer">XXX</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>
+												<ref corresp="#bib_00243"/>
+												<hi rendition="#k">Gerland</hi> 1906, S. 201–203.</p>
+											<p>Cc 2, Nr. 478</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
 				<div type="text">
-					<p xml:id="Ch13.S4.p5" rendition="#c"><pb type="L"/><fw type="folNum">[21 r<hi rendition="#sup">o</hi>]</fw> <hi rendition="#g">Problemata Hydrographica nova.</hi><app type="Bfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><hi rendition="#g">Problema Hydrographica nova:</hi></note>
-						<rdg wit="#L"><hi rendition="#i">doppelt unterstrichen</hi>.</rdg>
-						</app></p>
-					<figure rendition="#own-line_centered" xml:id="Ch13.S4.p6"> <graphic url="./images/38_21r.svg" width="173.448pt" xml:id="Ch13.S4.p6.g1"/> <head> <hi rendition="#i">[Fig. 1]</hi>
-						<!--  \hackfor{\par} --></head> </figure>
-					<p xml:id="Ch13.S4.p7" rendition="#noindent #hangindent">(1) <hi rendition="#g">Pyxides Nauticas</hi><index indexName="Sachverzeichnis">
-						<term>pyxis</term>
-						<index>
-							<term>nautica</term>
+					<p xml:id="Ch13.S4.p5" rendition="#c">
+						<pb type="L"/>
+						<fw type="folNum">[21 r<hi rendition="#sup">o</hi>]
+						</fw>
+						<hi rendition="#g">Problemata Hydrographica nova.</hi>
+						<app type="Bfootnote">
+							<lem type="main"/>
+							<note type="lemma-abbrev">
+								<hi rendition="#g">Problema Hydrographica nova:</hi>
+							</note>
+							<rdg wit="#L">
+								<hi rendition="#i">doppelt unterstrichen</hi>.
+							</rdg>
+						</app>
+					</p>
+					<figure rendition="#own-line_centered" xml:id="Ch13.S4.p6">
+						<graphic url="./images/38_21r.svg" width="173.448pt" xml:id="Ch13.S4.p6.g1"/>
+						<head>
+							<hi rendition="#i">[Fig. 1]</hi>
+							<!--  \hackfor{\par} --></head>
+					</figure>
+					<p xml:id="Ch13.S4.p7" rendition="#noindent #hangindent">(1) <hi rendition="#g">Pyxides Nauticas</hi>
+						<index indexName="Sachverzeichnis">
+							<term>pyxis</term>
+							<index>
+								<term>nautica</term>
+							</index>
 						</index>
-						</index> <hi rendition="#g">fabricare, ita grandes, ut ipsa minuta</hi> <hi rendition="#g">secunda in iis possint distincte observari.</hi><lb/>Hoc fiet, si <app type="Bfootnote">
+						<hi rendition="#g">fabricare, ita grandes, ut ipsa minuta</hi>
+						<hi rendition="#g">secunda in iis possint distincte observari.</hi>
+						<lb/>
+Hoc fiet, si <app type="Bfootnote">
 						<lem type="main">stylus</lem>
 						<note type="lemma-abbrev">si</note>
 						<rdg wit="#L" n="1"> acus<index indexName="Sachverzeichnis">
@@ -245,372 +333,626 @@
 							<index>
 								<term>magnetica</term>
 							</index>
-							</index> </rdg>
-						<rdg wit="#L" n="2"> stylus <hi rendition="#i">L</hi></rdg>
-						</app> vel semidiameter pyxidis<index indexName="Sachverzeichnis">
-						<term>pyxis</term>
-						<index>
-							<term>nautica</term>
 						</index>
-						</index> ab acu<index indexName="Sachverzeichnis">
-						<term>acus</term>
-						<index>
-							<term>magnetica</term>
-						</index>
-						</index> <app type="Bfootnote">
-						<lem type="main">magnetica</lem>
-						<rdg wit="#L" cause="addition"><add>magnetica</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> circumagendus sit satis longus. Sed quanto erit longior, tanto erit gravior, ac proinde difficilius ab acu<index indexName="Sachverzeichnis">
-						<term>acus</term>
-						<index>
-							<term>magnetica</term>
-						</index>
-						</index> circumagetur. Necesse est ergo rationem quandam haberi fortificandi acum<index indexName="Sachverzeichnis">
-						<term>acus</term>
-						<index>
-							<term>magnetica</term>
-						</index>
-						</index> ut onus solito majus movere possit. Quod fiet per problem. sequens.</p>
-					<p xml:id="Ch13.S4.p8" rendition="#noindent #hangindent">(2) <hi rendition="#g">Acum nauticam</hi><index indexName="Sachverzeichnis">
-						<term>acus</term>
-						<index>
-							<term>nautica</term>
-						</index>
-						</index> <hi rendition="#g">quantum satis est fortificare</hi><lb/>viribus ejus decuplicatis, imo, si opus, centuplicatis.</p>
-					<pb type="VIII_1" n="116"/>
-					<p xml:id="Ch13.S4.p9" rendition="#noindent #hangindent">Hoc fiet nova quadam certa facilique ratione <app type="Bfootnote">
-						<lem type="main">armandi</lem>
-						<rdg wit="#L" cause="addition"><add>armandi</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> hactenus non observata, multo minus adhibita. Cujus usus magni ad rem nauticam momenti <app type="Bfootnote">
-						<lem type="main">est, tum ad inclinationes, tum ad declinationes exacte observandas.</lem>
-						<note type="lemma-abbrev">momenti</note>
-						<rdg wit="#L" n="1"> esse potest </rdg>
-						<rdg wit="#L" n="2"> est, <seg type="apparat-ellipsis"/> observandas. <hi rendition="#i">L</hi></rdg>
-						</app></p>
-					<p xml:id="Ch13.S4.p10" rendition="#noindent #hangindent">(3) <hi rendition="#g">Latitudinem</hi><index indexName="Sachverzeichnis">
-						<term>latitudo</term>
-						</index> <hi rendition="#g">loci seu Elevationem Poli</hi><index indexName="Sachverzeichnis">
-						<term>elevatio</term>
-						<index>
-							<term>poli</term>
-						</index>
-						</index> <hi rendition="#g">sine coelo et stellis</hi><index indexName="Sachverzeichnis">
-						<term>stella</term>
-						</index> <hi rendition="#g">exacte invenire.</hi><lb/>Hoc fiet pyxide inclinatoria<index indexName="Sachverzeichnis">
-						<term>pyxis</term>
-						<index>
-							<term>inclinatoria</term>
-						</index>
-						</index> seu ad horizontem perpendiculari, eaque satis grandi, ut ad minuta usque secunda subdividi possit <app type="Bfootnote">
-						<lem type="main"><hi rendition="#g">per problem. 1.</hi></lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#g">per problem. 1.</hi> </add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> Ita ex gradibus <app type="Bfootnote">
-						<lem type="main">minutis secundisque</lem>
-						<rdg wit="#L" cause="addition"><add>minutis secundisque</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> inclinationis<index indexName="Sachverzeichnis">
-						<term>inclinatio</term>
-						</index> determinabuntur gradus minuta et secunda elevationis Poli<index indexName="Sachverzeichnis">
-						<term>elevatio</term>
-						<index>
-							<term>poli</term>
-						</index>
-						</index>. Sed quia proportio inclinationis et elevationis est difformis, (nam v.g. observatum est elevationem Poli<index indexName="Sachverzeichnis">
-						<term>elevatio</term>
-						<index>
-							<term>poli</term>
-						</index>
-						</index> ut 30. habere inclinationem acus<index indexName="Sachverzeichnis">
-						<term>acus</term>
-						<index>
-							<term>inclinatoria</term>
-						</index>
-						</index> ut 60. et elevationem Poli<index indexName="Sachverzeichnis">
-						<term>elevatio</term>
-						<index>
-							<term>poli</term>
-						</index>
-						</index> ut 35. habere inclinationem acus<index indexName="Sachverzeichnis">
-						<term>acus</term>
-						<index>
-							<term>inclinatoria</term>
-						</index>
-						</index> ut 63. etc.) ideo opus est Globo Artificiali<index indexName="Sachverzeichnis">
-						<term>globus</term>
-						<index>
-							<term>artificialis</term>
-						</index>
-						</index>, qui si satis grandis, <app type="Bfootnote">
-						<lem type="main">et meridiano mobili exacte ad minuta usque secunda subdiviso instructus sit</lem>
-						<note type="lemma-abbrev">grandis,</note>
-						<rdg wit="#L" n="1"> exacteque subdivisus sit </rdg>
-						<rdg wit="#L" n="2"> et <seg type="apparat-ellipsis"/> sit <hi rendition="#i">L</hi></rdg>
-						</app>; poterit sine ulla calculatione exacte ad usum inveniri, quis gradus elevationis, quem det gradum inclinationis. Haec pyxis inclinatoria<index indexName="Sachverzeichnis">
-						<term>pyxis</term>
-						<index>
-							<term>inclinatoria</term>
-						</index>
-						</index> dudum observata, hactenus ad perfectionem deduci non potuit, quia ob debilitatem acuum<index indexName="Sachverzeichnis">
-						<term>acus</term>
-						<index>
-							<term>inclinatoria</term>
-						</index>
-						</index> <app type="Bfootnote">
-						<lem type="main">stylum nimis longum ferentium</lem>
-						<rdg wit="#L" cause="addition"><add>stylum nimis longum ferentium</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> pyxides satis grandes satisque exacte subdivisae fieri non potuere.</p>
-					<p xml:id="Ch13.S4.p11" rendition="#noindent #hangindent">(4) <hi rendition="#g">Cursum navis<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> in globo artificiali exacte<index indexName="Sachverzeichnis">
-						<term>globus</term>
-						<index>
-							<term>artificialis</term>
-						</index>
-						</index></hi><app type="Bfootnote">
-						<lem type="main"> <hi rendition="#g">delineare, Declinationibus tantum Magnetis subinde observatis. Quotiescunque cursus non fit in eodem praecise Parallelo</hi></lem>
-						<note type="lemma-abbrev"><hi rendition="#g">delineare,</hi></note>
-						<rdg wit="#L" n="1"> nulla alia coelesti observatione adhibita </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#g">Declinationibus <seg type="apparat-ellipsis"/> Parallelo.</hi> <hi rendition="#i">L</hi></rdg>
-						</app><anchor xml:id="paralllstart"/>.</p>
-					<p xml:id="Ch13.S4.p12" rendition="#noindent #hangindent"> <pb type="L"/><fw type="folNum">[21 v<hi rendition="#sup">o</hi>]</fw> Esto globus artificialis <hi rendition="#i">abc</hi> in meridianos parallelosque subdivisus. <pb type="VIII_1" n="117"/>Esto punctum discessus cognitum<anchor xml:id="paralllend"/> <app type="Bfootnote" from="#paralllstart" to="#paralllend">
-						<lem type="main"/>
-						<note type="lemma-abbrev"><hi rendition="#g">Parallelo.</hi></note>
-						<rdg wit="#L" n="1"> Cum detur </rdg>
-						<rdg wit="#L" n="2"> Pyxide inclinatoria<index indexName="Sachverzeichnis">
-							<term>pyxis</term>
-							<index>
-								<term>inclinatoria</term>
-							</index>
-							</index> exacte subdivisa satisque grandi, detur <app>
-							<rdg wit="#L" n="a">minimum de miliari in miliare inclinationis<index indexName="Sachverzeichnis">
-								<term>inclinatio</term>
-								</index> mutatio </rdg>
-							<rdg wit="#L" n="b">(minimum) inclinationis<index indexName="Sachverzeichnis">
-								<term>inclinatio</term>
-								</index> ac proinde mutatio </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="3"> Detur primum <hi rendition="#g">punctum discessus</hi> cognitum inque globo artificiali notatum esse. </rdg>
-						<rdg wit="#L" n="4"> Esto globus <seg type="apparat-ellipsis"/> cognitum <hi rendition="#i">L</hi></rdg>
-						</app> <hi rendition="#i">d</hi> cadens in parallelum<index indexName="Sachverzeichnis">
-						<term>circulus parallelus</term>
-						</index> <hi rendition="#i">ed</hi> meridianum<index indexName="Sachverzeichnis">
-						<term>meridianus</term>
-						</index> <hi rendition="#i">ac</hi> Nave<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> progrediente extra parallelum<index indexName="Sachverzeichnis">
-						<term>circulus parallelus</term>
-						</index> <hi rendition="#i">ed</hi>. Esto punctum observationis novae primum, quo scilicet incipit sentiri mutatio inclinationis<index indexName="Sachverzeichnis">
-						<term>inclinatio</term>
-						</index> <hi rendition="#i">f</hi> (quod tanto se offeret citius, ac proinde omnia erunt tanto exactiora quanto pyxis inclinatoria<index indexName="Sachverzeichnis">
-						<term>pyxis</term>
-						<index>
-							<term>inclinatoria</term>
-						</index>
-						</index> erit grandior, magisque subdivisa). Hujus puncti <hi rendition="#i">f</hi> cum detur inclinatio<index indexName="Sachverzeichnis">
-						<term>inclinatio</term>
-						</index> ex Hypothesi, dabitur et parallelus<index indexName="Sachverzeichnis">
-						<term>circulus parallelus</term>
-						</index>. Ponamus eum parallelum <index indexName="Sachverzeichnis">
-						<term>circulus parallelus</term>
-						</index> esse <hi rendition="#i">gh</hi>. Cadet ergo punctum <hi rendition="#i">f</hi> in <hi rendition="#i">gh</hi>. Sed ut praecise determinetur, quod punctum paralleli<index indexName="Sachverzeichnis">
-						<term>circulus parallelus</term>
-						</index> sit <hi rendition="#i">f</hi> nihil aliud sciri opus est, quam angulus quem linea <hi rendition="#i">df</hi> <app type="Bfootnote">
-						<lem type="main">seu distantia puncti cogniti et quaesiti faciat ad parallelum <hi rendition="#i">ed</hi> in puncto cognito</lem>
-						<note type="lemma-abbrev"><hi rendition="#i">df</hi></note>
-						<rdg wit="#L" n="1"> fecerit ad parallelum<index indexName="Sachverzeichnis">
-							<term>circulus parallelus</term>
-							</index> <hi rendition="#i">ed</hi> in puncto cognito </rdg>
-						<rdg wit="#L" n="2"> seu <seg type="apparat-ellipsis"/> cognito <hi rendition="#i">L</hi></rdg>
-						</app> <hi rendition="#i">d</hi>. Determinato enim puncto <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">d</hi> unius parallelae <hi rendition="#i">ed</hi></lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i">d</hi> unius parallelae <hi rendition="#i">ed</hi> </add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ex quo ducitur recta <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">df</hi></lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i">df</hi> </add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> de parallela <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">ed</hi></lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i">ed</hi> </add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> in parallelam <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">gh</hi></lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i">gh</hi> </add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>, determinatoque angulo <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">fde</hi></lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i">fde</hi> </add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app>, determinabitur quoque punctum <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">f</hi></lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i">f</hi> </add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> in quo secabit <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">df</hi></lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i">df</hi> </add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> alteram parallelam <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">gh</hi>.</lem>
-						<rdg wit="#L" cause="addition"><add><hi rendition="#i">gh</hi>.</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app><lb/>Angulus <hi rendition="#i">fde</hi> ita determinabitur: Constat quem angulum linea motus navis<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> ad punctum cognitum <hi rendition="#i">d</hi> initio fecerit, seu ad quam plagam mundi se direxerit. Hanc lineam cursus si servat, servabitur angulus <hi rendition="#i">fde</hi> ac proinde cognitum erit punctum <hi rendition="#i">f</hi>. Si mutat, demonstrabit acus magnetica<index indexName="Sachverzeichnis">
-						<term>acus</term>
-						<index>
-							<term>magnetica</term>
-						</index>
-						</index> <app type="Bfootnote">
-						<lem type="main">(demtis declinationibus)</lem>
-						<rdg wit="#L" cause="addition"><add>(demtis declinationibus)</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> quantitatem flexus ac proinde anguli mutationem; ac proinde punctum <hi rendition="#i">f</hi> quo linea cursus navis<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> utcunque flexa, secat parallelum<index indexName="Sachverzeichnis">
-						<term>circulus parallelus</term>
-						</index> <hi rendition="#i">gh</hi>. Ponatur <app type="Bfootnote">
-						<lem type="main">similiter</lem>
-						<rdg wit="#L" cause="addition"><add>similiter</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> navis<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> primo moveri <app type="Bfootnote">
-						<lem type="main"/>
-						<rdg wit="#L" cause="deletion">moveri <note type="editorial">|</note> <del><add>recta</add></del> <note type="editorial"><hi rendition="#i">erg. u. gestr.</hi> |</note> ex <hi rendition="#i">L</hi></rdg>
-						</app> ex <hi rendition="#i">d</hi> in <hi rendition="#i">i</hi>, et postea flecti ex <hi rendition="#i">i</hi> in <hi rendition="#i">f</hi>. Invenietur utique eadem methodo primum punctum <hi rendition="#i">i</hi> inde invenietur quoque punctum <hi rendition="#i">f</hi>. <app type="Bfootnote">
-						<lem type="main">Notabitur <hi rendition="#i">h</hi> in <app type="Bfootnote">
-							<!--is-correction-app-with-future-lemma-->
-							<lem type="main"><corr resp="#ed">[globo]</corr></lem>
-							<rdg wit="#L"><orig>puncto</orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-							</app> artificiali<index indexName="Sachverzeichnis">
-							<term>globus</term>
-							<index>
-								<term>artificialis</term>
-							</index>
-							</index> atque <pb type="VIII_1" n="118"/>ita totus in eo cursus navis<index indexName="Sachverzeichnis">
-							<term>navis</term>
-							</index>, tanto accuratius delineabitur, quanto pyxis<index indexName="Sachverzeichnis">
-							<term>pyxis</term>
-							</index> erit exactius subdivisa.</lem>
-						<rdg wit="#L" cause="addition"><add>Notabitur <hi rendition="#i">h</hi> in [globo]<app type="Bfootnote">
-							<!--is-correction-app-with-empty-lemma-->
-							<note type="editorial"><orig>puncto</orig> <hi rendition="#i">L ändert Hrsg.</hi></note>
-							</app> artificiali<index indexName="Sachverzeichnis">
-							<term>globus</term>
-							<index>
-								<term>artificialis</term>
-							</index>
-							</index> atque <seg type="apparat-ellipsis"/> subdivisa.</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> Dixi a flexu navis<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> cognoscendo adimendas esse</p>
-					<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch13.S4.p13"> <graphic url="./images/38_21v.svg" width="390.258pt" xml:id="Ch13.S4.p13.g1"/> <head><hi rendition="#i">[Fig. 2, tlw. Blindzeichnung]</hi></head></figure>
-					<p xml:id="Ch13.S4.p15" rendition="#noindent #hangindent">magnetis<index indexName="Sachverzeichnis">
-						<term>magnes</term>
-						</index> declinationes<index indexName="Sachverzeichnis">
-						<term>declinatio</term>
-						</index>. <app type="Bfootnote">
-						<lem type="main">Hoc non habet magnas difficultates</lem>
-						<note type="lemma-abbrev">declinationes.</note>
-						<rdg wit="#L" n="1"> Esto ergo problema. </rdg>
-						<rdg wit="#L" n="2"> (4) <hi rendition="#g">Magnetis</hi><index indexName="Sachverzeichnis">
-							<term>magnes</term>
-							</index><hi rendition="#g"> </hi><hi rendition="#g">declinationes</hi><index indexName="Sachverzeichnis">
-							<term>declinatio</term>
-							</index> <hi rendition="#g">invenire</hi> </rdg>
-						<rdg wit="#L" n="3"> Hoc <app>
-							<rdg wit="#L" n="a">problema communi quoque via </rdg>
-							<rdg wit="#L" n="b">non <app>
-								<rdg wit="#L" n="aa">est magnae difficultatis </rdg>
-								<rdg wit="#L" n="bb">habet magnas difficultates <hi rendition="#i">L</hi></rdg>
-								</app></rdg>
-							</app></rdg>
-						</app>, notari enim potest in longissimis etiam itineribus in Indiam<index indexName="Ortsregister">
-						<term>Indien (India)</term>
-						</index> orientalem susceptis, nautas pene quotidie, ut eorum diaria monstrant, observandarum de<pb type="VIII_1" n="119"/>clinationum<index indexName="Sachverzeichnis">
-						<term>declinatio</term>
-						</index> potestatem <app type="Bfootnote">
-						<lem type="main">habuisse. Quod ut exacte fiat an</lem>
-						<note type="lemma-abbrev">habuisse.</note>
-						<rdg wit="#L" n="1"> Sed si verum est dari in magnete<index indexName="Sachverzeichnis">
-							<term>magnes</term>
-							</index> aut acu<index indexName="Sachverzeichnis">
-							<term>acus</term>
-							<index>
-								<term>magnetica</term>
-							</index>
-							</index> <app>
-							<rdg wit="#L" n="a">verticali </rdg>
-							<rdg wit="#L" n="b">Meridianum<index indexName="Sachverzeichnis">
-								<term>meridianus</term>
-								</index> universalem sine declinatione<index indexName="Sachverzeichnis">
-								<term>declinatio</term>
-								</index>, quod valde <app>
-								<rdg wit="#L" n="aa">observo </rdg>
-								<rdg wit="#L" n="bb">operae pretium est experimento comprobari, sine omni observatione declinationes<index indexName="Sachverzeichnis">
-									<term>declinatio</term>
-									</index> habebuntur. Et inventum hoc ad summam perfectionem optabilem <app>
-									<rdg wit="#L" n="aaa">perfectum </rdg>
-									<rdg wit="#L" n="bbb">provectum erit. </rdg>
-									</app></rdg>
-								</app></rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> Quod ut exacte fiat an <hi rendition="#i">L</hi></rdg>
-						</app> [<hi rendition="#i">Satz bricht ab</hi>]<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Auf Blatt 21 v<hi rendition="#sup">o</hi> am oberen Rand</hi>: (+ NB ista non procedunt. Nisi constet distantia inter quemlibet novum flexum. Alioqui non datur linea motus navis, sed tantum ei parallela. +)</note></p>
-					<p xml:id="Ch13.S4.p16" rendition="#noindent #hangindent">(5) <hi rendition="#g">Locum</hi> <hi rendition="#g">navis</hi><index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> <hi rendition="#g">invenire.</hi> Invento cursu navis<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> per probl. 3. <app type="Bfootnote">
-						<lem type="main">inventus</lem>
-						<note type="lemma-abbrev">probl. 3.</note>
-						<rdg wit="#L" n="1"> datus </rdg>
-						<rdg wit="#L" n="2"> inventus <hi rendition="#i">L</hi></rdg>
-						</app> erit quoque locus navis<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index>, quippe extremum cursus tempore dato. Loco navis<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> invento, solutum est magnum hoc problema.</p>
-					<p xml:id="Ch13.S4.p17" rendition="#noindent #hangindent">(6) <hi rendition="#g">Longitudines</hi><index indexName="Sachverzeichnis">
-						<term>longitudo</term>
-						</index><hi rendition="#g"> </hi><app type="Bfootnote">
-						<lem type="main"><hi rendition="#g">invenire</hi></lem>
-						<note type="lemma-abbrev"><hi rendition="#g">Longitudines</hi></note>
-						<rdg wit="#L" n="1"> <hi rendition="#g">observare</hi> </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#g">invenire</hi> <hi rendition="#i">L</hi></rdg>
-						</app><hi rendition="#g">,</hi> <app type="Bfootnote">
-						<lem type="main"><hi rendition="#g">declinationibus tantum</hi></lem>
-						<note type="lemma-abbrev"><hi rendition="#g">invenire,</hi></note>
-						<rdg wit="#L" n="1"> <hi rendition="#g">solis</hi> </rdg>
-						<rdg wit="#L" n="2"> <hi rendition="#g">declinationibus tantum</hi> <hi rendition="#i">L</hi></rdg>
-						</app><hi rendition="#g"> </hi><hi rendition="#g">magneticis</hi><hi rendition="#g"> </hi><index indexName="Sachverzeichnis">
-						<term>magnes</term>
-						</index> <hi rendition="#g">observatis.</hi> Nulla licet Theoria seu Regula <app type="Bfootnote">
-						<lem type="main">Universali declinationum</lem>
-						<note type="lemma-abbrev">Universali</note>
-						<rdg wit="#L" n="1"> Latitudinum<index indexName="Sachverzeichnis">
-							<term>latitudo</term>
-							</index> </rdg>
-						<rdg wit="#L" n="2"> declinationum <hi rendition="#i">L</hi></rdg>
-						</app> constituta.<lb/>Multi hactenus ex declinationibus<index indexName="Sachverzeichnis">
-						<term>declinatio</term>
-						</index> longitudines<index indexName="Sachverzeichnis">
-						<term>longitudo</term>
-						</index> promisere, sed <app type="Bfootnote">
-						<lem type="main">vel</lem>
-						<note type="lemma-abbrev">sed</note>
-						<rdg wit="#L" n="1"> quia </rdg>
-						<rdg wit="#L" n="2"> vel <hi rendition="#i">L</hi></rdg>
-						</app> theoriam quandam universalem declinationum<index indexName="Sachverzeichnis">
-						<term>declinatio</term>
-						</index> quae tamen falsa comperta est, vel aliorum observationes de declinationibus<index indexName="Sachverzeichnis">
-						<term>declinatio</term>
-						</index> supposuere quae tamen tractu temporis immutatae <app type="Bfootnote">
-						<lem type="main">sunt</lem>
-						<note type="lemma-abbrev">immutatae</note>
-						<rdg wit="#L" n="1"> fecere </rdg>
-						<rdg wit="#L" n="2"> sunt <hi rendition="#i">L</hi></rdg>
-						</app>. Hic vero nulla theoria, <app type="Bfootnote">
-						<lem type="main">nullis diversis observationibus</lem>
-						<note type="lemma-abbrev">theoria,</note>
-						<rdg wit="#L" n="1"> nulla diversorum temporum locorumque observatione </rdg>
-						<rdg wit="#L" n="2"> nullis diversis observationibus <hi rendition="#i">L</hi></rdg>
-						</app>, sed sola diligenti in eadem navi<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> repetita subinde declinationum observatione opus est. Quam alioqui a bonis Navium<index indexName="Sachverzeichnis">
-						<term>navis</term>
-						</index> rectoribus semper fieri debere constat.</p>
-				</div>
-			</div>
-		</body>
-	</text>
+					</rdg>
+					<rdg wit="#L" n="2"> stylus <hi rendition="#i">L</hi>
+					</rdg>
+				</app> vel semidiameter pyxidis<index indexName="Sachverzeichnis">
+				<term>pyxis</term>
+				<index>
+					<term>nautica</term>
+				</index>
+			</index> ab acu<index indexName="Sachverzeichnis">
+			<term>acus</term>
+			<index>
+				<term>magnetica</term>
+			</index>
+		</index>
+		<app type="Bfootnote">
+			<lem type="main">magnetica</lem>
+			<rdg wit="#L" cause="addition">
+				<add>magnetica</add>
+				<note type="editorial">
+					<hi rendition="#i">erg. L</hi>
+				</note>
+			</rdg>
+		</app> circumagendus sit satis longus. Sed quanto erit longior, tanto erit gravior, ac proinde difficilius ab acu<index indexName="Sachverzeichnis">
+		<term>acus</term>
+		<index>
+			<term>magnetica</term>
+		</index>
+	</index> circumagetur. Necesse est ergo rationem quandam haberi fortificandi acum<index indexName="Sachverzeichnis">
+	<term>acus</term>
+	<index>
+		<term>magnetica</term>
+	</index>
+</index> ut onus solito majus movere possit. Quod fiet per problem. sequens.</p>
+<p xml:id="Ch13.S4.p8" rendition="#noindent #hangindent">(2) <hi rendition="#g">Acum nauticam</hi>
+<index indexName="Sachverzeichnis">
+	<term>acus</term>
+	<index>
+		<term>nautica</term>
+	</index>
+</index>
+<hi rendition="#g">quantum satis est fortificare</hi>
+<lb/>
+viribus ejus decuplicatis, imo, si opus, centuplicatis.</p>
+<pb type="VIII_1" n="116"/>
+<p xml:id="Ch13.S4.p9" rendition="#noindent #hangindent">Hoc fiet nova quadam certa facilique ratione <app type="Bfootnote">
+<lem type="main">armandi</lem>
+<rdg wit="#L" cause="addition">
+	<add>armandi</add>
+	<note type="editorial">
+		<hi rendition="#i">erg. L</hi>
+	</note>
+</rdg>
+</app> hactenus non observata, multo minus adhibita. Cujus usus magni ad rem nauticam momenti <app type="Bfootnote">
+<lem type="main">est, tum ad inclinationes, tum ad declinationes exacte observandas.</lem>
+<note type="lemma-abbrev">momenti</note>
+<rdg wit="#L" n="1"> esse potest </rdg>
+<rdg wit="#L" n="2"> est, <seg type="apparat-ellipsis"/>
+ observandas. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch13.S4.p10" rendition="#noindent #hangindent">(3) <hi rendition="#g">Latitudinem</hi>
+<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>
+<hi rendition="#g">loci seu Elevationem Poli</hi>
+<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index>
+<hi rendition="#g">sine coelo et stellis</hi>
+<index indexName="Sachverzeichnis">
+<term>stella</term>
+</index>
+<hi rendition="#g">exacte invenire.</hi>
+<lb/>
+Hoc fiet pyxide inclinatoria<index indexName="Sachverzeichnis">
+<term>pyxis</term>
+<index>
+<term>inclinatoria</term>
+</index>
+</index> seu ad horizontem perpendiculari, eaque satis grandi, ut ad minuta usque secunda subdividi possit <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">per problem. 1.</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#g">per problem. 1.</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> Ita ex gradibus <app type="Bfootnote">
+<lem type="main">minutis secundisque</lem>
+<rdg wit="#L" cause="addition">
+<add>minutis secundisque</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> inclinationis<index indexName="Sachverzeichnis">
+<term>inclinatio</term>
+</index> determinabuntur gradus minuta et secunda elevationis Poli<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index>. Sed quia proportio inclinationis et elevationis est difformis, (nam v.g. observatum est elevationem Poli<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index> ut 30. habere inclinationem acus<index indexName="Sachverzeichnis">
+<term>acus</term>
+<index>
+<term>inclinatoria</term>
+</index>
+</index> ut 60. et elevationem Poli<index indexName="Sachverzeichnis">
+<term>elevatio</term>
+<index>
+<term>poli</term>
+</index>
+</index> ut 35. habere inclinationem acus<index indexName="Sachverzeichnis">
+<term>acus</term>
+<index>
+<term>inclinatoria</term>
+</index>
+</index> ut 63. etc.) ideo opus est Globo Artificiali<index indexName="Sachverzeichnis">
+<term>globus</term>
+<index>
+<term>artificialis</term>
+</index>
+</index>, qui si satis grandis, <app type="Bfootnote">
+<lem type="main">et meridiano mobili exacte ad minuta usque secunda subdiviso instructus sit</lem>
+<note type="lemma-abbrev">grandis,</note>
+<rdg wit="#L" n="1"> exacteque subdivisus sit </rdg>
+<rdg wit="#L" n="2"> et <seg type="apparat-ellipsis"/>
+ sit <hi rendition="#i">L</hi>
+</rdg>
+</app>; poterit sine ulla calculatione exacte ad usum inveniri, quis gradus elevationis, quem det gradum inclinationis. Haec pyxis inclinatoria<index indexName="Sachverzeichnis">
+<term>pyxis</term>
+<index>
+<term>inclinatoria</term>
+</index>
+</index> dudum observata, hactenus ad perfectionem deduci non potuit, quia ob debilitatem acuum<index indexName="Sachverzeichnis">
+<term>acus</term>
+<index>
+<term>inclinatoria</term>
+</index>
+</index>
+<app type="Bfootnote">
+<lem type="main">stylum nimis longum ferentium</lem>
+<rdg wit="#L" cause="addition">
+<add>stylum nimis longum ferentium</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> pyxides satis grandes satisque exacte subdivisae fieri non potuere.</p>
+<p xml:id="Ch13.S4.p11" rendition="#noindent #hangindent">(4) <hi rendition="#g">Cursum navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> in globo artificiali exacte<index indexName="Sachverzeichnis">
+<term>globus</term>
+<index>
+<term>artificialis</term>
+</index>
+</index>
+</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">delineare, Declinationibus tantum Magnetis subinde observatis. Quotiescunque cursus non fit in eodem praecise Parallelo</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">delineare,</hi>
+</note>
+<rdg wit="#L" n="1"> nulla alia coelesti observatione adhibita </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">Declinationibus <seg type="apparat-ellipsis"/>
+ Parallelo.</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<anchor xml:id="paralllstart"/>
+.</p>
+<p xml:id="Ch13.S4.p12" rendition="#noindent #hangindent">
+<pb type="L"/>
+<fw type="folNum">[21 v<hi rendition="#sup">o</hi>]
+</fw> Esto globus artificialis <hi rendition="#i">abc</hi> in meridianos parallelosque subdivisus. <pb type="VIII_1" n="117"/>
+Esto punctum discessus cognitum<anchor xml:id="paralllend"/>
+<app type="Bfootnote" from="#paralllstart" to="#paralllend">
+<lem type="main"/>
+<note type="lemma-abbrev">
+<hi rendition="#g">Parallelo.</hi>
+</note>
+<rdg wit="#L" n="1"> Cum detur </rdg>
+<rdg wit="#L" n="2"> Pyxide inclinatoria<index indexName="Sachverzeichnis">
+<term>pyxis</term>
+<index>
+<term>inclinatoria</term>
+</index>
+</index> exacte subdivisa satisque grandi, detur <app>
+<rdg wit="#L" n="a">minimum de miliari in miliare inclinationis<index indexName="Sachverzeichnis">
+<term>inclinatio</term>
+</index> mutatio </rdg>
+<rdg wit="#L" n="b">(minimum) inclinationis<index indexName="Sachverzeichnis">
+<term>inclinatio</term>
+</index> ac proinde mutatio </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="3"> Detur primum <hi rendition="#g">punctum discessus</hi> cognitum inque globo artificiali notatum esse. </rdg>
+<rdg wit="#L" n="4"> Esto globus <seg type="apparat-ellipsis"/>
+ cognitum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">d</hi> cadens in parallelum<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index>
+<hi rendition="#i">ed</hi> meridianum<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index>
+<hi rendition="#i">ac</hi> Nave<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> progrediente extra parallelum<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index>
+<hi rendition="#i">ed</hi>. Esto punctum observationis novae primum, quo scilicet incipit sentiri mutatio inclinationis<index indexName="Sachverzeichnis">
+<term>inclinatio</term>
+</index>
+<hi rendition="#i">f</hi> (quod tanto se offeret citius, ac proinde omnia erunt tanto exactiora quanto pyxis inclinatoria<index indexName="Sachverzeichnis">
+<term>pyxis</term>
+<index>
+<term>inclinatoria</term>
+</index>
+</index> erit grandior, magisque subdivisa). Hujus puncti <hi rendition="#i">f</hi> cum detur inclinatio<index indexName="Sachverzeichnis">
+<term>inclinatio</term>
+</index> ex Hypothesi, dabitur et parallelus<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index>. Ponamus eum parallelum <index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index> esse <hi rendition="#i">gh</hi>. Cadet ergo punctum <hi rendition="#i">f</hi> in <hi rendition="#i">gh</hi>. Sed ut praecise determinetur, quod punctum paralleli<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index> sit <hi rendition="#i">f</hi> nihil aliud sciri opus est, quam angulus quem linea <hi rendition="#i">df</hi>
+<app type="Bfootnote">
+<lem type="main">seu distantia puncti cogniti et quaesiti faciat ad parallelum <hi rendition="#i">ed</hi> in puncto cognito</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">df</hi>
+</note>
+<rdg wit="#L" n="1"> fecerit ad parallelum<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index>
+<hi rendition="#i">ed</hi> in puncto cognito </rdg>
+<rdg wit="#L" n="2"> seu <seg type="apparat-ellipsis"/>
+ cognito <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">d</hi>. Determinato enim puncto <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">d</hi> unius parallelae <hi rendition="#i">ed</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">d</hi> unius parallelae <hi rendition="#i">ed</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ex quo ducitur recta <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">df</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">df</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> de parallela <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">ed</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">ed</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> in parallelam <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">gh</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">gh</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>, determinatoque angulo <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">fde</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">fde</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>, determinabitur quoque punctum <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">f</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">f</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> in quo secabit <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">df</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">df</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> alteram parallelam <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">gh</hi>.
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">gh</hi>.
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<lb/>
+Angulus <hi rendition="#i">fde</hi> ita determinabitur: Constat quem angulum linea motus navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> ad punctum cognitum <hi rendition="#i">d</hi> initio fecerit, seu ad quam plagam mundi se direxerit. Hanc lineam cursus si servat, servabitur angulus <hi rendition="#i">fde</hi> ac proinde cognitum erit punctum <hi rendition="#i">f</hi>. Si mutat, demonstrabit acus magnetica<index indexName="Sachverzeichnis">
+<term>acus</term>
+<index>
+<term>magnetica</term>
+</index>
+</index>
+<app type="Bfootnote">
+<lem type="main">(demtis declinationibus)</lem>
+<rdg wit="#L" cause="addition">
+<add>(demtis declinationibus)</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> quantitatem flexus ac proinde anguli mutationem; ac proinde punctum <hi rendition="#i">f</hi> quo linea cursus navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> utcunque flexa, secat parallelum<index indexName="Sachverzeichnis">
+<term>circulus parallelus</term>
+</index>
+<hi rendition="#i">gh</hi>. Ponatur <app type="Bfootnote">
+<lem type="main">similiter</lem>
+<rdg wit="#L" cause="addition">
+<add>similiter</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> primo moveri <app type="Bfootnote">
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">moveri <note type="editorial">|</note>
+<del>
+<add>recta</add>
+</del>
+<note type="editorial">
+<hi rendition="#i">erg. u. gestr.</hi> |
+</note> ex <hi rendition="#i">L</hi>
+</rdg>
+</app> ex <hi rendition="#i">d</hi> in <hi rendition="#i">i</hi>, et postea flecti ex <hi rendition="#i">i</hi> in <hi rendition="#i">f</hi>. Invenietur utique eadem methodo primum punctum <hi rendition="#i">i</hi> inde invenietur quoque punctum <hi rendition="#i">f</hi>.<app type="Bfootnote">
+<lem type="main">Notabitur <hi rendition="#i">h</hi> in <app type="Bfootnote">
+<!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[globo]</corr>
+</lem>
+<rdg wit="#L">
+<orig>puncto</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> artificiali<index indexName="Sachverzeichnis">
+<term>globus</term>
+<index>
+<term>artificialis</term>
+</index>
+</index> atque <pb type="VIII_1" n="118"/>
+ita totus in eo cursus navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>, tanto accuratius delineabitur, quanto pyxis<index indexName="Sachverzeichnis">
+<term>pyxis</term>
+</index> erit exactius subdivisa.</lem>
+<rdg wit="#L" cause="addition">
+<add>Notabitur <hi rendition="#i">h</hi> in [globo]<app type="Bfootnote">
+<!--is-correction-app-with-empty-lemma-->
+<note type="editorial">
+<orig>puncto</orig>
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</app> artificiali<index indexName="Sachverzeichnis">
+<term>globus</term>
+<index>
+<term>artificialis</term>
+</index>
+</index> atque <seg type="apparat-ellipsis"/>
+ subdivisa.</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> Dixi a flexu navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> cognoscendo adimendas esse</p>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch13.S4.p13">
+<graphic url="./images/38_21v.svg" width="390.258pt" xml:id="Ch13.S4.p13.g1"/>
+<head>
+<hi rendition="#i">[Fig. 2, tlw. Blindzeichnung]</hi>
+</head>
+</figure>
+<p xml:id="Ch13.S4.p15" rendition="#noindent #hangindent">magnetis<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> declinationes<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index>.<app type="Bfootnote">
+<lem type="main">Hoc non habet magnas difficultates</lem>
+<note type="lemma-abbrev">declinationes.</note>
+<rdg wit="#L" n="1"> Esto ergo problema. </rdg>
+<rdg wit="#L" n="2"> (4) <hi rendition="#g">Magnetis</hi>
+<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index>
+<hi rendition="#g"></hi>
+<hi rendition="#g">declinationes</hi>
+<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index>
+<hi rendition="#g">invenire</hi>
+</rdg>
+<rdg wit="#L" n="3"> Hoc <app>
+<rdg wit="#L" n="a">problema communi quoque via </rdg>
+<rdg wit="#L" n="b">non <app>
+<rdg wit="#L" n="aa">est magnae difficultatis </rdg>
+<rdg wit="#L" n="bb">habet magnas difficultates <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>, notari enim potest in longissimis etiam itineribus in Indiam<index indexName="Ortsregister">
+<term>Indien (India)</term>
+</index> orientalem susceptis, nautas pene quotidie, ut eorum diaria monstrant, observandarum de<pb type="VIII_1" n="119"/>
+clinationum<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index> potestatem <app type="Bfootnote">
+<lem type="main">habuisse. Quod ut exacte fiat an</lem>
+<note type="lemma-abbrev">habuisse.</note>
+<rdg wit="#L" n="1"> Sed si verum est dari in magnete<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index> aut acu<index indexName="Sachverzeichnis">
+<term>acus</term>
+<index>
+<term>magnetica</term>
+</index>
+</index>
+<app>
+<rdg wit="#L" n="a">verticali </rdg>
+<rdg wit="#L" n="b">Meridianum<index indexName="Sachverzeichnis">
+<term>meridianus</term>
+</index> universalem sine declinatione<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index>, quod valde <app>
+<rdg wit="#L" n="aa">observo </rdg>
+<rdg wit="#L" n="bb">operae pretium est experimento comprobari, sine omni observatione declinationes<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index> habebuntur. Et inventum hoc ad summam perfectionem optabilem <app>
+<rdg wit="#L" n="aaa">perfectum </rdg>
+<rdg wit="#L" n="bbb">provectum erit. </rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> Quod ut exacte fiat an <hi rendition="#i">L</hi>
+</rdg>
+</app> [<hi rendition="#i">Satz bricht ab</hi>]<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Auf Blatt 21 v<hi rendition="#sup">o</hi> am oberen Rand</hi>: (+ NB ista non procedunt. Nisi constet distantia inter quemlibet novum flexum. Alioqui non datur linea motus navis, sed tantum ei parallela. +)</note>
+</p>
+<p xml:id="Ch13.S4.p16" rendition="#noindent #hangindent">(5) <hi rendition="#g">Locum</hi>
+<hi rendition="#g">navis</hi>
+<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>
+<hi rendition="#g">invenire.</hi> Invento cursu navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> per probl. 3. <app type="Bfootnote">
+<lem type="main">inventus</lem>
+<note type="lemma-abbrev">probl. 3.</note>
+<rdg wit="#L" n="1"> datus </rdg>
+<rdg wit="#L" n="2"> inventus <hi rendition="#i">L</hi>
+</rdg>
+</app> erit quoque locus navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index>, quippe extremum cursus tempore dato. Loco navis<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> invento, solutum est magnum hoc problema.</p>
+<p xml:id="Ch13.S4.p17" rendition="#noindent #hangindent">(6) <hi rendition="#g">Longitudines</hi>
+<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index>
+<hi rendition="#g"></hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">invenire</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">Longitudines</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">observare</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">invenire</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g">,</hi>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#g">declinationibus tantum</hi>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#g">invenire,</hi>
+</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">solis</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">declinationibus tantum</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#g"></hi>
+<hi rendition="#g">magneticis</hi>
+<hi rendition="#g"></hi>
+<index indexName="Sachverzeichnis">
+<term>magnes</term>
+</index>
+<hi rendition="#g">observatis.</hi> Nulla licet Theoria seu Regula <app type="Bfootnote">
+<lem type="main">Universali declinationum</lem>
+<note type="lemma-abbrev">Universali</note>
+<rdg wit="#L" n="1"> Latitudinum<index indexName="Sachverzeichnis">
+<term>latitudo</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> declinationum <hi rendition="#i">L</hi>
+</rdg>
+</app> constituta.<lb/>
+Multi hactenus ex declinationibus<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index> longitudines<index indexName="Sachverzeichnis">
+<term>longitudo</term>
+</index> promisere, sed <app type="Bfootnote">
+<lem type="main">vel</lem>
+<note type="lemma-abbrev">sed</note>
+<rdg wit="#L" n="1"> quia </rdg>
+<rdg wit="#L" n="2"> vel <hi rendition="#i">L</hi>
+</rdg>
+</app> theoriam quandam universalem declinationum<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index> quae tamen falsa comperta est, vel aliorum observationes de declinationibus<index indexName="Sachverzeichnis">
+<term>declinatio</term>
+</index> supposuere quae tamen tractu temporis immutatae <app type="Bfootnote">
+<lem type="main">sunt</lem>
+<note type="lemma-abbrev">immutatae</note>
+<rdg wit="#L" n="1"> fecere </rdg>
+<rdg wit="#L" n="2"> sunt <hi rendition="#i">L</hi>
+</rdg>
+</app>. Hic vero nulla theoria, <app type="Bfootnote">
+<lem type="main">nullis diversis observationibus</lem>
+<note type="lemma-abbrev">theoria,</note>
+<rdg wit="#L" n="1"> nulla diversorum temporum locorumque observatione </rdg>
+<rdg wit="#L" n="2"> nullis diversis observationibus <hi rendition="#i">L</hi>
+</rdg>
+</app>, sed sola diligenti in eadem navi<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> repetita subinde declinationum observatione opus est. Quam alioqui a bonis Navium<index indexName="Sachverzeichnis">
+<term>navis</term>
+</index> rectoribus semper fieri debere constat.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

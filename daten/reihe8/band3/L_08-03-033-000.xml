@@ -1,194 +1,546 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-033-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-033-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Hypothesis De Fluido Elastico Materiae Interfuso</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2022</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Hypothesis De Fluido Elastico Materiae Interfuso</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2022</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-            </author><title type="chapter" level="a" n="33">Hypothesis De Fluido Elastico Materiae Interfuso</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1704-04" resp="#ed" cert="medium">[April 1704 – Anfang 1705 (?)]</date><date calendar="#gregorian" notAfter="1705-02" resp="#ed" cert="low"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=396</idno></idno></analytic><monogr><title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2021</date></imprint><biblScope unit="page" from="362" to="363"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-03-033-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 10, 6 Bl. 37</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung:
+            </author>
+            <title type="chapter" level="a" n="33">Hypothesis De Fluido Elastico Materiae Interfuso</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1704-04" resp="#ed" cert="medium">[April 1704 – Anfang 1705 (?)]</date>
+            <date calendar="#gregorian" notAfter="1705-02" resp="#ed" cert="low"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=396</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2021</date>
+            </imprint>
+            <biblScope unit="page" from="362" to="363"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-03-033-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 10, 6 Bl. 37</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung:
 LH XXXV 10, 6 Bl. 37.
 Ein längs halbiertes Blatt 2<hi rendition="#sup">o</hi> (32 x 10,5 cm).
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478">Bl. 37 r<hi rendition="#sup">o</hi></ref>.
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478">Bl. 37 r<hi rendition="#sup">o</hi>
+                  </ref>.
 Die ersten einundzwanzig Textzeilen
-(bis ungefähr S. <ref corresp="#LH_35_10_06_037r_blstft_udhakv"/>)
+(bis ungefähr S. <ref corresp="#LH_35_10_06_037r_blstft_udhakv"/>
+)
 wurden mit Bleistift aufgesetzt und nachträglich mit Tinte überschrieben;
 da die Bleistiftfassung weitgehend verblasst ist,
 lässt sich deren Übereinstimmung mit der Tintenfassung nur mancherorts feststellen.
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1480">Bl. 37 v<hi rendition="#sup">o</hi></ref> überliefert ein Fragment eines Briefkonzeptes von Leibnizens Hand,
+                <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1480">Bl. 37 v<hi rendition="#sup">o</hi>
+                </ref> überliefert ein Fragment eines Briefkonzeptes von Leibnizens Hand,
 welches voraussichtlich in <hi rendition="#i">LSB</hi> II, 4 ediert wird.
-Der Textträger von N. <ref corresp="#N.33"/> hing ursprünglich mit der Handschrift LH XXXV 14, 2 Bl. 60 zusammen,
-die ein weiteres Fragment des letztgenannten Briefkonzeptes sowie eine voraussichtlich in <hi rendition="#i">LSB</hi> VII zu edierende Aufzeichnung über den Schwerpunkt überliefert.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="../../glyphs/rightpropto.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="../../glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-      </charDecl>
-    </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#elastizitaet"/><catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2023-02-14" who="#stork" status="enrich_1"/></revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-033-000_facs-haupttextzeuge"><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478"/><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1480"/></facsimile><text xml:id="L_08-03-033-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch33" n="33"><head>33
+Der Textträger von N. <ref corresp="#N.33"/>
+ hing ursprünglich mit der Handschrift LH XXXV 14, 2 Bl. 60 zusammen,
+die ein weiteres Fragment des letztgenannten Briefkonzeptes sowie eine voraussichtlich in <hi rendition="#i">LSB</hi> VII zu edierende Aufzeichnung über den Schwerpunkt überliefert.</p>
+          </summary>
+        </msContents>
+        <physDesc>
+          <objectDesc form="Handschrift"/>
+        </physDesc>
+        <history>
+          <origin corresp="L_witness-origin-types.xml#origin-L"/>
+        </history>
+      </msDesc>
+    </witness>
+  </listWit>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+  <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+  <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+  <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+  <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+  <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+  <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+  <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+  <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+  <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+  <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+</tagsDecl>
+<charDecl>
+  <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+  <!--rightpropto-->
+  <glyph xml:id="rightpropto">
+    <glyphName>rightpropto</glyphName>
+    <desc>...</desc>
+    <charProp>
+      <localName>baselineshift-in-ex</localName>
+      <value>0</value>
+    </charProp>
+    <charProp>
+      <localName>width-in-em</localName>
+      <value>0.6</value>
+    </charProp>
+    <mapping type="TeX">\rightpropto</mapping>
+    <graphic url="../../glyphs/rightpropto.svg"/>
+  </glyph>
+  <glyph xml:id="Pfund">
+    <glyphName>Pfund</glyphName>
+    <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+    <charProp>
+      <localName>baselineshift-in-ex</localName>
+      <value>0</value>
+    </charProp>
+    <charProp>
+      <localName>width-in-em</localName>
+      <value>0.7</value>
+    </charProp>
+    <mapping type="TeX">\Pfund</mapping>
+    <graphic url="../../glyphs/Pfund.svg"/>
+  </glyph>
+  <!-- leibdashv -->
+  <glyph xml:id="pleibdashv">
+    <glyphName>pleibdashv</glyphName>
+    <desc>Bedeutung (+−) - gesenkt</desc>
+    <charProp>
+      <localName>baselineshift-in-ex</localName>
+      <value>-1</value>
+    </charProp>
+    <charProp>
+      <localName>width-in-em</localName>
+      <value>0.6</value>
+    </charProp>
+    <mapping type="PUA"/>
+    <mapping type="TeX">\pleibdashv</mapping>
+    <graphic url="../../glyphs/pm.svg"/>
+  </glyph>
+  <glyph xml:id="leibdashv">
+    <glyphName>leibdashv</glyphName>
+    <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+    <charProp>
+      <localName>baselineshift-in-ex</localName>
+      <value>0</value>
+    </charProp>
+    <charProp>
+      <localName>width-in-em</localName>
+      <value>0.6</value>
+    </charProp>
+    <mapping type="PUA"/>
+    <mapping type="TeX">\leibdashv</mapping>
+    <graphic url="../../glyphs/pm.svg"/>
+  </glyph>
+  <!-- Sonderzeichen MIT Unicodeentsprechung -->
+</charDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+  <language ident="la"/>
+</langUsage>
+<calendarDesc>
+  <calendar xml:id="gregorian">
+    <p>Gregorianischer Kalenderstil</p>
+  </calendar>
+  <calendar xml:id="julian">
+    <p>Julianischer Kalenderstil</p>
+  </calendar>
+</calendarDesc>
+<textClass>
+  <catRef scheme="L_subjects" target="L_subjects.xml#elastizitaet"/>
+  <catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
+  <catRef scheme="L_terms" target="L_terms.xml#"/>
+</textClass>
+<abstract>
+  <listPerson>
+    <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+    <person sameAs="L_persons.xml#"/>
+  </listPerson>
+  <listPlace>
+    <place sameAs="L_places.xml#"/>
+  </listPlace>
+</abstract>
+</profileDesc>
+<revisionDesc>
+<change when="2021" who="#telota" status="base"/>
+<change when="2023-02-14" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-033-000_facs-haupttextzeuge">
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478"/>
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1480"/>
+</facsimile>
+<text xml:id="L_08-03-033-000_text">
+<body xml:id="Document">
+<div type="chapter" xml:id="Ch33" n="33">
+  <head>33
 HYPOTHESIS DE FLUIDO ELASTICO MATERIAE INTERFUSO</head>
-      <head>[April 1704 – Anfang 1705 (?)]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 10, 6 Bl. 37</idno></msIdentifier><msContents><summary><p>Aufzeichnung:
+  <head>[April 1704 – Anfang 1705 (?)]</head>
+  <div type="ueberlieferung">
+    <p>
+      <hi rendition="#b #smaller">Überlieferung:</hi>
+      <listWit>
+        <witness>
+          <msDesc>
+            <msIdentifier>
+              <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+              <idno type="Signatur">LH XXXV 10, 6 Bl. 37</idno>
+            </msIdentifier>
+            <msContents>
+              <summary>
+                <p>Aufzeichnung:
 LH XXXV 10, 6 Bl. 37.
 Ein längs halbiertes Blatt 2<hi rendition="#sup">o</hi> (32 x 10,5 cm).
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478">Bl. 37 r<hi rendition="#sup">o</hi></ref>.
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478">Bl. 37 r<hi rendition="#sup">o</hi>
+                </ref>.
 Die ersten einundzwanzig Textzeilen
-(bis ungefähr S. <ref corresp="#LH_35_10_06_037r_blstft_udhakv"/>)
+(bis ungefähr S. <ref corresp="#LH_35_10_06_037r_blstft_udhakv"/>
+)
 wurden mit Bleistift aufgesetzt und nachträglich mit Tinte überschrieben;
 da die Bleistiftfassung weitgehend verblasst ist,
 lässt sich deren Übereinstimmung mit der Tintenfassung nur mancherorts feststellen.
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1480">Bl. 37 v<hi rendition="#sup">o</hi></ref> überliefert ein Fragment eines Briefkonzeptes von Leibnizens Hand,
+              <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1480">Bl. 37 v<hi rendition="#sup">o</hi>
+              </ref> überliefert ein Fragment eines Briefkonzeptes von Leibnizens Hand,
 welches voraussichtlich in <hi rendition="#i">LSB</hi> II, 4 ediert wird.
-Der Textträger von N. <ref corresp="#N.33"/> hing ursprünglich mit der Handschrift LH XXXV 14, 2 Bl. 60 zusammen,
-die ein weiteres Fragment des letztgenannten Briefkonzeptes sowie eine voraussichtlich in <hi rendition="#i">LSB</hi> VII zu edierende Aufzeichnung über den Schwerpunkt überliefert.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch33.p1"><anchor xml:id="_60029"/>
-<anchor xml:id="N.33"/><!--  \hackfor{\par} --></p><p xml:id="Ch33.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi><anchor xml:id="LH_35_10_06_037_datierung_rhtj"/>
-Das auf dem Träger des Textes N. <ref corresp="#N.33"/> mit überlieferte Brieffragment gehört zum verworfenen Konzept eines Schreibens von Leibniz an W. Pulteney (d.J.), das die Herausgeber von <hi rendition="#i">LSB</hi> II, 4 auf die Zeit nach April 1704 datieren.<index indexName="Personen"><term><hi rendition="#g #smaller">Pulteney</hi><hi rendition="#smaller">, William 1684–1764</hi></term></index>
-Das Brieffragment lag zweifelsohne bereits vor, als N. <ref corresp="#N.33"/> verfasst wurde.
+Der Textträger von N. <ref corresp="#N.33"/>
+ hing ursprünglich mit der Handschrift LH XXXV 14, 2 Bl. 60 zusammen,
+die ein weiteres Fragment des letztgenannten Briefkonzeptes sowie eine voraussichtlich in <hi rendition="#i">LSB</hi> VII zu edierende Aufzeichnung über den Schwerpunkt überliefert.</p>
+        </summary>
+      </msContents>
+      <physDesc>
+        <objectDesc form="Handschrift"/>
+      </physDesc>
+      <history>
+        <origin/>
+      </history>
+    </msDesc>
+  </witness>
+</listWit>
+</p>
+</div>
+<div type="contents">
+<p xml:id="Ch33.p1">
+<anchor xml:id="_60029"/>
+<anchor xml:id="N.33"/>
+<!--  \hackfor{\par} --></p>
+<p xml:id="Ch33.p4">
+<hi rendition="#smaller">
+  <hi rendition="#b">Datierungsgründe:</hi>
+  <anchor xml:id="LH_35_10_06_037_datierung_rhtj"/>
+Das auf dem Träger des Textes N. <ref corresp="#N.33"/>
+ mit überlieferte Brieffragment gehört zum verworfenen Konzept eines Schreibens von Leibniz an W. Pulteney (d.J.), das die Herausgeber von <hi rendition="#i">LSB</hi> II, 4 auf die Zeit nach April 1704 datieren.<index indexName="Personen">
+<term>
+  <hi rendition="#g #smaller">Pulteney</hi>
+  <hi rendition="#smaller">, William 1684–1764</hi>
+</term>
+</index>
+Das Brieffragment lag zweifelsohne bereits vor, als N. <ref corresp="#N.33"/>
+ verfasst wurde.
 Hieraus ergibt sich der Terminus post quem der Datierung.
 Zur Ermittlung eines Terminus ante quem gilt es die nur flüchtige Bekanntschaft zwischen Leibniz und Pulteney zu berücksichtigen.
-Die Anzahl der Erwähnungen von Pulteney im Leibniz-Nachlass ist entsprechend begrenzt und reicht nach heutigem Kenntnisstand nicht über den Anfang 1705 hinaus (G. Guidis Brief an Leibniz vom 4. Januar, <hi rendition="#i">LSB</hi> I, 24 N. 152, S. 259.13<ref corresp="#bib_01342"/>).<index indexName="Personen"><term><hi rendition="#g #smaller">Guidi</hi> <hi rendition="#smaller">Giuseppe, gest. 1720 (?)</hi></term></index>
+Die Anzahl der Erwähnungen von Pulteney im Leibniz-Nachlass ist entsprechend begrenzt und reicht nach heutigem Kenntnisstand nicht über den Anfang 1705 hinaus (G. Guidis Brief an Leibniz vom 4. Januar, <hi rendition="#i">LSB</hi> I, 24 N. 152, S. 259.13<ref corresp="#bib_01342"/>
+).<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Guidi</hi>
+<hi rendition="#smaller">Giuseppe, gest. 1720 (?)</hi>
+</term>
+</index>
 Somit ist wahrscheinlich, dass auch das mit überlieferte Brieffragment nicht viel später entstand.
-Da es nicht ausgeschlossen ist, dass Leibniz erst später die unbeschriebene Seite des Briefkonzeptes für die Aufzeichnung N. <ref corresp="#N.33"/> verwendete, bleibt der vorgeschlagene Terminus ante quem aber hypothetisch.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch33.p5"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478"><pb type="L"/><fw type="folNum">[37 r<hi rendition="#sup">o</hi>]</fw></ref> Si non contactu<index indexName="Sachen"><term>contactus</term></index>
-sed vi interpositi<index indexName="Sachen"><term>vis elastri</term></index>
-Elastri<index indexName="Sachen"><term>elastrum interpositum</term></index>
-corpus agat in Corpus<index indexName="Sachen"><term>actio corporis in corpus</term></index> efficiemus phaenomena<index indexName="Sachen"><term>phaenomenon</term></index>
-non supponendo corpus quiescens<index indexName="Sachen"><term>corpus quiescens</term></index>
-quasi occurrere ictui alterius,<index indexName="Sachen"><term>ictus corporis</term></index>
-<app type="Bfootnote"><lem type="main">sed</lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-erunt resistentiae<index indexName="Sachen"><term>resistentia</term></index> tamen
-ut moles<index indexName="Sachen"><term>moles</term></index>.
+Da es nicht ausgeschlossen ist, dass Leibniz erst später die unbeschriebene Seite des Briefkonzeptes für die Aufzeichnung N. <ref corresp="#N.33"/>
+ verwendete, bleibt der vorgeschlagene Terminus ante quem aber hypothetisch.</hi>
+</p>
+</div>
+<div type="text">
+<p rendition="#noindent" xml:id="Ch33.p5">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1478">
+<pb type="L"/>
+<fw type="folNum">[37 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref> Si non contactu<index indexName="Sachen">
+<term>contactus</term>
+</index>
+sed vi interpositi<index indexName="Sachen">
+<term>vis elastri</term>
+</index>
+Elastri<index indexName="Sachen">
+<term>elastrum interpositum</term>
+</index>
+corpus agat in Corpus<index indexName="Sachen">
+<term>actio corporis in corpus</term>
+</index> efficiemus phaenomena<index indexName="Sachen">
+<term>phaenomenon</term>
+</index>
+non supponendo corpus quiescens<index indexName="Sachen">
+<term>corpus quiescens</term>
+</index>
+quasi occurrere ictui alterius,<index indexName="Sachen">
+<term>ictus corporis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">sed</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+erunt resistentiae<index indexName="Sachen">
+<term>resistentia</term>
+</index> tamen
+ut moles<index indexName="Sachen">
+<term>moles</term>
+</index>.
 Si porro
-<app type="Bfootnote"><lem type="main">concipiamus materiae<index indexName="Sachen"><term>materia</term></index></lem><note type="lemma-abbrev">concipiamus</note><rdg wit="#L" n="1"> materiam
-</rdg><rdg wit="#L" n="2"> materiae <hi rendition="#i">L</hi></rdg></app>
-fluidum elasticum<index indexName="Sachen"><term>fluidum elasticum</term></index> aequaliter intelligi posse interfusum[,] licebit Massam<index indexName="Sachen"><term>massa</term></index> intelligere ut
+<app type="Bfootnote">
+<lem type="main">concipiamus materiae<index indexName="Sachen">
+<term>materia</term>
+</index>
+</lem>
+<note type="lemma-abbrev">concipiamus</note>
+<rdg wit="#L" n="1"> materiam
+</rdg>
+<rdg wit="#L" n="2"> materiae <hi rendition="#i">L</hi>
+</rdg>
+</app>
+fluidum elasticum<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index> aequaliter intelligi posse interfusum[,] licebit Massam<index indexName="Sachen">
+<term>massa</term>
+</index> intelligere ut
 divisam in partes aequales,
-nec aliud nisi vim elasticam<index indexName="Sachen"><term>vis elastica</term></index>
+nec aliud nisi vim elasticam<index indexName="Sachen">
+<term>vis elastica</term>
+</index>
 utrinque in aequalia aequaliter agere
-nullo discrimine quiescentis aut moti[,] obtinebitur etiam effectus aequivalens ei<index indexName="Sachen"><term>effectus aequivalens</term></index>
-qui evenisset sine mutatione<index indexName="Sachen"><term>effectus sine mutatione</term></index>[,] cum scilicet aequale incurrit in aequale.
-Addatur jam attractio corporum<index indexName="Sachen"><term>attractio corporum</term></index> rursus
-ex fluidi interpositi<index indexName="Sachen"><term>fluidum interpositum</term></index> impulsu,<index indexName="Sachen"><term>impulsus fluidi</term></index>
+nullo discrimine quiescentis aut moti[,] obtinebitur etiam effectus aequivalens ei<index indexName="Sachen">
+<term>effectus aequivalens</term>
+</index>
+qui evenisset sine mutatione<index indexName="Sachen">
+<term>effectus sine mutatione</term>
+</index>[,] cum scilicet aequale incurrit in aequale.
+Addatur jam attractio corporum<index indexName="Sachen">
+<term>attractio corporum</term>
+</index> rursus
+ex fluidi interpositi<index indexName="Sachen">
+<term>fluidum interpositum</term>
+</index> impulsu,<index indexName="Sachen">
+<term>impulsus fluidi</term>
+</index>
 quae simul efficit,
-ut cohaereant corpora,<index indexName="Sachen"><term>cohaesio corporis</term></index>
-et totum compositum motu centri gravitatis<index indexName="Sachen"><term>motus centri gravitatis</term></index><index indexName="Sachen"><term>centrum gravitatis</term></index>
-ex legibus aequilibrii<index indexName="Sachen"><term>lex aequilibrii</term></index><index indexName="Sachen"><term>aequilibrium</term></index>
-seu vis mortuae<index indexName="Sachen"><term>vis mortua</term></index> feratur.
-In his omnibus tamen concipienda est quaedam materiae<index indexName="Sachen"><term>materia</term></index>
-ad motum resistentia,<index indexName="Sachen"><term>resistentia materiae ad motum</term></index>
-quae etiam ab initio assumta restitantiam<index indexName="Sachen"><term>restitantia</term></index> daret,
+ut cohaereant corpora,<index indexName="Sachen">
+<term>cohaesio corporis</term>
+</index>
+et totum compositum motu centri gravitatis<index indexName="Sachen">
+<term>motus centri gravitatis</term>
+</index>
+<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index>
+ex legibus aequilibrii<index indexName="Sachen">
+<term>lex aequilibrii</term>
+</index>
+<index indexName="Sachen">
+<term>aequilibrium</term>
+</index>
+seu vis mortuae<index indexName="Sachen">
+<term>vis mortua</term>
+</index> feratur.
+In his omnibus tamen concipienda est quaedam materiae<index indexName="Sachen">
+<term>materia</term>
+</index>
+ad motum resistentia,<index indexName="Sachen">
+<term>resistentia materiae ad motum</term>
+</index>
+quae etiam ab initio assumta restitantiam<index indexName="Sachen">
+<term>restitantia</term>
+</index> daret,
 adeoque vim efficeret,
-<pb type="L"/>perinde ac si corpora
-<app type="Bfootnote"><lem type="main">aequali vi restitiva<index indexName="Sachen"><term>vis restitiva</term></index> occurrerent;</lem><note type="lemma-abbrev">aequali</note><rdg wit="#L" n="1"> vi respectiva concurrerent
-</rdg><rdg wit="#L" n="2"> <note type="editorial">|</note> concur- <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> </rdg><rdg wit="#L" n="3"> vi restitiva occurrerent; <hi rendition="#i">L</hi></rdg></app>
-interim distincte explicando causas,<index indexName="Sachen"><term>causa explicanda</term></index><anchor xml:id="LH_35_10_06_037r_blstft_udhakv"/>
-remque adeo reducendo ad mutationes insensibiles,<index indexName="Sachen"><term>mutatio insensibilis</term></index>
-ut evitetur mutatio per saltum,<index indexName="Sachen"><term>mutatio per saltum</term></index>
-via quam proposui optima distinctissimaque est[;] etsi enim materia nostri gradus<index indexName="Sachen"><term>materia nostri gradus</term></index>
-sit diversae densitatis<index indexName="Sachen"><term>densitas materiae</term></index>
+<pb type="L"/>
+perinde ac si corpora
+<app type="Bfootnote">
+<lem type="main">aequali vi restitiva<index indexName="Sachen">
+<term>vis restitiva</term>
+</index> occurrerent;</lem>
+<note type="lemma-abbrev">aequali</note>
+<rdg wit="#L" n="1"> vi respectiva concurrerent
+</rdg>
+<rdg wit="#L" n="2">
+<note type="editorial">|</note> concur- <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="3"> vi restitiva occurrerent; <hi rendition="#i">L</hi>
+</rdg>
+</app>
+interim distincte explicando causas,<index indexName="Sachen">
+<term>causa explicanda</term>
+</index>
+<anchor xml:id="LH_35_10_06_037r_blstft_udhakv"/>
+remque adeo reducendo ad mutationes insensibiles,<index indexName="Sachen">
+<term>mutatio insensibilis</term>
+</index>
+ut evitetur mutatio per saltum,<index indexName="Sachen">
+<term>mutatio per saltum</term>
+</index>
+via quam proposui optima distinctissimaque est[;] etsi enim materia nostri gradus<index indexName="Sachen">
+<term>materia nostri gradus</term>
+</index>
+sit diversae densitatis<index indexName="Sachen">
+<term>densitas materiae</term>
+</index>
 quoad alia fluida,
-<app type="Bfootnote"><lem type="main">attamen quoad</lem><note type="lemma-abbrev">attamen</note><rdg wit="#L" n="1"> quod
-</rdg><rdg wit="#L" n="2"> quoad <hi rendition="#i">L</hi></rdg></app>
-fluidum suum elasticificans<index indexName="Sachen"><term>fluidum elasticificans</term></index> ubique uniformiter disgregata,
+<app type="Bfootnote">
+<lem type="main">attamen quoad</lem>
+<note type="lemma-abbrev">attamen</note>
+<rdg wit="#L" n="1"> quod
+</rdg>
+<rdg wit="#L" n="2"> quoad <hi rendition="#i">L</hi>
+</rdg>
+</app>
+fluidum suum elasticificans<index indexName="Sachen">
+<term>fluidum elasticificans</term>
+</index> ubique uniformiter disgregata,
 seu in partes aequales divisa concipi potest.
-Cum fluida nobis tenuia,<index indexName="Sachen"><term>fluidum tenue</term></index>
-huic tenuissimo rursus sint crassa,<index indexName="Sachen"><term>fluidum tenue</term></index>
+Cum fluida nobis tenuia,<index indexName="Sachen">
+<term>fluidum tenue</term>
+</index>
+huic tenuissimo rursus sint crassa,<index indexName="Sachen">
+<term>fluidum tenue</term>
+</index>
 et pertusa,
-ut ipsius respectu caetera uniforme quid esse videantur[,] ut si tam globi<index indexName="Sachen"><term>globus minimus</term></index> majores
+ut ipsius respectu caetera uniforme quid esse videantur[,] ut si tam globi<index indexName="Sachen">
+<term>globus minimus</term>
+</index> majores
 quam minores minimis
-<app type="Bfootnote"><lem type="main">aequalibus foraminibus<index indexName="Sachen"><term>foramen</term></index> pertusi,</lem><note type="lemma-abbrev">aequalibus</note><rdg wit="#L" n="1"> pertusi p
-</rdg><rdg wit="#L" n="2"> foraminibus pertusi, <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">aequalibus foraminibus<index indexName="Sachen">
+<term>foramen</term>
+</index> pertusi,</lem>
+<note type="lemma-abbrev">aequalibus</note>
+<rdg wit="#L" n="1"> pertusi p
+</rdg>
+<rdg wit="#L" n="2"> foraminibus pertusi, <hi rendition="#i">L</hi>
+</rdg>
+</app>
 vel
-<app type="Bfootnote"><lem type="main">potius in globos sui generis minimos<index indexName="Sachen"><term>globus minimus</term></index> aequales</lem><note type="lemma-abbrev">potius</note><rdg wit="#L" n="1"> in aequales
-</rdg><rdg wit="#L" n="2"> in globos <seg type="apparat-ellipsis"/> minimos aequales <hi rendition="#i">L</hi></rdg></app>
-divisi intelligantur.</p><figure rendition="#own-line_centered" xml:id="Ch33.p6"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_06_037_d.svg" width="112.7412pt" xml:id="Ch33.p6.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_10_06_037r_Fig.1"/></head></figure><p xml:id="Ch33.p7">Sunt autem in Systematibus<index indexName="Sachen"><term>systema</term></index> concipiendi
-velut gradus.<index indexName="Sachen"><term>gradus</term></index>
-Sic hi globuli<index indexName="Sachen"><term>globulus</term></index> minimi nostri Systematis
-fortasse sint instar planetarum <index indexName="Sachen"><term>planeta</term></index>
-<app type="Bfootnote"><lem type="main">Systematis inferioris.<index indexName="Sachen"><term>systema inferius</term></index></lem><note type="lemma-abbrev">Systematis</note><rdg wit="#L" n="1"> major
-</rdg><rdg wit="#L" n="2"> inferioris. <hi rendition="#i">L</hi></rdg></app></p></div></div></body>
-  </text>
+<app type="Bfootnote">
+<lem type="main">potius in globos sui generis minimos<index indexName="Sachen">
+<term>globus minimus</term>
+</index> aequales</lem>
+<note type="lemma-abbrev">potius</note>
+<rdg wit="#L" n="1"> in aequales
+</rdg>
+<rdg wit="#L" n="2"> in globos <seg type="apparat-ellipsis"/>
+ minimos aequales <hi rendition="#i">L</hi>
+</rdg>
+</app>
+divisi intelligantur.</p>
+<figure rendition="#own-line_centered" xml:id="Ch33.p6">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_06_037_d.svg" width="112.7412pt" xml:id="Ch33.p6.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_35_10_06_037r_Fig.1"/>
+</head>
+</figure>
+<p xml:id="Ch33.p7">Sunt autem in Systematibus<index indexName="Sachen">
+<term>systema</term>
+</index> concipiendi
+velut gradus.<index indexName="Sachen">
+<term>gradus</term>
+</index>
+Sic hi globuli<index indexName="Sachen">
+<term>globulus</term>
+</index> minimi nostri Systematis
+fortasse sint instar planetarum <index indexName="Sachen">
+<term>planeta</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">Systematis inferioris.<index indexName="Sachen">
+<term>systema inferius</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Systematis</note>
+<rdg wit="#L" n="1"> major
+</rdg>
+<rdg wit="#L" n="2"> inferioris. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

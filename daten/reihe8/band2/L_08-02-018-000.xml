@@ -1,19 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-018-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-018-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De motu et effectu</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De motu et effectu</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="18">De motu et effectu</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1675-04" resp="#ed" cert="medium">[April 1675]</date><date calendar="#gregorian" notAfter="1675-04" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=208</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="160" to="163"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-018-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 13, 3 Bl. 35</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#konzept-entwurf"><summary><p>Konzept: LH XXXV 13, 3 Bl. 35. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 35 v<hi rendition="#sup">o</hi>. Bl. 35 r<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen.</p><p>Cc 2, Nr. 974</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+            </author>
+            <title type="chapter" level="a" n="18">De motu et effectu</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1675-04" resp="#ed" cert="medium">[April 1675]</date>
+            <date calendar="#gregorian" notAfter="1675-04" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=208</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="160" to="163"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-018-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 13, 3 Bl. 35</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                <summary>
+                  <p>Konzept: LH XXXV 13, 3 Bl. 35. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 35 v<hi rendition="#sup">o</hi>. Bl. 35 r<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen.</p>
+                  <p>Cc 2, Nr. 974</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -639,69 +739,913 @@
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/><catRef scheme="L_subjects" target="L_subjects.xml#bewegung"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-06" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+        <catRef scheme="L_subjects" target="L_subjects.xml#bewegung"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-06" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-018-000_facs-haupttextzeuge">
-    		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4132"/>
-		<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4133"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4132"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4133"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=4134"/>
-  </facsimile><text xml:id="L_08-02-018-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch18" n="18"><pb type="VIII_2" n="160"/><head>18.
+  </facsimile>
+  <text xml:id="L_08-02-018-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch18" n="18">
+        <pb type="VIII_2" n="160"/>
+        <head>18.
 DE MOTU ET EFFECTU</head>
-<head>[April 1675]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Konzept: LH XXXV 13, 3 Bl. 35. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 35 v<hi rendition="#sup">o</hi>. Bl. 35 r<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen.</p><p>Cc 2, Nr. 974</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch18.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Einen Hinweis auf die Entstehungszeit liefert die Zeichnung [<hi rendition="#i">Fig. 4</hi>]; sie findet sich auch in N. 9, N. 30 und N. 95.
+        <head>[April 1675]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Konzept: LH XXXV 13, 3 Bl. 35. 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 35 v<hi rendition="#sup">o</hi>. Bl. 35 r<hi rendition="#sup">o</hi> leer. Ein Wasserzeichen.</p>
+                      <p>Cc 2, Nr. 974</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch18.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>: Einen Hinweis auf die Entstehungszeit liefert die Zeichnung [<hi rendition="#i">Fig. 4</hi>]; sie findet sich auch in N. 9, N. 30 und N. 95.
 Das Wasserzeichen ist durch ein Blatt des von Leibniz eigenhändig datierten Stücks N. 32
-für April 1675 belegt.</hi></p></div><div type="text"><p xml:id="Ch18.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[35 v<hi rendition="#sup">o</hi>]</fw> Si Motus non nisi situs mutatio esset, (: quod non Cartesium<index indexName="Namensregister"><term><hi rendition="#g">Descartes</hi>, <!--  \hack{Ren\´{e}} 
-     \hackfor{René}-->René (1596-1650)</term></index> tantum sed et Hugenium<index indexName="Namensregister"><term><hi rendition="#g">Huygens</hi>, Christiaan (1629-1695)</term></index> sentire video :) duobus corporibus sibi appropinquantibus nihil referret, alterum an <app type="Bfootnote"><lem type="main">utrumque, ac si alterutrum, quodnam ex ipsis, moveri dicatur.</lem><note type="lemma-abbrev">utrumque,</note><rdg wit="#L" n="1"> moveretur a </rdg><rdg wit="#L" n="2"> ac si <seg type="apparat-ellipsis"/> dicatur. <hi rendition="#i">L</hi></rdg></app> Unde pendulum<index indexName="Sachverzeichnis"><term>pendulum</term></index> <hi rendition="#i">CD</hi> impingat in pendulum <hi rendition="#i">AB</hi>, perinde erit ac si alterum alteri occurreret, <app type="Bfootnote"><lem type="main">aequali celeritate unde</lem><note type="lemma-abbrev">occurreret</note><rdg wit="#L" n="1"> unde aliamque </rdg><rdg wit="#L" n="2"> aequali celeritate unde <hi rendition="#i">L</hi> </rdg></app> quiesceret utrumque, quod est experientiae<index indexName="Sachverzeichnis"><term>experientia</term></index> adversum. Nam (si nullum adsit Elaterium<index indexName="Sachverzeichnis"><term>elaterium</term></index>) pendulum <hi rendition="#i">AB</hi> a pendulo <hi rendition="#i">CD</hi> nulla motus sui diminutione aufertur. <app type="Bfootnote"><lem type="main">Responderi potest huic objectioni pro definitione motus</lem><note type="lemma-abbrev">aufertur.</note><rdg wit="#L" n="1"> Sed his responderi potest, etsi motus h </rdg><rdg wit="#L" n="2"> Responderi potest <note type="editorial">|</note> , <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> huic <seg type="apparat-ellipsis"/> motus <hi rendition="#i">L</hi> </rdg></app> a qua nec ego abhorreo, non de motu hic sed de effectu esse quaestionem, et cum quidlibet fingi possit pro arbitrio, motum generalem exitum quem potest reperire.</p><figure rendition="#own-line_centered" xml:id="Ch18.p6_1"><graphic url="./images/lh0351303_035r-d1.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="216.8pt" xml:id="Ch18.p6.g1"/><head>[<note type="editorial"><hi rendition="#i">Fig. 1, gestr.</hi></note>]</head></figure><figure rendition="#own-line_centered" xml:id="Ch18.p6_2"><graphic url="./images/lh0351303_035r-d2.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="216.8pt" xml:id="Ch18.p7.g1"/><head>[<hi rendition="#i">Fig. 2</hi>]</head></figure><p xml:id="Ch18.p9">Pone <!--  \hack{\( \displaystyleAB \, \sqcap\, x \, \sqcap\, GW \, \edtext{\sqcap\, z \).
+für April 1675 belegt.</hi>
+          </p>
+        </div>
+        <div type="text">
+          <p xml:id="Ch18.p5" rendition="#noindent">
+            <pb type="L"/>
+            <fw type="folNum">[35 v<hi rendition="#sup">o</hi>]
+            </fw> Si Motus non nisi situs mutatio esset, (: quod non Cartesium<index indexName="Namensregister">
+            <term>
+              <hi rendition="#g">Descartes</hi>,               <!--  \hack{Ren\´{e}} 
+     \hackfor{René}-->René (1596-1650)</term>
+          </index> tantum sed et Hugenium<index indexName="Namensregister">
+          <term>
+            <hi rendition="#g">Huygens</hi>, Christiaan (1629-1695)</term>
+        </index> sentire video :) duobus corporibus sibi appropinquantibus nihil referret, alterum an <app type="Bfootnote">
+        <lem type="main">utrumque, ac si alterutrum, quodnam ex ipsis, moveri dicatur.</lem>
+        <note type="lemma-abbrev">utrumque,</note>
+        <rdg wit="#L" n="1"> moveretur a </rdg>
+        <rdg wit="#L" n="2"> ac si <seg type="apparat-ellipsis"/>
+ dicatur. <hi rendition="#i">L</hi>
+      </rdg>
+    </app> Unde pendulum<index indexName="Sachverzeichnis">
+    <term>pendulum</term>
+  </index>
+  <hi rendition="#i">CD</hi> impingat in pendulum <hi rendition="#i">AB</hi>, perinde erit ac si alterum alteri occurreret, <app type="Bfootnote">
+  <lem type="main">aequali celeritate unde</lem>
+  <note type="lemma-abbrev">occurreret</note>
+  <rdg wit="#L" n="1"> unde aliamque </rdg>
+  <rdg wit="#L" n="2"> aequali celeritate unde <hi rendition="#i">L</hi>
+  </rdg>
+</app> quiesceret utrumque, quod est experientiae<index indexName="Sachverzeichnis">
+<term>experientia</term>
+</index> adversum. Nam (si nullum adsit Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>) pendulum <hi rendition="#i">AB</hi> a pendulo <hi rendition="#i">CD</hi> nulla motus sui diminutione aufertur. <app type="Bfootnote">
+<lem type="main">Responderi potest huic objectioni pro definitione motus</lem>
+<note type="lemma-abbrev">aufertur.</note>
+<rdg wit="#L" n="1"> Sed his responderi potest, etsi motus h </rdg>
+<rdg wit="#L" n="2"> Responderi potest <note type="editorial">|</note> ,<note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> huic <seg type="apparat-ellipsis"/>
+ motus <hi rendition="#i">L</hi>
+</rdg>
+</app> a qua nec ego abhorreo, non de motu hic sed de effectu esse quaestionem, et cum quidlibet fingi possit pro arbitrio, motum generalem exitum quem potest reperire.</p>
+<figure rendition="#own-line_centered" xml:id="Ch18.p6_1">
+<graphic url="./images/lh0351303_035r-d1.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="216.8pt" xml:id="Ch18.p6.g1"/>
+<head>[<note type="editorial">
+<hi rendition="#i">Fig. 1, gestr.</hi>
+</note>]
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch18.p6_2">
+<graphic url="./images/lh0351303_035r-d2.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="216.8pt" xml:id="Ch18.p7.g1"/>
+<head>[<hi rendition="#i">Fig. 2</hi>]
+</head>
+</figure>
+<p xml:id="Ch18.p9">Pone <!--  \hack{\( \displaystyleAB \, \sqcap\, x \, \sqcap\, GW \, \edtext{\sqcap\, z \).
 \( \displaystyleWL \, \sqcap\, \dfrac{ a \beta}{ x }. \) }{ \lemma{$\sqcap\ z.$} \Bfootnote{\textit{(1)} $ \displaystyleWL \, \sqcap\, \dfrac{ a z }{ x } $ \textit{(2)} $ \displaystyleWL \, \sqcap\, \dfrac{ z } { x } $ \textit{(3)} $ \displaystyleWL \, \sqcap\, \dfrac{ a \beta}{ x } $ \textit{L}}}} 
      \hackfor{\edtext{\( \displaystyleAB \, \sqcap\, x \, \sqcap\, GW \, \sqcap\, z \).
-\( \displaystyleWL \, \sqcap\, \dfrac{ a \beta}{ x }. \) }{ \lemma{$\sqcap\ z.$} \Bfootnote{\textit{(1)} $ \displaystyleWL \, \sqcap\, \dfrac{ a z }{ x } $ \textit{(2)} $ \displaystyleWL \, \sqcap\, \dfrac{ z } { x } $ \textit{(3)} $ \displaystyleWL \, \sqcap\, \dfrac{ a \beta}{ x } $ \textit{L}}}}--><app type="Bfootnote"><lem type="main"><formula xml:id="Ch18.p9.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>B</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mpadded other="+1.7pt"><m:mi>x</m:mi></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:mrow><m:mi>G</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>W</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mi>z</m:mi></m:mrow></m:math></formula>.
-<formula xml:id="Ch18.p9.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>W</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>L</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac></m:mstyle></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula> </lem><note type="lemma-abbrev"><formula xml:id="Ch18.p9.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mo rspace="7.5pt">⊓</m:mo><m:mi>z</m:mi></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> <formula xml:id="Ch18.p9.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>W</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>L</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>z</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac></m:mstyle></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="2"> <formula xml:id="Ch18.p9.m5"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>W</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>L</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mi>z</m:mi><m:mi>x</m:mi></m:mfrac></m:mstyle></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="3"> <formula xml:id="Ch18.p9.m6"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>W</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>L</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow><m:mi>x</m:mi></m:mfrac></m:mstyle></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app>
-Sed si <app type="Bfootnote"><lem type="main">pro <hi rendition="#i">z</hi>,</lem><note type="lemma-abbrev">pro</note><rdg wit="#L" n="1"> <formula xml:id="Ch18.p9.m7"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mi>β</m:mi></m:math></formula> </rdg><rdg wit="#L" n="2"> <hi rendition="#i">z</hi> <hi rendition="#i">L</hi></rdg></app>
-ponamus <formula xml:id="Ch18.p9.m8"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded other="+1.7pt"><m:mstyle displaystyle="true"><m:mfrac><m:mi>y</m:mi><m:mi>a</m:mi></m:mfrac></m:mstyle></m:mpadded><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow></m:math></formula>, erit <formula xml:id="Ch18.p9.m9"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded other="+1.7pt"><m:mi>x</m:mi></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>,
-et <app type="Bfootnote"><lem type="main"> <formula xml:id="Ch18.p9.m10"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>W</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>L</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mpadded other="+1.7pt"><m:mstyle displaystyle="true"><m:mfrac><m:munder accentunder="true"><m:mrow><m:mpadded lspace="1.7pt" other="+1.7pt"><m:mi>a</m:mi></m:mpadded><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>β</m:mi></m:mpadded></m:mrow><m:mo>¯</m:mo></m:munder><m:mstyle displaystyle="true"><m:mfrac><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:mfrac></m:mstyle></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:mstyle></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula> </lem><note type="lemma-abbrev">et</note><rdg wit="#L" n="1"> <formula xml:id="Ch18.p9.m11"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>W</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>L</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow><m:mi>a</m:mi></m:mfrac></m:mstyle><m:mstyle displaystyle="true"><m:mfrac><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:mfrac></m:mstyle></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="2"> <formula xml:id="Ch18.p9.m12"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>W</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>L</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>a</m:mi><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow><m:mi/></m:mfrac></m:mstyle></m:mrow></m:math></formula> </rdg><rdg wit="#L" n="3"> <formula xml:id="Ch18.p9.m13"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>W</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>L</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mpadded other="+1.7pt"><m:mstyle displaystyle="true"><m:mfrac><m:munder accentunder="true"><m:mrow><m:mpadded lspace="1.7pt" other="+1.7pt"><m:mi>a</m:mi></m:mpadded><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>β</m:mi></m:mpadded></m:mrow><m:mo>¯</m:mo></m:munder><m:mstyle displaystyle="true"><m:mfrac><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mn>2</m:mn><m:mo>⁢</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mstyle></m:mfrac></m:mstyle></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:msup><m:mn>2</m:mn><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:mstyle></m:mrow></m:math></formula> <hi rendition="#i">L</hi></rdg></app></p><pb type="VIII_2" n="161"/><p xml:id="Ch18.p10">Ergo curva <hi rendition="#i">AGL</hi> quadratrix<index indexName="Sachverzeichnis"><term>quadratrix</term></index>
-<app type="Bfootnote"><lem type="main">Hyperbolae<index indexName="Sachverzeichnis"><term>hyperbola</term></index> intelligi potest, descripta duobus motibus compositis, vel ex</lem><note type="lemma-abbrev">Hyperbolae</note><rdg wit="#L" n="1"> composita </rdg><rdg wit="#L" n="2"> intelligi potest, <app><rdg wit="#L" n="a"> ex </rdg><rdg wit="#L" n="b"> descripta <seg type="apparat-ellipsis"/> vel ex <hi rendition="#i">L</hi></rdg></app></rdg></app>
-uniformi, et uniformiter crescentium reciproco, vel uniformiter crescente, et uniformiter crescentium quadratis reciproco.</p><figure rendition="#own-line_centered" xml:id="Ch18.p11">
-        <graphic rendition="#c" url="./images/lh0351303_035r-d3.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="156.1032pt" xml:id="Ch18.p11.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]</head>
-      </figure><p xml:id="Ch18.p12"><note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    6  --></note><hi rendition="#i">Am Rand und um die Zeichnung Fig. 3:</hi>
-<formula xml:id="Ch18.p12.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:msup><m:mi>y</m:mi><m:mn>4</m:mn></m:msup></m:mrow></m:msqrt><m:mo>.</m:mo></m:mrow></m:math></formula>
+\( \displaystyleWL \, \sqcap\, \dfrac{ a \beta}{ x }. \) }{ \lemma{$\sqcap\ z.$} \Bfootnote{\textit{(1)} $ \displaystyleWL \, \sqcap\, \dfrac{ a z }{ x } $ \textit{(2)} $ \displaystyleWL \, \sqcap\, \dfrac{ z } { x } $ \textit{(3)} $ \displaystyleWL \, \sqcap\, \dfrac{ a \beta}{ x } $ \textit{L}}}}-->
+<app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch18.p9.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+  <m:mrow>
+    <m:mi>A</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mpadded other="+1.7pt">
+      <m:mi>B</m:mi>
+    </m:mpadded>
+  </m:mrow>
+  <m:mo rspace="4.2pt">⊓</m:mo>
+  <m:mpadded other="+1.7pt">
+    <m:mi>x</m:mi>
+  </m:mpadded>
+  <m:mo rspace="4.2pt">⊓</m:mo>
+  <m:mrow>
+    <m:mi>G</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mpadded other="+1.7pt">
+      <m:mi>W</m:mi>
+    </m:mpadded>
+  </m:mrow>
+  <m:mo rspace="4.2pt">⊓</m:mo>
+  <m:mi>z</m:mi>
+</m:mrow>
+</m:math>
+</formula>.
+<formula xml:id="Ch18.p9.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+  <m:mrow>
+    <m:mrow>
+      <m:mi>W</m:mi>
+      <m:mo>⁢</m:mo>
+      <m:mpadded other="+1.7pt">
+        <m:mi>L</m:mi>
+      </m:mpadded>
+    </m:mrow>
+    <m:mo rspace="4.2pt">⊓</m:mo>
+    <m:mstyle displaystyle="true">
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>a</m:mi>
+          <m:mo>⁢</m:mo>
+          <m:mi>β</m:mi>
+        </m:mrow>
+        <m:mi>x</m:mi>
+      </m:mfrac>
+    </m:mstyle>
+  </m:mrow>
+  <m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch18.p9.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+  <m:mrow>
+    <m:mo rspace="7.5pt">⊓</m:mo>
+    <m:mi>z</m:mi>
+  </m:mrow>
+  <m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch18.p9.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+  <m:mrow>
+    <m:mi>W</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mpadded other="+1.7pt">
+      <m:mi>L</m:mi>
+    </m:mpadded>
+  </m:mrow>
+  <m:mo rspace="4.2pt">⊓</m:mo>
+  <m:mstyle displaystyle="true">
+    <m:mfrac>
+      <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>z</m:mi>
+      </m:mrow>
+      <m:mi>x</m:mi>
+    </m:mfrac>
+  </m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch18.p9.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+  <m:mrow>
+    <m:mi>W</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mpadded other="+1.7pt">
+      <m:mi>L</m:mi>
+    </m:mpadded>
+  </m:mrow>
+  <m:mo rspace="4.2pt">⊓</m:mo>
+  <m:mstyle displaystyle="true">
+    <m:mfrac>
+      <m:mi>z</m:mi>
+      <m:mi>x</m:mi>
+    </m:mfrac>
+  </m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="3">
+<formula xml:id="Ch18.p9.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+  <m:mrow>
+    <m:mi>W</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mpadded other="+1.7pt">
+      <m:mi>L</m:mi>
+    </m:mpadded>
+  </m:mrow>
+  <m:mo rspace="4.2pt">⊓</m:mo>
+  <m:mstyle displaystyle="true">
+    <m:mfrac>
+      <m:mrow>
+        <m:mi>a</m:mi>
+        <m:mo>⁢</m:mo>
+        <m:mi>β</m:mi>
+      </m:mrow>
+      <m:mi>x</m:mi>
+    </m:mfrac>
+  </m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+Sed si <app type="Bfootnote">
+<lem type="main">pro <hi rendition="#i">z</hi>,
+</lem>
+<note type="lemma-abbrev">pro</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch18.p9.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>β</m:mi>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">z</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+ponamus <formula xml:id="Ch18.p9.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mpadded other="+1.7pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>y</m:mi>
+<m:mi>a</m:mi>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+</m:math>
+</formula>, erit <formula xml:id="Ch18.p9.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mpadded other="+1.7pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:msup>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>,
+et <app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch18.p9.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>W</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+1.7pt">
+<m:mi>L</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mpadded other="+1.7pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+  <m:munder accentunder="true">
+    <m:mrow>
+      <m:mpadded lspace="1.7pt" other="+1.7pt">
+        <m:mi>a</m:mi>
+      </m:mpadded>
+      <m:mo>⁢</m:mo>
+      <m:mpadded other="+1.7pt">
+        <m:mi>β</m:mi>
+      </m:mpadded>
+    </m:mrow>
+    <m:mo>¯</m:mo>
+  </m:munder>
+  <m:mstyle displaystyle="true">
+    <m:mfrac>
+      <m:msup>
+        <m:mi>y</m:mi>
+        <m:mn>2</m:mn>
+      </m:msup>
+      <m:mrow>
+        <m:mn>2</m:mn>
+        <m:mo>⁢</m:mo>
+        <m:mi>a</m:mi>
+      </m:mrow>
+    </m:mfrac>
+  </m:mstyle>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+  <m:mn>2</m:mn>
+  <m:mo>⁢</m:mo>
+  <m:msup>
+    <m:mi>a</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>⁢</m:mo>
+  <m:mi>β</m:mi>
+</m:mrow>
+<m:msup>
+  <m:mi>y</m:mi>
+  <m:mn>2</m:mn>
+</m:msup>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" n="1">
+<formula xml:id="Ch18.p9.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>W</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+1.7pt">
+<m:mi>L</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+  <m:mrow>
+    <m:mi>a</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:mi>β</m:mi>
+  </m:mrow>
+  <m:mi>a</m:mi>
+</m:mfrac>
+</m:mstyle>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+  <m:msup>
+    <m:mi>y</m:mi>
+    <m:mn>2</m:mn>
+  </m:msup>
+  <m:mrow>
+    <m:mn>2</m:mn>
+    <m:mo>⁢</m:mo>
+    <m:mi>a</m:mi>
+  </m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2">
+<formula xml:id="Ch18.p9.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>W</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+1.7pt">
+<m:mi>L</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>a</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+<m:mi/>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="3">
+<formula xml:id="Ch18.p9.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>W</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+1.7pt">
+<m:mi>L</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mpadded other="+1.7pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:munder accentunder="true">
+  <m:mrow>
+    <m:mpadded lspace="1.7pt" other="+1.7pt">
+      <m:mi>a</m:mi>
+    </m:mpadded>
+    <m:mo>⁢</m:mo>
+    <m:mpadded other="+1.7pt">
+      <m:mi>β</m:mi>
+    </m:mpadded>
+  </m:mrow>
+  <m:mo>¯</m:mo>
+</m:munder>
+<m:mstyle displaystyle="true">
+  <m:mfrac>
+    <m:msup>
+      <m:mi>y</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+    <m:mrow>
+      <m:mn>2</m:mn>
+      <m:mo>⁢</m:mo>
+      <m:mi>a</m:mi>
+    </m:mrow>
+  </m:mfrac>
+</m:mstyle>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:msup>
+  <m:mn>2</m:mn>
+  <m:mn>2</m:mn>
+</m:msup>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+<m:msup>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<pb type="VIII_2" n="161"/>
+<p xml:id="Ch18.p10">Ergo curva <hi rendition="#i">AGL</hi> quadratrix<index indexName="Sachverzeichnis">
+<term>quadratrix</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">Hyperbolae<index indexName="Sachverzeichnis">
+<term>hyperbola</term>
+</index> intelligi potest, descripta duobus motibus compositis, vel ex</lem>
+<note type="lemma-abbrev">Hyperbolae</note>
+<rdg wit="#L" n="1"> composita </rdg>
+<rdg wit="#L" n="2"> intelligi potest, <app>
+<rdg wit="#L" n="a"> ex </rdg>
+<rdg wit="#L" n="b"> descripta <seg type="apparat-ellipsis"/>
+ vel ex <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+uniformi, et uniformiter crescentium reciproco, vel uniformiter crescente, et uniformiter crescentium quadratis reciproco.</p>
+<figure rendition="#own-line_centered" xml:id="Ch18.p11">
+<graphic rendition="#c" url="./images/lh0351303_035r-d3.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="156.1032pt" xml:id="Ch18.p11.g1"/>
+
+<head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]
+</head>
+</figure>
+<p xml:id="Ch18.p12">
+<note type="Afootnote" place="margin" resp="#L">
+<note type="lemma-abbrev"><!--automatische Nummerierung unterdrückt--><!--Unterdrückt:    6  --></note>
+<hi rendition="#i">Am Rand und um die Zeichnung Fig. 3:</hi>
+<formula xml:id="Ch18.p12.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:msup>
+<m:mi>y</m:mi>
+<m:mn>4</m:mn>
+</m:msup>
+</m:mrow>
+</m:msqrt>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
 Methodus generalis quadrandi figuram curvilineam quamlibet.
-Dato valore ipsius <hi rendition="#i">WL</hi> per datam <formula xml:id="Ch18.p12.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>B</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mi>x</m:mi></m:mrow><m:mo>.</m:mo></m:mrow></m:math></formula>
+Dato valore ipsius <hi rendition="#i">WL</hi> per datam <formula xml:id="Ch18.p12.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+1.7pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
 pro <hi rendition="#i">x</hi>, substituatur alius valor; ut <hi rendition="#i">WL</hi>.
 Substituto eo valore fiat quadrabilis tunc compositione duorum motuum,
 uno in ipsius <hi rendition="#i">x</hi> valore seu curvae ad quem est valor ille ordinatis, altero in ordinatis quadratricis ipsarum <hi rendition="#i">WL</hi> factitiarum.
 Uno transverso, altero recto, habebitur descriptio quadratricis, valoris ipsarum <hi rendition="#i">WL</hi> initio datarum.
-Unde facile est eligere Constructiones simplicissimas, et infinitos eandem figuram describendi modos.</note></p><p xml:id="Ch18.p13">Sed si pro <hi rendition="#i">z</hi> ponatur <formula xml:id="Ch18.p13.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:msup><m:mi>y</m:mi><m:mn>2</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:mstyle></m:math></formula>, fiet <formula xml:id="Ch18.p13.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mpadded other="+1.7pt"><m:mi>x</m:mi></m:mpadded><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:msup><m:mi>y</m:mi><m:mn>3</m:mn></m:msup><m:mrow><m:mn>3</m:mn><m:mo>⁢</m:mo><m:msup><m:mi>a</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula> et <formula xml:id="Ch18.p13.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>W</m:mi><m:mo>⁢</m:mo><m:mpadded other="+1.7pt"><m:mi>L</m:mi></m:mpadded></m:mrow><m:mo rspace="4.2pt">⊓</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo>⁢</m:mo><m:msup><m:mi>a</m:mi><m:mn>3</m:mn></m:msup><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow><m:mrow><m:mi>y</m:mi><m:mo>⁢</m:mo><m:mi>β</m:mi></m:mrow></m:mfrac></m:mstyle></m:mrow></m:math></formula>. Quanta sit vis percussionis<index indexName="Sachverzeichnis"><term>vis percussionis</term></index> <pb type="VIII_2" n="162"/>a nemine satis explicatum arbitror. Pone <app type="Bfootnote"><lem type="main">grave dati ponderis<index indexName="Sachverzeichnis"><term>pondus</term></index> ex data altitudine super</lem><note type="lemma-abbrev">grave</note><rdg wit="#L" n="1"> in <app><rdg wit="#L" n="a">alteram </rdg><rdg wit="#L" n="b">lanc </rdg><rdg wit="#L" n="c">mo </rdg></app></rdg><rdg wit="#L" n="2" cause="addition"> dati ponderis <note type="editorial">|</note> <add>ex data altitudine</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> super <hi rendition="#i">L</hi></rdg></app>
-lancem<index indexName="Sachverzeichnis"><term>lanx</term></index> librae<index indexName="Sachverzeichnis"><term>libra</term></index> cadere, quaeritur, quoties suum pondus in altera librae lance elevare possit. Est haec quaestio inter mechanicarum maximas habenda. Hactenus enim vires mortuas<index indexName="Sachverzeichnis"><term>vis mortua</term></index>, seu pondera, aut etiam vires vivas<index indexName="Sachverzeichnis"><term>vis viva</term></index> seu ictus<index indexName="Sachverzeichnis"><term>ictus</term></index> inter se comparavere Geometrae, sed nunc primum vires mortuae<index indexName="Sachverzeichnis"><term>vis mortua</term></index> vivis<index indexName="Sachverzeichnis"><term>vis viva</term></index> credo comparantur. <app type="Bfootnote"><lem type="main">Vim autem</lem><note type="lemma-abbrev">comparantur.</note><rdg wit="#L" n="1"> Sane </rdg><rdg wit="#L" n="2"> Vim autem <hi rendition="#i">L</hi></rdg></app> mortuam<index indexName="Sachverzeichnis"><term>vis mortua</term></index> voco, ponderis quieti, qua elevationi suae aut loco motioni resistit; vivam<index indexName="Sachverzeichnis"><term>vis viva</term></index> vero, quam acceleratione successiva quaesivit. R. P.
-Kircherus<index indexName="Namensregister"><term><hi rendition="#g">Kircher</hi>, Athanasius (1601-1680) SJ</term></index> <app type="Cfootnote"><lem type="main">alicubi</lem><note type="editorial">Stelle nicht nachgewiesen.</note></app> meminit se expertum, 20 et ultra pilas, ab una ex mediocri distantia labente elevatas. Alii sibi persuasere inde duci posse perennem <app type="Bfootnote"><lem type="main">motum;<index indexName="Sachverzeichnis"><term>motus perennis</term></index>
-Galilaeus<index indexName="Namensregister"><term><hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term></index></lem><note type="lemma-abbrev">motum;</note><rdg wit="#L" n="1"> vir quidam doctissimus conj </rdg><rdg wit="#L" n="2"> Galilaeus <hi rendition="#i">L</hi></rdg></app><app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">Galilaeus</note><note type="editorial">Vermutlich Anspielung auf Galileis Abhandlung <hi rendition="#i">Le mecaniche</hi> in der französischen Übersetzung von Marin Mersenne.
-Siehe <bibl corresp="#bib_01091">G. <hi rendition="#k">Galilei</hi>, <hi rendition="#i">Les mechaniques</hi>, Paris 1634, S. 69-73.</bibl></note></app>
+Unde facile est eligere Constructiones simplicissimas, et infinitos eandem figuram describendi modos.</note>
+</p>
+<p xml:id="Ch18.p13">Sed si pro <hi rendition="#i">z</hi> ponatur <formula xml:id="Ch18.p13.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mi>y</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+<m:msup>
+<m:mi>a</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>, fiet <formula xml:id="Ch18.p13.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mpadded other="+1.7pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:msup>
+<m:mi>y</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mrow>
+<m:mn>3</m:mn>
+<m:mo>⁢</m:mo>
+<m:msup>
+<m:mi>a</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula> et <formula xml:id="Ch18.p13.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>W</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded other="+1.7pt">
+<m:mi>L</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo rspace="4.2pt">⊓</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mn>3</m:mn>
+<m:mo>⁢</m:mo>
+<m:msup>
+<m:mi>a</m:mi>
+<m:mn>3</m:mn>
+</m:msup>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>y</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>β</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>. Quanta sit vis percussionis<index indexName="Sachverzeichnis">
+<term>vis percussionis</term>
+</index>
+<pb type="VIII_2" n="162"/>
+a nemine satis explicatum arbitror. Pone <app type="Bfootnote">
+<lem type="main">grave dati ponderis<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> ex data altitudine super</lem>
+<note type="lemma-abbrev">grave</note>
+<rdg wit="#L" n="1"> in <app>
+<rdg wit="#L" n="a">alteram </rdg>
+<rdg wit="#L" n="b">lanc </rdg>
+<rdg wit="#L" n="c">mo </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2" cause="addition"> dati ponderis <note type="editorial">|</note>
+<add>ex data altitudine</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> super <hi rendition="#i">L</hi>
+</rdg>
+</app>
+lancem<index indexName="Sachverzeichnis">
+<term>lanx</term>
+</index> librae<index indexName="Sachverzeichnis">
+<term>libra</term>
+</index> cadere, quaeritur, quoties suum pondus in altera librae lance elevare possit. Est haec quaestio inter mechanicarum maximas habenda. Hactenus enim vires mortuas<index indexName="Sachverzeichnis">
+<term>vis mortua</term>
+</index>, seu pondera, aut etiam vires vivas<index indexName="Sachverzeichnis">
+<term>vis viva</term>
+</index> seu ictus<index indexName="Sachverzeichnis">
+<term>ictus</term>
+</index> inter se comparavere Geometrae, sed nunc primum vires mortuae<index indexName="Sachverzeichnis">
+<term>vis mortua</term>
+</index> vivis<index indexName="Sachverzeichnis">
+<term>vis viva</term>
+</index> credo comparantur. <app type="Bfootnote">
+<lem type="main">Vim autem</lem>
+<note type="lemma-abbrev">comparantur.</note>
+<rdg wit="#L" n="1"> Sane </rdg>
+<rdg wit="#L" n="2"> Vim autem <hi rendition="#i">L</hi>
+</rdg>
+</app> mortuam<index indexName="Sachverzeichnis">
+<term>vis mortua</term>
+</index> voco, ponderis quieti, qua elevationi suae aut loco motioni resistit; vivam<index indexName="Sachverzeichnis">
+<term>vis viva</term>
+</index> vero, quam acceleratione successiva quaesivit. R. P.
+Kircherus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Kircher</hi>, Athanasius (1601-1680) SJ</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">alicubi</lem>
+<note type="editorial">Stelle nicht nachgewiesen.</note>
+</app> meminit se expertum, 20 et ultra pilas, ab una ex mediocri distantia labente elevatas. Alii sibi persuasere inde duci posse perennem <app type="Bfootnote">
+<lem type="main">motum;<index indexName="Sachverzeichnis">
+<term>motus perennis</term>
+</index>
+Galilaeus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Galilei</hi> (Galilaeus, Galileus), Galileo 1564-1642</term>
+</index>
+</lem>
+<note type="lemma-abbrev">motum;</note>
+<rdg wit="#L" n="1"> vir quidam doctissimus conj </rdg>
+<rdg wit="#L" n="2"> Galilaeus <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">Galilaeus</note>
+<note type="editorial">Vermutlich Anspielung auf Galileis Abhandlung <hi rendition="#i">Le mecaniche</hi> in der französischen Übersetzung von Marin Mersenne.
+Siehe <bibl corresp="#bib_01091">G. <hi rendition="#k">Galilei</hi>,<hi rendition="#i">Les mechaniques</hi>, Paris 1634, S. 69-73.</bibl>
+</note>
+</app>
 et post eum
-<app type="Cfootnote"><lem type="main">Borellus,<index indexName="Namensregister"><term><hi rendition="#g">Borelli</hi> (Borellus), Giovanni Alfonso 1608-1679</term></index></lem><note type="lemma-abbrev">Borellus</note><note type="editorial"><hi rendition="#k">G.A. Borelli</hi>,<bibl corresp="#bib_01001"> <hi rendition="#i">De vi percussionis</hi>, Bologna 1667, S. 192-210.</bibl></note></app>
-cum dixissent ictum<index indexName="Sachverzeichnis"><term>ictus</term></index> esse infinitum, non
-<app type="Bfootnote"><lem type="main">ultra explicuere,</lem><note type="lemma-abbrev">ultra</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>tamen</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> explicuere, <hi rendition="#i">L</hi></rdg></app>
-quasi proinde ulla inter vim mortuam<index indexName="Sachverzeichnis"><term>vis mortua</term></index>
+<app type="Cfootnote">
+<lem type="main">Borellus,<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Borelli</hi> (Borellus), Giovanni Alfonso 1608-1679</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Borellus</note>
+<note type="editorial">
+<hi rendition="#k">G.A. Borelli</hi>,<bibl corresp="#bib_01001">
+<hi rendition="#i">De vi percussionis</hi>, Bologna 1667, S. 192-210.</bibl>
+</note>
+</app>
+cum dixissent ictum<index indexName="Sachverzeichnis">
+<term>ictus</term>
+</index> esse infinitum, non
+<app type="Bfootnote">
+<lem type="main">ultra explicuere,</lem>
+<note type="lemma-abbrev">ultra</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>tamen</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> explicuere, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+quasi proinde ulla inter vim mortuam<index indexName="Sachverzeichnis">
+<term>vis mortua</term>
+</index>
 et vivam comparatio cessaret, velut inter finitum et infinitum.
-<app type="Cfootnote"><lem type="main">Vir quidam</lem><note type="editorial"><hi rendition="#k">E. Mariotte</hi>, <bibl corresp="#bib_00311"><hi rendition="#i">Traité de la percussion</hi>, Paris 1673, S. 257f.</bibl></note></app>
-nostris temporibus,<index indexName="Namensregister"><term><hi rendition="#g">Mariotte</hi>, Edme, Seigneur de Chazeuil ca. 1620-1684</term></index>
-in experimentis<index indexName="Sachverzeichnis"><term>experimentum</term></index> inveniendis et explicandis
-<app type="Bfootnote"><lem type="main">ingeniosissimus, sentit</lem><note type="lemma-abbrev">ingeniosissimus</note><rdg wit="#L" n="1"> credit </rdg><rdg wit="#L" n="2"> sentit <hi rendition="#i">L</hi></rdg></app>
-guttam<index indexName="Sachverzeichnis"><term>gutta</term></index> aquae lapsu<index indexName="Sachverzeichnis"><term>lapsus</term></index> suo
-<app type="Bfootnote"><lem type="main">praecise cylindrum</lem><note type="lemma-abbrev">praecise</note><rdg wit="#L" n="1"> guttam </rdg><rdg wit="#L" n="2"> cylindrum <hi rendition="#i">L</hi></rdg></app>
-aquae sustinere ejus altitudinis, unde lapsa est, et ejusdem cum gutta<index indexName="Sachverzeichnis"><term>gutta</term></index> basis,
-unde negat vim ictus<index indexName="Sachverzeichnis"><term>ictus</term></index> esse infinitam, aut certe tam magnam quam faciunt.<!--  \hack{\newline\indent} 
-     \hackfor{\par}--></p><p xml:id="Ch18.p14">Ego in hoc negotio investigando ita processi.</p><figure rendition="#own-line_centered" xml:id="Ch18.p15">
-        <graphic rendition="#c" url="./images/lh0351303_035r-d4.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="99.7326pt" xml:id="Ch18.p15.g1"/>
-        
-        <head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]</head>
-      </figure><pb type="VIII_2" n="163"/><p xml:id="Ch18.p16" rendition="#noindent">Fingatur catena <app type="Bfootnote"><lem type="main">globorum contiguorum</lem><note type="lemma-abbrev">catena</note><rdg wit="#L" n="1"> corporum ita </rdg><rdg wit="#L" n="2"> globorum contiguorum <hi rendition="#i">L</hi> </rdg></app> <hi rendition="#i">AB</hi> unde summa <hi rendition="#i">C</hi>, cadens in patinam <hi rendition="#i">D</hi>, ope chordae <hi rendition="#i">DE</hi> circa trochleam <hi rendition="#i">E</hi>, faciat surgere catenam, et ipsa succedat in ultimae locum, summa autem rursus cadat succedatque in locum ipsius; patet inde sequi perennem motum<index indexName="Sachverzeichnis"><term>motus perennis</term></index>. Quod est absurdum; patet
-ergo non posse tantam esse vim ictus<index indexName="Sachverzeichnis"><term>ictus</term></index>, quantam sufficit ad elevandam eousque catenam, ut <app type="Bfootnote"><lem type="main">continuari possit</lem><note type="lemma-abbrev">ut</note><rdg wit="#L" n="1"> attollere possit </rdg><rdg wit="#L" n="2"> continuari possit <hi rendition="#i">L</hi> </rdg></app> ictus<index indexName="Sachverzeichnis"><term>ictus</term></index>.<!--  \hack{\\\indent} 
-     \hackfor{\par}--></p><p xml:id="Ch18.p17">Nimirum illud pro certo habendum est, solo lapsu<index indexName="Sachverzeichnis"><term>lapsus</term></index> fieri non posse, ut corpus labens, aut aliud ei aequipollens altius attollatur, quam unde lapsum<index indexName="Sachverzeichnis"><term>lapsus</term></index> est. Pone enim aequipollens altius attolli posse, sequitur ipsummet altius attolli posse; nam aequipollens altius sublatum cogatur in libram incidere, qua attollat datum; fiet, ut lapsus<index indexName="Sachverzeichnis"><term>lapsus</term></index> solus corporis dati, causa sit ascensus in locum ipso lapsu<index indexName="Sachverzeichnis"><term>lapsus</term></index> altiorem.</p><p xml:id="Ch18.p18">Principium<index indexName="Sachverzeichnis"><term>principium</term></index> hoc tum rationibus tum experimentis<index indexName="Sachverzeichnis"><term>experimentum</term></index> confirmari potest; rationibus, quod natura non videatur agere contra se ipsam, experimento<index indexName="Sachverzeichnis"><term>experimentum</term></index>, quod pendulum sibi permissum numquam ad altitudinem priorem reascendit; cum tamen summa sit libertas ipsi; multo minus corpus ad altiorem sibi locum ascendet <app type="Bfootnote"><lem type="main">per ipsam sui lapsus<index indexName="Sachverzeichnis"><term>lapsus</term></index> vim</lem><note type="lemma-abbrev">ascendet</note><rdg wit="#L" n="1"> vi lap </rdg><rdg wit="#L" n="2"> per ipsam sui lapsus<index indexName="Sachverzeichnis"><term>lapsus</term></index> vim <hi rendition="#i">L</hi> </rdg></app> in alia corpora transditam.</p><p xml:id="Ch18.p19">Sed demonstratio hujus rei altior est, quod scilicet tam est facile attollere centum libras ad unam leucam, quam unam libram ad 100 leucas, tantundem enim effectus consecuta est rerum natura.<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Zwischen den Zeilen, gestrichen:</hi> Maxima pars hominum rudibus damnata tenebris.</note></p><p xml:id="Ch18.p20">Itaque in motibus illis universalibus infatigatis, ubi semper effectum suum quantum fieri potest, consequitur rerum natura.<lb/></p><figure rendition="#inline-margin-left" xml:id="Ch18.fig1_1">
-        <graphic rendition="#c" url="./images/lh0351303_035r-d5.svg" width="86.724pt" xml:id="Ch18.g1"/>
-        
-        <head xml:id="Ch18.fig1_2" rendition="#c">[<hi rendition="#i">Fig. 5</hi>]</head>
-      </figure></div></div></body>
-  </text>
+<app type="Cfootnote">
+<lem type="main">Vir quidam</lem>
+<note type="editorial">
+<hi rendition="#k">E. Mariotte</hi>,<bibl corresp="#bib_00311">
+<hi rendition="#i">Traité de la percussion</hi>, Paris 1673, S. 257f.</bibl>
+</note>
+</app>
+nostris temporibus,<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Mariotte</hi>, Edme, Seigneur de Chazeuil ca. 1620-1684</term>
+</index>
+in experimentis<index indexName="Sachverzeichnis">
+<term>experimentum</term>
+</index> inveniendis et explicandis
+<app type="Bfootnote">
+<lem type="main">ingeniosissimus, sentit</lem>
+<note type="lemma-abbrev">ingeniosissimus</note>
+<rdg wit="#L" n="1"> credit </rdg>
+<rdg wit="#L" n="2"> sentit <hi rendition="#i">L</hi>
+</rdg>
+</app>
+guttam<index indexName="Sachverzeichnis">
+<term>gutta</term>
+</index> aquae lapsu<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> suo
+<app type="Bfootnote">
+<lem type="main">praecise cylindrum</lem>
+<note type="lemma-abbrev">praecise</note>
+<rdg wit="#L" n="1"> guttam </rdg>
+<rdg wit="#L" n="2"> cylindrum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+aquae sustinere ejus altitudinis, unde lapsa est, et ejusdem cum gutta<index indexName="Sachverzeichnis">
+<term>gutta</term>
+</index> basis,
+unde negat vim ictus<index indexName="Sachverzeichnis">
+<term>ictus</term>
+</index> esse infinitam, aut certe tam magnam quam faciunt.<!--  \hack{\newline\indent} 
+     \hackfor{\par}--></p>
+<p xml:id="Ch18.p14">Ego in hoc negotio investigando ita processi.</p>
+<figure rendition="#own-line_centered" xml:id="Ch18.p15">
+<graphic rendition="#c" url="./images/lh0351303_035r-d4.svg" style="trim:  0mm 0mm 0mm 0mm; clip: true" width="99.7326pt" xml:id="Ch18.p15.g1"/>
+
+<head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]
+</head>
+</figure>
+<pb type="VIII_2" n="163"/>
+<p xml:id="Ch18.p16" rendition="#noindent">Fingatur catena <app type="Bfootnote">
+<lem type="main">globorum contiguorum</lem>
+<note type="lemma-abbrev">catena</note>
+<rdg wit="#L" n="1"> corporum ita </rdg>
+<rdg wit="#L" n="2"> globorum contiguorum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">AB</hi> unde summa <hi rendition="#i">C</hi>, cadens in patinam <hi rendition="#i">D</hi>, ope chordae <hi rendition="#i">DE</hi> circa trochleam <hi rendition="#i">E</hi>, faciat surgere catenam, et ipsa succedat in ultimae locum, summa autem rursus cadat succedatque in locum ipsius; patet inde sequi perennem motum<index indexName="Sachverzeichnis">
+<term>motus perennis</term>
+</index>. Quod est absurdum; patet
+ergo non posse tantam esse vim ictus<index indexName="Sachverzeichnis">
+<term>ictus</term>
+</index>, quantam sufficit ad elevandam eousque catenam, ut <app type="Bfootnote">
+<lem type="main">continuari possit</lem>
+<note type="lemma-abbrev">ut</note>
+<rdg wit="#L" n="1"> attollere possit </rdg>
+<rdg wit="#L" n="2"> continuari possit <hi rendition="#i">L</hi>
+</rdg>
+</app> ictus<index indexName="Sachverzeichnis">
+<term>ictus</term>
+</index>.<!--  \hack{\\\indent} 
+     \hackfor{\par}--></p>
+<p xml:id="Ch18.p17">Nimirum illud pro certo habendum est, solo lapsu<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> fieri non posse, ut corpus labens, aut aliud ei aequipollens altius attollatur, quam unde lapsum<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> est. Pone enim aequipollens altius attolli posse, sequitur ipsummet altius attolli posse; nam aequipollens altius sublatum cogatur in libram incidere, qua attollat datum; fiet, ut lapsus<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> solus corporis dati, causa sit ascensus in locum ipso lapsu<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> altiorem.</p>
+<p xml:id="Ch18.p18">Principium<index indexName="Sachverzeichnis">
+<term>principium</term>
+</index> hoc tum rationibus tum experimentis<index indexName="Sachverzeichnis">
+<term>experimentum</term>
+</index> confirmari potest; rationibus, quod natura non videatur agere contra se ipsam, experimento<index indexName="Sachverzeichnis">
+<term>experimentum</term>
+</index>, quod pendulum sibi permissum numquam ad altitudinem priorem reascendit; cum tamen summa sit libertas ipsi; multo minus corpus ad altiorem sibi locum ascendet <app type="Bfootnote">
+<lem type="main">per ipsam sui lapsus<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> vim</lem>
+<note type="lemma-abbrev">ascendet</note>
+<rdg wit="#L" n="1"> vi lap </rdg>
+<rdg wit="#L" n="2"> per ipsam sui lapsus<index indexName="Sachverzeichnis">
+<term>lapsus</term>
+</index> vim <hi rendition="#i">L</hi>
+</rdg>
+</app> in alia corpora transditam.</p>
+<p xml:id="Ch18.p19">Sed demonstratio hujus rei altior est, quod scilicet tam est facile attollere centum libras ad unam leucam, quam unam libram ad 100 leucas, tantundem enim effectus consecuta est rerum natura.<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Zwischen den Zeilen, gestrichen:</hi> Maxima pars hominum rudibus damnata tenebris.</note>
+</p>
+<p xml:id="Ch18.p20">Itaque in motibus illis universalibus infatigatis, ubi semper effectum suum quantum fieri potest, consequitur rerum natura.<lb/>
+</p>
+<figure rendition="#inline-margin-left" xml:id="Ch18.fig1_1">
+<graphic rendition="#c" url="./images/lh0351303_035r-d5.svg" width="86.724pt" xml:id="Ch18.g1"/>
+
+<head xml:id="Ch18.fig1_2" rendition="#c">[<hi rendition="#i">Fig. 5</hi>]
+</head>
+</figure>
+</div>
+</div>
+</body>
+</text>
 </TEI>

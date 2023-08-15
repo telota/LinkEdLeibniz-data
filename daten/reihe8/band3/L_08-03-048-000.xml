@@ -1,22 +1,142 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-048-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-048-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De Compositione Motuum Sive De Corporibus Concurrentibus In Navi Progrediente</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2022</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De Compositione Motuum Sive De Corporibus Concurrentibus In Navi Progrediente</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2022</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="48">De Compositione Motuum Sive De Corporibus Concurrentibus In Navi Progrediente</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1677-06-10" resp="#L" cert="high">10. (20.) Juni 1677</date><date calendar="#gregorian" notAfter="1677-06-10" resp="#L" cert="high"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=494</idno></idno></analytic><monogr><title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2021</date></imprint><biblScope unit="page" from="460" to="467"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-03-048-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 5 Bl. 191–192</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#konzept-entwurf"><summary><p>Konzept:
+            </author>
+            <title type="chapter" level="a" n="48">De Compositione Motuum Sive De Corporibus Concurrentibus In Navi Progrediente</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1677-06-10" resp="#L" cert="high">10. (20.) Juni 1677</date>
+            <date calendar="#gregorian" notAfter="1677-06-10" resp="#L" cert="high"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=494</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2021</date>
+            </imprint>
+            <biblScope unit="page" from="460" to="467"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-03-048-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 5 Bl. 191–192</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+                <summary>
+                  <p>Konzept:
 LH XXXVII 5 Bl. 191–192.
 Ein Bogen 4<hi rendition="#sup">o</hi>; Ränder beschnitten; Papiererhaltungsmaßnahmen.
-Vier Seiten.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness><witness n="E"><msDesc><msIdentifier><collection>Leibniz-Bibliographie</collection><idno type="Laufende-Nummer">XXX</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#veroeffentlichung_unselbstaendig"><summary><p><hi rendition="#k">Fichant</hi> 1994, S. 375–378<ref corresp="#bib_01056"/>.</p></summary></msContents><physDesc><objectDesc form="Druck"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-E"/></history></msDesc></witness></listWit>
+Vier Seiten.</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+          <witness n="E">
+            <msDesc>
+              <msIdentifier>
+                <collection>Leibniz-Bibliographie</collection>
+                <idno type="Laufende-Nummer">XXX</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#veroeffentlichung_unselbstaendig">
+                <summary>
+                  <p>
+                    <hi rendition="#k">Fichant</hi> 1994, S. 375–378<ref corresp="#bib_01056"/>
+.</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Druck"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-E"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -97,24 +217,125 @@ Vier Seiten.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/
         <!-- Sonderzeichen MIT Unicodeentsprechung -->
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#stoss"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2023-02-20" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2023-02-20" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-048-000_facs-haupttextzeuge"><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=588"/><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=590"/><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=591"/><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=593"/></facsimile><text xml:id="L_08-03-048-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch48" n="48"><head>48
+  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-048-000_facs-haupttextzeuge">
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=588"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=590"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=591"/>
+    <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=593"/>
+  </facsimile>
+  <text xml:id="L_08-03-048-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch48" n="48">
+        <head>48
 DE COMPOSITIONE MOTUUM SIVE DE CORPORIBUS CONCURRENTIBUS IN NAVI PROGREDIENTE</head>
-      <head>10. (20.) Juni 1677</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 5 Bl. 191–192</idno></msIdentifier><msContents><summary><p>Konzept:
+        <head>10. (20.) Juni 1677</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur">LH XXXVII 5 Bl. 191–192</idno>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Konzept:
 LH XXXVII 5 Bl. 191–192.
 Ein Bogen 4<hi rendition="#sup">o</hi>; Ränder beschnitten; Papiererhaltungsmaßnahmen.
-Vier Seiten.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin/></history></msDesc></witness><witness><msDesc><msIdentifier><collection>Leibniz-Bibliographie</collection><idno type="Laufende-Nummer">XXX</idno></msIdentifier><msContents><summary><p><hi rendition="#k">Fichant</hi> 1994, S. 375–378<ref corresp="#bib_01056"/>.</p></summary></msContents><physDesc><objectDesc form="Druck"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch48.p1"><anchor xml:id="_57269"/>
-<anchor xml:id="RK57269"/><!--  \hackfor{\par} --></p><p xml:id="Ch48.p5"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
-Sowohl das vorliegende Konzept als auch N. <ref corresp="L_chapter_49.xml#RK57270"/> sind eigh. auf den 10. (20.) Juni 1677 datiert.
-Der Großteil von N. <ref corresp="#RK57269"/> ist der Einführung und Besprechung der Schiffsanalogie als
+Vier Seiten.</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <collection>Leibniz-Bibliographie</collection>
+                    <idno type="Laufende-Nummer">XXX</idno>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>
+                        <hi rendition="#k">Fichant</hi> 1994, S. 375–378<ref corresp="#bib_01056"/>
+.</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Druck"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch48.p1">
+            <anchor xml:id="_57269"/>
+            <anchor xml:id="RK57269"/>
+            <!--  \hackfor{\par} --></p>
+          <p xml:id="Ch48.p5">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi>
+Sowohl das vorliegende Konzept als auch N. <ref corresp="L_chapter_49.xml#RK57270"/>
+ sind eigh. auf den 10. (20.) Juni 1677 datiert.
+Der Großteil von N. <ref corresp="#RK57269"/>
+ ist der Einführung und Besprechung der Schiffsanalogie als
 Hilfsmittel zur Stoßanalyse gewidmet.
-Leibniz bezieht sich in N. <ref corresp="L_chapter_49.xml#RK57270"/> ausdrücklich auf diese Analogie
-(siehe bspw. S. <ref corresp="L_chapter_49.xml#_37_05_157-158_5a"/>),
+Leibniz bezieht sich in N. <ref corresp="L_chapter_49.xml#RK57270"/>
+ ausdrücklich auf diese Analogie
+(siehe bspw. S. <ref corresp="L_chapter_49.xml#_37_05_157-158_5a"/>
+),
 die er dort allerdings nicht eigens einführt, sondern lediglich voraussetzt.
-Dieser Umstand lässt auf die spätere Entstehung von N. <ref corresp="L_chapter_49.xml#RK57270"/> gegenüber N. <ref corresp="#RK57269"/> schließen.</hi></p></div><div type="text"><p xml:id="Ch48.p6"><hi rendition="#smaller">Die Analogie des fahrenden Schiffs, auf dem zwei Körper zusammenstoßen und das vom Ufer aus betrachtet wird,
+Dieser Umstand lässt auf die spätere Entstehung von N. <ref corresp="L_chapter_49.xml#RK57270"/>
+ gegenüber N. <ref corresp="#RK57269"/>
+ schließen.</hi>
+</p>
+</div>
+<div type="text">
+<p xml:id="Ch48.p6">
+  <hi rendition="#smaller">Die Analogie des fahrenden Schiffs, auf dem zwei Körper zusammenstoßen und das vom Ufer aus betrachtet wird,
 bietet erstens eine empirische Bestätigung des Relativitätsprinzips, dem beim elastischen Stoß folgende Annahme entspricht:
 Bei einem beliebigen geraden Stoß zweier gleichförmig bewegter Körper
 kann die gemeinsame (gleichförmige) Bewegung des Systems, d.h. die des gemeinsamen Schwerpunkts,
@@ -127,286 +348,1424 @@ erhält man immer einen einfachen Stoßfall, in dem die Geschwindigkeiten der K�
 und dessen Ausgang der Austausch ihrer Impulse ist.
 Die resultierende Bewegung kann anschließend wieder mit der des Schwerpunkts (bzw. Schiffes) zusammengesetzt werden,
 um die Geschwindigkeiten der Körper nach dem Stoß zu erhalten
-(in der Analogie: Man beobachtet den Stoß auf dem Schiff vom Ufer aus).</hi></p><p xml:id="Ch48.p7"><hi rendition="#smaller">Das vorliegende Konzept ist eins der frühesten bekannten Texten, in denen Leibniz die Schiffsanalogie einführt,
+(in der Analogie: Man beobachtet den Stoß auf dem Schiff vom Ufer aus).</hi>
+</p>
+<p xml:id="Ch48.p7">
+  <hi rendition="#smaller">Das vorliegende Konzept ist eins der frühesten bekannten Texten, in denen Leibniz die Schiffsanalogie einführt,
 sie ausführlich anwendet,
 und sich mit ihrer theoretischen Grundlage
 (dem Relativitätsprinzip bzw. der Zusammensetzung von Bewegungen) kritisch auseinandersetzt.
-(<?tex-source \phantom{)}?>Ähnliche Ausführungen bietet das Stück <hi rendition="#i">LSB</hi> VI, 3 N. 6,
+(    <?tex-source \phantom{)}?>Ähnliche Ausführungen bietet das Stück    <hi rendition="#i">LSB</hi> VI, 3 N. 6,
 das wahrscheinlich zwischen 1673 und 1676, vielleicht aber erst in der Hannoveraner Zeit entstand;
 siehe auch die auf den Zeitraum 1677 bis Winter 1680/81 datierbaren Konzepte
-<hi rendition="#i">LSB</hi> VI, 4 N. 359 und N. 362.<?tex-source \phantom{(}?>)
+    <hi rendition="#i">LSB</hi> VI, 4 N. 359 und N. 362.    <?tex-source \phantom{(}?>)
 Der Ansatz ist nicht originell,
-sondern war Leibniz mit Sicherheit bereits aus den Publikationen von <index indexName="Personen"><term><hi rendition="#g #smaller">Wallis</hi> <hi rendition="#smaller">(Wallisius), John 1616–1703</hi></term></index>Wallis und <index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index>Mariotte
+sondern war Leibniz mit Sicherheit bereits aus den Publikationen von    <index indexName="Personen">
+      <term>
+        <hi rendition="#g #smaller">Wallis</hi>
+        <hi rendition="#smaller">(Wallisius), John 1616–1703</hi>
+      </term>
+    </index>Wallis und <index indexName="Personen">
+    <term>
+      <hi rendition="#g #smaller">Mariotte</hi>
+      <hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+    </term>
+  </index>Mariotte
 bekannt, die er in Paris gelesen und exzerpiert hatte
-(siehe <ref corresp="#bib_01292"/><hi rendition="#i">LSB</hi> VIII, 2 N. 50 und <ref corresp="#bib_01343"/><hi rendition="#i">LSB</hi> VIII, 2 N. 8, bes. S. 82–93).
+(siehe <ref corresp="#bib_01292"/>
+<hi rendition="#i">LSB</hi> VIII, 2 N. 50 und <ref corresp="#bib_01343"/>
+<hi rendition="#i">LSB</hi> VIII, 2 N. 8, bes. S. 82–93).
 Beide Autoren waren nach dieser Methode verfahren und hatten ihre Annahmen mithilfe der Schiffsanalogie veranschaulicht:
-siehe <index indexName="Personen"><term><hi rendition="#g #smaller">Wallis</hi> <hi rendition="#smaller">(Wallisius), John 1616–1703</hi></term></index><hi rendition="#k">J. Wallis</hi>,
-<ref corresp="#bib_00301"/><hi rendition="#i">Mechanica</hi>, London 1670–1671, Pars III, Cap. XI, Prop. VIII und Scholium, S. 669f. (<ref corresp="#bib_01008"/><hi rendition="#i">WO</hi> I, S. 1007f.) und
-<index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index><hi rendition="#k">E. Mariotte</hi>, <ref corresp="#bib_00311"/><hi rendition="#i">Traité de la percussion</hi>, Première Partie, Prop. III (Second principe d’experience), S. 25–29.</hi></p><p xml:id="Ch48.p8"><hi rendition="#smaller">Mindestens ebenso wichtig waren das Relativitätsprinzip und die Schiffsanalogie für Huygens’ Herleitung der Stoßgesetze gewesen;
-sie liegen der Abhandlung <ref corresp="#bib_00530"/>„De motu corporum ex percussione” (<hi rendition="#i">HO</hi> XVI, S. 29–91)
+siehe <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Wallis</hi>
+<hi rendition="#smaller">(Wallisius), John 1616–1703</hi>
+</term>
+</index>
+<hi rendition="#k">J. Wallis</hi>,
+<ref corresp="#bib_00301"/>
+<hi rendition="#i">Mechanica</hi>, London 1670–1671, Pars III, Cap. XI, Prop. VIII und Scholium, S. 669f. (<ref corresp="#bib_01008"/>
+<hi rendition="#i">WO</hi> I, S. 1007f.) und
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index>
+<hi rendition="#k">E. Mariotte</hi>,<ref corresp="#bib_00311"/>
+<hi rendition="#i">Traité de la percussion</hi>, Première Partie, Prop. III (Second principe d’experience), S. 25–29.</hi>
+</p>
+<p xml:id="Ch48.p8">
+<hi rendition="#smaller">Mindestens ebenso wichtig waren das Relativitätsprinzip und die Schiffsanalogie für Huygens’ Herleitung der Stoßgesetze gewesen;
+sie liegen der Abhandlung <ref corresp="#bib_00530"/>
+„De motu corporum ex percussione” (<hi rendition="#i">HO</hi> XVI, S. 29–91)
 und dem Aufsatz
-<ref corresp="#bib_02037"/>„De motu corporum ex mutuo impulsu hypothesis” (<ref corresp="#bib_00113"/><hi rendition="#i">HO</hi> VI, Nr. 1693, S. 336–343)
+<ref corresp="#bib_02037"/>
+„De motu corporum ex mutuo impulsu hypothesis” (<ref corresp="#bib_00113"/>
+<hi rendition="#i">HO</hi> VI, Nr. 1693, S. 336–343)
 zugrunde, die spätestens um 1669 abgeschlossen (siehe <hi rendition="#i">HO</hi> XVI, S. 10–14),
 aber zum Zeitpunkt der Abfassung des vorliegenden Konzepts
 unveröffentlicht waren.
-<ref corresp="#bib_00530"/>„De motu” erschien erst 1703
-(<?tex-source \phantom{)}?>in den <ref corresp="#bib_02076"/><hi rendition="#i">Opuscula postuma</hi>,
-<pb type="L"/>hrsg. von <index indexName="Personen"><term><hi rendition="#g #smaller">Volder</hi> <hi rendition="#smaller">(Volter, Wolder), Burchard (Burcher) de 1643–1709</hi></term></index>B. De Volder
-und <index indexName="Personen"><term><hi rendition="#g #smaller">Fullenius</hi><hi rendition="#smaller">, Bernardus 1640–1707</hi></term></index>B. Fullenius, Leiden 1703,
+<ref corresp="#bib_00530"/>
+„De motu” erschien erst 1703
+(<?tex-source \phantom{)}?>in den<ref corresp="#bib_02076"/>
+<hi rendition="#i">Opuscula postuma</hi>,
+<pb type="L"/>
+hrsg. von <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Volder</hi>
+<hi rendition="#smaller">(Volter, Wolder), Burchard (Burcher) de 1643–1709</hi>
+</term>
+</index>B. De Volder
+und <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Fullenius</hi>
+<hi rendition="#smaller">, Bernardus 1640–1707</hi>
+</term>
+</index>B. Fullenius, Leiden 1703,
 S. 367–398<?tex-source \phantom{(}?>),
 während die „Hypothesis” weiterhin ungedruckt blieb.
 Zwar hatte Huygens letzteren Aufsatz für die Publikation vorgesehen und
-am 5. Januar 1669 bei der <hi rendition="#i">Royal Society</hi> in Beantwortung der Frage nach den Stoßgesetzen eingereicht,
-doch erhielt <index indexName="Personen"><term><hi rendition="#g #smaller">Oldenburg</hi> <hi rendition="#smaller">(Grubendol), Heinrich 1618–1677</hi></term></index>H. Oldenburg den Text
-nicht rechtzeitig und konnte ihn nicht neben den Antworten von <index indexName="Personen"><term><hi rendition="#g #smaller">Wallis</hi> <hi rendition="#smaller">(Wallisius), John 1616–1703</hi></term></index><ref corresp="#bib_01065"/>Wallis und <index indexName="Personen"><term><hi rendition="#g #smaller">Wren</hi> <hi rendition="#smaller">(Wrennus), Christopher 1632–1723</hi></term></index><ref corresp="#bib_01066"/>Wren
-(<ref corresp="#bib_00158"/><hi rendition="#i">PT</hi> III, Januar 1669, S. 864–866 und S. 867f.)
+am 5. Januar 1669 bei der<hi rendition="#i">Royal Society</hi> in Beantwortung der Frage nach den Stoßgesetzen eingereicht,
+doch erhielt <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Oldenburg</hi>
+<hi rendition="#smaller">(Grubendol), Heinrich 1618–1677</hi>
+</term>
+</index>H. Oldenburg den Text
+nicht rechtzeitig und konnte ihn nicht neben den Antworten von <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Wallis</hi>
+<hi rendition="#smaller">(Wallisius), John 1616–1703</hi>
+</term>
+</index>
+<ref corresp="#bib_01065"/>
+Wallis und <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Wren</hi>
+<hi rendition="#smaller">(Wrennus), Christopher 1632–1723</hi>
+</term>
+</index>
+<ref corresp="#bib_01066"/>
+Wren
+(<ref corresp="#bib_00158"/>
+<hi rendition="#i">PT</hi> III, Januar 1669, S. 864–866 und S. 867f.)
 drucken (siehe <hi rendition="#i">HO</hi> XVI, S. 171–178 und <hi rendition="#i">HO</hi> VI, S. 334f.).
-Daraufhin publizierte Huygens zwei stark gekürzte Fassungen der „Hypothesis” (<?tex-source \phantom{)}?><ref corresp="#bib_00529"/>„Regles du mouvement dans la rencontre des corps”, <ref corresp="#bib_00157"/><hi rendition="#i">JS</hi>, Pariser Ausgabe, 18. März 1669, S. 22–24 und „A summary account of the laws of motion”, <ref corresp="#bib_00158"/><hi rendition="#i">PT</hi> IV, April 1669, S. 925–928<?tex-source \phantom{(}?>),
+Daraufhin publizierte Huygens zwei stark gekürzte Fassungen der „Hypothesis” (<?tex-source \phantom{)}?>
+<ref corresp="#bib_00529"/>
+„Regles du mouvement dans la rencontre des corps”, <ref corresp="#bib_00157"/>
+<hi rendition="#i">JS</hi>, Pariser Ausgabe, 18. März 1669, S. 22–24 und „A summary account of the laws of motion”, <ref corresp="#bib_00158"/>
+<hi rendition="#i">PT</hi> IV, April 1669, S. 925–928<?tex-source \phantom{(}?>),
 in denen er sich auf eine knappe Darstellung der Ergebnisse beschränkte,
 ohne Hinweise auf ihre Herleitung aus dem Relativitätsprinzip zu geben.
 Leibniz hat beide Artikel exzerpiert
-(siehe N. <ref corresp="L_section_421.xml#RK57267-2"/> von März–Mai 1677 bzw. <ref corresp="#bib_02025"/><hi rendition="#i">LSB</hi> VI, 2 N. 38<hi rendition="#sub">1</hi>).
-Er assoziiert bereits um 1677 die äquivalenten Stoßregeln von <index indexName="Personen"><term><hi rendition="#g #smaller">Wallis</hi> <hi rendition="#smaller">(Wallisius), John 1616–1703</hi></term></index>Wallis, <index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index>Mariotte und <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens
-primär mit letzterem Autor und nennt sie zuweilen schlicht „regulae Hugenianae” (bspw. auf S. <ref corresp="#_37_05_191-192_4a"/> oder in N. <ref corresp="L_chapter_46.xml#RK57274"/> und N. <ref corresp="L_chapter_53.xml#RK57276"/>).
-Noch Jahre später spricht er <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens die Urheberschaft der Stoßgesetze
+(siehe N.<ref corresp="L_section_421.xml#RK57267-2"/>
+ von März–Mai 1677 bzw. <ref corresp="#bib_02025"/>
+<hi rendition="#i">LSB</hi> VI, 2 N. 38<hi rendition="#sub">1</hi>).
+Er assoziiert bereits um 1677 die äquivalenten Stoßregeln von <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Wallis</hi>
+<hi rendition="#smaller">(Wallisius), John 1616–1703</hi>
+</term>
+</index>Wallis, <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index>Mariotte und <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Huygens</hi>
+<hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi>
+</term>
+</index>Huygens
+primär mit letzterem Autor und nennt sie zuweilen schlicht „regulae Hugenianae” (bspw. auf S. <ref corresp="#_37_05_191-192_4a"/>
+ oder in N. <ref corresp="L_chapter_46.xml#RK57274"/>
+ und N. <ref corresp="L_chapter_53.xml#RK57276"/>
+).
+Noch Jahre später spricht er <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Huygens</hi>
+<hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi>
+</term>
+</index>Huygens die Urheberschaft der Stoßgesetze
 wie auch der Schiffsanalogie zu: Der
-Brief an <index indexName="Personen"><term><hi rendition="#g #smaller">Le Bovier de Fontenelle</hi><hi rendition="#smaller">, Bernard 1657–1757</hi></term></index>Fontenelle vom 6. Januar 1703
+Brief an <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Le Bovier de Fontenelle</hi>
+<hi rendition="#smaller">, Bernard 1657–1757</hi>
+</term>
+</index>Fontenelle vom 6. Januar 1703
 enthält eine Bemerkung über die anerkannte Stoßregel, „que dernierement un homme ingenieux chez vous
-[d.h. <index indexName="Personen"><term><hi rendition="#g #smaller">Parent</hi><hi rendition="#smaller">, Antoine 1666–1716</hi></term></index>Antoine Parent] a expliquée comme M. Hugens par la methode du bateau” (LBr 68 Bl. 139–140; erscheint in <hi rendition="#i">LSB</hi> II, 4).
+[d.h. <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Parent</hi>
+<hi rendition="#smaller">, Antoine 1666–1716</hi>
+</term>
+</index>Antoine Parent] a expliquée comme M. Hugens par la methode du bateau” (LBr 68 Bl. 139–140; erscheint in <hi rendition="#i">LSB</hi> II, 4).
 Zu diesem Zeitpunkt war die posthume Ausgabe von „De motu” noch nicht erschienen;
-ein von <index indexName="Personen"><term><hi rendition="#g #smaller">Volder</hi> <hi rendition="#smaller">(Volter, Wolder), Burchard (Burcher) de 1643–1709</hi></term></index>De Volder für Leibniz bestimmtes Exemplar
+ein von <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Volder</hi>
+<hi rendition="#smaller">(Volter, Wolder), Burchard (Burcher) de 1643–1709</hi>
+</term>
+</index>De Volder für Leibniz bestimmtes Exemplar
 (<hi rendition="#i">GWLB</hi>, Nm-A 403, mit Leibnizens Marginalien) erreichte ihn erst im Sommer über
-<index indexName="Personen"><term><hi rendition="#g #smaller">Mencke</hi> <hi rendition="#smaller">(Menken, Menkenius, Menque), Otto 1644–1707</hi></term></index>O. Mencke
-(<?tex-source \phantom{)}?>siehe den Brief an Johann Bernoulli vom 3. Juli 1703: Basel <hi rendition="#i">Universitätsbibl</hi>. L Ia 19 Bl. 205–206; der Brief erscheint in <hi rendition="#i">LSB</hi> III, 9<?tex-source \phantom{(}?>).</hi></p><p xml:id="Ch48.p9"><hi rendition="#smaller">Über die Möglichkeit von Leibniz’ Kenntnis der Huygens’schen Thesen zur Zeit der Abfassung
-von N. <ref corresp="#RK57269"/> kann folgendes festgestellt werden.
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mencke</hi>
+<hi rendition="#smaller">(Menken, Menkenius, Menque), Otto 1644–1707</hi>
+</term>
+</index>O. Mencke
+(<?tex-source \phantom{)}?>siehe den Brief an Johann Bernoulli vom 3. Juli 1703: Basel<hi rendition="#i">Universitätsbibl</hi>. L Ia 19 Bl. 205–206; der Brief erscheint in <hi rendition="#i">LSB</hi> III, 9<?tex-source \phantom{(}?>).</hi>
+</p>
+<p xml:id="Ch48.p9">
+<hi rendition="#smaller">Über die Möglichkeit von Leibniz’ Kenntnis der Huygens’schen Thesen zur Zeit der Abfassung
+von N. <ref corresp="#RK57269"/>
+ kann folgendes festgestellt werden.
 Es gibt keine Belege für eine Leibniz’sche Lektüre der beiden unveröffentlichten Werke bis 1677;
-der rege persönliche Austausch zwischen <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens und ihm in Paris<index indexName="Orte"><term><hi rendition="#smaller">Paris</hi></term></index> ist bekannt;
+der rege persönliche Austausch zwischen <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Huygens</hi>
+<hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi>
+</term>
+</index>Huygens und ihm in Paris<index indexName="Orte">
+<term>
+<hi rendition="#smaller">Paris</hi>
+</term>
+</index> ist bekannt;
 aus dem Zeitraum Juli 1676 bis Mitte September 1679 sind keine Briefe erhalten.
 Auch unabhängig von der Lektüre der Manuskripte könnte Leibniz auf einem zusätzlichem Wege
-von <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’ Thesen erfahren haben: Diese dürften nach seinen Vorträgen über die Stoßlehre
+von <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Huygens</hi>
+<hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi>
+</term>
+</index>Huygens’ Thesen erfahren haben: Diese dürften nach seinen Vorträgen über die Stoßlehre
 von Januar 1668 in der Académie des Sciences (siehe <hi rendition="#i">HO</hi> XVI, S. 182–186)
 in Pariser Gelehrtenkreisen bekannt gewesen sein.
-Tatsächlich unterstellte <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens <index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index>Mariotte,
+Tatsächlich unterstellte <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Huygens</hi>
+<hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi>
+</term>
+</index>Huygens <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index>Mariotte,
 sich die wichtigsten Ideen und Ergebnisse, „quae in consessu Eruditorum in Bibliotheca Regia adductis demonstrationibus comprobaveram”,
 angeeignet und den <hi rendition="#i">Traité</hi> von 1673 ganz auf ihrer Grundlage gebaut zu haben.
 Noch um 1704 wird Leibniz mit ähnlichen Argumenten seinen Vorwurf eines Huygens-Plagiats gegen
-<index indexName="Personen"><term><hi rendition="#g #smaller">Parent</hi><hi rendition="#smaller">, Antoine 1666–1716</hi></term></index>A. Parents <ref corresp="#bib_01500"/><hi rendition="#i">Élémens</hi> von 1700
-begründen (<?tex-source \phantom{)}?>siehe die editorische Vorbemerkung zu N. <ref corresp="L_chapter_77.xml#Parent_intro"/><?tex-source \phantom{(}?>).
-Es kann davon ausgegangen werden, dass Leibniz von <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’ Académie-Vorträgen und von der Verbreitung seiner Thesen wusste;
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Parent</hi>
+<hi rendition="#smaller">, Antoine 1666–1716</hi>
+</term>
+</index>A. Parents <ref corresp="#bib_01500"/>
+<hi rendition="#i">Élémens</hi> von 1700
+begründen (<?tex-source \phantom{)}?>siehe die editorische Vorbemerkung zu N.<ref corresp="L_chapter_77.xml#Parent_intro"/>
+<?tex-source \phantom{(}?>).
+Es kann davon ausgegangen werden, dass Leibniz von<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Huygens</hi>
+<hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi>
+</term>
+</index>Huygens’ Académie-Vorträgen und von der Verbreitung seiner Thesen wusste;
 möglicherweise war er auch über die Inhalte informiert.
-Abschließend kann festgehalten werden, dass eine Kenntnis der <index indexName="Personen"><term><hi rendition="#g #smaller">Huygens</hi> <hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi></term></index>Huygens’schen Hypothesen und seiner (Schiffs-)Methode
-als Quelle von N. <ref corresp="#RK57269"/> nicht angenommen werden muss,
-sie aber aus den genannten Gründen nicht auszuschließen ist.</hi></p><p rendition="#noindent" xml:id="Ch48.p10"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=588"><pb type="L"/><fw type="folNum">[191 r<hi rendition="#sup">o</hi>]</fw></ref></p><p xml:id="Ch48.p11">10 Junius 1677</p><figure rendition="#own-line_centered" xml:id="Ch48.p12"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_191-192_d1_191r.svg" width="303.534pt" xml:id="Ch48.p12.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head></figure><p rendition="#noindent" xml:id="Ch48.p13">Tutum non est uti motuum compositionibus,<index indexName="Sachen"><term>compositio motuum</term></index> quod hoc
-exemplo ostendam. Sit navicula<index indexName="Sachen"><term>navicula</term></index> <hi rendition="#i">AB</hi> in aqua labens
-secundo flumine,<index indexName="Sachen"><term>flumen</term></index> ita ut si e ripa<index indexName="Sachen"><term>ripa</term></index> immota <hi rendition="#i">EFG</hi> spectetur
-transferatur <hi rendition="#i">AB</hi> ex <hi rendition="#i">EF</hi> in <hi rendition="#i">FG</hi>. Sit in navicula<index indexName="Sachen"><term>navicula</term></index> corpus <hi rendition="#i">C</hi>, quod
-eadem celeritate moveatur a prora navis<index indexName="Sachen"><term>navis</term></index> <hi rendition="#i">B</hi>, ad puppim, directe, qua
-navis<index indexName="Sachen"><term>navis</term></index> in flumine<index indexName="Sachen"><term>flumen</term></index> procedit, patet ergo cum navis<index indexName="Sachen"><term>navis</term></index> ex
+Abschließend kann festgehalten werden, dass eine Kenntnis der <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Huygens</hi>
+<hi rendition="#smaller">(Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</hi>
+</term>
+</index>Huygens’schen Hypothesen und seiner (Schiffs-)Methode
+als Quelle von N. <ref corresp="#RK57269"/>
+ nicht angenommen werden muss,
+sie aber aus den genannten Gründen nicht auszuschließen ist.</hi>
+</p>
+<p rendition="#noindent" xml:id="Ch48.p10">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=588">
+<pb type="L"/>
+<fw type="folNum">[191 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</p>
+<p xml:id="Ch48.p11">10 Junius 1677</p>
+<figure rendition="#own-line_centered" xml:id="Ch48.p12">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_191-192_d1_191r.svg" width="303.534pt" xml:id="Ch48.p12.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch48.p13">Tutum non est uti motuum compositionibus,<index indexName="Sachen">
+<term>compositio motuum</term>
+</index> quod hoc
+exemplo ostendam. Sit navicula<index indexName="Sachen">
+<term>navicula</term>
+</index>
+<hi rendition="#i">AB</hi> in aqua labens
+secundo flumine,<index indexName="Sachen">
+<term>flumen</term>
+</index> ita ut si e ripa<index indexName="Sachen">
+<term>ripa</term>
+</index> immota <hi rendition="#i">EFG</hi> spectetur
+transferatur <hi rendition="#i">AB</hi> ex <hi rendition="#i">EF</hi> in <hi rendition="#i">FG</hi>. Sit in navicula<index indexName="Sachen">
+<term>navicula</term>
+</index> corpus <hi rendition="#i">C</hi>, quod
+eadem celeritate moveatur a prora navis<index indexName="Sachen">
+<term>navis</term>
+</index>
+<hi rendition="#i">B</hi>, ad puppim, directe, qua
+navis<index indexName="Sachen">
+<term>navis</term>
+</index> in flumine<index indexName="Sachen">
+<term>flumen</term>
+</index> procedit, patet ergo cum navis<index indexName="Sachen">
+<term>navis</term>
+</index> ex
 <hi rendition="#i">EF</hi> venit
 in <hi rendition="#i">FG</hi>,
-<app type="Bfootnote"><lem type="main">corpus <hi rendition="#i">C</hi></lem><note type="lemma-abbrev">corpus</note><rdg wit="#L" n="1"> <hi rendition="#i">B</hi> </rdg><rdg wit="#L" n="2"> <hi rendition="#i">C</hi> <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">corpus <hi rendition="#i">C</hi>
+</lem>
+<note type="lemma-abbrev">corpus</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">B</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">C</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
 ex <hi rendition="#i">B</hi> venisse in <hi rendition="#i">A</hi>. Jam antea <hi rendition="#i">B</hi> respondebat
 puncto immobili <hi rendition="#i">F</hi> in ripa, nunc <hi rendition="#i">A</hi>, respondet eidem, ergo
-<app type="Bfootnote"><lem type="main">corpus <hi rendition="#i">C</hi> adhuc</lem><note type="lemma-abbrev">corpus <hi rendition="#i">C</hi></note><rdg wit="#L" n="1"> semper </rdg><rdg wit="#L" n="2"> adhuc <hi rendition="#i">L</hi></rdg></app>
-ipsi <hi rendition="#i">F</hi> respondet, ac proinde ex ripa<index indexName="Sachen"><term>ripa</term></index> spectanti
+<app type="Bfootnote">
+<lem type="main">corpus <hi rendition="#i">C</hi> adhuc</lem>
+<note type="lemma-abbrev">corpus <hi rendition="#i">C</hi>
+</note>
+<rdg wit="#L" n="1"> semper </rdg>
+<rdg wit="#L" n="2"> adhuc <hi rendition="#i">L</hi>
+</rdg>
+</app>
+ipsi <hi rendition="#i">F</hi> respondet, ac proinde ex ripa<index indexName="Sachen">
+<term>ripa</term>
+</index> spectanti
 motu carere videbitur. Quaeritur jam an absolute
-loquendo motus<index indexName="Sachen"><term>motus</term></index> aliquis corpori <hi rendition="#i">C</hi> tribuendus
-<app type="Bfootnote"><lem type="main">sit: et</lem><note type="lemma-abbrev">sit:</note><rdg wit="#L" n="1"> videtur enim reapse </rdg><rdg wit="#L" n="2"> et <hi rendition="#i">L</hi></rdg></app>
+loquendo motus<index indexName="Sachen">
+<term>motus</term>
+</index> aliquis corpori <hi rendition="#i">C</hi> tribuendus
+<app type="Bfootnote">
+<lem type="main">sit: et</lem>
+<note type="lemma-abbrev">sit:</note>
+<rdg wit="#L" n="1"> videtur enim reapse </rdg>
+<rdg wit="#L" n="2"> et <hi rendition="#i">L</hi>
+</rdg>
+</app>
 videri potest reapse quiescere, cum eadem
 celeritate regrediatur,
 qua progreditur.
-<app type="Bfootnote"><lem type="main">Verum absolutum</lem><note type="lemma-abbrev">Verum</note><rdg wit="#L" n="1"> quia </rdg><rdg wit="#L" n="2"> absolutum <hi rendition="#i">L</hi></rdg></app>
-illud in motu,<index indexName="Sachen"><term>absolutum in motu</term></index> quod vim,<index indexName="Sachen"><term>vis</term></index> sive potentiam<index indexName="Sachen"><term>potentia</term></index> voco, spectanti
-omnino dicendum est moveri, et quidem duplici contrarioque motu,<index indexName="Sachen"><term>motus duplex et contrarius</term></index>
+<app type="Bfootnote">
+<lem type="main">Verum absolutum</lem>
+<note type="lemma-abbrev">Verum</note>
+<rdg wit="#L" n="1"> quia </rdg>
+<rdg wit="#L" n="2"> absolutum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+illud in motu,<index indexName="Sachen">
+<term>absolutum in motu</term>
+</index> quod vim,<index indexName="Sachen">
+<term>vis</term>
+</index> sive potentiam<index indexName="Sachen">
+<term>potentia</term>
+</index> voco, spectanti
+omnino dicendum est moveri, et quidem duplici contrarioque motu,<index indexName="Sachen">
+<term>motus duplex et contrarius</term>
+</index>
 ac proinde tantum abest ut quiescat, ut contra potius duplicatam
-habeat potentiam,<index indexName="Sachen"><term>potentia</term></index> quod sic ostendo: ponatur ipsi in navi<index indexName="Sachen"><term>navis</term></index> moto occurrere
-aliquod elaterium in navi fixum,<index indexName="Sachen"><term>elaterium in navi fixum</term></index> et
-<app type="Bfootnote"><lem type="main">hoc elaterium<index indexName="Sachen"><term>elaterium</term></index></lem><note type="lemma-abbrev">hoc</note><rdg wit="#L" n="1"> ab </rdg><rdg wit="#L" n="2"> elaterium <hi rendition="#i">L</hi></rdg></app>
+habeat potentiam,<index indexName="Sachen">
+<term>potentia</term>
+</index> quod sic ostendo: ponatur ipsi in navi<index indexName="Sachen">
+<term>navis</term>
+</index> moto occurrere
+aliquod elaterium in navi fixum,<index indexName="Sachen">
+<term>elaterium in navi fixum</term>
+</index> et
+<app type="Bfootnote">
+<lem type="main">hoc elaterium<index indexName="Sachen">
+<term>elaterium</term>
+</index>
+</lem>
+<note type="lemma-abbrev">hoc</note>
+<rdg wit="#L" n="1"> ab </rdg>
+<rdg wit="#L" n="2"> elaterium <hi rendition="#i">L</hi>
+</rdg>
+</app>
 ab eo tendi
-atque ita potentiam<index indexName="Sachen"><term>potentia</term></index> ipsius insumi, hoc facto in navi<index indexName="Sachen"><term>navis</term></index> quiescet,
-<app type="Bfootnote"><lem type="main">et nihilominus</lem><note type="lemma-abbrev">et</note><rdg wit="#L" n="1"> ponamus porro </rdg><rdg wit="#L" n="2"> nihilominus <hi rendition="#i">L</hi></rdg></app>
-motum cum navi exercebit, quasi pars ejus, ac potentiam<index indexName="Sachen"><term>potentia</term></index>
-navis<index indexName="Sachen"><term>navis</term></index> augebit, quoniam ejus pondus<index indexName="Sachen"><term>pondus</term></index> sive molem solidam<index indexName="Sachen"><term>molis solida</term></index> auget. Itaque
-si navis<index indexName="Sachen"><term>navis</term></index> inter procedendum in aliud
-	<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">corpus quiescens<index indexName="Sachen"><term>corpus quiescens</term></index> aequalis</add></lem><note type="lemma-abbrev">quiescens</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>
-	<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">ponderis ripae connexum<index indexName="Sachen"><term>corpus ripae connexum</term></index> impingat</add></lem><note type="lemma-abbrev">ripae connexum</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>,
-eique suam vim<index indexName="Sachen"><term>vis</term></index>
-<app type="Bfootnote"><lem type="main">tribuat, navis</lem><note type="lemma-abbrev">tribuat,</note><rdg wit="#L" n="1"> patet </rdg><rdg wit="#L" n="2"> navis <hi rendition="#i">L</hi></rdg></app>
+atque ita potentiam<index indexName="Sachen">
+<term>potentia</term>
+</index> ipsius insumi, hoc facto in navi<index indexName="Sachen">
+<term>navis</term>
+</index> quiescet,
+<app type="Bfootnote">
+<lem type="main">et nihilominus</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" n="1"> ponamus porro </rdg>
+<rdg wit="#L" n="2"> nihilominus <hi rendition="#i">L</hi>
+</rdg>
+</app>
+motum cum navi exercebit, quasi pars ejus, ac potentiam<index indexName="Sachen">
+<term>potentia</term>
+</index>
+navis<index indexName="Sachen">
+<term>navis</term>
+</index> augebit, quoniam ejus pondus<index indexName="Sachen">
+<term>pondus</term>
+</index> sive molem solidam<index indexName="Sachen">
+<term>molis solida</term>
+</index> auget. Itaque
+si navis<index indexName="Sachen">
+<term>navis</term>
+</index> inter procedendum in aliud
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">corpus quiescens<index indexName="Sachen">
+<term>corpus quiescens</term>
+</index> aequalis</add>
+</lem>
+<note type="lemma-abbrev">quiescens</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">ponderis ripae connexum<index indexName="Sachen">
+<term>corpus ripae connexum</term>
+</index> impingat</add>
+</lem>
+<note type="lemma-abbrev">ripae connexum</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>,
+eique suam vim<index indexName="Sachen">
+<term>vis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">tribuat, navis</lem>
+<note type="lemma-abbrev">tribuat,</note>
+<rdg wit="#L" n="1"> patet </rdg>
+<rdg wit="#L" n="2"> navis <hi rendition="#i">L</hi>
+</rdg>
+</app>
 cum corpore <hi rendition="#i">C</hi> in eo quiescet,
-et potentia<index indexName="Sachen"><term>potentia</term></index> ipsius <hi rendition="#i">C</hi>, quae partem faciebat potentiae<index indexName="Sachen"><term>potentia</term></index> navis, erit conservata
-	<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">atque in ripam translata</add></lem><note type="lemma-abbrev">in ripam</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>.
-<pb type="L"/>Porro si Elaterium<index indexName="Sachen"><term>elaterium</term></index>
-	<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">tensum liberetur adhuc</add></lem><note type="lemma-abbrev">liberetur</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>
-potentiam<index indexName="Sachen"><term>potentia</term></index> suam
-etiam in corpus in ripa<index indexName="Sachen"><term>ripa</term></index> positum, quiescente jam navi, ut supponimus, exercebit,
-atque ita manifestum est utramque potentiam<index indexName="Sachen"><term>potentia</term></index> jam in ripam<index indexName="Sachen"><term>ripa</term></index>
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=590"><pb type="L"/><fw type="folNum">[191 v<hi rendition="#sup">o</hi>]</fw></ref> immobilem esse translatam; ac proinde absolute loquendo
+et potentia<index indexName="Sachen">
+<term>potentia</term>
+</index> ipsius <hi rendition="#i">C</hi>, quae partem faciebat potentiae<index indexName="Sachen">
+<term>potentia</term>
+</index> navis, erit conservata
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">atque in ripam translata</add>
+</lem>
+<note type="lemma-abbrev">in ripam</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>.
+<pb type="L"/>
+Porro si Elaterium<index indexName="Sachen">
+<term>elaterium</term>
+</index>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">tensum liberetur adhuc</add>
+</lem>
+<note type="lemma-abbrev">liberetur</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>
+potentiam<index indexName="Sachen">
+<term>potentia</term>
+</index> suam
+etiam in corpus in ripa<index indexName="Sachen">
+<term>ripa</term>
+</index> positum, quiescente jam navi, ut supponimus, exercebit,
+atque ita manifestum est utramque potentiam<index indexName="Sachen">
+<term>potentia</term>
+</index> jam in ripam<index indexName="Sachen">
+<term>ripa</term>
+</index>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=590">
+<pb type="L"/>
+<fw type="folNum">[191 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref> immobilem esse translatam; ac proinde absolute loquendo
 dicendum esse corpus
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">C</hi></lem><rdg wit="#L" cause="addition"><add><hi rendition="#i">C</hi> </add><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-in navi<index indexName="Sachen"><term>navis</term></index> moveri, etsi is motus e ripa<index indexName="Sachen"><term>ripa</term></index>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">C</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">C</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+in navi<index indexName="Sachen">
+<term>navis</term>
+</index> moveri, etsi is motus e ripa<index indexName="Sachen">
+<term>ripa</term>
+</index>
 spectanti non appareat.
-<app type="Bfootnote"><lem type="main">Itaque spectanda</lem><note type="lemma-abbrev">Itaque</note><rdg wit="#L" n="1"> motu <app><rdg wit="#L" n="a">non </rdg><rdg wit="#L" n="b">aestimanda </rdg></app></rdg><rdg wit="#L" n="2"> spectanda <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">Itaque spectanda</lem>
+<note type="lemma-abbrev">Itaque</note>
+<rdg wit="#L" n="1"> motu <app>
+<rdg wit="#L" n="a">non </rdg>
+<rdg wit="#L" n="b">aestimanda </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> spectanda <hi rendition="#i">L</hi>
+</rdg>
+</app>
 sunt corpora
 proxime
-<app type="Bfootnote"><lem type="main">ambientia sive</lem><note type="lemma-abbrev">ambientia</note><rdg wit="#L" n="1"> , ut de navi </rdg><rdg wit="#L" n="2"> sive <hi rendition="#i">L</hi></rdg></app>
-contingentia,<index indexName="Sachen"><term>corpora proxime ambientia sive contingentia</term></index> ut de alicujus
-corporis motu<index indexName="Sachen"><term>motus</term></index> et quiete<index indexName="Sachen"><term>quies</term></index> judicetur.
-<app type="Cfootnote"><lem type="main">Quemadmodum <index indexName="Personen"><term><hi rendition="#g">Aristoteles</hi> 384–322 v. Chr.</term></index>Aristoteles
-<app type="Bfootnote"><lem type="main">recte advertit</lem><note type="lemma-abbrev">recte</note><rdg wit="#L" n="1"> dixit </rdg><rdg wit="#L" n="2"> ab </rdg><rdg wit="#L" n="3"> advertit <hi rendition="#i">L</hi></rdg></app>,
-cum locum<index indexName="Sachen"><term>locus</term></index> vocavit superficiem ambientis.<index indexName="Sachen"><term>superficies ambientis</term></index></lem><note type="lemma-abbrev">Quemadmodum <seg type="apparat-ellipsis"/> ambientis</note><note type="editorial"><index indexName="Personen"><term><hi rendition="#g">Aristoteles</hi> 384–322 v. Chr.</term></index><hi rendition="#k">Aristoteles</hi>, <bibl corresp="#bib_00235"><hi rendition="#i">Physica</hi> IV, 4, 212a2–6.</bibl></note></app>
+<app type="Bfootnote">
+<lem type="main">ambientia sive</lem>
+<note type="lemma-abbrev">ambientia</note>
+<rdg wit="#L" n="1"> , ut de navi </rdg>
+<rdg wit="#L" n="2"> sive <hi rendition="#i">L</hi>
+</rdg>
+</app>
+contingentia,<index indexName="Sachen">
+<term>corpora proxime ambientia sive contingentia</term>
+</index> ut de alicujus
+corporis motu<index indexName="Sachen">
+<term>motus</term>
+</index> et quiete<index indexName="Sachen">
+<term>quies</term>
+</index> judicetur.
+<app type="Cfootnote">
+<lem type="main">Quemadmodum <index indexName="Personen">
+<term>
+<hi rendition="#g">Aristoteles</hi> 384–322 v. Chr.</term>
+</index>Aristoteles
+<app type="Bfootnote">
+<lem type="main">recte advertit</lem>
+<note type="lemma-abbrev">recte</note>
+<rdg wit="#L" n="1"> dixit </rdg>
+<rdg wit="#L" n="2"> ab </rdg>
+<rdg wit="#L" n="3"> advertit <hi rendition="#i">L</hi>
+</rdg>
+</app>,
+cum locum<index indexName="Sachen">
+<term>locus</term>
+</index> vocavit superficiem ambientis.<index indexName="Sachen">
+<term>superficies ambientis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Quemadmodum <seg type="apparat-ellipsis"/>
+ ambientis</note>
+<note type="editorial">
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Aristoteles</hi> 384–322 v. Chr.</term>
+</index>
+<hi rendition="#k">Aristoteles</hi>,<bibl corresp="#bib_00235">
+<hi rendition="#i">Physica</hi> IV, 4, 212a2–6.</bibl>
+</note>
+</app>
 Unum enim corpus
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">unicum proprium habet</add></lem><note type="lemma-abbrev">proprium</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">locum<index indexName="Sachen"><term>locus proprius</term></index> una vice, superficiem</add></lem><note type="lemma-abbrev">una vice</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>
-ambientis;<index indexName="Sachen"><term>superficies ambientis</term></index> et per consequens
-unicum motum proprium,<index indexName="Sachen"><term>motus proprius</term></index> scilicet separationem ab illa superficie.<index indexName="Sachen"><term>superficies ambientis</term></index></p><figure rendition="#own-line_centered" xml:id="Ch48.p14"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_191-192_d2_191v.svg" width="195.129pt" xml:id="Ch48.p14.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]</head></figure><anchor xml:id="_37_05_191-192_3a"/><p xml:id="Ch48.p15"><app type="Bfootnote"><lem type="main">Hanc observationem</lem><note type="lemma-abbrev">Hanc</note><rdg wit="#L" n="1"> regulam non </rdg><rdg wit="#L" n="2"> observationem <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">unicum proprium habet</add>
+</lem>
+<note type="lemma-abbrev">proprium</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">locum<index indexName="Sachen">
+<term>locus proprius</term>
+</index> una vice, superficiem</add>
+</lem>
+<note type="lemma-abbrev">una vice</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>
+ambientis;<index indexName="Sachen">
+<term>superficies ambientis</term>
+</index> et per consequens
+unicum motum proprium,<index indexName="Sachen">
+<term>motus proprius</term>
+</index> scilicet separationem ab illa superficie.<index indexName="Sachen">
+<term>superficies ambientis</term>
+</index>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch48.p14">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_191-192_d2_191v.svg" width="195.129pt" xml:id="Ch48.p14.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]
+</head>
+</figure>
+<anchor xml:id="_37_05_191-192_3a"/>
+<p xml:id="Ch48.p15">
+<app type="Bfootnote">
+<lem type="main">Hanc observationem</lem>
+<note type="lemma-abbrev">Hanc</note>
+<rdg wit="#L" n="1"> regulam non </rdg>
+<rdg wit="#L" n="2"> observationem <hi rendition="#i">L</hi>
+</rdg>
+</app>
 neglexere
-<app type="Cfootnote"><lem type="main">Clarissimi Viri, qui per motuum compositiones,<index indexName="Sachen"><term>compositio motuum</term></index> phenomena concursuum<index indexName="Sachen"><term>phaenomena concursuum</term></index><index indexName="Sachen"><term>concursus</term></index>
-explicare conati sunt.</lem><note type="lemma-abbrev">Clarissimi <seg type="apparat-ellipsis"/> sunt</note><note type="editorial"><index indexName="Personen"><term><hi rendition="#g">Wallis</hi> (Wallisius), John 1616–1703</term></index><hi rendition="#k">J. Wallis</hi>, <bibl corresp="#bib_00301"><hi rendition="#i">Mechanica</hi>, London 1670–1671, Pars III, Cap. XI, S. 660–682 (<bibl corresp="#bib_01008"><hi rendition="#i">WO</hi> I, S. 1002–1015) und Cap. XIII, S. 686–707 (<bibl corresp="#bib_01008"><hi rendition="#i">WO</hi> I, S. 1018–1031);
-<index indexName="Personen"><term><hi rendition="#g">Mariotte</hi>, Edme, Seigneur de Chazeuil ca. 1620–1684</term></index><hi rendition="#k">E. Mariotte</hi></bibl></bibl></bibl>, <bibl corresp="#bib_00311"><hi rendition="#i">Traité de la percussion</hi>, <hi rendition="#i">passim</hi>; siehe auch Leibnizens kommentierte Auszüge von März–Mai 1677 (N. <ref corresp="L_section_423.xml#_57267_3"/>).
-Möglicherweise spielt Leibniz auch auf <index indexName="Personen"><term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</term></index>Huygens an, der in unveröffentlichten
+<app type="Cfootnote">
+<lem type="main">Clarissimi Viri, qui per motuum compositiones,<index indexName="Sachen">
+<term>compositio motuum</term>
+</index> phenomena concursuum<index indexName="Sachen">
+<term>phaenomena concursuum</term>
+</index>
+<index indexName="Sachen">
+<term>concursus</term>
+</index>
+explicare conati sunt.</lem>
+<note type="lemma-abbrev">Clarissimi <seg type="apparat-ellipsis"/>
+ sunt</note>
+<note type="editorial">
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Wallis</hi> (Wallisius), John 1616–1703</term>
+</index>
+<hi rendition="#k">J. Wallis</hi>,<bibl corresp="#bib_00301">
+<hi rendition="#i">Mechanica</hi>, London 1670–1671, Pars III, Cap. XI, S. 660–682 (<bibl corresp="#bib_01008">
+<hi rendition="#i">WO</hi> I, S. 1002–1015) und Cap. XIII, S. 686–707 (<bibl corresp="#bib_01008">
+<hi rendition="#i">WO</hi> I, S. 1018–1031);
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Mariotte</hi>, Edme, Seigneur de Chazeuil ca. 1620–1684</term>
+</index>
+<hi rendition="#k">E. Mariotte</hi>
+</bibl>
+</bibl>
+</bibl>,<bibl corresp="#bib_00311">
+<hi rendition="#i">Traité de la percussion</hi>,<hi rendition="#i">passim</hi>; siehe auch Leibnizens kommentierte Auszüge von März–Mai 1677 (N. <ref corresp="L_section_423.xml#_57267_3"/>
+).
+Möglicherweise spielt Leibniz auch auf <index indexName="Personen">
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</term>
+</index>Huygens an, der in unveröffentlichten
 Texten wie
-<bibl corresp="#bib_00530">„De motu corporum ex percussione” (um 1703 posthum erschienen; auch <bibl corresp="#bib_00113"><hi rendition="#i">HO</hi> XVI, S. 29–91)
-und <bibl corresp="#bib_02037">„De motu corporum hypothesis” (<bibl corresp="#bib_00113"><hi rendition="#i">HO</hi> VI, Nr. 1693, S. 336–343) die Stoßgesetze anhand zusammengesetzter Bewegungen hergeleitet hatte.
-Siehe dazu die editorische Vorbemerkung.</bibl></bibl></bibl></bibl></bibl></note></app>
-<app type="Cfootnote"><lem type="main">Nimirum ipsis nihil refert, utrum dicamus
+<bibl corresp="#bib_00530">„De motu corporum ex percussione” (um 1703 posthum erschienen; auch <bibl corresp="#bib_00113">
+<hi rendition="#i">HO</hi> XVI, S. 29–91)
+und <bibl corresp="#bib_02037">„De motu corporum hypothesis” (<bibl corresp="#bib_00113">
+<hi rendition="#i">HO</hi> VI, Nr. 1693, S. 336–343) die Stoßgesetze anhand zusammengesetzter Bewegungen hergeleitet hatte.
+Siehe dazu die editorische Vorbemerkung.</bibl>
+</bibl>
+</bibl>
+</bibl>
+</bibl>
+</note>
+</app>
+<app type="Cfootnote">
+<lem type="main">Nimirum ipsis nihil refert, utrum dicamus
 corpus
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">E</hi> ferri celeritate</lem><note type="lemma-abbrev"><hi rendition="#i">E</hi> ferri</note><rdg wit="#L" n="1"> ex </rdg><rdg wit="#L" n="2"> celeritate <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">E</hi> ferri celeritate</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">E</hi> ferri</note>
+<rdg wit="#L" n="1"> ex </rdg>
+<rdg wit="#L" n="2"> celeritate <hi rendition="#i">L</hi>
+</rdg>
+</app>
 et directione <hi rendition="#i">AD</hi>, an
 vero
-<app type="Bfootnote"><lem type="main">dicamus ferri duobus</lem><note type="lemma-abbrev">dicamus ferri</note><rdg wit="#L" n="1"> cele </rdg><rdg wit="#L" n="2"> celeritate </rdg><rdg wit="#L" n="3"> duobus <hi rendition="#i">L</hi></rdg></app>
-motibus<index indexName="Sachen"><term>motus</term></index>
+<app type="Bfootnote">
+<lem type="main">dicamus ferri duobus</lem>
+<note type="lemma-abbrev">dicamus ferri</note>
+<rdg wit="#L" n="1"> cele </rdg>
+<rdg wit="#L" n="2"> celeritate </rdg>
+<rdg wit="#L" n="3"> duobus <hi rendition="#i">L</hi>
+</rdg>
+</app>
+motibus<index indexName="Sachen">
+<term>motus</term>
+</index>
 nimirum celeritate et directione <hi rendition="#i">AC</hi>, ac simul
-celeritate et directione <hi rendition="#i">AB</hi>.<anchor xml:id="_37_05_191-192_3b"/></lem><note type="lemma-abbrev">Nimirum <seg type="apparat-ellipsis"/> <hi rendition="#i">AB</hi></note><note type="editorial">Siehe z.B. <index indexName="Personen"><term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</term></index><hi rendition="#k">Huygens</hi>,
+celeritate et directione <hi rendition="#i">AB</hi>.<anchor xml:id="_37_05_191-192_3b"/>
+</lem>
+<note type="lemma-abbrev">Nimirum <seg type="apparat-ellipsis"/>
+<hi rendition="#i">AB</hi>
+</note>
+<note type="editorial">Siehe z.B. <index indexName="Personen">
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</term>
+</index>
+<hi rendition="#k">Huygens</hi>,
 <bibl corresp="#bib_02037">„De motu corporum hypothesis”, §3, S. 336;
-<index indexName="Personen"><term><hi rendition="#g">Wallis</hi> (Wallisius), John 1616–1703</term></index><hi rendition="#k">Wallis</hi></bibl>,
-<bibl corresp="#bib_00301"><hi rendition="#i">Mechanica</hi>, Pars III, Cap. XI, Prop. VIII und Scholium, S. 669f.;
-<index indexName="Personen"><term><hi rendition="#g">Mariotte</hi>, Edme, Seigneur de Chazeuil ca. 1620–1684</term></index><hi rendition="#k">Mariotte</hi></bibl>,
-<bibl corresp="#bib_00311"><hi rendition="#i">Traité de la percussion</hi>, Première Partie, Prop. III (Second principe d’experience), S. 25–29.
-Alle drei Autoren veranschaulichen ihre Methoden mithilfe der Schiffsanalogie.</bibl></note></app>
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Wallis</hi> (Wallisius), John 1616–1703</term>
+</index>
+<hi rendition="#k">Wallis</hi>
+</bibl>,
+<bibl corresp="#bib_00301">
+<hi rendition="#i">Mechanica</hi>, Pars III, Cap. XI, Prop. VIII und Scholium, S. 669f.;
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Mariotte</hi>, Edme, Seigneur de Chazeuil ca. 1620–1684</term>
+</index>
+<hi rendition="#k">Mariotte</hi>
+</bibl>,
+<bibl corresp="#bib_00311">
+<hi rendition="#i">Traité de la percussion</hi>, Première Partie, Prop. III (Second principe d’experience), S. 25–29.
+Alle drei Autoren veranschaulichen ihre Methoden mithilfe der Schiffsanalogie.</bibl>
+</note>
+</app>
 Cum tamen plurimum intersit,
-et posteriore casu multo major sit futura potentia<index indexName="Sachen"><term>potentia</term></index> corporis
+et posteriore casu multo major sit futura potentia<index indexName="Sachen">
+<term>potentia</term>
+</index> corporis
 <hi rendition="#i">E</hi>, quam
-<app type="Bfootnote"><lem type="main">priore. Nam</lem><note type="lemma-abbrev">priore.</note><rdg wit="#L" n="1"> Ponamus enim </rdg><rdg wit="#L" n="2"> Nam <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">priore. Nam</lem>
+<note type="lemma-abbrev">priore.</note>
+<rdg wit="#L" n="1"> Ponamus enim </rdg>
+<rdg wit="#L" n="2"> Nam <hi rendition="#i">L</hi>
+</rdg>
+</app>
 priore casu
-super tabula immobili<index indexName="Sachen"><term>tabula immobilis</term></index> <hi rendition="#i">ABDC</hi> fertur corpus
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">A</hi>, directione ac potentia</lem><note type="lemma-abbrev"><hi rendition="#i">A</hi>,</note><rdg wit="#L" n="1"> recta ac </rdg><rdg wit="#L" n="2"> directione <app><rdg wit="#L" n="a"><hi rendition="#i">A</hi> </rdg><rdg wit="#L" n="b">ac potentia <hi rendition="#i">L</hi></rdg></app></rdg></app>
-ut <hi rendition="#i">AD</hi>, posteriore modo intelligetur super immobili tabula<index indexName="Sachen"><term>tabula immobilis</term></index> <hi rendition="#i">ABDC</hi> procedere
+super tabula immobili<index indexName="Sachen">
+<term>tabula immobilis</term>
+</index>
+<hi rendition="#i">ABDC</hi> fertur corpus
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">A</hi>, directione ac potentia</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">A</hi>,
+</note>
+<rdg wit="#L" n="1"> recta ac </rdg>
+<rdg wit="#L" n="2"> directione <app>
+<rdg wit="#L" n="a">
+<hi rendition="#i">A</hi>
+</rdg>
+<rdg wit="#L" n="b">ac potentia <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+ut <hi rendition="#i">AD</hi>, posteriore modo intelligetur super immobili tabula<index indexName="Sachen">
+<term>tabula immobilis</term>
+</index>
+<hi rendition="#i">ABDC</hi> procedere
 regula
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">CA</hi> per <hi rendition="#i">LF</hi> in <hi rendition="#i">DB</hi>, directione</lem><note type="lemma-abbrev"><hi rendition="#i">CA</hi></note><rdg wit="#L" n="1"> in </rdg><rdg wit="#L" n="2" cause="addition"> per <hi rendition="#i">LF</hi> <note type="editorial">|</note> <add>in <hi rendition="#i">DB</hi> </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> , directione <hi rendition="#i">L</hi></rdg></app>
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">ac celeritate <hi rendition="#i">AB</hi> et secum ferre corpus</add></lem><note type="lemma-abbrev">et secum ferre corpus</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>,
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">CA</hi> per <hi rendition="#i">LF</hi> in <hi rendition="#i">DB</hi>, directione</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">CA</hi>
+</note>
+<rdg wit="#L" n="1"> in </rdg>
+<rdg wit="#L" n="2" cause="addition"> per <hi rendition="#i">LF</hi>
+<note type="editorial">|</note>
+<add>in <hi rendition="#i">DB</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> , directione <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">ac celeritate <hi rendition="#i">AB</hi> et secum ferre corpus</add>
+</lem>
+<note type="lemma-abbrev">et secum ferre corpus</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>,
 atque interim
 super ipsa regula procedere corpus
-<app type="Bfootnote"><lem type="main">ex <hi rendition="#i">A</hi> per <hi rendition="#i">G</hi> versus <hi rendition="#i">C</hi>, directione</lem><note type="lemma-abbrev"><hi rendition="#i">A</hi></note><rdg wit="#L" n="1"> in <hi rendition="#i">G</hi> </rdg><rdg wit="#L" n="2"> per <hi rendition="#i">G</hi> versus <hi rendition="#i">C</hi>, <app><rdg wit="#L" n="a">celeritate et </rdg><rdg wit="#L" n="b">directione <hi rendition="#i">L</hi></rdg></app></rdg></app>
+<app type="Bfootnote">
+<lem type="main">ex <hi rendition="#i">A</hi> per <hi rendition="#i">G</hi> versus <hi rendition="#i">C</hi>, directione</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">A</hi>
+</note>
+<rdg wit="#L" n="1"> in <hi rendition="#i">G</hi>
+</rdg>
+<rdg wit="#L" n="2"> per <hi rendition="#i">G</hi> versus <hi rendition="#i">C</hi>,<app>
+<rdg wit="#L" n="a">celeritate et </rdg>
+<rdg wit="#L" n="b">directione <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
 ac celeritate
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">AC</hi>. Ajo potentiam corporis <hi rendition="#i">E</hi> priori modo sumti,</lem><note type="lemma-abbrev"><hi rendition="#i">AC</hi>.</note><rdg wit="#L" n="1"> Ergo prio </rdg><rdg wit="#L" n="2"> Ajo <app><rdg wit="#L" n="a">priore modo </rdg><rdg wit="#L" n="b">potentiam corporis <app><rdg wit="#L" n="aa">quae priore modo sumta </rdg><rdg wit="#L" n="bb">priore modo sumtam </rdg><rdg wit="#L" n="cc"><hi rendition="#i">E</hi> priore modo sumti, <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">AC</hi>. Ajo potentiam corporis <hi rendition="#i">E</hi> priori modo sumti,</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">AC</hi>.
+</note>
+<rdg wit="#L" n="1"> Ergo prio </rdg>
+<rdg wit="#L" n="2"> Ajo <app>
+<rdg wit="#L" n="a">priore modo </rdg>
+<rdg wit="#L" n="b">potentiam corporis <app>
+<rdg wit="#L" n="aa">quae priore modo sumta </rdg>
+<rdg wit="#L" n="bb">priore modo sumtam </rdg>
+<rdg wit="#L" n="cc">
+<hi rendition="#i">E</hi> priore modo sumti, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
 ad eam quae posteriore modo
-deprehenditur esse ut <hi rendition="#i">AD</hi> ad <formula xml:id="Ch48.p15.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mi>B</m:mi><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:math></formula>, unde facile
-motum perpetuum<index indexName="Sachen"><term>motus perpetuus</term></index> exhibere possem, si nihil referret
-<app type="Bfootnote"><lem type="main">[utrum]</lem><rdg wit="#ed" cause="addition"><add>utrum</add> <note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></rdg></app>
+deprehenditur esse ut <hi rendition="#i">AD</hi> ad <formula xml:id="Ch48.p15.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>, unde facile
+motum perpetuum<index indexName="Sachen">
+<term>motus perpetuus</term>
+</index> exhibere possem, si nihil referret
+<app type="Bfootnote">
+<lem type="main">[utrum]</lem>
+<rdg wit="#ed" cause="addition">
+<add>utrum</add>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</rdg>
+</app>
 posteriore
-modo an priore uteremur.</p><p xml:id="Ch48.p16">Possunt tamen inservire hae motuum compositiones<index indexName="Sachen"><term>compositio motuum</term></index> ad explicandas directiones,<index indexName="Sachen"><term>directio</term></index> modo id fiat salva potentiae
-summa.<index indexName="Sachen"><term>summa potentiae</term></index></p><p xml:id="Ch48.p17">Itaque in materia concursuum<index indexName="Sachen"><term>concursus</term></index> si duo
-<app type="Bfootnote"><lem type="main">corpora <ref><pb type="L"/><fw type="folNum">[192 r<hi rendition="#sup">o</hi>]</fw></ref> inaequali</lem><note type="lemma-abbrev">corpora</note><rdg wit="#L" n="1"> eadem <ref><pb type="L"/><fw type="folNum">[192 r<hi rendition="#sup">o</hi>]</fw></ref> </rdg><rdg wit="#L" n="2"> inaequali <hi rendition="#i">L</hi></rdg></app>
+modo an priore uteremur.</p>
+<p xml:id="Ch48.p16">Possunt tamen inservire hae motuum compositiones<index indexName="Sachen">
+<term>compositio motuum</term>
+</index> ad explicandas directiones,<index indexName="Sachen">
+<term>directio</term>
+</index> modo id fiat salva potentiae
+summa.<index indexName="Sachen">
+<term>summa potentiae</term>
+</index>
+</p>
+<p xml:id="Ch48.p17">Itaque in materia concursuum<index indexName="Sachen">
+<term>concursus</term>
+</index> si duo
+<app type="Bfootnote">
+<lem type="main">corpora <ref>
+<pb type="L"/>
+<fw type="folNum">[192 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref> inaequali</lem>
+<note type="lemma-abbrev">corpora</note>
+<rdg wit="#L" n="1"> eadem <ref>
+<pb type="L"/>
+<fw type="folNum">[192 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</rdg>
+<rdg wit="#L" n="2"> inaequali <hi rendition="#i">L</hi>
+</rdg>
+</app>
 celeritate ferentur in eandem plagam, ita ut quod
 praecedit sit tardius, quo scilicet quod sequitur possit
-ipsum assequi, tunc intelligi potest, id quod antecedit quiescere in navi,<index indexName="Sachen"><term>navis</term></index> in qua id
-quod sequitur, in ipsum incurrit excessu celeritatis,<index indexName="Sachen"><term>excessus celeritatis</term></index> navis<index indexName="Sachen"><term>navis</term></index> autem
-feretur celeritate tardioris.</p><figure rendition="#own-line_centered" xml:id="Ch48.p18"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_191-192_d3_192r.svg" width="346.896pt" xml:id="Ch48.p18.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]</head></figure><p xml:id="Ch48.p19">Sit
-<app type="Bfootnote"><lem type="main">celeritas tardioris</lem><note type="lemma-abbrev">celeritas</note><rdg wit="#L" n="1"> navis </rdg><rdg wit="#L" n="2"> tardioris <hi rendition="#i">L</hi></rdg></app>
-<formula xml:id="Ch48.p19.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn mathsize="70%">1</m:mn><m:mo>⁢</m:mo><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mn mathsize="70%">2</m:mn><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:math></formula>[,] detur eadem
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">navi, seu <hi rendition="#i"><hi rendition="#smaller">1</hi>A<hi rendition="#smaller">2</hi>A</hi></add></lem><note type="lemma-abbrev">seu</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>
-aequalis sit <hi rendition="#i"><hi rendition="#smaller">1</hi>D<hi rendition="#smaller">2</hi>D</hi>, quiescet corpus <hi rendition="#i">D</hi> in navi,
+ipsum assequi, tunc intelligi potest, id quod antecedit quiescere in navi,<index indexName="Sachen">
+<term>navis</term>
+</index> in qua id
+quod sequitur, in ipsum incurrit excessu celeritatis,<index indexName="Sachen">
+<term>excessus celeritatis</term>
+</index> navis<index indexName="Sachen">
+<term>navis</term>
+</index> autem
+feretur celeritate tardioris.</p>
+<figure rendition="#own-line_centered" xml:id="Ch48.p18">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_191-192_d3_192r.svg" width="346.896pt" xml:id="Ch48.p18.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]
+</head>
+</figure>
+<p xml:id="Ch48.p19">Sit
+<app type="Bfootnote">
+<lem type="main">celeritas tardioris</lem>
+<note type="lemma-abbrev">celeritas</note>
+<rdg wit="#L" n="1"> navis </rdg>
+<rdg wit="#L" n="2"> tardioris <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch48.p19.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn mathsize="70%">1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mn mathsize="70%">2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula>[,] detur eadem
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">navi, seu <hi rendition="#i">
+<hi rendition="#smaller">1</hi>A<hi rendition="#smaller">2</hi>A</hi>
+</add>
+</lem>
+<note type="lemma-abbrev">seu</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>
+aequalis sit <hi rendition="#i">
+<hi rendition="#smaller">1</hi>D<hi rendition="#smaller">2</hi>D</hi>, quiescet corpus <hi rendition="#i">D</hi> in navi,
 corpus <hi rendition="#i">C</hi> vero
-<app type="Bfootnote"><lem type="main">feretur celeritate <hi rendition="#i"><hi rendition="#smaller">1</hi>C<hi rendition="#smaller">2</hi>C</hi></lem><note type="lemma-abbrev">feretur</note><rdg wit="#L" n="1"> celeritatum summa </rdg><rdg wit="#L" n="2"> celeritate <hi rendition="#i"><hi rendition="#smaller">1</hi>C<hi rendition="#smaller">2</hi>C</hi> <hi rendition="#i">L</hi></rdg></app>,
+<app type="Bfootnote">
+<lem type="main">feretur celeritate <hi rendition="#i">
+<hi rendition="#smaller">1</hi>C<hi rendition="#smaller">2</hi>C</hi>
+</lem>
+<note type="lemma-abbrev">feretur</note>
+<rdg wit="#L" n="1"> celeritatum summa </rdg>
+<rdg wit="#L" n="2"> celeritate <hi rendition="#i">
+<hi rendition="#smaller">1</hi>C<hi rendition="#smaller">2</hi>C</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>,
 quae est
-<formula xml:id="Ch48.p19.m2"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:munder accentunder="true"><m:mrow><m:mrow><m:mn mathsize="70%">1</m:mn><m:mo>⁢</m:mo><m:mi>C</m:mi><m:mo>⁢</m:mo><m:mn mathsize="70%">1</m:mn><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow><m:mo>+</m:mo><m:mrow><m:mn mathsize="70%">1</m:mn><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mn mathsize="70%">2</m:mn><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow><m:mrow><m:mpadded lspace="14.4pt" width="+19.4pt"><m:mtext>vel</m:mtext></m:mpadded><m:mo>+</m:mo><m:mrow><m:mn mathsize="70%">1</m:mn><m:mo>⁢</m:mo><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mn mathsize="70%">2</m:mn><m:mo>⁢</m:mo><m:mi>D</m:mi></m:mrow></m:mrow></m:munder></m:math></formula>.
+<formula xml:id="Ch48.p19.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:munder accentunder="true">
+<m:mrow>
+<m:mrow>
+<m:mn mathsize="70%">1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mn mathsize="70%">1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn mathsize="70%">1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mn mathsize="70%">2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mrow>
+<m:mpadded lspace="14.4pt" width="+19.4pt">
+<m:mtext>vel</m:mtext>
+</m:mpadded>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mn mathsize="70%">1</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mn mathsize="70%">2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:mrow>
+</m:munder>
+</m:math>
+</formula>.
 Post concursum perget corpus <hi rendition="#i">D</hi>
-<app type="Bfootnote"><lem type="main">celeritate quam</lem><note type="lemma-abbrev">celeritate</note><rdg wit="#L" n="1"> in n </rdg><rdg wit="#L" n="2"> quam <hi rendition="#i">L</hi></rdg></app>
-quiescens in navi<index indexName="Sachen"><term>navis</term></index>
-<app type="Bfootnote"><lem type="main">accepit, nempe</lem><note type="lemma-abbrev">accepit,</note><rdg wit="#L" n="1"> et corpus <hi rendition="#i">C</hi> celeritate qu </rdg><rdg wit="#L" n="2"> nempe <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">celeritate quam</lem>
+<note type="lemma-abbrev">celeritate</note>
+<rdg wit="#L" n="1"> in n </rdg>
+<rdg wit="#L" n="2"> quam <hi rendition="#i">L</hi>
+</rdg>
+</app>
+quiescens in navi<index indexName="Sachen">
+<term>navis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">accepit, nempe</lem>
+<note type="lemma-abbrev">accepit,</note>
+<rdg wit="#L" n="1"> et corpus <hi rendition="#i">C</hi> celeritate qu </rdg>
+<rdg wit="#L" n="2"> nempe <hi rendition="#i">L</hi>
+</rdg>
+</app>
 <hi rendition="#i">DB</hi> et praeterea celeritate
-navis <hi rendition="#i"><hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi>, seu
-<formula xml:id="Ch48.p19.m3"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mrow><m:mrow><m:mn mathsize="70%">2</m:mn><m:mo>⁢</m:mo><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mn mathsize="70%">3</m:mn><m:mo>⁢</m:mo><m:mpadded width="+5pt"><m:mi>D</m:mi></m:mpadded></m:mrow><m:mo>⊓</m:mo><m:mrow><m:mn mathsize="70%"> 2</m:mn><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mn mathsize="70%">3</m:mn><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:mrow><m:mo>+</m:mo><m:mrow><m:mi>D</m:mi><m:mo>⁢</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:math></formula>[,] corpus <hi rendition="#i">C</hi> vero residua,
-et praeterea celeritate navis<index indexName="Sachen"><term>navis</term></index>
-<app type="Bfootnote"><lem type="main"><hi rendition="#i"><hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi>, modo</lem><note type="lemma-abbrev"><formula xml:id="Ch48.p19.m4"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mn mathsize="70%">2</m:mn><m:mo>⁢</m:mo><m:mi>A</m:mi><m:mo>⁢</m:mo><m:mn>3</m:mn><m:mo>⁢</m:mo><m:mi>A</m:mi></m:mrow></m:math></formula></note><rdg wit="#L" n="1"> . Itaque </rdg><rdg wit="#L" n="2"> , modo <hi rendition="#i">L</hi></rdg></app>
+navis <hi rendition="#i">
+<hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi>, seu
+<formula xml:id="Ch48.p19.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mrow>
+<m:mn mathsize="70%">2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mn mathsize="70%">3</m:mn>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+5pt">
+<m:mi>D</m:mi>
+</m:mpadded>
+</m:mrow>
+<m:mo>⊓</m:mo>
+<m:mrow>
+<m:mn mathsize="70%"> 2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mn mathsize="70%">3</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:mrow>
+<m:mo>+</m:mo>
+<m:mrow>
+<m:mi>D</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>[,] corpus <hi rendition="#i">C</hi> vero residua,
+et praeterea celeritate navis<index indexName="Sachen">
+<term>navis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>A<hi rendition="#smaller">3</hi>A</hi>, modo</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch48.p19.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn mathsize="70%">2</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mn>3</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> . Itaque </rdg>
+<rdg wit="#L" n="2"> , modo <hi rendition="#i">L</hi>
+</rdg>
+</app>
 scilicet non reflectatur.
 Itaque quandocunque
-<app type="Bfootnote"><lem type="main">corpus majus<index indexName="Sachen"><term>corpus majus</term></index> sequitur</lem><note type="lemma-abbrev">corpus</note><rdg wit="#L" n="1"> in </rdg><rdg wit="#L" n="2"> majus <app><rdg wit="#L" n="a">in </rdg><rdg wit="#L" n="b">sequitur <hi rendition="#i">L</hi></rdg></app></rdg></app>
-<index indexName="Sachen"><term>corpus minus</term></index>minus[,] semper ex
-<app type="Bfootnote"><lem type="main">[eo, quod]</lem><rdg wit="#ed" cause="addition"><add>eo, quod</add> <note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></rdg></app>
+<app type="Bfootnote">
+<lem type="main">corpus majus<index indexName="Sachen">
+<term>corpus majus</term>
+</index> sequitur</lem>
+<note type="lemma-abbrev">corpus</note>
+<rdg wit="#L" n="1"> in </rdg>
+<rdg wit="#L" n="2"> majus <app>
+<rdg wit="#L" n="a">in </rdg>
+<rdg wit="#L" n="b">sequitur <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+<index indexName="Sachen">
+<term>corpus minus</term>
+</index>minus[,] semper ex
+<app type="Bfootnote">
+<lem type="main">[eo, quod]</lem>
+<rdg wit="#ed" cause="addition">
+<add>eo, quod</add>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</rdg>
+</app>
 dato eo quod eveniret minore quiescente definiri potest, quid fiat
 minore moto sed tardius. Sed si corpus <hi rendition="#i">C</hi> esset minus, adeoque repercuteretur[,] tunc minime posset adhiberi haec ratiocinatio, quia periret nobis
 utique motus ille in quantum regreditur contra motum navis, scilicet
-<app type="Bfootnote"><lem type="main">differentia inter celeritatem</lem><note type="lemma-abbrev">differentia inter</note><rdg wit="#L" n="1"> motum </rdg><rdg wit="#L" n="2"> celeritatem <hi rendition="#i">L</hi></rdg></app>
-navis,<index indexName="Sachen"><term>navis</term></index>
-<app type="Bfootnote"><lem type="main">et inter celeritatem</lem><note type="lemma-abbrev">et inter</note><rdg wit="#L" n="1"> motum </rdg><rdg wit="#L" n="2"> celeritatem <hi rendition="#i">L</hi></rdg></app>
-regressus
-<app type="Bfootnote"><lem type="main">corporis, duplicata</lem><note type="lemma-abbrev">corporis,</note><rdg wit="#L" n="1"> ducta </rdg><rdg wit="#L" n="2"> duplicata <hi rendition="#i">L</hi></rdg></app>
-et in corpus
-<app type="Bfootnote"><lem type="main">ducta erit</lem><note type="lemma-abbrev">ducta</note><rdg wit="#L" n="1"> nobis ⟨–⟩ peri </rdg><rdg wit="#L" n="2"> erit <hi rendition="#i">L</hi></rdg></app>
-potentia<index indexName="Sachen"><term>potentia</term></index> quae
-nobis peribit, si eam dabimus corpori
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">C</hi></lem><rdg wit="#L" cause="addition"><add><hi rendition="#i">C</hi> </add><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-celeritatem, quae spectanti e ripa<index indexName="Sachen"><term>ripa</term></index>
-<app type="Bfootnote"><lem type="main">in hac</lem><note type="lemma-abbrev">in</note><rdg wit="#L" n="1"> hoc </rdg><rdg wit="#L" n="2"> hac <hi rendition="#i">L</hi></rdg></app>
-motuum hypothesi apparebit. Videndum ergo
-an possimus nihilominus hac ratiocinatione uti, tantum potentiam<index indexName="Sachen"><term>potentia</term></index>
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=593"><pb type="L"/><fw type="folNum">[192 v<hi rendition="#sup">o</hi>]</fw></ref> quae sic periret conservando, id est potentiam quae periret addendo
-<app type="Bfootnote"><lem type="main">navi, id est</lem><note type="lemma-abbrev">navi,</note><rdg wit="#L" n="1"> seu <app><rdg wit="#L" n="a">cel </rdg><rdg wit="#L" n="b">addendo corpori utrique </rdg></app></rdg><rdg wit="#L" n="2"> id est <hi rendition="#i">L</hi></rdg></app>
-addendo navi eam
-celeritatem, quae fit ex divisione potentiae<index indexName="Sachen"><term>potentia</term></index> pereuntis per corporum
-summam.<index indexName="Sachen"><term>summa corporum</term></index>
-<pb type="L"/>Quo facto tamen fateor non eandem qua ante futuram
-centri gravitatis celeritatem,<index indexName="Sachen"><term>celeritas centri gravitatis</term></index> sed fieri majorem.</p><p xml:id="Ch48.p20">Videtur ictu<index indexName="Sachen"><term>ictus</term></index> id saltem effici, ut corpora eadem celeritate a se
-separentur, qua ad se invicem accedunt.</p><p xml:id="Ch48.p21">Si vim ictus<index indexName="Sachen"><term>vis ictus</term></index> separatam consideramus a residua vi,<index indexName="Sachen"><term>vis residua</term></index> videtur itidem perire potentiam,<index indexName="Sachen"><term>potentia</term></index>
-quatenus scilicet corpus aliquod vi ictus<index indexName="Sachen"><term>vis ictus</term></index> repellitur, et reliqua vi progreditur[,] perdit hoc quod utrique celeritatum contrariarum<index indexName="Sachen"><term>celeritates contrariae</term></index> commune est. Quod si ponamus
-id facere non posse, ne pereat potentia,<index indexName="Sachen"><term>potentia</term></index> dicendum erit totam vim ictus<index indexName="Sachen"><term>vis ictus</term></index> illi
-corpori addi, quod eam recipere
-<anchor xml:id="_37_05_191-192_1a"/><app type="Bfootnote" from="#_37_05_191-192_1a" to="#_37_05_191-192_1b"><lem type="main"/><note type="lemma-abbrev">potest</note><rdg wit="#L" n="1"> , atque ita tales </rdg><rdg wit="#L" n="2"> . Examinandum <hi rendition="#i">L</hi></rdg></app>potest.</p><anchor xml:id="_37_05_191-192_4a"/><p xml:id="Ch48.p22">Examinandum
-an
-<anchor xml:id="_37_05_191-192_1b"/><app type="Cfootnote"><lem type="main">regulae<index indexName="Sachen"><term>regulae Hugenianae</term></index> <index indexName="Personen"><term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</term></index>Hugenianae</lem><note type="lemma-abbrev">regulae Hugenianae</note><note type="editorial"><index indexName="Personen"><term><hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</term></index><hi rendition="#k">Huygens</hi>, <bibl corresp="#bib_00529">„Regles du mouvement dans la rencontre des corps”</bibl>, <bibl corresp="#bib_00157"><hi rendition="#i">JS</hi> (Pariser Ausgabe), 18. März 1669, S. 22–24 (<bibl corresp="#bib_00113"><hi rendition="#i">HO</hi> XVI, S. 179–181); siehe auch Leibnizens kommentierte Auszüge von März–Mai 1677 (N. <ref corresp="L_section_421.xml#_57267_2"/>).</bibl></bibl></note>
+<app type="Bfootnote">
+<lem type="main">differentia inter celeritatem</lem>
+<note type="lemma-abbrev">differentia inter</note>
+<rdg wit="#L" n="1"> motum </rdg>
+<rdg wit="#L" n="2"> celeritatem <hi rendition="#i">L</hi>
+</rdg>
 </app>
-sibi pugnent, variis adhibitis compositionibus,<index indexName="Sachen"><term>compositio motuum</term></index> ut si non in navi<index indexName="Sachen"><term>navis</term></index> motu reciproco ferri intelligantur,
+navis,<index indexName="Sachen">
+<term>navis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">et inter celeritatem</lem>
+<note type="lemma-abbrev">et inter</note>
+<rdg wit="#L" n="1"> motum </rdg>
+<rdg wit="#L" n="2"> celeritatem <hi rendition="#i">L</hi>
+</rdg>
+</app>
+regressus
+<app type="Bfootnote">
+<lem type="main">corporis, duplicata</lem>
+<note type="lemma-abbrev">corporis,</note>
+<rdg wit="#L" n="1"> ducta </rdg>
+<rdg wit="#L" n="2"> duplicata <hi rendition="#i">L</hi>
+</rdg>
+</app>
+et in corpus
+<app type="Bfootnote">
+<lem type="main">ducta erit</lem>
+<note type="lemma-abbrev">ducta</note>
+<rdg wit="#L" n="1"> nobis ⟨–⟩ peri </rdg>
+<rdg wit="#L" n="2"> erit <hi rendition="#i">L</hi>
+</rdg>
+</app>
+potentia<index indexName="Sachen">
+<term>potentia</term>
+</index> quae
+nobis peribit, si eam dabimus corpori
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">C</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">C</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+celeritatem, quae spectanti e ripa<index indexName="Sachen">
+<term>ripa</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">in hac</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" n="1"> hoc </rdg>
+<rdg wit="#L" n="2"> hac <hi rendition="#i">L</hi>
+</rdg>
+</app>
+motuum hypothesi apparebit. Videndum ergo
+an possimus nihilominus hac ratiocinatione uti, tantum potentiam<index indexName="Sachen">
+<term>potentia</term>
+</index>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=593">
+<pb type="L"/>
+<fw type="folNum">[192 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref> quae sic periret conservando, id est potentiam quae periret addendo
+<app type="Bfootnote">
+<lem type="main">navi, id est</lem>
+<note type="lemma-abbrev">navi,</note>
+<rdg wit="#L" n="1"> seu <app>
+<rdg wit="#L" n="a">cel </rdg>
+<rdg wit="#L" n="b">addendo corpori utrique </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> id est <hi rendition="#i">L</hi>
+</rdg>
+</app>
+addendo navi eam
+celeritatem, quae fit ex divisione potentiae<index indexName="Sachen">
+<term>potentia</term>
+</index> pereuntis per corporum
+summam.<index indexName="Sachen">
+<term>summa corporum</term>
+</index>
+<pb type="L"/>
+Quo facto tamen fateor non eandem qua ante futuram
+centri gravitatis celeritatem,<index indexName="Sachen">
+<term>celeritas centri gravitatis</term>
+</index> sed fieri majorem.</p>
+<p xml:id="Ch48.p20">Videtur ictu<index indexName="Sachen">
+<term>ictus</term>
+</index> id saltem effici, ut corpora eadem celeritate a se
+separentur, qua ad se invicem accedunt.</p>
+<p xml:id="Ch48.p21">Si vim ictus<index indexName="Sachen">
+<term>vis ictus</term>
+</index> separatam consideramus a residua vi,<index indexName="Sachen">
+<term>vis residua</term>
+</index> videtur itidem perire potentiam,<index indexName="Sachen">
+<term>potentia</term>
+</index>
+quatenus scilicet corpus aliquod vi ictus<index indexName="Sachen">
+<term>vis ictus</term>
+</index> repellitur, et reliqua vi progreditur[,] perdit hoc quod utrique celeritatum contrariarum<index indexName="Sachen">
+<term>celeritates contrariae</term>
+</index> commune est. Quod si ponamus
+id facere non posse, ne pereat potentia,<index indexName="Sachen">
+<term>potentia</term>
+</index> dicendum erit totam vim ictus<index indexName="Sachen">
+<term>vis ictus</term>
+</index> illi
+corpori addi, quod eam recipere
+<anchor xml:id="_37_05_191-192_1a"/>
+<app type="Bfootnote" from="#_37_05_191-192_1a" to="#_37_05_191-192_1b">
+<lem type="main"/>
+<note type="lemma-abbrev">potest</note>
+<rdg wit="#L" n="1"> , atque ita tales </rdg>
+<rdg wit="#L" n="2"> . Examinandum <hi rendition="#i">L</hi>
+</rdg>
+</app>potest.</p>
+<anchor xml:id="_37_05_191-192_4a"/>
+<p xml:id="Ch48.p22">Examinandum
+an
+<anchor xml:id="_37_05_191-192_1b"/>
+<app type="Cfootnote">
+<lem type="main">regulae<index indexName="Sachen">
+<term>regulae Hugenianae</term>
+</index>
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</term>
+</index>Hugenianae</lem>
+<note type="lemma-abbrev">regulae Hugenianae</note>
+<note type="editorial">
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Huygens</hi> (Hugenius, Ugenius, Hugens, Huguens), Christiaan 1629–1695</term>
+</index>
+<hi rendition="#k">Huygens</hi>,<bibl corresp="#bib_00529">„Regles du mouvement dans la rencontre des corps”</bibl>,<bibl corresp="#bib_00157">
+<hi rendition="#i">JS</hi> (Pariser Ausgabe), 18. März 1669, S. 22–24 (<bibl corresp="#bib_00113">
+<hi rendition="#i">HO</hi> XVI, S. 179–181); siehe auch Leibnizens kommentierte Auszüge von März–Mai 1677 (N. <ref corresp="L_section_421.xml#_57267_2"/>
+).</bibl>
+</bibl>
+</note>
+</app>
+sibi pugnent, variis adhibitis compositionibus,<index indexName="Sachen">
+<term>compositio motuum</term>
+</index> ut si non in navi<index indexName="Sachen">
+<term>navis</term>
+</index> motu reciproco ferri intelligantur,
 sed si unum ponatur quiescere, alterum moveri in
-<app type="Bfootnote"><lem type="main">ipsum. In eo</lem><note type="lemma-abbrev">ipsum.</note><rdg wit="#L" n="1"> Scimus quod </rdg><rdg wit="#L" n="2"> In eo <hi rendition="#i">L</hi></rdg></app>
-quod evenire debet corpore in quiescens incurrente,<index indexName="Sachen"><term>corpus in quiescens incurrens</term></index> consentimus, quia compositiones<index indexName="Sachen"><term>compositio motuum</term></index>
-non violant potentiam.<index indexName="Sachen"><term>potentia</term></index><anchor xml:id="_37_05_191-192_4b"/>
-Nimirum corpus quiescens<index indexName="Sachen"><term>corpus quiescens</term></index> movetur duplicata celeritate
-centri gravitatis,<index indexName="Sachen"><term>celeritas centri gravitatis</term></index> corpus vero incurrens<index indexName="Sachen"><term>corpus incurrens</term></index> reliquam potentiam servat. Hinc
-<app type="Bfootnote"><lem type="main">jam quandocunque</lem><note type="lemma-abbrev">jam</note><rdg wit="#L" n="1"> si un </rdg><rdg wit="#L" n="2"> quandocunque <hi rendition="#i">L</hi></rdg></app>
-corpus unum aliud minus insequitur, utemur <index indexName="Sachen"><term>compositio motuum</term></index>compositione motuum[;] quandocunque corpora sunt aequalia, etiam non perditur potentia,<index indexName="Sachen"><term>potentia</term></index> quia quae uni
-per regressum aufertur, alteri additur.</p><p xml:id="Ch48.p23">Videtur illa regula esse manifesta: Omnis potentia aequaliter agens,<index indexName="Sachen"><term>potentia aequaliter agens</term></index>
-eundem semper producit effectum.<index indexName="Sachen"><term>effectus</term></index> Hinc cum duobus pendulis suspensis atque
-descendentibus,<index indexName="Sachen"><term>pendula duo suspensa atque descendentia</term></index> dico ea celeritate, qua centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index> pergit ante eorum
-concursum,<index indexName="Sachen"><term>concursus</term></index> eadem et
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[a]scendere</corr></lem><rdg wit="#L"><orig>descendere </orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-post concursum.<index indexName="Sachen"><term>concursus</term></index> Imo jam ideo id falsum in
-uno solo pendulo,<index indexName="Sachen"><term>pendulum</term></index> nam in eo centrum
-<app type="Bfootnote"><lem type="main">gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index> in</lem><note type="lemma-abbrev">gravitatis</note><rdg wit="#L" n="1"> eorum post concursum in tantum </rdg><rdg wit="#L" n="2"> in <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">ipsum. In eo</lem>
+<note type="lemma-abbrev">ipsum.</note>
+<rdg wit="#L" n="1"> Scimus quod </rdg>
+<rdg wit="#L" n="2"> In eo <hi rendition="#i">L</hi>
+</rdg>
+</app>
+quod evenire debet corpore in quiescens incurrente,<index indexName="Sachen">
+<term>corpus in quiescens incurrens</term>
+</index> consentimus, quia compositiones<index indexName="Sachen">
+<term>compositio motuum</term>
+</index>
+non violant potentiam.<index indexName="Sachen">
+<term>potentia</term>
+</index>
+<anchor xml:id="_37_05_191-192_4b"/>
+Nimirum corpus quiescens<index indexName="Sachen">
+<term>corpus quiescens</term>
+</index> movetur duplicata celeritate
+centri gravitatis,<index indexName="Sachen">
+<term>celeritas centri gravitatis</term>
+</index> corpus vero incurrens<index indexName="Sachen">
+<term>corpus incurrens</term>
+</index> reliquam potentiam servat. Hinc
+<app type="Bfootnote">
+<lem type="main">jam quandocunque</lem>
+<note type="lemma-abbrev">jam</note>
+<rdg wit="#L" n="1"> si un </rdg>
+<rdg wit="#L" n="2"> quandocunque <hi rendition="#i">L</hi>
+</rdg>
+</app>
+corpus unum aliud minus insequitur, utemur <index indexName="Sachen">
+<term>compositio motuum</term>
+</index>compositione motuum[;] quandocunque corpora sunt aequalia, etiam non perditur potentia,<index indexName="Sachen">
+<term>potentia</term>
+</index> quia quae uni
+per regressum aufertur, alteri additur.</p>
+<p xml:id="Ch48.p23">Videtur illa regula esse manifesta: Omnis potentia aequaliter agens,<index indexName="Sachen">
+<term>potentia aequaliter agens</term>
+</index>
+eundem semper producit effectum.<index indexName="Sachen">
+<term>effectus</term>
+</index> Hinc cum duobus pendulis suspensis atque
+descendentibus,<index indexName="Sachen">
+<term>pendula duo suspensa atque descendentia</term>
+</index> dico ea celeritate, qua centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index> pergit ante eorum
+concursum,<index indexName="Sachen">
+<term>concursus</term>
+</index> eadem et
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[a]scendere</corr>
+</lem>
+<rdg wit="#L">
+<orig>descendere </orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+post concursum.<index indexName="Sachen">
+<term>concursus</term>
+</index> Imo jam ideo id falsum in
+uno solo pendulo,<index indexName="Sachen">
+<term>pendulum</term>
+</index> nam in eo centrum
+<app type="Bfootnote">
+<lem type="main">gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index> in</lem>
+<note type="lemma-abbrev">gravitatis</note>
+<rdg wit="#L" n="1"> eorum post concursum in tantum </rdg>
+<rdg wit="#L" n="2"> in <hi rendition="#i">L</hi>
+</rdg>
+</app>
 tantum elevatur
-<app type="Bfootnote"><lem type="main">ascensu et eadem celeritate qua</lem><note type="lemma-abbrev">ascensu</note><rdg wit="#L" n="1"> in quantum </rdg><rdg wit="#L" n="2"> et eadem celeritate <app><rdg wit="#L" n="a"><note type="editorial">|</note> in <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> quantum </rdg><rdg wit="#L" n="b">qua <hi rendition="#i">L</hi></rdg></app></rdg></app>
+<app type="Bfootnote">
+<lem type="main">ascensu et eadem celeritate qua</lem>
+<note type="lemma-abbrev">ascensu</note>
+<rdg wit="#L" n="1"> in quantum </rdg>
+<rdg wit="#L" n="2"> et eadem celeritate <app>
+<rdg wit="#L" n="a">
+<note type="editorial">|</note> in <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> quantum </rdg>
+<rdg wit="#L" n="b">qua <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
 descendit.
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">Sed nota[:] non est uniformis,<index indexName="Sachen"><term>celeritas uniformis</term></index> sed accelerata,<index indexName="Sachen"><term>celeritas accelerata</term></index> itaque a pendulis<index indexName="Sachen"><term>pendula</term></index> non licet ad alia argumentari.</add></lem><note type="lemma-abbrev">Sed</note><note type="lemma-abbrev"><seg type="apparat-ellipsis"/> argumentari.</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">Sed nota[:] non est uniformis,<index indexName="Sachen">
+<term>celeritas uniformis</term>
+</index> sed accelerata,<index indexName="Sachen">
+<term>celeritas accelerata</term>
+</index> itaque a pendulis<index indexName="Sachen">
+<term>pendula</term>
+</index> non licet ad alia argumentari.</add>
+</lem>
+<note type="lemma-abbrev">Sed</note>
+<note type="lemma-abbrev">
+<seg type="apparat-ellipsis"/>
+ argumentari.</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>
 Itaque vel hinc patet eandem quam ante manere
-<app type="Bfootnote"><lem type="main">potentiam.<index indexName="Sachen"><term>potentia</term></index> Idem</lem><note type="lemma-abbrev">potentiam.</note><rdg wit="#L" n="1"> Nam </rdg><rdg wit="#L" n="2"> Idem <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">potentiam.<index indexName="Sachen">
+<term>potentia</term>
+</index> Idem</lem>
+<note type="lemma-abbrev">potentiam.</note>
+<rdg wit="#L" n="1"> Nam </rdg>
+<rdg wit="#L" n="2"> Idem <hi rendition="#i">L</hi>
+</rdg>
+</app>
 est in corporibus quae concurrunt eadem recta, uno ascendente
 altero
-<anchor xml:id="_37_05_191-192_2a"/><app type="Bfootnote" from="#_37_05_191-192_2a" to="#_37_05_191-192_2b"><lem type="main"/><note type="lemma-abbrev">descendente.</note><rdg wit="#L" n="1"> Item cum </rdg><rdg wit="#L" n="2"> Sane <hi rendition="#i">L</hi> </rdg></app>descendente.</p><p xml:id="Ch48.p24">Sane
-nisi centrum gravitatis<anchor xml:id="_37_05_191-192_2b"/><index indexName="Sachen"><term>centrum gravitatis</term></index> eadem
-celeritate pergit in easdem partes, etiam in concursu horizontali,<index indexName="Sachen"><term>concursus horizontalis</term></index> perit potentia<index indexName="Sachen"><term>potentia</term></index>
+<anchor xml:id="_37_05_191-192_2a"/>
+<app type="Bfootnote" from="#_37_05_191-192_2a" to="#_37_05_191-192_2b">
+<lem type="main"/>
+<note type="lemma-abbrev">descendente.</note>
+<rdg wit="#L" n="1"> Item cum </rdg>
+<rdg wit="#L" n="2"> Sane <hi rendition="#i">L</hi>
+</rdg>
+</app>descendente.</p>
+<p xml:id="Ch48.p24">Sane
+nisi centrum gravitatis<anchor xml:id="_37_05_191-192_2b"/>
+<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index> eadem
+celeritate pergit in easdem partes, etiam in concursu horizontali,<index indexName="Sachen">
+<term>concursus horizontalis</term>
+</index> perit potentia<index indexName="Sachen">
+<term>potentia</term>
+</index>
 quod sic ostendo. Ponamus
 corpora ambo
-quae in plano horizontali<index indexName="Sachen"><term>planum horizontale</term></index> concurrunt, a
+quae in plano horizontali<index indexName="Sachen">
+<term>planum horizontale</term>
+</index> concurrunt, a
 certa altitudine inclinata
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">descendisse simul</add></lem><note type="lemma-abbrev">simul</note> <note type="editorial"><hi rendition="#i">erg.</hi> <hi rendition="#i">L</hi></note></app>,
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">descendisse simul</add>
+</lem>
+<note type="lemma-abbrev">simul</note>
+<note type="editorial">
+<hi rendition="#i">erg.</hi>
+<hi rendition="#i">L</hi>
+</note>
+</app>,
 patet eorum centrum
-<app type="Bfootnote"><lem type="main">gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index> cum in plano inclinato<index indexName="Sachen"><term>planum inclinatum</term></index> essent celeritate</lem><note type="lemma-abbrev">gravitatis</note><rdg wit="#L" n="1"> ferri celeritate </rdg><rdg wit="#L" n="2" cause="addition-deletion"> cum in <note type="editorial">|</note> <del>plano</del> <note type="editorial"><hi rendition="#i">gestr., wieder gültig gemacht Hrsg.</hi> |</note> <add>inclinato</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> essent <note type="editorial">|</note> latum esse <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> celeritate <hi rendition="#i">L</hi></rdg></app>
-<pb type="L"/>accelerata<index indexName="Sachen"><term>celeritas accelerata</term></index> descendisse, postea aequali procedere. Quod si ergo post concursum non aequali procedit,
-<app type="Bfootnote"><lem type="main">etiam sub</lem><note type="lemma-abbrev">etiam</note><rdg wit="#L" n="1"> corporibus </rdg><rdg wit="#L" n="2"> sub <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index> cum in plano inclinato<index indexName="Sachen">
+<term>planum inclinatum</term>
+</index> essent celeritate</lem>
+<note type="lemma-abbrev">gravitatis</note>
+<rdg wit="#L" n="1"> ferri celeritate </rdg>
+<rdg wit="#L" n="2" cause="addition-deletion"> cum in <note type="editorial">|</note>
+<del>plano</del>
+<note type="editorial">
+<hi rendition="#i">gestr., wieder gültig gemacht Hrsg.</hi> |
+</note>
+<add>inclinato</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> essent <note type="editorial">|</note> latum esse <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> celeritate <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<pb type="L"/>
+accelerata<index indexName="Sachen">
+<term>celeritas accelerata</term>
+</index> descendisse, postea aequali procedere. Quod si ergo post concursum non aequali procedit,
+<app type="Bfootnote">
+<lem type="main">etiam sub</lem>
+<note type="lemma-abbrev">etiam</note>
+<rdg wit="#L" n="1"> corporibus </rdg>
+<rdg wit="#L" n="2"> sub <hi rendition="#i">L</hi>
+</rdg>
+</app>
 finem, ubi rursus ambo corpora elevanda sunt, non ea qua prius descenderat,
 celeritate ascendet. Ponendum est ambo simul ad summum quo ire
 possunt post
 concursum pervenire necesse est, ut tam alte ascenderint, quam descenderant, nescio ergo
-an fieri possit ut centra gravitatis semper procedant aequaliter.<index indexName="Sachen"><term>centrum gravitatis semper aequaliter procedens</term></index></p></div></div></body>
-  </text>
+an fieri possit ut centra gravitatis semper procedant aequaliter.<index indexName="Sachen">
+<term>centrum gravitatis semper aequaliter procedens</term>
+</index>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

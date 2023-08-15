@@ -1,214 +1,681 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-024-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-024-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">De Flexione Laminae Elasticae</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2022</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">De Flexione Laminae Elasticae</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2022</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-            </author><title type="chapter" level="a" n="24">De Flexione Laminae Elasticae</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1683-10" resp="#ed" cert="low">[Ende 1683 (?) – Mitte 1685 (?)]</date><date calendar="#gregorian" notAfter="1685-06" resp="#ed" cert="low"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=329</idno></idno></analytic><monogr><title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2021</date></imprint><biblScope unit="page" from="296" to="298"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-03-024-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 5 Bl. 118</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung:
+            </author>
+            <title type="chapter" level="a" n="24">De Flexione Laminae Elasticae</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1683-10" resp="#ed" cert="low">[Ende 1683 (?) – Mitte 1685 (?)]</date>
+            <date calendar="#gregorian" notAfter="1685-06" resp="#ed" cert="low"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=329</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2021</date>
+            </imprint>
+            <biblScope unit="page" from="296" to="298"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-03-024-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVII 5 Bl. 118</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung:
 LH XXXVII 5 Bl. 118.
 Ein Blatt 4<hi rendition="#sup">o</hi>;
 Papiererhaltungsmaßnahmen.
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=357">Bl. 118 r<hi rendition="#sup">o</hi></ref>.
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=359">Bl. 118 v<hi rendition="#sup">o</hi></ref> ist leer.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="../../glyphs/rightpropto.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="../../glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-      </charDecl>
-    </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2023-02-13" who="#stork" status="enrich_1"/></revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-024-000_facs-haupttextzeuge"><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=357"/></facsimile><text xml:id="L_08-03-024-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch24" n="24"><head>24
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=357">Bl. 118 r<hi rendition="#sup">o</hi>
+                  </ref>.
+                  <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=359">Bl. 118 v<hi rendition="#sup">o</hi>
+                  </ref> ist leer.</p>
+              </summary>
+            </msContents>
+            <physDesc>
+              <objectDesc form="Handschrift"/>
+            </physDesc>
+            <history>
+              <origin corresp="L_witness-origin-types.xml#origin-L"/>
+            </history>
+          </msDesc>
+        </witness>
+      </listWit>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <tagsDecl>
+      <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+      <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+      <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+      <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+      <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+      <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+      <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+      <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+    </tagsDecl>
+    <charDecl>
+      <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+      <!--rightpropto-->
+      <glyph xml:id="rightpropto">
+        <glyphName>rightpropto</glyphName>
+        <desc>...</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\rightpropto</mapping>
+        <graphic url="../../glyphs/rightpropto.svg"/>
+      </glyph>
+      <glyph xml:id="Pfund">
+        <glyphName>Pfund</glyphName>
+        <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.7</value>
+        </charProp>
+        <mapping type="TeX">\Pfund</mapping>
+        <graphic url="../../glyphs/Pfund.svg"/>
+      </glyph>
+      <!-- leibdashv -->
+      <glyph xml:id="pleibdashv">
+        <glyphName>pleibdashv</glyphName>
+        <desc>Bedeutung (+−) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\pleibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <glyph xml:id="leibdashv">
+        <glyphName>leibdashv</glyphName>
+        <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\leibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <!-- Sonderzeichen MIT Unicodeentsprechung -->
+    </charDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="la"/>
+    </langUsage>
+    <calendarDesc>
+      <calendar xml:id="gregorian">
+        <p>Gregorianischer Kalenderstil</p>
+      </calendar>
+      <calendar xml:id="julian">
+        <p>Julianischer Kalenderstil</p>
+      </calendar>
+    </calendarDesc>
+    <textClass>
+      <catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
+      <catRef scheme="L_terms" target="L_terms.xml#"/>
+    </textClass>
+    <abstract>
+      <listPerson>
+        <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+        <person sameAs="L_persons.xml#"/>
+      </listPerson>
+      <listPlace>
+        <place sameAs="L_places.xml#"/>
+      </listPlace>
+    </abstract>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021" who="#telota" status="base"/>
+    <change when="2023-02-13" who="#stork" status="enrich_1"/>
+  </revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-024-000_facs-haupttextzeuge">
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=357"/>
+</facsimile>
+<text xml:id="L_08-03-024-000_text">
+  <body xml:id="Document">
+    <div type="chapter" xml:id="Ch24" n="24">
+      <head>24
 DE FLEXIONE LAMINAE ELASTICAE</head>
-      <head>[Ende 1683 (?) – Mitte 1685 (?)]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVII 5 Bl. 118</idno></msIdentifier><msContents><summary><p>Aufzeichnung:
+      <head>[Ende 1683 (?) – Mitte 1685 (?)]</head>
+      <div type="ueberlieferung">
+        <p>
+          <hi rendition="#b #smaller">Überlieferung:</hi>
+          <listWit>
+            <witness>
+              <msDesc>
+                <msIdentifier>
+                  <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                  <idno type="Signatur">LH XXXVII 5 Bl. 118</idno>
+                </msIdentifier>
+                <msContents>
+                  <summary>
+                    <p>Aufzeichnung:
 LH XXXVII 5 Bl. 118.
 Ein Blatt 4<hi rendition="#sup">o</hi>;
 Papiererhaltungsmaßnahmen.
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=357">Bl. 118 r<hi rendition="#sup">o</hi></ref>.
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=359">Bl. 118 v<hi rendition="#sup">o</hi></ref> ist leer.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch24.p1"><anchor xml:id="_60334"/>
-<anchor xml:id="N.24"/><!--  \hackfor{\par} --></p><p xml:id="Ch24.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
-Die vorliegende Aufzeichnung N. <ref corresp="#N.24"/> ist inhaltlich mit Untersuchungen über die Spannung der Saiten oder Seile verwandt, die in die erste Hannoveraner Zeit fallen.
-Die Ausführung über die Biegung einer elastischen Platte in N. <ref corresp="#N.24"/> beruht nämlich auf einer Verallgemeinerung der eingangs formulierten Annahme, dass eine Saite gleichmäßig gespannt werde, d.h. in jedem Punkt ihrer Länge der gleichen Spannkraft unterliege.
-Auf eine ähnliche Annahme beziehen sich auch weitere Texte in diesem Band – etwa N. <ref corresp="L_chapter_7.xml#N.7"/> (S. <ref corresp="L_chapter_7.xml#LH_35_09_15_001v_gleichSpann_irls-1"/>), N. <ref corresp="L_chapter_17.xml#N.17"/> (S. <ref corresp="L_chapter_17.xml#LH_35_09_15_018r_aequtens-1"/>), N. <ref corresp="L_chapter_20.xml#N.20"/> (S. <ref corresp="L_chapter_20.xml#LH_35_09_16_008v_gleichSpann_shqe-1"/>) oder N. <ref corresp="L_chapter_26.xml#N.26"/> (S. <ref corresp="L_chapter_26.xml#LH_38_057r_gleichSpann_kfjg-1"/>) –, die insgesamt auf den Zeitraum vom Sommer 1678 bis Anfang Mai 1685 datierbar sind.
-Innerhalb dieser Zeitspanne dürfte wohl auch die Aufzeichnung N. <ref corresp="#N.24"/> verfasst worden sein.
-Ihre Entstehungszeit lässt sich aber insofern weiter einschränken, als Leibniz in der gestrichenen Variante <hi rendition="#i">(2a)</hi> zum Textabschnitt <hi rendition="#i">pondus B … Eodem jure</hi> (S. <ref corresp="#LH_37_05_118r_variante_rouv-1"/>) bemerkt, er habe „bereits einmal” (<hi rendition="#i">jam olim</hi>) festgestellt, wie viel Spannkraft jedem Punkt einer gespannten Saite zukomme.
-Damit könnte er auf die Aufzeichnung N. <ref corresp="L_chapter_6.xml#N.6"/> <hi rendition="#i">De tensione et restitutione</hi> anspielen (S. <ref corresp="L_chapter_7.xml#LH_35_09_15_001v_gleichSpann_irls-1"/>), die sich auf den Zeitraum vom Frühjahr 1679 bis zum Winter 1680/1681 datieren lässt, wobei sich als besonders wahrscheinliches Entstehungsdatum der Winter 1680/1681 erweist (siehe die zugehörigen Datierungsgründe, S. <ref corresp="L_chapter_7.xml#LH_35_09_15_001_022_Datierung"/>).
-Wenn diese Annahme zutrifft, dann sollte N. <ref corresp="#N.24"/> nicht vor Ende 1683 verfasst worden sein, da <hi rendition="#i">olim</hi> auf einen geraumen zeitlichen Abstand hindeutet, d.h. wohl mindestens ungefähr drei Jahre.
-Zwischen dem Spätsommer 1682 und der ersten Hälfte 1684 befasste sich Leibniz ohnehin besonders intensiv, im Austausch mit E. Mariotte,<index indexName="Personen"><term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term></index> mit Fragen der Festigkeit und Elastizität (siehe den Textkomplex N. <ref corresp="L_chapter_14.xml#N.14"/> sowie die editorische Vorbemerkung dazu). Und noch in der ersten Hälfte 1685 setzte er sich mit verwandten Themen auseinander, zu denen er durch seine Untersuchung über die Akustik angeregt wurde (siehe den Textkomplex N. <ref corresp="L_chapter_12.xml#N.12"/> sowie die editorische Vorbemerkung dazu).
-Somit erweist es sich als plausibel, die Aufzeichnung N. <ref corresp="#N.24"/> auf den Zeitraum von Ende 1683 bis Mitte 1685 zu datieren.
-Eine frühere (nach dem Sommer 1678) oder spätere Entstehungszeit (etwa in den Neunziger Jahren) kann allerdings nicht ausgeschlossen werden.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch24.p5"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=357"><pb type="L"/><fw type="folNum">[118 r<hi rendition="#sup">o</hi>]</fw></ref> Sit chorda<index indexName="Sachen"><term>chorda tendibilis</term></index>
-<app type="Bfootnote"><lem type="main">tendibilis</lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-pondere carens<index indexName="Sachen"><term>chorda pondere carens</term></index><index indexName="Sachen"><term>pondus chordae</term></index>
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">AB</hi>,</lem><note type="lemma-abbrev"><hi rendition="#i">AB</hi></note><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=357">Bl. 118 r<hi rendition="#sup">o</hi>
+                    </ref>.
+                    <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=359">Bl. 118 v<hi rendition="#sup">o</hi>
+                    </ref> ist leer.</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift"/>
+              </physDesc>
+              <history>
+                <origin/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
+      </p>
+    </div>
+    <div type="contents">
+      <p xml:id="Ch24.p1">
+        <anchor xml:id="_60334"/>
+        <anchor xml:id="N.24"/>
+        <!--  \hackfor{\par} --></p>
+      <p xml:id="Ch24.p4">
+        <hi rendition="#smaller">
+          <hi rendition="#b">Datierungsgründe:</hi>
+Die vorliegende Aufzeichnung N. <ref corresp="#N.24"/>
+ ist inhaltlich mit Untersuchungen über die Spannung der Saiten oder Seile verwandt, die in die erste Hannoveraner Zeit fallen.
+Die Ausführung über die Biegung einer elastischen Platte in N. <ref corresp="#N.24"/>
+ beruht nämlich auf einer Verallgemeinerung der eingangs formulierten Annahme, dass eine Saite gleichmäßig gespannt werde, d.h. in jedem Punkt ihrer Länge der gleichen Spannkraft unterliege.
+Auf eine ähnliche Annahme beziehen sich auch weitere Texte in diesem Band – etwa N. <ref corresp="L_chapter_7.xml#N.7"/>
+ (S. <ref corresp="L_chapter_7.xml#LH_35_09_15_001v_gleichSpann_irls-1"/>
+), N. <ref corresp="L_chapter_17.xml#N.17"/>
+ (S. <ref corresp="L_chapter_17.xml#LH_35_09_15_018r_aequtens-1"/>
+), N. <ref corresp="L_chapter_20.xml#N.20"/>
+ (S. <ref corresp="L_chapter_20.xml#LH_35_09_16_008v_gleichSpann_shqe-1"/>
+) oder N. <ref corresp="L_chapter_26.xml#N.26"/>
+ (S. <ref corresp="L_chapter_26.xml#LH_38_057r_gleichSpann_kfjg-1"/>
+) –, die insgesamt auf den Zeitraum vom Sommer 1678 bis Anfang Mai 1685 datierbar sind.
+Innerhalb dieser Zeitspanne dürfte wohl auch die Aufzeichnung N. <ref corresp="#N.24"/>
+ verfasst worden sein.
+Ihre Entstehungszeit lässt sich aber insofern weiter einschränken, als Leibniz in der gestrichenen Variante <hi rendition="#i">(2a)</hi> zum Textabschnitt <hi rendition="#i">pondus B … Eodem jure</hi> (S. <ref corresp="#LH_37_05_118r_variante_rouv-1"/>
+) bemerkt, er habe „bereits einmal” (<hi rendition="#i">jam olim</hi>) festgestellt, wie viel Spannkraft jedem Punkt einer gespannten Saite zukomme.
+Damit könnte er auf die Aufzeichnung N. <ref corresp="L_chapter_6.xml#N.6"/>
+<hi rendition="#i">De tensione et restitutione</hi> anspielen (S. <ref corresp="L_chapter_7.xml#LH_35_09_15_001v_gleichSpann_irls-1"/>
+), die sich auf den Zeitraum vom Frühjahr 1679 bis zum Winter 1680/1681 datieren lässt, wobei sich als besonders wahrscheinliches Entstehungsdatum der Winter 1680/1681 erweist (siehe die zugehörigen Datierungsgründe, S. <ref corresp="L_chapter_7.xml#LH_35_09_15_001_022_Datierung"/>
+).
+Wenn diese Annahme zutrifft, dann sollte N. <ref corresp="#N.24"/>
+ nicht vor Ende 1683 verfasst worden sein, da <hi rendition="#i">olim</hi> auf einen geraumen zeitlichen Abstand hindeutet, d.h. wohl mindestens ungefähr drei Jahre.
+Zwischen dem Spätsommer 1682 und der ersten Hälfte 1684 befasste sich Leibniz ohnehin besonders intensiv, im Austausch mit E. Mariotte,<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index> mit Fragen der Festigkeit und Elastizität (siehe den Textkomplex N. <ref corresp="L_chapter_14.xml#N.14"/>
+ sowie die editorische Vorbemerkung dazu). Und noch in der ersten Hälfte 1685 setzte er sich mit verwandten Themen auseinander, zu denen er durch seine Untersuchung über die Akustik angeregt wurde (siehe den Textkomplex N. <ref corresp="L_chapter_12.xml#N.12"/>
+ sowie die editorische Vorbemerkung dazu).
+Somit erweist es sich als plausibel, die Aufzeichnung N. <ref corresp="#N.24"/>
+ auf den Zeitraum von Ende 1683 bis Mitte 1685 zu datieren.
+Eine frühere (nach dem Sommer 1678) oder spätere Entstehungszeit (etwa in den Neunziger Jahren) kann allerdings nicht ausgeschlossen werden.</hi>
+</p>
+</div>
+<div type="text">
+<p rendition="#noindent" xml:id="Ch24.p5">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=357">
+<pb type="L"/>
+<fw type="folNum">[118 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref> Sit chorda<index indexName="Sachen">
+<term>chorda tendibilis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">tendibilis</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+pondere carens<index indexName="Sachen">
+<term>chorda pondere carens</term>
+</index>
+<index indexName="Sachen">
+<term>pondus chordae</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">AB</hi>,
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">AB</hi>
+</note>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
 in summo
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">A</hi></lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-adhaerens clavo,<index indexName="Sachen"><term>clavus</term></index>
-infra vero habens appensum<index indexName="Sachen"><term>pondus appensum</term></index>
-<app type="Bfootnote"><lem type="main"><anchor xml:id="LH_37_05_118r_variante_rouv-1"/>pondus <hi rendition="#i">B</hi>.
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">A</hi>
+</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+adhaerens clavo,<index indexName="Sachen">
+<term>clavus</term>
+</index>
+infra vero habens appensum<index indexName="Sachen">
+<term>pondus appensum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">
+<anchor xml:id="LH_37_05_118r_variante_rouv-1"/>
+pondus <hi rendition="#i">B</hi>.
 Hoc posito manifestum est
-ubique tensionem<index indexName="Sachen"><term>tensio chordae</term></index>
+ubique tensionem<index indexName="Sachen">
+<term>tensio chordae</term>
+</index>
 esse aequalem.
-Eodem jure<index indexName="Sachen"><term>jus</term></index><anchor xml:id="LH_37_05_118r_variante_rouv-2"/></lem><note type="lemma-abbrev">pondus</note><rdg wit="#L" cause="addition"><note type="editorial">|</note> <add><hi rendition="#i">B</hi> </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> </rdg><rdg wit="#L" n="1"> , a me jam olim
-</rdg><rdg wit="#L" n="2"> . Hoc posito
-<app><rdg wit="#L" n="a">a me jam olim definitum est quis in quovis puncto chordae sit casus tensionis<index indexName="Sachen"><term>casus tensionis</term></index>
-</rdg><rdg wit="#L" n="b">manifestum est <seg type="apparat-ellipsis"/> esse aequalem. <app><rdg wit="#L" n="aa">Itaque
-</rdg><rdg wit="#L" n="bb">Eodem jure <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app><app type="Cfootnote"><note type="lemma-abbrev">pondus <seg type="apparat-ellipsis"/> jure</note><note type="editorial">In der Variante <hi rendition="#i">(2a)</hi> möglicherweise Anspielung auf N. <ref corresp="L_chapter_6.xml#N.6"/>, S. <ref corresp="L_chapter_7.xml#LH_35_09_15_001v_gleichSpann_irls-1"/>.
+Eodem jure<index indexName="Sachen">
+<term>jus</term>
+</index>
+<anchor xml:id="LH_37_05_118r_variante_rouv-2"/>
+</lem>
+<note type="lemma-abbrev">pondus</note>
+<rdg wit="#L" cause="addition">
+<note type="editorial">|</note>
+<add>
+<hi rendition="#i">B</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="1"> , a me jam olim
+</rdg>
+<rdg wit="#L" n="2"> . Hoc posito
+<app>
+<rdg wit="#L" n="a">a me jam olim definitum est quis in quovis puncto chordae sit casus tensionis<index indexName="Sachen">
+<term>casus tensionis</term>
+</index>
+</rdg>
+<rdg wit="#L" n="b">manifestum est <seg type="apparat-ellipsis"/>
+ esse aequalem. <app>
+<rdg wit="#L" n="aa">Itaque
+</rdg>
+<rdg wit="#L" n="bb">Eodem jure <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+<app type="Cfootnote">
+<note type="lemma-abbrev">pondus <seg type="apparat-ellipsis"/>
+ jure</note>
+<note type="editorial">In der Variante <hi rendition="#i">(2a)</hi> möglicherweise Anspielung auf N. <ref corresp="L_chapter_6.xml#N.6"/>
+, S. <ref corresp="L_chapter_7.xml#LH_35_09_15_001v_gleichSpann_irls-1"/>
+.
 Der Bezugspunkt könnte aber auch
-N. <ref corresp="L_chapter_16.xml#N.16"/>, S. <ref corresp="L_chapter_17.xml#LH_35_09_15_018r_aequtens-1"/> sein.</note></app>
-et si lamina Elastica flectatur<index indexName="Sachen"><term>lamina elastica</term></index><index indexName="Sachen"><term>flexio laminae</term></index>
-<app type="Bfootnote"><lem type="main">vi<index indexName="Sachen"><term>vis incurvans</term></index></lem><note type="lemma-abbrev">vi</note><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+N. <ref corresp="L_chapter_16.xml#N.16"/>
+, S. <ref corresp="L_chapter_17.xml#LH_35_09_15_018r_aequtens-1"/>
+ sein.</note>
+</app>
+et si lamina Elastica flectatur<index indexName="Sachen">
+<term>lamina elastica</term>
+</index>
+<index indexName="Sachen">
+<term>flexio laminae</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">vi<index indexName="Sachen">
+<term>vis incurvans</term>
+</index>
+</lem>
+<note type="lemma-abbrev">vi</note>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
 aliqua incurvante ad extremum
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">D</hi></lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-applicata,<index indexName="Sachen"><term>vis applicata</term></index>
-ubique aequalis erit tensio,<index indexName="Sachen"><term>tensio laminae</term></index>
-seu vis aequalis<index indexName="Sachen"><term>vis tendens</term></index>
-<app type="Bfootnote"><lem type="main">fiet,
-alioqui</lem><note type="lemma-abbrev">fiet,</note><rdg wit="#L" n="1"> cum
-</rdg><rdg wit="#L" n="2"> alioqui <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">D</hi>
+</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+applicata,<index indexName="Sachen">
+<term>vis applicata</term>
+</index>
+ubique aequalis erit tensio,<index indexName="Sachen">
+<term>tensio laminae</term>
+</index>
+seu vis aequalis<index indexName="Sachen">
+<term>vis tendens</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">fiet,
+alioqui</lem>
+<note type="lemma-abbrev">fiet,</note>
+<rdg wit="#L" n="1"> cum
+</rdg>
+<rdg wit="#L" n="2"> alioqui <hi rendition="#i">L</hi>
+</rdg>
+</app>
 pars non aeque tensa foret minus fortis,
 adeoque tendi se a reliquis fortioribus
 quibus obsistit, pateretur,
-donec tensio ubique fieret aequalis.<index indexName="Sachen"><term>tensio laminae</term></index></p><p xml:id="Ch24.p6">Si ponamus in flexione<index indexName="Sachen"><term>flexio laminae</term></index>
-non augeri longitudinem laminae,<index indexName="Sachen"><term>lamina elastica</term></index>
-<app type="Bfootnote"><lem type="main">tantumque fieri vim<index indexName="Sachen"><term>vis tendens</term></index></lem><note type="lemma-abbrev">tantumque</note><rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>ob flexus</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> fieri vim <hi rendition="#i">L</hi></rdg></app>
-in angulis membrilla<index indexName="Sachen"><term>membrillum</term></index> connectentibus,
+donec tensio ubique fieret aequalis.<index indexName="Sachen">
+<term>tensio laminae</term>
+</index>
+</p>
+<p xml:id="Ch24.p6">Si ponamus in flexione<index indexName="Sachen">
+<term>flexio laminae</term>
+</index>
+non augeri longitudinem laminae,<index indexName="Sachen">
+<term>lamina elastica</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">tantumque fieri vim<index indexName="Sachen">
+<term>vis tendens</term>
+</index>
+</lem>
+<note type="lemma-abbrev">tantumque</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>ob flexus</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> fieri vim <hi rendition="#i">L</hi>
+</rdg>
+</app>
+in angulis membrilla<index indexName="Sachen">
+<term>membrillum</term>
+</index> connectentibus,
 tam intus quam extra;
-videtur sequi arcum semper esse circularem.<index indexName="Sachen"><term>arcus circularis</term></index>
-Nam habemus polygonum<index indexName="Sachen"><term>polygonum angulorum infinitorum</term></index><index indexName="Sachen"><term>polygonum laterum infinitorum</term></index>
-<app type="Bfootnote"><lem type="main">aequilaterum aequiangulum
-sed angulorum vel laterum infinitorum.</lem><note type="lemma-abbrev">aequilaterum</note><rdg wit="#L" n="1"> infinitangulum,<index indexName="Sachen"><term>polygonum infinitangulum</term></index>
-</rdg><rdg wit="#L" n="2"> angulo
-</rdg><rdg wit="#L" n="3"> aequiangulum sed <seg type="apparat-ellipsis"/> laterum infinitorum. <hi rendition="#i">L</hi></rdg></app></p><p xml:id="Ch24.p7">Quin etsi ponantur ipsa membrilla extendi et contrahi,
+videtur sequi arcum semper esse circularem.<index indexName="Sachen">
+<term>arcus circularis</term>
+</index>
+Nam habemus polygonum<index indexName="Sachen">
+<term>polygonum angulorum infinitorum</term>
+</index>
+<index indexName="Sachen">
+<term>polygonum laterum infinitorum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">aequilaterum aequiangulum
+sed angulorum vel laterum infinitorum.</lem>
+<note type="lemma-abbrev">aequilaterum</note>
+<rdg wit="#L" n="1"> infinitangulum,<index indexName="Sachen">
+<term>polygonum infinitangulum</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> angulo
+</rdg>
+<rdg wit="#L" n="3"> aequiangulum sed <seg type="apparat-ellipsis"/>
+ laterum infinitorum. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch24.p7">Quin etsi ponantur ipsa membrilla extendi et contrahi,
 videtur tamen semper ubique aequale debere esse
-et membrillorum incrementum,<index indexName="Sachen"><term>membrillum</term></index>
+et membrillorum incrementum,<index indexName="Sachen">
+<term>membrillum</term>
+</index>
 et angulorum ratio.
-Fortasse si lamina<index indexName="Sachen"><term>lamina elastica</term></index> concipiatur ut linea,
+Fortasse si lamina<index indexName="Sachen">
+<term>lamina elastica</term>
+</index> concipiatur ut linea,
 sine latitudine et
-<app type="Bfootnote"><lem type="main">crassitie[,]<index indexName="Sachen"><term>crassities laminae</term></index>
-omnino exitum<index indexName="Sachen"><term>exitus quaestionis</term></index>
-non habet quaestio;<index indexName="Sachen"><term>quaestio</term></index></lem><note type="lemma-abbrev">crassitie</note><rdg wit="#L" n="1"> res
-</rdg><rdg wit="#L" n="2"> omnino exitum non habet quaestio; <hi rendition="#i">L</hi></rdg></app>
-quod si jam crassitiem habeat,<index indexName="Sachen"><term>crassities laminae</term></index>
+<app type="Bfootnote">
+<lem type="main">crassitie[,]<index indexName="Sachen">
+<term>crassities laminae</term>
+</index>
+omnino exitum<index indexName="Sachen">
+<term>exitus quaestionis</term>
+</index>
+non habet quaestio;<index indexName="Sachen">
+<term>quaestio</term>
+</index>
+</lem>
+<note type="lemma-abbrev">crassitie</note>
+<rdg wit="#L" n="1"> res
+</rdg>
+<rdg wit="#L" n="2"> omnino exitum non habet quaestio; <hi rendition="#i">L</hi>
+</rdg>
+</app>
+quod si jam crassitiem habeat,<index indexName="Sachen">
+<term>crassities laminae</term>
+</index>
 tunc varius est
-<app type="Bfootnote"><lem type="main">eventus pro crassitiei ratione,
-et figura potius solidi<index indexName="Sachen"><term>figura solidi</term></index>
-nascentis<index indexName="Sachen"><term>solidum nascens</term></index>
-quam lineae quaerenda,</lem><note type="lemma-abbrev">eventus</note><rdg wit="#L" n="1"> pro variis
-</rdg><rdg wit="#L" n="2"> pro crassitiei ratione,
-<app><rdg wit="#L" n="a">et pro latitudine in
-</rdg><rdg wit="#L" n="b">et figura <seg type="apparat-ellipsis"/> lineae quaerenda, <hi rendition="#i">L</hi></rdg></app></rdg></app>
-et alia videtur esse superficies solidi<index indexName="Sachen"><term>superficies solidi</term></index> intus quam
-<app type="Bfootnote"><lem type="main">extra, querendaque</lem><note type="lemma-abbrev">extra,</note><rdg wit="#L" n="1"> ut et
-</rdg><rdg wit="#L" n="2"> quaerendaque <hi rendition="#i">L</hi></rdg></app>
-jam erit linea sectionem solidi<index indexName="Sachen"><term>sectio solidi</term></index> per
-<app type="Bfootnote"><lem type="main">medium in</lem><note type="lemma-abbrev">medium</note><rdg wit="#L" n="1"> supra
-</rdg><rdg wit="#L" n="2"> in <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">eventus pro crassitiei ratione,
+et figura potius solidi<index indexName="Sachen">
+<term>figura solidi</term>
+</index>
+nascentis<index indexName="Sachen">
+<term>solidum nascens</term>
+</index>
+quam lineae quaerenda,</lem>
+<note type="lemma-abbrev">eventus</note>
+<rdg wit="#L" n="1"> pro variis
+</rdg>
+<rdg wit="#L" n="2"> pro crassitiei ratione,
+<app>
+<rdg wit="#L" n="a">et pro latitudine in
+</rdg>
+<rdg wit="#L" n="b">et figura <seg type="apparat-ellipsis"/>
+ lineae quaerenda, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+et alia videtur esse superficies solidi<index indexName="Sachen">
+<term>superficies solidi</term>
+</index> intus quam
+<app type="Bfootnote">
+<lem type="main">extra, querendaque</lem>
+<note type="lemma-abbrev">extra,</note>
+<rdg wit="#L" n="1"> ut et
+</rdg>
+<rdg wit="#L" n="2"> quaerendaque <hi rendition="#i">L</hi>
+</rdg>
+</app>
+jam erit linea sectionem solidi<index indexName="Sachen">
+<term>sectio solidi</term>
+</index> per
+<app type="Bfootnote">
+<lem type="main">medium in</lem>
+<note type="lemma-abbrev">medium</note>
+<rdg wit="#L" n="1"> supra
+</rdg>
+<rdg wit="#L" n="2"> in <hi rendition="#i">L</hi>
+</rdg>
+</app>
 concavo pariter et in convexo terminans.
 Revera tamen
-cum crassities sit valde exigua[,] videtur solidum<index indexName="Sachen"><term>solidum nascens</term></index>
-pro</p><figure rendition="#own-line_centered" xml:id="Ch24.p8_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_118_d1.svg" width="60.7068pt" xml:id="Ch24.p8.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_37_05_118r_Fig.1"/></head></figure><figure rendition="#own-line_centered" xml:id="Ch24.p8_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_118_d2.svg" width="116.21016pt" xml:id="Ch24.p8.g2"/><head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]<anchor xml:id="LH_37_05_118r_Fig.2"/></head></figure><figure rendition="#own-line_centered" xml:id="Ch24.p9_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_118_d3.svg" width="78.0516pt" xml:id="Ch24.p9.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]<anchor xml:id="LH_37_05_118r_Fig.3"/></head></figure><figure rendition="#own-line_centered" xml:id="Ch24.p9_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_118_d4.svg" width="108.405pt" xml:id="Ch24.p9.g2"/><head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]<anchor xml:id="LH_37_05_118r_Fig.4"/></head></figure><p rendition="#noindent" xml:id="Ch24.p10">linea haberi posse;
+cum crassities sit valde exigua[,] videtur solidum<index indexName="Sachen">
+<term>solidum nascens</term>
+</index>
+pro</p>
+<figure rendition="#own-line_centered" xml:id="Ch24.p8_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_118_d1.svg" width="60.7068pt" xml:id="Ch24.p8.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_37_05_118r_Fig.1"/>
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch24.p8_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_118_d2.svg" width="116.21016pt" xml:id="Ch24.p8.g2"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]<anchor xml:id="LH_37_05_118r_Fig.2"/>
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch24.p9_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_118_d3.svg" width="78.0516pt" xml:id="Ch24.p9.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]<anchor xml:id="LH_37_05_118r_Fig.3"/>
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch24.p9_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_37_05_118_d4.svg" width="108.405pt" xml:id="Ch24.p9.g2"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]<anchor xml:id="LH_37_05_118r_Fig.4"/>
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch24.p10">linea haberi posse;
 potest etiam concipi quid prodeat
-si crassities<index indexName="Sachen"><term>crassities laminae</term></index>
-infinite parva<index indexName="Sachen"><term>crassities infinite parva</term></index>
+si crassities<index indexName="Sachen">
+<term>crassities laminae</term>
+</index>
+infinite parva<index indexName="Sachen">
+<term>crassities infinite parva</term>
+</index>
 intelligatur[,] quo posito nondum video
 quomodo circulum evitare
 possim.
-<anchor xml:id="LH_37_05_118r_saltus_jfdhgv-1"/><app type="Bfootnote" from="#LH_37_05_118r_saltus_jfdhgv-1" to="#LH_37_05_118r_saltus_jfdhgv-2"><lem type="main"/><note type="lemma-abbrev">possim.</note><rdg wit="#L" n="1"> Verum
-</rdg><rdg wit="#L" n="2"> Atque <hi rendition="#i">L</hi></rdg></app></p><p xml:id="Ch24.p11">Atque
+<anchor xml:id="LH_37_05_118r_saltus_jfdhgv-1"/>
+<app type="Bfootnote" from="#LH_37_05_118r_saltus_jfdhgv-1" to="#LH_37_05_118r_saltus_jfdhgv-2">
+<lem type="main"/>
+<note type="lemma-abbrev">possim.</note>
+<rdg wit="#L" n="1"> Verum
+</rdg>
+<rdg wit="#L" n="2"> Atque <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch24.p11">Atque
 haec ita prima specie videntur,
 sed re melius expensa video
-<anchor xml:id="LH_37_05_118r_saltus_jfdhgv-2"/><app type="Bfootnote"><lem type="main">omnia membrilla</lem><note type="lemma-abbrev">omnia</note><rdg wit="#L" n="1"> puncta
-</rdg><rdg wit="#L" n="2"> membrilla <hi rendition="#i">L</hi></rdg></app>
-sequi directionem imprimentis.<index indexName="Sachen"><term>directio imprimentis</term></index>
-Ut si in membrillum<index indexName="Sachen"><term>membrillum</term></index>
-<hi rendition="#i">C</hi> sit impressio<index indexName="Sachen"><term>impressio</term></index> <hi rendition="#i">DC</hi>,
+<anchor xml:id="LH_37_05_118r_saltus_jfdhgv-2"/>
+<app type="Bfootnote">
+<lem type="main">omnia membrilla</lem>
+<note type="lemma-abbrev">omnia</note>
+<rdg wit="#L" n="1"> puncta
+</rdg>
+<rdg wit="#L" n="2"> membrilla <hi rendition="#i">L</hi>
+</rdg>
+</app>
+sequi directionem imprimentis.<index indexName="Sachen">
+<term>directio imprimentis</term>
+</index>
+Ut si in membrillum<index indexName="Sachen">
+<term>membrillum</term>
+</index>
+<hi rendition="#i">C</hi> sit impressio<index indexName="Sachen">
+<term>impressio</term>
+</index>
+<hi rendition="#i">DC</hi>,
 erit validissima in <hi rendition="#i">C</hi>,
 obliqua in <hi rendition="#i">B</hi>,
-nulla in <hi rendition="#i">A</hi>.</p></div></div></body>
-  </text>
+nulla in <hi rendition="#i">A</hi>.
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,22 +1,122 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-077-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-02-077-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Aus einem Gespräch mit Robert Boyle</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2021</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Aus einem Gespräch mit Robert Boyle</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2021</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-        </author><title type="chapter" level="a" n="77">7Aus einem Gespräch mit Robert Boyle</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1676-10" resp="#ed" cert="medium">[zweite Hälfte Oktober 1676]</date><date calendar="#gregorian" notAfter="1676-10" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno><idno type="page">#page=733</idno></idno></analytic><monogr><title type="main" level="s" n="8">Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="2" level="m">Band 2: 1668 – 1676</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2016</date></imprint><biblScope unit="page" from="685" to="688"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-02-077-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XLI 2 Bl. 9</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung:
+            </author>
+            <title type="chapter" level="a" n="77">7Aus einem Gespräch mit Robert Boyle</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1676-10" resp="#ed" cert="medium">[zweite Hälfte Oktober 1676]</date>
+            <date calendar="#gregorian" notAfter="1676-10" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_2.pdf</idno>
+              <idno type="page">#page=733</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="2" level="m">Band 2: 1668 – 1676</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2016</date>
+            </imprint>
+            <biblScope unit="page" from="685" to="688"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-02-077-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XLI 2 Bl. 9</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung:
 LH XLI 2 Bl. 9.
 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 9 r<hi rendition="#sup">o</hi>.
-Bl. 9 v<hi rendition="#sup">o</hi> leer.</p><p>Cc 2, Nr. 00</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
+Bl. 9 v<hi rendition="#sup">o</hi> leer.</p>
+                  <p>Cc 2, Nr. 00</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+              </physDesc>
+              <history>
+                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -642,94 +742,626 @@ Bl. 9 v<hi rendition="#sup">o</hi> leer.</p><p>Cc 2, Nr. 00</p></summary></msCo
         </glyph>
       </charDecl>
     </encodingDesc>
-    <profileDesc><langUsage><language ident="fr"/><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#medizin"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-09-17" who="#stork" status="enrich_1"/></revisionDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr"/>
+        <language ident="la"/>
+      </langUsage>
+      <calendarDesc>
+        <calendar xml:id="gregorian">
+          <p>Gregorianischer Kalenderstil</p>
+        </calendar>
+        <calendar xml:id="julian">
+          <p>Julianischer Kalenderstil</p>
+        </calendar>
+      </calendarDesc>
+      <textClass>
+        <catRef scheme="L_subjects" target="L_subjects.xml#medizin"/>
+        <catRef scheme="L_terms" target="L_terms.xml#"/>
+      </textClass>
+      <abstract>
+        <listPerson>
+          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+          <person sameAs="L_persons.xml#"/>
+        </listPerson>
+        <listPlace>
+          <place sameAs="L_places.xml#"/>
+        </listPlace>
+      </abstract>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021" who="#telota" status="base"/>
+      <change when="2021-09-17" who="#stork" status="enrich_1"/>
+    </revisionDesc>
   </teiHeader>
   <facsimile source="digilib.bbaw.de" xml:id="L_08-02-077-000_facs-haupttextzeuge">
     <graphic url="http://digitale-sammlungen.gwlb.de/index.php?id=6&amp;tx_dlf[id]=1982&amp;tx_dlf[page]=17"/>
     <graphic url="http://digitale-sammlungen.gwlb.de/index.php?id=6&amp;tx_dlf[id]=1982&amp;tx_dlf[page]=18"/>
-  </facsimile><text xml:id="L_08-02-077-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch77" n="77"><pb type="VIII_2" n="685"/><head>77.
+  </facsimile>
+  <text xml:id="L_08-02-077-000_text">
+    <body xml:id="Document">
+      <div type="chapter" xml:id="Ch77" n="77">
+        <pb type="VIII_2" n="685"/>
+        <head>77.
 AUS EINEM GESPRÄCH MIT ROBERT BOYLE</head>
-<head>[zweite Hälfte Oktober 1676]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur"/></msIdentifier><msContents><summary><p>Aufzeichnung:
+        <head>[zweite Hälfte Oktober 1676]</head>
+        <div type="ueberlieferung">
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
+                  <msIdentifier>
+                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                    <idno type="Signatur"/>
+                  </msIdentifier>
+                  <msContents>
+                    <summary>
+                      <p>Aufzeichnung:
 LH XLI 2 Bl. 9.
 1 Bl. 2<hi rendition="#sup">o</hi>. 1 S. auf Bl. 9 r<hi rendition="#sup">o</hi>.
-Bl. 9 v<hi rendition="#sup">o</hi> leer.</p><p>Cc 2, Nr. 00</p></summary></msContents><physDesc><objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch77.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
+Bl. 9 v<hi rendition="#sup">o</hi> leer.</p>
+                      <p>Cc 2, Nr. 00</p>
+                    </summary>
+                  </msContents>
+                  <physDesc>
+                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+                  </physDesc>
+                  <history>
+                    <origin/>
+                  </history>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
+        </div>
+        <div type="contents">
+          <p xml:id="Ch77.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe:</hi>
 Eine Unterredung mit Boyle kann nur während eines Aufenthalts Leibniz’ in England stattgefunden haben.
 Das zu Beginn der Aufzeichnung erwähnte Modell des Salomon-Tempels von Jacob Judah Leon und Adam Boreel wurde 1675 in London ausgestellt.
-(Siehe <ref corresp="#bib_01150"/><hi rendition="#k">A. Balfour</hi>, <hi rendition="#i">Solomon’s Tempel: Myth, Conflict, and Faith</hi>, Chichester 2015, S. 199f.)
+(Siehe <ref corresp="#bib_01150"/>
+            <hi rendition="#k">A. Balfour</hi>,            <hi rendition="#i">Solomon’s Tempel: Myth, Conflict, and Faith</hi>, Chichester 2015, S. 199f.)
 Daraus ergibt sich eine Datierung der Unterredung sowie der Aufzeichnung auf die zweite Hälfte Oktober 1676,
-als Leibniz sich zum letzten Mal in London aufgehalten hat.</hi></p></div><div type="text"><p xml:id="Ch77.p5" rendition="#noindent"><pb type="L"/><fw type="folNum">[9 r<hi rendition="#sup">o</hi>]</fw>
-Templum Salomonis<index indexName="Sachverzeichnis"><term>templum Salomonis</term></index> cura Leonis Judae,<index indexName="Namensregister"><term><hi rendition="#g">Leon</hi>, Jacob Judah 1602-1675</term></index> Judaei Amstelodamensis et
-<app type="Cfootnote"><lem type="main">Petri Borelli</lem><note type="editorial">Siehe eigentlich <bibl corresp="#bib_01018"><hi rendition="#k">A. Boreel</hi>, <hi rendition="#i">Ad legem</hi>, o.O. 1645.
-Leibniz verwechselt an dieser Stelle Adam Boreel mit Pierre Borel, Mediziner und Naturforscher.</bibl></note></app><index indexName="Namensregister"><term><hi rendition="#g">Borel</hi>, Pierre 1620-1689</term></index><index indexName="Namensregister"><term><hi rendition="#g">Boreel</hi>, Adam 1603-1667</term></index>
+als Leibniz sich zum letzten Mal in London aufgehalten hat.</hi>
+        </p>
+      </div>
+      <div type="text">
+        <p xml:id="Ch77.p5" rendition="#noindent">
+          <pb type="L"/>
+          <fw type="folNum">[9 r<hi rendition="#sup">o</hi>]
+          </fw>
+Templum Salomonis<index indexName="Sachverzeichnis">
+          <term>templum Salomonis</term>
+        </index> cura Leonis Judae,<index indexName="Namensregister">
+        <term>
+          <hi rendition="#g">Leon</hi>, Jacob Judah 1602-1675</term>
+      </index> Judaei Amstelodamensis et
+      <app type="Cfootnote">
+        <lem type="main">Petri Borelli</lem>
+        <note type="editorial">Siehe eigentlich <bibl corresp="#bib_01018">
+          <hi rendition="#k">A. Boreel</hi>,          <hi rendition="#i">Ad legem</hi>, o.O. 1645.
+Leibniz verwechselt an dieser Stelle Adam Boreel mit Pierre Borel, Mediziner und Naturforscher.</bibl>
+      </note>
+    </app>
+    <index indexName="Namensregister">
+      <term>
+        <hi rendition="#g">Borel</hi>, Pierre 1620-1689</term>
+    </index>
+    <index indexName="Namensregister">
+      <term>
+        <hi rendition="#g">Boreel</hi>, Adam 1603-1667</term>
+    </index>
 (autoris libri ad legem et testimonium)
-exactissime confectum visitur Londini in vico<index indexName="Ortsregister"><term>London</term></index> …</p><p xml:id="Ch77.p6">Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> m’a conté bien des choses de Mons. Greatrick.<index indexName="Namensregister"><term><hi rendition="#g">Greatrakes</hi> (Greatrick), Valentine 1629-1683</term></index>
+exactissime confectum visitur Londini in vico<index indexName="Ortsregister">
+    <term>London</term>
+  </index> …
+</p>
+<p xml:id="Ch77.p6">Mons. Boyle<index indexName="Namensregister">
+  <term>
+    <hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> m’a conté bien des choses de Mons. Greatrick.<index indexName="Namensregister">
+<term>
+  <hi rendition="#g">Greatrakes</hi> (Greatrick), Valentine 1629-1683</term>
+</index>
 Il l’a connu fort particulierement et il a esté present à plusieurs de
-<app type="Bfootnote"><lem type="main">ses impositions de main.</lem><note type="lemma-abbrev">ses</note><rdg wit="#L" n="1"> experiences </rdg><rdg wit="#L" n="2"> impositions de main. <hi rendition="#i">L</hi></rdg></app>
-Les <app type="Bfootnote"><lem type="main">douleurs fuyoient un</lem><note type="lemma-abbrev">douleurs</note><rdg wit="#L" n="1"> le fuyoient; </rdg><rdg wit="#L" n="2"> fuyoient <app><rdg wit="#L" n="a"> quand il s </rdg><rdg wit="#L" n="b"> le </rdg><rdg wit="#L" n="c"> un <hi rendition="#i">L</hi></rdg></app></rdg></app>
+<app type="Bfootnote">
+<lem type="main">ses impositions de main.</lem>
+<note type="lemma-abbrev">ses</note>
+<rdg wit="#L" n="1"> experiences </rdg>
+<rdg wit="#L" n="2"> impositions de main. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+Les <app type="Bfootnote">
+<lem type="main">douleurs fuyoient un</lem>
+<note type="lemma-abbrev">douleurs</note>
+<rdg wit="#L" n="1"> le fuyoient; </rdg>
+<rdg wit="#L" n="2"> fuyoient <app>
+<rdg wit="#L" n="a"> quand il s </rdg>
+<rdg wit="#L" n="b"> le </rdg>
+<rdg wit="#L" n="c"> un <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
 attouchement redoublé assez leger; bien souuent il touchoit jusqu’ à la 4<hi rendition="#sup">me</hi> fois avant que de chasser le mal. Ayant un mal de teste, il se guerit luy même par l’attouchement. Il a fait en 2 mois une infinitê d’experiences à Londres.
-Mylord Brounker<index indexName="Namensregister"><term><hi rendition="#g">Brouncker</hi> (Brounker, Brunckerus), William 1620-1684</term></index>
-doutant du succès, et s’en mocquant, fut convaincu lorsque Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> l’y
-<app type="Bfootnote"><lem type="main">mena, et</lem><note type="lemma-abbrev">mena,</note><rdg wit="#L" n="1"> une femme de qualité vint dans </rdg><rdg wit="#L" n="2"> et <hi rendition="#i">L</hi></rdg></app>
-Mons. Brounker<index indexName="Namensregister"><term><hi rendition="#g">Brouncker</hi> (Brounker, Brunckerus), William 1620-1684</term></index> le prit dans sa maison où il resta pendant qu’il fut à Londres. Une fois estant chez Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> une femme de qualité l’ayant sçeu y vint et le pria de la toucher. Il la toucha jusqu’ à la quatrieme fois avant que de chasser son mal de teste, qui se retira
-<app type="Bfootnote"><lem type="main">dans l’epaule droite,</lem><note type="lemma-abbrev">dans</note><rdg wit="#L" n="1"> le bras. </rdg><rdg wit="#L" n="2"> l’epaule droite, <hi rendition="#i">L</hi></rdg></app>
+Mylord Brounker<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Brouncker</hi> (Brounker, Brunckerus), William 1620-1684</term>
+</index>
+doutant du succès, et s’en mocquant, fut convaincu lorsque Mons. Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> l’y
+<app type="Bfootnote">
+<lem type="main">mena, et</lem>
+<note type="lemma-abbrev">mena,</note>
+<rdg wit="#L" n="1"> une femme de qualité vint dans </rdg>
+<rdg wit="#L" n="2"> et <hi rendition="#i">L</hi>
+</rdg>
+</app>
+Mons. Brounker<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Brouncker</hi> (Brounker, Brunckerus), William 1620-1684</term>
+</index> le prit dans sa maison où il resta pendant qu’il fut à Londres. Une fois estant chez Mons. Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> une femme de qualité l’ayant sçeu y vint et le pria de la toucher. Il la toucha jusqu’ à la quatrieme fois avant que de chasser son mal de teste, qui se retira
+<app type="Bfootnote">
+<lem type="main">dans l’epaule droite,</lem>
+<note type="lemma-abbrev">dans</note>
+<rdg wit="#L" n="1"> le bras. </rdg>
+<rdg wit="#L" n="2"> l’epaule droite, <hi rendition="#i">L</hi>
+</rdg>
+</app>
 de là dans
-<app type="Bfootnote"><lem type="main">l’eelbogen<index indexName="Sachverzeichnis"><term>eelbogen</term></index>, mais le</lem><note type="lemma-abbrev">l’eelbogen,</note><rdg wit="#L" n="1"> et </rdg><rdg wit="#L" n="2"> mais <app><rdg wit="#L" n="a">il </rdg><rdg wit="#L" n="b">le <hi rendition="#i">L</hi></rdg></app></rdg></app>
+<app type="Bfootnote">
+<lem type="main">l’eelbogen<index indexName="Sachverzeichnis">
+<term>eelbogen</term>
+</index>, mais le</lem>
+<note type="lemma-abbrev">l’eelbogen,</note>
+<rdg wit="#L" n="1"> et </rdg>
+<rdg wit="#L" n="2"> mais <app>
+<rdg wit="#L" n="a">il </rdg>
+<rdg wit="#L" n="b">le <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
 mal ne sortit pas comme il faisoit à l’ordinaire par les doits. Il luy échappa et
-<app type="Bfootnote"><lem type="main">retourna vers</lem><note type="lemma-abbrev">retourna</note><rdg wit="#L" n="1"> dans </rdg><rdg wit="#L" n="2"> vers <hi rendition="#i">L</hi></rdg></app>
-<app type="Bfootnote"><lem type="main">l’epaule, la</lem><note type="lemma-abbrev">l’epaule,</note><rdg wit="#L" n="1"> il </rdg><rdg wit="#L" n="2"> la <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">retourna vers</lem>
+<note type="lemma-abbrev">retourna</note>
+<rdg wit="#L" n="1"> dans </rdg>
+<rdg wit="#L" n="2"> vers <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">l’epaule, la</lem>
+<note type="lemma-abbrev">l’epaule,</note>
+<rdg wit="#L" n="1"> il </rdg>
+<rdg wit="#L" n="2"> la <hi rendition="#i">L</hi>
+</rdg>
+</app>
 femme ne sentit plus de mal.
-Mais Mons. Greatrik<index indexName="Namensregister"><term><hi rendition="#g">Greatrakes</hi> (Greatrick), Valentine 1629-1683</term></index> dit à Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index>, qu’elle n’estoit pas bien guerie, que le mal n’estoit pas sorti, qu’il s’ estoit caché. Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> asseure, que la sudeur<index indexName="Sachverzeichnis"><term>sudeur</term></index> de Mons. Greatrick<index indexName="Namensregister"><term><hi rendition="#g">Greatrakes</hi> (Greatrick), Valentine 1629-1683</term></index> sentoit bien. <pb type="VIII_2" n="686"/>Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> est fort en peine pour decider si c’estoit un effect naturel, ou surnaturel. La difficulté est à l’egard de la maniere dont il s’est apperceu de sa vertu. Il asseure, que c’estoit par une inspiration. C’est un homme fort croyable, sans interest, car il a de quoy vivre caute. Il ne prend rien. Il est sans vanité, et sans ambition. Intra annum abhinc
-<app type="Bfootnote"><lem type="main">scripsit se</lem><rdg wit="#L" cause="deletion">scripsit <note type="editorial">|</note> <del>(Boylio)</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> se  <hi rendition="#i">L</hi></rdg></app>
+Mais Mons. Greatrik<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Greatrakes</hi> (Greatrick), Valentine 1629-1683</term>
+</index> dit à Mons. Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index>, qu’elle n’estoit pas bien guerie, que le mal n’estoit pas sorti, qu’il s’ estoit caché. Mons. Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> asseure, que la sudeur<index indexName="Sachverzeichnis">
+<term>sudeur</term>
+</index> de Mons. Greatrick<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Greatrakes</hi> (Greatrick), Valentine 1629-1683</term>
+</index> sentoit bien. <pb type="VIII_2" n="686"/>
+Mons. Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> est fort en peine pour decider si c’estoit un effect naturel, ou surnaturel. La difficulté est à l’egard de la maniere dont il s’est apperceu de sa vertu. Il asseure, que c’estoit par une inspiration. C’est un homme fort croyable, sans interest, car il a de quoy vivre caute. Il ne prend rien. Il est sans vanité, et sans ambition. Intra annum abhinc
+<app type="Bfootnote">
+<lem type="main">scripsit se</lem>
+<rdg wit="#L" cause="deletion">scripsit <note type="editorial">|</note>
+<del>(Boylio)</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> se  <hi rendition="#i">L</hi>
+</rdg>
+</app>
 nuper fecisse curam tanti momenti et difficultatis quanta aliqua priorum.
-<app type="Cfootnote"><lem type="main">Galaeus</lem><note type="editorial"><bibl corresp="#bib_00495"><hi rendition="#k">T. Gale</hi>,<index indexName="Namensregister"><term><hi rendition="#g">Gale</hi> (Galaeus), Theophilus 1628–1678</term></index> <hi rendition="#i">Court of gentiles</hi>, 4 Bde., London und Oxford 1667-1671.</bibl></note></app>
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">Anglus</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-in libro <hi rendition="#i">Court of …</hi> multis ostendere conatur philosoφiam pythagoream<index indexName="Sachverzeichnis"><term>philosophia Pythagorea</term></index> et aliam veterem esse ex Moyse<index indexName="Namensregister"><term><hi rendition="#g">Moses</hi> (Moyse)</term></index> et Judaeis mediate aut immediate.</p><p xml:id="Ch77.p7"><app type="Bfootnote"><lem type="main">Pokokius<app type="Cfootnote"><lem type="main"/><note type="lemma-abbrev">Pokokius</note><note type="editorial"><hi rendition="#k"><ref corresp="#bib_00496"/>E. Pocock</hi>, <hi rendition="#i">Commentarius in prophetiam Joelis</hi>, Leipzig 1695, Vorrede.</note></app><index indexName="Namensregister"><term><hi rendition="#g">Pockocke</hi> (Pokokius), Edward 1604-1691</term></index>
-in quibusdam locis</lem><note type="lemma-abbrev">Pokokius</note><rdg wit="#L" n="1"> sparsim </rdg><rdg wit="#L" n="2"> in quibusdam locis <hi rendition="#i">L</hi></rdg></app>
+<app type="Cfootnote">
+<lem type="main">Galaeus</lem>
+<note type="editorial">
+<bibl corresp="#bib_00495">
+<hi rendition="#k">T. Gale</hi>,<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Gale</hi> (Galaeus), Theophilus 1628–1678</term>
+</index>
+<hi rendition="#i">Court of gentiles</hi>, 4 Bde., London und Oxford 1667-1671.</bibl>
+</note>
+</app>
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">Anglus</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+in libro <hi rendition="#i">Court of …</hi> multis ostendere conatur philosoφiam pythagoream<index indexName="Sachverzeichnis">
+<term>philosophia Pythagorea</term>
+</index> et aliam veterem esse ex Moyse<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Moses</hi> (Moyse)</term>
+</index> et Judaeis mediate aut immediate.</p>
+<p xml:id="Ch77.p7">
+<app type="Bfootnote">
+<lem type="main">Pokokius<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">Pokokius</note>
+<note type="editorial">
+<hi rendition="#k">
+<ref corresp="#bib_00496"/>
+E. Pocock</hi>,<hi rendition="#i">Commentarius in prophetiam Joelis</hi>, Leipzig 1695, Vorrede.</note>
+</app>
+<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Pockocke</hi> (Pokokius), Edward 1604-1691</term>
+</index>
+in quibusdam locis</lem>
+<note type="lemma-abbrev">Pokokius</note>
+<rdg wit="#L" n="1"> sparsim </rdg>
+<rdg wit="#L" n="2"> in quibusdam locis <hi rendition="#i">L</hi>
+</rdg>
+</app>
 notionem illam prosecutus est, quod significationes
-<app type="Bfootnote"><lem type="main">quaedam vocabulorum</lem><note type="lemma-abbrev">quaedam</note><rdg wit="#L" n="1"> locorum </rdg><rdg wit="#L" n="2"> vocabulorum <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">quaedam vocabulorum</lem>
+<note type="lemma-abbrev">quaedam</note>
+<rdg wit="#L" n="1"> locorum </rdg>
+<rdg wit="#L" n="2"> vocabulorum <hi rendition="#i">L</hi>
+</rdg>
+</app>
 Scripturae sacrae veteres et
-<app type="Bfootnote"><lem type="main">perditae sed</lem><note type="lemma-abbrev">perditae</note><rdg wit="#L" n="1"> ad </rdg><rdg wit="#L" n="2"> et </rdg><rdg wit="#L" n="3"> sed <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">perditae sed</lem>
+<note type="lemma-abbrev">perditae</note>
+<rdg wit="#L" n="1"> ad </rdg>
+<rdg wit="#L" n="2"> et </rdg>
+<rdg wit="#L" n="3"> sed <hi rendition="#i">L</hi>
+</rdg>
+</app>
 illo tempore adhuc vigentes quo 70 scribebant adhuc in Arabico extent nonnunquam.
-Idque exemplis selectis illustrat.</p><p xml:id="Ch77.p8"><app type="Cfootnote"><lem type="main">Hammondi</lem><note type="editorial"><bibl corresp="#bib_00497"><hi rendition="#k">H. Hammond</hi>, <hi rendition="#i">Paraphrase of the New Testament</hi>, London 1653.</bibl></note></app><index indexName="Namensregister"><term><hi rendition="#g">Hammond</hi> (Hammondus), Henry 1605–1660</term></index> notae probae
-<anchor xml:id="great1"/>in N.T.<app type="Bfootnote" from="#great1" to="#great2"><lem type="main"/><note type="lemma-abbrev">N.T.</note><rdg wit="#L" n="1"> Diamant </rdg><rdg wit="#L" n="2"> Diamas <hi rendition="#i">L</hi></rdg></app></p><p xml:id="Ch77.p9">Diamas<anchor xml:id="great2"/>
-que Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> me fit
-<app type="Bfootnote"><lem type="main">voir qui est comme per</lem><note type="lemma-abbrev">voir</note><rdg wit="#L" n="1"> per </rdg><rdg wit="#L" n="2"> qui est comme per <hi rendition="#i">L</hi></rdg></app>
-laminas stratificatas sibi superpositas, quarum commissurae apparent lineolis quibusdam parallelis in ejus superficie dictis.</p><p xml:id="Ch77.p10">Smaragdus pulcherrima Boylii<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index>, Electrica<index indexName="Sachverzeichnis"><term>electrica</term></index> est, quicquid contra dicant autores veteres et recentiores, quod smaragdus non sit Electrica<index indexName="Sachverzeichnis"><term>electrica</term></index>.</p><p xml:id="Ch77.p11">Vossius<index indexName="Namensregister"><term><hi rendition="#g">Vossius</hi> (Voss), Isaac 1618-1689</term></index> unus omnium mortalium maxime est in Geograφia<index indexName="Sachverzeichnis"><term>geographia</term></index> versatus, perlegit omnes chartas societatis ostindicae et inde ad rem facientia excerpsit. Ejus Bibliotheca tunc tandem allata. Boylius<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> eum urgebit ut in Geograφia<index indexName="Sachverzeichnis"><term>geographia</term></index> laboret. Vidit apud eum descriptionem Batava lingua<index indexName="Sachverzeichnis"><term>lingua Batava</term></index> editam regni Matarum<index indexName="Sachverzeichnis"><term>regnus Matarum</term></index>, quod est in aversa Javae<index indexName="Ortsregister"><term>Java</term></index> parte, catena montium separata ab Hollandia.<index indexName="Ortsregister"><term>Holland (Hollandia)</term></index>
-Rex est potens, idololatra, habet praetorianam <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[militiam]</corr></lem><rdg wit="#L"><orig>militeriam</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> ultra 80,000 hominum. Non antea quisquam id descripsit. Boylius<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> habet descriptionem
-<app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">impressam</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-<app type="Bfootnote"><lem type="main">de Iezzo ultra Japonicam.</lem><note type="lemma-abbrev">de</note><rdg wit="#L" n="1"> Ieddo </rdg><rdg wit="#L" n="2"> Iezzo <app><rdg wit="#L" n="a">Japonensi </rdg><rdg wit="#L" n="b">ultra Japonicam. <hi rendition="#i">L</hi></rdg></app></rdg></app>
-Imperator Japoniae<index indexName="Ortsregister"><term>Japan (Japonia)</term></index> interdixit Hollandis navigatione in Iezzo.</p><pb type="VIII_2" n="687"/><p xml:id="Ch77.p12">Balsamus sulphuris<index indexName="Sachverzeichnis"><term>balsamus sulphuris</term></index>
-<app type="Cfootnote"><lem type="main">Boylii</lem><note type="editorial"><bibl corresp="#bib_00155"><hi rendition="#k">R. Boyle</hi>, <hi rendition="#i">The usefulnesse of experimental natural philosophy</hi>, Oxford 1671, Teil II, S. 156f.</bibl></note></app><index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index>
+Idque exemplis selectis illustrat.</p>
+<p xml:id="Ch77.p8">
+<app type="Cfootnote">
+<lem type="main">Hammondi</lem>
+<note type="editorial">
+<bibl corresp="#bib_00497">
+<hi rendition="#k">H. Hammond</hi>,<hi rendition="#i">Paraphrase of the New Testament</hi>, London 1653.</bibl>
+</note>
+</app>
+<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Hammond</hi> (Hammondus), Henry 1605–1660</term>
+</index> notae probae
+<anchor xml:id="great1"/>
+in N.T.<app type="Bfootnote" from="#great1" to="#great2">
+<lem type="main"/>
+<note type="lemma-abbrev">N.T.</note>
+<rdg wit="#L" n="1"> Diamant </rdg>
+<rdg wit="#L" n="2"> Diamas <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch77.p9">Diamas<anchor xml:id="great2"/>
+que Mons. Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> me fit
+<app type="Bfootnote">
+<lem type="main">voir qui est comme per</lem>
+<note type="lemma-abbrev">voir</note>
+<rdg wit="#L" n="1"> per </rdg>
+<rdg wit="#L" n="2"> qui est comme per <hi rendition="#i">L</hi>
+</rdg>
+</app>
+laminas stratificatas sibi superpositas, quarum commissurae apparent lineolis quibusdam parallelis in ejus superficie dictis.</p>
+<p xml:id="Ch77.p10">Smaragdus pulcherrima Boylii<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index>, Electrica<index indexName="Sachverzeichnis">
+<term>electrica</term>
+</index> est, quicquid contra dicant autores veteres et recentiores, quod smaragdus non sit Electrica<index indexName="Sachverzeichnis">
+<term>electrica</term>
+</index>.
+</p>
+<p xml:id="Ch77.p11">Vossius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Vossius</hi> (Voss), Isaac 1618-1689</term>
+</index> unus omnium mortalium maxime est in Geograφia<index indexName="Sachverzeichnis">
+<term>geographia</term>
+</index> versatus, perlegit omnes chartas societatis ostindicae et inde ad rem facientia excerpsit. Ejus Bibliotheca tunc tandem allata. Boylius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> eum urgebit ut in Geograφia<index indexName="Sachverzeichnis">
+<term>geographia</term>
+</index> laboret. Vidit apud eum descriptionem Batava lingua<index indexName="Sachverzeichnis">
+<term>lingua Batava</term>
+</index> editam regni Matarum<index indexName="Sachverzeichnis">
+<term>regnus Matarum</term>
+</index>, quod est in aversa Javae<index indexName="Ortsregister">
+<term>Java</term>
+</index> parte, catena montium separata ab Hollandia.<index indexName="Ortsregister">
+<term>Holland (Hollandia)</term>
+</index>
+Rex est potens, idololatra, habet praetorianam <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[militiam]</corr>
+</lem>
+<rdg wit="#L">
+<orig>militeriam</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> ultra 80,000 hominum. Non antea quisquam id descripsit. Boylius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> habet descriptionem
+<app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">impressam</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+<app type="Bfootnote">
+<lem type="main">de Iezzo ultra Japonicam.</lem>
+<note type="lemma-abbrev">de</note>
+<rdg wit="#L" n="1"> Ieddo </rdg>
+<rdg wit="#L" n="2"> Iezzo <app>
+<rdg wit="#L" n="a">Japonensi </rdg>
+<rdg wit="#L" n="b">ultra Japonicam. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+Imperator Japoniae<index indexName="Ortsregister">
+<term>Japan (Japonia)</term>
+</index> interdixit Hollandis navigatione in Iezzo.</p>
+<pb type="VIII_2" n="687"/>
+<p xml:id="Ch77.p12">Balsamus sulphuris<index indexName="Sachverzeichnis">
+<term>balsamus sulphuris</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">Boylii</lem>
+<note type="editorial">
+<bibl corresp="#bib_00155">
+<hi rendition="#k">R. Boyle</hi>,<hi rendition="#i">The usefulnesse of experimental natural philosophy</hi>, Oxford 1671, Teil II, S. 156f.</bibl>
+</note>
+</app>
+<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index>
 in lib. de utilitate descriptus egregius pro omnis generis vulneribus et ulceribus.
-Boylius<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> semper eum fert secum.
-Dolores capitis solo saepe odore sanat Boylius<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index>, ut spiritus salis. Retinet peregrinator Anglus qui interiora superioris Aegypti<index indexName="Ortsregister"><term>Aegypten (Aegyptus)</term></index> vidit, Boylio<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index>, Turcas milites dicere publice se
-<app type="Bfootnote"><lem type="main">facile iugum</lem><note type="lemma-abbrev">facile</note><rdg wit="#L" n="1"> se </rdg><rdg wit="#L" n="2"> iugum <hi rendition="#i">L</hi></rdg></app>
-Turcarum excutere sed metu intestinarum seditionum non fecisse, si quis Bassa amaretur et potens esset, facile se dominum ferret. Sed Bassas et omnino Turcas odere Aegyptii memoriam adhuc Mammeluccorum<index indexName="Sachverzeichnis"><term>Mamelucci</term></index> suorum in veneratione habentes, qui erant longe politiores Turcis.</p><p xml:id="Ch77.p13">Peregrinator Anglus qui in Siam<index indexName="Ortsregister"><term>Siam</term></index> fuit, dixit Boylio<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> se vidisse ibi tormentum bellicum 600 abhinc annis factum inscriptione Arabica.</p><p xml:id="Ch77.p14">Mons.<anchor xml:id="LH041_02_009r_Rabel-1"/>
-Rabel<index indexName="Namensregister"><term><hi rendition="#g">Rabel</hi> (Rabelius) 17. Jh.</term></index> egregia praestitit. Quendam hominem transfossum ipsis pulmonibus laesis (nam sanguinem spuebat), suo liquore ita sanavit ut homo tridui post in Withehal<index indexName="Ortsregister"><term>Whitehall</term></index> ierit. Nunc alterum dat liquorem internum qui discutit et sanguinem grumosum. Oldenburgius<index indexName="Namensregister"><term><hi rendition="#g">Oldenburg</hi>, Heinrich 1618?-1677</term></index> egregium sensit usum <index indexName="Namensregister"><term><hi rendition="#g">Rabel</hi> (Rabelius) 17. Jh.</term></index>Rabeliani liquoris contra Scorbutum<index indexName="Sachverzeichnis"><term>scorbutus</term></index> et dolores gingivarum.<anchor xml:id="LH041_02_009r_Rabel-2"/></p><p xml:id="Ch77.p15">Rex et princeps Robertus<index indexName="Namensregister"><term><hi rendition="#g">Pfalz-Simmern: Ruprecht</hi>, Pfalzgraf (princeps Robertus) 1619 - 1682)</term></index> habent ejus secretum
-<app type="Bfootnote"><lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[qui]</add></lem><note type="lemma-abbrev">qui</note><note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></app>
+Boylius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> semper eum fert secum.
+Dolores capitis solo saepe odore sanat Boylius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index>, ut spiritus salis. Retinet peregrinator Anglus qui interiora superioris Aegypti<index indexName="Ortsregister">
+<term>Aegypten (Aegyptus)</term>
+</index> vidit, Boylio<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index>, Turcas milites dicere publice se
+<app type="Bfootnote">
+<lem type="main">facile iugum</lem>
+<note type="lemma-abbrev">facile</note>
+<rdg wit="#L" n="1"> se </rdg>
+<rdg wit="#L" n="2"> iugum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+Turcarum excutere sed metu intestinarum seditionum non fecisse, si quis Bassa amaretur et potens esset, facile se dominum ferret. Sed Bassas et omnino Turcas odere Aegyptii memoriam adhuc Mammeluccorum<index indexName="Sachverzeichnis">
+<term>Mamelucci</term>
+</index> suorum in veneratione habentes, qui erant longe politiores Turcis.</p>
+<p xml:id="Ch77.p13">Peregrinator Anglus qui in Siam<index indexName="Ortsregister">
+<term>Siam</term>
+</index> fuit, dixit Boylio<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> se vidisse ibi tormentum bellicum 600 abhinc annis factum inscriptione Arabica.</p>
+<p xml:id="Ch77.p14">Mons.<anchor xml:id="LH041_02_009r_Rabel-1"/>
+Rabel<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Rabel</hi> (Rabelius) 17. Jh.</term>
+</index> egregia praestitit. Quendam hominem transfossum ipsis pulmonibus laesis (nam sanguinem spuebat), suo liquore ita sanavit ut homo tridui post in Withehal<index indexName="Ortsregister">
+<term>Whitehall</term>
+</index> ierit. Nunc alterum dat liquorem internum qui discutit et sanguinem grumosum. Oldenburgius<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Oldenburg</hi>, Heinrich 1618?-1677</term>
+</index> egregium sensit usum <index indexName="Namensregister">
+<term>
+<hi rendition="#g">Rabel</hi> (Rabelius) 17. Jh.</term>
+</index>Rabeliani liquoris contra Scorbutum<index indexName="Sachverzeichnis">
+<term>scorbutus</term>
+</index> et dolores gingivarum.<anchor xml:id="LH041_02_009r_Rabel-2"/>
+</p>
+<p xml:id="Ch77.p15">Rex et princeps Robertus<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Pfalz-Simmern: Ruprecht</hi>, Pfalzgraf (princeps Robertus) 1619 - 1682)</term>
+</index> habent ejus secretum
+<app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[qui]</add>
+</lem>
+<note type="lemma-abbrev">qui</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app>
 uno caret oculo, quod perdidit cum in oriente, ut
-<app type="Bfootnote"><lem type="main">narrat, cuidam</lem><note type="lemma-abbrev">narrat,</note><rdg wit="#L" n="1"> Judaeo </rdg><rdg wit="#L" n="2"> cuidam <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">narrat, cuidam</lem>
+<note type="lemma-abbrev">narrat,</note>
+<rdg wit="#L" n="1"> Judaeo </rdg>
+<rdg wit="#L" n="2"> cuidam <hi rendition="#i">L</hi>
+</rdg>
+</app>
 homini male habito assisteret, in eo tumultu oculum
-<app type="Bfootnote"><lem type="main">perdidit. Homo</lem><note type="lemma-abbrev">perdidit.</note><rdg wit="#L" n="1"> In </rdg><rdg wit="#L" n="2"> Homo <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">perdidit. Homo</lem>
+<note type="lemma-abbrev">perdidit.</note>
+<rdg wit="#L" n="1"> In </rdg>
+<rdg wit="#L" n="2"> Homo <hi rendition="#i">L</hi>
+</rdg>
+</app>
 qui erat Judaeus vulnus ait se sanare posse[,]
-oculum reddere non posse. Grati animi testem dedit medicinae ipsius praeparationem. Duos habet tantum liquores quibus omnia praestat. Fortissimus est internus, sufficiunt 5 guttae. Alter non ita penetrans. Gustus non malus.</p><p xml:id="Ch77.p16">Eau <app type="Bfootnote"><lem type="main"><!--is-addition-app-with-lemma--><add resp="#L">claire</add></lem><note type="editorial"><hi rendition="#i">erg. L</hi></note></app>
-de Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index>
+oculum reddere non posse. Grati animi testem dedit medicinae ipsius praeparationem. Duos habet tantum liquores quibus omnia praestat. Fortissimus est internus, sufficiunt 5 guttae. Alter non ita penetrans. Gustus non malus.</p>
+<p xml:id="Ch77.p16">Eau <app type="Bfootnote">
+<lem type="main"><!--is-addition-app-with-lemma-->
+<add resp="#L">claire</add>
+</lem>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</app>
+de Mons. Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index>
 qui devient trouble par l’instillation de quelques gouttes, et reprend sa netteté, par l’instillation de quelques
-<app type="Bfootnote"><lem type="main">autres; sans</lem><note type="lemma-abbrev">autres;</note><rdg wit="#L" n="1"> pour p </rdg><rdg wit="#L" n="2"> sans <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">autres; sans</lem>
+<note type="lemma-abbrev">autres;</note>
+<rdg wit="#L" n="1"> pour p </rdg>
+<rdg wit="#L" n="2"> sans <hi rendition="#i">L</hi>
+</rdg>
+</app>
 qu’il tombe aucun sediment au fonds: pour prouuer que le sang pourroit estre épuré,
-<app type="Bfootnote"><lem type="main">sans saignée,</lem><note type="lemma-abbrev">sans</note><rdg wit="#L" n="1"> venesectio </rdg><rdg wit="#L" n="2"> saignée, <hi rendition="#i">L</hi></rdg></app>
-et même sans precipitation.</p><p xml:id="Ch77.p17"><app type="Cfootnote"><lem type="main">Briggs</lem><note type="editorial"><bibl corresp="#bib_01019"><hi rendition="#k">W. Briggs</hi>, <hi rendition="#i">Opthalmographia</hi>, Cambridge 1676.</bibl></note></app> <hi rendition="#i">ophthalmograφia</hi>.<index indexName="Namensregister"><term><hi rendition="#g">Briggs</hi>, William 1642-1704</term></index></p><p xml:id="Ch77.p18">Willisii<index indexName="Namensregister"><term><hi rendition="#g">Willis</hi>, Thomas 1621-1675</term></index> praeparatio croci martis<index indexName="Sachverzeichnis"><term>mars (Eisen)</term></index> sine menstruo<index indexName="Sachverzeichnis"><term>menstruum</term></index> lento igne, et clauso.</p><p xml:id="Ch77.p19">Mons. de<index indexName="Namensregister"><term><hi rendition="#g">Verret</hi>, ???? ??-??</term></index>
-<app type="Bfootnote"><lem type="main">Verret ayant preparé</lem><note type="lemma-abbrev">Verret</note><rdg wit="#L" n="1"> parla p </rdg><rdg wit="#L" n="2"> ayant preparé <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">sans saignée,</lem>
+<note type="lemma-abbrev">sans</note>
+<rdg wit="#L" n="1"> venesectio </rdg>
+<rdg wit="#L" n="2"> saignée, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+et même sans precipitation.</p>
+<p xml:id="Ch77.p17">
+<app type="Cfootnote">
+<lem type="main">Briggs</lem>
+<note type="editorial">
+<bibl corresp="#bib_01019">
+<hi rendition="#k">W. Briggs</hi>,<hi rendition="#i">Opthalmographia</hi>, Cambridge 1676.</bibl>
+</note>
+</app>
+<hi rendition="#i">ophthalmograφia</hi>.<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Briggs</hi>, William 1642-1704</term>
+</index>
+</p>
+<p xml:id="Ch77.p18">Willisii<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Willis</hi>, Thomas 1621-1675</term>
+</index> praeparatio croci martis<index indexName="Sachverzeichnis">
+<term>mars (Eisen)</term>
+</index> sine menstruo<index indexName="Sachverzeichnis">
+<term>menstruum</term>
+</index> lento igne, et clauso.</p>
+<p xml:id="Ch77.p19">Mons. de<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Verret</hi>, ???? ??-??
+</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">Verret ayant preparé</lem>
+<note type="lemma-abbrev">Verret</note>
+<rdg wit="#L" n="1"> parla p </rdg>
+<rdg wit="#L" n="2"> ayant preparé <hi rendition="#i">L</hi>
+</rdg>
+</app>
 les intestins avoit trouvé, que
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[leurs]</corr></lem><rdg wit="#L"><orig>leur</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> fibres estoient non circulaires mais spirales[,] ce qu’il pretendoit servir à l’explication du mouuement peristaltique<index indexName="Sachverzeichnis"><term>mouvement peristaltique</term></index>; depuis un Anglois a donné la même chose à la societé.</p><p xml:id="Ch77.p20">Servic de monstre des passions singuliere, en ce qu’il revient tousjours la même chose à une même personne, est que la monstre est sur un gueridon portatif, qu’on a porté d’une place de la chambre à l’autre. Un anneau est mis dans du bois sans qu’il paroisse aucune soudure;
-la conjuncture de Mons. <anchor xml:id="LH041_02_009r_Memmin"/>Memmin<index indexName="Namensregister"><term><hi rendition="#g">Memmin</hi>, ???? ??-??</term></index>
-est ingenieuse, sçavoir que l’anneau a esté comme ansé dans du bois d’un arbre, qui en croissant a enfermé <app type="Bfootnote"><lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[l’]</add></lem><note type="lemma-abbrev">l’</note><note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note></app>anneau; et puis comme est seché s’est retiré, et l’anneau a la liberté de couler.</p><p xml:id="Ch77.p21">Mons. Boyle<index indexName="Namensregister"><term><hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term></index> me
-<app type="Bfootnote"><lem type="main">montra un morceau de bois petrifié</lem><note type="lemma-abbrev">montra</note><rdg wit="#L" n="1"> un diamant par </rdg><rdg wit="#L" n="2"> un <seg type="apparat-ellipsis"/> petrifié  <hi rendition="#i">L</hi></rdg></app>
-entierement par dedans et par dehors dans le lac d’Irlande<index indexName="Ortsregister"><term>Irland (Irlande)</term></index>, dont on fait tant de contes[;] ce lac a jusqu’ à 30 milles <pb type="VIII_2" n="688"/>d’Italie de longueur.</p><p xml:id="Ch77.p22">Le Roy<index indexName="Namensregister"><term><hi rendition="#g">England: Karl II.</hi> 1649-1685</term></index> dépuis son rétablissement a eu du parlement
-<app type="Bfootnote"><lem type="main">plus 975259</lem><note type="lemma-abbrev">plus</note><rdg wit="#L" n="1"> de </rdg><rdg wit="#L" n="2"> 975259 <hi rendition="#i">L</hi></rdg></app>
-liures sterlins et extraordinairement <app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[accordées],</corr></lem><rdg wit="#L"><orig>accordés</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app> sans l’argent des cheminées et sur les vins.</p><p xml:id="Ch77.p23">Le parlement a esté tousjours le même. Ce
-n’a pas esté un nouueau parlement mais seulement une prorogation du premier, ainsi les mêmes personnes sont demeurées.</p></div></div></body>
-  </text>
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[leurs]</corr>
+</lem>
+<rdg wit="#L">
+<orig>leur</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> fibres estoient non circulaires mais spirales[,] ce qu’il pretendoit servir à l’explication du mouuement peristaltique<index indexName="Sachverzeichnis">
+<term>mouvement peristaltique</term>
+</index>; depuis un Anglois a donné la même chose à la societé.</p>
+<p xml:id="Ch77.p20">Servic de monstre des passions singuliere, en ce qu’il revient tousjours la même chose à une même personne, est que la monstre est sur un gueridon portatif, qu’on a porté d’une place de la chambre à l’autre. Un anneau est mis dans du bois sans qu’il paroisse aucune soudure;
+la conjuncture de Mons. <anchor xml:id="LH041_02_009r_Memmin"/>
+Memmin<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Memmin</hi>, ???? ??-??
+</term>
+</index>
+est ingenieuse, sçavoir que l’anneau a esté comme ansé dans du bois d’un arbre, qui en croissant a enfermé <app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[l’]</add>
+</lem>
+<note type="lemma-abbrev">l’</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app>anneau; et puis comme est seché s’est retiré, et l’anneau a la liberté de couler.</p>
+<p xml:id="Ch77.p21">Mons. Boyle<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Boyle</hi> (Boylius), Robert 1627-1691</term>
+</index> me
+<app type="Bfootnote">
+<lem type="main">montra un morceau de bois petrifié</lem>
+<note type="lemma-abbrev">montra</note>
+<rdg wit="#L" n="1"> un diamant par </rdg>
+<rdg wit="#L" n="2"> un <seg type="apparat-ellipsis"/>
+ petrifié  <hi rendition="#i">L</hi>
+</rdg>
+</app>
+entierement par dedans et par dehors dans le lac d’Irlande<index indexName="Ortsregister">
+<term>Irland (Irlande)</term>
+</index>, dont on fait tant de contes[;] ce lac a jusqu’ à 30 milles <pb type="VIII_2" n="688"/>
+d’Italie de longueur.</p>
+<p xml:id="Ch77.p22">Le Roy<index indexName="Namensregister">
+<term>
+<hi rendition="#g">England: Karl II.</hi> 1649-1685</term>
+</index> dépuis son rétablissement a eu du parlement
+<app type="Bfootnote">
+<lem type="main">plus 975259</lem>
+<note type="lemma-abbrev">plus</note>
+<rdg wit="#L" n="1"> de </rdg>
+<rdg wit="#L" n="2"> 975259 <hi rendition="#i">L</hi>
+</rdg>
+</app>
+liures sterlins et extraordinairement <app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[accordées],</corr>
+</lem>
+<rdg wit="#L">
+<orig>accordés</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> sans l’argent des cheminées et sur les vins.</p>
+<p xml:id="Ch77.p23">Le parlement a esté tousjours le même. Ce
+n’a pas esté un nouueau parlement mais seulement une prorogation du premier, ainsi les mêmes personnes sont demeurées.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

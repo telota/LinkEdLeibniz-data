@@ -1,162 +1,490 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-026-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-026-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Ob Lange Seile Eher Reissen Als Kurze</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2022</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Ob Lange Seile Eher Reissen Als Kurze</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2022</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-            </author><title type="chapter" level="a" n="26">Ob Lange Seile Eher Reissen Als Kurze</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1685-04-29" resp="#L" cert="high">29. April (9. Mai) 1685</date><date calendar="#gregorian" notAfter="1685-04-29" resp="#L" cert="high"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=339</idno></idno></analytic><monogr><title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2021</date></imprint><biblScope unit="page" from="305" to="305"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-03-026-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVIII Bl. 57</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#notiz"><summary><p>Notiz: LH XXXVIII Bl. 57.
+            </author>
+            <title type="chapter" level="a" n="26">Ob Lange Seile Eher Reissen Als Kurze</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1685-04-29" resp="#L" cert="high">29. April (9. Mai) 1685</date>
+            <date calendar="#gregorian" notAfter="1685-04-29" resp="#L" cert="high"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=339</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2021</date>
+            </imprint>
+            <biblScope unit="page" from="305" to="305"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-03-026-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXVIII Bl. 57</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#notiz">
+                <summary>
+                  <p>Notiz: LH XXXVIII Bl. 57.
 Ein Zettel (9,4 x 12,5 cm).
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=177">Bl. 57 r<hi rendition="#sup">o</hi></ref>;
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=179">Bl. 57 v<hi rendition="#sup">o</hi></ref> ist leer.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness><witness n="E"><msDesc><msIdentifier><collection>Leibniz-Bibliographie</collection><idno type="Laufende-Nummer">Rav804</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#notiz"><summary><p><hi rendition="#k">Gerland</hi> 1906, S. 175 (Nr. 94).</p></summary></msContents><physDesc><objectDesc form="Druck"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-E"/></history></msDesc></witness></listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="../../glyphs/rightpropto.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="../../glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-      </charDecl>
-    </encodingDesc>
-    <profileDesc><langUsage><language ident="de"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2023-02-13" who="#stork" status="enrich_1"/></revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-026-000_facs-haupttextzeuge"><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=177"/></facsimile><text xml:id="L_08-03-026-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch26" n="26"><head>26
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=177">Bl. 57 r<hi rendition="#sup">o</hi>
+                  </ref>;
+                  <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=179">Bl. 57 v<hi rendition="#sup">o</hi>
+                  </ref> ist leer.</p>
+              </summary>
+            </msContents>
+            <physDesc>
+              <objectDesc form="Handschrift"/>
+            </physDesc>
+            <history>
+              <origin corresp="L_witness-origin-types.xml#origin-L"/>
+            </history>
+          </msDesc>
+        </witness>
+        <witness n="E">
+          <msDesc>
+            <msIdentifier>
+              <collection>Leibniz-Bibliographie</collection>
+              <idno type="Laufende-Nummer">Rav804</idno>
+            </msIdentifier>
+            <msContents corresp="L_witness-content-types.xml#notiz">
+              <summary>
+                <p>
+                  <hi rendition="#k">Gerland</hi> 1906, S. 175 (Nr. 94).</p>
+              </summary>
+            </msContents>
+            <physDesc>
+              <objectDesc form="Druck"/>
+            </physDesc>
+            <history>
+              <origin corresp="L_witness-origin-types.xml#origin-E"/>
+            </history>
+          </msDesc>
+        </witness>
+      </listWit>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <tagsDecl>
+      <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+      <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+      <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+      <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+      <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+      <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+      <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+      <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+    </tagsDecl>
+    <charDecl>
+      <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+      <!--rightpropto-->
+      <glyph xml:id="rightpropto">
+        <glyphName>rightpropto</glyphName>
+        <desc>...</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\rightpropto</mapping>
+        <graphic url="../../glyphs/rightpropto.svg"/>
+      </glyph>
+      <glyph xml:id="Pfund">
+        <glyphName>Pfund</glyphName>
+        <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.7</value>
+        </charProp>
+        <mapping type="TeX">\Pfund</mapping>
+        <graphic url="../../glyphs/Pfund.svg"/>
+      </glyph>
+      <!-- leibdashv -->
+      <glyph xml:id="pleibdashv">
+        <glyphName>pleibdashv</glyphName>
+        <desc>Bedeutung (+−) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\pleibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <glyph xml:id="leibdashv">
+        <glyphName>leibdashv</glyphName>
+        <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\leibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <!-- Sonderzeichen MIT Unicodeentsprechung -->
+    </charDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="de"/>
+    </langUsage>
+    <calendarDesc>
+      <calendar xml:id="gregorian">
+        <p>Gregorianischer Kalenderstil</p>
+      </calendar>
+      <calendar xml:id="julian">
+        <p>Julianischer Kalenderstil</p>
+      </calendar>
+    </calendarDesc>
+    <textClass>
+      <catRef scheme="L_subjects" target="L_subjects.xml#festigkeit"/>
+      <catRef scheme="L_terms" target="L_terms.xml#"/>
+    </textClass>
+    <abstract>
+      <listPerson>
+        <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+        <person sameAs="L_persons.xml#"/>
+      </listPerson>
+      <listPlace>
+        <place sameAs="L_places.xml#"/>
+      </listPlace>
+    </abstract>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021" who="#telota" status="base"/>
+    <change when="2023-02-13" who="#stork" status="enrich_1"/>
+  </revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-026-000_facs-haupttextzeuge">
+  <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=177"/>
+</facsimile>
+<text xml:id="L_08-03-026-000_text">
+  <body xml:id="Document">
+    <div type="chapter" xml:id="Ch26" n="26">
+      <head>26
 OB LANGE SEILE EHER REISSEN ALS KURZE</head>
-      <head>29. April (9. Mai) 1685</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXVIII Bl. 57</idno></msIdentifier><msContents><summary><p>Notiz: LH XXXVIII Bl. 57.
+      <head>29. April (9. Mai) 1685</head>
+      <div type="ueberlieferung">
+        <p>
+          <hi rendition="#b #smaller">Überlieferung:</hi>
+          <listWit>
+            <witness>
+              <msDesc>
+                <msIdentifier>
+                  <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                  <idno type="Signatur">LH XXXVIII Bl. 57</idno>
+                </msIdentifier>
+                <msContents>
+                  <summary>
+                    <p>Notiz: LH XXXVIII Bl. 57.
 Ein Zettel (9,4 x 12,5 cm).
-Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=177">Bl. 57 r<hi rendition="#sup">o</hi></ref>;
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=179">Bl. 57 v<hi rendition="#sup">o</hi></ref> ist leer.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin/></history></msDesc></witness><witness><msDesc><msIdentifier><collection>Leibniz-Bibliographie</collection><idno type="Laufende-Nummer">Rav804</idno></msIdentifier><msContents><summary><p><hi rendition="#k">Gerland</hi> 1906, S. 175 (Nr. 94).</p></summary></msContents><physDesc><objectDesc form="Druck"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch26.p1"><anchor xml:id="_55749"/>
-<anchor xml:id="N.26"/><!--  \hackfor{\par} --></p></div><div type="text"><p rendition="#noindent" xml:id="Ch26.p5"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=177"><pb type="L"/><fw type="folNum">[57 r<hi rendition="#sup">o</hi>]</fw></ref> 29 April. 1685</p><p rendition="#noindent" xml:id="Ch26.p6">Es solte scheinen ein seil<index indexName="Sachen"><term>seil</term></index>[,] welches lang[,] reiße mit gleichen gewicht<index indexName="Sachen"><term>gewicht</term></index> nicht so leicht,
+Eine Seite auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=177">Bl. 57 r<hi rendition="#sup">o</hi>
+                    </ref>;
+                    <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=179">Bl. 57 v<hi rendition="#sup">o</hi>
+                    </ref> ist leer.</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Handschrift"/>
+              </physDesc>
+              <history>
+                <origin/>
+              </history>
+            </msDesc>
+          </witness>
+          <witness>
+            <msDesc>
+              <msIdentifier>
+                <collection>Leibniz-Bibliographie</collection>
+                <idno type="Laufende-Nummer">Rav804</idno>
+              </msIdentifier>
+              <msContents>
+                <summary>
+                  <p>
+                    <hi rendition="#k">Gerland</hi> 1906, S. 175 (Nr. 94).</p>
+                </summary>
+              </msContents>
+              <physDesc>
+                <objectDesc form="Druck"/>
+              </physDesc>
+              <history>
+                <origin/>
+              </history>
+            </msDesc>
+          </witness>
+        </listWit>
+      </p>
+    </div>
+    <div type="contents">
+      <p xml:id="Ch26.p1">
+        <anchor xml:id="_55749"/>
+        <anchor xml:id="N.26"/>
+        <!--  \hackfor{\par} --></p>
+    </div>
+    <div type="text">
+      <p rendition="#noindent" xml:id="Ch26.p5">
+        <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH038/&amp;pn=177">
+          <pb type="L"/>
+          <fw type="folNum">[57 r<hi rendition="#sup">o</hi>]
+          </fw>
+        </ref> 29 April. 1685</p>
+      <p rendition="#noindent" xml:id="Ch26.p6">Es solte scheinen ein seil<index indexName="Sachen">
+        <term>seil</term>
+      </index>[,] welches lang[,] reiße mit gleichen gewicht<index indexName="Sachen">
+      <term>gewicht</term>
+    </index> nicht so leicht,
 als ein anders so kurz und eben so dick und starck,
-<app type="Bfootnote"><lem type="main">dieweilen
-die tensio<anchor xml:id="LH_38_057r_gleichSpann_kfjg-1"/><index indexName="Sachen"><term>tensio</term></index>
-oder spannung<index indexName="Sachen"><term>spannung</term></index> in mehr</lem><note type="lemma-abbrev">dieweilen</note><rdg wit="#L" n="1"> mehr
-</rdg><rdg wit="#L" n="2"> die tensio oder spannung in mehr <hi rendition="#i">L</hi></rdg></app>
+    <app type="Bfootnote">
+      <lem type="main">dieweilen
+die tensio<anchor xml:id="LH_38_057r_gleichSpann_kfjg-1"/>
+      <index indexName="Sachen">
+        <term>tensio</term>
+      </index>
+oder spannung<index indexName="Sachen">
+      <term>spannung</term>
+    </index> in mehr</lem>
+  <note type="lemma-abbrev">dieweilen</note>
+  <rdg wit="#L" n="1"> mehr
+  </rdg>
+  <rdg wit="#L" n="2"> die tensio oder spannung in mehr <hi rendition="#i">L</hi>
+  </rdg>
+</app>
 partes vertheilet wird in einem langen seil,
 und
-<app type="Bfootnote"><lem type="main">also iedes theil eines langen</lem><note type="lemma-abbrev">also</note><rdg wit="#L" n="1"> ein lange
-</rdg><rdg wit="#L" n="2"> iedes theil eines langen <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+  <lem type="main">also iedes theil eines langen</lem>
+  <note type="lemma-abbrev">also</note>
+  <rdg wit="#L" n="1"> ein lange
+  </rdg>
+  <rdg wit="#L" n="2"> iedes theil eines langen <hi rendition="#i">L</hi>
+  </rdg>
+</app>
 seiles bey weiten nicht
-<app type="Bfootnote"><lem type="main">mit gleichen gewicht<index indexName="Sachen"><term>gewicht</term></index></lem><note type="lemma-abbrev">mit</note><rdg wit="#L" cause="addition"><add>gleichen gewicht</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+<app type="Bfootnote">
+  <lem type="main">mit gleichen gewicht<index indexName="Sachen">
+    <term>gewicht</term>
+  </index>
+</lem>
+<note type="lemma-abbrev">mit</note>
+<rdg wit="#L" cause="addition">
+  <add>gleichen gewicht</add>
+  <note type="editorial">
+    <hi rendition="#i">erg. L</hi>
+  </note>
+</rdg>
+</app>
 so viel gespannet als iedes theil eines kurzen,
 daher auch
-<app type="Bfootnote"><lem type="main">das lange</lem><note type="lemma-abbrev">das</note><rdg wit="#L" n="1"> kurz </rdg><rdg wit="#L" n="2"> lange <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">das lange</lem>
+<note type="lemma-abbrev">das</note>
+<rdg wit="#L" n="1"> kurz </rdg>
+<rdg wit="#L" n="2"> lange <hi rendition="#i">L</hi>
+</rdg>
+</app>
 nicht so sehr
-<app type="Bfootnote"><lem type="main">nothleidet.
-Denn wenn man ein langes seil<anchor xml:id="LH_38_057r_gleichSpann_kfjg-2"/><index indexName="Sachen"><term>seil</term></index>
-einem kurzen gleich</lem><note type="lemma-abbrev">nothleidet.</note><rdg wit="#L" n="1"> Und kurz ist
-</rdg><rdg wit="#L" n="2"> Denn wenn <seg type="apparat-ellipsis"/> kurzen gleich <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">nothleidet.
+Denn wenn man ein langes seil<anchor xml:id="LH_38_057r_gleichSpann_kfjg-2"/>
+<index indexName="Sachen">
+  <term>seil</term>
+</index>
+einem kurzen gleich</lem>
+<note type="lemma-abbrev">nothleidet.</note>
+<rdg wit="#L" n="1"> Und kurz ist
+</rdg>
+<rdg wit="#L" n="2"> Denn wenn <seg type="apparat-ellipsis"/>
+ kurzen gleich <hi rendition="#i">L</hi>
+</rdg>
+</app>
 spannen will[,] daß es eben den thon oder laut bekommet,
 muß man umb soviel mehr gewichte geben.
 Dieses nun ist theoretice ganz gewiß,
 und ohnfehlbar;
-<app type="Bfootnote"><lem type="main">wenn das lange</lem><note type="lemma-abbrev">wenn</note><rdg wit="#L" n="1"> ein langes
-</rdg><rdg wit="#L" n="2"> das lange <hi rendition="#i">L</hi></rdg></app>
-seil<index indexName="Sachen"><term>seil</term></index> uberall gleich starck ist.</p><p xml:id="Ch26.p7">Alleine[,] wenn man sezet,
-<app type="Bfootnote"><lem type="main">daß ein</lem><note type="lemma-abbrev">daß</note><rdg wit="#L" n="1"> wie
-</rdg><rdg wit="#L" n="2"> ein <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">wenn das lange</lem>
+<note type="lemma-abbrev">wenn</note>
+<rdg wit="#L" n="1"> ein langes
+</rdg>
+<rdg wit="#L" n="2"> das lange <hi rendition="#i">L</hi>
+</rdg>
+</app>
+seil<index indexName="Sachen">
+<term>seil</term>
+</index> uberall gleich starck ist.</p>
+<p xml:id="Ch26.p7">Alleine[,] wenn man sezet,
+<app type="Bfootnote">
+<lem type="main">daß ein</lem>
+<note type="lemma-abbrev">daß</note>
+<rdg wit="#L" n="1"> wie
+</rdg>
+<rdg wit="#L" n="2"> ein <hi rendition="#i">L</hi>
+</rdg>
+</app>
 theil schwächer als das andere
-(<?tex-source \phantom{)}?>wie denn solches in praxi<index indexName="Sachen"><term>praxis</term></index> nicht zu vermeiden,<?tex-source \phantom{(}?>)
+(<?tex-source \phantom{)}?>wie denn solches in praxi<index indexName="Sachen">
+<term>praxis</term>
+</index> nicht zu vermeiden,<?tex-source \phantom{(}?>)
 so komt es auff eins hinauß,
-das seil<index indexName="Sachen"><term>seil</term></index> sey lang oder kurz,
-wenn ein gewichte<index indexName="Sachen"><term>gewicht</term></index> daran henget;
+das seil<index indexName="Sachen">
+<term>seil</term>
+</index> sey lang oder kurz,
+wenn ein gewichte<index indexName="Sachen">
+<term>gewicht</term>
+</index> daran henget;
 denn nicht nur das gewicht,
-sondern auch die feder<index indexName="Sachen"><term>feder</term></index> oder Spannung der andern theile arbeitet gegen das
-<app type="Bfootnote"><lem type="main">schwächste, dahehr</lem><note type="lemma-abbrev">schwächste,</note><rdg wit="#L" n="1"> und
-<app><rdg wit="#L" n="a">gegen
-</rdg><rdg wit="#L" n="b">muß also
-</rdg></app></rdg><rdg wit="#L" n="2"> dahehr <hi rendition="#i">L</hi></rdg></app>
+sondern auch die feder<index indexName="Sachen">
+<term>feder</term>
+</index> oder Spannung der andern theile arbeitet gegen das
+<app type="Bfootnote">
+<lem type="main">schwächste, dahehr</lem>
+<note type="lemma-abbrev">schwächste,</note>
+<rdg wit="#L" n="1"> und
+<app>
+<rdg wit="#L" n="a">gegen
+</rdg>
+<rdg wit="#L" n="b">muß also
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> dahehr <hi rendition="#i">L</hi>
+</rdg>
+</app>
 ob schon das gewicht die
-<app type="Bfootnote"><lem type="main">krafft<index indexName="Sachen"><term>krafft</term></index> nicht ganz auff iedes theil wenden kan,</lem><note type="lemma-abbrev">krafft</note><rdg wit="#L" n="1"> so es auff die gespanten theile wendet, ie
-</rdg><rdg wit="#L" n="2"> nicht ganz <seg type="apparat-ellipsis"/> wenden kan, <hi rendition="#i">L</hi></rdg></app>
-so macht doch der gespanten theile wiederstand per suam vim Elasticam<index indexName="Sachen"><term>vis elastica</term></index>,
-<app type="Bfootnote"><lem type="main">daß iedes theil</lem><note type="lemma-abbrev">daß</note><rdg wit="#L" n="1"> sie
-</rdg><rdg wit="#L" n="2"> iedes theil <hi rendition="#i">L</hi></rdg></app>[,] in sonderheit von der gantzen krafft<index indexName="Sachen"><term>krafft</term></index> gleichsam, alternative angegriffen wird, und also das schwächste überwunden wird.</p><p xml:id="Ch26.p8">Weil nun ie länger das seil ie großer der unterschied der theile,
-<app type="Bfootnote"><lem type="main">und ie ehe ein</lem><note type="lemma-abbrev">und</note><rdg wit="#L">ie
-</rdg><rdg wit="#L" n="1"> mehr ⟨die⟩ </rdg><rdg wit="#L" n="2"> ehe ein <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">krafft<index indexName="Sachen">
+<term>krafft</term>
+</index> nicht ganz auff iedes theil wenden kan,</lem>
+<note type="lemma-abbrev">krafft</note>
+<rdg wit="#L" n="1"> so es auff die gespanten theile wendet, ie
+</rdg>
+<rdg wit="#L" n="2"> nicht ganz <seg type="apparat-ellipsis"/>
+ wenden kan, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+so macht doch der gespanten theile wiederstand per suam vim Elasticam<index indexName="Sachen">
+<term>vis elastica</term>
+</index>,
+<app type="Bfootnote">
+<lem type="main">daß iedes theil</lem>
+<note type="lemma-abbrev">daß</note>
+<rdg wit="#L" n="1"> sie
+</rdg>
+<rdg wit="#L" n="2"> iedes theil <hi rendition="#i">L</hi>
+</rdg>
+</app>[,] in sonderheit von der gantzen krafft<index indexName="Sachen">
+<term>krafft</term>
+</index> gleichsam, alternative angegriffen wird, und also das schwächste überwunden wird.</p>
+<p xml:id="Ch26.p8">Weil nun ie länger das seil ie großer der unterschied der theile,
+<app type="Bfootnote">
+<lem type="main">und ie ehe ein</lem>
+<note type="lemma-abbrev">und</note>
+<rdg wit="#L">ie
+</rdg>
+<rdg wit="#L" n="1"> mehr ⟨die⟩ </rdg>
+<rdg wit="#L" n="2"> ehe ein <hi rendition="#i">L</hi>
+</rdg>
+</app>
 aller schwächstes darunter,
-so pflegen auch lange seile<index indexName="Sachen"><term>seil</term></index> ehe zu reißen als kurze.</p></div></div></body>
-  </text>
+so pflegen auch lange seile<index indexName="Sachen">
+<term>seil</term>
+</index> ehe zu reißen als kurze.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

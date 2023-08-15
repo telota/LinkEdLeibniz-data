@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-006-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-006-000">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -6,32 +7,56 @@
         <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
           Text</title>
         <respStmt>
-          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Digitale Konzeption und
-            Projektbegleitung</note></resp>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
         </respStmt>
         <respStmt>
-          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-            Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
-          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-            VIII</note></resp>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-            Berlin</note></resp>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
         </respStmt>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
         <date type="creation">2022</date>
         <availability>
-          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -48,7 +73,10 @@
             <date calendar="#gregorian" notBefore="1677-03" resp="#ed" cert="low">[März 1677 (?)
               – Januar 1678]</date>
             <date calendar="#gregorian" notAfter="1678-01" resp="#ed" cert="medium"/>
-            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=53</idno></idno>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=53</idno>
+            </idno>
           </analytic>
           <monogr>
             <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
@@ -61,616 +89,790 @@
             </imprint>
             <biblScope unit="page" from="019" to="021"/>
           </monogr>
-          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
         </biblStruct>
         <listWit>
-          <witness n="L" corresp="#L_08-03-006-000_facs-haupttextzeuge"><msDesc>
+          <witness n="L" corresp="#L_08-03-006-000_facs-haupttextzeuge">
+            <msDesc>
               <msIdentifier>
                 <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                 <idno type="Signatur">LH XXXVII 5 Bl. 123</idno>
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#aufzeichnung">
-                <summary><p>Aufzeichnung: LH XXXVII 5 Bl. 123. Ein Blatt 4<hi rendition="#sup">o</hi>, schräg beschnitten (etwa 16,5 x 18 cm); Papiererhaltungsmaßnahmen.
-                    Eineinhalb Seiten. Auf Bl. <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=372">123 r<hi rendition="#sup">o</hi></ref> in der oberen linken Ecke,
+                <summary>
+                  <p>Aufzeichnung: LH XXXVII 5 Bl. 123. Ein Blatt 4<hi rendition="#sup">o</hi>, schräg beschnitten (etwa 16,5 x 18 cm); Papiererhaltungsmaßnahmen.
+                    Eineinhalb Seiten. Auf Bl. <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=372">123 r<hi rendition="#sup">o</hi>
+                  </ref> in der oberen linken Ecke,
                     vermutlich von fremder Hand vermerkt: <hi rendition="#i">ad
-                  41</hi>.</p></summary>
+                  41</hi>.
+                </p>
+              </summary>
+            </msContents>
+            <physDesc>
+              <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
+            </physDesc>
+            <history>
+              <origin corresp="L_witness-origin-types.xml#origin-L"/>
+            </history>
+          </msDesc>
+        </witness>
+      </listWit>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <tagsDecl>
+      <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+      <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+      <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+      <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+      <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+      <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+      <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+      <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+      <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+    </tagsDecl>
+    <charDecl>
+      <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+      <!--rightpropto-->
+      <glyph xml:id="rightpropto">
+        <glyphName>rightpropto</glyphName>
+        <desc>...</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="TeX">\rightpropto</mapping>
+        <graphic url="../../glyphs/rightpropto.svg"/>
+      </glyph>
+      <glyph xml:id="Pfund">
+        <glyphName>Pfund</glyphName>
+        <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.7</value>
+        </charProp>
+        <mapping type="TeX">\Pfund</mapping>
+        <graphic url="../../glyphs/Pfund.svg"/>
+      </glyph>
+      <!-- leibdashv -->
+      <glyph xml:id="pleibdashv">
+        <glyphName>pleibdashv</glyphName>
+        <desc>Bedeutung (+−) - gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>-1</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\pleibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <glyph xml:id="leibdashv">
+        <glyphName>leibdashv</glyphName>
+        <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+        <charProp>
+          <localName>baselineshift-in-ex</localName>
+          <value>0</value>
+        </charProp>
+        <charProp>
+          <localName>width-in-em</localName>
+          <value>0.6</value>
+        </charProp>
+        <mapping type="PUA"/>
+        <mapping type="TeX">\leibdashv</mapping>
+        <graphic url="../../glyphs/pm.svg"/>
+      </glyph>
+      <!-- Sonderzeichen MIT Unicodeentsprechung -->
+    </charDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="la"/>
+    </langUsage>
+    <calendarDesc>
+      <calendar xml:id="gregorian">
+        <p>Gregorianischer Kalenderstil</p>
+      </calendar>
+      <calendar xml:id="julian">
+        <p>Julianischer Kalenderstil</p>
+      </calendar>
+    </calendarDesc>
+    <textClass>
+      <catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
+      <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
+      <catRef scheme="L_subjects" target="L_subjects.xml#akustik"/>
+      <catRef scheme="L_subjects" target="L_subjects.xml#elastizitaet"/>
+      <catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
+      <catRef scheme="L_terms" target="L_terms.xml#"/>
+    </textClass>
+    <abstract>
+      <listPerson>
+        <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+        <person sameAs="L_persons.xml#"/>
+      </listPerson>
+      <listPlace>
+        <place sameAs="L_places.xml#"/>
+      </listPlace>
+    </abstract>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021" who="#telota" status="base"/>
+    <change when="2023-02-07" who="#stork" status="enrich_1"/>
+  </revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-006-000_facs-haupttextzeuge">
+  <graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1977&amp;tx_dlf%5Bpage%5D=241"/>
+  <graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1977&amp;tx_dlf%5Bpage%5D=242"/>
+</facsimile>
+<text xml:id="L_08-03-006-000_text">
+  <body xml:id="Document">
+    <div type="chapter" xml:id="Ch6" n="6">
+      <head>6 CORPORA IMPULSA AGUNT A SE IPSIS</head>
+      <head>[März 1677 (?) – Januar 1678]</head>
+      <div type="ueberlieferung">
+        <p>
+          <hi rendition="#b #smaller">Überlieferung:</hi>
+          <listWit>
+            <witness>
+              <msDesc>
+                <msIdentifier>
+                  <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                  <idno type="Signatur">LH XXXVII 5 Bl. 123</idno>
+                </msIdentifier>
+                <msContents>
+                  <summary>
+                    <p>Aufzeichnung: LH XXXVII 5 Bl. 123. Ein Blatt 4<hi rendition="#sup">o</hi>, schräg beschnitten (etwa 16,5 x 18 cm);
+                        Papiererhaltungsmaßnahmen. Eineinhalb Seiten. Auf Bl. <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=372">123 r<hi rendition="#sup">o</hi>
+                    </ref> in der oberen linken Ecke,
+                        vermutlich von fremder Hand vermerkt: <hi rendition="#i">ad
+                      41</hi>.
+                  </p>
+                </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
               </physDesc>
               <history>
-                <origin corresp="L_witness-origin-types.xml#origin-L"/>
+                <origin/>
               </history>
-            </msDesc></witness>
+            </msDesc>
+          </witness>
         </listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="../../glyphs/rightpropto.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="../../glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-      </charDecl>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="la"/>
-      </langUsage>
-      <calendarDesc>
-        <calendar xml:id="gregorian">
-          <p>Gregorianischer Kalenderstil</p>
-        </calendar>
-        <calendar xml:id="julian">
-          <p>Julianischer Kalenderstil</p>
-        </calendar>
-      </calendarDesc>
-      <textClass>
-        <catRef scheme="L_subjects" target="L_subjects.xml#physik"/>
-        <catRef scheme="L_subjects" target="L_subjects.xml#mechanik"/>
-        <catRef scheme="L_subjects" target="L_subjects.xml#akustik"/>
-        <catRef scheme="L_subjects" target="L_subjects.xml#elastizitaet"/>
-        <catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
-        <catRef scheme="L_terms" target="L_terms.xml#"/>
-      </textClass>
-      <abstract>
-        <listPerson>
-          <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
-          <person sameAs="L_persons.xml#"/>
-        </listPerson>
-        <listPlace>
-          <place sameAs="L_places.xml#"/>
-        </listPlace>
-      </abstract>
-    </profileDesc>
-    <revisionDesc>
-      <change when="2021" who="#telota" status="base"/>
-      <change when="2023-02-07" who="#stork" status="enrich_1"/>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-006-000_facs-haupttextzeuge"><graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1977&amp;tx_dlf%5Bpage%5D=241"/><graphic url="http://digitale-sammlungen.gwlb.de/sammlungen/sammlungsliste/werksansicht?id=6&amp;tx_dlf%5Bid%5D=1977&amp;tx_dlf%5Bpage%5D=242"/></facsimile>
-  <text xml:id="L_08-03-006-000_text">
-    <body xml:id="Document">
-      <div type="chapter" xml:id="Ch6" n="6">
-        <head>6 CORPORA IMPULSA AGUNT A SE IPSIS</head>
-        <head>[März 1677 (?) – Januar 1678]</head>
-        <div type="ueberlieferung">
-          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-              <witness><msDesc>
-                  <msIdentifier>
-                    <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-                    <idno type="Signatur">LH XXXVII 5 Bl. 123</idno>
-                  </msIdentifier>
-                  <msContents>
-                    <summary><p>Aufzeichnung: LH XXXVII 5 Bl. 123. Ein Blatt 4<hi rendition="#sup">o</hi>, schräg beschnitten (etwa 16,5 x 18 cm);
-                        Papiererhaltungsmaßnahmen. Eineinhalb Seiten. Auf Bl. <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=372">123 r<hi rendition="#sup">o</hi></ref> in der oberen linken Ecke,
-                        vermutlich von fremder Hand vermerkt: <hi rendition="#i">ad
-                      41</hi>.</p></summary>
-                  </msContents>
-                  <physDesc>
-                    <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
-                  </physDesc>
-                  <history>
-                    <origin/>
-                  </history>
-                </msDesc></witness>
-            </listWit></p>
-        </div>
-        <div type="contents">
-          <p xml:id="Ch6.p1"><anchor xml:id="_60338"/>
-            <anchor xml:id="N.6"/><!--  \hackfor{\par} --></p>
-          <p xml:id="Ch6.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi> In
-              der vorliegenden Aufzeichnung N. <ref corresp="#_60338"/> hält Leibniz fest, dass die
+      </p>
+    </div>
+    <div type="contents">
+      <p xml:id="Ch6.p1">
+        <anchor xml:id="_60338"/>
+        <anchor xml:id="N.6"/>
+        <!--  \hackfor{\par} --></p>
+      <p xml:id="Ch6.p4">
+        <hi rendition="#smaller">
+          <hi rendition="#b">Datierungsgründe:</hi> In
+              der vorliegenden Aufzeichnung N. <ref corresp="#_60338"/>
+ hält Leibniz fest, dass die
               Veränderung des kinetischen Zustands eines gestoßenen Körpers ursächlich auf die
               innere elastische Kraft dieses Körpers selbst zurückgehe und nur scheinbar vom
               stoßenden Körper herrühre, welcher demnach als bloße Gelegenheitsursache der
               Veränderung zu betrachten sei. Hieraus zieht Leibniz schließlich die Folgerung, dass
               in jedem Körper ursprünglich eine unendliche Kraft (<hi rendition="#i">vis</hi>) und
-              somit eine unendliche <hi rendition="#i">quantitas motus</hi> vorliegen müsse (S. <ref corresp="#LH_37_05_123v_iqciqmdfm-1"/>). Diese Gleichsetzung von (kinetischer) Kraft
+              somit eine unendliche <hi rendition="#i">quantitas motus</hi> vorliegen müsse (S. <ref corresp="#LH_37_05_123v_iqciqmdfm-1"/>
+). Diese Gleichsetzung von (kinetischer) Kraft
               und Bewegungsquantum lässt sich als Zeichen dafür deuten, dass die Aufzeichnung
-                N. <ref corresp="#_60338"/> noch vor der eigenhändig auf Januar 1678 datierten <hi rendition="#i">Scheda VIII de corporum concursu</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>) entstand. Denn dort verkündet Leibniz zum
+                N. <ref corresp="#_60338"/>
+ noch vor der eigenhändig auf Januar 1678 datierten <hi rendition="#i">Scheda VIII de corporum concursu</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>
+) entstand. Denn dort verkündet Leibniz zum
               ersten Mal die Entdeckung – Geburtsstunde seiner <hi rendition="#i">réforme de la
-                dynamique</hi> (<hi rendition="#k">Fichant</hi> 1994<ref corresp="#bib_01056"/>) –,
+                dynamique</hi> (  <hi rendition="#k">Fichant</hi> 1994<ref corresp="#bib_01056"/>
+) –,
               dass die <hi rendition="#i">vis</hi> eines sich bewegenden Körpers dem Produkt der
               Masse und des Quadrats der Geschwindigkeit <formula xml:id="Ch6.p4.m1">
-                <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                  <m:mrow>
-                    <m:mi>m</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:msup>
-                      <m:mi>v</m:mi>
-                      <m:mn>2</m:mn>
-                    </m:msup>
-                  </m:mrow>
-                </m:math>
-              </formula> entspreche und daher grundsätzlich anders als dessen Bewegungsquantum <hi rendition="#i">mv</hi> sei (N. <ref corresp="L_section_5810.xml#dcc_08"/>, S. <ref corresp="L_section_5810.xml#LH_37_05_086r_reformatio_idzg-1"/>).</hi></p>
-        </div>
-        <div type="text">
-          <p xml:id="Ch6.p5"><hi rendition="#smaller">Die in der vorliegenden Aufzeichnung geäußerte
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+  <m:mrow>
+    <m:mi>m</m:mi>
+    <m:mo>⁢</m:mo>
+    <m:msup>
+      <m:mi>v</m:mi>
+      <m:mn>2</m:mn>
+    </m:msup>
+  </m:mrow>
+</m:math>
+</formula> entspreche und daher grundsätzlich anders als dessen Bewegungsquantum <hi rendition="#i">mv</hi> sei (N. <ref corresp="L_section_5810.xml#dcc_08"/>
+, S. <ref corresp="L_section_5810.xml#LH_37_05_086r_reformatio_idzg-1"/>
+).</hi>
+</p>
+</div>
+<div type="text">
+<p xml:id="Ch6.p5">
+<hi rendition="#smaller">Die in der vorliegenden Aufzeichnung geäußerte
               kausaltheoretische These vertritt Leibniz freilich auch in späteren Texten: etwa in
               den auf Sommer 1678 bis Winter 1680/81 (?) datierbaren <hi rendition="#i">Definitiones
                 cogitationesque metaphysicae</hi> (<hi rendition="#i">LSB</hi> VI, 4 N. 267,
-                S. 1401.1–5<ref corresp="#bib_01339"/>) sowie noch in der Stoßlehre der <hi rendition="#i">Dynamica</hi> (pars II, sectio III, prop. 6<ref corresp="#bib_01354"/>), wo selbst das in N. <ref corresp="#_60338"/> angeführte Gleichnis des vom Ufer
-              zurückgestoßenen Schiffes wieder vorkommt (<hi rendition="#i">LMG</hi> VI, S. 409;<ref corresp="#bib_01043"/> vgl. N. <ref corresp="#_60338"/>, S. <ref corresp="#LH_37_05_123r_navisexripa-1"/>). An keiner dieser Parallelstellen aber
+                S. 1401.1–5<ref corresp="#bib_01339"/>
+) sowie noch in der Stoßlehre der <hi rendition="#i">Dynamica</hi> (pars II, sectio III, prop. 6<ref corresp="#bib_01354"/>
+), wo selbst das in N. <ref corresp="#_60338"/>
+ angeführte Gleichnis des vom Ufer
+              zurückgestoßenen Schiffes wieder vorkommt (<hi rendition="#i">LMG</hi> VI, S. 409;<ref corresp="#bib_01043"/>
+ vgl. N. <ref corresp="#_60338"/>
+, S. <ref corresp="#LH_37_05_123r_navisexripa-1"/>
+). An keiner dieser Parallelstellen aber
               wird die innere elastische Kraft der Körper als Bewegungsgröße beschrieben. Eine
-              Entstehung von N. <ref corresp="#_60338"/> nach Januar 1678 erweist sich somit als
-              unwahrscheinlich, sie kann jedoch nicht ausgeschlossen werden.</hi></p>
-          <p xml:id="Ch6.p6"><hi rendition="#smaller">Der Terminus post quem der Datierung ist
+              Entstehung von N. <ref corresp="#_60338"/>
+ nach Januar 1678 erweist sich somit als
+              unwahrscheinlich, sie kann jedoch nicht ausgeschlossen werden.</hi>
+</p>
+<p xml:id="Ch6.p6">
+<hi rendition="#smaller">Der Terminus post quem der Datierung ist
               ebenfalls mit Unsicherheit behaftet. Mit den Fragen der Stoßlehre, die der
-              Aufzeichnung N. <ref corresp="#_60338"/> zugrundeliegen, hatte sich Leibniz
+              Aufzeichnung N. <ref corresp="#_60338"/>
+ zugrundeliegen, hatte sich Leibniz
               bekanntlich seit dem Sommer 1669 befasst. Die Art, wie elastischer und plastischer
-              Stoß in N. <ref corresp="#_60338"/> beschrieben und unterschieden werden (S. <ref corresp="#LH_37_05_123r_ostensumst_hjjd-1"/>; <ref corresp="#LH_37_05_123v_plastischerstoss-1"/>), setzt aber die Bekanntschaft mit
+              Stoß in N. <ref corresp="#_60338"/>
+ beschrieben und unterschieden werden (S. <ref corresp="#LH_37_05_123r_ostensumst_hjjd-1"/>
+;<ref corresp="#LH_37_05_123v_plastischerstoss-1"/>
+), setzt aber die Bekanntschaft mit
                 J. Wallis’<index indexName="Personen">
-                <term><hi rendition="#g #smaller">Wallis</hi>
-                  <hi rendition="#smaller">(Wallisius), John 1616–1703</hi></term>
-              </index> und E. Mariottes<index indexName="Personen">
-                <term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme,
-                    Seigneur de Chazeuil ca. 1620–1684</hi></term>
-              </index> späteren Überlegungen über den Stoß voraus, mit denen sich Leibniz besonders
+<term>
+<hi rendition="#g #smaller">Wallis</hi>
+<hi rendition="#smaller">(Wallisius), John 1616–1703</hi>
+</term>
+</index> und E. Mariottes<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme,
+                    Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index> späteren Überlegungen über den Stoß voraus, mit denen sich Leibniz besonders
               zwischen den letzten Monaten 1674 und dem Sommer 1675 auseinandergesetzt hatte (vgl.
-                <hi rendition="#i">LSB</hi> VIII, 2 N. 8,<ref corresp="#bib_01343"/> S. 89–93;
-                N. 50<ref corresp="#bib_01292"/>). Die Aufzeichnung N. <ref corresp="#_60338"/>
+<hi rendition="#i">LSB</hi> VIII, 2 N. 8,<ref corresp="#bib_01343"/>
+ S. 89–93;
+                N. 50<ref corresp="#bib_01292"/>
+). Die Aufzeichnung N. <ref corresp="#_60338"/>
               entstand daher höchstwahrscheinlich nachher. Die im Text vertretene kausaltheoretische
               Ansicht dürfte aber vornehmlich an die seit März 1677 entwickelten Untersuchungen zum
               Stoßgesetz anknüpfen, bei denen Leibniz das Phänomen des elastischen Stoßes in
-              ähnlicher Weise wie Wallis und Mariotte erörtert (vgl. die Erläuterung zu S. <ref corresp="#LH_37_05_123r_ostensumst_hjjd-1"/>). Hieraus ergibt sich die
-              vorgeschlagene Datierung. Eine frühere Entstehungszeit der Aufzeichnung N. <ref corresp="#_60338"/> (jedenfalls nach 1674) ist dennoch nicht
-            auszuschließen.</hi></p>
-          <p xml:id="Ch6.p7"><hi rendition="#smaller">Bemerkenswert ist schließlich, dass in der
+              ähnlicher Weise wie Wallis und Mariotte erörtert (vgl. die Erläuterung zu S. <ref corresp="#LH_37_05_123r_ostensumst_hjjd-1"/>
+). Hieraus ergibt sich die
+              vorgeschlagene Datierung. Eine frühere Entstehungszeit der Aufzeichnung N. <ref corresp="#_60338"/>
+ (jedenfalls nach 1674) ist dennoch nicht
+            auszuschließen.</hi>
+</p>
+<p xml:id="Ch6.p7">
+<hi rendition="#smaller">Bemerkenswert ist schließlich, dass in der
               eigenhändig auf Januar 1678 datierten <hi rendition="#i">Scheda VI-II de corporum
                 concursu</hi> stoßtheoretische Überlegungen ebenfalls eine Digression über die
-              kausale Selbständigkeit mechanisch interagierender Körper veranlassen (N. <ref corresp="L_section_588.xml#dcc_06-2"/>, S. <ref corresp="L_section_588.xml#LH_35_09_23_018v_occasionalismus_jyr-1"/>). Anders als in
-                N. <ref corresp="#_60338"/> aber vertritt Leibniz dort eine okkasionalistische
+              kausale Selbständigkeit mechanisch interagierender Körper veranlassen (N. <ref corresp="L_section_588.xml#dcc_06-2"/>
+, S. <ref corresp="L_section_588.xml#LH_35_09_23_018v_occasionalismus_jyr-1"/>
+). Anders als in
+                N. <ref corresp="#_60338"/>
+ aber vertritt Leibniz dort eine okkasionalistische
               Betrachtungsweise, die den Status einer echten Wirkursache nicht den einzelnen Körpern
-              bzw. deren ursprünglicher elastischer Kraft zuweist, sondern nur Gott.</hi></p>
-          <p rendition="#noindent" xml:id="Ch6.p8"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=372"><pb type="L"/><fw type="folNum">[123 r<hi rendition="#sup">o</hi>]</fw></ref> Defendi potest corpus non impelli<index indexName="Sachen">
-              <term>corpus impulsum immediate ab alio</term>
-            </index><index indexName="Sachen">
-              <term>impulsus immediatus</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">immediate</lem>
-              <rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> ab alio corpore,<index indexName="Sachen">
-              <term>corpus impellens</term>
-            </index> sed occasione alterius a se<index indexName="Sachen">
-              <term>occasio agendi</term>
-            </index><index indexName="Sachen">
-              <term>corpus impulsum occasione alterius</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">ipso neque</lem>
-              <note type="lemma-abbrev">ipso</note>
-              <rdg wit="#L" n="1"> . Si enim </rdg>
-              <rdg wit="#L" n="2"> neque <hi rendition="#i">L</hi></rdg>
-            </app> adeo nisi propria vi cieri.<index indexName="Sachen">
-              <term>vis corporis propria</term>
-            </index> Nam ostensum est<anchor xml:id="LH_37_05_123r_ostensumst_hjjd-1"/><app type="Cfootnote" from="#LH_37_05_123r_ostensumst_hjjd-1" to="#LH_37_05_123r_ostensumst_hjjd-2">
-              <lem type="main"/>
-              <note type="lemma-abbrev">ostensum <seg type="apparat-ellipsis"/> recedere</note>
-              <note type="editorial">Leibniz erörtert in dieser Weise den elastischen Stoß etwa in
-                dem eigenhändig auf März 1677 datierten Entwurf N. <ref corresp="L_chapter_39.xml#RK57266-1"/> und verweist dabei (S. <ref corresp="L_chapter_39.xml#LH_37_05_161v_mariottewallis-1"/>) auf <hi rendition="#i">Mariotti ac Wallisii rationem explicandi</hi>;<index indexName="Personen">
-                  <term><hi rendition="#g">Wallis</hi> (Wallisius), John 1616–1703</term>
-                </index><index indexName="Personen">
-                  <term><hi rendition="#g">Mariotte</hi>, Edme, Seigneur de Chazeuil ca.
+              bzw. deren ursprünglicher elastischer Kraft zuweist, sondern nur Gott.</hi>
+</p>
+<p rendition="#noindent" xml:id="Ch6.p8">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=372">
+<pb type="L"/>
+<fw type="folNum">[123 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref> Defendi potest corpus non impelli<index indexName="Sachen">
+<term>corpus impulsum immediate ab alio</term>
+</index>
+<index indexName="Sachen">
+<term>impulsus immediatus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">immediate</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ab alio corpore,<index indexName="Sachen">
+<term>corpus impellens</term>
+</index> sed occasione alterius a se<index indexName="Sachen">
+<term>occasio agendi</term>
+</index>
+<index indexName="Sachen">
+<term>corpus impulsum occasione alterius</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">ipso neque</lem>
+<note type="lemma-abbrev">ipso</note>
+<rdg wit="#L" n="1"> . Si enim </rdg>
+<rdg wit="#L" n="2"> neque <hi rendition="#i">L</hi>
+</rdg>
+</app> adeo nisi propria vi cieri.<index indexName="Sachen">
+<term>vis corporis propria</term>
+</index> Nam ostensum est<anchor xml:id="LH_37_05_123r_ostensumst_hjjd-1"/>
+<app type="Cfootnote" from="#LH_37_05_123r_ostensumst_hjjd-1" to="#LH_37_05_123r_ostensumst_hjjd-2">
+<lem type="main"/>
+<note type="lemma-abbrev">ostensum <seg type="apparat-ellipsis"/>
+ recedere</note>
+<note type="editorial">Leibniz erörtert in dieser Weise den elastischen Stoß etwa in
+                dem eigenhändig auf März 1677 datierten Entwurf N. <ref corresp="L_chapter_39.xml#RK57266-1"/>
+ und verweist dabei (S. <ref corresp="L_chapter_39.xml#LH_37_05_161v_mariottewallis-1"/>
+) auf <hi rendition="#i">Mariotti ac Wallisii rationem explicandi</hi>;<index indexName="Personen">
+<term>
+<hi rendition="#g">Wallis</hi> (Wallisius), John 1616–1703</term>
+</index>
+<index indexName="Personen">
+<term>
+<hi rendition="#g">Mariotte</hi>, Edme, Seigneur de Chazeuil ca.
                     1620–1684</term>
-                </index> siehe hierzu <hi rendition="#k">J. Wallis</hi>, <bibl corresp="#bib_00301"><hi rendition="#i">Mechanica</hi>, pars III, cap. XI u. XIII (London 1670–1671,
-                  Bd. II, S. 660–682 u. 686–707</bibl>; <bibl corresp="#bib_01008"><hi rendition="#i">WO</hi> I, S. 1002–1015 u. 1018–1031) sowie <hi rendition="#k">E. Mariotte</hi></bibl>, <bibl corresp="#bib_00311"><hi rendition="#i">De la
+</index> siehe hierzu <hi rendition="#k">J. Wallis</hi>,<bibl corresp="#bib_00301">
+<hi rendition="#i">Mechanica</hi>, pars III, cap. XI u. XIII (London 1670–1671,
+                  Bd. II, S. 660–682 u. 686–707</bibl>;<bibl corresp="#bib_01008">
+<hi rendition="#i">WO</hi> I, S. 1002–1015 u. 1018–1031) sowie <hi rendition="#k">E. Mariotte</hi>
+</bibl>,<bibl corresp="#bib_00311">
+<hi rendition="#i">De la
                     percussion</hi>, partie I, prop. XIII u. XIX (Paris 1673, S. 68–72 u. 115–119).
                   Ähnlich fasst Leibniz den elastischen Stoß auch später in dem eigenhändig auf
                   Januar und Februar 1678 datierten Textkomplex <hi rendition="#i">De corporum
-                    concursu</hi> (N. <ref corresp="L_section_586.xml#dcc_05"/> u. <ref corresp="L_section_587.xml#dcc_06-1"/>) auf.</bibl></note>
-            </app> corpora concursu<index indexName="Sachen">
-              <term>concursus corporum</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">comprimi,<index indexName="Sachen">
-                  <term>corpus compressum</term>
-                </index> prius quam propelli,<index indexName="Sachen">
-                  <term>corpus propulsum</term>
-                </index> et restituente sese Elasmate<index indexName="Sachen">
-                  <term>elasma se restituens</term>
-                </index> a se invicem proprio nisu<index indexName="Sachen">
-                  <term>nisus corporis recedentis</term>
-                </index> recedere,<index indexName="Sachen">
-                  <term>corpus proprio nisu recedens</term>
-                </index><anchor xml:id="LH_37_05_123r_ostensumst_hjjd-2"/> quemadmodum nos ex
-                  navi<anchor xml:id="LH_37_05_123r_navisexripa-1"/><index indexName="Sachen">
-                  <term>navis</term>
-                </index> conto<index indexName="Sachen">
-                  <term>contus</term>
-                </index> ripam<index indexName="Sachen">
-                  <term>ripa</term>
-                </index> aut fundum<index indexName="Sachen">
-                  <term>fundus</term>
-                </index> impellendo una cum navi<index indexName="Sachen">
-                  <term>navis</term>
-                </index> inde recedimus. Haec<anchor xml:id="LH_37_05_123r_navisexripa-2"/></lem>
-              <note type="lemma-abbrev">comprimi,</note>
-              <rdg wit="#L" n="1"> nec prius propell </rdg>
-              <rdg wit="#L" n="2"> prius quam propelli, <app>
-                  <rdg wit="#L" n="a">et antequam </rdg>
-                  <rdg wit="#L" n="b">et restituente <seg type="apparat-ellipsis"/> a se <app>
-                      <rdg wit="#L" n="aa">mutuo ⟨vi⟩ </rdg>
-                      <rdg wit="#L" n="bb">invicem proprio nisu recedere <app>
-                          <rdg wit="#L" n="aaa" cause="addition"><note type="editorial">|</note> <add>mutuo</add>
-                            <note type="editorial"><hi rendition="#i">erg.</hi> |</note> conari, </rdg>
-                          <rdg wit="#L" n="bbb">, quemadmodum <note type="editorial">|</note> </rdg>
-                        </app></rdg>
-                    </app></rdg>
-                </app></rdg>
-              <rdg wit="#L" n="1"> is qui </rdg>
-              <rdg wit="#L" n="2"> ex navi </rdg>
-              <rdg wit="#L" n="3"> ex </rdg>
-              <rdg wit="#L" n="4"> si quis </rdg>
-              <rdg wit="#L" n="5" cause="addition-deletion"> <add>nos ex navi</add>
-                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> conto <hi rendition="#i">(aaaa)</hi> aut <hi rendition="#i">(bbbb)</hi> ripam aut fundum
-                impellendo <hi rendition="#i">(aaaaa)</hi> ex navi nos <hi rendition="#i">(bbbbb)</hi> una cum navi inde recedimus <note type="editorial">|</note> <del>atque abspellimur</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> . Haec <hi rendition="#i">L</hi></rdg>
-            </app> partim experimentis,<index indexName="Sachen">
-              <term>experimentum</term>
-            </index> partim etiam firmis<index indexName="Sachen">
-              <term>ratio firma</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">rationibus ostendi possunt, quoniam nihil impetum momento
+                    concursu</hi> (N. <ref corresp="L_section_586.xml#dcc_05"/>
+ u. <ref corresp="L_section_587.xml#dcc_06-1"/>
+) auf.</bibl>
+</note>
+</app> corpora concursu<index indexName="Sachen">
+<term>concursus corporum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">comprimi,<index indexName="Sachen">
+<term>corpus compressum</term>
+</index> prius quam propelli,<index indexName="Sachen">
+<term>corpus propulsum</term>
+</index> et restituente sese Elasmate<index indexName="Sachen">
+<term>elasma se restituens</term>
+</index> a se invicem proprio nisu<index indexName="Sachen">
+<term>nisus corporis recedentis</term>
+</index> recedere,<index indexName="Sachen">
+<term>corpus proprio nisu recedens</term>
+</index>
+<anchor xml:id="LH_37_05_123r_ostensumst_hjjd-2"/>
+ quemadmodum nos ex
+                  navi<anchor xml:id="LH_37_05_123r_navisexripa-1"/>
+<index indexName="Sachen">
+<term>navis</term>
+</index> conto<index indexName="Sachen">
+<term>contus</term>
+</index> ripam<index indexName="Sachen">
+<term>ripa</term>
+</index> aut fundum<index indexName="Sachen">
+<term>fundus</term>
+</index> impellendo una cum navi<index indexName="Sachen">
+<term>navis</term>
+</index> inde recedimus. Haec<anchor xml:id="LH_37_05_123r_navisexripa-2"/>
+</lem>
+<note type="lemma-abbrev">comprimi,</note>
+<rdg wit="#L" n="1"> nec prius propell </rdg>
+<rdg wit="#L" n="2"> prius quam propelli, <app>
+<rdg wit="#L" n="a">et antequam </rdg>
+<rdg wit="#L" n="b">et restituente <seg type="apparat-ellipsis"/>
+ a se <app>
+<rdg wit="#L" n="aa">mutuo ⟨vi⟩ </rdg>
+<rdg wit="#L" n="bb">invicem proprio nisu recedere <app>
+<rdg wit="#L" n="aaa" cause="addition">
+<note type="editorial">|</note>
+<add>mutuo</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> conari, </rdg>
+<rdg wit="#L" n="bbb">, quemadmodum <note type="editorial">|</note>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="1"> is qui </rdg>
+<rdg wit="#L" n="2"> ex navi </rdg>
+<rdg wit="#L" n="3"> ex </rdg>
+<rdg wit="#L" n="4"> si quis </rdg>
+<rdg wit="#L" n="5" cause="addition-deletion">
+<add>nos ex navi</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> conto <hi rendition="#i">(aaaa)</hi> aut <hi rendition="#i">(bbbb)</hi> ripam aut fundum
+                impellendo <hi rendition="#i">(aaaaa)</hi> ex navi nos <hi rendition="#i">(bbbbb)</hi> una cum navi inde recedimus <note type="editorial">|</note>
+<del>atque abspellimur</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> . Haec <hi rendition="#i">L</hi>
+</rdg>
+</app> partim experimentis,<index indexName="Sachen">
+<term>experimentum</term>
+</index> partim etiam firmis<index indexName="Sachen">
+<term>ratio firma</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">rationibus ostendi possunt, quoniam nihil impetum momento
                   accipit<index indexName="Sachen">
-                  <term>impetus acceptus momento</term>
-                </index> sed per gradus<index indexName="Sachen">
-                  <term>impetus acceptus per gradus</term>
-                </index> intermedios<index indexName="Sachen">
-                  <term>gradus intermedius</term>
-                </index> a quiete,<index indexName="Sachen">
-                  <term>quies</term>
-                </index> quod</lem>
-              <note type="lemma-abbrev">rationibus</note>
-              <rdg wit="#L" n="1"> ostendimus </rdg>
-              <rdg wit="#L" n="2"> ostendi possunt quoniam <app>
-                  <rdg wit="#L" n="a">ostensum est </rdg>
-                  <rdg wit="#L" n="b">certum demonstr </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="3"> nihil impetum momento <app>
-                  <rdg wit="#L" n="a">accipere </rdg>
-                  <rdg wit="#L" n="b">accipit sed <seg type="apparat-ellipsis"/> a quiete <app>
-                      <rdg wit="#L" n="aa">omnes transire </rdg>
-                      <rdg wit="#L" n="bb">, quod <hi rendition="#i">L</hi></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app> fit restitutione Elastri<index indexName="Sachen">
-              <term>elastrum se restituens</term>
-            </index><index indexName="Sachen">
-              <term>restitutio elastri</term>
-            </index>[;] <app type="Bfootnote">
-              <lem type="main">a solo igitur Elastro<index indexName="Sachen">
-                  <term>elastrum</term>
-                </index> oritur motuum translatio<index indexName="Sachen">
-                  <term>translatio motus</term>
-                </index> atque communicatio:<index indexName="Sachen">
-                  <term>communicatio motus</term>
-                </index></lem>
-              <note type="lemma-abbrev">a</note>
-              <rdg wit="#L" cause="addition"><add>solo <seg type="apparat-ellipsis"/> atque
+<term>impetus acceptus momento</term>
+</index> sed per gradus<index indexName="Sachen">
+<term>impetus acceptus per gradus</term>
+</index> intermedios<index indexName="Sachen">
+<term>gradus intermedius</term>
+</index> a quiete,<index indexName="Sachen">
+<term>quies</term>
+</index> quod</lem>
+<note type="lemma-abbrev">rationibus</note>
+<rdg wit="#L" n="1"> ostendimus </rdg>
+<rdg wit="#L" n="2"> ostendi possunt quoniam <app>
+<rdg wit="#L" n="a">ostensum est </rdg>
+<rdg wit="#L" n="b">certum demonstr </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="3"> nihil impetum momento <app>
+<rdg wit="#L" n="a">accipere </rdg>
+<rdg wit="#L" n="b">accipit sed <seg type="apparat-ellipsis"/>
+ a quiete <app>
+<rdg wit="#L" n="aa">omnes transire </rdg>
+<rdg wit="#L" n="bb">, quod <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app> fit restitutione Elastri<index indexName="Sachen">
+<term>elastrum se restituens</term>
+</index>
+<index indexName="Sachen">
+<term>restitutio elastri</term>
+</index>[;]<app type="Bfootnote">
+<lem type="main">a solo igitur Elastro<index indexName="Sachen">
+<term>elastrum</term>
+</index> oritur motuum translatio<index indexName="Sachen">
+<term>translatio motus</term>
+</index> atque communicatio:<index indexName="Sachen">
+<term>communicatio motus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">a</note>
+<rdg wit="#L" cause="addition">
+<add>solo <seg type="apparat-ellipsis"/>
+ atque
                   communicatio</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> porro impellens,<index indexName="Sachen">
-              <term>corpus impellens</term>
-            </index> quod Elastrum intendit<index indexName="Sachen">
-              <term>elastrum intensum</term>
-            </index>[,] non vim ipsi tribuit,<index indexName="Sachen">
-              <term>vis tributa</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">sed determinat<index indexName="Sachen">
-                  <term>vis determinata</term>
-                </index> praestita occasione agendi.<index indexName="Sachen">
-                  <term>occasio agendi</term>
-                </index></lem>
-              <note type="lemma-abbrev">sed</note>
-              <rdg wit="#L" n="1"> occasionem praestat </rdg>
-              <rdg wit="#L" n="2"> determinat praestita occasione agendi. <hi rendition="#i">L</hi></rdg>
-            </app> Intus enim perfluit velocissima materia,<index indexName="Sachen">
-              <term>materia intus perfluens</term>
-            </index><index indexName="Sachen">
-              <term>materia velocissima</term>
-            </index> quae nihil insoliti inveniens, neque sentitur,<index indexName="Sachen">
-              <term>materia insensibilis</term>
-            </index> sed obstaculo objecto<index indexName="Sachen">
-              <term>obstaculum objectum</term>
-            </index> ostendit quid possit; quemadmodum flumina si coerceantur.<index indexName="Sachen">
-              <term>flumen coercitum</term>
-            </index> Vis igitur qua corpus cietur<index indexName="Sachen">
-              <term>vis ciens</term>
-            </index> intra ipsum est.<index indexName="Sachen">
-              <term>vis intra corpum</term>
-            </index></p>
-          <p xml:id="Ch6.p9">At, inquies, saltem partes in compressione<index indexName="Sachen">
-              <term>compressio partium</term>
-            </index> impelluntur et aliunde vim accipiunt.<index indexName="Sachen">
-              <term>vis accepta aliunde</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">Respondeo, quod de toto diximus etiam de parte dicendum esse,</lem>
-              <note type="lemma-abbrev">Respondeo,</note>
-              <rdg wit="#L" n="1"> partes ips </rdg>
-              <rdg wit="#L" n="2"> quod de <seg type="apparat-ellipsis"/> dicendum esse, <hi rendition="#i">L</hi></rdg>
-            </app> ut vicissim illae non nisi suis prius partibus compressis<index indexName="Sachen">
-              <term>pars corporis compressa</term>
-            </index> ac sese restituentibus<index indexName="Sachen">
-              <term>pars corporis se restituens</term>
-            </index> impellantur.<index indexName="Sachen">
-              <term>pars corporis impulsa</term>
-            </index> Quae quidem in omnibus partium partibus continuata<index indexName="Sachen">
-              <term>partes partium</term>
-            </index> utcunque subdivisione vera sunt,<index indexName="Sachen">
-              <term>subdivisio partium</term>
-            </index> et nihil movetur, quin praecedat infinitorum aliorum motus<index indexName="Sachen">
-              <term>motus infinitorum aliorum</term>
-            </index> per respondentis temporis partes<index indexName="Sachen">
-              <term>pars temporis</term>
-            </index>[,] etiam proportione exiguas distributas. Habent enim omnia quendam
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> porro impellens,<index indexName="Sachen">
+<term>corpus impellens</term>
+</index> quod Elastrum intendit<index indexName="Sachen">
+<term>elastrum intensum</term>
+</index>[,] non vim ipsi tribuit,<index indexName="Sachen">
+<term>vis tributa</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">sed determinat<index indexName="Sachen">
+<term>vis determinata</term>
+</index> praestita occasione agendi.<index indexName="Sachen">
+<term>occasio agendi</term>
+</index>
+</lem>
+<note type="lemma-abbrev">sed</note>
+<rdg wit="#L" n="1"> occasionem praestat </rdg>
+<rdg wit="#L" n="2"> determinat praestita occasione agendi. <hi rendition="#i">L</hi>
+</rdg>
+</app> Intus enim perfluit velocissima materia,<index indexName="Sachen">
+<term>materia intus perfluens</term>
+</index>
+<index indexName="Sachen">
+<term>materia velocissima</term>
+</index> quae nihil insoliti inveniens, neque sentitur,<index indexName="Sachen">
+<term>materia insensibilis</term>
+</index> sed obstaculo objecto<index indexName="Sachen">
+<term>obstaculum objectum</term>
+</index> ostendit quid possit; quemadmodum flumina si coerceantur.<index indexName="Sachen">
+<term>flumen coercitum</term>
+</index> Vis igitur qua corpus cietur<index indexName="Sachen">
+<term>vis ciens</term>
+</index> intra ipsum est.<index indexName="Sachen">
+<term>vis intra corpum</term>
+</index>
+</p>
+<p xml:id="Ch6.p9">At, inquies, saltem partes in compressione<index indexName="Sachen">
+<term>compressio partium</term>
+</index> impelluntur et aliunde vim accipiunt.<index indexName="Sachen">
+<term>vis accepta aliunde</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">Respondeo, quod de toto diximus etiam de parte dicendum esse,</lem>
+<note type="lemma-abbrev">Respondeo,</note>
+<rdg wit="#L" n="1"> partes ips </rdg>
+<rdg wit="#L" n="2"> quod de <seg type="apparat-ellipsis"/>
+ dicendum esse, <hi rendition="#i">L</hi>
+</rdg>
+</app> ut vicissim illae non nisi suis prius partibus compressis<index indexName="Sachen">
+<term>pars corporis compressa</term>
+</index> ac sese restituentibus<index indexName="Sachen">
+<term>pars corporis se restituens</term>
+</index> impellantur.<index indexName="Sachen">
+<term>pars corporis impulsa</term>
+</index> Quae quidem in omnibus partium partibus continuata<index indexName="Sachen">
+<term>partes partium</term>
+</index> utcunque subdivisione vera sunt,<index indexName="Sachen">
+<term>subdivisio partium</term>
+</index> et nihil movetur, quin praecedat infinitorum aliorum motus<index indexName="Sachen">
+<term>motus infinitorum aliorum</term>
+</index> per respondentis temporis partes<index indexName="Sachen">
+<term>pars temporis</term>
+</index>[,] etiam proportione exiguas distributas. Habent enim omnia quendam
             flexilitatis gradum,<index indexName="Sachen">
-              <term>flexilitas</term>
-            </index><index indexName="Sachen">
-              <term>gradus flexilitatis</term>
-            </index> nihilque infinitae rigiditatis est,<index indexName="Sachen">
-              <term>rigiditas infinita</term>
-            </index> hinc semper prius movetur pars,<index indexName="Sachen">
-              <term>pars mota prius quam totum</term>
-            </index> quam totum.<anchor xml:id="LH_37_05_123r_12301"/><app type="Bfootnote" from="#LH_37_05_123r_12301" to="#LH_37_05_123r_12302">
-              <lem type="main"/>
-              <note type="lemma-abbrev">totum.</note>
-              <rdg wit="#L" n="1"> Caeterum </rdg>
-              <rdg wit="#L" n="2"> Dici <app>
-                  <rdg wit="#L" n="a">porro </rdg>
-                  <rdg wit="#L" n="b">etiam potest <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app></p>
-          <p xml:id="Ch6.p10">Dici etiam potest non tantum corpus omne moveri a se ipso,<anchor xml:id="LH_37_05_123r_12302"/><index indexName="Sachen">
-              <term>corpus motum a se ipso</term>
-            </index> vel eo quod in <app type="Bfootnote">
-              <lem type="main">ipso est,</lem>
-              <note type="lemma-abbrev">ipso</note>
-              <rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>conclusum</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> est <hi rendition="#i">L</hi></rdg>
-            </app> sed etiam ex ipsius statu praecedenti<index indexName="Sachen">
-              <term>status corporis praecedens</term>
-            </index> consequi praesentem motum,<index indexName="Sachen">
-              <term>motus consequens ex statu praecedenti</term>
-            </index><index indexName="Sachen">
-              <term>motus praesens</term>
-            </index> ita ut agat sponte,<index indexName="Sachen">
-              <term>corpus agens sponte</term>
-            </index> ac nihil absolute loquendo in <app type="Bfootnote">
-              <lem type="main">natura sit</lem>
-              <note type="lemma-abbrev">natura</note>
-              <rdg wit="#L" n="1"> esse </rdg>
-              <rdg wit="#L" n="2"> sit <hi rendition="#i">L</hi></rdg>
-            </app> violentum.<index indexName="Sachen">
-              <term>natura</term>
-            </index><index indexName="Sachen">
-              <term>violentum</term>
-            </index> Nam etsi videatur compressio<index indexName="Sachen">
-              <term>compressio ab externo</term>
-            </index> saltem ab externo fieri, <app type="Bfootnote">
-              <lem type="main">attamen cum</lem>
-              <note type="lemma-abbrev">attamen</note>
-              <rdg wit="#L" n="1"> re vera </rdg>
-              <rdg wit="#L" n="2"> comm </rdg>
-              <rdg wit="#L" n="3"> cum <hi rendition="#i">L</hi></rdg>
-            </app> omnis compressio motum partium<index indexName="Sachen">
-              <term>motus partium in compresssione</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">contineat, omnis autem res moveatur</lem>
-              <note type="lemma-abbrev">contineat,</note>
-              <rdg wit="#L" n="1"> motus autem sit fact </rdg>
-              <rdg wit="#L" n="2"> omnis autem res moveatur <hi rendition="#i">L</hi></rdg>
-            </app> a se ipsa,<index indexName="Sachen">
-              <term>res mota a se ipsa</term>
-            </index>
-            <app type="Cfootnote">
-              <lem type="main">ut ostensum est,</lem>
-              <note type="lemma-abbrev">ut ostensum est</note>
-              <note type="editorial">Soeben in der vorliegenden Aufzeichnung N. <ref corresp="#_60338"/>.</note>
-            </app> nec compressio ab externo <app type="Bfootnote">
-              <!--is-correction-app-with-lemma-->
-              <lem type="main"><corr resp="#ed">[fieri]</corr></lem>
-              <rdg wit="#L"><orig>facta</orig>
-                <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-            </app> poterit,<index indexName="Sachen">
-              <term>compressio ab externo</term>
-            </index> nihil aliud <app type="Bfootnote">
-              <lem type="main">ergo est</lem>
-              <note type="lemma-abbrev">ergo</note>
-              <rdg wit="#L" n="1"> fuerit </rdg>
-              <rdg wit="#L" n="2"> est <hi rendition="#i">L</hi></rdg>
-            </app> corpus externum,<index indexName="Sachen">
-              <term>corpus externum</term>
-            </index> quam ut sit comitans atque connexum,<index indexName="Sachen">
-              <term>corpus comitans</term>
-            </index><index indexName="Sachen">
-              <term>corpus connexum</term>
-            </index> quod nobis rerum interiora ignorantibus<index indexName="Sachen">
-              <term>interiora rerum</term>
-            </index> causa videtur.<index indexName="Sachen">
-              <term>causa apparens</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">Interim notio</lem>
-              <note type="lemma-abbrev">interim</note>
-              <rdg wit="#L" n="1"> si </rdg>
-              <rdg wit="#L" n="2"> certa not </rdg>
-              <rdg wit="#L" n="3"> sit </rdg>
-              <rdg wit="#L" n="4"> notio <hi rendition="#i">L</hi></rdg>
-            </app> causae<index indexName="Sachen">
-              <term>notio causae</term>
-            </index> assignari poterit[,] qua adhibita recte <app type="Bfootnote">
-              <lem type="main">dicetur motum corporis</lem>
-              <note type="lemma-abbrev">dicetur</note>
-              <rdg wit="#L" n="1"> corporis </rdg>
-              <rdg wit="#L" n="2"> motum corporis <hi rendition="#i">L</hi></rdg>
-            </app> unius esse causam motus<index indexName="Sachen">
-              <term>causa motus mediata</term>
-            </index> corporis alterius, etsi non sit causa immediata.<index indexName="Sachen">
-              <term>causa motus immediata</term>
-            </index>
-            <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=374"><pb type="L"/><fw type="folNum">[123 v<hi rendition="#sup">o</hi>]</fw></ref></p>
-          <p xml:id="Ch6.p11"><app type="Bfootnote">
-              <lem type="main">Quando corpus unum incurrit in aliud quiescens<anchor xml:id="LH_37_05_123v_plastischerstoss-1"/><index indexName="Sachen">
-                  <term>corpus incurrens in quiescens</term>
-                </index></lem>
-              <note type="lemma-abbrev">Quando</note>
-              <rdg wit="#L" n="1"> duo corpora concurrunt </rdg>
-              <rdg wit="#L" n="2"> corpus unum <seg type="apparat-ellipsis"/> aliud quiescens <hi rendition="#i">L</hi></rdg>
-            </app> et post ictum simul<index indexName="Sachen">
-              <term>ictus consumtus</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">procedunt dubites an</lem>
-              <note type="lemma-abbrev">procedunt</note>
-              <rdg wit="#L" n="1"> non videtur </rdg>
-              <rdg wit="#L" n="2"> dubites an <hi rendition="#i">L</hi></rdg>
-            </app> commode defendi possit <app type="Bfootnote">
-              <lem type="main">corpus quod quieverat<index indexName="Sachen">
-                  <term>corpus quiescens</term>
-                </index> impulsum esse a se ipso.<index indexName="Sachen">
-                  <term>corpus impulsum a se ipso</term>
-                </index></lem>
-              <note type="lemma-abbrev">corpus</note>
-              <rdg wit="#L" n="1"> impelli a se ipso </rdg>
-              <rdg wit="#L" n="2"> quod quieverat impulsum esse a <seg type="apparat-ellipsis"/> se
-                  ipso. <hi rendition="#i">L</hi></rdg>
-            </app> Nam ictus<index indexName="Sachen">
-              <term>ictus consumtus</term>
-            </index> omnis in partibus mollibus<index indexName="Sachen">
-              <term>pars mollis</term>
-            </index> consumtus est. Verum cum certum videatur nullum corpus momento motum notabilem
-              accipere,<anchor xml:id="LH_37_05_123v_plastischerstoss-2"/><index indexName="Sachen">
-              <term>motus acceptus</term>
-            </index> cogitandum, quomodo res explicari possit.</p>
-          <p xml:id="Ch6.p12">Videtur omne corpus jam tum in se eam omnem vim habere<anchor xml:id="LH_37_05_123v_iqciqmdfm-1"/><index indexName="Sachen">
-              <term>vis in corpore</term>
-            </index> quam unquam acquirere potest[,] adeoque infinitam,<index indexName="Sachen">
-              <term>vis infinita</term>
-            </index> sunt enim infinitorum corporum motus<index indexName="Sachen">
-              <term>motus infinitorum corporum</term>
-            </index> magnae celeritatis<index indexName="Sachen">
-              <term>celeritas magna</term>
-            </index><index indexName="Sachen">
-              <term>motus magnae celeritatis</term>
-            </index> in eo inclusi,<index indexName="Sachen">
-              <term>motus in corpore inclusus</term>
-            </index> ita ut in quolibet corpore insit quantitas motus<index indexName="Sachen">
-              <term>quantitas motus in corpore insita</term>
-            </index> data finita major.<index indexName="Sachen">
-              <term>quantitas motus major finita</term>
-            </index><anchor xml:id="LH_37_05_123v_iqciqmdfm-2"/> Corpus omne videtur non nisi a
+<term>flexilitas</term>
+</index>
+<index indexName="Sachen">
+<term>gradus flexilitatis</term>
+</index> nihilque infinitae rigiditatis est,<index indexName="Sachen">
+<term>rigiditas infinita</term>
+</index> hinc semper prius movetur pars,<index indexName="Sachen">
+<term>pars mota prius quam totum</term>
+</index> quam totum.<anchor xml:id="LH_37_05_123r_12301"/>
+<app type="Bfootnote" from="#LH_37_05_123r_12301" to="#LH_37_05_123r_12302">
+<lem type="main"/>
+<note type="lemma-abbrev">totum.</note>
+<rdg wit="#L" n="1"> Caeterum </rdg>
+<rdg wit="#L" n="2"> Dici <app>
+<rdg wit="#L" n="a">porro </rdg>
+<rdg wit="#L" n="b">etiam potest <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch6.p10">Dici etiam potest non tantum corpus omne moveri a se ipso,<anchor xml:id="LH_37_05_123r_12302"/>
+<index indexName="Sachen">
+<term>corpus motum a se ipso</term>
+</index> vel eo quod in <app type="Bfootnote">
+<lem type="main">ipso est,</lem>
+<note type="lemma-abbrev">ipso</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>conclusum</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> est <hi rendition="#i">L</hi>
+</rdg>
+</app> sed etiam ex ipsius statu praecedenti<index indexName="Sachen">
+<term>status corporis praecedens</term>
+</index> consequi praesentem motum,<index indexName="Sachen">
+<term>motus consequens ex statu praecedenti</term>
+</index>
+<index indexName="Sachen">
+<term>motus praesens</term>
+</index> ita ut agat sponte,<index indexName="Sachen">
+<term>corpus agens sponte</term>
+</index> ac nihil absolute loquendo in <app type="Bfootnote">
+<lem type="main">natura sit</lem>
+<note type="lemma-abbrev">natura</note>
+<rdg wit="#L" n="1"> esse </rdg>
+<rdg wit="#L" n="2"> sit <hi rendition="#i">L</hi>
+</rdg>
+</app> violentum.<index indexName="Sachen">
+<term>natura</term>
+</index>
+<index indexName="Sachen">
+<term>violentum</term>
+</index> Nam etsi videatur compressio<index indexName="Sachen">
+<term>compressio ab externo</term>
+</index> saltem ab externo fieri, <app type="Bfootnote">
+<lem type="main">attamen cum</lem>
+<note type="lemma-abbrev">attamen</note>
+<rdg wit="#L" n="1"> re vera </rdg>
+<rdg wit="#L" n="2"> comm </rdg>
+<rdg wit="#L" n="3"> cum <hi rendition="#i">L</hi>
+</rdg>
+</app> omnis compressio motum partium<index indexName="Sachen">
+<term>motus partium in compresssione</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">contineat, omnis autem res moveatur</lem>
+<note type="lemma-abbrev">contineat,</note>
+<rdg wit="#L" n="1"> motus autem sit fact </rdg>
+<rdg wit="#L" n="2"> omnis autem res moveatur <hi rendition="#i">L</hi>
+</rdg>
+</app> a se ipsa,<index indexName="Sachen">
+<term>res mota a se ipsa</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">ut ostensum est,</lem>
+<note type="lemma-abbrev">ut ostensum est</note>
+<note type="editorial">Soeben in der vorliegenden Aufzeichnung N. <ref corresp="#_60338"/>
+.</note>
+</app> nec compressio ab externo <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[fieri]</corr>
+</lem>
+<rdg wit="#L">
+<orig>facta</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> poterit,<index indexName="Sachen">
+<term>compressio ab externo</term>
+</index> nihil aliud <app type="Bfootnote">
+<lem type="main">ergo est</lem>
+<note type="lemma-abbrev">ergo</note>
+<rdg wit="#L" n="1"> fuerit </rdg>
+<rdg wit="#L" n="2"> est <hi rendition="#i">L</hi>
+</rdg>
+</app> corpus externum,<index indexName="Sachen">
+<term>corpus externum</term>
+</index> quam ut sit comitans atque connexum,<index indexName="Sachen">
+<term>corpus comitans</term>
+</index>
+<index indexName="Sachen">
+<term>corpus connexum</term>
+</index> quod nobis rerum interiora ignorantibus<index indexName="Sachen">
+<term>interiora rerum</term>
+</index> causa videtur.<index indexName="Sachen">
+<term>causa apparens</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">Interim notio</lem>
+<note type="lemma-abbrev">interim</note>
+<rdg wit="#L" n="1"> si </rdg>
+<rdg wit="#L" n="2"> certa not </rdg>
+<rdg wit="#L" n="3"> sit </rdg>
+<rdg wit="#L" n="4"> notio <hi rendition="#i">L</hi>
+</rdg>
+</app> causae<index indexName="Sachen">
+<term>notio causae</term>
+</index> assignari poterit[,] qua adhibita recte <app type="Bfootnote">
+<lem type="main">dicetur motum corporis</lem>
+<note type="lemma-abbrev">dicetur</note>
+<rdg wit="#L" n="1"> corporis </rdg>
+<rdg wit="#L" n="2"> motum corporis <hi rendition="#i">L</hi>
+</rdg>
+</app> unius esse causam motus<index indexName="Sachen">
+<term>causa motus mediata</term>
+</index> corporis alterius, etsi non sit causa immediata.<index indexName="Sachen">
+<term>causa motus immediata</term>
+</index>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,05/&amp;pn=374">
+<pb type="L"/>
+<fw type="folNum">[123 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</p>
+<p xml:id="Ch6.p11">
+<app type="Bfootnote">
+<lem type="main">Quando corpus unum incurrit in aliud quiescens<anchor xml:id="LH_37_05_123v_plastischerstoss-1"/>
+<index indexName="Sachen">
+<term>corpus incurrens in quiescens</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Quando</note>
+<rdg wit="#L" n="1"> duo corpora concurrunt </rdg>
+<rdg wit="#L" n="2"> corpus unum <seg type="apparat-ellipsis"/>
+ aliud quiescens <hi rendition="#i">L</hi>
+</rdg>
+</app> et post ictum simul<index indexName="Sachen">
+<term>ictus consumtus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">procedunt dubites an</lem>
+<note type="lemma-abbrev">procedunt</note>
+<rdg wit="#L" n="1"> non videtur </rdg>
+<rdg wit="#L" n="2"> dubites an <hi rendition="#i">L</hi>
+</rdg>
+</app> commode defendi possit <app type="Bfootnote">
+<lem type="main">corpus quod quieverat<index indexName="Sachen">
+<term>corpus quiescens</term>
+</index> impulsum esse a se ipso.<index indexName="Sachen">
+<term>corpus impulsum a se ipso</term>
+</index>
+</lem>
+<note type="lemma-abbrev">corpus</note>
+<rdg wit="#L" n="1"> impelli a se ipso </rdg>
+<rdg wit="#L" n="2"> quod quieverat impulsum esse a <seg type="apparat-ellipsis"/>
+ se
+                  ipso. <hi rendition="#i">L</hi>
+</rdg>
+</app> Nam ictus<index indexName="Sachen">
+<term>ictus consumtus</term>
+</index> omnis in partibus mollibus<index indexName="Sachen">
+<term>pars mollis</term>
+</index> consumtus est. Verum cum certum videatur nullum corpus momento motum notabilem
+              accipere,<anchor xml:id="LH_37_05_123v_plastischerstoss-2"/>
+<index indexName="Sachen">
+<term>motus acceptus</term>
+</index> cogitandum, quomodo res explicari possit.</p>
+<p xml:id="Ch6.p12">Videtur omne corpus jam tum in se eam omnem vim habere<anchor xml:id="LH_37_05_123v_iqciqmdfm-1"/>
+<index indexName="Sachen">
+<term>vis in corpore</term>
+</index> quam unquam acquirere potest[,] adeoque infinitam,<index indexName="Sachen">
+<term>vis infinita</term>
+</index> sunt enim infinitorum corporum motus<index indexName="Sachen">
+<term>motus infinitorum corporum</term>
+</index> magnae celeritatis<index indexName="Sachen">
+<term>celeritas magna</term>
+</index>
+<index indexName="Sachen">
+<term>motus magnae celeritatis</term>
+</index> in eo inclusi,<index indexName="Sachen">
+<term>motus in corpore inclusus</term>
+</index> ita ut in quolibet corpore insit quantitas motus<index indexName="Sachen">
+<term>quantitas motus in corpore insita</term>
+</index> data finita major.<index indexName="Sachen">
+<term>quantitas motus major finita</term>
+</index>
+<anchor xml:id="LH_37_05_123v_iqciqmdfm-2"/>
+ Corpus omne videtur non nisi a
             seipso impelli,<index indexName="Sachen">
-              <term>corpus impulsum a se ipso</term>
-            </index> sive motu suo,<index indexName="Sachen">
-              <term>corpus impulsum a motu suo</term>
-            </index> sive elaterio<index indexName="Sachen">
-              <term>elaterium impellens</term>
-            </index> quod a motu intestino proficiscitur.<index indexName="Sachen">
-              <term>elaterium a motu intestino profectum</term>
-            </index> Verum inquies[,] cum corpus in quiescens incurrit,<index indexName="Sachen">
-              <term>corpus incurrens in quiescens</term>
-            </index> prius ejus partes impellit ac comprimit<index indexName="Sachen">
-              <term>pars corporis impulsa</term>
-            </index><index indexName="Sachen">
-              <term>pars corporis compressa</term>
-            </index> quam ullum elastrum existere possit; respondeo in omni corpore quod totum
+<term>corpus impulsum a se ipso</term>
+</index> sive motu suo,<index indexName="Sachen">
+<term>corpus impulsum a motu suo</term>
+</index> sive elaterio<index indexName="Sachen">
+<term>elaterium impellens</term>
+</index> quod a motu intestino proficiscitur.<index indexName="Sachen">
+<term>elaterium a motu intestino profectum</term>
+</index> Verum inquies[,] cum corpus in quiescens incurrit,<index indexName="Sachen">
+<term>corpus incurrens in quiescens</term>
+</index> prius ejus partes impellit ac comprimit<index indexName="Sachen">
+<term>pars corporis impulsa</term>
+</index>
+<index indexName="Sachen">
+<term>pars corporis compressa</term>
+</index> quam ullum elastrum existere possit; respondeo in omni corpore quod totum
               quiescit<index indexName="Sachen">
-              <term>corpus quiescens</term>
-            </index> partes esse in celerrimo motu,<index indexName="Sachen">
-              <term>motus partium celerrimus</term>
-            </index> eoque magis quo est firmius, et corpus incurrens<index indexName="Sachen">
-              <term>corpus incurrens</term>
-            </index> atque impellens<index indexName="Sachen">
-              <term>corpus impellens</term>
-            </index> in <app type="Bfootnote">
-              <lem type="main">hunc motum partium extimarum<index indexName="Sachen">
-                  <term>motus partium extimarum</term>
-                </index></lem>
-              <note type="lemma-abbrev">hunc</note>
-              <rdg wit="#L" n="1"> intestinum </rdg>
-              <rdg wit="#L" n="2"> motum partium extimarum <hi rendition="#i">L</hi></rdg>
-            </app> incidere, atque hinc reflectere<index indexName="Sachen">
-              <term>pars corporis reflexa</term>
-            </index> illas partes.</p>
-        </div>
-      </div>
-    </body>
-  </text>
+<term>corpus quiescens</term>
+</index> partes esse in celerrimo motu,<index indexName="Sachen">
+<term>motus partium celerrimus</term>
+</index> eoque magis quo est firmius, et corpus incurrens<index indexName="Sachen">
+<term>corpus incurrens</term>
+</index> atque impellens<index indexName="Sachen">
+<term>corpus impellens</term>
+</index> in <app type="Bfootnote">
+<lem type="main">hunc motum partium extimarum<index indexName="Sachen">
+<term>motus partium extimarum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">hunc</note>
+<rdg wit="#L" n="1"> intestinum </rdg>
+<rdg wit="#L" n="2"> motum partium extimarum <hi rendition="#i">L</hi>
+</rdg>
+</app> incidere, atque hinc reflectere<index indexName="Sachen">
+<term>pars corporis reflexa</term>
+</index> illas partes.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,504 +1,1629 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-069-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-069-000">
   <teiHeader>
     <fileDesc>
-      <titleStmt><title type="main">Plurium Corporum Concursus</title><title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title><respStmt><orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp></respStmt><respStmt><orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName><resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp></respStmt><respStmt><persName><forename>Martina</forename><surname>Gödel</surname></persName><resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp></respStmt><respStmt><persName><forename>Sebastian W.</forename><surname>Stork</surname></persName><resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp></respStmt></titleStmt>
-      
-      <publicationStmt><publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher><date type="creation">2022</date><availability><licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence></availability></publicationStmt>
+      <titleStmt>
+        <title type="main">Plurium Corporum Concursus</title>
+        <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+        <date type="creation">2022</date>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
+        </availability>
+      </publicationStmt>
       <sourceDesc>
-        <biblStruct><analytic><author>
+        <biblStruct>
+          <analytic>
+            <author>
               <persName ref="http://d-nb.info/gnd/118571249">
                 <surname>Leibniz</surname>
                 <forename>Gottfried Wilhelm</forename>
               </persName>
-            </author><title type="chapter" level="a" n="69">Plurium Corporum Concursus</title><title type="section" level="a" n=""/><date calendar="#gregorian" notBefore="1688-09" resp="#ed" cert="medium">[Herbst 1688 – Anfang 1689]</date><date calendar="#gregorian" notAfter="1689-02" resp="#ed" cert="medium"/><idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=793</idno></idno></analytic><monogr><title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
-              Naturwissenschaftliche, medizinische und technische Schriften</title><title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title><imprint><publisher>Walter de Gruyter GmbH</publisher><pubPlace>Berlin, Boston</pubPlace><date type="publication">2021</date></imprint><biblScope unit="page" from="759" to="765"/></monogr><series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series></biblStruct>
-        <listWit><witness n="L" corresp="#L_08-03-069-000_facs-haupttextzeuge"><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 10, 7 Bl. 9–10</idno></msIdentifier><msContents corresp="L_witness-content-types.xml#aufzeichnung"><summary><p>Aufzeichnung:
+            </author>
+            <title type="chapter" level="a" n="69">Plurium Corporum Concursus</title>
+            <title type="section" level="a" n=""/>
+            <date calendar="#gregorian" notBefore="1688-09" resp="#ed" cert="medium">[Herbst 1688 – Anfang 1689]</date>
+            <date calendar="#gregorian" notAfter="1689-02" resp="#ed" cert="medium"/>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+              <idno type="page">#page=793</idno>
+            </idno>
+          </analytic>
+          <monogr>
+            <title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII:
+              Naturwissenschaftliche, medizinische und technische Schriften</title>
+            <title type="volume" n="3" level="m">Dritter Band 1671 – 1705</title>
+            <imprint>
+              <publisher>Walter de Gruyter GmbH</publisher>
+              <pubPlace>Berlin, Boston</pubPlace>
+              <date type="publication">2021</date>
+            </imprint>
+            <biblScope unit="page" from="759" to="765"/>
+          </monogr>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
+        </biblStruct>
+        <listWit>
+          <witness n="L" corresp="#L_08-03-069-000_facs-haupttextzeuge">
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 10, 7 Bl. 9–10</idno>
+              </msIdentifier>
+              <msContents corresp="L_witness-content-types.xml#aufzeichnung">
+                <summary>
+                  <p>Aufzeichnung:
 LH XXXV 10, 7 Bl. 9–10.
 Ein Bogen 4<hi rendition="#sup">o</hi>;
 Gegenmarke eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1518">Wasserzeichens</ref> im Falz (Wiener Papier).
-Zweieindreiviertel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1519">Bl. 9 r<hi rendition="#sup">o</hi></ref> bis <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1522">Bl. 10 r<hi rendition="#sup">o</hi></ref>; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1524">Bl. 10 v<hi rendition="#sup">o</hi></ref> ist unbeschrieben.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin corresp="L_witness-origin-types.xml#origin-L"/></history></msDesc></witness></listWit>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <tagsDecl>
-        <rendition scheme="css" xml:id="i">font-style:italic</rendition>
-        <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
-        <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
-        <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
-        <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
-        <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
-        <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
-        <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
-        <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
-      </tagsDecl>
-      <charDecl>
-        <!-- Sonderzeichen OHNE Unicodeentsprechung -->
-        <!--rightpropto-->
-        <glyph xml:id="rightpropto">
-          <glyphName>rightpropto</glyphName>
-          <desc>...</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="TeX">\rightpropto</mapping>
-          <graphic url="../../glyphs/rightpropto.svg"/>
-        </glyph>
-        <glyph xml:id="Pfund">
-          <glyphName>Pfund</glyphName>
-          <desc>stilisiertes lb-Zeichen (Pfund)</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.7</value>
-          </charProp>
-          <mapping type="TeX">\Pfund</mapping>
-          <graphic url="../../glyphs/Pfund.svg"/>
-        </glyph>
-        <!-- leibdashv -->
-        <glyph xml:id="pleibdashv">
-          <glyphName>pleibdashv</glyphName>
-          <desc>Bedeutung (+−) - gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>-1</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\pleibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <glyph xml:id="leibdashv">
-          <glyphName>leibdashv</glyphName>
-          <desc>Bedeutung (+−) - nicht-gesenkt</desc>
-          <charProp>
-            <localName>baselineshift-in-ex</localName>
-            <value>0</value>
-          </charProp>
-          <charProp>
-            <localName>width-in-em</localName>
-            <value>0.6</value>
-          </charProp>
-          <mapping type="PUA"/>
-          <mapping type="TeX">\leibdashv</mapping>
-          <graphic url="../../glyphs/pm.svg"/>
-        </glyph>
-        <!-- Sonderzeichen MIT Unicodeentsprechung -->
-      </charDecl>
-    </encodingDesc>
-    <profileDesc><langUsage><language ident="la"/></langUsage><calendarDesc><calendar xml:id="gregorian"><p>Gregorianischer Kalenderstil</p></calendar><calendar xml:id="julian"><p>Julianischer Kalenderstil</p></calendar></calendarDesc><textClass><catRef scheme="L_subjects" target="L_subjects.xml#stoss"/><catRef scheme="L_terms" target="L_terms.xml#"/></textClass><abstract><listPerson><person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/><person sameAs="L_persons.xml#"/></listPerson><listPlace><place sameAs="L_places.xml#"/></listPlace></abstract></profileDesc>
-    <revisionDesc><change when="2021" who="#telota" status="base"/><change when="2021-02-23" who="#stork" status="enrich_1"/></revisionDesc>
-  </teiHeader>
-  <facsimile source="digilib.bbaw.de" xml:id="L_08-03-069-000_facs-haupttextzeuge"><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1519"/><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1521"/><graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1522"/></facsimile><text xml:id="L_08-03-069-000_text">
-    <body xml:id="Document"><div type="chapter" xml:id="Ch69" n="69"><head>69
+Zweieindreiviertel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1519">Bl. 9 r<hi rendition="#sup">o</hi>
+                  </ref> bis <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1522">Bl. 10 r<hi rendition="#sup">o</hi>
+                </ref>;                <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1524">Bl. 10 v<hi rendition="#sup">o</hi>
+                </ref> ist unbeschrieben.</p>
+            </summary>
+          </msContents>
+          <physDesc>
+            <objectDesc form="Handschrift"/>
+          </physDesc>
+          <history>
+            <origin corresp="L_witness-origin-types.xml#origin-L"/>
+          </history>
+        </msDesc>
+      </witness>
+    </listWit>
+  </sourceDesc>
+</fileDesc>
+<encodingDesc>
+  <tagsDecl>
+    <rendition scheme="css" xml:id="i">font-style:italic</rendition>
+    <rendition scheme="css" xml:id="k">font-variant:small-caps</rendition>
+    <rendition scheme="css" xml:id="b">font-weight:bold</rendition>
+    <rendition scheme="css" xml:id="sub">vertical-align:sub; font-size:.7em</rendition>
+    <rendition scheme="css" xml:id="sup">vertical-align:super; font-size:.7em</rendition>
+    <rendition scheme="css" xml:id="c">display:block; text-align:center</rendition>
+    <rendition scheme="css" xml:id="u">text-decoration:underline</rendition>
+    <rendition scheme="css" xml:id="smaller">font-size:smaller</rendition>
+    <rendition scheme="css" xml:id="g">letter-spacing:0.125em</rendition>
+    <rendition scheme="css" xml:id="uu">border-bottom:double 3px #000</rendition>
+  </tagsDecl>
+  <charDecl>
+    <!-- Sonderzeichen OHNE Unicodeentsprechung -->
+    <!--rightpropto-->
+    <glyph xml:id="rightpropto">
+      <glyphName>rightpropto</glyphName>
+      <desc>...</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="TeX">\rightpropto</mapping>
+      <graphic url="../../glyphs/rightpropto.svg"/>
+    </glyph>
+    <glyph xml:id="Pfund">
+      <glyphName>Pfund</glyphName>
+      <desc>stilisiertes lb-Zeichen (Pfund)</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.7</value>
+      </charProp>
+      <mapping type="TeX">\Pfund</mapping>
+      <graphic url="../../glyphs/Pfund.svg"/>
+    </glyph>
+    <!-- leibdashv -->
+    <glyph xml:id="pleibdashv">
+      <glyphName>pleibdashv</glyphName>
+      <desc>Bedeutung (+−) - gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>-1</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="PUA"/>
+      <mapping type="TeX">\pleibdashv</mapping>
+      <graphic url="../../glyphs/pm.svg"/>
+    </glyph>
+    <glyph xml:id="leibdashv">
+      <glyphName>leibdashv</glyphName>
+      <desc>Bedeutung (+−) - nicht-gesenkt</desc>
+      <charProp>
+        <localName>baselineshift-in-ex</localName>
+        <value>0</value>
+      </charProp>
+      <charProp>
+        <localName>width-in-em</localName>
+        <value>0.6</value>
+      </charProp>
+      <mapping type="PUA"/>
+      <mapping type="TeX">\leibdashv</mapping>
+      <graphic url="../../glyphs/pm.svg"/>
+    </glyph>
+    <!-- Sonderzeichen MIT Unicodeentsprechung -->
+  </charDecl>
+</encodingDesc>
+<profileDesc>
+  <langUsage>
+    <language ident="la"/>
+  </langUsage>
+  <calendarDesc>
+    <calendar xml:id="gregorian">
+      <p>Gregorianischer Kalenderstil</p>
+    </calendar>
+    <calendar xml:id="julian">
+      <p>Julianischer Kalenderstil</p>
+    </calendar>
+  </calendarDesc>
+  <textClass>
+    <catRef scheme="L_subjects" target="L_subjects.xml#stoss"/>
+    <catRef scheme="L_terms" target="L_terms.xml#"/>
+  </textClass>
+  <abstract>
+    <listPerson>
+      <person sameAs="L_persons.xml#leibniz_gottfried-wilhelm"/>
+      <person sameAs="L_persons.xml#"/>
+    </listPerson>
+    <listPlace>
+      <place sameAs="L_places.xml#"/>
+    </listPlace>
+  </abstract>
+</profileDesc>
+<revisionDesc>
+  <change when="2021" who="#telota" status="base"/>
+  <change when="2021-02-23" who="#stork" status="enrich_1"/>
+</revisionDesc>
+</teiHeader>
+<facsimile source="digilib.bbaw.de" xml:id="L_08-03-069-000_facs-haupttextzeuge">
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1519"/>
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1521"/>
+<graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1522"/>
+</facsimile>
+<text xml:id="L_08-03-069-000_text">
+<body xml:id="Document">
+  <div type="chapter" xml:id="Ch69" n="69">
+    <head>69
 PLURIUM CORPORUM CONCURSUS</head>
-      <head>[Herbst 1688 – Anfang 1689]</head><div type="ueberlieferung"><p><hi rendition="#b #smaller">Überlieferung:</hi><listWit><witness><msDesc><msIdentifier><repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository><idno type="Signatur">LH XXXV 10, 7 Bl. 9–10</idno></msIdentifier><msContents><summary><p>Aufzeichnung:
+    <head>[Herbst 1688 – Anfang 1689]</head>
+    <div type="ueberlieferung">
+      <p>
+        <hi rendition="#b #smaller">Überlieferung:</hi>
+        <listWit>
+          <witness>
+            <msDesc>
+              <msIdentifier>
+                <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+                <idno type="Signatur">LH XXXV 10, 7 Bl. 9–10</idno>
+              </msIdentifier>
+              <msContents>
+                <summary>
+                  <p>Aufzeichnung:
 LH XXXV 10, 7 Bl. 9–10.
 Ein Bogen 4<hi rendition="#sup">o</hi>;
 Gegenmarke eines <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1518">Wasserzeichens</ref> im Falz (Wiener Papier).
-Zweieindreiviertel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1519">Bl. 9 r<hi rendition="#sup">o</hi></ref> bis <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1522">Bl. 10 r<hi rendition="#sup">o</hi></ref>; <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1524">Bl. 10 v<hi rendition="#sup">o</hi></ref> ist unbeschrieben.</p></summary></msContents><physDesc><objectDesc form="Handschrift"/></physDesc><history><origin/></history></msDesc></witness></listWit></p></div><div type="contents"><p xml:id="Ch69.p1"><anchor xml:id="RK60038"/><!--  \hackfor{\par} --></p><p xml:id="Ch69.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe:</hi>
-Die vorliegende titellose Aufzeichnung N. <ref corresp="#RK60038"/> ist auf Papier verfasst, das sich anhand des Wasserzeichens auf Leibnizens ersten Aufenthalt in Wien (Mai 1688 bis Februar 1689) datieren lässt.
+Zweieindreiviertel Seiten auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1519">Bl. 9 r<hi rendition="#sup">o</hi>
+                  </ref> bis <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1522">Bl. 10 r<hi rendition="#sup">o</hi>
+                </ref>;                <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1524">Bl. 10 v<hi rendition="#sup">o</hi>
+                </ref> ist unbeschrieben.</p>
+            </summary>
+          </msContents>
+          <physDesc>
+            <objectDesc form="Handschrift"/>
+          </physDesc>
+          <history>
+            <origin/>
+          </history>
+        </msDesc>
+      </witness>
+    </listWit>
+  </p>
+</div>
+<div type="contents">
+  <p xml:id="Ch69.p1">
+    <anchor xml:id="RK60038"/>
+    <!--  \hackfor{\par} --></p>
+  <p xml:id="Ch69.p4">
+    <hi rendition="#smaller">
+      <hi rendition="#b">Datierungsgründe:</hi>
+Die vorliegende titellose Aufzeichnung N. <ref corresp="#RK60038"/>
+ ist auf Papier verfasst, das sich anhand des Wasserzeichens auf Leibnizens ersten Aufenthalt in Wien (Mai 1688 bis Februar 1689) datieren lässt.
 Die Entstehungszeit lässt sich jedoch weiter einschränken.
-Die Verwendung der Begriffe <hi rendition="#i">vis insita</hi> (S. <ref corresp="#LH_35_10_07_009r_visinsita-1"/>) und <hi rendition="#i">quantitas centripeta vel centrifuga</hi> (S. <ref corresp="#LH_35_10_07_0010r_centripetafuga-1"/>) sowie die grundlegende Fragestellung, die die Auseinandersetzung mit der Stoßlehre in N. <ref corresp="#RK60038"/> offenbar veranlasst – nämlich eine rein mechanistische Erklärung der Wurf- und Umlaufbahn (vgl. S. <ref corresp="#LH_35_10_07_009r_motivation-1"/>) –, setzen eine unmittelbare Auseinandersetzung mit
-<index indexName="Personen"><term><hi rendition="#g #smaller">Newton</hi> <hi rendition="#smaller">(Neutonus), Isaac 1643–1727</hi></term></index>Newtons <hi rendition="#i">Principia</hi> (1687)<ref corresp="#bib_00535"/> voraus,
-oder wenigstens eine Lektüre der von C. Pfautz<index indexName="Personen"><term><hi rendition="#g #smaller">Pfautz</hi> <hi rendition="#smaller">(Pfauzius), Christoph 1645–1711</hi></term></index>
+Die Verwendung der Begriffe <hi rendition="#i">vis insita</hi> (S. <ref corresp="#LH_35_10_07_009r_visinsita-1"/>
+) und <hi rendition="#i">quantitas centripeta vel centrifuga</hi> (S. <ref corresp="#LH_35_10_07_0010r_centripetafuga-1"/>
+) sowie die grundlegende Fragestellung, die die Auseinandersetzung mit der Stoßlehre in N. <ref corresp="#RK60038"/>
+ offenbar veranlasst – nämlich eine rein mechanistische Erklärung der Wurf- und Umlaufbahn (vgl. S. <ref corresp="#LH_35_10_07_009r_motivation-1"/>
+) –, setzen eine unmittelbare Auseinandersetzung mit
+<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Newton</hi>
+<hi rendition="#smaller">(Neutonus), Isaac 1643–1727</hi>
+</term>
+</index>Newtons <hi rendition="#i">Principia</hi> (1687)<ref corresp="#bib_00535"/>
+ voraus,
+oder wenigstens eine Lektüre der von C. Pfautz<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Pfautz</hi>
+<hi rendition="#smaller">(Pfauzius), Christoph 1645–1711</hi>
+</term>
+</index>
 veröffentlichten, ausführlichen Besprechung von Newtons Abhandlung (<hi rendition="#i">AE</hi>, Juni 1688, S. 303–315).<ref corresp="#bib_01356"/>
-Mit den <hi rendition="#i">Principia</hi> – insbesondere dem ersten Lehrsatz (lib. I, sect. II, prop. 1, S. 37 f.)<ref corresp="#bib_00535"/> – befasst sich ebenfalls der im Herbst 1688 niedergeschriebene Entwurf <hi rendition="#i">Physico-mechanicae leges</hi> (N. <ref corresp="L_chapter_68.xml#RK60323"/> in diesem Band; siehe für die Einzelheiten die Datierungsgründe auf S. <ref corresp="L_chapter_68.xml#LH_37_05_104-105_datierung"/>).
-Am Ende dieses Textes skizziert Leibniz gleichsam das Programm für die Fortsetzung der Untersuchung (S. <ref corresp="L_chapter_68.xml#LH_37_05_105v_Vorverweis-1"/>):
+Mit den <hi rendition="#i">Principia</hi> – insbesondere dem ersten Lehrsatz (lib. I, sect. II, prop. 1, S. 37 f.)<ref corresp="#bib_00535"/>
+ – befasst sich ebenfalls der im Herbst 1688 niedergeschriebene Entwurf <hi rendition="#i">Physico-mechanicae leges</hi> (N. <ref corresp="L_chapter_68.xml#RK60323"/>
+ in diesem Band; siehe für die Einzelheiten die Datierungsgründe auf S. <ref corresp="L_chapter_68.xml#LH_37_05_104-105_datierung"/>
+).
+Am Ende dieses Textes skizziert Leibniz gleichsam das Programm für die Fortsetzung der Untersuchung (S. <ref corresp="L_chapter_68.xml#LH_37_05_105v_Vorverweis-1"/>
+):
 Es gelte insbesondere zu prüfen, ob das Prinzip der <hi rendition="#i">compositio motuum</hi> – und somit die „Schiff”-Methode – auch auf Fälle schiefen und mehrfachen Stoßes anwendbar bleibe.
 Zu diesem Zweck sei es methodisch von der „fiktionalen” Annahme auszugehen, dass die zusammenstoßenden Körper sich nach Belieben als zusammenhängend oder abgetrennt auffassen ließen.
-An dieses in N. <anchor xml:id="LH_35_10_07_009-010_Datierung-1"/><ref corresp="L_chapter_68.xml#RK60323"/> skizzierte „Arbeitsprogramm” knüpft offenbar die Aufzeichnung N. <ref corresp="#RK60038"/> an:
-Hier werden in systematischer Ordnung Fälle mehrfachen Stoßes untersucht, und zwar unter den methodischen Annahmen, die am Ende von N. <ref corresp="L_chapter_68.xml#RK60323"/> kurz dargelegt werden.
+An dieses in N. <anchor xml:id="LH_35_10_07_009-010_Datierung-1"/>
+<ref corresp="L_chapter_68.xml#RK60323"/>
+ skizzierte „Arbeitsprogramm” knüpft offenbar die Aufzeichnung N. <ref corresp="#RK60038"/>
+ an:
+Hier werden in systematischer Ordnung Fälle mehrfachen Stoßes untersucht, und zwar unter den methodischen Annahmen, die am Ende von N. <ref corresp="L_chapter_68.xml#RK60323"/>
+ kurz dargelegt werden.
 Der Zusammenhang beider Texte wird auch bei den Zeichnungen sichtbar:
-Das Diagramm [<anchor xml:id="LH_35_10_07_009-010_Datierung-2"/><hi rendition="#i">Fig. 5</hi>] in N. <ref corresp="L_chapter_68.xml#RK60323"/> (S. <ref corresp="L_chapter_68.xml#LH_37_05_105v_Fig.5"/>), das keine Verbindung mit dem dortigen Text aufweist, zeigt indessen auffällige Ähnlichkeit mit dem Diagramm [<hi rendition="#i">Fig. 2</hi>] in N. <ref corresp="#RK60038"/> (S. <ref corresp="#LH_35_10_07_009r_Fig.2"/>).
-Aus dieser inhaltlichen Abhängigkeit folgt, dass N. <ref corresp="#RK60038"/> nicht vor N. <ref corresp="L_chapter_68.xml#RK60323"/>, d.h. nicht vor dem Herbst 1688, entstanden sein kann, aller Wahrscheinlichkeit nach aber noch vor Leibnizens Abfahrt aus Wien in Februar 1689 angefertigt wurde.
-Hieraus ergibt sich die vorgeschlagene Datierung.</hi></p></div><div type="text"><p rendition="#noindent" xml:id="Ch69.p5"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1519"><pb type="L"/><fw type="folNum">[9 r<hi rendition="#sup">o</hi>]</fw></ref> Si corpus <hi rendition="#i">LM</hi> incurrat<index indexName="Sachen"><term>corpus incurrens</term></index>
+Das Diagramm [<anchor xml:id="LH_35_10_07_009-010_Datierung-2"/>
+<hi rendition="#i">Fig. 5</hi>] in N. <ref corresp="L_chapter_68.xml#RK60323"/>
+ (S. <ref corresp="L_chapter_68.xml#LH_37_05_105v_Fig.5"/>
+), das keine Verbindung mit dem dortigen Text aufweist, zeigt indessen auffällige Ähnlichkeit mit dem Diagramm [<hi rendition="#i">Fig. 2</hi>] in N. <ref corresp="#RK60038"/>
+ (S. <ref corresp="#LH_35_10_07_009r_Fig.2"/>
+).
+Aus dieser inhaltlichen Abhängigkeit folgt, dass N. <ref corresp="#RK60038"/>
+ nicht vor N. <ref corresp="L_chapter_68.xml#RK60323"/>
+, d.h. nicht vor dem Herbst 1688, entstanden sein kann, aller Wahrscheinlichkeit nach aber noch vor Leibnizens Abfahrt aus Wien in Februar 1689 angefertigt wurde.
+Hieraus ergibt sich die vorgeschlagene Datierung.</hi>
+</p>
+</div>
+<div type="text">
+<p rendition="#noindent" xml:id="Ch69.p5">
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1519">
+<pb type="L"/>
+<fw type="folNum">[9 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref> Si corpus <hi rendition="#i">LM</hi> incurrat<index indexName="Sachen">
+<term>corpus incurrens</term>
+</index>
 in corpus <hi rendition="#i">AB</hi>,
 demonstratum est
-<app type="Cfootnote"><lem type="main">alibi</lem><note type="editorial">Vermutlich Anspielung auf den ersten Teil von N. <ref corresp="L_chapter_68.xml#RK60323"/>, wo Leibniz in Anlehnung an N. <ref corresp="L_chapter_67.xml#RK41201"/> die Gesetze des direkten zentralen Stoßes unter den angegebenen Annahmen nachweist.
-Den Erhalt der <hi rendition="#i">potentia</hi> (d.h. der Kraft <formula xml:id="Ch69.p5.m1"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline"><m:mrow><m:mi>m</m:mi><m:mo>⁢</m:mo><m:msup><m:mi>v</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:math></formula>) und der <hi rendition="#i">directio</hi> (d.h. der gleichförmigen Bewegung des gemeinsamen Schwerpunkts) hat Leibniz wiederum in <hi rendition="#i">De corporum concursu</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/> und N. <ref corresp="L_section_5811.xml#dcc_09"/>) nachgewiesen.</note></app>
-<app type="Bfootnote"><lem type="main">ex lege conservandae</lem><note type="lemma-abbrev">ex</note><rdg wit="#L" n="1"> natura ser
-</rdg><rdg wit="#L" n="2"> lege conservandae <hi rendition="#i">L</hi></rdg></app>
-potentiae<index indexName="Sachen"><term>lex conservandae potentiae</term></index><index indexName="Sachen"><term>potentia conservanda</term></index>
-et directionis,<index indexName="Sachen"><term>lex conservandae directionis</term></index><index indexName="Sachen"><term>directio conservanda</term></index>
-quid sit futurum.</p><figure rendition="#own-line_centered" xml:id="Ch69.p6"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d1_009r.svg" width="39.0258pt" xml:id="Ch69.p6.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]</head></figure><p xml:id="Ch69.p7">Sed si
-<app type="Bfootnote"><lem type="main">ponamus corpora<index indexName="Sachen"><term>corpora duplicia</term></index>
+<app type="Cfootnote">
+<lem type="main">alibi</lem>
+<note type="editorial">Vermutlich Anspielung auf den ersten Teil von N. <ref corresp="L_chapter_68.xml#RK60323"/>
+, wo Leibniz in Anlehnung an N. <ref corresp="L_chapter_67.xml#RK41201"/>
+ die Gesetze des direkten zentralen Stoßes unter den angegebenen Annahmen nachweist.
+Den Erhalt der <hi rendition="#i">potentia</hi> (d.h. der Kraft <formula xml:id="Ch69.p5.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>m</m:mi>
+<m:mo>⁢</m:mo>
+<m:msup>
+<m:mi>v</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+</m:math>
+</formula>) und der <hi rendition="#i">directio</hi> (d.h. der gleichförmigen Bewegung des gemeinsamen Schwerpunkts) hat Leibniz wiederum in <hi rendition="#i">De corporum concursu</hi> (N. <ref corresp="L_section_5810.xml#dcc_08"/>
+ und N. <ref corresp="L_section_5811.xml#dcc_09"/>
+) nachgewiesen.</note>
+</app>
+<app type="Bfootnote">
+<lem type="main">ex lege conservandae</lem>
+<note type="lemma-abbrev">ex</note>
+<rdg wit="#L" n="1"> natura ser
+</rdg>
+<rdg wit="#L" n="2"> lege conservandae <hi rendition="#i">L</hi>
+</rdg>
+</app>
+potentiae<index indexName="Sachen">
+<term>lex conservandae potentiae</term>
+</index>
+<index indexName="Sachen">
+<term>potentia conservanda</term>
+</index>
+et directionis,<index indexName="Sachen">
+<term>lex conservandae directionis</term>
+</index>
+<index indexName="Sachen">
+<term>directio conservanda</term>
+</index>
+quid sit futurum.</p>
+<figure rendition="#own-line_centered" xml:id="Ch69.p6">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d1_009r.svg" width="39.0258pt" xml:id="Ch69.p6.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]
+</head>
+</figure>
+<p xml:id="Ch69.p7">Sed si
+<app type="Bfootnote">
+<lem type="main">ponamus corpora<index indexName="Sachen">
+<term>corpora duplicia</term>
+</index>
 <hi rendition="#i">AB</hi> et <hi rendition="#i">LM</hi> duplicia,
 et <hi rendition="#i">AB</hi> simile equidem esse
 et similiter positum ipsi <hi rendition="#i">LM</hi>,
-neutrum tamen</lem><note type="lemma-abbrev">ponamus</note><rdg wit="#L" n="1"> corpus
-</rdg><rdg wit="#L" n="2"> corpora <hi rendition="#i">AB</hi> et <hi rendition="#i">LM</hi>
-<note type="editorial">|</note> et <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> duplicia, et <hi rendition="#i">AB</hi>
-<app><rdg wit="#L" n="a">similiter
-</rdg><rdg wit="#L" n="b">simile equidem <seg type="apparat-ellipsis"/> ipsi <hi rendition="#i">LM</hi>,
-<app><rdg wit="#L" n="aa">sed
-</rdg><rdg wit="#L" n="bb">neutrum tamen <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
-esse cohaerens<index indexName="Sachen"><term>corpus cohaerens</term></index>
-atque unum,<index indexName="Sachen"><term>corpus unum</term></index>
+neutrum tamen</lem>
+<note type="lemma-abbrev">ponamus</note>
+<rdg wit="#L" n="1"> corpus
+</rdg>
+<rdg wit="#L" n="2"> corpora <hi rendition="#i">AB</hi> et <hi rendition="#i">LM</hi>
+<note type="editorial">|</note> et <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> duplicia, et <hi rendition="#i">AB</hi>
+<app>
+<rdg wit="#L" n="a">similiter
+</rdg>
+<rdg wit="#L" n="b">simile equidem <seg type="apparat-ellipsis"/>
+ ipsi <hi rendition="#i">LM</hi>,
+<app>
+<rdg wit="#L" n="aa">sed
+</rdg>
+<rdg wit="#L" n="bb">neutrum tamen <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+esse cohaerens<index indexName="Sachen">
+<term>corpus cohaerens</term>
+</index>
+atque unum,<index indexName="Sachen">
+<term>corpus unum</term>
+</index>
 sed ambo constare,
 illud ex <hi rendition="#i">A</hi> et <hi rendition="#i">B</hi>,
 hoc ex <hi rendition="#i">L</hi> et <hi rendition="#i">M</hi>,
-quae iterum similia et similiter posita,<index indexName="Sachen"><term>corpora similia et similiter posita</term></index>
+quae iterum similia et similiter posita,<index indexName="Sachen">
+<term>corpora similia et similiter posita</term>
+</index>
 tunc utique omnia orientur quae ante,
-perinde ac si ambo corpora essent firma,<index indexName="Sachen"><term>corpus firmum</term></index>
+perinde ac si ambo corpora essent firma,<index indexName="Sachen">
+<term>corpus firmum</term>
+</index>
 seu perinde ac si <hi rendition="#i">A</hi> et <hi rendition="#i">B</hi>
 unum corpus firmum componerent,
 ac similiter <hi rendition="#i">L</hi> et <hi rendition="#i">M</hi>,
-ut facile demonstrari potest.</p><figure rendition="#own-line_centered" xml:id="Ch69.p8"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d2_009r.svg" width="47.6982pt" xml:id="Ch69.p8.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]<anchor xml:id="LH_35_10_07_009r_Fig.2"/></head></figure><p xml:id="Ch69.p9">Sed quod si ponamus
-alterutrum esse firmum,<index indexName="Sachen"><term>corpus firmum</term></index>
-alterum esse solutum,<index indexName="Sachen"><term>corpus solutum</term></index>
+ut facile demonstrari potest.</p>
+<figure rendition="#own-line_centered" xml:id="Ch69.p8">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d2_009r.svg" width="47.6982pt" xml:id="Ch69.p8.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 2</hi>]<anchor xml:id="LH_35_10_07_009r_Fig.2"/>
+</head>
+</figure>
+<p xml:id="Ch69.p9">Sed quod si ponamus
+alterutrum esse firmum,<index indexName="Sachen">
+<term>corpus firmum</term>
+</index>
+alterum esse solutum,<index indexName="Sachen">
+<term>corpus solutum</term>
+</index>
 nihilominus dicendum erit
 idem oriri,
 cum ambobus et solutis
-eodem modo resilientibus,<index indexName="Sachen"><term>corpus resiliens</term></index>
+eodem modo resilientibus,<index indexName="Sachen">
+<term>corpus resiliens</term>
+</index>
 perinde sit,
 ac si idem adhuc sit corpus,
-neque enim ob ictum<index indexName="Sachen"><term>ictus</term></index>
-a se invicem separantur licet soluta.<index indexName="Sachen"><term>corpus solutum</term></index>
+neque enim ob ictum<index indexName="Sachen">
+<term>ictus</term>
+</index>
+a se invicem separantur licet soluta.<index indexName="Sachen">
+<term>corpus solutum</term>
+</index>
 Itaque generaliter,
 si duo corpora
-<app type="Bfootnote"><lem type="main"><hi rendition="#i">L,M</hi></lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-impingant in tertium <hi rendition="#i">A</hi>,<index indexName="Sachen"><term>corpora impingentia in tertium</term></index>
-atque ita quidem ut nulla sit causa<index indexName="Sachen"><term>causa</term></index>
-cur non post ictum<index indexName="Sachen"><term>ictus</term></index>
-eandem quam antea distantiam servent,<index indexName="Sachen"><term>distantia corporum ante ictum</term></index><index indexName="Sachen"><term>distantia corporum post ictum</term></index>
-eadem orientur phaenomena,<index indexName="Sachen"><term>phaenomenon</term></index>
-ac si duo corpora fuissent firmiter connexa,<index indexName="Sachen"><term>corpus connexum</term></index>
-seu constituissent corpus unum.<index indexName="Sachen"><term>corpus unum</term></index></p><figure rendition="#own-line_centered" xml:id="Ch69.p10"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d3_009r.svg" width="56.3706pt" xml:id="Ch69.p10.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]</head></figure><p xml:id="Ch69.p11">Si in corpus <hi rendition="#i">A</hi> impingat corpus <hi rendition="#i">M</hi><index indexName="Sachen"><term>corpus impingens</term></index><index indexName="Sachen"><term>corpus impactum</term></index><index indexName="Sachen"><term>impactus non directus</term></index><index indexName="Sachen"><term>impactus obliquus</term></index>
-linea non directa in centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">L,M</hi>
+</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+impingant in tertium <hi rendition="#i">A</hi>,<index indexName="Sachen">
+<term>corpora impingentia in tertium</term>
+</index>
+atque ita quidem ut nulla sit causa<index indexName="Sachen">
+<term>causa</term>
+</index>
+cur non post ictum<index indexName="Sachen">
+<term>ictus</term>
+</index>
+eandem quam antea distantiam servent,<index indexName="Sachen">
+<term>distantia corporum ante ictum</term>
+</index>
+<index indexName="Sachen">
+<term>distantia corporum post ictum</term>
+</index>
+eadem orientur phaenomena,<index indexName="Sachen">
+<term>phaenomenon</term>
+</index>
+ac si duo corpora fuissent firmiter connexa,<index indexName="Sachen">
+<term>corpus connexum</term>
+</index>
+seu constituissent corpus unum.<index indexName="Sachen">
+<term>corpus unum</term>
+</index>
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch69.p10">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d3_009r.svg" width="56.3706pt" xml:id="Ch69.p10.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 3</hi>]
+</head>
+</figure>
+<p xml:id="Ch69.p11">Si in corpus <hi rendition="#i">A</hi> impingat corpus <hi rendition="#i">M</hi>
+<index indexName="Sachen">
+<term>corpus impingens</term>
+</index>
+<index indexName="Sachen">
+<term>corpus impactum</term>
+</index>
+<index indexName="Sachen">
+<term>impactus non directus</term>
+</index>
+<index indexName="Sachen">
+<term>impactus obliquus</term>
+</index>
+linea non directa in centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index>
 ipsius <hi rendition="#i">A</hi> ita,
 ut intelligi possit
-<app type="Bfootnote"><lem type="main">corpus <hi rendition="#i">A</hi> non tantum<index indexName="Sachen"><term>corpus propulsum ab ictu</term></index>
-directe propelli ab hoc ictu,<index indexName="Sachen"><term>ictus</term></index>
-sed et gyrari,<index indexName="Sachen"><term>corpus gyrans</term></index></lem><note type="lemma-abbrev">corpus <hi rendition="#i">A</hi></note><rdg wit="#L" n="1"> simul gyrari
-</rdg><rdg wit="#L" n="2"> non tantum <seg type="apparat-ellipsis"/> et gyrari, <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">corpus <hi rendition="#i">A</hi> non tantum<index indexName="Sachen">
+<term>corpus propulsum ab ictu</term>
+</index>
+directe propelli ab hoc ictu,<index indexName="Sachen">
+<term>ictus</term>
+</index>
+sed et gyrari,<index indexName="Sachen">
+<term>corpus gyrans</term>
+</index>
+</lem>
+<note type="lemma-abbrev">corpus <hi rendition="#i">A</hi>
+</note>
+<rdg wit="#L" n="1"> simul gyrari
+</rdg>
+<rdg wit="#L" n="2"> non tantum <seg type="apparat-ellipsis"/>
+ et gyrari, <hi rendition="#i">L</hi>
+</rdg>
+</app>
 definiendum est,
-quae sit gyratio;<index indexName="Sachen"><term>gyratio</term></index>
-quae propulsio.<index indexName="Sachen"><term>propulsio</term></index>
+quae sit gyratio;<index indexName="Sachen">
+<term>gyratio</term>
+</index>
+quae propulsio.<index indexName="Sachen">
+<term>propulsio</term>
+</index>
 Videtur talis ineunda ratio,
-ut omnia quam minime mutentur.</p><figure rendition="#own-line_centered" xml:id="Ch69.p12"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d4_009r.svg" width="56.3706pt" xml:id="Ch69.p12.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]</head></figure><p xml:id="Ch69.p13">Si
-<app type="Bfootnote"><lem type="main">in</lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-corpus <hi rendition="#i">A</hi> impingant duo corpora<index indexName="Sachen"><term>corpus impingens</term></index>
+ut omnia quam minime mutentur.</p>
+<figure rendition="#own-line_centered" xml:id="Ch69.p12">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d4_009r.svg" width="56.3706pt" xml:id="Ch69.p12.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 4</hi>]
+</head>
+</figure>
+<p xml:id="Ch69.p13">Si
+<app type="Bfootnote">
+<lem type="main">in</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+corpus <hi rendition="#i">A</hi> impingant duo corpora<index indexName="Sachen">
+<term>corpus impingens</term>
+</index>
 <hi rendition="#i">L</hi> et <hi rendition="#i">M</hi>,
-conspirantia ad eandem gyrationem<index indexName="Sachen"><term>corpora conspirantia ad eandem gyrationem</term></index><index indexName="Sachen"><term>gyratio</term></index>
-<app type="Bfootnote"><lem type="main">ipsius <hi rendition="#i">A</hi>,</lem><note type="lemma-abbrev">ipsius <hi rendition="#i">A</hi></note><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+conspirantia ad eandem gyrationem<index indexName="Sachen">
+<term>corpora conspirantia ad eandem gyrationem</term>
+</index>
+<index indexName="Sachen">
+<term>gyratio</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">ipsius <hi rendition="#i">A</hi>,
+</lem>
+<note type="lemma-abbrev">ipsius <hi rendition="#i">A</hi>
+</note>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
 videndum est
-quae lex gyrationis<index indexName="Sachen"><term>lex gyrationis</term></index><index indexName="Sachen"><term>gyratio</term></index>
-prodire debeat[;] corpus autem semel gyrans,<index indexName="Sachen"><term>corpus gyrans</term></index>
-si partes habeat satis firmas<index indexName="Sachen"><term>pars corporis firma</term></index>
-semper gyrabit.</p><figure rendition="#own-line_centered" xml:id="Ch69.p14"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d5_009r.svg" width="95.3964pt" xml:id="Ch69.p14.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]<anchor xml:id="LH_35_10_07_009r_Fig.5"/></head></figure><p xml:id="Ch69.p15">Si in corpus <hi rendition="#i">L</hi><index indexName="Sachen"><term>corpus impactum</term></index>
-veniens celeritate<index indexName="Sachen"><term>celeritas corporis impacti</term></index>
-<hi rendition="#i"><hi rendition="#smaller">1</hi>L<hi rendition="#smaller">2</hi>L</hi>
-impingat corpus <hi rendition="#i">M</hi><index indexName="Sachen"><term>corpus impingens</term></index>
-celeritate<index indexName="Sachen"><term>celeritas corporis impingentis</term></index>
-<hi rendition="#i"><hi rendition="#smaller">1</hi>M<hi rendition="#smaller">2</hi>M</hi>,
+quae lex gyrationis<index indexName="Sachen">
+<term>lex gyrationis</term>
+</index>
+<index indexName="Sachen">
+<term>gyratio</term>
+</index>
+prodire debeat[;] corpus autem semel gyrans,<index indexName="Sachen">
+<term>corpus gyrans</term>
+</index>
+si partes habeat satis firmas<index indexName="Sachen">
+<term>pars corporis firma</term>
+</index>
+semper gyrabit.</p>
+<figure rendition="#own-line_centered" xml:id="Ch69.p14">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d5_009r.svg" width="95.3964pt" xml:id="Ch69.p14.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 5</hi>]<anchor xml:id="LH_35_10_07_009r_Fig.5"/>
+</head>
+</figure>
+<p xml:id="Ch69.p15">Si in corpus <hi rendition="#i">L</hi>
+<index indexName="Sachen">
+<term>corpus impactum</term>
+</index>
+veniens celeritate<index indexName="Sachen">
+<term>celeritas corporis impacti</term>
+</index>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>L<hi rendition="#smaller">2</hi>L</hi>
+impingat corpus <hi rendition="#i">M</hi>
+<index indexName="Sachen">
+<term>corpus impingens</term>
+</index>
+celeritate<index indexName="Sachen">
+<term>celeritas corporis impingentis</term>
+</index>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>M<hi rendition="#smaller">2</hi>M</hi>,
 quaeritur quid sit
-<app type="Bfootnote"><lem type="main">futurum.
-Pro certo habendum est</lem><note type="lemma-abbrev">futurum.</note><rdg wit="#L" n="1"> Ponamus corpora esse
-<app><rdg wit="#L" n="a">puncta ut
-</rdg><rdg wit="#L" n="b">incomparabilis parvitatis seu ut puncta,
-</rdg></app></rdg><rdg wit="#L" n="2"> Pro certo habendum est <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">futurum.
+Pro certo habendum est</lem>
+<note type="lemma-abbrev">futurum.</note>
+<rdg wit="#L" n="1"> Ponamus corpora esse
+<app>
+<rdg wit="#L" n="a">puncta ut
+</rdg>
+<rdg wit="#L" n="b">incomparabilis parvitatis seu ut puncta,
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> Pro certo habendum est <hi rendition="#i">L</hi>
+</rdg>
+</app>
 corpus <hi rendition="#i">M</hi> manere in linea
-<hi rendition="#i"><hi rendition="#smaller">1</hi>M<hi rendition="#smaller">2</hi>M</hi>,
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>M<hi rendition="#smaller">2</hi>M</hi>,
 si scilicet in
-<app type="Bfootnote"><lem type="main">momento incursus<index indexName="Sachen"><term>incursus</term></index><index indexName="Sachen"><term>momentum incursus</term></index></lem><note type="lemma-abbrev">momento</note><rdg wit="#L" n="1"> dire
-</rdg><rdg wit="#L" n="2"> incursus<index indexName="Sachen"><term>incursus</term></index> <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">momento incursus<index indexName="Sachen">
+<term>incursus</term>
+</index>
+<index indexName="Sachen">
+<term>momentum incursus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">momento</note>
+<rdg wit="#L" n="1"> dire
+</rdg>
+<rdg wit="#L" n="2"> incursus<index indexName="Sachen">
+<term>incursus</term>
+</index>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
 illa linea recta
 per centrum ipsius
-<hi rendition="#i #smaller">2</hi><hi rendition="#i">L</hi>
+<hi rendition="#i #smaller">2</hi>
+<hi rendition="#i">L</hi>
 transit.
 Pro certo etiam haben- dum est
-viam centri gravitatis<index indexName="Sachen"><term>centrum gravitatis commune</term></index><index indexName="Sachen"><term>via centri gravitatis</term></index>
-<app type="Bfootnote"><lem type="main">communis</lem><rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+viam centri gravitatis<index indexName="Sachen">
+<term>centrum gravitatis commune</term>
+</index>
+<index indexName="Sachen">
+<term>via centri gravitatis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">communis</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
 manere eandem
-<hi rendition="#i"><hi rendition="#smaller">1</hi>C<hi rendition="#smaller">2</hi>C</hi>,
-ante et post concursum<index indexName="Sachen"><term>concursus corporum</term></index>[;]</p><p rendition="#noindent" xml:id="Ch69.p16">datur ergo
-<hi rendition="#i"><hi rendition="#smaller">2</hi>C<hi rendition="#smaller">3</hi>C</hi>,
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>C<hi rendition="#smaller">2</hi>C</hi>,
+ante et post concursum<index indexName="Sachen">
+<term>concursus corporum</term>
+</index>[;]
+</p>
+<p rendition="#noindent" xml:id="Ch69.p16">datur ergo
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>C<hi rendition="#smaller">3</hi>C</hi>,
 adeoque et punctum
-<hi rendition="#i #smaller">3</hi><hi rendition="#i">C</hi>.
+<hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">C</hi>.
 Quod si ergo daretur et punctum
-<hi rendition="#i #smaller">3</hi><hi rendition="#i">M</hi> seu recta
-<hi rendition="#i"><hi rendition="#smaller">2</hi>M<hi rendition="#smaller">3</hi>M</hi>,
+<hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">M</hi> seu recta
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>M<hi rendition="#smaller">3</hi>M</hi>,
 necessario daretur et punctum
-<hi rendition="#i #smaller">3</hi><hi rendition="#i">L</hi>,
+<hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">L</hi>,
 quia
-<app type="Cfootnote"><lem type="main">recta <hi rendition="#i"><hi rendition="#smaller">3</hi>L<hi rendition="#smaller">3</hi>M</hi></lem><note type="editorial">Die durch <hi rendition="#i #smaller">3</hi><hi rendition="#i">C</hi> führende
-Gerade <hi rendition="#i #smaller">3</hi><hi rendition="#i">L</hi><hi rendition="#i #smaller">3</hi><hi rendition="#i">M</hi>
-ist im Diagramm [<hi rendition="#i">Fig. 5</hi>] auf S. <ref corresp="#LH_35_10_07_009r_Fig.5"/> nicht eingezeichnet.</note></app>
+<app type="Cfootnote">
+<lem type="main">recta <hi rendition="#i">
+<hi rendition="#smaller">3</hi>L<hi rendition="#smaller">3</hi>M</hi>
+</lem>
+<note type="editorial">Die durch <hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">C</hi> führende
+Gerade <hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">L</hi>
+<hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">M</hi>
+ist im Diagramm [<hi rendition="#i">Fig. 5</hi>] auf S. <ref corresp="#LH_35_10_07_009r_Fig.5"/>
+ nicht eingezeichnet.</note>
+</app>
 a puncto
-<hi rendition="#i #smaller">3</hi><hi rendition="#i">C</hi>
+<hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">C</hi>
 in data ratione secatur,
 et
-<app type="Bfootnote"><!--is-correction-app-with-lemma--><lem type="main"><corr resp="#ed">[<hi rendition="#i"><hi rendition="#smaller">3</hi>L<hi rendition="#smaller">3</hi>C</hi>]</corr></lem><rdg wit="#L"><orig><hi rendition="#i"><hi rendition="#smaller">3</hi>M<hi rendition="#smaller">3</hi>C</hi></orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg></app>
-datur.</p><figure rendition="#own-line_centered" xml:id="Ch69.p17"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d6_009r.svg" width="173.448pt" xml:id="Ch69.p17.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 6</hi>]<anchor xml:id="LH_35_10_07_009r_Fig.6"/></head></figure><p xml:id="Ch69.p18">Si
-corpus <anchor xml:id="LH_35_10_07_009r_motivation-1"/><hi rendition="#i">L</hi> tendat<index indexName="Sachen"><term>corpus tendens vi insita</term></index>
-vi insita<anchor xml:id="LH_35_10_07_009r_visinsita-1"/><index indexName="Sachen"><term>vis insita</term></index><anchor xml:id="LH_35_10_07_009r_visinsita-2"/>
+<app type="Bfootnote"><!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">
+<hi rendition="#smaller">3</hi>L<hi rendition="#smaller">3</hi>C</hi>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<hi rendition="#i">
+<hi rendition="#smaller">3</hi>M<hi rendition="#smaller">3</hi>C</hi>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+datur.</p>
+<figure rendition="#own-line_centered" xml:id="Ch69.p17">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d6_009r.svg" width="173.448pt" xml:id="Ch69.p17.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 6</hi>]<anchor xml:id="LH_35_10_07_009r_Fig.6"/>
+</head>
+</figure>
+<p xml:id="Ch69.p18">Si
+corpus <anchor xml:id="LH_35_10_07_009r_motivation-1"/>
+<hi rendition="#i">L</hi> tendat<index indexName="Sachen">
+<term>corpus tendens vi insita</term>
+</index>
+vi insita<anchor xml:id="LH_35_10_07_009r_visinsita-1"/>
+<index indexName="Sachen">
+<term>vis insita</term>
+</index>
+<anchor xml:id="LH_35_10_07_009r_visinsita-2"/>
 in recta
-<hi rendition="#i"><hi rendition="#smaller">2</hi>L<hi rendition="#smaller">3</hi>L</hi>,
-et eo momento<index indexName="Sachen"><term>momentum impulsus</term></index><index indexName="Sachen"><term>momentum impactus</term></index>
-<app type="Bfootnote"><lem type="main">quo est in <hi rendition="#i #smaller">2</hi><hi rendition="#i">L</hi></lem><note type="lemma-abbrev">quo</note><rdg wit="#L">est in <hi rendition="#i #smaller">2</hi><hi rendition="#i">L</hi> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-impellatur versus centrum <hi rendition="#i">T</hi><index indexName="Sachen"><term>corpus impulsum</term></index> a corpore <hi rendition="#i">M</hi> in ipsum impingente,<index indexName="Sachen"><term>corpus impingens</term></index>
-et ponatur corpus <hi rendition="#i">M</hi> quiescere post ictum,<index indexName="Sachen"><term>corpus quiescens post ictum</term></index><index indexName="Sachen"><term>ictus</term></index>
+<hi rendition="#i">
+<hi rendition="#smaller">2</hi>L<hi rendition="#smaller">3</hi>L</hi>,
+et eo momento<index indexName="Sachen">
+<term>momentum impulsus</term>
+</index>
+<index indexName="Sachen">
+<term>momentum impactus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">quo est in <hi rendition="#i #smaller">2</hi>
+<hi rendition="#i">L</hi>
+</lem>
+<note type="lemma-abbrev">quo</note>
+<rdg wit="#L">est in <hi rendition="#i #smaller">2</hi>
+<hi rendition="#i">L</hi>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+impellatur versus centrum <hi rendition="#i">T</hi>
+<index indexName="Sachen">
+<term>corpus impulsum</term>
+</index> a corpore <hi rendition="#i">M</hi> in ipsum impingente,<index indexName="Sachen">
+<term>corpus impingens</term>
+</index>
+et ponatur corpus <hi rendition="#i">M</hi> quiescere post ictum,<index indexName="Sachen">
+<term>corpus quiescens post ictum</term>
+</index>
+<index indexName="Sachen">
+<term>ictus</term>
+</index>
 necesse est
-corpus impulsum <hi rendition="#i">L</hi><index indexName="Sachen"><term>corpus impulsum</term></index>
+corpus impulsum <hi rendition="#i">L</hi>
+<index indexName="Sachen">
+<term>corpus impulsum</term>
+</index>
 ire in recta
-<hi rendition="#i"><hi rendition="#smaller">1</hi>C<hi rendition="#smaller">2</hi>C</hi>
+<hi rendition="#i">
+<hi rendition="#smaller">1</hi>C<hi rendition="#smaller">2</hi>C</hi>
 seu <hi rendition="#i">CL</hi> continuata,
 quia
-(<?tex-source \phantom{)}?>posito corporum <hi rendition="#i">L</hi> et <hi rendition="#i">M</hi>
-magnitudinem<index indexName="Sachen"><term>magnitudo corporum concurrentium</term></index>
+(<?tex-source \phantom{)}?>posito corporum<hi rendition="#i">L</hi> et <hi rendition="#i">M</hi>
+magnitudinem<index indexName="Sachen">
+<term>magnitudo corporum concurrentium</term>
+</index>
 hic non considerari
-quasi esset incomparabiliter parva<index indexName="Sachen"><term>magnitudo incomparabiliter parva</term></index><?tex-source \phantom{(}?>)
-<app type="Cfootnote"><lem type="main"><hi rendition="#i #smaller">2</hi><hi rendition="#i">M</hi>
+quasi esset incomparabiliter parva<index indexName="Sachen">
+<term>magnitudo incomparabiliter parva</term>
+</index><?tex-source \phantom{(}?>)
+<app type="Cfootnote">
+<lem type="main">
+<hi rendition="#i #smaller">2</hi>
+<hi rendition="#i">M</hi>
 seu
-<hi rendition="#i #smaller">3</hi><hi rendition="#i">M</hi>,
+<hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">M</hi>,
 et
-<hi rendition="#i #smaller">3</hi><hi rendition="#i">C</hi>
-sunt in illa recta.<anchor xml:id="LH_35_10_07_009r_motivation-2"/></lem><note type="lemma-abbrev"><hi rendition="#i #smaller">2</hi><hi rendition="#i">M</hi> seu <seg type="apparat-ellipsis"/> recta</note><note type="editorial">Weder die durch <hi rendition="#i #smaller">1</hi><hi rendition="#i">C</hi><hi rendition="#i #smaller">2</hi><hi rendition="#i">C</hi><hi rendition="#i #smaller">3</hi><hi rendition="#i">C</hi> führende Gerade noch die Punkte <hi rendition="#i #smaller">2</hi><hi rendition="#i">M</hi> bzw. <hi rendition="#i #smaller">3</hi><hi rendition="#i">M</hi>, die mit <hi rendition="#i #smaller">2</hi><hi rendition="#i">L</hi> und <hi rendition="#i #smaller">2</hi><hi rendition="#i">C</hi> zusammenfallen, sind im Diagramm [<hi rendition="#i">Fig. 6</hi>] eingezeichnet.</note></app></p><p xml:id="Ch69.p19">Videndum an in concursu obliquo<index indexName="Sachen"><term>concursus obliquus</term></index>
-quocunque semper eadem maneat celeritas respectiva<index indexName="Sachen"><term>celeritas respectiva ante ictum</term></index><index indexName="Sachen"><term>celeritas respectiva post ictum</term></index>
-ante et post ictum,<index indexName="Sachen"><term>ictus</term></index>
-ita ut oculus<index indexName="Sachen"><term>oculus in altero corpore positus</term></index>
+<hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">C</hi>
+sunt in illa recta.<anchor xml:id="LH_35_10_07_009r_motivation-2"/>
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i #smaller">2</hi>
+<hi rendition="#i">M</hi> seu <seg type="apparat-ellipsis"/>
+ recta</note>
+<note type="editorial">Weder die durch <hi rendition="#i #smaller">1</hi>
+<hi rendition="#i">C</hi>
+<hi rendition="#i #smaller">2</hi>
+<hi rendition="#i">C</hi>
+<hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">C</hi> führende Gerade noch die Punkte <hi rendition="#i #smaller">2</hi>
+<hi rendition="#i">M</hi> bzw. <hi rendition="#i #smaller">3</hi>
+<hi rendition="#i">M</hi>, die mit <hi rendition="#i #smaller">2</hi>
+<hi rendition="#i">L</hi> und <hi rendition="#i #smaller">2</hi>
+<hi rendition="#i">C</hi> zusammenfallen, sind im Diagramm [<hi rendition="#i">Fig. 6</hi>] eingezeichnet.</note>
+</app>
+</p>
+<p xml:id="Ch69.p19">Videndum an in concursu obliquo<index indexName="Sachen">
+<term>concursus obliquus</term>
+</index>
+quocunque semper eadem maneat celeritas respectiva<index indexName="Sachen">
+<term>celeritas respectiva ante ictum</term>
+</index>
+<index indexName="Sachen">
+<term>celeritas respectiva post ictum</term>
+</index>
+ante et post ictum,<index indexName="Sachen">
+<term>ictus</term>
+</index>
+ita ut oculus<index indexName="Sachen">
+<term>oculus in altero corpore positus</term>
+</index>
 in altero corpore ut immoto positus
-videat aequalem recessui accessum.<index indexName="Sachen"><term>accessus et recessus aequales</term></index><index indexName="Sachen"><term>recessus et accessus aequales</term></index>
+videat aequalem recessui accessum.<index indexName="Sachen">
+<term>accessus et recessus aequales</term>
+</index>
+<index indexName="Sachen">
+<term>recessus et accessus aequales</term>
+</index>
 Item videndum
-an in concursu<index indexName="Sachen"><term>concursus plurium corporum</term></index>
-plurium corporum oculus<index indexName="Sachen"><term>oculus in altero corpore positus</term></index>
-in uno eorum positus eandem observet celeritatem respectivam<index indexName="Sachen"><term>celeritas respectiva in centro gravitatis</term></index>
-in centro gravitatis<index indexName="Sachen"><term>centrum gravitatis</term></index>
-reliquorum.</p><p xml:id="Ch69.p20">Si principium navis<index indexName="Sachen"><term>principium navis</term></index><index indexName="Sachen"><term>navis</term></index>
+an in concursu<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
+plurium corporum oculus<index indexName="Sachen">
+<term>oculus in altero corpore positus</term>
+</index>
+in uno eorum positus eandem observet celeritatem respectivam<index indexName="Sachen">
+<term>celeritas respectiva in centro gravitatis</term>
+</index>
+in centro gravitatis<index indexName="Sachen">
+<term>centrum gravitatis</term>
+</index>
+reliquorum.</p>
+<p xml:id="Ch69.p20">Si principium navis<index indexName="Sachen">
+<term>principium navis</term>
+</index>
+<index indexName="Sachen">
+<term>navis</term>
+</index>
 succedit
-<app type="Bfootnote"><lem type="main">uti arbitror</lem><note type="lemma-abbrev">uti</note><rdg wit="#L" cause="addition"><add>arbitror</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>[,] ut eadem semper prodeant phaenomena in navi,<index indexName="Sachen"><term>phaenomena in navi</term></index><index indexName="Sachen"><term>navis</term></index>
-quae extra navim;<index indexName="Sachen"><term>navis</term></index>
-utique necesse est regulam de quantitate progressus<index indexName="Sachen"><term>regula de quantitate progressus</term></index>
-seu de summa et differentia velocitatum<index indexName="Sachen"><term>regula de summa et differentia velocitatum</term></index>
+<app type="Bfootnote">
+<lem type="main">uti arbitror</lem>
+<note type="lemma-abbrev">uti</note>
+<rdg wit="#L" cause="addition">
+<add>arbitror</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>[,] ut eadem semper prodeant phaenomena in navi,<index indexName="Sachen">
+<term>phaenomena in navi</term>
+</index>
+<index indexName="Sachen">
+<term>navis</term>
+</index>
+quae extra navim;<index indexName="Sachen">
+<term>navis</term>
+</index>
+utique necesse est regulam de quantitate progressus<index indexName="Sachen">
+<term>regula de quantitate progressus</term>
+</index>
+seu de summa et differentia velocitatum<index indexName="Sachen">
+<term>regula de summa et differentia velocitatum</term>
+</index>
 semper manere eandem,
 quia
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1521"><pb type="L"/><fw type="folNum">[9 v<hi rendition="#sup">o</hi>]</fw></ref> communis progressus<index indexName="Sachen"><term>progressus communis</term></index>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1521">
+<pb type="L"/>
+<fw type="folNum">[9 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref> communis progressus<index indexName="Sachen">
+<term>progressus communis</term>
+</index>
 qui rependitur detrahendo tantundem unis et addendo alteris,
-nihil mutat.</p><p xml:id="Ch69.p21">Si plura corpora simul concurrant,<index indexName="Sachen"><term>corpora plura concurrentia</term></index><index indexName="Sachen"><term>concursus plurium corporum</term></index>
+nihil mutat.</p>
+<p xml:id="Ch69.p21">Si plura corpora simul concurrant,<index indexName="Sachen">
+<term>corpora plura concurrentia</term>
+</index>
+<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
 primum definiatur quid
-<app type="Bfootnote"><lem type="main">fiat in tribus.<index indexName="Sachen"><term>corpora tria concurrentia</term></index><index indexName="Sachen"><term>concursus trium corporum</term></index></lem><note type="lemma-abbrev">fiat</note><rdg wit="#L" n="1"> , si posito
-</rdg><rdg wit="#L" n="2"> in tribus. <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">fiat in tribus.<index indexName="Sachen">
+<term>corpora tria concurrentia</term>
+</index>
+<index indexName="Sachen">
+<term>concursus trium corporum</term>
+</index>
+</lem>
+<note type="lemma-abbrev">fiat</note>
+<rdg wit="#L" n="1"> , si posito
+</rdg>
+<rdg wit="#L" n="2"> in tribus. <hi rendition="#i">L</hi>
+</rdg>
+</app>
 Deinde quid in quatuor,
 et ita porro.
-Propositis tribus<index indexName="Sachen"><term>corpora tria concurrentia</term></index><index indexName="Sachen"><term>concursus trium corporum</term></index>
-<app type="Bfootnote"><lem type="main">concurrentibus,
-incipiendum est a casu<index indexName="Sachen"><term>casus</term></index>
-duorum vel trium aequalium,<index indexName="Sachen"><term>corpora duo concurrentia</term></index><index indexName="Sachen"><term>concursus duorum corporum</term></index><index indexName="Sachen"><term>corpora aequalia</term></index>
-<pb type="L"/>et deinde fingendus est motus communis in navi<index indexName="Sachen"><term>motus communis in navi</term></index><index indexName="Sachen"><term>navis</term></index>
+Propositis tribus<index indexName="Sachen">
+<term>corpora tria concurrentia</term>
+</index>
+<index indexName="Sachen">
+<term>concursus trium corporum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">concurrentibus,
+incipiendum est a casu<index indexName="Sachen">
+<term>casus</term>
+</index>
+duorum vel trium aequalium,<index indexName="Sachen">
+<term>corpora duo concurrentia</term>
+</index>
+<index indexName="Sachen">
+<term>concursus duorum corporum</term>
+</index>
+<index indexName="Sachen">
+<term>corpora aequalia</term>
+</index>
+<pb type="L"/>
+et deinde fingendus est motus communis in navi<index indexName="Sachen">
+<term>motus communis in navi</term>
+</index>
+<index indexName="Sachen">
+<term>navis</term>
+</index>
 talis,
 ut eo posito
 duo illa corpora aequalia
-in concursu<index indexName="Sachen"><term>corpora duo concurrentia</term></index><index indexName="Sachen"><term>concursus duorum corporum</term></index><index indexName="Sachen"><term>corpora aequalia</term></index>
-se eodem modo habeant ad tertium.</lem><note type="lemma-abbrev">concurrentibus,</note><rdg wit="#L" n="1"> talis illorum ad
-</rdg><rdg wit="#L" n="2"> incipiendum est
-<app><rdg wit="#L" n="a">ab aequalibus et quo omnia redduntur fa
-</rdg><rdg wit="#L" n="b">a casu <seg type="apparat-ellipsis"/> habeant ad tertium. <hi rendition="#i">L</hi></rdg></app></rdg></app>
-Ita et post percussionem<index indexName="Sachen"><term>percussio</term></index>
-eodem modo se ad ipsum habebunt.<index indexName="Sachen"><term>corpora tria concurrentia</term></index><index indexName="Sachen"><term>concursus trium corporum</term></index>
+in concursu<index indexName="Sachen">
+<term>corpora duo concurrentia</term>
+</index>
+<index indexName="Sachen">
+<term>concursus duorum corporum</term>
+</index>
+<index indexName="Sachen">
+<term>corpora aequalia</term>
+</index>
+se eodem modo habeant ad tertium.</lem>
+<note type="lemma-abbrev">concurrentibus,</note>
+<rdg wit="#L" n="1"> talis illorum ad
+</rdg>
+<rdg wit="#L" n="2"> incipiendum est
+<app>
+<rdg wit="#L" n="a">ab aequalibus et quo omnia redduntur fa
+</rdg>
+<rdg wit="#L" n="b">a casu <seg type="apparat-ellipsis"/>
+ habeant ad tertium. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+Ita et post percussionem<index indexName="Sachen">
+<term>percussio</term>
+</index>
+eodem modo se ad ipsum habebunt.<index indexName="Sachen">
+<term>corpora tria concurrentia</term>
+</index>
+<index indexName="Sachen">
+<term>concursus trium corporum</term>
+</index>
 Unde
-<app type="Bfootnote"><lem type="main">ex superioribus</lem><note type="lemma-abbrev">ex</note><rdg wit="#L" n="1"> prioribus
-</rdg><rdg wit="#L" n="2"> superioribus <hi rendition="#i">L</hi></rdg></app>
-omnia possunt determinari.</p><p xml:id="Ch69.p22"><app type="Bfootnote"><lem type="main">Videndum[,] si corpus unum <hi rendition="#i">A</hi>
+<app type="Bfootnote">
+<lem type="main">ex superioribus</lem>
+<note type="lemma-abbrev">ex</note>
+<rdg wit="#L" n="1"> prioribus
+</rdg>
+<rdg wit="#L" n="2"> superioribus <hi rendition="#i">L</hi>
+</rdg>
+</app>
+omnia possunt determinari.</p>
+<p xml:id="Ch69.p22">
+<app type="Bfootnote">
+<lem type="main">Videndum[,] si corpus unum <hi rendition="#i">A</hi>
 cum pluribus aliis
-ut <hi rendition="#i">B</hi>, <hi rendition="#i">C</hi>, <hi rendition="#i">D</hi> concurrat,<index indexName="Sachen"><term>corpus cum pluribus aliis concurrens</term></index><index indexName="Sachen"><term>concursus plurium corporum</term></index>
+ut <hi rendition="#i">B</hi>,<hi rendition="#i">C</hi>,<hi rendition="#i">D</hi> concurrat,<index indexName="Sachen">
+<term>corpus cum pluribus aliis concurrens</term>
+</index>
+<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
 an liceat non tantum aliquid excogitare quod sit omnibus
-<hi rendition="#i">A</hi>, <hi rendition="#i">B</hi>, <hi rendition="#i">C</hi>, <hi rendition="#i">D</hi>
-commune</lem><note type="lemma-abbrev">Videndum</note><rdg wit="#L" n="1"> an gener
-</rdg><rdg wit="#L" n="2" cause="addition"> si corpus <seg type="apparat-ellipsis"/> pluribus aliis
-<note type="editorial">|</note> <add>ut</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <hi rendition="#i">B</hi>, <hi rendition="#i">C</hi>, <hi rendition="#i">D</hi> concurrat, an liceat
-<app><rdg wit="#L" n="a">non tantum omnibus
-</rdg><rdg wit="#L" n="b">non tantum <seg type="apparat-ellipsis"/> quod sit
-<app><rdg wit="#L" n="aa">non tantum
-</rdg><rdg wit="#L" n="bb">omnibus <hi rendition="#i">A</hi>, <hi rendition="#i">B</hi>, <hi rendition="#i">C</hi>, <hi rendition="#i">D</hi> commune <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app>
-ante et post concursum,<index indexName="Sachen"><term>concursus plurium corporum</term></index>
+<hi rendition="#i">A</hi>,<hi rendition="#i">B</hi>,<hi rendition="#i">C</hi>,<hi rendition="#i">D</hi>
+commune</lem>
+<note type="lemma-abbrev">Videndum</note>
+<rdg wit="#L" n="1"> an gener
+</rdg>
+<rdg wit="#L" n="2" cause="addition"> si corpus <seg type="apparat-ellipsis"/>
+ pluribus aliis
+<note type="editorial">|</note>
+<add>ut</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<hi rendition="#i">B</hi>,<hi rendition="#i">C</hi>,<hi rendition="#i">D</hi> concurrat, an liceat
+<app>
+<rdg wit="#L" n="a">non tantum omnibus
+</rdg>
+<rdg wit="#L" n="b">non tantum <seg type="apparat-ellipsis"/>
+ quod sit
+<app>
+<rdg wit="#L" n="aa">non tantum
+</rdg>
+<rdg wit="#L" n="bb">omnibus <hi rendition="#i">A</hi>,<hi rendition="#i">B</hi>,<hi rendition="#i">C</hi>,<hi rendition="#i">D</hi> commune <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+ante et post concursum,<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
 sed etiam
-quod sit solis <hi rendition="#i">B</hi>, <hi rendition="#i">C</hi>, <hi rendition="#i">D</hi> commune
-ante et post concursum.<index indexName="Sachen"><term>concursus plurium corporum</term></index>
+quod sit solis <hi rendition="#i">B</hi>,<hi rendition="#i">C</hi>,<hi rendition="#i">D</hi> commune
+ante et post concursum.<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
 Hoc enim habito daretur semper progressus
-ad plura.<index indexName="Sachen"><term>progressus ad plura</term></index></p><p xml:id="Ch69.p23">Videndum
-an non liceat pro certo ponere[:] oculum<index indexName="Sachen"><term>oculus in altero corpore positus</term></index>
+ad plura.<index indexName="Sachen">
+<term>progressus ad plura</term>
+</index>
+</p>
+<p xml:id="Ch69.p23">Videndum
+an non liceat pro certo ponere[:] oculum<index indexName="Sachen">
+<term>oculus in altero corpore positus</term>
+</index>
 positum in uno corporum <hi rendition="#i">A</hi>
-spectato ut quiescente,<index indexName="Sachen"><term>corpus spectatum ut quiescens</term></index><index indexName="Sachen"><term>corpus quiescens</term></index>
-semper videre effectum<index indexName="Sachen"><term>effectus similes ante et post concursum</term></index><index indexName="Sachen"><term>effectus congrui ante et post concursum</term></index>
-<app type="Bfootnote"><lem type="main">in aliis omnibus</lem><note type="lemma-abbrev">in</note><rdg wit="#L" cause="addition"><add>aliis omnibus</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-ante concursum<index indexName="Sachen"><term>concursus plurium corporum</term></index>
+spectato ut quiescente,<index indexName="Sachen">
+<term>corpus spectatum ut quiescens</term>
+</index>
+<index indexName="Sachen">
+<term>corpus quiescens</term>
+</index>
+semper videre effectum<index indexName="Sachen">
+<term>effectus similes ante et post concursum</term>
+</index>
+<index indexName="Sachen">
+<term>effectus congrui ante et post concursum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">in aliis omnibus</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" cause="addition">
+<add>aliis omnibus</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+ante concursum<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
 similem
-<app type="Bfootnote"><lem type="main">et congruum</lem><note type="lemma-abbrev">et</note><rdg wit="#L" cause="addition"><add>congruum</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
-effectui post concursum;<index indexName="Sachen"><term>effectus similes ante et post concursum</term></index><index indexName="Sachen"><term>effectus congrui ante et post concursum</term></index><index indexName="Sachen"><term>concursus plurium corporum</term></index>
+<app type="Bfootnote">
+<lem type="main">et congruum</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" cause="addition">
+<add>congruum</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+effectui post concursum;<index indexName="Sachen">
+<term>effectus similes ante et post concursum</term>
+</index>
+<index indexName="Sachen">
+<term>effectus congrui ante et post concursum</term>
+</index>
+<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
 posito scilicet ipsum corpus fingi
-quasi maneret quiescens.<index indexName="Sachen"><term>corpus spectatum ut quiescens</term></index><index indexName="Sachen"><term>corpus quiescens</term></index>
+quasi maneret quiescens.<index indexName="Sachen">
+<term>corpus spectatum ut quiescens</term>
+</index>
+<index indexName="Sachen">
+<term>corpus quiescens</term>
+</index>
 Et videndum
-<app type="Bfootnote"><lem type="main">an omnia eodem</lem><note type="lemma-abbrev">an</note><rdg wit="#L" n="1"> hoc casu, considera
-</rdg><rdg wit="#L" n="2"> omnia eodem <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">an omnia eodem</lem>
+<note type="lemma-abbrev">an</note>
+<rdg wit="#L" n="1"> hoc casu, considera
+</rdg>
+<rdg wit="#L" n="2"> omnia eodem <hi rendition="#i">L</hi>
+</rdg>
+</app>
 modo supponere liceat,
-ac si corpus quiescens<index indexName="Sachen"><term>corpus quiescens</term></index>
-sit immobile<index indexName="Sachen"><term>corpus immobile</term></index>
-et in reliquis eadem potentia<index indexName="Sachen"><term>potentia ante concursum</term></index><index indexName="Sachen"><term>potentia post concursum</term></index>
-ante et post concursum<index indexName="Sachen"><term>concursus plurium corporum</term></index>
-eademque directionis summa servetur.<index indexName="Sachen"><term>summa directionis servata</term></index></p><p xml:id="Ch69.p24">Videndum etiam
+ac si corpus quiescens<index indexName="Sachen">
+<term>corpus quiescens</term>
+</index>
+sit immobile<index indexName="Sachen">
+<term>corpus immobile</term>
+</index>
+et in reliquis eadem potentia<index indexName="Sachen">
+<term>potentia ante concursum</term>
+</index>
+<index indexName="Sachen">
+<term>potentia post concursum</term>
+</index>
+ante et post concursum<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
+eademque directionis summa servetur.<index indexName="Sachen">
+<term>summa directionis servata</term>
+</index>
+</p>
+<p xml:id="Ch69.p24">Videndum etiam
 an liceat pro certo ponere,
-si corpora per reflexiones<index indexName="Sachen"><term>reflexio corporis</term></index><index indexName="Sachen"><term>corpus reflexum</term></index>
-vel alias fictiones<index indexName="Sachen"><term>fictio</term></index>
+si corpora per reflexiones<index indexName="Sachen">
+<term>reflexio corporis</term>
+</index>
+<index indexName="Sachen">
+<term>corpus reflexum</term>
+</index>
+vel alias fictiones<index indexName="Sachen">
+<term>fictio</term>
+</index>
 eo reducantur,
-ut effectum<index indexName="Sachen"><term>effectus similis causae</term></index><index indexName="Sachen"><term>effectus propinquus causae</term></index>
-producere debeant similem causae,<index indexName="Sachen"><term>causa similis effectui</term></index><index indexName="Sachen"><term>causa propinqua effectui</term></index>
+ut effectum<index indexName="Sachen">
+<term>effectus similis causae</term>
+</index>
+<index indexName="Sachen">
+<term>effectus propinquus causae</term>
+</index>
+producere debeant similem causae,<index indexName="Sachen">
+<term>causa similis effectui</term>
+</index>
+<index indexName="Sachen">
+<term>causa propinqua effectui</term>
+</index>
 vel propinquum,
 tunc
-<app type="Bfootnote"><lem type="main">omnino productura esse</lem><note type="lemma-abbrev">omnino</note><rdg wit="#L" n="1"> proditura ess
-</rdg><rdg wit="#L" n="2"> productura esse <hi rendition="#i">L</hi></rdg></app>
+<app type="Bfootnote">
+<lem type="main">omnino productura esse</lem>
+<note type="lemma-abbrev">omnino</note>
+<rdg wit="#L" n="1"> proditura ess
+</rdg>
+<rdg wit="#L" n="2"> productura esse <hi rendition="#i">L</hi>
+</rdg>
+</app>
 eundem.
 Pro certo
-<app type="Bfootnote"><lem type="main">etiam habenda
-est regula Evanescentiae<index indexName="Sachen"><term>regula evanescentiae</term></index><index indexName="Sachen"><term>evanescentia</term></index></lem><note type="lemma-abbrev">etiam</note><rdg wit="#L" n="1"> habendum est, paul
-</rdg><rdg wit="#L" n="2"> habenda est regula Evanescentiae <hi rendition="#i">L</hi></rdg></app>
-seu transitus<index indexName="Sachen"><term>regula transitus a motu ad quietem</term></index><index indexName="Sachen"><term>transitus a motu ad quietem</term></index>
-a motu ad quietem[,] sumtam pro motu infinite parvo,<index indexName="Sachen"><term>motus infinite parvus</term></index><index indexName="Sachen"><term>quies ut motus infinite parvus</term></index>
-et similia.</p><p xml:id="Ch69.p25">Ex hoc uno,
-ut fingamus corpora<index indexName="Sachen"><term>corpora plura concurrentia</term></index>
+<app type="Bfootnote">
+<lem type="main">etiam habenda
+est regula Evanescentiae<index indexName="Sachen">
+<term>regula evanescentiae</term>
+</index>
+<index indexName="Sachen">
+<term>evanescentia</term>
+</index>
+</lem>
+<note type="lemma-abbrev">etiam</note>
+<rdg wit="#L" n="1"> habendum est, paul
+</rdg>
+<rdg wit="#L" n="2"> habenda est regula Evanescentiae <hi rendition="#i">L</hi>
+</rdg>
+</app>
+seu transitus<index indexName="Sachen">
+<term>regula transitus a motu ad quietem</term>
+</index>
+<index indexName="Sachen">
+<term>transitus a motu ad quietem</term>
+</index>
+a motu ad quietem[,] sumtam pro motu infinite parvo,<index indexName="Sachen">
+<term>motus infinite parvus</term>
+</index>
+<index indexName="Sachen">
+<term>quies ut motus infinite parvus</term>
+</index>
+et similia.</p>
+<p xml:id="Ch69.p25">Ex hoc uno,
+ut fingamus corpora<index indexName="Sachen">
+<term>corpora plura concurrentia</term>
+</index>
 si placet subito
-<app type="Bfootnote"><lem type="main">reddi connexa,<index indexName="Sachen"><term>corpora connexa</term></index>
-demonstratur</lem><note type="lemma-abbrev">reddi</note><rdg wit="#L" n="1"> connectentia, necesse est, ut
-</rdg><rdg wit="#L" n="2"> connexa, demonstratur <hi rendition="#i">L</hi></rdg></app>
-centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis commune</term></index>
-eadem velocitate procedere<index indexName="Sachen"><term>velocitas centri gravitatis</term></index><index indexName="Sachen"><term>progressus centri gravitatis</term></index>
-ante et post ictum.<index indexName="Sachen"><term>ictus</term></index>
-Nam fingamus corpora in motu concursus<index indexName="Sachen"><term>concursus plurium corporum</term></index>
-reddi connexa,<index indexName="Sachen"><term>corpora connexa</term></index>
-<app type="Bfootnote"><lem type="main">tunc procedent</lem><note type="lemma-abbrev">tunc</note><rdg wit="#L" n="1"> si centr
-</rdg><rdg wit="#L" n="2"> procedent <hi rendition="#i">L</hi></rdg></app>
-utique eadem velocitate<index indexName="Sachen"><term>velocitas centri gravitatis</term></index>
-qua suum centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis commune</term></index><index indexName="Sachen"><term>progressus centri gravitatis</term></index>
-procedit post ictum.<index indexName="Sachen"><term>ictus</term></index>
+<app type="Bfootnote">
+<lem type="main">reddi connexa,<index indexName="Sachen">
+<term>corpora connexa</term>
+</index>
+demonstratur</lem>
+<note type="lemma-abbrev">reddi</note>
+<rdg wit="#L" n="1"> connectentia, necesse est, ut
+</rdg>
+<rdg wit="#L" n="2"> connexa, demonstratur <hi rendition="#i">L</hi>
+</rdg>
+</app>
+centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis commune</term>
+</index>
+eadem velocitate procedere<index indexName="Sachen">
+<term>velocitas centri gravitatis</term>
+</index>
+<index indexName="Sachen">
+<term>progressus centri gravitatis</term>
+</index>
+ante et post ictum.<index indexName="Sachen">
+<term>ictus</term>
+</index>
+Nam fingamus corpora in motu concursus<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
+reddi connexa,<index indexName="Sachen">
+<term>corpora connexa</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">tunc procedent</lem>
+<note type="lemma-abbrev">tunc</note>
+<rdg wit="#L" n="1"> si centr
+</rdg>
+<rdg wit="#L" n="2"> procedent <hi rendition="#i">L</hi>
+</rdg>
+</app>
+utique eadem velocitate<index indexName="Sachen">
+<term>velocitas centri gravitatis</term>
+</index>
+qua suum centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis commune</term>
+</index>
+<index indexName="Sachen">
+<term>progressus centri gravitatis</term>
+</index>
+procedit post ictum.<index indexName="Sachen">
+<term>ictus</term>
+</index>
 Itaque si illud
-<app type="Bfootnote"><lem type="main">velocius vel</lem><note type="lemma-abbrev">velocius</note><rdg wit="#L" cause="addition"><add>vel</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+<app type="Bfootnote">
+<lem type="main">velocius vel</lem>
+<note type="lemma-abbrev">velocius</note>
+<rdg wit="#L" cause="addition">
+<add>vel</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
 tardius procedit quam ante,
-tunc vertendo progressum<index indexName="Sachen"><term>progressus centri gravitatis</term></index>
-in ascensum,<index indexName="Sachen"><term>ascensus centri gravitatis</term></index><anchor xml:id="BE_N69-am-Rand"/><note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Am Rand:</hi></note>NB</note>
-poterit centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis commune</term></index>
+tunc vertendo progressum<index indexName="Sachen">
+<term>progressus centri gravitatis</term>
+</index>
+in ascensum,<index indexName="Sachen">
+<term>ascensus centri gravitatis</term>
+</index>
+<anchor xml:id="BE_N69-am-Rand"/>
+<note type="Afootnote" place="margin" resp="#L">
+<note type="lemma-abbrev">
+<hi rendition="#i">Am Rand:</hi>
+</note>NB</note>
+poterit centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis commune</term>
+</index>
 eorum altius attolli quam ante,
 vel minus alte;
 plus scilicet vel minus,
-quam si paulo ante ictum<index indexName="Sachen"><term>ictus</term></index>
+quam si paulo ante ictum<index indexName="Sachen">
+<term>ictus</term>
+</index>
 connexa facta fuissent.
-Centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis commune</term></index>
+Centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis commune</term>
+</index>
 autem semper debere tendere in easdem partes
 ex eo sequitur,
-quia nulla est ratio mutationis.<index indexName="Sachen"><term>ratio mutationis</term></index><index indexName="Sachen"><term>mutatio</term></index>
-<pb type="L"/>Videtur tamen melius ex eo demonstrari,
-si ponamus motum esse gravium<index indexName="Sachen"><term>motus gravium</term></index>
-partim ascendentium in liquido,<index indexName="Sachen"><term>grave ascendens in liquido</term></index>
+quia nulla est ratio mutationis.<index indexName="Sachen">
+<term>ratio mutationis</term>
+</index>
+<index indexName="Sachen">
+<term>mutatio</term>
+</index>
+<pb type="L"/>
+Videtur tamen melius ex eo demonstrari,
+si ponamus motum esse gravium<index indexName="Sachen">
+<term>motus gravium</term>
+</index>
+partim ascendentium in liquido,<index indexName="Sachen">
+<term>grave ascendens in liquido</term>
+</index>
 partim
-<app type="Bfootnote"><lem type="main">descendentium,<index indexName="Sachen"><term>grave descendens in liquido</term></index>
-inter duo plana</lem><note type="lemma-abbrev">descendentium,</note><rdg wit="#L" n="1"> super plana
-</rdg><rdg wit="#L" n="2"> inter duo plana <hi rendition="#i">L</hi></rdg></app>
-inclinata infinitesime.<index indexName="Sachen"><term>planum inclinatum</term></index><note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Am Rand:</hi></note>NB</note>
-Cum enim utique centrum commune<index indexName="Sachen"><term>centrum gravitatis commune</term></index>
+<app type="Bfootnote">
+<lem type="main">descendentium,<index indexName="Sachen">
+<term>grave descendens in liquido</term>
+</index>
+inter duo plana</lem>
+<note type="lemma-abbrev">descendentium,</note>
+<rdg wit="#L" n="1"> super plana
+</rdg>
+<rdg wit="#L" n="2"> inter duo plana <hi rendition="#i">L</hi>
+</rdg>
+</app>
+inclinata infinitesime.<index indexName="Sachen">
+<term>planum inclinatum</term>
+</index>
+<note type="Afootnote" place="margin" resp="#L">
+<note type="lemma-abbrev">
+<hi rendition="#i">Am Rand:</hi>
+</note>NB</note>
+Cum enim utique centrum commune<index indexName="Sachen">
+<term>centrum gravitatis commune</term>
+</index>
 omnium gravium horum necessario non ascendat
 sed descendat,
-posito plus esse gravitatis<index indexName="Sachen"><term>gravitas</term></index>
-quam levitatis,<index indexName="Sachen"><term>levitas</term></index>
-ubi utique concursu<index indexName="Sachen"><term>concursus plurium corporum</term></index>
+posito plus esse gravitatis<index indexName="Sachen">
+<term>gravitas</term>
+</index>
+quam levitatis,<index indexName="Sachen">
+<term>levitas</term>
+</index>
+ubi utique concursu<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
 licet facto,
-centrum omnium tendet in easdem partes.<index indexName="Sachen"><term>centrum gravitatis commune</term></index>
-<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1522"><pb type="L"/><fw type="folNum">[10 r<hi rendition="#sup">o</hi>]</fw></ref></p><p xml:id="Ch69.p26">Ex illo autem praeclare multa demonstrantur.
-Si ponatur corpus plures habere conatus<index indexName="Sachen"><term>conatus plures</term></index>
-simul,<index indexName="Sachen"><term>corpus habens conatus plures</term></index>
-et fingatur ipsum in plura dividi aequaliter<index indexName="Sachen"><term>corpus divisum in plura</term></index>[,] <app type="Bfootnote"><lem type="main">haud leviora specifice,
-<index indexName="Sachen"><term>corpus specifice leve</term></index></lem><note type="lemma-abbrev">haud</note><rdg wit="#L" cause="addition"><add>leviora specifice</add>
-<note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg></app>
+centrum omnium tendet in easdem partes.<index indexName="Sachen">
+<term>centrum gravitatis commune</term>
+</index>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH035/&amp;pn=1522">
+<pb type="L"/>
+<fw type="folNum">[10 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</p>
+<p xml:id="Ch69.p26">Ex illo autem praeclare multa demonstrantur.
+Si ponatur corpus plures habere conatus<index indexName="Sachen">
+<term>conatus plures</term>
+</index>
+simul,<index indexName="Sachen">
+<term>corpus habens conatus plures</term>
+</index>
+et fingatur ipsum in plura dividi aequaliter<index indexName="Sachen">
+<term>corpus divisum in plura</term>
+</index>[,]<app type="Bfootnote">
+<lem type="main">haud leviora specifice,
+<index indexName="Sachen">
+<term>corpus specifice leve</term>
+</index>
+</lem>
+<note type="lemma-abbrev">haud</note>
+<rdg wit="#L" cause="addition">
+<add>leviora specifice</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
 et ire in omnes illas partes,
-deinde notetur via centri gravitatis<index indexName="Sachen"><term>centrum gravitatis commune</term></index><index indexName="Sachen"><term>via centri gravitatis</term></index>
+deinde notetur via centri gravitatis<index indexName="Sachen">
+<term>centrum gravitatis commune</term>
+</index>
+<index indexName="Sachen">
+<term>via centri gravitatis</term>
+</index>
 quae tunc futura sit,
 seu celeritas;
 eadem
-<app type="Bfootnote"><lem type="main">erit
-[via centri gravitatis,] imo et eadem celeritas.<index indexName="Sachen"><term>celeritas centri gravitatis</term></index></lem><note type="lemma-abbrev">erit</note><rdg wit="#L" n="1"> via centri gravitatis,
-<app><rdg wit="#L" n="a">nam via totius corporis
-</rdg><rdg wit="#L" n="b">sed quaeritur quae celeritas, nam via
-</rdg></app></rdg><rdg wit="#L" n="2" cause="addition"> <note type="editorial">|</note> <add>via centri gravitatis,</add> <note type="editorial"><hi rendition="#i">erg. Hrsg.</hi> |</note> imo et eadem celeritas. <hi rendition="#i">L</hi></rdg></app>
-Ponamus ergo corpus <hi rendition="#i">A</hi> habere duos conatus,<index indexName="Sachen"><term>conatus duo</term></index><index indexName="Sachen"><term>corpus habens conatus duos</term></index>
+<app type="Bfootnote">
+<lem type="main">erit
+[via centri gravitatis,] imo et eadem celeritas.<index indexName="Sachen">
+<term>celeritas centri gravitatis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">erit</note>
+<rdg wit="#L" n="1"> via centri gravitatis,
+<app>
+<rdg wit="#L" n="a">nam via totius corporis
+</rdg>
+<rdg wit="#L" n="b">sed quaeritur quae celeritas, nam via
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2" cause="addition">
+<note type="editorial">|</note>
+<add>via centri gravitatis,</add>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi> |
+</note> imo et eadem celeritas. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+Ponamus ergo corpus <hi rendition="#i">A</hi> habere duos conatus,<index indexName="Sachen">
+<term>conatus duo</term>
+</index>
+<index indexName="Sachen">
+<term>corpus habens conatus duos</term>
+</index>
 unum <hi rendition="#i">AB</hi>,
 alterum <hi rendition="#i">AC</hi>[;] ponatur dividi in duo
-<app type="Bfootnote"><lem type="main">corpora dimidiae levitatis specificae<index indexName="Sachen"><term>levitas specifica</term></index></lem><note type="lemma-abbrev">corpora</note><rdg wit="#L" n="1"> duplo spec
-</rdg><rdg wit="#L" n="2"> dimidiae levitatis specificae <hi rendition="#i">L</hi></rdg></app>
-vel si placet dimidiae magnitudinis,<index indexName="Sachen"><term>magnitudo corporum concurrentium</term></index>
+<app type="Bfootnote">
+<lem type="main">corpora dimidiae levitatis specificae<index indexName="Sachen">
+<term>levitas specifica</term>
+</index>
+</lem>
+<note type="lemma-abbrev">corpora</note>
+<rdg wit="#L" n="1"> duplo spec
+</rdg>
+<rdg wit="#L" n="2"> dimidiae levitatis specificae <hi rendition="#i">L</hi>
+</rdg>
+</app>
+vel si placet dimidiae magnitudinis,<index indexName="Sachen">
+<term>magnitudo corporum concurrentium</term>
+</index>
 quorum unum tendat in <hi rendition="#i">B</hi>,
 alterum in <hi rendition="#i">C</hi>,
-utique centrum gravitatis<index indexName="Sachen"><term>centrum gravitatis commune</term></index>
+utique centrum gravitatis<index indexName="Sachen">
+<term>centrum gravitatis commune</term>
+</index>
 amborum perveniet in <hi rendition="#i">D</hi>,
-quo recta bisecans angulum <hi rendition="#i">BAC</hi><index indexName="Sachen"><term>angulus bisectus</term></index><index indexName="Sachen"><term>recta bisecans angulum</term></index>
+quo recta bisecans angulum <hi rendition="#i">BAC</hi>
+<index indexName="Sachen">
+<term>angulus bisectus</term>
+</index>
+<index indexName="Sachen">
+<term>recta bisecans angulum</term>
+</index>
 occurrit ipsi <hi rendition="#i">BC</hi>.
 Sed videtur oriri debere duplum,
-nempe <hi rendition="#i">E</hi>.</p><figure rendition="#own-line_centered" xml:id="Ch69.p27_1"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d8_010r.svg" width="112.7412pt" xml:id="Ch69.p27.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 7</hi>]<anchor xml:id="LH_35_10_07_010r_Fig.7"/></head></figure><figure rendition="#own-line_centered" xml:id="Ch69.p27_2"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d7_010r.svg" width="86.724pt" xml:id="Ch69.p27.g2"/><head rendition="#c">[<hi rendition="#i">Fig. 8</hi>]<anchor xml:id="LH_35_10_07_010r_Fig.8"/></head></figure><figure rendition="#own-line_centered" xml:id="Ch69.p27_3"><graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d9_010r.svg" width="86.724pt" xml:id="Ch69.p27.g3"/><head rendition="#c">[<hi rendition="#i">Fig. 9</hi>]<anchor xml:id="LH_35_10_07_010r_Fig.9"/></head></figure><p xml:id="Ch69.p28">Nam corpus dimidiae levitatis<index indexName="Sachen"><term>levitas specifica</term></index>
+nempe <hi rendition="#i">E</hi>.
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch69.p27_1">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d8_010r.svg" width="112.7412pt" xml:id="Ch69.p27.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 7</hi>]<anchor xml:id="LH_35_10_07_010r_Fig.7"/>
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch69.p27_2">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d7_010r.svg" width="86.724pt" xml:id="Ch69.p27.g2"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 8</hi>]<anchor xml:id="LH_35_10_07_010r_Fig.8"/>
+</head>
+</figure>
+<figure rendition="#own-line_centered" xml:id="Ch69.p27_3">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_35_10_07_009-010_d9_010r.svg" width="86.724pt" xml:id="Ch69.p27.g3"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 9</hi>]<anchor xml:id="LH_35_10_07_010r_Fig.9"/>
+</head>
+</figure>
+<p xml:id="Ch69.p28">Nam corpus dimidiae levitatis<index indexName="Sachen">
+<term>levitas specifica</term>
+</index>
 debet progredi duplo celerius,
-ut eadem sit quantitas progressus,<index indexName="Sachen"><term>quantitas progressus</term></index>
+ut eadem sit quantitas progressus,<index indexName="Sachen">
+<term>quantitas progressus</term>
+</index>
 nempe in <hi rendition="#i">F</hi> et in <hi rendition="#i">G</hi>.
-Verum difficultas est,<index indexName="Sachen"><term>difficultas</term></index>
-quod non videtur sumenda eadem quantitas progressus<index indexName="Sachen"><term>quantitas progressus</term></index>
-sed eadem quantitas potentiae.<index indexName="Sachen"><term>quantitas potentiae</term></index>
+Verum difficultas est,<index indexName="Sachen">
+<term>difficultas</term>
+</index>
+quod non videtur sumenda eadem quantitas progressus<index indexName="Sachen">
+<term>quantitas progressus</term>
+</index>
+sed eadem quantitas potentiae.<index indexName="Sachen">
+<term>quantitas potentiae</term>
+</index>
 Sed responderi potest,
-eandem esse quantitatem progressus,<index indexName="Sachen"><term>quantitas progressus</term></index>
-sed non mutari ideo quantitatem potentiae,<index indexName="Sachen"><term>quantitas potentiae</term></index>
-quae pendet ex consideratione causae,<index indexName="Sachen"><term>consideratio causae</term></index>
-quae corpori <hi rendition="#i">A</hi> duplices illos conatus<index indexName="Sachen"><term>conatus duplex</term></index><index indexName="Sachen"><term>causa conatus duplicis</term></index>
+eandem esse quantitatem progressus,<index indexName="Sachen">
+<term>quantitas progressus</term>
+</index>
+sed non mutari ideo quantitatem potentiae,<index indexName="Sachen">
+<term>quantitas potentiae</term>
+</index>
+quae pendet ex consideratione causae,<index indexName="Sachen">
+<term>consideratio causae</term>
+</index>
+quae corpori <hi rendition="#i">A</hi> duplices illos conatus<index indexName="Sachen">
+<term>conatus duplex</term>
+</index>
+<index indexName="Sachen">
+<term>causa conatus duplicis</term>
+</index>
 impressit.
 Ponamus scilicet corpora duo <hi rendition="#i">L</hi> et <hi rendition="#i">M</hi>
 incurrere in corpus <hi rendition="#i">A</hi>,
-ajo debere eandem esse quantitatem progressus<index indexName="Sachen"><term>quantitas progressus</term></index>
+ajo debere eandem esse quantitatem progressus<index indexName="Sachen">
+<term>quantitas progressus</term>
+</index>
 in recta <hi rendition="#i">LB</hi> et parallelis
-ante et post concursum,<index indexName="Sachen"><term>concursus plurium corporum</term></index>
+ante et post concursum,<index indexName="Sachen">
+<term>concursus plurium corporum</term>
+</index>
 et similiter
-<app type="Bfootnote"><lem type="main">etiam eandem</lem><note type="lemma-abbrev">etiam</note><rdg wit="#L" n="1"> ante
-</rdg><rdg wit="#L" n="2"> eandem <hi rendition="#i">L</hi></rdg></app>
-esse debere quantitatem progressus<index indexName="Sachen"><term>quantitas progressus</term></index>
+<app type="Bfootnote">
+<lem type="main">etiam eandem</lem>
+<note type="lemma-abbrev">etiam</note>
+<rdg wit="#L" n="1"> ante
+</rdg>
+<rdg wit="#L" n="2"> eandem <hi rendition="#i">L</hi>
+</rdg>
+</app>
+esse debere quantitatem progressus<index indexName="Sachen">
+<term>quantitas progressus</term>
+</index>
 in recta <hi rendition="#i">MC</hi> et parallelis.
 Praeterea eandem debere esse
-potentiam.<anchor xml:id="_35_10_07_009-010_1a"/><index indexName="Sachen"><term>potentia corporum concurrentium</term></index><app type="Bfootnote" from="#_35_10_07_009-010_1a" to="#_35_10_07_009-010_1b"><lem type="main"/><note type="lemma-abbrev">potentiam<index indexName="Sachen"><term>potentia</term></index></note><rdg wit="#L" n="1"> Omnium corporum quanti
-</rdg><rdg wit="#L" n="2"> Quantitas
-<app><rdg wit="#L" n="a">progressus
-</rdg><rdg wit="#L" n="b">appropinquationis<index indexName="Sachen"><term>appropinquatio</term></index> quotcunque corporum,
-<app><rdg wit="#L" n="aa">quae aliunde non
-</rdg><rdg wit="#L" n="bb">aliunde
-<app><rdg wit="#L" n="aaa">non
-</rdg><rdg wit="#L" n="bbb">nihil
-</rdg></app></rdg></app></rdg></app></rdg><rdg wit="#L" n="3"> quantitas
-</rdg><rdg wit="#L" n="4"> accessus aut recessus quotcunque corporum
-</rdg><rdg wit="#L" n="5"> Quantitas appropinquationis<index indexName="Sachen"><term>quantitas appropinquationis</term></index>
-</rdg><rdg wit="#L" n="6"> Celeritas
-</rdg><rdg wit="#L" n="7" cause="addition"> Quantitas appropinquationis
-<note type="editorial">|</note> <add>vel elongationis</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> quotcunque corporum ad idem
-</rdg><rdg wit="#L" n="8"> Quantitas progressus
-</rdg><rdg wit="#L" n="9" cause="addition"> Quotcunque corporum
+potentiam.<anchor xml:id="_35_10_07_009-010_1a"/>
+<index indexName="Sachen">
+<term>potentia corporum concurrentium</term>
+</index>
+<app type="Bfootnote" from="#_35_10_07_009-010_1a" to="#_35_10_07_009-010_1b">
+<lem type="main"/>
+<note type="lemma-abbrev">potentiam<index indexName="Sachen">
+<term>potentia</term>
+</index>
+</note>
+<rdg wit="#L" n="1"> Omnium corporum quanti
+</rdg>
+<rdg wit="#L" n="2"> Quantitas
+<app>
+<rdg wit="#L" n="a">progressus
+</rdg>
+<rdg wit="#L" n="b">appropinquationis<index indexName="Sachen">
+<term>appropinquatio</term>
+</index> quotcunque corporum,
+<app>
+<rdg wit="#L" n="aa">quae aliunde non
+</rdg>
+<rdg wit="#L" n="bb">aliunde
+<app>
+<rdg wit="#L" n="aaa">non
+</rdg>
+<rdg wit="#L" n="bbb">nihil
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="3"> quantitas
+</rdg>
+<rdg wit="#L" n="4"> accessus aut recessus quotcunque corporum
+</rdg>
+<rdg wit="#L" n="5"> Quantitas appropinquationis<index indexName="Sachen">
+<term>quantitas appropinquationis</term>
+</index>
+</rdg>
+<rdg wit="#L" n="6"> Celeritas
+</rdg>
+<rdg wit="#L" n="7" cause="addition"> Quantitas appropinquationis
+<note type="editorial">|</note>
+<add>vel elongationis</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> quotcunque corporum ad idem
+</rdg>
+<rdg wit="#L" n="8"> Quantitas progressus
+</rdg>
+<rdg wit="#L" n="9" cause="addition"> Quotcunque corporum
 <note type="editorial">|</note> nihil ab aliis, extra ipsa
-<note type="editorial">|</note> ivicem <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note> <add>, patientium quantitas progressus</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> respectu distantiae <seg type="apparat-ellipsis"/> est aequalis,
-<app><rdg wit="#L" n="a">si scilicet corpora haec nihil ab aliis extraneis extra ipsa pati intelligantur.
-</rdg><rdg wit="#L" n="b">seu
-<app><rdg wit="#L" n="aa">eadem est
-</rdg><rdg wit="#L" n="bb">puncto illo <seg type="apparat-ellipsis"/> vel centrifuga. <hi rendition="#i">L</hi></rdg></app></rdg></app></rdg></app></p><p xml:id="Ch69.p29">Quotcunque corporum nihil ab aliis,
+<note type="editorial">|</note> ivicem <note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi> |
+</note>
+<add>, patientium quantitas progressus</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> respectu distantiae <seg type="apparat-ellipsis"/>
+ est aequalis,
+<app>
+<rdg wit="#L" n="a">si scilicet corpora haec nihil ab aliis extraneis extra ipsa pati intelligantur.
+</rdg>
+<rdg wit="#L" n="b">seu
+<app>
+<rdg wit="#L" n="aa">eadem est
+</rdg>
+<rdg wit="#L" n="bb">puncto illo <seg type="apparat-ellipsis"/>
+ vel centrifuga. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch69.p29">Quotcunque corporum nihil ab aliis,
 extra ipsa
 [invicem],
-patientium quantitas progressus<index indexName="Sachen"><term>quantitas progressus</term></index>
+patientium quantitas progressus<index indexName="Sachen">
+<term>quantitas progressus</term>
+</index>
 respectu distantiae a dato quovis puncto semper est aequalis
 seu[,] puncto illo eodem assumto,
 eadem semper est
-quantitas centripeta<anchor xml:id="LH_35_10_07_0010r_centripetafuga-1"/><index indexName="Sachen"><term>quantitas centripeta</term></index>
-vel centrifuga.<index indexName="Sachen"><term>quantitas centrifuga</term></index><anchor xml:id="LH_35_10_07_0010r_centripetafuga-2"/><anchor xml:id="_35_10_07_009-010_1b"/></p></div></div></body>
-  </text>
+quantitas centripeta<anchor xml:id="LH_35_10_07_0010r_centripetafuga-1"/>
+<index indexName="Sachen">
+<term>quantitas centripeta</term>
+</index>
+vel centrifuga.<index indexName="Sachen">
+<term>quantitas centrifuga</term>
+</index>
+<anchor xml:id="LH_35_10_07_0010r_centripetafuga-2"/>
+<anchor xml:id="_35_10_07_009-010_1b"/>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

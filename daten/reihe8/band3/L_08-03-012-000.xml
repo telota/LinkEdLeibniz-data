@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-012-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-012-000">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Cogitationes Novae De Sono</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2022</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="12">Cogitationes Novae De Sono</title>
 						<title type="section" level="a" n=""/>
 						<date calendar="#gregorian" notBefore="1681-08-15" resp="#ed" cert="medium">[zweite Hälfte August 1681 – erste Hälfte 1685]</date>
 						<date calendar="#gregorian" notAfter="1685-06" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=124</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+							<idno type="page">#page=124</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,12 +86,24 @@
 						</imprint>
 						<biblScope unit="page" from="90" to="93"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-012-001"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-012-002"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-012-003"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-012-004"/></relatedItem>
-					<relatedItem type="subordinated-chapter"><ptr target="#L_08-03-012-005"/></relatedItem>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-012-001"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-012-002"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-012-003"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-012-004"/>
+					</relatedItem>
+					<relatedItem type="subordinated-chapter">
+						<ptr target="#L_08-03-012-005"/>
+					</relatedItem>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
@@ -175,77 +225,320 @@
 				<head>12 COGITATIONES NOVAE DE SONO</head>
 				<head>[zweite Hälfte August 1681 – erste Hälfte 1685]</head>
 				<div type="contents">
-					<p xml:id="Ch12.p1"><anchor xml:id="cnds_0"/> <anchor xml:id="N.12"/><!--  \hackfor{\par} --></p>
-					<p rendition="#noindent" xml:id="Ch12.p2"><anchor xml:id="cogitationesnovae-intro"/><hi rendition="#smaller">Bei den folgenden Stücken N. <ref corresp="L_section_121.xml#N.12.1"/> bis <ref corresp="L_section_125.xml#N.12.5"/> handelt es sich um Texte, die sowohl ihrem Inhalt wie ihrer Entstehung nach eng miteinander zusammenhängen. Obwohl sie von Leibniz nicht datiert wurden, lässt sich ihre Reihenfolge und Entstehungszeit anhand des Briefwechsels genau bestimmen.</hi></p>
-					<p xml:id="Ch12.p3"><hi rendition="#smaller">Der Helmstedter Medizinprofessor G. C. Schelhammer<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Schelhammer</hi> <hi rendition="#smaller">(Schelhammerus), Günther Christoph 1649–1716</hi></term>
-						</index> kündigte in seinem Brief an Leibniz vom 8. (18.) November 1680 eine <hi rendition="#i">auditus explicationem plane novam</hi> an (<ref corresp="#bib_01279"/><hi rendition="#i">LSB</hi> III, 3 N. 124, S. 286.17–18), womit er offenbar seine (erst 1684 erschienene) Abhandlung <ref corresp="#bib_01204"/><hi rendition="#i">De auditu</hi> meinte. In seiner Antwort vom 6. (16.) Dezember 1680 erwähnte Leibniz angebliche ältere Aufzeichnungen <hi rendition="#i">de modo, quo fit sonus ac propagatur</hi> (nicht ermittelt; siehe aber die Datierungsbegründung von N. <ref corresp="L_chapter_1.xml#N.1"/>), und behauptete zudem, die Gesetze der Schwingungen <hi rendition="#i">ex intima Geometria</hi> ergründet zu haben (<ref corresp="#bib_01275"/><hi rendition="#i">LSB</hi> III, 3 N. 139, S. 305.3–5), womit er wohl auf N. <ref corresp="L_chapter_9.xml#N.9"/> anspielte. In seiner Entgegnung vom 31. Dezember 1680 (10. Januar 1681) äußerte Schelhammer den Wunsch, mehr von Leibnizens Überlegungen zu erfahren (<ref corresp="#bib_01280"/><hi rendition="#i">LSB</hi> III, 3 N. 153, S. 318.19–21). Die Antwort an Schelhammer von Februar/März 1681 überliefert Leibnizens erste (erhaltene) ausführliche Darstellung, wie der Schall aus vibrierenden elastischen Körpern entstehe, sich in die Luft als elastisches Fluidum ausbreite und ins Ohr aufgenommen werde (<ref corresp="#bib_01194"/><hi rendition="#i">LSB</hi> III, 3 N. 182, S. 355–361). Die Texte N. <ref corresp="L_section_121.xml#N.12.1"/>, <ref corresp="L_section_122.xml#N.12.2"/> und <ref corresp="L_section_123.xml#N.12.3"/> knüpfen sämtlich an diese Darstellung an. Schelhammer drückte in seiner weiteren Entgegnung vom 13. (23.) April 1681 Zustimmung und Tadel aus: Unter anderem hielt er fest, dass selbst ein unelastischer Körper wie etwa ein Kissen, geschlagen, einen Klang erzeuge (<ref corresp="#bib_01200"/><hi rendition="#i">LSB</hi> III, 3 N. 206, S. 395.13–396.5). Leibniz erhielt Schelhammers Brief erst am 4. (14.) August 1681 und erwiderte auf den Einwand in einer Randbemerkung (ebd., S. 396.12–14). Dieselbe Erwiderung findet sich dann in N. <ref corresp="L_section_121.xml#N.12.1"/>, <ref corresp="L_section_122.xml#N.12.2"/> und <ref corresp="L_section_123.xml#N.12.3"/> (S. <ref corresp="L_section_121.xml#LH_37_01_018r_Schelh-1"/>; <ref corresp="L_section_122.xml#LH_37_01_020r_culcitra-1"/>; <ref corresp="L_section_123.xml#LH_37_01_004r_culcitra-1"/>) wieder. Die zweite Hälfte August 1681 ist daher als Terminus post quem der Gesamtdatierung von N. <ref corresp="#N.12"/> anzusehen.</hi></p>
-					<p xml:id="Ch12.p4"><hi rendition="#smaller">Schon im März/April 1681 hatte E. Mariotte<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term>
-						</index> an Leibniz von seinem Vortrag <hi rendition="#i">sur l’usage des organes de l’ouye</hi> an der Pariser Akademie<index indexName="Sachen">
-						<term><hi rendition="#smaller">Académie Royale des Sciences</hi></term>
-						</index> geschrieben (<ref corresp="#bib_01209"/><hi rendition="#i">LSB</hi> III, 3 N. 193, S. 375.1–14). Die von Mariotte mitgeteilten Einzelheiten über die Anatomie des Ohres ergänzten nun die Darstellung akustischer Phänomene, die Leibniz kurz davor an Schelhammer<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Schelhammer</hi> <hi rendition="#smaller">(Schelhammerus), Günther Christoph 1649–1716</hi></term>
-						</index> gesendet hatte. Am 8. August 1681 berichtete Mariotte ferner über einen vom Arzt J.-G. Duverney<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Duverney</hi> <hi rendition="#smaller">(Duvernejus, Duvernaeus), Joseph-Guichard 1648–1730</hi></term>
-						</index> an der Pariser Akademie gehaltenen Vortrag zur Anatomie des Ohres (<ref corresp="#bib_01210"/><hi rendition="#i">LSB</hi> III, 3 N. 262, S. 464.7-18), woraus Duverneys Abhandlung <hi rendition="#i">De l’organe de l’ouie</hi> (1683) entstehen sollte.<ref corresp="#bib_01202"/> In der zweiten Hälfte August 1681 fasste Leibniz für Mariotte seine Ansichten über Entstehung, Übertragung und Aufnahme des Schalls zusammen, wobei er auch auf Schelhammers „Kissen”-Einwand einging (<ref corresp="#bib_01193"/><hi rendition="#i">LSB</hi> III, 3 N. 269, bes. S. 479.16–20). Mariotte teilte Leibniz am 29. November 1681 seinen Beifall mit (<ref corresp="#bib_01222"/><hi rendition="#i">LSB</hi> III, 3 N. 297, S. 518.14-519.1).</hi></p>
-					<p xml:id="Ch12.p5"><hi rendition="#smaller">Vor dem Jahresende verfasste Leibniz noch eine ausführliche Antwort auf Schelhammers Brief vom 13. (23.) April, in der er auf sämtliche Einwände des Helmstedter Professors einging (<ref corresp="#bib_01195"/><hi rendition="#i">LSB</hi> III, 3 N. 311, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>). Der Tod von Schelhammers Schwiegervater H. Conring<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Conring</hi><hi rendition="#smaller">, Hermann 1606–1681</hi></term>
-						</index> am 22. Dezember 1681 veranlasste Leibniz jedoch dazu, diese erste Fassung seiner Antwort durch eine zweite, kürzere und weniger detaillierte (ebd., <hi rendition="#i">L<hi rendition="#sup">2</hi></hi>) zu ersetzen, die am 13. (23.) Januar 1682 auch versendet wurde.</hi></p>
-					<p xml:id="Ch12.p6"><hi rendition="#smaller">Auf die von Leibniz 1681 verfassten Briefe an Schelhammer<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Schelhammer</hi> <hi rendition="#smaller">(Schelhammerus), Günther Christoph 1649–1716</hi></term>
-						</index> und Mariotte<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term>
-						</index> bezieht sich das Konzept N. <ref corresp="L_section_121.xml#N.12.1"/> in seiner Überschrift ausdrücklich: <hi rendition="#i">De soni generatione, propagatione et expressione in organo, Mechanice explicatis; excerpta ex Epistolis G.G.L. ad viros quosdam clarissimos, qui in Germania Galliaque idem argumentum versant</hi>. Gemeint sind damit zweifelsohne die Briefe an Schelhammer von Februar/März (<hi rendition="#i">LSB</hi> III, 3 N. 182) und an Mariotte von der zweiten Hälfte August (ebd. N. 269). Dabei</hi></p>
-					<p rendition="#noindent" xml:id="Ch12.p7"><hi rendition="#smaller">könnte N. <ref corresp="L_section_121.xml#N.12.1"/> älter sein als die erste Fassung des Briefes an Schelhammer vom Januar 1682 (<hi rendition="#i">LSB</hi> III, 3 N. 311, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>), in der Leibniz den Ausdruck <hi rendition="#i">sonus clappans</hi> als Bezeichnung für einen zu hohen, stumpfen Klang verwendet (ebd. N. 311, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>, S. 547.22–25); ähnlich äußert er sich im späteren Text N. <ref corresp="L_section_123.xml#N.12.3"/> (S. <ref corresp="L_section_123.xml#LH_37_01_006v_clappans-1"/>), nicht aber in N. <ref corresp="L_section_121.xml#N.12.1"/> oder <ref corresp="L_section_122.xml#N.12.2"/>. Daher dürfte N. <ref corresp="L_section_121.xml#N.12.1"/> zwischen der zweiten Hälfte August und dem Jahresende 1681 als Überarbeitung der in den erwähnten Briefen dargestellten Inhalte entstanden sein. Da das Phänomen des <hi rendition="#i">sonus atonus</hi> aber bereits im Brief an Mariotte<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term>
-						</index> aus der zweiten Hälfte August 1681 geschildert wird (jedoch ohne die Bezeichnung <hi rendition="#i">sonus clappans</hi>: <hi rendition="#i">LSB</hi> <ref corresp="#bib_01193"/>III, 3 N. 269, S. 480.2–6), ist nicht auszuschließen, dass N. <ref corresp="L_section_121.xml#N.12.1"/> doch nach Leibnizens Brief an Schelhammer N. 311 verfasst wurde, d.h. im Laufe des Jahres 1682, jedenfalls aber vor dem Konzept N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>.</hi></p>
-					<p xml:id="Ch12.p8"><hi rendition="#smaller">Das titellose Konzept N. <ref corresp="L_section_122.xml#N.12.2"/>, dem editorisch die Überschrift <hi rendition="#i">Explicatio mechanica soni</hi> zugewiesen wird, ist wohl im selben Zeitraum wie N. <ref corresp="L_section_121.xml#N.12.1"/>, aber der Reihe nach als zweites entstanden. Denn obschon N. <ref corresp="L_section_122.xml#N.12.2"/> im Anfangsteil einen stichwortartigen Charakter aufweist und insgesamt weniger ausführlich als N. <ref corresp="L_section_121.xml#N.12.1"/> ist, wird in N. <ref corresp="L_section_122.xml#N.12.2"/> eine größere Anzahl an Einzelheiten berücksichtigt, die später in N. <ref corresp="L_section_123.xml#N.12.3"/> Eingang finden; unberührt bleibt in N. <ref corresp="L_section_122.xml#N.12.2"/> allerdings (wie in N. <ref corresp="L_section_121.xml#N.12.1"/>) das dritte und letzte in N. <ref corresp="L_section_123.xml#N.12.3"/> behandelte Thema, nämlich die Aufnahme des Schalls ins innere Ohr. Ferner sind in N. <ref corresp="L_section_122.xml#N.12.2"/> Quellen erwähnt, die in N. <ref corresp="L_section_123.xml#N.12.3"/> besprochen werden, in N. <ref corresp="L_section_121.xml#N.12.1"/> hingegen unbenannt bleiben: etwa Otto von Guerickes <index indexName="Personen">
-						<term><hi rendition="#g #smaller">Guericke</hi> <hi rendition="#smaller">(Gerickius, Gerick.), Otto von 1602–1686</hi></term>
-						</index> <hi rendition="#i">Experimenta nova</hi> (Amsterdam 1672).<ref corresp="#bib_00055"/> Somit ist N. <ref corresp="L_section_122.xml#N.12.2"/> wahrscheinlich erst nach N. <ref corresp="L_section_121.xml#N.12.1"/> entstanden und kann – nebst N. <ref corresp="L_section_121.xml#N.12.1"/> – als unvollständiger Entwurf zu N. <ref corresp="L_section_123.xml#N.12.3"/> betrachtet werden.</hi></p>
-					<p xml:id="Ch12.p9"><hi rendition="#smaller">Das Konzept N. <anchor xml:id="explicatiosoni_difuvg-1"/><ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi> nimmt in der Überschrift <hi rendition="#i">Explicatio Soni et auditus ex epistola ad amicum hyeme superiori scripta</hi> offenbar auf Leibnizens Brief an Schelhammer vom 13. (23.) Januar 1682 Bezug. Die Angabe <hi rendition="#i">hyeme superiori</hi> legt nahe, dass das Konzept frühestens im Frühjahr 1682 und spätestens im Winter 1682/1683 angefertigt wurde, jedenfalls bevor es vom Sekretär J. D. Brandshagen<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Brandshagen</hi> <hi rendition="#smaller">(Brondhaguen), Jobst Dietrich 1659–nach 1716</hi></term>
-						</index> abgeschrieben wurde. In seinem Brief vom 28. April 1682 an C. Pfautz,<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Pfautz</hi> <hi rendition="#smaller">(Pfauzius), Christoph 1645–1711</hi></term>
-						</index> Mitherausgeber der <hi rendition="#i">Acta eruditorum</hi>, bezieht sich Leibniz wohl auf das Konzept N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi>, als er mit Blick auf eine mögliche Veröffentlichung berichtet, bei sich eine <hi rendition="#i">dissertatiuncula</hi> zu haben, die gut zwei Bogen umfasse und zum ersten Mal die Entstehung des Schalls <hi rendition="#i">plane mechanice</hi> erkläre (<ref corresp="#bib_01281"/><hi rendition="#i">LSB</hi> III, 3 N. 345, S. 596.20–597.2). Daher ist anzunehmen, dass Ende April 1682 das Konzept N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">1</hi></hi> gerade entstanden oder in Entstehung war.<anchor xml:id="explicatiosoni_difuvg-2"/></hi></p>
-					<p xml:id="Ch12.p10"><hi rendition="#smaller">Brandshagens Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi>, die auf dem Konzept <hi rendition="#i">L<hi rendition="#sup">1</hi></hi> beruht, hat Leibniz mit der neuen Überschrift <hi rendition="#i">Cogitationes novae, quomodo formetur sonus, et per aerem propagetur, atque in organo auditus exprimatur</hi> versehen und vornehmlich im Schlussteil überarbeitet (Textschicht <hi rendition="#i">Lil</hi>). Da sich Brandshagen<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Brandshagen</hi> <hi rendition="#smaller">(Brondhaguen), Jobst Dietrich 1659–nach 1716</hi></term>
-						</index> aber vom Spätherbst 1681 bis zum September 1683 in Kopenhagen aufhielt, wurde die Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> frühestens im Herbst 1683 und spätestens vor ihrer Überarbeitung durch Leibniz abgefasst, welche nicht vor Mitte Juni 1684 begonnen haben dürfte (siehe unten). Dies wird ferner von einem der in den Textträgern von N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> vorliegenden <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=14">Wasserzeichen</ref> bestätigt, das im Leibniz-Nachlass nach heutigem Wissensstand nur für die Jahre 1683 und 1684 belegt ist.</hi></p>
-					<p xml:id="Ch12.p11"><hi rendition="#smaller">Um die überarbeitete Fassung der Reinschrift N. <anchor xml:id="MariottesTod_dafjh-1"/><ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> (Textschicht <hi rendition="#i">Lil</hi>) zu datieren, erweist sich einerseits als ausschlaggebend, dass Leibniz in der neuen Schlusspassage (S. <ref corresp="L_section_123.xml#LH_37_01_008v_MT-1"/>) Mariottes<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Mariotte</hi><hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi></term>
-						</index> Tod (12. Mai 1684) erwähnt. Hiervon hat er vermutlich erst nach Mitte Juni 1684 durch die an ihn gerichteten Briefe von C. Brosseau<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Brosseau</hi><hi rendition="#smaller">, Christophe 1630–1717</hi></term>
-						</index> und N. Douceur<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Douceur</hi><hi rendition="#smaller">, Noel</hi></term>
-						</index> erfahren (<hi rendition="#i">LSB</hi> <ref corresp="#bib_01245"/>I, 4 N. 381, S. 468.4; <ref corresp="#bib_01246"/>III, 4 N. 56, S. 119.2); er selbst weist auf Mariottes Tod erstmals in seinen Briefen an J.-B. Du Hamel<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Du Hamel</hi><hi rendition="#smaller">, Jean-Baptiste 1624–1706</hi></term>
-						</index> und Brosseau vom 11. (21.) Juli 1684 hin (<hi rendition="#i">LSB</hi> <ref corresp="#bib_01282"/>III, 4 N. 62, S. 130.12; <ref corresp="#bib_01283"/>I, 4 N. 390, S. 475.4–6). Demnach dürfte die Überarbeitung von N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> (Textschicht <hi rendition="#i">Lil</hi>) nicht vor der zweiten Hälfte Juni 1684 begonnen haben. Andererseits kann sie aber nicht vor der Anfertigung des Teilkonzeptes N. <anchor xml:id="MariottesTod_dafjh-2"/><ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">2</hi></hi> abgeschlossen worden sein, das weder vor März 1685 noch viel später als Mitte April desselben Jahres entstanden sein dürfte (siehe unten).</hi></p>
-					<p xml:id="Ch12.p12"><hi rendition="#smaller">Diese Feststellung ermöglicht ferner die Datierung der Stücke N. <ref corresp="L_section_124.xml#N.12.4"/> und N. <ref corresp="L_section_125.xml#N.12.5"/>, d.h. der Auszüge aus Schelhammers<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Schelhammer</hi> <hi rendition="#smaller">(Schelhammerus), Günther Christoph 1649–1716</hi></term>
-						</index> Abhandlung <hi rendition="#i">De auditu</hi><ref corresp="#bib_01204"/> und Duverneys<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Duverney</hi> <hi rendition="#smaller">(Duvernejus, Duvernaeus), Joseph-Guichard 1648–1730</hi></term>
-						</index> <hi rendition="#i">Tractatus de organo auditus</hi>.<ref corresp="#bib_01203"/> Leibniz hat diese Auszüge bei seiner Überarbeitung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> (Textschicht <hi rendition="#i">Lil</hi>) mit einbezogen. Hierüber gilt es Folgendes zu bemerken:</hi></p>
-					<p xml:id="Ch12.p13"><hi rendition="#smaller">Bei den in N. <ref corresp="L_section_124.xml#N.12.4"/> edierten Auszügen aus Schelhammers <hi rendition="#i">De auditu</hi><ref corresp="#bib_01204"/> (Leiden 1684) geht es vorwiegend um die von G. Fracastoro<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Fracastoro</hi> <hi rendition="#smaller">(Fracastorius), Girolamo 1478–1553</hi></term>
-						</index> in <hi rendition="#i">De sympathia</hi><ref corresp="#bib_01215"/> (Venedig 1546) abgegebene Erklärung der Schallausbreitung sowie um den in Helmstedt durchgeführten Versuch zum „Paradoxon” der gleichförmigen Schallgeschwindigkeit. Leibniz schreibt am 6. (16.) Mai 1684 an F. Schrader,<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Schrader</hi><hi rendition="#smaller">, Friedrich 1657–1704</hi></term>
-						</index> Schelhammers Buch „gesehen” zu haben, und geht auf eben beide Themen, die Gegenstand der Auszüge sind, ein (<hi rendition="#i">LSB</hi> III, 4 N. 55,<ref corresp="#bib_01224"/> S. 116.5–16; 117.5–17). Leibniz verweist auf Schelhammers Buch ferner in der überarbeiteten Fassung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> (Textschicht <hi rendition="#i">Lil</hi>) und nimmt dort auf die in N. <ref corresp="L_section_124.xml#N.12.4"/> exzerpierten Stellen erneut Bezug (S. <ref corresp="L_section_123.xml#LH_37_01_007v_w1"/>; <ref corresp="L_section_123.xml#LH_37_01_007v_y1"/>). Im überarbeiteten Schlussteil der Reinschrift erwähnt er das Erscheinen von Schelhammers Buch ausdrücklich, jedoch nicht als unmittelbar vorausgegangenes Ereignis (S. <ref corresp="L_section_123.xml#LH_37_01_008v_novissime-1"/>). Aus diesen Eckdaten lässt sich schließen, dass N. <ref corresp="L_section_124.xml#N.12.4"/> wahrscheinlich kurz vor dem Brief an Schrader, d.h. im Frühjahr 1684, verfasst wurde, jedenfalls nicht nach der Überarbeitung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi>, d.h. spätestens in der ersten Hälfte 1685.</hi></p>
-					<p xml:id="Ch12.p14"><hi rendition="#smaller">Die in N. <ref corresp="L_section_125.xml#N.12.5"/> edierten Auszüge sind der lateinischen Übersetzung von Duverneys<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Duverney</hi> <hi rendition="#smaller">(Duvernejus, Duvernaeus), Joseph-Guichard 1648–1730</hi></term>
-						</index> Abhandlung über das Gehörorgan (<ref corresp="#bib_01203"/><hi rendition="#i">Tractatus de organo auditus</hi>, Nürnberg 1684) entnommen. Von diesen Auszügen rührte zunächst das Teilkonzept N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">2</hi></hi> her, das Leibniz dann als Vorlage für die Überarbeitung eines umfangreichen Textabschnitts im Schlussteil der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> verwendet hat (S. <ref corresp="L_section_123.xml#LH_37_01_008v_g-1"/>, Textschicht <hi rendition="#i">Lil</hi>). Er selbst räumt im neuen Schlussteil ein, viel von Duverneys Ausführungen profitiert zu haben (S. <ref corresp="L_section_123.xml#LH_37_01_008v_profeci-1"/>, <hi rendition="#i">Lil</hi>). Die Auszüge aus Duverneys Buch müssen folglich zu dem Zeitpunkt vorgelegen haben, als Leibniz das Teilkonzept N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">2</hi></hi> verfasst hat, d.h. frühestens im März 1685 und nicht viel später als Mitte April desselben Jahres (siehe unten). Dem 1684 veröffentlichten Katalog der Leipziger und Frankfurter Buchmessen entnimmt man ferner, dass die lateinische Fassung von Duverneys Abhandlung über das Gehörorgan zwar bereits (bei ungenauer Angabe des Titels) auf der Ostermesse angekündigt, erst aber auf der Michaelismesse aufgestellt wurde (vgl. <hi rendition="#i">Catalogus universalis</hi>, Osterheft, S. E3 r<hi rendition="#sup">o</hi>; Herbstheft, S. A4 v<hi rendition="#sup">o</hi>).<ref corresp="#bib_01244"/> Daher ist auszuschließen, dass sie vor dem Osterfest (30. März bzw. 2. April) 1684 erschienen war. Die Auszüge aus Duverneys Buch sind demnach zwischen April 1684 und Mitte April 1685 zu datieren. Da Leibniz ferner im überarbeiteten Schlussteil der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> auf Duverneys Abhandlung als <hi rendition="#i">novissime</hi> erschienen anspielt (S. <ref corresp="L_section_123.xml#LH_37_01_008v_novissime-1"/>, <hi rendition="#i">Lil</hi>), ist zwischen dem Entstehen von N. <ref corresp="L_section_125.xml#N.12.5"/> und der Überarbeitung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> kein weiterer Zeitabstand anzunehmen.</hi></p>
-					<p xml:id="Ch12.p15"><hi rendition="#smaller">Die Datierung des Teilkonzeptes N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">2</hi></hi>, welches auf den Auszügen N. <ref corresp="L_section_125.xml#N.12.5"/> beruht und als unmittelbare Vorlage eines umfangreichen Abschnitts des überarbeiteten Schlussteils der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> (S. <ref corresp="L_section_123.xml#LH_37_01_008v_g-1"/>, Textschicht <hi rendition="#i">Lil</hi>) gedient hat, lässt sich unter Berücksichtigung folgender Umstände bestimmen. Das Teilkonzept ist auf einem Umschlag überliefert, der die Anschrift von J. F. Leibnizens Hand trägt.<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Leibniz</hi> <hi rendition="#smaller">(Leibnütz), Johann Friedrich 1632–1696</hi></term>
-						</index> Den dazugehörigen Brief an G. W. Leibniz dürfte sein Halbbruder zwischen dem 28. Februar (10. März) und dem 8. (18.) April 1685 gesendet haben (<hi rendition="#i">LSB</hi> I, 4 N. 573;<ref corresp="#bib_01319"/> 574;<ref corresp="#bib_01320"/> 577<ref corresp="#bib_01321"/>). Auf demselben Umschlag liegen neben dem Teilkonzept N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">2</hi></hi> auch Hilfsrechnungen von G. W. Leibnizens Hand vor, welche in unmittelbarem Zusammenhang mit einem Brief stehen, den G. W. Leibniz am 14. (24.) April 1685 an den Rechtsanwalt Q. F. S. Rivinus<index indexName="Personen">
-						<term><hi rendition="#g #smaller">Rivinus</hi><hi rendition="#smaller">, Quintus Septimius Florens 1651–1713</hi></term>
-						</index> gesendet hat (<hi rendition="#i">LSB</hi> I, 4 N. 581<ref corresp="#bib_01322"/>). Hieraus lässt sich schließen, dass das Teilkonzept N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">L<hi rendition="#sup">2</hi></hi> höchstwahrscheinlich weder vor März 1685 noch viel später als Mitte April desselben Jahres verfasst wurde. Auch die gesamte Überarbeitung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>, <hi rendition="#i">l</hi> kann folglich nicht vor dieser Zeitspanne abgeschlossen worden sein.</hi></p>
-					<p xml:id="Ch12.p16"><hi rendition="#smaller">Das Gesamtstück N. <ref corresp="#N.12"/> ist demzufolge in einer Zeitspanne entstanden, die sich von der zweiten Augusthälfte 1681 bis zur ersten Hälfte 1685 erstreckt. Aus welchem Grund die <hi rendition="#i">dissertatiuncula</hi> N. <ref corresp="L_section_123.xml#N.12.3"/> nach der in der zweiten Hälfte 1684 oder der ersten Hälfte 1685 durchgeführten Überarbeitung nicht zur beabsichtigten Veröffentlichung gelangte, ist nicht bekannt. Aufgrund der in N. <ref corresp="#N.12"/> behandelten Thematik wird dem Gesamtstück die redaktionelle Überschrift <hi rendition="#i">Cogitationes novae de sono</hi> zugewiesen.</hi></p>
-				</div>
-				
-				
-				
-				
-				
-			</div>
-		</body>
-	</text>
+					<p xml:id="Ch12.p1">
+						<anchor xml:id="cnds_0"/>
+						<anchor xml:id="N.12"/>
+						<!--  \hackfor{\par} --></p>
+					<p rendition="#noindent" xml:id="Ch12.p2">
+						<anchor xml:id="cogitationesnovae-intro"/>
+						<hi rendition="#smaller">Bei den folgenden Stücken N. <ref corresp="L_section_121.xml#N.12.1"/>
+ bis <ref corresp="L_section_125.xml#N.12.5"/>
+ handelt es sich um Texte, die sowohl ihrem Inhalt wie ihrer Entstehung nach eng miteinander zusammenhängen. Obwohl sie von Leibniz nicht datiert wurden, lässt sich ihre Reihenfolge und Entstehungszeit anhand des Briefwechsels genau bestimmen.</hi>
+				</p>
+				<p xml:id="Ch12.p3">
+					<hi rendition="#smaller">Der Helmstedter Medizinprofessor G. C. Schelhammer<index indexName="Personen">
+						<term>
+							<hi rendition="#g #smaller">Schelhammer</hi>
+							<hi rendition="#smaller">(Schelhammerus), Günther Christoph 1649–1716</hi>
+						</term>
+					</index> kündigte in seinem Brief an Leibniz vom 8. (18.) November 1680 eine <hi rendition="#i">auditus explicationem plane novam</hi> an (<ref corresp="#bib_01279"/>
+				<hi rendition="#i">LSB</hi> III, 3 N. 124, S. 286.17–18), womit er offenbar seine (erst 1684 erschienene) Abhandlung <ref corresp="#bib_01204"/>
+			<hi rendition="#i">De auditu</hi> meinte. In seiner Antwort vom 6. (16.) Dezember 1680 erwähnte Leibniz angebliche ältere Aufzeichnungen <hi rendition="#i">de modo, quo fit sonus ac propagatur</hi> (nicht ermittelt; siehe aber die Datierungsbegründung von N. <ref corresp="L_chapter_1.xml#N.1"/>
+), und behauptete zudem, die Gesetze der Schwingungen <hi rendition="#i">ex intima Geometria</hi> ergründet zu haben (<ref corresp="#bib_01275"/>
+	<hi rendition="#i">LSB</hi> III, 3 N. 139, S. 305.3–5), womit er wohl auf N. <ref corresp="L_chapter_9.xml#N.9"/>
+ anspielte. In seiner Entgegnung vom 31. Dezember 1680 (10. Januar 1681) äußerte Schelhammer den Wunsch, mehr von Leibnizens Überlegungen zu erfahren (<ref corresp="#bib_01280"/>
+<hi rendition="#i">LSB</hi> III, 3 N. 153, S. 318.19–21). Die Antwort an Schelhammer von Februar/März 1681 überliefert Leibnizens erste (erhaltene) ausführliche Darstellung, wie der Schall aus vibrierenden elastischen Körpern entstehe, sich in die Luft als elastisches Fluidum ausbreite und ins Ohr aufgenommen werde (<ref corresp="#bib_01194"/>
+<hi rendition="#i">LSB</hi> III, 3 N. 182, S. 355–361). Die Texte N. <ref corresp="L_section_121.xml#N.12.1"/>
+,<ref corresp="L_section_122.xml#N.12.2"/>
+ und <ref corresp="L_section_123.xml#N.12.3"/>
+ knüpfen sämtlich an diese Darstellung an. Schelhammer drückte in seiner weiteren Entgegnung vom 13. (23.) April 1681 Zustimmung und Tadel aus: Unter anderem hielt er fest, dass selbst ein unelastischer Körper wie etwa ein Kissen, geschlagen, einen Klang erzeuge (<ref corresp="#bib_01200"/>
+<hi rendition="#i">LSB</hi> III, 3 N. 206, S. 395.13–396.5). Leibniz erhielt Schelhammers Brief erst am 4. (14.) August 1681 und erwiderte auf den Einwand in einer Randbemerkung (ebd., S. 396.12–14). Dieselbe Erwiderung findet sich dann in N. <ref corresp="L_section_121.xml#N.12.1"/>
+,<ref corresp="L_section_122.xml#N.12.2"/>
+ und <ref corresp="L_section_123.xml#N.12.3"/>
+ (S. <ref corresp="L_section_121.xml#LH_37_01_018r_Schelh-1"/>
+;<ref corresp="L_section_122.xml#LH_37_01_020r_culcitra-1"/>
+;<ref corresp="L_section_123.xml#LH_37_01_004r_culcitra-1"/>
+) wieder. Die zweite Hälfte August 1681 ist daher als Terminus post quem der Gesamtdatierung von N. <ref corresp="#N.12"/>
+ anzusehen.</hi>
+</p>
+<p xml:id="Ch12.p4">
+<hi rendition="#smaller">Schon im März/April 1681 hatte E. Mariotte<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index> an Leibniz von seinem Vortrag <hi rendition="#i">sur l’usage des organes de l’ouye</hi> an der Pariser Akademie<index indexName="Sachen">
+<term>
+<hi rendition="#smaller">Académie Royale des Sciences</hi>
+</term>
+</index> geschrieben (<ref corresp="#bib_01209"/>
+<hi rendition="#i">LSB</hi> III, 3 N. 193, S. 375.1–14). Die von Mariotte mitgeteilten Einzelheiten über die Anatomie des Ohres ergänzten nun die Darstellung akustischer Phänomene, die Leibniz kurz davor an Schelhammer<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Schelhammer</hi>
+<hi rendition="#smaller">(Schelhammerus), Günther Christoph 1649–1716</hi>
+</term>
+</index> gesendet hatte. Am 8. August 1681 berichtete Mariotte ferner über einen vom Arzt J.-G. Duverney<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Duverney</hi>
+<hi rendition="#smaller">(Duvernejus, Duvernaeus), Joseph-Guichard 1648–1730</hi>
+</term>
+</index> an der Pariser Akademie gehaltenen Vortrag zur Anatomie des Ohres (<ref corresp="#bib_01210"/>
+<hi rendition="#i">LSB</hi> III, 3 N. 262, S. 464.7-18), woraus Duverneys Abhandlung <hi rendition="#i">De l’organe de l’ouie</hi> (1683) entstehen sollte.<ref corresp="#bib_01202"/>
+ In der zweiten Hälfte August 1681 fasste Leibniz für Mariotte seine Ansichten über Entstehung, Übertragung und Aufnahme des Schalls zusammen, wobei er auch auf Schelhammers „Kissen”-Einwand einging (<ref corresp="#bib_01193"/>
+<hi rendition="#i">LSB</hi> III, 3 N. 269, bes. S. 479.16–20). Mariotte teilte Leibniz am 29. November 1681 seinen Beifall mit (<ref corresp="#bib_01222"/>
+<hi rendition="#i">LSB</hi> III, 3 N. 297, S. 518.14-519.1).</hi>
+</p>
+<p xml:id="Ch12.p5">
+<hi rendition="#smaller">Vor dem Jahresende verfasste Leibniz noch eine ausführliche Antwort auf Schelhammers Brief vom 13. (23.) April, in der er auf sämtliche Einwände des Helmstedter Professors einging (<ref corresp="#bib_01195"/>
+<hi rendition="#i">LSB</hi> III, 3 N. 311, <hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi>). Der Tod von Schelhammers Schwiegervater H. Conring<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Conring</hi>
+<hi rendition="#smaller">, Hermann 1606–1681</hi>
+</term>
+</index> am 22. Dezember 1681 veranlasste Leibniz jedoch dazu, diese erste Fassung seiner Antwort durch eine zweite, kürzere und weniger detaillierte (ebd., <hi rendition="#i">L<hi rendition="#sup">2</hi>
+</hi>) zu ersetzen, die am 13. (23.) Januar 1682 auch versendet wurde.</hi>
+</p>
+<p xml:id="Ch12.p6">
+<hi rendition="#smaller">Auf die von Leibniz 1681 verfassten Briefe an Schelhammer<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Schelhammer</hi>
+<hi rendition="#smaller">(Schelhammerus), Günther Christoph 1649–1716</hi>
+</term>
+</index> und Mariotte<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index> bezieht sich das Konzept N. <ref corresp="L_section_121.xml#N.12.1"/>
+ in seiner Überschrift ausdrücklich: <hi rendition="#i">De soni generatione, propagatione et expressione in organo, Mechanice explicatis; excerpta ex Epistolis G.G.L. ad viros quosdam clarissimos, qui in Germania Galliaque idem argumentum versant</hi>. Gemeint sind damit zweifelsohne die Briefe an Schelhammer von Februar/März (<hi rendition="#i">LSB</hi> III, 3 N. 182) und an Mariotte von der zweiten Hälfte August (ebd. N. 269). Dabei</hi>
+</p>
+<p rendition="#noindent" xml:id="Ch12.p7">
+<hi rendition="#smaller">könnte N. <ref corresp="L_section_121.xml#N.12.1"/>
+ älter sein als die erste Fassung des Briefes an Schelhammer vom Januar 1682 (<hi rendition="#i">LSB</hi> III, 3 N. 311, <hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi>), in der Leibniz den Ausdruck <hi rendition="#i">sonus clappans</hi> als Bezeichnung für einen zu hohen, stumpfen Klang verwendet (ebd. N. 311, <hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi>, S. 547.22–25); ähnlich äußert er sich im späteren Text N. <ref corresp="L_section_123.xml#N.12.3"/>
+ (S. <ref corresp="L_section_123.xml#LH_37_01_006v_clappans-1"/>
+), nicht aber in N. <ref corresp="L_section_121.xml#N.12.1"/>
+ oder <ref corresp="L_section_122.xml#N.12.2"/>
+. Daher dürfte N. <ref corresp="L_section_121.xml#N.12.1"/>
+ zwischen der zweiten Hälfte August und dem Jahresende 1681 als Überarbeitung der in den erwähnten Briefen dargestellten Inhalte entstanden sein. Da das Phänomen des <hi rendition="#i">sonus atonus</hi> aber bereits im Brief an Mariotte<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index> aus der zweiten Hälfte August 1681 geschildert wird (jedoch ohne die Bezeichnung <hi rendition="#i">sonus clappans</hi>:<hi rendition="#i">LSB</hi>
+<ref corresp="#bib_01193"/>
+III, 3 N. 269, S. 480.2–6), ist nicht auszuschließen, dass N. <ref corresp="L_section_121.xml#N.12.1"/>
+ doch nach Leibnizens Brief an Schelhammer N. 311 verfasst wurde, d.h. im Laufe des Jahres 1682, jedenfalls aber vor dem Konzept N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi>.
+</hi>
+</p>
+<p xml:id="Ch12.p8">
+<hi rendition="#smaller">Das titellose Konzept N. <ref corresp="L_section_122.xml#N.12.2"/>
+, dem editorisch die Überschrift <hi rendition="#i">Explicatio mechanica soni</hi> zugewiesen wird, ist wohl im selben Zeitraum wie N. <ref corresp="L_section_121.xml#N.12.1"/>
+, aber der Reihe nach als zweites entstanden. Denn obschon N. <ref corresp="L_section_122.xml#N.12.2"/>
+ im Anfangsteil einen stichwortartigen Charakter aufweist und insgesamt weniger ausführlich als N. <ref corresp="L_section_121.xml#N.12.1"/>
+ ist, wird in N. <ref corresp="L_section_122.xml#N.12.2"/>
+ eine größere Anzahl an Einzelheiten berücksichtigt, die später in N. <ref corresp="L_section_123.xml#N.12.3"/>
+ Eingang finden; unberührt bleibt in N. <ref corresp="L_section_122.xml#N.12.2"/>
+ allerdings (wie in N. <ref corresp="L_section_121.xml#N.12.1"/>
+) das dritte und letzte in N. <ref corresp="L_section_123.xml#N.12.3"/>
+ behandelte Thema, nämlich die Aufnahme des Schalls ins innere Ohr. Ferner sind in N. <ref corresp="L_section_122.xml#N.12.2"/>
+ Quellen erwähnt, die in N. <ref corresp="L_section_123.xml#N.12.3"/>
+ besprochen werden, in N. <ref corresp="L_section_121.xml#N.12.1"/>
+ hingegen unbenannt bleiben: etwa Otto von Guerickes <index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Guericke</hi>
+<hi rendition="#smaller">(Gerickius, Gerick.), Otto von 1602–1686</hi>
+</term>
+</index>
+<hi rendition="#i">Experimenta nova</hi> (Amsterdam 1672).<ref corresp="#bib_00055"/>
+ Somit ist N. <ref corresp="L_section_122.xml#N.12.2"/>
+ wahrscheinlich erst nach N. <ref corresp="L_section_121.xml#N.12.1"/>
+ entstanden und kann – nebst N. <ref corresp="L_section_121.xml#N.12.1"/>
+ – als unvollständiger Entwurf zu N. <ref corresp="L_section_123.xml#N.12.3"/>
+ betrachtet werden.</hi>
+</p>
+<p xml:id="Ch12.p9">
+<hi rendition="#smaller">Das Konzept N. <anchor xml:id="explicatiosoni_difuvg-1"/>
+<ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi> nimmt in der Überschrift <hi rendition="#i">Explicatio Soni et auditus ex epistola ad amicum hyeme superiori scripta</hi> offenbar auf Leibnizens Brief an Schelhammer vom 13. (23.) Januar 1682 Bezug. Die Angabe <hi rendition="#i">hyeme superiori</hi> legt nahe, dass das Konzept frühestens im Frühjahr 1682 und spätestens im Winter 1682/1683 angefertigt wurde, jedenfalls bevor es vom Sekretär J. D. Brandshagen<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Brandshagen</hi>
+<hi rendition="#smaller">(Brondhaguen), Jobst Dietrich 1659–nach 1716</hi>
+</term>
+</index> abgeschrieben wurde. In seinem Brief vom 28. April 1682 an C. Pfautz,<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Pfautz</hi>
+<hi rendition="#smaller">(Pfauzius), Christoph 1645–1711</hi>
+</term>
+</index> Mitherausgeber der <hi rendition="#i">Acta eruditorum</hi>, bezieht sich Leibniz wohl auf das Konzept N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi>, als er mit Blick auf eine mögliche Veröffentlichung berichtet, bei sich eine <hi rendition="#i">dissertatiuncula</hi> zu haben, die gut zwei Bogen umfasse und zum ersten Mal die Entstehung des Schalls <hi rendition="#i">plane mechanice</hi> erkläre (<ref corresp="#bib_01281"/>
+<hi rendition="#i">LSB</hi> III, 3 N. 345, S. 596.20–597.2). Daher ist anzunehmen, dass Ende April 1682 das Konzept N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi> gerade entstanden oder in Entstehung war.<anchor xml:id="explicatiosoni_difuvg-2"/>
+</hi>
+</p>
+<p xml:id="Ch12.p10">
+<hi rendition="#smaller">Brandshagens Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi>, die auf dem Konzept <hi rendition="#i">L<hi rendition="#sup">1</hi>
+</hi> beruht, hat Leibniz mit der neuen Überschrift <hi rendition="#i">Cogitationes novae, quomodo formetur sonus, et per aerem propagetur, atque in organo auditus exprimatur</hi> versehen und vornehmlich im Schlussteil überarbeitet (Textschicht <hi rendition="#i">Lil</hi>). Da sich Brandshagen<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Brandshagen</hi>
+<hi rendition="#smaller">(Brondhaguen), Jobst Dietrich 1659–nach 1716</hi>
+</term>
+</index> aber vom Spätherbst 1681 bis zum September 1683 in Kopenhagen aufhielt, wurde die Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> frühestens im Herbst 1683 und spätestens vor ihrer Überarbeitung durch Leibniz abgefasst, welche nicht vor Mitte Juni 1684 begonnen haben dürfte (siehe unten). Dies wird ferner von einem der in den Textträgern von N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> vorliegenden <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=14">Wasserzeichen</ref> bestätigt, das im Leibniz-Nachlass nach heutigem Wissensstand nur für die Jahre 1683 und 1684 belegt ist.</hi>
+</p>
+<p xml:id="Ch12.p11">
+<hi rendition="#smaller">Um die überarbeitete Fassung der Reinschrift N. <anchor xml:id="MariottesTod_dafjh-1"/>
+<ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> (Textschicht <hi rendition="#i">Lil</hi>) zu datieren, erweist sich einerseits als ausschlaggebend, dass Leibniz in der neuen Schlusspassage (S. <ref corresp="L_section_123.xml#LH_37_01_008v_MT-1"/>
+) Mariottes<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Mariotte</hi>
+<hi rendition="#smaller">, Edme, Seigneur de Chazeuil ca. 1620–1684</hi>
+</term>
+</index> Tod (12. Mai 1684) erwähnt. Hiervon hat er vermutlich erst nach Mitte Juni 1684 durch die an ihn gerichteten Briefe von C. Brosseau<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Brosseau</hi>
+<hi rendition="#smaller">, Christophe 1630–1717</hi>
+</term>
+</index> und N. Douceur<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Douceur</hi>
+<hi rendition="#smaller">, Noel</hi>
+</term>
+</index> erfahren (<hi rendition="#i">LSB</hi>
+<ref corresp="#bib_01245"/>
+I, 4 N. 381, S. 468.4; <ref corresp="#bib_01246"/>
+III, 4 N. 56, S. 119.2); er selbst weist auf Mariottes Tod erstmals in seinen Briefen an J.-B. Du Hamel<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Du Hamel</hi>
+<hi rendition="#smaller">, Jean-Baptiste 1624–1706</hi>
+</term>
+</index> und Brosseau vom 11. (21.) Juli 1684 hin (<hi rendition="#i">LSB</hi>
+<ref corresp="#bib_01282"/>
+III, 4 N. 62, S. 130.12; <ref corresp="#bib_01283"/>
+I, 4 N. 390, S. 475.4–6). Demnach dürfte die Überarbeitung von N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> (Textschicht <hi rendition="#i">Lil</hi>) nicht vor der zweiten Hälfte Juni 1684 begonnen haben. Andererseits kann sie aber nicht vor der Anfertigung des Teilkonzeptes N. <anchor xml:id="MariottesTod_dafjh-2"/>
+<ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">2</hi>
+</hi> abgeschlossen worden sein, das weder vor März 1685 noch viel später als Mitte April desselben Jahres entstanden sein dürfte (siehe unten).</hi>
+</p>
+<p xml:id="Ch12.p12">
+<hi rendition="#smaller">Diese Feststellung ermöglicht ferner die Datierung der Stücke N. <ref corresp="L_section_124.xml#N.12.4"/>
+ und N. <ref corresp="L_section_125.xml#N.12.5"/>
+, d.h. der Auszüge aus Schelhammers<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Schelhammer</hi>
+<hi rendition="#smaller">(Schelhammerus), Günther Christoph 1649–1716</hi>
+</term>
+</index> Abhandlung <hi rendition="#i">De auditu</hi>
+<ref corresp="#bib_01204"/>
+ und Duverneys<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Duverney</hi>
+<hi rendition="#smaller">(Duvernejus, Duvernaeus), Joseph-Guichard 1648–1730</hi>
+</term>
+</index>
+<hi rendition="#i">Tractatus de organo auditus</hi>.<ref corresp="#bib_01203"/>
+ Leibniz hat diese Auszüge bei seiner Überarbeitung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> (Textschicht <hi rendition="#i">Lil</hi>) mit einbezogen. Hierüber gilt es Folgendes zu bemerken:</hi>
+</p>
+<p xml:id="Ch12.p13">
+<hi rendition="#smaller">Bei den in N. <ref corresp="L_section_124.xml#N.12.4"/>
+ edierten Auszügen aus Schelhammers <hi rendition="#i">De auditu</hi>
+<ref corresp="#bib_01204"/>
+ (Leiden 1684) geht es vorwiegend um die von G. Fracastoro<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Fracastoro</hi>
+<hi rendition="#smaller">(Fracastorius), Girolamo 1478–1553</hi>
+</term>
+</index> in <hi rendition="#i">De sympathia</hi>
+<ref corresp="#bib_01215"/>
+ (Venedig 1546) abgegebene Erklärung der Schallausbreitung sowie um den in Helmstedt durchgeführten Versuch zum „Paradoxon” der gleichförmigen Schallgeschwindigkeit. Leibniz schreibt am 6. (16.) Mai 1684 an F. Schrader,<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Schrader</hi>
+<hi rendition="#smaller">, Friedrich 1657–1704</hi>
+</term>
+</index> Schelhammers Buch „gesehen” zu haben, und geht auf eben beide Themen, die Gegenstand der Auszüge sind, ein (<hi rendition="#i">LSB</hi> III, 4 N. 55,<ref corresp="#bib_01224"/>
+ S. 116.5–16; 117.5–17). Leibniz verweist auf Schelhammers Buch ferner in der überarbeiteten Fassung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> (Textschicht <hi rendition="#i">Lil</hi>) und nimmt dort auf die in N. <ref corresp="L_section_124.xml#N.12.4"/>
+ exzerpierten Stellen erneut Bezug (S. <ref corresp="L_section_123.xml#LH_37_01_007v_w1"/>
+;<ref corresp="L_section_123.xml#LH_37_01_007v_y1"/>
+). Im überarbeiteten Schlussteil der Reinschrift erwähnt er das Erscheinen von Schelhammers Buch ausdrücklich, jedoch nicht als unmittelbar vorausgegangenes Ereignis (S. <ref corresp="L_section_123.xml#LH_37_01_008v_novissime-1"/>
+). Aus diesen Eckdaten lässt sich schließen, dass N. <ref corresp="L_section_124.xml#N.12.4"/>
+ wahrscheinlich kurz vor dem Brief an Schrader, d.h. im Frühjahr 1684, verfasst wurde, jedenfalls nicht nach der Überarbeitung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi>, d.h. spätestens in der ersten Hälfte 1685.</hi>
+</p>
+<p xml:id="Ch12.p14">
+<hi rendition="#smaller">Die in N. <ref corresp="L_section_125.xml#N.12.5"/>
+ edierten Auszüge sind der lateinischen Übersetzung von Duverneys<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Duverney</hi>
+<hi rendition="#smaller">(Duvernejus, Duvernaeus), Joseph-Guichard 1648–1730</hi>
+</term>
+</index> Abhandlung über das Gehörorgan (<ref corresp="#bib_01203"/>
+<hi rendition="#i">Tractatus de organo auditus</hi>, Nürnberg 1684) entnommen. Von diesen Auszügen rührte zunächst das Teilkonzept N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">2</hi>
+</hi> her, das Leibniz dann als Vorlage für die Überarbeitung eines umfangreichen Textabschnitts im Schlussteil der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> verwendet hat (S. <ref corresp="L_section_123.xml#LH_37_01_008v_g-1"/>
+, Textschicht <hi rendition="#i">Lil</hi>). Er selbst räumt im neuen Schlussteil ein, viel von Duverneys Ausführungen profitiert zu haben (S. <ref corresp="L_section_123.xml#LH_37_01_008v_profeci-1"/>
+,<hi rendition="#i">Lil</hi>). Die Auszüge aus Duverneys Buch müssen folglich zu dem Zeitpunkt vorgelegen haben, als Leibniz das Teilkonzept N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">2</hi>
+</hi> verfasst hat, d.h. frühestens im März 1685 und nicht viel später als Mitte April desselben Jahres (siehe unten). Dem 1684 veröffentlichten Katalog der Leipziger und Frankfurter Buchmessen entnimmt man ferner, dass die lateinische Fassung von Duverneys Abhandlung über das Gehörorgan zwar bereits (bei ungenauer Angabe des Titels) auf der Ostermesse angekündigt, erst aber auf der Michaelismesse aufgestellt wurde (vgl. <hi rendition="#i">Catalogus universalis</hi>, Osterheft, S. E3 r<hi rendition="#sup">o</hi>; Herbstheft, S. A4 v<hi rendition="#sup">o</hi>).<ref corresp="#bib_01244"/>
+ Daher ist auszuschließen, dass sie vor dem Osterfest (30. März bzw. 2. April) 1684 erschienen war. Die Auszüge aus Duverneys Buch sind demnach zwischen April 1684 und Mitte April 1685 zu datieren. Da Leibniz ferner im überarbeiteten Schlussteil der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> auf Duverneys Abhandlung als <hi rendition="#i">novissime</hi> erschienen anspielt (S. <ref corresp="L_section_123.xml#LH_37_01_008v_novissime-1"/>
+,<hi rendition="#i">Lil</hi>), ist zwischen dem Entstehen von N. <ref corresp="L_section_125.xml#N.12.5"/>
+ und der Überarbeitung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> kein weiterer Zeitabstand anzunehmen.</hi>
+</p>
+<p xml:id="Ch12.p15">
+<hi rendition="#smaller">Die Datierung des Teilkonzeptes N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">2</hi>
+</hi>, welches auf den Auszügen N. <ref corresp="L_section_125.xml#N.12.5"/>
+ beruht und als unmittelbare Vorlage eines umfangreichen Abschnitts des überarbeiteten Schlussteils der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> (S. <ref corresp="L_section_123.xml#LH_37_01_008v_g-1"/>
+, Textschicht <hi rendition="#i">Lil</hi>) gedient hat, lässt sich unter Berücksichtigung folgender Umstände bestimmen. Das Teilkonzept ist auf einem Umschlag überliefert, der die Anschrift von J. F. Leibnizens Hand trägt.<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Leibniz</hi>
+<hi rendition="#smaller">(Leibnütz), Johann Friedrich 1632–1696</hi>
+</term>
+</index> Den dazugehörigen Brief an G. W. Leibniz dürfte sein Halbbruder zwischen dem 28. Februar (10. März) und dem 8. (18.) April 1685 gesendet haben (<hi rendition="#i">LSB</hi> I, 4 N. 573;<ref corresp="#bib_01319"/>
+ 574;<ref corresp="#bib_01320"/>
+ 577<ref corresp="#bib_01321"/>
+). Auf demselben Umschlag liegen neben dem Teilkonzept N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">2</hi>
+</hi> auch Hilfsrechnungen von G. W. Leibnizens Hand vor, welche in unmittelbarem Zusammenhang mit einem Brief stehen, den G. W. Leibniz am 14. (24.) April 1685 an den Rechtsanwalt Q. F. S. Rivinus<index indexName="Personen">
+<term>
+<hi rendition="#g #smaller">Rivinus</hi>
+<hi rendition="#smaller">, Quintus Septimius Florens 1651–1713</hi>
+</term>
+</index> gesendet hat (<hi rendition="#i">LSB</hi> I, 4 N. 581<ref corresp="#bib_01322"/>
+). Hieraus lässt sich schließen, dass das Teilkonzept N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">L<hi rendition="#sup">2</hi>
+</hi> höchstwahrscheinlich weder vor März 1685 noch viel später als Mitte April desselben Jahres verfasst wurde. Auch die gesamte Überarbeitung der Reinschrift N. <ref corresp="L_section_123.xml#N.12.3"/>
+,<hi rendition="#i">l</hi> kann folglich nicht vor dieser Zeitspanne abgeschlossen worden sein.</hi>
+</p>
+<p xml:id="Ch12.p16">
+<hi rendition="#smaller">Das Gesamtstück N. <ref corresp="#N.12"/>
+ ist demzufolge in einer Zeitspanne entstanden, die sich von der zweiten Augusthälfte 1681 bis zur ersten Hälfte 1685 erstreckt. Aus welchem Grund die <hi rendition="#i">dissertatiuncula</hi> N. <ref corresp="L_section_123.xml#N.12.3"/>
+ nach der in der zweiten Hälfte 1684 oder der ersten Hälfte 1685 durchgeführten Überarbeitung nicht zur beabsichtigten Veröffentlichung gelangte, ist nicht bekannt. Aufgrund der in N. <ref corresp="#N.12"/>
+ behandelten Thematik wird dem Gesamtstück die redaktionelle Überschrift <hi rendition="#i">Cogitationes novae de sono</hi> zugewiesen.</hi>
+</p>
+</div>
+
+
+
+
+
+</div>
+</body>
+</text>
 </TEI>

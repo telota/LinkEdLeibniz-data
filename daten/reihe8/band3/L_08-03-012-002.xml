@@ -1,42 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-012-002">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-03-012-002">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Explicatio Mechanica Soni</title>
 				<title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und Text</title>
 				<respStmt>
-					<orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Digitale Konzeption und Projektbegleitung</note></resp>
+					<persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
 				</respStmt>
 				<respStmt>
-					<orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-					<resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+					<persName>Sebastian W. Stork</persName>
+					<orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Martina</forename><surname>Gödel</surname></persName>
-					<resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe VIII</note></resp>
+					<persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
 				</respStmt>
 				<respStmt>
-					<persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-					<resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle Berlin</note></resp>
+					<persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+					<orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+					<resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+					<resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
 				<date type="creation">2022</date>
 				<availability>
-					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+					<licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+						<p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+					</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author> <persName ref="http://d-nb.info/gnd/118571249"> <surname>Leibniz</surname> <forename>Gottfried Wilhelm</forename> </persName> </author>
+						<author>
+							<persName ref="http://d-nb.info/gnd/118571249">
+								<surname>Leibniz</surname>
+								<forename>Gottfried Wilhelm</forename>
+							</persName>
+						</author>
 						<title type="chapter" level="a" n="12"/>
 						<title type="section" level="a" n="2">Explicatio Mechanica Soni</title>
 						<date calendar="#gregorian" notBefore="1681-08-15" resp="#ed" cert="medium"/>
 						<date calendar="#gregorian" notAfter="1682" resp="#ed" cert="medium"/>
-						<idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno><idno type="page">#page=139</idno></idno>
+						<idno type="PDF">
+							<idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_3.pdf</idno>
+							<idno type="page">#page=139</idno>
+						</idno>
 					</analytic>
 					<monogr>
 						<title type="main" level="s" n="8">Gottfried Wilhelm Leibniz. Reihe VIII: Naturwissenschaftliche, medizinische und technische Schriften</title>
@@ -48,39 +86,54 @@
 						</imprint>
 						<biblScope unit="page" from="105" to="111"/>
 					</monogr>
-					<series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title></series>
-					<relatedItem type="superordinated-chapter"><ptr target="#L_08-03-012-000"/></relatedItem></biblStruct>
+					<series>
+						<title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und Briefe</title>
+					</series>
+					<relatedItem type="superordinated-chapter">
+						<ptr target="#L_08-03-012-000"/>
+					</relatedItem>
+				</biblStruct>
 				<listWit>
-					<witness n="L" corresp="#L_08-03-012-002_facs-haupttextzeuge"><msDesc>
-						<msIdentifier>
-							<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-							<idno type="Signatur">LH XXXVII 1 Bl. 20–21</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-							<summary><p>Konzept: LH XXXVII 1 Bl. 20–21. Ein Bogen 2<hi rendition="#sup">o</hi>; ein Wasserzeichen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=60">Bl. 20</ref>. Vier jeweils zum Falz hin einspaltig beschriebene Seiten.</p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Handschrift"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc></witness>
-					<witness n="E"><msDesc>
-						<msIdentifier>
-							<collection>Leibniz-Bibliographie</collection>
-							<idno type="Laufende-Nummer">XXX</idno>
-						</msIdentifier>
-						<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-							<summary><p><hi rendition="#k">Gerland</hi> 1906, S. 27–31.<ref corresp="#bib_00197"/></p></summary>
-						</msContents>
-						<physDesc>
-							<objectDesc form="Druck"/>
-						</physDesc>
-						<history>
-							<origin corresp="L_witness-origin-types.xml#origin-L"/>
-						</history>
-						</msDesc></witness>
+					<witness n="L" corresp="#L_08-03-012-002_facs-haupttextzeuge">
+						<msDesc>
+							<msIdentifier>
+								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+								<idno type="Signatur">LH XXXVII 1 Bl. 20–21</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+								<summary>
+									<p>Konzept: LH XXXVII 1 Bl. 20–21. Ein Bogen 2<hi rendition="#sup">o</hi>; ein Wasserzeichen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=60">Bl. 20</ref>. Vier jeweils zum Falz hin einspaltig beschriebene Seiten.</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Handschrift"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
+					<witness n="E">
+						<msDesc>
+							<msIdentifier>
+								<collection>Leibniz-Bibliographie</collection>
+								<idno type="Laufende-Nummer">XXX</idno>
+							</msIdentifier>
+							<msContents corresp="L_witness-content-types.xml#konzept-entwurf">
+								<summary>
+									<p>
+										<hi rendition="#k">Gerland</hi> 1906, S. 27–31.<ref corresp="#bib_00197"/>
+									</p>
+								</summary>
+							</msContents>
+							<physDesc>
+								<objectDesc form="Druck"/>
+							</physDesc>
+							<history>
+								<origin corresp="L_witness-origin-types.xml#origin-L"/>
+							</history>
+						</msDesc>
+					</witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
@@ -205,1625 +258,2130 @@
 				<head>12<hi rendition="#sub">2</hi> EXPLICATIO MECHANICA SONI</head>
 				<head>[zweite Hälfte August 1681 – 1682]</head>
 				<div type="ueberlieferung">
-					<p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-						<witness><msDesc>
-							<msIdentifier>
-								<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
-								<idno type="Signatur">LH XXXVII 1 Bl. 20–21</idno>
-							</msIdentifier>
-							<msContents>
-								<summary><p>Konzept: LH XXXVII 1 Bl. 20–21. Ein Bogen 2<hi rendition="#sup">o</hi>; ein Wasserzeichen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=60">Bl. 20</ref>. Vier jeweils zum Falz hin einspaltig beschriebene Seiten.</p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Handschrift"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						<witness><msDesc>
-							<msIdentifier>
-								<collection>Leibniz-Bibliographie</collection>
-								<idno type="Laufende-Nummer">XXX</idno>
-							</msIdentifier>
-							<msContents>
-								<summary><p><hi rendition="#k">Gerland</hi> 1906, S. 27–31.<ref corresp="#bib_00197"/></p></summary>
-							</msContents>
-							<physDesc>
-								<objectDesc form="Druck"/>
-							</physDesc>
-							<history>
-								<origin/>
-							</history>
-							</msDesc></witness>
-						</listWit></p>
+					<p>
+						<hi rendition="#b #smaller">Überlieferung:</hi>
+						<listWit>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
+										<idno type="Signatur">LH XXXVII 1 Bl. 20–21</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>Konzept: LH XXXVII 1 Bl. 20–21. Ein Bogen 2<hi rendition="#sup">o</hi>; ein Wasserzeichen auf <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=60">Bl. 20</ref>. Vier jeweils zum Falz hin einspaltig beschriebene Seiten.</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Handschrift"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+							<witness>
+								<msDesc>
+									<msIdentifier>
+										<collection>Leibniz-Bibliographie</collection>
+										<idno type="Laufende-Nummer">XXX</idno>
+									</msIdentifier>
+									<msContents>
+										<summary>
+											<p>
+												<hi rendition="#k">Gerland</hi> 1906, S. 27–31.<ref corresp="#bib_00197"/>
+											</p>
+										</summary>
+									</msContents>
+									<physDesc>
+										<objectDesc form="Druck"/>
+									</physDesc>
+									<history>
+										<origin/>
+									</history>
+								</msDesc>
+							</witness>
+						</listWit>
+					</p>
 				</div>
-				
+
 				<div type="text">
-					<p rendition="#noindent" xml:id="Ch12.S2.p5"><ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=59"><pb type="L"/><fw type="folNum">[20 r<hi rendition="#sup">o</hi>]</fw></ref> Omne quod sonat tremit.</p>
+					<p rendition="#noindent" xml:id="Ch12.S2.p5">
+						<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=59">
+							<pb type="L"/>
+							<fw type="folNum">[20 r<hi rendition="#sup">o</hi>]
+							</fw>
+						</ref> Omne quod sonat tremit.</p>
 					<p xml:id="Ch12.S2.p6">Quicquid <app type="Bfootnote">
 						<lem type="main">tremit aeri<index indexName="Sachen">
 							<term>aer</term>
-							</index> et corporibus</lem>
-						<note type="lemma-abbrev">tremit</note>
-						<rdg wit="#L" n="1"> corpori </rdg>
-						<rdg wit="#L" n="2"> aeri et corporibus <hi rendition="#i">L</hi></rdg>
-						</app> tensis<index indexName="Sachen">
-						<term>corpus tensum</term>
-						</index> sed maxime homotonis<index indexName="Sachen">
-						<term>corpus homotonum</term>
-						</index> eandem trepidationem<index indexName="Sachen">
-						<term>trepidatio</term>
-						</index> communicat.</p>
-					<p xml:id="Ch12.S2.p7">Aures<index indexName="Sachen">
-						<term>auris</term>
-						</index> eo naturae artificio<index indexName="Sachen">
-						<term>artificium naturae</term>
-						</index> sunt conditae, ut sint omnibus corporibus<index indexName="Sachen">
-						<term>corpus sonorum</term>
-						</index> <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">[quorum]</corr></lem>
-						<rdg wit="#L"><orig>quarum</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> sonos<index indexName="Sachen">
-						<term>perceptio soni</term>
-						</index> percipimus homotonae.</p>
-					<p xml:id="Ch12.S2.p8">Auris corporum sonos<index indexName="Sachen">
-						<term>sonus</term>
-						</index> exprimit et imitatur.</p>
-					<p xml:id="Ch12.S2.p9">Objectum <app type="Bfootnote">
-						<lem type="main">sonans<index indexName="Sachen">
-							<term>objectum sonans</term>
-							</index> est instar chordae pulsatae,<index indexName="Sachen">
-							<term>chorda pulsata</term>
-							</index> organon vero auditus<index indexName="Sachen">
-							<term>organon auditus</term>
-							</index> est instar chordae homotonae<index indexName="Sachen">
-							<term>chorda homotona</term>
-							</index> sine tactu<index indexName="Sachen">
-							<term>tactus</term>
-							</index> resonantis.<index indexName="Sachen">
-							<term>chorda resonans</term>
-							</index></lem>
-						<note type="lemma-abbrev">sonans</note>
-						<rdg wit="#L">est instar chordae </rdg>
-						<rdg wit="#L" n="1"> homotonae sine tactu resonantis </rdg>
-						<rdg wit="#L" n="2"> pulsatae, organon <seg type="apparat-ellipsis"/> tactu resonantis. <hi rendition="#i">L</hi></rdg>
-						</app></p>
-					<p xml:id="Ch12.S2.p10"><app type="Bfootnote">
-						<lem type="main">Tremere quid[:] itiones et reditiones<index indexName="Sachen">
-							<term>itio et reditio</term>
-							</index> in chordis</lem>
-						<note type="lemma-abbrev">Tremere</note>
-						<rdg wit="#L" n="1"> quid est tensionem </rdg>
-						<rdg wit="#L" n="2"> quid <app>
-							<rdg wit="#L" n="a">ch </rdg>
-							<rdg wit="#L" n="b">itiones et reditiones in chordis <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> valde tensis<index indexName="Sachen">
-						<term>chorda tensa</term>
-						</index> fiunt ut in laxis,<index indexName="Sachen">
-						<term>chorda laxa</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">etsi non aeque oculis<index indexName="Sachen">
-							<term>oculus</term>
-							</index> percipiantur.<index indexName="Sachen">
-							<term>perceptio ocularis</term>
-							</index></lem>
-						<note type="lemma-abbrev">etsi</note>
-						<rdg wit="#L" n="1"> sint invisibiles </rdg>
-						<rdg wit="#L" n="2"> non aeque oculis percipiantur. <hi rendition="#i">L</hi></rdg>
-						</app></p>
-					<p xml:id="Ch12.S2.p11"><app type="Bfootnote">
-						<lem type="main">Quicquid tremit tensum est.</lem>
-						<note type="lemma-abbrev">Quicquid</note>
-						<rdg wit="#L" cause="addition"><add>tremit tensum est.<index indexName="Sachen">
-							<term>tensum</term>
-							</index> </add><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app></p>
-					<p xml:id="Ch12.S2.p12">Nullum corpus tam molle<index indexName="Sachen">
-						<term>corpus molle</term>
-						</index> est, <app type="Bfootnote">
-						<lem type="main">quin celeri nimis</lem>
-						<note type="lemma-abbrev">quin</note>
-						<rdg wit="#L" n="1"> satis </rdg>
-						<rdg wit="#L" n="2"> satis </rdg>
-						<rdg wit="#L" n="3"> celeri nimis <hi rendition="#i">L</hi></rdg>
-						</app> divisioni<index indexName="Sachen">
-						<term>divisio celeris</term>
-						</index> resistat.</p>
-					<p xml:id="Ch12.S2.p13"><app type="Cfootnote">
-						<lem type="main">Quicquid divisioni resistit, id antequam rumpatur tenditur, ut fila culcitrae.<anchor xml:id="LH_37_01_020r_culcitra-1"/><index indexName="Sachen">
-							<term>filum</term>
-							</index><index indexName="Sachen">
-							<term>culcitra</term>
-							</index> <anchor xml:id="LH_37_01_020r_culcitra-2"/></lem>
-						<note type="lemma-abbrev">Quicquid <seg type="apparat-ellipsis"/> culcitrae</note>
-						<note type="editorial">Siehe den Einwand in G. C. <hi rendition="#k">Schelhammer</hi>, Brief an G. W. Leibniz vom 13. (23.) April 1681 (<hi rendition="#i">LSB</hi> III, 3 N. 206, S. 395.13–396.5<bibl corresp="#bib_01200">). Leibniz erwiderte hierauf zunächst in Randbemerkungen zu diesem Brief (ebd. S. 396, Anm. 11 u. 12)<bibl corresp="#bib_01200"> sowie in seiner Antwort vom 13. (23.) Januar 1682 (<hi rendition="#i">LSB</hi> III, 3 N. 311, S. 545.10–20; 550.8–10). Anspielungen auf Schelhammers Einwand finden sich zudem in N. <ref corresp="L_section_121.xml#N.12.1"/> (S. <ref corresp="L_section_121.xml#LH_37_01_018r_Schelh-1"/>) und N. <ref corresp="L_section_123.xml#N.12.3"/> (S. <ref corresp="L_section_123.xml#LH_37_01_004r_culcitra-1"/>).</bibl></bibl></note>
-						</app></p>
-					<p xml:id="Ch12.S2.p14">Corporum repercussio<index indexName="Sachen">
-						<term>repercussio</term>
-						</index> omnis est a restitutione tensorum<index indexName="Sachen">
-						<term>restitutio tensi</term>
-						</index> et flexorum.<index indexName="Sachen">
-						<term>restitutio flexi</term>
-						</index> Itaque quicquid repercutit tensum est.<index indexName="Sachen">
-						<term>tensum</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p15">Visibile hoc in pila<index indexName="Sachen">
-						<term>pila inflata</term>
-						</index> <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">[inflata],</corr></lem>
-						<rdg wit="#L"><orig>inflato</orig> <note type="editorial"><hi rendition="#i">erg. L, ändert Hrsg.</hi></note></rdg>
-						</app> in pectine,<index indexName="Sachen">
-						<term>pecten</term>
-						</index> vel simili labente.</p>
-					<p xml:id="Ch12.S2.p16">Nihil tam durum quin nonnihil flectatur.<index indexName="Sachen">
-						<term>durum</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p17">Nihil tam magnum quin nonnihil tremat.</p>
-					<p xml:id="Ch12.S2.p18">Ratio cur flexa<index indexName="Sachen">
-						<term>flexum</term>
-						</index> et restituta<index indexName="Sachen">
-						<term>restitutum</term>
-						</index> sponte iterum flectantur.</p>
-					<p xml:id="Ch12.S2.p19">Omne <app type="Bfootnote">
-						<lem type="main">corpus cui</lem>
-						<note type="lemma-abbrev">corpus</note>
-						<rdg wit="#L" n="1"> quod </rdg>
-						<rdg wit="#L" n="2"> cui <hi rendition="#i">L</hi></rdg>
-						</app> continue novus impetus<index indexName="Sachen">
-						<term>impetus novus</term>
-						</index> imprimitur[,] novissime impetum habet ex omnibus collectum.<index indexName="Sachen">
-						<term>impetus collectus</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p20">Quicquid magnum impetum collegit,<index indexName="Sachen">
-						<term>impetus collectus</term>
-						</index> id trans locum ubi alias quieturum esset feretur.<note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Am Rand:</hi></note>Aqua<index indexName="Sachen">
-						<term>sonus aquae</term>
-						</index> et aer<index indexName="Sachen">
-						<term>sonus aeris</term>
-						</index> sonum edunt sola suarum partium collisione,<index indexName="Sachen">
-						<term>collisio partium</term>
-						</index> experimentum.<index indexName="Sachen">
-						<term>experimentum</term>
-						</index></note></p>
-					<p xml:id="Ch12.S2.p21">Non potest <app type="Bfootnote">
-						<lem type="main">dici an et quando</lem>
-						<note type="lemma-abbrev">dici</note>
-						<rdg wit="#L" n="1"> quando </rdg>
-						<rdg wit="#L" n="2"> an et quando <hi rendition="#i">L</hi></rdg>
-						</app> cesset trepidatio<index indexName="Sachen">
-						<term>trepidatio</term>
-						</index> tensi<index indexName="Sachen">
-						<term>tensum</term>
-						</index> semel <app type="Bfootnote">
-						<lem type="main"><p>pulsati.<note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Am Rand:</hi></note>*</note></p><p>Aer<index indexName="Sachen">
-							<term>aer</term>
-							</index></p></lem>
-						<note type="lemma-abbrev">pulsati.</note>
-						<rdg wit="#L" n="1"> Aeris definitio </rdg>
-						<rdg wit="#L" n="2"> Aer <hi rendition="#i">L</hi></rdg>
-						</app> est fluidum elasticum.<index indexName="Sachen">
-						<term>fluidum elasticum</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p22">Et spiritus vini<index indexName="Sachen">
-						<term>spiritus vini</term>
-						</index> esse videtur fluidum<index indexName="Sachen">
-						<term>fluidum elasticum</term>
-						</index> aeri valde cognatum.</p>
-					<p xml:id="Ch12.S2.p23">Aqua<index indexName="Sachen">
-						<term>aqua</term>
-						</index> non est corpus satis elasticum,<index indexName="Sachen">
-						<term>corpus elasticum</term>
-						</index> <app type="Cfootnote">
-						<lem type="main">(<?tex-source \phantom{)}?>tractatus<index indexName="Sachen">
-							<term>tractatus</term>
-							</index></lem>
-						<note type="lemma-abbrev">tractatus</note>
-						<note type="editorial"><hi rendition="#k">R. Magiotti</hi>, <hi rendition="#i">Renitenza certissima dell’acqua alla compressione</hi>, Rom 1648.<bibl corresp="#bib_01196"/></note>
-						</app> <hi rendition="#i">della renitenza dell’acqua alla compressione</hi>[<?tex-source \phantom{(}?>)].</p>
-					<p xml:id="Ch12.S2.p24">Circulus qui in aqua fit<index indexName="Sachen">
-						<term>circulus aqueus</term>
-						</index> injecto lapillo,<index indexName="Sachen">
-						<term>lapillus injectus</term>
-						</index> nihil est aliud quam fluctus orbicularis.<index indexName="Sachen">
-						<term>fluctus orbicularis</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p25">Ut ex uno fluctu nascitur alius <app type="Bfootnote">
-						<lem type="main">parallelus</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> sed humilior, ita ex fluctu orbiculari nascitur alius orbicularis remotior, ac proinde major priore; sed <app type="Bfootnote">
-						<lem type="main"><p>humilior.<index indexName="Sachen">
-							<term>fluctus orbicularis</term>
-							</index></p><p>Fluctus aquae<index indexName="Sachen">
-							<term>fluctus aquae</term>
-							</index> potius conferendi sunt</p></lem>
-						<note type="lemma-abbrev">humilior.</note>
-						<rdg wit="#L" n="1"> Fluctuum aquae propagatio,<index indexName="Sachen">
-							<term>propagatio fluctuum</term>
-							</index> <app>
-							<rdg wit="#L" n="a">nihil commune h </rdg>
-							<rdg wit="#L" n="b">tantum differt </rdg>
-							<rdg wit="#L" n="c">potius conferenda est </rdg>
-							</app></rdg>
-						<rdg wit="#L" n="2"> Fluctus aquae potius conferendi sunt <hi rendition="#i">L</hi></rdg>
-						</app> vento<index indexName="Sachen">
-						<term>ventus</term>
-						</index> in aere quam sono.<index indexName="Sachen">
-						<term>sonus</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p26">Sonus non oritur<index indexName="Sachen">
-						<term>origo soni</term>
-						</index> ex percussione<index indexName="Sachen">
-						<term>percussio</term>
-						</index> corporis sonantis<index indexName="Sachen">
-						<term>corpus sonans</term>
-						</index> immediate, sed ex restitutione<index indexName="Sachen">
-						<term>restitutio percussi</term>
-						</index> <app type="Bfootnote">
-						<lem type="main"><p>percussi.</p><p><note type="Afootnote" place="margin" resp="#L"><note type="lemma-abbrev"><hi rendition="#i">Am Rand:</hi></note>*</note>Ad sonum</p></lem>
-						<note type="lemma-abbrev">percussi</note>
-						<rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>eaque non una sed pluribus repetitis</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> . Ad sonum <hi rendition="#i">L</hi></rdg>
-						</app> sensibilem<index indexName="Sachen">
-						<term>sonus sensibilis</term>
-						</index> efficiendum opus est multis trepidationibus repetitis<index indexName="Sachen">
-						<term>trepidatio repetita</term>
-						</index> <hi rendition="#g">ut ad videndum aliquod punctum sensibile,</hi><index indexName="Sachen">
-						<term>punctum sensibile</term>
-						</index> <hi rendition="#g">multis est opus radiis.</hi><index indexName="Sachen">
-						<term>radius</term>
-						</index> <hi rendition="#g">Ita ad videndum apicem montis,</hi><index indexName="Sachen">
-						<term>apex montis</term>
-						</index> <hi rendition="#g">qui instar puncti videtur.</hi> <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=61"><pb type="L"/><fw type="folNum">[20 v<hi rendition="#sup">o</hi>]</fw></ref></p>
-					<p xml:id="Ch12.S2.p27">Si aer<index indexName="Sachen">
-						<term>aer percussus</term>
-						</index> subito <app type="Bfootnote">
-						<lem type="main">percutiatur, pars ejus<index indexName="Sachen">
-							<term>pars aeris</term>
-							</index> quae est ante rem [percutientem] comprimitur,<index indexName="Sachen">
-							<term>aer compressus</term>
-							</index></lem>
-						<note type="lemma-abbrev">percutiatur,</note>
-						<rdg wit="#L" n="1"> ante </rdg>
-						<rdg wit="#L" n="2"> <note type="editorial">|</note> is qui <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> </rdg>
-						<rdg wit="#L" n="3"> pars ejus quae est ante rem <note type="editorial">|</note> percussam <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note> percussam <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> comprimitur, <hi rendition="#i">L</hi></rdg>
-						</app> pars quae post eam est rarescit.<index indexName="Sachen">
-						<term>aer rarefactus</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">Sit corpus <formula xml:id="Ch12.S2.p27.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula></lem>
-						<note type="lemma-abbrev">Sit</note>
-						<rdg wit="#L" n="1"> aer </rdg>
-						<rdg wit="#L" n="2"> corpus <formula xml:id="Ch12.S2.p27.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">[quod]</corr></lem>
-						<rdg wit="#L"><orig>quo</orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> magna celeritate<index indexName="Sachen">
-						<term>celeritas percussionis</term>
-						</index> transfertur in</p>
-					<figure rendition="#own-line_centered" xml:id="Ch12.S2.p28"><graphic url="../gesamttex/edit_VIII,3/images/LH_37_01_020-021_d.svg" width="182.1204pt" xml:id="Ch12.S2.p28.g1"/><head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_37_01_020-021_fig.1"/></head></figure>
-					<p rendition="#noindent" xml:id="Ch12.S2.p29"><app type="Cfootnote">
-						<lem type="main"/>
-						<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]</note>
-						<note type="editorial">In einer ersten, verworfenen und daher nicht wiedergegebenen Fassung des Diagramms verläuft die Saite <formula xml:id="Ch12.S2.p29.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>L</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>M</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> schräg durch den Körper <formula xml:id="Ch12.S2.p29.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> hindurch.</note>
-						</app><hi rendition="#i">(A)(B)</hi>, et percutiet <app type="Bfootnote">
-						<lem type="main">aerem<index indexName="Sachen">
-							<term>aer percussus</term>
-							</index> <formula xml:id="Ch12.S2.p29.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>L</m:mi>
-							</m:math>
-							</formula> anteriorem</lem>
-						<note type="lemma-abbrev">aerem</note>
-						<rdg wit="#L" cause="addition"><note type="editorial">|</note> <add><formula xml:id="Ch12.S2.p29.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mi>L</m:mi>
-							</m:math>
-							</formula> </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> anteriorem <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">[<formula xml:id="Ch12.S2.p29.m5">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>B</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula>],</corr></lem>
-						<rdg wit="#L"><orig><formula xml:id="Ch12.S2.p29.m6">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>B</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>E</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula></orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> eumque expellet<index indexName="Sachen">
-						<term>aer expulsus</term>
-						</index> ex loco <hi rendition="#i">B(B)</hi>. Et quoniam aer tanta celeritate<index indexName="Sachen">
-						<term>celeritas aeris</term>
-						</index> circulum<index indexName="Sachen">
-						<term>circulus aeris</term>
-						</index> commode peragere non potest, ut statim tantundem <app type="Bfootnote">
-						<lem type="main">aeris, eundem quam ante densitatis gradum<index indexName="Sachen">
-							<term>gradus densitatis</term>
-							</index></lem>
-						<note type="lemma-abbrev">aeris,</note>
-						<rdg wit="#L" n="1"> eandem quam ante rarita </rdg>
-						<rdg wit="#L" n="2"> eundem quam ante <app>
-							<rdg wit="#L" n="a">compressionis </rdg>
-							<rdg wit="#L" n="b">densitatis gradum <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> habentis expellatur <app type="Bfootnote">
-						<lem type="main">ex [<formula xml:id="Ch12.S2.p29.m7">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>B</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula>], et vicissim succedat in</lem>
-						<note type="lemma-abbrev">ex</note>
-						<rdg wit="#L"><note type="editorial">|</note> <hi rendition="#i">(B)E</hi>  </rdg>
-						<rdg wit="#L" n="1"> <note type="editorial">|</note> succedat in <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> </rdg>
-						<rdg wit="#L" n="2"> et vicissim succedat in <hi rendition="#i">L</hi></rdg>
-						</app> locum ipsius <formula xml:id="Ch12.S2.p29.m8">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>F</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>A</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> succedentis in locum<index indexName="Sachen">
-						<term>locus relictus</term>
-						</index> a corpore relictum <formula xml:id="Ch12.S2.p29.m9">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> quia corpora elastica<index indexName="Sachen">
-						<term>corpus elasticum</term>
-						</index> malunt tendi <app type="Bfootnote">
-						<lem type="main">nonnihil</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> quam celeriter moveri; hinc necesse <app type="Bfootnote">
-						<lem type="main">est aere <hi rendition="#i">B(B)</hi> expulso<index indexName="Sachen">
-							<term>aer expulsus</term>
-							</index> a corpore <formula xml:id="Ch12.S2.p29.m10">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> et in locum ipsius [<hi rendition="#i">(B)C</hi>] non satis statim recedentis subeunte,</lem>
-						<note type="lemma-abbrev">est</note>
-						<rdg wit="#L" n="1"> aerem <hi rendition="#i">B(B)</hi> subeun </rdg>
-						<rdg wit="#L" n="2"> aere <hi rendition="#i">B(B)</hi> <seg type="apparat-ellipsis"/> locum ipsius <note type="editorial">|</note> <hi rendition="#i">(B)E</hi>  non satis statim recedentis subeunte, <hi rendition="#i">L</hi></rdg>
-						</app> aerem in loco <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">[<hi rendition="#i">(B)C</hi>]</corr></lem>
-						<rdg wit="#L"><orig><hi rendition="#i">(B)(E)</hi></orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> existentem nonnihil comprimi<index indexName="Sachen">
-						<term>aer compressus</term>
-						</index> et in loco <formula xml:id="Ch12.S2.p29.m11">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>F</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>A</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> existentem, quia etiam locum <app type="Bfootnote">
-						<!--is-correction-app-with-lemma-->
-						<lem type="main"><corr resp="#ed">[<hi rendition="#i">A(A)</hi>]</corr></lem>
-						<rdg wit="#L"><orig><formula xml:id="Ch12.S2.p29.m12">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula></orig> <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note></rdg>
-						</app> a corpore <app type="Bfootnote">
-						<lem type="main"><formula xml:id="Ch12.S2.p29.m13">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> desertum<index indexName="Sachen">
-							<term>locus desertus</term>
-							</index></lem>
-						<note type="lemma-abbrev"><formula xml:id="Ch12.S2.p29.m14">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula></note>
-						<rdg wit="#L" n="1"> repletu </rdg>
-						<rdg wit="#L" n="2"> desertum <hi rendition="#i">L</hi></rdg>
-						</app> implere debet, <app type="Bfootnote">
-						<lem type="main">novo aere<index indexName="Sachen">
-							<term>aer novus</term>
-							</index> sufficiente</lem>
-						<note type="lemma-abbrev">novo</note>
-						<rdg wit="#L" n="1"> corpore su </rdg>
-						<rdg wit="#L" n="2"> aere sufficiente <hi rendition="#i">L</hi></rdg>
-						</app> non statim succedente dilatari.<index indexName="Sachen">
-						<term>aer dilatatus</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p30">Si in medio aere ordinario<index indexName="Sachen">
-						<term>aer ordinarius</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">sit locus<index indexName="Sachen">
-							<term>locus repletus</term>
-							</index> repletus</lem>
-						<note type="lemma-abbrev">sit</note>
-						<rdg wit="#L" n="1"> pars </rdg>
-						<rdg wit="#L" n="2" cause="addition"> locus <note type="editorial">|</note> <add>repletus</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <hi rendition="#i">L</hi></rdg>
-						</app> aere justo dilatatiori,<index indexName="Sachen">
-						<term>aer dilatatus</term>
-						</index> aer circumstans<index indexName="Sachen">
-						<term>aer circumstans</term>
-						</index> magno impetu<index indexName="Sachen">
-						<term>impetus aeris</term>
-						</index> in eum irruens jam tum aliquem efficiet sonum.<index indexName="Sachen">
-						<term>sonus</term>
-						</index> <app type="Cfootnote">
-						<lem type="main">Experimentum<index indexName="Sachen">
-							<term>experimentum</term>
-							</index> est in Machinis Gerickianis;<index indexName="Sachen">
-							<term>machina Gerickiana</term>
-							</index> nam si duo hemisphaeria<index indexName="Sachen">
-							<term>hemisphaerium Gerickianum</term>
-							</index> ex quibus exhaustus est aer,<index indexName="Sachen">
-							<term>aer exhaustus</term>
-							</index> divellantur, aer circumstans<index indexName="Sachen">
-							<term>aer circumstans</term>
-							</index> ad locum replendum<index indexName="Sachen">
-							<term>locus replendus</term>
-							</index> confluens sonum edit instar sclopeti.<index indexName="Sachen">
-							<term>sonus sclopeti</term>
-							</index></lem>
-						<note type="lemma-abbrev">Experimentum <seg type="apparat-ellipsis"/> sclopeti</note>
-						<note type="editorial">Siehe <hi rendition="#k">O. v. Guericke</hi>, <hi rendition="#i">Experimenta nova</hi>, lib. III, cap. 25 (Amsterdam 1672, S. 106 f.)<bibl corresp="#bib_00055"> Die von Leibniz erwähnten <hi rendition="#i">Machinae Gerickianae</hi> sind Instrumente zur Vakuumerzeugung, die Guericke entwickelt und im dritten Buch seiner <hi rendition="#i">Experimenta nova</hi> beschrieben hatte. Leibniz hat hieraus Auszüge verfasst (<hi rendition="#i">LSB</hi> VIII, 1 N. 36).<bibl corresp="#bib_01197"/></bibl></note>
-						</app></p>
-					<p xml:id="Ch12.S2.p31"><app type="Bfootnote">
-						<lem type="main">Idem proportione continget in loco</lem>
-						<note type="lemma-abbrev">Idem</note>
-						<rdg wit="#L" n="1"> continget et in nostro </rdg>
-						<rdg wit="#L" n="2"> proportione continget in loco <hi rendition="#i">L</hi></rdg>
-						</app> <formula xml:id="Ch12.S2.p31.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>F</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>A</m:mi>
-								</m:mrow>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> Etsi enim exigua <app type="Bfootnote">
-						<lem type="main">sit aeris in eo dilatatio,<index indexName="Sachen">
-							<term>dilatatio aeris</term>
-							</index></lem>
-						<note type="lemma-abbrev">sit</note>
-						<rdg wit="#L" n="1"> differentia ejus </rdg>
-						<rdg wit="#L" n="2"> aeris in eo dilatatio, <hi rendition="#i">L</hi></rdg>
-						</app> et exiguus etiam ipse <app type="Bfootnote">
-						<lem type="main">locus, (<?tex-source \phantom{)}?>tantus scilicet [quanto] chorda tremens<index indexName="Sachen">
-							<term>chorda tremens</term>
-							</index> major apparet se quiescente<?tex-source \phantom{(}?>)</lem>
-						<note type="lemma-abbrev">locus,</note>
-						<rdg wit="#L" n="1"> invisibilis scilicet </rdg>
-						<rdg wit="#L" n="2"> (<?tex-source \phantom{)}?>tantus scilicet <note type="editorial">|</note> quando <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi> |</note> chorda tremens major apparet <app>
-							<rdg wit="#L" n="a">dimidio sui quiescentis </rdg>
-							<rdg wit="#L" n="b">se quiescente<?tex-source \phantom{(}?>) <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> orietur tamen si non sonus<index indexName="Sachen">
-						<term>origo soni</term>
-						</index> certe soni rudimentum,<index indexName="Sachen">
-						<term>rudimentum soni</term>
-						</index> id est, quod percipi possit multis repetitionibus.<index indexName="Sachen">
-						<term>repetitio soni</term>
-						</index><index indexName="Sachen">
-						<term>perceptio soni</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p32">Ex <app type="Bfootnote">
-						<lem type="main">aere ambiente,<index indexName="Sachen">
-							<term>aer ambiens</term>
-							</index> dum</lem>
-						<note type="lemma-abbrev">aere</note>
-						<rdg wit="#L" n="1"> iterum confluente </rdg>
-						<rdg wit="#L" n="2"> ambiente, <app>
-							<rdg wit="#L" n="a">novum </rdg>
-							<rdg wit="#L" n="b">dum <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> scilicet locus <formula xml:id="Ch12.S2.p32.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>F</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>A</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> <app type="Bfootnote">
-						<lem type="main">aeris dilatati<index indexName="Sachen">
-							<term>aer dilatatus</term>
-							</index></lem>
-						<note type="lemma-abbrev">aeris</note>
-						<rdg wit="#L" cause="addition"><add>dilatati</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> iterum <app type="Bfootnote">
-						<lem type="main">impletur, in locum <formula xml:id="Ch12.S2.p32.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>F</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>A</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> cum impetu<index indexName="Sachen">
-							<term>impetus aeris</term>
-							</index> ex <formula xml:id="Ch12.S2.p32.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>G</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>F</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> confluente,</lem>
-						<note type="lemma-abbrev">impletur,</note>
-						<rdg wit="#L" n="1"> et locus <formula xml:id="Ch12.S2.p32.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>B</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> depletur, cum impetu confluente, </rdg>
-						<rdg wit="#L" n="2"> in locum <seg type="apparat-ellipsis"/> <formula xml:id="Ch12.S2.p32.m5">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>G</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>F</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> confluente, <hi rendition="#i">L</hi></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main">et ex aere compresso<index indexName="Sachen">
-							<term>aer compressus</term>
-							</index> incluso in loco <hi rendition="#i">(B)C</hi> dum is depletur et in vicinum aerem<index indexName="Sachen">
-							<term>aer vicinus</term>
-							</index> <formula xml:id="Ch12.S2.p32.m6">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>C</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>D</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> erumpit,</lem>
-						<note type="lemma-abbrev">et</note>
-						<rdg wit="#L">ex aere </rdg>
-						<rdg wit="#L" n="1"> incluso dum </rdg>
-						<rdg wit="#L" n="2" cause="addition"> <add>compresso incluso <seg type="apparat-ellipsis"/> <formula xml:id="Ch12.S2.p32.m7">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>C</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>D</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> erumpit,</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> nova oritur percussio,<index indexName="Sachen">
-						<term>percussio aeris</term>
-						</index> novaque iterum compressio<index indexName="Sachen">
-						<term>compressio aeris</term>
-						</index> et dilatatio.<index indexName="Sachen">
-						<term>dilatatio aeris</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p33">Dum aer vicinus<index indexName="Sachen">
-						<term>aer vicinus</term>
-						</index> <app type="Bfootnote">
-						<lem type="main"><formula xml:id="Ch12.S2.p33.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>G</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>F</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula></lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> irruit in locum<index indexName="Sachen">
-						<term>locus replendus</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">replendum <formula xml:id="Ch12.S2.p33.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>F</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>A</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> ipse</lem>
-						<note type="lemma-abbrev">replendum</note>
-						<rdg wit="#L"><note type="editorial">|</note> </rdg>
-						<rdg wit="#L" n="1"> aut excipit aerem deplendum ex loco deplendo <formula xml:id="Ch12.S2.p33.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>B</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>C</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> </rdg>
-						<rdg wit="#L" n="2" cause="addition"><add> <formula xml:id="Ch12.S2.p33.m5">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>F</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>A</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> </add><note type="editorial"><hi rendition="#i">erg.</hi> |</note> , ipse <hi rendition="#i">L</hi></rdg>
-						</app> quoque nonnihil <app type="Bfootnote">
-						<lem type="main">dilatatur,<index indexName="Sachen">
-							<term>aer dilatatus</term>
-							</index> ubi cohaeret aeri <formula xml:id="Ch12.S2.p33.m6">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>G</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>H</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula>; a quo</lem>
-						<note type="lemma-abbrev">dilatatur,</note>
-						<rdg wit="#L" n="1" cause="addition"> nam subito divellitur ab eo cui <note type="editorial">|</note> <add>remotiori</add> <note type="editorial"><hi rendition="#i">erg.</hi> |</note> antea cohaerebat, vel etiam sub </rdg>
-						<rdg wit="#L" n="2"> nam </rdg>
-						<rdg wit="#L" n="3"> ubi cohaeret aeri <formula xml:id="Ch12.S2.p33.m7">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>G</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>H</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula>; <app>
-							<rdg wit="#L" n="a">a quo </rdg>
-							<rdg wit="#L" n="b">a quo <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> satis celeriter sine dilatatione aliqua divelli non potest. Et quemadmodum dilatatio<index indexName="Sachen">
-						<term>dilatatio aeris</term>
-						</index> ex <formula xml:id="Ch12.S2.p33.m8">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>F</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>A</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> propagatur in <formula xml:id="Ch12.S2.p33.m9">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>G</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>F</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> ita ex <formula xml:id="Ch12.S2.p33.m10">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>G</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>F</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> propagatur in <formula xml:id="Ch12.S2.p33.m11">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>H</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>G</m:mi>
-								</m:mrow>
-								<m:mo>.</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula></p>
-					<p xml:id="Ch12.S2.p34">Similiter compressio<index indexName="Sachen">
-						<term>compressio aeris</term>
-						</index> propagatur, dum enim locus <app type="Bfootnote">
-						<lem type="main"><hi rendition="#i">(B)C</hi> nonnihil</lem>
-						<note type="lemma-abbrev"><hi rendition="#i">(B)C</hi></note>
-						<rdg wit="#L" cause="addition"><note type="editorial">|</note> <add>in quo</add> <note type="editorial"><hi rendition="#i">erg. L, streicht Hrsg.</hi> |</note> nonnihil <hi rendition="#i">L</hi></rdg>
-						</app> compressus<index indexName="Sachen">
-						<term>locus compressus</term>
-						</index> subito depletur in locum <formula xml:id="Ch12.S2.p34.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>C</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>D</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> necesse est <formula xml:id="Ch12.S2.p34.m2">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>C</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>D</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> nonnihil comprimi; similiterque ex <formula xml:id="Ch12.S2.p34.m3">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>C</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>D</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> compressio<index indexName="Sachen">
-						<term>compressio aeris</term>
-						</index> porro in sequentem adhuc remotiorem propagatur.</p>
-					<p xml:id="Ch12.S2.p35">Omnem autem compressionem<index indexName="Sachen">
-						<term>compressio aeris</term>
-						</index> sequitur mox <app type="Bfootnote">
-						<lem type="main">restitutio dilatans,<index indexName="Sachen">
-							<term>restitutio dilatans</term>
-							</index></lem>
-						<note type="lemma-abbrev">restitutio</note>
-						<rdg wit="#L" n="1"> dil </rdg>
-						<rdg wit="#L" n="2"> iterum </rdg>
-						<rdg wit="#L" n="3"> dilatans, <hi rendition="#i">L</hi></rdg>
-						</app> et dilatationem<index indexName="Sachen">
-						<term>dilatatio aeris</term>
-						</index> restitutio iterum comprimens;<index indexName="Sachen">
-						<term>restitutio comprimens</term>
-						</index> ita aer jam ipse per se aliquamdiu in vibrationes<index indexName="Sachen">
-						<term>vibratio aeris</term>
-						</index> peraget, etsi corpus sonans<index indexName="Sachen">
-						<term>corpus sonans</term>
-						</index> non vibraret. Sed non erit satis sensibilis illa vibratio,<index indexName="Sachen">
-						<term>vibratio sensibilis</term>
-						</index> quia ex una tantum percussione<index indexName="Sachen">
-						<term>percussio aeris</term>
-						</index> orta est corporis <formula xml:id="Ch12.S2.p35.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>A</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>B</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> semel tantum translati in <hi rendition="#i">(A)(B)</hi>. <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=62"><pb type="L"/><fw type="folNum">[21 r<hi rendition="#sup">o</hi>]</fw></ref></p>
-					<p xml:id="Ch12.S2.p36">Si corpus<index indexName="Sachen">
-						<term>corpus tremens</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">tremens vel ejus pars</lem>
-						<note type="lemma-abbrev">tremens</note>
-						<rdg wit="#L" cause="addition"><add>vel ejus pars</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> <formula xml:id="Ch12.S2.p36.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>A</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>B</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> translatum in <hi rendition="#i">(A)(B)</hi> redeat in <formula xml:id="Ch12.S2.p36.m2">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> et iterum <app type="Bfootnote">
-						<lem type="main"><!--is-editor-addition-app-with-lemma--><add resp="#ed">[in]</add></lem>
-						<note type="lemma-abbrev">in</note>
-						<note type="editorial"><hi rendition="#i">erg. Hrsg.</hi></note>
-						</app> <hi rendition="#i">(A)(B)</hi> aliquoties reciprocatis itionibus et reditionibus,<index indexName="Sachen">
-						<term>itio et reditio</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">toties aer denuo percutietur,<index indexName="Sachen">
-							<term>aer percussus</term>
-							</index> et novum impetum<index indexName="Sachen">
-							<term>impetus aeris</term>
-							</index> acquiret,</lem>
-						<note type="lemma-abbrev">toties</note>
-						<rdg wit="#L" n="1"> , novum impetum imprimet aer </rdg>
-						<rdg wit="#L" n="2"> aer denuo <seg type="apparat-ellipsis"/> impetum acquiret, <hi rendition="#i">L</hi></rdg>
-						</app> qui denique tam fortis fiet, ut possit percipi.<index indexName="Sachen">
-						<term>perceptio soni</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p37"><app type="Bfootnote">
-						<lem type="main">Praeterea si vibrationes<index indexName="Sachen">
-							<term>vibratio aeris</term>
-							</index></lem>
-						<note type="lemma-abbrev">Praeterea</note>
-						<rdg wit="#L" n="1"> cum vibrationes </rdg>
-						<rdg wit="#L" n="2"> si vibrationes <hi rendition="#i">L</hi></rdg>
-						</app> aeris a dilatatione<index indexName="Sachen">
-						<term>dilatatio aeris</term>
-						</index> ad compressionem<index indexName="Sachen">
-						<term>compressio aeris</term>
-						</index> reciproce transeuntis <app type="Bfootnote">
-						<lem type="main">non sint synchronae<index indexName="Sachen">
-							<term>vibratio synchrona</term>
-							</index></lem>
-						<note type="lemma-abbrev">non</note>
-						<rdg wit="#L" n="1"> consentia </rdg>
-						<rdg wit="#L" n="2"> sint <app>
-							<rdg wit="#L" n="a">unisonae </rdg>
-							<rdg wit="#L" n="b">synchronae <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> reciprocationibus<index indexName="Sachen">
-						<term>reciprocatio corporis trementis</term>
-						</index> corporis<index indexName="Sachen">
-						<term>corpus tremens</term>
-						</index> trementis[,] tunc novae supervenientes<index indexName="Sachen">
-						<term>percussio superveniens</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">percussiones aerique impressae impetus</lem>
-						<note type="lemma-abbrev">percussiones</note>
-						<rdg wit="#L" n="1"> impetus </rdg>
-						<rdg wit="#L" n="2"> aerique impressae impetus <hi rendition="#i">L</hi></rdg>
-						</app> reciprocandi<index indexName="Sachen">
-						<term>impetus reciprocandi</term>
-						</index> quos aer ex priore adhuc percussione<index indexName="Sachen">
-						<term>percussio prior</term>
-						</index> residuos habet turbabunt; nam <app type="Bfootnote">
-						<lem type="main">aliquando</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> dilatandi<index indexName="Sachen">
-						<term>impetus dilatandi</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">sese</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> impetum imprement aeri dum ipse <app type="Bfootnote">
-						<lem type="main">jam</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> tendit ad compressionem;<index indexName="Sachen">
-						<term>compressio aeris</term>
-						</index> aut contra. Videndum igitur qua arte efficiat natura,<index indexName="Sachen">
-						<term>ars naturae</term>
-						</index> ut perturbatio<index indexName="Sachen">
-						<term>perturbatio</term>
-						</index> ista <app type="Bfootnote">
-						<lem type="main"><p>evitetur.</p><p>Si duo corpora<index indexName="Sachen">
-							<term>corpus tensum</term>
-							</index> inaequalia sint</p></lem>
-						<note type="lemma-abbrev">evitetur.</note>
-						<rdg wit="#L" n="1"> Omne corpus </rdg>
-						<rdg wit="#L" n="2"> Si duo corpora <app>
-							<rdg wit="#L" n="a">sint </rdg>
-							<rdg wit="#L" n="b">inaequalia sint <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> ejusdem <index indexName="Sachen">
-						<term>tensio</term>
-						</index>tensionis[,] percussum<index indexName="Sachen">
-						<term>corpus percussum</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">eo celeriores habet reciprocationes,<index indexName="Sachen">
-							<term>reciprocatio corporis percussi</term>
-							</index> quo est minus. Hujus propositionis<anchor xml:id="LH_37_01_021r_uwdci-1"/><index indexName="Sachen">
-							<term>propositio</term>
-							</index> veram rationem</lem>
-						<note type="lemma-abbrev">eo</note>
-						<rdg wit="#L" n="1"> celerius restituitur </rdg>
-						<rdg wit="#L" n="2"> celeriores habet <seg type="apparat-ellipsis"/> est minus. <app>
-							<rdg wit="#L" n="a">Hanc </rdg>
-							<rdg wit="#L" n="b">Hujus propositionis <app>
-								<rdg wit="#L" n="aa">veras rationes </rdg>
-								<rdg wit="#L" n="bb">veram rationem <hi rendition="#i">L</hi></rdg>
-								</app></rdg>
-							</app></rdg>
-						</app> aliquando reddam.<anchor xml:id="LH_37_01_021r_uwdci-2"/><app type="Cfootnote" from="#LH_37_01_021r_uwdci-1" to="#LH_37_01_021r_uwdci-2">
-						<lem type="main"/>
-						<note type="lemma-abbrev">Hujus <seg type="apparat-ellipsis"/> reddam</note>
-						<note type="editorial">Dieses Gesetz hatte Leibniz (mit Bezug auf Saiten) bereits im Dezember 1680 dargelegt und begründet; siehe N. <ref corresp="L_section_82.xml#_41152_2"/>, S. <ref corresp="L_section_82.xml#LH_35_09_15_009v_utlong-1"/>; N. <ref corresp="L_chapter_9.xml#_41153"/>, S. <ref corresp="L_chapter_9.xml#LH_35_09_15_005r_quominoreocitius-1"/>.</note>
-						</app> Nunc satis est eam assumere velut comprobatam experimento.<index indexName="Sachen">
-						<term>experimentum</term>
-						</index> Nam <app type="Cfootnote">
-						<lem type="main">constat ex sectione monochordi<index indexName="Sachen">
-							<term>sectio monochordi</term>
-							</index> chordam<anchor xml:id="LH_37_01_021r_freqzulaeng-1"/><index indexName="Sachen">
-							<term>chorda tensa</term>
-							</index> quo est minor, eo sonum reddere acutiorem<index indexName="Sachen">
-							<term>sonus acutus</term>
-							</index> manente eadem <app type="Bfootnote">
-							<lem type="main">tensione;<anchor xml:id="LH_37_01_021r_freqzulaeng-2"/><index indexName="Sachen">
-								<term>tensio chordae</term>
-								</index> idem</lem>
-							<note type="lemma-abbrev">tensione;</note>
-							<rdg wit="#L" n="1"> item </rdg>
-							<rdg wit="#L" n="2"> idem <hi rendition="#i">L</hi></rdg>
-							</app> de corporibus quoque alterius figurae<index indexName="Sachen">
-							<term>figura corporis</term>
-							</index> constat.</lem>
-						<note type="lemma-abbrev">constat <seg type="apparat-ellipsis"/> constat</note>
-						<note type="editorial">Siehe etwa <bibl corresp="#bib_01205"><hi rendition="#k">Mersenne</hi>, <hi rendition="#i">Harmonie universelle</hi>, livre III des mouvemens, prop. 5 [6]; 8 [9] (Bd. I, S. A, 169; 174 f.); livre III des instrumens, prop. 7–9 (Bd. II, S. D, 123–128).</bibl></note>
-						</app></p>
-					<p xml:id="Ch12.S2.p38">Consideremus jam quanta esse debeat portio aeris<index indexName="Sachen">
-						<term>portio aeris</term>
-						</index> <formula xml:id="Ch12.S2.p38.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>F</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> <formula xml:id="Ch12.S2.p38.m2">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>F</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>G</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> item <hi rendition="#i">(B)C</hi>, aut <app type="Bfootnote">
-						<lem type="main"><formula xml:id="Ch12.S2.p38.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>C</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>D</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> et utique apparet hoc esse satis</lem>
-						<note type="lemma-abbrev"><formula xml:id="Ch12.S2.p38.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>C</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>D</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula></note>
-						<rdg wit="#L" n="1"> satis </rdg>
-						<rdg wit="#L" n="2"> et utique apparet hoc esse satis <hi rendition="#i">L</hi></rdg>
-						</app> indeterminatum; et primis ictibus,<index indexName="Sachen">
-						<term>ictus primus</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">ut portiones aeris<index indexName="Sachen">
-							<term>portio aeris</term>
-							</index> majores minoresve</lem>
-						<note type="lemma-abbrev">ut</note>
-						<rdg wit="#L" n="1"> modo haec modo illae p </rdg>
-						<rdg wit="#L" n="2"> portiones aeris majores minoresve <hi rendition="#i">L</hi></rdg>
-						</app> eligantur, ex variis pendere posse casibus,<index indexName="Sachen">
-						<term>casus</term>
-						</index> prout ipsum corpus <formula xml:id="Ch12.S2.p38.m5">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>A</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>B</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> non tantum majus minusve est, sed et plures habet cavernas,<index indexName="Sachen">
-						<term>caverna</term>
-						</index> quibus <app type="Bfootnote">
-						<lem type="main">aer ipsum ingreditur,<index indexName="Sachen">
-							<term>aer ingressus</term>
-							</index></lem>
-						<note type="lemma-abbrev">aer</note>
-						<rdg wit="#L" n="1"> inclusus<index indexName="Sachen">
-							<term>aer inclusus</term>
-							</index> </rdg>
-						<rdg wit="#L" n="2"> ipsum <app>
-							<rdg wit="#L" n="a">aer </rdg>
-							<rdg wit="#L" n="b">ingreditur, <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> eo enim velut totidem filis<index indexName="Sachen">
-						<term>filum</term>
-						</index> aerem ambientem<index indexName="Sachen">
-						<term>aer ambiens</term>
-						</index> fortius <app type="Bfootnote" from="#KZeitz131" to="#KZeitz132">
-						<lem type="main"/>
-						<note type="lemma-abbrev">trahet;</note>
-						<rdg wit="#L" n="1"> quaeque </rdg>
-						<rdg wit="#L" n="2"> ut taceam <app>
-							<rdg wit="#L" n="a">de u </rdg>
-							<rdg wit="#L" n="b">diversa corpora heterogenea <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> trahet; ut taceam diversa corpora heterogenea<anchor xml:id="KZeitz131"/><index indexName="Sachen">
-						<term>corpus heterogeneum</term>
-						</index><anchor xml:id="KZeitz132"/> quae in <app type="Bfootnote">
-						<lem type="main">aere in diversis portionibus<index indexName="Sachen">
-							<term>portio aeris</term>
-							</index> diversimode reperiuntur.</lem>
-						<note type="lemma-abbrev">aere</note>
-						<rdg wit="#L" n="1"> reperiuntur </rdg>
-						<rdg wit="#L" n="2"> in diversis portionibus diversimode reperiuntur. <hi rendition="#i">L</hi></rdg>
-						</app> Verum haec</p>
-					<p rendition="#noindent" xml:id="Ch12.S2.p39">de primis ictibus<index indexName="Sachen">
-						<term>ictus primus</term>
-						</index> intelligenda <app type="Bfootnote">
-						<lem type="main">sunt, at corpore sonoro<index indexName="Sachen">
-							<term>corpus sonorum</term>
-							</index> suas reciprocationes<index indexName="Sachen">
-							<term>reciprocatio corporis sonori</term>
-							</index> continuante paulatim</lem>
-						<note type="lemma-abbrev">sunt,</note>
-						<rdg wit="#L" n="1"> verum </rdg>
-						<rdg wit="#L" n="2"> at <app>
-							<rdg wit="#L" n="a">paulatim </rdg>
-							<rdg wit="#L" n="b">corpore sonoro <seg type="apparat-ellipsis"/> continuante paulatim <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> aer ita se componit, ut fiat unisonus<index indexName="Sachen">
-						<term>aer unisonus</term>
-						</index> corpori sonoro,<index indexName="Sachen">
-						<term>corpus sonorum</term>
-						</index> ut nempe vibrationum aeris<index indexName="Sachen">
-						<term>vibratio aeris</term>
-						</index> et corporis sonori<index indexName="Sachen">
-						<term>vibratio corporis sonori</term>
-						</index> sibi obstantium perturbatio<index indexName="Sachen">
-						<term>perturbatio</term>
-						</index> minuatur; atque ita tum cum ex repetitis percussionibus<index indexName="Sachen">
-						<term>percussio repetita</term>
-						</index> acceptus ab aere impetus<index indexName="Sachen">
-						<term>impetus acceptus</term>
-						</index> satis redditus est validus ut percipi possit,<index indexName="Sachen">
-						<term>perceptio soni</term>
-						</index> jam aer etiam ad unisonum<index indexName="Sachen">
-						<term>unisonus</term>
-						</index> devenit; <app type="Bfootnote">
-						<lem type="main">id est in portiones<index indexName="Sachen">
-							<term>portio aeris</term>
-							</index> discerptus est <formula xml:id="Ch12.S2.p39.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>F</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> <formula xml:id="Ch12.S2.p39.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>F</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>G</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> <formula xml:id="Ch12.S2.p39.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>G</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>H</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> etc. <hi rendition="#i">(B)C</hi>, <formula xml:id="Ch12.S2.p39.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>C</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>D</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> etc. tantae magnitudinis,<index indexName="Sachen">
-							<term>magnitudo portionis aeris</term>
-							</index> quantae in data aeris tensione<index indexName="Sachen">
-							<term>tensio aeris</term>
-							</index> faciant, ut vibrationes portionum aeris<index indexName="Sachen">
-							<term>vibratio portionis aeris</term>
-							</index></lem>
-						<note type="lemma-abbrev">id</note>
-						<rdg wit="#L">est </rdg>
-						<rdg wit="#L" n="1"> tanta ejus portio vib </rdg>
-						<rdg wit="#L" n="2"> in portiones <seg type="apparat-ellipsis"/> ut vibrationes <app>
-							<rdg wit="#L" n="a">aeris </rdg>
-							<rdg wit="#L" n="b">portionum aeris <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> cum vibrationibus sonori<index indexName="Sachen">
-						<term>vibratio corporis sonori</term>
-						</index> sint aeque diuturnae.<index indexName="Sachen">
-						<term>vibratio aequidiuturna</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p40">Nam <app type="Bfootnote">
-						<lem type="main">aer suum habet determinatum Elastrum<index indexName="Sachen">
-							<term>elastrum aeris</term>
-							</index> sive tensionem<index indexName="Sachen">
-							<term>tensio aeris</term>
-							</index></lem>
-						<note type="lemma-abbrev">aer</note>
-						<rdg wit="#L" n="1"> suam habet determinatam tensi </rdg>
-						<rdg wit="#L" n="2"> suum habet <seg type="apparat-ellipsis"/> sive tensionem <hi rendition="#i">L</hi></rdg>
-						</app> (<?tex-source \phantom{)}?>utor autem hic tensionis<index indexName="Sachen">
-						<term>tensio</term>
-						</index> voce generaliter pro compressione<index indexName="Sachen">
-						<term>compressio</term>
-						</index> vel dilatatione,<index indexName="Sachen">
-						<term>dilatatio</term>
-						</index> vel etiam flexione<index indexName="Sachen">
-						<term>flexio</term>
-						</index> quae fit sine utroque, aut cum utroque simul, ut in arcu tenso<index indexName="Sachen">
-						<term>arcus tensus</term>
-						</index><?tex-source \phantom{(}?>) <ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=64"><pb type="L"/><fw type="folNum">[21 v<hi rendition="#sup">o</hi>]</fw></ref> quae oritur ex pondere aeris<index indexName="Sachen">
-						<term>pondus aeris</term>
-						</index> superstantis. Itaque eligitur <app type="Bfootnote">
-						<lem type="main">magnitudo partium,<index indexName="Sachen">
-							<term>magnitudo partis aeris</term>
-							</index> quae cum</lem>
-						<note type="lemma-abbrev">magnitudo</note>
-						<rdg wit="#L" n="1"> quae cum </rdg>
-						<rdg wit="#L" n="2"> partium, quae cum <hi rendition="#i">L</hi></rdg>
-						</app> data <app type="Bfootnote">
-						<lem type="main">tensione,<index indexName="Sachen">
-							<term>tensio aeris</term>
-							</index> diuturnitatis desideratae</lem>
-						<note type="lemma-abbrev">tensione,</note>
-						<rdg wit="#L" n="1"> datae </rdg>
-						<rdg wit="#L" n="2"> diuturnitatis desideratae <hi rendition="#i">L</hi></rdg>
-						</app> (<?tex-source \phantom{)}?>quae scilicet sonori est<?tex-source \phantom{(}?>) exhibeat vibrationem.<index indexName="Sachen">
-						<term>vibratio partis aeris</term>
-						</index></p>
-					<p xml:id="Ch12.S2.p41">Itaque in locis altioribus<index indexName="Sachen">
-						<term>locus altus</term>
-						</index> ut <app type="Bfootnote">
-						<lem type="main">montibus,<index indexName="Sachen">
-							<term>mons</term>
-							</index> majoribus opus est</lem>
-						<note type="lemma-abbrev">montibus,</note>
-						<rdg wit="#L" n="1"> major eligetur </rdg>
-						<rdg wit="#L" n="2"> majoribus opus est <hi rendition="#i">L</hi></rdg>
-						</app> partibus aeris,<index indexName="Sachen">
-						<term>pars aeris</term>
-						</index> quae causa esse potest cur sonus illic sit debilior.<index indexName="Sachen">
-						<term>sonus debilis</term>
-						</index> Nam in majoribus portionibus<index indexName="Sachen">
-						<term>portio aeris</term>
-						</index> non tam exacte res succedit ut in minoribus, ob varia impedimenta;<index indexName="Sachen">
-						<term>impedimentum</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">et cum aer</lem>
-						<note type="lemma-abbrev">et</note>
-						<rdg wit="#L" n="1"> aer cu </rdg>
-						<rdg wit="#L" n="2"> cum aer <hi rendition="#i">L</hi></rdg>
-						</app> ibi sit valde<index indexName="Sachen">
-						<term>aer rarus</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">rarus respectu puri</lem>
-						<note type="lemma-abbrev">rarus</note>
-						<rdg wit="#L" n="1"> quatenus pur </rdg>
-						<rdg wit="#L" n="2"> respectu puri <hi rendition="#i">L</hi></rdg>
-						</app> aeris,<index indexName="Sachen">
-						<term>aer purus</term>
-						</index> est tamen non ideo minus heterogeneis partibus<index indexName="Sachen">
-						<term>pars aeris heterogenea</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">plenus; quae</lem>
-						<note type="lemma-abbrev">plenus;</note>
-						<rdg wit="#L" n="1"> itaque </rdg>
-						<rdg wit="#L" n="2"> quae <hi rendition="#i">L</hi></rdg>
-						</app> servire poterunt ad <app type="Bfootnote">
-						<lem type="main">explicandam causam<index indexName="Sachen">
-							<term>causa</term>
-							</index> cur sclopeti sonus<index indexName="Sachen">
-							<term>sonus sclopeti</term>
-							</index> solito exilior fuerit in Carpathii<index indexName="Orte">
-							<term>Karpaten (Mons Carpathius)</term>
-							</index> cujusdam montis apice,<index indexName="Sachen">
-							<term>apex montis</term>
-							</index> <app type="Cfootnote">
-							<lem type="main">quod Frolichius<index indexName="Personen">
-								<term><hi rendition="#g">Frölich</hi> (Frolichius, Frölichius), David 1595–1648</term>
-								</index> sibi evenisse narrat.</lem>
-							<note type="lemma-abbrev">quod <seg type="apparat-ellipsis"/> narrat</note>
-							<note type="editorial"><hi rendition="#k">D. Frölich</hi>, <hi rendition="#i">Cynosura peregrinantium</hi>, Ulm 1643, S. 268–288.<bibl corresp="#bib_00047"> Auch <hi rendition="#k">Guericke</hi>, <hi rendition="#i">Experimenta nova</hi>, lib. V, cap. 8 (S. 162) berichtet über Frölichs Erzählung.<bibl corresp="#bib_00055"> Leibniz hat Guerickes Referat exzerpiert (<hi rendition="#i">LSB</hi> VIII, 1 N. 36, S. 266.5–7.<bibl corresp="#bib_01197">)</bibl></bibl></bibl></note>
-							</app></lem>
-						<note type="lemma-abbrev">explicandam</note>
-						<rdg wit="#L" n="1"> narrationem quam habet </rdg>
-						<rdg wit="#L" n="2"> causam <app>
-							<rdg wit="#L" n="a">eorum </rdg>
-							<rdg wit="#L" n="b">ejus quod Frolichius<index indexName="Personen">
-								<term><hi rendition="#g">Frölich</hi> (Frolichius, Frölichius), David 1595–1648</term>
-								</index> in Carpathii<index indexName="Orte">
-								<term>Karpaten (Mons Carpathius)</term>
-								</index> cujusdam montis apice sibi evenisse narrat </rdg>
-							<rdg wit="#L" n="c">cur sclopeti <seg type="apparat-ellipsis"/> evenisse narrat. <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> Etiam <app type="Bfootnote">
-						<lem type="main">in vacuo Gerickiano<index indexName="Sachen">
-							<term>vacuum Gerickianum</term>
-							</index> sonus<index indexName="Sachen">
-							<term>sonus in vacuo</term>
-							</index></lem>
-						<note type="lemma-abbrev">in</note>
-						<rdg wit="#L" n="1"> vacuo sonus </rdg>
-						<rdg wit="#L" n="2"> vacuo Gerickiano sonus <hi rendition="#i">L</hi></rdg>
-						</app> admodum debilitatur, ipso <app type="Cfootnote">
-						<lem type="main">Gerickio<index indexName="Personen">
-							<term><hi rendition="#g">Guericke</hi> (Gerickius, Gerick.), Otto von 1602–1686</term>
-							</index> narrante.</lem>
-						<note type="lemma-abbrev">Gerickio narrante</note>
-						<note type="editorial"><hi rendition="#i">Experimenta nova</hi>, lib. III, cap. 15 (S. 91 f.).<bibl corresp="#bib_00055"/></note>
-						</app></p>
-					<p xml:id="Ch12.S2.p42">Ex his etiam ratio reddi potest Phaenomeni memorabilis,<index indexName="Sachen">
-						<term>phaenomenon memorabile</term>
-						</index> quod occasione narrationis<index indexName="Sachen">
-						<term>narratio</term>
-						</index> <app type="Cfootnote">
-						<lem type="main">Gassendi<index indexName="Personen">
-							<term><hi rendition="#g">Gassendi</hi> (Gassendus), Pierre 1592–1655</term>
-							</index></lem>
-						<note type="lemma-abbrev">Gassendi</note>
-						<note type="editorial"><bibl corresp="#bib_01073"><hi rendition="#i">Physica</hi>, sectio I, lib. VI, cap. 10 (<hi rendition="#i">GOO</hi> I, S. 417b–418a).<bibl corresp="#bib_01029"/></bibl></note>
-						</app> deprehendere <app type="Cfootnote">
-						<lem type="main">Academici Florentini,<index indexName="Sachen">
-							<term>Accademia del Cimento</term>
-							</index></lem>
-						<note type="lemma-abbrev">Academici Florentini</note>
-						<note type="editorial">Über die von Mitgliedern der Accademia del Cimento durchgeführten Versuche zur Schallgeschwindigkeit berichtet <hi rendition="#k">L. Magalotti</hi>, <hi rendition="#i">Saggi</hi>, Florenz 1666, S. 242 f.<bibl corresp="#bib_00143"/></note>
-						</app> nempe soni celeritatem<index indexName="Sachen">
-						<term>celeritas soni</term>
-						</index> esse <app type="Bfootnote">
-						<lem type="main">uniformem<index indexName="Sachen">
-							<term>celeritas uniformis</term>
-							</index> ratione loci sive <app type="Cfootnote">
-							<lem type="main">distantiis<index indexName="Sachen">
-								<term>distantia</term>
-								</index> proportionalem;</lem>
-							<note type="lemma-abbrev">distantiis proportionalem</note>
-							<note type="editorial">Wie das nachfolgende Beispiel unmittelbar klarstellt, meint Leibniz mit seiner missverständlichen Formulierung nicht, dass die Schallgeschwindigkeit sich im Verhältnis zum Abstand von der Schallquelle ändere.</note>
-							</app></lem>
-						<note type="lemma-abbrev">uniformem</note>
-						<rdg wit="#L" n="1"> , sive </rdg>
-						<rdg wit="#L" n="2"> <note type="editorial">|</note> , <note type="editorial"><hi rendition="#i">streicht Hrsg.</hi> |</note> ratione loci sive distantiis proportionalem; <hi rendition="#i">L</hi></rdg>
-						</app> ita ut si certo <app type="Bfootnote">
-						<lem type="main">tempusculo<index indexName="Sachen">
-							<term>tempusculum</term>
-							</index> mille passus<index indexName="Sachen">
-							<term>passus</term>
-							</index></lem>
-						<note type="lemma-abbrev">tempusculo</note>
-						<rdg wit="#L" n="1"> millia </rdg>
-						<rdg wit="#L" n="2"> mille passus <hi rendition="#i">L</hi></rdg>
-						</app> percurrat[,] duobus, tribus,,,ve similibus tempusculis<index indexName="Sachen">
-						<term>tempusculum</term>
-						</index> percursurus sit duo, tria, etc. passuum<index indexName="Sachen">
-						<term>passus</term>
-						</index> millia. Hoc ita <app type="Bfootnote">
-						<lem type="main"><p>demonstratur:</p><p>Ut vibrationibus corporis <formula xml:id="Ch12.S2.p42.m1">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula><index indexName="Sachen">
-							<term>corpus vibrans</term>
-							</index> aequidiuturnae<index indexName="Sachen">
-							<term>vibratio aequidiuturna</term>
-							</index> sunt vibrationes aeris<index indexName="Sachen">
-							<term>vibratio aeris</term>
-							</index> <formula xml:id="Ch12.S2.p42.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>F</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula></p></lem>
-						<note type="lemma-abbrev">demonstratur:</note>
-						<rdg wit="#L" n="1"> Ut vibrationes aeris <formula xml:id="Ch12.S2.p42.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>F</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula> sunt aequidiuturnae </rdg>
-						<rdg wit="#L" n="2"> Ut vibrationibus <seg type="apparat-ellipsis"/> aeris <formula xml:id="Ch12.S2.p42.m4">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mrow>
-										<m:mi>A</m:mi>
-										<m:mo>⁢</m:mo>
-										<m:mi>F</m:mi>
-									</m:mrow>
-									<m:mo>,</m:mo>
-								</m:mrow>
-							</m:math>
-							</formula> <hi rendition="#i">L</hi></rdg>
-						</app> ita his aequidiuturnae sunt vibrationes<index indexName="Sachen">
-						<term>vibratio aequidiuturna</term>
-						</index> aeris<index indexName="Sachen">
-						<term>vibratio aeris</term>
-						</index> <formula xml:id="Ch12.S2.p42.m5">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>F</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>G</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> et ita porro. Eadem enim causa est isochronismi,<index indexName="Sachen">
-						<term>causa isochronismi</term>
-						</index> ut perturbationes<index indexName="Sachen">
-						<term>perturbatio</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">evitentur. Unde</lem>
-						<note type="lemma-abbrev">evitentur.</note>
-						<rdg wit="#L" n="1"> Ergo </rdg>
-						<rdg wit="#L" n="2"> Unde <hi rendition="#i">L</hi></rdg>
-						</app> tandem propagatur vibratio isochrona,<index indexName="Sachen">
-						<term>vibratio isochrona</term>
-						</index> ad chordam unisonam<index indexName="Sachen">
-						<term>chorda unisona</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">datae, vel locum Echus,<index indexName="Sachen">
-							<term>echo</term>
-							</index> vel denique organon auditus.<index indexName="Sachen">
-							<term>organon auditus</term>
-							</index></lem>
-						<note type="lemma-abbrev">datae,</note>
-						<rdg wit="#L">vel </rdg>
-						<rdg wit="#L" n="1"> organon auditus, vel </rdg>
-						<rdg wit="#L" n="2"> locum Echus, <seg type="apparat-ellipsis"/> organon auditus. <hi rendition="#i">L</hi></rdg>
-						</app></p>
-					<p xml:id="Ch12.S2.p43">Sed percussiones<index indexName="Sachen">
-						<term>percussio</term>
-						</index> tam sunt celeres quam sunt <app type="Bfootnote">
-						<lem type="main">vibrationes, id est,</lem>
-						<note type="lemma-abbrev">vibrationes,</note>
-						<rdg wit="#L" n="1"> itaque </rdg>
-						<rdg wit="#L" n="2"> id est, <hi rendition="#i">L</hi></rdg>
-						</app> corpus<index indexName="Sachen">
-						<term>corpus vibrans</term>
-						</index> vel aer<index indexName="Sachen">
-						<term>aer vibrans</term>
-						</index> tam celeriter percutit quam celeriter vibrat. <app type="Bfootnote">
-						<lem type="main">Sequens autem corpus tam celeriter accipit vibrationes quam celeriter praecedens ipsum percutit.</lem>
-						<note type="lemma-abbrev">Sequens</note>
-						<rdg wit="#L" cause="addition"><add>autem <seg type="apparat-ellipsis"/> ipsum percutit.</add> <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> <app type="Bfootnote">
-						<lem type="main">Itaque eadem celeritate<index indexName="Sachen">
-							<term>celeritas vibrationis</term>
-							</index></lem>
-						<note type="lemma-abbrev">Itaque</note>
-						<rdg wit="#L" n="1"> tam celeriter </rdg>
-						<rdg wit="#L" n="2"> eadem celeritate <hi rendition="#i">L</hi></rdg>
-						</app> accipit aer <formula xml:id="Ch12.S2.p43.m1">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>A</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>F</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> vibrationem<index indexName="Sachen">
-						<term>vibratio aeris</term>
-						</index> (<?tex-source \phantom{)}?>a corpore <app type="Bfootnote">
-						<lem type="main"><formula xml:id="Ch12.S2.p43.m2">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula><?tex-source \phantom{(}?>) qua accipit</lem>
-						<note type="lemma-abbrev"><formula xml:id="Ch12.S2.p43.m3">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>A</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>B</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula><?tex-source \phantom{(}?>)</note>
-						<rdg wit="#L" n="1"> quam celeriter </rdg>
-						<rdg wit="#L" n="2"> qua <app>
-							<rdg wit="#L" n="a">ex </rdg>
-							<rdg wit="#L" n="b">accipit <hi rendition="#i">L</hi></rdg>
-							</app></rdg>
-						</app> aer <formula xml:id="Ch12.S2.p43.m4">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>F</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>G</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> (<?tex-source \phantom{)}?>ab aere <formula xml:id="Ch12.S2.p43.m5">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>A</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>F</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula><?tex-source \phantom{(}?>) et aer <formula xml:id="Ch12.S2.p43.m6">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>G</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>H</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> (<?tex-source \phantom{)}?>ab <app type="Bfootnote">
-						<lem type="main">aere <formula xml:id="Ch12.S2.p43.m7">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>F</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>G</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula><?tex-source \phantom{(}?>). Est</lem>
-						<note type="lemma-abbrev">aere</note>
-						<rdg wit="#L" cause="deletion"><formula xml:id="Ch12.S2.p43.m8">
-							<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-								<m:mrow>
-									<m:mi>F</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>G</m:mi>
-								</m:mrow>
-							</m:math>
-							</formula><?tex-source \phantom{(}?>) <note type="editorial">|</note> <del>et ita porro, ac proinde propagatio soni<index indexName="Sachen">
-							<term>propagatio soni</term>
-							</index> est distantiae proportionalis</del> <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> . Est <hi rendition="#i">L</hi></rdg>
-						</app> autem portio<index indexName="Sachen">
-						<term>portio aeris</term>
-						</index> <formula xml:id="Ch12.S2.p43.m9">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mi>A</m:mi>
-								<m:mo>⁢</m:mo>
-								<m:mi>F</m:mi>
-							</m:mrow>
-						</m:math>
-						</formula> circiter aequalis portioni <formula xml:id="Ch12.S2.p43.m10">
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-							<m:mrow>
-								<m:mrow>
-									<m:mi>F</m:mi>
-									<m:mo>⁢</m:mo>
-									<m:mi>G</m:mi>
-								</m:mrow>
-								<m:mo>,</m:mo>
-							</m:mrow>
-						</m:math>
-						</formula> et ita porro. Aer<index indexName="Sachen">
-						<term>aer</term>
-						</index> enim apud nos in eodem fere ubique tensionis<index indexName="Sachen">
-						<term>tensio</term>
-						</index> statu est, itaque tempora propagationum<index indexName="Sachen">
-						<term>tempus propagationis</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">erunt ut numeri portionum</lem>
-						<note type="lemma-abbrev">erunt</note>
-						<rdg wit="#L" n="1"> ut portiones </rdg>
-						<rdg wit="#L" n="2"> ut numeri portionum <hi rendition="#i">L</hi></rdg>
-						</app> in quas aer divisus est,<index indexName="Sachen">
-						<term>portio aeris</term>
-						</index> id est ut distantiae.<index indexName="Sachen">
-						<term>distantia</term>
-						</index> Erit tamen aliquod licet <app type="Bfootnote">
-						<lem type="main">forte</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> non ita sensibile discrimen<index indexName="Sachen">
-						<term>discrimen sensibile</term>
-						</index> <app type="Bfootnote">
-						<lem type="main">progressionis</lem>
-						<rdg wit="#L"><note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-						</app> ratione magnitudinis partium,<index indexName="Sachen">
-						<term>magnitudo partis aeris</term>
-						</index> quando sonus<index indexName="Sachen">
-						<term>sonus</term>
-						</index> tendit a loco superiore<index indexName="Sachen">
-						<term>locus superior</term>
-						</index> in inferiorem,<index indexName="Sachen">
-						<term>locus inferior</term>
-						</index> vel a calido<index indexName="Sachen">
-						<term>locus calidus</term>
-						</index> in frigidum.<index indexName="Sachen">
-						<term>locus frigidus</term>
-						</index></p>
-				</div>
-			</div>
-		</body>
-	</text>
+						</index> et corporibus</lem>
+					<note type="lemma-abbrev">tremit</note>
+					<rdg wit="#L" n="1"> corpori </rdg>
+					<rdg wit="#L" n="2"> aeri et corporibus <hi rendition="#i">L</hi>
+					</rdg>
+				</app> tensis<index indexName="Sachen">
+				<term>corpus tensum</term>
+			</index> sed maxime homotonis<index indexName="Sachen">
+			<term>corpus homotonum</term>
+		</index> eandem trepidationem<index indexName="Sachen">
+		<term>trepidatio</term>
+	</index> communicat.</p>
+<p xml:id="Ch12.S2.p7">Aures<index indexName="Sachen">
+	<term>auris</term>
+</index> eo naturae artificio<index indexName="Sachen">
+<term>artificium naturae</term>
+</index> sunt conditae, ut sint omnibus corporibus<index indexName="Sachen">
+<term>corpus sonorum</term>
+</index>
+<app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[quorum]</corr>
+</lem>
+<rdg wit="#L">
+<orig>quarum</orig>
+<note type="editorial">
+	<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> sonos<index indexName="Sachen">
+<term>perceptio soni</term>
+</index> percipimus homotonae.</p>
+<p xml:id="Ch12.S2.p8">Auris corporum sonos<index indexName="Sachen">
+<term>sonus</term>
+</index> exprimit et imitatur.</p>
+<p xml:id="Ch12.S2.p9">Objectum <app type="Bfootnote">
+<lem type="main">sonans<index indexName="Sachen">
+<term>objectum sonans</term>
+</index> est instar chordae pulsatae,<index indexName="Sachen">
+<term>chorda pulsata</term>
+</index> organon vero auditus<index indexName="Sachen">
+<term>organon auditus</term>
+</index> est instar chordae homotonae<index indexName="Sachen">
+<term>chorda homotona</term>
+</index> sine tactu<index indexName="Sachen">
+<term>tactus</term>
+</index> resonantis.<index indexName="Sachen">
+<term>chorda resonans</term>
+</index>
+</lem>
+<note type="lemma-abbrev">sonans</note>
+<rdg wit="#L">est instar chordae </rdg>
+<rdg wit="#L" n="1"> homotonae sine tactu resonantis </rdg>
+<rdg wit="#L" n="2"> pulsatae, organon <seg type="apparat-ellipsis"/>
+ tactu resonantis. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch12.S2.p10">
+<app type="Bfootnote">
+<lem type="main">Tremere quid[:] itiones et reditiones<index indexName="Sachen">
+<term>itio et reditio</term>
+</index> in chordis</lem>
+<note type="lemma-abbrev">Tremere</note>
+<rdg wit="#L" n="1"> quid est tensionem </rdg>
+<rdg wit="#L" n="2"> quid <app>
+<rdg wit="#L" n="a">ch </rdg>
+<rdg wit="#L" n="b">itiones et reditiones in chordis <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> valde tensis<index indexName="Sachen">
+<term>chorda tensa</term>
+</index> fiunt ut in laxis,<index indexName="Sachen">
+<term>chorda laxa</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">etsi non aeque oculis<index indexName="Sachen">
+<term>oculus</term>
+</index> percipiantur.<index indexName="Sachen">
+<term>perceptio ocularis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">etsi</note>
+<rdg wit="#L" n="1"> sint invisibiles </rdg>
+<rdg wit="#L" n="2"> non aeque oculis percipiantur. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch12.S2.p11">
+<app type="Bfootnote">
+<lem type="main">Quicquid tremit tensum est.</lem>
+<note type="lemma-abbrev">Quicquid</note>
+<rdg wit="#L" cause="addition">
+<add>tremit tensum est.<index indexName="Sachen">
+<term>tensum</term>
+</index>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch12.S2.p12">Nullum corpus tam molle<index indexName="Sachen">
+<term>corpus molle</term>
+</index> est, <app type="Bfootnote">
+<lem type="main">quin celeri nimis</lem>
+<note type="lemma-abbrev">quin</note>
+<rdg wit="#L" n="1"> satis </rdg>
+<rdg wit="#L" n="2"> satis </rdg>
+<rdg wit="#L" n="3"> celeri nimis <hi rendition="#i">L</hi>
+</rdg>
+</app> divisioni<index indexName="Sachen">
+<term>divisio celeris</term>
+</index> resistat.</p>
+<p xml:id="Ch12.S2.p13">
+<app type="Cfootnote">
+<lem type="main">Quicquid divisioni resistit, id antequam rumpatur tenditur, ut fila culcitrae.<anchor xml:id="LH_37_01_020r_culcitra-1"/>
+<index indexName="Sachen">
+<term>filum</term>
+</index>
+<index indexName="Sachen">
+<term>culcitra</term>
+</index>
+<anchor xml:id="LH_37_01_020r_culcitra-2"/>
+</lem>
+<note type="lemma-abbrev">Quicquid <seg type="apparat-ellipsis"/>
+ culcitrae</note>
+<note type="editorial">Siehe den Einwand in G. C. <hi rendition="#k">Schelhammer</hi>, Brief an G. W. Leibniz vom 13. (23.) April 1681 (<hi rendition="#i">LSB</hi> III, 3 N. 206, S. 395.13–396.5<bibl corresp="#bib_01200">). Leibniz erwiderte hierauf zunächst in Randbemerkungen zu diesem Brief (ebd. S. 396, Anm. 11 u. 12)<bibl corresp="#bib_01200"> sowie in seiner Antwort vom 13. (23.) Januar 1682 (<hi rendition="#i">LSB</hi> III, 3 N. 311, S. 545.10–20; 550.8–10). Anspielungen auf Schelhammers Einwand finden sich zudem in N. <ref corresp="L_section_121.xml#N.12.1"/>
+ (S. <ref corresp="L_section_121.xml#LH_37_01_018r_Schelh-1"/>
+) und N. <ref corresp="L_section_123.xml#N.12.3"/>
+ (S. <ref corresp="L_section_123.xml#LH_37_01_004r_culcitra-1"/>
+).</bibl>
+</bibl>
+</note>
+</app>
+</p>
+<p xml:id="Ch12.S2.p14">Corporum repercussio<index indexName="Sachen">
+<term>repercussio</term>
+</index> omnis est a restitutione tensorum<index indexName="Sachen">
+<term>restitutio tensi</term>
+</index> et flexorum.<index indexName="Sachen">
+<term>restitutio flexi</term>
+</index> Itaque quicquid repercutit tensum est.<index indexName="Sachen">
+<term>tensum</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p15">Visibile hoc in pila<index indexName="Sachen">
+<term>pila inflata</term>
+</index>
+<app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[inflata],</corr>
+</lem>
+<rdg wit="#L">
+<orig>inflato</orig>
+<note type="editorial">
+<hi rendition="#i">erg. L, ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> in pectine,<index indexName="Sachen">
+<term>pecten</term>
+</index> vel simili labente.</p>
+<p xml:id="Ch12.S2.p16">Nihil tam durum quin nonnihil flectatur.<index indexName="Sachen">
+<term>durum</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p17">Nihil tam magnum quin nonnihil tremat.</p>
+<p xml:id="Ch12.S2.p18">Ratio cur flexa<index indexName="Sachen">
+<term>flexum</term>
+</index> et restituta<index indexName="Sachen">
+<term>restitutum</term>
+</index> sponte iterum flectantur.</p>
+<p xml:id="Ch12.S2.p19">Omne <app type="Bfootnote">
+<lem type="main">corpus cui</lem>
+<note type="lemma-abbrev">corpus</note>
+<rdg wit="#L" n="1"> quod </rdg>
+<rdg wit="#L" n="2"> cui <hi rendition="#i">L</hi>
+</rdg>
+</app> continue novus impetus<index indexName="Sachen">
+<term>impetus novus</term>
+</index> imprimitur[,] novissime impetum habet ex omnibus collectum.<index indexName="Sachen">
+<term>impetus collectus</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p20">Quicquid magnum impetum collegit,<index indexName="Sachen">
+<term>impetus collectus</term>
+</index> id trans locum ubi alias quieturum esset feretur.<note type="Afootnote" place="margin" resp="#L">
+<note type="lemma-abbrev">
+<hi rendition="#i">Am Rand:</hi>
+</note>Aqua<index indexName="Sachen">
+<term>sonus aquae</term>
+</index> et aer<index indexName="Sachen">
+<term>sonus aeris</term>
+</index> sonum edunt sola suarum partium collisione,<index indexName="Sachen">
+<term>collisio partium</term>
+</index> experimentum.<index indexName="Sachen">
+<term>experimentum</term>
+</index>
+</note>
+</p>
+<p xml:id="Ch12.S2.p21">Non potest <app type="Bfootnote">
+<lem type="main">dici an et quando</lem>
+<note type="lemma-abbrev">dici</note>
+<rdg wit="#L" n="1"> quando </rdg>
+<rdg wit="#L" n="2"> an et quando <hi rendition="#i">L</hi>
+</rdg>
+</app> cesset trepidatio<index indexName="Sachen">
+<term>trepidatio</term>
+</index> tensi<index indexName="Sachen">
+<term>tensum</term>
+</index> semel <app type="Bfootnote">
+<lem type="main">
+<p>pulsati.<note type="Afootnote" place="margin" resp="#L">
+<note type="lemma-abbrev">
+<hi rendition="#i">Am Rand:</hi>
+</note>*
+</note>
+</p>
+<p>Aer<index indexName="Sachen">
+<term>aer</term>
+</index>
+</p>
+</lem>
+<note type="lemma-abbrev">pulsati.</note>
+<rdg wit="#L" n="1"> Aeris definitio </rdg>
+<rdg wit="#L" n="2"> Aer <hi rendition="#i">L</hi>
+</rdg>
+</app> est fluidum elasticum.<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p22">Et spiritus vini<index indexName="Sachen">
+<term>spiritus vini</term>
+</index> esse videtur fluidum<index indexName="Sachen">
+<term>fluidum elasticum</term>
+</index> aeri valde cognatum.</p>
+<p xml:id="Ch12.S2.p23">Aqua<index indexName="Sachen">
+<term>aqua</term>
+</index> non est corpus satis elasticum,<index indexName="Sachen">
+<term>corpus elasticum</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">(<?tex-source \phantom{)}?>tractatus<index indexName="Sachen">
+<term>tractatus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">tractatus</note>
+<note type="editorial">
+<hi rendition="#k">R. Magiotti</hi>,<hi rendition="#i">Renitenza certissima dell’acqua alla compressione</hi>, Rom 1648.<bibl corresp="#bib_01196"/>
+</note>
+</app>
+<hi rendition="#i">della renitenza dell’acqua alla compressione</hi>[<?tex-source \phantom{(}?>)].</p>
+<p xml:id="Ch12.S2.p24">Circulus qui in aqua fit<index indexName="Sachen">
+<term>circulus aqueus</term>
+</index> injecto lapillo,<index indexName="Sachen">
+<term>lapillus injectus</term>
+</index> nihil est aliud quam fluctus orbicularis.<index indexName="Sachen">
+<term>fluctus orbicularis</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p25">Ut ex uno fluctu nascitur alius <app type="Bfootnote">
+<lem type="main">parallelus</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> sed humilior, ita ex fluctu orbiculari nascitur alius orbicularis remotior, ac proinde major priore; sed <app type="Bfootnote">
+<lem type="main">
+<p>humilior.<index indexName="Sachen">
+<term>fluctus orbicularis</term>
+</index>
+</p>
+<p>Fluctus aquae<index indexName="Sachen">
+<term>fluctus aquae</term>
+</index> potius conferendi sunt</p>
+</lem>
+<note type="lemma-abbrev">humilior.</note>
+<rdg wit="#L" n="1"> Fluctuum aquae propagatio,<index indexName="Sachen">
+<term>propagatio fluctuum</term>
+</index>
+<app>
+<rdg wit="#L" n="a">nihil commune h </rdg>
+<rdg wit="#L" n="b">tantum differt </rdg>
+<rdg wit="#L" n="c">potius conferenda est </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> Fluctus aquae potius conferendi sunt <hi rendition="#i">L</hi>
+</rdg>
+</app> vento<index indexName="Sachen">
+<term>ventus</term>
+</index> in aere quam sono.<index indexName="Sachen">
+<term>sonus</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p26">Sonus non oritur<index indexName="Sachen">
+<term>origo soni</term>
+</index> ex percussione<index indexName="Sachen">
+<term>percussio</term>
+</index> corporis sonantis<index indexName="Sachen">
+<term>corpus sonans</term>
+</index> immediate, sed ex restitutione<index indexName="Sachen">
+<term>restitutio percussi</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">
+<p>percussi.</p>
+<p>
+<note type="Afootnote" place="margin" resp="#L">
+<note type="lemma-abbrev">
+<hi rendition="#i">Am Rand:</hi>
+</note>*
+</note>Ad sonum</p>
+</lem>
+<note type="lemma-abbrev">percussi</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>eaque non una sed pluribus repetitis</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> . Ad sonum <hi rendition="#i">L</hi>
+</rdg>
+</app> sensibilem<index indexName="Sachen">
+<term>sonus sensibilis</term>
+</index> efficiendum opus est multis trepidationibus repetitis<index indexName="Sachen">
+<term>trepidatio repetita</term>
+</index>
+<hi rendition="#g">ut ad videndum aliquod punctum sensibile,</hi>
+<index indexName="Sachen">
+<term>punctum sensibile</term>
+</index>
+<hi rendition="#g">multis est opus radiis.</hi>
+<index indexName="Sachen">
+<term>radius</term>
+</index>
+<hi rendition="#g">Ita ad videndum apicem montis,</hi>
+<index indexName="Sachen">
+<term>apex montis</term>
+</index>
+<hi rendition="#g">qui instar puncti videtur.</hi>
+<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=61">
+<pb type="L"/>
+<fw type="folNum">[20 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</p>
+<p xml:id="Ch12.S2.p27">Si aer<index indexName="Sachen">
+<term>aer percussus</term>
+</index> subito <app type="Bfootnote">
+<lem type="main">percutiatur, pars ejus<index indexName="Sachen">
+<term>pars aeris</term>
+</index> quae est ante rem [percutientem] comprimitur,<index indexName="Sachen">
+<term>aer compressus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">percutiatur,</note>
+<rdg wit="#L" n="1"> ante </rdg>
+<rdg wit="#L" n="2">
+<note type="editorial">|</note> is qui <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="3"> pars ejus quae est ante rem <note type="editorial">|</note> percussam <note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi> |
+</note> percussam <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> comprimitur, <hi rendition="#i">L</hi>
+</rdg>
+</app> pars quae post eam est rarescit.<index indexName="Sachen">
+<term>aer rarefactus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">Sit corpus <formula xml:id="Ch12.S2.p27.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</lem>
+<note type="lemma-abbrev">Sit</note>
+<rdg wit="#L" n="1"> aer </rdg>
+<rdg wit="#L" n="2"> corpus <formula xml:id="Ch12.S2.p27.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[quod]</corr>
+</lem>
+<rdg wit="#L">
+<orig>quo</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> magna celeritate<index indexName="Sachen">
+<term>celeritas percussionis</term>
+</index> transfertur in</p>
+<figure rendition="#own-line_centered" xml:id="Ch12.S2.p28">
+<graphic url="../gesamttex/edit_VIII,3/images/LH_37_01_020-021_d.svg" width="182.1204pt" xml:id="Ch12.S2.p28.g1"/>
+<head rendition="#c">[<hi rendition="#i">Fig. 1</hi>]<anchor xml:id="LH_37_01_020-021_fig.1"/>
+</head>
+</figure>
+<p rendition="#noindent" xml:id="Ch12.S2.p29">
+<app type="Cfootnote">
+<lem type="main"/>
+<note type="lemma-abbrev">[<hi rendition="#i">Fig. 1</hi>]
+</note>
+<note type="editorial">In einer ersten, verworfenen und daher nicht wiedergegebenen Fassung des Diagramms verläuft die Saite <formula xml:id="Ch12.S2.p29.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>L</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>M</m:mi>
+</m:mrow>
+</m:math>
+</formula> schräg durch den Körper <formula xml:id="Ch12.S2.p29.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula> hindurch.</note>
+</app>
+<hi rendition="#i">(A)(B)</hi>, et percutiet <app type="Bfootnote">
+<lem type="main">aerem<index indexName="Sachen">
+<term>aer percussus</term>
+</index>
+<formula xml:id="Ch12.S2.p29.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>L</m:mi>
+</m:math>
+</formula> anteriorem</lem>
+<note type="lemma-abbrev">aerem</note>
+<rdg wit="#L" cause="addition">
+<note type="editorial">|</note>
+<add>
+<formula xml:id="Ch12.S2.p29.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi>L</m:mi>
+</m:math>
+</formula>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> anteriorem <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[<formula xml:id="Ch12.S2.p29.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>],
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<formula xml:id="Ch12.S2.p29.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>E</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> eumque expellet<index indexName="Sachen">
+<term>aer expulsus</term>
+</index> ex loco <hi rendition="#i">B(B)</hi>. Et quoniam aer tanta celeritate<index indexName="Sachen">
+<term>celeritas aeris</term>
+</index> circulum<index indexName="Sachen">
+<term>circulus aeris</term>
+</index> commode peragere non potest, ut statim tantundem <app type="Bfootnote">
+<lem type="main">aeris, eundem quam ante densitatis gradum<index indexName="Sachen">
+<term>gradus densitatis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">aeris,</note>
+<rdg wit="#L" n="1"> eandem quam ante rarita </rdg>
+<rdg wit="#L" n="2"> eundem quam ante <app>
+<rdg wit="#L" n="a">compressionis </rdg>
+<rdg wit="#L" n="b">densitatis gradum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> habentis expellatur <app type="Bfootnote">
+<lem type="main">ex [<formula xml:id="Ch12.S2.p29.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>], et vicissim succedat in</lem>
+<note type="lemma-abbrev">ex</note>
+<rdg wit="#L">
+<note type="editorial">|</note>
+<hi rendition="#i">(B)E</hi>
+</rdg>
+<rdg wit="#L" n="1">
+<note type="editorial">|</note> succedat in <note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="2"> et vicissim succedat in <hi rendition="#i">L</hi>
+</rdg>
+</app> locum ipsius <formula xml:id="Ch12.S2.p29.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math>
+</formula> succedentis in locum<index indexName="Sachen">
+<term>locus relictus</term>
+</index> a corpore relictum <formula xml:id="Ch12.S2.p29.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> quia corpora elastica<index indexName="Sachen">
+<term>corpus elasticum</term>
+</index> malunt tendi <app type="Bfootnote">
+<lem type="main">nonnihil</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> quam celeriter moveri; hinc necesse <app type="Bfootnote">
+<lem type="main">est aere <hi rendition="#i">B(B)</hi> expulso<index indexName="Sachen">
+<term>aer expulsus</term>
+</index> a corpore <formula xml:id="Ch12.S2.p29.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula> et in locum ipsius [<hi rendition="#i">(B)C</hi>] non satis statim recedentis subeunte,</lem>
+<note type="lemma-abbrev">est</note>
+<rdg wit="#L" n="1"> aerem <hi rendition="#i">B(B)</hi> subeun </rdg>
+<rdg wit="#L" n="2"> aere <hi rendition="#i">B(B)</hi>
+<seg type="apparat-ellipsis"/>
+ locum ipsius <note type="editorial">|</note>
+<hi rendition="#i">(B)E</hi>  non satis statim recedentis subeunte, <hi rendition="#i">L</hi>
+</rdg>
+</app> aerem in loco <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">(B)C</hi>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<hi rendition="#i">(B)(E)</hi>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> existentem nonnihil comprimi<index indexName="Sachen">
+<term>aer compressus</term>
+</index> et in loco <formula xml:id="Ch12.S2.p29.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math>
+</formula> existentem, quia etiam locum <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">A(A)</hi>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<formula xml:id="Ch12.S2.p29.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> a corpore <app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch12.S2.p29.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula> desertum<index indexName="Sachen">
+<term>locus desertus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch12.S2.p29.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> repletu </rdg>
+<rdg wit="#L" n="2"> desertum <hi rendition="#i">L</hi>
+</rdg>
+</app> implere debet, <app type="Bfootnote">
+<lem type="main">novo aere<index indexName="Sachen">
+<term>aer novus</term>
+</index> sufficiente</lem>
+<note type="lemma-abbrev">novo</note>
+<rdg wit="#L" n="1"> corpore su </rdg>
+<rdg wit="#L" n="2"> aere sufficiente <hi rendition="#i">L</hi>
+</rdg>
+</app> non statim succedente dilatari.<index indexName="Sachen">
+<term>aer dilatatus</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p30">Si in medio aere ordinario<index indexName="Sachen">
+<term>aer ordinarius</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">sit locus<index indexName="Sachen">
+<term>locus repletus</term>
+</index> repletus</lem>
+<note type="lemma-abbrev">sit</note>
+<rdg wit="#L" n="1"> pars </rdg>
+<rdg wit="#L" n="2" cause="addition"> locus <note type="editorial">|</note>
+<add>repletus</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> aere justo dilatatiori,<index indexName="Sachen">
+<term>aer dilatatus</term>
+</index> aer circumstans<index indexName="Sachen">
+<term>aer circumstans</term>
+</index> magno impetu<index indexName="Sachen">
+<term>impetus aeris</term>
+</index> in eum irruens jam tum aliquem efficiet sonum.<index indexName="Sachen">
+<term>sonus</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">Experimentum<index indexName="Sachen">
+<term>experimentum</term>
+</index> est in Machinis Gerickianis;<index indexName="Sachen">
+<term>machina Gerickiana</term>
+</index> nam si duo hemisphaeria<index indexName="Sachen">
+<term>hemisphaerium Gerickianum</term>
+</index> ex quibus exhaustus est aer,<index indexName="Sachen">
+<term>aer exhaustus</term>
+</index> divellantur, aer circumstans<index indexName="Sachen">
+<term>aer circumstans</term>
+</index> ad locum replendum<index indexName="Sachen">
+<term>locus replendus</term>
+</index> confluens sonum edit instar sclopeti.<index indexName="Sachen">
+<term>sonus sclopeti</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Experimentum <seg type="apparat-ellipsis"/>
+ sclopeti</note>
+<note type="editorial">Siehe <hi rendition="#k">O. v. Guericke</hi>,<hi rendition="#i">Experimenta nova</hi>, lib. III, cap. 25 (Amsterdam 1672, S. 106 f.)<bibl corresp="#bib_00055"> Die von Leibniz erwähnten <hi rendition="#i">Machinae Gerickianae</hi> sind Instrumente zur Vakuumerzeugung, die Guericke entwickelt und im dritten Buch seiner <hi rendition="#i">Experimenta nova</hi> beschrieben hatte. Leibniz hat hieraus Auszüge verfasst (<hi rendition="#i">LSB</hi> VIII, 1 N. 36).<bibl corresp="#bib_01197"/>
+</bibl>
+</note>
+</app>
+</p>
+<p xml:id="Ch12.S2.p31">
+<app type="Bfootnote">
+<lem type="main">Idem proportione continget in loco</lem>
+<note type="lemma-abbrev">Idem</note>
+<rdg wit="#L" n="1"> continget et in nostro </rdg>
+<rdg wit="#L" n="2"> proportione continget in loco <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<formula xml:id="Ch12.S2.p31.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula> Etsi enim exigua <app type="Bfootnote">
+<lem type="main">sit aeris in eo dilatatio,<index indexName="Sachen">
+<term>dilatatio aeris</term>
+</index>
+</lem>
+<note type="lemma-abbrev">sit</note>
+<rdg wit="#L" n="1"> differentia ejus </rdg>
+<rdg wit="#L" n="2"> aeris in eo dilatatio, <hi rendition="#i">L</hi>
+</rdg>
+</app> et exiguus etiam ipse <app type="Bfootnote">
+<lem type="main">locus, (<?tex-source \phantom{)}?>tantus scilicet [quanto] chorda tremens<index indexName="Sachen">
+<term>chorda tremens</term>
+</index> major apparet se quiescente<?tex-source \phantom{(}?>)</lem>
+<note type="lemma-abbrev">locus,</note>
+<rdg wit="#L" n="1"> invisibilis scilicet </rdg>
+<rdg wit="#L" n="2"> (<?tex-source \phantom{)}?>tantus scilicet<note type="editorial">|</note> quando <note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi> |
+</note> chorda tremens major apparet <app>
+<rdg wit="#L" n="a">dimidio sui quiescentis </rdg>
+<rdg wit="#L" n="b">se quiescente<?tex-source \phantom{(}?>)<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> orietur tamen si non sonus<index indexName="Sachen">
+<term>origo soni</term>
+</index> certe soni rudimentum,<index indexName="Sachen">
+<term>rudimentum soni</term>
+</index> id est, quod percipi possit multis repetitionibus.<index indexName="Sachen">
+<term>repetitio soni</term>
+</index>
+<index indexName="Sachen">
+<term>perceptio soni</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p32">Ex <app type="Bfootnote">
+<lem type="main">aere ambiente,<index indexName="Sachen">
+<term>aer ambiens</term>
+</index> dum</lem>
+<note type="lemma-abbrev">aere</note>
+<rdg wit="#L" n="1"> iterum confluente </rdg>
+<rdg wit="#L" n="2"> ambiente, <app>
+<rdg wit="#L" n="a">novum </rdg>
+<rdg wit="#L" n="b">dum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> scilicet locus <formula xml:id="Ch12.S2.p32.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<app type="Bfootnote">
+<lem type="main">aeris dilatati<index indexName="Sachen">
+<term>aer dilatatus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">aeris</note>
+<rdg wit="#L" cause="addition">
+<add>dilatati</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> iterum <app type="Bfootnote">
+<lem type="main">impletur, in locum <formula xml:id="Ch12.S2.p32.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math>
+</formula> cum impetu<index indexName="Sachen">
+<term>impetus aeris</term>
+</index> ex <formula xml:id="Ch12.S2.p32.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula> confluente,</lem>
+<note type="lemma-abbrev">impletur,</note>
+<rdg wit="#L" n="1"> et locus <formula xml:id="Ch12.S2.p32.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula> depletur, cum impetu confluente, </rdg>
+<rdg wit="#L" n="2"> in locum <seg type="apparat-ellipsis"/>
+<formula xml:id="Ch12.S2.p32.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula> confluente, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">et ex aere compresso<index indexName="Sachen">
+<term>aer compressus</term>
+</index> incluso in loco <hi rendition="#i">(B)C</hi> dum is depletur et in vicinum aerem<index indexName="Sachen">
+<term>aer vicinus</term>
+</index>
+<formula xml:id="Ch12.S2.p32.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula> erumpit,</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L">ex aere </rdg>
+<rdg wit="#L" n="1"> incluso dum </rdg>
+<rdg wit="#L" n="2" cause="addition">
+<add>compresso incluso <seg type="apparat-ellipsis"/>
+<formula xml:id="Ch12.S2.p32.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula> erumpit,</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> nova oritur percussio,<index indexName="Sachen">
+<term>percussio aeris</term>
+</index> novaque iterum compressio<index indexName="Sachen">
+<term>compressio aeris</term>
+</index> et dilatatio.<index indexName="Sachen">
+<term>dilatatio aeris</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p33">Dum aer vicinus<index indexName="Sachen">
+<term>aer vicinus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch12.S2.p33.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> irruit in locum<index indexName="Sachen">
+<term>locus replendus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">replendum <formula xml:id="Ch12.S2.p33.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> ipse</lem>
+<note type="lemma-abbrev">replendum</note>
+<rdg wit="#L">
+<note type="editorial">|</note>
+</rdg>
+<rdg wit="#L" n="1"> aut excipit aerem deplendum ex loco deplendo <formula xml:id="Ch12.S2.p33.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>C</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</rdg>
+<rdg wit="#L" n="2" cause="addition">
+<add>
+<formula xml:id="Ch12.S2.p33.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> , ipse <hi rendition="#i">L</hi>
+</rdg>
+</app> quoque nonnihil <app type="Bfootnote">
+<lem type="main">dilatatur,<index indexName="Sachen">
+<term>aer dilatatus</term>
+</index> ubi cohaeret aeri <formula xml:id="Ch12.S2.p33.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>H</m:mi>
+</m:mrow>
+</m:math>
+</formula>; a quo</lem>
+<note type="lemma-abbrev">dilatatur,</note>
+<rdg wit="#L" n="1" cause="addition"> nam subito divellitur ab eo cui <note type="editorial">|</note>
+<add>remotiori</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> antea cohaerebat, vel etiam sub </rdg>
+<rdg wit="#L" n="2"> nam </rdg>
+<rdg wit="#L" n="3"> ubi cohaeret aeri <formula xml:id="Ch12.S2.p33.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>H</m:mi>
+</m:mrow>
+</m:math>
+</formula>;<app>
+<rdg wit="#L" n="a">a quo </rdg>
+<rdg wit="#L" n="b">a quo <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> satis celeriter sine dilatatione aliqua divelli non potest. Et quemadmodum dilatatio<index indexName="Sachen">
+<term>dilatatio aeris</term>
+</index> ex <formula xml:id="Ch12.S2.p33.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>A</m:mi>
+</m:mrow>
+</m:math>
+</formula> propagatur in <formula xml:id="Ch12.S2.p33.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> ita ex <formula xml:id="Ch12.S2.p33.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula> propagatur in <formula xml:id="Ch12.S2.p33.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>H</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+<m:mo>.</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</p>
+<p xml:id="Ch12.S2.p34">Similiter compressio<index indexName="Sachen">
+<term>compressio aeris</term>
+</index> propagatur, dum enim locus <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">(B)C</hi> nonnihil</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">(B)C</hi>
+</note>
+<rdg wit="#L" cause="addition">
+<note type="editorial">|</note>
+<add>in quo</add>
+<note type="editorial">
+<hi rendition="#i">erg. L, streicht Hrsg.</hi> |
+</note> nonnihil <hi rendition="#i">L</hi>
+</rdg>
+</app> compressus<index indexName="Sachen">
+<term>locus compressus</term>
+</index> subito depletur in locum <formula xml:id="Ch12.S2.p34.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> necesse est <formula xml:id="Ch12.S2.p34.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula> nonnihil comprimi; similiterque ex <formula xml:id="Ch12.S2.p34.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula> compressio<index indexName="Sachen">
+<term>compressio aeris</term>
+</index> porro in sequentem adhuc remotiorem propagatur.</p>
+<p xml:id="Ch12.S2.p35">Omnem autem compressionem<index indexName="Sachen">
+<term>compressio aeris</term>
+</index> sequitur mox <app type="Bfootnote">
+<lem type="main">restitutio dilatans,<index indexName="Sachen">
+<term>restitutio dilatans</term>
+</index>
+</lem>
+<note type="lemma-abbrev">restitutio</note>
+<rdg wit="#L" n="1"> dil </rdg>
+<rdg wit="#L" n="2"> iterum </rdg>
+<rdg wit="#L" n="3"> dilatans, <hi rendition="#i">L</hi>
+</rdg>
+</app> et dilatationem<index indexName="Sachen">
+<term>dilatatio aeris</term>
+</index> restitutio iterum comprimens;<index indexName="Sachen">
+<term>restitutio comprimens</term>
+</index> ita aer jam ipse per se aliquamdiu in vibrationes<index indexName="Sachen">
+<term>vibratio aeris</term>
+</index> peraget, etsi corpus sonans<index indexName="Sachen">
+<term>corpus sonans</term>
+</index> non vibraret. Sed non erit satis sensibilis illa vibratio,<index indexName="Sachen">
+<term>vibratio sensibilis</term>
+</index> quia ex una tantum percussione<index indexName="Sachen">
+<term>percussio aeris</term>
+</index> orta est corporis <formula xml:id="Ch12.S2.p35.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula> semel tantum translati in <hi rendition="#i">(A)(B)</hi>.<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=62">
+<pb type="L"/>
+<fw type="folNum">[21 r<hi rendition="#sup">o</hi>]
+</fw>
+</ref>
+</p>
+<p xml:id="Ch12.S2.p36">Si corpus<index indexName="Sachen">
+<term>corpus tremens</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">tremens vel ejus pars</lem>
+<note type="lemma-abbrev">tremens</note>
+<rdg wit="#L" cause="addition">
+<add>vel ejus pars</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<formula xml:id="Ch12.S2.p36.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula> translatum in <hi rendition="#i">(A)(B)</hi> redeat in <formula xml:id="Ch12.S2.p36.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> et iterum <app type="Bfootnote">
+<lem type="main"><!--is-editor-addition-app-with-lemma-->
+<add resp="#ed">[in]</add>
+</lem>
+<note type="lemma-abbrev">in</note>
+<note type="editorial">
+<hi rendition="#i">erg. Hrsg.</hi>
+</note>
+</app>
+<hi rendition="#i">(A)(B)</hi> aliquoties reciprocatis itionibus et reditionibus,<index indexName="Sachen">
+<term>itio et reditio</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">toties aer denuo percutietur,<index indexName="Sachen">
+<term>aer percussus</term>
+</index> et novum impetum<index indexName="Sachen">
+<term>impetus aeris</term>
+</index> acquiret,</lem>
+<note type="lemma-abbrev">toties</note>
+<rdg wit="#L" n="1"> , novum impetum imprimet aer </rdg>
+<rdg wit="#L" n="2"> aer denuo <seg type="apparat-ellipsis"/>
+ impetum acquiret, <hi rendition="#i">L</hi>
+</rdg>
+</app> qui denique tam fortis fiet, ut possit percipi.<index indexName="Sachen">
+<term>perceptio soni</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p37">
+<app type="Bfootnote">
+<lem type="main">Praeterea si vibrationes<index indexName="Sachen">
+<term>vibratio aeris</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Praeterea</note>
+<rdg wit="#L" n="1"> cum vibrationes </rdg>
+<rdg wit="#L" n="2"> si vibrationes <hi rendition="#i">L</hi>
+</rdg>
+</app> aeris a dilatatione<index indexName="Sachen">
+<term>dilatatio aeris</term>
+</index> ad compressionem<index indexName="Sachen">
+<term>compressio aeris</term>
+</index> reciproce transeuntis <app type="Bfootnote">
+<lem type="main">non sint synchronae<index indexName="Sachen">
+<term>vibratio synchrona</term>
+</index>
+</lem>
+<note type="lemma-abbrev">non</note>
+<rdg wit="#L" n="1"> consentia </rdg>
+<rdg wit="#L" n="2"> sint <app>
+<rdg wit="#L" n="a">unisonae </rdg>
+<rdg wit="#L" n="b">synchronae <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> reciprocationibus<index indexName="Sachen">
+<term>reciprocatio corporis trementis</term>
+</index> corporis<index indexName="Sachen">
+<term>corpus tremens</term>
+</index> trementis[,] tunc novae supervenientes<index indexName="Sachen">
+<term>percussio superveniens</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">percussiones aerique impressae impetus</lem>
+<note type="lemma-abbrev">percussiones</note>
+<rdg wit="#L" n="1"> impetus </rdg>
+<rdg wit="#L" n="2"> aerique impressae impetus <hi rendition="#i">L</hi>
+</rdg>
+</app> reciprocandi<index indexName="Sachen">
+<term>impetus reciprocandi</term>
+</index> quos aer ex priore adhuc percussione<index indexName="Sachen">
+<term>percussio prior</term>
+</index> residuos habet turbabunt; nam <app type="Bfootnote">
+<lem type="main">aliquando</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> dilatandi<index indexName="Sachen">
+<term>impetus dilatandi</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">sese</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> impetum imprement aeri dum ipse <app type="Bfootnote">
+<lem type="main">jam</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> tendit ad compressionem;<index indexName="Sachen">
+<term>compressio aeris</term>
+</index> aut contra. Videndum igitur qua arte efficiat natura,<index indexName="Sachen">
+<term>ars naturae</term>
+</index> ut perturbatio<index indexName="Sachen">
+<term>perturbatio</term>
+</index> ista <app type="Bfootnote">
+<lem type="main">
+<p>evitetur.</p>
+<p>Si duo corpora<index indexName="Sachen">
+<term>corpus tensum</term>
+</index> inaequalia sint</p>
+</lem>
+<note type="lemma-abbrev">evitetur.</note>
+<rdg wit="#L" n="1"> Omne corpus </rdg>
+<rdg wit="#L" n="2"> Si duo corpora <app>
+<rdg wit="#L" n="a">sint </rdg>
+<rdg wit="#L" n="b">inaequalia sint <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> ejusdem <index indexName="Sachen">
+<term>tensio</term>
+</index>tensionis[,] percussum<index indexName="Sachen">
+<term>corpus percussum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">eo celeriores habet reciprocationes,<index indexName="Sachen">
+<term>reciprocatio corporis percussi</term>
+</index> quo est minus. Hujus propositionis<anchor xml:id="LH_37_01_021r_uwdci-1"/>
+<index indexName="Sachen">
+<term>propositio</term>
+</index> veram rationem</lem>
+<note type="lemma-abbrev">eo</note>
+<rdg wit="#L" n="1"> celerius restituitur </rdg>
+<rdg wit="#L" n="2"> celeriores habet <seg type="apparat-ellipsis"/>
+ est minus. <app>
+<rdg wit="#L" n="a">Hanc </rdg>
+<rdg wit="#L" n="b">Hujus propositionis <app>
+<rdg wit="#L" n="aa">veras rationes </rdg>
+<rdg wit="#L" n="bb">veram rationem <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app> aliquando reddam.<anchor xml:id="LH_37_01_021r_uwdci-2"/>
+<app type="Cfootnote" from="#LH_37_01_021r_uwdci-1" to="#LH_37_01_021r_uwdci-2">
+<lem type="main"/>
+<note type="lemma-abbrev">Hujus <seg type="apparat-ellipsis"/>
+ reddam</note>
+<note type="editorial">Dieses Gesetz hatte Leibniz (mit Bezug auf Saiten) bereits im Dezember 1680 dargelegt und begründet; siehe N. <ref corresp="L_section_82.xml#_41152_2"/>
+, S. <ref corresp="L_section_82.xml#LH_35_09_15_009v_utlong-1"/>
+; N. <ref corresp="L_chapter_9.xml#_41153"/>
+, S. <ref corresp="L_chapter_9.xml#LH_35_09_15_005r_quominoreocitius-1"/>
+.</note>
+</app> Nunc satis est eam assumere velut comprobatam experimento.<index indexName="Sachen">
+<term>experimentum</term>
+</index> Nam <app type="Cfootnote">
+<lem type="main">constat ex sectione monochordi<index indexName="Sachen">
+<term>sectio monochordi</term>
+</index> chordam<anchor xml:id="LH_37_01_021r_freqzulaeng-1"/>
+<index indexName="Sachen">
+<term>chorda tensa</term>
+</index> quo est minor, eo sonum reddere acutiorem<index indexName="Sachen">
+<term>sonus acutus</term>
+</index> manente eadem <app type="Bfootnote">
+<lem type="main">tensione;<anchor xml:id="LH_37_01_021r_freqzulaeng-2"/>
+<index indexName="Sachen">
+<term>tensio chordae</term>
+</index> idem</lem>
+<note type="lemma-abbrev">tensione;</note>
+<rdg wit="#L" n="1"> item </rdg>
+<rdg wit="#L" n="2"> idem <hi rendition="#i">L</hi>
+</rdg>
+</app> de corporibus quoque alterius figurae<index indexName="Sachen">
+<term>figura corporis</term>
+</index> constat.</lem>
+<note type="lemma-abbrev">constat <seg type="apparat-ellipsis"/>
+ constat</note>
+<note type="editorial">Siehe etwa <bibl corresp="#bib_01205">
+<hi rendition="#k">Mersenne</hi>,<hi rendition="#i">Harmonie universelle</hi>, livre III des mouvemens, prop. 5 [6]; 8 [9] (Bd. I, S. A, 169; 174 f.); livre III des instrumens, prop. 7–9 (Bd. II, S. D, 123–128).</bibl>
+</note>
+</app>
+</p>
+<p xml:id="Ch12.S2.p38">Consideremus jam quanta esse debeat portio aeris<index indexName="Sachen">
+<term>portio aeris</term>
+</index>
+<formula xml:id="Ch12.S2.p38.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch12.S2.p38.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> item <hi rendition="#i">(B)C</hi>, aut <app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch12.S2.p38.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> et utique apparet hoc esse satis</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch12.S2.p38.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</note>
+<rdg wit="#L" n="1"> satis </rdg>
+<rdg wit="#L" n="2"> et utique apparet hoc esse satis <hi rendition="#i">L</hi>
+</rdg>
+</app> indeterminatum; et primis ictibus,<index indexName="Sachen">
+<term>ictus primus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">ut portiones aeris<index indexName="Sachen">
+<term>portio aeris</term>
+</index> majores minoresve</lem>
+<note type="lemma-abbrev">ut</note>
+<rdg wit="#L" n="1"> modo haec modo illae p </rdg>
+<rdg wit="#L" n="2"> portiones aeris majores minoresve <hi rendition="#i">L</hi>
+</rdg>
+</app> eligantur, ex variis pendere posse casibus,<index indexName="Sachen">
+<term>casus</term>
+</index> prout ipsum corpus <formula xml:id="Ch12.S2.p38.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula> non tantum majus minusve est, sed et plures habet cavernas,<index indexName="Sachen">
+<term>caverna</term>
+</index> quibus <app type="Bfootnote">
+<lem type="main">aer ipsum ingreditur,<index indexName="Sachen">
+<term>aer ingressus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">aer</note>
+<rdg wit="#L" n="1"> inclusus<index indexName="Sachen">
+<term>aer inclusus</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> ipsum <app>
+<rdg wit="#L" n="a">aer </rdg>
+<rdg wit="#L" n="b">ingreditur, <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> eo enim velut totidem filis<index indexName="Sachen">
+<term>filum</term>
+</index> aerem ambientem<index indexName="Sachen">
+<term>aer ambiens</term>
+</index> fortius <app type="Bfootnote" from="#KZeitz131" to="#KZeitz132">
+<lem type="main"/>
+<note type="lemma-abbrev">trahet;</note>
+<rdg wit="#L" n="1"> quaeque </rdg>
+<rdg wit="#L" n="2"> ut taceam <app>
+<rdg wit="#L" n="a">de u </rdg>
+<rdg wit="#L" n="b">diversa corpora heterogenea <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> trahet; ut taceam diversa corpora heterogenea<anchor xml:id="KZeitz131"/>
+<index indexName="Sachen">
+<term>corpus heterogeneum</term>
+</index>
+<anchor xml:id="KZeitz132"/>
+ quae in <app type="Bfootnote">
+<lem type="main">aere in diversis portionibus<index indexName="Sachen">
+<term>portio aeris</term>
+</index> diversimode reperiuntur.</lem>
+<note type="lemma-abbrev">aere</note>
+<rdg wit="#L" n="1"> reperiuntur </rdg>
+<rdg wit="#L" n="2"> in diversis portionibus diversimode reperiuntur. <hi rendition="#i">L</hi>
+</rdg>
+</app> Verum haec</p>
+<p rendition="#noindent" xml:id="Ch12.S2.p39">de primis ictibus<index indexName="Sachen">
+<term>ictus primus</term>
+</index> intelligenda <app type="Bfootnote">
+<lem type="main">sunt, at corpore sonoro<index indexName="Sachen">
+<term>corpus sonorum</term>
+</index> suas reciprocationes<index indexName="Sachen">
+<term>reciprocatio corporis sonori</term>
+</index> continuante paulatim</lem>
+<note type="lemma-abbrev">sunt,</note>
+<rdg wit="#L" n="1"> verum </rdg>
+<rdg wit="#L" n="2"> at <app>
+<rdg wit="#L" n="a">paulatim </rdg>
+<rdg wit="#L" n="b">corpore sonoro <seg type="apparat-ellipsis"/>
+ continuante paulatim <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> aer ita se componit, ut fiat unisonus<index indexName="Sachen">
+<term>aer unisonus</term>
+</index> corpori sonoro,<index indexName="Sachen">
+<term>corpus sonorum</term>
+</index> ut nempe vibrationum aeris<index indexName="Sachen">
+<term>vibratio aeris</term>
+</index> et corporis sonori<index indexName="Sachen">
+<term>vibratio corporis sonori</term>
+</index> sibi obstantium perturbatio<index indexName="Sachen">
+<term>perturbatio</term>
+</index> minuatur; atque ita tum cum ex repetitis percussionibus<index indexName="Sachen">
+<term>percussio repetita</term>
+</index> acceptus ab aere impetus<index indexName="Sachen">
+<term>impetus acceptus</term>
+</index> satis redditus est validus ut percipi possit,<index indexName="Sachen">
+<term>perceptio soni</term>
+</index> jam aer etiam ad unisonum<index indexName="Sachen">
+<term>unisonus</term>
+</index> devenit; <app type="Bfootnote">
+<lem type="main">id est in portiones<index indexName="Sachen">
+<term>portio aeris</term>
+</index> discerptus est <formula xml:id="Ch12.S2.p39.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch12.S2.p39.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<formula xml:id="Ch12.S2.p39.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>H</m:mi>
+</m:mrow>
+</m:math>
+</formula> etc. <hi rendition="#i">(B)C</hi>,<formula xml:id="Ch12.S2.p39.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>C</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>D</m:mi>
+</m:mrow>
+</m:math>
+</formula> etc. tantae magnitudinis,<index indexName="Sachen">
+<term>magnitudo portionis aeris</term>
+</index> quantae in data aeris tensione<index indexName="Sachen">
+<term>tensio aeris</term>
+</index> faciant, ut vibrationes portionum aeris<index indexName="Sachen">
+<term>vibratio portionis aeris</term>
+</index>
+</lem>
+<note type="lemma-abbrev">id</note>
+<rdg wit="#L">est </rdg>
+<rdg wit="#L" n="1"> tanta ejus portio vib </rdg>
+<rdg wit="#L" n="2"> in portiones <seg type="apparat-ellipsis"/>
+ ut vibrationes <app>
+<rdg wit="#L" n="a">aeris </rdg>
+<rdg wit="#L" n="b">portionum aeris <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> cum vibrationibus sonori<index indexName="Sachen">
+<term>vibratio corporis sonori</term>
+</index> sint aeque diuturnae.<index indexName="Sachen">
+<term>vibratio aequidiuturna</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p40">Nam <app type="Bfootnote">
+<lem type="main">aer suum habet determinatum Elastrum<index indexName="Sachen">
+<term>elastrum aeris</term>
+</index> sive tensionem<index indexName="Sachen">
+<term>tensio aeris</term>
+</index>
+</lem>
+<note type="lemma-abbrev">aer</note>
+<rdg wit="#L" n="1"> suam habet determinatam tensi </rdg>
+<rdg wit="#L" n="2"> suum habet <seg type="apparat-ellipsis"/>
+ sive tensionem <hi rendition="#i">L</hi>
+</rdg>
+</app> (<?tex-source \phantom{)}?>utor autem hic tensionis<index indexName="Sachen">
+<term>tensio</term>
+</index> voce generaliter pro compressione<index indexName="Sachen">
+<term>compressio</term>
+</index> vel dilatatione,<index indexName="Sachen">
+<term>dilatatio</term>
+</index> vel etiam flexione<index indexName="Sachen">
+<term>flexio</term>
+</index> quae fit sine utroque, aut cum utroque simul, ut in arcu tenso<index indexName="Sachen">
+<term>arcus tensus</term>
+</index><?tex-source \phantom{(}?>)<ref target="http://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,01/&amp;pn=64">
+<pb type="L"/>
+<fw type="folNum">[21 v<hi rendition="#sup">o</hi>]
+</fw>
+</ref> quae oritur ex pondere aeris<index indexName="Sachen">
+<term>pondus aeris</term>
+</index> superstantis. Itaque eligitur <app type="Bfootnote">
+<lem type="main">magnitudo partium,<index indexName="Sachen">
+<term>magnitudo partis aeris</term>
+</index> quae cum</lem>
+<note type="lemma-abbrev">magnitudo</note>
+<rdg wit="#L" n="1"> quae cum </rdg>
+<rdg wit="#L" n="2"> partium, quae cum <hi rendition="#i">L</hi>
+</rdg>
+</app> data <app type="Bfootnote">
+<lem type="main">tensione,<index indexName="Sachen">
+<term>tensio aeris</term>
+</index> diuturnitatis desideratae</lem>
+<note type="lemma-abbrev">tensione,</note>
+<rdg wit="#L" n="1"> datae </rdg>
+<rdg wit="#L" n="2"> diuturnitatis desideratae <hi rendition="#i">L</hi>
+</rdg>
+</app> (<?tex-source \phantom{)}?>quae scilicet sonori est<?tex-source \phantom{(}?>) exhibeat vibrationem.<index indexName="Sachen">
+<term>vibratio partis aeris</term>
+</index>
+</p>
+<p xml:id="Ch12.S2.p41">Itaque in locis altioribus<index indexName="Sachen">
+<term>locus altus</term>
+</index> ut <app type="Bfootnote">
+<lem type="main">montibus,<index indexName="Sachen">
+<term>mons</term>
+</index> majoribus opus est</lem>
+<note type="lemma-abbrev">montibus,</note>
+<rdg wit="#L" n="1"> major eligetur </rdg>
+<rdg wit="#L" n="2"> majoribus opus est <hi rendition="#i">L</hi>
+</rdg>
+</app> partibus aeris,<index indexName="Sachen">
+<term>pars aeris</term>
+</index> quae causa esse potest cur sonus illic sit debilior.<index indexName="Sachen">
+<term>sonus debilis</term>
+</index> Nam in majoribus portionibus<index indexName="Sachen">
+<term>portio aeris</term>
+</index> non tam exacte res succedit ut in minoribus, ob varia impedimenta;<index indexName="Sachen">
+<term>impedimentum</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">et cum aer</lem>
+<note type="lemma-abbrev">et</note>
+<rdg wit="#L" n="1"> aer cu </rdg>
+<rdg wit="#L" n="2"> cum aer <hi rendition="#i">L</hi>
+</rdg>
+</app> ibi sit valde<index indexName="Sachen">
+<term>aer rarus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">rarus respectu puri</lem>
+<note type="lemma-abbrev">rarus</note>
+<rdg wit="#L" n="1"> quatenus pur </rdg>
+<rdg wit="#L" n="2"> respectu puri <hi rendition="#i">L</hi>
+</rdg>
+</app> aeris,<index indexName="Sachen">
+<term>aer purus</term>
+</index> est tamen non ideo minus heterogeneis partibus<index indexName="Sachen">
+<term>pars aeris heterogenea</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">plenus; quae</lem>
+<note type="lemma-abbrev">plenus;</note>
+<rdg wit="#L" n="1"> itaque </rdg>
+<rdg wit="#L" n="2"> quae <hi rendition="#i">L</hi>
+</rdg>
+</app> servire poterunt ad <app type="Bfootnote">
+<lem type="main">explicandam causam<index indexName="Sachen">
+<term>causa</term>
+</index> cur sclopeti sonus<index indexName="Sachen">
+<term>sonus sclopeti</term>
+</index> solito exilior fuerit in Carpathii<index indexName="Orte">
+<term>Karpaten (Mons Carpathius)</term>
+</index> cujusdam montis apice,<index indexName="Sachen">
+<term>apex montis</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">quod Frolichius<index indexName="Personen">
+<term>
+<hi rendition="#g">Frölich</hi> (Frolichius, Frölichius), David 1595–1648</term>
+</index> sibi evenisse narrat.</lem>
+<note type="lemma-abbrev">quod <seg type="apparat-ellipsis"/>
+ narrat</note>
+<note type="editorial">
+<hi rendition="#k">D. Frölich</hi>,<hi rendition="#i">Cynosura peregrinantium</hi>, Ulm 1643, S. 268–288.<bibl corresp="#bib_00047"> Auch <hi rendition="#k">Guericke</hi>,<hi rendition="#i">Experimenta nova</hi>, lib. V, cap. 8 (S. 162) berichtet über Frölichs Erzählung.<bibl corresp="#bib_00055"> Leibniz hat Guerickes Referat exzerpiert (<hi rendition="#i">LSB</hi> VIII, 1 N. 36, S. 266.5–7.<bibl corresp="#bib_01197">)</bibl>
+</bibl>
+</bibl>
+</note>
+</app>
+</lem>
+<note type="lemma-abbrev">explicandam</note>
+<rdg wit="#L" n="1"> narrationem quam habet </rdg>
+<rdg wit="#L" n="2"> causam <app>
+<rdg wit="#L" n="a">eorum </rdg>
+<rdg wit="#L" n="b">ejus quod Frolichius<index indexName="Personen">
+<term>
+<hi rendition="#g">Frölich</hi> (Frolichius, Frölichius), David 1595–1648</term>
+</index> in Carpathii<index indexName="Orte">
+<term>Karpaten (Mons Carpathius)</term>
+</index> cujusdam montis apice sibi evenisse narrat </rdg>
+<rdg wit="#L" n="c">cur sclopeti <seg type="apparat-ellipsis"/>
+ evenisse narrat. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> Etiam <app type="Bfootnote">
+<lem type="main">in vacuo Gerickiano<index indexName="Sachen">
+<term>vacuum Gerickianum</term>
+</index> sonus<index indexName="Sachen">
+<term>sonus in vacuo</term>
+</index>
+</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" n="1"> vacuo sonus </rdg>
+<rdg wit="#L" n="2"> vacuo Gerickiano sonus <hi rendition="#i">L</hi>
+</rdg>
+</app> admodum debilitatur, ipso <app type="Cfootnote">
+<lem type="main">Gerickio<index indexName="Personen">
+<term>
+<hi rendition="#g">Guericke</hi> (Gerickius, Gerick.), Otto von 1602–1686</term>
+</index> narrante.</lem>
+<note type="lemma-abbrev">Gerickio narrante</note>
+<note type="editorial">
+<hi rendition="#i">Experimenta nova</hi>, lib. III, cap. 15 (S. 91 f.).<bibl corresp="#bib_00055"/>
+</note>
+</app>
+</p>
+<p xml:id="Ch12.S2.p42">Ex his etiam ratio reddi potest Phaenomeni memorabilis,<index indexName="Sachen">
+<term>phaenomenon memorabile</term>
+</index> quod occasione narrationis<index indexName="Sachen">
+<term>narratio</term>
+</index>
+<app type="Cfootnote">
+<lem type="main">Gassendi<index indexName="Personen">
+<term>
+<hi rendition="#g">Gassendi</hi> (Gassendus), Pierre 1592–1655</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Gassendi</note>
+<note type="editorial">
+<bibl corresp="#bib_01073">
+<hi rendition="#i">Physica</hi>, sectio I, lib. VI, cap. 10 (<hi rendition="#i">GOO</hi> I, S. 417b–418a).<bibl corresp="#bib_01029"/>
+</bibl>
+</note>
+</app> deprehendere <app type="Cfootnote">
+<lem type="main">Academici Florentini,<index indexName="Sachen">
+<term>Accademia del Cimento</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Academici Florentini</note>
+<note type="editorial">Über die von Mitgliedern der Accademia del Cimento durchgeführten Versuche zur Schallgeschwindigkeit berichtet <hi rendition="#k">L. Magalotti</hi>,<hi rendition="#i">Saggi</hi>, Florenz 1666, S. 242 f.<bibl corresp="#bib_00143"/>
+</note>
+</app> nempe soni celeritatem<index indexName="Sachen">
+<term>celeritas soni</term>
+</index> esse <app type="Bfootnote">
+<lem type="main">uniformem<index indexName="Sachen">
+<term>celeritas uniformis</term>
+</index> ratione loci sive <app type="Cfootnote">
+<lem type="main">distantiis<index indexName="Sachen">
+<term>distantia</term>
+</index> proportionalem;</lem>
+<note type="lemma-abbrev">distantiis proportionalem</note>
+<note type="editorial">Wie das nachfolgende Beispiel unmittelbar klarstellt, meint Leibniz mit seiner missverständlichen Formulierung nicht, dass die Schallgeschwindigkeit sich im Verhältnis zum Abstand von der Schallquelle ändere.</note>
+</app>
+</lem>
+<note type="lemma-abbrev">uniformem</note>
+<rdg wit="#L" n="1"> , sive </rdg>
+<rdg wit="#L" n="2">
+<note type="editorial">|</note> ,<note type="editorial">
+<hi rendition="#i">streicht Hrsg.</hi> |
+</note> ratione loci sive distantiis proportionalem; <hi rendition="#i">L</hi>
+</rdg>
+</app> ita ut si certo <app type="Bfootnote">
+<lem type="main">tempusculo<index indexName="Sachen">
+<term>tempusculum</term>
+</index> mille passus<index indexName="Sachen">
+<term>passus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">tempusculo</note>
+<rdg wit="#L" n="1"> millia </rdg>
+<rdg wit="#L" n="2"> mille passus <hi rendition="#i">L</hi>
+</rdg>
+</app> percurrat[,] duobus, tribus,,,ve similibus tempusculis<index indexName="Sachen">
+<term>tempusculum</term>
+</index> percursurus sit duo, tria, etc. passuum<index indexName="Sachen">
+<term>passus</term>
+</index> millia. Hoc ita <app type="Bfootnote">
+<lem type="main">
+<p>demonstratur:</p>
+<p>Ut vibrationibus corporis <formula xml:id="Ch12.S2.p42.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula>
+<index indexName="Sachen">
+<term>corpus vibrans</term>
+</index> aequidiuturnae<index indexName="Sachen">
+<term>vibratio aequidiuturna</term>
+</index> sunt vibrationes aeris<index indexName="Sachen">
+<term>vibratio aeris</term>
+</index>
+<formula xml:id="Ch12.S2.p42.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+</p>
+</lem>
+<note type="lemma-abbrev">demonstratur:</note>
+<rdg wit="#L" n="1"> Ut vibrationes aeris <formula xml:id="Ch12.S2.p42.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula> sunt aequidiuturnae </rdg>
+<rdg wit="#L" n="2"> Ut vibrationibus <seg type="apparat-ellipsis"/>
+ aeris <formula xml:id="Ch12.S2.p42.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> ita his aequidiuturnae sunt vibrationes<index indexName="Sachen">
+<term>vibratio aequidiuturna</term>
+</index> aeris<index indexName="Sachen">
+<term>vibratio aeris</term>
+</index>
+<formula xml:id="Ch12.S2.p42.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> et ita porro. Eadem enim causa est isochronismi,<index indexName="Sachen">
+<term>causa isochronismi</term>
+</index> ut perturbationes<index indexName="Sachen">
+<term>perturbatio</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">evitentur. Unde</lem>
+<note type="lemma-abbrev">evitentur.</note>
+<rdg wit="#L" n="1"> Ergo </rdg>
+<rdg wit="#L" n="2"> Unde <hi rendition="#i">L</hi>
+</rdg>
+</app> tandem propagatur vibratio isochrona,<index indexName="Sachen">
+<term>vibratio isochrona</term>
+</index> ad chordam unisonam<index indexName="Sachen">
+<term>chorda unisona</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">datae, vel locum Echus,<index indexName="Sachen">
+<term>echo</term>
+</index> vel denique organon auditus.<index indexName="Sachen">
+<term>organon auditus</term>
+</index>
+</lem>
+<note type="lemma-abbrev">datae,</note>
+<rdg wit="#L">vel </rdg>
+<rdg wit="#L" n="1"> organon auditus, vel </rdg>
+<rdg wit="#L" n="2"> locum Echus, <seg type="apparat-ellipsis"/>
+ organon auditus. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch12.S2.p43">Sed percussiones<index indexName="Sachen">
+<term>percussio</term>
+</index> tam sunt celeres quam sunt <app type="Bfootnote">
+<lem type="main">vibrationes, id est,</lem>
+<note type="lemma-abbrev">vibrationes,</note>
+<rdg wit="#L" n="1"> itaque </rdg>
+<rdg wit="#L" n="2"> id est, <hi rendition="#i">L</hi>
+</rdg>
+</app> corpus<index indexName="Sachen">
+<term>corpus vibrans</term>
+</index> vel aer<index indexName="Sachen">
+<term>aer vibrans</term>
+</index> tam celeriter percutit quam celeriter vibrat. <app type="Bfootnote">
+<lem type="main">Sequens autem corpus tam celeriter accipit vibrationes quam celeriter praecedens ipsum percutit.</lem>
+<note type="lemma-abbrev">Sequens</note>
+<rdg wit="#L" cause="addition">
+<add>autem <seg type="apparat-ellipsis"/>
+ ipsum percutit.</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">Itaque eadem celeritate<index indexName="Sachen">
+<term>celeritas vibrationis</term>
+</index>
+</lem>
+<note type="lemma-abbrev">Itaque</note>
+<rdg wit="#L" n="1"> tam celeriter </rdg>
+<rdg wit="#L" n="2"> eadem celeritate <hi rendition="#i">L</hi>
+</rdg>
+</app> accipit aer <formula xml:id="Ch12.S2.p43.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula> vibrationem<index indexName="Sachen">
+<term>vibratio aeris</term>
+</index> (<?tex-source \phantom{)}?>a corpore<app type="Bfootnote">
+<lem type="main">
+<formula xml:id="Ch12.S2.p43.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula><?tex-source \phantom{(}?>) qua accipit</lem>
+<note type="lemma-abbrev">
+<formula xml:id="Ch12.S2.p43.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+</m:mrow>
+</m:math>
+</formula><?tex-source \phantom{(}?>)</note>
+<rdg wit="#L" n="1"> quam celeriter </rdg>
+<rdg wit="#L" n="2"> qua <app>
+<rdg wit="#L" n="a">ex </rdg>
+<rdg wit="#L" n="b">accipit <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> aer <formula xml:id="Ch12.S2.p43.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+</m:math>
+</formula> (<?tex-source \phantom{)}?>ab aere<formula xml:id="Ch12.S2.p43.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula><?tex-source \phantom{(}?>) et aer<formula xml:id="Ch12.S2.p43.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>G</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>H</m:mi>
+</m:mrow>
+</m:math>
+</formula> (<?tex-source \phantom{)}?>ab<app type="Bfootnote">
+<lem type="main">aere <formula xml:id="Ch12.S2.p43.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+</m:math>
+</formula><?tex-source \phantom{(}?>). Est</lem>
+<note type="lemma-abbrev">aere</note>
+<rdg wit="#L" cause="deletion">
+<formula xml:id="Ch12.S2.p43.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+</m:math>
+</formula><?tex-source \phantom{(}?>)<note type="editorial">|</note>
+<del>et ita porro, ac proinde propagatio soni<index indexName="Sachen">
+<term>propagatio soni</term>
+</index> est distantiae proportionalis</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> . Est <hi rendition="#i">L</hi>
+</rdg>
+</app> autem portio<index indexName="Sachen">
+<term>portio aeris</term>
+</index>
+<formula xml:id="Ch12.S2.p43.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>F</m:mi>
+</m:mrow>
+</m:math>
+</formula> circiter aequalis portioni <formula xml:id="Ch12.S2.p43.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>G</m:mi>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:math>
+</formula> et ita porro. Aer<index indexName="Sachen">
+<term>aer</term>
+</index> enim apud nos in eodem fere ubique tensionis<index indexName="Sachen">
+<term>tensio</term>
+</index> statu est, itaque tempora propagationum<index indexName="Sachen">
+<term>tempus propagationis</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">erunt ut numeri portionum</lem>
+<note type="lemma-abbrev">erunt</note>
+<rdg wit="#L" n="1"> ut portiones </rdg>
+<rdg wit="#L" n="2"> ut numeri portionum <hi rendition="#i">L</hi>
+</rdg>
+</app> in quas aer divisus est,<index indexName="Sachen">
+<term>portio aeris</term>
+</index> id est ut distantiae.<index indexName="Sachen">
+<term>distantia</term>
+</index> Erit tamen aliquod licet <app type="Bfootnote">
+<lem type="main">forte</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> non ita sensibile discrimen<index indexName="Sachen">
+<term>discrimen sensibile</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">progressionis</lem>
+<rdg wit="#L">
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ratione magnitudinis partium,<index indexName="Sachen">
+<term>magnitudo partis aeris</term>
+</index> quando sonus<index indexName="Sachen">
+<term>sonus</term>
+</index> tendit a loco superiore<index indexName="Sachen">
+<term>locus superior</term>
+</index> in inferiorem,<index indexName="Sachen">
+<term>locus inferior</term>
+</index> vel a calido<index indexName="Sachen">
+<term>locus calidus</term>
+</index> in frigidum.<index indexName="Sachen">
+<term>locus frigidus</term>
+</index>
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

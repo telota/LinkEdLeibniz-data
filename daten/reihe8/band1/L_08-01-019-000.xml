@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-019-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-019-000">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -6,32 +7,56 @@
         <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
           Text</title>
         <respStmt>
-          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Digitale Konzeption und
-            Projektbegleitung</note></resp>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
         </respStmt>
         <respStmt>
-          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-            Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
-          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-            VIII</note></resp>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-            Berlin</note></resp>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
         </respStmt>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
         <date type="creation">2021</date>
         <availability>
-          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -48,7 +73,10 @@
             <date calendar="#gregorian" notBefore="1672-03" resp="#ed" cert="medium">[Frühjahr
               – Herbst 1672]</date>
             <date calendar="#gregorian" notAfter="1672-11" resp="#ed" cert="medium"/>
-            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=198</idno></idno>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+              <idno type="page">#page=198</idno>
+            </idno>
           </analytic>
           <monogr>
             <title type="main" level="s" n="8">Reihe VIII:
@@ -61,17 +89,22 @@
             </imprint>
             <biblScope unit="page" from="153" to="166"/>
           </monogr>
-          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
         </biblStruct>
         <listWit>
-          <witness n="LiA" corresp="#L_08-01-019-000_facs-haupttextzeuge"><msDesc>
+          <witness n="LiA" corresp="#L_08-01-019-000_facs-haupttextzeuge">
+            <msDesc>
               <msIdentifier>
                 <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                 <idno type="Signatur">LH XXXVII 2 Bl. 83–91</idno>
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#lektuere">
-                <summary><p>Marginalien und Ergänzungen in <hi rendition="#k">J. Hudde</hi>, <ref corresp="#bib_00125"/><hi rendition="#i">Specilla circularia</hi>: LH XXXVII 2
+                <summary>
+                  <p>Marginalien und Ergänzungen in <hi rendition="#k">J. Hudde</hi>,                    <ref corresp="#bib_00125"/>
+                    <hi rendition="#i">Specilla circularia</hi>: LH XXXVII 2
                     Bl. 83–91. 5 Bog. 4<hi rendition="#sup">o</hi>. 17 1/3 S. Bl. 92 leer. Bl. 84
                       r<hi rendition="#sup">o</hi> im unteren Drittel der Seite die Zeichnungen fig.
                     1, fig. 2 und <hi rendition="#i">[Fig. 3]</hi>. In der Hannoveraner Abschrift
@@ -80,7 +113,8 @@
                     durcheinander geraten. Diese und andere Unkorrektheiten werden von Leibniz durch
                     Marginalien und kleinere Texteingriffe korrigiert. Da das Verständnis der
                     Marginalien die Kenntnis größerer Textteile erfordert, wird im Folgenden der
-                    gesamte Text abgedruckt.</p></summary>
+                    gesamte Text abgedruckt.</p>
+                </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -88,16 +122,22 @@
               <history>
                 <origin corresp="L_witness-origin-types.xml#origin-LiA"/>
               </history>
-            </msDesc></witness>
-          <witness n="E"><msDesc>
+            </msDesc>
+          </witness>
+          <witness n="E">
+            <msDesc>
               <msIdentifier>
                 <collection>Leibniz-Bibliographie</collection>
                 <idno type="Laufende-Nummer">XXX</idno>
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#veroeffentlichung_posthum">
-                <summary><p><hi rendition="#k">R. Vermij / E. Atzema</hi>, <ref corresp="#bib_00194"/><hi rendition="#i">Specilla circularia: an unknown work by Johannes
+                <summary>
+                  <p>
+                    <hi rendition="#k">R. Vermij / E. Atzema</hi>,                    <ref corresp="#bib_00194"/>
+                    <hi rendition="#i">Specilla circularia: an unknown work by Johannes
                       Hudde</hi>, in: <hi rendition="#i">Studia Leibnitiana</hi>, Bd. XXVII/1 (1995)
-                    S. 104–121. Huddes Text S. 113–121.</p></summary>
+                    S. 104–121. Huddes Text S. 113–121.</p>
+                </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
@@ -105,7 +145,8 @@
               <history>
                 <origin corresp="L_witness-origin-types.xml#origin-E"/>
               </history>
-            </msDesc></witness>
+            </msDesc>
+          </witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -236,7 +277,7 @@
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=293"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=294"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,02/&amp;pn=295"/>
-    </facsimile>
+  </facsimile>
   <text xml:id="L_08-01-019-000_text">
     <body xml:id="Document">
       <div type="chapter" xml:id="Ch19" n="19">
@@ -244,15 +285,20 @@
         <head>19. ZU JOHANN HUDDE, SPECILLA CIRCULARIA</head>
         <head>[Frühjahr – Herbst 1672]</head>
         <div type="ueberlieferung">
-          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-              <witness><msDesc>
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
                   <msIdentifier>
                     <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                     <idno type="Signatur">XXX</idno>
                   </msIdentifier>
                   <msContents>
-                    <summary><p>Marginalien und Ergänzungen in <hi rendition="#k">J. Hudde</hi>,
-                          <ref corresp="#bib_00125"/><hi rendition="#i">Specilla circularia</hi>: LH
+                    <summary>
+                      <p>Marginalien und Ergänzungen in <hi rendition="#k">J. Hudde</hi>,
+                        <ref corresp="#bib_00125"/>
+                        <hi rendition="#i">Specilla circularia</hi>: LH
                         XXXVII 2 Bl. 83–91. 5 Bog. 4<hi rendition="#sup">o</hi>. 17 1/3 S. Bl. 92
                         leer. Bl. 84 r<hi rendition="#sup">o</hi> im unteren Drittel der Seite die
                         Zeichnungen fig. 1, fig. 2 und <hi rendition="#i">[Fig. 3]</hi>. In der
@@ -262,7 +308,8 @@
                         Unkorrektheiten werden von Leibniz durch Marginalien und kleinere
                         Texteingriffe korrigiert. Da das Verständnis der Marginalien die Kenntnis
                         größerer Textteile erfordert, wird im Folgenden der gesamte Text
-                        abgedruckt.</p></summary>
+                        abgedruckt.</p>
+                    </summary>
                   </msContents>
                   <physDesc>
                     <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -270,17 +317,23 @@
                   <history>
                     <origin/>
                   </history>
-                </msDesc></witness>
-              <witness><msDesc>
+                </msDesc>
+              </witness>
+              <witness>
+                <msDesc>
                   <msIdentifier>
                     <collection>Leibniz-Bibliographie</collection>
                     <idno type="Laufende-Nummer">XXX</idno>
                   </msIdentifier>
                   <msContents>
-                    <summary><p><hi rendition="#k">R. Vermij / E. Atzema</hi>, <ref corresp="#bib_00194"/><hi rendition="#i">Specilla circularia: an unknown
+                    <summary>
+                      <p>
+                        <hi rendition="#k">R. Vermij / E. Atzema</hi>,                        <ref corresp="#bib_00194"/>
+                        <hi rendition="#i">Specilla circularia: an unknown
                           work by Johannes Hudde</hi>, in: <hi rendition="#i">Studia
                           Leibnitiana</hi>, Bd. XXVII/1 (1995) S. 104–121. Huddes Text
-                        S. 113–121.</p></summary>
+                        S. 113–121.</p>
+                    </summary>
                   </msContents>
                   <physDesc>
                     <objectDesc form="Druck" corresp="L_objectDesc.xml#druck"/>
@@ -288,64 +341,85 @@
                   <history>
                     <origin/>
                   </history>
-                </msDesc></witness>
-            </listWit></p>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
         </div>
         <div type="contents">
-          <p xml:id="Ch19.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: Wie
+          <p xml:id="Ch19.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>: Wie
               die Herausgeber von <hi rendition="#i">E</hi> mitteilen, ist der Text <hi rendition="#i">Specilla circularia</hi>, dessen Druck offenbar verloren gegangen
               ist, in zwei Abschriften überliefert. Eine Abschrift befindet sich in der Royal
               Society in London, die zweite ist unsere Druckvorlage. Die Londoner Abschrift enthält
               am Ende den Zusatz: Huddenius<index indexName="Namensregister">
-                <term><hi rendition="#g #smaller">Hudde</hi>
-                  <hi rendition="#smaller">(Huddenius), Jan 1628–1704</hi></term>
-              </index> Consul Amstelodamensis<index indexName="Ortsregister">
-                <term><hi rendition="#smaller">Amsterdam</hi></term>
-              </index>, aus dem die Herausgeber schliessen, dass diese Abschrift 1672 oder später
+              <term>
+                <hi rendition="#g #smaller">Hudde</hi>
+                <hi rendition="#smaller">(Huddenius), Jan 1628–1704</hi>
+              </term>
+            </index> Consul Amstelodamensis<index indexName="Ortsregister">
+            <term>
+              <hi rendition="#smaller">Amsterdam</hi>
+            </term>
+          </index>, aus dem die Herausgeber schliessen, dass diese Abschrift 1672 oder später
               angefertigt worden sein muss. Die Datierung deckt sich mit dem Wasserzeichen des
-              Textträgers unserer Druckvorlage, das für März 1672 nachgewiesen ist.</hi></p>
-        </div>
-        <div type="text">
-          <p xml:id="Ch19.p5"><pb type="L"/><fw type="folNum">[83 r<hi rendition="#sup">o</hi>]</fw>
+              Textträgers unserer Druckvorlage, das für März 1672 nachgewiesen ist.</hi>
+      </p>
+    </div>
+    <div type="text">
+      <p xml:id="Ch19.p5">
+        <pb type="L"/>
+        <fw type="folNum">[83 r<hi rendition="#sup">o</hi>]
+        </fw>
             Specilla Circularia<index indexName="Sachverzeichnis">
-              <term>specillum</term>
-              <index>
-                <term>circulare</term>
-              </index>
-            </index>, sive quomodo per solas Circulares figuras fieri possint omnis generis
+        <term>specillum</term>
+        <index>
+          <term>circulare</term>
+        </index>
+      </index>, sive quomodo per solas Circulares figuras fieri possint omnis generis
               specilla<index indexName="Sachverzeichnis">
-              <term>specillum</term>
-            </index> tam Microscopia<index indexName="Sachverzeichnis">
-              <term>microscopium</term>
-            </index> quam telescopia<index indexName="Sachverzeichnis">
-              <term>telescopium</term>
-            </index>, etc: eundem plane effectum habentia, aut saltem quam proxime accedentem ad
+      <term>specillum</term>
+    </index> tam Microscopia<index indexName="Sachverzeichnis">
+    <term>microscopium</term>
+  </index> quam telescopia<index indexName="Sachverzeichnis">
+  <term>telescopium</term>
+</index>, etc: eundem plane effectum habentia, aut saltem quam proxime accedentem ad
             eorum, quae per ellipticas aut hyperbolicas figuras fieri possent.</p>
-          <p xml:id="Ch19.p6">Notum jam omnibus satis est, quanta sit specillorum<index indexName="Sachverzeichnis">
-              <term>specillum</term>
-            </index> utilitas: myopes<index indexName="Sachverzeichnis">
-              <term>myops</term>
-            </index> alias et senes novaque, post inventa microscopia<index indexName="Sachverzeichnis">
-              <term>microscopium</term>
-            </index>, et telescopia<index indexName="Sachverzeichnis">
-              <term>telescopium</term>
-            </index>, tam in coelis quam, <app type="Bfootnote">
-              <lem type="main">hic</lem>
-              <rdg wit="#L" cause="addition"><add>hic</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app>,</p>
-          <p xml:id="Ch19.p7" rendition="#noindent">in terra, circa nos magna copia detecta objecta,
+<p xml:id="Ch19.p6">Notum jam omnibus satis est, quanta sit specillorum<index indexName="Sachverzeichnis">
+<term>specillum</term>
+</index> utilitas: myopes<index indexName="Sachverzeichnis">
+<term>myops</term>
+</index> alias et senes novaque, post inventa microscopia<index indexName="Sachverzeichnis">
+<term>microscopium</term>
+</index>, et telescopia<index indexName="Sachverzeichnis">
+<term>telescopium</term>
+</index>, tam in coelis quam, <app type="Bfootnote">
+<lem type="main">hic</lem>
+<rdg wit="#L" cause="addition">
+<add>hic</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>,
+</p>
+<p xml:id="Ch19.p7" rendition="#noindent">in terra, circa nos magna copia detecta objecta,
             luculentum sunt testimonium sed multa adhuc magis admiranda quam ea quae hactenus
             detecta sunt promittere nobis videntur, imo procul omni dubio horum ope ab astronomis
             motuum coelestium, a Philosophis naturae corporum mixtorum; a Medicis naturae et virium
-            herbarum, et corporis humani, perfectior longe notitia haberi poterit, quam un<pb type="VIII_1" n="154" break="no"/>quam absque his expectanda foret. Cumque hoc publice
+            herbarum, et corporis humani, perfectior longe notitia haberi poterit, quam un<pb type="VIII_1" n="154" break="no"/>
+quam absque his expectanda foret. Cumque hoc publice
             constaret, plurimi fuere jam brevi, qui maxima cum diligentia specilla<index indexName="Sachverzeichnis">
-              <term>specillum</term>
-            </index> haec ad summam perfectionem perducere conati sunt. Sed nulli id, meo judicio,
+<term>specillum</term>
+</index> haec ad summam perfectionem perducere conati sunt. Sed nulli id, meo judicio,
             melius successit quam incomparabili viro Renato Descartes<index indexName="Namensregister">
-              <term><hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
+<term>
+<hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
                 1596–1650</term>
-            </index>, cujus labori nihil plane superaddi <pb type="L"/><fw type="folNum">[83 v<hi rendition="#sup">o</hi>]</fw> potuisset, si ea quae de machina illa, quam ad vitra
+</index>, cujus labori nihil plane superaddi <pb type="L"/>
+<fw type="folNum">[83 v<hi rendition="#sup">o</hi>]
+</fw> potuisset, si ea quae de machina illa, quam ad vitra
             secundum determinatam figuram polienda, excogitaverat, ita accurate in praxi potuissent
             observari, quam ab ipso ingeniose fuere excogitata; sed cum nondum eo, quod sciam,
             pervenerit artificum dexteritas, atque incerto sit, an nostris temporibus eo perventura
@@ -354,929 +428,980 @@
             Cumque inquirerem, commodiorem non inveni, quam ut ostendam quo modo per simplicissimas
             figuras, et factu facillimas, id quod per magis compositas factum est, fieri possit, ita
             ut nulla notabilis differentia inter earum effectus reperiatur.</p>
-          <p xml:id="Ch19.p8">Simpliciores autem quam hyperbola (qua cl. vir Ren. Descartes<index indexName="Namensregister">
-              <term><hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
+<p xml:id="Ch19.p8">Simpliciores autem quam hyperbola (qua cl. vir Ren. Descartes<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
                 1596–1650</term>
-            </index> una cum linea recta ad figuranda vitra sua utitur) nullae lineae sunt praeter
+</index> una cum linea recta ad figuranda vitra sua utitur) nullae lineae sunt praeter
             rectam et circulum. Sola autem recta nullo nobis ad hoc usui esse potest. Circulum vero
             huic usui inservire posse comperi. Id quomodo fieri possit nunc publice notum facere
             constitui, ut brevi perfectiora telescopia<index indexName="Sachverzeichnis">
-              <term>telescopium</term>
-            </index>, et Microscopia<index indexName="Sachverzeichnis">
-              <term>microscopium</term>
-            </index>, quam hactenus nacti, in naturae notitia proficere possimus fructusque ejus
-            quam primum degustare. <pb type="L"/><fw type="folNum">[84 r<hi rendition="#sup">o</hi>]</fw> Cardo hujus rei in hoc versatur ut magnam radiorum parallelorum copiam
+<term>telescopium</term>
+</index>, et Microscopia<index indexName="Sachverzeichnis">
+<term>microscopium</term>
+</index>, quam hactenus nacti, in naturae notitia proficere possimus fructusque ejus
+            quam primum degustare. <pb type="L"/>
+<fw type="folNum">[84 r<hi rendition="#sup">o</hi>]
+</fw> Cardo hujus rei in hoc versatur ut magnam radiorum parallelorum copiam
             per vitrum in quod incidunt ita refringi faciamus, ut postea ad unum idemque; punctum
             tendant. Sed punctum hoc aut mathematice aut mechanice considerari potest. Et quamvis
             certum sit, figuras circulares non habere potentiam illam aut proprietatem, (ut quidem
             Ellipticae aut hyperbolicae, ac infinitae aliae magis compositae) parallelos radios ita
             refringendi, ut postea ad unum punctum Mathematicum<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mathematicum</term>
-              </index>
-            </index> tendant, nihilominus tamen, magnam eorum copiam ita versus eundem locum
+<term>punctum</term>
+<index>
+<term>mathematicum</term>
+</index>
+</index> tendant, nihilominus tamen, magnam eorum copiam ita versus eundem locum
             inflectere possunt, ut spatium illud in quo omnes conveniunt, pro mechanico puncto<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> tantum sit habendum. Punctum autem mechanicum<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> appello, quod in mechanicis aut divisibile non est, aut cujus partes hic non
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> tantum sit habendum. Punctum autem mechanicum<index indexName="Sachverzeichnis">
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> appello, quod in mechanicis aut divisibile non est, aut cujus partes hic non
             sunt consideratu dignae.</p>
-          <pb type="VIII_1" n="155"/>
-          <figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch19.p9">
-            <graphic url="./images/37_02_084r123.svg" width="303.534pt" xml:id="Ch19.p9.g1"/>
+<pb type="VIII_1" n="155"/>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch19.p9">
+<graphic url="./images/37_02_084r123.svg" width="303.534pt" xml:id="Ch19.p9.g1"/>
 
 
-            <head><hi rendition="#i">[Fig. 3]</hi></head>
-          </figure>
-          <p xml:id="Ch19.p10"><pb type="L"/><fw type="folNum">[84 v<hi rendition="#sup">o</hi>]</fw> Ad quod demonstrandum factum sic hoc <app type="Bfootnote">
-              <!--is-correction-app-with-lemma-->
-              <lem type="main"><corr resp="#ed">[schema]</corr></lem>
-              <rdg wit="#A"><orig>scema</orig>
-                <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi></note></rdg>
-            </app> in quo <hi rendition="#i">N</hi>, sit Centrum Circuli <hi rendition="#i">NDB</hi>; <hi rendition="#i">ND</hi> semidiameter; <hi rendition="#i">BF</hi>,
-            perpendicularis ad <hi rendition="#i">DN</hi>; <hi rendition="#i">BC</hi> tangens
-            circulum in <hi rendition="#i">B</hi>, <hi rendition="#i">LBNG</hi> recta ad quam <hi rendition="#i">IG</hi> et <hi rendition="#i">AL</hi> perpendiculares sunt; <hi rendition="#i">AB</hi> parallelae rectae <hi rendition="#i">DNI</hi>. Si jam <app type="Bfootnote">
-              <lem type="main"><hi rendition="#i">AB</hi></lem>
-              <note type="lemma-abbrev">jam</note>
-              <rdg wit="#L" n="1"> <hi rendition="#i">AD</hi>
-              </rdg>
-              <rdg wit="#L" n="2"> <hi rendition="#i">AB</hi>
-                <hi rendition="#i">L</hi></rdg>
-            </app> sumatur pro quolibet radiorum per aerem transeuntium, et in <hi rendition="#i">B</hi> in vitrum circularis hujus figurae incidentium, calculo inveniendum est;
-            primo, punctum illud in producta diametro versus quod radius iste refractus <pb type="VIII_1" n="156"/>tendit; quod si pro eo statuatur <hi rendition="#i">I</hi>,
+<head>
+<hi rendition="#i">[Fig. 3]</hi>
+</head>
+</figure>
+<p xml:id="Ch19.p10">
+<pb type="L"/>
+<fw type="folNum">[84 v<hi rendition="#sup">o</hi>]
+</fw> Ad quod demonstrandum factum sic hoc <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[schema]</corr>
+</lem>
+<rdg wit="#A">
+<orig>scema</orig>
+<note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> in quo <hi rendition="#i">N</hi>, sit Centrum Circuli <hi rendition="#i">NDB</hi>;<hi rendition="#i">ND</hi> semidiameter; <hi rendition="#i">BF</hi>,
+            perpendicularis ad <hi rendition="#i">DN</hi>;<hi rendition="#i">BC</hi> tangens
+            circulum in <hi rendition="#i">B</hi>,<hi rendition="#i">LBNG</hi> recta ad quam <hi rendition="#i">IG</hi> et <hi rendition="#i">AL</hi> perpendiculares sunt; <hi rendition="#i">AB</hi> parallelae rectae <hi rendition="#i">DNI</hi>. Si jam <app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">AB</hi>
+</lem>
+<note type="lemma-abbrev">jam</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">AD</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">AB</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> sumatur pro quolibet radiorum per aerem transeuntium, et in <hi rendition="#i">B</hi> in vitrum circularis hujus figurae incidentium, calculo inveniendum est;
+            primo, punctum illud in producta diametro versus quod radius iste refractus <pb type="VIII_1" n="156"/>
+tendit; quod si pro eo statuatur <hi rendition="#i">I</hi>,
             invenienda est longitudo lineae <hi rendition="#i">NL</hi>. Quae ut inveniatur, sit
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m1">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mrow>
-                    <m:mi>B</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mi>N</m:mi>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                    <m:mo>⁢</m:mo>
-                    <m:mn> 1</m:mn>
-                  </m:mrow>
-                  <m:mo>;</m:mo>
-                  <m:mrow>
-                    <m:mi>B</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mi>F</m:mi>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>x</m:mi>
-                  </m:mrow>
-                  <m:mo>;</m:mo>
-                  <m:mrow>
-                    <m:mi>N</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mi>I</m:mi>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>z</m:mi>
-                  </m:mrow>
-                  <m:mo>;</m:mo>
-                  <m:mrow>
-                    <m:mi>A</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mi>L</m:mi>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>y</m:mi>
-                  </m:mrow>
-                  <m:mo>;</m:mo>
-                  <m:mrow>
-                    <m:mi>A</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mi>B</m:mi>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>B</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>I</m:mi>
-                  </m:mrow>
-                </m:mrow>
-              </m:math>
-            </formula>. Tam porro manifestum est triangula <hi rendition="#i">ALB</hi>, <hi rendition="#i">BFN</hi>, <hi rendition="#i">IGN</hi>, proportionalia esse, ac
-            propterea <hi rendition="#i">BF</hi>, <hi rendition="#i">x</hi>, habere eandem rationem
-            ad <hi rendition="#i">BN</hi>, <hi rendition="#i">I</hi>, ut <hi rendition="#i">AL</hi>,
-              <hi rendition="#i">y</hi>; ad <hi rendition="#i">AB</hi>, aut <hi rendition="#i">BI</hi>, <formula xml:id="Ch19.p10.m2">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mi>y</m:mi>
-                    <m:mi>x</m:mi>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula>; ergo quadratum super
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m3">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mi>B</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mpadded width="+2.2pt">
-                    <m:mi>I</m:mi>
-                  </m:mpadded>
-                  <m:mo>⁢</m:mo>
-                  <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                  <m:mo>⁢</m:mo>
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mrow>
-                        <m:mi>y</m:mi>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>y</m:mi>
-                      </m:mrow>
-                      <m:mrow>
-                        <m:mi>x</m:mi>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>x</m:mi>
-                      </m:mrow>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mrow>
-              </m:math>
-            </formula>, unde subtractum quadratum super <hi rendition="#i">BF</hi>, relinquitur
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>N</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mn> 1</m:mn>
+</m:mrow>
+<m:mo>;</m:mo>
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>F</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mo>;</m:mo>
+<m:mrow>
+<m:mi>N</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>I</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>z</m:mi>
+</m:mrow>
+<m:mo>;</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>L</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:mrow>
+<m:mo>;</m:mo>
+<m:mrow>
+<m:mi>A</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>B</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>I</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>. Tam porro manifestum est triangula <hi rendition="#i">ALB</hi>,<hi rendition="#i">BFN</hi>,<hi rendition="#i">IGN</hi>, proportionalia esse, ac
+            propterea <hi rendition="#i">BF</hi>,<hi rendition="#i">x</hi>, habere eandem rationem
+            ad <hi rendition="#i">BN</hi>,<hi rendition="#i">I</hi>, ut <hi rendition="#i">AL</hi>,
+<hi rendition="#i">y</hi>; ad <hi rendition="#i">AB</hi>, aut <hi rendition="#i">BI</hi>,<formula xml:id="Ch19.p10.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mi>y</m:mi>
+<m:mi>x</m:mi>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>; ergo quadratum super
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>B</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>I</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>y</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>, unde subtractum quadratum super <hi rendition="#i">BF</hi>, relinquitur
             quadratum super
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m4">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mrow>
-                    <m:mi>I</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mi>F</m:mi>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                    <m:mo>⁢</m:mo>
-                    <m:mstyle displaystyle="true">
-                      <m:mfrac>
-                        <m:mrow>
-                          <m:mi>y</m:mi>
-                          <m:mo>⁢</m:mo>
-                          <m:mi>y</m:mi>
-                        </m:mrow>
-                        <m:mrow>
-                          <m:mi>x</m:mi>
-                          <m:mo>⁢</m:mo>
-                          <m:mi>x</m:mi>
-                        </m:mrow>
-                      </m:mfrac>
-                    </m:mstyle>
-                  </m:mrow>
-                  <m:mo>-</m:mo>
-                  <m:mrow>
-                    <m:mi>x</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mi>x</m:mi>
-                  </m:mrow>
-                </m:mrow>
-              </m:math>
-            </formula>, ergo
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m5">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mi>I</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mpadded width="+2.2pt">
-                    <m:mi>F</m:mi>
-                  </m:mpadded>
-                  <m:mo>⁢</m:mo>
-                  <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                  <m:mo>⁢</m:mo>
-                  <m:msqrt>
-                    <m:mrow>
-                      <m:mstyle displaystyle="true">
-                        <m:mfrac>
-                          <m:mrow>
-                            <m:mi>y</m:mi>
-                            <m:mo>⁢</m:mo>
-                            <m:mi>y</m:mi>
-                          </m:mrow>
-                          <m:mrow>
-                            <m:mi>x</m:mi>
-                            <m:mo>⁢</m:mo>
-                            <m:mi>x</m:mi>
-                          </m:mrow>
-                        </m:mfrac>
-                      </m:mstyle>
-                      <m:mo>-</m:mo>
-                      <m:mrow>
-                        <m:mi>x</m:mi>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>x</m:mi>
-                      </m:mrow>
-                    </m:mrow>
-                  </m:msqrt>
-                </m:mrow>
-              </m:math>
-            </formula>, unde subtrahatur
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m6">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mi>F</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mpadded width="+2.2pt">
-                    <m:mi>N</m:mi>
-                  </m:mpadded>
-                  <m:mo>⁢</m:mo>
-                  <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                  <m:mo>⁢</m:mo>
-                  <m:msqrt>
-                    <m:mrow>
-                      <m:mn>1</m:mn>
-                      <m:mo>-</m:mo>
-                      <m:mrow>
-                        <m:mi>x</m:mi>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>x</m:mi>
-                      </m:mrow>
-                    </m:mrow>
-                  </m:msqrt>
-                </m:mrow>
-              </m:math>
-            </formula>, relinquetur
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m7">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mrow>
-                    <m:mi>N</m:mi>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mi>I</m:mi>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mi>Z</m:mi>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                    <m:mo>⁢</m:mo>
-                    <m:msqrt>
-                      <m:mrow>
-                        <m:mstyle displaystyle="true">
-                          <m:mfrac>
-                            <m:mrow>
-                              <m:mi>y</m:mi>
-                              <m:mo>⁢</m:mo>
-                              <m:mi>y</m:mi>
-                            </m:mrow>
-                            <m:mrow>
-                              <m:mi>x</m:mi>
-                              <m:mo>⁢</m:mo>
-                              <m:mi>x</m:mi>
-                            </m:mrow>
-                          </m:mfrac>
-                        </m:mstyle>
-                        <m:mo>-</m:mo>
-                        <m:mrow>
-                          <m:mi>x</m:mi>
-                          <m:mo>⁢</m:mo>
-                          <m:mi>x</m:mi>
-                        </m:mrow>
-                      </m:mrow>
-                    </m:msqrt>
-                  </m:mrow>
-                  <m:mo>-</m:mo>
-                  <m:msqrt>
-                    <m:mrow>
-                      <m:mn>1</m:mn>
-                      <m:mo>-</m:mo>
-                      <m:mrow>
-                        <m:mi>x</m:mi>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>x</m:mi>
-                      </m:mrow>
-                    </m:mrow>
-                  </m:msqrt>
-                </m:mrow>
-              </m:math>
-            </formula>. Porro <hi rendition="#i">BN</hi>, 1, est ad <hi rendition="#i">BF</hi>, <hi rendition="#i">x</hi>, ut <hi rendition="#i">NI</hi>, <hi rendition="#i">z</hi> ad
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m8">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mi>I</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mpadded width="+2.2pt">
-                    <m:mi>G</m:mi>
-                  </m:mpadded>
-                  <m:mo>⁢</m:mo>
-                  <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>x</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>z</m:mi>
-                </m:mrow>
-              </m:math>
-            </formula>. Cum itaque ratio <hi rendition="#i">AL</hi> ad <hi rendition="#i">IG</hi>
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>I</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>F</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>y</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+</m:math>
+</formula>, ergo
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>I</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>F</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:msqrt>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>y</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</formula>, unde subtrahatur
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>F</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>N</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:msqrt>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</formula>, relinquetur
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mi>N</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>I</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>Z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:msqrt>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>y</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:msqrt>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</formula>. Porro <hi rendition="#i">BN</hi>, 1, est ad <hi rendition="#i">BF</hi>,<hi rendition="#i">x</hi>, ut <hi rendition="#i">NI</hi>,<hi rendition="#i">z</hi> ad
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mi>I</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>G</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>z</m:mi>
+</m:mrow>
+</m:math>
+</formula>. Cum itaque ratio <hi rendition="#i">AL</hi> ad <hi rendition="#i">IG</hi>
             sit communis mensura refractionis omnium radiorum, <app type="Cfootnote">
-              <lem type="main">ut apparet ex secundo capite Dioptrices praedicti Do<hi rendition="#sup">ni</hi> Descartes<index indexName="Namensregister">
-                  <term><hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
+<lem type="main">ut apparet ex secundo capite Dioptrices praedicti Do<hi rendition="#sup">ni</hi> Descartes<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
                     1596–1650</term>
-                </index>; cognita refractionum vitri</lem>
-              <note type="lemma-abbrev">Descartes</note>
-              <note type="editorial"><hi rendition="#k">R. Descartes</hi>, <bibl corresp="#bib_00038"><hi rendition="#i">La dioptrique</hi>, Leiden 1637, S. 21
-                    (<hi rendition="#i">DO</hi> VI, S. 101).</bibl></note>
-            </app>
-            <pb type="L"/><fw type="folNum">[8<pb type="VIII_1" n="158"/>5 r<hi rendition="#sup">o</hi>]</fw> magnitudine, porro calculo inveniri potest versus quod punctum rectae
-              <hi rendition="#i">DNI</hi> unus <app type="Bfootnote">
-              <lem type="main">quisque</lem>
-              <rdg wit="#L" cause="addition"><add>quisque</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> radius per vitrum permeans refractus tendere debeat. Supposita itaque vitri
+</index>; cognita refractionum vitri</lem>
+<note type="lemma-abbrev">Descartes</note>
+<note type="editorial">
+<hi rendition="#k">R. Descartes</hi>,<bibl corresp="#bib_00038">
+<hi rendition="#i">La dioptrique</hi>, Leiden 1637, S. 21
+                    (<hi rendition="#i">DO</hi> VI, S. 101).</bibl>
+</note>
+</app>
+<pb type="L"/>
+<fw type="folNum">[8<pb type="VIII_1" n="158"/>
+5 r<hi rendition="#sup">o</hi>]
+</fw> magnitudine, porro calculo inveniri potest versus quod punctum rectae
+<hi rendition="#i">DNI</hi> unus <app type="Bfootnote">
+<lem type="main">quisque</lem>
+<rdg wit="#L" cause="addition">
+<add>quisque</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> radius per vitrum permeans refractus tendere debeat. Supposita itaque vitri
             refractionum magnitudine cognita, ita ut si <hi rendition="#i">AL</hi> supponatur
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m9">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                  <m:mo>⁢</m:mo>
-                  <m:mn> 20</m:mn>
-                </m:mrow>
-              </m:math>
-            </formula>, <hi rendition="#i">GI</hi> aequalis sit <app type="Bfootnote">
-              <lem type="main">13</lem>
-              <note type="lemma-abbrev">sit</note>
-              <rdg wit="#L" n="1"> <hi rendition="#i">B</hi>
-              </rdg>
-              <rdg wit="#L" n="2"> 13 <hi rendition="#i">L</hi></rdg>
-            </app> earundem partium (talem circiter ego refractionum vitri magnitudinem observavi:)
-            prout tum se habet 20 ad 13 ita <hi rendition="#i">AL</hi>, <hi rendition="#i">y</hi>,
-            ad <hi rendition="#i">GI</hi>, <hi rendition="#i">xz</hi>,
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m10">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mn>20</m:mn>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>x</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mpadded width="+2.2pt">
-                    <m:mi>z</m:mi>
-                  </m:mpadded>
-                  <m:mo>⁢</m:mo>
-                  <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                  <m:mo>⁢</m:mo>
-                  <m:mn> 13</m:mn>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>y</m:mi>
-                </m:mrow>
-              </m:math>
-            </formula>, et
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m11">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mpadded width="+2.2pt">
-                    <m:mstyle displaystyle="true">
-                      <m:mfrac>
-                        <m:mrow>
-                          <m:mn>20</m:mn>
-                          <m:mo>⁢</m:mo>
-                          <m:mi>x</m:mi>
-                          <m:mo>⁢</m:mo>
-                          <m:mi>z</m:mi>
-                        </m:mrow>
-                        <m:mn>13</m:mn>
-                      </m:mfrac>
-                    </m:mstyle>
-                  </m:mpadded>
-                  <m:mo>⁢</m:mo>
-                  <m:mpadded width="+2.2pt">
-                    <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                  </m:mpadded>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>y</m:mi>
-                </m:mrow>
-              </m:math>
-            </formula> et
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m12">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>400</m:mn>
-                      <m:mn>169</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>x</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>x</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>z</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mpadded width="+2.2pt">
-                    <m:mi>z</m:mi>
-                  </m:mpadded>
-                  <m:mo>⁢</m:mo>
-                  <m:mpadded width="+2.2pt">
-                    <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                  </m:mpadded>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>y</m:mi>
-                  <m:mo>⁢</m:mo>
-                  <m:mi>y</m:mi>
-                </m:mrow>
-              </m:math>
-            </formula>. Sed reperta est
-              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p10.m13">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mrow>
-                    <m:mpadded width="+2.2pt">
-                      <m:mi>z</m:mi>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:mpadded width="+2.2pt">
-                      <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                    </m:mpadded>
-                    <m:mo>⁢</m:mo>
-                    <m:msqrt>
-                      <m:mrow>
-                        <m:mstyle displaystyle="true">
-                          <m:mfrac>
-                            <m:mrow>
-                              <m:mi>y</m:mi>
-                              <m:mo>⁢</m:mo>
-                              <m:mi>y</m:mi>
-                            </m:mrow>
-                            <m:mrow>
-                              <m:mi>x</m:mi>
-                              <m:mo>⁢</m:mo>
-                              <m:mi>x</m:mi>
-                            </m:mrow>
-                          </m:mfrac>
-                        </m:mstyle>
-                        <m:mo>-</m:mo>
-                        <m:mrow>
-                          <m:mi>x</m:mi>
-                          <m:mo>⁢</m:mo>
-                          <m:mi>x</m:mi>
-                        </m:mrow>
-                      </m:mrow>
-                    </m:msqrt>
-                  </m:mrow>
-                  <m:mo>-</m:mo>
-                  <m:msqrt>
-                    <m:mrow>
-                      <m:mn>1</m:mn>
-                      <m:mo>-</m:mo>
-                      <m:mrow>
-                        <m:mi>x</m:mi>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>x</m:mi>
-                      </m:mrow>
-                    </m:mrow>
-                  </m:msqrt>
-                </m:mrow>
-              </m:math>
-            </formula> , ergo <hi rendition="#i">z</hi> erit etiam aequalis <formula xml:id="Ch19.p10.m14">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:msqrt>
-                    <m:mrow>
-                      <m:mrow>
-                        <m:mstyle displaystyle="true">
-                          <m:mfrac>
-                            <m:mn>400</m:mn>
-                            <m:mn>169</m:mn>
-                          </m:mfrac>
-                        </m:mstyle>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>z</m:mi>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>z</m:mi>
-                      </m:mrow>
-                      <m:mo>-</m:mo>
-                      <m:mrow>
-                        <m:mi>x</m:mi>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>x</m:mi>
-                      </m:mrow>
-                    </m:mrow>
-                  </m:msqrt>
-                  <m:mo>-</m:mo>
-                  <m:msqrt>
-                    <m:mrow>
-                      <m:mn>1</m:mn>
-                      <m:mo>-</m:mo>
-                      <m:mrow>
-                        <m:mi>x</m:mi>
-                        <m:mo>⁢</m:mo>
-                        <m:mi>x</m:mi>
-                      </m:mrow>
-                    </m:mrow>
-                  </m:msqrt>
-                </m:mrow>
-              </m:math>
-            </formula>, ut itaque inveniatur desiderata longitudo <hi rendition="#i">NI</hi> quae
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mn> 20</m:mn>
+</m:mrow>
+</m:math>
+</formula>,<hi rendition="#i">GI</hi> aequalis sit <app type="Bfootnote">
+<lem type="main">13</lem>
+<note type="lemma-abbrev">sit</note>
+<rdg wit="#L" n="1">
+<hi rendition="#i">B</hi>
+</rdg>
+<rdg wit="#L" n="2"> 13 <hi rendition="#i">L</hi>
+</rdg>
+</app> earundem partium (talem circiter ego refractionum vitri magnitudinem observavi:)
+            prout tum se habet 20 ad 13 ita <hi rendition="#i">AL</hi>,<hi rendition="#i">y</hi>,
+            ad <hi rendition="#i">GI</hi>,<hi rendition="#i">xz</hi>,
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m10">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>20</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mn> 13</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:mrow>
+</m:math>
+</formula>, et
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m11">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mn>20</m:mn>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>z</m:mi>
+</m:mrow>
+<m:mn>13</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:mrow>
+</m:math>
+</formula> et
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m12">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>400</m:mn>
+<m:mn>169</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>z</m:mi>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:mrow>
+</m:math>
+</formula>. Sed reperta est
+              <!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p10.m13">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:msqrt>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mrow>
+<m:mi>y</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>y</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:msqrt>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</formula> , ergo <hi rendition="#i">z</hi> erit etiam aequalis <formula xml:id="Ch19.p10.m14">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>400</m:mn>
+<m:mn>169</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mi>z</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>z</m:mi>
+</m:mrow>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+</m:msqrt>
+<m:mo>-</m:mo>
+<m:msqrt>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>-</m:mo>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>⁢</m:mo>
+<m:mi>x</m:mi>
+</m:mrow>
+</m:mrow>
+</m:msqrt>
+</m:mrow>
+</m:math>
+</formula>, ut itaque inveniatur desiderata longitudo <hi rendition="#i">NI</hi> quae
             vocata fuit <hi rendition="#i">z</hi>, cognita sumenda est <hi rendition="#i">BF</hi>,
             quae vocata fuit <hi rendition="#i">x</hi>. Si ergo jam ponatur</p>
-          <p xml:id="Ch19.p11"><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><formula xml:id="Ch19.p11.m1">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mtable columnspacing="5pt" rowspacing="10pt">
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>x</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                          <m:mo>⁢</m:mo>
-                          <m:mn>0</m:mn>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mtext>erit </m:mtext>
-                        <m:mo>⁢</m:mo>
-                        <m:mpadded width="+2.2pt">
-                          <m:mi>z</m:mi>
-                        </m:mpadded>
-                        <m:mo>⁢</m:mo>
-                        <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                        <m:mo>⁢</m:mo>
-                        <m:mstyle displaystyle="true">
-                          <m:mfrac>
-                            <m:mn>429</m:mn>
-                            <m:mn>231</m:mn>
-                          </m:mfrac>
-                        </m:mstyle>
-                        <m:mo>⁢</m:mo>
-                        <m:mtext>, et erit omnium longissima</m:mtext>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>x</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>3</m:mn>
-                              <m:mn>5</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mtext>erit </m:mtext>
-                          <m:mo>⁢</m:mo>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>z</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mrow>
-                            <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                            <m:mtext> paulo amplius quam </m:mtext>
-                          </m:mrow>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>1</m:mn>
-                              <m:mrow>
-                                <m:mn>5</m:mn>
-                                <m:mo>,</m:mo>
-                              </m:mrow>
-                            </m:mfrac>
-                          </m:mstyle>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>873</m:mn>
-                              <m:mn>231</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>x</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>5</m:mn>
-                              <m:mn>13</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mtext>erit </m:mtext>
-                          <m:mo>⁢</m:mo>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>z</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mrow>
-                            <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                            <m:mtext> paulo amplius quam </m:mtext>
-                          </m:mrow>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>5</m:mn>
-                              <m:mrow>
-                                <m:mn>13</m:mn>
-                                <m:mo>,</m:mo>
-                              </m:mrow>
-                            </m:mfrac>
-                          </m:mstyle>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>300</m:mn>
-                              <m:mn>231</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>x</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>7</m:mn>
-                              <m:mn>25</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mtext>erit </m:mtext>
-                          <m:mo>⁢</m:mo>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>z</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mrow>
-                            <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                            <m:mtext> paulo amplius quam </m:mtext>
-                          </m:mrow>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>10</m:mn>
-                              <m:mrow>
-                                <m:mn>25</m:mn>
-                                <m:mo>,</m:mo>
-                              </m:mrow>
-                            </m:mfrac>
-                          </m:mstyle>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>447</m:mn>
-                              <m:mn>231</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>x</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>9</m:mn>
-                              <m:mn>41</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mtext>erit </m:mtext>
-                          <m:mo>⁢</m:mo>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>z</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mrow>
-                            <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                            <m:mtext> paulo amplius quam </m:mtext>
-                          </m:mrow>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>17</m:mn>
-                              <m:mrow>
-                                <m:mn>41</m:mn>
-                                <m:mo>,</m:mo>
-                              </m:mrow>
-                            </m:mfrac>
-                          </m:mstyle>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>310</m:mn>
-                              <m:mn>231</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>x</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>31</m:mn>
-                              <m:mn>481</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mtext>erit </m:mtext>
-                          <m:mo>⁢</m:mo>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>z</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mrow>
-                            <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                            <m:mtext> paulo amplius quam </m:mtext>
-                          </m:mrow>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>20</m:mn>
-                              <m:mrow>
-                                <m:mn>481</m:mn>
-                                <m:mo>,</m:mo>
-                              </m:mrow>
-                            </m:mfrac>
-                          </m:mstyle>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>6070</m:mn>
-                              <m:mn>231</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                  <m:mtr>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>x</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>49</m:mn>
-                              <m:mn>1201</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                    <m:mtd columnalign="left">
-                      <m:mrow>
-                        <m:mrow>
-                          <m:mtext>erit </m:mtext>
-                          <m:mo>⁢</m:mo>
-                          <m:mpadded width="+2.2pt">
-                            <m:mi>z</m:mi>
-                          </m:mpadded>
-                          <m:mo>⁢</m:mo>
-                          <m:mrow>
-                            <m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
-                            <m:mtext> paulo amplius quam </m:mtext>
-                          </m:mrow>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>514</m:mn>
-                              <m:mrow>
-                                <m:mn>1201</m:mn>
-                                <m:mo>,</m:mo>
-                              </m:mrow>
-                            </m:mfrac>
-                          </m:mstyle>
-                          <m:mo>⁢</m:mo>
-                          <m:mstyle displaystyle="true">
-                            <m:mfrac>
-                              <m:mn>950</m:mn>
-                              <m:mn>231</m:mn>
-                            </m:mfrac>
-                          </m:mstyle>
-                        </m:mrow>
-                        <m:mo>,</m:mo>
-                      </m:mrow>
-                    </m:mtd>
-                  </m:mtr>
-                </m:mtable>
-              </m:math>
-            </formula></p>
-          <p xml:id="Ch19.p12"><pb type="L"/><fw type="folNum">[85 v<hi rendition="#sup">o</hi>]</fw> ita ut omnes paralleli radii intra altitudinem perpendicularis
-              <lb/><!--  \hack{\renewcommand{\arraystretch}{2.3}
+<p xml:id="Ch19.p11"><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}--><!--\hack-in-math{^{\rotatebox{180}{$\propto$}}}--><!--\hackfor-in-math{\rightpropto}-->
+<formula xml:id="Ch19.p11.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mtable columnspacing="5pt" rowspacing="10pt">
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+2.2pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mn>0</m:mn>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mtext>erit </m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>429</m:mn>
+<m:mn>231</m:mn>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mtext>, et erit omnium longissima</m:mtext>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+2.2pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mtext>erit </m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mtext> paulo amplius quam </m:mtext>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mrow>
+<m:mn>5</m:mn>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>873</m:mn>
+<m:mn>231</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+2.2pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>5</m:mn>
+<m:mn>13</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mtext>erit </m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mtext> paulo amplius quam </m:mtext>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>5</m:mn>
+<m:mrow>
+<m:mn>13</m:mn>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>300</m:mn>
+<m:mn>231</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+2.2pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mn>25</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mtext>erit </m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mtext> paulo amplius quam </m:mtext>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>10</m:mn>
+<m:mrow>
+<m:mn>25</m:mn>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>447</m:mn>
+<m:mn>231</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+2.2pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>9</m:mn>
+<m:mn>41</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mtext>erit </m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mtext> paulo amplius quam </m:mtext>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>17</m:mn>
+<m:mrow>
+<m:mn>41</m:mn>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>310</m:mn>
+<m:mn>231</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+2.2pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>31</m:mn>
+<m:mn>481</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mtext>erit </m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mtext> paulo amplius quam </m:mtext>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>20</m:mn>
+<m:mrow>
+<m:mn>481</m:mn>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>6070</m:mn>
+<m:mn>231</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mpadded width="+2.2pt">
+<m:mi>x</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>49</m:mn>
+<m:mn>1201</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+<m:mtd columnalign="left">
+<m:mrow>
+<m:mrow>
+<m:mtext>erit </m:mtext>
+<m:mo>⁢</m:mo>
+<m:mpadded width="+2.2pt">
+<m:mi>z</m:mi>
+</m:mpadded>
+<m:mo>⁢</m:mo>
+<m:mrow>
+<m:mo xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rightpropto"/>
+<m:mtext> paulo amplius quam </m:mtext>
+</m:mrow>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>514</m:mn>
+<m:mrow>
+<m:mn>1201</m:mn>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mfrac>
+</m:mstyle>
+<m:mo>⁢</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>950</m:mn>
+<m:mn>231</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+<m:mo>,</m:mo>
+</m:mrow>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math>
+</formula>
+</p>
+<p xml:id="Ch19.p12">
+<pb type="L"/>
+<fw type="folNum">[85 v<hi rendition="#sup">o</hi>]
+</fw> ita ut omnes paralleli radii intra altitudinem perpendicularis
+<lb/>
+<!--  \hack{\renewcommand{\arraystretch}{2.3}
 \hspace{-8mm}\parbox{1cm}{\textit{x} \edtext{[posita]}{\lemma{posit}\Afootnote{\textit{\ L \"{a}ndert Hrsg. }}}}
 $\left\{
 \begin{array}{r}
@@ -1303,14 +1428,17 @@ $\left\{
 \displaystyle\frac{1}{994}
 \end{array}\right\}
 $\advanceline{5}.} 
-     \hackfor{\edtext{}{\lemma{posit}\Afootnote{\textit{\ L \"{a}ndert Hrsg. }}}}--><app type="Bfootnote">
-              <!--is-correction-app-with-empty-lemma-->
-              <note type="editorial"><orig>posit</orig>
-                <hi rendition="#i">L ändert Hrsg. </hi></note>
-            </app>
-            <formula xml:id="Ch19.p12f" facs="../figurereplacements/158-1.svg">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
-              <?tex-source \renewcommand{\arraystretch}{2.3}
+     \hackfor{\edtext{}{\lemma{posit}\Afootnote{\textit{\ L \"{a}ndert Hrsg. }}}}-->
+<app type="Bfootnote">
+<!--is-correction-app-with-empty-lemma-->
+<note type="editorial">
+<orig>posit</orig>
+<hi rendition="#i">L ändert Hrsg. </hi>
+</note>
+</app>
+<formula xml:id="Ch19.p12f" facs="../figurereplacements/158-1.svg">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+<?tex-source \renewcommand{\arraystretch}{2.3}
 \hspace{-8mm}\parbox{1cm}{\textit{x} \edtext{[posita]}{\lemma{posit}\Afootnote{\textit{\ L \"{a}ndert Hrsg. }}}}
 $\left\{
 \begin{array}{r}
@@ -1338,18 +1466,20 @@ $\left\{
 \end{array}\right\}
 $\advanceline{5}.
 ?>
-            </formula><!--  \hack{\rule[0mm]{0mm}{10mm}} 
+</formula><!--  \hack{\rule[0mm]{0mm}{10mm}} 
      \hackfor{\par\noindent}--></p>
-          <p xml:id="Ch19.p13" rendition="#noindent">Ex quibus patet quanto <hi rendition="#i">x</hi> sive <hi rendition="#i">BF</hi> minor est, tanto etiam punctum <hi rendition="#i">I</hi> longius distare ab <hi rendition="#i">N</hi>, hoc est quanto
+<p xml:id="Ch19.p13" rendition="#noindent">Ex quibus patet quanto <hi rendition="#i">x</hi> sive <hi rendition="#i">BF</hi> minor est, tanto etiam punctum <hi rendition="#i">I</hi> longius distare ab <hi rendition="#i">N</hi>, hoc est quanto
             radius aliquis magis distat ab axe aut vertice <hi rendition="#i">D</hi>, tanto etiam
             remotius a vertice axem secare.</p>
-          <p xml:id="Ch19.p14">Deinde si concipiatur <hi rendition="#i">IDB</hi>, circa axem <hi rendition="#i">DI</hi> rotatam, figuram vitri describere, facile etiam inveniri potest
+<p xml:id="Ch19.p14">Deinde si concipiatur <hi rendition="#i">IDB</hi>, circa axem <hi rendition="#i">DI</hi> rotatam, figuram vitri describere, facile etiam inveniri potest
             magnitudo minimi plani ad angulos rectos ad <hi rendition="#i">DK</hi> erecti, in quod
             omnes radii qui <hi rendition="#i">DI</hi> sunt paralleli, atque contenti intra
             Cylindrum illum ab <hi rendition="#i">ABF</hi>, circa axem <hi rendition="#i">DFN</hi>
             rotata, descriptum, incidunt; (quod planum postea vocabitur focus:) sed cum non necesse
             habeamus scire minimi hujus plani magnitudinem ut ad propositum perveniamus, satis erit
-            si tantum alterius cujusdam, quod longe quam hoc majus est, atque in quo <pb type="L"/><fw type="folNum">[86 r<hi rendition="#sup">o</hi>]</fw> etiam radii illi congregari
+            si tantum alterius cujusdam, quod longe quam hoc majus est, atque in quo <pb type="L"/>
+<fw type="folNum">[86 r<hi rendition="#sup">o</hi>]
+</fw> etiam radii illi congregari
             debent, inveniatur magnitudo. Quod ut fiat supponatur <hi rendition="#i">K</hi> esse
             illud punctum quod longissime ab <hi rendition="#i">N</hi> aut <hi rendition="#i">D</hi>
             distat, ad quod radius aliquis refractus tendat, sitque <hi rendition="#i">I</hi>
@@ -1357,12 +1487,14 @@ $\advanceline{5}.
             tendit. Deinde ducta sit <hi rendition="#i">BA</hi>, sitque <hi rendition="#i">IM</hi>,
             perpendicularis ad axem. Manifestum itaque est, omnes radios praedicti Cylindri
             occurrere debere illi Circulo, qui ab <hi rendition="#i">IM</hi>
-            <pb type="VIII_1" n="159"/>circa axem <hi rendition="#i">DNK</hi> rotata, describitur,
+<pb type="VIII_1" n="159"/>
+circa axem <hi rendition="#i">DNK</hi> rotata, describitur,
             circulumque hunc etiam longe majorem esse quam minimum illud planum, in quo radii hi
             congregantur. Ut jam est <hi rendition="#i">KF</hi> ad <hi rendition="#i">FB</hi>, ita
-              <hi rendition="#i">KI</hi> ad <hi rendition="#i">IM</hi>. Cumque <hi rendition="#i">IM</hi> major evadat ex eo quod <hi rendition="#i">KI</hi> major supponatur eadem
-            tamen remanente <hi rendition="#i">BF</hi>, sequitur <hi rendition="#i">KF</hi> sive <hi rendition="#i">KN</hi> + <hi rendition="#i">NF</hi> esse ad <hi rendition="#i">FB</hi>, ut <hi rendition="#i">KI</hi> + alia quad: lin: ad <hi rendition="#i">IM</hi>
-            + alia quad: lin:<lb/><!--  \hack{\renewcommand{\arraystretch}{2.3}
+<hi rendition="#i">KI</hi> ad <hi rendition="#i">IM</hi>. Cumque <hi rendition="#i">IM</hi> major evadat ex eo quod <hi rendition="#i">KI</hi> major supponatur eadem
+            tamen remanente <hi rendition="#i">BF</hi>, sequitur <hi rendition="#i">KF</hi> sive <hi rendition="#i">KN</hi> +<hi rendition="#i">NF</hi> esse ad <hi rendition="#i">FB</hi>, ut <hi rendition="#i">KI</hi> + alia quad: lin: ad <hi rendition="#i">IM</hi>
+            + alia quad: lin:<lb/>
+<!--  \hack{\renewcommand{\arraystretch}{2.3}
 $\begin{array}{cccccccc}
 \displaystyle1.&amp;\displaystyle\frac{429}{231} &amp;\hspace{-3mm}+&amp;\hspace{-3mm} \displaystyle\frac{4}{5} &amp;\hspace{-3mm}-&amp;\hspace{-3mm} \displaystyle\frac{3}{5} &amp;\hspace{-3mm}-&amp; \hspace{-3mm}\displaystyle\frac{271}{5,231}\\
 \displaystyle2.&amp;\displaystyle\frac{429}{231} &amp;\hspace{-3mm}+&amp;\hspace{-3mm} \displaystyle\frac{12}{13} &amp;\hspace{-3mm}-&amp;\hspace{-3mm} \displaystyle\frac{5}{13} &amp;\hspace{-3mm}-&amp;\hspace{-3mm} \displaystyle\frac{277}{13,231}\\
@@ -1388,9 +1520,9 @@ $\begin{array}{cccccccc}
 \end{array}\right\}.
 $
 \advanceline{5}} -->
-            <formula xml:id="Ch19.p14f" facs="../figurereplacements/159-1.svg">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
-              <?tex-source \renewcommand{\arraystretch}{2.3}
+<formula xml:id="Ch19.p14f" facs="../figurereplacements/159-1.svg">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+<?tex-source \renewcommand{\arraystretch}{2.3}
 $\begin{array}{cccccccc}
 %\rule[0mm]{0mm}{10mm}
  \displaystyle1.&\displaystyle \frac{429}{231} &\hspace{-3mm}+&\hspace{-3mm} \displaystyle\frac{4}{5} &\hspace{-3mm}-&\hspace{-3mm} \displaystyle\frac{3}{5} &\hspace{-3mm}-& \hspace{-3mm}\displaystyle\frac{271}{5,231}\\
@@ -1435,16 +1567,21 @@ $\begin{array}{cccccccc}
 $
 \advanceline{5}
 ?>
-            </formula></p>
-          <p xml:id="Ch19.p15"><pb type="L"/><fw type="folNum">[86 v<hi rendition="#sup">o</hi>]</fw> Liquet igitur ex praecedentibus, quod, si supponatur vitrum figuram
+</formula>
+</p>
+<p xml:id="Ch19.p15">
+<pb type="L"/>
+<fw type="folNum">[86 v<hi rendition="#sup">o</hi>]
+</fw> Liquet igitur ex praecedentibus, quod, si supponatur vitrum figuram
             illam habere quam describit <hi rendition="#i">KDB</hi>, circa axem <hi rendition="#i">DI</hi> rotata, ac semidiametrum circuli <hi rendition="#i">ND</hi> aequari unitati,
             quod tum inquam omnes radii in Cylindro ex lineae <hi rendition="#i">AB</hi> circa axem
-              <hi rendition="#i">DK</hi> circumgyratione orto, contenti, cujus basis semidiameter
+<hi rendition="#i">DK</hi> circumgyratione orto, contenti, cujus basis semidiameter
             aequalis sit <hi rendition="#i">FB</hi>, congregabuntur in producto axe <hi rendition="#i">DK</hi>, nempe<!--  \hack{\\} 
      \hackfor{\par\noindent}--></p>
-          <p xml:id="Ch19.p15image-replacement"><formula xml:id="Ch19.p15image-replacementf" facs="../figurereplacements/160-1.svg">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
-              <?tex-source \renewcommand{\arraystretch}{2.3}
+<p xml:id="Ch19.p15image-replacement">
+<formula xml:id="Ch19.p15image-replacementf" facs="../figurereplacements/160-1.svg">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+<?tex-source \renewcommand{\arraystretch}{2.3}
 \hspace{-8mm}
 \parbox{1.5cm}{Cum \textit{FB} sumatur aequalis}$\left\{
 \begin{tabular}{c}
@@ -1464,317 +1601,350 @@ $\displaystyle\frac{1}{18}$\\$\displaystyle\frac{1}{78}$\\$\displaystyle\frac{1}
 \end{tabular}
 \right\}$semidiametri \textit{ND}.
 ?>
-            </formula></p>
-          <p xml:id="Ch19.p16">Apparet etiam, si in vitris quorum se<pb type="VIII_1" n="160"/>midiameter aequatur <formula xml:id="Ch19.p16.m1">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>1</m:mn>
-                      <m:mn>4</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mpadded>
-              </m:math>
-            </formula> digiti mensurae, sumatur apertura aequalis <formula xml:id="Ch19.p16.m2">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>7</m:mn>
-                      <m:mn>25</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mpadded>
-              </m:math>
-            </formula> quartae partis digiti, hoc est <formula xml:id="Ch19.p16.m3">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>14</m:mn>
-                      <m:mn>25</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mpadded>
-              </m:math>
-            </formula> pro diametro basis praedicti Cylindri radiorum (quae longitudo major est
+</formula>
+</p>
+<p xml:id="Ch19.p16">Apparet etiam, si in vitris quorum se<pb type="VIII_1" n="160"/>
+midiameter aequatur <formula xml:id="Ch19.p16.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> digiti mensurae, sumatur apertura aequalis <formula xml:id="Ch19.p16.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>7</m:mn>
+<m:mn>25</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> quartae partis digiti, hoc est <formula xml:id="Ch19.p16.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>14</m:mn>
+<m:mn>25</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> pro diametro basis praedicti Cylindri radiorum (quae longitudo major est
             semisse semidiametri circuli <hi rendition="#i">NDB</hi>, cujus figuram vitrum induit:)
             quod tum semidiameter foci minor erit quam <formula xml:id="Ch19.p16.m4">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>1</m:mn>
-                      <m:mn>209</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mpadded>
-              </m:math>
-            </formula> quartae partis digiti. Unde constat, focum ipsum pro puncto mechanico<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> tantum habendum <pb type="L"/><fw type="folNum">[87 r<hi rendition="#sup">o</hi>]</fw> esse. Et si in circulo cujus semidiameter sit 12 pedum, praedicta <hi rendition="#i">FB</hi> sumatur aequalis <formula xml:id="Ch19.p16.m5">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>49</m:mn>
-                      <m:mn>1201</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mpadded>
-              </m:math>
-            </formula> semidiametri, hoc est, pro diametro aperturae vitri, seu basis Cylindri plus
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>209</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> quartae partis digiti. Unde constat, focum ipsum pro puncto mechanico<index indexName="Sachverzeichnis">
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> tantum habendum <pb type="L"/>
+<fw type="folNum">[87 r<hi rendition="#sup">o</hi>]
+</fw> esse. Et si in circulo cujus semidiameter sit 12 pedum, praedicta <hi rendition="#i">FB</hi> sumatur aequalis <formula xml:id="Ch19.p16.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>49</m:mn>
+<m:mn>1201</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> semidiametri, hoc est, pro diametro aperturae vitri, seu basis Cylindri plus
             quam mensura <formula xml:id="Ch19.p16.m6">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mrow>
-                    <m:mn>11</m:mn>
-                    <m:mo>⁤</m:mo>
-                    <m:mstyle displaystyle="true">
-                      <m:mfrac>
-                        <m:mn>1</m:mn>
-                        <m:mn>4</m:mn>
-                      </m:mfrac>
-                    </m:mstyle>
-                  </m:mrow>
-                </m:mpadded>
-              </m:math>
-            </formula> digitorum; quod tum iste radiorum Cylindrus efficiet focum, cujus
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mrow>
+<m:mn>11</m:mn>
+<m:mo>⁤</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:mpadded>
+</m:math>
+</formula> digitorum; quod tum iste radiorum Cylindrus efficiet focum, cujus
             semidiameter minor erit <formula xml:id="Ch19.p16.m7">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>1</m:mn>
-                      <m:mn>69615</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mpadded>
-              </m:math>
-            </formula> duodecim pedum, hoc est, minor quam <formula xml:id="Ch19.p16.m8">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>1</m:mn>
-                      <m:mn>483</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mpadded>
-              </m:math>
-            </formula> digiti. Unde etiam sequitur, focum hunc pro puncto mechanico<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> habendum esse.</p>
-          <p xml:id="Ch19.p17">Atque hoc non solummodo locum habet in ipso foco, sed etiam in illa
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>69615</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> duodecim pedum, hoc est, minor quam <formula xml:id="Ch19.p16.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>483</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> digiti. Unde etiam sequitur, focum hunc pro puncto mechanico<index indexName="Sachverzeichnis">
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> habendum esse.</p>
+<p xml:id="Ch19.p17">Atque hoc non solummodo locum habet in ipso foco, sed etiam in illa
             axis longitudine intra quam radii hi incidunt: longitudo enim illa aeque ac focus, ita
             parva reddi potest; servata tamen pro radiorum transitu magna satis apertura; ut pro
             puncto mechanico<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> etiam sit habenda. Nam si sumamus ex: gr: vitrum aliquod ex minimis figuram
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> etiam sit habenda. Nam si sumamus ex: gr: vitrum aliquod ex minimis figuram
             habens circuli, cujus semidiameter aequalis sit mensurae <formula xml:id="Ch19.p17.m1">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>1</m:mn>
-                    <m:mn>8</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula> digiti, sitque <hi rendition="#i">FB</hi> aequalis <formula xml:id="Ch19.p17.m2">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>5</m:mn>
-                      <m:mn>13</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mpadded>
-              </m:math>
-            </formula> octavae partis digiti, erit diameter aperturae <formula xml:id="Ch19.p17.m3">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>10</m:mn>
-                    <m:mn>13</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula> ipsius <hi rendition="#i">ND</hi> semidiametri circuli vitri, radiique
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>8</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula> digiti, sitque <hi rendition="#i">FB</hi> aequalis <formula xml:id="Ch19.p17.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>5</m:mn>
+<m:mn>13</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> octavae partis digiti, erit diameter aperturae <formula xml:id="Ch19.p17.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>10</m:mn>
+<m:mn>13</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula> ipsius <hi rendition="#i">ND</hi> semidiametri circuli vitri, radiique
             congregabuntur in ipso axe intra longitudinem <formula xml:id="Ch19.p17.m4">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>1</m:mn>
-                    <m:mn>33</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula> octavae digiti partis. Eodem modo, si sumatur vitrum cujus exterior
-            superficies figuram habet Circuli cujus semidiameter sit ut antea 12 pedum, <pb type="VIII_1" n="161"/>cujus ope fieri <pb type="L"/><fw type="folNum">[87 v<hi rendition="#sup">o</hi>]</fw> poterit tantae magnitudinis telescopium<index indexName="Sachverzeichnis">
-              <term>telescopium</term>
-            </index>, ut majus fortassis hactenus nullum factum fuerit, ac in posterum cum fructu
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>33</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula> octavae digiti partis. Eodem modo, si sumatur vitrum cujus exterior
+            superficies figuram habet Circuli cujus semidiameter sit ut antea 12 pedum, <pb type="VIII_1" n="161"/>
+cujus ope fieri <pb type="L"/>
+<fw type="folNum">[87 v<hi rendition="#sup">o</hi>]
+</fw> poterit tantae magnitudinis telescopium<index indexName="Sachverzeichnis">
+<term>telescopium</term>
+</index>, ut majus fortassis hactenus nullum factum fuerit, ac in posterum cum fructu
             fieri poterit, (nam ut postea dicetur, focus hujus altera 34 pedes ab exteriore vitri
             superficie distabit.) sitque diameter aperturae aequalis <formula xml:id="Ch19.p17.m5">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mn>11</m:mn>
-                  <m:mo>⁤</m:mo>
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>1</m:mn>
-                      <m:mn>4</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mrow>
-              </m:math>
-            </formula> digitorum mensurae, incident omnes radii in axem intra longitudinem lineolae
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>11</m:mn>
+<m:mo>⁤</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula> digitorum mensurae, incident omnes radii in axem intra longitudinem lineolae
             quae minor erit quam <formula xml:id="Ch19.p17.m6">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>1</m:mn>
-                    <m:mn>994</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula> pedum 12, hoc est <formula xml:id="Ch19.p17.m7">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>144</m:mn>
-                    <m:mn>994</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula> digiti, quae longitudo respectu tanti Circuli fortasse non consideratu digna
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>994</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula> pedum 12, hoc est <formula xml:id="Ch19.p17.m7">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>144</m:mn>
+<m:mn>994</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula> digiti, quae longitudo respectu tanti Circuli fortasse non consideratu digna
             judicabitur, praesertim si inter alia etiam consideretur tum ejus foci diametrum fore
-              <formula xml:id="Ch19.p17.m8">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>1</m:mn>
-                    <m:mn>241</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula> digiti minorem.</p>
-          <p xml:id="Ch19.p18">Sed notandum est segmenta haec circulorum quae ad transitum radiorum
-            detecta relinquimus, multo majora esse<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: <hi rendition="#g"># quam ea etc.</hi> et quae
+<formula xml:id="Ch19.p17.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>241</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula> digiti minorem.</p>
+<p xml:id="Ch19.p18">Sed notandum est segmenta haec circulorum quae ad transitum radiorum
+            detecta relinquimus, multo majora esse<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am Rand</hi>:<hi rendition="#g"># quam ea etc.</hi> et quae
               sequuntur ad sign. #<formula xml:id="Ch19.p18.m1">
-                <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                  <m:mi mathvariant="normal">○</m:mi>
-                </m:math>
-              </formula> vertendo prorsum sine dextrorsum: usque ad
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi mathvariant="normal">○</m:mi>
+</m:math>
+</formula> vertendo prorsum sine dextrorsum: usque ad
                 signum<!--  \hack{\protect\rotatebox{90}{$\circledast$}} 
-     \hackfor{\leibnizcircledast}--><graphic xml:id="Ch19.p18.g1" url="./images/leibnizcircledast.svg"/></note> vitro, ac
+     \hackfor{\leibnizcircledast}-->
+<graphic xml:id="Ch19.p18.g1" url="./images/leibnizcircledast.svg"/>
+</note> vitro, ac
             duorum, pluriumve compositione, radios ab uno puncto venientes, aut parallelos omnibus
             modis specillis<index indexName="Sachverzeichnis">
-              <term>specillum</term>
-            </index> inservientibus deflectere possimus: cum id in Dioptrica praedicti D<hi rendition="#sup">ni</hi>
-            <app type="Cfootnote">
-              <lem type="main">Des Cartes<index indexName="Namensregister">
-                  <term><hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
+<term>specillum</term>
+</index> inservientibus deflectere possimus: cum id in Dioptrica praedicti D<hi rendition="#sup">ni</hi>
+<app type="Cfootnote">
+<lem type="main">Des Cartes<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
                     1596–1650</term>
-                </index>,</lem>
-              <note type="lemma-abbrev">Des Cartes</note>
-              <note type="editorial"><hi rendition="#k">R. Descartes</hi>, <bibl corresp="#bib_00038">a.a.O., S. 95–100 (<hi rendition="#i">DO</hi> VI,
-                  S. 171–176).</bibl></note>
-            </app> in figuris Ellipticis, aut jam ostensum sit, aut perfacile ex iis quae ibi
+</index>,
+</lem>
+<note type="lemma-abbrev">Des Cartes</note>
+<note type="editorial">
+<hi rendition="#k">R. Descartes</hi>,<bibl corresp="#bib_00038">a.a.O., S. 95–100 (<hi rendition="#i">DO</hi> VI,
+                  S. 171–176).</bibl>
+</note>
+</app> in figuris Ellipticis, aut jam ostensum sit, aut perfacile ex iis quae ibi
             habentur, deduci possit.</p>
-          <pb type="VIII_1" n="162"/>
-          <p xml:id="Ch19.p19">Supervacuum praeterea foret describere quales figuras conspicilla tam
+<pb type="VIII_1" n="162"/>
+<p xml:id="Ch19.p19">Supervacuum praeterea foret describere quales figuras conspicilla tam
             senibus quam myopibus<index indexName="Sachverzeichnis">
-              <term>myops</term>
-            </index> inservientia; microscopia<index indexName="Sachverzeichnis">
-              <term>microscopium</term>
-            </index> uno tantum aut pluribus vitris constantia, <pb type="L"/><fw type="folNum">[88
-                r<hi rendition="#sup">o</hi>]</fw> ac Telescopia<index indexName="Sachverzeichnis">
-              <term>telescopium</term>
-            </index>, requirant: cum hoc iis qui sciunt quo modo praenominatus D. des Cartes<index indexName="Namensregister">
-              <term><hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
+<term>myops</term>
+</index> inservientia; microscopia<index indexName="Sachverzeichnis">
+<term>microscopium</term>
+</index> uno tantum aut pluribus vitris constantia, <pb type="L"/>
+<fw type="folNum">[88
+                r<hi rendition="#sup">o</hi>]
+</fw> ac Telescopia<index indexName="Sachverzeichnis">
+<term>telescopium</term>
+</index>, requirant: cum hoc iis qui sciunt quo modo praenominatus D. des Cartes<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
                 1596–1650</term>
-            </index> ad haec conficienda hyperbola utatur, notum satis esse debeat. Ad cujus itaque
+</index> ad haec conficienda hyperbola utatur, notum satis esse debeat. Ad cujus itaque
               dioptricam<index indexName="Sachverzeichnis">
-              <term>dioptrica</term>
-            </index> appello, in qua fundamenta horum omnium firmissima jacta sunt. Verum quidem est
+<term>dioptrica</term>
+</index> appello, in qua fundamenta horum omnium firmissima jacta sunt. Verum quidem est
             in praedicta <app type="Cfootnote">
-              <lem type="main">dioptrica<index indexName="Sachverzeichnis">
-                  <term>dioptrica</term>
-                </index></lem>
-              <note type="lemma-abbrev">dioptrica</note>
-              <note type="editorial"><hi rendition="#k">R. Descartes</hi>, <bibl corresp="#bib_00038">a.a.O., S. 131 (<hi rendition="#i">DO</hi> VI,
-                  S. 205f.).</bibl></note>
-            </app> telescopia<index indexName="Sachverzeichnis">
-              <term>telescopium</term>
-            </index> ac microscopia<index indexName="Sachverzeichnis">
-              <term>microscopium</term>
-            </index> non ex pluribus quam ex duobus lentibus<index indexName="Sachverzeichnis">
-              <term>lens</term>
-            </index> vitreis composita esse, cum ad eundem effectum aliquando tribus Circularibus
+<lem type="main">dioptrica<index indexName="Sachverzeichnis">
+<term>dioptrica</term>
+</index>
+</lem>
+<note type="lemma-abbrev">dioptrica</note>
+<note type="editorial">
+<hi rendition="#k">R. Descartes</hi>,<bibl corresp="#bib_00038">a.a.O., S. 131 (<hi rendition="#i">DO</hi> VI,
+                  S. 205f.).</bibl>
+</note>
+</app> telescopia<index indexName="Sachverzeichnis">
+<term>telescopium</term>
+</index> ac microscopia<index indexName="Sachverzeichnis">
+<term>microscopium</term>
+</index> non ex pluribus quam ex duobus lentibus<index indexName="Sachverzeichnis">
+<term>lens</term>
+</index> vitreis composita esse, cum ad eundem effectum aliquando tribus Circularibus
               lentibus<index indexName="Sachverzeichnis">
-              <term>lens</term>
-              <index>
-                <term>circularis</term>
-              </index>
-            </index> opus habeamus; aut etiam quaedam ex pluribus componere possimus, sed eum et hic
+<term>lens</term>
+<index>
+<term>circularis</term>
+</index>
+</index> opus habeamus; aut etiam quaedam ex pluribus componere possimus, sed eum et hic
             iis, qui recte intelligunt quo modo ex duobus componi possint, nulla difficultas
             superesse possit, addere aliquid hac de re supervacuum diximus, atque eo magis, quod
             semper minor vitrorum numerus, quando idem effectus per eum haberi poterit, eligendus
             sit. Unicum adhuc tantum verbum superaddam de iis vitris circularibus quae ab utraque
-            parte connexa sunt, quorum exemplum in figura tertia<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">An der Mittelfalz</hi>: fig. 3.</note>
+            parte connexa sunt, quorum exemplum in figura tertia<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">An der Mittelfalz</hi>: fig. 3.</note>
             exhibetur per <hi rendition="#i">MONP</hi>, in quo <hi rendition="#i">O</hi> est
             centrum, ex quo ducta est <hi rendition="#i">MPN</hi>, et <hi rendition="#i">P</hi>, ex
             quo <hi rendition="#i">NOM</hi>, semidiametris existentibus aequalibus: in talibus nempe
-            vitris <pb type="L"/><fw type="folNum">[88 v<hi rendition="#sup">o</hi>]</fw>
+            vitris <pb type="L"/>
+<fw type="folNum">[88 v<hi rendition="#sup">o</hi>]
+</fw>
               focum<index indexName="Sachverzeichnis">
-              <term>focus</term>
-            </index> circuli segmentorum, quae magna satis sunt, admodum parvum esse, minusque
+<term>focus</term>
+</index> circuli segmentorum, quae magna satis sunt, admodum parvum esse, minusque
             remotum ab ipso vitro, quam in vitro <hi rendition="#i">HRDBQ</hi> secundae figurae, si
             supponamus diametrum <hi rendition="#i">OP</hi>, aequalem esse diametro <hi rendition="#i">ND</hi>, ita ut vitrum hoc, magnitudinem habens hujus figurae
               focum<index indexName="Sachverzeichnis">
-              <term>focus</term>
-            </index> habiturum sit paleae circiter latitudine a proxima superficie distantem. Atque
+<term>focus</term>
+</index> habiturum sit paleae circiter latitudine a proxima superficie distantem. Atque
             non difficile in hoc vitro similibusque aliis, simili calculo quali hic supra usus sum,
             inveniri potest. Ex quo sequitur aut per haec sola vitra inter se, aut cum
             praecedentibus composita, fieri posse microscopia<index indexName="Sachverzeichnis">
-              <term>microscopium</term>
-            </index>, quorum ope, ratione longitudinis, objecta incredibili magnitudine apparere
+<term>microscopium</term>
+</index>, quorum ope, ratione longitudinis, objecta incredibili magnitudine apparere
             debent; imo etiam per unicum tale vitrum magna admodum ac distincta apparitura sunt.</p>
-          <p xml:id="Ch19.p20">Praeteriri etiam hic non debet calculus congregationis radiorum axi
-              <hi rendition="#i">KD</hi> parallelorum, (vide 2 fig:) <pb type="VIII_1" n="163"/>posito quod per vitrum eo modo permeent, donec ad <app type="Bfootnote">
-              <!--is-correction-app-with-lemma-->
-              <lem type="main"><corr resp="#ed">[circumferentiam]</corr></lem>
-              <rdg wit="#A"><orig>circumferentium</orig>
-                <note type="editorial"><hi rendition="#i">ändert Hrsg.</hi></note></rdg>
-            </app>
-            <hi rendition="#i">DB</hi> pervenirent ubi per aeris superficiem transeuntes
+<p xml:id="Ch19.p20">Praeteriri etiam hic non debet calculus congregationis radiorum axi
+<hi rendition="#i">KD</hi> parallelorum, (vide 2 fig:) <pb type="VIII_1" n="163"/>
+posito quod per vitrum eo modo permeent, donec ad <app type="Bfootnote">
+<!--is-correction-app-with-lemma-->
+<lem type="main">
+<corr resp="#ed">[circumferentiam]</corr>
+</lem>
+<rdg wit="#A">
+<orig>circumferentium</orig>
+<note type="editorial">
+<hi rendition="#i">ändert Hrsg.</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#i">DB</hi> pervenirent ubi per aeris superficiem transeuntes
             refringantur, ac axi <hi rendition="#i">KD</hi> versus <hi rendition="#i">A</hi>
             producto occurrant: nam quamvis idem Cylindrus radiorum non in tam parva axis lineola
             congregetur, nec tam parvum focum<index indexName="Sachverzeichnis">
-              <term>focus</term>
-            </index>, quam supra <pb type="L"/><fw type="folNum">[89 r<hi rendition="#sup">o</hi>]</fw> efficiat, nihilominus tamen, haec saltem in multis occasionibus ita
+<term>focus</term>
+</index>, quam supra <pb type="L"/>
+<fw type="folNum">[89 r<hi rendition="#sup">o</hi>]
+</fw> efficiat, nihilominus tamen, haec saltem in multis occasionibus ita
             parva simulque usui futura reddi possunt, ut pro puncto mechanico<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> habenda sint.
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> habenda sint.
             Nam<!--  \hack{\rule[-9mm]{0mm}{9mm}\\} 
      \hackfor{\par\noindent}--></p>
-          <p xml:id="Ch19.p20image-replacement"><formula xml:id="Ch19.p20image-replacementf" facs="../figurereplacements/163-1.svg">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
-              <?tex-source \renewcommand{\arraystretch}{2.3}
+<p xml:id="Ch19.p20image-replacement">
+<formula xml:id="Ch19.p20image-replacementf" facs="../figurereplacements/163-1.svg">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" class="ignore"/>
+<?tex-source \renewcommand{\arraystretch}{2.3}
 $\parbox{1.3cm}{\textit{FB} posita aequal.}$$\left\{
 \begin{tabular}{c}
 $\displaystyle\frac{7}{25}$\\$\displaystyle\frac{9}{41}$\\$\displaystyle\frac{31}{481}$\\$\displaystyle\frac{49}{1201}$\\$\displaystyle\frac{81}{3281}$
@@ -1790,272 +1960,313 @@ $\displaystyle\frac{1}{37}$\\$\displaystyle\frac{1}{79}$\\$\displaystyle\frac{1}
 \right\}$$\parbox{2.3cm}{semi-\\diametri \\ \textit{ND}.}$\\
 \advanceline{4}
 ?>
-            </formula></p>
-          <p xml:id="Ch19.p21" rendition="#noindent">Potest hoc eodem modo quo supra per Calculum
-              <app type="Bfootnote">
-              <lem type="main">inveniri.</lem>
-              <note type="lemma-abbrev">Calculum</note>
-              <rdg wit="#L" n="1"> vitri in </rdg>
-              <rdg wit="#L" n="2"> inveniri. <hi rendition="#i">L</hi></rdg>
-            </app> Apparet deinceps <app type="Bfootnote">
-              <lem type="main">etiam ex hoc calculo remotissimum a vertice <hi rendition="#i">D</hi>
+</formula>
+</p>
+<p xml:id="Ch19.p21" rendition="#noindent">Potest hoc eodem modo quo supra per Calculum
+<app type="Bfootnote">
+<lem type="main">inveniri.</lem>
+<note type="lemma-abbrev">Calculum</note>
+<rdg wit="#L" n="1"> vitri in </rdg>
+<rdg wit="#L" n="2"> inveniri. <hi rendition="#i">L</hi>
+</rdg>
+</app> Apparet deinceps <app type="Bfootnote">
+<lem type="main">etiam ex hoc calculo remotissimum a vertice <hi rendition="#i">D</hi>
                 radium cadere aequali distantia a <hi rendition="#i">D</hi> quam</lem>
-              <note type="lemma-abbrev">etiam</note>
-              <rdg wit="#L" n="1"> a <hi rendition="#i">D</hi>, quam </rdg>
-              <rdg wit="#L" n="2" cause="deletion"> ex hoc calculo remotissimum a vertice <note type="editorial">|</note> <del>nam</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> <hi rendition="#i">D</hi>
-                <seg type="apparat-ellipsis"/> quam <hi rendition="#i">L</hi></rdg>
-            </app>, <hi rendition="#i">K</hi> ab <hi rendition="#i">N</hi> hoc est, (posita <hi rendition="#i">ND</hi> aequali,) ad distantiam <formula xml:id="Ch19.p21.m1">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mn>1</m:mn>
-                  <m:mo>⁤</m:mo>
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>6</m:mn>
-                      <m:mn>7</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mrow>
-              </m:math>
-            </formula>; ac quanto <hi rendition="#i">BF</hi>, minor sumatur tanto etiam radios in
+<note type="lemma-abbrev">etiam</note>
+<rdg wit="#L" n="1"> a <hi rendition="#i">D</hi>, quam </rdg>
+<rdg wit="#L" n="2" cause="deletion"> ex hoc calculo remotissimum a vertice <note type="editorial">|</note>
+<del>nam</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note>
+<hi rendition="#i">D</hi>
+<seg type="apparat-ellipsis"/>
+ quam <hi rendition="#i">L</hi>
+</rdg>
+</app>,<hi rendition="#i">K</hi> ab <hi rendition="#i">N</hi> hoc est, (posita <hi rendition="#i">ND</hi> aequali,) ad distantiam <formula xml:id="Ch19.p21.m1">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁤</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>6</m:mn>
+<m:mn>7</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>; ac quanto <hi rendition="#i">BF</hi>, minor sumatur tanto etiam radios in
             minori axis <app type="Bfootnote">
-              <lem type="main">congregari etc. vide sequentia, vertendo dextrorsum bis, sub signo
+<lem type="main">congregari etc. vide sequentia, vertendo dextrorsum bis, sub signo
                   <!--  \hack{\protect\rotatebox{90}{$\circledast$}} 
-     \hackfor{\leibnizcircledast}--><graphic xml:id="Ch19.p21.g1" url="./images/leibnizcircledast.svg"/></lem>
-              <note type="lemma-abbrev">axis</note>
-              <rdg wit="#L" n="1"> lineola </rdg>
-              <rdg wit="#L" n="2"> congregari <seg type="apparat-ellipsis"/> signo
+     \hackfor{\leibnizcircledast}-->
+<graphic xml:id="Ch19.p21.g1" url="./images/leibnizcircledast.svg"/>
+</lem>
+<note type="lemma-abbrev">axis</note>
+<rdg wit="#L" n="1"> lineola </rdg>
+<rdg wit="#L" n="2"> congregari <seg type="apparat-ellipsis"/>
+ signo
                   <!--  \hack{\protect\rotatebox{90}{$\circledast$}} 
-     \hackfor{\leibnizcircledast}--><graphic xml:id="Ch19.p21.g2" url="./images/leibnizcircledast.svg"/>
-                <hi rendition="#i">L</hi></rdg>
-            </app> quam<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">An der
+     \hackfor{\leibnizcircledast}-->
+<graphic xml:id="Ch19.p21.g2" url="./images/leibnizcircledast.svg"/>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> quam<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">An der
                 Mittelfalz</hi>: #<formula xml:id="Ch19.p21.m2">
-                <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                  <m:mi mathvariant="normal">○</m:mi>
-                </m:math>
-              </formula> vide praecedentia ante vocem, quam ea sub signo # vertendo retrorsum;
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mi mathvariant="normal">○</m:mi>
+</m:math>
+</formula> vide praecedentia ante vocem, quam ea sub signo # vertendo retrorsum;
               nempe: <hi rendition="#g">majora esse quam ea</hi> etc.</note> ea, quae hactenus in
             usu fuere, ac saepe longe minora sumi posse, ac debere; quo facto, sequitur, radios tum
             intra multo minorem longitudinem axis, ac focum<index indexName="Sachverzeichnis">
-              <term>focus</term>
-            </index>, congregatum iri, nam quanto <hi rendition="#i">BF</hi> minor est, tanto etiam
+<term>focus</term>
+</index>, congregatum iri, nam quanto <hi rendition="#i">BF</hi> minor est, tanto etiam
             radii in axem incidentes intra minorem longitudinem congregabuntur, focusque<index indexName="Sachverzeichnis">
-              <term>focus</term>
-            </index> minor est.</p>
-          <pb type="VIII_1" n="164"/>
-          <p xml:id="Ch19.p22">Eodem etiam quo hoc ostendi modo de vitris maximi ac <pb type="L"/><fw type="folNum">[89 v<hi rendition="#sup">o</hi>]</fw> minimi generis facile de
+<term>focus</term>
+</index> minor est.</p>
+<pb type="VIII_1" n="164"/>
+<p xml:id="Ch19.p22">Eodem etiam quo hoc ostendi modo de vitris maximi ac <pb type="L"/>
+<fw type="folNum">[89 v<hi rendition="#sup">o</hi>]
+</fw> minimi generis facile de
             omnibus aliis intermediis ostendi potest. Ita ut satis demonstratum putem, partem
             aliquam circuli radios axi parallelos ex aere in eum incidentes refractione ita posse
             congregari, ut focus<index indexName="Sachverzeichnis">
-              <term>focus</term>
-            </index>, ac lineola illa in axe in quam incidunt, pro puncto mechanico<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> habenda sint, hancque circuli partem satis magnam esse ut Conspicilla<index indexName="Sachverzeichnis">
-              <term>conspicillum</term>
-            </index> tam senibus quam juvenibus inservientia, telescopia<index indexName="Sachverzeichnis">
-              <term>telescopium</term>
-            </index> ac microscopia<index indexName="Sachverzeichnis">
-              <term>microscopium</term>
-            </index> ex ea formari possint.</p>
-          <p xml:id="Ch19.p23">Hactenus itaque ostensum est praedictos parallelos radios ex aere in
+<term>focus</term>
+</index>, ac lineola illa in axe in quam incidunt, pro puncto mechanico<index indexName="Sachverzeichnis">
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> habenda sint, hancque circuli partem satis magnam esse ut Conspicilla<index indexName="Sachverzeichnis">
+<term>conspicillum</term>
+</index> tam senibus quam juvenibus inservientia, telescopia<index indexName="Sachverzeichnis">
+<term>telescopium</term>
+</index> ac microscopia<index indexName="Sachverzeichnis">
+<term>microscopium</term>
+</index> ex ea formari possint.</p>
+<p xml:id="Ch19.p23">Hactenus itaque ostensum est praedictos parallelos radios ex aere in
             vitri superficiem incidentes ac per eam transeuntes ita refringi debere, ut dein omnes
             ad unum punctum mechanicum<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> tendant, aut etiam si vitrum sufficientem haberet crassitudinem, in eo
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> tendant, aut etiam si vitrum sufficientem haberet crassitudinem, in eo
             congregentur: Sed cum tantae crassitudinis vitrum, aut vix haberi, aut nobis usui esse
             non possit, ex praedicto puncto tanquam centro circulus erit ducendus, qui priorem
-            Circulum secet, ut videre est in <hi rendition="#g">secunda figura</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: fig.
+            Circulum secet, ut videre est in <hi rendition="#g">secunda figura</hi>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am Rand</hi>: fig.
               2.</note>, ubi ex <hi rendition="#i">K</hi> tanquam ex foco<index indexName="Sachverzeichnis">
-              <term>focus</term>
-            </index>, ductus est Circulus <hi rendition="#i">KHQR</hi>. Diameter autem haec <hi rendition="#i">KH</hi> pro libitu aut major, aut minor sumi potest, prout vitrum aut
+<term>focus</term>
+</index>, ductus est Circulus <hi rendition="#i">KHQR</hi>. Diameter autem haec <hi rendition="#i">KH</hi> pro libitu aut major, aut minor sumi potest, prout vitrum aut
             crassius, aut subtilius desideratur, hoc solummodo adhibita cautione major sumatur quam
-            est <hi rendition="#i">DK</hi>.</p>
-          <p xml:id="Ch19.p24"><pb type="L"/><fw type="folNum">[90 r<hi rendition="#sup">o</hi>]</fw> Verum quidem est mathematice loquendo radios hos per circulum hunc paulo
+            est <hi rendition="#i">DK</hi>.
+</p>
+<p xml:id="Ch19.p24">
+<pb type="L"/>
+<fw type="folNum">[90 r<hi rendition="#sup">o</hi>]
+</fw> Verum quidem est mathematice loquendo radios hos per circulum hunc paulo
             magis dispergi debere, cum antea non ad unum punctum mathematicum<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mathematicum</term>
-              </index>
-            </index> tenderent; sed dispersionem hanc tantam non esse, quin focus<index indexName="Sachverzeichnis">
-              <term>focus</term>
-            </index>, sive minimum planum ad quod postea ex vitro egressi ac aerem transeuntes,
+<term>punctum</term>
+<index>
+<term>mathematicum</term>
+</index>
+</index> tenderent; sed dispersionem hanc tantam non esse, quin focus<index indexName="Sachverzeichnis">
+<term>focus</term>
+</index>, sive minimum planum ad quod postea ex vitro egressi ac aerem transeuntes,
             tendent, et in quo congregabuntur, pro puncto mechanico<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> habendum sit, simili calculo, aut etiam mechanice, facile constare potest.</p>
-          <p xml:id="Ch19.p25">Sed cum planum supra inventum; cujus semidiameter est <hi rendition="#i">IN</hi> indeterminatum sit, ac propius ad <hi rendition="#i">N</hi>
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> habendum sit, simili calculo, aut etiam mechanice, facile constare potest.</p>
+<p xml:id="Ch19.p25">Sed cum planum supra inventum; cujus semidiameter est <hi rendition="#i">IN</hi> indeterminatum sit, ac propius ad <hi rendition="#i">N</hi>
             accedat aut magis ab eo removeatur, prout apertura, aut <hi rendition="#i">BF</hi>,
-            major aut minor sumitur, determinatum planum ejus loco quae remus. Concipiatur ex <hi rendition="#i">K</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">An der Mittelfalz</hi>: fig. 1.</note> erectam esse perpendicularem
+            major aut minor sumitur, determinatum planum ejus loco quae remus. Concipiatur ex <hi rendition="#i">K</hi>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">An der Mittelfalz</hi>: fig. 1.</note> erectam esse perpendicularem
             cui producta <hi rendition="#i">BI</hi> occurrit in <hi rendition="#i">O</hi>, erit
             itaque <hi rendition="#i">IF</hi> ad <hi rendition="#i">FB</hi>, ut <hi rendition="#i">IK</hi> ad <hi rendition="#i">KO</hi>, reperieturque <hi rendition="#i">KO</hi>
             minor, cum <hi rendition="#i">FB</hi> est <formula xml:id="Ch19.p25.m1">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mpadded width="+2.2pt">
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>9</m:mn>
-                      <m:mn>41</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mpadded>
-              </m:math>
-            </formula> quam <formula xml:id="Ch19.p25.m2">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>1</m:mn>
-                    <m:mn>439</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula>; cum <hi rendition="#i">FB</hi> est <formula xml:id="Ch19.p25.m3">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>31</m:mn>
-                    <m:mn>481</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula>, quam <formula xml:id="Ch19.p25.m4">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>1</m:mn>
-                    <m:mn>17625</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula>; cum <hi rendition="#i">FB</hi> est <formula xml:id="Ch19.p25.m5">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>49</m:mn>
-                    <m:mn>1201</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula>, quam <formula xml:id="Ch19.p25.m6">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>1</m:mn>
-                    <m:mn>69590</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula>, differentia igitur quae est inter hanc <hi rendition="#i">KO</hi> et
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mpadded width="+2.2pt">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>9</m:mn>
+<m:mn>41</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mpadded>
+</m:math>
+</formula> quam <formula xml:id="Ch19.p25.m2">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>439</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>; cum <hi rendition="#i">FB</hi> est <formula xml:id="Ch19.p25.m3">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>31</m:mn>
+<m:mn>481</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>, quam <formula xml:id="Ch19.p25.m4">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>17625</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>; cum <hi rendition="#i">FB</hi> est <formula xml:id="Ch19.p25.m5">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>49</m:mn>
+<m:mn>1201</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>, quam <formula xml:id="Ch19.p25.m6">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>69590</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>, differentia igitur quae est inter hanc <hi rendition="#i">KO</hi> et
             semidiametrum <hi rendition="#i">IM</hi> praecedentis plani ita parva est ut consideratu
             digna non sit, nec conclusio exinde ducta mutetur. Cum autem <hi rendition="#i">NK</hi>
             supra reperta sit aequalis <formula xml:id="Ch19.p25.m7">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mstyle displaystyle="true">
-                  <m:mfrac>
-                    <m:mn>429</m:mn>
-                    <m:mn>321</m:mn>
-                  </m:mfrac>
-                </m:mstyle>
-              </m:math>
-            </formula>, quae est <formula xml:id="Ch19.p25.m8">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mn>1</m:mn>
-                  <m:mo>⁤</m:mo>
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>6</m:mn>
-                      <m:mn>7</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mrow>
-              </m:math>
-            </formula>, erit <hi rendition="#i">KD</hi> aequalis <formula xml:id="Ch19.p25.m9">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mn>2</m:mn>
-                  <m:mo>⁤</m:mo>
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>6</m:mn>
-                      <m:mn>7</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mrow>
-              </m:math>
-            </formula><pb type="VIII_1" n="165"/>; <pb type="L"/><fw type="folNum">[90 v<hi rendition="#sup">o</hi>]</fw> si jam hoc planum in praxi consideretur ut focus<index indexName="Sachverzeichnis">
-              <term>focus</term>
-            </index>, manifesta est ratio quam hi circuli ad se mutuo habent, nempe cum <hi rendition="#i">ND</hi> est 1, quod tum <hi rendition="#i">KH</hi> minor esse debeat
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>429</m:mn>
+<m:mn>321</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:math>
+</formula>, quae est <formula xml:id="Ch19.p25.m8">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>⁤</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>6</m:mn>
+<m:mn>7</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>, erit <hi rendition="#i">KD</hi> aequalis <formula xml:id="Ch19.p25.m9">
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁤</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>6</m:mn>
+<m:mn>7</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>
+<pb type="VIII_1" n="165"/>
+;<pb type="L"/>
+<fw type="folNum">[90 v<hi rendition="#sup">o</hi>]
+</fw> si jam hoc planum in praxi consideretur ut focus<index indexName="Sachverzeichnis">
+<term>focus</term>
+</index>, manifesta est ratio quam hi circuli ad se mutuo habent, nempe cum <hi rendition="#i">ND</hi> est 1, quod tum <hi rendition="#i">KH</hi> minor esse debeat
             quam <formula xml:id="Ch19.p25.m10">
-              <m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
-                <m:mrow>
-                  <m:mn>2</m:mn>
-                  <m:mo>⁤</m:mo>
-                  <m:mstyle displaystyle="true">
-                    <m:mfrac>
-                      <m:mn>6</m:mn>
-                      <m:mn>7</m:mn>
-                    </m:mfrac>
-                  </m:mstyle>
-                </m:mrow>
-              </m:math>
-            </formula>.</p>
-          <p xml:id="Ch19.p26">Debet itaque figura vitri concipi eadem quam describeret <hi rendition="#i">HQBD</hi><note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Am Rand</hi>: fig. 2.</note> rotata circa axem <hi rendition="#i">DH</hi>. Et notandum est, non necesse esse, ut postquam una superficies vitri polita
+<m:math xmlns:m="http://www.w3.org/1998/Math/MathML" display="inline">
+<m:mrow>
+<m:mn>2</m:mn>
+<m:mo>⁤</m:mo>
+<m:mstyle displaystyle="true">
+<m:mfrac>
+<m:mn>6</m:mn>
+<m:mn>7</m:mn>
+</m:mfrac>
+</m:mstyle>
+</m:mrow>
+</m:math>
+</formula>.
+</p>
+<p xml:id="Ch19.p26">Debet itaque figura vitri concipi eadem quam describeret <hi rendition="#i">HQBD</hi>
+<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Am Rand</hi>: fig. 2.</note> rotata circa axem <hi rendition="#i">DH</hi>. Et notandum est, non necesse esse, ut postquam una superficies vitri polita
             est, ex: gr: convexa <hi rendition="#i">RDB</hi>, ad alteram poliendam, centrum <hi rendition="#i">K</hi> maneat in axe <hi rendition="#i">DNK</hi>, prout accurate
             attendendum esset, si <hi rendition="#i">ADB</hi> esset Ellipsis, aut hyperbola, ut
             planum hanc secans esset ad angulos rectos ad axem: sed tantum videndum est, ut maxima
             vitri crassities, mensurata secundum perpendicularem in convexam et concavam superficiem
-            incidentem, aequalis sit <hi rendition="#i">DH</hi>.</p>
-          <p xml:id="Ch19.p27">Magnitudo porro segmentorum omnium circulorum, quatenus parallelos
+            incidentem, aequalis sit <hi rendition="#i">DH</hi>.
+</p>
+<p xml:id="Ch19.p27">Magnitudo porro segmentorum omnium circulorum, quatenus parallelos
             radios in unum punctum mechanicum<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> congregant, facile aut per suprapositum calculum, aut per ipsam experientiam
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> congregant, facile aut per suprapositum calculum, aut per ipsam experientiam
             inveniri potest.</p>
-          <p xml:id="Ch19.p28">Et quoniam segmenta haec circulorum in tanto conveniunt cum Ellipsi,
-            quae etiam radios axi parallelos ad unum punctum refractione detorquet, nullo modo <pb type="L"/><pb type="VIII_1" n="166"/><fw type="folNum">[91 r<hi rendition="#sup">o</hi>]</fw> necessarium duxi adjungere hic quo modo unico solummodo vitro<note type="Afootnote" place="margin" resp="#L"><hi rendition="#i">Interlinear über</hi>
+<p xml:id="Ch19.p28">Et quoniam segmenta haec circulorum in tanto conveniunt cum Ellipsi,
+            quae etiam radios axi parallelos ad unum punctum refractione detorquet, nullo modo <pb type="L"/>
+<pb type="VIII_1" n="166"/>
+<fw type="folNum">[91 r<hi rendition="#sup">o</hi>]
+</fw> necessarium duxi adjungere hic quo modo unico solummodo vitro<note type="Afootnote" place="margin" resp="#L">
+<hi rendition="#i">Interlinear über</hi>
               congregari minoremque focum efficere debere; si itaque <hi rendition="#i">BF</hi>:
                 <!--  \hack{\protect\rotatebox{90}{$\circledast$}} 
-     \hackfor{\leibnizcircledast}--><graphic xml:id="Ch19.p28.g1" url="./images/leibnizcircledast.svg"/> vide sequentia: <hi rendition="#g">ac duorum pluriumve compositione</hi> etc: retro signo #, vertendo
+     \hackfor{\leibnizcircledast}-->
+<graphic xml:id="Ch19.p28.g1" url="./images/leibnizcircledast.svg"/>
+ vide sequentia: <hi rendition="#g">ac duorum pluriumve compositione</hi> etc: retro signo #, vertendo
               ter.</note> congregari minoremque focum efficere debere; si itaque <hi rendition="#i">BF</hi>, adeo parva sumatur ut illa pro puncto mechanico<index indexName="Sachverzeichnis">
-              <term>punctum</term>
-              <index>
-                <term>mechanicum</term>
-              </index>
-            </index> habenda sit, ponaturque; vitrum eam habere figuram, quam <hi rendition="#i">FDB</hi> circa axem <hi rendition="#i">DF</hi> rotata, describit, manifestum est
+<term>punctum</term>
+<index>
+<term>mechanicum</term>
+</index>
+</index> habenda sit, ponaturque; vitrum eam habere figuram, quam <hi rendition="#i">FDB</hi> circa axem <hi rendition="#i">DF</hi> rotata, describit, manifestum est
             hujus modi vitrum in tantum considerari posse, ac si figuram hyperbolicam plano sectam
             haberet, et ope ejus componi posse omnis generis specilla<index indexName="Sachverzeichnis">
-              <term>specillum</term>
-            </index> eo modo quo id a Do<hi rendition="#sup">no</hi> des Cartes<index indexName="Namensregister">
-              <term><hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
+<term>specillum</term>
+</index> eo modo quo id a Do<hi rendition="#sup">no</hi> des Cartes<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Descartes</hi> (Cartesius, des Cartes, Cartes.), René
                 1596–1650</term>
-            </index> ope hyperbolicorum vitrorum factum est. Denique notandum etiam est nullas
+</index> ope hyperbolicorum vitrorum factum est. Denique notandum etiam est nullas
             figuras politu esse faciliores, quam hae ipsae sunt, cum constent circulari figura et
             plana, quae nullam ad invicem habent relationem, nam nec ut planum sit ad angulos rectos
             ad axem <hi rendition="#i">DN</hi>, nec ad vitri crassitiem attendere, necesse est.</p>
-          <p xml:id="Ch19.p29">Facile praeterea ex his explicare possem figuras ac compositionis
+<p xml:id="Ch19.p29">Facile praeterea ex his explicare possem figuras ac compositionis
             modum vitrorum, tam telescopiorum<index indexName="Sachverzeichnis">
-              <term>telescopium</term>
-            </index>, quam etiam microscopiorum<index indexName="Sachverzeichnis">
-              <term>microscopium</term>
-            </index> quae hactenus observavi effectum aliquem notabilem habuisse; ac etiam quo modo
-            ex utraque parte convexa haec vitra aut inter sese, aut cum aliis <pb type="L"/><fw type="folNum">[91 v<hi rendition="#sup">o</hi>]</fw> hic descriptis, componi possint;
+<term>telescopium</term>
+</index>, quam etiam microscopiorum<index indexName="Sachverzeichnis">
+<term>microscopium</term>
+</index> quae hactenus observavi effectum aliquem notabilem habuisse; ac etiam quo modo
+            ex utraque parte convexa haec vitra aut inter sese, aut cum aliis <pb type="L"/>
+<fw type="folNum">[91 v<hi rendition="#sup">o</hi>]
+</fw> hic descriptis, componi possint;
             sed malui hoc relinquere hujus artis cultoribus, ut in eo sese exercentes, per
             delectationem quam ex propriis inventis accepturi sunt, tanto magis ad propagandam hanc
             tam utilem ac jucundam artem, instigentur.</p>
-          <p xml:id="Ch19.p30">Dabam 25 Aprilis an. 1656.</p>
-        </div>
-      </div>
-    </body>
-  </text>
+<p xml:id="Ch19.p30">Dabam 25 Aprilis an. 1656.</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>

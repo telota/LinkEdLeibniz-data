@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-043-000">
+<?xml-model href="https://raw.githubusercontent.com/telota/LinkEdLeibniz-data/main/schema/basisformat_leibniz_meta.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="L_08-01-043-000">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -6,32 +7,56 @@
         <title type="sub">Elektronische Erschließung der im Druck erschienenen Stücke, Metadaten und
           Text</title>
         <respStmt>
-          <orgName>TELOTA - Berlin-Brandenburgischen Akademie der Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Digitale Konzeption und
-            Projektbegleitung</note></resp>
+          <persName ref="https://orcid.org/0000-0002-5397-4242">Harald Siebert</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/project-administration/">Arbeitsstellenleiter</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektkonzeption</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/investigation/">Forschungsarbeit</resp>
         </respStmt>
         <respStmt>
-          <orgName>Leibniz-Editionsstelle Berlin der Berlin-Brandenburgischen Akademie der
-            Wissenschaften</orgName>
-          <resp><note type="remarkResponsibility">Inhaltliche Konzeption</note></resp>
+          <persName>Sebastian W. Stork</persName>
+          <orgName ref="https://www.bbaw.de/forschung/leibniz-edition-berlin">Berlin-Brandenburgische Akademie der Wissenschaften (Leibniz-Editionsstelle Berlin)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Ergänzung der Metadaten</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Martina</forename><surname>Gödel</surname></persName>
-          <resp><note type="remarkResponsibility">Datenmodell und Konvertierung Reihe
-            VIII</note></resp>
+          <persName ref="https://orcid.org/0009-0002-4707-0404">Martina Gödel</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Konvertierung Reihe VIII</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Qualitätssicherung (Schematron)</resp>
         </respStmt>
         <respStmt>
-          <persName><forename>Sebastian W.</forename><surname>Stork</surname></persName>
-          <resp><note type="remarkResponsibility">Bearbeiter Leibniz-Editionsstelle
-            Berlin</note></resp>
+          <persName ref="https://orcid.org/0000-0001-6587-3353">Lou Klappenbach</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0002-1562-9966">Axelle Lecroq</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/methodology/">Datenmodellierung (ODD/Schema)</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0000-0001-8279-9298">Frederike Neuber</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/supervision/">Koordination</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/conceptualization/">Projektentwicklung und Konzeption</resp>
+        </respStmt>
+        <respStmt>
+          <persName ref="https://orcid.org/0009-0008-3678-9070">Ruth Sander</persName>
+          <orgName ref="https://www.bbaw.de/bbaw-digital/telota">Berlin-Brandenburgische Akademie der Wissenschaften (TELOTA)</orgName>
+          <resp ref="https://credit.niso.org/contributor-roles/software/">Digitale Entwicklung</resp>
+          <resp ref="https://credit.niso.org/contributor-roles/data-curation/">Datenkuration</resp>
         </respStmt>
       </titleStmt>
-
       <publicationStmt>
         <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
         <date type="creation">2021</date>
         <availability>
-          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de"><p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p></licence>
+          <licence target="http://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Namensnennung-Nicht kommerziell 4.0 International (CC BY-NC 4.0)</p>
+          </licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -48,7 +73,10 @@
             <date calendar="#gregorian" notBefore="1672-07-25" resp="#ed" cert="medium">[25. Juli
               – 12. Dezember 1672]</date>
             <date calendar="#gregorian" notAfter="1672-12-12" resp="#ed" cert="medium"/>
-            <idno type="PDF"><idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno><idno type="page">#page=410</idno></idno>
+            <idno type="PDF">
+              <idno type="url">https://leibniz-berlin.bbaw.de/fileadmin/Webdateien/dateien/LSB_VIII_1.pdf</idno>
+              <idno type="page">#page=410</idno>
+            </idno>
           </analytic>
           <monogr>
             <title type="main" level="s" n="8">Reihe VIII:
@@ -61,22 +89,28 @@
             </imprint>
             <biblScope unit="page" from="365" to="373"/>
           </monogr>
-          <series><title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
-              Briefe</title></series>
+          <series>
+            <title type="main" level="s">Gottfried Wilhelm Leibniz. Sämtliche Schriften und
+              Briefe</title>
+          </series>
         </biblStruct>
         <listWit>
-          <witness n="L" corresp="#L_08-01-043-000_facs-haupttextzeuge"><msDesc>
+          <witness n="L" corresp="#L_08-01-043-000_facs-haupttextzeuge">
+            <msDesc>
               <msIdentifier>
                 <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                 <idno type="Signatur">LH XXXVII 3 Bl. 113–114</idno>
               </msIdentifier>
               <msContents corresp="L_witness-content-types.xml#konzept-entwurf">
-                <summary><p>Konzept: LH XXXVII 3 Bl. 113–114. 1 Bog. 2<hi rendition="#sup">o</hi>. 4
+                <summary>
+                  <p>Konzept: LH XXXVII 3 Bl. 113–114. 1 Bog. 2<hi rendition="#sup">o</hi>. 4
                     S. zweispaltig. Linke Spalte fortlaufender Text, rechte Spalte Ergänzungen und
                     Textkorrekturen. Auf Bl. 113 r<hi rendition="#sup">o</hi> obere Hälfte rechts
                     drei Zeichnungen. Auf Bl. 113 v<hi rendition="#sup">o</hi> zwei Zeichnungen
                     rechts in der Mitte. Auf Bl. 114 v<hi rendition="#sup">o</hi> obere Hälfte
-                    rechts eine Zeichnung.</p><p>Cc 2, Nr. 487</p></summary>
+                    rechts eine Zeichnung.</p>
+                  <p>Cc 2, Nr. 487</p>
+                </summary>
               </msContents>
               <physDesc>
                 <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -84,7 +118,8 @@
               <history>
                 <origin corresp="L_witness-origin-types.xml#origin-L"/>
               </history>
-            </msDesc></witness>
+            </msDesc>
+          </witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -193,7 +228,7 @@
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=342"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=343"/>
     <graphic url="https://digilib.bbaw.de/digitallibrary/digilib.html?fn=/silo10/Leibniz8/original/LH037,03/&amp;pn=344"/>
-    </facsimile>
+  </facsimile>
   <text xml:id="L_08-01-043-000_text">
     <body xml:id="Document">
       <div type="chapter" xml:id="Ch43" n="43">
@@ -201,17 +236,23 @@
         <head>43. EXPERIMENTA DE CORPORIBUS ELASTICIS</head>
         <head>[25. Juli – 12. Dezember 1672]</head>
         <div type="ueberlieferung">
-          <p><hi rendition="#b #smaller">Überlieferung:</hi><listWit>
-              <witness><msDesc>
+          <p>
+            <hi rendition="#b #smaller">Überlieferung:</hi>
+            <listWit>
+              <witness>
+                <msDesc>
                   <msIdentifier>
                     <repository>Gottfried Wilhelm Leibniz Bibliothek Hannover</repository>
                     <idno type="Signatur">XXX</idno>
                   </msIdentifier>
                   <msContents>
-                    <summary><p>Konzept: LH XXXVII 3 Bl. 113–114. 1 Bog. 2<hi rendition="#sup">o</hi>. 4 S. zweispaltig. Linke Spalte fortlaufender Text, rechte Spalte
+                    <summary>
+                      <p>Konzept: LH XXXVII 3 Bl. 113–114. 1 Bog. 2<hi rendition="#sup">o</hi>. 4 S. zweispaltig. Linke Spalte fortlaufender Text, rechte Spalte
                         Ergänzungen und Textkorrekturen. Auf Bl. 113 r<hi rendition="#sup">o</hi>
-                        obere Hälfte rechts drei Zeichnungen. Auf Bl. 113 v<hi rendition="#sup">o</hi> zwei Zeichnungen rechts in der Mitte. Auf Bl. 114 v<hi rendition="#sup">o</hi> obere Hälfte rechts eine Zeichnung.</p><p>Cc 2,
-                        Nr. 487</p></summary>
+                        obere Hälfte rechts drei Zeichnungen. Auf Bl. 113 v<hi rendition="#sup">o</hi> zwei Zeichnungen rechts in der Mitte. Auf Bl. 114 v<hi rendition="#sup">o</hi> obere Hälfte rechts eine Zeichnung.</p>
+                      <p>Cc 2,
+                        Nr. 487</p>
+                    </summary>
                   </msContents>
                   <physDesc>
                     <objectDesc form="Handschrift" corresp="L_objectDesc.xml#handschrift"/>
@@ -219,814 +260,1108 @@
                   <history>
                     <origin/>
                   </history>
-                </msDesc></witness>
-            </listWit></p>
+                </msDesc>
+              </witness>
+            </listWit>
+          </p>
         </div>
         <div type="contents">
-          <p xml:id="Ch43.p4"><hi rendition="#smaller"><hi rendition="#b">Datierungsgründe</hi>: In
+          <p xml:id="Ch43.p4">
+            <hi rendition="#smaller">
+              <hi rendition="#b">Datierungsgründe</hi>: In
               dem Text werden Überlegungen des vorausgehenden Stücks N. 42 mit dem Ziel
               weitergeführt, zu allgemeingültigen Regeln in Bezug auf das Verhalten elastischer
               Körper zu gelangen. Auch hier sind es Experimente, aus denen Leibniz die Geltung einer
               Propositio erschließt. Aufgrund der Übereinstimmung der Wasserzeichen unseres Stückes
-              mit N. 42 gehen wir von demselben Entstehungszeitraum aus.</hi></p>
+              mit N. 42 gehen wir von demselben Entstehungszeitraum aus.</hi>
+          </p>
         </div>
         <div type="text">
-          <p xml:id="Ch43.p5"><pb type="L"/><fw type="folNum">[113 r<hi rendition="#sup">o</hi>]</fw>
+          <p xml:id="Ch43.p5">
+            <pb type="L"/>
+            <fw type="folNum">[113 r<hi rendition="#sup">o</hi>]
+            </fw>
             <hi rendition="#g">Experim. 1.</hi> Si duo Elastica<index indexName="Sachverzeichnis">
-              <term>elasticum</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">diversarum virium ab eadem</lem>
-              <note type="lemma-abbrev">Elastica</note>
-              <rdg wit="#L" n="1"> eadem vi eandem </rdg>
-              <rdg wit="#L" n="2"> diversarum virium ab eadem <hi rendition="#i">L</hi></rdg>
-            </app> potentia (tendente vel comprimente) vim patiantur effectus potentiae <app type="Bfootnote">
-              <lem type="main">vim afferentis</lem>
-              <rdg wit="#L" cause="addition"><add>vim afferentis</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> erunt ut sunt <app type="Bfootnote">
-              <lem type="main">eorum vires</lem>
-              <note type="lemma-abbrev">sunt</note>
-              <rdg wit="#L" n="1"> spatia <app>
-                  <rdg wit="#L" n="a">ab Elasticis<index indexName="Sachverzeichnis">
-                      <term>elasticum</term>
-                    </index> cum vis a </rdg>
-                  <rdg wit="#L" n="b">eorum seu <hi rendition="#g">Volumina</hi> Naturalia </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> eorum vires <hi rendition="#i">L</hi></rdg>
-            </app> reciproce. <app type="Bfootnote">
-              <lem type="main"><hi rendition="#g">Spatia</hi> Elasticorum seu <hi rendition="#g">volumina</hi>
-                <hi rendition="#g">naturalia</hi> voco, quae occupant si vis absit. Experientia
+            <term>elasticum</term>
+          </index>
+          <app type="Bfootnote">
+            <lem type="main">diversarum virium ab eadem</lem>
+            <note type="lemma-abbrev">Elastica</note>
+            <rdg wit="#L" n="1"> eadem vi eandem </rdg>
+            <rdg wit="#L" n="2"> diversarum virium ab eadem <hi rendition="#i">L</hi>
+            </rdg>
+          </app> potentia (tendente vel comprimente) vim patiantur effectus potentiae <app type="Bfootnote">
+          <lem type="main">vim afferentis</lem>
+          <rdg wit="#L" cause="addition">
+            <add>vim afferentis</add>
+            <note type="editorial">
+              <hi rendition="#i">erg. L</hi>
+            </note>
+          </rdg>
+        </app> erunt ut sunt <app type="Bfootnote">
+        <lem type="main">eorum vires</lem>
+        <note type="lemma-abbrev">sunt</note>
+        <rdg wit="#L" n="1"> spatia <app>
+          <rdg wit="#L" n="a">ab Elasticis<index indexName="Sachverzeichnis">
+            <term>elasticum</term>
+          </index> cum vis a </rdg>
+        <rdg wit="#L" n="b">eorum seu <hi rendition="#g">Volumina</hi> Naturalia </rdg>
+      </app>
+    </rdg>
+    <rdg wit="#L" n="2"> eorum vires <hi rendition="#i">L</hi>
+    </rdg>
+  </app> reciproce. <app type="Bfootnote">
+  <lem type="main">
+    <hi rendition="#g">Spatia</hi> Elasticorum seu <hi rendition="#g">volumina</hi>
+    <hi rendition="#g">naturalia</hi> voco, quae occupant si vis absit. Experientia
                 hujus theorematis tum hoc modo.</lem>
-              <note type="lemma-abbrev">reciproce.</note>
-              <rdg wit="#L" n="1"> Experientia hujus theorematis commodissime fiet in Elastico<index indexName="Sachverzeichnis">
-                  <term>elasticum</term>
-                </index> liquido, quale est aer </rdg>
-              <rdg wit="#L" n="2"> Sunto </rdg>
-              <rdg wit="#L" n="3" cause="addition"> <hi rendition="#g">Spatia</hi> Elasticorum <note type="editorial">|</note> <add>seu <hi rendition="#g">volumina</hi>
-                </add>
-                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> <hi rendition="#g">naturalia</hi>
-                <seg type="apparat-ellipsis"/> tum <app>
-                  <rdg wit="#L" n="a">in liquido tum in solido Elastico<index indexName="Sachverzeichnis">
-                      <term>elasticum</term>
-                    </index> fieri potest </rdg>
-                  <rdg wit="#L" n="b">in <app>
-                      <rdg wit="#L" n="aa">liquido </rdg>
-                      <rdg wit="#L" n="bb">solido hoc </rdg>
-                    </app></rdg>
-                  <rdg wit="#L" n="c">hoc modo. <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app> Esto lamina ferrea Elastica<index indexName="Sachverzeichnis">
-              <term>elasticum</term>
-            </index> restitutione sua circumagens rotam <app type="Bfootnote">
-              <lem type="main">dentatam</lem>
-              <rdg wit="#L" cause="addition"><add>dentatam</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app>
-            <hi rendition="#i">a</hi> elevansque <app type="Bfootnote">
-              <lem type="main">pondus columnae dentatae</lem>
-              <note type="lemma-abbrev">elevansque</note>
-              <rdg wit="#L" n="1"> columnam dentatam </rdg>
-              <rdg wit="#L" n="2"> pondus columnae dentatae <hi rendition="#i">L</hi></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main"><hi rendition="#i">bc</hi>. </lem>
-              <note type="lemma-abbrev"><hi rendition="#i">bc</hi></note>
-              <rdg wit="#L" cause="deletion">
-                <note type="editorial">|</note> <del>usque ad <hi rendition="#i">d</hi>
-                </del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> . Esto <hi rendition="#i">L</hi></rdg>
-            </app>Esto alia fortior <app type="Bfootnote">
-              <lem type="main">circum<pb type="VIII_1" n="366"/>agens rotam <hi rendition="#i">aa</hi> et sustinens columnam graviorem <hi rendition="#i">bbcc</hi></lem>
-              <note type="lemma-abbrev">fortior</note>
-              <rdg wit="#L" n="1"> elevans </rdg>
-              <rdg wit="#L" n="2"> <hi rendition="#i">aa</hi> elevan </rdg>
-              <rdg wit="#L" n="3"> circumagens rotam <hi rendition="#i">aa</hi> et <app>
-                  <rdg wit="#L" n="a">elevans columnam </rdg>
-                  <rdg wit="#L" n="b">sustinens columnam graviorem <hi rendition="#i">bbcc</hi>
-                    <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app>. <app type="Bfootnote">
-              <lem type="main">Quo</lem>
-              <note type="lemma-abbrev"><hi rendition="#i">bbcc</hi>.</note>
-              <rdg wit="#L" n="1" cause="addition"> <note type="editorial">|</note> <add>altius</add>
-                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> ad <hi rendition="#i">dd</hi>
-              </rdg>
-              <rdg wit="#L" n="2" cause="addition"> Et esto spatium <note type="editorial">|</note> <add>naturale</add>
-                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> Elaterii<index indexName="Sachverzeichnis">
-                  <term>elaterium</term>
-                </index>
-                <hi rendition="#i">a</hi> ad spatium naturale Elaterii<index indexName="Sachverzeichnis">
-                  <term>elaterium</term>
-                </index>
-                <hi rendition="#i">aa</hi> ut <hi rendition="#i">cd</hi> ad <hi rendition="#i">ccdd</hi>
-              </rdg>
-              <rdg wit="#L" n="3"> Quo <hi rendition="#i">L</hi></rdg>
-            </app> facto ad comprimendum denuo elaterium<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> imponatur <app type="Bfootnote">
-              <lem type="main">columnae <hi rendition="#i">cd</hi> pondus <hi rendition="#i">ef</hi>
-                et columnae <hi rendition="#i">ccdd</hi> pondus <hi rendition="#i">eeff</hi>.</lem>
-              <note type="lemma-abbrev">imponatur</note>
-              <rdg wit="#L" n="1"> utrique columnae <hi rendition="#i">cd</hi> et <hi rendition="#i">cc dd</hi> pondus<index indexName="Sachverzeichnis">
-                  <term>pondus</term>
-                </index>
-                <hi rendition="#i">ef</hi> vel <hi rendition="#i">eeff</hi> aequale </rdg>
-              <rdg wit="#L" n="2"> columnae <seg type="apparat-ellipsis"/>
-                <hi rendition="#i">eeff</hi>. <hi rendition="#i">L</hi></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main">Ponatur</lem>
-              <note type="lemma-abbrev"><hi rendition="#i">eeff.</hi></note>
-              <rdg wit="#L" n="1"> Ajo </rdg>
-              <rdg wit="#L" n="2"> Ponatur <hi rendition="#i">L</hi></rdg>
-            </app> pondus<index indexName="Sachverzeichnis">
-              <term>pondus</term>
-            </index>
-            <hi rendition="#i">ef</hi>
-            <app type="Bfootnote">
-              <lem type="main">columnam <hi rendition="#i">fg</hi> depressurum</lem>
-              <note type="lemma-abbrev"><hi rendition="#i">ef</hi></note>
-              <rdg wit="#L" n="1"> descensurum </rdg>
-              <rdg wit="#L" n="2" cause="addition"> columnam <note type="editorial">|</note> <add><hi rendition="#i">fg</hi>
-                </add>
-                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> depressurum <hi rendition="#i">L</hi></rdg>
-            </app> esse ex <hi rendition="#i">d</hi> in <hi rendition="#i">g</hi> deprimet idem
+  <note type="lemma-abbrev">reciproce.</note>
+  <rdg wit="#L" n="1"> Experientia hujus theorematis commodissime fiet in Elastico<index indexName="Sachverzeichnis">
+    <term>elasticum</term>
+  </index> liquido, quale est aer </rdg>
+<rdg wit="#L" n="2"> Sunto </rdg>
+<rdg wit="#L" n="3" cause="addition">
+  <hi rendition="#g">Spatia</hi> Elasticorum <note type="editorial">|</note>
+  <add>seu <hi rendition="#g">volumina</hi>
+  </add>
+  <note type="editorial">
+    <hi rendition="#i">erg.</hi> |
+  </note>
+  <hi rendition="#g">naturalia</hi>
+  <seg type="apparat-ellipsis"/>
+ tum <app>
+  <rdg wit="#L" n="a">in liquido tum in solido Elastico<index indexName="Sachverzeichnis">
+    <term>elasticum</term>
+  </index> fieri potest </rdg>
+<rdg wit="#L" n="b">in <app>
+  <rdg wit="#L" n="aa">liquido </rdg>
+  <rdg wit="#L" n="bb">solido hoc </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="c">hoc modo. <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> Esto lamina ferrea Elastica<index indexName="Sachverzeichnis">
+<term>elasticum</term>
+</index> restitutione sua circumagens rotam <app type="Bfootnote">
+<lem type="main">dentatam</lem>
+<rdg wit="#L" cause="addition">
+<add>dentatam</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#i">a</hi> elevansque <app type="Bfootnote">
+<lem type="main">pondus columnae dentatae</lem>
+<note type="lemma-abbrev">elevansque</note>
+<rdg wit="#L" n="1"> columnam dentatam </rdg>
+<rdg wit="#L" n="2"> pondus columnae dentatae <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">
+<hi rendition="#i">bc</hi>. 
+</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">bc</hi>
+</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>usque ad <hi rendition="#i">d</hi>
+</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> . Esto <hi rendition="#i">L</hi>
+</rdg>
+</app>Esto alia fortior <app type="Bfootnote">
+<lem type="main">circum<pb type="VIII_1" n="366"/>
+agens rotam <hi rendition="#i">aa</hi> et sustinens columnam graviorem <hi rendition="#i">bbcc</hi>
+</lem>
+<note type="lemma-abbrev">fortior</note>
+<rdg wit="#L" n="1"> elevans </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">aa</hi> elevan </rdg>
+<rdg wit="#L" n="3"> circumagens rotam <hi rendition="#i">aa</hi> et <app>
+<rdg wit="#L" n="a">elevans columnam </rdg>
+<rdg wit="#L" n="b">sustinens columnam graviorem <hi rendition="#i">bbcc</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>.<app type="Bfootnote">
+<lem type="main">Quo</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">bbcc</hi>.
+</note>
+<rdg wit="#L" n="1" cause="addition">
+<note type="editorial">|</note>
+<add>altius</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> ad <hi rendition="#i">dd</hi>
+</rdg>
+<rdg wit="#L" n="2" cause="addition"> Et esto spatium <note type="editorial">|</note>
+<add>naturale</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> Elaterii<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>
+<hi rendition="#i">a</hi> ad spatium naturale Elaterii<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>
+<hi rendition="#i">aa</hi> ut <hi rendition="#i">cd</hi> ad <hi rendition="#i">ccdd</hi>
+</rdg>
+<rdg wit="#L" n="3"> Quo <hi rendition="#i">L</hi>
+</rdg>
+</app> facto ad comprimendum denuo elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> imponatur <app type="Bfootnote">
+<lem type="main">columnae <hi rendition="#i">cd</hi> pondus <hi rendition="#i">ef</hi>
+                et columnae <hi rendition="#i">ccdd</hi> pondus <hi rendition="#i">eeff</hi>.
+</lem>
+<note type="lemma-abbrev">imponatur</note>
+<rdg wit="#L" n="1"> utrique columnae <hi rendition="#i">cd</hi> et <hi rendition="#i">cc dd</hi> pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>
+<hi rendition="#i">ef</hi> vel <hi rendition="#i">eeff</hi> aequale </rdg>
+<rdg wit="#L" n="2"> columnae <seg type="apparat-ellipsis"/>
+<hi rendition="#i">eeff</hi>.<hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">Ponatur</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">eeff.</hi>
+</note>
+<rdg wit="#L" n="1"> Ajo </rdg>
+<rdg wit="#L" n="2"> Ponatur <hi rendition="#i">L</hi>
+</rdg>
+</app> pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>
+<hi rendition="#i">ef</hi>
+<app type="Bfootnote">
+<lem type="main">columnam <hi rendition="#i">fg</hi> depressurum</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">ef</hi>
+</note>
+<rdg wit="#L" n="1"> descensurum </rdg>
+<rdg wit="#L" n="2" cause="addition"> columnam <note type="editorial">|</note>
+<add>
+<hi rendition="#i">fg</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> depressurum <hi rendition="#i">L</hi>
+</rdg>
+</app> esse ex <hi rendition="#i">d</hi> in <hi rendition="#i">g</hi> deprimet idem
               pondus<index indexName="Sachverzeichnis">
-              <term>pondus</term>
-            </index> vel ei aequale <hi rendition="#i">eeff</hi> columnam <hi rendition="#i">bb
+<term>pondus</term>
+</index> vel ei aequale <hi rendition="#i">eeff</hi> columnam <hi rendition="#i">bb
               cc</hi> ex <hi rendition="#i">dd</hi> in <hi rendition="#i">gg</hi> et lineae <hi rendition="#i">ddgg</hi> per quam depressa est columna major <hi rendition="#i">dd
               cc</hi> erit tanto minor linea <hi rendition="#i">dg</hi> per quam depressa est
             columna minor <hi rendition="#i">dc</hi>
-            <app type="Bfootnote">
-              <lem type="main">quanto</lem>
-              <note type="lemma-abbrev"><hi rendition="#i">dc</hi></note>
-              <rdg wit="#L" n="1"> ut est </rdg>
-              <rdg wit="#L" n="2"> quanto <hi rendition="#i">L</hi></rdg>
-            </app> columna ejus est columna alterius major. Ratio est, quia <app type="Bfootnote">
-              <lem type="main">data potentia aequali effectus sunt</lem>
-              <note type="lemma-abbrev">quia</note>
-              <rdg wit="#L" n="1"> effectus omnes sunt </rdg>
-              <rdg wit="#L" n="2"> data potentia aequali effectus sunt <hi rendition="#i">L</hi></rdg>
-            </app> ut obstacula, id reciproce<app type="Bfootnote">
-              <lem type="main">. Obstacula autem sunt vires contrariae, hoc loco</lem>
-              <note type="lemma-abbrev">reciproce</note>
-              <rdg wit="#L" n="1"> est hoc loco vires </rdg>
-              <rdg wit="#L" n="2"> . Obstacula <seg type="apparat-ellipsis"/> loco <hi rendition="#i">L</hi></rdg>
-            </app>
-            <anchor xml:id="elatostart"/><app type="Bfootnote" from="#elatostart" to="#elatoend">
-              <lem type="main">Elateriorum.</lem>
-              <note type="lemma-abbrev">Elateriorum</note>
-              <rdg wit="#L" n="1"> <hi rendition="#g">Exp. 2.</hi>
-                <app>
-                  <rdg wit="#L" n="a">Potentiae diversae eidem Elaterio<index indexName="Sachverzeichnis">
-                      <term>elaterium</term>
-                    </index> applicatae </rdg>
-                  <rdg wit="#L" n="b">Pondera diversa <app>
-                      <rdg wit="#L" n="aa">eidem Elaterio<index indexName="Sachverzeichnis">
-                          <term>elaterium</term>
-                        </index> applicata, </rdg>
-                      <rdg wit="#L" n="bb">ejusdem crassitiei <app>
-                          <rdg wit="#L" n="aaa">nunquam ita descendunt, ut punctum praecise pendeant
+<app type="Bfootnote">
+<lem type="main">quanto</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">dc</hi>
+</note>
+<rdg wit="#L" n="1"> ut est </rdg>
+<rdg wit="#L" n="2"> quanto <hi rendition="#i">L</hi>
+</rdg>
+</app> columna ejus est columna alterius major. Ratio est, quia <app type="Bfootnote">
+<lem type="main">data potentia aequali effectus sunt</lem>
+<note type="lemma-abbrev">quia</note>
+<rdg wit="#L" n="1"> effectus omnes sunt </rdg>
+<rdg wit="#L" n="2"> data potentia aequali effectus sunt <hi rendition="#i">L</hi>
+</rdg>
+</app> ut obstacula, id reciproce<app type="Bfootnote">
+<lem type="main">. Obstacula autem sunt vires contrariae, hoc loco</lem>
+<note type="lemma-abbrev">reciproce</note>
+<rdg wit="#L" n="1"> est hoc loco vires </rdg>
+<rdg wit="#L" n="2"> . Obstacula <seg type="apparat-ellipsis"/>
+ loco <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<anchor xml:id="elatostart"/>
+<app type="Bfootnote" from="#elatostart" to="#elatoend">
+<lem type="main">Elateriorum.</lem>
+<note type="lemma-abbrev">Elateriorum</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">Exp. 2.</hi>
+<app>
+<rdg wit="#L" n="a">Potentiae diversae eidem Elaterio<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> applicatae </rdg>
+<rdg wit="#L" n="b">Pondera diversa <app>
+<rdg wit="#L" n="aa">eidem Elaterio<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> applicata, </rdg>
+<rdg wit="#L" n="bb">ejusdem crassitiei <app>
+<rdg wit="#L" n="aaa">nunquam ita descendunt, ut punctum praecise pendeant
                             ex puncto </rdg>
-                          <rdg wit="#L" n="bbb">nunquam descendunt in </rdg>
-                          <rdg wit="#L" n="ccc">praecise pendent <app>
-                              <rdg wit="#L" n="aaaa">ex puncto suo summo </rdg>
-                              <rdg wit="#L" n="bbbb" cause="addition">ex <note type="editorial">|</note> <add>uno</add>
-                                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> puncto
-                                  <note type="editorial">|</note> <add>quidam</add>
-                                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> summo
+<rdg wit="#L" n="bbb">nunquam descendunt in </rdg>
+<rdg wit="#L" n="ccc">praecise pendent <app>
+<rdg wit="#L" n="aaaa">ex puncto suo summo </rdg>
+<rdg wit="#L" n="bbbb" cause="addition">ex <note type="editorial">|</note>
+<add>uno</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> puncto
+<note type="editorial">|</note>
+<add>quidam</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> summo
                                 voluminis Elaterii<index indexName="Sachverzeichnis">
-                                  <term>elaterium</term>
-                                </index> naturalis. Ponatur in <hi rendition="#g">fig. 1.</hi>
+<term>elaterium</term>
+</index> naturalis. Ponatur in <hi rendition="#g">fig. 1.</hi>
                                 pondus columnae <hi rendition="#i">cb</hi> eousque Elaterium<index indexName="Sachverzeichnis">
-                                  <term>elaterium</term>
-                                </index> pressisse, <app>
-                                  <rdg wit="#L" n="aaaaa">ut </rdg>
-                                  <rdg wit="#L" n="bbbbb">donec descendere columna potuerit <hi rendition="#i">(aaaaa-a)</hi> eo infra <hi rendition="#i">(bbbbb-b)</hi> praecise infra <hi rendition="#i">d</hi>. Dico
+<term>elaterium</term>
+</index> pressisse, <app>
+<rdg wit="#L" n="aaaaa">ut </rdg>
+<rdg wit="#L" n="bbbbb">donec descendere columna potuerit <hi rendition="#i">(aaaaa-a)</hi> eo infra <hi rendition="#i">(bbbbb-b)</hi> praecise infra <hi rendition="#i">d</hi>. Dico
                                     hoc punctum <hi rendition="#i">d</hi> punctum summum voluminis
                                       Elaterii<index indexName="Sachverzeichnis">
-                                      <term>elaterium</term>
-                                    </index> naturalis, ita ut si restituendo se per lineam <hi rendition="#i">dc</hi> assurgere credatur non sit
+<term>elaterium</term>
+</index> naturalis, ita ut si restituendo se per lineam <hi rendition="#i">dc</hi> assurgere credatur non sit
                                     assurrecturum ultra <hi rendition="#i">d</hi>. Et si columna <hi rendition="#i">bc</hi> nec gravis nec levis esse supponatur,
                                     ut si aequalis columnae contrapondio retineatur, columnam non
                                     iri elevatam nisi exacte in <hi rendition="#i">c</hi>. Et si
                                     columnae <hi rendition="#i">fc</hi> quantumcunque pondus
                                     aequalis </rdg>
-                                </app></rdg>
-                            </app></rdg>
-                        </app></rdg>
-                    </app></rdg>
-                  <rdg wit="#L" n="c">Hoc Experimentum verum est in li </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2" cause="addition"> <hi rendition="#g">Exp. 2.</hi> Pondera diversa
-                  <note type="editorial">|</note> <add>homogenea</add>
-                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> ejusdem <seg type="apparat-ellipsis"/> Elaterium <app>
-                  <rdg wit="#L" n="a">pondere suo </rdg>
-                  <rdg wit="#L" n="b">prementia <seg type="apparat-ellipsis"/> descendetque, <app>
-                      <rdg wit="#L" n="aa">dummodo sint </rdg>
-                      <rdg wit="#L" n="bb">sine ullo renisu <app>
-                          <rdg wit="#L" n="aaa">nec </rdg>
-                          <rdg wit="#L" n="bbb">at semper <hi rendition="#i">L</hi>     </rdg>
-                        </app></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app></p>
-          <p xml:id="Ch43.p6"><hi rendition="#g">Exp. 2.</hi> Pondera diversa homogenea ejusdem
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="c">Hoc Experimentum verum est in li </rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2" cause="addition">
+<hi rendition="#g">Exp. 2.</hi> Pondera diversa
+<note type="editorial">|</note>
+<add>homogenea</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> ejusdem <seg type="apparat-ellipsis"/>
+ Elaterium <app>
+<rdg wit="#L" n="a">pondere suo </rdg>
+<rdg wit="#L" n="b">prementia <seg type="apparat-ellipsis"/>
+ descendetque, <app>
+<rdg wit="#L" n="aa">dummodo sint </rdg>
+<rdg wit="#L" n="bb">sine ullo renisu <app>
+<rdg wit="#L" n="aaa">nec </rdg>
+<rdg wit="#L" n="bbb">at semper <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</p>
+<p xml:id="Ch43.p6">
+<hi rendition="#g">Exp. 2.</hi> Pondera diversa homogenea ejusdem
             crassitiei, altitudinis quantaecunque idem Elaterium prementia puncto suo summo nunquam
-            nec ultra nec <pb type="VIII_1" n="367"/>citra punctum quoddam determinatum consistent.
+            nec ultra nec <pb type="VIII_1" n="367"/>
+citra punctum quoddam determinatum consistent.
             Ponatur in fig. 1. columnam <hi rendition="#i">fc</hi> pondere suo eousque pressisse
             Elaterium <hi rendition="#i">a</hi> donec punctum ejus summum <hi rendition="#i">f</hi>
             pervenerit in <hi rendition="#i">d</hi> quod praeterire nequeat. Ajo pondus quodcunque
-              <hi rendition="#i">ef</hi> superadditum ejusdem crassitiei altitudinis quantaecunque
+<hi rendition="#i">ef</hi> superadditum ejusdem crassitiei altitudinis quantaecunque
             nunquam descensurum puncto suo summo <hi rendition="#i">e</hi> ultra <hi rendition="#i">d</hi> et totum <hi rendition="#i">ec</hi> quantumcunque quasi <hi rendition="#i">d</hi> suspensum fore. Quod ita demonstratur: cum pondus <hi rendition="#i">fe</hi>
             ex altitudine <hi rendition="#i">dc</hi> sit in aequilibrio<index indexName="Sachverzeichnis">
-              <term>aequilibrium</term>
-            </index> cum Elaterio nec ultra descendere possit, ex hypothesi, ideo ut Elaterii ita et
+<term>aequilibrium</term>
+</index> cum Elaterio nec ultra descendere possit, ex hypothesi, ideo ut Elaterii ita et
             ponderis omnis vis mutuo periit. Quicquid ergo addetur, effectum suum libere exercebit,
-            descendetque, sine ullo renisu at<anchor xml:id="elatoend"/> semper <hi rendition="#i">fe</hi> aut aequivalens <app type="Bfootnote">
-              <lem type="main">in eadem altitudine crassitieque id est ei simile</lem>
-              <rdg wit="#L" cause="addition"><add>in <seg type="apparat-ellipsis"/> simile</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> impedietur a<anchor xml:id="_113rdesc"/><anchor xml:id="_1132desc"/>
+            descendetque, sine ullo renisu at<anchor xml:id="elatoend"/>
+ semper <hi rendition="#i">fe</hi> aut aequivalens <app type="Bfootnote">
+<lem type="main">in eadem altitudine crassitieque id est ei simile</lem>
+<rdg wit="#L" cause="addition">
+<add>in <seg type="apparat-ellipsis"/>
+ simile</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> impedietur a<anchor xml:id="_113rdesc"/>
+<anchor xml:id="_1132desc"/>
               descensu.<app type="Bfootnote" from="#_113rdesc" to="#_113vdesc">
-              <lem type="main"/>
-              <note type="lemma-abbrev">descensu.</note>
-              <rdg wit="#L" cause="deletion">
-                <note type="editorial">|</note> <del>Quod si vero aequaleat ob crassitiem
+<lem type="main"/>
+<note type="lemma-abbrev">descensu.</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>Quod si vero aequaleat ob crassitiem
                   diversam.</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> </rdg>
-              <rdg wit="#L" n="1"> <hi rendition="#g">Exp. 3.</hi>
-                <app>
-                  <rdg wit="#L" n="a">Ideo generaliter quantaecunque <app>
-                      <rdg wit="#L" n="aa">sit crassitiei pondus<index indexName="Sachverzeichnis">
-                          <term>pondus</term>
-                        </index> incumbens </rdg>
-                      <rdg wit="#L" n="bb">crassitiei aut altitudinis pondera incumbentia sint <app>
-                          <rdg wit="#L" n="aaa">semper manebit in spatio </rdg>
-                          <rdg wit="#L" n="bbb">extabit ultra in altitudine quacunque ex <hi rendition="#i">d</hi>
-                            <app>
-                              <rdg wit="#L" n="aaaa">pondus<index indexName="Sachverzeichnis">
-                                  <term>pondus</term>
-                                </index> minus altum </rdg>
-                              <rdg wit="#L" n="bbbb">pondus<index indexName="Sachverzeichnis">
-                                  <term>pondus</term>
-                                </index> altitudinis minoris <app>
-                                  <rdg wit="#L" n="aaaaa">praevaleat </rdg>
-                                  <rdg wit="#L" n="bbbbb">aequivaleat </rdg>
-                                </app></rdg>
-                            </app></rdg>
-                        </app></rdg>
-                    </app></rdg>
-                  <rdg wit="#L" n="b">Quod si vero crassities non sit eadem, aut pondera non sint
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note>
+</rdg>
+<rdg wit="#L" n="1">
+<hi rendition="#g">Exp. 3.</hi>
+<app>
+<rdg wit="#L" n="a">Ideo generaliter quantaecunque <app>
+<rdg wit="#L" n="aa">sit crassitiei pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> incumbens </rdg>
+<rdg wit="#L" n="bb">crassitiei aut altitudinis pondera incumbentia sint <app>
+<rdg wit="#L" n="aaa">semper manebit in spatio </rdg>
+<rdg wit="#L" n="bbb">extabit ultra in altitudine quacunque ex <hi rendition="#i">d</hi>
+<app>
+<rdg wit="#L" n="aaaa">pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> minus altum </rdg>
+<rdg wit="#L" n="bbbb">pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> altitudinis minoris <app>
+<rdg wit="#L" n="aaaaa">praevaleat </rdg>
+<rdg wit="#L" n="bbbbb">aequivaleat </rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="b">Quod si vero crassities non sit eadem, aut pondera non sint
                     homogenea, tunc semper manebit supra <hi rendition="#i">c</hi>
-                  </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> <hi rendition="#g">Exper. 3.</hi>
-                <seg type="apparat-ellipsis"/> sint, <app>
-                  <rdg wit="#L" n="a">quantum </rdg>
-                  <rdg wit="#L" n="b">semper tantundem <app>
-                      <rdg wit="#L" n="aa">inter </rdg>
-                      <rdg wit="#L" n="bb">supra quodcunque assumtum descensus pondus<index indexName="Sachverzeichnis">
-                          <term>pondus</term>
-                        </index>
-                      </rdg>
-                      <rdg wit="#L" n="cc">ponderis <seg type="apparat-ellipsis"/>
-                        <hi rendition="#i">c</hi>
-                        <hi rendition="#i">L</hi></rdg>
-                    </app></rdg>
-                </app></rdg>
-            </app></p>
-          <figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch43.p7">
-            <graphic url="./images/37_4_113r.svg" width="151.767pt" xml:id="Ch43.p7.g1"/>
-          </figure>
-          <p xml:id="Ch43.p8"><pb type="L"/><pb type="VIII_1" n="368"/><fw type="folNum">[113 v<hi rendition="#sup">o</hi>]</fw>
-            <anchor xml:id="_113desc"/><hi rendition="#g">Exper. 3.</hi> Cujuscunque vero crassitiei
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">Exper. 3.</hi>
+<seg type="apparat-ellipsis"/>
+ sint, <app>
+<rdg wit="#L" n="a">quantum </rdg>
+<rdg wit="#L" n="b">semper tantundem <app>
+<rdg wit="#L" n="aa">inter </rdg>
+<rdg wit="#L" n="bb">supra quodcunque assumtum descensus pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>
+</rdg>
+<rdg wit="#L" n="cc">ponderis <seg type="apparat-ellipsis"/>
+<hi rendition="#i">c</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app>
+</rdg>
+</app>
+</p>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch43.p7">
+<graphic url="./images/37_4_113r.svg" width="151.767pt" xml:id="Ch43.p7.g1"/>
+</figure>
+<p xml:id="Ch43.p8">
+<pb type="L"/>
+<pb type="VIII_1" n="368"/>
+<fw type="folNum">[113 v<hi rendition="#sup">o</hi>]
+</fw>
+<anchor xml:id="_113desc"/>
+<hi rendition="#g">Exper. 3.</hi> Cujuscunque vero crassitiei
             aut etiam heterogeneitatis pondera sint, semper tantundem ponderis supra quodcunque
             assumtum in linea descensus punctum, relinquetur. Esto in fig. 1. punctum assumtum <hi rendition="#i">c</hi>. Quantumcunque augeatur pondus quod extabit supra <hi rendition="#i">c</hi>
-            <anchor xml:id="_113vdesc"/> semper aequiponderabit columnae <hi rendition="#i">cd</hi>.
+<anchor xml:id="_113vdesc"/>
+ semper aequiponderabit columnae <hi rendition="#i">cd</hi>.
             Quia hoc <app type="Bfootnote">
-              <lem type="main">solum pondus <hi rendition="#i">dc</hi> aut ei aequale
+<lem type="main">solum pondus <hi rendition="#i">dc</hi> aut ei aequale
                 sustentando</lem>
-              <note type="lemma-abbrev">hoc</note>
-              <rdg wit="#L" n="1"> solo sustentato </rdg>
-              <rdg wit="#L" n="2"> solum <seg type="apparat-ellipsis"/> sustentando <hi rendition="#i">L</hi></rdg>
-            </app>, omnem vim suam residuam (si <app type="Bfootnote">
-              <lem type="main">scilicet</lem>
-              <rdg wit="#L" cause="addition"><add>scilicet</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> ea pondera quae jam infra <hi rendition="#i">c</hi> forsan esse
+<note type="lemma-abbrev">hoc</note>
+<rdg wit="#L" n="1"> solo sustentato </rdg>
+<rdg wit="#L" n="2"> solum <seg type="apparat-ellipsis"/>
+ sustentando <hi rendition="#i">L</hi>
+</rdg>
+</app>, omnem vim suam residuam (si <app type="Bfootnote">
+<lem type="main">scilicet</lem>
+<rdg wit="#L" cause="addition">
+<add>scilicet</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> ea pondera quae jam infra <hi rendition="#i">c</hi> forsan esse
               Elateriumque<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> premere possunt adimas) <app type="Bfootnote">
-              <lem type="main">impendit</lem>
-              <note type="lemma-abbrev">adimas)</note>
-              <rdg wit="#L" n="1"> consumit </rdg>
-              <rdg wit="#L" n="2"> impendit <hi rendition="#i">L</hi></rdg>
-            </app>. Non ergo demittit unquam hoc pondus eive aequalens, etsi caetera omnia superfusa
+<term>elaterium</term>
+</index> premere possunt adimas) <app type="Bfootnote">
+<lem type="main">impendit</lem>
+<note type="lemma-abbrev">adimas)</note>
+<rdg wit="#L" n="1"> consumit </rdg>
+<rdg wit="#L" n="2"> impendit <hi rendition="#i">L</hi>
+</rdg>
+</app>. Non ergo demittit unquam hoc pondus eive aequalens, etsi caetera omnia superfusa
             adjectave sine resistentia demittat; id est demittet totum infra <hi rendition="#i">dc</hi> quantumcunque sit demta <app type="Bfootnote">
-              <lem type="main">tantum praecise</lem>
-              <note type="lemma-abbrev">demta</note>
-              <rdg wit="#L" n="1"> quo </rdg>
-              <rdg wit="#L" n="2"> tantum praecise <hi rendition="#i">L</hi></rdg>
-            </app> parte quadam columnae <hi rendition="#i">fc</hi> aequiponderante<anchor xml:id="aequi113a"/><app type="Bfootnote" from="#aequi113a" to="#aequi113b">
-              <lem type="main"/>
-              <rdg wit="#L" cause="deletion">aequiponderante <note type="editorial">|</note> <del>,
+<lem type="main">tantum praecise</lem>
+<note type="lemma-abbrev">demta</note>
+<rdg wit="#L" n="1"> quo </rdg>
+<rdg wit="#L" n="2"> tantum praecise <hi rendition="#i">L</hi>
+</rdg>
+</app> parte quadam columnae <hi rendition="#i">fc</hi> aequiponderante<anchor xml:id="aequi113a"/>
+<app type="Bfootnote" from="#aequi113a" to="#aequi113b">
+<lem type="main"/>
+<rdg wit="#L" cause="deletion">aequiponderante <note type="editorial">|</note>
+<del>,
                   quantamcunque sit totum</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> . <hi rendition="#g">Exper. 4</hi>
-                <hi rendition="#i">L</hi></rdg>
-            </app>.</p>
-          <figure rendition="#own-line_centered" xml:id="Ch43.p9">
-            <graphic rendition="#c" url="./images/37_4_113v_2_3.svg" width="303.534pt" xml:id="Ch43.p9.g1"/>
-          </figure>
-          <pb type="VIII_1" n="369"/>
-          <p xml:id="Ch43.p10"><hi rendition="#g">Exper. 4.</hi>
-            <anchor xml:id="aequi113b"/>Si Elaterium<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> pariter et pondus<index indexName="Sachverzeichnis">
-              <term>pondus</term>
-            </index> liquida sint nec Elaterii<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index>, nec ponderis<index indexName="Sachverzeichnis">
-              <term>pondus</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">altitudo crassitiesve sed species tantum</lem>
-              <note type="lemma-abbrev">ponderis</note>
-              <rdg wit="#L" n="1"> crassities ponderis<index indexName="Sachverzeichnis">
-                  <term>pondus</term>
-                </index>
-              </rdg>
-              <rdg wit="#L" n="2"> altitudo crassitiesve sed species tantum <hi rendition="#i">L</hi></rdg>
-            </app> altitudinem suspensionis <app type="Bfootnote">
-              <lem type="main">variat. Species</lem>
-              <note type="lemma-abbrev">variat.</note>
-              <rdg wit="#L" n="1"> Sed sola species Elaterii<index indexName="Sachverzeichnis">
-                  <term>elaterium</term>
-                </index>
-              </rdg>
-              <rdg wit="#L" n="2"> Species <hi rendition="#i">L</hi></rdg>
-            </app> inquam, id est si pondus<index indexName="Sachverzeichnis">
-              <term>pondus</term>
-            </index> sit aqua aut Mercurius<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index>, si Elaterium<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> sit aer rarus aut compressus, quae specie variare dico quia pari magnitudine et
-              <app type="Bfootnote">
-              <lem type="main">figura externisque omnibus</lem>
-              <note type="lemma-abbrev">figura</note>
-              <rdg wit="#L" n="1"> alii </rdg>
-              <rdg wit="#L" n="2"> externisque omnibus <hi rendition="#i">L</hi></rdg>
-            </app> diversos tamen exercent effectus. Ratio est, quia <app type="Bfootnote">
-              <lem type="main">Liquores</lem>
-              <note type="lemma-abbrev">quia</note>
-              <rdg wit="#L" n="1"> in liquoribus<index indexName="Sachverzeichnis">
-                  <term>liquor</term>
-                </index> crassities </rdg>
-              <rdg wit="#L" n="2"> Liquores <hi rendition="#i">L</hi></rdg>
-            </app> neque ponderant neque vim Elasticam<index indexName="Sachverzeichnis">
-              <term>vis</term>
-              <index>
-                <term>elastica</term>
-              </index>
-            </index> in vim aliam oppositam exercent, secundum crassitiem, dudum in
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> .<hi rendition="#g">Exper. 4</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>.
+</p>
+<figure rendition="#own-line_centered" xml:id="Ch43.p9">
+<graphic rendition="#c" url="./images/37_4_113v_2_3.svg" width="303.534pt" xml:id="Ch43.p9.g1"/>
+</figure>
+<pb type="VIII_1" n="369"/>
+<p xml:id="Ch43.p10">
+<hi rendition="#g">Exper. 4.</hi>
+<anchor xml:id="aequi113b"/>
+Si Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> pariter et pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> liquida sint nec Elaterii<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>, nec ponderis<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">altitudo crassitiesve sed species tantum</lem>
+<note type="lemma-abbrev">ponderis</note>
+<rdg wit="#L" n="1"> crassities ponderis<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> altitudo crassitiesve sed species tantum <hi rendition="#i">L</hi>
+</rdg>
+</app> altitudinem suspensionis <app type="Bfootnote">
+<lem type="main">variat. Species</lem>
+<note type="lemma-abbrev">variat.</note>
+<rdg wit="#L" n="1"> Sed sola species Elaterii<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index>
+</rdg>
+<rdg wit="#L" n="2"> Species <hi rendition="#i">L</hi>
+</rdg>
+</app> inquam, id est si pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> sit aqua aut Mercurius<index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index>, si Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> sit aer rarus aut compressus, quae specie variare dico quia pari magnitudine et
+<app type="Bfootnote">
+<lem type="main">figura externisque omnibus</lem>
+<note type="lemma-abbrev">figura</note>
+<rdg wit="#L" n="1"> alii </rdg>
+<rdg wit="#L" n="2"> externisque omnibus <hi rendition="#i">L</hi>
+</rdg>
+</app> diversos tamen exercent effectus. Ratio est, quia <app type="Bfootnote">
+<lem type="main">Liquores</lem>
+<note type="lemma-abbrev">quia</note>
+<rdg wit="#L" n="1"> in liquoribus<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> crassities </rdg>
+<rdg wit="#L" n="2"> Liquores <hi rendition="#i">L</hi>
+</rdg>
+</app> neque ponderant neque vim Elasticam<index indexName="Sachverzeichnis">
+<term>vis</term>
+<index>
+<term>elastica</term>
+</index>
+</index> in vim aliam oppositam exercent, secundum crassitiem, dudum in
               Hydrostaticis<index indexName="Sachverzeichnis">
-              <term>hydrostatica</term>
-            </index> demonstratum est liquores<index indexName="Sachverzeichnis">
-              <term>liquor</term>
-            </index> non pondere secundum crassitiem Tuborum vasorumque quia liquor<index indexName="Sachverzeichnis">
-              <term>liquor</term>
-            </index> magis arctatus celerius movetur inspice fig. 3. Ubi sipho<index indexName="Sachverzeichnis">
-              <term>sipho</term>
-            </index> bicrurus cruribus sursum spectantibus apertisque diversae capacitatis <app type="Bfootnote">
-              <lem type="main"> liquore</lem>
-              <note type="lemma-abbrev">capacitatis</note>
-              <rdg wit="#L" n="1"> aqua </rdg>
-              <rdg wit="#L" n="2"> liquore <hi rendition="#i">L</hi></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main">quodam homogeneo</lem>
-              <note type="lemma-abbrev">liquore</note>
-              <rdg wit="#L" n="1"> eo </rdg>
-              <rdg wit="#L" n="2"> quodam homogeneo <hi rendition="#i">L</hi></rdg>
-            </app> plenus cogitetur. Constat, et a Stevino<index indexName="Namensregister">
-              <term><hi rendition="#g">Stevin</hi> (Stevinus), Simon 1548–1620</term>
-            </index> aliisque dudum ostensum est, etsi in tubo arctiore <hi rendition="#i">ab</hi>
+<term>hydrostatica</term>
+</index> demonstratum est liquores<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> non pondere secundum crassitiem Tuborum vasorumque quia liquor<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> magis arctatus celerius movetur inspice fig. 3. Ubi sipho<index indexName="Sachverzeichnis">
+<term>sipho</term>
+</index> bicrurus cruribus sursum spectantibus apertisque diversae capacitatis <app type="Bfootnote">
+<lem type="main"> liquore</lem>
+<note type="lemma-abbrev">capacitatis</note>
+<rdg wit="#L" n="1"> aqua </rdg>
+<rdg wit="#L" n="2"> liquore <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">quodam homogeneo</lem>
+<note type="lemma-abbrev">liquore</note>
+<rdg wit="#L" n="1"> eo </rdg>
+<rdg wit="#L" n="2"> quodam homogeneo <hi rendition="#i">L</hi>
+</rdg>
+</app> plenus cogitetur. Constat, et a Stevino<index indexName="Namensregister">
+<term>
+<hi rendition="#g">Stevin</hi> (Stevinus), Simon 1548–1620</term>
+</index> aliisque dudum ostensum est, etsi in tubo arctiore <hi rendition="#i">ab</hi>
             minus sit aquae quam in ampliore <app type="Bfootnote">
-              <!--is-correction-app-with-future-lemma-->
-              <lem type="main"><corr resp="#ed">[<hi rendition="#i">bc</hi>]</corr></lem>
-              <rdg wit="#L"><orig><hi rendition="#i">b</hi>
-                </orig>  <note type="editorial"><hi rendition="#i">L ändert Hrsg.</hi></note>
-              </rdg>
-            </app> attamen minorem majori aequiponderare, dummodo eadem sit tuborum altitudo. Ratio
-            est, quia angustia tubi quantum adimit <pb type="VIII_1" n="370"/>materiae, tantum addit
+<!--is-correction-app-with-future-lemma-->
+<lem type="main">
+<corr resp="#ed">[<hi rendition="#i">bc</hi>]
+</corr>
+</lem>
+<rdg wit="#L">
+<orig>
+<hi rendition="#i">b</hi>
+</orig>
+<note type="editorial">
+<hi rendition="#i">L ändert Hrsg.</hi>
+</note>
+</rdg>
+</app> attamen minorem majori aequiponderare, dummodo eadem sit tuborum altitudo. Ratio
+            est, quia angustia tubi quantum adimit <pb type="VIII_1" n="370"/>
+materiae, tantum addit
             motui, necesse est enim aquam<app type="Bfootnote">
-              <lem type="main"/>
-              <rdg wit="#L">aquam <note type="editorial">|</note> <hi rendition="#i">cd</hi>  per
-                  <hi rendition="#i">L</hi></rdg>
-            </app> per tubum <hi rendition="#i">bc</hi> exituram celerrime moveri sursum, dum ipsa
+<lem type="main"/>
+<rdg wit="#L">aquam <note type="editorial">|</note>
+<hi rendition="#i">cd</hi>  per
+<hi rendition="#i">L</hi>
+</rdg>
+</app> per tubum <hi rendition="#i">bc</hi> exituram celerrime moveri sursum, dum ipsa
             tarde descendit in Tubo <hi rendition="#i">bc</hi>. Est enim generale omnium machinarum
             principium, ut celeritate motus materia compensetur. Cum ergo hoc principium generale
             locum habeat, sive <app type="Bfootnote">
-              <lem type="main">per pondus sive per Elaterium depressus ex crure <hi rendition="#i">cb</hi> transeat in crus <hi rendition="#i">ba</hi></lem>
-              <note type="lemma-abbrev">sive</note>
-              <rdg wit="#L" n="1"> per pondus sive per Elaterium<index indexName="Sachverzeichnis">
-                  <term>elaterium</term>
-                </index> liquor<index indexName="Sachverzeichnis">
-                  <term>liquor</term>
-                </index>
-                <hi rendition="#i">cb</hi> tendat in vas ex <app>
-                  <rdg wit="#L" n="a">tubo </rdg>
-                  <rdg wit="#L" n="b">crure <hi rendition="#i">cb</hi>
-                  </rdg>
-                </app></rdg>
-              <rdg wit="#L" n="2"> per pondus sive per Elaterium <app>
-                  <rdg wit="#L" n="a">liquor<index indexName="Sachverzeichnis">
-                      <term>liquor</term>
-                    </index> ex tubo <hi rendition="#i">cb</hi>
-                  </rdg>
-                  <rdg wit="#L" n="b">depressus <seg type="apparat-ellipsis"/>
-                    <hi rendition="#i">ba</hi>
-                    <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app> semper enim liquor<index indexName="Sachverzeichnis">
-              <term>liquor</term>
-            </index> in <hi rendition="#i">ab</hi> tanto celerius movebitur, quam in <hi rendition="#i">cb</hi> quanto crus ipsum <pb type="L"/><fw type="folNum">[114 r<hi rendition="#sup">o</hi>]</fw> arctius est. Ideo et pondus<index indexName="Sachverzeichnis">
-              <term>pondus</term>
-            </index> liquoris<index indexName="Sachverzeichnis">
-              <term>liquor</term>
-            </index> in <hi rendition="#i">ab</hi> tanto fortius <app type="Bfootnote">
-              <lem type="main">resistet</lem>
-              <note type="lemma-abbrev">fortius</note>
-              <rdg wit="#L" n="1"> erit </rdg>
-              <rdg wit="#L" n="2"> resistet <hi rendition="#i">L</hi></rdg>
-            </app>. <app type="Bfootnote">
-              <lem type="main">Ergo in exercitio vis Elasticae</lem>
-              <note type="lemma-abbrev">resistet.</note>
-              <rdg wit="#L" n="1"> Ergo si in fir </rdg>
-              <rdg wit="#L" n="2"> Ergo <app>
-                  <rdg wit="#L" n="a">liquores<index indexName="Sachverzeichnis">
-                      <term>liquor</term>
-                    </index> vim Elasticam<index indexName="Sachverzeichnis">
-                      <term>vis</term>
-                      <index>
-                        <term>elastica</term>
-                      </index>
-                    </index>
-                  </rdg>
-                  <rdg wit="#L" n="b">in exercitio vis Elasticae <hi rendition="#i">L</hi></rdg>
-                </app></rdg>
-            </app> quoque liquorum<index indexName="Sachverzeichnis">
-              <term>liquor</term>
-            </index> non minus quam  gravitatis<index indexName="Sachverzeichnis">
-              <term>gravitas</term>
-            </index>,  nihil  ad  rem  pertinebit  crassities.  Jam 
+<lem type="main">per pondus sive per Elaterium depressus ex crure <hi rendition="#i">cb</hi> transeat in crus <hi rendition="#i">ba</hi>
+</lem>
+<note type="lemma-abbrev">sive</note>
+<rdg wit="#L" n="1"> per pondus sive per Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> liquor<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index>
+<hi rendition="#i">cb</hi> tendat in vas ex <app>
+<rdg wit="#L" n="a">tubo </rdg>
+<rdg wit="#L" n="b">crure <hi rendition="#i">cb</hi>
+</rdg>
+</app>
+</rdg>
+<rdg wit="#L" n="2"> per pondus sive per Elaterium <app>
+<rdg wit="#L" n="a">liquor<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> ex tubo <hi rendition="#i">cb</hi>
+</rdg>
+<rdg wit="#L" n="b">depressus <seg type="apparat-ellipsis"/>
+<hi rendition="#i">ba</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> semper enim liquor<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> in <hi rendition="#i">ab</hi> tanto celerius movebitur, quam in <hi rendition="#i">cb</hi> quanto crus ipsum <pb type="L"/>
+<fw type="folNum">[114 r<hi rendition="#sup">o</hi>]
+</fw> arctius est. Ideo et pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index> liquoris<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> in <hi rendition="#i">ab</hi> tanto fortius <app type="Bfootnote">
+<lem type="main">resistet</lem>
+<note type="lemma-abbrev">fortius</note>
+<rdg wit="#L" n="1"> erit </rdg>
+<rdg wit="#L" n="2"> resistet <hi rendition="#i">L</hi>
+</rdg>
+</app>.<app type="Bfootnote">
+<lem type="main">Ergo in exercitio vis Elasticae</lem>
+<note type="lemma-abbrev">resistet.</note>
+<rdg wit="#L" n="1"> Ergo si in fir </rdg>
+<rdg wit="#L" n="2"> Ergo <app>
+<rdg wit="#L" n="a">liquores<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> vim Elasticam<index indexName="Sachverzeichnis">
+<term>vis</term>
+<index>
+<term>elastica</term>
+</index>
+</index>
+</rdg>
+<rdg wit="#L" n="b">in exercitio vis Elasticae <hi rendition="#i">L</hi>
+</rdg>
+</app>
+</rdg>
+</app> quoque liquorum<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> non minus quam  gravitatis<index indexName="Sachverzeichnis">
+<term>gravitas</term>
+</index>,  nihil  ad  rem  pertinebit  crassities.  Jam 
             in<!--  \hackfor{\pend\pstart} --></p>
-          <figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch43.p11">
-            <graphic url="./images/37_4_114r.svg" width="121.4136pt" xml:id="Ch43.p11.g1"/>
+<figure rendition="#own-line_centered" style="; text-align:center" xml:id="Ch43.p11">
+<graphic url="./images/37_4_114r.svg" width="121.4136pt" xml:id="Ch43.p11.g1"/>
 
-            <head><hi rendition="#i">[Fig. 5]</hi></head>
-          </figure>
-          <pb type="VIII_1" n="371"/>
-          <p xml:id="Ch43.p12">exercitio vis Elasticae<index indexName="Sachverzeichnis">
-              <term>vis</term>
-              <index>
-                <term>elastica</term>
-              </index>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">sive liquidorum sive solidorum</lem>
-              <rdg wit="#L" cause="addition"><add>sive liquidorum sive solidorum</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> in universum<index indexName="Sachverzeichnis">
-              <term>universum</term>
-            </index>, <app type="Bfootnote">
-              <lem type="main">suspensio ponderis altitudine ejus non variatur</lem>
-              <note type="lemma-abbrev">universum,</note>
-              <rdg wit="#L" n="1"> nihil ad rem pertinet </rdg>
-              <rdg wit="#L" n="2"> suspensio <seg type="apparat-ellipsis"/> variatur <hi rendition="#i">L</hi></rdg>
-            </app> per Experim. 2. Ergo sola species <app type="Bfootnote">
-              <lem type="main">(in qua gradum tensionis comprehendo, nam corpus idem ut aer pressus
+<head>
+<hi rendition="#i">[Fig. 5]</hi>
+</head>
+</figure>
+<pb type="VIII_1" n="371"/>
+<p xml:id="Ch43.p12">exercitio vis Elasticae<index indexName="Sachverzeichnis">
+<term>vis</term>
+<index>
+<term>elastica</term>
+</index>
+</index>
+<app type="Bfootnote">
+<lem type="main">sive liquidorum sive solidorum</lem>
+<rdg wit="#L" cause="addition">
+<add>sive liquidorum sive solidorum</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> in universum<index indexName="Sachverzeichnis">
+<term>universum</term>
+</index>,<app type="Bfootnote">
+<lem type="main">suspensio ponderis altitudine ejus non variatur</lem>
+<note type="lemma-abbrev">universum,</note>
+<rdg wit="#L" n="1"> nihil ad rem pertinet </rdg>
+<rdg wit="#L" n="2"> suspensio <seg type="apparat-ellipsis"/>
+ variatur <hi rendition="#i">L</hi>
+</rdg>
+</app> per Experim. 2. Ergo sola species <app type="Bfootnote">
+<lem type="main">(in qua gradum tensionis comprehendo, nam corpus idem ut aer pressus
                 est se ipso in ordinario statu relicto, in specie gravior) superest, quae
                 suspensionem</lem>
-              <note type="lemma-abbrev">species</note>
-              <rdg wit="#L" n="1"> liquoris<index indexName="Sachverzeichnis">
-                  <term>liquor</term>
-                </index> su </rdg>
-              <rdg wit="#L" n="2"> (in <seg type="apparat-ellipsis"/> suspensionem <hi rendition="#i">L</hi></rdg>
-            </app> variare possit. <app type="Bfootnote">
-              <lem type="main">Cum ergo de gravitate liquorum quaestio est sola crassities, cum de
+<note type="lemma-abbrev">species</note>
+<rdg wit="#L" n="1"> liquoris<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> su </rdg>
+<rdg wit="#L" n="2"> (in <seg type="apparat-ellipsis"/>
+ suspensionem <hi rendition="#i">L</hi>
+</rdg>
+</app> variare possit. <app type="Bfootnote">
+<lem type="main">Cum ergo de gravitate liquorum quaestio est sola crassities, cum de
                   Elaterio<index indexName="Sachverzeichnis">
-                  <term>elaterium</term>
-                </index> tota capacitas nihil ad rem pertinet.</lem>
-              <rdg wit="#L" n="1"> Est et haec differentia, quod in liquoribus<index indexName="Sachverzeichnis">
-                  <term>liquor</term>
-                </index> ea sola crassities </rdg>
-              <rdg wit="#L" n="2" cause="addition"> <add>Cum <seg type="apparat-ellipsis"/>
+<term>elaterium</term>
+</index> tota capacitas nihil ad rem pertinet.</lem>
+<rdg wit="#L" n="1"> Est et haec differentia, quod in liquoribus<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> ea sola crassities </rdg>
+<rdg wit="#L" n="2" cause="addition">
+<add>Cum <seg type="apparat-ellipsis"/>
                   pertinet.</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> Inspice figuram 4. in quo Tubus <hi rendition="#i">ab</hi> utrinque apertus <app type="Bfootnote">
-              <lem type="main">orificio superiore</lem>
-              <note type="lemma-abbrev">apertus</note>
-              <rdg wit="#L" n="1"> supra in </rdg>
-              <rdg wit="#L" n="2"> orificio superiore <hi rendition="#i">L</hi></rdg>
-            </app>
-            <hi rendition="#i">a</hi> exit in aerem liberum, orificio <hi rendition="#i">b</hi>
-            intrat in vas aere clauso plenum <hi rendition="#i">c</hi>. <app type="Bfootnote">
-              <lem type="main">Infundatur Tubo Mercurii quantumvis ut</lem>
-              <note type="lemma-abbrev">Infundatur</note>
-              <rdg wit="#L" n="1"> Tubo, quantum satis est, ut </rdg>
-              <rdg wit="#L" n="2"> Tubo Mercurii quantumvis ut <hi rendition="#i">L</hi></rdg>
-            </app>
-            <hi rendition="#i">de</hi> data tantum opera, ut per latera non defluat <app type="Bfootnote">
-              <lem type="main">aerique <hi rendition="#i">ebc</hi></lem>
-              <note type="lemma-abbrev">aerique</note>
-              <rdg wit="#L" n="1"> vasis <hi rendition="#i">c</hi> tubique </rdg>
-              <rdg wit="#L" n="2"> <hi rendition="#i">ebc</hi>
-                <hi rendition="#i">L</hi></rdg>
-            </app> exitum relinquat. Quod caveri potest, si tempore <app type="Bfootnote">
-              <lem type="main">infusionis Epistomium </lem>
-              <note type="lemma-abbrev">infusionis</note>
-              <rdg wit="#L" n="1"> foramen </rdg>
-              <rdg wit="#L" n="2"> Epistomium <hi rendition="#i">L</hi></rdg>
-            </app>
-            <hi rendition="#i">f</hi> in Tubo <hi rendition="#i">ab</hi> infra <hi rendition="#i">e</hi> aperias, ut aer exire possit, et ubi Mercurius<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> usque ad <hi rendition="#i">de</hi> defluxit, claudas. Hoc facto
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> Inspice figuram 4. in quo Tubus <hi rendition="#i">ab</hi> utrinque apertus <app type="Bfootnote">
+<lem type="main">orificio superiore</lem>
+<note type="lemma-abbrev">apertus</note>
+<rdg wit="#L" n="1"> supra in </rdg>
+<rdg wit="#L" n="2"> orificio superiore <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">a</hi> exit in aerem liberum, orificio <hi rendition="#i">b</hi>
+            intrat in vas aere clauso plenum <hi rendition="#i">c</hi>.<app type="Bfootnote">
+<lem type="main">Infundatur Tubo Mercurii quantumvis ut</lem>
+<note type="lemma-abbrev">Infundatur</note>
+<rdg wit="#L" n="1"> Tubo, quantum satis est, ut </rdg>
+<rdg wit="#L" n="2"> Tubo Mercurii quantumvis ut <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">de</hi> data tantum opera, ut per latera non defluat <app type="Bfootnote">
+<lem type="main">aerique <hi rendition="#i">ebc</hi>
+</lem>
+<note type="lemma-abbrev">aerique</note>
+<rdg wit="#L" n="1"> vasis <hi rendition="#i">c</hi> tubique </rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#i">ebc</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> exitum relinquat. Quod caveri potest, si tempore <app type="Bfootnote">
+<lem type="main">infusionis Epistomium </lem>
+<note type="lemma-abbrev">infusionis</note>
+<rdg wit="#L" n="1"> foramen </rdg>
+<rdg wit="#L" n="2"> Epistomium <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">f</hi> in Tubo <hi rendition="#i">ab</hi> infra <hi rendition="#i">e</hi> aperias, ut aer exire possit, et ubi Mercurius<index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index> usque ad <hi rendition="#i">de</hi> defluxit, claudas. Hoc facto
               Mercurius<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> gravitate<index indexName="Sachverzeichnis">
-              <term>gravitas</term>
-            </index> sua descendet nonnihil ut ex <hi rendition="#i">de</hi> in <hi rendition="#i">dd</hi> aeremque proinde <hi rendition="#i">ebc</hi> comprimet in locum minorem <hi rendition="#i">ee-bc</hi>. Superfundatur Mercurii<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> quantumvis, summum suspensionis punctum semper erit <hi rendition="#i">dd</hi>.
+<term>mercurius</term>
+</index> gravitate<index indexName="Sachverzeichnis">
+<term>gravitas</term>
+</index> sua descendet nonnihil ut ex <hi rendition="#i">de</hi> in <hi rendition="#i">dd</hi> aeremque proinde <hi rendition="#i">ebc</hi> comprimet in locum minorem <hi rendition="#i">ee-bc</hi>. Superfundatur Mercurii<index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index> quantumvis, summum suspensionis punctum semper erit <hi rendition="#i">dd</hi>.
             Mutetur Tubi crassities et pro <hi rendition="#i">ab</hi> sumatur <hi rendition="#i">aabb</hi> nihil referet modo Mercurius<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> non per latera Tubi <hi rendition="#i">aabb</hi> defluat, sed inter utrumque
+<term>mercurius</term>
+</index> non per latera Tubi <hi rendition="#i">aabb</hi> defluat, sed inter utrumque
             latus spatium <app type="Bfootnote">
-              <lem type="main">repleat. Quod fiet</lem>
-              <note type="lemma-abbrev">repleat.</note>
-              <rdg wit="#L" n="1"> Quo facto </rdg>
-              <rdg wit="#L" n="2"> Quod fiet <hi rendition="#i">L</hi></rdg>
-            </app> si orificium ejus <hi rendition="#i">aa</hi> totum Mercurio<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">immergatur</lem>
-              <note type="lemma-abbrev">Mercurio</note>
-              <rdg wit="#L" n="1"> inseratur </rdg>
-              <rdg wit="#L" n="2"> immergatur <hi rendition="#i">L</hi></rdg>
-            </app> Epistomio<index indexName="Sachverzeichnis">
-              <term>epistomium</term>
-            </index> scilicet ut antea, interim aperto, postea clauso. Mutetur item <app type="Bfootnote">
-              <lem type="main">capacitas</lem>
-              <note type="lemma-abbrev">item</note>
-              <rdg wit="#L" n="1"> crassities </rdg>
-              <rdg wit="#L" n="2"> capacitas <hi rendition="#i">L</hi></rdg>
-            </app> vasis et pro vase <hi rendition="#i">c</hi> substituatur <hi rendition="#i">cc</hi> ajo id nihil referre, semperque summam Mercurii<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> altitudinem mansuram <hi rendition="#i">ddee</hi>. At si mutetur species
+<lem type="main">repleat. Quod fiet</lem>
+<note type="lemma-abbrev">repleat.</note>
+<rdg wit="#L" n="1"> Quo facto </rdg>
+<rdg wit="#L" n="2"> Quod fiet <hi rendition="#i">L</hi>
+</rdg>
+</app> si orificium ejus <hi rendition="#i">aa</hi> totum Mercurio<index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">immergatur</lem>
+<note type="lemma-abbrev">Mercurio</note>
+<rdg wit="#L" n="1"> inseratur </rdg>
+<rdg wit="#L" n="2"> immergatur <hi rendition="#i">L</hi>
+</rdg>
+</app> Epistomio<index indexName="Sachverzeichnis">
+<term>epistomium</term>
+</index> scilicet ut antea, interim aperto, postea clauso. Mutetur item <app type="Bfootnote">
+<lem type="main">capacitas</lem>
+<note type="lemma-abbrev">item</note>
+<rdg wit="#L" n="1"> crassities </rdg>
+<rdg wit="#L" n="2"> capacitas <hi rendition="#i">L</hi>
+</rdg>
+</app> vasis et pro vase <hi rendition="#i">c</hi> substituatur <hi rendition="#i">cc</hi> ajo id nihil referre, semperque summam Mercurii<index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index> altitudinem mansuram <hi rendition="#i">ddee</hi>. At si mutetur species
               liquorum<index indexName="Sachverzeichnis">
-              <term>liquor</term>
-            </index>, mutabitur punctum suspensionis. Infusae enim aquae quantaecunque, punctum
+<term>liquor</term>
+</index>, mutabitur punctum suspensionis. Infusae enim aquae quantaecunque, punctum
             summum nunquam descendet ad <hi rendition="#i">dd</hi>
-            <app type="Bfootnote">
-              <lem type="main">idem eveniet</lem>
-              <rdg wit="#L" cause="addition"><add>idem eveniet</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> si in vase <hi rendition="#i">c</hi> loco aeris ordinarii sit aer <app type="Bfootnote">
-              <lem type="main">jam</lem>
-              <rdg wit="#L" cause="addition"><add>jam</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> compressus, at vero punctum suspensionis Mercurii<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> erit infra <hi rendition="#i">dd</hi> si aer vasis <hi rendition="#i">c</hi>
-            sit ordinario rarior. Obiter annoto hoc Experientiae genus posse <pb type="VIII_1" n="372"/>appellari Baroscopium<index indexName="Sachverzeichnis">
-              <term>baroscopium</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">(vel Tubum Torricellianum<index indexName="Sachverzeichnis">
-                  <term>Tubus</term>
-                  <index>
-                    <term>Torricellianus</term>
-                  </index>
-                </index>)</lem>
-              <rdg wit="#L" cause="addition"><add>(vel Tubum Torricellianum<index indexName="Sachverzeichnis">
-                    <term>Tubus</term>
-                    <index>
-                      <term>Torricellianus</term>
-                    </index>
-                  </index>)</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app>
-            <hi rendition="#g">inversum.</hi> Ut enim in communi orificium inferius exit in aerem
+<app type="Bfootnote">
+<lem type="main">idem eveniet</lem>
+<rdg wit="#L" cause="addition">
+<add>idem eveniet</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> si in vase <hi rendition="#i">c</hi> loco aeris ordinarii sit aer <app type="Bfootnote">
+<lem type="main">jam</lem>
+<rdg wit="#L" cause="addition">
+<add>jam</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> compressus, at vero punctum suspensionis Mercurii<index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index> erit infra <hi rendition="#i">dd</hi> si aer vasis <hi rendition="#i">c</hi>
+            sit ordinario rarior. Obiter annoto hoc Experientiae genus posse <pb type="VIII_1" n="372"/>
+appellari Baroscopium<index indexName="Sachverzeichnis">
+<term>baroscopium</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">(vel Tubum Torricellianum<index indexName="Sachverzeichnis">
+<term>Tubus</term>
+<index>
+<term>Torricellianus</term>
+</index>
+</index>)
+</lem>
+<rdg wit="#L" cause="addition">
+<add>(vel Tubum Torricellianum<index indexName="Sachverzeichnis">
+<term>Tubus</term>
+<index>
+<term>Torricellianus</term>
+</index>
+</index>)
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<hi rendition="#g">inversum.</hi> Ut enim in communi orificium inferius exit in aerem
             liberum superius clausum est, ita hic contra. <app type="Bfootnote">
-              <lem type="main">Theorema hic demonstratum etiam ita concipi potest</lem>
-              <note type="lemma-abbrev">contra.</note>
-              <rdg wit="#L" n="1"> Ex his intelligi etiam potest, assumtis diversis Tubis </rdg>
-              <rdg wit="#L" n="2"> Ex his intelligi etiam potest etsi Tubus <hi rendition="#i">ab</hi>. </rdg>
-              <rdg wit="#L" n="3"> Theorema <seg type="apparat-ellipsis"/> potest <hi rendition="#i">L</hi></rdg>
-            </app>: Liquores<index indexName="Sachverzeichnis">
-              <term>liquor</term>
-            </index> Elastici<index indexName="Sachverzeichnis">
-              <term>elasticum</term>
-            </index> non resistunt secundum <app type="Bfootnote">
-              <lem type="main">amplitudinem</lem>
-              <note type="lemma-abbrev">secundum</note>
-              <rdg wit="#L" n="1"> magnitudinem </rdg>
-              <rdg wit="#L" n="2"> amplitudinem <hi rendition="#i">L</hi></rdg>
-            </app>, sed speciem: Sed haec clarius apparebunt ex prop. <anchor xml:id="_114rseq"/>seq.</p>
-          <figure rendition="#inline-margin-left" xml:id="Ch43.fig1_1">
-            <graphic url="./images/37_4_114v.svg" width="43.362pt" xml:id="Ch43.g1"/>
+<lem type="main">Theorema hic demonstratum etiam ita concipi potest</lem>
+<note type="lemma-abbrev">contra.</note>
+<rdg wit="#L" n="1"> Ex his intelligi etiam potest, assumtis diversis Tubis </rdg>
+<rdg wit="#L" n="2"> Ex his intelligi etiam potest etsi Tubus <hi rendition="#i">ab</hi>. 
+</rdg>
+<rdg wit="#L" n="3"> Theorema <seg type="apparat-ellipsis"/>
+ potest <hi rendition="#i">L</hi>
+</rdg>
+</app>: Liquores<index indexName="Sachverzeichnis">
+<term>liquor</term>
+</index> Elastici<index indexName="Sachverzeichnis">
+<term>elasticum</term>
+</index> non resistunt secundum <app type="Bfootnote">
+<lem type="main">amplitudinem</lem>
+<note type="lemma-abbrev">secundum</note>
+<rdg wit="#L" n="1"> magnitudinem </rdg>
+<rdg wit="#L" n="2"> amplitudinem <hi rendition="#i">L</hi>
+</rdg>
+</app>, sed speciem: Sed haec clarius apparebunt ex prop. <anchor xml:id="_114rseq"/>
+seq.</p>
+<figure rendition="#inline-margin-left" xml:id="Ch43.fig1_1">
+<graphic url="./images/37_4_114v.svg" width="43.362pt" xml:id="Ch43.g1"/>
 
-            <head xml:id="Ch43.fig1_2"><hi rendition="#i">[Fig. 6]</hi></head>
-          </figure>
-          <p xml:id="Ch43.p13"><pb type="L"/><fw type="folNum">[114 v<hi rendition="#sup">o</hi>]</fw>
-            <anchor xml:id="_114vseq"/><app type="Bfootnote" from="#_114rseq" to="#_114vseq">
-              <lem type="main"><hi rendition="#g">Prop. 5.</hi></lem>
-              <note type="lemma-abbrev">seq.</note>
-              <rdg wit="#L" n="1"> <hi rendition="#g">Exper. 5.</hi>
-              </rdg>
-              <rdg wit="#L" n="2"> <hi rendition="#g">Prop. 5.</hi>
-                <hi rendition="#i">L</hi></rdg>
-            </app> Ostensum est prop. praecedenti <app type="Bfootnote">
-              <lem type="main">si pondus et Elasticum liquida</lem>
-              <note type="lemma-abbrev">praecedenti</note>
-              <rdg wit="#L" n="1"> in liquidis </rdg>
-              <rdg wit="#L" n="2" cause="deletion"> si pondus <note type="editorial">|</note> <del>pariter</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> et Elasticum liquida
-                  <hi rendition="#i">L</hi></rdg>
-            </app> sint, nihil referre, quanta sit capacitas <app type="Bfootnote">
-              <lem type="main">alterutrius si</lem>
-              <note type="lemma-abbrev">alterutrius</note>
-              <rdg wit="#L" cause="deletion"><note type="editorial">|</note> <del>sed</del>
-                <note type="editorial"><hi rendition="#i">gestr.</hi> |</note> si <hi rendition="#i">L</hi></rdg>
-            </app> vero solida sint, eo casu nihil refert quanta sit capacitas seu magnitudo
+<head xml:id="Ch43.fig1_2">
+<hi rendition="#i">[Fig. 6]</hi>
+</head>
+</figure>
+<p xml:id="Ch43.p13">
+<pb type="L"/>
+<fw type="folNum">[114 v<hi rendition="#sup">o</hi>]
+</fw>
+<anchor xml:id="_114vseq"/>
+<app type="Bfootnote" from="#_114rseq" to="#_114vseq">
+<lem type="main">
+<hi rendition="#g">Prop. 5.</hi>
+</lem>
+<note type="lemma-abbrev">seq.</note>
+<rdg wit="#L" n="1">
+<hi rendition="#g">Exper. 5.</hi>
+</rdg>
+<rdg wit="#L" n="2">
+<hi rendition="#g">Prop. 5.</hi>
+<hi rendition="#i">L</hi>
+</rdg>
+</app> Ostensum est prop. praecedenti <app type="Bfootnote">
+<lem type="main">si pondus et Elasticum liquida</lem>
+<note type="lemma-abbrev">praecedenti</note>
+<rdg wit="#L" n="1"> in liquidis </rdg>
+<rdg wit="#L" n="2" cause="deletion"> si pondus <note type="editorial">|</note>
+<del>pariter</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> et Elasticum liquida
+<hi rendition="#i">L</hi>
+</rdg>
+</app> sint, nihil referre, quanta sit capacitas <app type="Bfootnote">
+<lem type="main">alterutrius si</lem>
+<note type="lemma-abbrev">alterutrius</note>
+<rdg wit="#L" cause="deletion">
+<note type="editorial">|</note>
+<del>sed</del>
+<note type="editorial">
+<hi rendition="#i">gestr.</hi> |
+</note> si <hi rendition="#i">L</hi>
+</rdg>
+</app> vero solida sint, eo casu nihil refert quanta sit capacitas seu magnitudo
               Elaterii<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index>, dummodo homogeneum sit, refert vero quantum sit pondus<index indexName="Sachverzeichnis">
-              <term>pondus</term>
-            </index>. Cessat enim ratio illa Hydrostatica<index indexName="Sachverzeichnis">
-              <term>hydrostatica</term>
-            </index> quam a Tuborum amplitudine per motum compensata petivimus. Propositio ergo haec
+<term>elaterium</term>
+</index>, dummodo homogeneum sit, refert vero quantum sit pondus<index indexName="Sachverzeichnis">
+<term>pondus</term>
+</index>. Cessat enim ratio illa Hydrostatica<index indexName="Sachverzeichnis">
+<term>hydrostatica</term>
+</index> quam a Tuborum amplitudine per motum compensata petivimus. Propositio ergo haec
             erit. Si eadem vis (pondus<index indexName="Sachverzeichnis">
-              <term>pondus</term>
-            </index> an Elaterium<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> nihil refert) Elateriis<index indexName="Sachverzeichnis">
-              <term>elaterium</term>
-            </index> diversis homogeneis, magnitudine differentibus applicetur, spatia corpori
+<term>pondus</term>
+</index> an Elaterium<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> nihil refert) Elateriis<index indexName="Sachverzeichnis">
+<term>elaterium</term>
+</index> diversis homogeneis, magnitudine differentibus applicetur, spatia corpori
             compresso ademta aut tenso addita <app type="Bfootnote">
-              <lem type="main">vel corpora compresso addita, tenso ademta</lem>
-              <rdg wit="#L" cause="addition"><add>vel <seg type="apparat-ellipsis"/> ademta</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> aequalia erunt, etsi ipsa corpora Elastica<index indexName="Sachverzeichnis">
-              <term>corpus</term>
-              <index>
-                <term>elasticum</term>
-              </index>
-            </index> sint <app type="Bfootnote">
-              <lem type="main">magnitudine</lem>
-              <rdg wit="#L" cause="addition"><add>magnitudine</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> inaequalia. <app type="Bfootnote">
-              <lem type="main">Dummodo non sint inaequaliter Elastica</lem>
-              <rdg wit="#L" cause="addition"><add>Dummodo non sint inaequaliter Elastica</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> cujus propositionis veritas hoc Experimento comprobari aut falsitas revinci
+<lem type="main">vel corpora compresso addita, tenso ademta</lem>
+<rdg wit="#L" cause="addition">
+<add>vel <seg type="apparat-ellipsis"/>
+ ademta</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> aequalia erunt, etsi ipsa corpora Elastica<index indexName="Sachverzeichnis">
+<term>corpus</term>
+<index>
+<term>elasticum</term>
+</index>
+</index> sint <app type="Bfootnote">
+<lem type="main">magnitudine</lem>
+<rdg wit="#L" cause="addition">
+<add>magnitudine</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> inaequalia. <app type="Bfootnote">
+<lem type="main">Dummodo non sint inaequaliter Elastica</lem>
+<rdg wit="#L" cause="addition">
+<add>Dummodo non sint inaequaliter Elastica</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> cujus propositionis veritas hoc Experimento comprobari aut falsitas revinci
             potest. Esto Tubus <app type="Bfootnote">
-              <lem type="main"><hi rendition="#i">ab</hi></lem>
-              <rdg wit="#L" cause="addition"><add><hi rendition="#i">ab</hi>
-                </add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> infra clausus in <hi rendition="#i">b</hi> in cujus medio alicubi, ut in <hi rendition="#i">c</hi>
-            <app type="Bfootnote">
-              <lem type="main">sit</lem>
-              <rdg wit="#L" cause="addition"><add>sit</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app>. Epistomium<index indexName="Sachverzeichnis">
-              <term>epistomium</term>
-            </index> quod modo aperiri, modo claudi possit, <app type="Bfootnote">
-              <lem type="main">non ut intret aer externus, sed ut communicatio inter duas Tubi
+<lem type="main">
+<hi rendition="#i">ab</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>
+<hi rendition="#i">ab</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> infra clausus in <hi rendition="#i">b</hi> in cujus medio alicubi, ut in <hi rendition="#i">c</hi>
+<app type="Bfootnote">
+<lem type="main">sit</lem>
+<rdg wit="#L" cause="addition">
+<add>sit</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>. Epistomium<index indexName="Sachverzeichnis">
+<term>epistomium</term>
+</index> quod modo aperiri, modo claudi possit, <app type="Bfootnote">
+<lem type="main">non ut intret aer externus, sed ut communicatio inter duas Tubi
                 partes <hi rendition="#i">ec</hi> et <hi rendition="#i">cb</hi> modo permittatur,
                 modo negetur.</lem>
-              <rdg wit="#L">non <seg type="apparat-ellipsis"/> inter </rdg>
-              <rdg wit="#L" n="1"> duos Tubos </rdg>
-              <rdg wit="#L" n="2" cause="addition"> <add>duas <seg type="apparat-ellipsis"/>
+<rdg wit="#L">non <seg type="apparat-ellipsis"/>
+ inter </rdg>
+<rdg wit="#L" n="1"> duos Tubos </rdg>
+<rdg wit="#L" n="2" cause="addition">
+<add>duas <seg type="apparat-ellipsis"/>
                   negetur.</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main">Aperiatur Epistomium</lem>
-              <note type="lemma-abbrev">Aperiatur</note>
-              <rdg wit="#L" n="1"> primum </rdg>
-              <rdg wit="#L" n="2"> Epistomium <hi rendition="#i">L</hi></rdg>
-            </app>, Mercuriusque <index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index>
-            <hi rendition="#i">de</hi> descendat <app type="Bfootnote">
-              <lem type="main">quousque potest in</lem>
-              <note type="lemma-abbrev">quousque</note>
-              <rdg wit="#L" n="1"> lubet in </rdg>
-              <rdg wit="#L" n="2"> potest in <hi rendition="#i">L</hi></rdg>
-            </app>
-            <hi rendition="#i">ddee</hi>. Ajo si Epistomium<index indexName="Sachverzeichnis">
-              <term>epistomium</term>
-            </index> non fuisset apertum, cum descenderet sed clausum, seu si Tubus fuisset non
-            longitudinis <hi rendition="#i">eb</hi> sed solum <pb type="VIII_1" n="373"/>longitudinis <hi rendition="#i">ec</hi>. Mercurium<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> nihilominus descensurum fuisse per altitudinem eandem <hi rendition="#i">edd</hi> seu non ultra quam ex <hi rendition="#i">de</hi> in <hi rendition="#i">ddee</hi>. <app type="Bfootnote">
-              <lem type="main">Demonstratio</lem>
-              <note type="lemma-abbrev"><hi rendition="#i">ddee</hi>.</note>
-              <rdg wit="#L" n="1"> Hujus rei ratio </rdg>
-              <rdg wit="#L" n="2"> Demonstratio <hi rendition="#i">L</hi></rdg>
-            </app> haec est: spatium ab aere Tubi <app type="Bfootnote">
-              <lem type="main">majoris, seu totius <hi rendition="#i">ab</hi></lem>
-              <rdg wit="#L" cause="addition"><add>majoris, seu totius <hi rendition="#i">ab</hi>
-                </add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app> initio, ante Mercurii<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index> descensum occupatum est <hi rendition="#i">eb</hi>
-            <app type="Bfootnote">
-              <lem type="main">post descensum</lem>
-              <note type="lemma-abbrev"><hi rendition="#i">eb</hi></note>
-              <rdg wit="#L" n="1"> si Tubus est major, <hi rendition="#i">ec</hi> si minor </rdg>
-              <rdg wit="#L" n="2"> post descensum <hi rendition="#i">L</hi></rdg>
-            </app>
-            <hi rendition="#i">eeb</hi>. Ergo spatium descensu ablatum est <hi rendition="#i">e
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">Aperiatur Epistomium</lem>
+<note type="lemma-abbrev">Aperiatur</note>
+<rdg wit="#L" n="1"> primum </rdg>
+<rdg wit="#L" n="2"> Epistomium <hi rendition="#i">L</hi>
+</rdg>
+</app>, Mercuriusque <index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index>
+<hi rendition="#i">de</hi> descendat <app type="Bfootnote">
+<lem type="main">quousque potest in</lem>
+<note type="lemma-abbrev">quousque</note>
+<rdg wit="#L" n="1"> lubet in </rdg>
+<rdg wit="#L" n="2"> potest in <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">ddee</hi>. Ajo si Epistomium<index indexName="Sachverzeichnis">
+<term>epistomium</term>
+</index> non fuisset apertum, cum descenderet sed clausum, seu si Tubus fuisset non
+            longitudinis <hi rendition="#i">eb</hi> sed solum <pb type="VIII_1" n="373"/>
+longitudinis <hi rendition="#i">ec</hi>. Mercurium<index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index> nihilominus descensurum fuisse per altitudinem eandem <hi rendition="#i">edd</hi> seu non ultra quam ex <hi rendition="#i">de</hi> in <hi rendition="#i">ddee</hi>.<app type="Bfootnote">
+<lem type="main">Demonstratio</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">ddee</hi>.
+</note>
+<rdg wit="#L" n="1"> Hujus rei ratio </rdg>
+<rdg wit="#L" n="2"> Demonstratio <hi rendition="#i">L</hi>
+</rdg>
+</app> haec est: spatium ab aere Tubi <app type="Bfootnote">
+<lem type="main">majoris, seu totius <hi rendition="#i">ab</hi>
+</lem>
+<rdg wit="#L" cause="addition">
+<add>majoris, seu totius <hi rendition="#i">ab</hi>
+</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app> initio, ante Mercurii<index indexName="Sachverzeichnis">
+<term>mercurius</term>
+</index> descensum occupatum est <hi rendition="#i">eb</hi>
+<app type="Bfootnote">
+<lem type="main">post descensum</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">eb</hi>
+</note>
+<rdg wit="#L" n="1"> si Tubus est major, <hi rendition="#i">ec</hi> si minor </rdg>
+<rdg wit="#L" n="2"> post descensum <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<hi rendition="#i">eeb</hi>. Ergo spatium descensu ablatum est <hi rendition="#i">e
               ee</hi> aer ergo qui in spatio <hi rendition="#i">eee</hi> fuit locum in reliquo aere
-              <hi rendition="#i">ee b</hi> quaerit, seu reliquus aer totus comprimitur aequaliter,
+<hi rendition="#i">ee b</hi> quaerit, seu reliquus aer totus comprimitur aequaliter,
             ut enim aer loco suo exul in proximo hospitium quaerit, ita proximus in sibi proximum
             intrare conatur ut locum faciat novo: omnes ergo aeque sufferunt, seu aer exul per
             caeteros aequaliter distribuitur. Hinc <app type="Bfootnote">
-              <lem type="main">quanto major est aer comprimendus</lem>
-              <note type="lemma-abbrev">quanto</note>
-              <rdg wit="#L" n="1"> major est locus </rdg>
-              <rdg wit="#L" n="2"> major est aer comprimendus <hi rendition="#i">L</hi></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main">seu materia</lem>
-              <rdg wit="#L" cause="addition"><add>seu materia</add>
-                <note type="editorial"><hi rendition="#i">erg. L</hi></note></rdg>
-            </app>, tanto minor est compressio<index indexName="Sachverzeichnis">
-              <term>compressio</term>
-            </index> partium singularum; et quanto minor est aer seu materia, tanto major est
+<lem type="main">quanto major est aer comprimendus</lem>
+<note type="lemma-abbrev">quanto</note>
+<rdg wit="#L" n="1"> major est locus </rdg>
+<rdg wit="#L" n="2"> major est aer comprimendus <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">seu materia</lem>
+<rdg wit="#L" cause="addition">
+<add>seu materia</add>
+<note type="editorial">
+<hi rendition="#i">erg. L</hi>
+</note>
+</rdg>
+</app>, tanto minor est compressio<index indexName="Sachverzeichnis">
+<term>compressio</term>
+</index> partium singularum; et quanto minor est aer seu materia, tanto major est
               gradus<index indexName="Sachverzeichnis">
-              <term>gradus</term>
-            </index>
-            <app type="Bfootnote">
-              <lem type="main">compressionis<index indexName="Sachverzeichnis">
-                  <term>compressio</term>
-                </index>. Summa</lem>
-              <note type="lemma-abbrev">compressionis.</note>
-              <rdg wit="#L" n="1"> Duo autem </rdg>
-              <rdg wit="#L" n="2"> Summa <hi rendition="#i">L</hi></rdg>
-            </app> compressionis<index indexName="Sachverzeichnis">
-              <term>compressio</term>
-            </index> fit ex ductu materiae in gradum. Materia aucta minuitur gradus, et contra, <app type="Bfootnote">
-              <lem type="main">constat enim si duo sunt factores v.g. 2. et 8. et uno minuto verbi
+<term>gradus</term>
+</index>
+<app type="Bfootnote">
+<lem type="main">compressionis<index indexName="Sachverzeichnis">
+<term>compressio</term>
+</index>. Summa</lem>
+<note type="lemma-abbrev">compressionis.</note>
+<rdg wit="#L" n="1"> Duo autem </rdg>
+<rdg wit="#L" n="2"> Summa <hi rendition="#i">L</hi>
+</rdg>
+</app> compressionis<index indexName="Sachverzeichnis">
+<term>compressio</term>
+</index> fit ex ductu materiae in gradum. Materia aucta minuitur gradus, et contra, <app type="Bfootnote">
+<lem type="main">constat enim si duo sunt factores v.g. 2. et 8. et uno minuto verbi
                 gratia, dimidiato alter proportionaliter augeatur, v.g. duplicetur ut 1. et 16. vel
                 4. et 4. factum semper esse eundem. Eadem ergo est summa compressionis</lem>
-              <note type="lemma-abbrev">contra,</note>
-              <rdg wit="#L" n="1"> ergo eadem est summa compressionis<index indexName="Sachverzeichnis">
-                  <term>compressio</term>
-                </index> seu idem effectus pondere per eandem altitudinem descendente, seu tantundem
+<note type="lemma-abbrev">contra,</note>
+<rdg wit="#L" n="1"> ergo eadem est summa compressionis<index indexName="Sachverzeichnis">
+<term>compressio</term>
+</index> seu idem effectus pondere per eandem altitudinem descendente, seu tantundem
                 aeris </rdg>
-              <rdg wit="#L" n="2" cause="addition"> constat <seg type="apparat-ellipsis"/> 2. <note type="editorial">|</note> <add>et</add>
-                <note type="editorial"><hi rendition="#i">erg.</hi> |</note> 8. <seg type="apparat-ellipsis"/> compressionis <hi rendition="#i">L</hi></rdg>
-            </app>, <app type="Bfootnote">
-              <lem type="main">ac proinde eadem difficultas sive</lem>
-              <note type="lemma-abbrev">compressionis,</note>
-              <rdg wit="#L" n="1"> seu proinde </rdg>
-              <rdg wit="#L" n="2"> sive eadem difficultas </rdg>
-              <rdg wit="#L" n="3"> ac proinde eadem difficultas sive <hi rendition="#i">L</hi></rdg>
-            </app> idem aer exul in <app type="Bfootnote">
-              <lem type="main">majorem sive in minorem</lem>
-              <note type="lemma-abbrev">in</note>
-              <rdg wit="#L" n="1"> plures </rdg>
-              <rdg wit="#L" n="2"> majorem sive in minorem <hi rendition="#i">L</hi></rdg>
-            </app>
-            <app type="Bfootnote">
-              <lem type="main">comprimendum</lem>
-              <note type="lemma-abbrev">minorem</note>
-              <rdg wit="#L" n="1"> minuendum </rdg>
-              <rdg wit="#L" n="2"> comprimendum <hi rendition="#i">L</hi></rdg>
-            </app> distribuatur, ut autem idem sit aer exul, eodem descensu opus est. Ergo
+<rdg wit="#L" n="2" cause="addition"> constat <seg type="apparat-ellipsis"/>
+ 2. <note type="editorial">|</note>
+<add>et</add>
+<note type="editorial">
+<hi rendition="#i">erg.</hi> |
+</note> 8. <seg type="apparat-ellipsis"/>
+ compressionis <hi rendition="#i">L</hi>
+</rdg>
+</app>,<app type="Bfootnote">
+<lem type="main">ac proinde eadem difficultas sive</lem>
+<note type="lemma-abbrev">compressionis,</note>
+<rdg wit="#L" n="1"> seu proinde </rdg>
+<rdg wit="#L" n="2"> sive eadem difficultas </rdg>
+<rdg wit="#L" n="3"> ac proinde eadem difficultas sive <hi rendition="#i">L</hi>
+</rdg>
+</app> idem aer exul in <app type="Bfootnote">
+<lem type="main">majorem sive in minorem</lem>
+<note type="lemma-abbrev">in</note>
+<rdg wit="#L" n="1"> plures </rdg>
+<rdg wit="#L" n="2"> majorem sive in minorem <hi rendition="#i">L</hi>
+</rdg>
+</app>
+<app type="Bfootnote">
+<lem type="main">comprimendum</lem>
+<note type="lemma-abbrev">minorem</note>
+<rdg wit="#L" n="1"> minuendum </rdg>
+<rdg wit="#L" n="2"> comprimendum <hi rendition="#i">L</hi>
+</rdg>
+</app> distribuatur, ut autem idem sit aer exul, eodem descensu opus est. Ergo
             quantaecunque longitudinis fiat Tubus <hi rendition="#i">ab</hi> Mercurius<index indexName="Sachverzeichnis">
-              <term>mercurius</term>
-            </index>
-            <hi rendition="#i">de</hi> non descendet, nisi usque ad <hi rendition="#i">ddee</hi> seu
+<term>mercurius</term>
+</index>
+<hi rendition="#i">de</hi> non descendet, nisi usque ad <hi rendition="#i">ddee</hi> seu
             idem erit spatium ademtum <app type="Bfootnote">
-              <lem type="main"><hi rendition="#i">eee</hi>. Demonstratio est</lem>
-              <note type="lemma-abbrev"><hi rendition="#i">eee</hi></note>
-              <rdg wit="#L" n="1"> quod erat demonstrandum. </rdg>
-              <rdg wit="#L" n="2"> . Demonstratio est <hi rendition="#i">L</hi></rdg>
-            </app> irrefragabilis, sed ut harmonia cum caeteris naturae principiis intellecta fiat
+<lem type="main">
+<hi rendition="#i">eee</hi>. Demonstratio est</lem>
+<note type="lemma-abbrev">
+<hi rendition="#i">eee</hi>
+</note>
+<rdg wit="#L" n="1"> quod erat demonstrandum. </rdg>
+<rdg wit="#L" n="2"> . Demonstratio est <hi rendition="#i">L</hi>
+</rdg>
+</app> irrefragabilis, sed ut harmonia cum caeteris naturae principiis intellecta fiat
             illustrior, haec adjungenda duxi.</p>
-        </div>
-      </div>
-    </body>
-  </text>
+</div>
+</div>
+</body>
+</text>
 </TEI>
